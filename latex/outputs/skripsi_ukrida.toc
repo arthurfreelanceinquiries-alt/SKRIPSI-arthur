@@ -1,0 +1,111 @@
+\xpg@aux {}{indonesian}
+\thispagestyle {frontmatter}
+\contentsline {section}{BAB 1\hskip 1em\relax PENDAHULUAN}{1}{Item.12}%
+\contentsline {subsection}{\numberline {1.1}Latar Belakang Penelitian}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Identifikasi Masalah}{6}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Pembatasan Masalah}{6}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Perumusan Masalah}{7}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Tujuan Penelitian}{7}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Manfaat Penelitian}{8}{subsection.1.6}%
+\contentsline {subsubsection}{\numberline {1.6.1}1. Manfaat Teoretis (Aspek Akademis)}{8}{subsubsection.1.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.2}2. Manfaat Praktis (Aspek Terapan)}{8}{subsubsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.7}Sistematika Penulisan Skripsi}{8}{subsection.1.7}%
+\contentsline {section}{BAB 2\hskip 1em\relax TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS}{10}{subsection.1.7}%
+\contentsline {subsection}{\numberline {2.1}Landasan Teori}{10}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}\emph {Stakeholder Theory} (Teori Pemangku Kepentingan)}{10}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}\emph {Legitimacy Theory} (Teori Legitimasi)}{10}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Teori Intermediasi Finansial (\emph {Financial Intermediation Theory})}{11}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}\emph {Resource-Based View} (RBV) dan \emph {Natural Resource-Based View} (NRBV)}{12}{subsubsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.5}\emph {Risk-Return Tradeoff Theory}}{12}{subsubsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.6}\emph {Agency Theory} (Teori Keagenan) dan \emph {Signaling Theory}}{13}{subsubsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.2}Konseptualisasi Variabel Penelitian}{13}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Profitabilitas Perbankan dan \emph {Return on Assets} (ROA)}{13}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Portofolio Kredit Hijau (\emph {Green Financing})}{14}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Risiko Kredit dan \emph {Non-Performing Loan} (NPL)}{15}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Analisis Kualitas Aset, Kolektibilitas, dan Implementasi PSAK 71 / IFRS 9}{16}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}Kecukupan Modal dan \emph {Capital Adequacy Ratio} (CAR)}{17}{subsubsection.2.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.6}Integrasi Risiko Iklim Fisik dan Transisi ke dalam Manajemen Risiko Perbankan}{18}{subsubsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.7}Mekanisme Rantai Transmisi Pembiayaan Hijau terhadap Profitabilitas Bank}{18}{subsubsection.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.8}Analisis Komparatif Pembiayaan Hijau: Negara Berkembang vs Negara Maju}{19}{subsubsection.2.2.8}%
+\contentsline {subsubsection}{\numberline {2.2.9}Dinamika Integrasi ESG ke dalam Penilaian Risiko Kredit Perbankan}{20}{subsubsection.2.2.9}%
+\contentsline {subsection}{\numberline {2.3}Penelitian Terdahulu}{20}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Rerangka Pemikiran Konseptual}{24}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Pengembangan Hipotesis Penelitian}{24}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Pengaruh Portofolio Kredit Hijau (\emph {Green Financing}) terhadap Profitabilitas (ROA)}{24}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Pengaruh \emph {Non-Performing Loan} (NPL) terhadap Profitabilitas (ROA)}{25}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Pengaruh \emph {Capital Adequacy Ratio} (CAR) terhadap Profitabilitas (ROA)}{26}{subsubsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.4}Pengaruh Simultan \emph {Green Financing}, NPL, dan CAR terhadap Profitabilitas (ROA)}{26}{subsubsection.2.5.4}%
+\contentsline {section}{BAB 3\hskip 1em\relax METODE PENELITIAN}{28}{subsubsection.2.5.4}%
+\contentsline {subsection}{\numberline {3.1}Desain Penelitian dan Paradigma Keilmuan}{28}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Populasi, Sampel, dan Teknik Pengambilan Sampel}{28}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Populasi Penelitian}{28}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Teknik Pengambilan Sampel}{28}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Sampel Final Penelitian}{29}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Jenis, Sumber, dan Teknik Pengumpulan Data}{30}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Jenis Data}{30}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Sumber Data}{30}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Teknik Pengumpulan Data}{30}{subsubsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.4}Operasionalisasi Variabel}{30}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Spesifikasi Model Regresi Data Panel}{32}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Tahapan Analisis Data dan Uji Ekonometrika}{32}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Analisis Statistik Deskriptif}{32}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Uji Stasioneritas / Unit Root Data Panel}{33}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.3}Teknik Estimasi Model Regresi Data Panel}{33}{subsubsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.4}Uji Pemilihan Model Regresi Data Panel}{33}{subsubsection.3.6.4}%
+\contentsline {subsubsection}{\numberline {3.6.5}Uji Asumsi Klasik Ekonometrika (BLUE)}{34}{subsubsection.3.6.5}%
+\contentsline {subsubsection}{\numberline {3.6.6}Uji Kelayakan Model dan Pengujian Hipotesis}{35}{subsubsection.3.6.6}%
+\contentsline {subsubsection}{\numberline {3.6.7}Spesifikasi Aljabar Matriks Model Regresi Data Panel}{35}{subsubsection.3.6.7}%
+\contentsline {subsubsection}{\numberline {3.6.8}Formulasi Sintaks Perintah EViews dan Alur Kerja Estimasi}{36}{subsubsection.3.6.8}%
+\contentsline {section}{BAB 4\hskip 1em\relax ANALISIS DAN PEMBAHASAN}{37}{Item.97}%
+\contentsline {subsection}{\numberline {4.1}Gambaran Umum Objek Penelitian}{37}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}PT Bank Rakyat Indonesia (Persero) Tbk (BBRI)}{37}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}PT Bank Mandiri (Persero) Tbk (BMRI)}{37}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}PT Bank Central Asia Tbk (BBCA)}{37}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}PT Bank Negara Indonesia (Persero) Tbk (BBNI)}{38}{subsubsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.2}Analisis Tren Kuartalan dan Profil Perbankan KBMI 4 (2021--2025)}{38}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Analisis Tren Kuartalan dan Profil Finansial Perbankan KBMI 4 (2021--2025)}{38}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Perkembangan Portofolio dan Rasio Keuangan PT Bank Rakyat Indonesia (Persero) Tbk (BBRI)}{38}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Perkembangan Portofolio dan Rasio Keuangan PT Bank Mandiri (Persero) Tbk (BMRI)}{40}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Perkembangan Portofolio dan Rasio Keuangan PT Bank Central Asia Tbk (BBCA)}{42}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Perkembangan Portofolio dan Rasio Keuangan PT Bank Negara Indonesia (Persero) Tbk (BBNI)}{44}{subsubsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.5}Rangkuman Rata-Rata Industri Triwulanan Bank KBMI 4}{45}{subsubsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.4}Analisis Statistik Deskriptif}{47}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Hasil Uji Stasioneritas / Unit Root Data Panel}{49}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Hasil Uji Pemilihan Model Regresi Data Panel}{50}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Hasil Uji Asumsi Klasik}{51}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Hasil Uji Korelasi Antarvariabel Penelitian}{53}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Perbandingan Hasil Estimasi Model Regresi Panel (CEM, FEM, REM)}{55}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}Hasil Estimasi Regresi Data Panel (Fixed Effect Model)}{56}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}Pengujian Hipotesis Penelitian}{58}{subsection.4.11}%
+\contentsline {subsubsection}{\numberline {4.11.1}Pengujian Hipotesis 1: Pengaruh \emph {Green Financing} terhadap ROA}{58}{subsubsection.4.11.1}%
+\contentsline {subsubsection}{\numberline {4.11.2}Pengujian Hipotesis 2: Pengaruh \emph {Non-Performing Loan} (NPL) terhadap ROA}{58}{subsubsection.4.11.2}%
+\contentsline {subsubsection}{\numberline {4.11.3}Pengujian Hipotesis 3: Pengaruh \emph {Capital Adequacy Ratio} (CAR) terhadap ROA}{58}{subsubsection.4.11.3}%
+\contentsline {subsubsection}{\numberline {4.11.4}Pengujian Hipotesis 4: Pengaruh Simultan terhadap ROA}{59}{subsubsection.4.11.4}%
+\contentsline {subsubsection}{\numberline {4.11.5}Koefisien Determinasi (\emph {Adjusted} $R^2$)}{59}{subsubsection.4.11.5}%
+\contentsline {subsection}{\numberline {4.12}Pembahasan Hasil Penelitian}{59}{subsection.4.12}%
+\contentsline {subsubsection}{\numberline {4.12.1}Pembahasan Pengaruh \emph {Green Financing} terhadap ROA ($H_1$ Diterima)}{59}{subsubsection.4.12.1}%
+\contentsline {subsubsection}{\numberline {4.12.2}Pembahasan Pengaruh NPL terhadap ROA ($H_2$ Diterima)}{60}{subsubsection.4.12.2}%
+\contentsline {subsubsection}{\numberline {4.12.3}Pembahasan Pengaruh CAR terhadap ROA ($H_3$ Diterima)}{60}{subsubsection.4.12.3}%
+\contentsline {subsubsection}{\numberline {4.12.4}Pembahasan Pengaruh Simultan terhadap ROA ($H_4$ Diterima)}{61}{subsubsection.4.12.4}%
+\contentsline {subsubsection}{\numberline {4.12.5}Analisis Sensitivitas dan Elastisitas Parsial ROA terhadap Variabel Independen}{61}{subsubsection.4.12.5}%
+\contentsline {subsubsection}{\numberline {4.12.6}Evaluasi Ketahanan Perbankan KBMI 4 Menghadapi Volatilitas Makroekonomi}{62}{subsubsection.4.12.6}%
+\contentsline {subsubsection}{\numberline {4.12.7}Analisis Keunggulan Bersaing Berkelanjutan Antar-Entitas Bank KBMI 4}{63}{subsubsection.4.12.7}%
+\contentsline {subsection}{\numberline {4.13}Implikasi Hasil Penelitian}{63}{subsection.4.13}%
+\contentsline {subsubsection}{\numberline {4.13.1}Implikasi Teoretis}{63}{subsubsection.4.13.1}%
+\contentsline {subsubsection}{\numberline {4.13.2}Implikasi Manajerial bagi Perbankan KBMI 4}{64}{subsubsection.4.13.2}%
+\contentsline {paragraph}{a. Divisi Manajemen Risiko (\emph {Risk Management Division})}{64}{paragraph*.20}%
+\contentsline {paragraph}{b. Divisi Bisnis dan Penyaluran Kredit (\emph {Corporate, Commercial, and SME Banking})}{64}{paragraph*.21}%
+\contentsline {paragraph}{c. Divisi *Treasury* dan Manajemen Permodalan (\emph {Treasury \& Capital Management})}{65}{paragraph*.22}%
+\contentsline {paragraph}{d. Divisi Keberlanjutan dan Komunikasi Korporasi (\emph {Sustainability \& Corporate Secretary})}{65}{paragraph*.23}%
+\contentsline {subsubsection}{\numberline {4.13.3}Implikasi Kebijakan Regulator (OJK dan Bank Indonesia)}{65}{subsubsection.4.13.3}%
+\contentsline {section}{BAB 5\hskip 1em\relax PENUTUP}{67}{Item.125}%
+\contentsline {subsection}{\numberline {5.1}Kesimpulan}{67}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Keterbatasan Penelitian}{68}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Saran}{69}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Saran Praktis bagi Manajemen Bank KBMI 4}{69}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Saran Kebijakan bagi Regulator (Otoritas Jasa Keuangan \& Bank Indonesia)}{69}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Saran Akademis bagi Peneliti Selanjutnya}{70}{subsubsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.4}Peta Jalan Implementasi Strategis Perbankan Berkelanjutan (2026--2030)}{70}{subsubsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.4}Matriks Program Aksi Perbankan KBMI 4 Berkelanjutan}{71}{subsection.5.4}%
+\contentsline {section}{DAFTAR PUSTAKA}{73}{table.caption.25}%
+\contentsline {section}{LAMPIRAN}{77}{table.caption.25}%

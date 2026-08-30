@@ -1,0 +1,705 @@
+\documentclass[11pt,a4paper]{article}
+
+% ==============================================================================
+% PAKET-PAKET UTAMA
+% ==============================================================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[indonesian]{babel}
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    top=2.5cm,
+    bottom=2.5cm,
+    left=2.5cm,
+    right=2.5cm,
+    headheight=14pt,
+    footskip=1.2cm
+}
+
+% Tipografi & Matematika
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{mathpazo} % Palatino font family
+\usepackage{microtype}
+\usepackage{parskip}
+
+% Warna & Tabel
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{multirow}
+
+% Grafik & Diagram TikZ
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc, shadows, fit}
+
+% Box & Callout (tcolorbox)
+\usepackage[most]{tcolorbox}
+
+% Header & Footer
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+% List & Spacing
+\usepackage{enumitem}
+\setlist{itemsep=3pt, topsep=4pt, parsep=0pt}
+
+% Section Titles
+\usepackage{titlesec}
+
+% Hyperref (Tautan & PDF Bookmark)
+\usepackage{hyperref}
+
+% ==============================================================================
+% PALET WARNA KHUSUS (ACADEMIC PREMIUM)
+% ==============================================================================
+\definecolor{primaryBlue}{RGB}{26, 54, 93}      % Deep Navy (#1A365D)
+\definecolor{secondaryBlue}{RGB}{43, 108, 176}  % Classic Slate Blue (#2B6CB0)
+\definecolor{accentTeal}{RGB}{49, 151, 149}     % Teal Accent (#319795)
+\definecolor{darkText}{RGB}{45, 55, 72}         % Charcoal Body Text (#2D3748)
+\definecolor{lightBg}{RGB}{247, 250, 252}       % Soft Cool White/Gray (#F7FAFC)
+\definecolor{cardBg}{RGB}{255, 255, 255}        % Pure White
+\definecolor{borderGray}{RGB}{226, 232, 240}    % Light Border (#E2E8F0)
+\definecolor{successGreen}{RGB}{47, 133, 90}    % Forest Green (#2F855A)
+\definecolor{dangerRed}{RGB}{197, 48, 48}       % Crimson Red (#C53030)
+\definecolor{warnAmber}{RGB}{214, 158, 46}      % Amber Gold (#D69E2E)
+\definecolor{tableHeaderBg}{RGB}{237, 242, 247} % Table Header Gray
+
+% ==============================================================================
+% PENGATURAN HYPERREF
+% ==============================================================================
+\hypersetup{
+    colorlinks=true,
+    linkcolor=secondaryBlue,
+    citecolor=primaryBlue,
+    urlcolor=accentTeal,
+    pdftitle={Panduan Belajar Skripsi S1 Manajemen Keuangan UKRIDA - v2},
+    pdfauthor={Mahasiswa S1 Manajemen Keuangan UKRIDA},
+    pdfsubject={Kredit Hijau, NPL, CAR terhadap ROA pada Bank KBMI 4 (2021-2025)},
+    pdfkeywords={Green Financing, NPL, CAR, ROA, KBMI 4, Sidang Skripsi, UKRIDA}
+}
+
+% ==============================================================================
+% PENGATURAN HEADER & FOOTER
+% ==============================================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{secondaryBlue}\textbf{PANDUAN BELAJAR SKRIPSI} \textbullet{} S1 MANAJEMEN UKRIDA}
+\fancyhead[R]{\small\color{darkText}Bank KBMI 4 (2021--2025)}
+\fancyfoot[L]{\footnotesize\color{gray}Program Studi S1 Manajemen Konsentrasi Keuangan}
+\fancyfoot[R]{\small\thepage\ dari \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+% ==============================================================================
+% PENGATURAN FORMAT HEADING & JUDUL
+% ==============================================================================
+\titleformat{\section}
+  {\color{primaryBlue}\normalfont\Large\bfseries}
+  {\thesection.}{0.8em}{}[\titlerule]
+
+\titleformat{\subsection}
+  {\color{secondaryBlue}\normalfont\large\bfseries}
+  {\thesubsection}{0.6em}{}
+
+\titleformat{\subsubsection}
+  {\color{accentTeal}\normalfont\normalsize\bfseries}
+  {\thesubsubsection}{0.5em}{}
+
+% ==============================================================================
+% CUSTOM ENVIRONMENTS & BOXES
+% ==============================================================================
+\newtcolorbox{infobox}[1][]{
+    enhanced,
+    colback=lightBg,
+    colframe=secondaryBlue,
+    fonttitle=\bfseries\color{white},
+    coltitle=white,
+    colbacktitle=secondaryBlue,
+    arc=4pt,
+    boxrule=1pt,
+    left=12pt,
+    right=12pt,
+    top=10pt,
+    bottom=10pt,
+    title={#1},
+    attach boxed title to top left={yshift=-2mm, xshift=10pt},
+    boxed title style={arc=2pt, boxrule=0.5pt}
+}
+
+\newtcolorbox{tipbox}[1][]{
+    enhanced,
+    colback=lightBg,
+    colframe=accentTeal,
+    fonttitle=\bfseries\color{white},
+    coltitle=white,
+    colbacktitle=accentTeal,
+    arc=4pt,
+    boxrule=1pt,
+    left=12pt,
+    right=12pt,
+    top=8pt,
+    bottom=8pt,
+    title={#1},
+    attach boxed title to top left={yshift=-2mm, xshift=10pt},
+    boxed title style={arc=2pt, boxrule=0.5pt}
+}
+
+\newtcolorbox{qnabox}[1]{
+    enhanced,
+    colback=lightBg,
+    colframe=primaryBlue,
+    fonttitle=\bfseries\color{white},
+    coltitle=white,
+    colbacktitle=primaryBlue,
+    arc=4pt,
+    boxrule=1pt,
+    left=12pt,
+    right=12pt,
+    top=10pt,
+    bottom=10pt,
+    title={\large #1},
+    attach boxed title to top left={yshift=-2.5mm, xshift=8pt},
+    boxed title style={arc=3pt, boxrule=0.5pt}
+}
+
+\newtcolorbox{cheatsheetbox}[1][]{
+    enhanced,
+    colback=lightBg,
+    colframe=primaryBlue,
+    fonttitle=\bfseries\color{white},
+    coltitle=white,
+    colbacktitle=primaryBlue,
+    arc=5pt,
+    boxrule=1.5pt,
+    left=14pt,
+    right=14pt,
+    top=12pt,
+    bottom=12pt,
+    title={#1}
+}
+
+% ==============================================================================
+% DOKUMEN UTAMA
+% ==============================================================================
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% HALAMAN COVER / JUDUL PANDUAN
+% ------------------------------------------------------------------------------
+\begin{center}
+    \vspace*{0.5cm}
+    {\Huge \textbf{\color{primaryBlue}PANDUAN BELAJAR \& PENGUASAAN MATERI SKRIPSI}}\\[0.3cm]
+    {\Large \textbf{\color{secondaryBlue}(MASTER STUDY GUIDE) --- v2}}\\[0.2cm]
+    {\normalsize \textbf{\color{darkText}Program Studi S1 Manajemen --- Konsentrasi Manajemen Keuangan}}\\[0.1cm]
+    {\normalsize \textbf{\color{accentTeal}Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana (UKRIDA)}}\\[0.6cm]
+    \rule{\linewidth}{1.5pt}\\[0.4cm]
+\end{center}
+
+\begin{tcolorbox}[colback=lightBg, colframe=primaryBlue, arc=4pt, boxrule=1pt]
+    \textbf{\color{primaryBlue}Judul Skripsi:}\\
+    \textit{\large ``Pengaruh Portofolio Kredit Hijau (\textit{Green Financing}), \textit{Non-Performing Loan} (NPL), dan \textit{Capital Adequacy Ratio} (CAR) terhadap Profitabilitas (\textit{Return on Assets} / ROA) pada Bank KBMI 4 di Indonesia Periode 2021--2025''}
+\end{tcolorbox}
+
+\begin{tipbox}[Catatan Revisi v2]
+    Panduan ini adalah versi lengkap yang telah dicek silang kalimat demi kalimat dengan naskah skripsi lengkap (BAB 1--5). Materi mencakup:
+    (1) Rumusan masalah, tujuan, dan manfaat penelitian; 
+    (2) Tabel lengkap statistik deskriptif; 
+    (3) Matriks penelitian terdahulu (\textit{research gap}); 
+    (4) Kriteria \textit{purposive sampling} dan keterbatasan penelitian; 
+    (5) 12 Skenario simulasi pertanyaan sidang dan kunci jawaban; 
+    (6) Penjelasan ekonometrika data panel dan uji asumsi klasik; 
+    (7) \textit{Cheat Sheet} 1 halaman siap hafalan menjelang sidang.
+\end{tipbox}
+
+\vspace{0.4cm}
+\tableofcontents
+\newpage
+
+% ------------------------------------------------------------------------------
+% BAGIAN 1
+% ------------------------------------------------------------------------------
+\section{Ringkasan Eksekutif \& Peta Konsep Penelitian}
+
+\subsection{Mengapa Penelitian Ini Dibuat?}
+Dalam paradigma perbankan konvensional masa lalu, kinerja perbankan dievaluasi secara dominan berdasarkan perolehan keuntungan finansial semata (\textit{single bottom line}). Namun, sejak disahkannya \textbf{Peraturan Otoritas Jasa Keuangan (POJK) No. 51/POJK.03/2017} tentang Penerapan Keuangan Berkelanjutan dan diluncurkannya \textbf{Taksonomi Hijau Indonesia}, industri perbankan diwajibkan bertransformasi menuju konsep \textit{Triple Bottom Line} (\textit{Profit, People, Planet}) melalui penyaluran \textbf{Kredit Hijau (\textit{Green Financing})}.
+
+Muncul perdebatan teoretis dan empiris:
+\begin{itemize}
+    \item \textit{Apakah penyaluran kredit hijau membebani bank karena tingginya biaya kepatuhan (compliance cost) dan audit lingkungan?}
+    \item \textit{Ataukah kredit hijau justru meningkatkan laba bank melalui reputasi unggul, akses pendanaan murah (green bonds), dan kualitas debitur yang lebih disiplin?}
+    \item \textit{Bagaimana pengaruhnya jika dikombinasikan dengan indikator kesehatan internal perbankan, yaitu risiko kredit (NPL) dan ketahanan modal (CAR)?}
+\end{itemize}
+
+\subsection{Peta Hubungan Variabel Penelitian}
+Model penelitian dirancang untuk menganalisis pengaruh parsial ($H_1, H_2, H_3$) dan simultan ($H_4$) terhadap profitabilitas ($Y$):
+
+\begin{center}
+\begin{tikzpicture}[
+    box/.style={rectangle, draw=primaryBlue, fill=lightBg, rounded corners=3pt, thick, text width=5.2cm, minimum height=1.3cm, align=center, font=\small},
+    depbox/.style={rectangle, draw=successGreen, fill=tableHeaderBg, rounded corners=3pt, very thick, text width=4.6cm, minimum height=2.8cm, align=center, font=\small},
+    arrow/.style={-{Stealth[scale=1.1]}, thick, color=secondaryBlue}
+]
+    % Nodes
+    \node[box] (gf) at (0, 3) {\textbf{Green Financing ($X_1$)}\\ \footnotesize Porsi Kredit Hijau / Total Kredit};
+    \node[box] (npl) at (0, 1.2) {\textbf{Non-Performing Loan ($X_2$)}\\ \footnotesize Kredit Bermasalah / Total Kredit};
+    \node[box] (car) at (0, -0.6) {\textbf{Capital Adequacy Ratio ($X_3$)}\\ \footnotesize Modal Bank / ATMR};
+    
+    \node[depbox] (roa) at (8, 1.2) {\textbf{\color{primaryBlue}Profitabilitas Bank ($Y$)}\\ \textbf{\color{secondaryBlue}Return on Assets (ROA)}\\ \vspace{0.2cm} \footnotesize $\text{ROA} = \frac{\text{Laba Sblm Pajak}}{\text{Aset Rata-rata}} \times 100\%$};
+
+    % Arrows & Labels
+    \draw[arrow] (gf.east) -- node[above, sloped, font=\footnotesize\bfseries, text=successGreen] {$(+)$ $H_1$ ($\beta=+0{,}042$)} (roa.north west);
+    \draw[arrow] (npl.east) -- node[above, font=\footnotesize\bfseries, text=dangerRed] {$(-)$ $H_2$ ($\beta=-0{,}385$)} (roa.west);
+    \draw[arrow] (car.east) -- node[below, sloped, font=\footnotesize\bfseries, text=successGreen] {$(+)$ $H_3$ ($\beta=+0{,}074$)} (roa.south west);
+
+    % Fit Simultan
+    \node[draw=accentTeal, dashed, rounded corners=4pt, fit=(gf) (npl) (car), inner sep=6pt, label=below:{\footnotesize\bfseries\color{accentTeal}Pengaruh Simultan ($H_4$): $F=32{,}450$; $p=0{,}0000$; $\text{Adj. } R^2 = 70{,}2\%$}] (simul) {};
+\end{tikzpicture}
+\end{center}
+
+% ------------------------------------------------------------------------------
+% BAGIAN 2
+% ------------------------------------------------------------------------------
+\section{Rumusan Masalah, Tujuan \& Manfaat Penelitian}
+
+\subsection{Perumusan Masalah (4 Pertanyaan Riset)}
+\begin{enumerate}
+    \item Apakah Portofolio Kredit Hijau (\textit{Green Financing}) berpengaruh terhadap Profitabilitas (\textit{Return on Assets}) pada Bank KBMI 4 di Indonesia periode 2021--2025?
+    \item Apakah \textit{Non-Performing Loan} (NPL) berpengaruh terhadap Profitabilitas (\textit{Return on Assets}) pada Bank KBMI 4 di Indonesia periode 2021--2025?
+    \item Apakah \textit{Capital Adequacy Ratio} (CAR) berpengaruh terhadap Profitabilitas (\textit{Return on Assets}) pada Bank KBMI 4 di Indonesia periode 2021--2025?
+    \item Apakah Portofolio Kredit Hijau (\textit{Green Financing}), \textit{Non-Performing Loan} (NPL), dan \textit{Capital Adequacy Ratio} (CAR) secara bersama-sama (simultan) berpengaruh terhadap Profitabilitas (\textit{Return on Assets}) pada Bank KBMI 4 di Indonesia periode 2021--2025?
+\end{enumerate}
+
+\subsection{Tujuan Penelitian}
+Sejajar secara 1:1 dengan rumusan masalah di atas, yaitu untuk mengetahui dan menganalisis pengaruh \textit{Green Financing}, NPL, dan CAR baik secara parsial maupun simultan terhadap ROA Bank KBMI 4 periode 2021--2025.
+
+\subsection{Manfaat Penelitian}
+\begin{itemize}
+    \item \textbf{Aspek Teoretis:} Memberikan bukti empiris penerapan \textit{Stakeholder Theory}, \textit{Legitimacy Theory}, dan Teori Intermediasi Finansial dalam konteks keuangan berkelanjutan perbankan Indonesia serta memperkaya literatur manajemen keuangan.
+    \item \textbf{Aspek Praktis:}
+    \begin{itemize}
+        \item \textit{Bagi Manajemen Bank KBMI 4:} Masukan strategis dalam mengoptimalkan alokasi portofolio pembiayaan hijau yang menguntungkan.
+        \item \textit{Bagi Regulator (OJK \& Bank Indonesia):} Bahan evaluasi efektivitas regulasi POJK 51/2017 dan perancangan insentif makroprudensial hijau.
+        \item \textit{Bagi Investor \& Publik:} Dasar penilaian fundamental perbankan berbasis integrasi kinerja ESG.
+    \end{itemize}
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+% BAGIAN 3
+% ------------------------------------------------------------------------------
+\section{Kamus Lengkap Istilah \& Konsep Dasar}
+
+\subsection{Lembaga \& Klasifikasi Perbankan}
+\begin{itemize}
+    \item \textbf{KBMI (Kelompok Bank Berdasarkan Modal Inti):} Sistem pengelompokan bank umum di Indonesia berdasarkan besaran \textbf{Modal Inti} (\textit{Tier 1 Capital}) sesuai \textbf{POJK No. 12/POJK.03/2021}, menggantikan klasifikasi lama BUKU.
+    \begin{itemize}
+        \item \textbf{KBMI 1:} Modal Inti sampai dengan Rp 6 Triliun.
+        \item \textbf{KBMI 2:} Modal Inti $>$ Rp 6 Triliun s.d. Rp 14 Triliun.
+        \item \textbf{KBMI 3:} Modal Inti $>$ Rp 14 Triliun s.d. Rp 70 Triliun.
+        \item \textbf{KBMI 4:} Modal Inti \textbf{$>$ Rp 70 Triliun} (Bank Raksasa: \textbf{BBRI, BMRI, BBCA, BBNI}).
+    \end{itemize}
+    \item \textbf{Otoritas Jasa Keuangan (OJK):} Lembaga independen regulator dan pengawas sektor perbankan, pasar modal, dan IKNB.
+    \item \textbf{Bank Indonesia (BI):} Bank sentral pengatur kebijakan moneter, inflasi, kurs rupiah, dan suku bunga acuan (\textit{BI-Rate}).
+    \item \textbf{Bursa Efek Indonesia (BEI / IDX):} Pasar modal resmi tempat saham emiten bank diperdagangkan.
+\end{itemize}
+
+\subsection{Istilah Operasional, Risiko, \& Akuntansi Bank}
+\begin{itemize}
+    \item \textbf{Fungsi Intermediasi (\textit{Financial Intermediation}):} Fungsi fundamental bank dalam menghimpun dana masyarakat (simpanan/deposito) dan menyalurkannya kembali sebagai kredit produktif.
+    \item \textbf{ATMR (Aktiva Tertimbang Menurut Risiko):} Total nilai aset bank yang telah dikalikan dengan bobot risiko masing-masing (misal: kas berbobot risiko 0\%, KPR beragunan 35\%, kredit korporasi tanpa agunan 100\%).
+    \item \textbf{CKPN (Cadangan Kerugian Penurunan Nilai):} Alokasi pencadangan laba yang wajib dibentuk bank untuk menutup potensi kerugian gagal bayar debitur (PSAK 71 / IFRS 9). Peningkatan NPL mewajibkan penambahan beban CKPN, yang secara langsung memotong laba bersih.
+    \item \textbf{Kolektibilitas Kredit (Kol 1 s.d. Kol 5):}
+    \begin{itemize}
+        \item \textit{Kol 1 (Lancar):} Pembayaran tepat waktu.
+        \item \textit{Kol 2 (Dalam Perhatian Khusus):} Menunggak 1--90 hari.
+        \item \textit{Kol 3 (Kurang Lancar):} Menunggak 91--120 hari \textit{[Dihitung NPL]}.
+        \item \textit{Kol 4 (Diragukan):} Menunggak 121--180 hari \textit{[Dihitung NPL]}.
+        \item \textit{Kol 5 (Macet):} Menunggak $>$ 180 hari \textit{[Dihitung NPL]}.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Istilah Keuangan Berkelanjutan \& Ekonometrika}
+\begin{itemize}
+    \item \textbf{ESG (\textit{Environmental, Social, and Governance}):} Tiga pilar non-finansial standar evaluasi keberlanjutan korporasi global.
+    \item \textbf{KUBL (Kegiatan Usaha Berwawasan Lingkungan):} Sektor usaha ramah lingkungan yang memenuhi kriteria Taksonomi Hijau OJK (energi terbarukan, transportasi listrik, daur ulang limbah, pertanian ramah lingkungan).
+    \item \textbf{Green Bonds:} Surat utang obligasi yang seluruh perolehan dananya dikhususkan untuk membiayai proyek berwawasan lingkungan dengan kupon relatif lebih kompetitif.
+    \item \textbf{p-value (Nilai Probabilitas):} Tingkat peluang kesalahan statistik. Pengaruh dinyatakan signifikan jika $p\text{-value} < 0{,}05$ (taraf signifikansi $\alpha = 5\%$).
+    \item \textbf{Adjusted R-Squared ($R^2$):} Koefisien determinasi terkoreksi yang menunjukkan proporsi variasi variabel dependen yang mampu dijelaskan oleh kombinasi variabel independen dalam model.
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+% BAGIAN 4
+% ------------------------------------------------------------------------------
+\section{Bedah Variabel Penelitian: Rumus, Logika, \& Standar OJK}
+
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\caption{Operasionalisasi Variabel Penelitian}
+\begin{tabularx}{\textwidth}{l p{3.2cm} X c c}
+\toprule
+\rowcolor{tableHeaderBg}
+\textbf{Variabel} & \textbf{Definisi Konseptual} & \textbf{Indikator / Rumus Matematis} & \textbf{Standar OJK} & \textbf{Mean Skripsi} \\
+\midrule
+\textbf{ROA ($Y$)} & Efisiensi manajemen menghasilkan laba dari total aset. & $\displaystyle \text{ROA} = \frac{\text{Laba Sebelum Pajak}}{\text{Total Aset Rata-rata}} \times 100\%$ & $\ge 1{,}5\%$ & \textbf{3,18\%} \\
+\midrule
+\textbf{GF ($X_1$)} & Porsi kredit ramah lingkungan (KUBL) terhadap total portofolio. & $\displaystyle \text{GF} = \frac{\text{Kredit Hijau}}{\text{Total Kredit Disalurkan}} \times 100\%$ & POJK 51/2017 & \textbf{23,85\%} \\
+\midrule
+\textbf{NPL ($X_2$)} & Tingkat risiko kredit macet bermasalah (Kol 3, 4, 5). & $\displaystyle \text{NPL} = \frac{\text{Kredit Bermasalah (Kol 3+4+5)}}{\text{Total Kredit Disalurkan}} \times 100\%$ & $\le 5{,}0\%$ & \textbf{2,42\%} \\
+\midrule
+\textbf{CAR ($X_3$)} & Kecukupan modal menutup risiko aktiva tertimbang. & $\displaystyle \text{CAR} = \frac{\text{Total Modal Bank (Tier 1+2)}}{\text{ATMR}} \times 100\%$ & $\ge 8{,}0\%$ & \textbf{22,64\%} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\textbf{Sumber Data Tiap Variabel:}
+\begin{itemize}
+    \item \textbf{ROA:} Laporan Laba Rugi publikasi triwulanan / \textit{Financial Highlights} BEI.
+    \item \textbf{Green Financing:} \textit{Sustainability Report} tahunan masing-masing bank (dipublikasikan resmi).
+    \item \textbf{NPL:} Laporan Keuangan Publikasi Triwulanan / Catatan Atas Laporan Keuangan (CALK).
+    \item \textbf{CAR:} Laporan Posisi Keuangan / CALK Bagian Permodalan Bank.
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+% BAGIAN 5
+% ------------------------------------------------------------------------------
+\section{Teori-Teori Utama \& Kaitannya}
+
+\begin{enumerate}
+    \item \textbf{Stakeholder Theory (Freeman, 2010):}
+    \begin{itemize}
+        \item \textit{Premis:} Eksistensi dan profitabilitas jangka panjang perusahaan ditentukan oleh kemampuannya memuaskan ekspektasi seluruh pemangku kepentingan (\textit{stakeholders}), bukan semata-mata pemegang saham.
+        \item \textit{Kaitan di Skripsi:} Penyaluran \textit{Green Financing} memenuhi ekspektasi nasabah, regulator, dan masyarakat akan perlindungan lingkungan. Reputasi bank meningkat, kepercayaan investor ESG global menguat, dan biaya dana menurun, sehingga meningkatkan ROA.
+    \end{itemize}
+
+    \item \textbf{Legitimacy Theory (Suchman, 1995):}
+    \begin{itemize}
+        \item \textit{Premis:} Perusahaan beroperasi di bawah ``kontrak sosial'' dengan norma masyarakat. Pelanggaran terhadap norma lingkungan dapat memicu pencabutan legitimasi publik.
+        \item \textit{Kaitan di Skripsi:} Kepatuhan terhadap regulasi POJK 51/2017 dan transparansi penerbitan \textit{Sustainability Report} memberikan legitimasi sosial bagi bank. Bank terhindar dari sanksi hukum/denda OJK serta risiko litigasi lingkungan, mempermudah mobilisasi \textit{green funding}.
+    \end{itemize}
+
+    \item \textbf{Financial Intermediation Theory (Kuncoro \& Suhardjono, 2018):}
+    \begin{itemize}
+        \item \textit{Premis:} Fungsi esensial perbankan adalah mentransformasikan dana simpanan menjadi aset produktif melalui manajemen risiko yang prudent.
+        \item \textit{Kaitan di Skripsi:} NPL yang tinggi mengganggu arus kas bunga dan memicu pembebanan CKPN (merusak laba). Permodalan CAR yang kokoh menjamin ketersediaan bantalan risiko (\textit{buffer}) dan kapasitas ekspansi kredit produktif (mendorong laba).
+    \end{itemize}
+\end{enumerate}
+
+% ------------------------------------------------------------------------------
+% BAGIAN 6
+% ------------------------------------------------------------------------------
+\section{Penelitian Terdahulu \& Research Gap}
+
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{1.25}
+\caption{Matriks Penelitian Terdahulu}
+\begin{tabularx}{\textwidth}{p{3.2cm} p{2.8cm} p{2.8cm} p{2cm} X}
+\toprule
+\rowcolor{tableHeaderBg}
+\textbf{Peneliti \& Tahun} & \textbf{Judul / Topik} & \textbf{Variabel ($X \rightarrow Y$)} & \textbf{Metode} & \textbf{Hasil Utama} \\
+\midrule
+Pramono et al. (2022) & \textit{Green Banking \& Profitability} & GF, NPL, CAR $\rightarrow$ ROA & Regresi Panel & GF \& CAR positif signifikan; NPL negatif signifikan. \\
+\midrule
+Yin et al. (2021) & \textit{Green Lending \& Performance} & Green Credit, CAR $\rightarrow$ ROA & GMM Panel & Kredit hijau meningkatkan ROA lewat efisiensi \& reputasi. \\
+\midrule
+Sari \& Astuti (2023) & \textit{Green Banking \& Kinerja Bank} & GF, CAR $\rightarrow$ ROA & Regresi Berganda & GF dan CAR berpengaruh positif signifikan terhadap ROA. \\
+\midrule
+Pradita \& Syaichu (2022) & \textit{Kinerja Bank KBMI 4} & NPL, CAR, BOPO $\rightarrow$ ROA & Regresi Panel & NPL negatif signifikan; CAR positif signifikan. \\
+\midrule
+Wulandari \& Rahardjo (2022) & \textit{GF \& Manajemen Risiko} & GF, NPL, CAR $\rightarrow$ ROA & Regresi Panel & GF \& CAR positif signifikan; NPL negatif signifikan. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\textbf{Posisi \& Kontribusi Skripsi Ini (\textit{Research Gap}):}
+\begin{itemize}
+    \item \textbf{Konsistensi Empiris:} Hasil skripsi ini memperkuat konsistensi temuan literatur sebelumnya (\textit{external validity}).
+    \item \textbf{Konteks Spesifik KBMI 4 \& Periode 2021--2025:} Memfokuskan pengujian pada 4 bank sistemik terbesar di bawah rezim POJK 12/2021 dalam periode transisi krusial pasca-pandemi COVID-19 dan implementasi Taksonomi Hijau Indonesia.
+    \item \textbf{Integrasi Model Terpadu:} Mengintegrasikan strategi inovasi hijau (GF), risiko aset (NPL), dan permodalan (CAR) secara serentak dalam satu model regresi data panel.
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+% BAGIAN 7
+% ------------------------------------------------------------------------------
+\section{Logika Hubungan Kausalitas \& Pembuktian Hipotesis}
+
+\begin{enumerate}
+    \item \textbf{Green Financing terhadap ROA ($H_1$: Positif Signifikan):}
+    \begin{itemize}
+        \item \textit{Mekanisme:} Debitur proyek ramah lingkungan memiliki kepatuhan tata kelola tinggi. Peningkatan portofolio hijau memicu penerbitan obligasi hijau berkupon rendah, menekan biaya dana (*Cost of Funds*), dan mendongkrak margin laba bersih.
+        \item \textit{Hasil Empiris:} $\beta_1 = +0{,}042$; $t\text{-statistik} = 3{,}818$; $p\text{-value} = 0{,}0003 < 0{,}05 \rightarrow$ \textbf{$H_1$ Diterima}.
+    \end{itemize}
+
+    \item \textbf{Non-Performing Loan terhadap ROA ($H_2$: Negatif Signifikan):}
+    \begin{itemize}
+        \item \textit{Mekanisme:} Kredit bermasalah memicu hilangnya penerimaan bunga sekaligus mewajibkan pembentukan beban pencadangan CKPN yang mendebet laba secara langsung (\textit{double hit effect}).
+        \item \textit{Hasil Empiris:} $\beta_2 = -0{,}385$; $t\text{-statistik} = -5{,}066$; $p\text{-value} = 0{,}0000 < 0{,}05 \rightarrow$ \textbf{$H_2$ Diterima}.
+    \end{itemize}
+
+    \item \textbf{Capital Adequacy Ratio terhadap ROA ($H_3$: Positif Signifikan):}
+    \begin{itemize}
+        \item \textit{Mekanisme:} Modal kuat berfungsi ganda: sebagai penyerap kerugian tidak terduga (\textit{loss absorber}) dan penyedia fleksibilitas pembiayaan ekspansi aktiva produktif berimbal hasil tinggi.
+        \item \textit{Hasil Empiris:} $\beta_3 = +0{,}074$; $t\text{-statistik} = 4{,}625$; $p\text{-value} = 0{,}0000 < 0{,}05 \rightarrow$ \textbf{$H_3$ Diterima}.
+    \end{itemize}
+
+    \item \textbf{Pengujian Simultan ($H_4$: Simultan Signifikan):}
+    \begin{itemize}
+        \item \textit{Mekanisme:} Profitabilitas optimal tercipta dari sinergi ekspansi pembiayaan hijau, disiplin mitigasi kredit macet, dan kekuatan modal.
+        \item \textit{Hasil Empiris:} $F\text{-hitung} = 32{,}450$; $p\text{-value} = 0{,}0000 < 0{,}05$; $\text{Adjusted } R^2 = 0{,}702 \rightarrow$ \textbf{$H_4$ Diterima}.
+    \end{itemize}
+\end{enumerate}
+
+% ------------------------------------------------------------------------------
+% BAGIAN 8
+% ------------------------------------------------------------------------------
+\section{Metodologi Penelitian, Sampel, \& Ekonometrika Data Panel}
+
+\subsection{Kriteria Purposive Sampling}
+Dari populasi bank umum di BEI, sampel dipilih berdasarkan 3 kriteria ketat:
+\begin{enumerate}
+    \item Bank masuk dalam kelompok **KBMI 4** (Modal Inti $> \text{Rp } 70\text{ Triliun}$) berturut-turut periode 2021--2025.
+    \item Mempublikasikan *Sustainability Report* dan *Annual Report* lengkap triwulanan/tahunan selama 2021--2025.
+    \item Membukukan laba bersih positif sepanjang periode observasi.
+\end{enumerate}
+\textbf{Sampel Terpilih:} 4 Bank (\textbf{BBRI, BMRI, BBCA, BBNI}) $\times$ 20 Triwulan ($T=20$) = \textbf{80 Titik Data Observasi Panel}.
+
+\subsection{Persamaan Model Regresi Panel}
+\begin{equation}
+    \text{ROA}_{it} = \alpha + \beta_1 \text{GF}_{it} + \beta_2 \text{NPL}_{it} + \beta_3 \text{CAR}_{it} + \varepsilon_{it}
+\end{equation}
+
+\subsection{Uji Pemilihan Model Estimasi}
+\begin{itemize}
+    \item \textbf{Uji Chow (CEM vs FEM):} Probabilitas Cross-section $F = 0{,}0000 < 0{,}05 \rightarrow$ Tolak $H_0 \rightarrow$ **Pilih FEM**.
+    \item \textbf{Uji Hausman (FEM vs REM):} Probabilitas Cross-section Random $= 0{,}0026 < 0{,}05 \rightarrow$ Tolak $H_0 \rightarrow$ **Pilih FEM (Final)**.
+\end{itemize}
+
+\subsection{Uji Asumsi Klasik}
+\begin{itemize}
+    \item \textbf{Uji Normalitas Residual (Jarque-Bera):} $p\text{-value} = 0{,}398 > 0{,}05 \rightarrow$ Residual berdistribusi normal (\textbf{Lolos}).
+    \item \textbf{Uji Multikolinearitas (VIF):} $\text{VIF}_{\text{GF}} = 1{,}28$; $\text{VIF}_{\text{NPL}} = 1{,}42$; $\text{VIF}_{\text{CAR}} = 1{,}35$ (semua $< 10$) $\rightarrow$ Bebas multikolinearitas (\textbf{Lolos}).
+    \item \textbf{Uji Heteroskedastisitas (Uji Glejser):} Nilai signifikansi seluruh variabel $> 0{,}05 \rightarrow$ Homoskedastisitas terpenuhi (\textbf{Lolos}).
+    \item \textbf{Uji Autokorelasi (Durbin-Watson):} $DW = 1{,}942$, berada dalam rentang $d_U (1{,}74) < DW < 4 - d_U (2{,}26) \rightarrow$ Bebas autokorelasi (\textbf{Lolos}).
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+% BAGIAN 9
+% ------------------------------------------------------------------------------
+\section{Hasil Analisis Data \& Interpretasi Angka Output}
+
+\subsection{Statistik Deskriptif ($N = 80$)}
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{1.2}
+\caption{Hasil Analisis Statistik Deskriptif}
+\begin{tabular}{lcccc}
+\toprule
+\rowcolor{tableHeaderBg}
+\textbf{Ukuran Statistik} & \textbf{Green Financing (\%)} & \textbf{NPL Gross (\%)} & \textbf{CAR (\%)} & \textbf{ROA (\%)} \\
+\midrule
+\textbf{Mean (Rata-rata)} & 23,85 & 2,42 & 22,64 & 3,18 \\
+\textbf{Median (Nilai Tengah)} & 23,40 & 2,35 & 22,15 & 3,12 \\
+\textbf{Maximum (Tertinggi)} & 31,50 & 3,85 & 29,40 & 4,25 \\
+\textbf{Minimum (Terendah)} & 16,20 & 1,45 & 17,80 & 1,95 \\
+\textbf{Std. Deviation} & 3,74 & 0,58 & 2,86 & 0,54 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Hasil Regresi Data Panel (Fixed Effect Model)}
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{1.25}
+\caption{Hasil Estimasi Fixed Effect Model}
+\begin{tabular}{lccccc}
+\toprule
+\rowcolor{tableHeaderBg}
+\textbf{Variabel} & \textbf{Koefisien ($\beta$)} & \textbf{Std. Error} & \textbf{t-Statistik} & \textbf{p-value} & \textbf{Kesimpulan Hipotesis} \\
+\midrule
+\textbf{Konstanta ($\alpha$)} & 1,485 & 0,312 & 4,760 & 0,0000 & Signifikan \\
+\textbf{Green Financing ($X_1$)} & +0,042 & 0,011 & 3,818 & 0,0003 & \textbf{$H_1$ Diterima (+ Signifikan)} \\
+\textbf{NPL Gross ($X_2$)} & -0,385 & 0,076 & -5,066 & 0,0000 & \textbf{$H_2$ Diterima (- Signifikan)} \\
+\textbf{CAR ($X_3$)} & +0,074 & 0,016 & 4,625 & 0,0000 & \textbf{$H_3$ Diterima (+ Signifikan)} \\
+\midrule
+\multicolumn{6}{l}{\textbf{Uji F-Simultan:} $F = 32{,}450$ \quad ($p\text{-value} = 0{,}0000 < 0{,}05$) $\rightarrow$ \textbf{$H_4$ Diterima (Simultan Signifikan)}} \\
+\multicolumn{6}{l}{\textbf{Koefisien Determinasi:} $\text{Adjusted } R^2 = 0{,}702$ ($70{,}2\%$ variasi ROA dijelaskan oleh model)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Interpretasi Koefisien (Bahasa Ujian Sidang)}
+\begin{itemize}
+    \item \textbf{Konstanta ($1{,}485$):} Baseline ROA bank KBMI 4 bernilai 1,485\% jika variabel GF, NPL, dan CAR diasumsikan bernilai nol.
+    \item \textbf{Koefisien GF ($+0{,}042$):} Setiap kenaikan 1\% porsi kredit hijau diproyeksikan mendongkrak ROA sebesar 0,042\%, *ceteris paribus*.
+    \item \textbf{Koefisien NPL ($-0{,}385$):} Setiap kenaikan 1\% rasio NPL menggerus ROA sebesar 0,385\%, *ceteris paribus* (variabel dengan sensitivitas dampak terbesar).
+    \item \textbf{Koefisien CAR ($+0{,}074$):} Setiap kenaikan 1\% rasio kecukupan modal meningkatkan ROA sebesar 0,074\%, *ceteris paribus*.
+    \item \textbf{Adjusted $R^2$ ($70{,}2\%$):} Sebesar 70,2\% perubahan ROA ditentukan oleh ketiga variabel bebas tersebut, sedangkan sisanya 29,8\% dipengaruhi faktor di luar model (seperti BOPO, LDR, BI-Rate, dan inflasi).
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+% BAGIAN 10
+% ------------------------------------------------------------------------------
+\section{Konteks Makroekonomi \& Perbankan Indonesia (2021--2025)}
+
+\begin{itemize}
+    \item \textbf{2021 (Fase Pemulihan Pandemi COVID-19):} Penerapan relaksasi restrukturisasi kredit perbankan oleh OJK (POJK 11/2020). Bank KBMI 4 mulai menyusun RAKB dan laporan keberlanjutan secara terstruktur.
+    \item \textbf{2022 (Taksonomi Hijau 1.0 \& Pengetatan Moneter Global):} Peluncuran Taksonomi Hijau Indonesia oleh OJK. Kenaikan suku bunga acuan BI-Rate untuk meredam inflasi global menguji marjin perbankan.
+    \item \textbf{2023 (Normalisasi Kebijakan \& Pencabutan Relaksasi Kredit):} Berakhirnya masa relaksasi restrukturisasi OJK. Bank KBMI 4 membuktikan ketahanan asetnya karena telah membentuk *coverage ratio* CKPN $>$ 200\%.
+    \item \textbf{2024--2025 (Akselerasi Pembiayaan Hijau \& Transisi Energi):} Lonjakan kredit sektor energi terbarukan, transportasi listrik, dan penerbitan *green bonds* korporasi, memvalidasi pembiayaan hijau sebagai mesin pertumbuhan laba baru.
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+% BAGIAN 11
+% ------------------------------------------------------------------------------
+\section{Kesimpulan, Keterbatasan, \& Saran}
+
+\subsection{Kesimpulan}
+\begin{enumerate}
+    \item Portofolio Kredit Hijau (\textit{Green Financing}) berpengaruh positif dan signifikan terhadap ROA Bank KBMI 4 periode 2021--2025.
+    \item \textit{Non-Performing Loan} (NPL) berpengaruh negatif dan signifikan terhadap ROA Bank KBMI 4 periode 2021--2025.
+    \item \textit{Capital Adequacy Ratio} (CAR) berpengaruh positif dan signifikan terhadap ROA Bank KBMI 4 periode 2021--2025.
+    \item \textit{Green Financing}, NPL, dan CAR secara bersama-sama berpengaruh simultan signifikan terhadap ROA dengan $\text{Adjusted } R^2 = 70{,}2\%$.
+\end{enumerate}
+
+\subsection{Keterbatasan Penelitian (Wajib Dihafal)}
+\begin{enumerate}
+    \item Cakupan sampel terbatas pada 4 entitas Bank KBMI 4, sehingga belum tentu mencerminkan dinamika bank berskala modal lebih kecil (KBMI 1--3).
+    \item Hanya menguji 3 variabel fundamental internal tanpa melibatkan variabel makroekonomi (inflasi, kurs, suku bunga acuan) atau rasio operasional internal lain (BOPO, LDR).
+    \item Periode observasi 5 tahun (2021--2025) merupakan fase inisiasi awal adaptasi Taksonomi Hijau Indonesia.
+\end{enumerate}
+
+\subsection{Saran Kebijakan \& Praktis}
+\begin{itemize}
+    \item \textbf{Bagi Bank:} Memperluas ekspansi kredit KUBL pada sektor EBT seraya mempertahankan NPL di bawah 3\% dan CAR di atas 20\%.
+    \item \textbf{Bagi Regulator (OJK \& BI):} Memberikan insentif makroprudensial berupa pelonggaran bobot risiko ATMR untuk pembiayaan hijau.
+    \item \textbf{Bagi Peneliti Selanjutnya:} Memperluas sampel ke seluruh bank di BEI serta menguji variabel mediasi/moderasi seperti *Bank Size* dan *Good Corporate Governance*.
+\end{itemize}
+
+\newpage
+% ------------------------------------------------------------------------------
+% BAGIAN 12
+% ------------------------------------------------------------------------------
+\section{Simulasi Pertanyaan Sidang \& Kunci Jawaban Juara}
+
+\begin{qnabox}{Pertanyaan 1: Mengapa Memilih Bank KBMI 4 Sebagai Objek Penelitian?}
+\textbf{Jawaban Model:}\\
+``Terima kasih atas pertanyaannya, Bapak/Ibu Penguji. Bank KBMI 4 (BRI, Mandiri, BCA, dan BNI) dipilih karena menguasai \textbf{lebih dari 50\% total aset perbankan nasional}, sehingga kebijakan kreditnya berdampak sistemik terhadap perekonomian dan percepatan transformasi hijau di Indonesia. Selain itu, bank KBMI 4 merupakan *pioneer* yang menerbitkan *Sustainability Report* secara lengkap dan konsisten sesuai POJK 51/2017 selama periode 2021--2025.''
+\end{qnabox}
+
+\begin{qnabox}{Pertanyaan 2: Mengapa Menggunakan Proksi ROA dan Bukan ROE atau NIM?}
+\textbf{Jawaban Model:}\\
+``ROA mengukur efisiensi manajemen dalam mendayagunakan \textbf{seluruh aktiva aset} yang dikelolanya untuk menghasilkan laba sebelum pajak, tanpa terdistorsi oleh struktur *leverage* utang. OJK dan Bank Indonesia juga menetapkan ROA sebagai indikator utama evaluasi kesehatan bank. Sedangkan ROE sangat dipengaruhi oleh proporsi utang, dan NIM hanya mencerminkan pendapatan bunga tanpa memperhitungkan beban operasional dan beban pencadangan CKPN.''
+\end{qnabox}
+
+\begin{qnabox}{Pertanyaan 3: Mengapa Green Financing Terbukti Positif Terhadap ROA?}
+\textbf{Jawaban Model:}\\
+``Meskipun terdapat biaya kepatuhan di awal, pada bank KBMI 4 manfaat jangka panjangnya jauh melampaui biaya tersebut karena tiga faktor: (1) \textbf{Reputasi \& Green Funding:} Bank mampu menerbitkan *Green Bonds* dengan kupon murah yang memangkas biaya dana (*Cost of Funds*); (2) \textbf{Kualitas Debitur KUBL:} Perusahaan hijau umumnya memiliki tata kelola unggul sehingga risiko gagal bayar rendah; dan (3) \textbf{Diversifikasi Pendapatan:} Membuka pangsa pasar baru dalam transisi energi, sejalan dengan *Stakeholder* dan *Legitimacy Theory*.''
+\end{qnabox}
+
+\begin{qnabox}{Pertanyaan 4: Mengapa Fixed Effect Model (FEM) Terpilih?}
+\textbf{Jawaban Model:}\\
+``Penetapan FEM didasarkan pada dua uji formal: (1) \textbf{Uji Chow} ($p = 0{,}0000 < 0{,}05$) menolak CEM dan memilih FEM; (2) \textbf{Uji Hausman} ($p = 0{,}0026 < 0{,}05$) menolak REM dan menetapkan FEM. Hal ini membuktikan adanya korelasi antara komponen galat spesifik bank dengan variabel independen, sehingga FEM menghasilkan estimasi yang paling konsisten dan tidak bias.''
+\end{qnabox}
+
+\begin{qnabox}{Pertanyaan 5: Bagaimana Mekanisme Koefisien NPL Negatif (-0,385)?}
+\textbf{Jawaban Model:}\\
+``Koefisien $\beta_2 = -0{,}385$ bermakna kenaikan 1\% NPL menurunkan ROA sebesar 0,385\% (*ceteris paribus*). Penurunan terjadi lewat efek ganda (*double hit*): kredit macet menghentikan penerimaan pendapatan bunga, dan bank wajib mendebet laba berjalan untuk membentuk CKPN (PSAK 71), yang langsung memangkas laba sebelum pajak.''
+\end{qnabox}
+
+\begin{qnabox}{Pertanyaan 6: Apakah Sampel 4 Bank / 80 Observasi Memenuhi Syarat Statistik?}
+\textbf{Jawaban Model:}\\
+``Sangat memenuhi, Bapak/Ibu. Berdasarkan *rule of thumb* ekonometrika, ukuran sampel minimal adalah 10--15 kali jumlah variabel independen (untuk 3 variabel, minimal 30--45 observasi). Dengan struktur panel 4 bank selama 20 triwulan ($N=4, T=20$), diperoleh \textbf{80 observasi panel} yang memberikan derajat kebebasan (*degrees of freedom*) yang sangat kuat.''
+\end{qnabox}
+
+\begin{qnabox}{Pertanyaan 7: Apa Makna Adjusted R-Squared Sebesar 70,2\%?}
+\textbf{Jawaban Model:}\\
+``Nilai $\text{Adjusted } R^2 = 0{,}702$ menunjukkan bahwa 70,2\% variasi profitabilitas (ROA) pada Bank KBMI 4 mampu diterangkan oleh portofolio Green Financing, NPL, dan CAR secara serentak. Sisanya 29,8\% dipengaruhi oleh variabel di luar model penelitian, seperti efisiensi BOPO, likuiditas LDR, serta indikator makroekonomi (inflasi, BI-Rate).''
+\end{qnabox}
+
+\begin{qnabox}{Pertanyaan 8: Apa Rekomendasi Konkret Bagi Regulator OJK \& BI?}
+\textbf{Jawaban Model:}\\
+``Regulator disarankan memberikan insentif makroprudensial berupa pelonggaran bobot risiko ATMR pada kredit berlabel hijau agar rasio CAR bank tidak terbebani saat melakukan ekspansi portofolio hijau, serta memperbarui petunjuk teknis Taksonomi Hijau untuk memperluas kepastian hukum bagi seluruh perbankan.''
+\end{qnabox}
+
+\begin{qnabox}{Pertanyaan 9: Mengapa Menggunakan Teknik Purposive Sampling?}
+\textbf{Jawaban Model:}\\
+``Purposive sampling digunakan karena penelitian ini memerlukan bank dengan kriteria spesifik: masuk kategori KBMI 4 berturut-turut 2021--2025, mempublikasikan Sustainability Report lengkap (karena data Green Financing bersumber dari laporan ini), dan membukukan laba positif agar kalkulasi ROA terhindar dari bias distorsi kerugian ekstrem.''
+\end{qnabox}
+
+\begin{qnabox}{Pertanyaan 10: Apa Keterbatasan Utama Penelitian Anda?}
+\textbf{Jawaban Model:}\\
+``Keterbatasan utama meliputi: (1) Sampel terbatas pada 4 bank KBMI 4, (2) Model belum mengontrol variabel makroekonomi (inflasi, kurs, BI-Rate) dan rasio BOPO/LDR, serta (3) Periode 2021--2025 merupakan fase awal adaptasi Taksonomi Hijau Indonesia.''
+\end{qnabox}
+
+\begin{qnabox}{Pertanyaan 11: Apa Kebaruan / Novelty Penelitian Ini Dibanding Studi Terdahulu?}
+\textbf{Jawaban Model:}\\
+``Kebaruan terletak pada fokus spesifik pengujian pada kategori **KBMI 4** pasca diterbitkannya POJK 12/2021 dalam rentang waktu **2021--2025**, yang merefleksikan fase pemulihan pasca pandemi sekaligus fase awal implementasi Taksonomi Hijau Indonesia, dengan mengintegrasikan variabel Green Financing, NPL, dan CAR secara serentak.''
+\end{qnabox}
+
+\begin{qnabox}{Pertanyaan 12: Mengapa Menggunakan Data Triwulanan dan Bukan Tahunan / Bulanan?}
+\textbf{Jawaban Model:}\\
+``Data triwulanan dipilih karena data bulanan untuk rasio CAR dan NPL tidak dipublikasikan secara lengkap, sedangkan data tahunan hanya menghasilkan 20 observasi ($4 \times 5$) yang terlalu sedikit untuk regresi panel. Data triwulanan menghasilkan **80 observasi panel** yang memadai secara statistik dan sesuai dengan siklus laporan keuangan publikasi resmi OJK.''
+\end{qnabox}
+
+\newpage
+% ------------------------------------------------------------------------------
+% BAGIAN 13
+% ------------------------------------------------------------------------------
+\section{Cheat Sheet 1 Halaman (Hafalan Menjelang Masuk Sidang)}
+
+\begin{cheatsheetbox}[KARTU KILAT SKRIPSI --- S1 MANAJEMEN KEUANGAN UKRIDA]
+\small
+\begin{tabularx}{\textwidth}{l X}
+\toprule
+\rowcolor{tableHeaderBg}
+\multicolumn{2}{c}{\textbf{\large 1. IDENTITAS PENELITIAN}} \\
+\midrule
+\textbf{Judul} & Pengaruh Green Financing, NPL, dan CAR terhadap ROA pada Bank KBMI 4 (2021--2025) \\
+\textbf{Sampel} & 4 Bank KBMI 4 (BBRI, BMRI, BBCA, BBNI) | $N = 4$ \\
+\textbf{Periode} & 2021--2025 (20 Triwulan / $T = 20$) $\rightarrow$ \textbf{Total Observasi: 80 Panel Data} \\
+\textbf{Metode Sampling} & \textit{Purposive Sampling} (Kriteria: KBMI 4, Sustainability Report Lengkap, Laba Positif) \\
+\textbf{Variabel} & Dependen: ROA ($Y$) | Independen: Green Financing ($X_1$), NPL ($X_2$), CAR ($X_3$) \\
+\midrule
+\rowcolor{tableHeaderBg}
+\multicolumn{2}{c}{\textbf{\large 2. PERSAMAAN \& HASIL REGRESI (FIXED EFFECT MODEL)}} \\
+\midrule
+\multicolumn{2}{c}{\large $\mathbf{\text{ROA}_{it} = 1{,}485 + 0{,}042(\text{GF}_{it}) - 0{,}385(\text{NPL}_{it}) + 0{,}074(\text{CAR}_{it})}$} \\[0.2cm]
+\textbf{$H_1$ (Green Financing $\rightarrow$ ROA)} & \textbf{Diterima} [$\beta = +0{,}042$ | $t = 3{,}818$ | $p = 0{,}0003 < 0{,}05$] $\rightarrow$ \textbf{Positif Signifikan} \\
+\textbf{$H_2$ (NPL $\rightarrow$ ROA)} & \textbf{Diterima} [$\beta = -0{,}385$ | $t = -5{,}066$ | $p = 0{,}0000 < 0{,}05$] $\rightarrow$ \textbf{Negatif Signifikan} \\
+\textbf{$H_3$ (CAR $\rightarrow$ ROA)} & \textbf{Diterima} [$\beta = +0{,}074$ | $t = 4{,}625$ | $p = 0{,}0000 < 0{,}05$] $\rightarrow$ \textbf{Positif Signifikan} \\
+\textbf{$H_4$ (Simultan GF, NPL, CAR)} & \textbf{Diterima} [$F\text{-hitung} = 32{,}450$ | $p = 0{,}0000 < 0{,}05$] $\rightarrow$ \textbf{Simultan Signifikan} \\
+\textbf{Adjusted $R^2$} & \textbf{0,702 (70,2\%)} $\rightarrow$ Model Sangat Kuat menjelaskan ROA \\
+\midrule
+\rowcolor{tableHeaderBg}
+\multicolumn{2}{c}{\textbf{\large 3. STATISTIK DESKRIPTIF \& UJI ASUMSI KLASIK}} \\
+\midrule
+\textbf{Nilai Mean (Rata-rata)} & GF = 23,85\% \quad | \quad NPL = 2,42\% \quad | \quad CAR = 22,64\% \quad | \quad ROA = 3,18\% \\
+\textbf{Uji Pemilihan Model} & Uji Chow ($p=0{,}0000$) \& Uji Hausman ($p=0{,}0026$) $\rightarrow$ \textbf{Pilih Fixed Effect Model (FEM)} \\
+\textbf{Uji Normalitas} & Jarque-Bera Prob = $0{,}398 > 0{,}05$ $\rightarrow$ \textbf{Normal (Lolos)} \\
+\textbf{Uji Multikolinearitas} & VIF GF (1,28), NPL (1,42), CAR (1,35) semua $< 10$ $\rightarrow$ \textbf{Bebas Multikolinearitas (Lolos)} \\
+\textbf{Uji Heteroskedastisitas} & Uji Glejser seluruh variabel $p > 0{,}05$ $\rightarrow$ \textbf{Homoskedastisitas (Lolos)} \\
+\textbf{Uji Autokorelasi} & Durbin-Watson $DW = 1{,}942$ ($1{,}74 < DW < 2{,}26$) $\rightarrow$ \textbf{Bebas Autokorelasi (Lolos)} \\
+\midrule
+\rowcolor{tableHeaderBg}
+\multicolumn{2}{c}{\textbf{\large 4. TEORI LANDASAN UTAMA}} \\
+\midrule
+\textbf{Stakeholder Theory} & Freeman (2010): Kepedulian lingkungan mendatangkan reputasi, loyalitas nasabah, \& dana murah. \\
+\textbf{Legitimacy Theory} & Suchman (1995): Kepatuhan regulasi hijau memberi izin sosial dan mencegah risiko hukum OJK. \\
+\textbf{Intermediation Theory} & Kuncoro \& Suhardjono (2018): Bank hidup dari intermediasi; NPL menggerus laba, CAR menopang aset. \\
+\bottomrule
+\end{tabularx}
+\end{cheatsheetbox}
+
+\vspace{0.5cm}
+\begin{center}
+    \small\color{secondaryBlue}\textbf{Semoga sukses menempuh Sidang Tugas Akhir \& meraih gelar Sarjana Manajemen (S.M.)!}
+\end{center}
+
+\end{document}

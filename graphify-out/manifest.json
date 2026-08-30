@@ -1,0 +1,32 @@
+{
+  ".vscode/settings.json": {
+    "mtime": 1787078381.1065345,
+    "seen": 1788065928.3486185,
+    "ast_hash": "011995bc02543098ff0a59f3ecb4391c",
+    "semantic_hash": "011995bc02543098ff0a59f3ecb4391c"
+  },
+  "latex/outputs/skripsi_ukrida.toc": {
+    "mtime": 1787097199.7592013,
+    "seen": 1788065928.3486185,
+    "ast_hash": "64b0d39da7f2d45a04d37bf2a34261f8",
+    "semantic_hash": "64b0d39da7f2d45a04d37bf2a34261f8"
+  },
+  "latex/panduan_belajar_skripsi_v2.toc": {
+    "mtime": 1787474764.5329297,
+    "seen": 1788065928.3486185,
+    "ast_hash": "338390ca1c358f7dbaa55d6654d64ede",
+    "semantic_hash": "338390ca1c358f7dbaa55d6654d64ede"
+  },
+  "latex/skripsi_ukrida.toc": {
+    "mtime": 1787097199.7592013,
+    "seen": 1788065928.3486185,
+    "ast_hash": "64b0d39da7f2d45a04d37bf2a34261f8",
+    "semantic_hash": "64b0d39da7f2d45a04d37bf2a34261f8"
+  },
+  "website/js/script.js": {
+    "mtime": 1787568902.5111394,
+    "seen": 1788065928.3486185,
+    "ast_hash": "aa25ecd53d5b2f778d2d868cd223b3ec",
+    "semantic_hash": "aa25ecd53d5b2f778d2d868cd223b3ec"
+  }
+}
