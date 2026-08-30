@@ -1,11 +1,11 @@
 # Graph Report - Skripsi  (2026-08-30)
 
 ## Corpus Check
-- 64 files · ~1,343,245 words
+- 63 files · ~1,348,198 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1604 nodes · 1559 edges · 96 communities (85 shown, 11 thin omitted)
+- 1611 nodes · 1569 edges · 94 communities (83 shown, 11 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
@@ -17,16 +17,18 @@
 ## Community Hubs (Navigation)
 - script.js
 - BAB V  PENUTUP ........................................................................................... 56
+- BAB 4\\[0.3cm]ANALISIS DAN PEMBAHASAN
+- Konseptualisasi Variabel Penelitian
 - (322015175)
 - Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.md
 - Bab ini terdiri dari sub bab berikut ini:
 - :
-- BAB 4\\[0.3cm]ANALISIS DAN PEMBAHASAN
+- Tahapan Analisis Data dan Uji Ekonometrika
 - PROPOSAL_SKRIPSI_LENGKAP.md
 - Source of Truth Skripsi FEB UKRIDA
 - 📊 EKONOMETRIKA DATA PANEL UNTUK PEMULA TOTAL
 - Blueprint Metodologi Fase 3
-- Tahapan Analisis Data dan Uji Ekonometrika
+- BAB 1\\[0.3cm]PENDAHULUAN
 - ANALISIS DAN PEMBAHASAN
 - 3.5. Metode Analisis Data
 - Playbook Skripsi S1 Manajemen FEB UKRIDA — Pengetahuan Lintas Topik
@@ -50,10 +52,10 @@
 - 2. Agent Roles & Detailed Work Packages
 - Struktur laporan
 - Kasus Uji Logika Form dan Pipeline
-- Konseptualisasi Variabel Penelitian
-- Methodology Blueprint — Rancangan Metodologi Penelitian Skripsi
-- BAB 1\\[0.3cm]PENDAHULUAN
 - BAB 5\\[0.3cm]PENUTUP
+- Methodology Blueprint — Rancangan Metodologi Penelitian Skripsi
+- 📊 Ringkasan 6 Fase Perbaikan yang Telah Selesai Diterapkan
+- Latar Belakang Penelitian
 - PANDUAN_BELAJAR_SKRIPSI_v2.md
 - PENDAHULUAN
 - 5.3. Saran
@@ -62,7 +64,7 @@
 - Daftar pemeriksaan
 - Audit Isi dan Metodologi
 - Search Log Skripsi — Protokol Pencarian Literatur
-- BAB 3\\[0.3cm]METODE PENELITIAN
+- Master Revision Plan: Graph of Agents (GoA) Orchestration
 - 2.1. Teori-teori
 - Matriks Literatur Skripsi
 - Register Input dan Bukti Manusia — Fase 3
@@ -73,8 +75,8 @@
 - METODE PENELITIAN
 - Tugas: Buat Website Portofolio Sederhana (HTML + CSS + JS vanilla)
 - Tugas: Percantik Website Portofolio Skripsi (iterasi 2)
-- SKRIPSI_UKRIDA_LENGKAP_PRISM.md
-- Latar Belakang Penelitian
+- SKRIPSI_ARTHUR_LENGKAP_PRISM.md
+- 1. RINGKASAN EKSEKUTIF & PETA KONSEP PENELITIAN
 - Data Dictionary & Audit Dataset Skripsi
 - Source of Truth Skripsi — Status Lengkap (Bab 1–5)
 - 06_Review_&_Audit/README.md
@@ -105,9 +107,7 @@
 - JAKARTA 2021
 - BAB II TINJAUAN PUSTAKA ............................................................................. 9
 - BAB IV ANALISIS DATA DAN PEMBAHASAN ............................................. 37
-- Populasi, Sampel, dan Teknik Pengambilan Sampel
 - sync_markdown_from_tex.py
-- 6. PENELITIAN TERDAHULU & RESEARCH GAP
 
 ## God Nodes (most connected - your core abstractions)
 1. `BAB V  PENUTUP ........................................................................................... 56` - 413 edges
@@ -117,9 +117,9 @@
 5. `Source of Truth Skripsi FEB UKRIDA` - 17 edges
 6. `6 Agustus 2026` - 17 edges
 7. `Playbook Skripsi S1 Manajemen FEB UKRIDA — Pengetahuan Lintas Topik` - 15 edges
-8. `BAB 4\\[0.3cm]ANALISIS DAN PEMBAHASAN` - 14 edges
-9. `Product Requirements Document (PRD) — Versi 2.0` - 14 edges
-10. `ABSTRAK` - 14 edges
+8. `Product Requirements Document (PRD) — Versi 2.0` - 14 edges
+9. `ABSTRAK` - 14 edges
+10. `BAB 4\\[0.3cm]ANALISIS DAN PEMBAHASAN` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -127,7 +127,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (96 total, 11 thin omitted)
+## Communities (94 total, 11 thin omitted)
 
 ### Community 0 - "script.js"
 Cohesion: 0.23
@@ -136,6 +136,14 @@ Nodes (12): animateCountUp(), handleNavbarScroll(), handleResize(), init(), init
 ### Community 1 - "BAB V  PENUTUP ........................................................................................... 56"
 Cohesion: 0.00
 Nodes (413): 01(06), 99–115., 1.1 Latar Belakang, 1.2 Perumusan Masalah, 1.3 Tujuan Penelitian, 1.4.1 Manfaat Teoritis, 1.4.2 Manfaat Praktis, 1.4 Manfaat Penelitian, 1. Convergent Validity (+405 more)
+
+### Community 2 - "BAB 4\\[0.3cm]ANALISIS DAN PEMBAHASAN"
+Cohesion: 0.05
+Nodes (37): Analisis Keunggulan Bersaing Berkelanjutan Antar-Entitas Bank KBMI 4, Analisis Sensitivitas dan Elastisitas Parsial ROA terhadap Variabel Independen, Analisis Statistik Deskriptif, Analisis Tren Kuartalan dan Profil Finansial Perbankan KBMI 4 (2021–2025), BAB 4\\[0.3cm]ANALISIS DAN PEMBAHASAN, Evaluasi Ketahanan Perbankan KBMI 4 Menghadapi Volatilitas Makroekonomi, Gambaran Umum Objek Penelitian, Hasil Estimasi Regresi Data Panel (Fixed Effect Model) (+29 more)
+
+### Community 4 - "Konseptualisasi Variabel Penelitian"
+Cohesion: 0.08
+Nodes (25): *Agency Theory, Analisis Komparatif Pembiayaan Hijau: Negara Berkembang vs Negara Maju, Analisis Kualitas Aset, Kolektibilitas, dan Implementasi PSAK 71 / IFRS 9, BAB 2\\[0.3cm]TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS, Dinamika Integrasi ESG ke dalam Penilaian Risiko Kredit Perbankan, Integrasi Risiko Iklim Fisik dan Transisi ke dalam Manajemen Risiko Perbankan, Kecukupan Modal dan *Capital Adequacy Ratio, Konseptualisasi Variabel Penelitian (+17 more)
 
 ### Community 5 - "(322015175)"
 Cohesion: 0.01
@@ -153,9 +161,9 @@ Nodes (60): 2015. Jakarta: Ikatan Akuntan Indonesia, 2.3. Bagian Akhir, 2. Letak
 Cohesion: 0.04
 Nodes (53): :, (312022015), (312022015), (312022015), Anggota Penguji, Anggota Penguji, BAB I PENDAHULUAN ....................................................................................... 1, BAB III METODE PENELITIAN ........................................................................ 31 (+45 more)
 
-### Community 9 - "BAB 4\\[0.3cm]ANALISIS DAN PEMBAHASAN"
-Cohesion: 0.05
-Nodes (38): Analisis Keunggulan Bersaing Berkelanjutan Antar-Entitas Bank KBMI 4, Analisis Sensitivitas dan Elastisitas Parsial ROA terhadap Variabel Independen, Analisis Statistik Deskriptif, Analisis Tren Kuartalan dan Profil Finansial Perbankan KBMI 4 (2021–2025), Analisis Tren Kuartalan dan Profil Perbankan KBMI 4 (2021–2025), BAB 4\\[0.3cm]ANALISIS DAN PEMBAHASAN, Evaluasi Ketahanan Perbankan KBMI 4 Menghadapi Volatilitas Makroekonomi, Gambaran Umum Objek Penelitian (+30 more)
+### Community 9 - "Tahapan Analisis Data dan Uji Ekonometrika"
+Cohesion: 0.10
+Nodes (21): Analisis Statistik Deskriptif, BAB 3\\[0.3cm]METODE PENELITIAN, Desain Penelitian dan Paradigma Keilmuan, Formulasi Sintaks Perintah EViews dan Alur Kerja Estimasi, Jenis Data, Jenis, Sumber, dan Teknik Pengumpulan Data, Operasionalisasi Variabel, Populasi Penelitian (+13 more)
 
 ### Community 10 - "PROPOSAL_SKRIPSI_LENGKAP.md"
 Cohesion: 0.06
@@ -173,9 +181,9 @@ Nodes (22): 1. APA ITU DATA PANEL? (Analogi: Rapor Sekolah), 2. TIGA MODEL DATA 
 Cohesion: 0.09
 Nodes (21): 10. Privasi dan Integritas, 11. Blocker Sebelum Gerbang Lulus, 1. Estimand dan Batas Inferensi, 2. Unit Analisis dan Informan, 3. Sampling yang Realistis, 4. X: Kategori Durasi Penyangga Likuid, 5. Y: Beban Kewajiban Pembayaran Kontraktual Historis, 6. DAG dan Kontrol (+13 more)
 
-### Community 14 - "Tahapan Analisis Data dan Uji Ekonometrika"
+### Community 14 - "BAB 1\\[0.3cm]PENDAHULUAN"
 Cohesion: 0.22
-Nodes (9): Analisis Statistik Deskriptif, Formulasi Sintaks Perintah EViews dan Alur Kerja Estimasi, Spesifikasi Aljabar Matriks Model Regresi Data Panel, Tahapan Analisis Data dan Uji Ekonometrika, Teknik Estimasi Model Regresi Data Panel, Uji Asumsi Klasik Ekonometrika (BLUE), Uji Kelayakan Model dan Pengujian Hipotesis, Uji Pemilihan Model Regresi Data Panel (+1 more)
+Nodes (9): 1. Manfaat Teoretis (Aspek Akademis), 2. Manfaat Praktis (Aspek Terapan), BAB 1\\[0.3cm]PENDAHULUAN, Identifikasi Masalah, Manfaat Penelitian, Pembatasan Masalah, Perumusan Masalah, Sistematika Penulisan Skripsi (+1 more)
 
 ### Community 15 - "ANALISIS DAN PEMBAHASAN"
 Cohesion: 0.10
@@ -258,8 +266,8 @@ Cohesion: 0.18
 Nodes (11): 4.1. Deskripsi Sampel Penelitian, 4.2. Statistik Deskriptif, 4.3.1. Uji Pemilihan Model Data Panel, 4.3.2. Uji Asumsi Klasik, 4.3. Hasil Uji Pemilihan Model dan Asumsi Klasik, 4.4. Hasil Pengujian Hipotesis, 4.5. Pembahasan, ANALISIS DAN PEMBAHASAN (+3 more)
 
 ### Community 35 - "2. Agent Roles & Detailed Work Packages"
-Cohesion: 0.18
-Nodes (10): 1. Multi-Agent Topology & DAG Workflow, 2. Agent Roles & Detailed Work Packages, 3. Dual-Ledger Coordination System, 4. Barrier Policy & Conflict Resolution Matrix, Master Revision Plan: Graph of Agents (GoA) Orchestration, Track 1: Agent Data Engineer (Data Provenance & Dataset Reconstruction), Track 2: Agent Econometrician (Panel Analysis & Diagnostic Suite), Track 3: Agent Accounting & Regulatory Specialist (+2 more)
+Cohesion: 0.33
+Nodes (6): 2. Agent Roles & Detailed Work Packages, Track 1: Agent Data Engineer (Data Provenance & Dataset Reconstruction), Track 2: Agent Econometrician (Panel Analysis & Diagnostic Suite), Track 3: Agent Accounting & Regulatory Specialist, Track 4: Agent Literature & Bibliographer, Track 5: Agent LaTeX Lead Typesetter
 
 ### Community 36 - "Struktur laporan"
 Cohesion: 0.18
@@ -269,25 +277,25 @@ Nodes (11): 10. Pemeriksaan akhir, 1. Ringkasan eksekutif, 2. Ruang lingkup dan 
 Cohesion: 0.18
 Nodes (10): Aturan Umum, Double Count, Arrears, dan Restrukturisasi, Kasus Screening, Kasus Uji Logika Form dan Pipeline, Kasus X, Kasus Y Sederhana, Kriteria Lulus Dry Run, Mixed Purpose dan Joint Debt (+2 more)
 
-### Community 38 - "Konseptualisasi Variabel Penelitian"
-Cohesion: 0.08
-Nodes (25): *Agency Theory, Analisis Komparatif Pembiayaan Hijau: Negara Berkembang vs Negara Maju, Analisis Kualitas Aset, Kolektibilitas, dan Implementasi PSAK 71 / IFRS 9, BAB 2\\[0.3cm]TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS, Dinamika Integrasi ESG ke dalam Penilaian Risiko Kredit Perbankan, Integrasi Risiko Iklim Fisik dan Transisi ke dalam Manajemen Risiko Perbankan, Kecukupan Modal dan *Capital Adequacy Ratio, Konseptualisasi Variabel Penelitian (+17 more)
+### Community 38 - "BAB 5\\[0.3cm]PENUTUP"
+Cohesion: 0.22
+Nodes (9): BAB 5\\[0.3cm]PENUTUP, Kesimpulan, Keterbatasan Penelitian, Matriks Program Aksi Perbankan KBMI 4 Berkelanjutan, Peta Jalan Implementasi Strategis Perbankan Berkelanjutan (2026–2030), Saran, Saran Akademis bagi Peneliti Selanjutnya, Saran Kebijakan bagi Regulator (Otoritas Jasa Keuangan & Bank Indonesia) (+1 more)
 
 ### Community 39 - "Methodology Blueprint — Rancangan Metodologi Penelitian Skripsi"
 Cohesion: 0.20
 Nodes (9): 1. Desain Penelitian & Paradigma Keilmuan, 2. Populasi dan Prosedur Penentuan Sampel, 3. Spesifikasi Model Ekonometrika Data Panel, 4. Tahapan Analisis Data Panel Lengkap, 5. Kriteria Pengujian Statistik & Pengambilan Keputusan, a. Populasi Penelitian, b. Teknik Pengambilan Sampel (Purposive Sampling), c. Sampel Final (+1 more)
 
-### Community 40 - "BAB 1\\[0.3cm]PENDAHULUAN"
+### Community 40 - "📊 Ringkasan 6 Fase Perbaikan yang Telah Selesai Diterapkan"
 Cohesion: 0.22
-Nodes (9): 1. Manfaat Teoretis (Aspek Akademis), 2. Manfaat Praktis (Aspek Terapan), BAB 1\\[0.3cm]PENDAHULUAN, Identifikasi Masalah, Manfaat Penelitian, Pembatasan Masalah, Perumusan Masalah, Sistematika Penulisan Skripsi (+1 more)
+Nodes (9): 1. Pembersihan Kontradiksi Internal Angka Regresi (Fase 1), 2. Standardisasi Bahasa Kausalitas $\rightarrow$ Asosiatif (Fase 2), 3. Perbaikan Uji Asumsi Klasik & Diagnostik Ekonometrika (Fase 3), 4. Koreksi Definisi Teknis Teori Keuangan & Akuntansi (Fase 4), 5. Pembersihan Sintaks Markdown dalam LaTeX (Fase 5), 6. Kebersihan Sitasi & Bibliografi (Fase 6), 📌 Di Mana Anda Bisa Melihat Hasilnya?, Laporan Hasil Revisi & Remediasi Skripsi (Berdasarkan Audit PRISM AI) (+1 more)
 
-### Community 41 - "BAB 5\\[0.3cm]PENUTUP"
-Cohesion: 0.22
-Nodes (9): BAB 5\\[0.3cm]PENUTUP, Kesimpulan, Keterbatasan Penelitian, Matriks Program Aksi Perbankan KBMI 4 Berkelanjutan, Peta Jalan Implementasi Strategis Perbankan Berkelanjutan (2026–2030), Saran, Saran Akademis bagi Peneliti Selanjutnya, Saran Kebijakan bagi Regulator (Otoritas Jasa Keuangan & Bank Indonesia) (+1 more)
+### Community 41 - "Latar Belakang Penelitian"
+Cohesion: 0.33
+Nodes (6): Dinamika Kebijakan Insentif Makroprudensial Hijau Bank Indonesia dan OJK (2021–2025), Dinamika Makroekonomi dan Transisi Pasca-Pandemi Periode 2021–2025, Latar Belakang Penelitian, Peran Sistemik Bank KBMI 4 dalam Perekonomian Nasional, Perbandingan Kerangka Regulasi Keuangan Berkelanjutan Global dan Regional, Perdebatan Empiris dan Teoretis (*Research Gap
 
 ### Community 42 - "PANDUAN_BELAJAR_SKRIPSI_v2.md"
 Cohesion: 0.22
-Nodes (8): 10. KONTEKS MAKROEKONOMI & PERBANKAN 2021–2025, 13. CHEAT SHEET 1 HALAMAN, 1. RINGKASAN EKSEKUTIF & PETA KONSEP PENELITIAN, 4. BEDAH VARIABEL PENELITIAN, 5. TEORI-TEORI UTAMA & KAITANNYA, Mengapa Penelitian Ini Dibuat?, Peta Hubungan Variabel:, Sumber Data Tiap Variabel (sering ditanya saat sidang)
+Nodes (8): 10. KONTEKS MAKROEKONOMI & PERBANKAN 2021–2025, 13. CHEAT SHEET 1 HALAMAN, 4. BEDAH VARIABEL PENELITIAN, 5. TEORI-TEORI UTAMA & KAITANNYA, 6. PENELITIAN TERDAHULU & RESEARCH GAP, Matriks Penelitian Sebelumnya, Posisi & Kontribusi Skripsi Ini, Sumber Data Tiap Variabel (sering ditanya saat sidang)
 
 ### Community 43 - "PENDAHULUAN"
 Cohesion: 0.22
@@ -317,9 +325,9 @@ Nodes (9): Analisis statistik, Audit Isi dan Metodologi, Bab pendahuluan, Desain
 Cohesion: 0.22
 Nodes (8): 1. Database & Sumber Pencarian, 2. Kueri Pencarian (Search Strings), 3. Kriteria Inklusi & Eksklusi, 4. Hasil Screening & Seleksi Literatur, 5. Ringkasan Temuan Empiris, Kriteria Eksklusi (Ditolak), Kriteria Inklusi (Diterima), Search Log Skripsi — Protokol Pencarian Literatur
 
-### Community 50 - "BAB 3\\[0.3cm]METODE PENELITIAN"
-Cohesion: 0.25
-Nodes (8): BAB 3\\[0.3cm]METODE PENELITIAN, Desain Penelitian dan Paradigma Keilmuan, Jenis Data, Jenis, Sumber, dan Teknik Pengumpulan Data, Operasionalisasi Variabel, Spesifikasi Model Regresi Data Panel, Sumber Data, Teknik Pengumpulan Data
+### Community 50 - "Master Revision Plan: Graph of Agents (GoA) Orchestration"
+Cohesion: 0.33
+Nodes (4): 1. Multi-Agent Topology & DAG Workflow, 3. Dual-Ledger Coordination System, 4. Barrier Policy & Conflict Resolution Matrix, Master Revision Plan: Graph of Agents (GoA) Orchestration
 
 ### Community 51 - "2.1. Teori-teori"
 Cohesion: 0.25
@@ -361,13 +369,13 @@ Nodes (6): Desain, Halaman & section (index.html, satu halaman dengan smooth-scr
 Cohesion: 0.29
 Nodes (6): 1. Identitas pemilik (WAJIB), 2. Halaman publikasi terpisah (BARU), 3. Ganti skema warna (refresh visual), 4. Polish tambahan, Tugas: Percantik Website Portofolio Skripsi (iterasi 2), Verifikasi wajib
 
-### Community 61 - "SKRIPSI_UKRIDA_LENGKAP_PRISM.md"
+### Community 61 - "SKRIPSI_ARTHUR_LENGKAP_PRISM.md"
 Cohesion: 0.33
 Nodes (4): SKRIPSI LENGKAP - UNIVERSITAS KRISTEN KRIDA WACANA, 📂 Panduan Struktur Folder, 🚀 Quick Navigation, Workspace Skripsi FEB UKRIDA
 
-### Community 62 - "Latar Belakang Penelitian"
-Cohesion: 0.33
-Nodes (6): Dinamika Kebijakan Insentif Makroprudensial Hijau Bank Indonesia dan OJK (2021–2025), Dinamika Makroekonomi dan Transisi Pasca-Pandemi Periode 2021–2025, Latar Belakang Penelitian, Peran Sistemik Bank KBMI 4 dalam Perekonomian Nasional, Perbandingan Kerangka Regulasi Keuangan Berkelanjutan Global dan Regional, Perdebatan Empiris dan Teoretis (*Research Gap
+### Community 62 - "1. RINGKASAN EKSEKUTIF & PETA KONSEP PENELITIAN"
+Cohesion: 0.67
+Nodes (3): 1. RINGKASAN EKSEKUTIF & PETA KONSEP PENELITIAN, Mengapa Penelitian Ini Dibuat?, Peta Hubungan Variabel:
 
 ### Community 63 - "Data Dictionary & Audit Dataset Skripsi"
 Cohesion: 0.33
@@ -445,20 +453,12 @@ Nodes (3): 📌 DAFTAR ISI PANDUAN, 🎓 PANDUAN BELAJAR & PENGUASAAN MATERI SKR
 Cohesion: 0.67
 Nodes (3): KATA PENGANTAR, Universitas Kristen Krida Wacana | vii, Universitas Kristen Krida Wacana | viii
 
-### Community 93 - "Populasi, Sampel, dan Teknik Pengambilan Sampel"
-Cohesion: 0.50
-Nodes (4): Populasi Penelitian, Populasi, Sampel, dan Teknik Pengambilan Sampel, Sampel Final Penelitian, Teknik Pengambilan Sampel
-
 ### Community 94 - "sync_markdown_from_tex.py"
 Cohesion: 0.67
 Nodes (3): clean_latex_to_md(), main(), Script to synchronize and update SKRIPSI_UKRIDA_LENGKAP_PRISM.md from the…
 
-### Community 95 - "6. PENELITIAN TERDAHULU & RESEARCH GAP"
-Cohesion: 0.67
-Nodes (3): 6. PENELITIAN TERDAHULU & RESEARCH GAP, Matriks Penelitian Sebelumnya, Posisi & Kontribusi Skripsi Ini
-
 ## Knowledge Gaps
-- **1360 isolated node(s):** `SKRIPSI LENGKAP - UNIVERSITAS KRISTEN KRIDA WACANA`, `Dinamika Makroekonomi dan Transisi Pasca-Pandemi Periode 2021–2025`, `Perbandingan Kerangka Regulasi Keuangan Berkelanjutan Global dan Regional`, `Peran Sistemik Bank KBMI 4 dalam Perekonomian Nasional`, `Perdebatan Empiris dan Teoretis (*Research Gap` (+1355 more)
+- **1366 isolated node(s):** `SKRIPSI LENGKAP - UNIVERSITAS KRISTEN KRIDA WACANA`, `Dinamika Makroekonomi dan Transisi Pasca-Pandemi Periode 2021–2025`, `Perbandingan Kerangka Regulasi Keuangan Berkelanjutan Global dan Regional`, `Peran Sistemik Bank KBMI 4 dalam Perekonomian Nasional`, `Perdebatan Empiris dan Teoretis (*Research Gap` (+1361 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -470,12 +470,12 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `(322015175)` connect `(322015175)` to `Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.md`?**
   _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **Why does `:` connect `:` to `BAB V  PENUTUP ........................................................................................... 56`, `KATA PENGANTAR`, `ABSTRAK`, `BAB II TINJAUAN PUSTAKA ............................................................................. 9`, `BAB IV ANALISIS DATA DAN PEMBAHASAN ............................................. 37`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **What connects `SKRIPSI LENGKAP - UNIVERSITAS KRISTEN KRIDA WACANA`, `Dinamika Makroekonomi dan Transisi Pasca-Pandemi Periode 2021–2025`, `Perbandingan Kerangka Regulasi Keuangan Berkelanjutan Global dan Regional` to the rest of the system?**
-  _1360 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1366 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `BAB V  PENUTUP ........................................................................................... 56` be split into smaller, more focused modules?**
   _Cohesion score 0.004842615012106538 - nodes in this community are weakly interconnected._
-- **Should `(322015175)` be split into smaller, more focused modules?**
-  _Cohesion score 0.013157894736842105 - nodes in this community are weakly interconnected._
-- **Should `Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.md` be split into smaller, more focused modules?**
-  _Cohesion score 0.029850746268656716 - nodes in this community are weakly interconnected._
+- **Should `BAB 4\\[0.3cm]ANALISIS DAN PEMBAHASAN` be split into smaller, more focused modules?**
+  _Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected._
+- **Should `Konseptualisasi Variabel Penelitian` be split into smaller, more focused modules?**
+  _Cohesion score 0.08 - nodes in this community are weakly interconnected._

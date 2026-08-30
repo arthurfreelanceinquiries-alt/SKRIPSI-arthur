@@ -1,21 +1,9 @@
 {
-  "latex/outputs/skripsi_ukrida.toc": {
-    "mtime": 1787097199.7592013,
-    "seen": 1788065928.3486185,
-    "ast_hash": "64b0d39da7f2d45a04d37bf2a34261f8",
-    "semantic_hash": "64b0d39da7f2d45a04d37bf2a34261f8"
-  },
   "latex/panduan_belajar_skripsi_v2.toc": {
     "mtime": 1787474764.5329297,
     "seen": 1788065928.3486185,
     "ast_hash": "338390ca1c358f7dbaa55d6654d64ede",
     "semantic_hash": "338390ca1c358f7dbaa55d6654d64ede"
-  },
-  "latex/skripsi_ukrida.toc": {
-    "mtime": 1788071299.903978,
-    "seen": 1788071310.385773,
-    "ast_hash": "d362fe67f0edc4d2994e882167af5690",
-    "semantic_hash": ""
   },
   "website/js/script.js": {
     "mtime": 1787568902.5111394,
@@ -36,33 +24,27 @@
     "semantic_hash": ""
   },
   "latex/patch_appendix2.py": {
-    "mtime": 1788069808.3972485,
-    "seen": 1788069866.9710913,
-    "ast_hash": "c5b94ce91aa38218f7802e47b6d9b488",
+    "mtime": 1788075227.78317,
+    "seen": 1788075446.8796394,
+    "ast_hash": "1d84aee8856b3597d160b9582c6be8b7",
     "semantic_hash": ""
   },
   "latex/patch_bab5_and_tables.py": {
-    "mtime": 1788069790.422604,
-    "seen": 1788069866.9710922,
-    "ast_hash": "16bff0cc18c9ee116919161a3e231509",
+    "mtime": 1788075227.824874,
+    "seen": 1788075446.8796394,
+    "ast_hash": "b4c9ab15d1c772a3826cfcd3e7807ed5",
     "semantic_hash": ""
   },
   "latex/patch_econometrics_and_prose.py": {
-    "mtime": 1788069776.204627,
-    "seen": 1788069866.9710934,
-    "ast_hash": "902eff4e783e0213264f98d7fc2d83c6",
+    "mtime": 1788075227.8342576,
+    "seen": 1788075446.8796394,
+    "ast_hash": "76cacccec7c1d8733d3ab1c6bcdb806a",
     "semantic_hash": ""
   },
   "latex/patch_skripsi.py": {
-    "mtime": 1788071273.8801746,
-    "seen": 1788071310.3857718,
-    "ast_hash": "57a25dd9404c2c0af3a06730885417a1",
-    "semantic_hash": ""
-  },
-  "01_Naskah_Utama/SKRIPSI_UKRIDA_LENGKAP_PRISM.md": {
-    "mtime": 1788071294.0042758,
-    "seen": 1788071310.3857784,
-    "ast_hash": "7252a6843919ffd85b02fd3837c6b7aa",
+    "mtime": 1788075227.8358383,
+    "seen": 1788075446.8796394,
+    "ast_hash": "ada53d27e03f3939071ea42837358d0b",
     "semantic_hash": ""
   },
   "02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/01_BANK_SOAL_LATIHAN.md": {
@@ -233,12 +215,6 @@
     "ast_hash": "c64c474c12b2faaa70dbacbb94ee9bd1",
     "semantic_hash": ""
   },
-  "06_Review_&_Audit/Review tex.txt": {
-    "mtime": 1788067299.8475828,
-    "seen": 1788069866.9711266,
-    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
-    "semantic_hash": ""
-  },
   "06_Review_&_Audit/SEARCH_LOG.md": {
     "mtime": 1787077049.939993,
     "seen": 1788069866.9711273,
@@ -276,9 +252,9 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1788067185.1973138,
-    "seen": 1788069866.9711332,
-    "ast_hash": "ab44c097ec9dcd82eb78780c9b6bf272",
+    "mtime": 1788075222.8262215,
+    "seen": 1788075446.8796394,
+    "ast_hash": "7d49b68f1b538ef04736e59c24991f21",
     "semantic_hash": ""
   },
   "_archive/cancelled_topic_2026-08-10/ANALYSIS_SPEC.md": {
@@ -372,21 +348,15 @@
     "semantic_hash": ""
   },
   "website/index.html": {
-    "mtime": 1787568734.7930741,
-    "seen": 1788069866.9711502,
-    "ast_hash": "6b3f57ff3d63c3a61e590d9b8560b999",
+    "mtime": 1788074024.1469207,
+    "seen": 1788075446.8796394,
+    "ast_hash": "91574f580ba2d27eff09fca39e0ea5e9",
     "semantic_hash": ""
   },
   "website/publikasi.html": {
-    "mtime": 1787568771.741479,
-    "seen": 1788069866.9711509,
-    "ast_hash": "88a891bbc6e1427c93aadc07e31c79bf",
-    "semantic_hash": ""
-  },
-  "01_Naskah_Utama/skripsi_ukrida.pdf": {
-    "mtime": 1788071299.965547,
-    "seen": 1788071310.3858464,
-    "ast_hash": "c9c673eeabe155804b4756f193efd94f",
+    "mtime": 1788075212.9590883,
+    "seen": 1788075446.8796394,
+    "ast_hash": "d55b5843f09d869f67383d702179687b",
     "semantic_hash": ""
   },
   "02_Persiapan_Sidang/panduan_belajar_skripsi_v2.pdf": {
@@ -413,22 +383,10 @@
     "ast_hash": "a2eb0bfddc93d544f436e4c668d8333a",
     "semantic_hash": ""
   },
-  "latex/outputs/skripsi_ukrida.pdf": {
-    "mtime": 1787097199.8112605,
-    "seen": 1788069866.9711568,
-    "ast_hash": "02ea778bce4283c5b8a43cf08b2eee32",
-    "semantic_hash": ""
-  },
   "latex/panduan_belajar_skripsi_v2.pdf": {
     "mtime": 1787474764.5519972,
     "seen": 1788069866.9711578,
     "ast_hash": "c35421222167cf0859c6f8bcc604abfc",
-    "semantic_hash": ""
-  },
-  "latex/skripsi_ukrida.pdf": {
-    "mtime": 1788071299.965547,
-    "seen": 1788071310.385855,
-    "ast_hash": "c9c673eeabe155804b4756f193efd94f",
     "semantic_hash": ""
   },
   "latex/outputs/preview-01.png": {
@@ -1818,9 +1776,9 @@
     "semantic_hash": ""
   },
   "01_Naskah_Utama/sync_markdown_from_tex.py": {
-    "mtime": 1788071273.8811743,
-    "seen": 1788071310.3857527,
-    "ast_hash": "32f6a7ac6887072b7e83f8ab049f60cd",
+    "mtime": 1788075189.3284993,
+    "seen": 1788075446.8796394,
+    "ast_hash": "442d76906d5513b7df13b600d89a863a",
     "semantic_hash": ""
   },
   "04_Riset_&_Metodologi/ECONOMETRIC_RESULTS_V2.md": {
@@ -1830,9 +1788,57 @@
     "semantic_hash": ""
   },
   "update_identity_all_files.py": {
-    "mtime": 1788071273.8835888,
-    "seen": 1788071310.385775,
-    "ast_hash": "bc5318c7c5eb22da4e03f8940935e0bf",
+    "mtime": 1788075199.580782,
+    "seen": 1788075446.8796394,
+    "ast_hash": "bebbba27676ceb4ef817714bc3831dab",
+    "semantic_hash": ""
+  },
+  "01_Naskah_Utama/SKRIPSI_ARTHUR_LENGKAP_PRISM.md": {
+    "mtime": 1788075194.1357627,
+    "seen": 1788075446.8796394,
+    "ast_hash": "40f1fedbd36fa165e050bbeeddd52a8d",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/LAPORAN_HASIL_REVISI_PRISM_AI.md": {
+    "mtime": 1788075306.5903828,
+    "seen": 1788075446.8796394,
+    "ast_hash": "5191ac2ae298f9ad5efb4560d05d0dee",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/Review tex 1.txt": {
+    "mtime": 1788072490.8015103,
+    "seen": 1788075446.8796394,
+    "ast_hash": "1c8927e5824a7afb6e70f4805295c6f2",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/Review tex 2.txt": {
+    "mtime": 1788072392.1474526,
+    "seen": 1788075446.8796394,
+    "ast_hash": "b568b71b79ede795dfae9adb146ac78b",
+    "semantic_hash": ""
+  },
+  "01_Naskah_Utama/Skripsi_Arthur.pdf": {
+    "mtime": 1788071299.965547,
+    "seen": 1788075446.8796394,
+    "ast_hash": "c9c673eeabe155804b4756f193efd94f",
+    "semantic_hash": ""
+  },
+  "Skripsi_Arthur.pdf": {
+    "mtime": 1788071299.965547,
+    "seen": 1788075446.8796394,
+    "ast_hash": "c9c673eeabe155804b4756f193efd94f",
+    "semantic_hash": ""
+  },
+  "latex/Skripsi_Arthur.pdf": {
+    "mtime": 1788071299.965547,
+    "seen": 1788075446.8796394,
+    "ast_hash": "c9c673eeabe155804b4756f193efd94f",
+    "semantic_hash": ""
+  },
+  "latex/outputs/Skripsi_Arthur.pdf": {
+    "mtime": 1787097199.8112605,
+    "seen": 1788075446.8796394,
+    "ast_hash": "02ea778bce4283c5b8a43cf08b2eee32",
     "semantic_hash": ""
   }
 }

@@ -13,6 +13,7 @@ Repositori dan direktori kerja penulisan skripsi:
 z:\Skripsi\
 ├── 📁 01_Naskah_Utama/            # File Final Siap Cetak, Sidang, & AI
 │   ├── Skripsi_Arthur.pdf         # PDF Resmi Final Siap Cetak / Sidang (Standar UKRIDA)
+│   ├── Skripsi_Arthur.tex         # File LaTeX Siap Baca / Ingestion Prism AI
 │   └── SKRIPSI_ARTHUR_LENGKAP_PRISM.md # Markdown Lengkap Bab 1-5 (Optimized for Prism AI)
 │
 ├── 📁 02_Persiapan_Sidang/        # Bahan Belajar, Bank Soal, & Simulasi Sidang
