@@ -12,8 +12,8 @@ Repositori dan direktori kerja penulisan skripsi:
 ```text
 z:\Skripsi\
 ├── 📁 01_Naskah_Utama/            # File Final Siap Cetak, Sidang, & AI
-│   ├── skripsi_ukrida.pdf         # PDF Resmi Final Siap Cetak / Sidang (Standar UKRIDA)
-│   └── SKRIPSI_UKRIDA_LENGKAP_PRISM.md # Markdown Lengkap Bab 1-5 (Optimized for Prism AI)
+│   ├── Skripsi_Arthur.pdf         # PDF Resmi Final Siap Cetak / Sidang (Standar UKRIDA)
+│   └── SKRIPSI_ARTHUR_LENGKAP_PRISM.md # Markdown Lengkap Bab 1-5 (Optimized for Prism AI)
 │
 ├── 📁 02_Persiapan_Sidang/        # Bahan Belajar, Bank Soal, & Simulasi Sidang
 │   ├── 📁 BELAJAR SKRIPSI SAMPAI BISA/
@@ -57,7 +57,7 @@ z:\Skripsi\
 │   └── WORKFLOW_LOG.md            # Log Alur Pengerjaan & Milestone
 │
 ├── 📁 latex/                      # Workspace Kompilasi XeLaTeX (Master Source)
-│   ├── skripsi_ukrida.tex         # File Master Kode LaTeX
+│   ├── Skripsi_Arthur.tex         # File Master Kode LaTeX
 │   ├── references.bib             # Database Referensi BibTeX
 │   └── 📁 outputs/                # Log build & file preview PNG
 │
@@ -70,8 +70,8 @@ z:\Skripsi\
 
 ## 🚀 Quick Navigation
 
-- **Mau kirim PDF ke Dosen / Cetak Sidang?** Buka [`01_Naskah_Utama/skripsi_ukrida.pdf`](01_Naskah_Utama/skripsi_ukrida.pdf)
-- **Mau analisis via Prism AI?** Gunakan [`01_Naskah_Utama/SKRIPSI_UKRIDA_LENGKAP_PRISM.md`](01_Naskah_Utama/SKRIPSI_UKRIDA_LENGKAP_PRISM.md)
+- **Mau kirim PDF ke Dosen / Cetak Sidang?** Buka [`01_Naskah_Utama/Skripsi_Arthur.pdf`](01_Naskah_Utama/Skripsi_Arthur.pdf)
+- **Mau analisis via Prism AI?** Gunakan [`01_Naskah_Utama/SKRIPSI_ARTHUR_LENGKAP_PRISM.md`](01_Naskah_Utama/SKRIPSI_ARTHUR_LENGKAP_PRISM.md)
 - **Mau belajar persiapan sidang?** Buka [`02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/`](02_Persiapan_Sidang/BELAJAR%20SKRIPSI%20SAMPAI%20BISA/)
 - **Mau cek audit kelayakan naskah?** Buka [`06_Review_&_Audit/`](06_Review_&_Audit/)
-- **Mau edit isi naskah LaTeX?** Buka [`latex/skripsi_ukrida.tex`](latex/skripsi_ukrida.tex)
+- **Mau edit isi naskah LaTeX?** Buka [`latex/Skripsi_Arthur.tex`](latex/Skripsi_Arthur.tex)

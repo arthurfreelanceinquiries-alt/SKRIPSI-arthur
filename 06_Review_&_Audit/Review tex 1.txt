@@ -1,0 +1,232 @@
+
+
+
+
+
+Technical Review of the KBMI 4 Green-Financing Manuscript
+Paper-review audit
+30 August 2026
+Overall assessment
+The manuscript addresses a relevant question and presents an unusually complete-looking set of
+tables and appendices. However, its central empirical evidence is not reproducible from the data
+printed in Appendix 1, and several printed observations conflict with official bank disclosures. Con-
+sequently, the reported coefficients, significance tests, diagnostic conclusions, causal claims, and
+policy recommendations cannot presently be relied upon. This is a major data-integrity and meth-
+ods problem, not a copyediting problem. The manuscript requires reconstruction of the dataset and
+complete regeneration of Chapter 4 before its substantive conclusions can be assessed.
+The review inspected the full manuscript, equations, panel formulas, all 80 appendix rows, re-
+ported EViews output, hypotheses, conclusions, implementation-facing syntax, regulatory state-
+ments, citation integrity, and references. Sign conventions, symbol definitions, dimensions, branch
+conventions, and implementation ambiguity were checked explicitly. The manuscript contains no
+inverse-trigonometric or coordinate-transform formulas, so no branch or quadrant error arises in
+those categories.
+Priority technical findings
+1. Definite error: Appendix 1 does not reproduce any of the main empirical
+output
+Location. Chapter 4, Tables 4.1, 4.4a, 4.4b, and 4.5; Appendix 1; Appendix 2.
+Problem. Recalculation from the 80 unique rows printed in Appendix 1 produces materially
+different descriptive statistics and correlations. Selected comparisons are:
+Quantity Manuscript Recalculated from Appendix 1
+Mean Green Financing 23.85 23.45875
+Mean CAR 22.64 23.46125
+Mean ROA 3.18 3.28225
+Median ROA 3.12 3.29
+corr(ROA, GF ) 0.5824 0.8628
+corr(ROA, N P L) −0.6412 −0.8698
+corr(ROA, CAR) 0.5120 0.8409
+corr(N P L, CAR) −0.3650 −0.9340
+1
+An ordinary least-squares dummy-variable reproduction of the stated bank fixed-effects model gives
+[ROAit = bαi + 0.07671 GFit − 0.07212 N P Lit + 0.08129 CARit,
+with conventional non-robust p-values below 0.0001, 0.131, and below 0.0001, respectively; R2 =
+0.9866, adjusted R2 = 0.9855, and Durbin–Watson = 0.566. The manuscript instead reports slopes
+0.04218, −0.38542, and 0.07415, adjusted R2 = 0.7026, and Durbin–Watson = 1.942. Applying the
+manuscript’s own printed coefficients and bank effects to Appendix 1 gives residual sum of squares
+6.9878, not the reported 6.3601.
+Why it matters. The discrepancy overturns at least Hypothesis 2: in the direct reproduction, the
+NPL slope is not significant at the 5% level. It also means that the EViews blocks in Appendix 2
+cannot have been generated from Appendix 1 as printed. Every results-dependent statement in the
+abstract, Chapter 4, Chapter 5, and the policy roadmap is therefore unsupported.
+Suggested fix. Rebuild one machine-readable dataset directly from traceable source documents;
+preserve every source page, reporting basis, unit, and transformation; import that exact file into
+EViews; and regenerate every table and appendix automatically. Include the EViews workfile or
+executable script and an observation-level provenance sheet. Do not revise isolated numbers by
+hand.
+2. Definite error: Printed observations conflict with official financial disclosures
+Location. Chapter 4 bank tables and Appendix 1, especially BBRI 2025-Q1 through 2025-Q4.
+Problem. The BBRI 2025-Q4 row reports CAR 26.20%, gross NPL 2.10%, and ROA 4.15%.
+BRI’s official financial publication for 31 December 2025 reports CAR 21.06%, gross NPL 3.29%,
+and ROA 3.26% under its displayed bank performance-ratio basis; it also reports a separate ROA
+measure of 2.64%. The official first-quarter 2025 publication reports gross NPL 3.14% and ROA
+2.95%, whereas Appendix 1 gives 2.25% and 3.88%.1
+Why it matters. This is not explainable by rounding. If the manuscript uses consolidated rather
+than bank-only figures, a different ROA convention, or a derived measure, that basis is not identified
+and still does not reconcile the displayed values. The discrepancy raises a serious provenance concern
+for all 80 rows.
+Suggested fix. Replace every observation from the original filings and state, for each variable,
+whether it is bank-only or consolidated, period-end or period-average, quarterly or year-to-date,
+and annualized or unannualized. Add a source-page column and retain a reconciliation record for
+any derived ratio.
+3. Definite error: Quarterly Green Financing data have no documented con-
+struction rule
+Location. Sections “Sources of Data” and “Operationalization of Variables”; Tables 4.1b–4.1e;
+Appendix 1.
+Problem. The manuscript says that Green Financing is obtained from annual sustainability re-
+ports, yet supplies a different smoothly changing value for every quarter. It does not state whether
+1PT Bank Rakyat Indonesia (Persero) Tbk, official quarterly financial publications for 31 March 2025 and 31
+December 2025, performance-ratio tables, accessed 30 August 2026 through BRI Investor Relations.
+2
+annual values were repeated, interpolated, reconstructed from quarterly balances, or combined with
+another source. It also alternates among “green financing,” KUBL, and broader sustainable financing
+without specifying which categories enter the numerator.
+Why it matters. Interpolation or unreported allocation creates artificial within-bank variation
+and can mechanically generate the strong trends used by the regression. Broader sustainable-
+finance totals may include social or MSME financing and are not interchangeable with a green-credit
+numerator.
+Suggested fix. Define the numerator and denominator for every year under the applicable tax-
+onomy, give the exact source table for every observation, and use annual panel data if only annual
+Green Financing is observed. If a quarterly series is genuinely available, document the source and
+do not interpolate silently.
+4. Unsupported claim: The design does not identify causal effects
+Location. Research design; hypothesis tests; discussion; abstract and conclusions.
+Problem. The manuscript describes a causal design and repeatedly says that the regressions “prove”
+that Green Financing, NPL, and CAR determine ROA. The model uses contemporaneous ratios,
+four selected banks, bank fixed effects only, and no identification strategy. Green Financing, risk,
+capital, and profitability can be jointly determined; profitable banks may expand green lending or
+capital, and common macroeconomic time trends affect all variables.
+Why it matters. The appendix series are dominated by common monotonic trends: Green Fi-
+nancing, CAR, and ROA generally rise while NPL falls. Bank fixed effects remove time-invariant
+bank differences but do not remove common time shocks or trends. A coefficient therefore cannot
+be interpreted as a causal effect or as evidence for the proposed funding-cost and debtor-quality
+mechanisms.
+Suggested fix. Either reframe the study consistently as associational or introduce a defensible
+identification design. At minimum, estimate bank and quarter fixed effects, define lags, add justified
+controls, investigate reverse causality, and report sensitivity to time trends. Mechanism claims
+require measured mediators or should be presented as hypotheses rather than findings.
+5. Definite error: The diagnostic conclusions are incompatible with the printed
+data and use unsuitable tests
+Location. Sections on stationarity and classical assumptions; Tables 4.2 and 4.4; Appendix 2.
+Problem. Direct reconstruction gives a Durbin–Watson statistic near 0.566, with within-bank lag-
+one residual correlations approximately 0.61–0.91, not the reported 1.942. The manuscript applies
+a conventional Durbin–Watson interval to stacked panel residuals and does not test cross-sectional
+dependence. It also reports LLC/IPS stationarity at level despite visibly trend-dominated series,
+without providing settings, lags, deterministic terms, or raw output. Finally, normal residuals are
+described as a requirement for BLUE, which they are not.
+Why it matters. Serial correlation, cross-sectional dependence, and common shocks can make the
+reported standard errors and p-values severely misleading. With only four bank clusters, ordinary
+cluster-robust asymptotics also require caution.
+3
+Suggested fix. After correcting the data, report a panel serial-correlation test, a cross-sectional-
+dependence diagnostic, and inference robust to the supported error structure. State unit-root speci-
+fications completely and test sensitivity to deterministic trends. Avoid claiming that all assumptions
+are “perfectly” satisfied.
+6. Definite error: The formulas and interpretations for adjusted R2 and the FEM
+F test use the wrong degrees of freedom
+Location. Section “Model Feasibility and Hypothesis Testing” and the interpretation of Hypothe-
+sis 4 and adjusted R2.
+Problem. With N T = 80, N = 4 bank intercepts, and K = 3 slopes, the printed formula
+1 − (1 − R2)(N T − 1)
+N T − K − 1
+ignores the bank effects. Substituting the reported R2 = 0.72514 gives 0.71429, not the reported
+0.70258. The value 0.70258 is obtained when the denominator reflects all estimated parameters.
+Likewise, the standard overall FEM F statistic tests the slopes together with the non-reference bank
+effects; it is not automatically a test that only GF , N P L, and CAR are jointly zero.
+Why it matters. Hypothesis 4 is not established by the reported statistic, and the model R2
+cannot be described as the proportion explained solely by the three substantive predictors because
+it also contains bank effects.
+Suggested fix. Use the correct residual degrees of freedom N T − N − K for the stated parameteri-
+zation. Report a separate Wald test of H0 : β1 = β2 = β3 = 0, with its numerator and denominator
+degrees of freedom. Distinguish overall, within, between, and incremental explanatory power.
+7. Definite error: Required notation is corrupted and key symbols change mean-
+ing
+Location. Variable formulas in Chapter 2; panel equations and matrix algebra in Chapter 3; Tables
+4.2, 4.5, and 4.6; elasticity section; Appendix 4.
+Problem. The character “?” replaces multiplication signs, inequalities, Greek letters, \left,
+\multirow, and \multicolumn throughout the manuscript. More importantly, N is first defined as
+the number of banks (N = 4) but is used in the Jarque–Bera formula as if it were the number of
+observations. K is first the number of regressors (K = 3) but becomes kurtosis in the same formula.
+In the fixed-effects discussion, the common intercept, bank-specific intercept, and bank deviation
+are visually collapsed into indistinguishable corrupted symbols.
+Why it matters. A literal implementation can substitute N = 4 and K = 3 into the Jarque–Bera
+formula and obtain the wrong statistic. The damaged panel notation prevents an unambiguous
+distinction among α, αi, µi, and β.
+Suggested fix. Restore the source encoding globally, then use n = N T for sample size, N for
+banks, T for periods, K for slopes, and κ for kurtosis. Define, for example, αi = α + µi and keep
+those verbal descriptors unchanged everywhere.
+4
+8. Definite error: The manuscript’s multicollinearity claim is contradicted by
+Appendix 1
+Location. Table 4.4a, Table 4.4, and the accompanying discussion.
+Problem. The manuscript reports the largest absolute correlation among regressors as 0.4120 and
+centered VIFs of 1.28–1.42. Appendix 1 instead gives corr(N P L, CAR) = −0.9340. A pooled
+calculation gives VIF approximately 10.05 for NPL and 8.31 for CAR; within-bank VIFs are ap-
+proximately 7.0–7.3.
+Why it matters. The manuscript’s assertion that multicollinearity is absent is not supported.
+The highly synchronized trends make individual slope estimates unstable and complicate claims
+about which variable is most important.
+Suggested fix. Recompute correlations and VIFs from the final estimation sample and report
+them under the same transformation used by the estimator. Address common trends and report
+coefficient stability across plausible specifications.
+9. Definite error: Raw coefficient magnitudes and elasticities are interpreted
+incorrectly
+Location. Hypothesis 2 discussion and “Partial Sensitivity and Elasticity Analysis.”
+Problem. The manuscript calls NPL the most sensitive determinant because | − 0.385| is the
+largest raw coefficient, although the regressors have different distributions. Later, its own reported
+elasticities rank CAR above Green Financing and NPL. The elasticity values are dimensionless, but
+are printed with percent signs and described as if a 1% relative increase and a one-percentage-point
+increase were interchangeable.
+Why it matters. This yields contradictory substantive rankings and confuses marginal effects
+with elasticities.
+Suggested fix. Do not rank importance from raw slopes. State that a one-percentage-point change
+has the slope’s percentage-point association with ROA. For elasticity, state that a 1% relative change
+in Xj is associated with an estimated ηj % relative change in ROA at the evaluation point, and do
+not append a percent sign to ηj itself.
+10. Likely issue: PSAK 71/IFRS 9 treatment is over-simplified and partly mis-
+stated
+Location. Section “Asset Quality, Collectibility, and Implementation of PSAK 71/IFRS 9” and the
+NPL discussion.
+Problem. The text maps regulatory collectibility mechanically onto IFRS 9 stages and suggests
+that Stage 3 requires provisioning to 100% of unsecured exposure. The displayed ECL equation omits
+scenario probabilities and does not clarify whether P Dt is marginal, conditional, or cumulative.
+IFRS 9 recognizes probability-weighted discounted cash shortfalls and does not impose a universal
+100% allowance merely because an asset is Stage 3.
+Why it matters. The description can mislead readers about the mechanism connecting NPL and
+CKPN and is too coarse for an implementation-facing formula.
+5
+Suggested fix. Check the wording against PSAK 71/IFRS 9, distinguish prudential collectibility
+from accounting staging, define all ECL terms and probability conventions, and label any reduced
+formula explicitly as a simplification.
+11. Definite error: Regulatory descriptions contain checkable inaccuracies
+Location. Chapter 1 regulatory background; Chapter 2 KUBL list; Appendix 5.
+Problem. POJK 51/POJK.03/2017 does require sustainability reporting, but its reporting out-
+line lists independent written verification “if any”; it does not make independent audit universal
+in the way the manuscript states. The manuscript presents 11 KUBL categories and omits the
+MSME category included in the relevant sustainable-business classification. It also treats POJK
+60/POJK.04/2017 as the operative green-bond rule without noting its replacement by POJK 18 of
+2023.2
+Why it matters. These errors affect the definition of the Green Financing numerator and the
+manuscript’s policy narrative.
+Suggested fix. Quote the operative provisions precisely, distinguish KUBL from the broader
+sustainable-business categories, state the classification used for each sample year, and update su-
+perseded regulations.
+12. Definite error: Citation and reference integrity is not adequate
+Location. Literature review tables, in-text parenthetical keys, and “References.”
+Problem. No references.bib or rendered reference list is present, although the manuscript
+ends with \bibliography{references}. The strings such as (Pramono2022) are not valid LaTeX
+citation commands. Spot checks also reveal title/content mismatches: Cui et al. (2018) is The
+Impact of Green Lending on Credit Risk in China, not the title printed in Table 2.1; Chiaramonte
+et al. (2020) is an insurance-industry article, not the bank study claimed there; and the Yin et al.
+(2021) article has a different title and materially more heterogeneous findings than the summary
+reports.3
+Why it matters. The claimed research gap and theoretical support cannot be evaluated when
+citations are absent, misidentified, or summarized inaccurately.
+Suggested fix. Build a complete bibliography from DOI/publisher metadata, convert every citation
+to \cite or the chosen author–year command, and verify each table row against the actual article’s
+sample, outcome, method, and conclusion.
+2Otoritas Jasa Keuangan, POJK 51/POJK.03/2017 and its reporting appendix; OJK summary of POJK 18/2023;
+official TKBI publications, accessed 30 August 2026.
+3Yin et al., “The determinants of green credit and its impact on the performance of Chinese banks,” Journal
+of Cleaner Production (2021); Cui et al., “The Impact of Green Lending on Credit Risk in China,” Sustainability
+10(6):2008 (2018); Chiaramonte et al., “Sustainability Practices and Stability in the Insurance Industry,” Sustainability
+12(14):5530 (2020).
+6

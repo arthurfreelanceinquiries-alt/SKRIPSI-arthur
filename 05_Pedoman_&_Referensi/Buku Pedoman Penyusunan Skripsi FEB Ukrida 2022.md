@@ -1763,7 +1763,7 @@ Lampiran 4: Contoh Halaman Pernyataan Orisinalitas
 
 Saya mahasiswa Universitas Kristen Krida Wacana:
 
-Nama Mahasiswa : ..................................... NIM : ..................................... Program Studi : .....................................
+Arthur Reezan : ..................................... NIM : ..................................... Program Studi : .....................................
 
 Dengan ini menyatakan bahwa karya tugas akhir yang berjudul ”……………………………………………………………………………………………… ………………………………………………………………………………........................”
 

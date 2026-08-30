@@ -1,0 +1,244 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,tabularx,array,longtable}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.65em}
+\setlength{\emergencystretch}{2em}
+\setlist[itemize]{leftmargin=1.5em,itemsep=0.3em,topsep=0.3em}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=0.35em,topsep=0.3em}
+\newcommand{\definite}{\textbf{Definite error.}}
+\newcommand{\unsupported}{\textbf{Unsupported claim.}}
+\newcommand{\likely}{\textbf{Likely issue.}}
+\newcommand{\verify}{\textbf{Needs external verification.}}
+
+\title{Technical and Editorial Review}
+\author{}
+\date{August 30, 2026}
+
+\begin{document}
+\maketitle
+
+\textbf{Manuscript reviewed:} ``PENGARUH PORTOFOLIO KREDIT HIJAU (GREEN FINANCING), NON-PERFORMING LOAN (NPL), DAN CAPITAL ADEQUACY RATIO (CAR) TERHADAP PROFITABILITAS (ROA) PADA BANK KBMI 4 DI INDONESIA PERIODE 2021--2025.''
+
+\section*{Overall assessment}
+
+The topic is relevant and the intended panel structure is easy to understand, but the manuscript is not ready for examination or submission. The central empirical result is currently unreliable for three independent reasons: the 80-row dataset is not auditable and conflicts with primary bank disclosures; several reported econometric outputs cannot be reproduced from those 80 rows; and the entity-only fixed-effects specification does not control the strong common time trends in green financing and ROA. These defects affect the abstract, all four hypothesis decisions, the discussion, the conclusion, and the policy recommendations.
+
+The highest-priority action is therefore not copyediting. The authors should reconstruct and document the dataset, rerun the analysis from a saved workfile or script, and replace every result table and narrative statement from a single verified output. Major revision is required.
+
+\section*{Major technical findings}
+
+\subsection*{1. The quarterly dataset is not traceable to the stated sources}
+
+\textbf{Location:} Chapter 3 (data sources and variable operationalization), Chapter 4 Tables 4.1b--4.1e, and Appendix 1.
+
+\definite{} The manuscript says that quarterly observations are derived from quarterly financial reports and annual sustainability reports, but it gives no source page, numerator, denominator, reporting scope, or transformation for any bank-quarter. Annual sustainability reports ordinarily cannot supply 20 independent quarterly observations of \(\mathrm{GF}_{it}\). The limitation section itself concedes that green-financing disclosure is not available at full quarterly granularity, yet Appendix 1 presents smooth quarterly values without explaining interpolation or reconstruction.
+
+The tabulated financial ratios also conflict with readily identifiable primary disclosures. For example, Appendix 1 reports BBNI 2024-Q4 as CAR \(=22.10\%\), NPL gross \(=2.15\%\), and ROA \(=3.25\%\). BNI's official 4Q24 published financial statement reports KPMM \(=21.40\%\), NPL gross \(=1.97\%\), and ROA \(=2.51\%\).\footnote{PT Bank Negara Indonesia (Persero) Tbk, \emph{Laporan Publikasi 4Q24}, pp. 4--5: \url{https://www.bni.co.id/Portals/1/BNI/Perusahaan/HubunganInvestor/Docs/2024/BNI-Financial-Statement-FY2024-ID.pdf}.} Likewise, BRI's official 2025 financial highlights list NPL gross as \(3.29\%\), while Appendix 1 gives \(2.10\%\) for 2025-Q4.\footnote{PT Bank Rakyat Indonesia (Persero) Tbk, 2025 financial highlights: \url{https://www.ir-bri.com/financial_highlights.html}.} The manuscript never states whether each series is bank-only or consolidated, which may explain some discrepancies but is itself a fatal comparability ambiguity.
+
+\textbf{Why it matters:} All descriptive statistics, tests, coefficients, and conclusions depend on these values. Interpolated annual data would create artificial sample size and serial dependence; mixing bank-only and consolidated ratios would make observations incomparable; and incorrect source values invalidate the regression.
+
+\textbf{Suggested fix:} Create a source ledger with one row per observation and columns for bank, quarter, variable, exact report title, reporting scope, page/table, original numerator and denominator, annualization rule, and any transformation. Attach the underlying spreadsheet. If green financing is only annual, use an annual panel or obtain a defensible quarterly source; do not silently interpolate annual values. Reconcile all observations to primary reports before rerunning any model.
+
+\subsection*{2. The reported output is not reproducible from Appendix 1}
+
+\textbf{Location:} Tables 4.3--4.5 and Appendix 2.
+
+\definite{} An independent calculation using the 80 rows printed in Appendix 1 reproduces the uncorrected entity fixed-effects slope estimates in Appendix 2.2 (approximately \(0.076710\), \(-0.072116\), and \(0.081291\)). It does not reproduce several other outputs:
+
+\begin{itemize}
+  \item The pooled OLS regression from the printed rows gives approximately \(C=-0.78718\), \(\beta_{GF}=0.07710\), \(\beta_{NPL}=-0.01385\), \(\beta_{CAR}=0.09779\), \(R^2=0.95227\), and Durbin--Watson \(=0.21650\), not Appendix 2.1.
+  \item Using the printed pooled and fixed-effects residual sums of squares gives a Chow statistic of approximately \(62.39\), not \(18.420\). Even the residual sums of squares printed in Appendices 2.1 and 2.2 do not imply \(18.420\).
+  \item The actual fixed-effects residuals from Appendix 1 have Jarque--Bera approximately \(0.841\) with \(p\approx0.657\). Appendix 2.6 instead repeats skewness and kurtosis values close to the descriptive distribution of ROA, not the fixed-effects residuals.
+  \item Table 4.4 reports VIF values \(1.28,1.42,1.35\), whereas Appendix 2.7 reports centered VIF values \(1.6842,10.0521,8.3143\). Direct calculation from Appendix 1 gives an NPL VIF of about \(10.05\).
+  \item Table 4.4 says Durbin--Watson \(=1.942\), while Table 4.5 and Appendix 2.2 say \(0.5663\).
+\end{itemize}
+
+\textbf{Why it matters:} These are not harmless rounding differences. They show that tables were assembled from different datasets or model versions, or were not exported from the stated estimation run.
+
+\textbf{Suggested fix:} Preserve one canonical data file and one executable estimation script. Export all tables directly from that run, include the complete native EViews output (not retyped output), and add a checksum or version date for the data. Remove every legacy coefficient, diagnostic, and test statistic from the prose.
+
+\subsection*{3. A common time trend is confounded with the green-financing coefficient}
+
+\textbf{Location:} Equation (3.1), the model-selection section, and Table 4.5.
+
+\likely{} The model contains bank fixed effects but no quarter effects, year effects, macroeconomic controls, or trend. In the printed data, green financing rises almost deterministically over time, while ROA also rises and NPL generally falls. The overall correlation between quarter index and GF is approximately \(0.987\); after removing bank means, the GF--ROA correlation is approximately \(0.981\). Entity fixed effects cannot remove a common post-pandemic recovery trend.
+
+This is not merely theoretical sensitivity. On the printed data, adding a linear time trend changes the GF estimate from \(+0.07671\) (\(p<0.001\)) to approximately \(-0.03105\) (\(p=0.178\)); adding quarter fixed effects gives approximately \(+0.04081\) (\(p=0.118\)). Thus, the claimed positive GF result is not robust to basic time controls.
+
+\textbf{Why it matters:} The coefficient may be measuring the shared passage of time, economic recovery, inflation, monetary policy, accounting changes, or data interpolation rather than a within-bank association between green financing and ROA.
+
+\textbf{Suggested fix:} After repairing the data, estimate entity and time fixed effects, graph within-bank changes, and report sensitivity to a trend, macro controls, and lagged regressors. Avoid a highly parameterized dynamic estimator with only four banks; expanding the cross-sectional sample is preferable. If the sample remains \(N=4\), present the study as descriptive/exploratory and substantially narrow inference.
+
+\subsection*{4. Serial correlation and the claimed robust covariance correction are unresolved}
+
+\textbf{Location:} Methods section on classical assumptions, Table 4.4, Table 4.5, hypothesis-testing prose, and Appendix 2.2.
+
+\definite{} The fixed-effects residuals have Durbin--Watson \(=0.5663\), not \(1.942\), which is strong evidence of positive residual persistence. The standard Durbin--Watson bounds quoted for an ordinary cross-sectional regression are not an adequate panel serial-correlation test. In addition, the standard errors displayed in Appendix 2.2 match conventional homoskedastic OLS standard errors; they are not the alternative robust statistics quoted later (for example, GF \(t=6.13\)). The label ``White / Driscoll-Kraay'' combines distinct covariance estimators and gives no kernel, bandwidth, degrees-of-freedom rule, or software command.
+
+\textbf{Why it matters:} Invalid standard errors invalidate the reported \(p\)-values and hypothesis decisions. Driscoll--Kraay inference also relies primarily on a sufficiently long time dimension; \(T=20\) is short, while bank-clustered inference is fragile with only four clusters.
+
+\textbf{Suggested fix:} Use a panel-appropriate serial-correlation diagnostic, disclose the exact covariance estimator and options, and report conventional and robust results side by side. Do not state that robust covariance ``solves'' multicollinearity. With four banks, emphasize uncertainty, use small-sample methods only with a clear justification, and avoid precise claims based solely on asymptotic \(p\)-values.
+
+\subsection*{5. The design does not identify causal effects}
+
+\textbf{Location:} Research design, objectives, hypothesis development, abstract, discussion, and conclusion.
+
+\unsupported{} The manuscript repeatedly says that it ``proves'' causal effects and identifies ``principal drivers.'' An observational entity fixed-effects regression does not establish causality, especially without time effects or control variables. Reverse causality is plausible: profitability can raise CAR through retained earnings; profitable banks may have more capacity to classify, originate, or disclose green assets; and NPL and ROA share accounting channels. The limitations section acknowledges omitted bank and macroeconomic variables that are likely correlated with the included regressors.
+
+\textbf{Why it matters:} Causal language materially overstates what the model supports and makes the managerial and regulatory recommendations appear evidence-based when they are not.
+
+\textbf{Suggested fix:} Replace ``effect,'' ``determinant,'' ``proves,'' and ``causes'' with ``association'' throughout unless a credible identification strategy is added. State the strict-exogeneity assumption explicitly. A causal redesign would require better temporal measurement, controls, and a defensible source of exogenous variation.
+
+\subsection*{6. The results chapter contains mutually exclusive versions of the findings}
+
+\textbf{Location:} Tables 4.4b--4.6, Sections 4.7--4.9, abstract, and Chapter 5.
+
+\definite{} The following statements cannot coexist:
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.25\textwidth}X X}
+\toprule
+Item & Main result table/conclusion & Conflicting discussion text \\
+\midrule
+GF & \(\beta_1=0.07671\), \(p<0.0001\) & \(\beta_1=0.042\), \(p=0.0003\) \\
+NPL / \(H_2\) & \(\beta_2=-0.07212\), \(p=0.1308\); \(H_2\) rejected & heading says \(H_2\) accepted; text gives \(\beta_2=-0.385\), \(p=0.0000\) \\
+CAR & \(\beta_3=0.08129\) & \(\beta_3=0.074\) \\
+Joint test / fit & \(F=1756.2\), adjusted \(R^2=98.55\%\) & \(F=32.450\), adjusted \(R^2=70.2\%\) \\
+FEM Durbin--Watson & \(0.566\) & \(1.942\), described as near 2 \\
+Bank intercepts & approximately \(-0.413\) to \(-0.131\) & approximately \(1.043\) to \(1.700\), described as positive \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\textbf{Why it matters:} Readers cannot determine which model is the actual study. In particular, the NPL discussion states the opposite of the abstract, Table 4.5, hypothesis test, and conclusion.
+
+\textbf{Suggested fix:} After rerunning the corrected data, create a one-page master results sheet and populate the abstract, tables, discussion, and conclusion from it. Search and delete the legacy values \(0.042\), \(-0.385\), \(0.074\), \(32.450\), \(70.2\%\), \(1.942\), and the positive bank intercepts unless they belong to the final verified model.
+
+\subsection*{7. Fixed effects, the joint test, and \(R^2\) are overinterpreted}
+
+\textbf{Location:} Table 4.6, Section 4.8, Section 4.9, and the theoretical implications.
+
+\definite{} The bank intercept is interpreted as ``baseline ROA'' and used to rank operational efficiency, although zero values of GF, NPL, and CAR are far outside the observed data. The text also alternates among an average intercept \(\alpha\), bank deviations \(\mu_i\), and direct bank intercepts \(\alpha_i\) without a consistent parameterization. The values in Table 4.6 are negative, while the subsequent paragraph discusses unrelated positive values.
+
+\unsupported{} A joint rejection of \(H_0:\beta_1=\beta_2=\beta_3=0\) does not demonstrate ``synergy'' among the variables and does not imply that each variable is significant. Adjusted \(R^2\) includes the bank indicators and the smooth common trend; it is not the percentage of ROA causally explained by green financing, NPL, and CAR.
+
+\textbf{Suggested fix:} Center continuous regressors before giving an intercept an empirical interpretation, or do not interpret the intercept. State exactly whether the model uses a common intercept plus \(N-1\) effects or \(N\) bank intercepts. Report the restriction tested by each \(F\)-statistic and separate overall fit from the incremental contribution of the three slopes.
+
+\subsection*{8. Required notation and terminology drift check}
+
+\textbf{Location:} Chapters 2--4 and the appendices.
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}X}
+\toprule
+Symbol/term & First definition and descriptor & Later drift and required correction \\
+\midrule
+\(\mathrm{GF}_{it}\) & Ratio of KUBL green credit to total credit & Later called green financing, sustainable financing, ESG financing, and sustainable credit. These scopes are not equivalent, especially when UMKM/social categories are included. Define one taxonomy, numerator, denominator, and reporting scope consistently for every bank-year/quarter. \\
+\(\alpha_i\) & Bank-specific intercept in Equation (3.1) & Later an ``average intercept'' \(\alpha\), deviation \(\mu_i\), and direct bank intercept are mixed. Choose one parameterization and label output accordingly. \\
+\(N,n,T\) & \(N=4\) banks and \(T=20\) quarters & Table captions use \(N=80\) for observations, while formulas use \(n=NT=80\). Reserve \(N\) for banks and \(n\) for observations. \\
+ROA & Pre-tax profit divided by average assets & The Du Pont equation uses operating profit and total assets, while quarterly construction/annualization is not stated. Use the exact regulatory numerator, denominator, scope, and annualization convention throughout. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\textbf{Why it matters:} The GF drift can change the substantive variable, while the intercept and sample-size drift makes the model and degrees of freedom difficult to reproduce.
+
+\textbf{Suggested fix:} Add a data dictionary and a notation table, then run a global terminology pass after the final model is fixed.
+
+\subsection*{9. Several technical definitions need correction or qualification}
+
+\begin{enumerate}
+  \item \textbf{ROA/Du Pont, Chapter 2.} \definite{} The displayed product of operating profit margin and asset turnover equals operating profit divided by total assets, not the manuscript's regulatory ROA of pre-tax profit divided by average assets. The stated five-factor Du Pont chain including financial leverage is normally an ROE decomposition, not an ROA identity. \textbf{Fix:} either remove the Du Pont passage or derive an identity using the same numerator and average-asset denominator.
+  \item \textbf{PSAK 71/IFRS 9, Chapter 2 and NPL discussion.} \likely{} The expression
+  \[
+    \mathrm{ECL}=\sum_t PD_t\,LGD_t\,EAD_t(1+r)^{-t}
+  \]
+  is only a simplified implementation form and requires definitions of marginal/conditional PD, survival, scenarios, cash shortfalls, recoveries, and exposure timing. The statement that Stage 3 ``requires CKPN up to 100\%'' is not a general staging rule, and collectibility categories do not automatically provide a complete IFRS 9 staging policy. \textbf{Fix:} qualify the formula as an approximation, cite the applicable accounting guidance, and remove the categorical 100\% claim unless a specific prudential rule is identified.
+  \item \textbf{BLUE and diagnostics, Chapter 3.} \definite{} Residual normality is not required for OLS to be BLUE; VIF is not a pass/fail classical assumption; and failure to reject a Glejser test does not prove homoskedasticity. \textbf{Fix:} distinguish estimator assumptions from finite-sample inference and present diagnostics as evidence, not proof.
+  \item \textbf{Fixed-effects consistency, Chapter 3.} \unsupported{} The statement that the estimator is consistent and unbiased whenever bank effects correlate with \(X\) omits strict exogeneity, rank, and error-process assumptions. \textbf{Fix:} state the full assumptions and discuss whether contemporaneous bank ratios plausibly satisfy them.
+\end{enumerate}
+
+No inverse-trigonometric or coordinate-transformation formulas occur in the manuscript, so branch and quadrant conventions are not applicable. Regression signs and ratio dimensions were checked; the coefficient units are percentage points of ROA per percentage point of each ratio, but temporal construction and annualization remain ambiguous as noted above.
+
+\subsection*{10. Sampling and policy recommendations exceed the design}
+
+\textbf{Location:} Chapter 3 sampling section and Chapters 4--5 recommendations.
+
+\likely{} If the target population is the four KBMI 4 banks, the study is a census of that group, not a purposive sample. If the target population is all listed conventional banks, selecting only KBMI 4 banks with positive profits conditions on scale and performance and changes the estimand. The manuscript should state which population it intends to describe.
+
+\unsupported{} Targets such as GF \(32\%/35\%/40\%\), CAR \(22\%\)--\(26\%\), NPL below \(2\%\), and green-credit risk weights of \(50\%\)--\(75\%\) are not estimated by the regression. A linear association does not identify an optimum or establish that lowering prudential risk weights is safe.
+
+\textbf{Suggested fix:} Define the estimand and sample frame clearly. Remove numerical policy targets or label them as externally sourced scenarios with separate justification, risk analysis, and citations.
+
+\section*{Literature and reference integrity}
+
+\textbf{Location:} Chapter 2 literature matrix, in-text citations throughout, and the bibliography command.
+
+\definite{} The manuscript invokes \verb|\bibliography{references}|, but no \texttt{references.bib} file is present. Most citations are plain strings such as ``(Freeman2010, Buallay2019)'' rather than \verb|\citep|/\verb|\citet| commands. One source line contains prose and punctuation inside the citation-key argument:
+\begin{quote}
+\small\ttfamily\textbackslash citet\{Yin2021, KuncoroSuhardjono2018,\newline
+dan BrighamEhrhardt2020.\}
+\end{quote}
+
+\verify{} The 15-study matrix requires a complete DOI/title audit. Two spot checks already show material errors. The work attributed to \texttt{Yin2021} is actually titled \emph{The determinants of green credit and its impact on the performance of Chinese banks}, and its published findings are heterogeneous by bank ownership rather than the uniformly positive summary given in the manuscript.\footnote{Yin, Zhu, Kirkulak-Uludag, and Zhu (2021), \emph{Journal of Cleaner Production} 286, 124991, DOI \url{https://doi.org/10.1016/j.jclepro.2020.124991}.} The Cui et al. paper is titled \emph{The Impact of Green Lending on Credit Risk in China}, not ``The Evaluation of Green Lending Evaluation in Chinese Commercial Banks,'' and its stated outcome is credit risk rather than the ROA/ROE design described in Table 2.1.\footnote{Cui, Geobey, Weber, and Lin (2018), \emph{Sustainability} 10(6), 2008, DOI \url{https://doi.org/10.3390/su10062008}.}
+
+\textbf{Why it matters:} Missing or mischaracterized sources undermine the theoretical argument and make plagiarism/reference checks impossible.
+
+\textbf{Suggested fix:} Supply \texttt{references.bib}; verify every author, year, title, journal, volume, pages/article number, DOI, method, sample, and finding against the publication; then regenerate all citations and the reference list. Do not retain a study in the matrix unless the full text or reliable metadata has been checked.
+
+\section*{Meaningful editorial and production issues}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.23\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}>{\raggedright\arraybackslash}p{0.36\textwidth}}
+\toprule
+Location & Problem and consequence & Suggested fix \\
+\midrule
+\endhead
+Chapter 4 opening & ``Analisis Tren Kuartalan dan Profil Perbankan'' is immediately repeated by ``Analisis Tren Kuartalan dan Profil Finansial Perbankan.'' This creates a duplicate empty section. & Keep one heading and ensure the table numbering begins in logical order (4.1a before 4.1b--4.1e). \\
+Section on adjusted \(R^2\) & The heading combines malformed nested \verb|\texorpdfstring|, the Markdown fragment \texttt{*Adjusted}, and a misplaced \texttt{Adjusted R-Squared} argument. & Replace it with a single valid LaTeX heading, for example \verb|\subsection{Adjusted $R^2$}|. \\
+Conceptual framework figure & The three TikZ arrows use a Unicode en dash ``–'' instead of TikZ path operator \verb|--|. The figure will not compile as written. & Replace each en dash with \verb|--| and test the figure in the real manuscript preamble. \\
+Tables 3.2, 5.2, and Appendix 5 & Literal \verb|&| characters inside cells (for example ``Sustainability Report \& RAKB,'' ``Green Bond \& Sustainability-Linked Sukuk,'' and ``SDA Hayati \& Lahan'') create extra alignment columns in raw LaTeX. & Escape textual ampersands as \verb|\&| and recount every table's columns. \\
+Entire source & Markdown markers \verb|*...*| and \verb|**...**| are embedded inside raw LaTeX environments, while required preamble definitions/packages are absent from the manuscript file. The available \texttt{main.tex}/\texttt{main.pdf} is only an empty ``Untitled'' shell and does not compile this thesis. & Decide on one source format. Convert Markdown emphasis to \verb|\emph|/\verb|\textbf| inside LaTeX, add a complete preamble, connect the manuscript to \texttt{main.tex}, and compile twice with bibliography processing. \\
+Front matter & Credential text includes malformed constructions such as \verb|CFP^®| and inconsistent punctuation around professional titles. & Use plain UTF-8 text or a supported symbol command consistently and verify the supervisor/dean titles against institutional records. \\
+\bottomrule
+\end{longtable}
+
+\section*{Proofing sweep}
+
+The bundled mechanical scan was run on the full manuscript with a maximum of 80 hits. Its duplicated-period hit was the intentional ellipsis in ``Univ...'', and its semicolon-capitalization hits were mostly table clauses or abbreviations, so those candidates should not be reported as errors. The following high-confidence defects remain after spot-checking:
+
+\begin{itemize}
+  \item \textbf{Chapter 4 NPL discussion:} the heading says \(H_2\) is accepted and the paragraph claims significance, contradicting Table 4.5. Replace the entire subsection from the verified master output.
+  \item \textbf{Table 4.5 caption and Appendix 2 headings:} an en dash is combined with an extra hyphen (``–-''). Use one typographic dash consistently.
+  \item \textbf{Correlation table:} diagonal placeholders appear as ``–-''. Use a single em dash or ``not applicable.''
+  \item \textbf{Reference list:} duplicated punctuation and title capitalization cannot be checked because the bibliography file is missing. Perform the required reference-hygiene pass after adding \texttt{references.bib}.
+  \item \textbf{Equation-adjacent prose:} the elasticity labels contain malformed math/Markdown, for example \verb|$\eta_{\text{GF**}$|. Replace with valid forms such as \verb|$\eta_{\mathrm{GF}}$|.
+\end{itemize}
+
+\section*{Highest-priority revision sequence}
+
+\begin{enumerate}
+  \item Rebuild and reconcile the bank-quarter dataset from primary reports, with a source ledger and consistent bank-only/consolidated scope. Use annual frequency if GF is annual.
+  \item Rerun every statistic and model from one reproducible workfile/script; export untouched output and remove legacy numbers.
+  \item Add time controls and panel-appropriate dependence diagnostics; reassess whether any GF association survives. Calibrate inference to \(N=4\) and \(T=20\).
+  \item Rewrite the abstract, hypothesis decisions, discussion, conclusion, and recommendations from the verified results, using associational rather than causal language.
+  \item Repair GF definitions, ROA construction, intercept notation, ECL/PSAK 71 explanations, and the interpretation of \(F\)-tests and \(R^2\).
+  \item Supply and audit the bibliography, then fix the LaTeX/Markdown production defects and compile the actual manuscript.
+\end{enumerate}
+
+\section*{Items requiring external verification}
+
+Before acceptance, verify against primary sources: (i) every one of the 80 raw observations and its reporting scope; (ii) every citation and literature-matrix summary; (iii) the claim that sustainability reports are independently audited as a regulatory requirement; (iv) the exact KLM/GWM incentive limits and effective dates; (v) the PSAK 71 staging and provisioning statements; and (vi) all numerical policy targets proposed for 2026--2030. None of these should be presented as established fact without a precise source.
+
+\end{document}

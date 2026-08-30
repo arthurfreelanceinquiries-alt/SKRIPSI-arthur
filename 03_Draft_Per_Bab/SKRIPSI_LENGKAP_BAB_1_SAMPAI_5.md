@@ -11,8 +11,8 @@ Diajukan sebagai salah satu syarat untuk mencapai gelar Sarjana Manajemen pada P
 <br><br><br><br>
 
 **Disusun Oleh:**  
-**Nama : [Nama Mahasiswa]**  
-**NIM : [Nomor Induk Mahasiswa]**  
+**Nama : Arthur Reezan**  
+**NIM : 312023002**  
 **Program Studi : Manajemen**  
 **Konsentrasi : Manajemen Keuangan**  
 
@@ -35,8 +35,8 @@ Saya yang bertanda tangan di bawah ini:
 
 | Data Pribadi | Keterangan |
 |---|---|
-| **Nama** | [Nama Mahasiswa] |
-| **NIM** | [Nomor Induk Mahasiswa] |
+| **Nama** | Arthur Reezan |
+| **NIM** | 312023002 |
 | **Program Studi** | Manajemen |
 | **Fakultas** | Ekonomi dan Bisnis |
 | **Judul Skripsi** | **PENGARUH PORTOFOLIO KREDIT HIJAU (GREEN FINANCING), NON-PERFORMING LOAN (NPL), DAN CAPITAL ADEQUACY RATIO (CAR) TERHADAP PROFITABILITAS (ROA) PADA BANK KBMI 4 DI INDONESIA PERIODE 2021–2025** |
@@ -53,8 +53,8 @@ Yang membuat pernyataan,
 <br><br><br><br>
 
 *(Materai Rp10.000)*  
-**[Nama Mahasiswa]**  
-NIM: [Nomor Induk Mahasiswa]
+**Arthur Reezan**  
+NIM: 312023002
 
 ---
 
@@ -69,8 +69,8 @@ PENGARUH PORTOFOLIO KREDIT HIJAU (GREEN FINANCING), NON-PERFORMING LOAN (NPL), D
 
 <br>
 
-**Nama Mahasiswa : [Nama Mahasiswa]**  
-**NIM : [Nomor Induk Mahasiswa]**  
+**Arthur Reezan : Arthur Reezan**  
+**NIM : 312023002**  
 **Program Studi : Manajemen**  
 **Konsentrasi : Manajemen Keuangan**  
 

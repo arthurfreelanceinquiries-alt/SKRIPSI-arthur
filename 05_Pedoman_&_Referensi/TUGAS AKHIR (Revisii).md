@@ -32,7 +32,7 @@
 
 Saya mahasiswa Universitas Kristen Krida Wacana:
 
-Nama Mahasiswa : Jeddy
+Arthur Reezan : Jeddy
 
 NIM : 312022015
 

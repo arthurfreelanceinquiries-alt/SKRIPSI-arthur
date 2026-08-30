@@ -11,8 +11,8 @@ Diajukan sebagai salah satu syarat untuk penyusunan skripsi pada Program Studi S
 <br><br><br>
 
 **Disusun Oleh:**  
-**Nama Mahasiswa : [Nama Mahasiswa]**  
-**NIM : [Nomor Induk Mahasiswa]**  
+**Arthur Reezan : Arthur Reezan**  
+**NIM : 312023002**  
 **Konsentrasi : Manajemen Keuangan**  
 
 <br><br><br><br>
@@ -36,8 +36,8 @@ PENGARUH PORTOFOLIO KREDIT HIJAU (GREEN FINANCING), NON-PERFORMING LOAN (NPL), D
 
 <br>
 
-**Nama Mahasiswa : [Nama Mahasiswa]**  
-**NIM : [Nomor Induk Mahasiswa]**  
+**Arthur Reezan : Arthur Reezan**  
+**NIM : 312023002**  
 **Program Studi : Manajemen**  
 **Konsentrasi : Manajemen Keuangan**  
 

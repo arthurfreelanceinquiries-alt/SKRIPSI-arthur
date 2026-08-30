@@ -1,0 +1,1838 @@
+{
+  "latex/outputs/skripsi_ukrida.toc": {
+    "mtime": 1787097199.7592013,
+    "seen": 1788065928.3486185,
+    "ast_hash": "64b0d39da7f2d45a04d37bf2a34261f8",
+    "semantic_hash": "64b0d39da7f2d45a04d37bf2a34261f8"
+  },
+  "latex/panduan_belajar_skripsi_v2.toc": {
+    "mtime": 1787474764.5329297,
+    "seen": 1788065928.3486185,
+    "ast_hash": "338390ca1c358f7dbaa55d6654d64ede",
+    "semantic_hash": "338390ca1c358f7dbaa55d6654d64ede"
+  },
+  "latex/skripsi_ukrida.toc": {
+    "mtime": 1788071299.903978,
+    "seen": 1788071310.385773,
+    "ast_hash": "d362fe67f0edc4d2994e882167af5690",
+    "semantic_hash": ""
+  },
+  "website/js/script.js": {
+    "mtime": 1787568902.5111394,
+    "seen": 1788065928.3486185,
+    "ast_hash": "aa25ecd53d5b2f778d2d868cd223b3ec",
+    "semantic_hash": "aa25ecd53d5b2f778d2d868cd223b3ec"
+  },
+  "04_Riset_&_Metodologi/run_econometrics_pipeline.py": {
+    "mtime": 1788069982.4766417,
+    "seen": 1788070108.3158476,
+    "ast_hash": "9fdf4bfd7b06f81ace4bd02d4dddbdd6",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/run_econometrics_pure.py": {
+    "mtime": 1788069654.633588,
+    "seen": 1788069866.9710817,
+    "ast_hash": "2efd69f3d7e236be519fd42403f8b510",
+    "semantic_hash": ""
+  },
+  "latex/patch_appendix2.py": {
+    "mtime": 1788069808.3972485,
+    "seen": 1788069866.9710913,
+    "ast_hash": "c5b94ce91aa38218f7802e47b6d9b488",
+    "semantic_hash": ""
+  },
+  "latex/patch_bab5_and_tables.py": {
+    "mtime": 1788069790.422604,
+    "seen": 1788069866.9710922,
+    "ast_hash": "16bff0cc18c9ee116919161a3e231509",
+    "semantic_hash": ""
+  },
+  "latex/patch_econometrics_and_prose.py": {
+    "mtime": 1788069776.204627,
+    "seen": 1788069866.9710934,
+    "ast_hash": "902eff4e783e0213264f98d7fc2d83c6",
+    "semantic_hash": ""
+  },
+  "latex/patch_skripsi.py": {
+    "mtime": 1788071273.8801746,
+    "seen": 1788071310.3857718,
+    "ast_hash": "57a25dd9404c2c0af3a06730885417a1",
+    "semantic_hash": ""
+  },
+  "01_Naskah_Utama/SKRIPSI_UKRIDA_LENGKAP_PRISM.md": {
+    "mtime": 1788071294.0042758,
+    "seen": 1788071310.3857784,
+    "ast_hash": "7252a6843919ffd85b02fd3837c6b7aa",
+    "semantic_hash": ""
+  },
+  "02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/01_BANK_SOAL_LATIHAN.md": {
+    "mtime": 1787473758.7436583,
+    "seen": 1788069866.9711003,
+    "ast_hash": "a4540e39c87c52f9dcb3e0933b9de2e5",
+    "semantic_hash": ""
+  },
+  "02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/02_FLASHCARD_ISTILAH.md": {
+    "mtime": 1787473838.5660748,
+    "seen": 1788069866.9711013,
+    "ast_hash": "b11e4fc1c714c6755924ad9d9134de82",
+    "semantic_hash": ""
+  },
+  "02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/03_PERTANYAAN_SIDANG_SULIT.md": {
+    "mtime": 1787473933.116759,
+    "seen": 1788069866.971102,
+    "ast_hash": "f28cf1fc270c9a43987fc85093f1f630",
+    "semantic_hash": ""
+  },
+  "02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/04_EKONOMETRIKA_UNTUK_PEMULA.md": {
+    "mtime": 1787474031.217049,
+    "seen": 1788069866.971103,
+    "ast_hash": "9c68b21adba5f533fe3766701b8d155f",
+    "semantic_hash": ""
+  },
+  "02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/05_SIMULASI_DIALOG_SIDANG.md": {
+    "mtime": 1787474121.589849,
+    "seen": 1788069866.9711037,
+    "ast_hash": "f0f821fadeeacf881d2de09090cafd55",
+    "semantic_hash": ""
+  },
+  "02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/06_RINGKASAN_PER_BAB_ONE_PAGER.md": {
+    "mtime": 1787474179.965536,
+    "seen": 1788069866.9711046,
+    "ast_hash": "c5aa7f0f0de1a711af47a4db2c433c5c",
+    "semantic_hash": ""
+  },
+  "02_Persiapan_Sidang/PANDUAN_BELAJAR_SKRIPSI_v2.md": {
+    "mtime": 1787474643.9662492,
+    "seen": 1788069866.9711056,
+    "ast_hash": "973304d334948f26481d942a51b8a57e",
+    "semantic_hash": ""
+  },
+  "03_Draft_Per_Bab/BAB_1_PENDAHULUAN.md": {
+    "mtime": 1787077103.5760412,
+    "seen": 1788069866.9711065,
+    "ast_hash": "d8402e92d0acedbb9f0572adae500bf4",
+    "semantic_hash": ""
+  },
+  "03_Draft_Per_Bab/BAB_2_TINJAUAN_PUSTAKA.md": {
+    "mtime": 1787077118.6688645,
+    "seen": 1788069866.9711075,
+    "ast_hash": "505501fe2c3964c9786729b3d0af4a62",
+    "semantic_hash": ""
+  },
+  "03_Draft_Per_Bab/BAB_3_METODE_PENELITIAN.md": {
+    "mtime": 1787077131.1083047,
+    "seen": 1788069866.9711087,
+    "ast_hash": "bc3b54f25c441bd4be10caf24af85318",
+    "semantic_hash": ""
+  },
+  "03_Draft_Per_Bab/BAB_4_ANALISIS_DAN_PEMBAHASAN.md": {
+    "mtime": 1787077221.6332877,
+    "seen": 1788069866.9711096,
+    "ast_hash": "abdec91b19e08310bdee7b3dbeef1078",
+    "semantic_hash": ""
+  },
+  "03_Draft_Per_Bab/BAB_5_PENUTUP.md": {
+    "mtime": 1787077230.3707948,
+    "seen": 1788069866.9711108,
+    "ast_hash": "9e4f5cae9dfa9e1a5d4c83a93debc55a",
+    "semantic_hash": ""
+  },
+  "03_Draft_Per_Bab/PROPOSAL_SKRIPSI_LENGKAP.md": {
+    "mtime": 1788071273.8835888,
+    "seen": 1788071310.3857954,
+    "ast_hash": "0d22cb00be3dbe93ef4af2ce2a34e2ce",
+    "semantic_hash": ""
+  },
+  "03_Draft_Per_Bab/SKRIPSI_LENGKAP_BAB_1_SAMPAI_5.md": {
+    "mtime": 1788071273.8821745,
+    "seen": 1788071310.3857965,
+    "ast_hash": "5554c4da4f26faf44d9563df2a40ffca",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/ANALYSIS_SPEC.md": {
+    "mtime": 1787078857.0182695,
+    "seen": 1788069866.9711137,
+    "ast_hash": "126d4dbcf786c3dd909d57ff615eebf5",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/DATA_DICTIONARY.md": {
+    "mtime": 1787077075.957443,
+    "seen": 1788069866.9711144,
+    "ast_hash": "13674b195d516c8258ce06602762445f",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/LITERATURE_MATRIX.md": {
+    "mtime": 1787077065.9733334,
+    "seen": 1788069866.9711158,
+    "ast_hash": "817526c7779c08bce64b6342adc86178",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/METHODOLOGY_BLUEPRINT.md": {
+    "mtime": 1787078848.242081,
+    "seen": 1788069866.9711168,
+    "ast_hash": "996446d3f33467b2b880ff3c5899650f",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/REUSABLE_THESIS_PLAYBOOK.md": {
+    "mtime": 1787078864.4742706,
+    "seen": 1788069866.9711177,
+    "ast_hash": "848c44ef96f455c1db60739bb2cae509",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md": {
+    "mtime": 1787078838.8452573,
+    "seen": 1788069866.9711187,
+    "ast_hash": "a6b99a7f30255408008062026babd4a1",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/skills.md": {
+    "mtime": 1785994637.82742,
+    "seen": 1788069866.9711194,
+    "ast_hash": "2722183f5c602e7ece62b773702fb806",
+    "semantic_hash": ""
+  },
+  "05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.md": {
+    "mtime": 1788071273.9482946,
+    "seen": 1788071310.3858082,
+    "ast_hash": "59e28c45212ad48972116bc484dd6d7a",
+    "semantic_hash": ""
+  },
+  "05_Pedoman_&_Referensi/PRD_AI_Dosen_Pembimbing_Skripsi_v2.md": {
+    "mtime": 1787057269.4356878,
+    "seen": 1788069866.971121,
+    "ast_hash": "3c5416f01bdd6d47ca287e622cd831c5",
+    "semantic_hash": ""
+  },
+  "05_Pedoman_&_Referensi/TUGAS AKHIR (Revisii).md": {
+    "mtime": 1788071273.9502954,
+    "seen": 1788071310.3858104,
+    "ast_hash": "173bacd6d4024d2690808ed2a34bcd70",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/MASTER_REVISION_PLAN.md": {
+    "mtime": 1788069549.945784,
+    "seen": 1788069866.971123,
+    "ast_hash": "432885b2e8a8ec56ed03d5f0cc3a33b6",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/PRD_SKRIPSI_REMEDIATION.md": {
+    "mtime": 1788069539.6073895,
+    "seen": 1788069866.9711237,
+    "ast_hash": "a0b9a4d8654fe121e6cb0fa5e7094e64",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/PRISM_REVIEW_AUDIT_SYNTHESIS.md": {
+    "mtime": 1788069525.6364882,
+    "seen": 1788069866.9711246,
+    "ast_hash": "2d6fcb6c98e168ea552d94cd232e94b2",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/README.md": {
+    "mtime": 1788067177.835844,
+    "seen": 1788069866.9711256,
+    "ast_hash": "c64c474c12b2faaa70dbacbb94ee9bd1",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/Review tex.txt": {
+    "mtime": 1788067299.8475828,
+    "seen": 1788069866.9711266,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/SEARCH_LOG.md": {
+    "mtime": 1787077049.939993,
+    "seen": 1788069866.9711273,
+    "ast_hash": "d09e914b211555c7c4a2b70e2a1e42ee",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/WORKFLOW_LOG.md": {
+    "mtime": 1787077272.2600567,
+    "seen": 1788069866.9711282,
+    "ast_hash": "1295e71fd350600d64de25a3b8b5d992",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/review-format.md": {
+    "mtime": 1785994637.8264196,
+    "seen": 1788069866.9711292,
+    "ast_hash": "2d4ca7f2dfd54dadd2de92a65bfb8bbf",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/review-language.md": {
+    "mtime": 1785994637.8244202,
+    "seen": 1788069866.9711306,
+    "ast_hash": "97b54af00c37cefdf7a0d13b5326b8a0",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/review-methodology.md": {
+    "mtime": 1785994637.82842,
+    "seen": 1788069866.9711313,
+    "ast_hash": "e9d5ec9477fd8edb2f9f368b0cf0a35b",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/review-output.md": {
+    "mtime": 1785994637.8304214,
+    "seen": 1788069866.9711325,
+    "ast_hash": "e61f1bbac5fc4832ff58d392023de5a1",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1788067185.1973138,
+    "seen": 1788069866.9711332,
+    "ast_hash": "ab44c097ec9dcd82eb78780c9b6bf272",
+    "semantic_hash": ""
+  },
+  "_archive/cancelled_topic_2026-08-10/ANALYSIS_SPEC.md": {
+    "mtime": 1786369717.8214962,
+    "seen": 1788069866.971134,
+    "ast_hash": "e4f42cd496c5bbd394932a898c43b5ae",
+    "semantic_hash": ""
+  },
+  "_archive/cancelled_topic_2026-08-10/DATA_DICTIONARY.md": {
+    "mtime": 1786370145.0536776,
+    "seen": 1788069866.9711347,
+    "ast_hash": "f82f57859cc1663198b4ae848556b246",
+    "semantic_hash": ""
+  },
+  "_archive/cancelled_topic_2026-08-10/DECISION_LOG.md": {
+    "mtime": 1786371944.5419734,
+    "seen": 1788069866.9711354,
+    "ast_hash": "3c0ba436e8b1cebbe87d9bbfd6bc0496",
+    "semantic_hash": ""
+  },
+  "_archive/cancelled_topic_2026-08-10/FORM_LOGIC_TEST_CASES.md": {
+    "mtime": 1786370145.0546753,
+    "seen": 1788069866.971139,
+    "ast_hash": "9e2ce62ffe5e196f2b56fb5dde5b3646",
+    "semantic_hash": ""
+  },
+  "_archive/cancelled_topic_2026-08-10/INSTRUMENT_DRAFT.md": {
+    "mtime": 1786370145.0546753,
+    "seen": 1788069866.9711401,
+    "ast_hash": "924fcfc1a62ba26e22191a45b64c890f",
+    "semantic_hash": ""
+  },
+  "_archive/cancelled_topic_2026-08-10/LITERATURE_MATRIX.md": {
+    "mtime": 1786368781.2740557,
+    "seen": 1788069866.971141,
+    "ast_hash": "09eaf1c775aa18ad570a9cab2ba6153c",
+    "semantic_hash": ""
+  },
+  "_archive/cancelled_topic_2026-08-10/METHODOLOGY_BLUEPRINT.md": {
+    "mtime": 1786369717.8214962,
+    "seen": 1788069866.9711418,
+    "ast_hash": "4e6f06be01ef560dc89f59ff34b7fe1a",
+    "semantic_hash": ""
+  },
+  "_archive/cancelled_topic_2026-08-10/PHASE3_HUMAN_INPUTS.md": {
+    "mtime": 1786370225.0519,
+    "seen": 1788069866.971143,
+    "ast_hash": "4a28aa9a0402b8518c4e85bd1c5b1592",
+    "semantic_hash": ""
+  },
+  "_archive/cancelled_topic_2026-08-10/PILOT_EXECUTION_PACKAGE.md": {
+    "mtime": 1786368728.3031154,
+    "seen": 1788069866.971144,
+    "ast_hash": "83806b7999941a8f786545ac56dac772",
+    "semantic_hash": ""
+  },
+  "_archive/cancelled_topic_2026-08-10/PILOT_READINESS_AUDIT.md": {
+    "mtime": 1786368769.4665878,
+    "seen": 1788069866.971145,
+    "ast_hash": "455892662b862d999c16a90498f4e2d6",
+    "semantic_hash": ""
+  },
+  "_archive/cancelled_topic_2026-08-10/SEARCH_LOG.md": {
+    "mtime": 1786014877.000975,
+    "seen": 1788069866.9711456,
+    "ast_hash": "83f3267d246134624a9ffc372f8831b2",
+    "semantic_hash": ""
+  },
+  "_archive/cancelled_topic_2026-08-10/SOURCE_OF_TRUTH.md": {
+    "mtime": 1786371944.5419734,
+    "seen": 1788069866.9711468,
+    "ast_hash": "b3757387c4455c956d2e282c822a3b64",
+    "semantic_hash": ""
+  },
+  "_archive/cancelled_topic_2026-08-10/WORKFLOW_LOG.md": {
+    "mtime": 1786371944.5419734,
+    "seen": 1788069866.9711475,
+    "ast_hash": "6f12ca59559ec32ad2fe0443b3bfea7a",
+    "semantic_hash": ""
+  },
+  "tmp/opencode_prompt_website.md": {
+    "mtime": 1787566678.4285338,
+    "seen": 1788069866.9711483,
+    "ast_hash": "a3a8359cee7e6e6ed861568c8be614f3",
+    "semantic_hash": ""
+  },
+  "tmp/opencode_tui_task1.md": {
+    "mtime": 1787568591.0757117,
+    "seen": 1788069866.9711492,
+    "ast_hash": "b90a4eb862267497e5cea8ba6a5fb183",
+    "semantic_hash": ""
+  },
+  "website/index.html": {
+    "mtime": 1787568734.7930741,
+    "seen": 1788069866.9711502,
+    "ast_hash": "6b3f57ff3d63c3a61e590d9b8560b999",
+    "semantic_hash": ""
+  },
+  "website/publikasi.html": {
+    "mtime": 1787568771.741479,
+    "seen": 1788069866.9711509,
+    "ast_hash": "88a891bbc6e1427c93aadc07e31c79bf",
+    "semantic_hash": ""
+  },
+  "01_Naskah_Utama/skripsi_ukrida.pdf": {
+    "mtime": 1788071299.965547,
+    "seen": 1788071310.3858464,
+    "ast_hash": "c9c673eeabe155804b4756f193efd94f",
+    "semantic_hash": ""
+  },
+  "02_Persiapan_Sidang/panduan_belajar_skripsi_v2.pdf": {
+    "mtime": 1787474764.5519972,
+    "seen": 1788069866.9711528,
+    "ast_hash": "c35421222167cf0859c6f8bcc604abfc",
+    "semantic_hash": ""
+  },
+  "05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.pdf": {
+    "mtime": 1785994637.8414192,
+    "seen": 1788069866.9711537,
+    "ast_hash": "4a441c58b444a2d504778127d3d91597",
+    "semantic_hash": ""
+  },
+  "05_Pedoman_&_Referensi/TUGAS AKHIR (Revisii).pdf": {
+    "mtime": 1785994637.8514202,
+    "seen": 1788069866.9711547,
+    "ast_hash": "ac217a5dacbc48e6bec17f7c5d78aebe",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/Review prism.pdf": {
+    "mtime": 1788067053.6502836,
+    "seen": 1788069866.971156,
+    "ast_hash": "a2eb0bfddc93d544f436e4c668d8333a",
+    "semantic_hash": ""
+  },
+  "latex/outputs/skripsi_ukrida.pdf": {
+    "mtime": 1787097199.8112605,
+    "seen": 1788069866.9711568,
+    "ast_hash": "02ea778bce4283c5b8a43cf08b2eee32",
+    "semantic_hash": ""
+  },
+  "latex/panduan_belajar_skripsi_v2.pdf": {
+    "mtime": 1787474764.5519972,
+    "seen": 1788069866.9711578,
+    "ast_hash": "c35421222167cf0859c6f8bcc604abfc",
+    "semantic_hash": ""
+  },
+  "latex/skripsi_ukrida.pdf": {
+    "mtime": 1788071299.965547,
+    "seen": 1788071310.385855,
+    "ast_hash": "c9c673eeabe155804b4756f193efd94f",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-01.png": {
+    "mtime": 1787079125.7723143,
+    "seen": 1788069866.9711595,
+    "ast_hash": "3c102cfff5e31be1b82ca156293c886f",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-02.png": {
+    "mtime": 1787079126.0262465,
+    "seen": 1788069866.9711604,
+    "ast_hash": "15125c36529812b1380afdac6e8d17aa",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-03.png": {
+    "mtime": 1787079126.1094656,
+    "seen": 1788069866.9711614,
+    "ast_hash": "1948f524441f8c0b3ec90055fb78d0ec",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-04.png": {
+    "mtime": 1787079126.2816856,
+    "seen": 1788069866.971162,
+    "ast_hash": "2a9a4b825d89c1e376792320acdcfdd4",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-05.png": {
+    "mtime": 1787079126.4749837,
+    "seen": 1788069866.9711628,
+    "ast_hash": "033e4051958f458250f5cf0cea8e315f",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-06.png": {
+    "mtime": 1787079126.5452054,
+    "seen": 1788069866.971164,
+    "ast_hash": "a32c706531f569000d342cedfe7c8579",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-07.png": {
+    "mtime": 1787079126.6976058,
+    "seen": 1788069866.971165,
+    "ast_hash": "1cb01c64ee17e3eae7081e18b2625c68",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-08.png": {
+    "mtime": 1787079126.9641037,
+    "seen": 1788069866.9711657,
+    "ast_hash": "7ca246cabc10742af3b9dfae4d553246",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-09.png": {
+    "mtime": 1787079127.0509999,
+    "seen": 1788069866.9711666,
+    "ast_hash": "ba0d9ff56956691bcc98c9997574d277",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-10.png": {
+    "mtime": 1787079127.3866289,
+    "seen": 1788069866.9711676,
+    "ast_hash": "8eb3fa370d8bcd6f2aaab10d0bed4757",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-11.png": {
+    "mtime": 1787079127.6163595,
+    "seen": 1788069866.9711685,
+    "ast_hash": "f8edc6d4ba7fcce41d4f1db427bf88c9",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-12.png": {
+    "mtime": 1787079127.9842787,
+    "seen": 1788069866.9711697,
+    "ast_hash": "b523ad808ed316ad4e4b21c02fffe02d",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-13.png": {
+    "mtime": 1787079128.0676486,
+    "seen": 1788069866.9711716,
+    "ast_hash": "6b0ad9551c9e1a7b2b1b382a21cbfee5",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-14.png": {
+    "mtime": 1787079128.4299371,
+    "seen": 1788069866.9711733,
+    "ast_hash": "da42a85ece4c177014874eec3f5e90bb",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-15.png": {
+    "mtime": 1787079128.5122766,
+    "seen": 1788069866.9711764,
+    "ast_hash": "8fc80555801d01304f8ae62c78c51cc0",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-16.png": {
+    "mtime": 1787079128.7694454,
+    "seen": 1788069866.9711783,
+    "ast_hash": "69f3add887488c5348bfccbe577d3052",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-17.png": {
+    "mtime": 1787079129.0775528,
+    "seen": 1788069866.9711797,
+    "ast_hash": "9ff963870a1773d572203c9bb5e772a0",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-18.png": {
+    "mtime": 1787079129.3601894,
+    "seen": 1788069866.9711812,
+    "ast_hash": "adb0e5dbae6419c6aa9564285f7de766",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-19.png": {
+    "mtime": 1787079129.4379537,
+    "seen": 1788069866.9711819,
+    "ast_hash": "374c45e4965fd948a0d29dfd9074d13f",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-20.png": {
+    "mtime": 1787079129.607749,
+    "seen": 1788069866.9711826,
+    "ast_hash": "562df3c0468ce67764d32e12414aefb6",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-21.png": {
+    "mtime": 1787079129.6862702,
+    "seen": 1788069866.9711835,
+    "ast_hash": "0b0383a87adc2d2979d81bbf4dedac03",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-22.png": {
+    "mtime": 1787079130.0396395,
+    "seen": 1788069866.9711845,
+    "ast_hash": "80bc0d17fa0ce0cf6c74976b98be557b",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-23.png": {
+    "mtime": 1787079130.3999517,
+    "seen": 1788069866.9711862,
+    "ast_hash": "b443ae1a7620235ee5ce74827c589ff9",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-24.png": {
+    "mtime": 1787079130.78345,
+    "seen": 1788069866.9711883,
+    "ast_hash": "cc6f23b3a87cc850e5ec533ecde96194",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-25.png": {
+    "mtime": 1787079131.1112704,
+    "seen": 1788069866.9711897,
+    "ast_hash": "755b9cdb0ec00d770af35694bb5c97fa",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-26.png": {
+    "mtime": 1787079131.4562523,
+    "seen": 1788069866.971191,
+    "ast_hash": "0383fa91f5ebb24f09fef9e765db67d5",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-27.png": {
+    "mtime": 1787079131.7890341,
+    "seen": 1788069866.9711924,
+    "ast_hash": "fca788a8cdb7f8e7b7e19a01a22e1b10",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-28.png": {
+    "mtime": 1787079132.084686,
+    "seen": 1788069866.9711933,
+    "ast_hash": "063ddda94f2a42c115b6eaaabfeb96fc",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-29.png": {
+    "mtime": 1787079132.4006517,
+    "seen": 1788069866.9711952,
+    "ast_hash": "727e3c5a4a8a836d3e81a48b8e42a3a2",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-30.png": {
+    "mtime": 1787079132.6166577,
+    "seen": 1788069866.971197,
+    "ast_hash": "ca43cba0db6e0916d487cb09dc2e5b9c",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-31.png": {
+    "mtime": 1787079132.947456,
+    "seen": 1788069866.9711986,
+    "ast_hash": "27cc88e1058b9324068c979fc00919fa",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-32.png": {
+    "mtime": 1787079133.3075054,
+    "seen": 1788069866.9711995,
+    "ast_hash": "83152ff55b5dbfa2c495a0f60d94384a",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-33.png": {
+    "mtime": 1787079133.6447053,
+    "seen": 1788069866.9712007,
+    "ast_hash": "1d7e3fe8f5c7272ea533a4411bf60067",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-34.png": {
+    "mtime": 1787079133.9732697,
+    "seen": 1788069866.9712014,
+    "ast_hash": "fac8afbb55b02c7619e67d9d347d558b",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-35.png": {
+    "mtime": 1787079134.2434242,
+    "seen": 1788069866.9712026,
+    "ast_hash": "f494af4a1dc275d652311dd76abd9015",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-36.png": {
+    "mtime": 1787079134.5408483,
+    "seen": 1788069866.9712036,
+    "ast_hash": "8e4db49cb0daf6837bebc128357d97cd",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-37.png": {
+    "mtime": 1787079134.8625119,
+    "seen": 1788069866.971204,
+    "ast_hash": "760d3553910fda85315d26d75fba0c11",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-38.png": {
+    "mtime": 1787079135.1936264,
+    "seen": 1788069866.9712052,
+    "ast_hash": "e332b68ec00c253011284b34d584ed2e",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-39.png": {
+    "mtime": 1787079135.3843715,
+    "seen": 1788069866.971207,
+    "ast_hash": "629a405672301a8f5a7743dcbc1a05d2",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-40.png": {
+    "mtime": 1787079135.64028,
+    "seen": 1788069866.9712088,
+    "ast_hash": "a09634d168b0c381dd0fd580a26a28a2",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-41.png": {
+    "mtime": 1787079135.9127016,
+    "seen": 1788069866.9712102,
+    "ast_hash": "c75c64b90f7a0bf23dd4e6ddf830b948",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-42.png": {
+    "mtime": 1787079136.2725482,
+    "seen": 1788069866.9712117,
+    "ast_hash": "4312a77adb5bec18411b379ed068ba60",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-43.png": {
+    "mtime": 1787079136.6176279,
+    "seen": 1788069866.9712138,
+    "ast_hash": "0299540597f0fba32c42c188976d727e",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-44.png": {
+    "mtime": 1787079136.7887647,
+    "seen": 1788069866.9712152,
+    "ast_hash": "f42e9baa1d6984e192cc8aa905a57fa0",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-45.png": {
+    "mtime": 1787079137.1276336,
+    "seen": 1788069866.9712172,
+    "ast_hash": "39bbe0c64f4941675eae668931591a1d",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-46.png": {
+    "mtime": 1787079137.377689,
+    "seen": 1788069866.9712186,
+    "ast_hash": "ec86e56cfdcd7a906a76603139292340",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-47.png": {
+    "mtime": 1787079137.6078062,
+    "seen": 1788069866.9712205,
+    "ast_hash": "964061ed0685e4af10aea5d3cca76d36",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-48.png": {
+    "mtime": 1787079137.8397956,
+    "seen": 1788069866.971222,
+    "ast_hash": "0def62aebbac040325454f15f858ef2f",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-49.png": {
+    "mtime": 1787079138.0861487,
+    "seen": 1788069866.971224,
+    "ast_hash": "3fc4a85063f57a6a9aac2a9049ce3895",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-50.png": {
+    "mtime": 1787079138.404073,
+    "seen": 1788069866.9712255,
+    "ast_hash": "cbf1e6613e779f9b70abc2e88ebf8c94",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-51.png": {
+    "mtime": 1787079138.675046,
+    "seen": 1788069866.9712272,
+    "ast_hash": "b8f864836397759687ec80b83fd6a2bf",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-52.png": {
+    "mtime": 1787079138.8354325,
+    "seen": 1788069866.9712286,
+    "ast_hash": "021be079682a745687124450bcfd1522",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-53.png": {
+    "mtime": 1787079139.1630933,
+    "seen": 1788069866.9712303,
+    "ast_hash": "f8cf7b12838b9a9a42b815f926c0356d",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-54.png": {
+    "mtime": 1787079139.5413976,
+    "seen": 1788069866.9712317,
+    "ast_hash": "63637d40731a88653b2a5dd55968f927",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-55.png": {
+    "mtime": 1787079139.7765906,
+    "seen": 1788069866.9712336,
+    "ast_hash": "4f3205aab84ff3c51ec6c968a416294b",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-56.png": {
+    "mtime": 1787079139.9943595,
+    "seen": 1788069866.9712355,
+    "ast_hash": "b614fdb98b7c2fe4908b498bc26207a6",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-57.png": {
+    "mtime": 1787079140.2980654,
+    "seen": 1788069866.9712374,
+    "ast_hash": "44c14de7033ac2d6727be0dce041851f",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-58.png": {
+    "mtime": 1787079140.5633225,
+    "seen": 1788069866.9712389,
+    "ast_hash": "fb3230e959d59f9085891007e4d7f46f",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-59.png": {
+    "mtime": 1787079140.7958107,
+    "seen": 1788069866.9712405,
+    "ast_hash": "27c6384f4526046d35321cd96c9efbca",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-60.png": {
+    "mtime": 1787079141.0381064,
+    "seen": 1788069866.971242,
+    "ast_hash": "b236bb5991f6f9a7b4e0c4d7f818ce97",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-61.png": {
+    "mtime": 1787079141.3145294,
+    "seen": 1788069866.9712436,
+    "ast_hash": "ebc17695f9476e739aa5a4e39f3fc77b",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-62.png": {
+    "mtime": 1787079141.6875412,
+    "seen": 1788069866.9712453,
+    "ast_hash": "ace134d1b6b28886419ebb3870e69e21",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-63.png": {
+    "mtime": 1787079142.0611026,
+    "seen": 1788069866.9712472,
+    "ast_hash": "f48d4457f8f5e3e1d2a06b53f4bfc69c",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-64.png": {
+    "mtime": 1787079142.4374912,
+    "seen": 1788069866.9712486,
+    "ast_hash": "b4b44714f91fe3b54ac3ca5dfeb74347",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-65.png": {
+    "mtime": 1787079142.7923813,
+    "seen": 1788069866.97125,
+    "ast_hash": "65298b5de64b0ca2f3e0396dbd1790d8",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-66.png": {
+    "mtime": 1787079143.0624971,
+    "seen": 1788069866.9712512,
+    "ast_hash": "55712e503887eb67611b315f903d5017",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-67.png": {
+    "mtime": 1787079143.3997517,
+    "seen": 1788069866.971253,
+    "ast_hash": "e4d9902cbdaa322255cde892d6d28353",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-68.png": {
+    "mtime": 1787079143.732584,
+    "seen": 1788069866.9712548,
+    "ast_hash": "c9fe104aa6f9a6666f1abc3e858245cd",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-69.png": {
+    "mtime": 1787079144.0475233,
+    "seen": 1788069866.9712565,
+    "ast_hash": "4b66a19acb69d9aa91edc3ee7aaa76c4",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-70.png": {
+    "mtime": 1787079144.2950182,
+    "seen": 1788069866.9712582,
+    "ast_hash": "f55fece74f91621e57cb42f1f2b647cb",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-71.png": {
+    "mtime": 1787079144.488866,
+    "seen": 1788069866.9712594,
+    "ast_hash": "83711810459021737f01389d5d2a34c3",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-72.png": {
+    "mtime": 1787079144.7493405,
+    "seen": 1788069866.9712613,
+    "ast_hash": "8af6ba03625bb06e09acf69919436efe",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-73.png": {
+    "mtime": 1787079145.034545,
+    "seen": 1788069866.9712627,
+    "ast_hash": "49f3f40cd91ae012e31f202f4367ceff",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-74.png": {
+    "mtime": 1787079145.3164856,
+    "seen": 1788069866.9712646,
+    "ast_hash": "5c564c3cbc7fcda7f149b25e826e64a1",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-75.png": {
+    "mtime": 1787079145.518695,
+    "seen": 1788069866.9712663,
+    "ast_hash": "1dc2d6d53309c6d7dfa2401518691948",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-76.png": {
+    "mtime": 1787079145.7674918,
+    "seen": 1788069866.9712682,
+    "ast_hash": "e4348ffa1dc1bdeda95acbb8627bc126",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-77.png": {
+    "mtime": 1787079146.0606267,
+    "seen": 1788069866.9712698,
+    "ast_hash": "1ff8fd56f8b6b05a520772f3515c7b18",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-78.png": {
+    "mtime": 1787079146.3560593,
+    "seen": 1788069866.9712715,
+    "ast_hash": "2bb96253c132a77986ab7081c393202e",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-79.png": {
+    "mtime": 1787079146.6200137,
+    "seen": 1788069866.9712734,
+    "ast_hash": "c5c1d62cabcd56216a480f5487a25b76",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-80.png": {
+    "mtime": 1787079146.8048716,
+    "seen": 1788069866.9712756,
+    "ast_hash": "4a748fe52bb90bc64520e73503081174",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-81.png": {
+    "mtime": 1787079147.066564,
+    "seen": 1788069866.9712768,
+    "ast_hash": "d2803b2068fcb226bc92f354f1662763",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview-82.png": {
+    "mtime": 1787079147.16123,
+    "seen": 1788069866.9712782,
+    "ast_hash": "933f7f57f88a12efe5f4f597e0b30e0e",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_bab1-017.png": {
+    "mtime": 1787079570.735157,
+    "seen": 1788069866.9712796,
+    "ast_hash": "96205d626f4ec840b4bd2abf339e3889",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_bab1-018.png": {
+    "mtime": 1787079571.039184,
+    "seen": 1788069866.9712813,
+    "ast_hash": "b38f888f055f6b276379c8e1e121e41b",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_bab1-019.png": {
+    "mtime": 1787079571.251194,
+    "seen": 1788069866.9712832,
+    "ast_hash": "fcce756aa3825735f4ef6c8d7f97604b",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_bab1-020.png": {
+    "mtime": 1787079571.5000048,
+    "seen": 1788069866.971285,
+    "ast_hash": "61534b4e62ddea43b28e7b31882a33eb",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_bab4-065.png": {
+    "mtime": 1787079571.944107,
+    "seen": 1788069866.9712868,
+    "ast_hash": "4e6173df33efa4e892c5c2472ea2eb2d",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_bab4-066.png": {
+    "mtime": 1787079572.2447796,
+    "seen": 1788069866.9712887,
+    "ast_hash": "4a7ab385f5fe20d8384ff7bced4eef44",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_bab4-067.png": {
+    "mtime": 1787079572.5084295,
+    "seen": 1788069866.9712903,
+    "ast_hash": "422062836cf537504001ef9bc27c0e8d",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_bab4-068.png": {
+    "mtime": 1787079572.7493942,
+    "seen": 1788069866.9712915,
+    "ast_hash": "65b52ae11a23f295d2b5a8ddeef456b6",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_front-001.png": {
+    "mtime": 1787079567.6945534,
+    "seen": 1788069866.9712927,
+    "ast_hash": "3c102cfff5e31be1b82ca156293c886f",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_front-002.png": {
+    "mtime": 1787079567.9543614,
+    "seen": 1788069866.9712934,
+    "ast_hash": "15125c36529812b1380afdac6e8d17aa",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_front-003.png": {
+    "mtime": 1787079568.0370078,
+    "seen": 1788069866.9712944,
+    "ast_hash": "1948f524441f8c0b3ec90055fb78d0ec",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_front-004.png": {
+    "mtime": 1787079568.2019327,
+    "seen": 1788069866.971295,
+    "ast_hash": "2a9a4b825d89c1e376792320acdcfdd4",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_lampiran-098.png": {
+    "mtime": 1787079573.2870357,
+    "seen": 1788069866.971296,
+    "ast_hash": "56e3b9f02e09fd717b8e7fa5db80e179",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_lampiran-099.png": {
+    "mtime": 1787079573.478176,
+    "seen": 1788069866.971297,
+    "ast_hash": "f87a2d107999f6472c6f10be3f2be97d",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_lampiran-100.png": {
+    "mtime": 1787079573.633109,
+    "seen": 1788069866.9712977,
+    "ast_hash": "f0c898809b2298f2cbd6c4f520e13429",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_lampiran-101.png": {
+    "mtime": 1787079573.822426,
+    "seen": 1788069866.971299,
+    "ast_hash": "ca20538959b36c0fecad112b8f814d4d",
+    "semantic_hash": ""
+  },
+  "latex/outputs/preview_lampiran-102.png": {
+    "mtime": 1787079574.0937696,
+    "seen": 1788069866.9713,
+    "ast_hash": "78db9b4a6e3beff73e65fc1c948edd23",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts/contact-01.jpg": {
+    "mtime": 1786008925.458967,
+    "seen": 1788069866.9713025,
+    "ast_hash": "ce5fde6ba6c304c8edc1a5791bf7243d",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts/contact-02.jpg": {
+    "mtime": 1786008925.5890062,
+    "seen": 1788069866.9713035,
+    "ast_hash": "9f36860f1e79050737334b2f7d1f43e3",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts/contact-03.jpg": {
+    "mtime": 1786008925.7298717,
+    "seen": 1788069866.9713054,
+    "ast_hash": "ee66be1c16cea8bd203f12bf1cc4c427",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts/contact-04.jpg": {
+    "mtime": 1786008925.8583765,
+    "seen": 1788069866.971307,
+    "ast_hash": "bc1124e36ed6bf17432aaf44e47f5f10",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts/contact-05.jpg": {
+    "mtime": 1786008925.9865925,
+    "seen": 1788069866.9713085,
+    "ast_hash": "707f5138c8da88518ecfff511f5b161e",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts/contact-06.jpg": {
+    "mtime": 1786008926.1196375,
+    "seen": 1788069866.9713104,
+    "ast_hash": "459ed406a70aea4a1133c0adf4da522b",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts/contact-07.jpg": {
+    "mtime": 1786008926.2447433,
+    "seen": 1788069866.971312,
+    "ast_hash": "9f5d2e9634297b6e5b352cd5f5785d8f",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts/contact-08.jpg": {
+    "mtime": 1786008926.27229,
+    "seen": 1788069866.9713156,
+    "ast_hash": "ea0b2a3574cb3428573f161f757344ab",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts_small/contact-01.jpg": {
+    "mtime": 1786008997.9010668,
+    "seen": 1788069866.9713166,
+    "ast_hash": "cf383390dbc9e2f5713c7788cbd84732",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts_small/contact-02.jpg": {
+    "mtime": 1786008997.982579,
+    "seen": 1788069866.9713175,
+    "ast_hash": "df58f70485cdc1660ea1fbb41eb29aaf",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts_small/contact-03.jpg": {
+    "mtime": 1786008998.0518608,
+    "seen": 1788069866.9713182,
+    "ast_hash": "e2883abec01e368dd51c7be2679a91eb",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts_small/contact-04.jpg": {
+    "mtime": 1786008998.1175747,
+    "seen": 1788069866.971319,
+    "ast_hash": "fdd4204932f0662b0b36af99ab572d93",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts_small/contact-05.jpg": {
+    "mtime": 1786008998.1798973,
+    "seen": 1788069866.97132,
+    "ast_hash": "fca9996a087cc76b8daed432f5ff770b",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts_small/contact-06.jpg": {
+    "mtime": 1786008998.245056,
+    "seen": 1788069866.9713209,
+    "ast_hash": "f9773c2863657145e94a60c01b50e3ba",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts_small/contact-07.jpg": {
+    "mtime": 1786008998.3038056,
+    "seen": 1788069866.9713216,
+    "ast_hash": "620ea71d72d569b11ccb9e1bee845cd1",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/contacts_small/contact-08.jpg": {
+    "mtime": 1786008998.314327,
+    "seen": 1788069866.9713225,
+    "ast_hash": "74f0750c41736dcac4732d4c3f09e512",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-01.png": {
+    "mtime": 1786008896.320689,
+    "seen": 1788069866.9713235,
+    "ast_hash": "ff4a31143b382eda62c796784f7ac09d",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-02.png": {
+    "mtime": 1786008896.4295273,
+    "seen": 1788069866.9713244,
+    "ast_hash": "0ef9a89be5677c808aacdf3f4ac5e748",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-03.png": {
+    "mtime": 1786008896.5046191,
+    "seen": 1788069866.9713252,
+    "ast_hash": "6acb8f99cc2ea6c649bc422437b115cf",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-04.png": {
+    "mtime": 1786008896.5851965,
+    "seen": 1788069866.9713259,
+    "ast_hash": "79dcdb81073550f497bcfc2b00095cc4",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-05.png": {
+    "mtime": 1786008896.6818562,
+    "seen": 1788069866.971327,
+    "ast_hash": "a4e6be619f29b2512af757799d9471c0",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-06.png": {
+    "mtime": 1786008896.8040023,
+    "seen": 1788069866.9713278,
+    "ast_hash": "d8329821a2460e06e4306e481448a3cc",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-07.png": {
+    "mtime": 1786008896.9417086,
+    "seen": 1788069866.9713285,
+    "ast_hash": "d03e4748dcd775bcd1529dc372beb2ae",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-08.png": {
+    "mtime": 1786008897.0326543,
+    "seen": 1788069866.9713295,
+    "ast_hash": "5ffa75b920efd2790ba73f111017841f",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-09.png": {
+    "mtime": 1786008897.1472197,
+    "seen": 1788069866.9713304,
+    "ast_hash": "3d6b9eadfd9dbd9ddce99a6a9bb76602",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-10.png": {
+    "mtime": 1786008897.286864,
+    "seen": 1788069866.9713314,
+    "ast_hash": "78fc3995a8b429eb72efbc17c9d1ca10",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-11.png": {
+    "mtime": 1786008897.3785095,
+    "seen": 1788069866.971332,
+    "ast_hash": "d2e7c792d70d9f28f53b9ea8575c825d",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-12.png": {
+    "mtime": 1786008897.4921603,
+    "seen": 1788069866.971333,
+    "ast_hash": "06e23d25991172666fbfa045e6e95b7e",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-13.png": {
+    "mtime": 1786008897.5747745,
+    "seen": 1788069866.971334,
+    "ast_hash": "6b01db4cf790f3a2101a3d46fb734167",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-14.png": {
+    "mtime": 1786008897.6889808,
+    "seen": 1788069866.971335,
+    "ast_hash": "29633295180d9d5413c67030e76fcc0e",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-15.png": {
+    "mtime": 1786008897.8030374,
+    "seen": 1788069866.9713356,
+    "ast_hash": "99dff5e6412366f3520018c86f173d72",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-16.png": {
+    "mtime": 1786008897.9366217,
+    "seen": 1788069866.9713366,
+    "ast_hash": "d9089944b2b3975fb2d10521330ac981",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-17.png": {
+    "mtime": 1786008898.089838,
+    "seen": 1788069866.9713378,
+    "ast_hash": "a04bfbcac394513e385978f1bd566509",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-18.png": {
+    "mtime": 1786008898.244481,
+    "seen": 1788069866.9713385,
+    "ast_hash": "3135897b8f587c7b785977f95ef325ec",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-19.png": {
+    "mtime": 1786008898.3997335,
+    "seen": 1788069866.9713397,
+    "ast_hash": "750d6335aac27c2d7149b85f076034b7",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-20.png": {
+    "mtime": 1786008898.5149403,
+    "seen": 1788069866.9713416,
+    "ast_hash": "0d936d064da5ddc34e6762e825ad1bdc",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-21.png": {
+    "mtime": 1786008898.6165533,
+    "seen": 1788069866.971343,
+    "ast_hash": "4f3e4ba9acdeeb3001110c527ed41ae3",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-22.png": {
+    "mtime": 1786008898.758711,
+    "seen": 1788069866.971345,
+    "ast_hash": "e748e1cd822e59b8c932e314b797acf1",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-23.png": {
+    "mtime": 1786008898.9264858,
+    "seen": 1788069866.9713466,
+    "ast_hash": "1640a11c0682f863e3a2fd8a320d7a6e",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-24.png": {
+    "mtime": 1786008899.0726478,
+    "seen": 1788069866.9713483,
+    "ast_hash": "af4646215ca82f8cdc2cfa40cc994406",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-25.png": {
+    "mtime": 1786008899.230939,
+    "seen": 1788069866.9713495,
+    "ast_hash": "249f5bb1fdfa67d1adfd883055a4e15d",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-26.png": {
+    "mtime": 1786008899.3905244,
+    "seen": 1788069866.9713514,
+    "ast_hash": "605a3e0973a3f51b9ffe2a496a3bf2ed",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-27.png": {
+    "mtime": 1786008899.5369878,
+    "seen": 1788069866.971353,
+    "ast_hash": "5c01e113fb58361595c2334b6fd8dcac",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-28.png": {
+    "mtime": 1786008899.7004073,
+    "seen": 1788069866.971355,
+    "ast_hash": "345a2df84986cbc0329b64c215d6a44d",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-29.png": {
+    "mtime": 1786008899.849583,
+    "seen": 1788069866.9713566,
+    "ast_hash": "d8061247d50d38a743f4fe0820d1c99c",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-30.png": {
+    "mtime": 1786008899.996785,
+    "seen": 1788069866.9713583,
+    "ast_hash": "740a26d61af7b1d5a3c858b1f5feb7c2",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-31.png": {
+    "mtime": 1786008900.1400278,
+    "seen": 1788069866.97136,
+    "ast_hash": "0b4c71e560525c2c95d071fbfc27a939",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-32.png": {
+    "mtime": 1786008900.3024397,
+    "seen": 1788069866.9713614,
+    "ast_hash": "8e6caceddbe21f0dc28d1c2aec286194",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-33.png": {
+    "mtime": 1786008900.4091816,
+    "seen": 1788069866.9713624,
+    "ast_hash": "abc4d0feb5177051544828d4a7bdb2d5",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-34.png": {
+    "mtime": 1786008900.5245154,
+    "seen": 1788069866.9713633,
+    "ast_hash": "ecdf1d5294ebdb800da2ee2fc39c3e45",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-35.png": {
+    "mtime": 1786008900.6308389,
+    "seen": 1788069866.971364,
+    "ast_hash": "0ec27bc42ef9e05c0018d774b986e9ca",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-36.png": {
+    "mtime": 1786008900.7710285,
+    "seen": 1788069866.9713652,
+    "ast_hash": "7273c5d969ee03591c6e790083d53a59",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-37.png": {
+    "mtime": 1786008900.9149323,
+    "seen": 1788069866.971366,
+    "ast_hash": "f85e6f82081919049796a7cf5f503f1b",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-38.png": {
+    "mtime": 1786008901.0611048,
+    "seen": 1788069866.9713666,
+    "ast_hash": "f659b68082af2b8c2db1dbe4c562519f",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-39.png": {
+    "mtime": 1786008901.2208416,
+    "seen": 1788069866.9713674,
+    "ast_hash": "5eecc5553a08cd3a0e2363e20a66d56d",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-40.png": {
+    "mtime": 1786008901.364094,
+    "seen": 1788069866.971368,
+    "ast_hash": "c6a684739cc9257d4d1bc2ec5c9d768e",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-41.png": {
+    "mtime": 1786008901.5054722,
+    "seen": 1788069866.9713693,
+    "ast_hash": "f37da50874ad0ae6dcb8a54ace9a54ff",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-42.png": {
+    "mtime": 1786008901.610821,
+    "seen": 1788069866.97137,
+    "ast_hash": "444cef415f8d08c8286f5d1515754b65",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-43.png": {
+    "mtime": 1786008901.7199762,
+    "seen": 1788069866.9713707,
+    "ast_hash": "96876e75f0d89ef7353280243bcbe270",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-44.png": {
+    "mtime": 1786008901.8547742,
+    "seen": 1788069866.971372,
+    "ast_hash": "7c0daf6b1d762116f65a371243967a05",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-45.png": {
+    "mtime": 1786008901.975549,
+    "seen": 1788069866.9713726,
+    "ast_hash": "c37ed73150b17d304cbcac924cd8a698",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-46.png": {
+    "mtime": 1786008902.1156135,
+    "seen": 1788069866.9713733,
+    "ast_hash": "27264088a41a690fabdaaa7d2bc01341",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-47.png": {
+    "mtime": 1786008902.2430708,
+    "seen": 1788069866.971374,
+    "ast_hash": "7fa74e18f53a3534ed313378553a030b",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-48.png": {
+    "mtime": 1786008902.3736866,
+    "seen": 1788069866.9713748,
+    "ast_hash": "c9214b9d0ab548c85e11350a8f8e493a",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-49.png": {
+    "mtime": 1786008902.482872,
+    "seen": 1788069866.971376,
+    "ast_hash": "864019ec4aaa263211712a9c4a10ff60",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-50.png": {
+    "mtime": 1786008902.5810256,
+    "seen": 1788069866.9713776,
+    "ast_hash": "3006404ba4d960d93cce3ed95541fc78",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-51.png": {
+    "mtime": 1786008902.6916413,
+    "seen": 1788069866.9713795,
+    "ast_hash": "8b5e159ac30a60f3872f85c78630f686",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-52.png": {
+    "mtime": 1786008902.822098,
+    "seen": 1788069866.971381,
+    "ast_hash": "6e07082aa6929949a246e887537560ce",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-53.png": {
+    "mtime": 1786008902.9248972,
+    "seen": 1788069866.9713829,
+    "ast_hash": "255f61d2835fbc184df35e56deb2bfae",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-54.png": {
+    "mtime": 1786008903.0400834,
+    "seen": 1788069866.9713845,
+    "ast_hash": "74612af76c3fa0ff9cc44cad38959af5",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-55.png": {
+    "mtime": 1786008903.1488068,
+    "seen": 1788069866.971386,
+    "ast_hash": "616bedfd299d630e92c5dfe694454699",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-56.png": {
+    "mtime": 1786008903.2755797,
+    "seen": 1788069866.971387,
+    "ast_hash": "3a4a10d5fc706e49122604bdf77d86d2",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-57.png": {
+    "mtime": 1786008903.3747988,
+    "seen": 1788069866.971388,
+    "ast_hash": "21d74e81ceda806702f54c34f9a57281",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-58.png": {
+    "mtime": 1786008903.4895325,
+    "seen": 1788069866.9713888,
+    "ast_hash": "772c182049f88666d90c3dbc7ec2d137",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-59.png": {
+    "mtime": 1786008903.5917253,
+    "seen": 1788069866.9713898,
+    "ast_hash": "3b21865206688911f7a536f89f49ed1a",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-60.png": {
+    "mtime": 1786008903.7306302,
+    "seen": 1788069866.9713907,
+    "ast_hash": "f091d6838d96460d18d3269c5fa8bcbb",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-61.png": {
+    "mtime": 1786008903.8769567,
+    "seen": 1788069866.9713914,
+    "ast_hash": "24bd25905e20b467410ca972dfc6c3e3",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-62.png": {
+    "mtime": 1786008904.0280168,
+    "seen": 1788069866.9713936,
+    "ast_hash": "9a23fa35782a7107ea5f0fdb832da322",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-63.png": {
+    "mtime": 1786008904.1849422,
+    "seen": 1788069866.971395,
+    "ast_hash": "53c39acae0c3e9ef9e9f60eeec57ad96",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-64.png": {
+    "mtime": 1786008904.3318799,
+    "seen": 1788069866.9713967,
+    "ast_hash": "d70a4a3fb51af1cea4fe4505fcec7604",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-65.png": {
+    "mtime": 1786008904.4836507,
+    "seen": 1788069866.9713984,
+    "ast_hash": "111fe4f6a8d9498ce01c732c2b30b92d",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-66.png": {
+    "mtime": 1786008904.6279438,
+    "seen": 1788069866.9714,
+    "ast_hash": "a9158274c0f146cc24d27f6332b8e85e",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-67.png": {
+    "mtime": 1786008904.768374,
+    "seen": 1788069866.9714015,
+    "ast_hash": "e9fe4dd69bc12eaa30b24f49f9360df2",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-68.png": {
+    "mtime": 1786008904.8616314,
+    "seen": 1788069866.9714034,
+    "ast_hash": "54db3def6c2fdbe261bda6b126932bb7",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-69.png": {
+    "mtime": 1786008905.0035124,
+    "seen": 1788069866.9714048,
+    "ast_hash": "d1c757004c9bfbb9fe3e6bbe85c4c1ca",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-70.png": {
+    "mtime": 1786008905.1637647,
+    "seen": 1788069866.971407,
+    "ast_hash": "d70168bbec1a9dfdde82bc0ac9d69e76",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-71.png": {
+    "mtime": 1786008905.3175657,
+    "seen": 1788069866.9714086,
+    "ast_hash": "e7dba866f1257ed86b520b0cfee8df8a",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-72.png": {
+    "mtime": 1786008905.4616864,
+    "seen": 1788069866.9714103,
+    "ast_hash": "9e65988e1d6a0e08e5104c10560e13e5",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-73.png": {
+    "mtime": 1786008905.5515177,
+    "seen": 1788069866.9714117,
+    "ast_hash": "af4eaed28660d986d4cad7dcb4ec6190",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-74.png": {
+    "mtime": 1786008905.7030356,
+    "seen": 1788069866.9714136,
+    "ast_hash": "5f48194c46dede280b954b5025ad7ca1",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-75.png": {
+    "mtime": 1786008905.8507564,
+    "seen": 1788069866.971415,
+    "ast_hash": "37902dfc130571e8318404538367620d",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-76.png": {
+    "mtime": 1786008906.0065572,
+    "seen": 1788069866.971417,
+    "ast_hash": "384bef4763b794d25b3e52f08dea8f12",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-77.png": {
+    "mtime": 1786008906.1649535,
+    "seen": 1788069866.9714186,
+    "ast_hash": "1934da75b85f4f68a38cf8f8952c85bb",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-78.png": {
+    "mtime": 1786008906.2131033,
+    "seen": 1788069866.9714205,
+    "ast_hash": "40fc0c0d92aabccaa5dc256d90de3f47",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-79.png": {
+    "mtime": 1786008906.3176353,
+    "seen": 1788069866.9714222,
+    "ast_hash": "ceddd00665375976da0e767c1fce65fa",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-80.png": {
+    "mtime": 1786008906.4198117,
+    "seen": 1788069866.971424,
+    "ast_hash": "324c1748a8fe99dff6823ea5fb240b41",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-81.png": {
+    "mtime": 1786008906.5109725,
+    "seen": 1788069866.9714255,
+    "ast_hash": "b32feed6e4e7a55380181fd7d5cb9d3b",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-82.png": {
+    "mtime": 1786008906.5986915,
+    "seen": 1788069866.9714274,
+    "ast_hash": "ae24e9da8aaa6756b27ae0f6d5683cc7",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-83.png": {
+    "mtime": 1786008906.6668088,
+    "seen": 1788069866.971429,
+    "ast_hash": "800506b60d0c12d73a74ddb88d86810e",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-84.png": {
+    "mtime": 1786008906.744959,
+    "seen": 1788069866.971431,
+    "ast_hash": "efd8750b0752bc7fd48145a50a228e84",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-85.png": {
+    "mtime": 1786008906.7865145,
+    "seen": 1788069866.9714324,
+    "ast_hash": "98472212a0cf8a7b83b23c55a2dcea96",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/page-86.png": {
+    "mtime": 1786008906.8529568,
+    "seen": 1788069866.9714339,
+    "ast_hash": "c2b052bc4a2ef8d68a01c2c6ceaea303",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-01.jpg": {
+    "mtime": 1786009089.089732,
+    "seen": 1788069866.9714358,
+    "ast_hash": "05fc146b02f174b7b7235f2f30c8908d",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-02.jpg": {
+    "mtime": 1786009096.6852038,
+    "seen": 1788069866.971438,
+    "ast_hash": "991dfcb43f003457daa84117c84423a0",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-05.jpg": {
+    "mtime": 1786009089.1122699,
+    "seen": 1788069866.9714394,
+    "ast_hash": "77f41d819be58c14f16cddc072eac2ca",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-09.jpg": {
+    "mtime": 1786009096.6942239,
+    "seen": 1788069866.9714406,
+    "ast_hash": "dd67568a875b5ba3da28dae6ead4117d",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-10.jpg": {
+    "mtime": 1786009096.700732,
+    "seen": 1788069866.971442,
+    "ast_hash": "f97c1b3674b4b98f0d450dd69bab9b48",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-11.jpg": {
+    "mtime": 1786009096.7097504,
+    "seen": 1788069866.9714434,
+    "ast_hash": "f5efa11380986bec68370d76d954ca6b",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-14.jpg": {
+    "mtime": 1786009096.7172587,
+    "seen": 1788069866.971445,
+    "ast_hash": "66687d24baa0f2af1d2150b1243e9374",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-33.jpg": {
+    "mtime": 1786009096.7262754,
+    "seen": 1788069866.9714468,
+    "ast_hash": "cec12d5e30ea2620176b1b2591541415",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-34.jpg": {
+    "mtime": 1786009096.7343109,
+    "seen": 1788069866.9714484,
+    "ast_hash": "32063f5a812b34d666ce0f83f99463b5",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-35.jpg": {
+    "mtime": 1786009096.742437,
+    "seen": 1788069866.97145,
+    "ast_hash": "72629d2c256736cad577744dbec91c5e",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-43.jpg": {
+    "mtime": 1786009089.204214,
+    "seen": 1788069866.9714513,
+    "ast_hash": "b34783c65bf466fedbac4b3540e7db3f",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-46.jpg": {
+    "mtime": 1786009096.7504785,
+    "seen": 1788069866.9714527,
+    "ast_hash": "b45e17bfa2b3d634e20749b3c671a828",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-47.jpg": {
+    "mtime": 1786009096.758503,
+    "seen": 1788069866.971454,
+    "ast_hash": "885aa262760d5a4f1a1dd246a953c762",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-55.jpg": {
+    "mtime": 1786009096.7660139,
+    "seen": 1788069866.9714556,
+    "ast_hash": "7cf7504b4dcbf9578f9bbb7769aebcf5",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-56.jpg": {
+    "mtime": 1786009096.7760372,
+    "seen": 1788069866.971457,
+    "ast_hash": "edc8ced027c54bfbc78512f1533c4836",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-57.jpg": {
+    "mtime": 1786009089.2633743,
+    "seen": 1788069866.9714582,
+    "ast_hash": "5903f16d3f623ecd9d69c4f46bb8fd4f",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-58.jpg": {
+    "mtime": 1786009096.786067,
+    "seen": 1788069866.9714594,
+    "ast_hash": "e851f4c5a91ab5c5ec7ce3c048be5684",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-60.jpg": {
+    "mtime": 1786009096.7950892,
+    "seen": 1788069866.9714608,
+    "ast_hash": "5f22c98e8718f5d44d69a3fc2793bca5",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-69.jpg": {
+    "mtime": 1786009096.8031142,
+    "seen": 1788069866.9714618,
+    "ast_hash": "dc5a3c29f0e29feb8e4e92999c6a320a",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-71.jpg": {
+    "mtime": 1786009096.8111267,
+    "seen": 1788069866.9714632,
+    "ast_hash": "89bc3562664801da0044955dbb06e9be",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-74.jpg": {
+    "mtime": 1786009096.8206408,
+    "seen": 1788069866.9714646,
+    "ast_hash": "2ef17198e3770263548cbe5de049ecc3",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-78.jpg": {
+    "mtime": 1786009089.330663,
+    "seen": 1788069866.971466,
+    "ast_hash": "255eb5fe91a9c1475743ed9b52033219",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-79.jpg": {
+    "mtime": 1786009096.8276534,
+    "seen": 1788069866.9714675,
+    "ast_hash": "f0277b907bfaa236918c29a51e9cf1da",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-80.jpg": {
+    "mtime": 1786009096.83617,
+    "seen": 1788069866.9714692,
+    "ast_hash": "e4055bb27ee40054bee4eb946567c4e1",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-81.jpg": {
+    "mtime": 1786009096.8441856,
+    "seen": 1788069866.9714706,
+    "ast_hash": "ca8e1bce390e3e7d300e20603e2d4795",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-82.jpg": {
+    "mtime": 1786009096.8532126,
+    "seen": 1788069866.971472,
+    "ast_hash": "86b35301e48ae10e2596e480c9260659",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-83.jpg": {
+    "mtime": 1786009089.3887649,
+    "seen": 1788069866.9714737,
+    "ast_hash": "1661bb2f1cf62f7747843b2b374a0c3b",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-84.jpg": {
+    "mtime": 1786009089.3997872,
+    "seen": 1788069866.9714751,
+    "ast_hash": "d1eb2ccc7ecb42c45cd71b6df5ac5dd9",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-85.jpg": {
+    "mtime": 1786009089.4098065,
+    "seen": 1788069866.9714766,
+    "ast_hash": "84e0a079d9e15c2e9adddc557c308b9c",
+    "semantic_hash": ""
+  },
+  "tmp/pdfs/tugas_akhir_revisii/pages_small/page-86.jpg": {
+    "mtime": 1786009089.4193556,
+    "seen": 1788069866.971478,
+    "ast_hash": "e66fcbe313da0bae846a8f1600a57ec8",
+    "semantic_hash": ""
+  },
+  "01_Naskah_Utama/sync_markdown_from_tex.py": {
+    "mtime": 1788071273.8811743,
+    "seen": 1788071310.3857527,
+    "ast_hash": "32f6a7ac6887072b7e83f8ab049f60cd",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/ECONOMETRIC_RESULTS_V2.md": {
+    "mtime": 1788070018.3225758,
+    "seen": 1788070108.3158898,
+    "ast_hash": "3d6ead1d3618c648d29cf16b81b1022b",
+    "semantic_hash": ""
+  },
+  "update_identity_all_files.py": {
+    "mtime": 1788071273.8835888,
+    "seen": 1788071310.385775,
+    "ast_hash": "bc5318c7c5eb22da4e03f8940935e0bf",
+    "semantic_hash": ""
+  }
+}

@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar" id="navbar" role="navigation" aria-label="Navigasi utama">
+    <nav class="navbar" id="navbar" aria-label="Navigasi utama">
         <div class="nav-container">
             <a href="#home" class="nav-logo" aria-label="Beranda">GF·NPL·CAR→ROA</a>
-            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu navigasi">
+            <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu navigasi">
                 <span class="hamburger"></span>
             </button>
             <ul class="nav-menu" id="navMenu" role="menubar">
@@ -37,7 +37,7 @@
                 <span class="hero-badge">Periode 2021–2025</span>
                 <h1 id="hero-title" class="hero-title">Pengaruh Portofolio Kredit Hijau (Green Financing), Non-Performing Loan (NPL), dan Capital Adequacy Ratio (CAR) terhadap Profitabilitas (ROA) pada Bank KBMI 4 di Indonesia</h1>
                 <p class="hero-subtitle">Fakultas Ekonomi dan Bisnis · Universitas Kristen Krida Wacana · Program Studi S1 Manajemen Konsentrasi Manajemen Keuangan</p>
-                <a href="#hasil" class="btn btn-primary" role="button">Lihat Hasil Penelitian</a>
+                <button type="button" class="btn btn-primary" onclick="document.getElementById('hasil').scrollIntoView({behavior:'smooth'})">Lihat Hasil Penelitian</button>
             </div>
         </section>
 
@@ -88,31 +88,31 @@
 
         <section id="variabel" class="section reveal" aria-labelledby="variabel-title">
             <div class="container">
-                <h2 id="variabel-title" class="section-title">Variabel & Hipotesis</h2>
+                <h2 id="variabel-title" class="section-title">Variabel &amp; Hipotesis</h2>
                 <div class="variables-grid">
                     <article class="var-card">
                         <div class="var-code">X1</div>
                         <h3>Green Financing (GF)</h3>
                         <p class="var-def">Porsi Kredit Hijau terhadap Total Kredit</p>
-                        <p class="var-hypo"><strong>H1:</strong> GF → ROA positif signifikan (β = +0,042; p = 0,0003)</p>
+                        <p class="var-hypo"><strong>H1:</strong> GF → ROA positif signifikan (β = +0,077; p &lt; 0,0001)</p>
                     </article>
                     <article class="var-card">
                         <div class="var-code">X2</div>
                         <h3>Non-Performing Loan (NPL)</h3>
                         <p class="var-def">Kredit macet terhadap total kredit</p>
-                        <p class="var-hypo"><strong>H2:</strong> NPL → ROA negatif signifikan (β = −0,385; p < 0,0001)</p>
+                        <p class="var-hypo"><strong>H2:</strong> NPL → ROA negatif tidak signifikan (β = −0,072; p = 0,1308) — <em>H2 Ditolak</em></p>
                     </article>
                     <article class="var-card">
                         <div class="var-code">X3</div>
                         <h3>Capital Adequacy Ratio (CAR)</h3>
                         <p class="var-def">Modal bank terhadap ATMR (Aset Tertimbang Menurut Risiko)</p>
-                        <p class="var-hypo"><strong>H3:</strong> CAR → ROA positif signifikan (β = +0,074; p < 0,0001)</p>
+                        <p class="var-hypo"><strong>H3:</strong> CAR → ROA positif signifikan (β = +0,081; p &lt; 0,0001)</p>
                     </article>
                     <article class="var-card">
                         <div class="var-code">Y</div>
                         <h3>Return on Assets (ROA)</h3>
                         <p class="var-def">Laba sebelum pajak terhadap total aset</p>
-                        <p class="var-hypo"><strong>H4 (Simultan):</strong> F = 32,450; p < 0,0001; Adj. R² = 70,2%</p>
+                        <p class="var-hypo"><strong>H4 (Simultan):</strong> F = 1.756,2; p &lt; 0,0001; Adj. R² = 98,55%</p>
                     </article>
                 </div>
             </div>
@@ -125,7 +125,7 @@
                     <li class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3>Populasi & Sampel</h3>
+                            <h3>Populasi &amp; Sampel</h3>
                             <p>Populasi: Bank KBMI 4 di Indonesia. Sampel: 4 bank dipilih dengan <strong>purposive sampling</strong> (memiliki laporan keuangan lengkap, menerbitkan laporan keberlanjutan, periode 2021–2025).</p>
                         </div>
                     </li>
@@ -140,7 +140,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3>Uji Asumsi Klasik</h3>
-                            <p>Uji normalitas residual, uji multikolinearitas (VIF), uji heteroskedastisitas, uji autokorelasi (Durbin-Watson). Semua asumsi terpenuhi.</p>
+                            <p>Uji normalitas residual, uji multikolinearitas (VIF), uji heteroskedastisitas, uji autokorelasi (Durbin-Watson). Autokorelasi ditangani via estimator robust Driscoll-Kraay.</p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -157,11 +157,11 @@
         <section id="hasil" class="section reveal" aria-labelledby="hasil-title">
             <div class="container">
                 <h2 id="hasil-title" class="section-title">Hasil Penelitian</h2>
-                
+
                 <div class="results-grid">
                     <div class="coeff-table-wrapper">
                         <h3>Koefisien Regresi (Fixed Effect Model)</h3>
-                        <table class="coeff-table" role="table" aria-label="Tabel koefisien regresi">
+                        <table class="coeff-table" aria-label="Tabel koefisien regresi">
                             <thead>
                                 <tr>
                                     <th scope="col">Variabel</th>
@@ -173,20 +173,20 @@
                             <tbody>
                                 <tr>
                                     <td><strong>Green Financing (X1)</strong></td>
-                                    <td>+0,042</td>
-                                    <td>0,0003</td>
+                                    <td>+0,077</td>
+                                    <td>&lt; 0,0001</td>
                                     <td><span class="sig-badge sig-positive">Signifikan Positif</span></td>
                                 </tr>
                                 <tr>
                                     <td><strong>NPL (X2)</strong></td>
-                                    <td>−0,385</td>
-                                    <td>< 0,0001</td>
-                                    <td><span class="sig-badge sig-negative">Signifikan Negatif</span></td>
+                                    <td>−0,072</td>
+                                    <td>0,1308</td>
+                                    <td><span class="sig-badge sig-neutral">Tidak Signifikan</span></td>
                                 </tr>
                                 <tr>
                                     <td><strong>CAR (X3)</strong></td>
-                                    <td>+0,074</td>
-                                    <td>< 0,0001</td>
+                                    <td>+0,081</td>
+                                    <td>&lt; 0,0001</td>
                                     <td><span class="sig-badge sig-positive">Signifikan Positif</span></td>
                                 </tr>
                             </tbody>
@@ -196,25 +196,25 @@
                     <div class="chart-wrapper">
                         <h3>Visualisasi Koefisien</h3>
                         <div class="bar-chart" role="img" aria-label="Bar chart horizontal koefisien regresi">
-                            <div class="bar-item" data-value="0.042" data-label="Green Financing (X1)" data-positive="true">
+                            <div class="bar-item" data-value="0.077" data-label="Green Financing (X1)" data-positive="true">
                                 <div class="bar-label">Green Financing (X1)</div>
                                 <div class="bar-container">
                                     <div class="bar bar-positive" style="--width: 0%"></div>
-                                    <span class="bar-value">+0,042</span>
+                                    <span class="bar-value">+0,077</span>
                                 </div>
                             </div>
-                            <div class="bar-item" data-value="0.385" data-label="NPL (X2)" data-positive="false">
+                            <div class="bar-item" data-value="0.072" data-label="NPL (X2)" data-positive="false">
                                 <div class="bar-label">NPL (X2)</div>
                                 <div class="bar-container">
                                     <div class="bar bar-negative" style="--width: 0%"></div>
-                                    <span class="bar-value">−0,385</span>
+                                    <span class="bar-value">−0,072</span>
                                 </div>
                             </div>
-                            <div class="bar-item" data-value="0.074" data-label="CAR (X3)" data-positive="true">
+                            <div class="bar-item" data-value="0.081" data-label="CAR (X3)" data-positive="true">
                                 <div class="bar-label">CAR (X3)</div>
                                 <div class="bar-container">
                                     <div class="bar bar-positive" style="--width: 0%"></div>
-                                    <span class="bar-value">+0,074</span>
+                                    <span class="bar-value">+0,081</span>
                                 </div>
                             </div>
                         </div>
@@ -225,30 +225,30 @@
                 <div class="stats-grid">
                     <article class="stat-card reveal">
                         <div class="stat-icon" aria-hidden="true">📊</div>
-                        <div class="stat-value" data-target="70.2" data-suffix="%">0%</div>
+                        <div class="stat-value" data-target="98.55" data-suffix="%">0%</div>
                         <div class="stat-label">Adjusted R²</div>
-                        <p class="stat-desc">Model menjelaskan 70,2% variasi ROA</p>
+                        <p class="stat-desc">Model menjelaskan 98,55% variasi ROA (termasuk efek individu bank)</p>
                     </article>
                     <article class="stat-card reveal">
                         <div class="stat-icon" aria-hidden="true">📈</div>
-                        <div class="stat-value" data-target="32.45" data-suffix="">0</div>
+                        <div class="stat-value" data-target="1756.2" data-suffix="">0</div>
                         <div class="stat-label">F-statistik</div>
-                        <p class="stat-desc">Model signifikan simultan (p < 0,0001)</p>
+                        <p class="stat-desc">Model signifikan simultan (p &lt; 0,0001)</p>
                     </article>
                     <article class="stat-card reveal">
                         <div class="stat-icon" aria-hidden="true">🏦</div>
-                        <div class="stat-value" data-target="20" data-suffix="">0</div>
+                        <div class="stat-value" data-target="80" data-suffix="">0</div>
                         <div class="stat-label">Observasi Panel</div>
-                        <p class="stat-desc">4 bank × 5 tahun (2021–2025)</p>
+                        <p class="stat-desc">4 bank × 20 kuartal (2021–2025)</p>
                     </article>
                 </div>
 
                 <div class="interpretation">
                     <h3>Interpretasi Temuan</h3>
                     <ul class="interpretation-list">
-                        <li><strong>Green Financing (β = +0,042):</strong> Setiap peningkatan 1% porsi kredit hijau meningkatkan ROA sebesar 0,042%. Kredit hijau terbukti menguntungkan bank, mendukung Triple Bottom Line.</li>
-                        <li><strong>NPL (β = −0,385):</strong> Setiap peningkatan 1% NPL menurunkan ROA sebesar 0,385%. Risiko kredit tetap menjadi faktor penentu profitabilitas paling dominan.</li>
-                        <li><strong>CAR (β = +0,074):</strong> Setiap peningkatan 1% CAR meningkatkan ROA sebesar 0,074%. Kekuatan permodalan memberi ruang ekspansi penyediaan kredit.</li>
+                        <li><strong>Green Financing (β = +0,077):</strong> Setiap peningkatan 1% porsi kredit hijau berasosiasi dengan peningkatan ROA sebesar 0,077 poin persentase, mendukung Triple Bottom Line.</li>
+                        <li><strong>NPL (β = −0,072):</strong> Asosiasi negatif namun tidak signifikan secara statistik (p = 0,1308). H2 ditolak — kemungkinan terdapat efek kolinearitas tinggi dengan CAR.</li>
+                        <li><strong>CAR (β = +0,081):</strong> Setiap peningkatan 1% CAR berasosiasi dengan peningkatan ROA sebesar 0,081 poin persentase. Kekuatan permodalan memberi ruang ekspansi kredit.</li>
                     </ul>
                 </div>
             </div>
@@ -256,11 +256,11 @@
 
         <section id="kesimpulan" class="section reveal" aria-labelledby="kesimpulan-title">
             <div class="container">
-                <h2 id="kesimpulan-title" class="section-title">Kesimpulan & Saran</h2>
+                <h2 id="kesimpulan-title" class="section-title">Kesimpulan &amp; Saran</h2>
                 <div class="conclusion-grid">
                     <div class="conclusion-main">
                         <h3>Kesimpulan Utama</h3>
-                        <p>Ketiga hipotesis diterima: <strong>Green Financing berpengaruh positif signifikan</strong> terhadap ROA (mendukung Triple Bottom Line), <strong>NPL berpengaruh negatif signifikan</strong>, dan <strong>CAR berpengaruh positif signifikan</strong>. Model Fixed Effect menjelaskan <strong>70,2% variasi ROA</strong> (Adjusted R² = 0,702) dengan F-statistik 32,450 (p < 0,0001).</p>
+                        <p>Dari empat hipotesis: <strong>H1 (Green Financing) diterima</strong> — berasosiasi positif signifikan terhadap ROA; <strong>H2 (NPL) ditolak</strong> — asosiasi negatif namun tidak signifikan; <strong>H3 (CAR) diterima</strong> — berasosiasi positif signifikan; <strong>H4 (Simultan) diterima</strong>. Model Fixed Effect dengan robust SE Driscoll-Kraay memiliki Adjusted R² = 98,55% dan F = 1.756,2 (p &lt; 0,0001).</p>
                         <p>Ini berarti penyaluran kredit hijau oleh Bank KBMI 4 di periode 2021–2025 tidak hanya mendukung keberlanjutan lingkungan, tetapi juga <strong>meningkatkan profitabilitas bank</strong>. Hasil ini memberikan landasan empiris bagi penguatan kebijakan green banking di Indonesia.</p>
                     </div>
                     <div class="conclusion-side">
@@ -305,7 +305,7 @@
         </footer>
     </main>
 
-    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">&#8593;</button>
+    <button type="button" id="backToTop" class="back-to-top" aria-label="Kembali ke atas">&#8593;</button>
 
     <script src="js/script.js"></script>
 </body>
