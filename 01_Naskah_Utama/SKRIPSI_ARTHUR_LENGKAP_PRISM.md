@@ -1081,7 +1081,7 @@ Berdasarkan telaah teoritis dan sintesis temuan empiris terdahulu, disusunlah re
   \label{fig:rerangka_pemikiran}
 \end{figure}
 
- *Sumber: Dikembangkan oleh penulis berdasarkan landasan teoretis dan sintesis Pramono2022*, \citet{Yin2021, KuncoroSuhardjono2018, dan BrighamEhrhardt2020.}
+*Sumber: Dikembangkan oleh penulis berdasarkan landasan teoretis dan sintesis Pramono et al. (2022), Yin et al. (2021), Kuncoro & Suhardjono (2018), dan Brigham & Ehrhardt (2020).*
 
 
 ## Pengembangan Hipotesis Penelitian

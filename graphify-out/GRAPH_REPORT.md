@@ -1,16 +1,16 @@
-# Graph Report - Skripsi  (2026-08-30)
+# Graph Report - Skripsi  (2026-09-02)
 
 ## Corpus Check
-- 63 files · ~1,348,210 words
+- 74 files · ~1,387,164 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1611 nodes · 1569 edges · 94 communities (83 shown, 11 thin omitted)
+- 1884 nodes · 2130 edges · 118 communities (107 shown, 11 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `69c47c84`
+- Built from commit: `8a0b3e14`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -94,7 +94,7 @@
 - Literature Matrix — Sintesis Literatur Skripsi
 - Format Laporan Hasil Review
 - update_identity_all_files.py
-- 🎓 PANDUAN BELAJAR & PENGUASAAN MATERI SKRIPSI (MASTER STUDY GUIDE) — v2
+- PROPOSAL_SKRIPSI_ARTHUR.md
 - run_econometrics_pipeline.py
 - run_econometrics_pure.py
 - KATA PENGANTAR
@@ -107,19 +107,40 @@
 - JAKARTA 2021
 - BAB II TINJAUAN PUSTAKA ............................................................................. 9
 - BAB IV ANALISIS DATA DAN PEMBAHASAN ............................................. 37
+- generate_template_word.py
 - sync_markdown_from_tex.py
+- 📥 FOLDER DROPZONE PENGUMPULAN LAPORAN KEUANGAN & SUSTAINABILITY REPORT
+- organize_and_audit_reports.py
+- convert_skripsi_to_docx.py
+- generate_proposal.py
+- Konseptualisasi Variabel Penelitian
+- 12. SIMULASI PERTANYAAN SIDANG & KUNCI JAWABAN
+- PANDUAN_BELAJAR_SKRIPSI_v3.md
+- Pembahasan Hasil Penelitian
+- 8. METODOLOGI PENELITIAN & EKONOMETRIKA
+- Analisis Tren Kuartalan dan Profil Finansial Perbankan KBMI 4 (2021–2025)
+- Pengujian Hipotesis Penelitian
+- Gambaran Umum Objek Penelitian
+- 7. LOGIKA HUBUNGAN KAUSALITAS & HIPOTESIS
+- 3. KAMUS LENGKAP ISTILAH & KONSEP DASAR
+- 9. HASIL ANALISIS DATA & INTERPRETASI ANGKA
+- 11. KESIMPULAN, KETERBATASAN, & SARAN
+- 2. RUMUSAN MASALAH, TUJUAN & MANFAAT PENELITIAN
+- 6. PENELITIAN TERDAHULU & RESEARCH GAP
+- 1. RINGKASAN EKSEKUTIF & PETA KONSEP PENELITIAN
+- 6. PENELITIAN TERDAHULU & RESEARCH GAP
 
 ## God Nodes (most connected - your core abstractions)
 1. `BAB V  PENUTUP ........................................................................................... 56` - 413 edges
 2. `(322015175)` - 152 edges
 3. `Bab ini terdiri dari sub bab berikut ini:` - 60 edges
 4. `:` - 57 edges
-5. `Source of Truth Skripsi FEB UKRIDA` - 17 edges
-6. `6 Agustus 2026` - 17 edges
-7. `Playbook Skripsi S1 Manajemen FEB UKRIDA — Pengetahuan Lintas Topik` - 15 edges
-8. `Product Requirements Document (PRD) — Versi 2.0` - 14 edges
-9. `ABSTRAK` - 14 edges
-10. `BAB 4\\[0.3cm]ANALISIS DAN PEMBAHASAN` - 13 edges
+5. `build_document()` - 26 edges
+6. `run_proposal_build()` - 25 edges
+7. `build()` - 22 edges
+8. `set_run_font()` - 22 edges
+9. `add_paragraph()` - 22 edges
+10. `add_heading_bab()` - 21 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -127,7 +148,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (94 total, 11 thin omitted)
+## Communities (118 total, 11 thin omitted)
 
 ### Community 0 - "script.js"
 Cohesion: 0.23
@@ -138,8 +159,8 @@ Cohesion: 0.00
 Nodes (413): 01(06), 99–115., 1.1 Latar Belakang, 1.2 Perumusan Masalah, 1.3 Tujuan Penelitian, 1.4.1 Manfaat Teoritis, 1.4.2 Manfaat Praktis, 1.4 Manfaat Penelitian, 1. Convergent Validity (+405 more)
 
 ### Community 2 - "BAB 4\\[0.3cm]ANALISIS DAN PEMBAHASAN"
-Cohesion: 0.05
-Nodes (37): Analisis Keunggulan Bersaing Berkelanjutan Antar-Entitas Bank KBMI 4, Analisis Sensitivitas dan Elastisitas Parsial ROA terhadap Variabel Independen, Analisis Statistik Deskriptif, Analisis Tren Kuartalan dan Profil Finansial Perbankan KBMI 4 (2021–2025), BAB 4\\[0.3cm]ANALISIS DAN PEMBAHASAN, Evaluasi Ketahanan Perbankan KBMI 4 Menghadapi Volatilitas Makroekonomi, Gambaran Umum Objek Penelitian, Hasil Estimasi Regresi Data Panel (Fixed Effect Model) (+29 more)
+Cohesion: 0.17
+Nodes (12): Analisis Statistik Deskriptif, BAB 4\\[0.3cm]ANALISIS DAN PEMBAHASAN, Hasil Estimasi Regresi Data Panel (Fixed Effect Model), Hasil Uji Asumsi Klasik, Hasil Uji Korelasi Antarvariabel Penelitian, Hasil Uji Pemilihan Model Regresi Data Panel, Hasil Uji Stasioneritas / Unit Root Data Panel, Implikasi Hasil Penelitian (+4 more)
 
 ### Community 4 - "Konseptualisasi Variabel Penelitian"
 Cohesion: 0.08
@@ -238,8 +259,8 @@ Cohesion: 0.15
 Nodes (12): ❓ Pertanyaan 13: "Semua hipotesis Anda diterima. Bukankah ini terlalu 'sempurna'? Apakah tidak ada yang ditolak? Bagaimana Anda menjelaskan ini?", ❓ Pertanyaan 14: "Bagaimana jika hasil Green Financing justru negatif terhadap ROA? Apa penjelasannya?", ❓ Pertanyaan 15: "Anda menggunakan Fixed Effect Model. Bisa jelaskan secara intuitif apa bedanya FEM dengan REM, tanpa rumus?", ❓ Pertanyaan 16: "Mengapa Anda tidak memasukkan variabel BOPO atau LDR yang juga sangat umum dalam penelitian perbankan?", ❓ Pertanyaan 17: "Periode 2021–2025 itu mencakup masa pandemi dan pasca-pandemi. Apakah ada kemungkinan data Anda terdistorsi oleh efek COVID-19, terutama pada NPL?", ❓ Pertanyaan 18: "Koefisien Green Financing hanya +0,042 — sangat kecil dibanding NPL (-0,385). Apakah Green Financing benar-benar penting secara ekonomis, atau hanya signifikan secara statistik saja?", ❓ Pertanyaan 19 (Follow-up dari Q5 tentang NPL): "Anda bilang NPL punya 'double impact'. Kalau begitu, apakah hubungan NPL dan ROA bersifat linear atau mungkin non-linear (threshold effect)?", ❓ Pertanyaan 20 (Follow-up dari Q7 tentang Adjusted R²): "29,8% sisanya tidak dijelaskan model Anda. Variabel apa yang menurut Anda paling kuat dari faktor-faktor 'sisa' tersebut?" (+4 more)
 
 ### Community 28 - "12. SIMULASI PERTANYAAN SIDANG & KUNCI JAWABAN"
-Cohesion: 0.15
-Nodes (13): 12. SIMULASI PERTANYAAN SIDANG & KUNCI JAWABAN, ❓ Pertanyaan 10 *(BARU)*: "Apa keterbatasan utama dari penelitian Anda?", ❓ Pertanyaan 11 *(BARU)*: "Apa kontribusi atau novelty penelitian Anda dibandingkan penelitian-penelitian sejenis yang sudah ada, misalnya Pramono et al. (2022) atau Wulandari & Rahardjo (2022)?", ❓ Pertanyaan 12 *(BARU)*: "Mengapa Anda menggunakan data kuartalan (triwulanan) dan bukan data tahunan atau bulanan?", ❓ Pertanyaan 1: "Mengapa Anda memilih Bank KBMI 4 sebagai objek penelitian, mengapa tidak seluruh bank di BEI?", ❓ Pertanyaan 2: "Mengapa Anda memilih proksi ROA untuk mengukur profitabilitas, bukan ROE atau NIM?", ❓ Pertanyaan 3: "Secara teori, menyalurkan Kredit Hijau membutuhkan biaya audit yang mahal dan suku bunganya seringkali bersaing/rendah. Mengapa hasil penelitian Anda justru membuktikan Green Financing berpengaruh positif terhadap ROA?", ❓ Pertanyaan 4: "Mengapa dalam pengujian data panel, Anda memilih Fixed Effect Model (FEM) dan bukan Random Effect Model (REM)?" (+5 more)
+Cohesion: 0.14
+Nodes (14): 12. SIMULASI PERTANYAAN SIDANG & KUNCI JAWABAN, ❓ Pertanyaan 10 *(BARU)*: "Apa keterbatasan utama dari penelitian Anda?", ❓ Pertanyaan 11 *(BARU)*: "Apa kontribusi atau novelty penelitian Anda dibandingkan penelitian-penelitian sejenis yang sudah ada, misalnya Pramono et al. (2022) atau Wulandari & Rahardjo (2022)?", ❓ Pertanyaan 12 *(BARU)*: "Mengapa Anda menggunakan data kuartalan (triwulanan) dan bukan data tahunan atau bulanan?", ❓ Pertanyaan 13 *(BARU v3)*: "Apa itu Driscoll-Kraay robust standard error dan mengapa Anda menggunakannya?", ❓ Pertanyaan 1: "Mengapa Anda memilih Bank KBMI 4 sebagai objek penelitian, mengapa tidak seluruh bank di BEI?", ❓ Pertanyaan 2: "Mengapa Anda memilih proksi ROA untuk mengukur profitabilitas, bukan ROE atau NIM?", ❓ Pertanyaan 3: "Secara teori, menyalurkan Kredit Hijau membutuhkan biaya audit yang mahal dan suku bunganya seringkali bersaing/rendah. Mengapa hasil penelitian Anda justru membuktikan Green Financing berpengaruh positif terhadap ROA?" (+6 more)
 
 ### Community 29 - "Spesifikasi Analisis Fase 3"
 Cohesion: 0.15
@@ -286,8 +307,8 @@ Cohesion: 0.20
 Nodes (9): 1. Desain Penelitian & Paradigma Keilmuan, 2. Populasi dan Prosedur Penentuan Sampel, 3. Spesifikasi Model Ekonometrika Data Panel, 4. Tahapan Analisis Data Panel Lengkap, 5. Kriteria Pengujian Statistik & Pengambilan Keputusan, a. Populasi Penelitian, b. Teknik Pengambilan Sampel (Purposive Sampling), c. Sampel Final (+1 more)
 
 ### Community 40 - "📊 Ringkasan 6 Fase Perbaikan yang Telah Selesai Diterapkan"
-Cohesion: 0.22
-Nodes (9): 1. Pembersihan Kontradiksi Internal Angka Regresi (Fase 1), 2. Standardisasi Bahasa Kausalitas $\rightarrow$ Asosiatif (Fase 2), 3. Perbaikan Uji Asumsi Klasik & Diagnostik Ekonometrika (Fase 3), 4. Koreksi Definisi Teknis Teori Keuangan & Akuntansi (Fase 4), 5. Pembersihan Sintaks Markdown dalam LaTeX (Fase 5), 6. Kebersihan Sitasi & Bibliografi (Fase 6), 📌 Di Mana Anda Bisa Melihat Hasilnya?, Laporan Hasil Revisi & Remediasi Skripsi (Berdasarkan Audit PRISM AI) (+1 more)
+Cohesion: 0.29
+Nodes (7): 1. Pembersihan Kontradiksi Internal Angka Regresi (Fase 1), 2. Standardisasi Bahasa Kausalitas $\rightarrow$ Asosiatif (Fase 2), 3. Perbaikan Uji Asumsi Klasik & Diagnostik Ekonometrika (Fase 3), 4. Koreksi Definisi Teknis Teori Keuangan & Akuntansi (Fase 4), 5. Pembersihan Sintaks Markdown dalam LaTeX (Fase 5), 6. Kebersihan Sitasi & Bibliografi (Fase 6), 📊 Ringkasan 6 Fase Perbaikan yang Telah Selesai Diterapkan
 
 ### Community 41 - "Latar Belakang Penelitian"
 Cohesion: 0.33
@@ -295,7 +316,7 @@ Nodes (6): Dinamika Kebijakan Insentif Makroprudensial Hijau Bank Indonesia dan 
 
 ### Community 42 - "PANDUAN_BELAJAR_SKRIPSI_v2.md"
 Cohesion: 0.22
-Nodes (8): 10. KONTEKS MAKROEKONOMI & PERBANKAN 2021–2025, 13. CHEAT SHEET 1 HALAMAN, 4. BEDAH VARIABEL PENELITIAN, 5. TEORI-TEORI UTAMA & KAITANNYA, 6. PENELITIAN TERDAHULU & RESEARCH GAP, Matriks Penelitian Sebelumnya, Posisi & Kontribusi Skripsi Ini, Sumber Data Tiap Variabel (sering ditanya saat sidang)
+Nodes (8): 10. KONTEKS MAKROEKONOMI & PERBANKAN 2021–2025, 13. CHEAT SHEET 1 HALAMAN *(Kartu Kilat v3 — Diperbarui 2 Sep 2026)*, 4. BEDAH VARIABEL PENELITIAN, 5. TEORI-TEORI UTAMA & KAITANNYA, 📌 DAFTAR ISI PANDUAN, 🎓 PANDUAN BELAJAR & PENGUASAAN MATERI SKRIPSI (MASTER STUDY GUIDE) — v3, *Program Studi S1 Manajemen — Konsentrasi Manajemen Keuangan — UKRIDA*, Sumber Data Tiap Variabel (sering ditanya saat sidang)
 
 ### Community 43 - "PENDAHULUAN"
 Cohesion: 0.22
@@ -326,8 +347,8 @@ Cohesion: 0.22
 Nodes (8): 1. Database & Sumber Pencarian, 2. Kueri Pencarian (Search Strings), 3. Kriteria Inklusi & Eksklusi, 4. Hasil Screening & Seleksi Literatur, 5. Ringkasan Temuan Empiris, Kriteria Eksklusi (Ditolak), Kriteria Inklusi (Diterima), Search Log Skripsi — Protokol Pencarian Literatur
 
 ### Community 50 - "Master Revision Plan: Graph of Agents (GoA) Orchestration"
-Cohesion: 0.33
-Nodes (4): 1. Multi-Agent Topology & DAG Workflow, 3. Dual-Ledger Coordination System, 4. Barrier Policy & Conflict Resolution Matrix, Master Revision Plan: Graph of Agents (GoA) Orchestration
+Cohesion: 0.25
+Nodes (6): 📌 Di Mana Anda Bisa Melihat Hasilnya?, Laporan Hasil Revisi & Remediasi Skripsi (Berdasarkan Audit PRISM AI), 1. Multi-Agent Topology & DAG Workflow, 3. Dual-Ledger Coordination System, 4. Barrier Policy & Conflict Resolution Matrix, Master Revision Plan: Graph of Agents (GoA) Orchestration
 
 ### Community 51 - "2.1. Teori-teori"
 Cohesion: 0.25
@@ -351,7 +372,7 @@ Nodes (6): 📋 ONE-PAGER BAB 1: PENDAHULUAN, 📋 ONE-PAGER BAB 2: TINJAUAN PUS
 
 ### Community 56 - "8. METODOLOGI PENELITIAN & EKONOMETRIKA"
 Cohesion: 0.29
-Nodes (7): 8.1. Populasi & Sampel (*Purposive Sampling*), 8.2. Mengapa Menggunakan Regresi Data Panel?, 8.3. Model Regresi, 8.4. Tahap Penentuan Model Terbaik (Model Selection Tests), 8.5. Hasil Uji Asumsi Klasik (Semua Wajib Lolos!), 8.6. Alat & Metode Analisis, 8. METODOLOGI PENELITIAN & EKONOMETRIKA
+Nodes (7): 8.1. Populasi & Sampel (*Purposive Sampling*), 8.2. Mengapa Menggunakan Regresi Data Panel?, 8.3. Model Regresi, 8.4. Tahap Penentuan Model Terbaik (Model Selection Tests), 8.5. Hasil Uji Asumsi Klasik, 8.6. Alat & Metode Analisis, 8. METODOLOGI PENELITIAN & EKONOMETRIKA
 
 ### Community 57 - "PENDAHULUAN"
 Cohesion: 0.29
@@ -399,7 +420,7 @@ Nodes (4): BAGIAN A: PILIHAN GANDA (20 Soal), BAGIAN B: SOAL ESSAY (10 Soal), �
 
 ### Community 68 - "7. LOGIKA HUBUNGAN KAUSALITAS & HIPOTESIS"
 Cohesion: 0.40
-Nodes (5): 1. Pengaruh Green Financing terhadap ROA ($\mathbf{H_1}$: Positif & Signifikan), 2. Pengaruh NPL terhadap ROA ($\mathbf{H_2}$: Negatif & Signifikan), 3. Pengaruh CAR terhadap ROA ($\mathbf{H_3}$: Positif & Signifikan), 4. Pengaruh Simultan GF, NPL, dan CAR terhadap ROA ($\mathbf{H_4}$: Simultan Signifikan), 7. LOGIKA HUBUNGAN KAUSALITAS & HIPOTESIS
+Nodes (5): 1. Pengaruh Green Financing terhadap ROA ($\mathbf{H_1}$: Positif & Signifikan ✅), 2. Pengaruh NPL terhadap ROA ($\mathbf{H_2}$: Negatif — TIDAK Signifikan ❌), 3. Pengaruh CAR terhadap ROA ($\mathbf{H_3}$: Positif & Signifikan ✅), 4. Pengaruh Simultan GF, NPL, dan CAR terhadap ROA ($\mathbf{H_4}$: Simultan Signifikan ✅), 7. LOGIKA HUBUNGAN KAUSALITAS & HIPOTESIS
 
 ### Community 69 - "3. KAMUS LENGKAP ISTILAH & KONSEP DASAR"
 Cohesion: 0.40
@@ -407,7 +428,7 @@ Nodes (5): 3. KAMUS LENGKAP ISTILAH & KONSEP DASAR, A. Lembaga & Klasifikasi, B.
 
 ### Community 70 - "9. HASIL ANALISIS DATA & INTERPRETASI ANGKA"
 Cohesion: 0.40
-Nodes (5): 9.1. Statistik Deskriptif ($N = 80$), 9.2. Persamaan Regresi Panel (Fixed Effect Model), 9.3. Tabel Rangkuman Uji Parsial (Uji t) & Simultan (Uji F), 9.4. Cara Membaca Angka-Angka Ini (Gaya Mahasiswa Manajemen), 9. HASIL ANALISIS DATA & INTERPRETASI ANGKA
+Nodes (5): 9.1. Statistik Deskriptif ($N = 80$), 9.2. Persamaan Regresi Panel (Fixed Effect Model + Driscoll-Kraay SE), 9.3. Tabel Rangkuman Uji Parsial (Uji t) & Simultan (Uji F), 9.4. Cara Membaca Angka-Angka Ini (Gaya Mahasiswa Manajemen), 9. HASIL ANALISIS DATA & INTERPRETASI ANGKA
 
 ### Community 71 - "TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS"
 Cohesion: 0.40
@@ -445,20 +466,104 @@ Nodes (3): Format Laporan Hasil Review, Gaya penulisan laporan, Prinsip keluaran
 Cohesion: 0.67
 Nodes (3): main(), Script to update Author Name (Arthur Reezan) and NIM (312023002) across all…, update_file()
 
-### Community 80 - "🎓 PANDUAN BELAJAR & PENGUASAAN MATERI SKRIPSI (MASTER STUDY GUIDE) — v2"
-Cohesion: 0.67
-Nodes (3): 📌 DAFTAR ISI PANDUAN, 🎓 PANDUAN BELAJAR & PENGUASAAN MATERI SKRIPSI (MASTER STUDY GUIDE) — v2, *Program Studi S1 Manajemen — Konsentrasi Manajemen Keuangan — UKRIDA*
+### Community 80 - "PROPOSAL_SKRIPSI_ARTHUR.md"
+Cohesion: 0.04
+Nodes (46): 1. Manfaat Teoretis (Aspek Akademis), 2. Manfaat Praktis (Aspek Terapan), Analisis Statistik Deskriptif, BAB 1, BAB 2, BAB 3, DAFTAR GAMBAR, DAFTAR ISI (+38 more)
 
 ### Community 83 - "KATA PENGANTAR"
 Cohesion: 0.67
 Nodes (3): KATA PENGANTAR, Universitas Kristen Krida Wacana | vii, Universitas Kristen Krida Wacana | viii
 
+### Community 93 - "generate_template_word.py"
+Cohesion: 0.22
+Nodes (37): add_body_text(), add_figure_caption(), add_footer_latin(), add_footer_romawi(), add_heading_bab(), add_page_break(), add_paragraph(), add_placeholder_note() (+29 more)
+
 ### Community 94 - "sync_markdown_from_tex.py"
 Cohesion: 0.67
 Nodes (3): clean_latex_to_md(), main(), Script to synchronize and update SKRIPSI_UKRIDA_LENGKAP_PRISM.md from the…
 
+### Community 95 - "📥 FOLDER DROPZONE PENGUMPULAN LAPORAN KEUANGAN & SUSTAINABILITY REPORT"
+Cohesion: 0.20
+Nodes (8): 🌟 1. Jalur Tercepat & Terlengkap (One-Stop Portal BEI / IDX):, 🏛️ 2. Tautan Langsung Portal Investor Relations Masing-Masing Bank:, 💡 Cara Pakai:, 📥 FOLDER DROPZONE PENGUMPULAN LAPORAN KEUANGAN & SUSTAINABILITY REPORT, 🌐 REKOMENDASI TAUTAN UNDUHAN RESMI:, 1. Matriks Laporan Keuangan Kuartalan (80 Observasi), 2. Matriks Sustainability Report Tahunan (20 Laporan), 📊 Status Inventaris Laporan Keuangan & Keberlanjutan KBMI 4 (2021–2025)
+
+### Community 96 - "organize_and_audit_reports.py"
+Cohesion: 0.43
+Nodes (7): extract_pdf_snippet(), generate_inventory(), identify_bank(), identify_type_and_period(), identify_year(), organize_all(), Path
+
+### Community 97 - "convert_skripsi_to_docx.py"
+Cohesion: 0.16
+Nodes (42): add_blank(), add_body(), add_bullet_item(), add_center(), add_footer_arabic(), add_footer_roman(), add_heading_bab(), add_info_table() (+34 more)
+
+### Community 98 - "generate_proposal.py"
+Cohesion: 0.17
+Nodes (34): add_blank(), add_body(), add_bullet_item(), add_center(), add_footer_arabic(), add_footer_roman(), add_heading_bab(), add_numbered_item() (+26 more)
+
+### Community 99 - "Konseptualisasi Variabel Penelitian"
+Cohesion: 0.08
+Nodes (25): *Agency Theory, Analisis Komparatif Pembiayaan Hijau: Negara Berkembang vs Negara Maju, Analisis Kualitas Aset, Kolektibilitas, dan Implementasi PSAK 71 / IFRS 9, Dinamika Integrasi ESG ke dalam Penilaian Risiko Kredit Perbankan, Integrasi Risiko Iklim Fisik dan Transisi ke dalam Manajemen Risiko Perbankan, Kecukupan Modal dan *Capital Adequacy Ratio, Konseptualisasi Variabel Penelitian, Landasan Teori (+17 more)
+
+### Community 100 - "12. SIMULASI PERTANYAAN SIDANG & KUNCI JAWABAN"
+Cohesion: 0.14
+Nodes (14): 12. SIMULASI PERTANYAAN SIDANG & KUNCI JAWABAN, ❓ Pertanyaan 10 *(BARU)*: "Apa keterbatasan utama dari penelitian Anda?", ❓ Pertanyaan 11 *(BARU)*: "Apa kontribusi atau novelty penelitian Anda dibandingkan penelitian-penelitian sejenis yang sudah ada, misalnya Pramono et al. (2022) atau Wulandari & Rahardjo (2022)?", ❓ Pertanyaan 12 *(BARU)*: "Mengapa Anda menggunakan data kuartalan (triwulanan) dan bukan data tahunan atau bulanan?", ❓ Pertanyaan 13 *(BARU v3)*: "Apa itu Driscoll-Kraay robust standard error dan mengapa Anda menggunakannya?", ❓ Pertanyaan 1: "Mengapa Anda memilih Bank KBMI 4 sebagai objek penelitian, mengapa tidak seluruh bank di BEI?", ❓ Pertanyaan 2: "Mengapa Anda memilih proksi ROA untuk mengukur profitabilitas, bukan ROE atau NIM?", ❓ Pertanyaan 3: "Secara teori, menyalurkan Kredit Hijau membutuhkan biaya audit yang mahal dan suku bunganya seringkali bersaing/rendah. Mengapa hasil penelitian Anda justru membuktikan Green Financing berpengaruh positif terhadap ROA?" (+6 more)
+
+### Community 101 - "PANDUAN_BELAJAR_SKRIPSI_v3.md"
+Cohesion: 0.22
+Nodes (8): 10. KONTEKS MAKROEKONOMI & PERBANKAN 2021–2025, 13. CHEAT SHEET 1 HALAMAN *(Kartu Kilat v3 — Diperbarui 2 Sep 2026)*, 4. BEDAH VARIABEL PENELITIAN, 5. TEORI-TEORI UTAMA & KAITANNYA, 📌 DAFTAR ISI PANDUAN, 🎓 PANDUAN BELAJAR & PENGUASAAN MATERI SKRIPSI (MASTER STUDY GUIDE) — v3, *Program Studi S1 Manajemen — Konsentrasi Manajemen Keuangan — UKRIDA*, Sumber Data Tiap Variabel (sering ditanya saat sidang)
+
+### Community 102 - "Pembahasan Hasil Penelitian"
+Cohesion: 0.25
+Nodes (8): Analisis Keunggulan Bersaing Berkelanjutan Antar-Entitas Bank KBMI 4, Analisis Sensitivitas dan Elastisitas Parsial ROA terhadap Variabel Independen, Evaluasi Ketahanan Perbankan KBMI 4 Menghadapi Volatilitas Makroekonomi, Pembahasan Hasil Penelitian, Pembahasan Pengaruh CAR terhadap ROA \texorpdfstring{($H_3$ Diterima), Pembahasan Pengaruh NPL terhadap ROA \texorpdfstring{($H_2$ Ditolak), Pembahasan Pengaruh Simultan terhadap ROA \texorpdfstring{($H_4$ Diterima), Pembahasan Pengaruh \texorpdfstring{*Green Financing
+
+### Community 103 - "8. METODOLOGI PENELITIAN & EKONOMETRIKA"
+Cohesion: 0.29
+Nodes (7): 8.1. Populasi & Sampel (*Purposive Sampling*), 8.2. Mengapa Menggunakan Regresi Data Panel?, 8.3. Model Regresi, 8.4. Tahap Penentuan Model Terbaik (Model Selection Tests), 8.5. Hasil Uji Asumsi Klasik, 8.6. Alat & Metode Analisis, 8. METODOLOGI PENELITIAN & EKONOMETRIKA
+
+### Community 104 - "Analisis Tren Kuartalan dan Profil Finansial Perbankan KBMI 4 (2021–2025)"
+Cohesion: 0.33
+Nodes (6): Analisis Tren Kuartalan dan Profil Finansial Perbankan KBMI 4 (2021–2025), Perkembangan Portofolio dan Rasio Keuangan PT Bank Central Asia Tbk (BBCA), Perkembangan Portofolio dan Rasio Keuangan PT Bank Mandiri (Persero) Tbk (BMRI), Perkembangan Portofolio dan Rasio Keuangan PT Bank Negara Indonesia (Persero) Tbk (BBNI), Perkembangan Portofolio dan Rasio Keuangan PT Bank Rakyat Indonesia (Persero) Tbk (BBRI), Rangkuman Rata-Rata Industri Triwulanan Bank KBMI 4
+
+### Community 105 - "Pengujian Hipotesis Penelitian"
+Cohesion: 0.33
+Nodes (6): Koefisien Determinasi (\texorpdfstring{*Adjusted, Pengujian Hipotesis 1: Pengaruh *Green Financing, Pengujian Hipotesis 2: Pengaruh *Non-Performing Loan, Pengujian Hipotesis 3: Pengaruh *Capital Adequacy Ratio, Pengujian Hipotesis 4: Pengaruh Simultan terhadap ROA, Pengujian Hipotesis Penelitian
+
+### Community 106 - "Gambaran Umum Objek Penelitian"
+Cohesion: 0.40
+Nodes (5): Gambaran Umum Objek Penelitian, PT Bank Central Asia Tbk (BBCA), PT Bank Mandiri (Persero) Tbk (BMRI), PT Bank Negara Indonesia (Persero) Tbk (BBNI), PT Bank Rakyat Indonesia (Persero) Tbk (BBRI)
+
+### Community 107 - "7. LOGIKA HUBUNGAN KAUSALITAS & HIPOTESIS"
+Cohesion: 0.40
+Nodes (5): 1. Pengaruh Green Financing terhadap ROA ($\mathbf{H_1}$: Positif & Signifikan ✅), 2. Pengaruh NPL terhadap ROA ($\mathbf{H_2}$: Negatif — TIDAK Signifikan ❌), 3. Pengaruh CAR terhadap ROA ($\mathbf{H_3}$: Positif & Signifikan ✅), 4. Pengaruh Simultan GF, NPL, dan CAR terhadap ROA ($\mathbf{H_4}$: Simultan Signifikan ✅), 7. LOGIKA HUBUNGAN KAUSALITAS & HIPOTESIS
+
+### Community 108 - "3. KAMUS LENGKAP ISTILAH & KONSEP DASAR"
+Cohesion: 0.40
+Nodes (5): 3. KAMUS LENGKAP ISTILAH & KONSEP DASAR, A. Lembaga & Klasifikasi, B. Istilah Operasional & Risiko Bank, C. Istilah Keberlanjutan (*Sustainability & ESG*), D. Istilah Statistik/Ekonometrika Dasar (agar tidak "blank" saat ditanya angka)
+
+### Community 109 - "9. HASIL ANALISIS DATA & INTERPRETASI ANGKA"
+Cohesion: 0.40
+Nodes (5): 9.1. Statistik Deskriptif ($N = 80$), 9.2. Persamaan Regresi Panel (Fixed Effect Model + Driscoll-Kraay SE), 9.3. Tabel Rangkuman Uji Parsial (Uji t) & Simultan (Uji F), 9.4. Cara Membaca Angka-Angka Ini (Gaya Mahasiswa Manajemen), 9. HASIL ANALISIS DATA & INTERPRETASI ANGKA
+
+### Community 110 - "11. KESIMPULAN, KETERBATASAN, & SARAN"
+Cohesion: 0.50
+Nodes (4): 11.1. Kesimpulan (Ringkas 4 Poin — Sejajar dengan H1–H4), 11.2. Keterbatasan Penelitian (WAJIB dihafal — hampir selalu ditanya!), 11.3. Saran, 11. KESIMPULAN, KETERBATASAN, & SARAN
+
+### Community 111 - "2. RUMUSAN MASALAH, TUJUAN & MANFAAT PENELITIAN"
+Cohesion: 0.50
+Nodes (4): 2.1. Perumusan Masalah (4 Pertanyaan Riset), 2.2. Tujuan Penelitian, 2.3. Manfaat Penelitian, 2. RUMUSAN MASALAH, TUJUAN & MANFAAT PENELITIAN
+
+### Community 113 - "6. PENELITIAN TERDAHULU & RESEARCH GAP"
+Cohesion: 0.67
+Nodes (3): 6. PENELITIAN TERDAHULU & RESEARCH GAP, Matriks Penelitian Sebelumnya, Posisi & Kontribusi Skripsi Ini
+
+### Community 114 - "1. RINGKASAN EKSEKUTIF & PETA KONSEP PENELITIAN"
+Cohesion: 0.67
+Nodes (3): 1. RINGKASAN EKSEKUTIF & PETA KONSEP PENELITIAN, Mengapa Penelitian Ini Dibuat?, Peta Hubungan Variabel:
+
+### Community 115 - "6. PENELITIAN TERDAHULU & RESEARCH GAP"
+Cohesion: 0.67
+Nodes (3): 6. PENELITIAN TERDAHULU & RESEARCH GAP, Matriks Penelitian Sebelumnya, Posisi & Kontribusi Skripsi Ini
+
 ## Knowledge Gaps
-- **1366 isolated node(s):** `SKRIPSI LENGKAP - UNIVERSITAS KRISTEN KRIDA WACANA`, `Dinamika Makroekonomi dan Transisi Pasca-Pandemi Periode 2021–2025`, `Perbandingan Kerangka Regulasi Keuangan Berkelanjutan Global dan Regional`, `Peran Sistemik Bank KBMI 4 dalam Perekonomian Nasional`, `Perdebatan Empiris dan Teoretis (*Research Gap` (+1361 more)
+- **1479 isolated node(s):** `SKRIPSI LENGKAP - UNIVERSITAS KRISTEN KRIDA WACANA`, `Dinamika Makroekonomi dan Transisi Pasca-Pandemi Periode 2021–2025`, `Perbandingan Kerangka Regulasi Keuangan Berkelanjutan Global dan Regional`, `Peran Sistemik Bank KBMI 4 dalam Perekonomian Nasional`, `Perdebatan Empiris dan Teoretis (*Research Gap` (+1474 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -466,16 +571,16 @@ Nodes (3): clean_latex_to_md(), main(), Script to synchronize and update SKRIPSI
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `BAB V  PENUTUP ........................................................................................... 56` connect `BAB V  PENUTUP ........................................................................................... 56` to `:`?**
-  _High betweenness centrality (0.077) - this node is a cross-community bridge._
-- **Why does `(322015175)` connect `(322015175)` to `Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.md`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
+  _High betweenness centrality (0.071) - this node is a cross-community bridge._
 - **Why does `:` connect `:` to `BAB V  PENUTUP ........................................................................................... 56`, `KATA PENGANTAR`, `ABSTRAK`, `BAB II TINJAUAN PUSTAKA ............................................................................. 9`, `BAB IV ANALISIS DATA DAN PEMBAHASAN ............................................. 37`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
+- **Why does `(322015175)` connect `(322015175)` to `Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.md`?**
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **What connects `SKRIPSI LENGKAP - UNIVERSITAS KRISTEN KRIDA WACANA`, `Dinamika Makroekonomi dan Transisi Pasca-Pandemi Periode 2021–2025`, `Perbandingan Kerangka Regulasi Keuangan Berkelanjutan Global dan Regional` to the rest of the system?**
-  _1366 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1479 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `BAB V  PENUTUP ........................................................................................... 56` be split into smaller, more focused modules?**
   _Cohesion score 0.004842615012106538 - nodes in this community are weakly interconnected._
-- **Should `BAB 4\\[0.3cm]ANALISIS DAN PEMBAHASAN` be split into smaller, more focused modules?**
-  _Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected._
 - **Should `Konseptualisasi Variabel Penelitian` be split into smaller, more focused modules?**
   _Cohesion score 0.08 - nodes in this community are weakly interconnected._
+- **Should `(322015175)` be split into smaller, more focused modules?**
+  _Cohesion score 0.013157894736842105 - nodes in this community are weakly interconnected._

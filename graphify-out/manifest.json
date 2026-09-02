@@ -1,9 +1,9 @@
 {
   "latex/panduan_belajar_skripsi_v2.toc": {
-    "mtime": 1787474764.5329297,
-    "seen": 1788065928.3486185,
-    "ast_hash": "338390ca1c358f7dbaa55d6654d64ede",
-    "semantic_hash": "338390ca1c358f7dbaa55d6654d64ede"
+    "mtime": 1788351491.8866663,
+    "seen": 1788354932.8334017,
+    "ast_hash": "584751b6658eb988b0d9b4f36209030d",
+    "semantic_hash": ""
   },
   "website/js/script.js": {
     "mtime": 1787568902.5111394,
@@ -84,9 +84,9 @@
     "semantic_hash": ""
   },
   "02_Persiapan_Sidang/PANDUAN_BELAJAR_SKRIPSI_v2.md": {
-    "mtime": 1787474643.9662492,
-    "seen": 1788069866.9711056,
-    "ast_hash": "973304d334948f26481d942a51b8a57e",
+    "mtime": 1788351383.9481168,
+    "seen": 1788354932.8334017,
+    "ast_hash": "e844f3ba3fa4d6dd744cc50eaaf40b55",
     "semantic_hash": ""
   },
   "03_Draft_Per_Bab/BAB_1_PENDAHULUAN.md": {
@@ -360,9 +360,9 @@
     "semantic_hash": ""
   },
   "02_Persiapan_Sidang/panduan_belajar_skripsi_v2.pdf": {
-    "mtime": 1787474764.5519972,
-    "seen": 1788069866.9711528,
-    "ast_hash": "c35421222167cf0859c6f8bcc604abfc",
+    "mtime": 1788351491.9100132,
+    "seen": 1788354932.8334017,
+    "ast_hash": "320a40d9a066ce634689ccbc3b88b65e",
     "semantic_hash": ""
   },
   "05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.pdf": {
@@ -384,9 +384,9 @@
     "semantic_hash": ""
   },
   "latex/panduan_belajar_skripsi_v2.pdf": {
-    "mtime": 1787474764.5519972,
-    "seen": 1788069866.9711578,
-    "ast_hash": "c35421222167cf0859c6f8bcc604abfc",
+    "mtime": 1788351491.9100132,
+    "seen": 1788354932.8334017,
+    "ast_hash": "320a40d9a066ce634689ccbc3b88b65e",
     "semantic_hash": ""
   },
   "latex/outputs/preview-01.png": {
@@ -1794,9 +1794,9 @@
     "semantic_hash": ""
   },
   "01_Naskah_Utama/SKRIPSI_ARTHUR_LENGKAP_PRISM.md": {
-    "mtime": 1788075194.1357627,
-    "seen": 1788075446.8796394,
-    "ast_hash": "40f1fedbd36fa165e050bbeeddd52a8d",
+    "mtime": 1788349737.0732603,
+    "seen": 1788349754.7241325,
+    "ast_hash": "7d981bdfebb65ce51e0feda9f5fad516",
     "semantic_hash": ""
   },
   "06_Review_&_Audit/LAPORAN_HASIL_REVISI_PRISM_AI.md": {
@@ -1839,6 +1839,210 @@
     "mtime": 1787097199.8112605,
     "seen": 1788075446.8796394,
     "ast_hash": "02ea778bce4283c5b8a43cf08b2eee32",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/organize_and_audit_reports.py": {
+    "mtime": 1788294026.9444742,
+    "seen": 1788349754.7241325,
+    "ast_hash": "6681b5082fdd7fd237ee89bc9c3ea7dd",
+    "semantic_hash": ""
+  },
+  "generate_template_word.py": {
+    "mtime": 1788348813.808113,
+    "seen": 1788349754.7241325,
+    "ast_hash": "2d670713dfb89e910ac683637e75576d",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/00_DROPZONE_LAPORAN/PETUNJUK_DROPZONE.md": {
+    "mtime": 1788293059.1810422,
+    "seen": 1788349754.7241325,
+    "ast_hash": "73c9d4283fac1fc3233128d6d1d5c8fa",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/STATUS_INVENTARIS_LAPORAN.md": {
+    "mtime": 1788294628.260173,
+    "seen": 1788349754.7241325,
+    "ast_hash": "998e2d96e062d6590758fee38afefc4b",
+    "semantic_hash": ""
+  },
+  "06_Review_&_Audit/Review Tex 3.txt": {
+    "mtime": 1788077611.0872264,
+    "seen": 1788349754.7241325,
+    "ast_hash": "0008b3e2a6a24acc3520b30ae7d9342b",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BBCA/Laporan_Keuangan_Kuartalan/BBCA_2021_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788294030.436424,
+    "seen": 1788349754.7241325,
+    "ast_hash": "771b2e197df3bf9696ef53620aa0a423",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BBCA/Laporan_Keuangan_Kuartalan/BBCA_2022_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788294030.4399414,
+    "seen": 1788349754.7241325,
+    "ast_hash": "c4bf04f0757596bec1a6ebd5ffbce8c4",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BBCA/Laporan_Keuangan_Kuartalan/BBCA_2023_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788294030.4484594,
+    "seen": 1788349754.7241325,
+    "ast_hash": "358402726e0b5054e68d40d393213e0d",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BBCA/Laporan_Keuangan_Kuartalan/BBCA_2024_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788294030.4419484,
+    "seen": 1788349754.7241325,
+    "ast_hash": "f8eaac834e1dbfe8e5f63d9555366968",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BBCA/Laporan_Keuangan_Kuartalan/BBCA_2025_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788294601.5389614,
+    "seen": 1788349754.7241325,
+    "ast_hash": "c326494453edaffa0d975a1bba5272d6",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BBNI/Laporan_Keuangan_Kuartalan/BBNI_2021_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788293925.901313,
+    "seen": 1788349754.7241325,
+    "ast_hash": "008821d5cf7fa1fd3f2fb9a73bad3bf5",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BBNI/Laporan_Keuangan_Kuartalan/BBNI_2022_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788293933.5169451,
+    "seen": 1788349754.7241325,
+    "ast_hash": "81dc29da302b4340a0fe943b95fac54c",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BBNI/Laporan_Keuangan_Kuartalan/BBNI_2023_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788293941.5968459,
+    "seen": 1788349754.7241325,
+    "ast_hash": "148cfe8e15953aac6b56911e219856c0",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BBNI/Laporan_Keuangan_Kuartalan/BBNI_2024_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788293947.6339512,
+    "seen": 1788349754.7241325,
+    "ast_hash": "31c7309980266a04693b1e88e024a05e",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BBNI/Laporan_Keuangan_Kuartalan/BBNI_2025_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788293953.3370225,
+    "seen": 1788349754.7241325,
+    "ast_hash": "c0f5bb8003751d4c26b8f2350307830c",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BBRI/Laporan_Keuangan_Kuartalan/BBRI_2021_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788292636.8120615,
+    "seen": 1788349754.7241325,
+    "ast_hash": "0353de2bb9eeb82e7a7fa4d3b905fcf8",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BBRI/Laporan_Keuangan_Kuartalan/BBRI_2022_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788292646.7226696,
+    "seen": 1788349754.7241325,
+    "ast_hash": "7832d313d657c9951d7d91d87498a438",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BBRI/Laporan_Keuangan_Kuartalan/BBRI_2023_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788292656.3590589,
+    "seen": 1788349754.7241325,
+    "ast_hash": "3d6ae90be0956a171d886ddb2bd71720",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BBRI/Laporan_Keuangan_Kuartalan/BBRI_2024_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788292667.0020704,
+    "seen": 1788349754.7241325,
+    "ast_hash": "a22f689499b8d59280413412327c28a7",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BBRI/Laporan_Keuangan_Kuartalan/BBRI_2025_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788292590.249915,
+    "seen": 1788349754.7241325,
+    "ast_hash": "3a186cd9ca8dee13e1352727ef3ee8b9",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BMRI/Laporan_Keuangan_Kuartalan/BMRI_2021_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788293233.9196875,
+    "seen": 1788349754.7241325,
+    "ast_hash": "ffbd0317f6f7f3c18600edfb74ae5592",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BMRI/Laporan_Keuangan_Kuartalan/BMRI_2022_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788293236.3884962,
+    "seen": 1788349754.7241325,
+    "ast_hash": "42222e13ac5f772f6010936ac34e1c4b",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BMRI/Laporan_Keuangan_Kuartalan/BMRI_2023_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788293239.2378733,
+    "seen": 1788349754.7241325,
+    "ast_hash": "d39aa92890819aba66ab27b070fc64dd",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BMRI/Laporan_Keuangan_Kuartalan/BMRI_2024_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788293265.336651,
+    "seen": 1788349754.7241325,
+    "ast_hash": "da01581ebe86f54fd9329894712abe2f",
+    "semantic_hash": ""
+  },
+  "04_Riset_&_Metodologi/Laporan_Keuangan_Resmi/BMRI/Laporan_Keuangan_Kuartalan/BMRI_2025_Q4_Laporan_Keuangan.pdf": {
+    "mtime": 1788293270.7099495,
+    "seen": 1788349754.7241325,
+    "ast_hash": "44105160baf12d4350201a8d61405aed",
+    "semantic_hash": ""
+  },
+  "01_Naskah_Utama/outputs/Skripsi_Arthur.toc": {
+    "mtime": 1788351535.160004,
+    "seen": 1788354932.8334017,
+    "ast_hash": "72059cbc7686a69e574865bd4828a65f",
+    "semantic_hash": ""
+  },
+  "Proposal/generate_proposal.py": {
+    "mtime": 1788354909.9674387,
+    "seen": 1788354932.8334017,
+    "ast_hash": "af3d9eb25ce8e949d66266c04e0d61af",
+    "semantic_hash": ""
+  },
+  "convert_skripsi_to_docx.py": {
+    "mtime": 1788349758.3518972,
+    "seen": 1788354932.8334017,
+    "ast_hash": "dc6c4977fe3fee411b8fd9940f0da246",
+    "semantic_hash": ""
+  },
+  "tmp/test_bib_parser.py": {
+    "mtime": 1788354750.7877822,
+    "seen": 1788354932.8334017,
+    "ast_hash": "4b946a069914a1cdecfd4f4f60191d3f",
+    "semantic_hash": ""
+  },
+  "tmp/test_table_parser.py": {
+    "mtime": 1788354785.5492043,
+    "seen": 1788354932.8334017,
+    "ast_hash": "9f7a59cb4f0e5c7f3ff7f4013673d43a",
+    "semantic_hash": ""
+  },
+  "02_Persiapan_Sidang/PANDUAN_BELAJAR_SKRIPSI_v3.md": {
+    "mtime": 1788351383.9481168,
+    "seen": 1788354932.8334017,
+    "ast_hash": "e844f3ba3fa4d6dd744cc50eaaf40b55",
+    "semantic_hash": ""
+  },
+  "Proposal/PROPOSAL_SKRIPSI_ARTHUR.md": {
+    "mtime": 1788354918.5672724,
+    "seen": 1788354932.8334017,
+    "ast_hash": "34b4b6298e7a51992fabd9d7ff6c6353",
+    "semantic_hash": ""
+  },
+  "01_Naskah_Utama/outputs/Skripsi_Arthur.pdf": {
+    "mtime": 1788351535.2165675,
+    "seen": 1788354932.8334017,
+    "ast_hash": "02d5099a8210430c7834be278769875c",
+    "semantic_hash": ""
+  },
+  "02_Persiapan_Sidang/panduan_belajar_skripsi_v3.pdf": {
+    "mtime": 1788351491.9100132,
+    "seen": 1788354932.8334017,
+    "ast_hash": "320a40d9a066ce634689ccbc3b88b65e",
     "semantic_hash": ""
   }
 }

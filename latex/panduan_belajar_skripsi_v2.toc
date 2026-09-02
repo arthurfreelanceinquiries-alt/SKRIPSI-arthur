@@ -21,12 +21,12 @@
 \contentsline {subsection}{\numberline {8.4}Uji Asumsi Klasik}{8}{subsection.8.4}%
 \contentsline {section}{\numberline {9}Hasil Analisis Data \& Interpretasi Angka Output}{8}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Statistik Deskriptif ($N = 80$)}{8}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Hasil Regresi Data Panel (Fixed Effect Model)}{8}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.2}Hasil Regresi Data Panel (Fixed Effect Model + Driscoll-Kraay SE)}{8}{subsection.9.2}%
 \contentsline {subsection}{\numberline {9.3}Interpretasi Koefisien (Bahasa Ujian Sidang)}{8}{subsection.9.3}%
 \contentsline {section}{\numberline {10}Konteks Makroekonomi \& Perbankan Indonesia (2021--2025)}{9}{section.10}%
 \contentsline {section}{\numberline {11}Kesimpulan, Keterbatasan, \& Saran}{9}{section.11}%
 \contentsline {subsection}{\numberline {11.1}Kesimpulan}{9}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}Keterbatasan Penelitian (Wajib Dihafal)}{9}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.2}Keterbatasan Penelitian (Wajib Dihafal)}{10}{subsection.11.2}%
 \contentsline {subsection}{\numberline {11.3}Saran Kebijakan \& Praktis}{10}{subsection.11.3}%
 \contentsline {section}{\numberline {12}Simulasi Pertanyaan Sidang \& Kunci Jawaban Juara}{11}{section.12}%
 \contentsline {section}{\numberline {13}Cheat Sheet 1 Halaman (Hafalan Menjelang Masuk Sidang)}{14}{section.13}%
