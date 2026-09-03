@@ -1,78 +1,75 @@
 # Workspace Skripsi FEB UKRIDA
 
-Repositori dan direktori kerja penulisan skripsi:  
-**"Pengaruh Portofolio Kredit Hijau (Green Financing), Non-Performing Loan (NPL), dan Capital Adequacy Ratio (CAR) terhadap Profitabilitas (ROA) pada Bank KBMI 4 di Indonesia Periode 2021–2025"**  
 **Penulis:** Arthur Reezan  
-**Fakultas / Program Studi:** Fakultas Ekonomi dan Bisnis | S1 Manajemen (Konsentrasi: Keuangan)
+**Fakultas / Program Studi:** Fakultas Ekonomi dan Bisnis | S1 Manajemen  
+**Status:** 🔄 Ganti Judul — Topik Baru Belum Ditentukan
 
 ---
 
-## 📂 Panduan Struktur Folder
+## 📌 Status Saat Ini
+
+| | |
+|---|---|
+| **Judul aktif** | Belum ada (sedang dalam proses pemilihan topik baru) |
+| **Fase** | Fase 0 — Reset, mulai dari awal |
+| **Topik lama** | Diarsipkan di `_archive/KBMI4_GreenFinancing_2021-2025/` |
+
+---
+
+## 📂 Struktur Folder
 
 ```text
 z:\Skripsi\
-├── 📁 01_Naskah_Utama/            # File Final Siap Cetak, Sidang, & AI
-│   ├── Skripsi_Arthur.pdf         # PDF Resmi Final Siap Cetak / Sidang (Standar UKRIDA)
-│   ├── Skripsi_Arthur.tex         # File LaTeX Siap Baca / Ingestion Prism AI
-│   └── SKRIPSI_ARTHUR_LENGKAP_PRISM.md # Markdown Lengkap Bab 1-5 (Optimized for Prism AI)
+├── 📁 01_Naskah_Utama/            # (Kosong — menunggu topik baru)
+├── 📁 02_Persiapan_Sidang/        # (Kosong — menunggu topik baru)
+├── 📁 03_Draft_Per_Bab/           # (Kosong — menunggu topik baru)
+├── 📁 04_Riset_&_Metodologi/      # Playbook & Skills (generik, tetap ada)
+│   ├── REUSABLE_THESIS_PLAYBOOK.md   ← Panduan metodologis lintas topik
+│   └── skills.md                     ← Definisi peran reviewer
 │
-├── 📁 02_Persiapan_Sidang/        # Bahan Belajar, Bank Soal, & Simulasi Sidang
-│   ├── 📁 BELAJAR SKRIPSI SAMPAI BISA/
-│   │   ├── 01_BANK_SOAL_LATIHAN.md
-│   │   ├── 02_FLASHCARD_ISTILAH.md
-│   │   ├── 03_PERTANYAAN_SIDANG_SULIT.md
-│   │   ├── 04_EKONOMETRIKA_UNTUK_PEMULA.md
-│   │   ├── 05_SIMULASI_DIALOG_SIDANG.md
-│   │   └── 06_RINGKASAN_PER_BAB_ONE_PAGER.md
-│   ├── panduan_belajar_skripsi_v2.pdf
-│   └── PANDUAN_BELAJAR_SKRIPSI_v2.md
+├── 📁 05_Pedoman_&_Referensi/     # Pedoman Resmi (permanen)
+│   ├── Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.pdf  ← OTORITAS FORMAT
+│   ├── Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.md
+│   ├── PRD_AI_Dosen_Pembimbing_Skripsi_v2.md
+│   └── TUGAS AKHIR (Revisii).pdf   ← Contoh skripsi (comparator only)
 │
-├── 📁 03_Draft_Per_Bab/           # Naskah Draf Per Bab & Proposal
-│   ├── PROPOSAL_SKRIPSI_LENGKAP.md
-│   ├── BAB_1_PENDAHULUAN.md
-│   ├── BAB_2_TINJAUAN_PUSTAKA.md
-│   ├── BAB_3_METODE_PENELITIAN.md
-│   ├── BAB_4_ANALISIS_DAN_PEMBAHASAN.md
-│   ├── BAB_5_PENUTUP.md
-│   └── SKRIPSI_LENGKAP_BAB_1_SAMPAI_5.md
+├── 📁 06_Review_&_Audit/          # (Kosong — diisi saat naskah baru siap)
+├── 📁 _archive/                   # Arsip topik lama (JANGAN HAPUS)
+│   ├── cancelled_topic_2026-08-10/
+│   └── KBMI4_GreenFinancing_2021-2025/  ← Topik lama lengkap
 │
-├── 📁 04_Riset_&_Metodologi/       # Data Panel, Spesifikasi, & Matriks Jurnal
-│   ├── LITERATURE_MATRIX.md
-│   ├── DATA_DICTIONARY.md
-│   ├── ANALYSIS_SPEC.md
-│   ├── METHODOLOGY_BLUEPRINT.md
-│   ├── SOURCE_OF_TRUTH.md
-│   └── REUSABLE_THESIS_PLAYBOOK.md
-│
-├── 📁 05_Pedoman_&_Referensi/     # Buku Pedoman Resmi & Draft Acuan
-│   ├── Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.pdf (.md)
-│   ├── TUGAS AKHIR (Revisii).pdf (.md)
-│   └── PRD_AI_Dosen_Pembimbing_Skripsi_v2.md
-│
-├── 📁 06_Review_&_Audit/          # Checklist Evaluasi, Review Kualitas & Log
-│   ├── review-format.md           # Audit Format & Pedoman FEB UKRIDA
-│   ├── review-methodology.md      # Audit Metodologi & Model Ekonometrika
-│   ├── review-language.md         # Audit Tata Bahasa & PUEBI/EYD
-│   ├── review-output.md           # Audit Konsistensi Data & Output Hasil
-│   ├── SEARCH_LOG.md              # Log Audit Penelusuran Literatur
-│   └── WORKFLOW_LOG.md            # Log Alur Pengerjaan & Milestone
-│
-├── 📁 latex/                      # Workspace Kompilasi XeLaTeX (Master Source)
-│   ├── Skripsi_Arthur.tex         # File Master Kode LaTeX
-│   ├── references.bib             # Database Referensi BibTeX
-│   └── 📁 outputs/                # Log build & file preview PNG
-│
-├── 📁 website/                    # Web Interaktif Skripsi (HTML, CSS, JS)
-├── 📁 _archive/                   # Arsip topik / riset lama
-└── 📁 graphify-out/               # Knowledge Graph & Peta Relasi Dokumen
+├── MASTER_GUIDE_SKRIPSI.md        # ⭐ PANDUAN UTAMA — baca ini dulu
+└── README.md                      # File ini
 ```
 
 ---
 
-## 🚀 Quick Navigation
+## 🚀 Memulai Sesi Baru
 
-- **Mau kirim PDF ke Dosen / Cetak Sidang?** Buka [`01_Naskah_Utama/Skripsi_Arthur.pdf`](01_Naskah_Utama/Skripsi_Arthur.pdf)
-- **Mau analisis via Prism AI?** Gunakan [`01_Naskah_Utama/SKRIPSI_ARTHUR_LENGKAP_PRISM.md`](01_Naskah_Utama/SKRIPSI_ARTHUR_LENGKAP_PRISM.md)
-- **Mau belajar persiapan sidang?** Buka [`02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/`](02_Persiapan_Sidang/BELAJAR%20SKRIPSI%20SAMPAI%20BISA/)
-- **Mau cek audit kelayakan naskah?** Buka [`06_Review_&_Audit/`](06_Review_&_Audit/)
-- **Mau edit isi naskah LaTeX?** Buka [`latex/Skripsi_Arthur.tex`](latex/Skripsi_Arthur.tex)
+**Urutan bacaan wajib untuk AI:**
+1. Baca [`MASTER_GUIDE_SKRIPSI.md`](MASTER_GUIDE_SKRIPSI.md) — kristalisasi semua pengetahuan
+2. Baca [`04_Riset_&_Metodologi/REUSABLE_THESIS_PLAYBOOK.md`](04_Riset_%26_Metodologi/REUSABLE_THESIS_PLAYBOOK.md)
+3. Baca [`05_Pedoman_&_Referensi/PRD_AI_Dosen_Pembimbing_Skripsi_v2.md`](05_Pedoman_%26_Referensi/PRD_AI_Dosen_Pembimbing_Skripsi_v2.md)
+4. Cek `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` (belum ada untuk topik baru)
+5. Mulai dari **Fase 1** — minta fenomena spesifik beserta bukti
+
+---
+
+## 📦 Arsip Topik Lama
+
+Seluruh pekerjaan topik **"Green Financing, NPL, CAR → ROA KBMI4 2021–2025"** tersimpan di:
+
+```
+_archive/KBMI4_GreenFinancing_2021-2025/
+```
+
+Berisi: Naskah Bab 1–5 (TEX/PDF/MD/DOCX), data panel, metodologi, panduan belajar sidang, proposal, LaTeX source, website interaktif, knowledge graph, dan seluruh log review/audit.
+
+> ⚠️ Jangan buka folder arsip kecuali mahasiswa meminta pemulihan atau perbandingan tertentu.
+
+---
+
+## 📚 Pedoman Resmi
+
+Selalu verifikasi ke sumber utama:  
+📄 [`05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.pdf`](05_Pedoman_%26_Referensi/Buku%20Pedoman%20Penyusunan%20Skripsi%20FEB%20Ukrida%202022.pdf)
