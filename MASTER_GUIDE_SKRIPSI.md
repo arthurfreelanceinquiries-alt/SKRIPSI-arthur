@@ -14,7 +14,7 @@ Dokumen ini adalah **memori kerja AI** yang harus dibaca setiap sesi baru. Uruta
 
 1. Baca bagian 1 (Hierarki Otoritas)
 2. Baca bagian 2 (Sistem 4 Fase)
-3. Baca `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` topik aktif
+3. Baca `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` (topik MLBB) & `04_Riset_&_Metodologi/KONSEP_SKRIPSI_POKEMON_TCG.md` (topik kartu fisik Pokémon TCG)
 4. Baru lanjut pekerjaan
 
 ---

@@ -50,8 +50,9 @@ z:\Skripsi\
 1. Baca [`MASTER_GUIDE_SKRIPSI.md`](MASTER_GUIDE_SKRIPSI.md) — kristalisasi semua pengetahuan
 2. Baca [`04_Riset_&_Metodologi/REUSABLE_THESIS_PLAYBOOK.md`](04_Riset_%26_Metodologi/REUSABLE_THESIS_PLAYBOOK.md)
 3. Baca [`05_Pedoman_&_Referensi/PRD_AI_Dosen_Pembimbing_Skripsi_v2.md`](05_Pedoman_%26_Referensi/PRD_AI_Dosen_Pembimbing_Skripsi_v2.md)
-4. Cek `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` (belum ada untuk topik baru)
-5. Mulai dari **Fase 1** — minta fenomena spesifik beserta bukti
+4. Cek `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` (Topik MLBB)
+5. Baca [`04_Riset_&_Metodologi/KONSEP_SKRIPSI_POKEMON_TCG.md`](04_Riset_%26_Metodologi/KONSEP_SKRIPSI_POKEMON_TCG.md) (Konsep Alternatif Unggulan: Kartu Pokémon TCG Fisik)
+6. Mulai dari **Fase 1** — konfirmasi keputusan topik bersama mahasiswa
 
 ---
 
