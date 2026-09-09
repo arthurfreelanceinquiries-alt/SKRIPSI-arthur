@@ -1,144 +1,84 @@
-﻿# PRD Penelitian Skripsi - Mobile Legends & Impulsive Buying
+# PRD Penelitian Skripsi — Pokémon TCG & Impulsive Buying
 
-> Versi: 1.0 | Tanggal: 6 September 2026 | Status: Draft Fase 1
-> Konsentrasi: Manajemen Keuangan / Pemasaran (konfirmasi diperlukan)
-> Otoritas format: Buku Pedoman FEB UKRIDA 2022
+> Versi: 2.0 | Tanggal: 8 September 2026 | Status: Finalisasi Bab 1 (Fase 4)  
+> Konsentrasi: **Manajemen Keuangan** — FEB UKRIDA  
+> Otoritas format: Buku Pedoman FEB UKRIDA 2022  
 
 ---
 
-## 1. JUDUL PENELITIAN (Draft)
+## 1. JUDUL PENELITIAN (FINAL)
 
-PENGARUH HEDONIC MOTIVATION DAN SOCIAL COMPARISON TERHADAP IMPULSIVE BUYING IN-APP PURCHASE PADA PEMAIN MOBILE LEGENDS DENGAN LITERASI KEUANGAN SEBAGAI VARIABEL MODERASI
+**PENGARUH *HEDONIC MOTIVATION*, *NEED FOR COMPLETION*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN LITERASI KEUANGAN SEBAGAI VARIABEL MODERASI**
 
 ---
 
 ## 2. FENOMENA & LATAR BELAKANG
 
-### Bukti Primer
-
-| Sumber | Data | Periode | Batas Klaim |
-|---|---|---|---|
-| Sensor Tower (via laporan industri) | MLBB revenue IAP global USD 194,99 juta; Indonesia & Filipina pasar belanja terbesar | 2024 | Agregat global+regional |
-| Sensor Tower 2025 | Revenue MLBB USD 111,8 juta (Jan-Jul 2025) | 2025 | Agregat global |
-| Antom.com / Laporan Pasar | Per-kapita pengeluaran gaming Indonesia USD 58/tahun | 2024 | Estimasi agregat |
-| Indonesian Gaming Behavior 2025 (Jakpat) | 52% responden melakukan IAP; 27% <Rp50rb/bulan; 24% Rp50-100rb; 17% Rp100-250rb | 2025 | Survei online |
-| Newzoo / APJII | Indonesia pasar game mobile terbesar di Asia Tenggara; MLBB top 5 revenue | 2024 | Estimasi industri |
-
-### Rumusan Fenomena
-
-"Berdasarkan laporan Indonesian Gaming Behavior (2025) oleh Jakpat, sebanyak 52% responden pemain game mobile Indonesia melakukan in-app purchase. Mekanisme limited-time skin dan social ranking di MLBB mendorong hedonic motivation dan social comparison yang berpotensi memicu impulsive buying di kalangan mahasiswa dengan pendapatan terbatas."
+### Bukti Lapangan & Industri:
+1. **Ekspansi Ritel Masif:** Distribusi resmi kartu Pokémon TCG berbahasa Indonesia di gerai ritel (Indomaret, Alfamart, Gramedia, Toys Kingdom).
+2. **Fenomena Kelangkaan & Antrean:** Setiap peluncuran seri baru (Seri 151, Kilau Hitam, Terastal), produk *booster pack* ludes dalam hitungan jam.
+3. **Disparitas Harga Pasar Sekunder:** Harga 1 pack resmi berkisar Rp20.000–Rp30.000, namun kartu langka (*Special Illustration Rare / SAR*) di dalamnya dapat terjual hingga Rp500.000–Rp3.000.000 di Tokopedia/forum kolektor.
+4. **Perilaku Belanja Impulsif:** Pembelian spontan berulang di kasir tanpa perencanaan anggaran keuangan pribadi, didorong kombinasi kesenangan membuka pack, hasrat melengkapi seri binder, dan ilusi keuntungan finansial (*reselling*).
 
 ---
 
 ## 3. RUMUSAN MASALAH
 
-1. Apakah hedonic motivation berpengaruh positif signifikan terhadap impulsive buying IAP pemain Mobile Legends?
-2. Apakah social comparison berpengaruh positif signifikan terhadap impulsive buying IAP pemain Mobile Legends?
-3. Apakah literasi keuangan memoderasi (memperlemah) pengaruh hedonic motivation terhadap impulsive buying?
-4. Apakah literasi keuangan memoderasi (memperlemah) pengaruh social comparison terhadap impulsive buying?
+1. Apakah *Hedonic Motivation* berpengaruh positif dan signifikan terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
+2. Apakah *Need for Completion* berpengaruh positif dan signifikan terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
+3. Apakah *Speculative Motive* berpengaruh positif dan signifikan terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
+4. Apakah *Literasi Keuangan* memoderasi (memperlemah) pengaruh *Hedonic Motivation* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
+5. Apakah *Literasi Keuangan* memoderasi (memperlemah) pengaruh *Need for Completion* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
+6. Apakah *Literasi Keuangan* memoderasi (memperlemah) pengaruh *Speculative Motive* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
 
 ---
 
-## 4. HIPOTESIS
+## 4. HIPOTESIS PENELITIAN
 
-| Kode | Hipotesis | Arah |
-|---|---|---|
-| H1 | Hedonic motivation berpengaruh positif signifikan terhadap impulsive buying | + |
-| H2 | Social comparison berpengaruh positif signifikan terhadap impulsive buying | + |
-| H3 | Literasi keuangan memperlemah pengaruh hedonic motivation -> impulsive buying | - (moderasi) |
-| H4 | Literasi keuangan memperlemah pengaruh social comparison -> impulsive buying | - (moderasi) |
-
----
-
-## 5. OPERASIONALISASI VARIABEL
-
-### X1: Hedonic Motivation
-- Definisi konseptual: Motivasi membeli berdasarkan kesenangan dan nilai emosional (Arnold & Reynolds, 2003)
-- Definisi operasional: Persepsi pemain ML bahwa membeli skin/item memberikan kesenangan dan kepuasan emosional
-- Instrumen: Arnold & Reynolds (2003) Hedonic Shopping Motivations Scale — adaptasi konteks ML
-- Jumlah item: 5-6 item Likert 5 poin
-
-### X2: Social Comparison
-- Definisi konseptual: Kecenderungan membandingkan diri dengan orang lain sebagai standar evaluasi (Festinger, 1954)
-- Definisi operasional: Dorongan pemain ML membeli skin karena membandingkan tampilan karakter/rank dengan pemain lain
-- Instrumen: Gibbons & Buunk (1999) Iowa-Netherlands Comparison Orientation Measure (INCOM) — adaptasi
-- Jumlah item: 4-5 item Likert 5 poin
-
-### M: Literasi Keuangan (Moderator)
-- Definisi konseptual: Kombinasi pengetahuan, sikap, dan perilaku keuangan (OJK 2023; OECD-INFE 2022)
-- Definisi operasional: Tingkat pemahaman keuangan pemain ML yang memoderasi hubungan X -> Y
-- Instrumen: Adaptasi OJK SNLIK 2023 + OECD-INFE Financial Literacy Toolkit 2022
-- Jumlah item: 8-10 item
-
-### Y: Impulsive Buying
-- Definisi konseptual: Pembelian tidak terencana, spontan, didorong dorongan afektif (Rook 1987; Verplanken & Herabadi 2001)
-- Definisi operasional: Kecenderungan membeli skin/diamond tanpa rencana sebelumnya, didorong emosi sesaat
-- Instrumen: Verplanken & Herabadi (2001) Impulsive Buying Tendency Scale (IBTS) — 9 item
-- Jumlah item: 9 item Likert 5 poin
+| Kode | Hipotesis | Arah | Landasan Teori |
+|---|---|---|---|
+| **H1** | *Hedonic Motivation* berpengaruh positif dan signifikan terhadap *Impulsive Buying* | + | Arnold & Reynolds (2003) |
+| **H2** | *Need for Completion* berpengaruh positif dan signifikan terhadap *Impulsive Buying* | + | Belk (1995); Mowen (1990) (*Zeigarnik Effect*) |
+| **H3** | *Speculative Motive* berpengaruh positif dan signifikan terhadap *Impulsive Buying* | + | Shiller (2000); Behavioral Finance (*Overoptimism Bias*) |
+| **H4** | *Literasi Keuangan* memoderasi (memperlemah) pengaruh *Hedonic Motivation* $\rightarrow$ *Impulsive Buying* | - (moderasi) | OJK SNLIK (2023); OECD-INFE (2022) |
+| **H5** | *Literasi Keuangan* memoderasi (memperlemah) pengaruh *Need for Completion* $\rightarrow$ *Impulsive Buying* | - (moderasi) | OJK SNLIK (2023); OECD-INFE (2022) |
+| **H6** | *Literasi Keuangan* memoderasi (memperlemah) pengaruh *Speculative Motive* $\rightarrow$ *Impulsive Buying* | - (moderasi) | OJK SNLIK (2023); OECD-INFE (2022) |
 
 ---
 
-## 6. METODE PENELITIAN
+## 5. OPERASIONALISASI VARIABEL & INSTRUMEN
 
-### Desain
-- Pendekatan: Kuantitatif
-- Desain: Cross-sectional survei primer
-- Jenis data: Data primer (kuesioner online Google Form)
+### $X_1$: Hedonic Motivation
+- **Definisi Konseptual:** Motivasi belanja untuk kesenangan emosional, hiburan, dan kenikmatan psikologis (Arnold & Reynolds, 2003).
+- **Definisi Operasional:** Kesenangan saat merobek bungkus pack, sensasi misteri gacha fisik, dan kebahagiaan menarik kartu foil berkilau.
+- **Skala/Item:** 5 butir pernyataan Skala Likert 1–5.
 
-### Populasi & Sampel
-- Populasi sasaran: Pemain aktif MLBB yang pernah top-up diamond minimal 1x
-- Populasi operasional: Mahasiswa S1 aktif yang memenuhi kriteria inklusi
-- Kriteria inklusi: (1) Pemain aktif MLBB; (2) Pernah top-up diamond >=1x; (3) Mahasiswa aktif
-- Teknik sampling: Purposive sampling (non-probability)
-- Target sampel: Minimal 100, target 150 responden
-- Dasar ukuran: Rule of 10 PLS-SEM (Hair et al. 2019: >=100 untuk moderasi)
-- Batas inferensi: Hasil hanya berlaku untuk sampel yang diteliti
+### $X_2$: Need for Completion
+- **Definisi Konseptual:** Ketegangan kognitif internal untuk menyelesaikan kumpulan tugas atau koleksi yang belum utuh (Belk, 1995; Mowen, 1990).
+- **Definisi Operasional:** Dorongan kuat mengisi slot kartu yang masih kosong dalam album binder koleksi satu seri Pokémon.
+- **Skala/Item:** 4–5 butir pernyataan Skala Likert 1–5.
 
-### Analisis Data
-| Tahap | Metode | Alat |
-|---|---|---|
-| Validitas konstruk | Outer model PLS (Loading >0.7, AVE >0.5) | SmartPLS 4.0 |
-| Reliabilitas | Composite Reliability >0.7 | SmartPLS 4.0 |
-| Model struktural | Path coefficient, p-value, R-squared | SmartPLS 4.0 |
-| Moderasi | Two-stage moderation PLS | SmartPLS 4.0 |
-| Alternatif | Moderated Regression Analysis (MRA) | SPSS |
+### $X_3$: Speculative Motive
+- **Definisi Konseptual:** Motif membeli aset/komoditas dengan harapan memperoleh keuntungan dari apresiasi harga di pasar sekunder (Shiller, 2000).
+- **Definisi Operasional:** Pertimbangan nilai jual kembali (*resale value / grading PSA*) dan harapan balik modal saat membeli booster pack.
+- **Skala/Item:** 4–5 butir pernyataan Skala Likert 1–5.
 
----
+### $M$: Literasi Keuangan (Moderator)
+- **Definisi Konseptual:** Pengetahuan, keterampilan, dan keyakinan dalam mengelola keuangan untuk mencapai kesejahteraan finansial (OJK, 2023).
+- **Definisi Operasional:** Tingkat pemahaman anggaran, kontrol pengeluaran, dan manajemen risiko finansial kolektor.
+- **Skala/Item:** 6–8 butir pernyataan Likert 1–5 (adaptasi SNLIK OJK).
 
-## 7. RESEARCH GAP (Draft - perlu dikonfirmasi search log)
-
-"Dalam korpus penelitian yang ditelaah, penelitian terdahulu umumnya menempatkan literasi keuangan sebagai variabel independen (prediktor) terhadap impulsive buying. Belum ditemukan studi yang secara eksplisit menguji peran moderasi literasi keuangan pada hubungan hedonic motivation dan social comparison terhadap impulsive buying IAP di konteks Mobile Legends Indonesia."
-
-PERINGATAN: Kalimat gap ini sementara, harus dikonfirmasi dengan search log aktual.
+### $Y$: Impulsive Buying
+- **Definisi Konseptual:** Pembelian spontan, tidak direncanakan, didorong dorongan afektif kuat (Rook, 1987; Verplanken & Herabadi, 2001).
+- **Definisi Operasional:** Kecenderungan membeli booster pack kartu Pokémon secara tiba-tiba tanpa perencanaan anggaran keuangan sebelumnya.
+- **Skala/Item:** 6–9 butir pernyataan *Impulsive Buying Tendency Scale* (IBTS).
 
 ---
 
-## 8. NOVELTY
+## 6. METODOLOGI PENELITIAN
 
-| Dimensi | Deskripsi |
-|---|---|
-| Posisi variabel | Literasi keuangan sebagai moderator, bukan prediktor |
-| Variabel X2 | Social comparison jarang digunakan sebagai prediktor utama di konteks IAP mobile gaming Indonesia |
-| Konteks | Spesifik IAP MLBB dengan mekanisme limited skin dan social ranking |
-| Kombinasi | HM + SC -> IB dengan LK sebagai moderator belum ditemukan di konteks ML Indonesia |
-
----
-
-## 9. SUMBER INSTRUMEN
-
-| Variabel | Instrumen Asli | Tahun |
-|---|---|---|
-| Hedonic Motivation | Arnold & Reynolds - Hedonic Shopping Motivations Scale | 2003 |
-| Social Comparison | Gibbons & Buunk - Iowa-Netherlands Comparison Orientation Measure | 1999 |
-| Literasi Keuangan | OJK SNLIK + OECD-INFE Financial Literacy Toolkit | 2022-2023 |
-| Impulsive Buying | Verplanken & Herabadi - Impulsive Buying Tendency Scale | 2001 |
-
----
-
-## 10. LARANGAN
-
-- Jangan mengklaim "belum pernah diteliti sama sekali" tanpa search log nyata
-- Jangan gunakan bahasa kausal absolut untuk desain cross-sectional
-- Jangan generalisasi hasil ke seluruh pemain ML Indonesia
-- Jangan akses atau laporkan data keuangan pribadi responden
-- Data sintetis dilarang digunakan sebagai data penelitian
+* **Pendekatan:** Kuantitatif Asosiatif (Kausalitas & Moderasi).
+* **Desain:** Cross-sectional survei primer (kuesioner online Google Forms).
+* **Populasi:** Seluruh pembeli/kolektor kartu fisik Pokémon TCG resmi di Indonesia.
+* **Sampel:** 120–150 responden (purposive sampling, WNI usia $\ge 17$ tahun, pernah beli pack minimal 1x dalam 6–12 bulan).
+* **Alat Analisis:** SPSS (Uji Validitas Pearson, Reliabilitas Cronbach Alpha, Uji Asumsi Klasik, Regresi Berganda & MRA).

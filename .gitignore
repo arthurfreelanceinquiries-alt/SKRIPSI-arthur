@@ -12,3 +12,10 @@ tmp/
 *.snm
 *.vrb
 *.synctex.gz
+*.bbl
+*.blg
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+graphify-out/cache/

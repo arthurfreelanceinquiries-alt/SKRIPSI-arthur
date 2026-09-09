@@ -1,0 +1,980 @@
+% ============================================================
+%  PROPOSAL SKRIPSI — UNIVERSITAS KRISTEN KRIDA WACANA (UKRIDA)
+%  Fakultas Ekonomi dan Bisnis — Program Studi S1 Manajemen
+%  Konsentrasi: Manajemen Keuangan
+%  Judul: Pengaruh Hedonic Motivation, Need for Completion, dan
+%         Speculative Motive terhadap Impulsive Buying Booster Pack
+%         Kartu Pokemon TCG dengan Literasi Keuangan sebagai Variabel Moderasi
+%  Format: Sesuai Buku Pedoman Penyusunan Skripsi FEB UKRIDA 2022 (Model B)
+%  Engine: XeLaTeX (Font: Times New Roman via fontspec)
+% ============================================================
+
+\documentclass[12pt,a4paper]{article}
+
+% ---- ENCODING & FONT (Pedoman UKRIDA §3.2.b: Times New Roman 12pt) ----
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+% ---- CAPTION & ISTILAH INDONESIA ----
+\renewcommand{\tablename}{Tabel}
+\renewcommand{\figurename}{Gambar}
+
+% ---- HYPHENATION & EMERGENCE STRETCH ----
+\hyphenation{he-te-ro-ske-das-ti-si-tas mul-ti-ko-li-ne-a-ri-tas au-to-ko-re-la-si li-te-ra-si pe-ran-cang-an gra-ti-fi-ca-tion}
+\setlength{\emergencystretch}{2.5em}
+
+% ---- PAGE GEOMETRY (Pedoman UKRIDA §3.2.a: Kiri 4cm, Atas/Kanan/Bawah 3cm) ----
+\usepackage[
+  left=4cm,
+  right=3cm,
+  top=3cm,
+  bottom=3cm,
+  a4paper
+]{geometry}
+
+% ---- LINE SPACING (Pedoman UKRIDA §3.2.e: 1.5 Spasi) ----
+\usepackage{setspace}
+\onehalfspacing
+
+% ---- PARAGRAPH INDENT (Pedoman UKRIDA §3.2.f: 5 ketukan ~ 1.25cm) ----
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+
+% ---- TABEL & ARRAY (Desain Terbuka Standar Jurnal / Booktabs) ----
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{makecell}
+\renewcommand{\arraystretch}{1.35}
+
+% ---- GAMBAR & CAPTION (Pedoman UKRIDA §3.2.g: Tabel judul di atas, Gambar di bawah) ----
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup[table]{labelsep=period, justification=raggedright, singlelinecheck=false, position=top, font=small}
+\captionsetup[figure]{labelsep=period, justification=centering, position=bottom, font=small}
+
+% ---- MATEMATIKA ----
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% ---- TIKZ (DIAGRAM KERANGKA KONSEPTUAL) ----
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc}
+
+% ---- SECTION TITLE FORMATTING (Pedoman UKRIDA §3.2.c: BAB KAPITAL BOLD CENTER) ----
+\usepackage{titlesec}
+\titleformat{\section}[block]
+  {\normalfont\fontsize{12}{14}\bfseries\centering\MakeUppercase}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\section}{0pt}{18pt}{12pt}
+
+\titleformat{\subsection}[block]
+  {\normalfont\fontsize{12}{14}\bfseries}
+  {\thesubsection.}
+  {0.5em}
+  {}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+
+\titleformat{\subsubsection}[block]
+  {\normalfont\fontsize{12}{14}\bfseries}
+  {\thesubsubsection.}
+  {0.5em}
+  {}
+\titlespacing*{\subsubsection}{0pt}{10pt}{4pt}
+
+% ---- HEADER & FOOTER (Pedoman UKRIDA §3.3.b & Jeddy: Accent Bar 4 di Kanan Bawah) ----
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[R]{\footnotesize\textbf{Universitas Kristen Krida Wacana} $|$ \thepage}
+
+% Halaman awal frontmatter: footer kanan bawah dengan penomoran romawi kecil
+\fancypagestyle{frontmatter}{
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+  \fancyfoot[R]{\footnotesize\textbf{Universitas Kristen Krida Wacana} $|$ \thepage}
+}
+
+% Halaman plain / bab baru: footer kanan bawah konsisten
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+  \fancyfoot[R]{\footnotesize\textbf{Universitas Kristen Krida Wacana} $|$ \thepage}
+}
+
+% ---- DAFTAR ISI / TABEL / GAMBAR (tocloft) ----
+\usepackage[titles]{tocloft}
+\renewcommand{\cfttoctitlefont}{\hfill\large\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftlottitlefont}{\hfill\large\bfseries}
+\renewcommand{\cftafterlottitle}{\hfill}
+\renewcommand{\cftloftitlefont}{\hfill\large\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill}
+
+% Awalan Tabel dan Gambar di daftar
+\renewcommand{\cfttabpresnum}{Tabel }
+\renewcommand{\cfttabaftersnum}{.}
+\setlength{\cfttabnumwidth}{2.3cm}
+\renewcommand{\cftfigpresnum}{Gambar }
+\renewcommand{\cftfigaftersnum}{.}
+\setlength{\cftfignumwidth}{2.5cm}
+
+% ---- BIBLIOGRAPHY (APA Style via natbib + apalike) ----
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\bibpunct{(}{)}{;}{a}{,}{,}
+
+% ---- HYPERREF (Tautan Interaktif Digital, Teks Hitam Formal Sesuai Pedoman §3.2.i) ----
+\usepackage[
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black,
+  bookmarks=true,
+  bookmarksnumbered=true,
+  pdfpagemode=UseOutlines
+]{hyperref}
+
+% ---- PENOMORAN OTOMATIS BERDASARKAN BAB ----
+\numberwithin{equation}{section}
+\numberwithin{table}{section}
+\numberwithin{figure}{section}
+
+% ---- METADATA MAHASISWA & PEMBIMBING ----
+\newcommand{\ukrida}{Universitas Kristen Krida Wacana}
+\newcommand{\feb}{Fakultas Ekonomi dan Bisnis}
+\newcommand{\prodi}{Program Studi S1 Manajemen}
+\newcommand{\konsentrasi}{Manajemen Keuangan}
+\newcommand{\namamahasiswa}{Arthur Reezan}
+\newcommand{\nim}{312023002}
+\newcommand{\dosbim}{Dr. Diana Frederica, S.E., M.Ak., CFP\textsuperscript{\textregistered}., CHCP-A}
+\newcommand{\nidn}{0315088201}
+\newcommand{\ketprodi}{Rita Amelinda, S.E., M.M.}
+\newcommand{\judulskripsi}{PENGARUH \emph{HEDONIC MOTIVATION}, \emph{NEED FOR COMPLETION}, DAN \emph{SPECULATIVE MOTIVE} TERHADAP \emph{IMPULSIVE BUYING} BOOSTER PACK KARTU POK\'EMON TCG DENGAN LITERASI KEUANGAN SEBAGAI VARIABEL MODERASI}
+
+% ============================================================
+%  DOKUMEN UTAMA
+% ============================================================
+\begin{document}
+
+% ============================================================
+%  BAGIAN AWAL — Penomoran Romawi Kecil
+% ============================================================
+\pagenumbering{roman}
+\pagestyle{frontmatter}
+
+% ------------------------------------------------------------
+%  1. HALAMAN JUDUL LUAR / SAMPUL (hal. i)
+% ------------------------------------------------------------
+\thispagestyle{empty}
+\begin{titlepage}
+  \begin{center}
+    \vspace*{0.5cm}
+    {\large\bfseries PROPOSAL SKRIPSI}\\[1.2cm]
+
+    {\large\bfseries
+      PENGARUH \emph{HEDONIC MOTIVATION},\\
+      \emph{NEED FOR COMPLETION}, DAN\\
+      \emph{SPECULATIVE MOTIVE}\\
+      TERHADAP \emph{IMPULSIVE BUYING} BOOSTER PACK\\
+      KARTU POK\'EMON TCG DENGAN LITERASI KEUANGAN\\
+      SEBAGAI VARIABEL MODERASI
+    }\\[1.2cm]
+
+    {\normalsize Diajukan Kepada \prodi}\\[0.2cm]
+    {\normalsize Untuk Menyusun Skripsi Sarjana Manajemen (S.M.)}\\[1.2cm]
+
+    {\normalsize Diajukan Oleh:}\\[0.4cm]
+    {\large\bfseries \namamahasiswa}\\[0.2cm]
+    {\large\bfseries (\nim)}\\[1.8cm]
+
+    \vfill
+
+    {\large\bfseries \feb}\\[0.3cm]
+    {\large\bfseries \ukrida}\\[0.3cm]
+    {\large\bfseries JAKARTA 2026}
+  \end{center}
+\end{titlepage}
+
+\addtocounter{page}{1}
+
+% ------------------------------------------------------------
+%  2. HALAMAN PERNYATAAN KEASLIAN (hal. ii)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\begin{center}
+  {\large\bfseries PERNYATAAN KEASLIAN KARYA TUGAS AKHIR}
+\end{center}
+
+\vspace{0.8cm}
+\noindent Saya mahasiswa \ukrida:
+
+\vspace{0.4cm}
+\noindent
+\begin{tabular}{lll}
+  Nama Mahasiswa & : & \namamahasiswa \\
+  NIM            & : & \nim \\
+  Program Studi  & : & \prodi \\
+  Konsentrasi    & : & \konsentrasi \\
+\end{tabular}
+
+\vspace{0.8cm}
+\noindent
+Dengan ini menyatakan dengan sesungguhnya bahwa Proposal Skripsi yang berjudul:
+
+\vspace{0.2cm}
+\begin{center}
+  \bfseries``\judulskripsi''
+\end{center}
+
+\noindent adalah:
+
+\begin{enumerate}
+  \item Benar-benar hasil karya saya sendiri, bukan merupakan jiplakan, plagiarisme, fabrikasi, atau tiruan dari karya tulis ilmiah orang lain yang pernah diajukan untuk memperoleh gelar akademik di perguruan tinggi manapun.
+  \item Seluruh kutipan, data, dan rujukan ilmiah yang digunakan dalam naskah ini telah dicantumkan sumbernya secara jelas dan lengkap sesuai dengan kaidah penulisan ilmiah yang berlaku di \ukrida.
+  \item Apabila di kemudian hari terbukti bahwa pernyataan ini tidak benar atau ditemukan indikasi plagiarisme, saya bersedia menerima sanksi akademik yang berlaku sesuai dengan peraturan perundang-undangan dan ketentuan di lingkungan Universitas Kristen Krida Wacana.
+\end{enumerate}
+
+\vspace{1.2cm}
+\noindent Jakarta, \underline{\hspace{4cm}} 2026
+
+\vspace{0.4cm}
+\noindent Yang menyatakan,
+
+\vspace{0.8cm}
+\noindent
+\begin{tabular}{p{7.5cm}l}
+  \framebox(85,55){\begin{minipage}{3.0cm}\centering\footnotesize\itshape Materai\\Rp10.000\end{minipage}} &
+  \begin{tabular}{l}
+    \\[1.2cm]
+    \textbf{\namamahasiswa} \\
+    NIM: \nim
+  \end{tabular}
+\end{tabular}
+
+% ------------------------------------------------------------
+%  3. HALAMAN PERSETUJUAN PROPOSAL SKRIPSI (hal. iii)
+%  (Format Sesuai Lampiran 2 Buku Pedoman Penyusunan Skripsi FEB UKRIDA 2022)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\begin{center}
+  {\large\bfseries PERSETUJUAN PROPOSAL SKRIPSI}
+\end{center}
+
+\vspace{0.6cm}
+\noindent
+\begin{tabular}{lll}
+  Nama          & : & \namamahasiswa \\
+  N.I.M.        & : & \nim \\
+  Program Studi & : & \prodi \\
+  Konsentrasi   & : & \konsentrasi \\
+\end{tabular}
+
+\vspace{0.5cm}
+\noindent \textbf{Judul yang Diajukan:}
+
+\vspace{0.2cm}
+\begin{flushleft}
+  \bfseries\judulskripsi
+\end{flushleft}
+
+\vspace{0.8cm}
+\noindent Jakarta, \underline{\hspace{3cm}} 2026
+
+\vspace{0.6cm}
+\noindent Menyetujui,
+
+\vspace{0.4cm}
+\noindent
+\begin{tabular}{p{6.5cm} p{6.5cm}}
+  Dosen Pembimbing & Dosen Pendamping \\[2.2cm]
+  \textbf{(\dosbim)} & (\underline{\hspace{4cm}}) \\
+  NIDN: \nidn & \\
+\end{tabular}
+
+\vspace{0.8cm}
+\noindent Mengetahui,
+
+\vspace{0.4cm}
+\noindent
+\begin{tabular}{l}
+  \textbf{(\ketprodi)} \\
+  Ketua Program Studi S1 Manajemen
+\end{tabular}
+
+% ------------------------------------------------------------
+%  4. HALAMAN PENGESAHAN TIM PENGUJI (hal. iv)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\begin{center}
+  {\large\bfseries PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL SKRIPSI}\\[0.5cm]
+  {\normalsize Proposal Skripsi dengan Judul:}\\[0.3cm]
+  {\bfseries\judulskripsi}\\[0.5cm]
+  {\normalsize Diajukan Oleh:}\\[0.2cm]
+  {\large\bfseries \namamahasiswa}\\[0.1cm]
+  {\large\bfseries (\nim)}
+\end{center}
+
+\vspace{0.4cm}
+\noindent
+Telah dipertahankan di hadapan Tim Penguji Seminar Proposal Skripsi Program Studi S1 Manajemen Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana pada:
+
+\vspace{0.4cm}
+\noindent \textbf{Hari / Tanggal Seminar:} \underline{\hspace{4cm}}, \underline{\hspace{3cm}} 2026
+
+\vspace{0.4cm}
+\noindent \textbf{Tim Penguji Seminar Proposal:}
+
+\vspace{0.4cm}
+\noindent
+\begin{tabular}{@{}p{0.5cm} >{\raggedright\arraybackslash}p{3.2cm} p{0.2cm} >{\raggedright\arraybackslash}p{5.0cm} p{2.8cm}@{}}
+  1. & Ketua Penguji    & : & \underline{\hspace{4.4cm}} & ( \underline{\hspace{2.3cm}} ) \\[1.3cm]
+  2. & Anggota Penguji  & : & \underline{\hspace{4.4cm}} & ( \underline{\hspace{2.3cm}} ) \\[1.3cm]
+  3. & Dosen Pembimbing & : & \dosbim                    & ( \underline{\hspace{2.3cm}} ) \\
+\end{tabular}
+
+% ------------------------------------------------------------
+%  5. KATA PENGANTAR (hal. v)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\begin{center}
+  {\large\bfseries KATA PENGANTAR}
+\end{center}
+
+\vspace{0.4cm}
+Puji dan syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa atas kasih, anugerah, dan penyertaan-Nya yang senantiasa melimpah, sehingga penulis dapat menyelesaikan penyusunan proposal skripsi yang berjudul \textbf{``\judulskripsi''} dengan baik, lancar, dan tepat waktu.
+
+Proposal skripsi ini disusun sebagai salah satu tahapan akademik yang diwajibkan dalam rangka menempuh ujian seminar proposal guna menyelesaikan studi pada Program Studi S1 Manajemen, Konsentrasi Manajemen Keuangan, Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana (UKRIDA), Jakarta.
+
+Dalam proses penyusunan naskah proposal ini, penulis mendapatkan banyak bimbingan, arahan metodologis, dukungan moril, serta fasilitas dari berbagai pihak. Oleh karena itu, dengan penuh rasa hormat dan kerendahan hati, penulis menyampaikan terima kasih dan apresiasi yang setinggi-tingginya kepada:
+
+\begin{enumerate}
+  \item \textbf{\dosbim}, selaku Dekan Fakultas Ekonomi dan Bisnis UKRIDA sekaligus Dosen Pembimbing Skripsi, yang telah dengan luar biasa sabar, teliti, kritis, dan penuh dedikasi meluangkan waktu serta mencurahkan tenaga dan pikiran dalam membimbing, mengarahkan, dan menyempurnakan naskah proposal ini sejak tahap awal perumusan gagasan hingga penyusunan naskah komprehensif.
+  \item \textbf{\ketprodi}, selaku Ketua Program Studi S1 Manajemen FEB UKRIDA, atas segala arahan, kemudahan proses administratif, dan bimbingan akademik yang diberikan.
+  \item \textbf{Bapak dan Ibu Dosen Penguji Seminar Proposal}, yang telah bersedia meluangkan waktu untuk menguji, memberikan koreksi kritis, serta masukan yang konstruktif guna menyempurnakan naskah penelitian ini.
+  \item \textbf{Seluruh Dosen dan Staf Pengajar FEB UKRIDA}, yang telah membagikan ilmu pengetahuan, wawasan analisis keuangan, serta etika profesional selama masa perkuliahan penulis.
+  \item \textbf{Kedua Orang Tua dan Keluarga Tercinta}, atas doa yang tiada putus, limpahan kasih sayang, ketulusan pengorbanan, serta dorongan moral dan material yang menjadi sumber kekuatan utama bagi penulis.
+  \item \textbf{Rekan-rekan Mahasiswa Manajemen FEB UKRIDA Angkatan 2023} dan sahabat seperjuangan, atas diskusi yang membangun, motivasi, dan kerja sama selama proses perkuliahan.
+  \item \textbf{Komunitas Kolektor dan Pemain Pok\'emon TCG di Indonesia}, yang telah memberikan gambaran nyata mengenai fenomena pasar kartu koleksi di lapangan.
+\end{enumerate}
+
+Penulis menyadari bahwa proposal ini masih jauh dari kesempurnaan. Kritik dan saran yang membangun sangat diharapkan demi penyempurnaan karya ilmiah ini ke depan. Semoga proposal skripsi ini dapat memberikan manfaat akademis dan praktis bagi perkembangan kajian ilmu manajemen keuangan perilaku di Indonesia.
+
+\vspace{0.8cm}
+\begin{flushright}
+  Jakarta, \underline{\hspace{3cm}} 2026\\[0.3cm]
+  \textbf{Penulis}\\[2.0cm]
+  \textbf{\namamahasiswa}\\
+  NIM: \nim
+\end{flushright}
+
+% ------------------------------------------------------------
+%  6. ABSTRAK (hal. vi)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\begin{center}
+  {\large\bfseries ABSTRAK}\\[0.4cm]
+  {\bfseries\judulskripsi}\\[0.4cm]
+  {\bfseries\namamahasiswa\ (\nim)}\\[0.1cm]
+  {\footnotesize \prodi, \feb, \ukrida}\\[0.1cm]
+  {\footnotesize Dosen Pembimbing: \dosbim}
+\end{center}
+
+\vspace{0.4cm}
+Penelitian ini bertujuan untuk menganalisis dan menguji secara empiris pengaruh \emph{hedonic motivation} (motivasi hedonis), \emph{need for completion} (hasrat melengkapi koleksi), dan \emph{speculative motive} (motif spekulasi finansial) terhadap \emph{impulsive buying} (pembelian impulsif) \emph{booster pack} kartu Pok\'emon Trading Card Game (Pok\'emon TCG) fisik resmi berbahasa Indonesia, serta menguji peran literasi keuangan (\emph{financial literacy}) sebagai variabel moderasi dalam memperlemah pengaruh ketiga variabel anteseden tersebut.
+
+Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei \emph{cross-sectional}. Data primer dikumpulkan melalui penyebaran kuesioner daring berbasis skala Likert 5 poin kepada responden yang dipilih melalui teknik \emph{purposive sampling}. Kriteria inklusi sampel adalah konsumen atau kolektor Warga Negara Indonesia (WNI) berusia minimal 17 tahun yang pernah membeli \emph{booster pack} Pok\'emon TCG fisik resmi dalam rentang waktu 6--12 bulan terakhir. Jumlah sampel yang ditargetkan adalah 120 hingga 150 responden, mengacu pada rekomendasi ukuran sampel \citet{green1991subjects} dan \citet{cohen1988statistical} untuk mencapai kekuatan uji statistik (\emph{statistical power}) yang memadai pada model regresi linear berganda. Metode analisis data menggunakan analisis regresi berganda dan \emph{Moderated Regression Analysis} (MRA) dengan prosedur standarisasi skor rata-rata (\emph{mean-centering}) guna mengatasi potensi multikolinearitas struktural antar-istilah interaksi \citep{aiken1991multiple, ghozali2018aplikasi}, yang diolah menggunakan perangkat lunak SPSS.
+
+Penelitian ini menawarkan kebaruan teoritis (\emph{novelty}) dengan mengintegrasikan kerangka psikologi lingkungan \emph{Stimulus-Organism-Response} (S-O-R), bias psikologis koleksi (\emph{Zeigarnik Effect}), dan prinsip-prinsip keuangan perilaku (\emph{behavioral finance}) pada fenomena komoditas hobi fisik bernilai spekulatif tinggi. Hasil penelitian ini diharapkan memberikan kontribusi empiris bagi konsumen muda dalam mengelola alokasi pengeluaran gaya hidup, serta masukan aplikatif bagi otoritas perencana keuangan (OJK) dalam merancang edukasi literasi keuangan yang kontekstual bagi Generasi Z.
+
+\vspace{0.4cm}
+\noindent\textbf{Kata Kunci:} \emph{Impulsive Buying}, \emph{Hedonic Motivation}, \emph{Need for Completion}, \emph{Speculative Motive}, Literasi Keuangan, \emph{Moderated Regression Analysis}, Pok\'emon TCG, Keuangan Perilaku (\emph{Behavioral Finance}).
+
+% ------------------------------------------------------------
+%  7. ABSTRACT (hal. vii)
+%  (Format Sesuai Lampiran 9 Buku Pedoman FEB UKRIDA & Skripsi Jeddy hal. x)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\begin{center}
+  {\large\bfseries ABSTRACT}\\[0.4cm]
+  {\bfseries THE EFFECT OF HEDONIC MOTIVATION, NEED FOR COMPLETION, AND SPECULATIVE MOTIVE ON IMPULSIVE BUYING OF POK\'EMON TCG BOOSTER PACKS WITH FINANCIAL LITERACY AS A MODERATING VARIABLE}\\[0.4cm]
+  {\bfseries\namamahasiswa\ (\nim)}\\[0.1cm]
+  {\footnotesize Undergraduate Program in Management, Faculty of Economics and Business, UKRIDA}\\[0.1cm]
+  {\footnotesize Thesis Advisor: \dosbim}
+\end{center}
+
+\vspace{0.4cm}
+\emph{This research aims to analyze and empirically test the effects of hedonic motivation, need for completion, and speculative motive on the impulsive buying behavior of official Indonesian-language physical Pok\'emon Trading Card Game (Pok\'emon TCG) booster packs, as well as to evaluate the moderating role of financial literacy in weakening the relationships between these three antecedent variables and impulsive buying.}
+
+\emph{This study adopts an associative quantitative approach utilizing a cross-sectional survey design. Primary data are gathered via self-administered online questionnaires employing a 5-point Likert scale, distributed to respondents selected through purposive sampling. The sample inclusion criteria comprise Indonesian citizens aged 17 and above who have purchased official physical booster packs within the past 6 to 12 months. The targeted sample size ranges from 120 to 150 respondents, consistent with the statistical power criteria established by \citet{green1991subjects} and \citet{cohen1988statistical} for multiple regression frameworks. The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to eliminate structural multicollinearity \citep{aiken1991multiple, ghozali2018aplikasi}, executed via SPSS software.}
+
+\emph{This study provides theoretical novelty by synthesizing the Stimulus-Organism-Response (S-O-R) paradigm, collector psychology (the Zeigarnik Effect), and behavioral finance principles in the context of tangible alternative assets exhibiting volatile secondary market premiums. The findings are expected to offer practical insights for young consumers in exercising financial discipline regarding discretionary collectibles and provide strategic inputs for regulatory authorities (such as the Financial Services Authority / OJK) in formulating tailored financial literacy programs for Generation Z.}
+
+\vspace{0.4cm}
+\noindent\textbf{\emph{Keywords:}} \emph{Impulsive Buying, Hedonic Motivation, Need for Completion, Speculative Motive, Financial Literacy, Moderated Regression Analysis, Pok\'emon TCG, Behavioral Finance.}
+
+\vspace{1.2cm}
+\noindent
+\begin{tabular}{@{}p{6.6cm} p{6.6cm}@{}}
+  Mahasiswa & Dosen Pembimbing \\[1.8cm]
+  \textbf{(\namamahasiswa)} & \textbf{(\dosbim)} \\
+  NIM: \nim & NIDN: \nidn
+\end{tabular}
+
+% ------------------------------------------------------------
+%  8. DAFTAR ISI (hal. viii)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\renewcommand{\contentsname}{DAFTAR ISI}
+\tableofcontents
+\addtocontents{toc}{\protect\thispagestyle{frontmatter}}
+
+% ------------------------------------------------------------
+%  9. DAFTAR TABEL (hal. ix)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\renewcommand{\listtablename}{DAFTAR TABEL}
+\listoftables
+\addtocontents{lot}{\protect\thispagestyle{frontmatter}}
+
+% ------------------------------------------------------------
+%  10. DAFTAR GAMBAR (hal. x)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\renewcommand{\listfigurename}{DAFTAR GAMBAR}
+\listoffigures
+\addtocontents{lof}{\protect\thispagestyle{frontmatter}}
+
+% ============================================================
+%  BAGIAN ISI — Penomoran Angka Arab, Footer UKRIDA
+% ============================================================
+\newpage
+\pagenumbering{arabic}
+\pagestyle{fancy}
+
+% ============================================================
+%  BAB 1: PENDAHULUAN (Format Sesuai Model B UKRIDA)
+% ============================================================
+\setcounter{section}{0}
+\section*{BAB 1\\[0.3cm]PENDAHULUAN}
+\addcontentsline{toc}{section}{\texorpdfstring{BAB 1\quad PENDAHULUAN}{BAB 1 PENDAHULUAN}}
+\setcounter{section}{1}
+\setcounter{subsection}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\setcounter{equation}{0}
+
+\subsection{Latar Belakang Penelitian}
+
+Perkembangan industri permainan kartu koleksi atau \emph{Trading Card Game} (TCG) di Indonesia menunjukkan pertumbuhan yang sangat pesat dalam beberapa tahun terakhir. Secara global, The Pok\'emon Company mencatat bahwa hingga tahun 2023, produksi kumulatif kartu Pok\'emon telah menembus lebih dari 52,9 miliar kartu di seluruh dunia, mencerminkan besarnya skala ekonomi industri hiburan ini. Di Indonesia, kehadiran kartu resmi \emph{Pok\'emon Trading Card Game} (Pok\'emon TCG) berbahasa Indonesia sejak tahun 2019 yang didistribusikan secara masif melalui ribuan gerai ritel modern (seperti Indomaret, Alfamart, Gramedia, dan Toys Kingdom), telah mentransformasi hobi ini dari komunitas ceruk (\emph{niche}) menjadi fenomena konsumsi populer berskala nasional. Minat masyarakat Indonesia terhadap kartu fisik tidak hanya didorong oleh fungsi rekreasi permainan, melainkan didominasi oleh kalangan dewasa muda, mahasiswa, dan Generasi Z yang memandangnya sebagai barang koleksi berharga (\emph{collectibles}), ekspresi gaya hidup, hingga instrumen aset alternatif bernilai ekonomi tinggi.
+
+Dinamika pasar Pok\'emon TCG di Indonesia memunculkan fenomena perilaku konsumsi yang sangat unik sekaligus problematis dari perspektif manajemen keuangan perilaku (\emph{behavioral finance}). Setiap kali ekspansi seri kartu baru dirilis (seperti Seri 151, Kilau Hitam, atau Terastal), gerai-gerai ritel modern kerap diserbu antrean pembeli, di mana produk \emph{booster pack} sering kali habis terjual (\emph{sold out}) dalam hitungan jam. Di pasar sekunder daring (Tokopedia, Shopee, forum lelang Facebook, dan media sosial), terjadi lonjakan harga yang sangat spekulatif di mana kartu dengan tingkat kelangkaan tinggi (\emph{Special Illustration Rare / SAR}) diperjualbelikan dengan harga berkisar antara Rp500.000 hingga lebih dari Rp3.000.000 per lembar, jauh melampaui harga eceran satu \emph{booster pack} resmi yang hanya berkisar Rp20.000 hingga Rp30.000. Fenomena disparitas harga yang ekstrem ini memicu antusiasme belanja yang berlebihan. Banyak pembeli melakukan transaksi pembelian \emph{booster pack} secara berulang-ulang dan spontan di kasir toko tanpa perencanaan anggaran keuangan yang matang. Perilaku transaksi yang tiba-tiba, didorong oleh dorongan emosional sesaat, dan mengabaikan perencanaan finansial ini mengindikasikan adanya gejala \emph{impulsive buying} (pembelian impulsif) yang masif di kalangan konsumen kartu Pok\'emon fisik di Indonesia.
+
+Masalah belanja impulsif pada komoditas hobi ini menjadi semakin krusial apabila dikaitkan dengan profil literasi keuangan masyarakat Indonesia. Berdasarkan data Survei Nasional Literasi dan Inklusi Keuangan (SNLIK) yang dirilis oleh Otoritas Jasa Keuangan \citep{ojk2023snlik}, indeks literasi keuangan masyarakat Indonesia baru mencapai 49,68\%, sementara indeks inklusi keuangan telah mencapai 85,10\%. Kesenjangan (\emph{gap}) sebesar 35,42\% ini mengindikasikan bahwa sebagian besar masyarakat telah memiliki akses luas terhadap produk dan kanal pembayaran digital, namun belum diimbangi oleh pemahaman, keterampilan, dan sikap keuangan yang memadai untuk mengelola keputusan keuangannya secara bijak. Pada segmen Generasi Z dan mahasiswa, kerentanan finansial ini tercermin dari kebiasaan belanja yang didorong oleh tren gaya hidup tanpa perhitungan matang (\emph{lifestyle spending}), termasuk pengeluaran berulang untuk membeli produk berbasis probabilitas seperti kartu koleksi.
+
+Terjadinya perilaku \emph{impulsive buying} dalam pembelian \emph{booster pack} kartu Pok\'emon fisik didorong oleh keterkaitan tiga faktor penjelas utama, yaitu \emph{hedonic motivation} (motivasi hedonis), \emph{need for completion} (hasrat melengkapi koleksi), dan \emph{speculative motive} (motif spekulasi finansial). Pertama, pemilihan faktor \emph{hedonic motivation} didasarkan pada karakteristik intrinsik \emph{booster pack} yang mengusung mekanisme kejutan (\emph{blind-pack mystery}). Konsumen membeli \emph{pack} bukan untuk memenuhi kebutuhan fungsional harian, melainkan demi mengejar kesenangan emosional, sensasi hiburan, dan lonjakan dopamin saat merobek kemasan bungkus kartu (\emph{pack opening thrill}). Kedua, pemilihan faktor \emph{need for completion} berakar pada psikologi dasar seorang kolektor. Berdasarkan prinsip \emph{Zeigarnik Effect} \citep{zeigarnik1927behalten, belk1995collecting, mowen1990consumer}, album atau \emph{binder} koleksi yang masih memiliki slot kartu kosong menciptakan ketegangan kognitif (\emph{cognitive tension}) pada diri kolektor. Dorongan psikologis untuk menuntaskan satu seri secara utuh memicu desakan kuat untuk terus membeli \emph{booster pack} tambahan secara spontan demi mengisi kartu yang belum dimiliki. Ketiga, pemilihan faktor \emph{speculative motive} sangat krusial dalam konteks manajemen keuangan perilaku (\emph{behavioral finance}). Seiring terbukanya pasar sekunder kartu koleksi yang likuid dan tren sertifikasi keaslian (\emph{grading} PSA/BGS), banyak pembeli membeli kartu dengan ekspektasi memperoleh keuntungan finansial dari penjualan kembali (\emph{capital gain}). Persepsi bahwa modal kecil (membeli beberapa bungkus) berpotensi menghasilkan kartu langka bernilai jutaan rupiah melahirkan ilusi keuntungan instan yang melumpuhkan kontrol rasionalitas finansial pembeli.
+
+Meskipun hubungan antara faktor-faktor pendorong tersebut dengan perilaku pembelian telah banyak disinggung dalam literatur perilaku konsumen, penelaahan terhadap penelitian-penelitian terdahulu justru memperlihatkan adanya kesenjangan penelitian empiris (\emph{empirical research gap}) berupa temuan hasil yang saling bertolak belakang (\emph{inconsistent findings}). Terkait faktor \emph{hedonic motivation}, sejumlah peneliti menemukan bahwa motivasi hedonis berpengaruh positif dan signifikan terhadap \emph{impulsive buying} karena rangsangan kesenangan emosional secara langsung meruntuhkan kontrol pertimbangan rasional konsumen \citep{arnold2003hedonic, gueltekin2012influence, fitriyani2022hubungan}. Namun, penelitian lain dalam konteks belanja produk spesifik menemukan hasil yang bertolak belakang, di mana motivasi hedonis tidak berpengaruh signifikan terhadap pembelian impulsif ketika konsumen dihadapkan pada keterbatasan anggaran riil dan pertimbangan kegunaan produk. Pada faktor \emph{need for completion}, \citet{gao2014set} menemukan bahwa hasrat melengkapi koleksi secara signifikan mendorong pembelian spontan yang terburu-buru. Sebaliknya, studi perilaku konsumen menunjukkan bahwa pada kolektor yang lebih matang, hasrat melengkapi koleksi justru membentuk kesabaran dan kehati-hatian, di mana mereka lebih memilih membeli kartu satuan (\emph{single cards}) secara terencana di pasar sekunder daripada menghamburkan uang secara impulsif pada kemasan acak. Demikian pula pada faktor \emph{speculative motive}, \citet{shiller2000irrational} mengonfirmasi bahwa motif spekulasi memicu bias optimisme berlebihan (\emph{overoptimism bias}) yang berujung pada transaksi spekulatif spontan. Namun, \citet{barber2008all} menunjukkan bahwa motif spekulasi sering kali diimbangi oleh kehati-hatian terhadap risiko kerugian modal, sehingga motif ini tidak selalu bertransformasi menjadi tindakan belanja yang tidak terencana.
+
+Inkonsistensi temuan antarpeneliti terdahulu tersebut menimbulkan pertanyaan mendasar mengenai faktor apa yang menyebabkan kesenjangan hasil tersebut. Kesenjangan empiris ini terjadi karena keputusan pembelian impulsif pada komoditas kartu koleksi fisik tidak bekerja dalam mekanisme linier sederhana. Pada barang konsumsi konvensional, dorongan hedonis dan spekulatif mudah dibatasi oleh pertimbangan fungsionalitas. Namun, pada produk kartu fisik Pok\'emon, terdapat konvergensi antara sensasi taruhan probabilitas (\emph{gacha mechanism}), tekanan psikologis kelengkapan koleksi, dan daya tarik likuiditas pasar sekunder yang membuat batas antara hobi dan spekulasi menjadi kabur. Selain itu, inkonsistensi temuan ini mengindikasikan adanya variabel pengkondisi atau perantara yang belum dilibatkan dalam memitigasi dorongan impulsif tersebut, yaitu tingkat literasi keuangan (\emph{financial literacy}). Literasi keuangan yang mencakup pengetahuan, sikap, dan keterampilan mengelola keuangan pribadi \citep{lusardi2014economic, ojk2023snlik, oecd2022survey} diyakini menjadi faktor pemoderasi yang menentukan apakah dorongan hedonis, hasrat melengkapi koleksi, dan motif spekulasi tersebut akan benar-benar bermuara pada tindakan \emph{impulsive buying} atau berhasil diredam secara rasional.
+
+Dari paparan fenomena di atas, teridentifikasi sejumlah persoalan mendasar: (1) tingginya antusiasme ekspansi seri baru mendorong pembelian \emph{booster pack} spontan tanpa perencanaan anggaran; (2) sensasi petualangan dan kejutan emosional memicu hasrat belanja berulang; (3) ketegangan kognitif akibat slot album koleksi yang kosong memicu pembelian demi menutup set secara tergesa-gesa; (4) disparitas harga pasar sekunder melahirkan motif spekulasi finansial yang mengaburkan batas antara pengeluaran hobi dan spekulasi aset; (5) adanya kesenjangan hasil empiris terdahulu mengenai signifikansi pengaruh ketiga anteseden tersebut; serta (6) minimnya kajian empiris di Indonesia yang menguji kemampuan literasi keuangan sebagai peredam dorongan impulsif pada komoditas hobi bernilai alternatif. Untuk menjaga fokus dan kedalaman analisis, penelitian ini membatasi ruang lingkupnya pada pengujian pengaruh \emph{Hedonic Motivation} ($X_1$), \emph{Need for Completion} ($X_2$), dan \emph{Speculative Motive} ($X_3$) terhadap \emph{Impulsive Buying} ($Y$) dengan moderasi \emph{Literasi Keuangan} ($M$), dengan objek khusus pembelian \emph{booster pack} kartu fisik resmi Pok\'emon TCG berbahasa Indonesia di kalangan konsumen/kolektor WNI berusia minimal 17 tahun menggunakan metode survei kuantitatif dan analisis regresi moderasi (MRA).
+
+Berdasarkan evaluasi kritis tersebut, penelitian ini memiliki posisi urgensi dan kebaruan (\emph{novelty}) yang tegas. Mayoritas riset \emph{impulsive buying} selama ini terkonsentrasi pada produk busana daring atau transaksi \emph{in-app purchase} game digital. Kajian komprehensif mengenai perilaku belanja impulsif pada kartu koleksi fisik bernilai pasar riil masih sangat langka dalam literatur manajemen keuangan di Indonesia. Kebaruan penelitian ini terletak pada integrasi simultan kerangka psikologi emosional, bias kognitif kolektor, dan motif pasar spekulatif dengan menempatkan literasi keuangan sebagai variabel moderasi. Berlandaskan latar belakang penelitian tersebut, maka peneliti menetapkan judul: \textbf{``\judulskripsi''}.
+
+\subsection{Perumusan Masalah}
+
+Berdasarkan latar belakang penelitian yang telah diuraikan, maka perumusan masalah dalam penelitian ini adalah sebagai berikut:
+\begin{enumerate}
+  \item Apakah \emph{Hedonic Motivation} berpengaruh positif dan signifikan terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG?
+  \item Apakah \emph{Need for Completion} berpengaruh positif dan signifikan terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG?
+  \item Apakah \emph{Speculative Motive} berpengaruh positif dan signifikan terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG?
+  \item Apakah \emph{Literasi Keuangan} memoderasi (memperlemah) pengaruh \emph{Hedonic Motivation} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG?
+  \item Apakah \emph{Literasi Keuangan} memoderasi (memperlemah) pengaruh \emph{Need for Completion} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG?
+  \item Apakah \emph{Literasi Keuangan} memoderasi (memperlemah) pengaruh \emph{Speculative Motive} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG?
+\end{enumerate}
+
+\subsection{Tujuan Penelitian}
+
+Mengacu pada perumusan masalah di atas, maka tujuan dilakukannya penelitian ini adalah:
+\begin{enumerate}
+  \item Untuk menganalisis dan menguji secara empiris pengaruh \emph{Hedonic Motivation} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.
+  \item Untuk menganalisis dan menguji secara empiris pengaruh \emph{Need for Completion} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.
+  \item Untuk menganalisis dan menguji secara empiris pengaruh \emph{Speculative Motive} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.
+  \item Untuk menganalisis dan menguji secara empiris peran \emph{Literasi Keuangan} dalam memoderasi (memperlemah) pengaruh \emph{Hedonic Motivation} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.
+  \item Untuk menganalisis dan menguji secara empiris peran \emph{Literasi Keuangan} dalam memoderasi (memperlemah) pengaruh \emph{Need for Completion} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.
+  \item Untuk menganalisis dan menguji secara empiris peran \emph{Literasi Keuangan} dalam memoderasi (memperlemah) pengaruh \emph{Speculative Motive} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.
+\end{enumerate}
+
+\subsection{Manfaat Penelitian}
+
+Hasil penelitian ini diharapkan dapat memberikan kontribusi yang bermanfaat baik secara teoritis maupun secara praktis:
+
+\subsubsection{Manfaat Teoritis}
+\begin{enumerate}
+  \item \textbf{Pengembangan Teori Perilaku Keuangan (\emph{Behavioral Finance}):} Memberikan kontribusi empiris pada literatur keuangan perilaku dan perilaku konsumen, khususnya dalam menjelaskan bagaimana motif spekulasi finansial dan bias kognitif koleksi berinteraksi memicu keputusan pembelian impulsif pada aset alternatif fisik.
+  \item \textbf{Pengayaan Literatur Moderasi Literasi Keuangan:} Memperluas pemahaman teoritis mengenai peran literasi keuangan sebagai variabel pemoderasi (faktor penahan/peredam) dalam mengendalikan dorongan belanja spontan yang dipicu oleh motivasi hedonis, kebutuhan kelengkapan, dan motif spekulasi.
+  \item \textbf{Referensi Akademik Baru:} Menjadi rujukan orisinal bagi penelitian-penelitian akademis selanjutnya di bidang manajemen keuangan dan pemasaran terkait pasar komoditas koleksi (\emph{collectibles}) dan \emph{Trading Card Game} di Indonesia yang saat ini masih sangat terbatas.
+\end{enumerate}
+
+\subsubsection{Manfaat Praktis}
+\begin{enumerate}
+  \item \textbf{Bagi Konsumen dan Generasi Muda:} Memberikan kesadaran kritis (\emph{critical awareness}) bagi para kolektor, pemain, mahasiswa, dan konsumen muda agar lebih rasional dalam membedakan antara alokasi pengeluaran untuk rekreasi hobi dengan keputusan investasi spekulatif, serta meningkatkan disiplin perencanaan anggaran pribadi.
+  \item \textbf{Bagi Otoritas Perencana Keuangan dan Regulator (OJK):} Memberikan data dan masukan empiris bagi Otoritas Jasa Keuangan (OJK) serta lembaga edukasi keuangan dalam menyusun strategi literasi keuangan yang lebih relevan dan kontekstual bagi Generasi Z, khususnya dalam menyikapi komoditas modern berbasis probabilitas (\emph{gacha/blind box}) yang sarat motif spekulasi.
+  \item \textbf{Bagi Pelaku Industri dan Ritel:} Memberikan wawasan perilaku konsumen mengenai faktor-faktor psikologis dan motif ekonomi yang memengaruhi keputusan belanja konsumen, sehingga pelaku usaha dapat merancang strategi promosi dan distribusi produk yang etis dan berkelanjutan.
+\end{enumerate}
+
+% ============================================================
+%  BAB 2: TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS
+% ============================================================
+\newpage
+\setcounter{section}{1}
+\section*{BAB 2\\[0.3cm]TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS}
+\addcontentsline{toc}{section}{\texorpdfstring{BAB 2\quad TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS}{BAB 2 TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS}}
+\setcounter{section}{2}
+\setcounter{subsection}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\setcounter{equation}{0}
+
+\subsection{Landasan Teori}
+
+\subsubsection{Kerangka Teori \emph{Stimulus-Organism-Response} (S-O-R)}
+
+Penelitian ini berlandaskan pada kerangka teoritis utama (\emph{grand theory}) yaitu model \emph{Stimulus-Organism-Response} (S-O-R) yang dikembangkan oleh \citet{mehrabian1974approach}. Model S-O-R merupakan teori psikologi lingkungan yang menjelaskan bagaimana rangsangan lingkungan eksternal (\emph{Stimulus}) memengaruhi kondisi kognitif dan afektif internal seseorang (\emph{Organism}), yang pada gilirannya mendorong tindakan atau respons perilaku tertentu (\emph{Response}).
+
+Dalam konteks perilaku konsumen, model S-O-R menjelaskan proses berbelanja sebagai rantai sebab-akibat yang terstruktur:
+\begin{enumerate}
+  \item \textbf{Stimulus (S):} Mengacu pada pemicu eksternal di lingkungan belanja, seperti pajangan kemasan produk yang menarik (\emph{visual merchandising}), promosi ritel, mekanisme kelangkaan seri baru, serta dinamika harga di pasar sekunder kartu koleksi.
+  \item \textbf{Organism (O):} Mengacu pada kondisi evaluasi internal, baik emosional (afektif) maupun pertimbangan mental (kognitif). Dalam penelitian ini, kondisi internal tersebut diwakili oleh tiga variabel anteseden, yaitu dorongan mencari kesenangan emosional (\emph{Hedonic Motivation}), ketegangan kognitif untuk melengkapi album koleksi (\emph{Need for Completion}), serta ekspektasi rasional-spekulatif untuk memperoleh keuntungan finansial (\emph{Speculative Motive}).
+  \item \textbf{Response (R):} Mengacu pada tindakan perilaku akhir konsumen sebagai hasil dari interaksi stimulus dan organisme. Dalam penelitian ini, respons yang diteliti adalah perilaku pembelian spontan dan tidak terencana (\emph{Impulsive Buying}) terhadap produk \emph{booster pack} kartu Pok\'emon TCG.
+\end{enumerate}
+
+Selain itu, kerangka S-O-R dalam penelitian ini diperkaya dengan menempatkan \textbf{Literasi Keuangan (\emph{Financial Literacy})} sebagai variabel pemoderasi (\emph{moderating variable}) pada tahap organisme menuju respons. Tingkat pemahaman dan keterampilan keuangan konsumen diyakini bertindak sebagai mekanisme kontrol kognitif (\emph{cognitive gatekeeper}) yang menentukan apakah dorongan hedonis, dorongan kelengkapan, dan motif spekulasi akan terwujud menjadi tindakan pembelian impulsif atau berhasil diredam secara rasional.
+
+\subsubsection{\emph{Impulsive Buying} (Pembelian Impulsif)}
+
+Pembelian impulsif (\emph{impulsive buying}) merupakan fenomena perilaku konsumen yang telah menjadi perhatian utama para peneliti di bidang pemasaran dan manajemen keuangan selama beberapa dekade. \citet{rook1987buying} mendefinisikan pembelian impulsif sebagai dorongan yang tiba-tiba, sering kali kuat dan terus-menerus untuk segera membeli sesuatu. Dorongan ini bersifat kompleks secara hedonis dan dapat memicu konflik emosional, karena konsumen merasakan kekuatan yang sangat besar untuk bertindak namun secara bersamaan mengabaikan potensi konsekuensi negatif dari keputusan pembelian tersebut. Lebih lanjut, \citet{rook1995normative} mengidentifikasi bahwa pembelian impulsif melibatkan unsur spontanitas, perasaan kompulsif yang kuat, serta konflik antara hasrat untuk berbelanja dan keinginan untuk mengendalikan diri.
+
+\citet{stern1962significance} dalam kontribusinya yang bersifat fundamental membagi pembelian tidak terencana ke dalam empat kategori, yaitu: (1) \emph{pure impulse}, yaitu pembelian spontan murni yang menyimpang dari pola konsumsi normal dan didorong oleh emosi sesaat; (2) \emph{reminder impulse}, yaitu pembelian yang terjadi setelah konsumen teringat akan suatu kebutuhan melalui paparan di toko; (3) \emph{suggestion impulse}, yaitu pembelian pertama kali terhadap suatu produk yang dipicu oleh visualisasi produk di tempat belanja; dan (4) \emph{planned impulse}, yaitu pembelian berdasarkan niat umum yang belum spesifik, di mana keputusan produk baru ditentukan di tempat belanja.
+
+\citet{verplanken2001individual} memperdalam pemahaman tentang pembelian impulsif dengan mengembangkan \emph{Impulsive Buying Tendency Scale} (IBTS) yang mengukur dua dimensi utama, yaitu: (1) dimensi kognitif, yang mencakup ketiadaan perencanaan, ketiadaan pertimbangan matang, dan pengabaian terhadap konsekuensi; serta (2) dimensi afektif, yang mencakup perasaan kesenangan, kegembiraan, atau dorongan emosional kompulsif saat berbelanja. Dualitas dimensi ini menunjukkan bahwa pembelian impulsif bukan sekadar perilaku tanpa rencana, melainkan juga melibatkan komponen emosional yang kuat.
+
+\subsubsection{\emph{Hedonic Motivation} (Motivasi Hedonis)}
+
+Motivasi hedonis (\emph{hedonic motivation}) merujuk pada dorongan seseorang untuk berbelanja demi memperoleh kesenangan emosional, hiburan, dan kepuasan psikologis, bukan semata-mata untuk memenuhi kebutuhan fungsional atau utilitarian \citep{hirschman1982hedonic}. Konsep ini berangkat dari perspektif pengalaman konsumsi (\emph{experiential view of consumption}), yang menekankan bahwa konsumen tidak hanya memproses informasi secara rasional, melainkan juga mengejar pengalaman fantasi, perasaan (\emph{feelings}), dan kesenangan (\emph{fun}) dalam aktivitas berbelanja.
+
+\citet{arnold2003hedonic} mengembangkan inventori motivasi belanja hedonis yang terdiri dari enam dimensi utama, yaitu: (1) \emph{Adventure Shopping}, yaitu berbelanja demi mendapatkan stimulasi, sensasi petualangan, dan perasaan berada di ``dunia lain''; (2) \emph{Gratification Shopping}, yaitu berbelanja sebagai cara menghilangkan stres, memperbaiki suasana hati, atau memberi hadiah untuk diri sendiri; (3) \emph{Role Shopping}, yaitu kesenangan dari berbelanja untuk orang lain; (4) \emph{Value Shopping}, yaitu berbelanja dengan tujuan utama menemukan penawaran terbaik dan kepuasan memenangkan transaksi; (5) \emph{Social Shopping}, yaitu berbelanja untuk berinteraksi dan bersosialisasi; serta (6) \emph{Idea Shopping}, yaitu berbelanja untuk mengikuti tren dan menemukan inovasi produk baru.
+
+Dalam konteks pembelian \emph{booster pack} kartu Pok\'emon TCG, motivasi hedonis terejawantah melalui dimensi \emph{Adventure Shopping} dan \emph{Gratification Shopping} secara dominan. Sensasi merobek kemasan bungkus kartu (\emph{pack opening thrill}), ketidakpastian isi kartu yang menciptakan elemen kejutan menyerupai mekanisme \emph{gacha/mystery box}, serta lonjakan kegembiraan saat berhasil menarik kartu langka bertingkat kelangkaan tinggi (\emph{Special Illustration Rare / SAR}) memberikan pengalaman konsumsi hedonis yang sangat kuat \citep{babin1994work}.
+
+\subsubsection{\emph{Need for Completion} (Hasrat Melengkapi Koleksi)}
+
+Hasrat melengkapi koleksi (\emph{need for completion}) berakar pada prinsip psikologis yang dikenal sebagai \emph{Zeigarnik Effect}. Bluma \citet{zeigarnik1927behalten} menemukan bahwa otak manusia cenderung mengingat tugas-tugas yang belum selesai atau terganggu dengan lebih baik dibandingkan tugas yang telah rampung. Efek ini menciptakan suatu keadaan ketegangan kognitif (\emph{cognitive tension}) atau \emph{open loop} dalam pikiran yang terus-menerus mendorong individu untuk menyelesaikan tugas tersebut demi menutup lingkaran dan memperoleh pelepasan psikologis.
+
+Dalam konteks perilaku mengoleksi, Russell \citet{belk1995collecting} dalam karyanya \emph{Collecting in a Consumer Society} menjelaskan bahwa mengoleksi merupakan bentuk konsumsi yang penuh gairah (\emph{passionate}), selektif, dan aktif yang membedakannya dari aktivitas berbelanja biasa. Belk menekankan bahwa kolektor didorong oleh semangat yang bergairah (\emph{passionate zeal}) yang melampaui motivasi utilitarian. Tujuan melengkapi satu set merupakan manifestasi dari kebutuhan psikologis yang lebih dalam akan keteraturan, pencapaian, dan penguasaan (\emph{mastery}). \citet{mowen1990consumer} menambahkan perspektif bahwa perilaku mengoleksi seringkali terkait erat dengan pembentukan identitas diri, di mana koleksi menjadi representasi dari selera dan dedikasi kolektor. \citet{gao2014set} menemukan bahwa hasrat melengkapi set secara signifikan menciptakan dorongan pembelian yang terburu-buru dan tidak terencana, terutama ketika set mendekati batas akhir yang jelas.
+
+\subsubsection{\emph{Speculative Motive} (Motif Spekulasi Finansial)}
+
+Konsep motif spekulasi (\emph{speculative motive}) pertama kali diperkenalkan secara formal oleh John Maynard \citet{keynes1936general} dalam \emph{The General Theory of Employment, Interest and Money}. Keynes mengidentifikasi tiga motif utama memegang uang: motif transaksi, motif berjaga-jaga, dan motif spekulasi. Motif spekulasi didefinisikan sebagai hasrat untuk memanfaatkan perubahan harga aset di masa depan. Keynes juga mencatat bahwa pelaku pasar sering kali tidak didorong oleh nilai intrinsik suatu aset, melainkan oleh upaya menebak apa yang diyakini oleh rata-rata pasar.
+
+Robert \citet{shiller2000irrational} dalam \emph{Irrational Exuberance} memperluas fokus Keynes pada psikologi pasar ke era modern dengan menunjukkan bahwa pasar keuangan sering kali didorong oleh faktor sosial dan psikologis yang menghasilkan gelembung spekulatif (\emph{speculative bubbles}). \citet{kahneman1979prospect} melalui \emph{Prospect Theory} menjelaskan kecenderungan individu untuk melebih-lebihkan peluang keuntungan kecil dengan imbalan besar (\emph{lottery effect}). \citet{barber2008all} menunjukkan bahwa investor ritel yang terobsesi dengan keuntungan spekulatif cenderung melakukan transaksi berlebihan (\emph{excessive trading}). \citet{baur2018bitcoin} serta \citet{ante2022nft} mengonfirmasi bahwa motif spekulasi pada aset alternatif memperlihatkan dinamika spekulatif yang serupa dengan pasar konvensional, di mana likuiditas pasar sekunder mengaburkan batas antara hobi dan investasi.
+
+\subsubsection{Literasi Keuangan (\emph{Financial Literacy})}
+
+Literasi keuangan (\emph{financial literacy}) merujuk pada kemampuan individu untuk memahami, memproses, dan mengelola sumber daya keuangan secara efektif guna mengambil keputusan finansial yang tepat dan bertanggung jawab. \citet{chen1998financial} dalam studi seminalnya mengkategorikan literasi keuangan ke dalam empat domain utama: keuangan pribadi umum, tabungan dan pinjaman, asuransi, serta investasi. \citet{lusardi2014economic} memperluas definisi ini dengan menekankan kemampuan mengaplikasikan pengetahuan pada keputusan nyata melalui pemahaman bunga majemuk, inflasi, dan diversifikasi risiko.
+
+Di Indonesia, Otoritas Jasa Keuangan mendefinisikan literasi keuangan sebagai pengetahuan, keyakinan, dan keterampilan yang memengaruhi sikap dan perilaku individu untuk meningkatkan kualitas pengambilan keputusan keuangan demi mencapai kesejahteraan finansial \citep{ojk2023snlik}. Sejalan dengan kerangka \citet{oecd2022survey}, dimensi literasi keuangan mencakup pengetahuan keuangan (\emph{financial knowledge}), perilaku keuangan (\emph{financial behavior}), dan sikap keuangan (\emph{financial attitude}). Dalam penelitian ini, literasi keuangan ditempatkan sebagai variabel pemoderasi (\emph{moderating variable}) yang berfungsi sebagai mekanisme pertahanan kognitif untuk meredam dorongan emosional dan spekulatif terhadap pembelian impulsif.
+
+\subsection{Penelitian Sebelumnya}
+
+Berikut disajikan ringkasan penelitian-penelitian terdahulu yang relevan dengan variabel-variabel yang diteliti dalam penelitian ini:
+
+\begingroup
+\singlespacing
+\setlength{\tabcolsep}{4pt}
+\small
+\begin{longtable}{>{\centering\arraybackslash}p{0.5cm} >{\raggedright\arraybackslash}p{2.3cm} >{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}p{2.6cm} >{\raggedright\arraybackslash}p{3.9cm}}
+\caption{Ringkasan Penelitian Sebelumnya} \label{tab:penelitian_terdahulu} \\
+\toprule
+\textbf{No} & \textbf{Peneliti (Tahun)} & \textbf{Judul Penelitian} & \textbf{Variabel \& Metode} & \textbf{Hasil Utama} \\
+\midrule
+\endfirsthead
+\multicolumn{5}{l}{\footnotesize\textit{Lanjutan Tabel \thetable\ -- Ringkasan Penelitian Sebelumnya}} \\[0.2cm]
+\toprule
+\textbf{No} & \textbf{Peneliti (Tahun)} & \textbf{Judul Penelitian} & \textbf{Variabel \& Metode} & \textbf{Hasil Utama} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\footnotesize\textit{Bersambung ke halaman berikutnya}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+
+1 & \citet{ridha2024hedonic} & Pengaruh \emph{Hedonic Motivation} terhadap \emph{Impulse Buying} pada Shopee & X: Hedonic, lifestyle; Y: Impulse; PLS-SEM (N=200) & Motivasi hedonis berpengaruh positif signifikan terhadap \emph{impulse buying}. \\
+\addlinespace[4pt]
+2 & \citet{putri2023hedonic} & Pengaruh \emph{Hedonic Motivation} terhadap \emph{Impulse Buying} di TikTok & X: Hedonic, fashion; Y: Impulse; Regresi (N=100) & Motivasi hedonis berpengaruh positif dan signifikan terhadap \emph{impulse buying} Gen Z. \\
+\addlinespace[4pt]
+3 & \citet{sari2021pengaruh} & Pengaruh Motivasi Hedonis dan Display terhadap \emph{Impulse Buying} & X: Hedonis, display, diskon; Y: Impulse; Regresi (N=100) & Motivasi hedonis berpengaruh positif signifikan pada produk ritel fisik gaya hidup. \\
+\addlinespace[4pt]
+4 & \citet{xu2023curiosity} & Curiosity as Antecedent of Blind Box Impulse Buying & X: Curiosity, novelty; Y: Impulse; SEM-PLS (N=500+) & Curiosity (didorong \emph{completion}) mendorong \emph{impulse buying} produk kejutan fisik. \\
+\addlinespace[4pt]
+5 & \citet{li2024blind} & Impulsive Buying in Blind Box Consumption: S-O-R & X: Scarcity, novelty; Y: Impulse; SEM (N=350+) & Rangsangan kelangkaan dan kebaruan memicu dorongan belanja spontan via afeksi positif. \\
+\addlinespace[4pt]
+6 & \citet{fauziah2024perceived} & FoMO dan Scarcity terhadap \emph{Impulse Buying} Blind Box & X: FoMO, scarcity; Y: Impulse; SEM-PLS (N=200+) & Persepsi kelangkaan berpengaruh signifikan positif terhadap pembelian impulsif Gen Z. \\
+\addlinespace[4pt]
+7 & \citet{ante2022nft} & Non-Fungible Token Markets & X: Sentiment, market; Y: Asset prices; Time-series & Pasar aset koleksi alternatif menunjukkan gelembung spekulatif dan sentimen pasar. \\
+\addlinespace[4pt]
+8 & \citet{nurhasanah2023moderasi} & Moderasi Literasi Keuangan terhadap \emph{Impulse Buying} & X: Hedonic; Y: Impulse; Mod: FinLit; MRA (N=150+) & Literasi keuangan secara signifikan memperlemah pengaruh hedonisme terhadap pembelian impulsif. \\
+\addlinespace[4pt]
+9 & \citet{ramadhan2023financial} & Pengaruh Literasi Keuangan terhadap Konsumtif Mahasiswa & X: Literasi keuangan; Y: Impulsive buying; Regresi (N=200) & Literasi keuangan berpengaruh negatif signifikan terhadap perilaku belanja impulsif mahasiswa. \\
+\addlinespace[4pt]
+10 & \citet{fernandes2014financial} & Financial Literacy and Downstream Financial Behaviors & X: Literasi keuangan; Y: Perilaku; Meta-analisis (168 studi) & Pengaruh literasi terhadap perilaku memerlukan intervensi kontekstual edukatif. \\
+\end{longtable}
+\vspace{-0.3cm}
+\begin{flushleft}
+  \footnotesize\textit{Sumber: Data diolah dari berbagai publikasi jurnal ilmiah nasional dan internasional (2024--2026).}
+\end{flushleft}
+\endgroup
+
+\subsection{Pengembangan Hipotesis}
+
+\subsubsection{Pengaruh \emph{Hedonic Motivation} terhadap \emph{Impulsive Buying}}
+
+Motivasi hedonis mengarahkan konsumen untuk mencari stimulasi emosional dan kepuasan psikologis dari berbelanja. \citet{arnold2003hedonic} menjelaskan bahwa motivasi hedonis, terutama dimensi \emph{adventure} dan \emph{gratification}, meruntuhkan pertimbangan rasional konsumen. \citet{gueltekin2012influence} serta \citet{fitriyani2022hubungan} secara empiris menemukan bahwa motivasi hedonis berpengaruh positif dan signifikan terhadap pembelian impulsif. Dalam konteks Pok\'emon TCG, sensasi merobek kemasan dan kejutan isi kartu memberikan pengalaman konsumsi hedonis multisensori yang memicu pembelian spontan.
+
+\vspace{0.2cm}
+\textbf{H1: \emph{Hedonic Motivation} berpengaruh positif dan signifikan terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.}
+
+\subsubsection{Pengaruh \emph{Need for Completion} terhadap \emph{Impulsive Buying}}
+
+Hasrat melengkapi koleksi berakar pada prinsip \emph{Zeigarnik Effect} \citep{zeigarnik1927behalten}, di mana tugas yang belum tuntas menciptakan ketegangan kognitif persisten. \citet{gao2014set} secara eksperimental menemukan bahwa hasrat melengkapi set secara signifikan mendorong niat beli dan transaksi impulsif. Sistem penomoran kartu dan \emph{checklist} pada setiap ekspansi seri kartu Pok\'emon secara visual mempertontonkan kartu yang belum dimiliki, menciptakan desakan psikologis untuk terus membeli \emph{booster pack} tambahan demi melengkapi album koleksi.
+
+\vspace{0.2cm}
+\textbf{H2: \emph{Need for Completion} berpengaruh positif dan signifikan terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.}
+
+\subsubsection{Pengaruh \emph{Speculative Motive} terhadap \emph{Impulsive Buying}}
+
+Motif spekulasi mendorong pembelian komoditas dengan harapan apresiasi harga di pasar sekunder \citep{keynes1936general}. \citet{shiller2000irrational} menunjukkan bahwa bias optimisme berlebihan memicu transaksi spekulatif spontan. Dalam pasar Pok\'emon TCG, disparitas harga yang ekstrem antara harga eceran resmi \emph{pack} (Rp20.000--Rp30.000) dan potensi nilai kartu langka di pasar sekunder (Rp500.000--Rp3.000.000+) menciptakan ilusi keuntungan instan yang melumpuhkan kehati-hatian finansial pembeli.
+
+\vspace{0.2cm}
+\textbf{H3: \emph{Speculative Motive} berpengaruh positif dan signifikan terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.}
+
+\subsubsection{Pengaruh Moderasi Literasi Keuangan terhadap Hubungan \emph{Hedonic Motivation} dan \emph{Impulsive Buying}}
+
+Literasi keuangan diposisikan sebagai variabel pemoderasi yang memperlemah dorongan emosional terhadap pembelian impulsif. Konsumen yang memiliki pemahaman baik tentang pengelolaan anggaran pribadi mampu memisahkan kenikmatan emosional sesaat dari konsekuensi arus kas jangka panjang \citep{ningtyas2019literasi, nurhasanah2023moderasi}. Dengan demikian, tingkat literasi keuangan yang tinggi akan memitigasi dampak motivasi hedonis terhadap perilaku pembelian spontan.
+
+\vspace{0.2cm}
+\textbf{H4: Literasi Keuangan memoderasi (memperlemah) pengaruh \emph{Hedonic Motivation} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.}
+
+\subsubsection{Pengaruh Moderasi Literasi Keuangan terhadap Hubungan \emph{Need for Completion} dan \emph{Impulsive Buying}}
+
+Pengaruh hasrat melengkapi koleksi terhadap pembelian impulsif diharapkan dapat diredam oleh literasi keuangan. \citet{ilham2022literasi} menunjukkan bahwa literasi keuangan membantu individu mengevaluasi biaya oportunitas (\emph{opportunity cost}). Konsumen dengan pemahaman keuangan yang baik akan mengkalkulasi efisiensi akuisisi kartu dan lebih memilih membeli kartu satuan (\emph{singles}) di pasar sekunder daripada menghamburkan anggaran pada \emph{pack} acak.
+
+\vspace{0.2cm}
+\textbf{H5: Literasi Keuangan memoderasi (memperlemah) pengaruh \emph{Need for Completion} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.}
+
+\subsubsection{Pengaruh Moderasi Literasi Keuangan terhadap Hubungan \emph{Speculative Motive} dan \emph{Impulsive Buying}}
+
+Motif spekulasi yang mendorong pembelian impulsif dapat dikendalikan oleh literasi keuangan melalui evaluasi risiko objektif. Pemahaman konsep probabilitas penarikan kartu langka dan risiko penurunan harga pasar sekunder membantu konsumen mengenali bahwa ``investasi'' pada kemasan acak memiliki risiko kerugian modal yang tinggi, sehingga meredam bias optimisme berlebihan \citep{lusardi2014economic, ojk2023snlik}.
+
+\vspace{0.2cm}
+\textbf{H6: Literasi Keuangan memoderasi (memperlemah) pengaruh \emph{Speculative Motive} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.}
+
+\subsection{Rerangka Penelitian}
+
+Berdasarkan landasan teori dan perumusan hipotesis di atas, hubungan struktural antarvariabel disajikan pada Gambar~\ref{fig:rerangka_penelitian}:
+
+\begin{figure}[H]
+\centering
+\resizebox{0.92\textwidth}{!}{%
+\begin{tikzpicture}[
+  node distance = 1.2cm and 2.5cm,
+  box/.style = {rectangle, draw=black, thick, fill=gray!8, rounded corners=2pt, minimum width=4.2cm, minimum height=1cm, align=center, font=\small\bfseries},
+  modbox/.style = {rectangle, draw=black, thick, fill=gray!18, rounded corners=2pt, minimum width=4.5cm, minimum height=1cm, align=center, font=\small\bfseries},
+  arrow/.style = {-{Stealth[length=3mm]}, thick},
+  dasharrow/.style = {-{Stealth[length=3mm]}, thick, dashed}
+]
+
+  % Variabel Independen
+  \node[box] (x1) {\emph{Hedonic Motivation}\\($X_1$)};
+  \node[box, below=0.9cm of x1] (x2) {\emph{Need for Completion}\\($X_2$)};
+  \node[box, below=0.9cm of x2] (x3) {\emph{Speculative Motive}\\($X_3$)};
+
+  % Variabel Dependen
+  \node[box, right=4.5cm of x2] (y) {\emph{Impulsive Buying}\\($Y$)};
+
+  % Variabel Moderasi (di atas panah tengah)
+  \node[modbox, above=1.5cm of $(x2)!0.5!(y)$] (m) {Literasi Keuangan\\($M$)};
+
+  % Garis Pengaruh Langsung (H1, H2, H3)
+  \draw[arrow] (x1.east) -- (y.west) node[midway, above, sloped, font=\footnotesize\bfseries] {H1 (+)};
+  \draw[arrow] (x2.east) -- (y.west) node[midway, above, font=\footnotesize\bfseries] {H2 (+)};
+  \draw[arrow] (x3.east) -- (y.west) node[midway, below, sloped, font=\footnotesize\bfseries] {H3 (+)};
+
+  % Titik pertemuan moderasi
+  \coordinate (mod1) at ($(x1.east)!0.45!(y.west)$);
+  \coordinate (mod2) at ($(x2.east)!0.45!(y.west)$);
+  \coordinate (mod3) at ($(x3.east)!0.45!(y.west)$);
+
+  % Garis Pengaruh Moderasi (H4, H5, H6)
+  \draw[dasharrow] (m.south) -- (mod1) node[pos=0.6, left, font=\scriptsize\bfseries] {H4};
+  \draw[dasharrow] (m.south) -- (mod2) node[pos=0.7, right, font=\scriptsize\bfseries] {H5};
+  \draw[dasharrow] (m.south) -- (mod3) node[pos=0.8, right, font=\scriptsize\bfseries] {H6};
+
+\end{tikzpicture}
+}
+\caption{Model Rerangka Konseptual Penelitian}
+\label{fig:rerangka_penelitian}
+\begin{flushleft}
+  \footnotesize\textit{Keterangan:} Garis lurus menunjukkan pengaruh langsung (H1, H2, H3); Garis putus-putus menunjukkan efek moderasi literasi keuangan (H4, H5, H6).
+\end{flushleft}
+\end{figure}
+
+% ============================================================
+%  BAB 3: METODE PENELITIAN (Format Sesuai Model B UKRIDA)
+% ============================================================
+\newpage
+\setcounter{section}{2}
+\section*{BAB 3\\[0.3cm]METODE PENELITIAN}
+\addcontentsline{toc}{section}{\texorpdfstring{BAB 3\quad METODE PENELITIAN}{BAB 3 METODE PENELITIAN}}
+\setcounter{section}{3}
+\setcounter{subsection}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\setcounter{equation}{0}
+
+\subsection{Jenis dan Sumber Data}
+
+Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei \emph{cross-sectional}. Pendekatan kuantitatif dipilih karena penelitian ini menguji hipotesis statistik mengenai hubungan struktural antarvariabel yang telah dirumuskan berdasarkan kajian teoritis. Desain survei \emph{cross-sectional} digunakan karena pengumpulan data primer dilakukan pada satu periode waktu tertentu secara serentak.
+
+Data primer diperoleh langsung dari responden melalui penyebaran kuesioner daring (\emph{online questionnaire}) menggunakan Google Forms dengan skala Likert 5 poin, sebagaimana disajikan pada Tabel~\ref{tab:skala_likert}:
+
+\begin{table}[H]
+\centering
+\caption{Skala Pengukuran Likert 5 Poin}
+\label{tab:skala_likert}
+\begin{tabular}{clc}
+\toprule
+\textbf{Skor} & \textbf{Pernyataan Sikap} & \textbf{Singkatan} \\
+\midrule
+1 & Sangat Tidak Setuju & STS \\
+2 & Tidak Setuju & TS \\
+3 & Netral / Ragu-ragu & N \\
+4 & Setuju & S \\
+5 & Sangat Setuju & SS \\
+\bottomrule
+\end{tabular}
+\begin{flushleft}
+  \footnotesize\textit{Sumber: Dikembangkan untuk instrumen kuesioner penelitian, 2026.}
+\end{flushleft}
+\end{table}
+
+Data sekunder diperoleh dari publikasi resmi Otoritas Jasa Keuangan (OJK), The Pok\'emon Company, data rilis ekspansi kartu, serta artikel jurnal ilmiah nasional dan internasional yang terindeks SINTA dan Scopus.
+
+\subsection{Populasi dan Sampel}
+
+\subsubsection{Populasi}
+
+Populasi dalam penelitian ini adalah seluruh konsumen atau kolektor kartu fisik Pok\'emon Trading Card Game (Pok\'emon TCG) resmi berbahasa Indonesia di wilayah Republik Indonesia. Populasi ini dikategorikan sebagai populasi tidak terbatas (\emph{infinite population}) karena total jumlah pasti konsumen kartu di Indonesia tidak dapat diketahui secara persis.
+
+\subsubsection{Sampel dan Penentuan Ukuran Sampel}
+
+Pengambilan sampel menggunakan teknik \emph{purposive sampling} (teknik sampel bertujuan non-probabilitas) dengan kriteria inklusi:
+\begin{enumerate}
+  \item Warga Negara Indonesia (WNI) yang berdomisili di Indonesia.
+  \item Berusia minimal 17 tahun pada saat pengisian instrumen kuesioner.
+  \item Pernah melakukan pembelian \emph{booster pack} kartu fisik resmi Pok\'emon TCG berbahasa Indonesia minimal 1 kali dalam rentang waktu 6 hingga 12 bulan terakhir.
+\end{enumerate}
+
+Penentuan ukuran sampel minimum mengacu pada formula \citet{green1991subjects} untuk model regresi linear berganda:
+\begin{itemize}
+  \item Untuk pengujian model korelasi keseluruhan (\emph{overall model}):
+  \begin{equation}
+    N \ge 50 + 8k
+    \label{eq:sampel_overall}
+  \end{equation}
+  Dengan $k = 7$ prediktor ($X_1, X_2, X_3, M, X_1 \cdot M, X_2 \cdot M, X_3 \cdot M$), maka:
+  \[ N \ge 50 + 8(7) = 50 + 56 = 106\text{ responden} \]
+  \item Untuk pengujian prediktor individual (\emph{individual predictors}):
+  \begin{equation}
+    N \ge 104 + k
+    \label{eq:sampel_individual}
+  \end{equation}
+  \[ N \ge 104 + 7 = 111\text{ responden} \]
+\end{itemize}
+
+Berdasarkan formula di atas, ukuran sampel minimum adalah 111 responden. Guna mengantisipasi kuesioner yang gugur (\emph{unusable responses}) serta memenuhi rekomendasi \citet{cohen1988statistical} untuk mencapai \emph{statistical power} sebesar 0,80 pada taraf signifikansi $\alpha = 0,05$ dengan \emph{medium effect size} ($f^2 = 0,15$), peneliti menetapkan target sampel sebanyak \textbf{120 hingga 150 responden}.
+
+\subsection{Model Penelitian}
+
+Model penelitian mengadopsi \emph{Moderated Regression Analysis} (MRA) yang diestimasi dalam dua model bertahap:
+
+\noindent\textbf{Model 1 — Regresi Berganda (Efek Utama / Pengaruh Langsung):}
+\begin{equation}
+  Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + e
+  \label{eq:model1_regresi}
+\end{equation}
+
+\noindent\textbf{Model 2 — \emph{Moderated Regression Analysis} (Model Interaksi Penuh):}
+\begin{equation}
+  Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \beta_4 M + \beta_5 (X_1 \cdot M) + \beta_6 (X_2 \cdot M) + \beta_7 (X_3 \cdot M) + e
+  \label{eq:model2_mra}
+\end{equation}
+
+\noindent Di mana:
+$Y$ = \emph{Impulsive Buying};
+$X_1$ = \emph{Hedonic Motivation};
+$X_2$ = \emph{Need for Completion};
+$X_3$ = \emph{Speculative Motive};
+$M$ = Literasi Keuangan;
+$X_i \cdot M$ = Istilah interaksi pemoderasi;
+$\alpha$ = Konstanta regresi;
+$\beta_1 \dots \beta_7$ = Koefisien regresi;
+$e$ = \emph{Error term} (residual).
+
+\subsection{Operasionalisasi Variabel}
+
+Operasionalisasi variabel penelitian disajikan secara komprehensif pada Tabel~\ref{tab:operasionalisasi}. Tabel disusun menggunakan format terbuka (\emph{open table}) standar jurnal tanpa garis vertikal, dengan lebar kolom yang proporsional sesuai margin naskah.
+
+\begingroup
+\singlespacing
+\setlength{\tabcolsep}{4pt}
+\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{2.1cm} >{\raggedright\arraybackslash}p{2.7cm} >{\raggedright\arraybackslash}p{2.0cm} >{\raggedright\arraybackslash}p{4.6cm} >{\centering\arraybackslash}p{1.1cm}}
+\caption{Operasionalisasi Variabel Penelitian} \label{tab:operasionalisasi} \\
+\toprule
+\textbf{Variabel} & \textbf{Definisi Operasional} & \textbf{Dimensi} & \textbf{Indikator Pernyataan} & \textbf{Skala} \\
+\midrule
+\endfirsthead
+\multicolumn{5}{l}{\footnotesize\textit{Lanjutan Tabel \thetable\ -- Operasionalisasi Variabel Penelitian}} \\[0.2cm]
+\toprule
+\textbf{Variabel} & \textbf{Definisi Operasional} & \textbf{Dimensi} & \textbf{Indikator Pernyataan} & \textbf{Skala} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\footnotesize\textit{Bersambung ke halaman berikutnya}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+
+\textbf{\emph{Impulsive Buying} ($Y$)} & Kecenderungan membeli \emph{booster pack} Pok\'emon TCG tanpa rencana awal dan didorong emosi sesaat \citep{rook1987buying, verplanken2001individual}. & Kognitif & Y1. Saya sering membeli \emph{booster pack} kartu Pok\'emon tanpa rencana anggaran sebelumnya. & Likert 1--5 \\
+\addlinespace[3pt]
+& & Kognitif & Y2. Saya tidak mempertimbangkan dampak finansial saat membeli kartu Pok\'emon di toko. & Likert 1--5 \\
+\addlinespace[3pt]
+& & Afektif & Y3. Saya merasa terdorong secara spontan untuk membeli \emph{pack} saat melihatnya di etalase toko. & Likert 1--5 \\
+\addlinespace[3pt]
+& & Afektif & Y4. Saya merasakan kegembiraan sesaat ketika memutuskan membeli kartu secara mendadak. & Likert 1--5 \\
+\addlinespace[3pt]
+& & Kognitif & Y5. Saya sering membeli \emph{pack} lebih banyak dari yang semula saya niatkan. & Likert 1--5 \\
+\addlinespace[3pt]
+& & Afektif & Y6. Saya sulit menahan hasrat berbelanja kartu Pok\'emon saat rilis seri baru. & Likert 1--5 \\
+\midrule
+\textbf{\emph{Hedonic Motivation} ($X_1$)} & Motivasi belanja untuk kesenangan emosional dan sensasi petualangan \citep{arnold2003hedonic}. & \emph{Adventure} & X1.1. Membuka kemasan \emph{booster pack} memberikan sensasi petualangan dan kejutan mendebarkan. & Likert 1--5 \\
+\addlinespace[3pt]
+& & \emph{Adventure} & X1.2. Saya menikmati sensasi penasaran terhadap kartu acak di dalam kemasan bungkus. & Likert 1--5 \\
+\addlinespace[3pt]
+& & \emph{Gratification} & X1.3. Membeli kartu Pok\'emon adalah cara saya memanjakan diri atau melepas penat stres. & Likert 1--5 \\
+\addlinespace[3pt]
+& & \emph{Gratification} & X1.4. Menemukan kartu dengan ilustrasi langka (\emph{SAR}) membuat saya sangat bahagia. & Likert 1--5 \\
+\addlinespace[3pt]
+& & \emph{Idea} & X1.5. Saya senang mengikuti tren rilis seri kartu Pok\'emon dan inovasi desain terbarunya. & Likert 1--5 \\
+\midrule
+\textbf{\emph{Need for Completion} ($X_2$)} & Dorongan psikologis menuntaskan set koleksi akibat \emph{Zeigarnik Effect} \citep{belk1995collecting, gao2014set}. & \emph{Set Completion} & X2.1. Saya merasa tidak tenang jika album koleksi seri Pok\'emon saya memiliki slot kosong. & Likert 1--5 \\
+\addlinespace[3pt]
+& & \emph{Set Completion} & X2.2. Saya memiliki target untuk mengumpulkan seluruh kartu dalam satu ekspansi secara lengkap. & Likert 1--5 \\
+\addlinespace[3pt]
+& & \emph{Goal Progress} & X2.3. Semakin sedikit kartu yang kurang, semakin kuat dorongan saya membeli kemasan baru. & Likert 1--5 \\
+\addlinespace[3pt]
+& & \emph{Goal Progress} & X2.4. Saya secara rutin memeriksa daftar koleksi (\emph{checklist}) untuk melengkapi nomor kartu. & Likert 1--5 \\
+\addlinespace[3pt]
+& & \emph{Closure} & X2.5. Saya merasa sangat puas dan lega saat berhasil menuntaskan satu seri set kartu. & Likert 1--5 \\
+\midrule
+\textbf{\emph{Speculative Motive} ($X_3$)} & Ekspektasi memperoleh keuntungan finansial dari apresiasi harga di pasar sekunder \citep{shiller2000irrational, baur2018bitcoin}. & Ekspektasi Cuan & X3.1. Saya membeli \emph{pack} dengan harapan menarik kartu langka bernilai jual tinggi. & Likert 1--5 \\
+\addlinespace[3pt]
+& & Likuiditas & X3.2. Likuiditas pasar sekunder yang aktif mendorong saya membeli kartu sebagai aset berharga. & Likert 1--5 \\
+\addlinespace[3pt]
+& & \emph{Capital Gain} & X3.3. Saya memantau kenaikan harga pasar kartu langka untuk dijual kembali demi keuntungan. & Likert 1--5 \\
+\addlinespace[3pt]
+& & Potensi Nilai & X3.4. Saya memandang modal membeli beberapa \emph{pack} sebanding dengan potensi laba kartu langka. & Likert 1--5 \\
+\addlinespace[3pt]
+& & \emph{Grading Value} & X3.5. Saya tertarik dengan sertifikasi keaslian (\emph{grading}) kartu demi menaikkan nilai investasi. & Likert 1--5 \\
+\midrule
+\textbf{Literasi Keuangan ($M$)} & Pengetahuan, perilaku, dan sikap dalam mengelola keputusan keuangan secara bijak \citep{chen1998financial, lusardi2014economic, ojk2023snlik}. & Pengetahuan & M1. Saya memahami pentingnya menyusun anggaran pengeluaran bulanan secara disiplin. & Likert 1--5 \\
+\addlinespace[3pt]
+& & Pengetahuan & M2. Saya memahami konsep diversifikasi risiko dan perbedaan antara hobi dengan investasi. & Likert 1--5 \\
+\addlinespace[3pt]
+& & Perilaku & M3. Saya selalu mencatat dan mengevaluasi pengeluaran hobi saya secara berkala. & Likert 1--5 \\
+\addlinespace[3pt]
+& & Perilaku & M4. Saya selalu mempertimbangkan kondisi tabungan sebelum melakukan belanja mendadak. & Likert 1--5 \\
+\addlinespace[3pt]
+& & Sikap & M5. Menabung dan menjaga stabilitas keuangan lebih penting daripada kesenangan belanja sesaat. & Likert 1--5 \\
+\addlinespace[3pt]
+& & Sikap & M6. Saya menyadari bahwa pembelian produk berbasis acak/probabilitas berisiko merugikan finansial. & Likert 1--5 \\
+\end{longtable}
+\endgroup
+
+\subsection{Metode Analisis Data}
+
+Analisis data dilakukan menggunakan SPSS melalui tahapan sistematis sebagai berikut:
+
+\subsubsection{Uji Kualitas Data (Validitas dan Reliabilitas)}
+\begin{itemize}
+  \item \textbf{Uji Validitas:} Menggunakan korelasi \emph{Pearson Product Moment}, di mana butir instrumen dinyatakan valid jika $r_{\text{hitung}} > r_{\text{tabel}}$ pada taraf signifikansi $\alpha = 0,05$.
+  \item \textbf{Uji Reliabilitas:} Menggunakan koefisien \emph{Cronbach's Alpha}, dengan ambang batas reliabilitas konsistensi internal $\alpha \ge 0,60$ \citep{ghozali2018aplikasi}.
+\end{itemize}
+
+\subsubsection{Uji Asumsi Klasik}
+
+Untuk memastikan model memenuhi kaidah \emph{Best Linear Unbiased Estimator} (BLUE) pada data survei \emph{cross-sectional}:
+\begin{enumerate}
+  \item \textbf{Uji Normalitas:} Menguji residual model via uji \emph{Kolmogorov-Smirnov} dengan kriteria nilai signifikansi $p > 0,05$.
+  \item \textbf{Uji Multikolinearitas:} Memeriksa nilai \emph{Tolerance} ($> 0,10$) dan \emph{Variance Inflation Factor} (VIF $< 10$).
+  \item \textbf{Uji Heteroskedastisitas:} Menggunakan uji Glejser, di mana bebas heteroskedastisitas jika signifikansi residual absolut $p > 0,05$.
+\end{enumerate}
+\emph{Catatan penting:} Uji autokorelasi (Durbin-Watson) tidak diterapkan karena pengujian autokorelasi hanya berlaku untuk data runtun waktu (\emph{time-series}) atau panel, bukan survei \emph{cross-sectional}.
+
+\subsubsection{Estimasi Regresi Linear Berganda dan MRA}
+
+Model regresi berganda (Persamaan~\ref{eq:model1_regresi}) diestimasi untuk menguji hipotesis efek utama (H1, H2, H3). Selanjutnya, model MRA (Persamaan~\ref{eq:model2_mra}) diestimasi untuk menguji hipotesis moderasi (H4, H5, H6).
+
+Sebelum membentuk istilah interaksi ($X_1 \cdot M, X_2 \cdot M, X_3 \cdot M$), seluruh variabel independen dan pemoderasi distandarisasi menggunakan prosedur \emph{mean-centering} ($X_i^* = X_i - \bar{X}_i; M^* = M - \bar{M}$) sesuai rekomendasi \citet{aiken1991multiple} dan \citet{ghozali2018aplikasi} untuk mencegah multikolinearitas struktural antar-istilah interaksi.
+
+\subsubsection{Uji Koefisien Determinasi \texorpdfstring{($R^2$)}{(R2)}}
+
+Mengevaluasi daya penjelas model melalui nilai \emph{Adjusted} $R^2$, serta menganalisis kenaikan daya penjelas ($\Delta R^2$) dari Model 1 ke Model 2 pasca penambahan variabel moderasi.
+
+\subsubsection{Uji Hipotesis (Uji t dan Uji F)}
+\begin{itemize}
+  \item \textbf{Uji t (Parsial):} Menguji signifikansi masing-masing koefisien regresi pada taraf $\alpha = 0,05$. Hipotesis diterima jika $p < 0,05$ dan arah koefisien sesuai dengan hipotesis yang diajukan.
+  \item \textbf{Uji F (Simultan):} Menguji kelayakan model regresi secara keseluruhan pada taraf signifikansi $p < 0,05$.
+\end{itemize}
+
+% ============================================================
+%  DAFTAR PUSTAKA
+% ============================================================
+\newpage
+\renewcommand{\refname}{DAFTAR PUSTAKA}
+\addcontentsline{toc}{section}{DAFTAR PUSTAKA}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,62 @@
+{
+  "03_Draft_Per_Bab/BAB_I_PENDAHULUAN.md": {
+    "mtime": 1788709460.033895,
+    "seen": 1788876749.748116,
+    "ast_hash": "1aabe18168ff66034be2c81fc22fec28",
+    "semantic_hash": "1aabe18168ff66034be2c81fc22fec28"
+  },
+  "04_Riset_&_Metodologi/KONSEP_SKRIPSI_POKEMON_TCG.md": {
+    "mtime": 1788709460.0369194,
+    "seen": 1788876749.748116,
+    "ast_hash": "6bab77a260b95decde2aea215d385530",
+    "semantic_hash": "6bab77a260b95decde2aea215d385530"
+  },
+  "04_Riset_&_Metodologi/PRD_PENELITIAN.md": {
+    "mtime": 1788709460.0389261,
+    "seen": 1788876749.748116,
+    "ast_hash": "fe97e771c12da62d77c5f93900e2a313",
+    "semantic_hash": "fe97e771c12da62d77c5f93900e2a313"
+  },
+  "04_Riset_&_Metodologi/REUSABLE_THESIS_PLAYBOOK.md": {
+    "mtime": 1788504031.5633354,
+    "seen": 1788876749.748116,
+    "ast_hash": "848c44ef96f455c1db60739bb2cae509",
+    "semantic_hash": "848c44ef96f455c1db60739bb2cae509"
+  },
+  "04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md": {
+    "mtime": 1788709460.0429401,
+    "seen": 1788876749.748116,
+    "ast_hash": "037fc8b3d248522360d9a68d82b4a039",
+    "semantic_hash": "037fc8b3d248522360d9a68d82b4a039"
+  },
+  "04_Riset_&_Metodologi/skills.md": {
+    "mtime": 1788504031.5633354,
+    "seen": 1788876749.748116,
+    "ast_hash": "64606b024ef31edb81dd34d031da06af",
+    "semantic_hash": "64606b024ef31edb81dd34d031da06af"
+  },
+  "05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.md": {
+    "mtime": 1788504031.5633354,
+    "seen": 1788876749.748116,
+    "ast_hash": "59e28c45212ad48972116bc484dd6d7a",
+    "semantic_hash": "59e28c45212ad48972116bc484dd6d7a"
+  },
+  "05_Pedoman_&_Referensi/PRD_AI_Dosen_Pembimbing_Skripsi_v2.md": {
+    "mtime": 1788504031.575585,
+    "seen": 1788876749.748116,
+    "ast_hash": "8a461c870a7d45ac47beab519e5b83fe",
+    "semantic_hash": "8a461c870a7d45ac47beab519e5b83fe"
+  },
+  "MASTER_GUIDE_SKRIPSI.md": {
+    "mtime": 1788709460.0469503,
+    "seen": 1788876749.748116,
+    "ast_hash": "22552b629d56cefe447919185ea57c86",
+    "semantic_hash": "22552b629d56cefe447919185ea57c86"
+  },
+  "README.md": {
+    "mtime": 1788709460.0489566,
+    "seen": 1788876749.748116,
+    "ast_hash": "1d6adafbcbae97a4e065572b40e1e33c",
+    "semantic_hash": "1d6adafbcbae97a4e065572b40e1e33c"
+  }
+}

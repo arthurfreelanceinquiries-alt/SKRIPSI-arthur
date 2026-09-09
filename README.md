@@ -2,7 +2,7 @@
 
 **Penulis:** Arthur Reezan  
 **Fakultas / Program Studi:** Fakultas Ekonomi dan Bisnis | S1 Manajemen  
-**Status:** 🔄 Ganti Judul — Topik Baru Belum Ditentukan
+**Status:** 🟢 Topik & Judul Baru Terkunci — Pokémon TCG Impulsive Buying (MRA)
 
 ---
 
@@ -10,8 +10,8 @@
 
 | | |
 |---|---|
-| **Judul aktif** | Belum ada (sedang dalam proses pemilihan topik baru) |
-| **Fase** | Fase 0 — Reset, mulai dari awal |
+| **Judul aktif** | **PENGARUH *HEDONIC MOTIVATION*, *NEED FOR COMPLETION*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN LITERASI KEUANGAN SEBAGAI VARIABEL MODERASI** |
+| **Fase** | **Fase 4 — Naskah Bab I Selesai Disusun (Memenuhi Revisi 1 & 2 DPS)** |
 | **Topik lama** | Diarsipkan di `_archive/KBMI4_GreenFinancing_2021-2025/` |
 
 ---
@@ -33,7 +33,8 @@ z:\Skripsi\
 │   ├── PRD_AI_Dosen_Pembimbing_Skripsi_v2.md
 │   └── TUGAS AKHIR (Revisii).pdf   ← Contoh skripsi (comparator only)
 │
-├── 📁 06_Review_&_Audit/          # (Kosong — diisi saat naskah baru siap)
+├── 📁 06_Review_&_Audit/
+│   └── 📁 Revisi_Dosen/           # 📥 Drop folder revisi/chat/screenshot dari dosen
 ├── 📁 _archive/                   # Arsip topik lama (JANGAN HAPUS)
 │   ├── cancelled_topic_2026-08-10/
 │   └── KBMI4_GreenFinancing_2021-2025/  ← Topik lama lengkap
