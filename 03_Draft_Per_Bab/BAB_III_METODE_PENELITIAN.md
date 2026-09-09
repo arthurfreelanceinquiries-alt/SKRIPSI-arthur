@@ -19,7 +19,7 @@
 
 *Sumber: Sugiyono (2019).*
 
-     Selain data primer dari kuesioner, penelitian ini juga menggunakan data sekunder berupa literatur ilmiah, jurnal penelitian, buku teks, serta data dan laporan resmi dari lembaga terkait (seperti data OJK mengenai literasi keuangan Indonesia) sebagai pendukung kajian teori dan fenomena di Bab I dan Bab II.
+     Selain data primer dari kuesioner, penelitian ini juga menggunakan data sekunder berupa literatur ilmiah, jurnal penelitian internasional dan nasional bereputasi, buku teks manajemen keuangan dan perilaku konsumen, serta laporan industri pasar kartu koleksi global dan nasional sebagai pendukung kajian teori dan fenomena di Bab I dan Bab II.
 
 ---
 
@@ -27,7 +27,7 @@
 
 ### 3.2.1 Populasi
 
-     Populasi dalam penelitian ini adalah seluruh konsumen atau kolektor kartu *Pokemon Trading Card Game* (Pokemon TCG) fisik resmi di Indonesia. Populasi ini bersifat tidak terbatas (*infinite population*) karena jumlah pasti pembeli kartu Pokemon TCG di Indonesia tidak dapat diketahui secara pasti.
+     Populasi dalam penelitian ini adalah seluruh konsumen atau kolektor kartu *Pokémon Trading Card Game* (Pokémon TCG) fisik resmi di Indonesia. Populasi ini bersifat tidak terbatas (*infinite population*) karena jumlah pasti pembeli kartu Pokémon TCG di Indonesia tidak dapat diketahui secara pasti seiring luasnya jaringan distribusi ritel modern di seluruh Nusantara.
 
 ### 3.2.2 Sampel
 
@@ -35,7 +35,7 @@
 
 1. Warga Negara Indonesia (WNI) yang berdomisili di Indonesia.
 2. Berusia minimal 17 tahun pada saat pengisian kuesioner.
-3. Pernah melakukan pembelian *booster pack* kartu Pokemon TCG fisik resmi (berbahasa Indonesia) minimal satu kali dalam rentang waktu 6 hingga 12 bulan terakhir.
+3. Pernah melakukan pembelian *booster pack* kartu Pokémon TCG fisik resmi (berbahasa Indonesia) minimal satu kali dalam rentang waktu 6 hingga 12 bulan terakhir.
 
      Penentuan jumlah sampel minimum dalam penelitian ini mengacu pada formula Green (1991) yang direkomendasikan untuk analisis regresi berganda:
 
@@ -55,9 +55,9 @@
 
      Berdasarkan perhitungan di atas, jumlah sampel minimum yang diperlukan adalah 111 responden. Namun, untuk mengantisipasi kemungkinan data yang tidak lengkap atau tidak memenuhi syarat (*missing/invalid responses*) dan untuk meningkatkan kekuatan uji statistik (*statistical power*), peneliti menetapkan target jumlah sampel sebesar **120 hingga 150 responden**. Penetapan target ini juga sejalan dengan rekomendasi Cohen (1988) untuk mencapai *statistical power* sebesar 0,80 dengan *medium effect size* pada taraf signifikansi 0,05.
 
-     Distribusi kuesioner dilakukan secara daring melalui komunitas-komunitas kolektor Pokemon TCG Indonesia yang aktif di berbagai platform digital, antara lain: grup Facebook (*Pokemon TCG Indonesia*, *Pasar Kartu Pokemon Indonesia*), server Discord komunitas TCG, forum Reddit (*r/PokemonTCG*), serta melalui jaringan toko hobi lokal (*Local Game Stores / LGS*) di kota-kota besar Indonesia.
+     Distribusi kuesioner dilakukan secara daring melalui komunitas-komunitas kolektor Pokémon TCG Indonesia yang aktif di berbagai platform digital, antara lain: grup Facebook (*Pokémon TCG Indonesia*, *Pasar Kartu Pokémon Indonesia*), server Discord komunitas TCG Indonesia, grup komunitas WhatsApp/Telegram kolektor, serta melalui jaringan toko hobi lokal (*Local Game Stores / LGS*) di kota-kota besar Indonesia.
 
-> **Catatan keterbatasan:** Karena teknik sampling yang digunakan adalah *purposive sampling* (non-probabilitas), maka hasil penelitian ini hanya dapat digeneralisasikan secara terbatas pada sampel yang diteliti dan tidak dapat diklaim mewakili seluruh populasi pembeli kartu Pokemon TCG di Indonesia secara representatif.
+> **Catatan keterbatasan:** Karena teknik sampling yang digunakan adalah *purposive sampling* (non-probabilitas), maka hasil penelitian ini hanya dapat digeneralisasikan secara terbatas pada sampel yang diteliti dan tidak dapat diklaim mewakili seluruh populasi pembeli kartu Pokémon TCG di Indonesia secara representatif.
 
 ---
 
@@ -78,38 +78,38 @@ $$Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \beta_4 M + \beta_5 (X_
 Keterangan:
 - $Y$ = *Impulsive Buying* (variabel dependen)
 - $X_1$ = *Hedonic Motivation* (variabel independen 1)
-- $X_2$ = *Need for Completion* (variabel independen 2)
+- $X_2$ = *Desire for Completeness* (variabel independen 2)
 - $X_3$ = *Speculative Motive* (variabel independen 3)
-- $M$ = Literasi Keuangan (variabel moderasi)
-- $X_1 \cdot M$ = Interaksi *Hedonic Motivation* $\times$ Literasi Keuangan
-- $X_2 \cdot M$ = Interaksi *Need for Completion* $\times$ Literasi Keuangan
-- $X_3 \cdot M$ = Interaksi *Speculative Motive* $\times$ Literasi Keuangan
+- $M$ = *Self-Control* (variabel moderasi)
+- $X_1 \cdot M$ = Interaksi *Hedonic Motivation* $\times$ *Self-Control*
+- $X_2 \cdot M$ = Interaksi *Desire for Completeness* $\times$ *Self-Control*
+- $X_3 \cdot M$ = Interaksi *Speculative Motive* $\times$ *Self-Control*
 - $\alpha$ = Konstanta
 - $\beta_1 \dots \beta_7$ = Koefisien regresi
 - $e$ = *Error term* (variabel pengganggu)
 
-     Efek moderasi dinyatakan terbukti apabila koefisien regresi variabel interaksi ($\beta_5$, $\beta_6$, atau $\beta_7$) signifikan secara statistik pada taraf $\alpha = 0,05$.
+     Efek moderasi dinyatakan terbukti memperlemah apabila koefisien regresi variabel interaksi ($\beta_5$, $\beta_6$, atau $\beta_7$) bernilai negatif dan signifikan secara statistik pada taraf $\alpha = 0,05$.
 
 ```
-                    Pengaruh Langsung
-    ┌──────────────────────────────────────────────────────┐
-    │                                                      │
-    │   [ X1: Hedonic Motivation  ] ──── H1 (+) ───┐      │
-    │                                               │      │
-    │   [ X2: Need for Completion ] ──── H2 (+) ───┼──►  [ Y: Impulsive Buying ]
-    │                                               │      │
-    │   [ X3: Speculative Motive  ] ──── H3 (+) ───┘      │
-    │                                                      │
-    └──────────────────────────────────────────────────────┘
-                                                    ▲
-                                                    │
-                         H4, H5, H6 (Memperlemah / -)
-                                                    │
-                                       [ M: Literasi Keuangan ]
-                                       (Variabel Moderasi)
+                    PENGARUH LANGSUNG
+     ┌─────────────────────────────────────────────────────────┐
+     │                                                         │
+     │   [ X1: Hedonic Motivation     ] ──── H1 (+) ────┐      │
+     │                                                   │      │
+     │   [ X2: Desire for Completeness] ──── H2 (+) ────┼──►  [ Y: Impulsive Buying ]
+     │                                                   │      │
+     │   [ X3: Speculative Motive     ] ──── H3 (+) ────┘      │
+     │                                                         │
+     └─────────────────────────────────────────────────────────┘
+                                                         ▲
+                                                         │
+                              H4, H5, H6 (Memperlemah / -)
+                                                         │
+                                            [ M: Self-Control ]
+                                            (Variabel Moderasi)
 ```
 
-**Gambar 3.1 Model Penelitian**
+**Gambar 3.1 Model Penelitian (Moderated Regression Analysis)**
 
 ---
 
@@ -123,14 +123,14 @@ Keterangan:
 
 | Variabel | Definisi Operasional | Dimensi | Indikator | Skala |
 |:---|:---|:---|:---|:---|
-| *Impulsive Buying* (Y) | Kecenderungan membeli *booster pack* kartu Pokemon TCG secara tiba-tiba, tanpa perencanaan anggaran keuangan sebelumnya, dan didorong oleh dorongan emosional sesaat. | Kognitif | Y1. Saya sering membeli *booster pack* kartu Pokemon tanpa perencanaan sebelumnya. | Likert 1–5 |
-| | | Kognitif | Y2. Saya tidak terlalu memikirkan konsekuensi finansial saat membeli *booster pack* kartu Pokemon. | Likert 1–5 |
-| | | Afektif | Y3. Saya merasa terdorong kuat untuk membeli *booster pack* kartu Pokemon saat melihatnya di toko. | Likert 1–5 |
-| | | Afektif | Y4. Saya merasa senang dan bersemangat saat membeli *booster pack* kartu Pokemon secara spontan. | Likert 1–5 |
-| | | Kognitif | Y5. Saya sering membeli lebih banyak *booster pack* kartu Pokemon dari yang saya rencanakan. | Likert 1–5 |
-| | | Afektif | Y6. Saya sulit menahan diri untuk tidak membeli *booster pack* kartu Pokemon ketika berada di toko atau melihat di *marketplace*. | Likert 1–5 |
+| *Impulsive Buying* (Y) | Kecenderungan membeli *booster pack* kartu Pokémon TCG secara tiba-tiba, tanpa perencanaan anggaran keuangan sebelumnya, dan didorong oleh dorongan emosional sesaat. | Kognitif | Y1. Saya sering membeli *booster pack* kartu Pokémon tanpa perencanaan sebelumnya. | Likert 1–5 |
+| | | Kognitif | Y2. Saya tidak terlalu memikirkan konsekuensi finansial saat membeli *booster pack* kartu Pokémon. | Likert 1–5 |
+| | | Afektif | Y3. Saya merasa terdorong kuat untuk membeli *booster pack* kartu Pokémon saat melihatnya di toko. | Likert 1–5 |
+| | | Afektif | Y4. Saya merasa senang dan bersemangat saat membeli *booster pack* kartu Pokémon secara spontan. | Likert 1–5 |
+| | | Kognitif | Y5. Saya sering membeli lebih banyak *booster pack* kartu Pokémon dari yang saya rencanakan. | Likert 1–5 |
+| | | Afektif | Y6. Saya sulit menahan diri untuk tidak membeli *booster pack* kartu Pokémon ketika berada di toko atau melihat di *marketplace*. | Likert 1–5 |
 
-**Sumber adaptasi:** Verplanken dan Herabadi (2001) — *Impulsive Buying Tendency Scale* (IBTS); Rook dan Fisher (1995).
+*Sumber adaptasi:* Verplanken dan Herabadi (2001) — *Impulsive Buying Tendency Scale* (IBTS); Rook dan Fisher (1995).
 
 ---
 
@@ -138,27 +138,27 @@ Keterangan:
 
 | Variabel | Definisi Operasional | Dimensi | Indikator | Skala |
 |:---|:---|:---|:---|:---|
-| *Hedonic Motivation* (X1) | Motivasi berbelanja *booster pack* kartu Pokemon TCG untuk mendapatkan kesenangan emosional, sensasi kejutan, dan hiburan psikologis. | *Adventure* | X1.1. Saya merasa berpetualang dan bersemangat saat membeli dan membuka *booster pack* kartu Pokemon. | Likert 1–5 |
-| | | *Adventure* | X1.2. Pengalaman membuka bungkus *booster pack* kartu Pokemon memberikan sensasi kejutan yang menyenangkan bagi saya. | Likert 1–5 |
-| | | *Gratification* | X1.3. Membeli *booster pack* kartu Pokemon merupakan cara saya untuk memanjakan diri atau menghilangkan stres. | Likert 1–5 |
+| *Hedonic Motivation* (X1) | Motivasi berbelanja *booster pack* kartu Pokémon TCG untuk mendapatkan kesenangan emosional, sensasi kejutan, dan hiburan psikologis. | *Adventure* | X1.1. Saya merasa berpetualang dan bersemangat saat membeli dan membuka *booster pack* kartu Pokémon. | Likert 1–5 |
+| | | *Adventure* | X1.2. Pengalaman membuka bungkus *booster pack* kartu Pokémon memberikan sensasi kejutan yang menyenangkan bagi saya. | Likert 1–5 |
+| | | *Gratification* | X1.3. Membeli *booster pack* kartu Pokémon merupakan cara saya untuk memanjakan diri atau menghilangkan stres. | Likert 1–5 |
 | | | *Gratification* | X1.4. Saya merasa bahagia dan puas secara emosional setelah berhasil menarik kartu langka dari *booster pack*. | Likert 1–5 |
-| | | *Idea* | X1.5. Saya senang mengikuti rilis seri kartu Pokemon terbaru dan menjelajahi desain kartu yang baru keluar. | Likert 1–5 |
+| | | *Idea* | X1.5. Saya senang mengikuti rilis seri kartu Pokémon terbaru dan menjelajahi desain kartu yang baru keluar. | Likert 1–5 |
 
-**Sumber adaptasi:** Arnold dan Reynolds (2003) — *Hedonic Shopping Motivation Scale*; Babin, Darden, dan Griffin (1994).
+*Sumber adaptasi:* Arnold dan Reynolds (2003) — *Hedonic Shopping Motivation Scale*; Babin, Darden, dan Griffin (1994).
 
 ---
 
-### C. Variabel Independen 2: *Need for Completion* (X2)
+### C. Variabel Independen 2: *Desire for Completeness* (X2)
 
 | Variabel | Definisi Operasional | Dimensi | Indikator | Skala |
 |:---|:---|:---|:---|:---|
-| *Need for Completion* (X2) | Dorongan psikologis kuat untuk mengisi slot kartu yang masih kosong dalam album/*binder* koleksi satu seri kartu Pokemon TCG. | Set completion | X2.1. Saya merasa tidak nyaman ketika album/*binder* koleksi kartu Pokemon saya masih memiliki slot kosong. | Likert 1–5 |
-| | | Set completion | X2.2. Saya terdorong untuk terus membeli *booster pack* agar dapat melengkapi seluruh kartu dalam satu seri. | Likert 1–5 |
-| | | Cognitive tension | X2.3. Mengetahui ada kartu yang belum saya miliki dalam suatu seri membuat saya ingin segera membelinya. | Likert 1–5 |
-| | | Mastery | X2.4. Melengkapi satu set penuh kartu Pokemon memberikan perasaan pencapaian dan kepuasan bagi saya. | Likert 1–5 |
-| | | Cognitive tension | X2.5. Semakin sedikit kartu yang kurang dalam satu seri, semakin kuat dorongan saya untuk segera melengkapinya. | Likert 1–5 |
+| *Desire for Completeness* (X2) | Dorongan psikologis dan motivasional internal individu untuk melengkapi seluruh nomor kartu yang masih kosong dalam album/*binder* koleksi satu seri kartu Pokémon TCG. | *Cognitive Tension* | X2.1. Saya merasa tidak nyaman dan terganggu ketika album/*binder* koleksi kartu Pokémon saya masih memiliki slot nomor kartu yang kosong. | Likert 1–5 |
+| | | *Drive for Closure* | X2.2. Saya terdorong untuk terus membeli *booster pack* tambahan agar dapat melengkapi seluruh kartu dalam satu seri secara utuh. | Likert 1–5 |
+| | | *Cognitive Tension* | X2.3. Mengetahui ada kartu yang belum saya miliki dalam suatu seri membuat saya berhasrat untuk segera mendapatkannya. | Likert 1–5 |
+| | | *Sense of Wholeness* | X2.4. Melengkapi satu set penuh kartu Pokémon memberikan perasaan pencapaian, kepuasan, dan keutuhan bagi saya. | Likert 1–5 |
+| | | *Drive for Closure* | X2.5. Semakin sedikit kartu yang kurang dalam satu seri, semakin kuat desakan saya untuk segera membeli pack demi melengkapinya. | Likert 1–5 |
 
-**Sumber adaptasi:** Belk (1995) — *Collecting in a Consumer Society*; Gao et al. (2014); konsep *Zeigarnik Effect* (Zeigarnik, 1927).
+*Sumber adaptasi:* Gao, Huang, dan Simonson (2014) — *The "Completing the Set" Effect*; Barasz, John, Keenan, dan Norton (2017) — *Pseudo-Set Framing*; Belk (1995); Zeigarnik (1927).
 
 ---
 
@@ -166,79 +166,77 @@ Keterangan:
 
 | Variabel | Definisi Operasional | Dimensi | Indikator | Skala |
 |:---|:---|:---|:---|:---|
-| *Speculative Motive* (X3) | Pertimbangan nilai jual kembali (*resale value*) dan harapan memperoleh keuntungan finansial (*capital gain*) dari pembelian *booster pack* kartu Pokemon TCG. | Resale expectation | X3.1. Saya mempertimbangkan potensi nilai jual kembali kartu saat memutuskan membeli *booster pack*. | Likert 1–5 |
-| | | Capital gain | X3.2. Saya berharap menarik kartu langka yang bernilai tinggi di pasar sekunder saat membeli *booster pack*. | Likert 1–5 |
-| | | Overoptimism | X3.3. Saya merasa peluang untuk mendapatkan kartu bernilai mahal dari *booster pack* cukup besar. | Likert 1–5 |
-| | | Investment view | X3.4. Saya melihat pembelian *booster pack* kartu Pokemon sebagai bentuk "investasi" yang berpotensi menguntungkan. | Likert 1–5 |
-| | | Market awareness | X3.5. Saya sering memantau harga kartu Pokemon di pasar sekunder (*marketplace* daring) sebelum membeli *booster pack*. | Likert 1–5 |
+| *Speculative Motive* (X3) | Pertimbangan nilai pasar sekunder, ekspektasi sertifikasi grading, dan harapan memperoleh keuntungan finansial (*capital gain*) dari penjualan kembali kartu langka hasil pembelian *booster pack*. | *Capital Gain* | X3.1. Saya mempertimbangkan potensi kenaikan harga jual kembali kartu di pasar sekunder saat memutuskan membeli *booster pack*. | Likert 1–5 |
+| | | *Grading Arbitrage* | X3.2. Saya berharap menarik kartu langka berkondisi sempurna untuk dikirim ke lembaga grading (seperti PSA/BGS) agar nilainya berlipat ganda. | Likert 1–5 |
+| | | *Overoptimism* | X3.3. Saya merasa peluang saya untuk mendapatkan kartu bernilai jutaan rupiah dari *booster pack* acak cukup besar. | Likert 1–5 |
+| | | *Investment View* | X3.4. Saya memandang pembelian *booster pack* kartu Pokémon sebagai bentuk instrumen aset alternatif yang berpotensi menghasilkan keuntungan modal. | Likert 1–5 |
+| | | *Market Awareness* | X3.5. Saya aktif memantau pergerakan harga kartu Pokémon di pasar sekunder (*marketplace* daring dan lelang komunitas) sebelum membeli pack. | Likert 1–5 |
 
-**Sumber adaptasi:** Shiller (2000) — *Irrational Exuberance*; Keynes (1936) — *Speculative Motive*; Kahneman dan Tversky (1979) — *Prospect Theory*.
+*Sumber adaptasi:* Shiller (2000) — *Irrational Exuberance*; Keynes (1936) — *Speculative Motive*; Kahneman dan Tversky (1979) — *Prospect Theory*; Baur, Hong, dan Lee (2018).
 
 ---
 
-### E. Variabel Moderasi: Literasi Keuangan (M)
+### E. Variabel Moderasi: *Self-Control* (M)
 
 | Variabel | Definisi Operasional | Dimensi | Indikator | Skala |
 |:---|:---|:---|:---|:---|
-| Literasi Keuangan (M) | Tingkat pengetahuan, sikap, dan keterampilan finansial individu dalam mengelola keuangan pribadi, khususnya terkait penganggaran, pengendalian pengeluaran, dan pemahaman risiko. | Pengetahuan keuangan | M1. Saya memahami pentingnya menyusun anggaran (*budgeting*) untuk mengelola pengeluaran bulanan saya. | Likert 1–5 |
-| | | Pengetahuan keuangan | M2. Saya memahami perbedaan antara kebutuhan (*needs*) dan keinginan (*wants*) dalam pengeluaran keuangan saya. | Likert 1–5 |
-| | | Perilaku keuangan | M3. Saya secara rutin mencatat dan mengevaluasi pengeluaran keuangan pribadi saya. | Likert 1–5 |
-| | | Perilaku keuangan | M4. Saya selalu mempertimbangkan kondisi keuangan saya sebelum melakukan pembelian yang tidak direncanakan. | Likert 1–5 |
-| | | Sikap keuangan | M5. Saya percaya bahwa menabung dan mengelola keuangan dengan baik lebih penting daripada memenuhi keinginan sesaat. | Likert 1–5 |
-| | | Pengetahuan keuangan | M6. Saya memahami konsep risiko finansial dan menyadari bahwa tidak semua pengeluaran menghasilkan keuntungan. | Likert 1–5 |
+| *Self-Control* (M) | Kapasitas volisional individu untuk menolak godaan belanja spontan, menunda kepuasan sesaat (*delay of gratification*), dan mendisiplinkan pengeluaran agar selaras dengan batasan anggaran keuangan pribadi. | *Resisting Temptation* | M1. Saya mampu menolak godaan membeli barang yang menarik sesaat jika barang tersebut di luar perencanaan anggaran saya. | Likert 1–5 |
+| | | *Non-Impulsive Behavior* | M2. Saya terbiasa berpikir tenang dan mempertimbangkan dampak pengeluaran sebelum memutuskan untuk bertransaksi. | Likert 1–5 |
+| | | *Delay of Gratification* | M3. Saya mampu menahan diri dari kesenangan belanja saat ini demi menjaga keamanan dan tujuan keuangan masa depan saya. | Likert 1–5 |
+| | | *Self-Discipline* | M4. Saya memiliki disiplin diri yang kuat untuk tidak membeli barang secara mendadak saat berada di kasir toko. | Likert 1–5 |
+| | | *Emotional Control* | M5. Saya tidak mudah terhanyut oleh suasana hati atau letupan kegembiraan sesaat dalam membelanjakan uang saya. | Likert 1–5 |
+| | | *Adherence to Plan* | M6. Saya secara konsisten mematuhi alokasi batas pengeluaran hobi yang telah saya rencanakan sebelumnya. | Likert 1–5 |
 
-**Sumber adaptasi:** Chen dan Volpe (1998); OJK — Standar SNLIK (2023); OECD-INFE (2022).
+*Sumber adaptasi:* Tangney, Baumeister, dan Boone (2004) — *Brief Self-Control Scale* (BSCS); Vohs dan Faber (2007); Sultan, Joireman, dan Sprott (2012).
 
 ---
 
 ## 3.5 Metode Analisis Data
 
-     Data yang diperoleh dari kuesioner akan diolah dan dianalisis menggunakan perangkat lunak *Statistical Package for the Social Sciences* (SPSS). Analisis data dalam penelitian ini dilakukan melalui beberapa tahapan sebagai berikut:
+     Data yang diperoleh dari kuesioner akan diolah dan dianalisis menggunakan perangkat lunak *Statistical Package for the Social Sciences* (IBM SPSS Statistics). Analisis data dalam penelitian ini dilakukan melalui beberapa tahapan sistematis sebagai berikut:
 
 ### 3.5.1 Uji Validitas dan Reliabilitas
 
-     Uji validitas dilakukan untuk memastikan bahwa setiap butir pernyataan dalam kuesioner benar-benar mengukur konstruk yang dimaksud. Teknik yang digunakan adalah korelasi *Pearson Product Moment*, di mana suatu butir pernyataan dinyatakan valid apabila nilai $r_{hitung} > r_{tabel}$ pada taraf signifikansi 0,05.
+     Uji validitas dilakukan untuk memastikan bahwa setiap butir pernyataan dalam kuesioner benar-benar mengukur konstruk yang dimaksud secara akurat. Teknik yang digunakan adalah korelasi *Pearson Product Moment*, di mana suatu butir pernyataan dinyatakan valid apabila nilai koefisien korelasi $r_{\text{hitung}} > r_{\text{tabel}}$ pada taraf signifikansi $\alpha = 0,05$ dengan uji dua sisi (*two-tailed*).
 
-     Uji reliabilitas dilakukan untuk mengetahui konsistensi internal instrumen pengukuran. Teknik yang digunakan adalah *Cronbach's Alpha*, di mana suatu instrumen dinyatakan reliabel apabila nilai *Cronbach's Alpha* $\ge 0,60$ (Ghozali, 2018).
+     Uji reliabilitas dilakukan untuk mengetahui konsistensi internal instrumen pengukuran antarbutir pernyataan. Teknik yang digunakan adalah koefisien *Cronbach's Alpha*, di mana suatu konstruk variabel dinyatakan reliabel apabila nilai *Cronbach's Alpha* $\ge 0,60$ (Ghozali, 2018).
 
 ### 3.5.2 Uji Asumsi Klasik
 
-     Sebelum melakukan analisis regresi, terlebih dahulu dilakukan uji asumsi klasik untuk memastikan bahwa model regresi memenuhi persyaratan BLUE (*Best Linear Unbiased Estimator*). Untuk data survei *cross-sectional*, uji asumsi klasik yang relevan dan dilakukan meliputi:
+     Sebelum melakukan pengujian hipotesis melalui analisis regresi, terlebih dahulu dilakukan uji asumsi klasik guna memastikan bahwa model regresi memenuhi persyaratan BLUE (*Best Linear Unbiased Estimator*). Untuk data survei *cross-sectional*, uji asumsi klasik yang dilakukan meliputi:
 
-1. **Uji Normalitas:** Menguji apakah residual model regresi berdistribusi normal. Teknik yang digunakan adalah uji *Kolmogorov-Smirnov*, di mana data dinyatakan berdistribusi normal apabila nilai signifikansi $> 0,05$.
-
-2. **Uji Multikolinearitas:** Menguji apakah terdapat korelasi yang tinggi antarvariabel independen dalam model regresi. Multikolinearitas tidak terjadi apabila nilai *Tolerance* $> 0,10$ dan nilai *Variance Inflation Factor* (VIF) $< 10$.
-
-3. **Uji Heteroskedastisitas:** Menguji apakah terdapat ketidaksamaan varian residual dari satu pengamatan ke pengamatan lain. Teknik yang digunakan adalah uji Glejser, di mana heteroskedastisitas tidak terjadi apabila nilai signifikansi variabel independen terhadap absolut residual $> 0,05$.
+1. **Uji Normalitas:** Menguji apakah nilai residual dalam model regresi berdistribusi normal. Teknik pengujian menggunakan uji statistik non-parametrik *One-Sample Kolmogorov-Smirnov*, di mana residual dinyatakan berdistribusi normal apabila nilai Asymp. Sig. (2-tailed) $> 0,05$.
+2. **Uji Multikolinearitas:** Menguji apakah ditemukan adanya korelasi linier sempurna atau sangat tinggi antarvariabel independen dalam model regresi. Multikolinearitas dinyatakan tidak terjadi apabila nilai *Tolerance* $> 0,10$ dan nilai *Variance Inflation Factor* (VIF) $< 10$ (Ghozali, 2018).
+3. **Uji Heteroskedastisitas:** Menguji apakah terjadi ketidaksamaan varians dari residual satu pengamatan ke pengamatan lainnya. Uji heteroskedastisitas dilakukan menggunakan Uji Glejser (meregresikan nilai absolut residual terhadap seluruh variabel independen). Model regresi bebas dari masalah heteroskedastisitas apabila nilai signifikansi seluruh variabel prediktor terhadap absolut residual $> 0,05$.
 
 ### 3.5.3 Analisis Regresi Berganda
 
-     Analisis regresi berganda digunakan untuk menguji pengaruh variabel independen ($X_1$, $X_2$, $X_3$) secara parsial dan simultan terhadap variabel dependen ($Y$). Model regresi berganda yang digunakan adalah:
+     Analisis regresi linear berganda digunakan untuk menguji pengaruh variabel independen ($X_1$, $X_2$, $X_3$) secara parsial dan simultan terhadap variabel dependen ($Y$). Model persamaan regresi berganda dasar adalah:
 
 $$Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + e \tag{3.5}$$
 
-Tahap ini bertujuan menguji hipotesis H1, H2, dan H3 mengenai pengaruh langsung masing-masing variabel independen terhadap *Impulsive Buying*.
+Tahap ini bertujuan untuk menguji hipotesis H1, H2, dan H3 mengenai arah dan signifikansi pengaruh langsung masing-masing variabel independen terhadap *Impulsive Buying*.
 
 ### 3.5.4 *Moderated Regression Analysis* (MRA)
 
-     *Moderated Regression Analysis* (MRA) digunakan untuk menguji apakah Literasi Keuangan ($M$) memoderasi (memperlemah) pengaruh variabel independen ($X_1$, $X_2$, $X_3$) terhadap *Impulsive Buying* ($Y$). Model MRA yang digunakan adalah:
+     *Moderated Regression Analysis* (MRA) merupakan aplikasi khusus dari regresi linier berganda yang memuat unsur perkalian atau interaksi (*interaction term*) antara dua atau lebih variabel independen untuk menguji pengaruh moderasi (Ghozali, 2018). Persamaan model MRA dalam penelitian ini dirumuskan sebagai berikut:
 
 $$Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \beta_4 M + \beta_5 (X_1 \cdot M) + \beta_6 (X_2 \cdot M) + \beta_7 (X_3 \cdot M) + e \tag{3.6}$$
 
-     Efek moderasi dinyatakan terbukti dan signifikan apabila koefisien regresi variabel interaksi ($\beta_5$, $\beta_6$, dan/atau $\beta_7$) menunjukkan nilai signifikansi $p < 0,05$. Tahap ini bertujuan menguji hipotesis H4, H5, dan H6.
-
-     Sebelum menghitung variabel interaksi, variabel independen dan variabel moderasi akan di-*center* terlebih dahulu (*mean centering*), yaitu mengurangi skor setiap responden dengan rata-rata (*mean*) variabel tersebut (Aiken & West, 1991; Ghozali, 2018). Prosedur ini dilakukan untuk mengatasi potensi multikolinearitas struktural antara variabel utama dan variabel interaksi.
+     Efek moderasi dinyatakan terbukti memperlemah dan signifikan apabila koefisien regresi interaksi ($\beta_5$, $\beta_6$, dan/atau $\beta_7$) memiliki arah koefisien negatif dan menunjukkan nilai signifikansi $p < 0,05$. Tahap ini bertujuan untuk membuktikan hipotesis H4, H5, dan H6.
+     
+     Untuk mengantisipasi masalah multikolinearitas tinggi yang lazim muncul akibat pembentukan variabel interaksi perkalian ($X \cdot M$), seluruh variabel independen dan moderasi akan dilakukan proses penyeragaman nilai tengah (*mean centering*) terlebih dahulu sebelum dikalikan (Aiken & West, 1991; Ghozali, 2018).
 
 ### 3.5.5 Uji Koefisien Determinasi ($R^2$)
 
-     Koefisien determinasi ($R^2$) digunakan untuk mengukur seberapa besar kemampuan model regresi dalam menjelaskan variasi variabel dependen. Nilai $R^2$ berkisar antara 0 hingga 1, di mana semakin mendekati 1 berarti model semakin baik dalam menjelaskan variasi *Impulsive Buying*. Dalam penelitian ini, perbandingan nilai $R^2$ antara Model 1 (tanpa moderasi) dan Model 2 (dengan moderasi) akan dianalisis untuk melihat peningkatan daya jelang model setelah memasukkan variabel interaksi.
+     Koefisien determinasi ($R^2$ atau *Adjusted* $R^2$) mengukur seberapa jauh kemampuan model dalam menerangkan variasi variabel dependen. Nilai $R^2$ berada di antara 0 dan 1. Perbandingan nilai $R^2$ antara Model 1 (regresi berganda tanpa moderasi) dan Model 2 (MRA dengan interaksi moderasi) dianalisis melalui uji $R^2$ *change* untuk membuktikan apakah keberadaan *Self-Control* sebagai variabel moderasi secara signifikan meningkatkan daya penjelas (*explanatory power*) model terhadap perilaku *Impulsive Buying*.
 
 ### 3.5.6 Uji Hipotesis
 
-**a. Uji t (Uji Parsial)**
+**a. Uji Signifikansi Parsial (Uji t)**
+     Uji t digunakan untuk menguji apakah masing-masing variabel independen dan variabel interaksi secara individu berpengaruh signifikan terhadap variabel dependen. Kriteria pengujian:
+* Jika nilai signifikansi $t < 0,05$ dan arah koefisien sesuai dengan hipotesis, maka hipotesis penelitian diterima.
+* Jika nilai signifikansi $t \ge 0,05$, maka hipotesis penelitian ditolak.
 
-     Uji t digunakan untuk menguji signifikansi pengaruh masing-masing variabel independen secara parsial terhadap variabel dependen. Kriteria pengujian: apabila nilai signifikansi $p < 0,05$, maka hipotesis diterima (terdapat pengaruh signifikan).
-
-**b. Uji F (Uji Simultan)**
-
-     Uji F digunakan untuk menguji signifikansi pengaruh seluruh variabel independen secara bersama-sama (simultan) terhadap variabel dependen. Kriteria pengujian: apabila nilai signifikansi $p < 0,05$, maka model regresi secara keseluruhan signifikan.
+**b. Uji Signifikansi Simultan (Uji F)**
+     Uji F digunakan untuk mengetahui apakah seluruh variabel independen dan variabel interaksi yang dimasukkan ke dalam model regresi memiliki pengaruh secara bersama-sama terhadap variabel dependen. Kriteria pengujian: jika nilai signifikansi $F < 0,05$, maka model dinyatakan fit dan layak (*goodness of fit*).

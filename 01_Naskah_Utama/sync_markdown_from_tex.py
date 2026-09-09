@@ -20,7 +20,6 @@ def main():
             aux_content = f.read()
             matches = re.findall(r'\\bibcite\{([^}]+)\}\{\{\d+\}\{(\d{4})\}\{(.*?)\}\}', aux_content)
             for key, year, author in matches:
-                # Clean author string
                 author = author.strip('{}')
                 author = author.replace('~', ' ').replace(r'{\"u}', 'ü').replace(r'{\"O}', 'Ö')
                 author = author.replace('et~al.', 'et al.')
@@ -54,7 +53,7 @@ def main():
     md_lines.append("**Dosen Pembimbing:** Dr. Diana Frederica, S.E., M.Ak., CFP®., CHCP-A (NIDN: 0315088201)  ")
     md_lines.append("")
     md_lines.append("> **Judul Proposal Skripsi:**  ")
-    md_lines.append("> **PENGARUH *HEDONIC MOTIVATION*, *NEED FOR COMPLETION*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN LITERASI KEUANGAN SEBAGAI VARIABEL MODERASI**  ")
+    md_lines.append("> **PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI**  ")
     md_lines.append(">  ")
     md_lines.append("> *Format Dokumen: Teks Lengkap Proposal BAB 1–3 Sesuai Buku Pedoman Penyusunan Skripsi FEB UKRIDA 2022 (Lampiran 10 Model B)*")
     md_lines.append("")
@@ -76,22 +75,23 @@ def main():
     md_lines.append("  - [1.4 Manfaat Penelitian](#14-manfaat-penelitian)")
     md_lines.append("    - [1.4.1 Manfaat Teoritis](#141-manfaat-teoritis)")
     md_lines.append("    - [1.4.2 Manfaat Praktis](#142-manfaat-praktis)")
-    md_lines.append("- [BAB 2 TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS](#bab-2-tinjauan-pustaka-dan-pengembangan-hipotesis)")
+    md_lines.append("- [BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS](#bab-2-kajian-pustaka-dan-pengembangan-hipotesis)")
     md_lines.append("  - [2.1 Landasan Teori](#21-landasan-teori)")
-    md_lines.append("    - [2.1.1 Kerangka Teori Stimulus-Organism-Response (S-O-R)](#211-kerangka-teori-stimulus-organism-response-s-o-r)")
-    md_lines.append("    - [2.1.2 Impulsive Buying (Pembelian Impulsif)](#212-impulsive-buying-pembelian-impulsif)")
-    md_lines.append("    - [2.1.3 Hedonic Motivation (Motivasi Hedonis)](#213-hedonic-motivation-motivasi-hedonis)")
-    md_lines.append("    - [2.1.4 Need for Completion (Hasrat Melengkapi Koleksi)](#214-need-for-completion-hasrat-melengkapi-koleksi)")
-    md_lines.append("    - [2.1.5 Speculative Motive (Motif Spekulasi Finansial)](#215-speculative-motive-motif-spekulasi-finansial)")
-    md_lines.append("    - [2.1.6 Literasi Keuangan (Financial Literacy)](#216-literasi-keuangan-financial-literacy)")
+    md_lines.append("    - [2.1.1 Grand Theory: Keuangan Perilaku (Behavioral Finance)](#211-grand-theory-keuangan-perilaku-behavioral-finance)")
+    md_lines.append("    - [2.1.2 Teori Pendukung (Supporting Theories)](#212-teori-pendukung-supporting-theories)")
+    md_lines.append("    - [2.1.3 Impulsive Buying (Pembelian Impulsif)](#213-impulsive-buying-pembelian-impulsif)")
+    md_lines.append("    - [2.1.4 Hedonic Motivation (Motivasi Hedonis)](#214-hedonic-motivation-motivasi-hedonis)")
+    md_lines.append("    - [2.1.5 Desire for Completeness (Hasrat Melengkapi Koleksi)](#215-desire-for-completeness-hasrat-melengkapi-koleksi)")
+    md_lines.append("    - [2.1.6 Speculative Motive (Motif Spekulasi Finansial)](#216-speculative-motive-motif-spekulasi-finansial)")
+    md_lines.append("    - [2.1.7 Self-Control (Kontrol Diri)](#217-self-control-kontrol-diri)")
     md_lines.append("  - [2.2 Penelitian Sebelumnya](#22-penelitian-sebelumnya)")
     md_lines.append("  - [2.3 Pengembangan Hipotesis](#23-pengembangan-hipotesis)")
     md_lines.append("    - [2.3.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying](#231-pengaruh-hedonic-motivation-terhadap-impulsive-buying)")
-    md_lines.append("    - [2.3.2 Pengaruh Need for Completion terhadap Impulsive Buying](#232-pengaruh-need-for-completion-terhadap-impulsive-buying)")
+    md_lines.append("    - [2.3.2 Pengaruh Desire for Completeness terhadap Impulsive Buying](#232-pengaruh-desire-for-completeness-terhadap-impulsive-buying)")
     md_lines.append("    - [2.3.3 Pengaruh Speculative Motive terhadap Impulsive Buying](#233-pengaruh-speculative-motive-terhadap-impulsive-buying)")
-    md_lines.append("    - [2.3.4 Pengaruh Moderasi Literasi Keuangan terhadap Hubungan Hedonic Motivation dan Impulsive Buying](#234-pengaruh-moderasi-literasi-keuangan-terhadap-hubungan-hedonic-motivation-dan-impulsive-buying)")
-    md_lines.append("    - [2.3.5 Pengaruh Moderasi Literasi Keuangan terhadap Hubungan Need for Completion dan Impulsive Buying](#235-pengaruh-moderasi-literasi-keuangan-terhadap-hubungan-need-for-completion-dan-impulsive-buying)")
-    md_lines.append("    - [2.3.6 Pengaruh Moderasi Literasi Keuangan terhadap Hubungan Speculative Motive dan Impulsive Buying](#236-pengaruh-moderasi-literasi-keuangan-terhadap-hubungan-speculative-motive-dan-impulsive-buying)")
+    md_lines.append("    - [2.3.4 Peran Moderasi Self-Control pada Pengaruh Hedonic Motivation terhadap Impulsive Buying](#234-peran-moderasi-self-control-pada-pengaruh-hedonic-motivation-terhadap-impulsive-buying)")
+    md_lines.append("    - [2.3.5 Peran Moderasi Self-Control pada Pengaruh Desire for Completeness terhadap Impulsive Buying](#235-peran-moderasi-self-control-pada-pengaruh-desire-for-completeness-terhadap-impulsive-buying)")
+    md_lines.append("    - [2.3.6 Peran Moderasi Self-Control pada Pengaruh Speculative Motive terhadap Impulsive Buying](#236-peran-moderasi-self-control-pada-pengaruh-speculative-motive-terhadap-impulsive-buying)")
     md_lines.append("  - [2.4 Rerangka Penelitian](#24-rerangka-penelitian)")
     md_lines.append("- [BAB 3 METODE PENELITIAN](#bab-3-metode-penelitian)")
     md_lines.append("  - [3.1 Jenis dan Sumber Data](#31-jenis-dan-sumber-data)")
@@ -117,7 +117,7 @@ def main():
     md_lines.append("")
     md_lines.append("# PROPOSAL SKRIPSI")
     md_lines.append("")
-    md_lines.append("## PENGARUH *HEDONIC MOTIVATION*, *NEED FOR COMPLETION*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN LITERASI KEUANGAN SEBAGAI VARIABEL MODERASI")
+    md_lines.append("## PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI")
     md_lines.append("")
     md_lines.append("Diajukan Kepada Program Studi S1 Manajemen  ")
     md_lines.append("Untuk Menyusun Skripsi Sarjana Manajemen (S.M.)  ")
@@ -154,7 +154,7 @@ def main():
     md_lines.append("")
     md_lines.append("Dengan ini menyatakan dengan sesungguhnya bahwa Proposal Skripsi yang berjudul:")
     md_lines.append("")
-    md_lines.append("> **\"PENGARUH *HEDONIC MOTIVATION*, *NEED FOR COMPLETION*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN LITERASI KEUANGAN SEBAGAI VARIABEL MODERASI\"**")
+    md_lines.append("> **\"PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI\"**")
     md_lines.append("")
     md_lines.append("adalah:")
     md_lines.append("1. Benar-benar hasil karya saya sendiri, bukan merupakan jiplakan, plagiarisme, fabrikasi, atau tiruan dari karya tulis ilmiah orang lain yang pernah diajukan untuk memperoleh gelar akademik di perguruan tinggi manapun.")
@@ -186,7 +186,7 @@ def main():
     md_lines.append("| Konsentrasi | Manajemen Keuangan |")
     md_lines.append("")
     md_lines.append("**Judul yang Diajukan:**  ")
-    md_lines.append("**PENGARUH *HEDONIC MOTIVATION*, *NEED FOR COMPLETION*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN LITERASI KEUANGAN SEBAGAI VARIABEL MODERASI**  ")
+    md_lines.append("**PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI**  ")
     md_lines.append("")
     md_lines.append("Jakarta, __________________ 2026  ")
     md_lines.append("")
@@ -211,7 +211,7 @@ def main():
     md_lines.append("### PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL SKRIPSI")
     md_lines.append("")
     md_lines.append("Proposal Skripsi dengan Judul:  ")
-    md_lines.append("**PENGARUH *HEDONIC MOTIVATION*, *NEED FOR COMPLETION*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN LITERASI KEUANGAN SEBAGAI VARIABEL MODERASI**  ")
+    md_lines.append("**PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI**  ")
     md_lines.append("")
     md_lines.append("Diajukan Oleh:  ")
     md_lines.append("**Arthur Reezan**  ")
@@ -235,7 +235,7 @@ def main():
     md_lines.append("")
     md_lines.append("### KATA PENGANTAR")
     md_lines.append("")
-    md_lines.append("Puji dan syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa atas kasih, anugerah, dan penyertaan-Nya yang senantiasa melimpah, sehingga penulis dapat menyelesaikan penyusunan proposal skripsi yang berjudul **“PENGARUH *HEDONIC MOTIVATION*, *NEED FOR COMPLETION*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN LITERASI KEUANGAN SEBAGAI VARIABEL MODERASI”** dengan baik, lancar, dan tepat waktu.")
+    md_lines.append("Puji dan syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa atas kasih, anugerah, dan penyertaan-Nya yang senantiasa melimpah, sehingga penulis dapat menyelesaikan penyusunan proposal skripsi yang berjudul **“PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI”** dengan baik, lancar, dan tepat waktu.")
     md_lines.append("")
     md_lines.append("Proposal skripsi ini disusun sebagai salah satu tahapan akademik yang diwajibkan dalam rangka menempuh ujian seminar proposal guna menyelesaikan studi pada Program Studi S1 Manajemen, Konsentrasi Manajemen Keuangan, Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana (UKRIDA), Jakarta.")
     md_lines.append("")
@@ -260,25 +260,25 @@ def main():
     md_lines.append("")
     md_lines.append("### ABSTRAK")
     md_lines.append("")
-    md_lines.append("Penelitian ini bertujuan untuk menganalisis dan menguji secara empiris pengaruh *hedonic motivation* (motivasi hedonis), *need for completion* (hasrat melengkapi koleksi), dan *speculative motive* (motif spekulasi finansial) terhadap *impulsive buying* (pembelian impulsif) *booster pack* kartu Pokémon Trading Card Game (Pokémon TCG) fisik resmi berbahasa Indonesia, serta menguji peran literasi keuangan (*financial literacy*) sebagai variabel moderasi dalam memperlemah pengaruh ketiga variabel anteseden tersebut.")
+    md_lines.append("Penelitian ini bertujuan untuk menganalisis dan menguji secara empiris pengaruh *hedonic motivation* (motivasi hedonis), *desire for completeness* (hasrat melengkapi koleksi), dan *speculative motive* (motif spekulasi finansial) terhadap *impulsive buying* (pembelian impulsif) *booster pack* kartu Pokémon Trading Card Game (Pokémon TCG) fisik berbahasa Indonesia, serta menguji peran *self-control* (kontrol diri) sebagai variabel moderasi dalam memperlemah pengaruh ketiga variabel anteseden tersebut.")
     md_lines.append("")
     md_lines.append("Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei *cross-sectional*. Data primer dikumpulkan melalui penyebaran kuesioner daring berbasis skala Likert 5 poin kepada responden yang dipilih melalui teknik *purposive sampling*. Kriteria inklusi sampel adalah konsumen atau kolektor Warga Negara Indonesia (WNI) berusia minimal 17 tahun yang pernah membeli *booster pack* Pokémon TCG fisik resmi dalam rentang waktu 6–12 bulan terakhir. Jumlah sampel yang ditargetkan adalah 120 hingga 150 responden, mengacu pada rekomendasi ukuran sampel Green (1991) dan Cohen (1988) untuk mencapai kekuatan uji statistik (*statistical power*) yang memadai pada model regresi linear berganda. Metode analisis data menggunakan analisis regresi berganda dan *Moderated Regression Analysis* (MRA) dengan prosedur standarisasi skor rata-rata (*mean-centering*) guna mengatasi potensi multikolinearitas struktural antar-istilah interaksi (Aiken & West, 1991; Ghozali, 2018), yang diolah menggunakan perangkat lunak SPSS.")
     md_lines.append("")
-    md_lines.append("Penelitian ini menawarkan kebaruan teoritis (*novelty*) dengan mengintegrasikan kerangka psikologi lingkungan *Stimulus-Organism-Response* (S-O-R), bias psikologis koleksi (*Zeigarnik Effect*), dan prinsip-prinsip keuangan perilaku (*behavioral finance*) pada fenomena komoditas hobi fisik bernilai spekulatif tinggi. Hasil penelitian ini diharapkan memberikan kontribusi empiris bagi konsumen muda dalam mengelola alokasi pengeluaran gaya hidup, serta masukan aplikatif bagi otoritas perencana keuangan (OJK) dalam merancang edukasi literasi keuangan yang kontekstual bagi Generasi Z.")
+    md_lines.append("Penelitian ini menawarkan kebaruan teoritis (*novelty*) dengan mengintegrasikan kerangka *Behavioral Finance* sebagai *Grand Theory*, didukung paradigma *Stimulus-Organism-Response* (S-O-R), *The Completing the Set Effect* / *Zeigarnik Effect*, serta *Self-Regulation Theory* pada fenomena komoditas hobi fisik bernilai spekulatif tinggi. Hasil penelitian ini diharapkan memberikan kontribusi empiris bagi konsumen muda dalam mengelola alokasi pengeluaran gaya hidup, serta masukan aplikatif bagi otoritas perencana keuangan dalam merancang edukasi pengelolaan keuangan perilaku yang kontekstual bagi Generasi Z.")
     md_lines.append("")
-    md_lines.append("**Kata Kunci:** *Impulsive Buying*, *Hedonic Motivation*, *Need for Completion*, *Speculative Motive*, Literasi Keuangan, *Moderated Regression Analysis*, Pokémon TCG, Keuangan Perilaku (*Behavioral Finance*).")
+    md_lines.append("**Kata Kunci:** *Impulsive Buying*, *Hedonic Motivation*, *Desire for Completeness*, *Speculative Motive*, *Self-Control*, *Moderated Regression Analysis*, Pokémon TCG, Keuangan Perilaku (*Behavioral Finance*).")
     md_lines.append("")
     md_lines.append("---")
     md_lines.append("")
     md_lines.append("### ABSTRACT")
     md_lines.append("")
-    md_lines.append("*This research aims to analyze and empirically test the effects of hedonic motivation, need for completion, and speculative motive on the impulsive buying behavior of official Indonesian-language physical Pokémon Trading Card Game (Pokémon TCG) booster packs, as well as to evaluate the moderating role of financial literacy in weakening the relationships between these three antecedent variables and impulsive buying.*")
+    md_lines.append("*This research aims to analyze and empirically test the effects of hedonic motivation, desire for completeness, and speculative motive on the impulsive buying behavior of official Indonesian-language physical Pokémon Trading Card Game (Pokémon TCG) booster packs, as well as to evaluate the moderating role of self-control in weakening the relationships between these three antecedent variables and impulsive buying.*")
     md_lines.append("")
     md_lines.append("*This study adopts an associative quantitative approach utilizing a cross-sectional survey design. Primary data are gathered via self-administered online questionnaires employing a 5-point Likert scale, distributed to respondents selected through purposive sampling. The sample inclusion criteria comprise Indonesian citizens aged 17 and above who have purchased official physical booster packs within the past 6 to 12 months. The targeted sample size ranges from 120 to 150 respondents, consistent with the statistical power criteria established by Green (1991) and Cohen (1988) for multiple regression frameworks. The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to eliminate structural multicollinearity (Aiken & West, 1991; Ghozali, 2018), executed via SPSS software.*")
     md_lines.append("")
-    md_lines.append("*This study provides theoretical novelty by synthesizing the Stimulus-Organism-Response (S-O-R) paradigm, collector psychology (the Zeigarnik Effect), and behavioral finance principles in the context of tangible alternative assets exhibiting volatile secondary market premiums. The findings are expected to offer practical insights for young consumers in exercising financial discipline regarding discretionary collectibles and provide strategic inputs for regulatory authorities (such as the Financial Services Authority / OJK) in formulating tailored financial literacy programs for Generation Z.*")
+    md_lines.append("*This study provides theoretical novelty by synthesizing Behavioral Finance as the Grand Theory, supported by the Stimulus-Organism-Response (S-O-R) paradigm, the Completing the Set Effect / Zeigarnik Effect, and Self-Regulation Theory in the context of tangible alternative hobby assets exhibiting secondary market speculative premiums. The findings are expected to offer practical insights for young consumers in exercising self-regulatory discipline regarding discretionary collectibles and provide strategic inputs for financial planners in formulating contextual behavioral financial management programs for Generation Z.*")
     md_lines.append("")
-    md_lines.append("***Keywords:*** *Impulsive Buying, Hedonic Motivation, Need for Completion, Speculative Motive, Financial Literacy, Moderated Regression Analysis, Pokémon TCG, Behavioral Finance.*")
+    md_lines.append("***Keywords:*** *Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Behavioral Finance.*")
     md_lines.append("")
     md_lines.append("| Mahasiswa | Dosen Pembimbing |")
     md_lines.append("|:---|:---|")
@@ -300,10 +300,10 @@ def main():
         md_lines.append("")
 
     # BAB 2
-    bab2_match = re.search(r'\\section\*\{BAB 2.*?TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS\}(.*?)(?=\\section\*\{BAB 3|\Z)', tex, re.DOTALL)
+    bab2_match = re.search(r'\\section\*\{BAB 2.*?\}(.*?)(?=\\section\*\{BAB 3|\Z)', tex, re.DOTALL)
     if bab2_match:
         bab2_text = bab2_match.group(1)
-        md_lines.append("# BAB 2 TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS")
+        md_lines.append("# BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS")
         md_lines.append("")
         md_lines.append(convert_tex_section(bab2_text, 2, cite_dict))
         md_lines.append("")
@@ -351,7 +351,7 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
     s = re.sub(r'\\centering', '', s)
     s = re.sub(r'\\raggedright', '', s)
 
-    # Normalize Pok\'emon to Pokémon
+    # Normalize Pokémon
     s = s.replace(r"Pok\'emon", "Pokémon")
     s = s.replace(r"Pokemon", "Pokémon")
 
@@ -360,7 +360,7 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
     s = re.sub(r'\\addcontentsline\{[^}]+\}\{[^}]+\}\{[^}]+\}', '', s)
     s = re.sub(r'\\setcounter\{[^}]+\}\{[^}]+\}', '', s)
     s = re.sub(r'\\texorpdfstring\{([^}]+)\}\{[^}]+\}', r'\1', s)
-    s = s.replace(r'\judulskripsi', 'PENGARUH *HEDONIC MOTIVATION*, *NEED FOR COMPLETION*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN LITERASI KEUANGAN SEBAGAI VARIABEL MODERASI')
+    s = s.replace(r'\judulskripsi', 'PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI')
     s = s.replace("``", "“").replace("''", "”")
 
     # Convert Table 2.1
@@ -368,20 +368,20 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
         tab21_pattern = re.compile(r'\\begingroup.*?\\caption\{Ringkasan Penelitian Sebelumnya\}.*?\\endgroup', re.DOTALL)
         tab21_md = """**Tabel 2.1 Ringkasan Penelitian Sebelumnya**
 
-| No | Peneliti & Tahun | Judul Penelitian | Variabel & Metode | Hasil Utama Penelitian |
+| No | Peneliti (Tahun) | Judul Penelitian | Variabel & Metode | Hasil Utama Penelitian |
 |:---:|:---|:---|:---|:---|
-| 1 | Ridha & Putri (2024) | Pengaruh *Hedonic Motivation* terhadap *Impulse Buying* pada Shopee | X: *Hedonic*, *lifestyle*<br>Y: *Impulse*<br>Metode: PLS-SEM (N=200) | Motivasi hedonis berpengaruh positif signifikan terhadap *impulse buying*. |
-| 2 | Putri & Marlien (2023) | Pengaruh *Hedonic Motivation* terhadap *Impulse Buying* di TikTok | X: *Hedonic*, *fashion*<br>Y: *Impulse*<br>Metode: Regresi (N=100) | Motivasi hedonis berpengaruh positif dan signifikan terhadap *impulse buying* Gen Z. |
-| 3 | Sari & Rahmidani (2021) | Pengaruh Motivasi Hedonis dan Display terhadap *Impulse Buying* | X: Hedonis, *display*, diskon<br>Y: *Impulse*<br>Metode: Regresi (N=100) | Motivasi hedonis berpengaruh positif signifikan pada produk ritel fisik gaya hidup. |
-| 4 | Xu & Huang (2023) | Curiosity as Antecedent of Blind Box Impulse Buying | X: *Curiosity*, *novelty*<br>Y: *Impulse*<br>Metode: SEM-PLS (N=500+) | *Curiosity* (didorong *completion*) mendorong *impulse buying* produk kejutan fisik. |
-| 5 | Li, Li, & Zheng (2024) | Impulsive Buying in Blind Box Consumption: S-O-R | X: *Scarcity*, *novelty*<br>Y: *Impulse*<br>Metode: SEM (N=350+) | Rangsangan kelangkaan dan kebaruan memicu dorongan belanja spontan via afeksi positif. |
-| 6 | Fauziah & Kholid (2024) | FoMO dan Scarcity terhadap *Impulse Buying* Blind Box | X: FoMO, *scarcity*<br>Y: *Impulse*<br>Metode: SEM-PLS (N=200+) | Persepsi kelangkaan berpengaruh signifikan positif terhadap pembelian impulsif Gen Z. |
-| 7 | Ante (2022) | Non-Fungible Token Markets | X: *Sentiment*, *market*<br>Y: *Asset prices*<br>Metode: *Time-series* | Pasar aset koleksi alternatif menunjukkan gelembung spekulatif dan sentimen pasar. |
-| 8 | Nurhasanah & Lubis (2023) | Moderasi Literasi Keuangan terhadap *Impulse Buying* | X: *Hedonic*<br>Y: *Impulse*<br>Mod: *FinLit*<br>Metode: MRA (N=150+) | Literasi keuangan secara signifikan memperlemah pengaruh hedonisme terhadap pembelian impulsif. |
-| 9 | Ramadhan & Setyawan (2023) | Pengaruh Literasi Keuangan terhadap Konsumtif Mahasiswa | X: Literasi keuangan<br>Y: *Impulsive buying*<br>Metode: Regresi (N=200) | Literasi keuangan berpengaruh negatif signifikan terhadap perilaku belanja impulsif mahasiswa. |
-| 10 | Fernandes et al. (2014) | Financial Literacy and Downstream Financial Behaviors | X: Literasi keuangan<br>Y: Perilaku<br>Metode: Meta-analisis (168 studi) | Pengaruh literasi terhadap perilaku memerlukan intervensi kontekstual edukatif. |
+| 1 | Arnold & Reynolds (2003) | *Hedonic Shopping Motivations* | Motivasi hedonis; Analisis faktor | Mengidentifikasi 6 dimensi hedonis; kesenangan emosional memicu belanja spontan. |
+| 2 | Gültekin & Özer (2012) | *The Influence of Hedonic Motives on Impulse Buying* | X: *Hedonic motives*; Y: *Impulse buying*; Regresi | Motivasi hedonis berpengaruh positif signifikan terhadap *impulsive buying*. |
+| 3 | Gao, Huang, & Simonson (2014) | *The "Completing the Set" Effect* | X: *Set framing*; Y: Niat beli; Desain eksperimen | Hasrat melengkapi set secara signifikan memicu pembelian terburu-buru dan spontan. |
+| 4 | Barasz et al. (2017) | *Pseudo-Set Framing toward Completeness* | X: *Pseudo-set*; Y: Keputusan beli; Eksperimen | Pembingkaian item sebagai kesatuan himpunan menciptakan dorongan melengkapi item. |
+| 5 | Shiller (2000) | *Irrational Exuberance* | X: Spekulasi, psikologi pasar; Y: Gelembung harga | Bias optimisme pasar memicu euforia transaksi spekulatif spontan berlebihan. |
+| 6 | Baur, Hong, & Lee (2018) | *Alternative Collectibles Speculative Dynamics* | X: Motif spekulasi; Y: Volume transaksi | Pasar aset alternatif memperlihatkan dinamika transaksi spekulatif mirip aset finansial. |
+| 7 | Vohs & Faber (2007) | *Self-Regulatory Resource Depletion* | X: Penipisan kontrol diri; Y: *Impulse buying*; Eksperimen | Kegagalan kontrol diri meningkatkan belanja impulsif; kontrol diri tinggi membatasi belanja spontan. |
+| 8 | Sultan, Joireman, & Sprott (2012) | *Building Consumers' Impulsive Buying Model* | X: Stimulus emosi; Y: *Impulse*; Mod: *Self-control*; SEM | Kontrol diri secara signifikan memperlemah pengaruh dorongan emosional terhadap *impulse buying*. |
+| 9 | Fitriyani, Widodo, & Fauzi (2022) | Hubungan *Hedonic Shopping* dengan *Impulse Buying* | X: *Hedonic motivation*; Y: *Impulse buying*; Regresi | Motivasi hedonis berkorelasi positif signifikan dengan perilaku belanja impulsif konsumen muda. |
+| 10 | Tangney, Baumeister, & Boone (2004) | *High Self-Control Predicts Good Adjustment* | *Trait self-control*; Skala BSCS; Validasi psikometri | Mengembangkan skala kontrol diri baku; individu kontrol diri tinggi mampu menunda kepuasan. |
 
-*Sumber: Data diolah dari berbagai publikasi jurnal ilmiah nasional dan internasional (2024–2026).*"""
+*Sumber: Data diolah dari publikasi jurnal ilmiah bereputasi (2026).*"""
         s = tab21_pattern.sub(tab21_md, s)
 
     # Convert Figure 2.1
@@ -389,25 +389,25 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
         fig21_pattern = re.compile(r'\\begin\{figure\}\[H\].*?\\caption\{Model Rerangka Konseptual Penelitian\}.*?\\end\{figure\}', re.DOTALL)
         fig21_md = """```
                      Pengaruh Langsung (H1, H2, H3)
-    ┌────────────────────────────────────────────────────────┐
-    │                                                        │
-    │   [ X1: Hedonic Motivation  ] ──── H1 (+) ────┐        │
-    │                                                │        │
-    │   [ X2: Need for Completion ] ──── H2 (+) ────┼────►  [ Y: Impulsive Buying ]
-    │                                                │        │
-    │   [ X3: Speculative Motive  ] ──── H3 (+) ────┘        │
-    │                                                        │
-    └────────────────────────────────────────────────────────┘
-                                                     ▲
-                                                     │
-                         H4, H5, H6 (Memperlemah / -)
-                                                     │
-                                         [ M: Literasi Keuangan ]
-                                         (Variabel Moderasi)
+    ┌─────────────────────────────────────────────────────────────┐
+    │                                                             │
+    │   [ X1: Hedonic Motivation     ] ──── H1 (+) ────┐          │
+    │                                                  │          │
+    │   [ X2: Desire for Completeness] ──── H2 (+) ────┼────►  [ Y: Impulsive Buying ]
+    │                                                  │          │
+    │   [ X3: Speculative Motive     ] ──── H3 (+) ────┘          │
+    │                                                             │
+    └─────────────────────────────────────────────────────────────┘
+                                                       ▲
+                                                       │
+                           H4, H5, H6 (Memperlemah / -)
+                                                       │
+                                           [ M: Self-Control ]
+                                           (Variabel Moderasi)
 ```
 **Gambar 2.1 Model Rerangka Konseptual Penelitian**
 
-*Keterangan: Garis lurus menunjukkan pengaruh langsung (H1, H2, H3); Garis putus-putus menunjukkan efek moderasi literasi keuangan (H4, H5, H6).*"""
+*Keterangan: Garis lurus menunjukkan pengaruh langsung (H1, H2, H3); Garis putus-putus menunjukkan efek moderasi kontrol diri yang memperlemah (H4, H5, H6).*"""
         s = fig21_pattern.sub(fig21_md, s)
 
     # Convert Table 3.1
@@ -444,22 +444,22 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
 | | | *Gratification* | X1.3. Membeli kartu Pokémon adalah cara saya memanjakan diri atau melepas penat stres. | Likert 1–5 |
 | | | *Gratification* | X1.4. Menemukan kartu dengan ilustrasi langka (*SAR*) membuat saya sangat bahagia. | Likert 1–5 |
 | | | *Idea* | X1.5. Saya senang mengikuti tren rilis seri kartu Pokémon dan inovasi desain terbarunya. | Likert 1–5 |
-| **Need for Completion ($X_2$)** | Dorongan psikologis menuntaskan set koleksi akibat *Zeigarnik Effect* (Belk, 1995; Gao et al., 2014). | *Set Completion* | X2.1. Saya merasa tidak tenang jika album koleksi seri Pokémon saya memiliki slot kosong. | Likert 1–5 |
-| | | *Set Completion* | X2.2. Saya memiliki target untuk mengumpulkan seluruh kartu dalam satu ekspansi secara lengkap. | Likert 1–5 |
-| | | *Goal Progress* | X2.3. Semakin sedikit kartu yang kurang, semakin kuat dorongan saya membeli kemasan baru. | Likert 1–5 |
-| | | *Goal Progress* | X2.4. Saya secara rutin memeriksa daftar koleksi (*checklist*) untuk melengkapi nomor kartu. | Likert 1–5 |
-| | | *Closure* | X2.5. Saya merasa sangat puas dan lega saat berhasil menuntaskan satu seri set kartu. | Likert 1–5 |
+| **Desire for Completeness ($X_2$)** | Dorongan psikologis menuntaskan set koleksi akibat *Zeigarnik Effect* (Belk, 1995; Gao et al., 2014; Barasz et al., 2017). | *Cognitive Tension* | X2.1. Saya merasa tidak nyaman ketika album koleksi kartu Pokémon saya memiliki slot kosong. | Likert 1–5 |
+| | | *Drive for Closure* | X2.2. Saya terdorong untuk terus membeli *booster pack* agar dapat melengkapi seluruh kartu dalam satu seri. | Likert 1–5 |
+| | | *Cognitive Tension* | X2.3. Mengetahui ada kartu yang belum saya miliki dalam suatu seri membuat saya ingin segera membelinya. | Likert 1–5 |
+| | | *Wholeness* | X2.4. Melengkapi satu set penuh kartu Pokémon memberikan perasaan pencapaian dan kepuasan batin. | Likert 1–5 |
+| | | *Drive for Closure* | X2.5. Semakin sedikit kartu yang kurang dalam satu seri, semakin kuat desakan saya membeli *pack* baru. | Likert 1–5 |
 | **Speculative Motive ($X_3$)** | Ekspektasi memperoleh keuntungan finansial dari apresiasi harga di pasar sekunder (Shiller, 2000; Baur et al., 2018). | Ekspektasi Cuan | X3.1. Saya membeli *pack* dengan harapan menarik kartu langka bernilai jual tinggi. | Likert 1–5 |
 | | | Likuiditas | X3.2. Likuiditas pasar sekunder yang aktif mendorong saya membeli kartu sebagai aset berharga. | Likert 1–5 |
 | | | *Capital Gain* | X3.3. Saya memantau kenaikan harga pasar kartu langka untuk dijual kembali demi keuntungan. | Likert 1–5 |
 | | | Potensi Nilai | X3.4. Saya memandang modal membeli beberapa *pack* sebanding dengan potensi laba kartu langka. | Likert 1–5 |
-| | | *Grading Value* | X3.5. Saya tertarik dengan sertifikasi keaslian (*grading*) kartu demi menaikkan nilai investasi. | Likert 1–5 |
-| **Literasi Keuangan ($M$)** | Pengetahuan, perilaku, dan sikap dalam mengelola keputusan keuangan secara bijak (Chen & Volpe, 1998; Lusardi & Mitchell, 2014; OJK, 2023). | Pengetahuan | M1. Saya memahami pentingnya menyusun anggaran pengeluaran bulanan secara disiplin. | Likert 1–5 |
-| | | Pengetahuan | M2. Saya memahami konsep diversifikasi risiko dan perbedaan antara hobi dengan investasi. | Likert 1–5 |
-| | | Perilaku | M3. Saya selalu mencatat dan mengevaluasi pengeluaran hobi saya secara berkala. | Likert 1–5 |
-| | | Perilaku | M4. Saya selalu mempertimbangkan kondisi tabungan sebelum melakukan belanja mendadak. | Likert 1–5 |
-| | | Sikap | M5. Menabung dan menjaga stabilitas keuangan lebih penting daripada kesenangan belanja sesaat. | Likert 1–5 |
-| | | Sikap | M6. Saya menyadari bahwa pembelian produk berbasis acak/probabilitas berisiko merugikan finansial. | Likert 1–5 |
+| | | *Grading Value* | X3.5. Saya tertarik dengan sertifikasi keaslian (*grading*) kartu demi menaikkan nilai investasi lelang. | Likert 1–5 |
+| **Self-Control ($M$)** | Kapasitas volisional menolak godaan belanja spontan dan menunda kepuasan sesaat (Tangney et al., 2004; Vohs & Faber, 2007; Sultan et al., 2012). | Tahan Godaan | M1. Saya mampu menolak godaan membeli barang menarik jika di luar perencanaan anggaran saya. | Likert 1–5 |
+| | | Non-Impulsif | M2. Saya terbiasa berpikir tenang dan mempertimbangkan dampak pengeluaran sebelum bertransaksi. | Likert 1–5 |
+| | | Tunda Kepuasan | M3. Saya mampu menahan diri dari kesenangan belanja saat ini demi menjaga tujuan keuangan masa depan. | Likert 1–5 |
+| | | Disiplin Diri | M4. Saya memiliki disiplin diri yang kuat untuk tidak membeli barang secara mendadak di kasir toko. | Likert 1–5 |
+| | | Kontrol Emosi | M5. Saya tidak mudah terhanyut oleh suasana hati atau kegembiraan sesaat dalam membelanjakan uang. | Likert 1–5 |
+| | | Taat Anggaran | M6. Saya secara konsisten mematuhi alokasi batas pengeluaran hobi yang telah saya rencanakan. | Likert 1–5 |
 
 *Sumber: Diadaptasi dari instrumen penelitian terdahulu yang tervalidasi (2026).*"""
         s = tab32_pattern.sub(tab32_md, s)
@@ -553,6 +553,7 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
     s = re.sub(r'\n\s*\n\s*-\s*', '\n- ', s)
 
     # Clean table refs and figure refs
+    s = re.sub(r'Tabel~\\ref\{tab:penelitian_terdahulu\}', 'Tabel 2.1', s)
     s = re.sub(r'Tabel~\\ref\{tab:ringkasan_penelitian\}', 'Tabel 2.1', s)
     s = re.sub(r'Tabel~\\ref\{tab:skala_likert\}', 'Tabel 3.1', s)
     s = re.sub(r'Tabel~\\ref\{tab:operasionalisasi\}', 'Tabel 3.2', s)
