@@ -250,7 +250,7 @@ Berikut istilah-istilah yang wajib kamu kuasai luar kepala beserta analogi seder
 
 ### H5: FL memoderasi (memperlemah) NfC → IB
 * **Logika:** FL membantu menghitung biaya kumulatif pack vs beli singles — mengalihkan dari impulse ke planned purchase.
-* **Bukti:** Logika ekstensi dari Ramadhan & Setyawan (2023); Ilham & Muhid (2022).
+* **Bukti:** Logika ekstensi dari Ramadhan & Setyawan (2023); Katauke et al. (2023).
 
 ### H6: FL memoderasi (memperlemah) SM → IB
 * **Logika:** Pemahaman probabilitas + diversifikasi risiko → mengenali bahwa "investasi" kartu TCG punya risiko tinggi.

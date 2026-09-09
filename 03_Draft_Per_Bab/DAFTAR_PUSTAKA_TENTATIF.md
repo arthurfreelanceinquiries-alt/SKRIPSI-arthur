@@ -38,7 +38,7 @@ Gültekin, B., & Özer, L. (2012). The influence of hedonic motives and browsing
 
 Hirschman, E. C., & Holbrook, M. B. (1982). Hedonic consumption: Emerging concepts, methods and propositions. *Journal of Marketing*, 46(3), 92–101. https://doi.org/10.1177/002224298204600314
 
-Ilham, R. N., & Muhid, A. (2022). Pengaruh literasi keuangan dan self-control terhadap impulsive buying. *Jurnal Psikologi Integratif*, 10(1), 45–58. https://doi.org/10.14421/jpsi.v10i1.2384
+Katauke, T., Fukuda, S., Khan, M. S. R., & Kadoya, Y. (2023). Financial literacy and impulsivity: Evidence from Japan. *Sustainability*, 15(9), 7267. https://doi.org/10.3390/su15097267
 
 Kahneman, D., & Tversky, A. (1979). Prospect theory: An analysis of decision under risk. *Econometrica*, 47(2), 263–292. https://doi.org/10.2307/1914185
 

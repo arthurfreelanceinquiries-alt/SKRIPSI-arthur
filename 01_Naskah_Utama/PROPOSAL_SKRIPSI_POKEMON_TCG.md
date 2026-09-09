@@ -391,7 +391,7 @@ Literasi keuangan diposisikan sebagai variabel pemoderasi yang memperlemah doron
 
 ### 2.3.5 Pengaruh Moderasi Literasi Keuangan terhadap Hubungan *Need for Completion* dan *Impulsive Buying*
 
-Pengaruh hasrat melengkapi koleksi terhadap pembelian impulsif diharapkan dapat diredam oleh literasi keuangan. Ilham and Muhid (2022) menunjukkan bahwa literasi keuangan membantu individu mengevaluasi biaya oportunitas (*opportunity cost*). Konsumen dengan pemahaman keuangan yang baik akan mengkalkulasi efisiensi akuisisi kartu dan lebih memilih membeli kartu satuan (*singles*) di pasar sekunder daripada menghamburkan anggaran pada *pack* acak.
+Pengaruh hasrat melengkapi koleksi terhadap pembelian impulsif diharapkan dapat diredam oleh literasi keuangan. Katauke et al. (2023) menunjukkan bahwa literasi keuangan membantu individu mengurangi impulsivitas dalam pengambilan keputusan keuangan melalui evaluasi biaya oportunitas (*opportunity cost*) yang lebih rasional. Konsumen dengan pemahaman keuangan yang baik akan mengkalkulasi efisiensi akuisisi kartu dan lebih memilih membeli kartu satuan (*singles*) di pasar sekunder daripada menghamburkan anggaran pada *pack* acak.
 
 **H5: Literasi Keuangan memoderasi (memperlemah) pengaruh *Need for Completion* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.**
 
@@ -611,7 +611,7 @@ Mengevaluasi daya penjelas model melalui nilai *Adjusted* $R^2$, serta menganali
 
 17. Hirschman, E. C. and Holbrook, M. B. (1982). Hedonic consumption: Emerging concepts, methods and propositions. *Journal of Marketing*, 46(3):92–101.
 
-18. Ilham, R. N. and Muhid, A. (2022). Pengaruh literasi keuangan dan self-control terhadap impulsive buying. *Jurnal Psikologi Integratif*, 10(1):45–58.
+18. Katauke, T., Fukuda, S., Khan, M. S. R., and Kadoya, Y. (2023). Financial literacy and impulsivity: Evidence from Japan. *Sustainability*, 15(9):7267.
 
 19. Kahneman, D. and Tversky, A. (1979). Prospect theory: An analysis of decision under risk. *Econometrica*, 47(2):263–292.
 
