@@ -1,0 +1,143 @@
+2022 Total characters: 58441, lines: 2222
+2023 Total characters: 59600, lines: 1276
+
+=== BAB TITLES in 2022 ===
+### BAB 1
+### BAB 2
+# Bab 1 Pendahuluan
+# Bab ini terdiri dari 4 (empat) sub bab berikut ini:
+# Bab 2 Tinjauan Pustaka dan Pengembangan Hipotesis
+# Bab ini terdiri dari sub bab berikut ini:
+# Bab 3 Metode Penelitian
+# Bab ini terdiri dari sub bab berikut ini:
+# Bab 4 Analisis dan Pembahasan
+# Bab 5 Penutup
+# Bab ini terdiri dari sub bab berikut ini:
+### BAB 3
+### BAB 4
+### BAB 5
+### BAB 6
+### BAB 1. PENDAHULUAN
+### BAB 2. TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS
+### BAB 3. METODE PENELITIAN
+### BAB 4. ANALISIS DAN PEMBAHASAN
+### BAB 5. PENUTUP
+### BAB 1. PENDAHULUAN
+### BAB 2. TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS
+### BAB 3. METODE PENELITIAN
+### BAB 4. ANALISIS DAN PEMBAHASAN
+### BAB 5. PENUTUP
+### BAB 1. PENDAHULUAN
+### BAB 2. TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS
+### BAB 3. METODE PENELITIAN
+### BAB 4. ANALISIS DAN PEMBAHASAN
+### BAB 5. PENUTUP
+### BAB 1. PENDAHULUAN
+### BAB 2. TINJAUAN PUSTAKA
+### BAB 3. METODE PENELITIAN
+### BAB 4. ANALISIS DAN PEMBAHASAN
+### BAB 5. PENUTUP
+
+=== BAB TITLES in 2023 ===
+**BAB 1**
+**BAB 2**
+Bab 1 Pendahuluan
+Bab ini terdiri dari 4 (empat) sub bab berikut ini:
+Bab 2 Tinjauan Pustaka dan Pengembangan Hipotesis
+Bab ini terdiri dari sub bab berikut ini:
+## Bab 3 Metode Penelitian
+Bab ini terdiri dari sub bab berikut ini:
+Bab 5 Penutup
+Bab ini terdiri dari sub bab berikut ini:
+**BAB 3 TATA CARA PENULISAN**
+**BAB 4**
+**BAB 5**
+## **BAB 6**
+## **BAB 1. PENDAHULUAN**
+## **BAB 2. TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS**
+## **BAB 3. METODE PENELITIAN**
+## **BAB 4. ANALISIS DAN PEMBAHASAN**
+## **BAB 5. PENUTUP**
+## **BAB 1. PENDAHULUAN**
+## **BAB 2. TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS**
+## **BAB 3. METODE PENELITIAN**
+## **BAB 4. ANALISIS DAN PEMBAHASAN**
+## **BAB 5. PENUTUP**
+## **BAB 1. PENDAHULUAN**
+## **BAB 2. TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS**
+## **BAB 3. METODE PENELITIAN**
+## **BAB 4. ANALISIS DAN PEMBAHASAN**
+## **BAB 5. PENUTUP**
+
+=== SK DEKAN ===
+2022: Pedoman ini disahkan penggunaannya melalui SK Dekan Fakultas Ekonomi dan
+2023: Pedoman ini disahkan penggunaannya melalui SK Dekan Fakultas Ekonomi dan Bisnis UKRIDA dengan No. 350a/SK/UKKW/FEB/D/VI/2023 dan wajib digunakan oleh seluruh sivitas akademika Fakultas Ekonomi dan Bisnis UKRIDA sebagai pedoman penyusunan Tugas Akhir.
+
+=== SYARAT SKS & IPK ===
+2022 [L68]: a. Telah menyelesaikan minimum 130 sks dengan indeks prestasi kumulatif
+2022 [L70]: (IPK) minimal 2.00.
+2022 [L74]: b. Telah mengikuti dan lulus mata kuliah Metode Riset dengan nilai minimal
+2022 [L84]: 130 sks.
+2022 [L1315]: • Perolehan SKS minimal 138 SKS
+2023 [L25]: - a. Telah menyelesaikan minimum 126 sks dengan indeks prestasi kumulatif (IPK) minimal 3,00.
+2023 [L29]: - b. Telah mengikuti dan lulus mata kuliah Metode Riset dengan nilai minimal C
+2023 [L33]: - a. Memiliki transkrip akademik atau rekapitulasi akademik terakhir yang membuktikan bahwa mahasiswa tersebut telah menyelesaikan minimum 126 sks.
+2023 [L699]: - Perolehan SKS minimal 138 SKS
+
+=== SIMILARITAS / TURNITIN / PLAGIARISME ===
+2022: dipertanggungjawabkan. Skripsi juga harus bebas dari unsur plagiarisme.
+2022: • Menyerahkan bukti cek Turnitin. Maksimal % plagiarism adalah 35%. Lebih dari
+2023: Penulisan Tugas Akhir dilakukan sebagai salah satu persyaratan formal untuk mendapatkan gelar Strata Satu (S1). Oleh karena itu, mahasiswa Program S1 Fakultas Ekonomi dan Bisnis UKRIDA yang akan menyelesaikan masa studinya, wajib untuk menyusun Tugas Akhir. Selama penyusunan Tugas Akhir, mahasiswa dipandu oleh dosen pembimbing yang sesuai dengan konsentrasi dari mahasiswa tersebut. Semua data dan informasi yang dimuat di dalam Tugas Akhir harus akurat dan dapat dipertanggungjawabkan. Tugas Akhir juga harus bebas dari unsur plagiarisme.
+2023: - Menyerahkan bukti cek Turnitin. Maksimal % plagiarism adalah 30%. Lebih dari itu, mahasiswa tidak diperkenankan mengikuti sidang Tugas Akhir dan komprehensif.
+
+=== FORMATTING (MARGIN, FONT, SPASI) ===
+2022: Adapun bahan sampul skripsi dan kertas yang digunakan adalah sebagai
+2022: akhir skripsi menggunakan kertas HVS berwarna putih polos dengan berat 80
+2022: gram dan ukuran kertas A4 (Panjang 29,7 cm dan lebar 21,0 cm). Naskah
+2022: skripsi hanya dicetak pada satu sisi kertas dan tidak boleh bolak balik.
+2022: Untuk memisahkan antar bab digunakan kertas HVS berwarna kuning matahari
+2022: tengah kertas.
+2022: a. Posisi penempatan teks pada tepi kertas:
+2022: • Batas kiri : 4 cm (termasuk 1 cm untuk penjilidan) dari tepi kertas
+2022: • Batas kanan : 3 cm dari tepi kertas
+2022: • Batas atas : 3 cm dari tepi kertas
+2022: • Batas bawah : 3 cm dari tepi kertas
+2022: ### b. Huruf menggunakan jenis huruf Times New Roman dengan ukuran font 12 dan
+2022: menggunakan huruf miring. Ketentuan ini berlaku untuk seluruh naskah skripsi.
+2022: c. Judul skripsi dan judul bab diketik dengan huruf besar semua dan di bold (termasuk
+2022: d. Untuk sub judul dan sub-sub judul, huruf pertama dari setiap kata saja yang besar
+2022: dan di bold. Kata penghubung gunakan huruf kecil semua.
+2022: e. Pengetikan seluruh naskah skripsi dilakukan dengan jarak 1,5 spasi antar baris.
+2022: satu spasi antar baris dengan indensi (masuk) 5 ketukan ke kanan dan ke kiri.
+2022: atas tabel, dan setiap katanya di awali dengan huruf besar (kecuali kata
+2022: ### i. Huruf yang tercetak dari printer harus berwarna hitam pekat dan seragam.
+2022: 2. Letak: tengah dari tepi bawah kertas.
+2022: ### 2. Letak: sudut kanan bawah kertas. Pada bagian ini, pilih insert page number
+2022: ### Roman ukuran font 10 dan dicetak tebal). Hal ini berlaku pula untuk penomoran
+2022: a. Semua huruf dicetak dengan tinta kuning emas dengan spasi 1,5 dan ukuran sesuai
+2022: ### ditulis dengan menggunakan huruf miring (italic). Contoh: efficiency. Penulisan
+2022: perusahaan tidak perlu ditulis dengan huruf miring (italic). Contoh: PT Win Sukses
+2022: serta menggunakan jarak satu spasi antar baris dengan indensi (masuk) 5
+2022: spasi. Contoh dari kutipan langsung lebih dari tiga baris adalah sebagai berikut:
+2022: diterbitkan pada tahun yang sama, maka tahunnya diikuti dengan huruf a, b, dan
+2022: dengan jarak 5 spasi dari margin kiri baris pertama dengan jarak antar baris 1,5 spasi.
+2022: huruf.
+2023: - a. Posisi penempatan teks pada tepi kertas:
+2023: - Batas kiri : 4 cm (termasuk 1 cm untuk penjilidan) dari tepi kertas
+2023: - Batas kanan : 3 cm dari tepi kertas
+2023: - Batas atas : 3 cm dari tepi kertas
+2023: - Batas bawah : 3 cm dari tepi kertas
+2023: - b. Huruf menggunakan jenis huruf _Times New Roman_ dengan ukuran font 12 dan diketik rapi (rata kiri kanan atau _justify_ ). Semua kata-kata asing diketik dengan menggunakan huruf miring. Ketentuan ini berlaku untuk seluruh naskah Tugas Akhir.
+2023: - c. Judul Tugas Akhir dan judul bab diketik dengan huruf besar semua dan di bold (termasuk kata penghubung)
+2023: - d. Untuk sub judul dan sub-sub judul, huruf pertama dari setiap kata saja yang besar dan di bold. Kata penghubung gunakan huruf kecil semua.
+2023: - e. Pengetikan seluruh naskah Tugas Akhir dilakukan dengan jarak 1,5 spasi antar baris. Khusus untuk kutipan langsung yang lebih dari 3 baris, pengetikannya diperlakukan seperti alinea baru, diawali dan diakhiri dengan 2 tanda kutip, menggunakan jarak satu spasi antar baris dengan indensi (masuk) 5 ketukan ke kanan dan ke kiri.
+2023: - g. Tabel dan gambar dibuat di tengah-tengah halaman naskah. Judul tabel diketik di atas tabel, dan setiap katanya di awali dengan huruf besar (kecuali kata penghubung). Jika isi tabel merupakan data primer, maka keterangan mengenai sumbernya tidak perlu dituliskan. Jika isi tabel merupakan data sekunder, maka wajib dituliskan sumbernya. Sedangkan untuk judul gambar diketik di bawah gambar. Jika gambar dibuat sendiri oleh penulis, maka keterangan mengenai sumbernya tidak perlu dituliskan. Tetapi jika gambar diperoleh dari sumber lain, maka sumbernya harus dituliskan.
+2023: - i. Huruf yang tercetak dari _printer_ harus berwarna hitam pekat dan seragam.
+2023: 2. Letak: tengah dari tepi bawah kertas.
+2023: 2. Letak: sudut kanan bawah kertas. Pada bagian ini, pilih _insert page number_ kemudian _bottom of page_ , dan aktifkan pilihan pada _Accent Bar 4_ . Kemudian ganti tulisan **_page_** dengan tulisan **Universitas Kristen Krida Wacana** ( _Times New Roman_ ukuran font 10 dan dicetak tebal). Hal ini berlaku pula untuk penomoran halaman bab baru. Berikut ini adalah gambar penempatan nomor halaman yang dimaksud:
+2023: - a. Semua huruf dicetak dengan tinta kuning emas dengan spasi 1,5 dan ukuran sesuai dengan contoh pada lampiran 3.
+2023: Penulisan istilah asing (kata yang berasal dari bahasa asing atau bahasa daerah) ditulis dengan menggunakan huruf miring _(italic)._ Contoh: _efficiency_ . Penulisan istilah asing yang diikuti dengan terjemahannya (istilah Indonesia) maka penulisan yang benar adalah sebagai berikut: akuntansi ( _accounting_ ), bukan _accounting_ (akuntansi). Istilah yang mengacu pada nama produk, lembaga, atau nama perusahaan tidak perlu ditulis dengan huruf miring ( _italic_ ). Contoh: PT Win Sukses
+2023: Bila panjang kutipan langsung lebih dari tiga baris maka pengetikan kutipan itu diperlakukan seperti alinea baru, diawali dan diakhiri dengan dua tanda kutip, serta menggunakan jarak satu spasi antar baris dengan indensi (masuk) 5 ketukan. Jarak antara kalimat sebelum dan setelah kutipan langsung adalah dua spasi. Contoh dari kutipan langsung lebih dari tiga baris adalah sebagai berikut: Secara lebih teknis, Hartanto (2009) mengatakan bahwa :
+2023: - Bila referensi yang digunakan lebih dari satu dan oleh penulis yang sama yang diterbitkan pada tahun yang sama, maka tahunnya diikuti dengan huruf a, b, dan seterusnya. Contohnya adalah sebagai berikut: Tarigan (2014a), dan Tarigan (2014b).
+2023: jarak 5 spasi dari _margin_ kiri baris pertama dengan jarak antar baris 1,5 spasi. Kutipan dari Tugas Akhir, diktat/ _fotocopy_ atau catatan kuliah tidak boleh dicantumkan pada Daftar Pustaka.
+2023: 7. Nilai kelulusan Ujian Tugas Akhir dan Komprehensif dinyatakan dalam bentuk huruf.

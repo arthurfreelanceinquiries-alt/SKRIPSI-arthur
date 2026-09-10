@@ -1,0 +1,989 @@
+=== MEANINGFUL DIFF ===
+replace (2022 lines 0-2 vs 2023 lines 0-1) ===
+--- 2022 ---
+BUKU PEDOMAN PENYUSUNAN SKRIPSI
+FAKULTAS EKONOMI DAN BISNIS UNIVERSITAS KRISTEN KRIDA WACANA
+--- 2023 ---
+4RISTEN<br>UKRIDA<br>
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 5-31 vs 2023 lines 4-10) ===
+--- 2022 ---
+Skripsi adalah karya ilmiah yang disusun menurut kaidah keilmuan dan ditulis
+berdasarkan kaidah Bahasa Indonesia, di bawah pengawasan atau pengarahan dosen
+pembimbing, untuk memenuhi kriteria-kriteria kualitas yang telah ditetapkan sesuai
+keilmuannya masing-masing. Skripsi terdiri dari 3 bagian utama, yaitu: (1) Awal; (2)
+Isi; dan (3) Akhir.
+Penulisan skripsi dilakukan sebagai salah satu persyaratan formal untuk
+mendapatkan gelar Strata Satu (S1). Oleh karena itu, mahasiswa Program S1 Fakultas
+Ekonomi dan Bisnis UKRIDA yang akan menyelesaikan masa studinya, wajib untuk
+menyusun skripsi. Selama penyusunan skripsi, mahasiswa dipandu oleh dosen
+pembimbing yang sesuai dengan konsentrasi dari mahasiswa tersebut. Semua data dan
+informasi yang dimuat di dalam Skripsi harus akurat dan dapat
+dipertanggungjawabkan. Skripsi juga harus bebas dari unsur plagiarisme.
+Skripsi merupakan bagian dari koleksi Perpustakaan UKRIDA. Dalam rangka
+mendokumentasikan seluruh koleksi skripsi tersebut (baik dalam bentuk hardcopy atau
+softcopy), maka diperlukan suatu pedoman penyusunan skripsi. Pedoman ini disusun
+oleh Tim Pedoman Penyusunan Skripsi, dan diterbitkan dengan tujuan untuk
+memberikan arahan kepada penulisan skripsi dan agar tercipta keseragaman penulisan
+skripsi di Fakultas Ekonomi dan Bisnis UKRIDA.
+Pedoman ini disahkan penggunaannya melalui SK Dekan Fakultas Ekonomi dan
+Bisnis UKRIDA 221/SK/UKKW/FEB/D/IV/2022 dan wajib digunakan oleh seluruh
+sivitas akademika Fakultas Ekonomi dan Bisnis UKRIDA sebagai pedoman
+penyusunan skripsi.
+1.2. Persyaratan Penyusunan Skripsi
+Mahasiswa Fakultas Ekonomi dan Bisnis Program S-1 yang dapat mengajukan
+permohonan penyusunan skripsi adalah mereka yang telah memenuhi persyaratan
+sebagai berikut:
+--- 2023 ---
+Tugas Akhir merupakan karya ilmiah yang disusun menurut kaidah keilmuan dan ditulis berdasarkan kaidah Bahasa Indonesia, di bawah pengawasan atau pengarahan dosen pembimbing, untuk memenuhi kriteria-kriteria kualitas yang telah ditetapkan sesuai keilmuannya masing-masing. Tugas Akhir terdiri dari 3 bagian utama, yaitu: (1) Awal; (2) Isi; dan (3) Akhir.
+Penulisan Tugas Akhir dilakukan sebagai salah satu persyaratan formal untuk mendapatkan gelar Strata Satu (S1). Oleh karena itu, mahasiswa Program S1 Fakultas Ekonomi dan Bisnis UKRIDA yang akan menyelesaikan masa studinya, wajib untuk menyusun Tugas Akhir. Selama penyusunan Tugas Akhir, mahasiswa dipandu oleh dosen pembimbing yang sesuai dengan konsentrasi dari mahasiswa tersebut. Semua data dan informasi yang dimuat di dalam Tugas Akhir harus akurat dan dapat dipertanggungjawabkan. Tugas Akhir juga harus bebas dari unsur plagiarisme.
+Laporan Tugas Akhir merupakan bagian dari koleksi Perpustakaan UKRIDA sebagai dokumentasi. Oleh karena itu, diperlukan suatu pedoman penyusunan Tugas Akhir. Pedoman ini disusun oleh Tim Pedoman Penyusunan Tugas Akhir, dan diterbitkan dengan tujuan untuk memberikan arahan kepada penulisan Tugas Akhir dan agar tercipta keseragaman penulisan Tugas Akhir di Fakultas Ekonomi dan Bisnis UKRIDA.
+Pedoman ini disahkan penggunaannya melalui SK Dekan Fakultas Ekonomi dan Bisnis UKRIDA dengan No. 350a/SK/UKKW/FEB/D/VI/2023 dan wajib digunakan oleh seluruh sivitas akademika Fakultas Ekonomi dan Bisnis UKRIDA sebagai pedoman penyusunan Tugas Akhir.
+1.2. Persyaratan Penyusunan Tugas Akhir
+Mahasiswa Fakultas Ekonomi dan Bisnis Program S-1 yang dapat mengajukan permohonan penyusunan Tugas Akhir adalah mereka yang telah memenuhi persyaratan sebagai berikut:
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 32-36 vs 2023 lines 11-13) ===
+--- 2022 ---
+a. Telah menyelesaikan minimum 130 sks dengan indeks prestasi kumulatif
+(IPK) minimal 2.00.
+b. Telah mengikuti dan lulus mata kuliah Metode Riset dengan nilai minimal
+C
+--- 2023 ---
+a. Telah menyelesaikan minimum 126 sks dengan indeks prestasi kumulatif (IPK) minimal 3,00.
+b. Telah mengikuti dan lulus mata kuliah Metode Riset dengan nilai minimal C
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 37-77 vs 2023 lines 14-32) ===
+--- 2022 ---
+a. Memiliki transkrip akademik atau rekapitulasi akademik terakhir yang
+membuktikan bahwa mahasiswa tersebut telah menyelesaikan minimum
+130 sks.
+b. Terdaftar sebagai mahasiswa aktif pada semester yang bersangkutan,
+dibuktikan dengan Kartu Rencana Studi (KRS)
+1.3. Prosedur Penyusunan Skripsi
+a. Mahasiswa mendaftar mata kuliah skripsi/tugas akhir pada saat pendaftaran
+KRS.
+b. Mahasiswa mengisi Formulir Permohonan Penyusunan Skripsi pada situs
+cutt.ly/skripsifeb. Di dalam formulir tersebut, terdapat bagian untuk mengisi
+nama pembimbing Skripsi yang diinginkan.
+c. Formulir yang telah diisi disertai dengan outline skripsi dan persyaratan
+lainnya. Outline skripsi terdiri dari: rancangan judul, latar belakang penelitian
+dan perumusan masalah.
+d. Ketua Program Studi menentukan dosen pembimbing berdasarkan permintaan
+dari mahasiswa dan sesuai dengan kepakaran dosen yang bersangkutan.
+Namun apabila kuota pembimbing yang diminta sudah penuh, maka
+Ketua Program Studi akan menentukan dosen pembimbing yang lain.
+e. Setelah nama dosen pembimbing diumumkan, selanjutnya mahasiswa
+menyusun proposal skripsi dengan bimbingan dari dosen pembimbing yang
+telah ditunjuk. Proposal skripsi terdiri dari Bab 1 sampai dengan Bab 3
+f. Apabila proposal skripsi sudah selesai disusun, maka selanjutnya mahasiswa
+melakukan pendaftaran seminar proposal pada situs cutt.ly/skripsifeb untuk
+dijadwalkan seminar proposal.
+g. Setelah jadwal seminar proposal ditentukan, maka pada tanggal yang telah
+ditentukan, proposal skripsi diseminarkan secara terbuka dengan didampingi
+oleh dosen pembimbing dan dosen pendamping.
+h. Setelah proposal skripsi disetujui oleh dosen pembimbing dan dosen
+pendamping, maka penyusunan skripsi dapat diteruskan kembali.
+i. Setelah skripsi selesai disusun dan disetujui oleh dosen pembimbing, maka
+selanjutnya mahasiswa dapat mengajukan permohonan untuk ujian skripsi dan
+komprehensif kepada BLAM.
+1.4. Proposal Skripsi
+Proposal skripsi merupakan suatu rancangan pokok penelitian yang akan
+dilakukan oleh penulis skripsi. Proposal ini mengacu kepada permasalahan aktual dan
+memiliki manfaat teoritis maupun praktis. Proposal ini juga harus diseminarkan untuk
+penyempurnaan, sehingga akan sangat membantu mahasiswa dalam melaksanakan
+penelitian di lapangan sekaligus membantu kelancaran mengumpulkan bahan
+skripsinya. Proposal skripsi yang diajukan terdiri dari dua bagian yaitu: bagian awal
+dan bagian isi. Berikut ini hal-hal yang dimuat dalam proposal skripsi:
+--- 2023 ---
+a. Memiliki transkrip akademik atau rekapitulasi akademik terakhir yang membuktikan bahwa mahasiswa tersebut telah menyelesaikan minimum 126 sks.
+b. Terdaftar sebagai mahasiswa aktif pada semester yang bersangkutan, dibuktikan dengan Kartu Rencana Studi (KRS)
+1.3. Prosedur Penyusunan Tugas Akhir
+a. Mahasiswa mendaftar mata kuliah Tugas Akhir/tugas akhir pada saat pendaftaran KRS.
+b. Mahasiswa mengisi Formulir Permohonan Penyusunan Tugas Akhir pada situs cutt.ly/tugasakhirfeb. Di dalam formulir tersebut, terdapat bagian untuk mengisi nama pembimbing Tugas Akhir yang diinginkan.
+c. Formulir yang telah diisi disertai dengan outline Tugas Akhir dan persyaratan lainnya. Outline Tugas Akhir terdiri dari: rancangan judul, latar belakang penelitian dan perumusan masalah.
+d. Ketua Program Studi menentukan dosen pembimbing berdasarkan permintaan dari mahasiswa dan sesuai dengan kepakaran dosen yang bersangkutan. Namun apabila kuota pembimbing yang diminta sudah penuh, maka Ketua Program Studi akan menentukan dosen pembimbing yang lain.
+e. Setelah nama dosen pembimbing diumumkan, selanjutnya mahasiswa menyusun proposal Tugas Akhir dengan bimbingan dari dosen pembimbing yang telah ditunjuk. Proposal Tugas Akhir terdiri dari Bab 1 sampai dengan Bab 3
+f. Apabila proposal Tugas Akhir sudah selesai disusun, maka selanjutnya mahasiswa melakukan pendaftaran seminar proposal pada situs cutt.ly/tugasakhirfeb untuk dijadwalkan seminar proposal.
+g. Setelah jadwal seminar proposal ditentukan, maka pada tanggal yang telah ditentukan, proposal Tugas Akhir diseminarkan secara terbuka dengan didampingi oleh dosen pembimbing dan dosen pendamping.
+h. Setelah proposal Tugas Akhir disetujui oleh dosen pembimbing dan dosen pendamping, maka penyusunan Tugas Akhir dapat diteruskan kembali.
+i. Setelah Tugas Akhir selesai disusun dan disetujui oleh dosen pembimbing, maka selanjutnya mahasiswa dapat mengajukan permohonan untuk ujian Tugas Akhir dan komprehensif kepada BLAM.
+1.4. Ketentuan Tambahan
+a. Tugas Akhir mahasiswa harus terdiri dari minimal 50 halaman (BAB 1 sampai BAB 5)
+b. Mahasiswa wajib mensitasi karya ilmiah dari dosen Fakultas Ekonomi dan Bisnis UKRIDA disesuaikan dengan topik penelitian yang dikaji
+c. Mahasiswa wajib mensitasi minimal 5 artikel jurnal terindeks Sinta dan atau jurnal Internasional (khusus Tugas Akhir Skripsi)
+1.5. Proposal Tugas Akhir
+Proposal Tugas Akhir merupakan suatu rancangan pokok penelitian yang akan dilakukan oleh penulis Tugas Akhir. Proposal ini mengacu kepada permasalahan aktual dan memiliki manfaat teoritis maupun praktis. Proposal ini juga harus diseminarkan untuk penyempurnaan, sehingga akan sangat membantu mahasiswa dalam melaksanakan penelitian di lapangan sekaligus membantu kelancaran mengumpulkan bahan Tugas Akhirnya. Proposal Tugas Akhir yang diajukan terdiri dari dua bagian yaitu: bagian awal dan bagian isi. Berikut ini hal-hal yang dimuat dalam proposal Tugas Akhir:
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 78-81 vs 2023 lines 33-37) ===
+--- 2022 ---
+Bagian awal proposal skripsi terdiri dari:
+a. Halaman Judul Proposal Skripsi (Lihat lampiran 1)
+b. Halaman Persetujuan Proposal Skripsi (Lihat lampiran 2)
+--- 2023 ---
+Bagian awal proposal Tugas Akhir terdiri dari:
+a. Halaman Judul Proposal Tugas Akhir (Lihat lampiran 1)
+b. Halaman Persetujuan Proposal Tugas Akhir (Lihat lampiran 2)
+Tanda tangan wajib tanda tangan basah
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 118-129 vs 2023 lines 53-58) ===
+--- 2022 ---
+Berisi teori-teori yang dikemukakan oleh para ahli, konsep-konsep,
+definisi-definisi, atau proposisi-proposisi yang berkaitan dengan topik yang
+diteliti sehingga dapat dijadikan dasar dalam melakukan analisis.
+Pengungkapan hubungan teori dengan masalah yang diteliti harus
+dinyatakan secara jelas dan relevan dengan topik penelitian. Hal-hal yang
+harus diperhatikan dalam tinjauan pustaka adalah:
+Jumlah referensi minimal 20 acuan. Bahan-bahan yang dapat
+dijadikan referensi adalah text book, jurnal, makalah seminar, tesis,
+dan disertasi doktoral. Text book yang digunakan harus relevan
+dengan skripsi yang sedang disusun, dan merupakan edisi terbaru.
+Skripsi mahasiswa tidak boleh dijadikan referensi.
+--- 2023 ---
+Berisi teori-teori yang dikemukakan oleh para ahli, konsep-konsep, definisidefinisi, atau proposisi-proposisi yang berkaitan dengan topik yang diteliti sehingga dapat dijadikan dasar dalam melakukan analisis. Pengungkapan hubungan teori dengan masalah yang diteliti harus dinyatakan secara jelas dan relevan dengan topik penelitian. Hal-hal yang harus diperhatikan dalam tinjauan pustaka adalah:
+Jumlah referensi minimal 20 acuan. Bahan-bahan yang dapat dijadikan referensi adalah artikel jurnal, tesis, dan disertasi doktoral 5 tahun
+terakhir, text book yang digunakan harus relevan dengan Tugas Akhir
+yang sedang disusun dan merupakan edisi terbaru.
+Skripsi mahasiswa tidak boleh dijadikan referensi .
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 206-229 vs 2023 lines 94-100) ===
+--- 2022 ---
+Untuk penelitian bersifat kuantitatif dan menggunakan analisis statistik
+Pada bagian ini perlu diuraikan mengenai jenis analisis data yang akan
+digunakan (apakah menggunakan analisis regresi (parametrik) atau analisis
+statistik non parametrik), langkah-langkah analisis data sampai dengan
+tahap dilakukannya pengujian hipotesis. Apabila penelitian menerapkan
+analisis regresi (statistik parametrik), maka harus memenuhi beberapa
+persyaratan, yaitu: (i) uji validitas dan reliabilitas (apabila menggunakan
+kuesioner), dan (ii) uji asumsi klasik, yang terdiri dari uji normalitas, uji
+multikolinearitas, uji heteroskedastisitas, dan uji autokorelasi. Namun,
+apabila penelitian menggunakan statistik nonparametrik, maka tidak
+dituntut suatu persyaratan tertentu. Pada bagian ini, perlu dijelaskan pula
+software statistik yang digunakan, misalnya SPSS for Windows, Lisrel,
+atau Eviews.
+Untuk penelitian bersifat kualitatif atau studi kasus
+Pada bagian ini perlu dijelaskan mengenai langkah-langkah analisis data
+secara mendetail yang akan dilakukan oleh penulis, sehingga perumusan
+masalah dapat dijawab melalui analisis terhadap data tersebut.
+1.5. Jangka Waktu Penyusunan Skripsi
+Jangka waktu penyusunan skripsi paling lambat 2 (dua) semester terhitung sejak
+pendaftaran skripsi dilakukan. Apabila jangka waktu maksimum penyusunan skripsi
+telah terlampaui, maka mahasiswa tersebut harus mengajukan rancangan judul baru ke
+ketua program studi. Batas perpanjangan waktu yang dapat diberikan adalah sesuai
+dengan batas maksimum masa studi mahasiswa yang bersangkutan.
+--- 2023 ---
+<u>Untuk penelitian bersifat kuantitatif dan menggunakan analisis statistik Pada</u>
+bagian ini perlu diuraikan mengenai jenis analisis data yang akan digunakan (apakah menggunakan analisis regresi (parametrik) atau analisis statistik non parametrik), langkah-langkah analisis data sampai dengan tahap dilakukannya pengujian hipotesis. Apabila penelitian menerapkan analisis regresi (statistik parametrik), maka harus memenuhi beberapa persyaratan, yaitu: (i) uji validitas dan reliabilitas (apabila menggunakan kuesioner), dan (ii) uji asumsi klasik, yang terdiri dari uji normalitas, uji multikolinearitas, uji heteroskedastisitas, dan uji autokorelasi. Namun, apabila penelitian menggunakan statistik nonparametrik, maka tidak dituntut suatu persyaratan tertentu. Pada bagian ini, perlu dijelaskan pula software statistik yang digunakan, misalnya SPSS for Windows, Lisrel, atau Eviews.
+<u>Untuk penelitian bersifat kualitatif atau studi kasus</u>
+Pada bagian ini perlu dijelaskan mengenai langkah-langkah analisis data secara mendetail yang akan dilakukan oleh penulis, sehingga perumusan masalah dapat dijawab melalui analisis terhadap data tersebut.
+1.6. Jangka Waktu Penyusunan Tugas Akhir
+Jangka waktu penyusunan Tugas Akhir paling lambat 2 (dua) semester terhitung sejak pendaftaran Tugas Akhir dilakukan. Apabila jangka waktu maksimum penyusunan Tugas Akhir telah terlampaui, maka mahasiswa tersebut harus mengajukan rancangan judul baru ke ketua program studi. Batas perpanjangan waktu yang dapat diberikan adalah sesuai dengan batas maksimum masa studi mahasiswa yang bersangkutan.
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+insert (2022 lines 237-237 vs 2023 lines 108-109) ===
+--- 2022 ---
+
+--- 2023 ---
+Tanda tangan dosen pembimbing dan Ketua Program Studi wajib tanda tangan basah
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+insert (2022 lines 238-238 vs 2023 lines 110-113) ===
+--- 2022 ---
+
+--- 2023 ---
+Pada bagian tanggal diisi tanngal pelaksanaan sidang Tugas Akhir
+Urutan penguji adalah: Ketua penguji, Penguji 1 yang merupakan mantan pembimbing, Penguji 2
+Tanda tangan penguji wajib tanda tangan basah dan tidak boleh diwakilkan
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+insert (2022 lines 242-242 vs 2023 lines 117-119) ===
+--- 2022 ---
+
+--- 2023 ---
+Pada abstrak diberikan tanda tangan mahasiswa dan dosen pembimbing
+Tanda tangan wajib tanda tangan basah
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 267-273 vs 2023 lines 144-150) ===
+--- 2022 ---
+5. Metode Analisis Data
+Bab 4 Analisis dan Pembahasan
+Untuk penelitian kuantitatif yang menggunakan data sekunder dan analisis regresi:
+1. Deskripsi Sampel Penelitian
+2. Statistik Deskriptif → berisi mean, median, minimum, maksimum, dan
+standar deviasi dari masing-masing variabel penelitian.
+--- 2023 ---
+5. Metode Analisis
+Data Bab 4 Analisis dan
+Pembahasan
+<u>Untuk penelitian kuantitatif yang menggunakan data sekunder dan analisis regresi:</u>
+1. Deskripsi Akhir Sampel Penelitian
+2. Statistik Deskriptif → berisi mean, median, minimum, maksimum, dan standar deviasi dari masing-masing variabel penelitian.
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 276-277 vs 2023 lines 153-154) ===
+--- 2022 ---
+Untuk penelitian kuantitatif yang menggunakan data kuesioner dan analisis regresi:
+--- 2023 ---
+<u>Untuk penelitian kuantitatif yang menggunakan data kuesioner dan analisis regresi:</u>
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 283-286 vs 2023 lines 160-162) ===
+--- 2022 ---
+Untuk penelitian kuantitatif yang menggunakan analisis statistik non parametrik:
+1. Demografi Responden (jika menggunakan kuesioner) atau Deskripsi
+Sampel Penelitian (Jika tidak menggunakan kuesioner)
+--- 2023 ---
+<u>Untuk penelitian kuantitatif yang menggunakan analisis statistik non parametrik:</u>
+1. Demografi Responden (jika menggunakan kuesioner) atau Deskripsi Sampel Penelitian (Jika tidak menggunakan kuesioner)
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 290-303 vs 2023 lines 166-171) ===
+--- 2022 ---
+Untuk penulisan kesimpulan hipotesis menggunakan format berikut ini :
+| H1 : Variabel X1 berpengaruh positif terhadap variabel Y (penulisan untuk hasil yang | |
+| --- | --- |
+| menunjukkan ada pengaruh variabel independen terhadap variabel dependen dengan melihat | |
+| nilai signifikansi ( p value) dan arah pengaruh positif atau negatif dengan mengacu pada | |
+| nilai koefisien.) | |
+| H1 : Variabel X1 tidak berpengaruh terhadap variabel Y (penulisan untuk hasil yang | |
+| --- | --- |
+| menunjukkan tidak ada pengaruh variabel independen terhadap variabel dependen dengan | |
+| melihat nilai signifikansi ( p value)) | |
+Untuk penelitian kualitatif atau studi kasus:
+1. Gambaran Umum Obyek Penelitian → Sejarah singkat perusahaan, struktur
+organisasi perusahaan, serta bidang usaha perusahaan.
+--- 2023 ---
+<u>Untuk penulisan kesimpulan hipotesis menggunakan format berikut ini :</u>
+H1 : Variabel X1 berpengaruh positif terhadap variabel Y (penulisan untuk hasil yang menunjukkan ada pengaruh variabel independen terhadap variabel dependen dengan melihat nilai signifikansi (p value ) dan arah pengaruh positif atau negatif dengan mengacu pada nilai koefisien).
+H1 : Variabel X1 tidak berpengaruh terhadap variabel Y (penulisan untuk hasil yang menunjukkan tidak ada pengaruh variabel independen terhadap variabel dependen dengan melihat nilai signifikansi (p value ).
+<u>Untuk penelitian kualitatif atau studi kasus:</u>
+1. Gambaran Umum Obyek Penelitian → Sejarah singkat perusahaan, struktur organisasi perusahaan, serta bidang usaha perusahaan.
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 333-364 vs 2023 lines 185-191) ===
+--- 2022 ---
+Lampiran merupakan data atau pelengkap atau hasil olahan yang menunjang
+penulisan skripsi, tetapi tidak dicantumkan di dalam isi skripsi, karena akan
+mengganggu kesinambungan pembacaan. Lampiran yang perlu disertakan
+contohnya: tabulasi data, daftar pertanyaan, gambar, grafik, desain, dan
+sebagainya.
+c. Daftar Riwayat Hidup Penulis Skripsi
+Merupakan daftar riwayat hidup dari penyusun skripsi.
+BAB 3
+TATA CARA PENULISAN
+3.1. Sampul Depan
+Adapun bahan sampul skripsi dan kertas yang digunakan adalah sebagai
+berikut:
+a. Sampul depan
+Untuk skripsi yang belum diuji, sampul depan menggunakan karton buffalo
+atau yang sejenisnya dengan warna kuning matahari (untuk program studi
+Akuntansi) atau warna kuning kunyit (untuk program studi Manajemen). Untuk
+skripsi yang telah lulus uji dan diperbaiki, sampul depannya menggunakan
+hardcover kuning matahari (untuk program studi Akuntansi) / kuning kunyit
+(untuk program studi Manajemen). Logo UKRIDA diletakkan di bagian tengah
+sampul dengan ukuran 5cm x 5cm.
+b. Naskah skripsi
+Selain sampul depan skripsi, semua bagian awal, bagian isi, maupun bagian
+akhir skripsi menggunakan kertas HVS berwarna putih polos dengan berat 80
+gram dan ukuran kertas A4 (Panjang 29,7 cm dan lebar 21,0 cm). Naskah
+skripsi hanya dicetak pada satu sisi kertas dan tidak boleh bolak balik.
+c. Lain-lain
+Untuk memisahkan antar bab digunakan kertas HVS berwarna kuning matahari
+(untuk program studi Akuntansi) atau kuning kunyit (untuk program studi
+Manajemen), dimana terdapat logo UKRIDA ukuran 5cm x 5cm pada bagian
+tengah kertas.
+3.2. Pengetikan
+--- 2023 ---
+Lampiran merupakan data atau pelengkap atau hasil olahan yang menunjang penulisan Tugas Akhir, tetapi tidak dicantumkan di dalam isi Tugas Akhir, karena akan
+mengganggu kesinambungan pembacaan. Lampiran yang perlu disertakan contohnya: tabulasi data, daftar pertanyaan, gambar, grafik, desain, dan sebagainya.
+c. Daftar Riwayat Hidup Penulis Tugas Akhir
+Merupakan daftar riwayat hidup dari penyusun Tugas Akhir.
+BAB 3 TATA CARA PENULISAN
+3.1. Pengetikan
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 398-399 vs 2023 lines 206-207) ===
+--- 2022 ---
+3.3. Penomoran Halaman
+--- 2023 ---
+3.2. Penomoran Halaman
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 406-425 vs 2023 lines 214-222) ===
+--- 2022 ---
+1. Digunakan untuk bagian isi skripsi dan bagian akhir skripsi (khusus daftar
+pustaka saja).
+2. Letak: sudut kanan bawah kertas. Pada bagian ini, pilih insert page number
+kemudian bottom of page, dan aktifkan pilihan pada Accent Bar 4. Kemudian
+ganti tulisan page dengan tulisan Universitas Kristen Krida Wacana (Times New
+Roman ukuran font 10 dan dicetak tebal). Hal ini berlaku pula untuk penomoran
+halaman bab baru. Berikut ini adalah gambar penempatan nomor halaman yang
+dimaksud:
+3.4. Halaman Sampul
+Halaman Sampul skripsi, memiliki ketentuan sebagai berikut:
+a. Semua huruf dicetak dengan tinta kuning emas dengan spasi 1,5 dan ukuran sesuai
+dengan contoh pada lampiran 3.
+b. Diketik simetris di tengah (center). Judul tidak diperkenankan menggunakan
+singkatan, kecuali nama atau istilah (contoh: PT, UD, CV, PSAK, UU) dan tidak
+disusun dalam kalimat tanya serta tidak perlu ditutup dengan tanda baca apa pun.
+c. Logo UKRIDA: Logo Universitas Kristen Krida Wacana dengan ukuran 5 cm x 5
+cm dan dicetak dengan warna emas
+d. Tahun disahkannya skripsi ditulis dalam angka dengan format 4 digit, misalnya:
+2015
+--- 2023 ---
+1. Digunakan untuk bagian isi Tugas Akhir dan bagian akhir Tugas Akhir (khusus daftar pustaka saja).
+2. Letak: sudut kanan bawah kertas. Pada bagian ini, pilih insert page number kemudian bottom of page , dan aktifkan pilihan pada Accent Bar 4 . Kemudian ganti tulisan page dengan tulisan Universitas Kristen Krida Wacana ( Times New Roman ukuran font 10 dan dicetak tebal). Hal ini berlaku pula untuk penomoran halaman bab baru. Berikut ini adalah gambar penempatan nomor halaman yang dimaksud:
+3.3. Halaman Sampul
+Halaman Sampul Tugas Akhir, memiliki ketentuan sebagai berikut:
+a. Semua huruf dicetak dengan tinta kuning emas dengan spasi 1,5 dan ukuran sesuai dengan contoh pada lampiran 3.
+b. Diketik simetris di tengah ( center ). Judul tidak diperkenankan menggunakan singkatan, kecuali nama atau istilah (contoh: PT, UD, CV, PSAK, UU) dan tidak disusun dalam kalimat tanya serta tidak perlu ditutup dengan tanda baca apa pun.
+c. Logo UKRIDA: Logo Universitas Kristen Krida Wacana dengan ukuran 5 cm x 5 cm dan dicetak dengan warna emas
+d. Tahun disahkannya Tugas Akhir ditulis dalam angka dengan format 4 digit, misalnya: 2015
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 426-441 vs 2023 lines 223-228) ===
+--- 2022 ---
+3.5. Persamaan Matematika
+Persamaan matematika lebih baik ditulis dalam bentuk yang lazim dalam
+matematika. Semua persamaan matematika ditulis dengan rata kiri kanan (justify) dan
+harus mempunyai nomor yang diletakkan di sebelahnya. jika rumus terlalu panjang
+maka penomoran ditempatkan di sebelah kanan bagian bawah rumus. Contohnya
+adalah sebagai berikut:
+n =  ARi,t
+…………………………………………………………….…… (2.1)
+CARi,t
+i
+Keterangan: 2 artinya persamaan itu ditulis pada bab 2, sedangkan 1 artinya persamaan
+itu adalah persamaan matematika urutan pertama yang ditulis pada bab tersebut.
+3.6. Bahasa
+Bahasa mencakup struktur dan bentuk kalimat, kata, tanda baca, dan
+pengutipan.
+--- 2023 ---
+3.4. Persamaan Matematika
+Persamaan matematika lebih baik ditulis dalam bentuk yang lazim dalam matematika. Semua persamaan matematika ditulis dengan rata kiri kanan (justify ) dan harus mempunyai nomor yang diletakkan di sebelahnya. jika rumus terlalu panjang maka penomoran ditempatkan di sebelah kanan bagian bawah rumus. Contohnya adalah sebagai berikut:
+Keterangan: 2 artinya persamaan tersebut ditulis pada bab 2, sedangkan 1 artinya persamaan tersebut adalah persamaan matematika urutan pertama yang ditulis pada bab tersebut.
+3.5. Bahasa
+Bahasa mencakup struktur dan bentuk kalimat, kata, tanda baca, dan pengutipan.
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 501-509 vs 2023 lines 256-259) ===
+--- 2022 ---
+Kutipan langsung tidak boleh diterjemahkan, tetapi perlu untuk diulas. Kutipan
+juga tidak diperbolehkan menggunakan buku terjemahan, tetapi harus
+menggunakan buku aslinya.
+3.7. Penulisan Nama Penulis Referensi
+Penulisan nama mencakup penulisan nama dari orang yang karyanya dikutip
+dalam skripsi. Berkaitan dengan hal tersebut, ada beberapa hal yang perlu diperhatikan,
+yaitu (1) nama penulis referensi pada uraian, (2) penempatan nama pada uraian, (3)
+penulisan daftar pustaka, dan (4) lain-lain.
+--- 2023 ---
+Kutipan langsung tidak boleh diterjemahkan, tetapi perlu untuk diulas. Kutipan juga tidak diperbolehkan menggunakan buku terjemahan, tetapi harus menggunakan buku aslinya.
+3.6. Penulisan Nama Penulis Referensi
+Penulisan nama mencakup penulisan nama dari orang yang karyanya dikutip dalam Tugas Akhir. Berkaitan dengan hal tersebut, ada beberapa hal yang perlu diperhatikan, yaitu (1) nama penulis referensi pada uraian, (2) penempatan nama pada uraian, (3) penulisan daftar pustaka, dan (4) lain-lain.
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 565-599 vs 2023 lines 282-295) ===
+--- 2022 ---
+1. Nama Indonesia ditulis sebagaimana adanya. Bila nama Indonesia itu
+mencakup nama marga, atau nama-nama awal berupa singkatan, maka nama
+marga ditulis lebih dulu diikuti tanda koma dan nama singkatannya (misalnya:
+Nasution, A.H.).
+2. Nama asing ditulis dengan urutan nama keluarga (last/family name) yang dikuti
+dengan nama kecil (first name) atau nama baptis. Contohnya: Filippo, Edwin B.
+3. Cara penulisan nama pengarang seperti butir 1 dan 2 tidak berlaku bagi nama-
+nama Tionghoa karena pada nama Tionghoa unsur nama yang pertama
+merupakan nama famili. Jadi, nama-nama pengarang Tionghoa didalam daftar
+pustaka tidak perlu dibalik urutannya. Contoh: Kwik Kian Gie bukan Gie,
+Kwik Kian.
+4. Bila pengarang terdiri atas dua atau lebih nama asing, maka berlaku ketentuan
+butir 2 di atas. Contohnya: Hicks, Herbet G. dan Smith, Ray C.
+5. Bila seorang penulis menyusun lebih dari satu buku, maka daftar pustaka
+disusun berdasarkan tahun penerbitan yang paling tua.
+6. Bila seorang penulis dalam tahun yang sama menulis lebih dari satu buku, maka
+tahun penerbitan diberi catatan keterangan a, b, c dan sebagainya, misalnya:
+Geertz. 2013a.
+. 2013b.
+3.8. Teknik Penulisan Daftar Pustaka
+Penulisan referensi pada Daftar Pustaka dimaksudkan agar orang yang
+memerlukannya dapat dengan mudah menemukan dan membacanya. Penulisan Daftar
+Pustaka tidak diakhiri dengan tanda baca apa pun. Daftar Pustaka untuk skripsi paling
+sedikit harus 20 (dua puluh) referensi, dan disusun menurut abjad nama pengarang
+tanpa didahului oleh nomor urut atau garis pendek. Daftar pustaka juga harus
+bersumber dari referensi yang paling mutakhir.
+Apabila mengacu pada jurnal riset, maka sedapat mungkin jurnal terkini, kecuali
+bila tidak tersedia sesuai dengan topik skripsi atau untuk memperlihatkan benang
+merah hasil-hasil penelitian terdahulu. Baris kedua setiap sumber referensi ditulis
+dengan jarak 5 spasi dari margin kiri baris pertama dengan jarak antar baris 1,5 spasi.
+Kutipan dari skripsi, diktat/fotocopy atau catatan kuliah tidak boleh dicantumkan
+pada Daftar Pustaka.
+Contoh penulisan daftar pustaka untuk buku:
+Morgan, Daniel G. 2006. Microeconomic theory. Singapore: Prentice Hall.
+--- 2023 ---
+1. Nama Indonesia ditulis sebagaimana adanya. Bila nama Indonesia itu mencakup nama marga, atau nama-nama awal berupa singkatan, maka nama marga ditulis lebih dulu diikuti tanda koma dan nama singkatannya (misalnya: Nasution, A.H.).
+2. Nama asing ditulis dengan urutan nama keluarga (last/family name) yang dikuti dengan nama kecil ( first name) atau nama baptis. Contohnya: Filippo, Edwin B.
+3. Cara penulisan nama pengarang seperti butir 1 dan 2 tidak berlaku bagi namanama Tionghoa karena pada nama Tionghoa unsur nama yang pertama merupakan nama famili. Jadi, nama-nama pengarang Tionghoa didalam daftar pustaka tidak perlu dibalik urutannya. Contoh: Kwik Kian Gie bukan Gie, Kwik Kian.
+4. Bila pengarang terdiri atas dua atau lebih nama asing, maka berlaku ketentuan butir 2 di atas. Contohnya: Hicks, Herbet G. dan Smith, Ray C.
+5. Bila seorang penulis menyusun lebih dari satu buku, maka daftar pustaka disusun berdasarkan tahun penerbitan yang paling tua.
+6. Bila seorang penulis dalam tahun yang sama menulis lebih dari satu buku, maka tahun penerbitan diberi catatan keterangan a, b, c dan sebagainya, misalnya: Geertz. 2013a.
+<u>. 2013b.</u>
+3.7. Teknik Penulisan Daftar Pustaka
+Penulisan referensi pada Daftar Pustaka dimaksudkan agar orang yang memerlukannya dapat dengan mudah menemukan dan membacanya. Penulisan Daftar Pustaka tidak diakhiri dengan tanda baca apa pun. Daftar Pustaka untuk Tugas Akhir paling sedikit harus 20 (dua puluh) referensi, dan disusun menurut abjad nama pengarang tanpa didahului oleh nomor urut atau garis pendek. Daftar pustaka juga harus bersumber dari referensi yang paling mutakhir.
+Apabila mengacu pada jurnal riset, maka sedapat mungkin jurnal terkini, kecuali bila tidak tersedia sesuai dengan topik Tugas Akhir atau untuk memperlihatkan benang merah hasil-hasil penelitian terdahulu. Baris kedua setiap sumber referensi ditulis dengan
+jarak 5 spasi dari margin kiri baris pertama dengan jarak antar baris 1,5 spasi. Kutipan dari Tugas Akhir, diktat/ fotocopy atau catatan kuliah tidak boleh dicantumkan pada Daftar Pustaka.
+<u>Contoh penulisan daftar pustaka untuk buku:</u>
+Morgan, Daniel G. 2006. Microeconomic theory . Singapore: Prentice Hall.
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 600-604 vs 2023 lines 296-299) ===
+--- 2022 ---
+Freecoats 3rd edition. New York: Mc Graw Hill Book Publ. Co.
+Resmi, Siti dan Siregar, Josua. 2010. Perpajakan: Teori dan Kasus. Jakarta: Salemba
+Empat.
+Contoh penulisan daftar pustaka untuk jurnal/artikel:
+--- 2023 ---
+Freecoats 3<sup>rd</sup> edition. New York: Mc Graw Hill Book Publ. Co.
+Resmi, Siti dan Siregar, Josua. 2010. Perpajakan: Teori dan Kasus . Jakarta: Salemba Empat.
+<u>Contoh penulisan daftar pustaka untuk jurnal/artikel:</u>
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 606-609 vs 2023 lines 301-303) ===
+--- 2022 ---
+Aretz, K. dan Bartram, S. 2010. “Corporate hedging and shareholder value”. Journal
+of Financial Research 33: 317 – 371.
+Contoh penulisan referensi yang dikeluarkan oleh lembaga:
+--- 2023 ---
+Aretz, K. dan Bartram, S. 2010. “Corporate hedging and shareholder value”. Journal of Financial Research 33: 317 – 371.
+<u>Contoh penulisan referensi yang dikeluarkan oleh lembaga:</u>
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 611-612 vs 2023 lines 305-306) ===
+--- 2022 ---
+Contoh penulisan peraturan-peraturan:
+--- 2023 ---
+<u>Contoh penulisan peraturan-peraturan:</u>
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 613-625 vs 2023 lines 307-314) ===
+--- 2022 ---
+Contoh penulisan artikel dari koran/majalah:
+“Apakah globalisasi meningkatkan perekonomian dunia?”. Harian Kompas halaman
+4, Tanggal 26 Nopember 2007
+Contoh penulisan makalah/tesis/disertasi:
+Oktavia dan Martani, Dwi. 2013. “Penggunaan Derivatif Keuangan sebagai Sarana
+Penghindaran Pajak”. Simposium Nasional Akuntansi Ke-16, Manado –
+Sulawesi Utara.
+Siregar, Sylvia Veronica N.P. 2005. “Pengaruh Struktur Kepemilikan, Ukuran
+Perusahaan, dan Praktek Corporate Governance terhadap Pengelolaan Laba dan
+Kekeliruan Penilaian Pasar”. Disertasi Doktoral, Program Studi Ilmu
+Manajemen, Pascasarjana Fakultas Ekonomi dan Bisnis Universitas Indonesia.
+Contoh penulisan sumber referensi yang berasal dari wawancara:
+--- 2023 ---
+<u>Contoh penulisan artikel dari koran/majalah:</u>
+“Apakah globalisasi meningkatkan perekonomian dunia?”. Harian Kompas halaman 4, Tanggal 26 Nopember 2007
+<u>Contoh penulisan makalah/tesis/disertasi:</u>
+Oktavia dan Martani, Dwi. 2013. “Penggunaan Derivatif Keuangan sebagai Sarana Penghindaran Pajak”. Simposium Nasional Akuntansi Ke-16 , Manado – Sulawesi Utara.
+Siregar, Sylvia Veronica N.P. 2005. “Pengaruh Struktur Kepemilikan, Ukuran Perusahaan, dan Praktek Corporate Governance terhadap Pengelolaan Laba dan Kekeliruan Penilaian Pasar”. Disertasi Doktoral, Program Studi Ilmu Manajemen,
+Pascasarjana Fakultas Ekonomi dan Bisnis Universitas Indonesia .
+<u>Contoh penulisan sumber referensi yang berasal dari wawancara:</u>
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 627-628 vs 2023 lines 316-317) ===
+--- 2022 ---
+Contoh penulisan sumber referensi berupa artikel dari website :
+--- 2023 ---
+<u>Contoh penulisan sumber referensi berupa artikel dari website :</u>
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 630-631 vs 2023 lines 319-320) ===
+--- 2022 ---
+http://www.dept.usm.edu/~eda
+--- 2023 ---
+<u>http://www.dept.usm.edu/~eda</u>
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 639-651 vs 2023 lines 326-332) ===
+--- 2022 ---
+Mengisi formulir pendaftaran ujian skripsi dan komprehensif di BLAM
+Menyerahkan skripsi (softcover) sebanyak 3 buku
+enyerahkan fotocopi sertifikat sesuai konsentrasi yang telah ditentukan oleh Ketua
+Program Studi
+Menyerahkan bukti keikutsertaan dalam seminar proposal skripsi dengan jumlah
+yang ditentukan oleh Ketua Program Studi
+Menyerahkan bukti keikutsertaan dalam seminar/kuliah umum yang berkaitan
+dengan bidang ilmu yang ditempuhnya dengan jumlah yang ditentukan oleh Ketua
+Program Studi
+Menyerahkan surat keterangan kerja/magang (Persyaratan ini dikecualikan untuk
+mahasiswa MBKM, LK dan Asisten Dosen)
+Menyerahkan bukti bimbingan skripsi minimal 10x.
+--- 2023 ---
+Mengisi formulir pendaftaran ujian Tugas Akhir dan komprehensif di BLAM
+Μ enyerahkan fotocopy sertifikat sesuai konsentrasi yang telah ditentukan oleh Ketua Program Studi
+Menyerahkan bukti keikutsertaan dalam seminar proposal Tugas Akhir dengan jumlah yang ditentukan oleh Ketua Program Studi
+Menyerahkan bukti keikutsertaan dalam seminar/kuliah umum yang berkaitan dengan bidang ilmu yang ditempuhnya dengan jumlah yang ditentukan oleh Ketua Program Studi
+Menyerahkan surat keterangan kerja/magang (Persyaratan ini dikecualikan untuk mahasiswa MBKM, Lembaga Kemahasiswaan dan Asisten Dosen)
+Menyerahkan bukti bimbingan Tugas Akhir minimal 10x.
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 652-656 vs 2023 lines 333-335) ===
+--- 2022 ---
+Menyerahkan bukti cek Turnitin. Maksimal % plagiarism adalah 35%. Lebih dari
+itu, mahasiswa tidak diperkenankan mengikuti sidang skripsi dan komprehensif.
+Menyerahkan pas foto berwarna (jas almamater): 3x4 sebanyak 2 lembar; dan 4x6
+sebanyak 1 lembar
+--- 2023 ---
+Menyerahkan bukti cek Turnitin. Maksimal % plagiarism adalah 30%. Lebih dari itu, mahasiswa tidak diperkenankan mengikuti sidang Tugas Akhir dan komprehensif.
+Menyerahkan pas foto berwarna (jas almamater): 3x4 sebanyak 2 lembar; dan 4x6 sebanyak 1 lembar
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 689-699 vs 2023 lines 356-361) ===
+--- 2022 ---
+Selain itu kepada mahasiswa ditanyakan apakah ia telah siap dan dalam
+keadaan sehat untuk diuji. Apabila mahasiswa menyatakan dirinya siap diuji
+dan sehat maka ujian dapat dimulai. Ketua Tim Penguji memeriksa bukti diri
+mahasiswa dan bukti-bukti persyaratan akademik / administratif.
+6. Pelaksanaan Ujian Komprehensif/ Skripsi berlangsung secara lisan dan terbuka
+selama paling lama 2 jam. Waktu yang disediakan bagi setiap penguji untuk
+mengajukan pertanyaan antara 15 - 30 menit.
+7. Setelah Tim Penguji selesai mengajukan pertanyaan-pertanyaan mahasiswa
+diminta meninggalkan ruang ujian, dan dipanggil kembali setelah dilakukan
+diskusi di antara para Anggota Tim Penguji mengenai nilai ujian.
+--- 2023 ---
+Selain itu kepada mahasiswa ditanyakan apakah ia telah siap dan dalam keadaan sehat untuk diuji. Apabila mahasiswa menyatakan dirinya siap diuji dan sehat maka ujian dapat dimulai. Ketua Tim Penguji memeriksa bukti diri mahasiswa dan bukti-bukti persyaratan akademik / administratif.
+6. Pelaksanaan Ujian Komprehensif/Tugas Akhir berlangsung secara lisan dan terbuka selama paling lama 2 jam. Waktu yang disediakan bagi setiap penguji untuk mengajukan pertanyaan antara 15 - 30 menit. Dimungkinkan penilaian
+Ujian Komprehensif/Tugas Akhir dalam bentuk atau metode yang lain, dengan melihat
+kebutuhan yang ada, dilaksanakan sesuai dengan persetujuan oleh ketua program studi.
+7. Setelah Tim Penguji selesai mengajukan pertanyaan-pertanyaan mahasiswa diminta meninggalkan ruang ujian, dan dipanggil kembali setelah dilakukan diskusi di antara para Anggota Tim Penguji mengenai nilai ujian.
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 781-784 vs 2023 lines 416-418) ===
+--- 2022 ---
+Dasar penilaian atas komponen ini adalah kemampuan mahasiswa dalam
+mengamati dan membuat deskripsi atas permasalahan penelitian yang ingin
+dijawab.
+--- 2023 ---
+Dasar penilaian atas komponen ini adalah kemampuan mahasiswa dalam mengamati
+dan membuat deskripsi atas permasalahan penelitian yang ingin dijawab.
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 807-849 vs 2023 lines 436-441) ===
+--- 2022 ---
+Lampiran 1: Contoh Halaman Judul Proposal Skripsi
+PROPOSAL SKRIPSI
+PENGARUH PERENCANAAN PAJAK TERHADAP RETURN
+SAHAM PADA PERUSAHAAN MANUFAKTUR YANG LISTED DI
+BURSA EFEK INDONESIA
+Diajukan kepada Program Studi Akuntansi
+Untuk Menyusun Skripsi S1
+Diajukan Oleh:
+Jessica
+(322015175)
+FAKULTAS EKONOMI DAN BISNIS
+UNIVERSITAS KRISTEN KRIDA WACANA
+JAKARTA 2021
+Lampiran 2: Contoh Halaman Persetujuan Proposal Skripsi
+PERSETUJUAN PROPOSAL SKRIPSI
+Nama : ...................................................... Pria/Wanita
+N.I.M. : .........................................................................
+Alamat : .........................................................................
+..........................................................................
+..........................................................................
+..........................................................................
+No. Telp : ..…………..………………. ............................
+Judul yang diajukan : ..................................................................
+..........................................................................
+..........................................................................
+Jakarta, …………………………
+Menyetujui,
+Dosen Pembimbing Dosen Pendamping
+(…………………………) (…………………………)
+Mengetahui,
+(………………………………………)
+Ketua Program Studi
+Lampiran 3: Contoh Halaman Sampul dan Judul Skripsi
+SKRIPSI
+PENGARUH PERENCANAAN PAJAK TERHADAP RETURN
+SAHAM PADA PERUSAHAAN MANUFAKTUR YANG LISTED DI
+BURSA EFEK INDONESIA
+Jessica
+(322015175)
+FAKULTAS EKONOMI DAN BISNIS
+UNIVERSITAS KRISTEN KRIDA WACANA
+JAKARTA 2021
+--- 2023 ---
+QISTEW<br>CaS<br>Ss é<br>ej S<br>z=<br><br>UKRIDA<br>
+Lampiran 2: Contoh Halaman Persetujuan Proposal Tugas Akhir
+PERSETUJUAN PROPOSAL TUGAS AKHIR
+Nama : ...................................................... Pria/Wanita<br>N.I.M. :<br>.........................................................<br>................<br>Alamat :<br>.........................................................<br>................<br>..........................................................................<br>..........................................................................<br>..........................................................................<br>No. Telp : ..…………..………………. ............................<br>Judul yang diajukan :<br>.........................................................<br>.........<br>..........................................................................<br>..........................................................................<br>Jakarta, …………………………<br>Menyetujui,<br>Dosen Pembimbing Dosen Pendamping<br>(…………………………) …………………………)<br>Mengetahui,<br>(………………………………………)<br>Ketua Program Studi<br>
+QISTEW<br>CaS<br>Ss é<br>ej S<br>z=<br><br>UKRIDA<br>
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 852-854 vs 2023 lines 444-445) ===
+--- 2022 ---
+Arthur Reezan : ..................................... NIM : ..................................... Program Studi : .....................................
+Dengan ini menyatakan bahwa karya tugas akhir yang berjudul ”……………………………………………………………………………………………… ………………………………………………………………………………........................”
+--- 2023 ---
+Nama Mahasiswa : ..................................... NIM : ..................................... Program Studi : ..................................... Dengan ini menyatakan bahwa karya tugas akhir yang berjudul ”……………………………………………………………………………………………… ………………………………………………………………………………........................”
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 857-862 vs 2023 lines 450-452) ===
+--- 2022 ---
+Jakarta, ………………………….
+Yang menyatakan,
+Materai
+10.000
+( ...................................................... )
+--- 2023 ---
+Jakarta, …………………………. Yang menyatakan,
+Mate<br>rai<br>10 000<br>( ...................................................... )<br>
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 863-888 vs 2023 lines 453-465) ===
+--- 2022 ---
+SKRIPSI
+PENGARUH PERENCANAAN PAJAK TERHADAP RETURN
+SAHAM PADA PERUSAHAAN MANUFAKTUR YANG LISTED DI
+BURSA EFEK INDONESIA
+Oleh:
+Jessica
+(322015175)
+Diterima dan Disetujui
+Untuk Diujikan
+Jakarta, …………………………
+Menyetujui,
+Pembimbing
+(…………………………)
+Mengetahui,
+(………………………………………)
+Ketua Program Studi
+Lampiran 6: Contoh Halaman Pengesahan Panitia Penguji Skripsi
+SKRIPSI
+PENGARUH PERENCANAAN PAJAK TERHADAP RETURN
+SAHAM PADA PERUSAHAAN MANUFAKTUR YANG LISTED DI
+BURSA EFEK INDONESIA
+Oleh:
+Jessica
+(322015175)
+Telah berhasil dipertahankan di hadapan Panitia Penguji Skripsi dan diterima sebagai salah satu syarat yang diperlukan untuk memperoleh gelar Sarjana Akuntansi pada Program Studi Akuntansi Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana
+--- 2023 ---
+TUGAS AKHIR
+PENGARUH PERENCANAAN PAJAK TERHADAP RETURN SAHAM PADA PERUSAHAAN MANUFAKTUR YANG LISTED DI BURSA EFEK INDONESIA
+Oleh: Jessica (322019175)
+Diterima dan Disetujui Untuk Diujikan
+Jakarta, ………………………… Menyetujui, Pembimbing
+(…………………………) Mengetahui,
+(………………………………………) Ketua Program Studi
+Lampiran 6: Contoh Halaman Pengesahan Panitia Penguji Tugas Akhir
+TUGAS AKHIR
+PENGARUH PERENCANAAN PAJAK TERHADAP RETURN SAHAM PADA PERUSAHAAN MANUFAKTUR YANG LISTED DI BURSA EFEK INDONESIA
+Oleh: Jessica (322019175)
+Telah berhasil dipertahankan di hadapan Panitia Penguji Tugas Akhir dan diterima sebagai salah satu syarat yang diperlukan untuk memperoleh gelar Sarjana Akuntansi pada Program Studi Akuntansi Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 889-900 vs 2023 lines 466-469) ===
+--- 2022 ---
+Panitia Penguji :
+Ketua Penguji
+: Dr. Deni Iskandar, S.E., M.M.
+Anggota Penguji
+: Dr. Oktavia, S.E., M.S.Ak.
+Anggota Penguji
+: Septian Bayu Kristanto, S.E., M.S.Ak.
+Lampiran 7: Contoh Halaman Pernyataan Persetujuan Publikasi Skripsi untuk
+Kepentingan Akademis
+PERNYATAAN PERSETUJUAN PUBLIKASI KARYA TUGAS AKHIR UNTUK
+KEPENTINGAN AKADEMIS
+--- 2023 ---
+Panitia Penguji : Ketua Penguji : Dr. Diana Frederica, SE., MAk Anggota Penguji : Dr. Oktavia, S.E., M.S.Ak. Anggota Penguji : Subagyo, SE., MM., Ak., CA.
+Lampiran 7: Contoh Halaman Pernyataan Persetujuan Publikasi Tugas Akhir untuk Kepentingan Akademis
+PERNYATAAN PERSETUJUAN PUBLIKASI KARYA TUGAS AKHIR UNTUK KEPENTINGAN AKADEMIS
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+delete (2022 lines 921-922 vs 2023 lines 482-482) ===
+--- 2022 ---
+35
+--- 2023 ---
+
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 924-936 vs 2023 lines 484-491) ===
+--- 2022 ---
+The purpose of this study was to test the effects of taxable income and accounting income on
+stock returns. From the sample of 23 firms with high tax planning categories and 23 firms
+with low tax planning categories, we find the results that: (1) taxable income have significant
+negative effect on stock return, and (1) pre-tax book income have significant positive effect
+on stock returns.
+Key words: Tax planning, information content, accounting income number, taxable income,
+company’s performance, and stock return
+36
+Lampiran 10. Model Anatomi Skripsi
+MODEL A
+ANATOMI SKRIPSI UNTUK JENIS PENELITIAN KUANTITATIF
+MENGGUNAKAN DATA SEKUNDER DAN ANALISIS REGRESI
+--- 2023 ---
+The purpose of this study was to test the effects of taxable income and accounting income on stock returns. From the sample of 23 firms with high tax planning categories and 23 firms with low tax planning categories, we find the results that: (1) taxable income have significant negative effect on stock return, and (1) pre-tax book income have significant positive effect on stock returns.
+Key words: Tax planning, information content, accounting income number, taxable income, company’s performance, and stock return
+Mahasiswa
+Dosen Pembimbing
+(…………………………) (…………………………)
+Lampiran 10. Model Anatomi Tugas Akhir
+MODEL A ANATOMI TUGAS AKHIR UNTUK JENIS PENELITIAN KUANTITATIF MENGGUNAKAN DATA SEKUNDER DAN ANALISIS REGRESI
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+insert (2022 lines 948-948 vs 2023 lines 503-504) ===
+--- 2022 ---
+
+--- 2023 ---
+Variabel X boleh lebih dari 3 (tiga) variabel
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+delete (2022 lines 951-954 vs 2023 lines 507-507) ===
+--- 2022 ---
+Variabel X
+boleh lebih dari
+3 (tiga) variabel
+--- 2023 ---
+
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 969-973 vs 2023 lines 522-523) ===
+--- 2022 ---
+37
+MODEL B
+ANATOMI SKRIPSI UNTUK JENIS PENELITIAN KUANTITATIF
+MENGGUNAKAN DATA PRIMER (KUESIONER) DAN ANALISIS REGRESI
+--- 2023 ---
+MODEL B ANATOMI TUGAS AKHIR UNTUK JENIS PENELITIAN KUANTITATIF MENGGUNAKAN DATA PRIMER (KUESIONER) DAN ANALISIS REGRESI
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+insert (2022 lines 985-985 vs 2023 lines 535-536) ===
+--- 2022 ---
+
+--- 2023 ---
+Variabel X boleh lebih dari 3 (tiga) variabel
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+delete (2022 lines 988-991 vs 2023 lines 539-539) ===
+--- 2022 ---
+Variabel X
+boleh lebih dari
+3 (tiga) variabel
+--- 2023 ---
+
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 1007-1012 vs 2023 lines 555-556) ===
+--- 2022 ---
+38
+MODEL C
+ANATOMI SKRIPSI UNTUK JENIS PENELITIAN KUANTITATIF
+MENGGUNAKAN DATA SEKUNDER MAUPUN PRIMER (KUESIONER) DAN
+ANALISIS STATISTIK NON PARAMETRIK
+--- 2023 ---
+MODEL C ANATOMI TUGAS AKHIR UNTUK JENIS PENELITIAN KUANTITATIF MENGGUNAKAN DATA SEKUNDER MAUPUN PRIMER (KUESIONER) DAN ANALISIS STATISTIK NON PARAMETRIK
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+insert (2022 lines 1024-1024 vs 2023 lines 568-569) ===
+--- 2022 ---
+
+--- 2023 ---
+Variabel X boleh lebih dari 2 (tiga) variabel
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+delete (2022 lines 1025-1028 vs 2023 lines 570-570) ===
+--- 2022 ---
+Variabel X
+boleh lebih dari
+2 (tiga) variabel
+--- 2023 ---
+
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 1034-1036 vs 2023 lines 576-577) ===
+--- 2022 ---
+4.1. Demografi Responden (Jika menggunakan kuesioner) / Deskripsi Sampel
+Penelitian (Jika tidak menggunakan kuesioner)
+--- 2023 ---
+4.1. Demografi Responden (Jika menggunakan kuesioner) / Deskripsi Sampel Penelitian (Jika tidak menggunakan kuesioner)
+
+
+==================================================
+
+=== MEANINGFUL DIFF ===
+replace (2022 lines 1043-1072 vs 2023 lines 584-585) ===
+--- 2022 ---
+39
+MODEL D
+ANATOMI SKRIPSI UNTUK JENIS PENELITIAN KUALITATIF (STUDI KASUS)
+BAB 1. PENDAHULUAN
+1.1. Latar Belakang Penelitian
+1.2. Perumusan Masalah
+1.3. Tujuan Penelitian
+1.4. Manfaat Penelitian
+1.4.1. Manfaat Teoritis
+1.4.2. Manfaat Praktis
+BAB 2. TINJAUAN PUSTAKA
+2.1. Teori 1
+2.2. Teori 2
+2.3. Teori 3
+2.4. Penelitian Sebelumnya
+2.5. Alur Pikir
+Teori boleh lebih dari 3 (tiga) teori
+BAB 3. METODE PENELITIAN
+3.1. Jenis dan Sumber Data
+3.2. Pendekatan dan Jenis Penelitian
+3.3. Metode Analisis Data
+BAB 4. ANALISIS DAN PEMBAHASAN
+4.1. Gambaran Umum Obyek Penelitian
+4.2. Analisis Data
+4.3. Pembahasan
+BAB 5. PENUTUP
+5.1. Kesimpulan
+5.2. Saran
+40
+--- 2023 ---
+|<br>
+
+
+==================================================
+

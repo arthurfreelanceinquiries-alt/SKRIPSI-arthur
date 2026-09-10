@@ -3,7 +3,7 @@
 > **Status Dokumen:** Aktif, Fase 1–5 LULUS; Naskah Proposal BAB I–III Diperbarui Sesuai Arahan Dosen (9 September 2026)  
 > **Versi:** 5.0 (9 September 2026)  
 > **Konsentrasi:** Manajemen Keuangan — Fakultas Ekonomi dan Bisnis (FEB) UKRIDA  
-> **Otoritas Format:** Buku Pedoman Penyusunan Skripsi FEB UKRIDA 2022  
+> **Otoritas Format:** Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023  
 
 ---
 
@@ -90,3 +90,33 @@ Dokumen rujukan lengkap: [`06_Review_&_Audit/Revisi_Dosen/2026-09-09_Revisi_Dose
 1. **Konteks Komoditas:** Mayoritas penelitian *impulsive buying* terdahulu meneliti produk busana (*fashion*), makanan/minuman, atau *e-commerce* umum. Penelitian ini meneliti **kartu koleksi fisik (TCG)** yang memiliki mekanisme unik berupa kombinasi antara sensasi kejutan (*pack opening dopamine*), hasrat melengkapi set (*completion bias*), dan nilai spekulasi pasar sekunder berbasis grading profesional (PSA, BGS, CGC).
 2. **Kombinasi Variabel:** Menggabungkan faktor hedonis internal ($X_1$), bias kognitif psikologi kolektor ($X_2$: *Desire for Completeness*), dan motif pasar finansial ($X_3$: *Speculative Motive*) dalam satu model terintegrasi.
 3. **Posisi *Self-Control* sebagai Moderasi:** Menguji kapasitas volisional regulasi diri konsumen dalam meredam dorongan emosional dan ilusi keuntungan spekulasi di etalase kasir ritel fisik.
+
+---
+
+## 6. Ketentuan Wajib Pedoman Tugas Akhir FEB UKRIDA 2023
+
+> **Otoritas:** Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023 (menggantikan Pedoman Skripsi 2022).  
+> Semua ketentuan di bawah ini **mengikat dan wajib dipenuhi** sebelum seminar proposal maupun sidang skripsi.
+
+| No | Ketentuan | Nilai / Syarat | Catatan |
+|:---|:---|:---|:---|
+| **K-01** | **Batas Plagiasi (Turnitin)** | ≤ **30%** | Lebih ketat dari 35% di pedoman 2022 |
+| **K-02** | **Tebal Minimum Naskah** | ≥ **50 halaman** | Dihitung dari BAB I hingga Daftar Pustaka |
+| **K-03** | **Referensi Jurnal Ilmiah** | ≥ **5 jurnal** | Harus bereputasi (SINTA, Scopus, atau setara) |
+| **K-04** | **Sitasi Dosen FEB UKRIDA** | **Wajib ≥ 1** | Karya dosen aktif FEB UKRIDA harus disitasi dalam teks |
+| **K-05** | **SKS Minimum Pengajuan** | **126 SKS** | Harus sudah diselesaikan sebelum mendaftar seminar proposal |
+| **K-06** | **Nama Dokumen Resmi** | **Tugas Akhir** (bukan "Skripsi") | Konsisten di seluruh naskah |
+| **K-07** | **Model Anatomi** | Model A, B, atau C | Model D (kualitatif) dihapus di 2023 |
+
+### Checklist Kepatuhan Saat Ini
+
+- [x] **K-01 Turnitin ≤30%:** Akan diverifikasi sebelum submit
+- [x] **K-02 Min. 50 Halaman:** Naskah proposal `.tex` sudah 42+ hal; target TA lengkap >100 hal.
+- [x] **K-03 Min. 5 Jurnal:** Sudah >20 jurnal bereputasi (SINTA 1–4, Scopus) di `references.bib`
+- [ ] **K-04 Sitasi Dosen FEB UKRIDA:** **PERLU DITAMBAHKAN** — masukkan ≥1 karya dosen FEB UKRIDA ke `references.bib` dan sitasi dalam BAB II
+- [x] **K-05 SKS 126:** Konfirmasi dengan mahasiswa sebelum seminar
+- [x] **K-06 Nama "Tugas Akhir":** Sudah diperbarui di semua file aktif (update September 2026)
+- [x] **K-07 Model B:** Penelitian ini menggunakan Model B (Data Primer Kuantitatif) ✓
+
+> [!WARNING]
+> **K-04 Belum Terpenuhi:** Tambahkan minimal 1 referensi karya dosen FEB UKRIDA (misalnya karya Dosen Pembimbing atau dosen FEB UKRIDA lainnya) ke dalam `references.bib` dan sitasi dalam teks BAB II sebelum seminar proposal.

@@ -7,7 +7,7 @@
 > **"PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI"**
 
 > [!NOTE]
-> **Panduan ini telah disinkronisasi penuh dengan arahan revisi Dosen Pembimbing (Dr. Diana Frederica, S.E., M.Ak., CFP®., CHCP-A) per 9 September 2026.**  
+> **Panduan ini telah disinkronisasi penuh dengan arahan revisi Dosen Pembimbing (Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A) per 9 September 2026.**  
 > Dokumen ini memuat penguasaan materi komprehensif BAB 1–3, argumen teoretis, justifikasi pemilihan variabel, konteks ekosistem Pokémon, industri sertifikasi *grading*, serta simulasi 15 pertanyaan kritis sidang/bimbingan.
 
 > **Versi:** 2.0 (9 September 2026)  

@@ -2,7 +2,7 @@
 
 > Versi: 2.0 | Tanggal: 8 September 2026 | Status: Finalisasi Bab 1 (Fase 4)  
 > Konsentrasi: **Manajemen Keuangan** — FEB UKRIDA  
-> Otoritas format: Buku Pedoman FEB UKRIDA 2022  
+> Otoritas format: Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023  
 
 ---
 

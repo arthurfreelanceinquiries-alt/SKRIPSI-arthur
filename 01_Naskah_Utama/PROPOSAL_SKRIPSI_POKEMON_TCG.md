@@ -2,12 +2,12 @@
 **Fakultas Ekonomi dan Bisnis | Program Studi S1 Manajemen**  
 **Konsentrasi:** Manajemen Keuangan  
 **Penulis:** Arthur Reezan (NIM: 312023002)  
-**Dosen Pembimbing:** Dr. Diana Frederica, S.E., M.Ak., CFP®., CHCP-A (NIDN: 0315088201)  
+**Dosen Pembimbing:** Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A (NIDN: [NIDN_DOSEN])  
 
 > **Judul Proposal Skripsi:**  
 > **PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI**  
 >  
-> *Format Dokumen: Teks Lengkap Proposal BAB 1–3 Sesuai Buku Pedoman Penyusunan Skripsi FEB UKRIDA 2022 (Lampiran 10 Model B)*
+> *Format Dokumen: Teks Lengkap Proposal BAB 1–3 Sesuai Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023 (Lampiran 10 Model B)*
 
 ---
 
@@ -122,7 +122,7 @@ Yang menyatakan,
 ---
 
 ### HALAMAN PERSETUJUAN PROPOSAL SKRIPSI
-*(Format Baku Sesuai Lampiran 2 Pedoman Skripsi FEB UKRIDA 2022)*
+*(Format Baku Sesuai Lampiran 2 Pedoman Tugas Akhir FEB UKRIDA 2023)*
 
 <div align="center">
 
@@ -146,7 +146,7 @@ Menyetujui,
 
 | Dosen Pembimbing | Dosen Pendamping |
 |:---|:---|
-| <br><br><br>**Dr. Diana Frederica, S.E., M.Ak., CFP®., CHCP-A**<br>NIDN: 0315088201 | <br><br><br>( ____________________________________ )<br>&nbsp; |
+| <br><br><br>**Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A**<br>NIDN: [NIDN_DOSEN] | <br><br><br>( ____________________________________ )<br>&nbsp; |
 
 Mengetahui,  
 Ketua Program Studi S1 Manajemen  
@@ -181,7 +181,7 @@ Telah dipertahankan di hadapan Tim Penguji Seminar Proposal Skripsi Program Stud
 |:---|:---|:---|:---|
 | 1. | Ketua Penguji | __________________________________________ | ( ______________________ ) |
 | 2. | Anggota Penguji | __________________________________________ | ( ______________________ ) |
-| 3. | Dosen Pembimbing | Dr. Diana Frederica, S.E., M.Ak., CFP®., CHCP-A | ( ______________________ ) |
+| 3. | Dosen Pembimbing | Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A | ( ______________________ ) |
 
 ---
 
@@ -193,7 +193,7 @@ Proposal skripsi ini disusun sebagai salah satu tahapan akademik yang diwajibkan
 
 Dalam proses penyusunan naskah proposal ini, penulis mendapatkan banyak bimbingan, arahan metodologis, dukungan moril, serta fasilitas dari berbagai pihak. Oleh karena itu, dengan penuh rasa hormat dan kerendahan hati, penulis menyampaikan terima kasih dan apresiasi yang setinggi-tingginya kepada:
 
-1. **Dr. Diana Frederica, S.E., M.Ak., CFP®., CHCP-A**, selaku Dekan Fakultas Ekonomi dan Bisnis UKRIDA sekaligus Dosen Pembimbing Skripsi, yang telah dengan luar biasa sabar, teliti, kritis, dan penuh dedikasi meluangkan waktu serta mencurahkan tenaga dan pikiran dalam membimbing, mengarahkan, dan menyempurnakan naskah proposal ini sejak tahap awal perumusan gagasan hingga penyusunan naskah komprehensif.
+1. **Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A**, selaku Dosen Pembimbing Skripsi, yang telah dengan luar biasa sabar, teliti, kritis, dan penuh dedikasi meluangkan waktu serta mencurahkan tenaga dan pikiran dalam membimbing, mengarahkan, dan menyempurnakan naskah proposal ini sejak tahap awal perumusan gagasan hingga penyusunan naskah komprehensif.
 2. **Rita Amelinda, S.E., M.M.**, selaku Ketua Program Studi S1 Manajemen FEB UKRIDA, atas segala arahan, kemudahan proses administratif, dan bimbingan akademik yang diberikan.
 3. **Bapak dan Ibu Dosen Penguji Seminar Proposal**, yang telah bersedia meluangkan waktu untuk menguji, memberikan koreksi kritis, serta masukan yang konstruktif guna menyempurnakan naskah penelitian ini.
 4. **Seluruh Dosen dan Staf Pengajar FEB UKRIDA**, yang telah membagikan ilmu pengetahuan, wawasan analisis keuangan, serta etika profesional selama masa perkuliahan penulis.
@@ -234,7 +234,7 @@ Penelitian ini menawarkan kebaruan teoritis (*novelty*) dengan mengintegrasikan 
 
 | Mahasiswa | Dosen Pembimbing |
 |:---|:---|
-| <br><br>**Arthur Reezan**<br>NIM: 312023002 | <br><br>**Dr. Diana Frederica, S.E., M.Ak., CFP®., CHCP-A**<br>NIDN: 0315088201 |
+| <br><br>**Arthur Reezan**<br>NIM: 312023002 | <br><br>**Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A**<br>NIDN: [NIDN_DOSEN] |
 
 ---
 

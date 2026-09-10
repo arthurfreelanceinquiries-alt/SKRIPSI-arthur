@@ -1,0 +1,199 @@
+
+--- replace 2022[0:18] vs 2023[0:24] ---
+2022:
+BAB 2
+### FORMAT SKRIPSI
+### 2.1. Bagian Awal
+Bagian awal dari suatu skripsi terdiri dari:
+a. Halaman Sampul (Lihat lampiran 3) → untuk sampul hardcover skripsi
+b. Halaman Judul (Lihat lampiran 3)
+c. Halaman Pernyataan Keaslian Karya Tugas Akhir (Lihat lampiran 4)
+d. Halaman Persetujuan Dosen Pembimbing (Lihat lampiran 5)
+e. Halaman Pengesahan Tim Penguji (Lihat lampiran 6)
+f. Halaman Pernyataan Persetujuan Publikasi Karya Tugas Akhir (Lihat lampiran 7)
+g. Kata Pengantar
+h. Abstrak dalam Bahasa Indonesia (Lihat lampiran 8)
+i. Abstrak dalam Bahasa Inggris (Lihat lampiran 9)
+j. Daftar Isi
+k. Daftar Tabel (jika ada)
+l. Daftar Gambar (jika ada)
+m. Daftar Rumus (jika ada)
+### 2.2. Bagian Isi
+2023:
+BAB 2**
+## **FORMAT TUGAS AKHIR**
+## **2.1. Bagian Awal**
+Bagian awal dari suatu Tugas Akhir terdiri dari:
+- a. Halaman Sampul (Lihat lampiran 3) → untuk sampul hardcover Tugas Akhir
+- b. Halaman Judul (Lihat lampiran 3)
+- c. Halaman Pernyataan Keaslian Karya Tugas Akhir (Lihat lampiran 4)
+- d. Halaman Persetujuan Dosen Pembimbing (Lihat lampiran 5)
+- Tanda tangan dosen pembimbing dan Ketua Program Studi wajib tanda tangan basah
+- e. Halaman Pengesahan Tim Penguji (Lihat lampiran 6)
+- Pada bagian tanggal diisi tanngal pelaksanaan sidang Tugas Akhir
+- Urutan penguji adalah: Ketua penguji, Penguji 1 yang merupakan mantan pembimbing, Penguji 2
+- Tanda tangan penguji wajib tanda tangan basah dan tidak boleh diwakilkan
+- f. Halaman Pernyataan Persetujuan Publikasi Karya Tugas Akhir (Lihat lampiran 7)
+- g. Kata Pengantar
+- h. Abstrak dalam Bahasa Indonesia (Lihat lampiran 8)
+- i. Abstrak dalam Bahasa Inggris (Lihat lampiran 9)
+- Pada abstrak diberikan tanda tangan mahasiswa dan dosen pembimbing
+- Tanda tangan wajib tanda tangan basah
+- j. Daftar Isi
+- k. Daftar Tabel (jika ada)
+- l. Daftar Gambar (jika ada)
+- m. Daftar Rumus (jika ada)
+## **2.2. Bagian Isi**
+
+--- replace 2022[19:21] vs 2023[25:27] ---
+2022:
+# Bab 1 Pendahuluan
+# Bab ini terdiri dari 4 (empat) sub bab berikut ini:
+2023:
+Bab 1 Pendahuluan
+Bab ini terdiri dari 4 (empat) sub bab berikut ini:
+
+--- replace 2022[25:27] vs 2023[31:34] ---
+2022:
+# Bab 2 Tinjauan Pustaka dan Pengembangan Hipotesis
+# Bab ini terdiri dari sub bab berikut ini:
+2023:
+Universitas Kristen Krida Wacana | 10
+Bab 2 Tinjauan Pustaka dan Pengembangan Hipotesis
+Bab ini terdiri dari sub bab berikut ini:
+
+--- replace 2022[32:35] vs 2023[39:41] ---
+2022:
+<!-- Page 11 -->
+# Bab 3 Metode Penelitian
+# Bab ini terdiri dari sub bab berikut ini:
+2023:
+## Bab 3 Metode Penelitian
+Bab ini terdiri dari sub bab berikut ini:
+
+--- replace 2022[39:45] vs 2023[45:51] ---
+2022:
+5. Metode Analisis Data
+# Bab 4 Analisis dan Pembahasan
+Untuk penelitian kuantitatif yang menggunakan data sekunder dan analisis regresi:
+1. Deskripsi Sampel Penelitian
+2. Statistik Deskriptif → berisi mean, median, minimum, maksimum, dan
+standar deviasi dari masing-masing variabel penelitian.
+2023:
+5. Metode Analisis
+Data Bab 4 Analisis dan
+## Pembahasan
+<u>Untuk penelitian kuantitatif yang menggunakan data sekunder dan analisis regresi:</u>
+1. Deskripsi Akhir Sampel Penelitian
+2. Statistik Deskriptif → berisi mean, median, minimum, maksimum, dan standar deviasi dari masing-masing variabel penelitian.
+
+--- replace 2022[48:49] vs 2023[54:55] ---
+2022:
+Untuk penelitian kuantitatif yang menggunakan data kuesioner dan analisis regresi:
+2023:
+<u>Untuk penelitian kuantitatif yang menggunakan data kuesioner dan analisis regresi:</u>
+
+--- replace 2022[55:58] vs 2023[61:64] ---
+2022:
+Untuk penelitian kuantitatif yang menggunakan analisis statistik non parametrik:
+1. Demografi Responden (jika menggunakan kuesioner) atau Deskripsi
+Sampel Penelitian (Jika tidak menggunakan kuesioner)
+2023:
+Universitas Kristen Krida Wacana | 11
+## <u>Untuk penelitian kuantitatif yang menggunakan analisis statistik non parametrik:</u>
+1. Demografi Responden (jika menggunakan kuesioner) atau Deskripsi Sampel Penelitian (Jika tidak menggunakan kuesioner)
+
+--- replace 2022[62:76] vs 2023[68:73] ---
+2022:
+Untuk penulisan kesimpulan hipotesis menggunakan format berikut ini :
+| H1 : Variabel X1 berpengaruh positif terhadap variabel Y (penulisan untuk hasil yang |  |
+| --- | --- |
+| menunjukkan ada pengaruh variabel independen terhadap variabel dependen dengan melihat |  |
+| nilai signifikansi ( p value) dan arah pengaruh positif atau negatif dengan mengacu pada |  |
+| nilai koefisien.) |  |
+| H1 : Variabel X1 tidak berpengaruh terhadap variabel Y (penulisan untuk hasil yang |  |
+| --- | --- |
+| menunjukkan tidak ada pengaruh variabel independen terhadap variabel dependen dengan |  |
+| melihat nilai signifikansi ( p value)) |  |
+<!-- Page 12 -->
+Untuk penelitian kualitatif atau studi kasus:
+1. Gambaran Umum Obyek Penelitian → Sejarah singkat perusahaan, struktur
+organisasi perusahaan, serta bidang usaha perusahaan.
+2023:
+<u>Untuk penulisan kesimpulan hipotesis menggunakan format berikut ini :</u>
+H1 : Variabel X1 berpengaruh positif terhadap variabel Y (penulisan untuk hasil yang menunjukkan ada pengaruh variabel independen terhadap variabel dependen dengan melihat nilai signifikansi (p _value_ ) dan arah pengaruh positif atau negatif dengan mengacu pada nilai koefisien).
+H1 : Variabel X1 tidak berpengaruh terhadap variabel Y (penulisan untuk hasil yang menunjukkan tidak ada pengaruh variabel independen terhadap variabel dependen dengan melihat nilai signifikansi (p _value_ ).
+## <u>Untuk penelitian kualitatif atau studi kasus:</u>
+1. Gambaran Umum Obyek Penelitian → Sejarah singkat perusahaan, struktur organisasi perusahaan, serta bidang usaha perusahaan.
+
+--- replace 2022[77:80] vs 2023[74:75] ---
+2022:
+Untuk penelitian bersifat kualitatif, maka tidak ada aturan absolut mengenai
+analisis data. Dengan demikian, analisis data pada penelitian jenis ini
+merupakan kebijakan dari dosen pembimbing.
+2023:
+- Untuk penelitian bersifat kualitatif, maka tidak ada aturan absolut mengenai analisis data. Dengan demikian, analisis data pada penelitian jenis ini merupakan kebijakan dari dosen pembimbing.
+
+--- replace 2022[81:83] vs 2023[76:79] ---
+2022:
+# Bab 5 Penutup
+# Bab ini terdiri dari sub bab berikut ini:
+2023:
+Universitas Kristen Krida Wacana | 12
+Bab 5 Penutup
+Bab ini terdiri dari sub bab berikut ini:
+
+--- replace 2022[84:91] vs 2023[80:81] ---
+2022:
+Pada bagian ini, hanya dimasukkan hasil penelitian untuk menjawab
+permasalahan dan persoalan penelitian. Suatu kesimpulan harus dinyatakan
+secara tegas dan didukung oleh argumentasi yang telah dikemukakan
+sebelumnya. Kesimpulan bukan merupakan ringkasan, tetapi merupakan
+suatu jawaban atas pertanyaan yang diajukan dalam perumusan masalah.
+Penulis tidak diperkenankan menyimpulkan sesuatu tanpa pembuktian di
+dalam penelitiannya.
+2023:
+Pada bagian ini, hanya dimasukkan hasil penelitian untuk menjawab permasalahan dan persoalan penelitian. Suatu kesimpulan harus dinyatakan secara tegas dan didukung oleh argumentasi yang telah dikemukakan sebelumnya. Kesimpulan bukan merupakan ringkasan, tetapi merupakan suatu jawaban atas pertanyaan yang diajukan dalam perumusan masalah. Penulis tidak diperkenankan menyimpulkan sesuatu tanpa pembuktian di dalam penelitiannya.
+
+--- replace 2022[92:97] vs 2023[82:84] ---
+2022:
+Pada bagian ini, diungkapkan usulan maupun implikasi yang dapat diambil
+dari penelitian yang telah dilakukan, baik yang berhubungan dengan
+kelanjutan penelitian (jika dimungkinkan), dan atau aplikasi praktis dari
+penemuan-penemuan yang telah diperoleh.
+### 2.3. Bagian Akhir
+2023:
+Pada bagian ini, diungkapkan usulan maupun implikasi yang dapat diambil dari penelitian yang telah dilakukan, baik yang berhubungan dengan kelanjutan penelitian (jika dimungkinkan), dan atau aplikasi praktis dari penemuan-penemuan yang telah diperoleh.
+## **2.3. Bagian Akhir**
+
+--- replace 2022[98:116] vs 2023[85:95] ---
+2022:
+a. Daftar Pustaka
+Daftar Pustaka merupakan daftar bacaan yang menjadi sumber, atau referensi
+atau acuan dan dasar penulisan skripsi. Daftar pustaka ini dapat berisi buku,
+artikel, jurnal, majalah, surat kabar, wawancara, alamat situs internet dan
+sebagainya. Dianjurkan agar daftar pustaka yang digunakan merupakan terbitan
+terbaru (minimal terbitan 5 tahun terakhir), kecuali untuk teori-teori
+konvensional yang masih digunakan hingga saat ini.
+b. Lampiran-lampiran
+Lampiran merupakan data atau pelengkap atau hasil olahan yang menunjang
+penulisan skripsi, tetapi tidak dicantumkan di dalam isi skripsi, karena akan
+mengganggu kesinambungan pembacaan. Lampiran yang perlu disertakan
+<!-- Page 13 -->
+contohnya: tabulasi data, daftar pertanyaan, gambar, grafik, desain, dan
+sebagainya.
+c. Daftar Riwayat Hidup Penulis Skripsi
+Merupakan daftar riwayat hidup dari penyusun skripsi.
+<!-- Page 14 -->
+###
+2023:
+- a. Daftar Pustaka
+Daftar Pustaka merupakan daftar bacaan yang menjadi sumber, atau referensi atau acuan dan dasar penulisan Tugas Akhir. Daftar pustaka ini dapat berisi buku, artikel, jurnal, majalah, surat kabar, wawancara, alamat situs internet dan sebagainya. Dianjurkan agar daftar pustaka yang digunakan merupakan terbitan terbaru (minimal terbitan 5 tahun terakhir), kecuali untuk teori-teori konvensional yang masih digunakan hingga saat ini.
+- b. Lampiran-lampiran
+Lampiran merupakan data atau pelengkap atau hasil olahan yang menunjang penulisan Tugas Akhir, tetapi tidak dicantumkan di dalam isi Tugas Akhir, karena akan
+Universitas Kristen Krida Wacana | 13
+mengganggu kesinambungan pembacaan. Lampiran yang perlu disertakan contohnya: tabulasi data, daftar pertanyaan, gambar, grafik, desain, dan sebagainya.
+- c. Daftar Riwayat Hidup Penulis Tugas Akhir
+Merupakan daftar riwayat hidup dari penyusun Tugas Akhir.
+Universitas Kristen Krida Wacana | 14
+**

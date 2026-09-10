@@ -25,7 +25,7 @@ File ini bisa langsung Anda pakai untuk menempelkan teks chat (WhatsApp, Email, 
 ## Riwayat Bimbingan Terkini:
 
 ### Bimbingan: 9 September 2026 (Pukul 20:30 WIB)
-- **Dosen:** Dr. Diana Frederica, S.E., M.Ak., CFP®., CHCP-A
+- **Dosen:** Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A
 - **Media:** Bimbingan Tatap Muka / Chat
 - **Topik / Bab yang Dibahas:** Latar Belakang Bab 1 (Ekosistem Pokémon, anteseden Impulsive Buying, pembakuan istilah ilmiah, penjelasan grading), Penggantian Variabel Moderasi, Sistematika Teori Bab 2 (Behavioral Finance, Y dibahas pertama, hipotesis terikat objek kartu).
 - **Dokumen Analisis Lengkap:** [`2026-09-09_Revisi_Dosen_dan_Opsi_Moderasi.md`](2026-09-09_Revisi_Dosen_dan_Opsi_Moderasi.md)

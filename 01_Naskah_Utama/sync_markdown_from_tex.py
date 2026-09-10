@@ -1,6 +1,6 @@
 """
 Script to synchronize PROPOSAL_SKRIPSI_POKEMON_TCG.md from the validated Proposal_Arthur_PokemonTCG.tex.
-Ensures publication-grade Markdown formatting matching FEB UKRIDA 2022 standards (Lampiran 10 Model B).
+Ensures publication-grade Markdown formatting matching FEB UKRIDA 2023 standards (Lampiran 10 Model B).
 """
 import os
 import re
@@ -50,12 +50,12 @@ def main():
     md_lines.append("**Fakultas Ekonomi dan Bisnis | Program Studi S1 Manajemen**  ")
     md_lines.append("**Konsentrasi:** Manajemen Keuangan  ")
     md_lines.append("**Penulis:** Arthur Reezan (NIM: 312023002)  ")
-    md_lines.append("**Dosen Pembimbing:** Dr. Diana Frederica, S.E., M.Ak., CFP®., CHCP-A (NIDN: 0315088201)  ")
+    md_lines.append("**Dosen Pembimbing:** Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A (NIDN: [NIDN_DOSEN])  ")
     md_lines.append("")
     md_lines.append("> **Judul Proposal Skripsi:**  ")
     md_lines.append("> **PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI**  ")
     md_lines.append(">  ")
-    md_lines.append("> *Format Dokumen: Teks Lengkap Proposal BAB 1–3 Sesuai Buku Pedoman Penyusunan Skripsi FEB UKRIDA 2022 (Lampiran 10 Model B)*")
+    md_lines.append("> *Format Dokumen: Teks Lengkap Proposal BAB 1–3 Sesuai Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023 (Lampiran 10 Model B)*")
     md_lines.append("")
     md_lines.append("---")
     md_lines.append("")
@@ -170,7 +170,7 @@ def main():
     md_lines.append("---")
     md_lines.append("")
     md_lines.append("### HALAMAN PERSETUJUAN PROPOSAL SKRIPSI")
-    md_lines.append("*(Format Baku Sesuai Lampiran 2 Pedoman Skripsi FEB UKRIDA 2022)*")
+    md_lines.append("*(Format Baku Sesuai Lampiran 2 Pedoman Tugas Akhir FEB UKRIDA 2023)*")
     md_lines.append("")
     md_lines.append("<div align=\"center\">")
     md_lines.append("")
@@ -194,7 +194,7 @@ def main():
     md_lines.append("")
     md_lines.append("| Dosen Pembimbing | Dosen Pendamping |")
     md_lines.append("|:---|:---|")
-    md_lines.append("| <br><br><br>**Dr. Diana Frederica, S.E., M.Ak., CFP®., CHCP-A**<br>NIDN: 0315088201 | <br><br><br>( ____________________________________ )<br>&nbsp; |")
+    md_lines.append("| <br><br><br>**Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A**<br>NIDN: [NIDN_DOSEN] | <br><br><br>( ____________________________________ )<br>&nbsp; |")
     md_lines.append("")
     md_lines.append("Mengetahui,  ")
     md_lines.append("Ketua Program Studi S1 Manajemen  ")
@@ -229,7 +229,7 @@ def main():
     md_lines.append("|:---|:---|:---|:---|")
     md_lines.append("| 1. | Ketua Penguji | __________________________________________ | ( ______________________ ) |")
     md_lines.append("| 2. | Anggota Penguji | __________________________________________ | ( ______________________ ) |")
-    md_lines.append("| 3. | Dosen Pembimbing | Dr. Diana Frederica, S.E., M.Ak., CFP®., CHCP-A | ( ______________________ ) |")
+    md_lines.append("| 3. | Dosen Pembimbing | Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A | ( ______________________ ) |")
     md_lines.append("")
     md_lines.append("---")
     md_lines.append("")
@@ -241,7 +241,7 @@ def main():
     md_lines.append("")
     md_lines.append("Dalam proses penyusunan naskah proposal ini, penulis mendapatkan banyak bimbingan, arahan metodologis, dukungan moril, serta fasilitas dari berbagai pihak. Oleh karena itu, dengan penuh rasa hormat dan kerendahan hati, penulis menyampaikan terima kasih dan apresiasi yang setinggi-tingginya kepada:")
     md_lines.append("")
-    md_lines.append("1. **Dr. Diana Frederica, S.E., M.Ak., CFP®., CHCP-A**, selaku Dekan Fakultas Ekonomi dan Bisnis UKRIDA sekaligus Dosen Pembimbing Skripsi, yang telah dengan luar biasa sabar, teliti, kritis, dan penuh dedikasi meluangkan waktu serta mencurahkan tenaga dan pikiran dalam membimbing, mengarahkan, dan menyempurnakan naskah proposal ini sejak tahap awal perumusan gagasan hingga penyusunan naskah komprehensif.")
+    md_lines.append("1. **Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A**, selaku Dosen Pembimbing Skripsi, yang telah dengan luar biasa sabar, teliti, kritis, dan penuh dedikasi meluangkan waktu serta mencurahkan tenaga dan pikiran dalam membimbing, mengarahkan, dan menyempurnakan naskah proposal ini sejak tahap awal perumusan gagasan hingga penyusunan naskah komprehensif.")
     md_lines.append("2. **Rita Amelinda, S.E., M.M.**, selaku Ketua Program Studi S1 Manajemen FEB UKRIDA, atas segala arahan, kemudahan proses administratif, dan bimbingan akademik yang diberikan.")
     md_lines.append("3. **Bapak dan Ibu Dosen Penguji Seminar Proposal**, yang telah bersedia meluangkan waktu untuk menguji, memberikan koreksi kritis, serta masukan yang konstruktif guna menyempurnakan naskah penelitian ini.")
     md_lines.append("4. **Seluruh Dosen dan Staf Pengajar FEB UKRIDA**, yang telah membagikan ilmu pengetahuan, wawasan analisis keuangan, serta etika profesional selama masa perkuliahan penulis.")
@@ -282,7 +282,7 @@ def main():
     md_lines.append("")
     md_lines.append("| Mahasiswa | Dosen Pembimbing |")
     md_lines.append("|:---|:---|")
-    md_lines.append("| <br><br>**Arthur Reezan**<br>NIM: 312023002 | <br><br>**Dr. Diana Frederica, S.E., M.Ak., CFP®., CHCP-A**<br>NIDN: 0315088201 |")
+    md_lines.append("| <br><br>**Arthur Reezan**<br>NIM: 312023002 | <br><br>**Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A**<br>NIDN: [NIDN_DOSEN] |")
     md_lines.append("")
     md_lines.append("---")
     md_lines.append("")

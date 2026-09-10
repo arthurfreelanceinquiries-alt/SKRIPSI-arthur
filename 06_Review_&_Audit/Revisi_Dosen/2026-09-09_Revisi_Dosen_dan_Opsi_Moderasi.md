@@ -1,7 +1,7 @@
 # Catatan Revisi Dosen (9 September 2026) & Bank Opsi Variabel Moderasi
 
 - **Tanggal Bimbingan:** 9 September 2026 (Pukul 20:30 WIB)
-- **Dosen Pembimbing:** Dr. Diana Frederica, S.E., M.Ak., CFP®., CHCP-A
+- **Dosen Pembimbing:** Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A
 - **Media Bimbingan:** Chat / Tatap Muka Bimbingan Skripsi
 - **Topik Pembahasan:** Ekosistem Pokémon, Anteseden *Impulsive Buying*, Pembakuan Istilah Ilmiah, Evaluasi Variabel Moderasi, dan Sistematika Kajian Teori Bab II
 - **Status Dokumen:** Tercatat Resmi & Diadopsi Penuh ke Naskah Proposal TeX/PDF (Commit `d9ac844`)

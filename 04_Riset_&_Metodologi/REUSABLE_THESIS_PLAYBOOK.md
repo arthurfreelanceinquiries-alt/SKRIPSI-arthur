@@ -2,12 +2,12 @@
 
 > Status: aktif dan generik  
 > Tujuan: menjadi memori kerja ringkas untuk setiap topik baru sehingga arsip topik lama tidak perlu dibaca  
-> Otoritas: Pedoman Penyusunan Skripsi FEB UKRIDA 2022 tetap lebih tinggi daripada playbook ini  
+> Otoritas: Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023 tetap lebih tinggi daripada playbook ini  
 > Larangan: jangan membawa fenomena, variabel, sumber, data, hipotesis, metode, atau kesimpulan dari topik lama tanpa evaluasi baru.
 
 ## 1. Urutan Otoritas
 
-1. Buku Pedoman Penyusunan Skripsi FEB UKRIDA yang tersedia pada workspace.
+1. Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA yang tersedia pada workspace.
 2. Instruksi eksplisit mahasiswa dan keputusan DPS manusia yang tidak bertentangan dengan integritas akademik.
 3. Dokumen source of truth topik aktif.
 4. Literatur ilmiah, dokumentasi dataset, dan pedoman metode primer.
@@ -154,7 +154,7 @@ Data sintetis wajib diberi label, disimpan terpisah, dan tidak boleh menjadi dat
 
 ## 12. Comparator dan Pedoman UKRIDA
 
-Buku Pedoman Penyusunan Skripsi FEB UKRIDA 2022 adalah otoritas format. Skripsi kakak tingkat hanya comparator non-otoritatif untuk melihat struktur umum dan jenis artefak; jangan menyalin kesalahan, isi, data, atau sitasinya dan jangan memasukkannya ke daftar pustaka.
+Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023 adalah otoritas format. Skripsi kakak tingkat hanya comparator non-otoritatif untuk melihat struktur umum dan jenis artefak; jangan menyalin kesalahan, isi, data, atau sitasinya dan jangan memasukkannya ke daftar pustaka.
 
 Kontrol format minimum yang telah diverifikasi dari pedoman:
 

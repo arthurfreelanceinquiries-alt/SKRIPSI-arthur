@@ -28,8 +28,10 @@ z:\Skripsi\
 │   └── skills.md                     ← Definisi peran reviewer
 │
 ├── 📁 05_Pedoman_&_Referensi/     # Pedoman Resmi (permanen)
-│   ├── Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.pdf  ← OTORITAS FORMAT
-│   ├── Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.md
+│   ├── Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023.pdf  ← OTORITAS FORMAT
+│   ├── Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023.md
+│   ├── Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.pdf  (arsip, referensi historis)
+│   ├── Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.md   (arsip, referensi historis)
 │   ├── PRD_AI_Dosen_Pembimbing_Skripsi_v2.md
 │   └── TUGAS AKHIR (Revisii).pdf   ← Contoh skripsi (comparator only)
 │
@@ -74,4 +76,5 @@ Berisi: Naskah Bab 1–5 (TEX/PDF/MD/DOCX), data panel, metodologi, panduan bela
 ## 📚 Pedoman Resmi
 
 Selalu verifikasi ke sumber utama:  
-📄 [`05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.pdf`](05_Pedoman_%26_Referensi/Buku%20Pedoman%20Penyusunan%20Skripsi%20FEB%20Ukrida%202022.pdf)
+📄 [`05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023.pdf`](05_Pedoman_%26_Referensi/Buku%20Pedoman%20Penyusunan%20Tugas%20Akhir%20FEB%20UKRIDA%202023.pdf)  
+📄 [`05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Tugas Akhir 2023.md`](05_Pedoman_%26_Referensi/Buku%20Pedoman%20Penyusunan%20Tugas%20Akhir%202023.md)
