@@ -13,9 +13,9 @@
 |:---|:---|:---|:---|
 | 1 | **Impulsive Buying** | Pembelian yang tiba-tiba, spontan, tanpa perencanaan, dan didorong oleh emosi sesaat. Melibatkan dorongan kuat untuk segera membeli yang mengabaikan konsekuensi. | Rook (1987) |
 | 2 | **Hedonic Motivation** | Dorongan berbelanja demi kesenangan emosional, hiburan, dan sensasi psikologis — bukan untuk kebutuhan fungsional. | Hirschman & Holbrook (1982); Arnold & Reynolds (2003) |
-| 3 | **Need for Completion** | Hasrat psikologis kolektor untuk melengkapi satu set koleksi secara utuh, didorong oleh ketegangan kognitif dari item yang belum terkumpul. | Zeigarnik (1927); Belk (1995) |
+| 3 | **Desire for Completeness** | Hasrat psikologis kolektor untuk melengkapi satu set koleksi secara utuh, didorong oleh ketegangan kognitif dari item yang belum terkumpul. | Zeigarnik (1927); Belk (1995) |
 | 4 | **Speculative Motive** | Hasrat membeli aset/barang dengan ekspektasi menjual kembali di harga lebih tinggi di masa depan. | Keynes (1936) |
-| 5 | **Literasi Keuangan** | Kemampuan memahami, memproses, dan mengelola keuangan secara efektif untuk keputusan finansial yang tepat. 3 dimensi: knowledge, behavior, attitude. | Chen & Volpe (1998); OJK (2024); OECD-INFE (2023) |
+| 5 | **Self-Control** | Kemampuan memahami, memproses, dan mengelola keuangan secara efektif untuk keputusan finansial yang tepat. 3 dimensi: knowledge, behavior, attitude. | Chen & Volpe (1998); OJK (2024); OECD-INFE (2023) |
 
 ---
 

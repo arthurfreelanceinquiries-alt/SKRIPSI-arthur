@@ -37,7 +37,7 @@
 | A3 | Rp20.000–Rp30.000 per pack |
 | A4 | Rp500.000–Rp3.000.000+ per lembar |
 | A5 | Perbedaan sangat besar (20-100x lipat) antara harga booster pack dan harga kartu langka di pasar sekunder |
-| A6 | Hedonic Motivation (X1), Need for Completion (X2), Speculative Motive (X3) |
+| A6 | Hedonic Motivation (X1), Desire for Completeness (X2), Speculative Motive (X3) |
 | A7 | Karena melibatkan speculative motive (teori Keynes), behavioral finance, dan literasi keuangan sebagai moderator |
 | A8 | Mekanisme di mana isi booster pack tidak bisa diketahui sebelum dibuka — elemen kejutan/randomisasi |
 | A9 | Seri 151, Kilau Hitam, Terastal (atau seri lain yang tersedia) |
@@ -114,7 +114,7 @@
 | C2 | 120-150 responden. Dasar: Green (1991) N ≥ 50 + 8k; k=7 → minimal 106 |
 | C3 | MRA (Moderated Regression Analysis) — regresi yang menguji efek moderasi melalui variabel perkalian (interaction term) |
 | C4 | Y = α + β₁X₁ + β₂X₂ + β₃X₃ + β₄M + β₅(X₁·M) + β₆(X₂·M) + β₇(X₃·M) + e |
-| C5 | Variabel perkalian X×M. Contoh: X₁·M = Hedonic Motivation × Literasi Keuangan. Jika β₅ negatif signifikan → FL memperlemah pengaruh HM terhadap IB |
+| C5 | Variabel perkalian X×M. Contoh: X₁·M = Hedonic Motivation × Self-Control. Jika β₅ negatif signifikan → FL memperlemah pengaruh HM terhadap IB |
 | C6 | 3 uji: Normalitas, Multikolinearitas (VIF), Heteroskedastisitas. Autokorelasi TIDAK dilakukan karena data primer bersifat kros-seksional (cross-sectional), bukan runtun waktu (time series) — masalah autokorelasi hanya terjadi pada data berurutan waktu (Ghozali, 2018) |
 | C7 | Mean-centering — mengurangi setiap skor variabel dengan rata-ratanya sebelum dikalikan (Aiken & West, 1991) |
 | C8 | Model parsimoni (3X, 1M, 1Y tanpa mediasi). MRA cukup powerful untuk uji moderasi. Sesuai standar SPSS di tingkat S1 |
@@ -136,7 +136,7 @@
 ### 🔑 Kunci Jawaban Bagian D
 | Soal | Jawaban Ringkas |
 |:---|:---|
-| D1 | Belum ada penelitian yang menguji HM + NfC + SM secara simultan pada kartu koleksi fisik, dan FL belum diuji sebagai moderator pada produk koleksi + spekulasi |
+| D1 | Belum ada penelitian yang menguji HM + DfC + SM secara simultan pada kartu koleksi fisik, dan FL belum diuji sebagai moderator pada produk koleksi + spekulasi |
 | D2 | Blind box = mainan acak tanpa checklist set eksplisit dan tanpa pasar sekunder setransparan TCG. Booster pack TCG punya checklist (195 kartu), pasar sekunder likuid, dan nilai grading |
 | D3 | (1) Konteks komoditas unik (TCG fisik), (2) Kombinasi 3 variabel X belum pernah diuji simultan, (3) FL sebagai moderator pada produk koleksi + spekulasi |
 | D4 | Karena blind box (Pop Mart) memiliki mekanisme terdekat dengan booster pack (elemen randomisasi/kejutan, dorongan koleksi), meskipun berbeda objek |

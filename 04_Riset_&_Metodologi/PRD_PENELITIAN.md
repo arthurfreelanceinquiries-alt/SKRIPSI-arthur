@@ -1,6 +1,6 @@
 # PRD Penelitian Skripsi — Pokémon TCG & Impulsive Buying
 
-> Versi: 2.0 | Tanggal: 8 September 2026 | Status: Finalisasi Bab 1 (Fase 4)  
+> Versi: 3.0 | Tanggal: 10 September 2026 | Status: Revisi Final Sesuai Arahan Dosen (9 Sep 2026)  
 > Konsentrasi: **Manajemen Keuangan** — FEB UKRIDA  
 > Otoritas format: Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023  
 
@@ -8,7 +8,7 @@
 
 ## 1. JUDUL PENELITIAN (FINAL)
 
-**PENGARUH *HEDONIC MOTIVATION*, *NEED FOR COMPLETION*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN LITERASI KEUANGAN SEBAGAI VARIABEL MODERASI**
+**PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI**
 
 ---
 
@@ -25,11 +25,11 @@
 ## 3. RUMUSAN MASALAH
 
 1. Apakah *Hedonic Motivation* berpengaruh positif dan signifikan terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
-2. Apakah *Need for Completion* berpengaruh positif dan signifikan terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
+2. Apakah *Desire for Completeness* berpengaruh positif dan signifikan terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
 3. Apakah *Speculative Motive* berpengaruh positif dan signifikan terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
-4. Apakah *Literasi Keuangan* memoderasi (memperlemah) pengaruh *Hedonic Motivation* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
-5. Apakah *Literasi Keuangan* memoderasi (memperlemah) pengaruh *Need for Completion* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
-6. Apakah *Literasi Keuangan* memoderasi (memperlemah) pengaruh *Speculative Motive* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
+4. Apakah *Self-Control* memoderasi (memperlemah) pengaruh *Hedonic Motivation* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
+5. Apakah *Self-Control* memoderasi (memperlemah) pengaruh *Desire for Completeness* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
+6. Apakah *Self-Control* memoderasi (memperlemah) pengaruh *Speculative Motive* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
 
 ---
 
@@ -38,11 +38,11 @@
 | Kode | Hipotesis | Arah | Landasan Teori |
 |---|---|---|---|
 | **H1** | *Hedonic Motivation* berpengaruh positif dan signifikan terhadap *Impulsive Buying* | + | Arnold & Reynolds (2003) |
-| **H2** | *Need for Completion* berpengaruh positif dan signifikan terhadap *Impulsive Buying* | + | Belk (1995); Mowen (1990) (*Zeigarnik Effect*) |
+| **H2** | *Desire for Completeness* berpengaruh positif dan signifikan terhadap *Impulsive Buying* | + | Gao, Huang & Simonson (2014); Barasz et al. (2017); Zeigarnik (1927) |
 | **H3** | *Speculative Motive* berpengaruh positif dan signifikan terhadap *Impulsive Buying* | + | Shiller (2000); Behavioral Finance (*Overoptimism Bias*) |
-| **H4** | *Literasi Keuangan* memoderasi (memperlemah) pengaruh *Hedonic Motivation* $\rightarrow$ *Impulsive Buying* | - (moderasi) | OJK SNLIK (2023); OECD-INFE (2022) |
-| **H5** | *Literasi Keuangan* memoderasi (memperlemah) pengaruh *Need for Completion* $\rightarrow$ *Impulsive Buying* | - (moderasi) | OJK SNLIK (2023); OECD-INFE (2022) |
-| **H6** | *Literasi Keuangan* memoderasi (memperlemah) pengaruh *Speculative Motive* $\rightarrow$ *Impulsive Buying* | - (moderasi) | OJK SNLIK (2023); OECD-INFE (2022) |
+| **H4** | *Self-Control* memoderasi (memperlemah) pengaruh *Hedonic Motivation* $\rightarrow$ *Impulsive Buying* | - (moderasi) | Baumeister (2002); Tangney et al. (2004); Sultan et al. (2012) |
+| **H5** | *Self-Control* memoderasi (memperlemah) pengaruh *Desire for Completeness* $\rightarrow$ *Impulsive Buying* | - (moderasi) | Vohs & Faber (2007); Thaler & Shefrin (1981) |
+| **H6** | *Self-Control* memoderasi (memperlemah) pengaruh *Speculative Motive* $\rightarrow$ *Impulsive Buying* | - (moderasi) | Baumeister (2002); Tangney et al. (2004) |
 
 ---
 
@@ -53,8 +53,8 @@
 - **Definisi Operasional:** Kesenangan saat merobek bungkus pack, sensasi misteri gacha fisik, dan kebahagiaan menarik kartu foil berkilau.
 - **Skala/Item:** 5 butir pernyataan Skala Likert 1–5.
 
-### $X_2$: Need for Completion
-- **Definisi Konseptual:** Ketegangan kognitif internal untuk menyelesaikan kumpulan tugas atau koleksi yang belum utuh (Belk, 1995; Mowen, 1990).
+### $X_2$: Desire for Completeness
+- **Definisi Konseptual:** Ketegangan kognitif internal untuk menyelesaikan koleksi yang belum utuh; dorongan memiliki set item yang lengkap (*The Completing the Set Effect*) (Gao, Huang & Simonson, 2014, *JMR*; Barasz et al., 2017; Zeigarnik, 1927).
 - **Definisi Operasional:** Dorongan kuat mengisi slot kartu yang masih kosong dalam album binder koleksi satu seri Pokémon.
 - **Skala/Item:** 4–5 butir pernyataan Skala Likert 1–5.
 
@@ -63,10 +63,10 @@
 - **Definisi Operasional:** Pertimbangan nilai jual kembali (*resale value / grading PSA*) dan harapan balik modal saat membeli booster pack.
 - **Skala/Item:** 4–5 butir pernyataan Skala Likert 1–5.
 
-### $M$: Literasi Keuangan (Moderator)
-- **Definisi Konseptual:** Pengetahuan, keterampilan, dan keyakinan dalam mengelola keuangan untuk mencapai kesejahteraan finansial (OJK, 2023).
-- **Definisi Operasional:** Tingkat pemahaman anggaran, kontrol pengeluaran, dan manajemen risiko finansial kolektor.
-- **Skala/Item:** 6–8 butir pernyataan Likert 1–5 (adaptasi SNLIK OJK).
+### $M$: Self-Control (Moderator)
+- **Definisi Konseptual:** Kemampuan individu untuk mengatur, menghambat, dan mengendalikan pikiran, perasaan, dorongan, dan perilaku impulsif demi mencapai tujuan jangka panjang (Tangney, Baumeister & Boone, 2004; Baumeister, 2002).
+- **Definisi Operasional:** Tingkat pengendalian diri kolektor dalam membatasi pembelian pack yang tidak direncanakan.
+- **Skala/Item:** 5–6 butir pernyataan adaptasi Brief Self-Control Scale (BSCS) Likert 1–5.
 
 ### $Y$: Impulsive Buying
 - **Definisi Konseptual:** Pembelian spontan, tidak direncanakan, didorong dorongan afektif kuat (Rook, 1987; Verplanken & Herabadi, 2001).

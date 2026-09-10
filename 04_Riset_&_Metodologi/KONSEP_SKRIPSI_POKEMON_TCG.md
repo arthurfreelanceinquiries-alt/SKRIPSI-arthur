@@ -49,7 +49,7 @@ Sebelumnya dipertimbangkan topik pembelian *in-app purchase* (IAP) pada game **M
 [ X3: FOMO               ] --------+---> [ Y: Impulsive Buying ]
 [ X4: Self-Control       ] --------+             ^
                                                  |
-                                [ M: Literasi Keuangan ]
+                                [ M: Self-Control ]
 ```
 
 ### Rincian Variabel:
@@ -61,7 +61,7 @@ Sebelumnya dipertimbangkan topik pembelian *in-app purchase* (IAP) pada game **M
 | **X2** | **Social Comparison** | Dorongan membandingkan koleksi kartu dengan anggota komunitas lain atau postingan di media sosial (pamer *pull* kartu langka seperti *Special Illustration Rare*). |
 | **X3** | **Fear of Missing Out (FOMO)** | Kecemasan akan kehabisan seri/ekspansi kartu tertentu (*limited print run*), kelangkaan di toko resmi, dan rasa takut tertinggal tren kartu baru. |
 | **X4** | **Self-Control** | Kapasitas individu untuk menahan atau mengendalikan dorongan membeli *booster pack* tambahan secara berlebihan (*"cuma satu pack lagi"*). |
-| **M** | **Literasi Keuangan** *(Moderasi)* | Pengetahuan, keyakinan, dan keterampilan finansial individu (anggaran, pemahaman risiko). Berperan melemahkan pengaruh variabel pemicu (X) terhadap belanja impulsif (Y). |
+| **M** | **Self-Control** *(Moderasi)* | Pengetahuan, keyakinan, dan keterampilan finansial individu (anggaran, pemahaman risiko). Berperan melemahkan pengaruh variabel pemicu (X) terhadap belanja impulsif (Y). |
 
 ---
 
@@ -93,7 +93,7 @@ Sebelumnya dipertimbangkan topik pembelian *in-app purchase* (IAP) pada game **M
 - **Skala Social Comparison (X2):** Mengadaptasi *Iowa-Netherlands Comparison Orientation Measure* (INCOM) dari Gibbons & Buunk (1999).
 - **Skala FOMO (X3):** Mengadaptasi skala Przybylski et al. (2013).
 - **Skala Self-Control (X4):** Mengadaptasi *Brief Self-Control Scale* (BSCS) dari Tangney, Baumeister, & Boone (2004).
-- **Skala Literasi Keuangan (M):** Mengadaptasi indikator literasi keuangan personal Chen & Volpe (1998) / standar SNLIK OJK.
+- **Skala Self-Control (M):** Mengadaptasi indikator literasi keuangan personal Chen & Volpe (1998) / standar SNLIK OJK.
 
 ---
 

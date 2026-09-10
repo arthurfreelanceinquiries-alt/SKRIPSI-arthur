@@ -24,7 +24,7 @@
 |---|---|---|---|
 | **D01** | Konsentrasi: Manajemen Keuangan | 8 Sep 2026 | Topik mengkaji perilaku spekulasi aset alternatif (*collectibles*), bias optimisme finansial, dan pengendalian diri finansial. |
 | **D02** | Penggantian Topik dari MLBB ke Pokémon TCG | 8 Sep 2026 | Menghindari saturasi tinggi pada MLBB; Pokémon TCG fisik memiliki kebaruan (*novelty*) sangat tinggi di skripsi manajemen Indonesia. |
-| **D03** | Eliminasi FOMO diganti *Need for Completion* & *Speculative Motive* | 8 Sep 2026 | FOMO terlalu generik; hasrat melengkapi binder dan motif spekulasi adalah pemicu riil di dunia TCG. |
+| **D03** | Eliminasi FOMO diganti *Desire for Completeness* & *Speculative Motive* | 8 Sep 2026 | FOMO terlalu generik; hasrat melengkapi binder dan motif spekulasi adalah pemicu riil di dunia TCG. (Nama awal: Need for Completion; final: Desire for Completeness per D09) |
 | **D04** | Struktur Model: 3 X, 1 Y, 1 M (Moderasi) | 8 Sep 2026 | Memenuhi standar bobot S1 FEB UKRIDA; menjawab arahan dosen tentang pembeda variabel dan model penelitian. |
 | **D05** | Software Analisis: SPSS (MRA / Process Macro Hayes) | 8 Sep 2026 | Sesuai kapabilitas mahasiswa dan standar regresi moderasi S1. |
 | **D06** | Populasi Operasional: Komunitas Pembeli/Kolektor Pokémon TCG Indonesia | 8 Sep 2026 | WNI usia minimal 17 tahun yang pernah membeli *booster pack* resmi Pokémon TCG fisik minimal 1x dalam 6–12 bulan terakhir. |

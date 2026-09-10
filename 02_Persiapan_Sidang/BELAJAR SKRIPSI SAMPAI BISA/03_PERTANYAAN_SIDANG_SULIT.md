@@ -34,7 +34,7 @@
 > "Pertanyaan yang sangat relevan, Bapak/Ibu. Memang secara fenomenologis, ketiga variabel ini bisa saling terkait pada level individual. Namun secara konseptual, ketiganya mengukur dimensi yang berbeda:
 >
 > - **Hedonic Motivation** = *process-oriented* — kesenangan dari **proses** berbelanja/membuka pack.
-> - **Need for Completion** = *goal-oriented* — dorongan untuk mencapai **hasil** (set lengkap).
+> - **Desire for Completeness** = *goal-oriented* — dorongan untuk mencapai **hasil** (set lengkap).
 > - **Speculative Motive** = *profit-oriented* — ekspektasi **keuntungan finansial** dari resale.
 >
 > Secara operasional, **tiga mekanisme pertahanan construct validity** akan diterapkan: (1) **Uji validitas diskriminan** — memastikan item-item kuesioner setiap konstruk memiliki loading lebih tinggi pada konstruknya sendiri dibanding konstruk lain, (2) **Analisis korelasi antar-variabel** — korelasi yang tinggi (r > 0,8) mengindikasikan masalah, dan akan dilaporkan secara transparan, (3) **Uji VIF** — jika VIF > 10, menunjukkan multikolinearitas yang perlu ditangani.

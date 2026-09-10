@@ -1,7 +1,7 @@
 # Progress Tracker — Persiapan Sidang Proposal Skripsi
 
 > **Mahasiswa:** Arthur
-> **Judul:** Pengaruh Hedonic Motivation, Need for Completion, dan Speculative Motive terhadap Impulsive Buying Booster Pack Kartu Pokémon TCG dengan Literasi Keuangan sebagai Variabel Moderasi
+> **Judul:** Pengaruh Hedonic Motivation, Desire for Completeness, dan Speculative Motive terhadap Impulsive Buying Booster Pack Kartu Pokémon TCG dengan Self-Control sebagai Variabel Moderasi
 > **Konsentrasi:** Manajemen Keuangan
 > **Fakultas:** Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana (UKRIDA)
 > **Terakhir diperbarui:** 8 September 2026

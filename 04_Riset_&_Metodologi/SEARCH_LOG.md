@@ -3,7 +3,7 @@
 ## 1. Identitas Penelusuran
 
 - **Tanggal audit terakhir:** 8 September 2026 (Asia/Bangkok)
-- **Pertanyaan kerja:** *Apakah Hedonic Motivation, Need for Completion, dan Speculative Motive berpengaruh positif terhadap Impulsive Buying booster pack kartu Pokémon TCG, dan apakah Literasi Keuangan memoderasi (memperlemah) hubungan tersebut?*
+- **Pertanyaan kerja:** *Apakah Hedonic Motivation, Desire for Completeness, dan Speculative Motive berpengaruh positif terhadap Impulsive Buying booster pack kartu Pokémon TCG, dan apakah Self-Control memoderasi (memperlemah) hubungan tersebut?*
 - **Tujuan penelusuran:** Menguji kelayakan konstruk X1, X2, X3, Y, dan M; menemukan bukti empiris terdekat dari 5 tahun terakhir (2021–2026); menilai kebaruan yang dapat dipertanggungjawabkan; dan mencatat keterbatasan sumber.
 - **Batas fase:** Log ini tidak menyatakan hubungan kausal.
 
@@ -23,7 +23,7 @@ Jalankan kueri berikut dengan tanda kutip sebagaimana ditulis, lalu telusuri DOI
 3. `Arnold Reynolds hedonic shopping 2021 2022 2023 2024 empirical replication`
 4. `"hedonic motivation" "positive affect" impulse buying mediating SEM PLS`
 
-**Klaster B — Need for Completion / Collectible Psychology (2021–2026):**
+**Klaster B — Desire for Completeness / Collectible Psychology (2021–2026):**
 5. `"set completion" impulse buying collectibles trading cards 2022 2023 2024 journal`
 6. `"blind box" OR "gacha" OR "mystery box" impulsive buying consumer behavior 2022 2023 2024`
 7. `collector psychology completion drive Zeigarnik effect purchasing 2021 2022 2023`
@@ -35,11 +35,11 @@ Jalankan kueri berikut dengan tanda kutip sebagaimana ditulis, lalu telusuri DOI
 11. `"irrational exuberance" collectibles NFT trading cards behavioral finance 2021 2022 2023`
 12. `"speculative buying" OR "speculative behavior" consumer impulse purchase 2022 2023 2024`
 
-**Klaster D — Financial Literacy × Impulsive Buying / Moderasi (2021–2026):**
-13. `"financial literacy" moderating "impulsive buying" Indonesia 2021 2022 2023 2024`
-14. `"financial literacy" "impulse buying" Gen Z e-commerce quantitative survey`
+**Klaster D — Self-Control × Impulsive Buying / Moderasi (2021–2026):**
+13. `"self-control" moderating "impulsive buying" Indonesia 2021 2022 2023 2024`
+14. `"self-control" "impulse buying" Gen Z e-commerce quantitative survey`
 15. `literasi keuangan "impulse buying" OR "impulsive buying" Indonesia jurnal 2022 2023 2024`
-16. `"financial literacy" moderating hedonic OR speculation impulse buying journal`
+16. `"self-control" moderating hedonic OR speculation impulse buying journal`
 
 **Klaster E — Impulsive Buying Teori Terkini (2021–2026):**
 17. `"impulsive buying tendency" Verplanken Herabadi 2021 2022 2023 replication`
@@ -49,7 +49,7 @@ Jalankan kueri berikut dengan tanda kutip sebagaimana ditulis, lalu telusuri DOI
 ### Kriteria Inklusi
 
 1. Artikel peer-reviewed, working paper resmi, atau laporan lembaga resmi.
-2. Membahas setidaknya satu pasangan variabel penelitian: hedonic motivation × impulsive buying, set completion × purchasing, speculative behavior × purchasing, atau financial literacy × impulsive buying.
+2. Membahas setidaknya satu pasangan variabel penelitian: hedonic motivation × impulsive buying, set completion × purchasing, speculative behavior × purchasing, atau self-control × impulsive buying.
 3. **Prioritas publikasi 2021–2026.** Studi fondasional yang diperlukan untuk definisi dan mekanisme tetap disertakan dengan label `[FONDASIONAL]`.
 4. DOI atau URL primer tersedia.
 5. Konstruk, data/sampel, metode, hasil, dan keterbatasan dapat diperiksa dari abstrak atau naskah penuh.

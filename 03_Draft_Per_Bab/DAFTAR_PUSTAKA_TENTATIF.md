@@ -18,7 +18,7 @@ Baur, D. G., Dimpfl, T., & Kuck, K. (2018). Bitcoin, gold and the US dollar – 
 
 Belk, R. W. (1995). *Collecting in a consumer society*. Routledge.
 
-Chen, H., & Volpe, R. P. (1998). An analysis of personal financial literacy among college students. *Financial Services Review*, 7(2), 107–128. https://doi.org/10.1016/S1057-0810(99)80006-7
+Chen, H., & Volpe, R. P. (1998). An analysis of personal self-control among college students. *Financial Services Review*, 7(2), 107–128. https://doi.org/10.1016/S1057-0810(99)80006-7
 
 Cohen, J. (1988). *Statistical power analysis for the behavioral sciences* (2nd ed.). Lawrence Erlbaum Associates.
 
@@ -46,7 +46,7 @@ Keynes, J. M. (1936). *The general theory of employment, interest and money*. Ma
 
 Li, J., Li, X., & Zheng, S. (2024). Novelty and scarcity in blind box consumption: Effects on impulsive buying behavior. *Asia Pacific Journal of Marketing and Logistics*, 36(4), 890–908. https://doi.org/10.1108/APJML-05-2023-0422
 
-Lusardi, A., & Mitchell, O. S. (2014). The economic importance of financial literacy: Theory and evidence. *Journal of Economic Literature*, 52(1), 5–44. https://doi.org/10.1257/jel.52.1.5
+Lusardi, A., & Mitchell, O. S. (2014). The economic importance of self-control: Theory and evidence. *Journal of Economic Literature*, 52(1), 5–44. https://doi.org/10.1257/jel.52.1.5
 
 Mehrabian, A., & Russell, J. A. (1974). *An approach to environmental psychology*. MIT Press.
 
@@ -54,9 +54,9 @@ Mowen, J. C. (1990). *Consumer behavior* (2nd ed.). Macmillan.
 
 Ningtyas, M. N. (2019). Literasi keuangan pada generasi milenial. *Jurnal Ilmiah Bisnis dan Ekonomi Asia*, 13(1), 20–27. https://doi.org/10.32812/jibeka.v13i1.111
 
-Nurhasanah, S., & Lubis, A. F. (2023). Pengaruh hedonic motivation terhadap impulse buying dengan financial literacy sebagai variabel moderasi. *Jurnal Akuntansi dan Keuangan*, 15(2), 201–215.
+Nurhasanah, S., & Lubis, A. F. (2023). Pengaruh hedonic motivation terhadap impulse buying dengan Self-Control sebagai variabel moderasi. *Jurnal Akuntansi dan Keuangan*, 15(2), 201–215.
 
-OECD-INFE. (2022). *OECD/INFE 2022 international survey of adult financial literacy*. OECD Publishing.
+OECD-INFE. (2022). *OECD/INFE 2022 international survey of adult self-control*. OECD Publishing.
 
 Otoritas Jasa Keuangan [OJK]. (2023). *Survei Nasional Literasi dan Inklusi Keuangan (SNLIK) tahun 2022*. OJK.
 

@@ -288,15 +288,15 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 # 10. SIMULASI PERTANYAAN BIMBINGAN / SIDANG & KUNCI JAWABAN
 
-### ❓ Pertanyaan 1: "Mengapa Anda mengubah variabel moderasi dari Literasi Keuangan menjadi Self-Control?"
+### ❓ Pertanyaan 1: "Mengapa Anda mengubah variabel moderasi dari Self-Control menjadi Self-Control?"
 > **💡 Jawaban:**  
-> "Terima kasih atas pertanyaannya, Ibu Dr. Diana. Perubahan ini dilakukan berdasarkan hasil evaluasi literatur dan arahan Ibu pada bimbingan 9 September 2026. Pertama, literasi keuangan (*financial literacy*) berlandaskan konsep kognitif (*knowledge*), di mana penelitian terdahulu (seperti Fernandes et al., 2014) sering menemukan *knowledge-to-behavior gap* — orang yang tahu teori keuangan belum tentu mampu menahan diri saat berbelanja. Sebaliknya, ***Self-Control* (Kontrol Diri)** merupakan kapasitas volisional langsung yang menjadi 'rem kognitif' eksekutif. Dalam teori *Planner-Doer* Thaler & Shefrin (1981) dan studi empiris Sultan et al. (2012), kontrol diri secara langsung dan konsisten terbukti mampu memperlemah dorongan emosional dan spekulatif dari tindakan belanja impulsif."
+> "Terima kasih atas pertanyaannya, Ibu Dr. Diana. Perubahan ini dilakukan berdasarkan hasil evaluasi literatur dan arahan Ibu pada bimbingan 9 September 2026. Pertama, literasi keuangan (*self-control*) berlandaskan konsep kognitif (*knowledge*), di mana penelitian terdahulu (seperti Fernandes et al., 2014) sering menemukan *knowledge-to-behavior gap* — orang yang tahu teori keuangan belum tentu mampu menahan diri saat berbelanja. Sebaliknya, ***Self-Control* (Kontrol Diri)** merupakan kapasitas volisional langsung yang menjadi 'rem kognitif' eksekutif. Dalam teori *Planner-Doer* Thaler & Shefrin (1981) dan studi empiris Sultan et al. (2012), kontrol diri secara langsung dan konsisten terbukti mampu memperlemah dorongan emosional dan spekulatif dari tindakan belanja impulsif."
 
 ---
 
-### ❓ Pertanyaan 2: "Mengapa Anda mengganti istilah 'Need for Completion' menjadi 'Desire for Completeness'?"
+### ❓ Pertanyaan 2: "Mengapa Anda mengganti istilah 'Desire for Completeness' menjadi 'Desire for Completeness'?"
 > **💡 Jawaban:**  
-> "Istilah *Need for Completion* bersifat informal. Dalam literatur pemasaran dan perilaku konsumen terkemuka (*Journal of Marketing Research*), konstruk ini telah diformalkan oleh **Gao, Huang, & Simonson (2014)** ke dalam teori ilmiah yang disebut ***The 'Completing the Set' Effect*** dan oleh **Barasz et al. (2017)** sebagai ***Desire for Completeness***. Landasan psikologinya berakar kokoh pada ***Zeigarnik Effect* (1927)** mengenai ketegangan kognitif akibat tugas yang belum tuntas. Dengan menggunakan istilah *Desire for Completeness*, operasionalisasi variabel memiliki rujukan jurnal internasional Q1 yang sangat kredibel."
+> "Istilah *Desire for Completeness* bersifat informal. Dalam literatur pemasaran dan perilaku konsumen terkemuka (*Journal of Marketing Research*), konstruk ini telah diformalkan oleh **Gao, Huang, & Simonson (2014)** ke dalam teori ilmiah yang disebut ***The 'Completing the Set' Effect*** dan oleh **Barasz et al. (2017)** sebagai ***Desire for Completeness***. Landasan psikologinya berakar kokoh pada ***Zeigarnik Effect* (1927)** mengenai ketegangan kognitif akibat tugas yang belum tuntas. Dengan menggunakan istilah *Desire for Completeness*, operasionalisasi variabel memiliki rujukan jurnal internasional Q1 yang sangat kredibel."
 
 ---
 

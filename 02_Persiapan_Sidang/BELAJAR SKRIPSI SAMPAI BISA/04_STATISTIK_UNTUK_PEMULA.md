@@ -36,8 +36,8 @@ Y = a + b₁X₁ + b₂X₂ + b₃X₃ + b₄M + b₅(X₁×M) + b₆(X₂×M) +
 ```
 
 **Interpretasi kunci:**
-- Jika `b₅` negatif dan signifikan → Literasi Keuangan **memperlemah** pengaruh Hedonic Motivation terhadap Impulsive Buying ✅
-- Jika `b₅` tidak signifikan → Literasi Keuangan **tidak** memoderasi hubungan tersebut ❌
+- Jika `b₅` negatif dan signifikan → Self-Control **memperlemah** pengaruh Hedonic Motivation terhadap Impulsive Buying ✅
+- Jika `b₅` tidak signifikan → Self-Control **tidak** memoderasi hubungan tersebut ❌
 
 ---
 
