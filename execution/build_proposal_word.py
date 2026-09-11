@@ -21,7 +21,7 @@ from pathlib import Path
 import docx
 from docx import Document
 from docx.shared import Pt, Cm, Inches, RGBColor
-from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING, WD_TAB_ALIGNMENT, WD_TAB_LEADER
 from docx.enum.section import WD_SECTION, WD_SECTION_START
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml import parse_xml, OxmlElement
@@ -831,24 +831,50 @@ def build_full_proposal():
         p_toc.paragraph_format.line_spacing = 1.15
         p_toc.paragraph_format.space_before = Pt(0)
         p_toc.paragraph_format.space_after = Pt(2)
-        p_toc.paragraph_format.first_line_indent = Cm(0)
+        p_toc.paragraph_format.tab_stops.add_tab_stop(Cm(14.0), WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
 
-        is_bold = not title_toc.startswith("  ")
-        r_t = p_toc.add_run(title_toc)
-        r_t.font.name = "Times New Roman"
-        r_t.font.size = Pt(11)
-        r_t.font.bold = is_bold
+        if title_toc.startswith("      "):
+            # Level 3: Anak sub-bab (e.g., 1.2.1)
+            p_toc.paragraph_format.left_indent = Cm(1.2)
+            p_toc.paragraph_format.first_line_indent = Cm(0)
+            clean_title = title_toc.strip()
+            r_t = p_toc.add_run(clean_title)
+            r_t.font.name = "Times New Roman"
+            r_t.font.size = Pt(10.5)
+            r_t.font.bold = False
 
-        dot_fill = " . " * max(1, int((70 - len(title_toc)) / 2))
-        r_dots = p_toc.add_run(f" {dot_fill} ")
-        r_dots.font.name = "Times New Roman"
-        r_dots.font.size = Pt(10)
-        r_dots.font.color.rgb = RGBColor(150, 150, 150)
+            r_p = p_toc.add_run(f"\t{page_toc}")
+            r_p.font.name = "Times New Roman"
+            r_p.font.size = Pt(10.5)
+            r_p.font.bold = False
+        elif title_toc.startswith("  "):
+            # Level 2: Sub-bab (e.g., 1.1)
+            p_toc.paragraph_format.left_indent = Cm(0.6)
+            p_toc.paragraph_format.first_line_indent = Cm(0)
+            clean_title = title_toc.strip()
+            r_t = p_toc.add_run(clean_title)
+            r_t.font.name = "Times New Roman"
+            r_t.font.size = Pt(11)
+            r_t.font.bold = False
 
-        r_p = p_toc.add_run(page_toc)
-        r_p.font.name = "Times New Roman"
-        r_p.font.size = Pt(11)
-        r_p.font.bold = is_bold
+            r_p = p_toc.add_run(f"\t{page_toc}")
+            r_p.font.name = "Times New Roman"
+            r_p.font.size = Pt(11)
+            r_p.font.bold = False
+        else:
+            # Level 1: BAB / Frontmatter
+            p_toc.paragraph_format.left_indent = Cm(0)
+            p_toc.paragraph_format.first_line_indent = Cm(0)
+            clean_title = title_toc.strip()
+            r_t = p_toc.add_run(clean_title)
+            r_t.font.name = "Times New Roman"
+            r_t.font.size = Pt(11)
+            r_t.font.bold = True
+
+            r_p = p_toc.add_run(f"\t{page_toc}")
+            r_p.font.name = "Times New Roman"
+            r_p.font.size = Pt(11)
+            r_p.font.bold = True
 
     # 8. Daftar Tabel (hal. ix)
     doc.add_page_break()
@@ -873,13 +899,21 @@ def build_full_proposal():
         p_lot.paragraph_format.space_before = Pt(0)
         p_lot.paragraph_format.space_after = Pt(4)
         p_lot.paragraph_format.first_line_indent = Cm(0)
+        p_lot.paragraph_format.tab_stops.add_tab_stop(Cm(14.0), WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
 
-        p_lot.add_run(f"{tab_num}.  ").font.bold = True
-        p_lot.add_run(tab_title)
-        dot_fill = " . " * max(1, int((65 - len(tab_title)) / 2))
-        r_d = p_lot.add_run(f" {dot_fill} ")
-        r_d.font.color.rgb = RGBColor(150, 150, 150)
-        p_lot.add_run(tab_page).font.bold = True
+        r_num = p_lot.add_run(f"{tab_num}.  ")
+        r_num.font.name = "Times New Roman"
+        r_num.font.size = Pt(11)
+        r_num.font.bold = True
+
+        r_title = p_lot.add_run(tab_title)
+        r_title.font.name = "Times New Roman"
+        r_title.font.size = Pt(11)
+
+        r_page = p_lot.add_run(f"\t{tab_page}")
+        r_page.font.name = "Times New Roman"
+        r_page.font.size = Pt(11)
+        r_page.font.bold = True
 
     # 9. Daftar Gambar (hal. x)
     doc.add_page_break()
@@ -902,13 +936,21 @@ def build_full_proposal():
         p_lof.paragraph_format.space_before = Pt(0)
         p_lof.paragraph_format.space_after = Pt(4)
         p_lof.paragraph_format.first_line_indent = Cm(0)
+        p_lof.paragraph_format.tab_stops.add_tab_stop(Cm(14.0), WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
 
-        p_lof.add_run(f"{fig_num}.  ").font.bold = True
-        p_lof.add_run(fig_title)
-        dot_fill = " . " * max(1, int((60 - len(fig_title)) / 2))
-        r_d = p_lof.add_run(f" {dot_fill} ")
-        r_d.font.color.rgb = RGBColor(150, 150, 150)
-        p_lof.add_run(fig_page).font.bold = True
+        r_num = p_lof.add_run(f"{fig_num}.  ")
+        r_num.font.name = "Times New Roman"
+        r_num.font.size = Pt(11)
+        r_num.font.bold = True
+
+        r_title = p_lof.add_run(fig_title)
+        r_title.font.name = "Times New Roman"
+        r_title.font.size = Pt(11)
+
+        r_page = p_lof.add_run(f"\t{fig_page}")
+        r_page.font.name = "Times New Roman"
+        r_page.font.size = Pt(11)
+        r_page.font.bold = True
 
     # ------------------------------------------------------------------------
     # SECTION 3: BAGIAN INTI / MAIN TEXT (BAB 1 s.d. BAB 3 & DAFTAR PUSTAKA)
