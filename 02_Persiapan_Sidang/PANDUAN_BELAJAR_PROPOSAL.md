@@ -186,19 +186,19 @@ Mengacu pada meta-analisis komprehensif Amos et al. (2014) dalam *Journal of Ret
 2. **Faktor Kognitif / Psikologis Kolektor:** Kebutuhan penyelesaian tugas, ketidaktahanan terhadap celah himpunan $\rightarrow$ diwakili oleh ***Desire for Completeness*** ($X_2$).
 3. **Faktor Situasional / Ekspektasi Ekonomi:** Daya tarik harga, likuiditas aset, ekspektasi keuntungan $\rightarrow$ diwakili oleh ***Speculative Motive*** ($X_3$).
 
-### Tabel Ringkasan Penelitian Sebelumnya (10 Jurnal Bereputasi):
+### Tabel Ringkasan Penelitian Sebelumnya (10 Jurnal Empiris Terkini 2021–2025):
 | No | Peneliti (Tahun) | Judul Penelitian | Variabel & Metode | Hasil Utama Penelitian |
 |:---:|:---|:---|:---|:---|
-| 1 | Arnold & Reynolds (2003) | *Hedonic Shopping Motivations* | Motivasi hedonis; Analisis faktor | Mengidentifikasi 6 dimensi hedonis; kesenangan emosional memicu belanja spontan. |
-| 2 | Gültekin & Özer (2012) | *The Influence of Hedonic Motives on Impulse Buying* | X: *Hedonic motives*; Y: *Impulse buying*; Regresi | Motivasi hedonis berpengaruh positif signifikan terhadap *impulsive buying*. |
-| 3 | Gao, Huang, & Simonson (2014) | *The "Completing the Set" Effect* | X: *Set framing*; Y: Niat beli; Desain eksperimen | Hasrat melengkapi set secara signifikan memicu pembelian terburu-buru dan spontan. |
-| 4 | Barasz et al. (2017) | *Pseudo-Set Framing toward Completeness* | X: *Pseudo-set*; Y: Keputusan beli; Eksperimen | Pembingkaian item sebagai himpunan utuh menciptakan dorongan melengkapi item. |
-| 5 | Shiller (2000) | *Irrational Exuberance* | X: Spekulasi, psikologi pasar; Y: Gelembung harga | Bias optimisme pasar memicu euforia transaksi spekulatif spontan berlebihan. |
-| 6 | Baur, Hong, & Lee (2018) | *Alternative Collectibles Speculative Dynamics* | X: Motif spekulasi; Y: Volume transaksi | Pasar aset alternatif memperlihatkan dinamika transaksi spekulatif mirip pasar finansial. |
-| 7 | Vohs & Faber (2007) | *Self-Regulatory Resource Depletion* | X: Penipisan kontrol diri; Y: *Impulse buying*; Eksperimen | Penipisan kontrol diri meningkatkan belanja impulsif; kontrol diri tinggi membatasi belanja spontan. |
-| 8 | Sultan, Joireman, & Sprott (2012) | *Building Consumers' Impulsive Buying Model* | X: Stimulus emosi; Y: *Impulse*; Mod: *Self-control*; SEM | Kontrol diri secara signifikan memperlemah pengaruh dorongan emosional terhadap *impulse buying*. |
-| 9 | Fitriyani, Widodo, & Fauzi (2022) | Hubungan *Hedonic Shopping* dengan *Impulse Buying* | X: *Hedonic motivation*; Y: *Impulse buying*; Regresi | Motivasi hedonis berkorelasi positif signifikan dengan perilaku belanja impulsif konsumen muda. |
-| 10 | Tangney, Baumeister, & Boone (2004) | *High Self-Control Predicts Good Adjustment* | *Trait self-control*; Skala BSCS; Validasi psikometri | Mengembangkan skala kontrol diri baku; individu kontrol diri tinggi mampu menunda kepuasan. |
+| 1 | Pranggabayu & Andjarwati (2022) | *Pengaruh Hedonic Shopping Motivation dan Store Atmosphere terhadap Impulsive Buying* | X1: Hedonic motivation, X2: Store atmosphere; Y: Impulsive buying; Regresi berganda | Motivasi hedonis berpengaruh positif signifikan terhadap pembelian impulsif. |
+| 2 | Apidana & Kholifah (2022) | *Peran Self Control dalam Memoderasi Pengaruh Hedonic Motives terhadap Impulse Buying* | X: Hedonic motives; Y: Impulse buying; Mod: Self-control; MRA | Motif hedonis berpengaruh positif terhadap impulse buying; kontrol diri memoderasi/memperlemah pengaruh tersebut. |
+| 3 | Lienardy & Panasea (2024) | *The Role of Self-Control in Moderating Hedonistic Behavior on Impulsive Buying* | X: Hedonistic behavior; Y: Impulsive buying; Mod: Self-control; MRA | Perilaku hedonis positif signifikan terhadap impulsif; kontrol diri terbukti memoderasi dan memperlemah pengaruh hedonis. |
+| 4 | Gong et al. (2024) | *Unveiling the Enigma of Blind Box Impulse Buying Curiosity* (*Heliyon* Scopus Q1) | X: Karakteristik blind box; Med: Rasa ingin tahu; Y: Impulse buying; S-O-R PLS-SEM | Kemasan acak blind box memicu rasa ingin tahu afektif yang langsung mendorong impulse buying. |
+| 5 | Tan & Adyantari (2024) | *Ketidakpastian Blind Box dan Perilaku Pembelian Impulsif* (SINTA 2) | X: Ketidakpastian blind box, Nilai emosional; Y: Pembelian impulsif; Survei | Ketidakpastian isi kemasan acak membangkitkan nilai emosional yang mendorong impulse buying. |
+| 6 | Dewi et al. (2024) | *Understanding Impulse Buying Behavior: The Case of Blind Box Purchases in Indonesia* | X1: Scarcity, X2: Uncertainty; Med: FOMO; Y: Impulse buying; PLS-SEM | Kelangkaan dan ketidakpastian memicu FOMO dan hasrat koleksi yang mendorong impulse buying Gen Z di Indonesia. |
+| 7 | Aryadi & Lingga (2024) | *Trading Card Game Community in Greater Jakarta* (Springer Nature / Atlantis Press) | X: Motivasi kolektor; Y: Keputusan investasi TCG; Regresi logistik | Membuktikan komunitas TCG di Jakarta memiliki motif spekulasi finansial dalam mengoleksi kartu sebagai aset alternatif. |
+| 8 | Colline (2024) | *Biases in Indonesian Stock Investor Behavior* (*Accounting and Finance Studies*) | X: Overconfidence, Herding; Y: Keputusan finansial; Survei | Dosen FEB UKRIDA (K-04); membuktikan tingginya bias optimisme dan ikut-ikutan pada generasi muda Indonesia. |
+| 9 | Artadita & Firmialy (2024) | *How Does Self-Control Moderate Shopping Enjoyment and Impulse Buying?* (*BBR* Scopus Q3/SINTA 1) | X: Shopping enjoyment; Y: Impulse buying; Mod: Self-control; MRA | Kesenangan belanja game berpengaruh kuat terhadap impulse buying; kontrol diri memoderasi dan menahan dorongan belanja. |
+| 10 | Katauke et al. (2023) | *Financial Literacy and Impulsivity: Evidence from Japan* (*Sustainability* MDPI Scopus Q1) | X: Regulasi finansial; Y: Impulsivity; Ekonometrika | Kapasitas regulasi diri dan kontrol finansial secara signifikan menekan impulsivitas belanja. |
 
 ---
 
@@ -214,7 +214,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### H1: *Hedonic Motivation* $\rightarrow$ *Impulsive Buying* (+)
 * **Teori:** S-O-R Model (Mehrabian & Russell, 1974) & Teori Konsumsi Pengalaman (Hirschman & Holbrook, 1982).
-* **Empiris:** Arnold & Reynolds (2003); Gültekin & Özer (2012); Fitriyani et al. (2022).
+* **Empiris:** Arnold & Reynolds (2003); Gültekin & Özer (2012); Pranggabayu & Andjarwati (2022); Artadita & Firmialy (2024).
 * **Objek Pokémon TCG:** Kemasan tertutup *booster pack* memberikan sensasi petualangan dan letupan dopamin saat merobek bungkus foil (*pack opening thrill*). Mencari kartu berkilau langka menciptakan kesenangan instan yang melumpuhkan perencanaan anggaran di kasir toko.
 * **Hipotesis:**
   > **H1: *Hedonic Motivation* berpengaruh positif dan signifikan terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.**
@@ -223,17 +223,17 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### H2: *Desire for Completeness* $\rightarrow$ *Impulsive Buying* (+)
 * **Teori:** *Zeigarnik Effect* (Zeigarnik, 1927) & *The "Completing the Set" Effect* (Gao et al., 2014; Barasz et al., 2017).
-* **Empiris:** Gao et al. (2014) membuktikan dorongan melengkapi set memicu keputusan belanja tergesa-gesa dan spontan.
-* **Objek Pokémon TCG:** Setiap seri kartu Pokémon dirilis dengan daftar nomor resmi (misal: "Seri 151", nomor 001 s.d. 165). Slot kosong pada binder memicu ketegangan kognitif visual yang mendorong kolektor segera membeli *pack* baru secara mendadak demi mengisi kekosongan tersebut.
+* **Empiris:** Gao et al. (2014); Gong et al. (2024); Tan & Adyantari (2024); Dewi et al. (2024).
+* **Objek Pokémon TCG:** Binder album kolektor yang memiliki nomor seri resmi menciptakan ketegangan kognitif saat melihat slot kosong melompong. Desakan melengkapi set mendorong pembelian berulang booster pack secara mendadak.
 * **Hipotesis:**
   > **H2: *Desire for Completeness* berpengaruh positif dan signifikan terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.**
 
 ---
 
 ### H3: *Speculative Motive* $\rightarrow$ *Impulsive Buying* (+)
-* **Teori:** *Behavioral Finance* (Keynes, 1936; Shiller, 2000; Kahneman & Tversky, 1979 - *Lottery Effect*).
-* **Empiris:** Baur et al. (2018) pada dinamika pasar aset barang koleksi alternatif.
-* **Objek Pokémon TCG:** Disparitas harga luar biasa antara harga *pack* ritel (Rp20.000–Rp30.000) dengan harga pasar sekunder kartu langka bersertifikat *PSA 10 Gem Mint* (jutaan rupiah) melahirkan motif *grading arbitrage*. Konsumen terjangkit *gambler's fallacy*, merasa modal kecil berpeluang menghasilkan keuntungan raksasa, sehingga memborong *pack* secara spontan.
+* **Teori:** *Behavioral Finance*, *Prospect Theory* (Kahneman & Tversky, 1979; Shiller, 2000), & *Gambler's Fallacy*.
+* **Empiris:** Shiller (2000); Baur et al. (2018); Aryadi & Lingga (2024 - riset TCG Jakarta); Colline (2024 - Dosen FEB UKRIDA).
+* **Objek Pokémon TCG:** Modal kecil membeli pack eceran Rp20.000–Rp30.000 berpeluang menarik kartu SAR bernilai jutaan rupiah (terlebih jika lolos grading PSA 10 Gem Mint). Persepsi keuntungan instan ini melumpuhkan kehati-hatian finansial dan memicu aksi borong spontan.
 * **Hipotesis:**
   > **H3: *Speculative Motive* berpengaruh positif dan signifikan terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.**
 
@@ -241,7 +241,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### H4: Peran Moderasi *Self-Control* pada Hubungan *Hedonic Motivation* dan *Impulsive Buying* (-)
 * **Teori:** *Self-Regulation Theory* (Baumeister, 2002) & *Planner-Doer Model* (Thaler & Shefrin, 1981).
-* **Empiris:** Vohs & Faber (2007); Sultan et al. (2012) membuktikan kontrol diri secara signifikan memperlemah (*dampens*) pengaruh dorongan emosional terhadap belanja impulsif.
+* **Empiris:** Apidana & Kholifah (2022); Lienardy & Panasea (2024); Artadita & Firmialy (2024); Katauke et al. (2023).
 * **Objek Pokémon TCG:** Ketika pembeli tergoda merobek kemasan kartu di kasir toko, individu dengan *Self-Control* tinggi mampu mengaktifkan fungsi kognitif *Planner*, menolak kenikmatan instan, dan mematuhi batas anggaran. Pengaruh motivasi hedonis terhadap pembelian impulsif pun melemah.
 * **Hipotesis:**
   > **H4: *Self-Control* memoderasi (memperlemah) pengaruh *Hedonic Motivation* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.**
@@ -250,7 +250,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### H5: Peran Moderasi *Self-Control* pada Hubungan *Desire for Completeness* dan *Impulsive Buying* (-)
 * **Teori:** Regulasi Diri (Tangney et al., 2004) dalam mengelola ketegangan kognitif ketiadaan resolusi.
-* **Empiris:** Konsumen berkontrol diri tinggi memiliki toleransi frustrasi yang lebih baik dan mengalihkan tindakan dari reaktif-spontan menjadi rencana strategis.
+* **Empiris:** Apidana & Kholifah (2022); Katauke et al. (2023).
 * **Objek Pokémon TCG:** Kolektor berkontrol diri tinggi menyadari bahwa membeli kemasan acak demi mencari 1 kartu spesifik yang belum lengkap memiliki probabilitas sangat kecil dan memboroskan uang. Kontrol diri meredam desakan belanja impulsif dan mengalihkannya ke pembelian kartu lepasan (*singles*) secara terencana.
 * **Hipotesis:**
   > **H5: *Self-Control* memoderasi (memperlemah) pengaruh *Desire for Completeness* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.**
@@ -259,7 +259,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### H6: Peran Moderasi *Self-Control* pada Hubungan *Speculative Motive* dan *Impulsive Buying* (-)
 * **Teori:** *Behavioral Finance* & Disiplin Risiko Finansial (Thaler & Shefrin, 1981; Barber & Odean, 2008).
-* **Empiris:** Sultan et al. (2012) mengonfirmasi bahwa kontrol diri memitigasi perilaku spekulatif berisiko.
+* **Empiris:** Aryadi & Lingga (2024); Colline (2024); Katauke et al. (2023).
 * **Objek Pokémon TCG:** Godaan cuan jutaan rupiah dari sertifikasi PSA 10 sangat menggiurkan. Namun, konsumen dengan kontrol diri kokoh memahami risiko volatilitas pasar dan biaya grading, sehingga tidak terburu-buru melakukan pembelian impulsif. Kontrol diri bertindak sebagai rem volisional terhadap ambisi spekulatif.
 * **Hipotesis:**
   > **H6: *Self-Control* memoderasi (memperlemah) pengaruh *Speculative Motive* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.**
