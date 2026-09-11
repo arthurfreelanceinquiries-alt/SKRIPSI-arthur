@@ -6,14 +6,15 @@ import os
 import re
 
 def main():
-    tex_path = r"d:\Perkuliahan\Skripsi\SKRIPSI-arthur\01_Naskah_Utama\Proposal_Arthur_PokemonTCG.tex"
-    bbl_path = r"d:\Perkuliahan\Skripsi\SKRIPSI-arthur\01_Naskah_Utama\Proposal_Arthur_PokemonTCG.bbl"
-    md_path = r"d:\Perkuliahan\Skripsi\SKRIPSI-arthur\01_Naskah_Utama\PROPOSAL_SKRIPSI_POKEMON_TCG.md"
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    tex_path = os.path.join(script_dir, "Proposal_Arthur_PokemonTCG.tex")
+    bbl_path = os.path.join(script_dir, "Proposal_Arthur_PokemonTCG.bbl")
+    md_path = os.path.join(script_dir, "PROPOSAL_SKRIPSI_POKEMON_TCG.md")
+    aux_path = os.path.join(script_dir, "Proposal_Arthur_PokemonTCG.aux")
 
     with open(tex_path, 'r', encoding='utf-8') as f:
         tex = f.read()
 
-    aux_path = r"d:\Perkuliahan\Skripsi\SKRIPSI-arthur\01_Naskah_Utama\Proposal_Arthur_PokemonTCG.aux"
     cite_dict = {}
     if os.path.exists(aux_path):
         with open(aux_path, 'r', encoding='utf-8') as f:
