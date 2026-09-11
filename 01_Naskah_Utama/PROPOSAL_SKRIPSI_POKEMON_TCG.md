@@ -718,7 +718,7 @@ Jadwal pelaksanaan tahapan kegiatan penelitian direncanakan berlangsung selama 6
 12. Beatty, S. E. and Ferrell, M. E. (1998). Impulse buying: Modeling its precursors. *Journal of Retailing*, 74(2):169–191.
 13. Belk, R. W. (1995). *Collecting in a Consumer Society*. Routledge, London.
 14. Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences*. Lawrence Erlbaum Associates, Hillsdale, NJ, 2 edition.
-15. Colline, F. (2024). Biases in Indonesian stock investor behavior. *Accounting and Finance Studies*, 4(2):112–126.
+15. Colline, F. (2024). Biases in Indonesian stock investor behavior. *Accounting and Finance Studies*, 4(2):88–98. https://doi.org/10.47153/afs42.9372024
 16. Dewi, M. M. L. S., Budoyo, V. D., and Mustikasari, F. (2024). Understanding impulse buying behavior: The case of blind box purchases in Indonesia. *Jurnal Locus: Penelitian dan Pengabdian*, 5(2):88–100.
 17. Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. *The Journal of Finance*, 25(2):383–417.
 18. Gao, L., Huang, Y., and Simonson, I. (2014). The ``Completing the set'' effect. *Journal of Marketing Research*, 51(2):256–273.

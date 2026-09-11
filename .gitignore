@@ -21,3 +21,7 @@ tmp/
 graphify-out/cache/
 scratch/
 ~$*
+.tmp/
+.env
+credentials.json
+token.json
