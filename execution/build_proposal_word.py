@@ -104,9 +104,16 @@ def apply_apa7_table_borders(table):
 
 
 def add_page_number_to_footer(section, is_roman=False, start_num=None):
-    """Configure footer with UKRIDA accent bar and dynamic page number."""
+    """Configure footer with UKRIDA Accent Bar 4 and dynamic page number.
+    Ensures seamless Times New Roman 10pt Bold Black typography in both
+    Microsoft Word Desktop and Google Docs Web.
+    """
     footer = section.footer
     p = footer.paragraphs[0]
+    try:
+        p.style = 'Footer'
+    except Exception:
+        pass
     p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     p.paragraph_format.space_before = Pt(0)
     p.paragraph_format.space_after = Pt(0)
@@ -114,12 +121,43 @@ def add_page_number_to_footer(section, is_roman=False, start_num=None):
 
     run_text = p.add_run("Universitas Kristen Krida Wacana | ")
     run_text.font.name = "Times New Roman"
-    run_text.font.size = Pt(9)
+    run_text.font.size = Pt(10)
     run_text.font.bold = True
-    run_text.font.color.rgb = RGBColor(100, 100, 100)
+    run_text.font.color.rgb = RGBColor(0, 0, 0)
 
-    # Insert Word Page Number field
-    fld = parse_xml(f'<w:fldSimple {nsdecls("w")} w:instr="PAGE"/>')
+    # Fallback initial value for Google Docs Web and previewers
+    if is_roman:
+        def int_to_roman(n):
+            val = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+            syb = ["m", "cm", "d", "cd", "c", "xc", "l", "xl", "x", "ix", "v", "iv", "i"]
+            res = ""
+            for i in range(len(val)):
+                while n >= val[i]:
+                    res += syb[i]
+                    n -= val[i]
+            return res
+        fallback_val = int_to_roman(start_num) if start_num is not None else "ii"
+    else:
+        fallback_val = str(start_num if start_num is not None else 1)
+
+    # Insert Word Page Number field with explicit Run Properties (Times New Roman 10pt Bold Black)
+    # w:val="20" means 20 half-points = 10 pt.
+    fld_xml = (
+        f'<w:fldSimple {nsdecls("w")} w:instr="PAGE">'
+        f'<w:r>'
+        f'<w:rPr>'
+        f'<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>'
+        f'<w:b/>'
+        f'<w:bCs/>'
+        f'<w:sz w:val="20"/>'
+        f'<w:szCs w:val="20"/>'
+        f'<w:color w:val="000000"/>'
+        f'</w:rPr>'
+        f'<w:t>{fallback_val}</w:t>'
+        f'</w:r>'
+        f'</w:fldSimple>'
+    )
+    fld = parse_xml(fld_xml)
     p._p.append(fld)
 
     # Configure section page numbering restart and format
@@ -211,55 +249,95 @@ def parse_markdown_runs(paragraph, text):
             run.font.size = Pt(12)
 
 
+def set_paragraph_outline_level(paragraph, level):
+    """Sets outline level on a paragraph for Word Navigation Pane & Google Docs Document Tabs."""
+    pPr = paragraph._p.get_or_add_pPr()
+    existing = pPr.find(qn('w:outlineLvl'))
+    if existing is not None:
+        existing.set(qn('w:val'), str(level))
+    else:
+        outline_elm = OxmlElement('w:outlineLvl')
+        outline_elm.set(qn('w:val'), str(level))
+        pPr.append(outline_elm)
+
+
 def add_heading_1(doc, title, page_break=True):
-    """BAB Heading: Centered, Bold, 12pt, ALL CAPS."""
+    """BAB Heading: Centered, Bold, 12pt, ALL CAPS, Heading 1 style + outlineLvl 0."""
     if page_break:
         doc.add_page_break()
-    p = doc.add_paragraph()
+    p = doc.add_paragraph(style='Heading 1')
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p.paragraph_format.space_before = Pt(0)
     p.paragraph_format.space_after = Pt(12)
     p.paragraph_format.line_spacing = 1.5
+    p.paragraph_format.first_line_indent = Cm(0)
     p.paragraph_format.keep_with_next = True
+    set_paragraph_outline_level(p, 0)
 
     run = p.add_run(title.upper())
     run.font.name = "Times New Roman"
     run.font.size = Pt(12)
     run.font.bold = True
+    run.font.color.rgb = RGBColor(0, 0, 0)
     return p
 
 
 def add_heading_2(doc, title):
-    """Sub-bab Heading: Left, Bold, 12pt (e.g., 1.1 Latar Belakang)."""
-    p = doc.add_paragraph()
+    """Sub-bab Heading: Left, Bold, 12pt, Heading 2 style + outlineLvl 1."""
+    p = doc.add_paragraph(style='Heading 2')
     p.alignment = WD_ALIGN_PARAGRAPH.LEFT
     p.paragraph_format.space_before = Pt(12)
     p.paragraph_format.space_after = Pt(6)
     p.paragraph_format.line_spacing = 1.5
     p.paragraph_format.first_line_indent = Cm(0)
     p.paragraph_format.keep_with_next = True
+    set_paragraph_outline_level(p, 1)
 
     run = p.add_run(title)
     run.font.name = "Times New Roman"
     run.font.size = Pt(12)
     run.font.bold = True
+    run.font.color.rgb = RGBColor(0, 0, 0)
     return p
 
 
 def add_heading_3(doc, title):
-    """Anak Sub-bab Heading: Left, Bold, 12pt (e.g., 1.2.1 Identifikasi Masalah)."""
-    p = doc.add_paragraph()
+    """Anak Sub-bab Heading: Left, Bold, 12pt, Heading 3 style + outlineLvl 2."""
+    p = doc.add_paragraph(style='Heading 3')
     p.alignment = WD_ALIGN_PARAGRAPH.LEFT
     p.paragraph_format.space_before = Pt(6)
     p.paragraph_format.space_after = Pt(3)
     p.paragraph_format.line_spacing = 1.5
     p.paragraph_format.first_line_indent = Cm(0)
     p.paragraph_format.keep_with_next = True
+    set_paragraph_outline_level(p, 2)
 
     run = p.add_run(title)
     run.font.name = "Times New Roman"
     run.font.size = Pt(12)
     run.font.bold = True
+    run.font.color.rgb = RGBColor(0, 0, 0)
+    return p
+
+
+def add_frontmatter_heading(doc, title, page_break=False):
+    """Frontmatter Heading: Centered, Bold, 12pt, ALL CAPS, Heading 1 style + outlineLvl 0."""
+    if page_break:
+        doc.add_page_break()
+    p = doc.add_paragraph(style='Heading 1')
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.paragraph_format.space_before = Pt(0)
+    p.paragraph_format.space_after = Pt(18)
+    p.paragraph_format.line_spacing = 1.5
+    p.paragraph_format.first_line_indent = Cm(0)
+    p.paragraph_format.keep_with_next = True
+    set_paragraph_outline_level(p, 0)
+
+    run = p.add_run(title.upper())
+    run.font.name = "Times New Roman"
+    run.font.size = Pt(12)
+    run.font.bold = True
+    run.font.color.rgb = RGBColor(0, 0, 0)
     return p
 
 
@@ -275,6 +353,50 @@ def build_full_proposal():
 
     print(f"[*] Starting Publication-Grade Word Proposal Generation...")
     doc = Document()
+
+    # Configure document base styles to match FEB UKRIDA 2023
+    try:
+        style_normal = doc.styles['Normal']
+        style_normal.font.name = 'Times New Roman'
+        style_normal.font.size = Pt(12)
+        style_normal.font.color.rgb = RGBColor(0, 0, 0)
+    except Exception as e:
+        print(f"[WARN] Could not customize Normal style: {e}")
+
+    try:
+        style_footer = doc.styles['Footer']
+        style_footer.font.name = 'Times New Roman'
+        style_footer.font.size = Pt(10)
+        style_footer.font.bold = True
+        style_footer.font.color.rgb = RGBColor(0, 0, 0)
+        style_footer.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+    except Exception as e:
+        print(f"[WARN] Could not customize Footer style: {e}")
+
+    for level, style_name in [(1, 'Heading 1'), (2, 'Heading 2'), (3, 'Heading 3')]:
+        try:
+            h_style = doc.styles[style_name]
+            h_style.font.name = 'Times New Roman'
+            h_style.font.size = Pt(12)
+            h_style.font.bold = True
+            h_style.font.color.rgb = RGBColor(0, 0, 0)
+            h_style.paragraph_format.line_spacing = 1.5
+            h_style.paragraph_format.keep_with_next = True
+            h_style.paragraph_format.first_line_indent = Cm(0)
+            if level == 1:
+                h_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                h_style.paragraph_format.space_before = Pt(0)
+                h_style.paragraph_format.space_after = Pt(12)
+            elif level == 2:
+                h_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                h_style.paragraph_format.space_before = Pt(12)
+                h_style.paragraph_format.space_after = Pt(6)
+            elif level == 3:
+                h_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                h_style.paragraph_format.space_before = Pt(6)
+                h_style.paragraph_format.space_after = Pt(3)
+        except Exception as e:
+            print(f"[WARN] Could not customize style {style_name}: {e}")
 
     # ------------------------------------------------------------------------
     # SECTION 1: HALAMAN SAMPUL / COVER (hal. i - unnumbered)
@@ -385,14 +507,7 @@ def build_full_proposal():
     add_page_number_to_footer(sec_front, is_roman=True, start_num=2)
 
     # 1. Pernyataan Keaslian (hal. ii)
-    p = doc.add_paragraph()
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_before = Pt(0)
-    p.paragraph_format.space_after = Pt(18)
-    r = p.add_run("PERNYATAAN KEASLIAN KARYA TUGAS AKHIR")
-    r.font.name = "Times New Roman"
-    r.font.size = Pt(12)
-    r.font.bold = True
+    add_frontmatter_heading(doc, "PERNYATAAN KEASLIAN KARYA TUGAS AKHIR", page_break=False)
 
     add_body_paragraph(doc, "Saya mahasiswa Universitas Kristen Krida Wacana:", indent=False)
 
@@ -473,15 +588,7 @@ def build_full_proposal():
     p_r.add_run("NIM: 312023002")
 
     # 2. Halaman Persetujuan Proposal Skripsi (hal. iii)
-    doc.add_page_break()
-    p = doc.add_paragraph()
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_before = Pt(0)
-    p.paragraph_format.space_after = Pt(18)
-    r = p.add_run("HALAMAN PERSETUJUAN PROPOSAL SKRIPSI")
-    r.font.name = "Times New Roman"
-    r.font.size = Pt(12)
-    r.font.bold = True
+    add_frontmatter_heading(doc, "HALAMAN PERSETUJUAN PROPOSAL SKRIPSI", page_break=True)
 
     add_body_paragraph(doc, "Proposal Skripsi ini diajukan oleh:", indent=False)
 
@@ -536,15 +643,7 @@ def build_full_proposal():
     p2.add_run("NIDN: [NIDN_KAPRODI]")
 
     # 3. Halaman Pengesahan Tim Penguji (hal. iv)
-    doc.add_page_break()
-    p = doc.add_paragraph()
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_before = Pt(0)
-    p.paragraph_format.space_after = Pt(18)
-    r = p.add_run("HALAMAN PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL")
-    r.font.name = "Times New Roman"
-    r.font.size = Pt(12)
-    r.font.bold = True
+    add_frontmatter_heading(doc, "HALAMAN PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL", page_break=True)
 
     add_body_paragraph(doc, "Proposal Skripsi yang berjudul:", indent=False)
     p_j3 = doc.add_paragraph()
@@ -604,15 +703,7 @@ def build_full_proposal():
     p_p4.add_run("NIDN: [NIDN_KAPRODI]")
 
     # 4. Kata Pengantar (hal. v)
-    doc.add_page_break()
-    p = doc.add_paragraph()
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_before = Pt(0)
-    p.paragraph_format.space_after = Pt(18)
-    r = p.add_run("KATA PENGANTAR")
-    r.font.name = "Times New Roman"
-    r.font.size = Pt(12)
-    r.font.bold = True
+    add_frontmatter_heading(doc, "KATA PENGANTAR", page_break=True)
 
     add_body_paragraph(doc, "Puji dan syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa atas segala rahmat, berkat, dan anugerah-Nya yang melimpah, sehingga penulis dapat menyelesaikan naskah Proposal Skripsi yang berjudul **“PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI”** tepat pada waktunya.")
     add_body_paragraph(doc, "Penyusunan proposal skripsi ini merupakan salah satu syarat akademik yang wajib dipenuhi oleh setiap mahasiswa Program Studi S1 Manajemen Konsentrasi Manajemen Keuangan Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana guna memperoleh gelar Sarjana Manajemen (S.M.).")
@@ -648,15 +739,7 @@ def build_full_proposal():
     p_tutup.add_run("NIM: 312023002")
 
     # 5. Abstrak Bahasa Indonesia (hal. vi)
-    doc.add_page_break()
-    p = doc.add_paragraph()
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_before = Pt(0)
-    p.paragraph_format.space_after = Pt(12)
-    r = p.add_run("ABSTRAK")
-    r.font.name = "Times New Roman"
-    r.font.size = Pt(12)
-    r.font.bold = True
+    add_frontmatter_heading(doc, "ABSTRAK", page_break=True)
 
     p_j4 = doc.add_paragraph()
     p_j4.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -702,15 +785,7 @@ def build_full_proposal():
     p_kw.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Keuangan Perilaku (Behavioral Finance).").font.italic = True
 
     # 6. Abstract English (hal. vii)
-    doc.add_page_break()
-    p = doc.add_paragraph()
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_before = Pt(0)
-    p.paragraph_format.space_after = Pt(12)
-    r = p.add_run("ABSTRACT")
-    r.font.name = "Times New Roman"
-    r.font.size = Pt(12)
-    r.font.bold = True
+    add_frontmatter_heading(doc, "ABSTRACT", page_break=True)
 
     p_j5 = doc.add_paragraph()
     p_j5.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -755,15 +830,7 @@ def build_full_proposal():
     p_kw_en.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Behavioral Finance.").font.italic = True
 
     # 7. Daftar Isi (hal. viii)
-    doc.add_page_break()
-    p = doc.add_paragraph()
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_before = Pt(0)
-    p.paragraph_format.space_after = Pt(18)
-    r = p.add_run("DAFTAR ISI")
-    r.font.name = "Times New Roman"
-    r.font.size = Pt(12)
-    r.font.bold = True
+    add_frontmatter_heading(doc, "DAFTAR ISI", page_break=True)
 
     toc_items = [
         ("HALAMAN SAMPUL / JUDUL PROPOSAL", "i"),
@@ -877,15 +944,7 @@ def build_full_proposal():
             r_p.font.bold = True
 
     # 8. Daftar Tabel (hal. ix)
-    doc.add_page_break()
-    p = doc.add_paragraph()
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_before = Pt(0)
-    p.paragraph_format.space_after = Pt(18)
-    r = p.add_run("DAFTAR TABEL")
-    r.font.name = "Times New Roman"
-    r.font.size = Pt(12)
-    r.font.bold = True
+    add_frontmatter_heading(doc, "DAFTAR TABEL", page_break=True)
 
     lot_items = [
         ("Tabel 2.1", "Ringkasan Pemetaan Matriks Riset Empiris Terdahulu (2021–2025)", "24"),
@@ -916,15 +975,7 @@ def build_full_proposal():
         r_page.font.bold = True
 
     # 9. Daftar Gambar (hal. x)
-    doc.add_page_break()
-    p = doc.add_paragraph()
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_before = Pt(0)
-    p.paragraph_format.space_after = Pt(18)
-    r = p.add_run("DAFTAR GAMBAR")
-    r.font.name = "Times New Roman"
-    r.font.size = Pt(12)
-    r.font.bold = True
+    add_frontmatter_heading(doc, "DAFTAR GAMBAR", page_break=True)
 
     lof_items = [
         ("Gambar 2.1", "Model Rerangka Konseptual Penelitian (Pengaruh Anteseden, Moderasi, dan Impulsive Buying)", "30"),
@@ -1180,6 +1231,13 @@ def build_full_proposal():
             # Standard paragraph
             add_body_paragraph(doc, line_str)
             line_idx += 1
+
+    # Close any active Word processes that might lock the target file
+    try:
+        import subprocess
+        subprocess.run(["powershell", "-Command", "Stop-Process -Name WINWORD -Force -ErrorAction SilentlyContinue"], check=False)
+    except Exception:
+        pass
 
     # Save document
     doc.save(str(output_docx))

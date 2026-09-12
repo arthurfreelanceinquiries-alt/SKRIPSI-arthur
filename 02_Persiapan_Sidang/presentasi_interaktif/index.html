@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panduan Belajar & Penguasaan Sidang Proposal Skripsi — FEB UKRIDA</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Header Navigation -->
+  <header class="app-header">
+    <div class="brand-wrapper">
+      <div class="brand-badge">FEB UKRIDA</div>
+      <div class="brand-title">
+        Proposal Skripsi <span>• Pokémon TCG</span>
+      </div>
+    </div>
+
+    <!-- Mode Switcher Tabs -->
+    <nav class="nav-tabs">
+      <button class="nav-tab-btn active" data-tab="tab-presentation">🖥️ Slide Presentasi</button>
+      <button class="nav-tab-btn" data-tab="tab-flashcards">🃏 Flashcard 3D</button>
+      <button class="nav-tab-btn" data-tab="tab-defense">🎯 Simulasi Sidang</button>
+      <button class="nav-tab-btn" data-tab="tab-quiz">📝 Kuis Evaluasi</button>
+      <button class="nav-tab-btn" data-tab="tab-mra">📊 Visualisator MRA</button>
+    </nav>
+
+    <!-- Header Controls: Timer & Fullscreen -->
+    <div class="header-controls">
+      <div class="timer-box" title="Timer Latihan Presentasi 15 Menit">
+        <span>⏱️</span>
+        <span id="timer-display">15:00</span>
+        <button class="timer-btn" id="timer-toggle-btn">▶</button>
+        <button class="timer-btn" id="timer-reset-btn">↺</button>
+      </div>
+      <button class="btn-icon" id="fullscreen-btn" title="Fullscreen (F)" onclick="toggleFullscreen()">⛶</button>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="app-main">
+
+    <!-- TAB 1: SLIDE PRESENTATION DECK -->
+    <section id="tab-presentation" class="tab-section active">
+      <div class="presentation-viewport">
+        
+        <div class="slide-container">
+          <div class="slide-header">
+            <div>
+              <span class="slide-tag" id="slide-tag">COVER & IDENTITAS</span>
+              <h2 class="slide-title" id="slide-title">Judul Slide</h2>
+              <div class="slide-subtitle" id="slide-subtitle">Subjudul slide</div>
+            </div>
+            <div class="slide-meta-right">
+              <span class="slide-number-badge" id="slide-num-text">1 / 12</span>
+            </div>
+          </div>
+
+          <div class="slide-body" id="slide-render-area">
+            <!-- Dynamic Slide Content -->
+          </div>
+        </div>
+
+        <!-- Speaker Notes Drawer -->
+        <div class="notes-drawer" id="notes-drawer">
+          <div class="notes-title">🎙️ Catatan Pembicara (Tekan 'N' untuk sembunyikan):</div>
+          <div class="notes-content" id="notes-text">Catatan pembicara akan muncul di sini.</div>
+        </div>
+
+        <!-- Deck Toolbar Controls -->
+        <div class="deck-toolbar">
+          <button class="deck-nav-btn" id="deck-prev-btn">◀ Sebelumnya</button>
+          
+          <div class="deck-progress-wrapper">
+            <div class="deck-progress-bar">
+              <div class="deck-progress-fill" id="deck-progress-fill" style="width: 8.33%;"></div>
+            </div>
+            <span class="deck-indicator-text" id="deck-progress-label">8% SELESAI</span>
+          </div>
+
+          <div style="display: flex; gap: 0.5rem;">
+            <button class="deck-nav-btn" id="notes-toggle-btn" title="Lihat Catatan Pembicara (N)">📝 Catatan (N)</button>
+            <button class="deck-nav-btn" id="deck-next-btn">Selanjutnya ▶</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TAB 2: FLASHCARD STUDIO 3D -->
+    <section id="tab-flashcards" class="tab-section">
+      <div class="flashcard-section">
+        
+        <div class="section-topbar">
+          <div>
+            <h2 style="font-family:var(--font-heading); font-size:1.5rem; font-weight:800;">Flashcard Istilah & Teori Kunci</h2>
+            <p style="color:var(--text-secondary); font-size:0.9rem;">Klik kartu atau tekan Spasi untuk membalik (Front: Istilah, Back: Definisi & Landasan Ilmiah).</p>
+          </div>
+          <div class="filter-group" id="fc-filter-group">
+            <!-- Filter buttons -->
+          </div>
+        </div>
+
+        <!-- Progress Tracker -->
+        <div style="background:var(--bg-glass-card); padding:0.75rem 1.25rem; border-radius:var(--radius-md); border:1px solid var(--border-subtle); display:flex; align-items:center; justify-content:space-between;">
+          <span style="font-size:0.85rem; font-weight:600;" id="fc-mastery-label">0 / 26 DIKUASAI (0%)</span>
+          <div style="width: 200px; height: 6px; background: rgba(255,255,255,0.1); border-radius: var(--radius-full); overflow:hidden;">
+            <div id="fc-progress-fill" style="width: 0%; height:100%; background:var(--accent-emerald); transition:width 0.3s ease;"></div>
+          </div>
+          <span id="fc-status-pill" style="font-size:0.85rem; font-weight:700;">Belum Dikuasai ⏳</span>
+        </div>
+
+        <!-- 3D Card Stage -->
+        <div class="card-stage">
+          <div class="flashcard-3d" id="main-flashcard">
+            <!-- Front Face -->
+            <div class="card-face card-front">
+              <span class="card-badge blue" id="fc-badge-front">Variabel Y</span>
+              <div class="card-main-term" id="fc-front-term">Impulsive Buying</div>
+              <div class="card-flip-prompt">🔄 Klik kartu untuk melihat definisi & sumber ilmiah</div>
+            </div>
+
+            <!-- Back Face -->
+            <div class="card-face card-back">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span class="card-badge blue" id="fc-badge-back">Variabel Y</span>
+                <span class="card-author" id="fc-back-author">Rook (1987)</span>
+              </div>
+              <div class="card-desc" id="fc-back-desc">
+                Definisi variabel akan muncul di sini.
+              </div>
+              <div class="card-flip-prompt">🔄 Klik kartu untuk kembali ke depan</div>
+            </div>
+          </div>
+
+          <!-- Flashcard Actions -->
+          <div class="flashcard-action-bar">
+            <button class="btn-fc repeat" id="fc-repeat-btn">🔁 Perlu Ulang</button>
+            <div class="fc-nav-controls">
+              <button class="timer-btn" id="fc-prev-btn">◀</button>
+              <span id="fc-indicator">1 / 26</span>
+              <button class="timer-btn" id="fc-next-btn">▶</button>
+            </div>
+            <button class="btn-fc mastered" id="fc-master-btn">✅ Sudah Paham</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TAB 3: SIMULASI TANYA JAWAB SIDANG -->
+    <section id="tab-defense" class="tab-section">
+      <div style="display:flex; flex-direction:column; gap:1.25rem;">
+        <div class="section-topbar">
+          <div>
+            <h2 style="font-family:var(--font-heading); font-size:1.5rem; font-weight:800;">Simulasi Pertanyaan Bimbingan & Sidang</h2>
+            <p style="color:var(--text-secondary); font-size:0.9rem;">15 Arahan Kritis Pembimbing + 5 Pertanyaan Jebakan Penguji Level ⭐⭐⭐⭐⭐.</p>
+          </div>
+          <div style="width: 100%; max-width: 350px;">
+            <input type="text" id="qa-search-input" placeholder="🔍 Cari topik atau kata kunci..." style="width:100%; background:var(--bg-surface-elevated); border:1px solid var(--border-subtle); padding:0.5rem 1rem; border-radius:var(--radius-md); color:#fff; font-family:var(--font-body); font-size:0.9rem;">
+          </div>
+        </div>
+
+        <div class="defense-list" id="qa-list-container">
+          <!-- Injected by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: KUIS EVALUASI INTERAKTIF -->
+    <section id="tab-quiz" class="tab-section">
+      <div class="quiz-container">
+        
+        <div id="quiz-active-view" class="quiz-card">
+          <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-subtle); padding-bottom:0.75rem;">
+            <span style="font-family:var(--font-mono); font-size:0.85rem; color:var(--accent-gold);" id="quiz-progress-label">Soal 1 dari 15</span>
+            <div style="width: 150px; height: 6px; background: rgba(255,255,255,0.1); border-radius: var(--radius-full); overflow:hidden;">
+              <div id="quiz-progress-fill" style="width: 6.6%; height:100%; background:var(--accent-gold); transition:width 0.3s ease;"></div>
+            </div>
+          </div>
+
+          <div class="quiz-q-text" id="quiz-question-text">
+            Pertanyaan kuis akan ditampilkan di sini.
+          </div>
+
+          <div class="quiz-options-list" id="quiz-options-container">
+            <!-- Buttons injected by JS -->
+          </div>
+
+          <div class="quiz-explanation-box" id="quiz-explanation-box">
+            <div class="quiz-exp-title">💡 Pembahasan Akademis:</div>
+            <div class="quiz-exp-text" id="quiz-exp-text">Penjelasan jawaban benar.</div>
+          </div>
+
+          <div style="display:flex; justify-content:flex-end;">
+            <button class="deck-nav-btn" id="quiz-next-btn" style="display:none; background:var(--accent-gold); color:#000;">
+              Soal Selanjutnya ▶
+            </button>
+          </div>
+        </div>
+
+        <!-- Result View -->
+        <div id="quiz-result-view" class="quiz-card quiz-result-view" style="display:none;">
+          <h2 style="font-family:var(--font-heading); font-size:1.8rem; font-weight:800; margin-bottom:1rem;">Hasil Kuis Evaluasi Sidang</h2>
+          <div class="score-circle" id="quiz-final-score">0</div>
+          <p style="font-size:1.1rem; color:var(--text-primary); max-width:600px; margin:0 auto 1.5rem auto;" id="quiz-grade-text">
+            Evaluasi hasil Anda.
+          </p>
+          <button class="btn-fc mastered" id="quiz-restart-btn" style="margin: 0 auto;">
+            ↺ Ulangi Kuis
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TAB 5: VISUALISATOR MRA (SLOPES CALCULATOR) -->
+    <section id="tab-mra" class="tab-section">
+      <div style="display:flex; flex-direction:column; gap:1.5rem;">
+        <div class="section-topbar">
+          <div>
+            <h2 style="font-family:var(--font-heading); font-size:1.5rem; font-weight:800;">Visualisator Efek Moderasi MRA (Simple Slopes)</h2>
+            <p style="color:var(--text-secondary); font-size:0.9rem;">Simulasi matematis bagaimana Self-Control (M) memperlemah kemiringan garis regresi X terhadap Y.</p>
+          </div>
+        </div>
+
+        <div class="mra-calc-grid">
+          <!-- Control Panel -->
+          <div class="calc-panel">
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; color:#fff;">Kontrol Parameter Model</h3>
+
+            <div class="slider-group">
+              <label style="font-size:0.85rem; color:var(--text-muted);">Pilih Variabel Independen (X):</label>
+              <select id="mra-var-select" style="background:var(--bg-surface); border:1px solid var(--border-subtle); color:#fff; padding:0.6rem; border-radius:var(--radius-sm); font-family:var(--font-body);">
+                <option value="Hedonic Motivation">X1: Hedonic Motivation</option>
+                <option value="Desire for Completeness">X2: Desire for Completeness</option>
+                <option value="Speculative Motive">X3: Speculative Motive</option>
+              </select>
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-header">
+                <label style="color:var(--text-muted);">Tingkat Self-Control (M):</label>
+                <span id="mra-mod-val-label">Rata-Rata (Mean)</span>
+              </div>
+              <input type="range" id="mra-mod-slider" class="slider-range" min="-1" max="1" step="0.1" value="0">
+              <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:var(--text-muted);">
+                <span>-1 SD (Rendah)</span>
+                <span>0 (Mean)</span>
+                <span>+1 SD (Tinggi)</span>
+              </div>
+            </div>
+
+            <div class="callout-box" style="margin-top:0.5rem;">
+              <div class="callout-title">Bukti Hipotesis:</div>
+              <div class="callout-desc" id="mra-slope-desc">
+                Ketika Self-Control tinggi, kemiringan garis melandai (memperlemah efek).
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Plot -->
+          <div class="plot-panel">
+            <svg id="mra-slopes-svg" viewBox="0 0 420 280" style="width:100%; max-width:480px; height:auto;"></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <span>Proposal Skripsi S1 Manajemen Keuangan FEB UKRIDA © 2026 Arthur Reezan (NIM: 322015175) • Disinkronisasi dengan Buku Pedoman 2022/2023 & Arahan Dosen 9 Sep 2026</span>
+  </footer>
+
+  <script>
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      } else {
+        document.exitFullscreen().catch(() => {});
+      }
+    }
+  </script>
+
+  <script src="app.js"></script>
+</body>
+</html>

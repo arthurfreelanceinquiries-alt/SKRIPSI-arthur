@@ -285,6 +285,9 @@ Berdasarkan latar belakang penelitian yang telah diuraikan, maka perumusan masal
 - Apakah *Hedonic Motivation* berpengaruh terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
 - Apakah *Desire for Completeness* berpengaruh terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
 - Apakah *Speculative Motive* berpengaruh terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
+- Apakah *Self-Control* memoderasi pengaruh *Hedonic Motivation* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
+- Apakah *Self-Control* memoderasi pengaruh *Desire for Completeness* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
+- Apakah *Self-Control* memoderasi pengaruh *Speculative Motive* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG?
 
 ## 1.3 Tujuan Penelitian
 
@@ -292,6 +295,9 @@ Mengacu pada perumusan masalah di atas, maka tujuan yang ingin dicapai dalam pen
 - Untuk menganalisis dan membuktikan secara empiris pengaruh *Hedonic Motivation* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.
 - Untuk menganalisis dan membuktikan secara empiris pengaruh *Desire for Completeness* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.
 - Untuk menganalisis dan membuktikan secara empiris pengaruh *Speculative Motive* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.
+- Untuk menganalisis dan membuktikan secara empiris peran moderasi *Self-Control* pada pengaruh *Hedonic Motivation* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.
+- Untuk menganalisis dan membuktikan secara empiris peran moderasi *Self-Control* pada pengaruh *Desire for Completeness* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.
+- Untuk menganalisis dan membuktikan secara empiris peran moderasi *Self-Control* pada pengaruh *Speculative Motive* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.
 
 ## 1.4 Manfaat Penelitian
 

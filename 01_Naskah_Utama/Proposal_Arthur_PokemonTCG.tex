@@ -542,6 +542,9 @@ Berdasarkan latar belakang penelitian yang telah diuraikan, maka perumusan masal
   \item Apakah \emph{Hedonic Motivation} berpengaruh terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG?
   \item Apakah \emph{Desire for Completeness} berpengaruh terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG?
   \item Apakah \emph{Speculative Motive} berpengaruh terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG?
+  \item Apakah \emph{Self-Control} memoderasi pengaruh \emph{Hedonic Motivation} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG?
+  \item Apakah \emph{Self-Control} memoderasi pengaruh \emph{Desire for Completeness} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG?
+  \item Apakah \emph{Self-Control} memoderasi pengaruh \emph{Speculative Motive} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG?
 \end{enumerate}
 
 \subsection{Tujuan Penelitian}
@@ -551,6 +554,9 @@ Mengacu pada perumusan masalah di atas, maka tujuan yang ingin dicapai dalam pen
   \item Untuk menganalisis dan membuktikan secara empiris pengaruh \emph{Hedonic Motivation} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.
   \item Untuk menganalisis dan membuktikan secara empiris pengaruh \emph{Desire for Completeness} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.
   \item Untuk menganalisis dan membuktikan secara empiris pengaruh \emph{Speculative Motive} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.
+  \item Untuk menganalisis dan membuktikan secara empiris peran moderasi \emph{Self-Control} pada pengaruh \emph{Hedonic Motivation} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.
+  \item Untuk menganalisis dan membuktikan secara empiris peran moderasi \emph{Self-Control} pada pengaruh \emph{Desire for Completeness} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.
+  \item Untuk menganalisis dan membuktikan secara empiris peran moderasi \emph{Self-Control} pada pengaruh \emph{Speculative Motive} terhadap \emph{Impulsive Buying} booster pack kartu Pok\'emon TCG.
 \end{enumerate}
 
 \subsection{Manfaat Penelitian}
@@ -761,40 +767,53 @@ Berdasarkan landasan teori dan perumusan hipotesis di atas, hubungan struktural 
 
 \begin{figure}[H]
 \centering
-\resizebox{0.92\textwidth}{!}{%
+\resizebox{0.95\textwidth}{!}{%
 \begin{tikzpicture}[
-  node distance = 1.2cm and 2.5cm,
-  box/.style = {rectangle, draw=black, thick, fill=gray!8, rounded corners=2pt, minimum width=4.5cm, minimum height=1cm, align=center, font=\small\bfseries},
-  modbox/.style = {rectangle, draw=black, thick, fill=gray!18, rounded corners=2pt, minimum width=4.5cm, minimum height=1cm, align=center, font=\small\bfseries},
-  arrow/.style = {-{Stealth[length=3mm]}, thick},
-  dasharrow/.style = {-{Stealth[length=3mm]}, thick, dashed}
+  box/.style = {
+    rectangle, draw=black, thick, fill=gray!6, rounded corners=3pt,
+    minimum width=4.5cm, minimum height=1.15cm, align=center,
+    font=\fontsize{11}{13.5}\selectfont\bfseries
+  },
+  modbox/.style = {
+    rectangle, draw=black, thick, fill=gray!18, rounded corners=3pt,
+    minimum width=4.8cm, minimum height=1.15cm, align=center,
+    font=\fontsize{11}{13.5}\selectfont\bfseries
+  },
+  arrow/.style = {-{Stealth[length=3.5mm, width=2.4mm]}, line width=1.1pt},
+  dasharrow/.style = {-{Stealth[length=3.5mm, width=2.4mm]}, line width=1.1pt, dashed}
 ]
 
-  % Variabel Independen
-  \node[box] (x1) {\emph{Hedonic Motivation}\\($X_1$)};
-  \node[box, below=0.9cm of x1] (x2) {\emph{Desire for Completeness}\\($X_2$)};
-  \node[box, below=0.9cm of x2] (x3) {\emph{Speculative Motive}\\($X_3$)};
+  % Variabel Independen (X) di sebelah kiri (x = 0)
+  \node[box] (x1) at (0, 2.5) {\emph{Hedonic Motivation}\\($X_1$)};
+  \node[box] (x2) at (0, 0)   {\emph{Desire for Completeness}\\($X_2$)};
+  \node[box] (x3) at (0, -2.5){\emph{Speculative Motive}\\($X_3$)};
 
-  % Variabel Dependen
-  \node[box, right=4.5cm of x2] (y) {\emph{Impulsive Buying}\\($Y$)};
+  % Variabel Dependen (Y) di sebelah kanan (x = 10.6)
+  \node[box] (y)  at (10.6, 0) {\emph{Impulsive Buying}\\($Y$)};
 
-  % Variabel Moderasi (di atas panah tengah)
-  \node[modbox, above=1.5cm of $(x2)!0.5!(y)$] (m) {\emph{Self-Control}\\($M$)};
+  % Variabel Moderasi (M) di atas tengah (x = 5.3, y = 4.2)
+  \node[modbox] (m) at (5.3, 4.2) {\emph{Self-Control}\\($M$)};
 
   % Garis Pengaruh Langsung (H1, H2, H3)
-  \draw[arrow] (x1.east) -- (y.west) node[midway, above, sloped, font=\footnotesize\bfseries] {H1 (+)};
-  \draw[arrow] (x2.east) -- (y.west) node[midway, above, font=\footnotesize\bfseries] {H2 (+)};
-  \draw[arrow] (x3.east) -- (y.west) node[midway, below, sloped, font=\footnotesize\bfseries] {H3 (+)};
+  \draw[arrow] (x1.east) -- (y.west)
+    node[pos=0.10, above=2pt, sloped, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {H1 (+)};
+  \draw[arrow] (x2.east) -- (y.west)
+    node[pos=0.15, above=2pt, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {H2 (+)};
+  \draw[arrow] (x3.east) -- (y.west)
+    node[pos=0.10, below=2pt, sloped, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {H3 (+)};
 
-  % Titik pertemuan moderasi
-  \coordinate (mod1) at ($(x1.east)!0.45!(y.west)$);
-  \coordinate (mod2) at ($(x2.east)!0.45!(y.west)$);
-  \coordinate (mod3) at ($(x3.east)!0.45!(y.west)$);
+  % Titik pertemuan moderasi yang terpisah secara horizontal (Parallel Tracks)
+  \coordinate (mod1) at ($(x1.east)!0.32!(y.west)$);
+  \coordinate (mod2) at ($(x2.east)!0.52!(y.west)$);
+  \coordinate (mod3) at ($(x3.east)!0.74!(y.west)$);
 
   % Garis Pengaruh Moderasi (H4, H5, H6)
-  \draw[dasharrow] (m.south) -- (mod1) node[pos=0.6, left, font=\scriptsize\bfseries] {H4 (-)};
-  \draw[dasharrow] (m.south) -- (mod2) node[pos=0.7, right, font=\scriptsize\bfseries] {H5 (-)};
-  \draw[dasharrow] (m.south) -- (mod3) node[pos=0.8, right, font=\scriptsize\bfseries] {H6 (-)};
+  \draw[dasharrow] ([xshift=-1.1cm]m.south) -- (mod1)
+    node[pos=0.35, left=3pt, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {H4 (-)};
+  \draw[dasharrow] (m.south) -- (mod2)
+    node[pos=0.35, right=3pt, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {H5 (-)};
+  \draw[dasharrow] ([xshift=1.4cm]m.south) -- (mod3)
+    node[pos=0.35, right=3pt, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {H6 (-)};
 
 \end{tikzpicture}
 }
