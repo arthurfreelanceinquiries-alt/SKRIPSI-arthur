@@ -67,14 +67,14 @@
 
 ---
 
-### ❓ SULIT 6: "Financial literacy sebagai moderator — tapi literasi keuangan itu bersifat continuous, bukan binary. Bagaimana Anda menginterpretasikan efek moderasi pada kontinum?"
+### ❓ SULIT 6: "Self-Control sebagai moderator — tapi kontrol diri itu bersifat kontinum, bukan biner. Bagaimana Anda menginterpretasikan efek moderasi pada kontinum?"
 
 > **💡 Jawaban:**
-> "Pertanyaan yang sangat metodologis, Bapak/Ibu. Dalam MRA, efek moderasi memang diuji pada **kontinum**, bukan kategori binary. Koefisien interaction term ($\beta_5$, $\beta_6$, $\beta_7$) menunjukkan seberapa besar **perubahan** kekuatan hubungan X→Y untuk setiap **satu unit kenaikan** skor literasi keuangan.
+> "Pertanyaan yang sangat metodologis, Bapak/Ibu. Dalam MRA, efek moderasi memang diuji pada **kontinum**, bukan kategori biner. Koefisien interaction term ($\beta_5$, $\beta_6$, $\beta_7$) menunjukkan seberapa besar **perubahan** kekuatan hubungan X→Y untuk setiap **satu unit kenaikan** skor Self-Control (skala BSCS 1–5).
 >
-> Interpretasinya: misalnya jika $\beta_5 = -0,15$ dan signifikan, artinya setiap kenaikan 1 poin skor literasi keuangan (pada skala Likert), pengaruh hedonic motivation terhadap impulsive buying berkurang sebesar 0,15 unit.
+> Interpretasinya: misalnya jika koefisien interaksi $\beta_5 = -0,15$ dan signifikan, artinya setiap kenaikan 1 poin skor Self-Control, pengaruh hedonic motivation terhadap impulsive buying berkurang (melemah) sebesar 0,15 unit.
 >
-> Untuk visualisasi, saya akan menggunakan **simple slope analysis** — memplot hubungan X→Y pada tiga level M: rendah (mean - 1 SD), sedang (mean), dan tinggi (mean + 1 SD). Ini akan menunjukkan secara grafis bagaimana garis slope 'melemah' (menjadi lebih datar) seiring meningkatnya literasi keuangan."
+> Untuk visualisasi dan pembuktian empiris, kami menggunakan **simple slope analysis** — memplot hubungan X→Y pada tiga tingkatan Self-Control: rendah (mean - 1 SD), sedang (mean), dan tinggi (mean + 1 SD). Ini memperlihatkan secara grafis bagaimana kemiringan garis (slope) semakin melandai seiring meningkatnya kapasitas kontrol diri responden."
 
 ---
 
@@ -113,4 +113,15 @@
 
 ---
 
-*Total: 9 pertanyaan level sulit. Jika bisa menjawab semua ini, sidang proposal akan terasa mudah!* 🏆
+### ❓ SULIT 10: "Mengapa Rumusan Masalah dan Tujuan Penelitian Anda ada 6 butir? Apakah referensi jurnal dan daftar pustaka perlu ditambah seiring ekspansi ini?"
+
+> **💡 Jawaban:**
+> "Terima kasih atas pertanyaannya, Bapak/Ibu Penguji. Penelitian ini meneliti 3 variabel independen ($X_1, X_2, X_3$) dan 1 variabel moderasi ($M = \text{Self-Control}$). Perumusan 6 butir di BAB 1 merupakan penegasan **benang merah ilmiah (*golden thread*)** dengan prinsip simetris 1-to-1 antara Rumusan Masalah (1–6), Tujuan Penelitian (1–6), dan Pengembangan Hipotesis (H1–H6 di BAB 2):  
+> - **Butir 1–3:** Menguji pengaruh langsung (*direct effect*) dari *Hedonic Motivation*, *Desire for Completeness*, dan *Speculative Motive* terhadap *Impulsive Buying*.  
+> - **Butir 4–6:** Menguji efek interaksi pemoderasi *Self-Control* pada masing-masing jalur pengaruh langsung tersebut melalui metode MRA (*Moderated Regression Analysis*).  
+> 
+> **Mengenai referensi jurnal:** Penambahan butir tersebut **TIDAK memerlukan penambahan referensi baru**, karena ini adalah sinkronisasi formal antara Bab 1 dengan Bab 2 & Bab 3. Seluruh landasan teoretis untuk hipotesis moderasi (seperti *Self-Regulation Theory* oleh Baumeister 2002; model *Planner-Doer* oleh Thaler & Shefrin 1981; dan skala BSCS oleh Tangney et al. 2004) serta penelitian empiris pendukung (Apidana & Kholifah, 2022; Lienardy & Panasea, 2024; Artadita & Firmialy, 2024; Sultan et al., 2012; Katauke et al., 2023) **sudah tercakup secara lengkap dan komprehensif dalam 72 referensi ilmiah** pada naskah dan daftar pustaka proposal."
+
+---
+
+*Total: 10 pertanyaan level sulit. Jika bisa menjawab semua ini, sidang proposal akan terasa mudah!* 🏆

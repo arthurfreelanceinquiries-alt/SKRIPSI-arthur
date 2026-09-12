@@ -109,7 +109,7 @@ SLIDES_DATA = [
         "title": "Simulasi Pertanyaan Kritis Bimbingan & Sidang",
         "subtitle": "Kuasai Logika Pertanyaan Jebakan Dosen Pembimbing & Penguji",
         "content_type": "tanya_jawab_preview",
-        "speaker_notes": "Tunjukkan kesiapan menjawab 15 pertanyaan bimbingan dan 5 pertanyaan jebakan tingkat tinggi, terutama seputar penggantian variabel moderasi dan justifikasi teori."
+        "speaker_notes": "Tunjukkan kesiapan menjawab 16 pertanyaan bimbingan dan 5 pertanyaan jebakan tingkat tinggi, terutama seputar penggantian variabel moderasi, konsistensi 6 rumusan masalah, dan justifikasi teori."
     },
     {
         "id": 12,
@@ -147,7 +147,8 @@ FLASHCARDS_DATA = [
     {"id": 23, "cat": "stat", "color": "red", "title": "Uji Asumsi Klasik", "term": "Alasan Tiadanya Uji Autokorelasi", "author": "Ghozali (2018); Gujarati (2009)", "desc": "Uji autokorelasi (Durbin-Watson) hanya berlaku untuk data deret waktu (time-series). Pada data survei cross-sectional, antar-responden independen sehingga uji ini tidak relevan.", "hint": "Jawaban tangkas atas pertanyaan jebakan penguji"},
     {"id": 24, "cat": "stat", "color": "red", "title": "Uji Kelayakan Model", "term": "Uji F (Simultan) & Koefisien Determinasi R²", "author": "Ghozali (2018)", "desc": "Uji F menilai apakah seluruh variabel independen secara simultan berpengaruh signifikan terhadap Y. R² (atau R² Change pada MRA) mengukur persentase varians Y yang dijelaskan.", "hint": "Uji ketepatan model regresi"},
     {"id": 25, "cat": "stat", "color": "red", "title": "Uji Hipotesis Parsial", "term": "Uji t (Parsial)", "author": "Ghozali (2018)", "desc": "Menguji signifikansi pengaruh masing-masing variabel independen dan interaksi secara individual terhadap Y (diterima jika p-value < 0,05 dan t-hitung > t-tabel).", "hint": "Pengujian H1 sampai H6 secara parsial"},
-    {"id": 26, "cat": "stat", "color": "red", "title": "Instrumen Pengukuran", "term": "Skala Likert 5 Poin & Uji Instrumen", "author": "Hair et al. (2019); Nunnally (1978)", "desc": "Skala 1 (Sangat Tidak Setuju) s.d. 5 (Sangat Setuju). Diuji dengan Uji Validitas (Korelasi Pearson Product Moment r >= 0,30) dan Uji Reliabilitas (Cronbach's Alpha >= 0,60).", "hint": "Standar kelayakan kuesioner penelitian"}
+    {"id": 26, "cat": "stat", "color": "red", "title": "Instrumen Pengukuran", "term": "Skala Likert 5 Poin & Uji Instrumen", "author": "Hair et al. (2019); Nunnally (1978)", "desc": "Skala 1 (Sangat Tidak Setuju) s.d. 5 (Sangat Setuju). Diuji dengan Uji Validitas (Korelasi Pearson Product Moment r >= 0,30) dan Uji Reliabilitas (Cronbach's Alpha >= 0,60).", "hint": "Standar kelayakan kuesioner penelitian"},
+    {"id": 27, "cat": "stat", "color": "red", "title": "Konsistensi Metodologi", "term": "Hukum 1-to-1: RM = TP = Hipotesis", "author": "Pedoman Penulisan Skripsi FEB UKRIDA", "desc": "Prinsip keselarasan simetris 1-to-1 di mana 6 butir Rumusan Masalah selaras penuh dengan 6 butir Tujuan Penelitian dan 6 Hipotesis (H1–H3 efek langsung, H4–H6 efek moderasi MRA).", "hint": "Benang merah ilmiah (Golden Thread) proposal"}
 ]
 
 DEFENSE_QUESTIONS = [
@@ -270,6 +271,14 @@ DEFENSE_QUESTIONS = [
         "question": "Apa manfaat praktis penelitian ini bagi mahasiswa, masyarakat, dan regulator keuangan?",
         "keywords": ["Edukasi finansial Gen Z", "Risiko kerugian terselubung", "Peran kontrol diri", "Masukan literasi keuangan OJK"],
         "answer": "Secara praktis, penelitian ini memberikan penyadaran bagi konsumen muda (khususnya Gen Z) bahwa di balik sensasi menyenangkan membuka pack dan ilusi keuntungan spekulasi harga pasar, terdapat risiko kerugian finansial akibat pembelian impulsif yang tidak terencana. Hasil riset ini menegaskan pentingnya penguatan Self-Control dalam alokasi belanja hobi serta memberikan masukan kontekstual bagi OJK dan lembaga keuangan dalam merancang literasi keuangan berbasis perilaku."
+    },
+    {
+        "id": 16,
+        "type": "bimbingan",
+        "badge": "Konsistensi RM & Hipotesis",
+        "question": "Mengapa Rumusan Masalah dan Tujuan Penelitian Anda ada 6 butir? Apakah referensi jurnal perlu bertambah seiring ekspansi ini?",
+        "keywords": ["Hukum Simetris 1-to-1", "Benang Merah (Golden Thread)", "H1-H3 Pengaruh Langsung", "H4-H6 Efek Moderasi MRA", "72 Referensi Lengkap"],
+        "answer": "Penelitian ini memiliki 3 variabel independen dan 1 variabel moderasi (Self-Control). Perumusan 6 butir di BAB 1 merupakan penegasan benang merah ilmiah (golden thread) dengan prinsip simetris 1-to-1 antara Rumusan Masalah (1–6), Tujuan Penelitian (1–6), dan Pengembangan Hipotesis (H1–H6 di BAB 2): Butir 1–3 menguji pengaruh langsung (direct effect: Hedonic, Completeness, Speculative terhadap Impulsive Buying), sedangkan butir 4–6 menguji efek interaksi moderasi Self-Control melalui MRA. Penambahan butir ini TIDAK memerlukan penambahan referensi baru, karena seluruh landasan teori moderasi (Self-Regulation Theory, Planner-Doer) dan kajian empiris pendukung H4–H6 (Apidana & Kholifah, 2022; Lienardy & Panasea, 2024; Artadita & Firmialy, 2024; Sultan et al., 2012; dsb.) sudah tercakup secara lengkap dan komprehensif dalam 72 referensi ilmiah di naskah dan daftar pustaka."
     }
 ]
 
@@ -453,6 +462,18 @@ QUIZ_QUESTIONS = [
         ],
         "ans": 2,
         "exp": "Special Illustration Rare (SAR) merupakan kartu kelangkaan puncak dengan karya seni eksklusif penuh (full-art), pull rate sangat kecil (<1-3%), dan diperdagangkan antara Rp500.000 hingga lebih dari Rp3.000.000."
+    },
+    {
+        "id": 16,
+        "q": "Berdasarkan prinsip keselarasan ilmiah ('Hukum 1-to-1: RM = TP = Hipotesis'), mengapa Rumusan Masalah dan Tujuan Penelitian proposal Arthur dirumuskan menjadi 6 butir?",
+        "options": [
+            "A. Karena ada 6 variabel independen dalam penelitian ini",
+            "B. Karena menyelaraskan secara simetris 3 butir pengaruh langsung (H1-H3) dan 3 butir efek moderasi Self-Control (H4-H6)",
+            "C. Karena disyaratkan minimal 6 butir oleh Kementerian Pendidikan",
+            "D. Karena kuesioner hanya terdiri dari 6 pertanyaan"
+        ],
+        "ans": 1,
+        "exp": "Enam butir Rumusan Masalah dan Tujuan Penelitian mencerminkan 'benang merah ilmiah' (golden thread) yang simetris 1-to-1 dengan hipotesis: Butir 1–3 menguji efek langsung (H1-H3), dan Butir 4–6 menguji efek moderasi Self-Control (H4-H6). Penambahan butir ini tidak membutuhkan referensi baru karena seluruh landasan teoritis dan empiris moderasi sudah lengkap di BAB 2."
     }
 ]
 

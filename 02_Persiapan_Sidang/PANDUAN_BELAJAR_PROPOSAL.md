@@ -8,7 +8,7 @@
 
 > [!NOTE]
 > **Panduan ini telah disinkronisasi penuh dengan arahan revisi Dosen Pembimbing (Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A) per 9 September 2026.**  
-> Dokumen ini memuat penguasaan materi komprehensif BAB 1–3, argumen teoretis, justifikasi pemilihan variabel, konteks ekosistem Pokémon, industri sertifikasi *grading*, serta simulasi 15 pertanyaan kritis sidang/bimbingan.
+> Dokumen ini memuat penguasaan materi komprehensif BAB 1–3, argumen teoretis, justifikasi pemilihan variabel, konteks ekosistem Pokémon, industri sertifikasi *grading*, serta simulasi 16 pertanyaan kritis sidang/bimbingan.
 
 > **Versi:** 2.0 (9 September 2026)  
 > **Disinkronisasi dengan:** Naskah Proposal TeX/PDF (42 Halaman), `BAB_I_PENDAHULUAN.md`, `BAB_II_TINJAUAN_PUSTAKA.md`, `BAB_III_METODE_PENELITIAN.md`, dan `SOURCE_OF_TRUTH.md` v5.0.
@@ -25,7 +25,7 @@
 7. [Penelitian Terdahulu & Pemetaan Anteseden Impulsive Buying](#7-penelitian-terdahulu--anteseden-impulsive-buying)
 8. [Logika Kausalitas & 4-Tier Pembuktian Hipotesis (H1–H6)](#8-logika-kausalitas--pembuktian-hipotesis)
 9. [Metodologi Penelitian & Teknik Analisis MRA](#9-metodologi-penelitian--teknik-analisis-mra)
-10. [Simulasi Pertanyaan Bimbingan/Sidang & Kunci Jawaban (15 Skenario)](#10-simulasi-pertanyaan-bimbingan-sidang--kunci-jawaban)
+10. [Simulasi Pertanyaan Bimbingan/Sidang & Kunci Jawaban (16 Skenario)](#10-simulasi-pertanyaan-bimbingan-sidang--kunci-jawaban)
 11. [Cheat Sheet 1 Halaman (Hafalan Kilat Menjelang Sidang)](#11-cheat-sheet-1-halaman)
 
 ---
@@ -378,6 +378,16 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 ### ❓ Pertanyaan 15: "Apa kontribusi praktis penelitian ini bagi mahasiswa atau masyarakat?"
 > **💡 Jawaban:**  
 > "Memberikan edukasi dan evaluasi diri bagi generasi muda (khususnya Gen Z) agar menyadari bahwa di balik kesenangan membuka kartu dan ilusi spekulasi harga pasar, terdapat risiko kerugian finansial akibat pembelian impulsif yang tidak terkontrol. Penelitian ini menekankan pentingnya penguatan *Self-Control* untuk menjaga stabilitas alokasi keuangan pribadi dalam mengonsumsi produk hobi."
+
+---
+
+### ❓ Pertanyaan 16: "Mengapa Rumusan Masalah dan Tujuan Penelitian Anda ada 6 butir? Apakah referensi jurnal dan daftar pustaka perlu ditambah seiring ekspansi ini?"
+> **💡 Jawaban:**  
+> "Terima kasih atas pertanyaannya, Bapak/Ibu Penguji. Penelitian ini meneliti 3 variabel independen ($X_1, X_2, X_3$) dan 1 variabel moderasi ($M = \text{Self-Control}$). Perumusan 6 butir di BAB 1 merupakan penegasan **benang merah ilmiah (*golden thread*)** dengan prinsip simetris 1-to-1 antara Rumusan Masalah (1–6), Tujuan Penelitian (1–6), dan Pengembangan Hipotesis (H1–H6 di BAB 2):  
+> - **Butir 1–3:** Menguji pengaruh langsung (*direct effect*) dari *Hedonic Motivation*, *Desire for Completeness*, dan *Speculative Motive* terhadap *Impulsive Buying*.  
+> - **Butir 4–6:** Menguji efek interaksi pemoderasi *Self-Control* pada masing-masing jalur pengaruh langsung tersebut melalui metode MRA (*Moderated Regression Analysis*).  
+> 
+> **Mengenai referensi jurnal:** Penambahan butir tersebut **TIDAK memerlukan penambahan referensi baru**, karena ini adalah sinkronisasi formal antara Bab 1 dengan Bab 2 & Bab 3. Seluruh landasan teoretis untuk hipotesis moderasi (seperti *Self-Regulation Theory* oleh Baumeister 2002; model *Planner-Doer* oleh Thaler & Shefrin 1981; dan skala BSCS oleh Tangney et al. 2004) serta penelitian empiris pendukung (Apidana & Kholifah, 2022; Lienardy & Panasea, 2024; Artadita & Firmialy, 2024; Sultan et al., 2012; Katauke et al., 2023) **sudah tercakup secara lengkap dan komprehensif dalam 72 referensi ilmiah** pada naskah dan daftar pustaka proposal."
 
 ---
 
