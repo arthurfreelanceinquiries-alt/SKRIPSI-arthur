@@ -24,3 +24,10 @@ scratch/
 .env
 credentials.json
 token.json
+
+# Obsidian (Abaikan workspace per-device & cache agar tidak timbul merge conflict)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/indexeddb/
+.trash/
