@@ -345,9 +345,18 @@ def add_frontmatter_heading(doc, title, page_break=False):
 # MAIN BUILDER ENGINE
 # ============================================================================
 
-def build_full_proposal():
-    base_dir = Path(r"z:\SKRIPSII\SKRIPSI-arthur\01_Naskah_Utama")
-    output_docx = base_dir / "Proposal_Arthur_PokemonTCG.docx"
+def build_full_proposal(skip_chapter3: bool = False):
+    # Resolve base_dir relative to this script's location
+    script_dir = Path(__file__).resolve().parent
+    base_dir = script_dir.parent / "01_Naskah_Utama"
+    if not base_dir.exists():
+        # Fallback: original hardcoded path
+        base_dir = Path(r"z:\SKRIPSII\SKRIPSI-arthur\01_Naskah_Utama")
+
+    if skip_chapter3:
+        output_docx = base_dir / "Proposal_Arthur_NoBab3.docx"
+    else:
+        output_docx = base_dir / "Proposal_Arthur_PokemonTCG.docx"
     img_rerangka = base_dir / "images" / "gambar_rerangka_penelitian.png"
     img_alur = base_dir / "images" / "diagram_alur_penelitian.png"
 
@@ -832,7 +841,7 @@ def build_full_proposal():
     # 7. Daftar Isi (hal. viii)
     add_frontmatter_heading(doc, "DAFTAR ISI", page_break=True)
 
-    toc_items = [
+    toc_items_full = [
         ("HALAMAN SAMPUL / JUDUL PROPOSAL", "i"),
         ("HALAMAN PERNYATAAN KEASLIAN KARYA TUGAS AKHIR", "ii"),
         ("HALAMAN PERSETUJUAN PROPOSAL SKRIPSI", "iii"),
@@ -893,6 +902,11 @@ def build_full_proposal():
         ("DAFTAR PUSTAKA", "49")
     ]
 
+    if skip_chapter3:
+        toc_items = [(t, p) for t, p in toc_items_full if not t.strip().startswith(("BAB 3", "3."))]
+    else:
+        toc_items = toc_items_full
+
     for title_toc, page_toc in toc_items:
         p_toc = doc.add_paragraph()
         p_toc.paragraph_format.line_spacing = 1.15
@@ -946,12 +960,13 @@ def build_full_proposal():
     # 8. Daftar Tabel (hal. ix)
     add_frontmatter_heading(doc, "DAFTAR TABEL", page_break=True)
 
-    lot_items = [
+    lot_items_full = [
         ("Tabel 2.1", "Ringkasan Pemetaan Matriks Riset Empiris Terdahulu (2021–2025)", "24"),
         ("Tabel 3.1", "Skala Pengukuran Likert 5 Poin", "38"),
         ("Tabel 3.2", "Operasionalisasi Variabel, Dimensi, dan Butir Indikator Pengukuran", "39"),
         ("Tabel 3.3", "Jadwal Pelaksanaan Kegiatan Penelitian (Tahun 2026)", "48")
     ]
+    lot_items = [(n, t, p) for n, t, p in lot_items_full if not n.startswith("Tabel 3")] if skip_chapter3 else lot_items_full
     for tab_num, tab_title, tab_page in lot_items:
         p_lot = doc.add_paragraph()
         p_lot.paragraph_format.line_spacing = 1.15
@@ -977,10 +992,11 @@ def build_full_proposal():
     # 9. Daftar Gambar (hal. x)
     add_frontmatter_heading(doc, "DAFTAR GAMBAR", page_break=True)
 
-    lof_items = [
+    lof_items_full = [
         ("Gambar 2.1", "Model Rerangka Konseptual Penelitian (Pengaruh Anteseden, Moderasi, dan Impulsive Buying)", "30"),
         ("Gambar 3.1", "Diagram Alur Pelaksanaan Penelitian (Tahapan Operasional Riset Kuantitatif)", "43")
     ]
+    lof_items = [(n, t, p) for n, t, p in lof_items_full if not n.startswith("Gambar 3")] if skip_chapter3 else lof_items_full
     for fig_num, fig_title, fig_page in lof_items:
         p_lof = doc.add_paragraph()
         p_lof.paragraph_format.line_spacing = 1.15
@@ -1033,6 +1049,11 @@ def build_full_proposal():
     for idx in range(1, len(parts), 2):
         sec_header = parts[idx].strip()
         sec_content = parts[idx+1] if idx+1 < len(parts) else ""
+
+        # Skip Bab 3 entirely when requested
+        if skip_chapter3 and sec_header.startswith("BAB") and "3" in sec_header.split()[1:2]:
+            print(f"    -> SKIPPING (no-chapter3 mode): {sec_header}")
+            continue
 
         print(f"    -> Building: {sec_header}")
         if sec_header.startswith("BAB"):
@@ -1401,4 +1422,12 @@ def build_daftar_pustaka(doc, content):
 
 
 if __name__ == "__main__":
-    build_full_proposal()
+    import argparse
+    parser = argparse.ArgumentParser(description="Build FEB UKRIDA Proposal DOCX")
+    parser.add_argument(
+        "--no-chapter3",
+        action="store_true",
+        help="Skip Bab 3 (Metode Penelitian) — output: Proposal_Arthur_NoBab3.docx"
+    )
+    args = parser.parse_args()
+    build_full_proposal(skip_chapter3=args.no_chapter3)

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Panduan Belajar Proposal Skripsi – Arthur Reezan</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Noto+Sans:wght@400;700&family=JetBrains+Mono&display=swap');
+
+  @page {
+    size: A4;
+    margin: 2.5cm 2.5cm 3cm 2.5cm;
+    @bottom-center {
+      content: counter(page);
+      font-family: 'Noto Serif', serif;
+      font-size: 10pt;
+    }
+  }
+
+  body {
+    font-family: 'Noto Serif', 'Times New Roman', serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a1a;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16pt;
+    font-weight: 700;
+    color: #1a237e;
+    border-bottom: 3px solid #1a237e;
+    padding-bottom: 6pt;
+    margin-top: 24pt;
+    margin-bottom: 12pt;
+    page-break-after: avoid;
+  }
+
+  h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13pt;
+    font-weight: 700;
+    color: #283593;
+    border-left: 4px solid #3f51b5;
+    padding-left: 8pt;
+    margin-top: 18pt;
+    margin-bottom: 8pt;
+    page-break-after: avoid;
+  }
+
+  h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 11.5pt;
+    font-weight: 700;
+    color: #3949ab;
+    margin-top: 12pt;
+    margin-bottom: 6pt;
+    page-break-after: avoid;
+  }
+
+  h4, h5, h6 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 11pt;
+    font-weight: 700;
+    color: #424242;
+    margin-top: 8pt;
+    margin-bottom: 4pt;
+    page-break-after: avoid;
+  }
+
+  p {
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    text-indent: 1.2em;
+  }
+
+  p:first-child, h1 + p, h2 + p, h3 + p, h4 + p, blockquote p {
+    text-indent: 0;
+  }
+
+  ul, ol {
+    margin: 8pt 0 8pt 1.5em;
+    padding-left: 0.5em;
+  }
+
+  li {
+    margin-bottom: 4pt;
+    text-align: left;
+    text-indent: 0;
+  }
+
+  blockquote {
+    border-left: 4px solid #90caf9;
+    background: #e3f2fd;
+    margin: 12pt 0;
+    padding: 10pt 14pt;
+    border-radius: 4pt;
+    font-style: normal;
+  }
+
+  blockquote p {
+    margin: 4pt 0;
+    text-indent: 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12pt 0;
+    font-size: 10pt;
+    page-break-inside: avoid;
+  }
+
+  th {
+    background: #1a237e;
+    color: #ffffff;
+    padding: 6pt 8pt;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  td {
+    border: 1px solid #c5cae9;
+    padding: 5pt 8pt;
+    vertical-align: top;
+  }
+
+  tr:nth-child(even) td {
+    background: #e8eaf6;
+  }
+
+  code {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 3pt;
+    padding: 1pt 4pt;
+    font-size: 9.5pt;
+  }
+
+  pre {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    background: #263238;
+    color: #eceff1;
+    border-radius: 6pt;
+    padding: 12pt;
+    font-size: 9pt;
+    overflow-x: auto;
+    margin: 12pt 0;
+    line-height: 1.4;
+    page-break-inside: avoid;
+  }
+
+  pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+  }
+
+  strong {
+    color: #1a237e;
+  }
+
+  em {
+    color: #37474f;
+  }
+
+  a {
+    color: #3f51b5;
+    text-decoration: none;
+  }
+
+  hr {
+    border: none;
+    border-top: 2px solid #c5cae9;
+    margin: 20pt 0;
+  }
+
+  .admonition {
+    border-left: 5px solid #2196F3;
+    background: #E3F2FD;
+    padding: 10pt 14pt;
+    margin: 12pt 0;
+    border-radius: 0 4pt 4pt 0;
+  }
+
+  .admonition.warning {
+    border-color: #FF9800;
+    background: #FFF3E0;
+  }
+
+  .admonition.note {
+    border-color: #4CAF50;
+    background: #E8F5E9;
+  }
+
+  .admonition-title {
+    font-weight: 700;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 6pt;
+    font-size: 11pt;
+  }
+
+  /* Cover page style for title */
+  .cover-title {
+    font-size: 20pt;
+    font-weight: 700;
+    color: #0d1b6e;
+    text-align: center;
+    margin-bottom: 24pt;
+  }
+</style>
+</head>
+<body>
+<h1 id="panduan-belajar-penguasaan-materi-proposal-skripsi-master-study-guide">🎓 PANDUAN BELAJAR &amp; PENGUASAAN MATERI PROPOSAL SKRIPSI (MASTER STUDY GUIDE)</h1>
+<h3 id="program-studi-s1-manajemen-konsentrasi-manajemen-keuangan-ukrida"><em>Program Studi S1 Manajemen — Konsentrasi Manajemen Keuangan — UKRIDA</em></h3>
+<hr />
+<blockquote>
+<p><strong>Judul Proposal Skripsi:</strong><br />
+<strong>"PENGARUH <em>HEDONIC MOTIVATION</em>, <em>DESIRE FOR COMPLETENESS</em>, DAN <em>SPECULATIVE MOTIVE</em> TERHADAP <em>IMPULSIVE BUYING</em> BOOSTER PACK KARTU POKÉMON TCG DENGAN <em>SELF-CONTROL</em> SEBAGAI VARIABEL MODERASI"</strong></p>
+<p>[!NOTE]<br />
+<strong>Panduan ini telah disinkronisasi penuh dengan arahan revisi Dosen Pembimbing (Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A) per 9 September 2026.</strong><br />
+Dokumen ini memuat penguasaan materi komprehensif BAB 1–3, argumen teoretis, justifikasi pemilihan variabel, konteks ekosistem Pokémon, industri sertifikasi <em>grading</em>, serta simulasi 16 pertanyaan kritis sidang/bimbingan.</p>
+<p><strong>Versi:</strong> 2.0 (9 September 2026)<br />
+<strong>Disinkronisasi dengan:</strong> Naskah Proposal TeX/PDF (42 Halaman), <code>BAB_I_PENDAHULUAN.md</code>, <code>BAB_II_TINJAUAN_PUSTAKA.md</code>, <code>BAB_III_METODE_PENELITIAN.md</code>, dan <code>SOURCE_OF_TRUTH.md</code> v5.0.</p>
+</blockquote>
+<hr />
+<h2 id="daftar-isi-panduan">📌 DAFTAR ISI PANDUAN</h2>
+<ol>
+<li><a href="#1-ringkasan-eksekutif--peta-konsep-penelitian">Ringkasan Eksekutif &amp; Peta Konsep Penelitian</a></li>
+<li><a href="#2-latar-belakang--ekosistem-waralaba-pokémon">Latar Belakang &amp; Ekosistem Waralaba Pokémon</a></li>
+<li><a href="#3-mengapa-memilih-kartu-koleksi-tcg">Mengapa Memilih Kartu Koleksi (TCG)?</a></li>
+<li><a href="#4-kamus-lengkap-istilah">Kamus Lengkap Istilah: TCG, Grading, &amp; Psikologi Keuangan</a></li>
+<li><a href="#5-bedah-variabel-penelitian">Bedah Variabel Penelitian: Konsep, Dimensi, &amp; Operasionalisasi</a></li>
+<li><a href="#6-struktur-teori-bab-2">Struktur Teori BAB 2: Grand Theory &amp; Supporting Theories</a></li>
+<li><a href="#7-penelitian-terdahulu--anteseden-impulsive-buying">Penelitian Terdahulu &amp; Pemetaan Anteseden Impulsive Buying</a></li>
+<li><a href="#8-logika-kausalitas--pembuktian-hipotesis">Logika Kausalitas &amp; 4-Tier Pembuktian Hipotesis (H1–H6)</a></li>
+<li><a href="#9-metodologi-penelitian--teknik-analisis-mra">Metodologi Penelitian &amp; Teknik Analisis MRA</a></li>
+<li><a href="#10-simulasi-pertanyaan-bimbingan-sidang--kunci-jawaban">Simulasi Pertanyaan Bimbingan/Sidang &amp; Kunci Jawaban (16 Skenario)</a></li>
+<li><a href="#11-cheat-sheet-1-halaman">Cheat Sheet 1 Halaman (Hafalan Kilat Menjelang Sidang)</a></li>
+</ol>
+<hr />
+<h1 id="1-ringkasan-eksekutif-peta-konsep-penelitian">1. RINGKASAN EKSEKUTIF &amp; PETA KONSEP PENELITIAN</h1>
+<h3 id="mengapa-penelitian-ini-dibuat">Mengapa Penelitian Ini Dibuat?</h3>
+<p>Fenomena kartu Pokémon Trading Card Game (Pokémon TCG) fisik resmi berbahasa Indonesia di minimarket modern (Indomaret/Alfamart) telah bertransformasi dari sekadar permainan hobi menjadi komoditas konsumtif bernilai spekulatif tinggi. Kemasan <em>booster pack</em> seharga Rp20.000–Rp30.000 menyimpan kartu langka (<em>Special Illustration Rare / SAR</em>) yang diperdagangkan Rp500.000 hingga lebih dari Rp3.000.000 di pasar sekunder.</p>
+<p>Penelitian ini membedah 3 pemicu utama pembelian impulsif:<br />
+1. <strong>Hedonic Motivation ($X_1$):</strong> Dorongan kesenangan emosional dan letupan dopamin saat merobek bungkus <em>pack</em> (<em>pack opening thrill</em>).<br />
+2. <strong>Desire for Completeness ($X_2$):</strong> Ketegangan kognitif melihat slot kosong pada album koleksi akibat dorongan melengkapi set (<em>The Completing the Set Effect / Zeigarnik Effect</em>).<br />
+3. <strong>Speculative Motive ($X_3$):</strong> Ekspektasi keuntungan modal (<em>capital gain</em>) dari penjualan kembali kartu langka bernilai jutaan rupiah yang didorong sertifikasi <em>grading</em> (PSA 10 Gem Mint).<br />
+4. <strong>Self-Control ($M$ - Variabel Moderasi):</strong> Kapasitas volisional individu untuk menolak godaan belanja spontan dan menunda kepuasan sesaat (<em>delay of gratification</em>), yang diposisikan <strong>memperlemah (-)</strong> pengaruh ketiga variabel anteseden terhadap <em>Impulsive Buying</em> ($Y$).</p>
+<h3 id="diagram-rerangka-konseptual-penelitian">Diagram Rerangka Konseptual Penelitian:</h3>
+<pre><code>                     Pengaruh Langsung (H1, H2, H3)
+    ┌─────────────────────────────────────────────────────────────┐
+    │                                                             │
+    │   [ X1: Hedonic Motivation     ] ──── H1 (+) ────┐          │
+    │                                                  │          │
+    │   [ X2: Desire for Completeness] ──── H2 (+) ────┼────►  [ Y: Impulsive Buying ]
+    │                                                  │          │
+    │   [ X3: Speculative Motive     ] ──── H3 (+) ────┘          │
+    │                                                             │
+    └─────────────────────────────────────────────────────────────┘
+                                                       ▲
+                                                       │
+                           H4, H5, H6 (Memperlemah / -)
+                                                       │
+                                           [ M: Self-Control ]
+                                           (Variabel Moderasi)
+</code></pre>
+<h3 id="persamaan-model-mra-moderated-regression-analysis">Persamaan Model MRA (Moderated Regression Analysis):</h3>
+<p>$$\text{Model 1 (Efek Utama): } Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + e$$<br />
+$$\text{Model 2 (MRA): } Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \beta_4 M + \beta_5 (X_1 \cdot M) + \beta_6 (X_2 \cdot M) + \beta_7 (X_3 \cdot M) + e$$</p>
+<hr />
+<h1 id="2-latar-belakang-ekosistem-waralaba-pokemon">2. LATAR BELAKANG &amp; EKOSISTEM WARALABA POKÉMON</h1>
+<blockquote>
+<p>[!IMPORTANT]<br />
+<strong>Catatan Bimbingan 9/9/2026:</strong> Dosen meminta latar belakang diawali dengan narasi ekosistem waralaba Pokémon secara utuh (video game, anime, film, merchandise), sebelum mengerucut pada kartu koleksi.</p>
+</blockquote>
+<p>Waralaba Pokémon (diciptakan oleh Satoshi Tajiri dan Ken Sugimori pada 1996 di bawah Nintendo, Game Freak, dan Creatures Inc.) merupakan waralaba media dengan pendapatan kotor tertinggi di dunia (&gt;USD 100 miliar). Ekosistemnya dibangun di atas pilar-pilar sinergis:</p>
+<ol>
+<li><strong>Video Games (Pilar Fundamental):</strong></li>
+<li>Dimulai dari <em>Pokémon Red &amp; Green</em> (1996) pada Nintendo Game Boy dengan slogan legendaris <em>"Gotta Catch 'Em All!"</em> (tangkap semua monster untuk melengkapi Pokédex).</li>
+<li>Berkembang melintasi sembilan generasi konsol: Game Boy Color (<em>Gold &amp; Silver</em>), Game Boy Advance (<em>Ruby &amp; Sapphire</em>), Nintendo DS (<em>Diamond &amp; Pearl</em>, <em>Black &amp; White</em>), Nintendo 3DS (<em>X &amp; Y</em>, <em>Sun &amp; Moon</em>), hingga Nintendo Switch (<em>Sword &amp; Shield</em>, <em>Scarlet &amp; Violet</em>).</li>
+<li>
+<p>Ekspansi ke era seluler melalui fenomena global <em>Pokémon GO</em> (2016) berbasis <em>Augmented Reality</em> (AR) dan <em>Pokémon Trading Card Game Pocket</em> (2024).</p>
+</li>
+<li>
+<p><strong>Anime Series &amp; Film Layar Lebar:</strong></p>
+</li>
+<li>Serial animasi televisi yang mengisahkan perjalanan Ash Ketchum (Satoshi) dan Pikachu selama lebih dari 25 tahun (1997–2023).</li>
+<li>Lebih dari 24 film animasi layar lebar, diawali dengan karya legendaris <em>Pokémon: The First Movie - Mewtwo Strikes Back</em> (1998) yang meraup pendapatan box office global lebih dari USD 172 juta.</li>
+<li>
+<p>Penetrasi ke industri perfilman Hollywood live-action melalui <em>POKÉMON Detective Pikachu</em> (2019) yang sukses secara komersial dan memperluas audiens lintas generasi.</p>
+</li>
+<li>
+<p><strong>Merchandise &amp; Lisensi Global:</strong></p>
+</li>
+<li>Boneka plushie, pakaian, figur aksi, aksesori, hingga kolaborasi gaya hidup premium di jaringan Pokémon Center di seluruh dunia.</li>
+</ol>
+<hr />
+<h1 id="3-mengapa-memilih-kartu-koleksi-tcg">3. MENGAPA MEMILIH KARTU KOLEKSI (TCG)?</h1>
+<blockquote>
+<p>[!IMPORTANT]<br />
+<strong>Pertanyaan Dosen:</strong> "Dari sekian banyak pilar Pokémon (games, film, mainan), kenapa harus memilih kartu (TCG) sebagai objek penelitian?"</p>
+</blockquote>
+<p><strong>Tiga Argumen Kunci Pemilihan Pokémon TCG:</strong><br />
+1. <strong>Pangsa Pasar Fisik Terbesar &amp; Likuiditas Riil:</strong><br />
+   - Sejak diluncurkan pada Oktober 1996, Pokémon TCG telah mencetak dan mendistribusikan lebih dari <strong>64,8 miliar lembar kartu</strong> di seluruh dunia dalam puluhan bahasa.<br />
+   - TCG menghasilkan pasar sekunder fisik dengan likuiditas luar biasa tinggi, di mana kartu fisik diperlakukan sebagai komoditas investasi alternatif (<em>alternative tangible asset</em>).<br />
+2. <strong>Karakteristik Pembelian Berulang Berbasis Ketidakpastian (<em>Blind-Pack Mystery</em>):</strong><br />
+   - Video game atau tiket bioskop dibeli sekali untuk konsumsi selesai (<em>one-off purchase</em>).<br />
+   - Sebaliknya, <em>booster pack</em> kartu dibeli secara berulang-ulang (<em>repetitive purchase</em>) karena pembeli tidak mengetahui isi kartu di dalam kemasan. Ketidakpastian probabilitas ini (<em>lottery effect</em>) memicu dorongan belanja impulsif yang adiktif.<br />
+3. <strong>Konvergensi Unik Tiga Pemicu Perilaku Keuangan:</strong><br />
+   - Tidak ada produk Pokémon lain yang menggabungkan secara simultan: sensasi emosional merobek kemasan (<em>hedonic</em>), desakan melengkapi daftar nomor kartu dalam binder (<em>completeness</em>), dan potensi keuntungan lelang jutaan rupiah (<em>speculation</em> via sertifikasi PSA 10).</p>
+<hr />
+<h1 id="4-kamus-lengkap-istilah">4. KAMUS LENGKAP ISTILAH</h1>
+<h3 id="a-istilah-pokemon-tcg-ekosistem-kartu">A. Istilah Pokémon TCG &amp; Ekosistem Kartu</h3>
+<ul>
+<li><strong>Trading Card Game (TCG):</strong> Permainan kartu strategi di mana pemain mengoleksi, menyusun dek, bertanding, dan memperdagangkan kartu fisik.</li>
+<li><strong>Booster Pack:</strong> Kemasan foil kedap cahaya berisi kartu acak (biasanya 5–10 lembar di Indonesia) dengan jaminan kelangkaan tertentu.</li>
+<li><strong>Special Illustration Rare (SAR):</strong> Tingkat kelangkaan kartu tertinggi dengan karya seni ilustrasi penuh (<em>full-art alternative art</em>) yang memiliki probabilitas tarik (<em>pull rate</em>) sangat kecil (&lt;1–3%) dan harga pasar termahal.</li>
+<li><strong>Raw Card:</strong> Kartu mentah yang belum disertifikasi atau disegel oleh lembaga grading resmi.</li>
+</ul>
+<h3 id="b-industri-sertifikasi-grading-profesional">B. Industri Sertifikasi Grading Profesional</h3>
+<ul>
+<li><strong>Lembaga Grading Independen (PSA, BGS, CGC):</strong> Perusahaan pihak ketiga terakreditasi internasional yang menilai keaslian dan kondisi fisik kartu secara objektif.</li>
+<li><strong>PSA (Professional Sports Authenticator):</strong> Pemimpin pasar global dengan pangsa lelang terbesar.</li>
+<li><strong>BGS (Beckett Grading Services):</strong> Terkenal dengan 4 sub-grade (Centering, Corners, Edges, Surface).</li>
+<li><strong>CGC (Certified Guaranty Company):</strong> Populer dalam penilaian kartu koleksi modern dan komik.</li>
+<li><strong>Skala 1–10 Gem Mint:</strong> Standar penilaian kondisi fisik kartu dari <em>Poor (1)</em> hingga <em>Gem Mint (10)</em>.</li>
+<li><strong>Tamper-Evident Slab:</strong> Cangkang plastik keras ultrasonik kedap udara berlabel barcode/QR yang menyegel kartu secara permanen agar kondisi fisiknya tidak rusak.</li>
+<li><strong>Population Report (<em>Pop Report</em>):</strong> Basis data sensus publik resmi dari lembaga grading yang mencatat berapa lembar kartu tertentu yang berhasil meraih nilai 10. Semakin rendah <em>pop report</em>, semakin langka kartu tersebut.</li>
+<li><strong>Grading Arbitrage (Arbitrase Grading):</strong> Motif spekulasi finansial di mana kolektor membeli kartu mentah seharga ratusan ribu rupiah, mengirimkannya ke lembaga grading, dan jika memperoleh nilai <em>PSA 10 Gem Mint</em>, menjualnya kembali dengan harga berkali-kali lipat (hingga jutaan rupiah).</li>
+</ul>
+<h3 id="c-istilah-psikologi-keuangan-perilaku">C. Istilah Psikologi &amp; Keuangan Perilaku</h3>
+<ul>
+<li><strong>Impulsive Buying (Pembelian Impulsif):</strong> Dorongan belanja mendadak, spontan, dan persisten tanpa perencanaan sadar akan dampak anggaran sebelumnya (Rook, 1987; Verplanken &amp; Herabadi, 2001).</li>
+<li><strong>Hedonic Motivation:</strong> Dorongan berbelanja demi kesenangan emosional, hiburan, dan pelarian stres (Arnold &amp; Reynolds, 2003).</li>
+<li><strong>Desire for Completeness:</strong> Istilah ilmiah baku untuk dorongan psikologis menuntaskan himpunan koleksi yang belum lengkap (Gao et al., 2014; Barasz et al., 2017).</li>
+<li><strong>Zeigarnik Effect:</strong> Kecenderungan kognitif manusia untuk terus mengingat dan terganggu oleh tugas yang belum selesai hingga mencapai resolusi (<em>closure</em>) (Zeigarnik, 1927).</li>
+<li><strong>Speculative Motive:</strong> Tindakan mengakuisisi aset didorong oleh ekspektasi menjualnya kembali demi keuntungan modal (<em>capital gain</em>) akibat apresiasi harga pasar (Keynes, 1936; Shiller, 2000).</li>
+<li><strong>Self-Control (Kontrol Diri):</strong> Kapasitas volisional seseorang untuk menolak godaan jangka pendek, menunda kepuasan (<em>delay of gratification</em>), dan menegakkan rencana anggaran (Tangney et al., 2004; Baumeister, 2002).</li>
+<li><strong>Dual-System Planner-Doer Model:</strong> Teori Thaler &amp; Shefrin (1981) tentang konflik internal antara <em>Doer</em> (pencari kenikmatan instan) dan <em>Planner</em> (perencana rasional jangka panjang).</li>
+</ul>
+<hr />
+<h1 id="5-bedah-variabel-penelitian">5. BEDAH VARIABEL PENELITIAN</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variabel</th>
+<th style="text-align: center;">Simbol</th>
+<th style="text-align: left;">Definisi Konseptual</th>
+<th style="text-align: left;">Dimensi Utama</th>
+<th style="text-align: left;">Indikator Kunci Instrumen</th>
+<th style="text-align: left;">Sumber Adaptasi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Impulsive Buying</strong></td>
+<td style="text-align: center;">$Y$</td>
+<td style="text-align: left;">Pembelian mendadak tanpa rencana anggaran sebelumnya, didorong stimulus lingkungan dan emosi sesaat.</td>
+<td style="text-align: left;">(1) Kognitif<br>(2) Afektif</td>
+<td style="text-align: left;">Y1. Belanja tanpa rencana anggaran.<br>Y2. Mengabaikan dampak keuangan.<br>Y3. Terdesak spontan saat melihat etalase.<br>Y4. Lonjakan kegembiraan mendadak.<br>Y5. Beli lebih banyak dari niat semula.<br>Y6. Sulit menahan belanja saat rilis baru.</td>
+<td style="text-align: left;">Rook (1987); Verplanken &amp; Herabadi (2001)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Hedonic Motivation</strong></td>
+<td style="text-align: center;">$X_1$</td>
+<td style="text-align: left;">Dorongan berbelanja untuk kenikmatan emosional, sensasi kejutan, dan pelarian stres.</td>
+<td style="text-align: left;">(1) <em>Adventure</em><br>(2) <em>Gratification</em><br>(3) <em>Idea Shopping</em></td>
+<td style="text-align: left;">X1.1. Sensasi petualangan dan kejutan mendebarkan.<br>X1.2. Sensasi penasaran isi kemasan bungkus.<br>X1.3. Memanjakan diri dan melepas stres.<br>X1.4. Letupan kegembiraan saat dapat kartu SAR.<br>X1.5. Antusiasme mengikuti tren seri baru.</td>
+<td style="text-align: left;">Arnold &amp; Reynolds (2003); Babin et al. (1994)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Desire for Completeness</strong></td>
+<td style="text-align: center;">$X_2$</td>
+<td style="text-align: left;">Dorongan psikologis menuntaskan himpunan koleksi yang terikat batasan nomor urut resmi (<em>Zeigarnik Effect</em>).</td>
+<td style="text-align: left;">(1) <em>Cognitive Tension</em><br>(2) <em>Drive for Closure</em><br>(3) <em>Wholeness Satisfaction</em></td>
+<td style="text-align: left;">X2.1. Rasa tidak nyaman melihat slot kosong di album.<br>X2.2. Terdesak membeli demi target set lengkap.<br>X2.3. Celah kartu memicu dorongan segera membeli.<br>X2.4. Kepuasan batin saat berhasil menuntaskan set.<br>X2.5. Semakin sedikit kartu kurang, semakin kuat desakan belanja.</td>
+<td style="text-align: left;">Gao et al. (2014); Barasz et al. (2017); Belk (1995)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Speculative Motive</strong></td>
+<td style="text-align: center;">$X_3$</td>
+<td style="text-align: left;">Ekspektasi perolehan keuntungan finansial dari apresiasi harga kartu langka di pasar sekunder.</td>
+<td style="text-align: left;">(1) Ekspektasi Cuan<br>(2) Likuiditas Sekunder<br>(3) <em>Grading Arbitrage</em></td>
+<td style="text-align: left;">X3.1. Harapan menarik kartu bernilai jual mahal.<br>X3.2. Likuiditas pasar sekunder yang aktif.<br>X3.3. Memantau kenaikan harga pasar kartu langka.<br>X3.4. Modal pack sebanding dengan potensi cuan.<br>X3.5. Minat pada nilai kartu bersertifikat PSA 10.</td>
+<td style="text-align: left;">Keynes (1936); Shiller (2000); Baur et al. (2018)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Self-Control</strong></td>
+<td style="text-align: center;">$M$</td>
+<td style="text-align: left;">Kapasitas volisional menolak godaan belanja spontan dan menunda kepuasan demi tujuan finansial.</td>
+<td style="text-align: left;">(1) Tahan Godaan<br>(2) Non-Impulsif<br>(3) Tunda Kepuasan<br>(4) Disiplin Anggaran</td>
+<td style="text-align: left;">M1. Menolak godaan barang di luar rencana.<br>M2. Berpikir matang sebelum bertransaksi.<br>M3. Menunda kepuasan demi target masa depan.<br>M4. Disiplin menahan dorongan beli di kasir.<br>M5. Tidak mudah terhanyut emosi belanja.<br>M6. Patuh pada batas alokasi anggaran hobi.</td>
+<td style="text-align: left;">Tangney et al. (2004); Baumeister (2002); Sultan et al. (2012)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="6-struktur-teori-bab-2-grand-theory-supporting-theories">6. STRUKTUR TEORI BAB 2: GRAND THEORY &amp; SUPPORTING THEORIES</h1>
+<blockquote>
+<p>[!IMPORTANT]<br />
+<strong>Catatan Bimbingan Dosen:</strong><br />
+1. Buka BAB 2 dengan <strong>Grand Theory: Behavioral Finance (Keuangan Perilaku)</strong>.<br />
+2. Masukkan teori pendukung: S-O-R, Completing the Set Effect, Self-Regulation Theory.<br />
+3. <strong>Bahas Variabel Dependen ($Y$) lebih dulu</strong>, baru masuk ke variabel independen ($X_1, X_2, X_3, M$), lalu pengembangan hipotesis.</p>
+</blockquote>
+<h3 id="1-grand-theory-keuangan-perilaku-behavioral-finance">1. Grand Theory: Keuangan Perilaku (<em>Behavioral Finance</em>)</h3>
+<ul>
+<li>Menentang paradigma neoklasik pasar efisien (<em>Efficient Market Hypothesis</em> - Fama, 1970) yang mengasumsikan manusia sepenuhnya rasional (<em>homo economicus</em>).</li>
+<li>Berlandaskan konsep <strong>Rasionalitas Terbatas (<em>Bounded Rationality</em>)</strong> dari Herbert Simon (1955): manusia memiliki batas kognitif sehingga menggunakan heuristik pintas dalam keputusan ekonomi.</li>
+<li>Mengintegrasikan <strong>Prospect Theory</strong> (Kahneman &amp; Tversky, 1979) yang membuktikan bias psikologis seperti <em>overoptimism bias</em> dan kesesatan berpikir penjudi (<em>gambler's fallacy</em>).</li>
+<li><strong>Irrational Exuberance</strong> (Shiller, 2000): antusiasme pasar yang tidak rasional memicu gelembung spekulatif (<em>speculative bubbles</em>).</li>
+<li><strong>Planner-Doer Model</strong> (Thaler &amp; Shefrin, 1981): pertarungan psikologis antara entitas <em>Planner</em> (rasional jangka panjang) dan <em>Doer</em> (impulsif jangka pendek).</li>
+</ul>
+<h3 id="2-supporting-theory-1-model-s-o-r-stimulus-organism-response">2. Supporting Theory 1: Model S-O-R (Stimulus-Organism-Response)</h3>
+<ul>
+<li>Dikembangkan oleh Mehrabian &amp; Russell (1974).</li>
+<li><strong>Stimulus (S):</strong> Pajangan kemasan di rak kasir minimarket, warna kemasan mencolok, mekanisme kemasan misteri (<em>blind-pack</em>), rilis seri baru.</li>
+<li><strong>Organism (O):</strong> Keadaan afektif dan kognitif internal: <em>Hedonic Motivation</em> ($X_1$), <em>Desire for Completeness</em> ($X_2$), <em>Speculative Motive</em> ($X_3$), dan kapasitas regulasi <em>Self-Control</em> ($M$).</li>
+<li><strong>Response (R):</strong> Tindakan belanja mendadak dan tanpa rencana (<em>Impulsive Buying</em> - $Y$).</li>
+</ul>
+<h3 id="3-supporting-theory-2-the-completing-the-set-effect-zeigarnik-effect">3. Supporting Theory 2: <em>The "Completing the Set" Effect</em> &amp; <em>Zeigarnik Effect</em></h3>
+<ul>
+<li>Berakar pada Bluma Zeigarnik (1927): tugas yang belum selesai menimbulkan ketegangan kognitif (<em>cognitive tension</em>) yang menuntut penuntasan (<em>closure</em>).</li>
+<li>Gao et al. (2014) di <em>Journal of Marketing Research</em> memformulasikan efek ini secara ilmiah: ketika konsumen membingkai barang sebagai suatu kesatuan set, motivasi akuisisi meningkat pesat saat set mendekati kelengkapan.</li>
+<li>Barasz et al. (2017) memperkenalkan <em>Pseudo-Set Framing</em>: menetapkan batasan visual himpunan secara artifisial secara dramatis mendorong konsumen membeli item pelengkap.</li>
+</ul>
+<h3 id="4-supporting-theory-3-teori-regulasi-diri-self-regulation-theory">4. Supporting Theory 3: Teori Regulasi Diri (<em>Self-Regulation Theory</em>)</h3>
+<ul>
+<li>Baumeister (2002) dan Vohs &amp; Faber (2007): kontrol diri adalah sumber daya energi terbatas (<em>ego depletion</em>). Bila energi kontrol diri melemah, individu rentan melakukan belanja impulsif.</li>
+<li>Tangney et al. (2004): individu dengan <em>high trait self-control</em> memiliki rem volisional yang mampu menunda kepuasan (<em>delay of gratification</em>) dan menolak godaan belanja spontan.</li>
+</ul>
+<hr />
+<h1 id="7-penelitian-terdahulu-anteseden-impulsive-buying">7. PENELITIAN TERDAHULU &amp; ANTESEDEN IMPULSIVE BUYING</h1>
+<p>Mengacu pada meta-analisis komprehensif Amos et al. (2014) dalam <em>Journal of Retailing and Consumer Services</em>, pemicu <em>Impulsive Buying</em> dikelompokkan menjadi 3 klaster faktor:<br />
+1. <strong>Faktor Afektif / Emosional:</strong> Kegembiraan, suasana hati, pencarian sensasi $\rightarrow$ diwakili secara kokoh oleh <strong><em>Hedonic Motivation</em></strong> ($X_1$).<br />
+2. <strong>Faktor Kognitif / Psikologis Kolektor:</strong> Kebutuhan penyelesaian tugas, ketidaktahanan terhadap celah himpunan $\rightarrow$ diwakili oleh <strong><em>Desire for Completeness</em></strong> ($X_2$).<br />
+3. <strong>Faktor Situasional / Ekspektasi Ekonomi:</strong> Daya tarik harga, likuiditas aset, ekspektasi keuntungan $\rightarrow$ diwakili oleh <strong><em>Speculative Motive</em></strong> ($X_3$).</p>
+<h3 id="tabel-ringkasan-penelitian-sebelumnya-10-jurnal-empiris-terkini-20212025">Tabel Ringkasan Penelitian Sebelumnya (10 Jurnal Empiris Terkini 2021–2025):</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">No</th>
+<th style="text-align: left;">Peneliti (Tahun)</th>
+<th style="text-align: left;">Judul Penelitian</th>
+<th style="text-align: left;">Variabel &amp; Metode</th>
+<th style="text-align: left;">Hasil Utama Penelitian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Pranggabayu &amp; Andjarwati (2022)</td>
+<td style="text-align: left;"><em>Pengaruh Hedonic Shopping Motivation dan Store Atmosphere terhadap Impulsive Buying</em></td>
+<td style="text-align: left;">X1: Hedonic motivation, X2: Store atmosphere; Y: Impulsive buying; Regresi berganda</td>
+<td style="text-align: left;">Motivasi hedonis berpengaruh positif signifikan terhadap pembelian impulsif.</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">Apidana &amp; Kholifah (2022)</td>
+<td style="text-align: left;"><em>Peran Self Control dalam Memoderasi Pengaruh Hedonic Motives terhadap Impulse Buying</em></td>
+<td style="text-align: left;">X: Hedonic motives; Y: Impulse buying; Mod: Self-control; MRA</td>
+<td style="text-align: left;">Motif hedonis berpengaruh positif terhadap impulse buying; kontrol diri memoderasi/memperlemah pengaruh tersebut.</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">Lienardy &amp; Panasea (2024)</td>
+<td style="text-align: left;"><em>The Role of Self-Control in Moderating Hedonistic Behavior on Impulsive Buying</em></td>
+<td style="text-align: left;">X: Hedonistic behavior; Y: Impulsive buying; Mod: Self-control; MRA</td>
+<td style="text-align: left;">Perilaku hedonis positif signifikan terhadap impulsif; kontrol diri terbukti memoderasi dan memperlemah pengaruh hedonis.</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Gong et al. (2024)</td>
+<td style="text-align: left;"><em>Unveiling the Enigma of Blind Box Impulse Buying Curiosity</em> (<em>Heliyon</em> Scopus Q1)</td>
+<td style="text-align: left;">X: Karakteristik blind box; Med: Rasa ingin tahu; Y: Impulse buying; S-O-R PLS-SEM</td>
+<td style="text-align: left;">Kemasan acak blind box memicu rasa ingin tahu afektif yang langsung mendorong impulse buying.</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;">Tan &amp; Adyantari (2024)</td>
+<td style="text-align: left;"><em>Ketidakpastian Blind Box dan Perilaku Pembelian Impulsif</em> (SINTA 2)</td>
+<td style="text-align: left;">X: Ketidakpastian blind box, Nilai emosional; Y: Pembelian impulsif; Survei</td>
+<td style="text-align: left;">Ketidakpastian isi kemasan acak membangkitkan nilai emosional yang mendorong impulse buying.</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">Dewi et al. (2024)</td>
+<td style="text-align: left;"><em>Understanding Impulse Buying Behavior: The Case of Blind Box Purchases in Indonesia</em></td>
+<td style="text-align: left;">X1: Scarcity, X2: Uncertainty; Med: FOMO; Y: Impulse buying; PLS-SEM</td>
+<td style="text-align: left;">Kelangkaan dan ketidakpastian memicu FOMO dan hasrat koleksi yang mendorong impulse buying Gen Z di Indonesia.</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">Aryadi &amp; Lingga (2024)</td>
+<td style="text-align: left;"><em>Trading Card Game Community in Greater Jakarta</em> (Springer Nature / Atlantis Press)</td>
+<td style="text-align: left;">X: Motivasi kolektor; Y: Keputusan investasi TCG; Regresi logistik</td>
+<td style="text-align: left;">Membuktikan komunitas TCG di Jakarta memiliki motif spekulasi finansial dalam mengoleksi kartu sebagai aset alternatif.</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">Colline (2024)</td>
+<td style="text-align: left;"><em>Biases in Indonesian Stock Investor Behavior</em> (<em>Accounting and Finance Studies</em>)</td>
+<td style="text-align: left;">X: Overconfidence, Herding; Y: Keputusan finansial; Survei</td>
+<td style="text-align: left;">Dosen FEB UKRIDA (K-04); membuktikan tingginya bias optimisme dan ikut-ikutan pada generasi muda Indonesia.</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;">Artadita &amp; Firmialy (2024)</td>
+<td style="text-align: left;"><em>How Does Self-Control Moderate Shopping Enjoyment and Impulse Buying?</em> (<em>BBR</em> Scopus Q3/SINTA 1)</td>
+<td style="text-align: left;">X: Shopping enjoyment; Y: Impulse buying; Mod: Self-control; MRA</td>
+<td style="text-align: left;">Kesenangan belanja game berpengaruh kuat terhadap impulse buying; kontrol diri memoderasi dan menahan dorongan belanja.</td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: left;">Katauke et al. (2023)</td>
+<td style="text-align: left;"><em>Financial Literacy and Impulsivity: Evidence from Japan</em> (<em>Sustainability</em> MDPI Scopus Q1)</td>
+<td style="text-align: left;">X: Regulasi finansial; Y: Impulsivity; Ekonometrika</td>
+<td style="text-align: left;">Kapasitas regulasi diri dan kontrol finansial secara signifikan menekan impulsivitas belanja.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="8-logika-kausalitas-4-tier-pembuktian-hipotesis">8. LOGIKA KAUSALITAS &amp; 4-TIER PEMBUKTIAN HIPOTESIS</h1>
+<p>Setiap perumusan hipotesis wajib disusun dalam format <strong>4-Tier</strong>:<br />
+1. <em>Landasan Teoretis</em> (Teori apa yang mendasari?)<br />
+2. <em>Kajian Empiris Terdahulu</em> (Siapa peneliti sebelumnya yang menemukan bukti?)<br />
+3. <em>Keterkaitan dengan Objek</em> (Bagaimana dinamika fisiknya pada kartu Pokémon TCG?)<br />
+4. <em>Rumusan Hipotesis Baku</em></p>
+<hr />
+<h3 id="h1-hedonic-motivation-rightarrow-impulsive-buying">H1: <em>Hedonic Motivation</em> $\rightarrow$ <em>Impulsive Buying</em> (+)</h3>
+<ul>
+<li><strong>Teori:</strong> S-O-R Model (Mehrabian &amp; Russell, 1974) &amp; Teori Konsumsi Pengalaman (Hirschman &amp; Holbrook, 1982).</li>
+<li><strong>Empiris:</strong> Arnold &amp; Reynolds (2003); Gültekin &amp; Özer (2012); Pranggabayu &amp; Andjarwati (2022); Artadita &amp; Firmialy (2024).</li>
+<li><strong>Objek Pokémon TCG:</strong> Kemasan tertutup <em>booster pack</em> memberikan sensasi petualangan dan letupan dopamin saat merobek bungkus foil (<em>pack opening thrill</em>). Mencari kartu berkilau langka menciptakan kesenangan instan yang melumpuhkan perencanaan anggaran di kasir toko.</li>
+<li><strong>Hipotesis:</strong><blockquote>
+<p><strong>H1: <em>Hedonic Motivation</em> berpengaruh positif dan signifikan terhadap <em>Impulsive Buying</em> booster pack kartu Pokémon TCG.</strong></p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<h3 id="h2-desire-for-completeness-rightarrow-impulsive-buying">H2: <em>Desire for Completeness</em> $\rightarrow$ <em>Impulsive Buying</em> (+)</h3>
+<ul>
+<li><strong>Teori:</strong> <em>Zeigarnik Effect</em> (Zeigarnik, 1927) &amp; <em>The "Completing the Set" Effect</em> (Gao et al., 2014; Barasz et al., 2017).</li>
+<li><strong>Empiris:</strong> Gao et al. (2014); Gong et al. (2024); Tan &amp; Adyantari (2024); Dewi et al. (2024).</li>
+<li><strong>Objek Pokémon TCG:</strong> Binder album kolektor yang memiliki nomor seri resmi menciptakan ketegangan kognitif saat melihat slot kosong melompong. Desakan melengkapi set mendorong pembelian berulang booster pack secara mendadak.</li>
+<li><strong>Hipotesis:</strong><blockquote>
+<p><strong>H2: <em>Desire for Completeness</em> berpengaruh positif dan signifikan terhadap <em>Impulsive Buying</em> booster pack kartu Pokémon TCG.</strong></p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<h3 id="h3-speculative-motive-rightarrow-impulsive-buying">H3: <em>Speculative Motive</em> $\rightarrow$ <em>Impulsive Buying</em> (+)</h3>
+<ul>
+<li><strong>Teori:</strong> <em>Behavioral Finance</em>, <em>Prospect Theory</em> (Kahneman &amp; Tversky, 1979; Shiller, 2000), &amp; <em>Gambler's Fallacy</em>.</li>
+<li><strong>Empiris:</strong> Shiller (2000); Baur et al. (2018); Aryadi &amp; Lingga (2024 - riset TCG Jakarta); Colline (2024 - Dosen FEB UKRIDA).</li>
+<li><strong>Objek Pokémon TCG:</strong> Modal kecil membeli pack eceran Rp20.000–Rp30.000 berpeluang menarik kartu SAR bernilai jutaan rupiah (terlebih jika lolos grading PSA 10 Gem Mint). Persepsi keuntungan instan ini melumpuhkan kehati-hatian finansial dan memicu aksi borong spontan.</li>
+<li><strong>Hipotesis:</strong><blockquote>
+<p><strong>H3: <em>Speculative Motive</em> berpengaruh positif dan signifikan terhadap <em>Impulsive Buying</em> booster pack kartu Pokémon TCG.</strong></p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<h3 id="h4-peran-moderasi-self-control-pada-hubungan-hedonic-motivation-dan-impulsive-buying-">H4: Peran Moderasi <em>Self-Control</em> pada Hubungan <em>Hedonic Motivation</em> dan <em>Impulsive Buying</em> (-)</h3>
+<ul>
+<li><strong>Teori:</strong> <em>Self-Regulation Theory</em> (Baumeister, 2002) &amp; <em>Planner-Doer Model</em> (Thaler &amp; Shefrin, 1981).</li>
+<li><strong>Empiris:</strong> Apidana &amp; Kholifah (2022); Lienardy &amp; Panasea (2024); Artadita &amp; Firmialy (2024); Katauke et al. (2023).</li>
+<li><strong>Objek Pokémon TCG:</strong> Ketika pembeli tergoda merobek kemasan kartu di kasir toko, individu dengan <em>Self-Control</em> tinggi mampu mengaktifkan fungsi kognitif <em>Planner</em>, menolak kenikmatan instan, dan mematuhi batas anggaran. Pengaruh motivasi hedonis terhadap pembelian impulsif pun melemah.</li>
+<li><strong>Hipotesis:</strong><blockquote>
+<p><strong>H4: <em>Self-Control</em> memoderasi (memperlemah) pengaruh <em>Hedonic Motivation</em> terhadap <em>Impulsive Buying</em> booster pack kartu Pokémon TCG.</strong></p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<h3 id="h5-peran-moderasi-self-control-pada-hubungan-desire-for-completeness-dan-impulsive-buying-">H5: Peran Moderasi <em>Self-Control</em> pada Hubungan <em>Desire for Completeness</em> dan <em>Impulsive Buying</em> (-)</h3>
+<ul>
+<li><strong>Teori:</strong> Regulasi Diri (Tangney et al., 2004) dalam mengelola ketegangan kognitif ketiadaan resolusi.</li>
+<li><strong>Empiris:</strong> Apidana &amp; Kholifah (2022); Katauke et al. (2023).</li>
+<li><strong>Objek Pokémon TCG:</strong> Kolektor berkontrol diri tinggi menyadari bahwa membeli kemasan acak demi mencari 1 kartu spesifik yang belum lengkap memiliki probabilitas sangat kecil dan memboroskan uang. Kontrol diri meredam desakan belanja impulsif dan mengalihkannya ke pembelian kartu lepasan (<em>singles</em>) secara terencana.</li>
+<li><strong>Hipotesis:</strong><blockquote>
+<p><strong>H5: <em>Self-Control</em> memoderasi (memperlemah) pengaruh <em>Desire for Completeness</em> terhadap <em>Impulsive Buying</em> booster pack kartu Pokémon TCG.</strong></p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<h3 id="h6-peran-moderasi-self-control-pada-hubungan-speculative-motive-dan-impulsive-buying-">H6: Peran Moderasi <em>Self-Control</em> pada Hubungan <em>Speculative Motive</em> dan <em>Impulsive Buying</em> (-)</h3>
+<ul>
+<li><strong>Teori:</strong> <em>Behavioral Finance</em> &amp; Disiplin Risiko Finansial (Thaler &amp; Shefrin, 1981; Barber &amp; Odean, 2008).</li>
+<li><strong>Empiris:</strong> Aryadi &amp; Lingga (2024); Colline (2024); Katauke et al. (2023).</li>
+<li><strong>Objek Pokémon TCG:</strong> Godaan cuan jutaan rupiah dari sertifikasi PSA 10 sangat menggiurkan. Namun, konsumen dengan kontrol diri kokoh memahami risiko volatilitas pasar dan biaya grading, sehingga tidak terburu-buru melakukan pembelian impulsif. Kontrol diri bertindak sebagai rem volisional terhadap ambisi spekulatif.</li>
+<li><strong>Hipotesis:</strong><blockquote>
+<p><strong>H6: <em>Self-Control</em> memoderasi (memperlemah) pengaruh <em>Speculative Motive</em> terhadap <em>Impulsive Buying</em> booster pack kartu Pokémon TCG.</strong></p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<h1 id="9-metodologi-penelitian-teknik-analisis-mra">9. METODOLOGI PENELITIAN &amp; TEKNIK ANALISIS MRA</h1>
+<h3 id="1-populasi-sampel-sampling">1. Populasi, Sampel, &amp; Sampling</h3>
+<ul>
+<li><strong>Populasi:</strong> Seluruh pembeli/kolektor kartu fisik Pokémon TCG resmi berbahasa Indonesia di Indonesia (populasi tak terbatas / <em>infinite population</em>).</li>
+<li><strong>Teknik Sampling:</strong> <em>Purposive Sampling</em> (Non-Probability).</li>
+<li><strong>Kriteria Inklusi:</strong> WNI, usia $\ge 17$ tahun, pernah membeli <em>booster pack</em> fisik resmi minimal 1 kali dalam 6–12 bulan terakhir.</li>
+<li><strong>Ukuran Sampel:</strong> Formula Green (1991): $N \ge 50 + 8k$ (untuk $k=7 \rightarrow N \ge 106$). Target ditetapkan <strong>120 hingga 150 responden</strong> guna menjamin <em>statistical power</em> $\ge 0,80$ pada $\alpha = 0,05$ (<em>medium effect size</em> $f^2 = 0,15$ - Cohen, 1988).</li>
+</ul>
+<h3 id="2-prosedur-mean-centering-pada-mra-krusial-untuk-uji-asumsi">2. Prosedur <em>Mean-Centering</em> pada MRA (Krusial untuk Uji Asumsi)</h3>
+<ul>
+<li>Pada model MRA, pembentukan istilah perkalian ($X_i \cdot M$) secara matematis dapat memicu multikolinearitas struktural yang tinggi dengan variabel induknya.</li>
+<li>Solusi standar ilmiah: Melakukan standarisasi rata-rata (<em>mean-centering</em>):<br />
+  $$X_i^<em> = X_i - \bar{X}_i \quad \text{dan} \quad M^</em> = M - \bar{M}$$</li>
+<li>Prosedur ini mengeliminasi multikolinearitas struktural tanpa mengubah nilai koefisien interaksi, standard error terstandarisasi, maupun nilai signifikansi $p$-value (Aiken &amp; West, 1991; Ghozali, 2018).</li>
+</ul>
+<h3 id="3-mengapa-menggunakan-mra-di-spss-daripada-sem-pls">3. Mengapa Menggunakan MRA di SPSS daripada SEM-PLS?</h3>
+<ul>
+<li>Model penelitian ini adalah model struktural parsimoni (3 variabel independen, 1 variabel moderasi, 1 variabel dependen, tanpa variabel mediasi laten bertingkat).</li>
+<li>MRA berbasis regresi OLS adalah metode parametrik yang sangat kuat (<em>statistically robust</em>) untuk menguji interaksi moderasi pada model linier langsung, dan merupakan standar baku yang diakui dalam pedoman skripsi FEB UKRIDA.</li>
+</ul>
+<hr />
+<h1 id="10-simulasi-pertanyaan-bimbingan-sidang-kunci-jawaban">10. SIMULASI PERTANYAAN BIMBINGAN / SIDANG &amp; KUNCI JAWABAN</h1>
+<h3 id="pertanyaan-1-mengapa-anda-mengubah-variabel-moderasi-dari-self-control-menjadi-self-control">❓ Pertanyaan 1: "Mengapa Anda mengubah variabel moderasi dari Self-Control menjadi Self-Control?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Terima kasih atas pertanyaannya, Ibu Dr. Diana. Perubahan ini dilakukan berdasarkan hasil evaluasi literatur dan arahan Ibu pada bimbingan 9 September 2026. Pertama, literasi keuangan (<em>self-control</em>) berlandaskan konsep kognitif (<em>knowledge</em>), di mana penelitian terdahulu (seperti Fernandes et al., 2014) sering menemukan <em>knowledge-to-behavior gap</em> — orang yang tahu teori keuangan belum tentu mampu menahan diri saat berbelanja. Sebaliknya, <strong><em>Self-Control</em> (Kontrol Diri)</strong> merupakan kapasitas volisional langsung yang menjadi 'rem kognitif' eksekutif. Dalam teori <em>Planner-Doer</em> Thaler &amp; Shefrin (1981) dan studi empiris Sultan et al. (2012), kontrol diri secara langsung dan konsisten terbukti mampu memperlemah dorongan emosional dan spekulatif dari tindakan belanja impulsif."</p>
+</blockquote>
+<hr />
+<h3 id="pertanyaan-2-mengapa-anda-mengganti-istilah-desire-for-completeness-menjadi-desire-for-completeness">❓ Pertanyaan 2: "Mengapa Anda mengganti istilah 'Desire for Completeness' menjadi 'Desire for Completeness'?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Istilah <em>Desire for Completeness</em> bersifat informal. Dalam literatur pemasaran dan perilaku konsumen terkemuka (<em>Journal of Marketing Research</em>), konstruk ini telah diformalkan oleh <strong>Gao, Huang, &amp; Simonson (2014)</strong> ke dalam teori ilmiah yang disebut <strong><em>The 'Completing the Set' Effect</em></strong> dan oleh <strong>Barasz et al. (2017)</strong> sebagai <strong><em>Desire for Completeness</em></strong>. Landasan psikologinya berakar kokoh pada <strong><em>Zeigarnik Effect</em> (1927)</strong> mengenai ketegangan kognitif akibat tugas yang belum tuntas. Dengan menggunakan istilah <em>Desire for Completeness</em>, operasionalisasi variabel memiliki rujukan jurnal internasional Q1 yang sangat kredibel."</p>
+</blockquote>
+<hr />
+<h3 id="pertanyaan-3-mengapa-grand-theory-yang-digunakan-adalah-behavioral-finance-bukan-teori-pemasaran-murni">❓ Pertanyaan 3: "Mengapa Grand Theory yang digunakan adalah Behavioral Finance, bukan teori pemasaran murni?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Penelitian ini diajukan pada Program Studi S1 Manajemen Konsentrasi <strong>Manajemen Keuangan</strong>. Komoditas kartu Pokémon TCG saat ini telah bertransformasi dari sekadar mainan anak menjadi aset alternatif bernilai spekulatif tinggi dengan pasar sekunder yang likuid. <em>Behavioral Finance</em> (Kahneman &amp; Tversky, 1979; Shiller, 2000; Thaler &amp; Shefrin, 1981) secara tepat membedah anomali keputusan keuangan konsumen muda yang irasional: adanya ilusi probabilitas (<em>lottery effect</em>), bias optimisme menarik kartu mahal bernilai PSA 10, serta konflik antara kesenangan instan (<em>Doer</em>) dan perencanaan anggaran (<em>Planner</em>)."</p>
+</blockquote>
+<hr />
+<h3 id="pertanyaan-4-mengapa-di-bab-2-variabel-dependen-y-dibahas-terlebih-dahulu-sebelum-variabel-x">❓ Pertanyaan 4: "Mengapa di BAB 2 variabel Dependen (Y) dibahas terlebih dahulu sebelum variabel X?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Sesuai kaidah penulisan ilmiah yang logis dan arahan Ibu Pembimbing, variabel dependen ($Y$ - <em>Impulsive Buying</em>) merupakan masalah utama atau fenomena inti yang ingin diselesaikan dalam penelitian ini. Dengan membedah definisi, dimensi, dan batasan operasional $Y$ terlebih dahulu, kita membangun standar pemahaman yang jelas tentang apa yang sedang dipengaruhi, sebelum kemudian menganalisis faktor-faktor penyebabnya ($X_1, X_2, X_3$) dan variabel pemoderasinya ($M$)."</p>
+</blockquote>
+<hr />
+<h3 id="pertanyaan-5-bagaimana-kaitan-sertifikasi-grading-psa-bgs-cgc-dengan-variabel-speculative-motive">❓ Pertanyaan 5: "Bagaimana kaitan sertifikasi grading (PSA, BGS, CGC) dengan variabel Speculative Motive?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Lembaga <em>grading</em> profesional seperti PSA menilai kartu pada skala 1–10 (<em>Gem Mint 10</em>) dan menyegelnya dalam wadah plastik kedap udara (<em>slab</em>). Kartu bersertifikat PSA 10 memiliki harga lelang puluhan kali lipat dari kartu mentah karena adanya <em>population report</em> yang membuktikan kelangkaannya. Disparitas harga inilah yang menciptakan fenomena <em>grading arbitrage</em> — pembeli memborong <em>pack</em> dengan spekulasi mendapatkan kartu berkondisi sempurna yang dapat di-<em>grade</em> untuk dijual kembali demi keuntungan modal (<em>capital gain</em>)."</p>
+</blockquote>
+<hr />
+<h3 id="pertanyaan-6-bagaimana-cara-anda-membuktikan-bahwa-h1-h2-dan-h3-benar-benar-berhubungan-dengan-objek-pokemon-tcg">❓ Pertanyaan 6: "Bagaimana cara Anda membuktikan bahwa H1, H2, dan H3 benar-benar berhubungan dengan objek Pokémon TCG?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Setiap hipotesis dibangun dengan struktur 4-tier yang mengaitkan teori langsung ke fisik objek Pokémon TCG:<br />
+- Pada <strong>H1 (<em>Hedonic</em>)</strong>: Sensasi merobek kemasan foil kedap cahaya (<em>pack opening thrill</em>) dan letupan dopamin saat menemukan kartu berkilau <em>SAR</em>.<br />
+- Pada <strong>H2 (<em>Completeness</em>)</strong>: Adanya daftar periksa (<em>checklist</em>) resmi dan album <em>binder</em> kartu bernomor urut; slot kosong memicu ketegangan kognitif visual untuk membeli <em>pack</em> tambahan.<br />
+- Pada <strong>H3 (<em>Speculative</em>)</strong>: Selisih harga ekstrem antara modal membeli <em>pack</em> (Rp20.000) dan potensi nilai jual kartu langka PSA 10 di pasar sekunder Tokopedia/Facebook Marketplace."</p>
+</blockquote>
+<hr />
+<h3 id="pertanyaan-7-mengapa-hipotesis-moderasi-h4-h5-h6-dirumuskan-memperlemah-bukan-memperkuat">❓ Pertanyaan 7: "Mengapa hipotesis moderasi (H4, H5, H6) dirumuskan memperlemah (-), bukan memperkuat?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Karena variabel moderasi yang digunakan adalah <em>Self-Control</em> (Kontrol Diri). Menurut <em>Self-Regulation Theory</em> (Baumeister, 2002) dan model <em>Planner-Doer</em> (Thaler &amp; Shefrin, 1981), kontrol diri adalah rem volisional. Ketika kontrol diri konsumen tinggi, mereka memiliki kapasitas untuk menunda kepuasan (<em>delay of gratification</em>) dan menahan dorongan belanja spontan, sehingga efek rangsangan emosional ($X_1$), hasrat kelengkapan ($X_2$), dan motif spekulasi ($X_3$) terhadap <em>Impulsive Buying</em> ($Y$) berhasil diredam atau diperlemah."</p>
+</blockquote>
+<hr />
+<h3 id="pertanyaan-8-apa-yang-anda-lakukan-jika-dalam-uji-mra-terjadi-multikolinearitas-tinggi-pada-istilah-interaksi">❓ Pertanyaan 8: "Apa yang Anda lakukan jika dalam uji MRA terjadi multikolinearitas tinggi pada istilah interaksi?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Kami menerapkan prosedur <em>mean-centering</em> sebelum mengalikan variabel independen dengan pemoderasi ($X_i^<em> = X_i - \bar{X}$ dan $M^</em> = M - \bar{M}$). Sesuai kaidah Aiken &amp; West (1991) dan Ghozali (2018), standarisasi rata-rata ini menghilangkan multikolinearitas struktural tanpa mengubah nilai esensial dari uji interaksi maupun signifikansi statistiknya."</p>
+</blockquote>
+<hr />
+<h3 id="pertanyaan-9-mengapa-anda-menggunakan-teknik-purposive-sampling">❓ Pertanyaan 9: "Mengapa Anda menggunakan teknik Purposive Sampling?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Karena penelitian ini membutuhkan responden dengan pengalaman spesifik yang relevan dengan konstruk yang diuji. Jika dilakukan <em>random sampling</em> pada populasi umum, sebagian besar responden mungkin tidak pernah membeli kartu Pokémon atau tidak memahami mekanisme <em>pack</em>. Kriteria inklusi kami mensyaratkan responden WNI berusia $\ge 17$ tahun yang pernah membeli <em>booster pack</em> resmi fisik dalam 6–12 bulan terakhir."</p>
+</blockquote>
+<hr />
+<h3 id="pertanyaan-10-berapa-target-sampel-anda-dan-apa-justifikasinya">❓ Pertanyaan 10: "Berapa target sampel Anda dan apa justifikasinya?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Target sampel adalah 120 hingga 150 responden. Angka ini melampaui batas minimum formula Green (1991), yaitu $N \ge 50 + 8(7) = 106$ responden untuk model dengan 7 prediktor. Target ini juga memenuhi kriteria Cohen (1988) untuk memperoleh <em>statistical power</em> sebesar 0,80 pada taraf signifikansi $\alpha = 0,05$ dengan <em>medium effect size</em> ($f^2 = 0,15$)."</p>
+</blockquote>
+<hr />
+<h3 id="pertanyaan-11-apa-novelty-kebaruan-utama-dari-penelitian-ini">❓ Pertanyaan 11: "Apa novelty (kebaruan) utama dari penelitian ini?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Kebaruannya terletak pada integrasi tiga domain: (1) menguji secara simultan motif hedonis, bias psikologi koleksi (<em>The Completing the Set Effect</em>), dan motif spekulasi finansial (<em>Behavioral Finance</em>) pada komoditas hobi fisik dengan pasar sekunder aktif; (2) menguji peran <em>Self-Control</em> sebagai rem volisional pemoderasi; dan (3) menjadi studi empiris pionir mengenai dinamika pasar kartu Pokémon TCG berbahasa Indonesia di lingkungan FEB UKRIDA."</p>
+</blockquote>
+<hr />
+<h3 id="pertanyaan-12-bagaimana-cara-anda-menyebarkan-kuesioner-agar-menjangkau-target-yang-valid">❓ Pertanyaan 12: "Bagaimana cara Anda menyebarkan kuesioner agar menjangkau target yang valid?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Kuesioner Google Forms disebarkan secara purposif pada simpul-simpul komunitas aktif Pokémon TCG di Indonesia, antara lain: Grup Facebook Komunitas Pokémon TCG Indonesia, server Discord kolektor kartu, serta bermitra dengan pengelola <em>Local Game Stores</em> (LGS) resmi. Di awal kuesioner, kami menyertakan pertanyaan penyaring (<em>screening questions</em>) untuk mengeliminasi responden yang tidak memenuhi kriteria inklusi."</p>
+</blockquote>
+<hr />
+<h3 id="pertanyaan-13-apakah-ada-uji-autokorelasi-dalam-penelitian-anda-mengapa">❓ Pertanyaan 13: "Apakah ada uji autokorelasi dalam penelitian Anda? Mengapa?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Uji autokorelasi (seperti Durbin-Watson) <strong>tidak dilakukan</strong> dalam penelitian ini. Sesuai kaidah ekonometrika dan buku teks metodologi penelitian (Ghozali, 2018), autokorelasi hanya relevan untuk data deret waktu (<em>time series</em>). Pada data primer kuesioner dengan desain survei <em>cross-sectional</em>, pengamatan antar-individu bersifat independen, sehingga uji asumsi klasik yang wajib dipenuhi hanyalah uji normalitas residual, multikolinearitas, dan heteroskedastisitas."</p>
+</blockquote>
+<hr />
+<h3 id="pertanyaan-14-apa-instrumen-yang-digunakan-untuk-mengukur-self-control">❓ Pertanyaan 14: "Apa instrumen yang digunakan untuk mengukur Self-Control?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Kami mengadaptasi skala baku <em>Brief Self-Control Scale</em> (BSCS) yang dikembangkan oleh <strong>Tangney, Baumeister, &amp; Boone (2004)</strong> serta divalidasi dalam konteks perilaku belanja oleh Sultan et al. (2012) dan Vohs &amp; Faber (2007). Skala ini mengukur kapasitas volisional dalam menolak godaan, menunda kepuasan, dan menegakkan disiplin anggaran pengeluaran."</p>
+</blockquote>
+<hr />
+<h3 id="pertanyaan-15-apa-kontribusi-praktis-penelitian-ini-bagi-mahasiswa-atau-masyarakat">❓ Pertanyaan 15: "Apa kontribusi praktis penelitian ini bagi mahasiswa atau masyarakat?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Memberikan edukasi dan evaluasi diri bagi generasi muda (khususnya Gen Z) agar menyadari bahwa di balik kesenangan membuka kartu dan ilusi spekulasi harga pasar, terdapat risiko kerugian finansial akibat pembelian impulsif yang tidak terkontrol. Penelitian ini menekankan pentingnya penguatan <em>Self-Control</em> untuk menjaga stabilitas alokasi keuangan pribadi dalam mengonsumsi produk hobi."</p>
+</blockquote>
+<hr />
+<h3 id="pertanyaan-16-mengapa-rumusan-masalah-dan-tujuan-penelitian-anda-ada-6-butir-apakah-referensi-jurnal-dan-daftar-pustaka-perlu-ditambah-seiring-ekspansi-ini">❓ Pertanyaan 16: "Mengapa Rumusan Masalah dan Tujuan Penelitian Anda ada 6 butir? Apakah referensi jurnal dan daftar pustaka perlu ditambah seiring ekspansi ini?"</h3>
+<blockquote>
+<p><strong>💡 Jawaban:</strong><br />
+"Terima kasih atas pertanyaannya, Bapak/Ibu Penguji. Penelitian ini meneliti 3 variabel independen ($X_1, X_2, X_3$) dan 1 variabel moderasi ($M = \text{Self-Control}$). Perumusan 6 butir di BAB 1 merupakan penegasan <strong>benang merah ilmiah (<em>golden thread</em>)</strong> dengan prinsip simetris 1-to-1 antara Rumusan Masalah (1–6), Tujuan Penelitian (1–6), dan Pengembangan Hipotesis (H1–H6 di BAB 2):<br />
+- <strong>Butir 1–3:</strong> Menguji pengaruh langsung (<em>direct effect</em>) dari <em>Hedonic Motivation</em>, <em>Desire for Completeness</em>, dan <em>Speculative Motive</em> terhadap <em>Impulsive Buying</em>.<br />
+- <strong>Butir 4–6:</strong> Menguji efek interaksi pemoderasi <em>Self-Control</em> pada masing-masing jalur pengaruh langsung tersebut melalui metode MRA (<em>Moderated Regression Analysis</em>).  </p>
+<p><strong>Mengenai referensi jurnal:</strong> Penambahan butir tersebut <strong>TIDAK memerlukan penambahan referensi baru</strong>, karena ini adalah sinkronisasi formal antara Bab 1 dengan Bab 2 &amp; Bab 3. Seluruh landasan teoretis untuk hipotesis moderasi (seperti <em>Self-Regulation Theory</em> oleh Baumeister 2002; model <em>Planner-Doer</em> oleh Thaler &amp; Shefrin 1981; dan skala BSCS oleh Tangney et al. 2004) serta penelitian empiris pendukung (Apidana &amp; Kholifah, 2022; Lienardy &amp; Panasea, 2024; Artadita &amp; Firmialy, 2024; Sultan et al., 2012; Katauke et al., 2023) <strong>sudah tercakup secara lengkap dan komprehensif dalam 72 referensi ilmiah</strong> pada naskah dan daftar pustaka proposal."</p>
+</blockquote>
+<hr />
+<h1 id="11-cheat-sheet-1-halaman-hafalan-kilat">11. CHEAT SHEET 1 HALAMAN (HAFALAN KILAT)</h1>
+<pre><code>================================================================================
+       KARTU KILAT PROPOSAL SKRIPSI — S1 MANAJEMEN KEUANGAN FEB UKRIDA
+================================================================================
+1. JUDUL RESMI:
+   Pengaruh Hedonic Motivation, Desire for Completeness, dan Speculative Motive
+   terhadap Impulsive Buying Booster Pack Kartu Pokémon TCG dengan Self-Control
+   sebagai Variabel Moderasi.
+
+2. SUSUNAN VARIABEL &amp; SUMBER BUKU RUJUKAN:
+   • Dependen (Y)   : Impulsive Buying — Rook (1987); Verplanken &amp; Herabadi (2001)
+   • Independen (X1): Hedonic Motivation — Arnold &amp; Reynolds (2003)
+   • Independen (X2): Desire for Completeness — Gao et al. (2014); Barasz et al. (2017)
+   • Independen (X3): Speculative Motive — Keynes (1936); Shiller (2000); Baur (2018)
+   • Moderasi (M)   : Self-Control — Tangney et al. (2004); Baumeister (2002)
+
+3. STRUKTUR TEORI BAB 2:
+   • Grand Theory       : Behavioral Finance (Simon, 1955; Kahneman, 1979; Thaler, 1981)
+   • Supporting Theories: S-O-R Model (1974), Completing the Set / Zeigarnik Effect,
+                          Self-Regulation Theory (Baumeister, 2002)
+   • Sistematika Ulasan : Bahas Y lebih dulu -&gt; X1, X2, X3 -&gt; M -&gt; Hipotesis (4-tier)
+
+4. ENAM HIPOTESIS PENELITIAN:
+   • H1: Hedonic Motivation -&gt; Impulsive Buying (+)           [Sensasi robek pack]
+   • H2: Desire for Completeness -&gt; Impulsive Buying (+)      [Slot kosong binder]
+   • H3: Speculative Motive -&gt; Impulsive Buying (+)           [Arbitrase grading PSA 10]
+   • H4: Self-Control MEMPERLEMAH Hedonic -&gt; Impulsive (-)    [Rem kognitif Planner]
+   • H5: Self-Control MEMPERLEMAH Completeness -&gt; Impulsive (-) [Pilih beli singles]
+   • H6: Self-Control MEMPERLEMAH Speculative -&gt; Impulsive (-) [Sadar risiko modal]
+
+5. METODE &amp; FORMULA SAMPEL:
+   • Pendekatan : Kuantitatif Asosiatif | Survei Cross-Sectional | Skala Likert 1-5
+   • Sampling   : Purposive Sampling | Kriteria: WNI &gt;=17 thn, beli pack 6-12 bln
+   • Ukuran N   : Formula Green (1991): N &gt;= 50 + 8(7) = 106 | Target: 120-150 responden
+   • Analisis   : SPSS | Regresi Berganda (Efek Utama) + MRA dengan Mean-Centering
+================================================================================
+</code></pre>
+<hr />
+<p><em>Sukses bimbingan dan seminar proposal! Kuasai logika ilmiahnya, pahami konteks pasarnya, dan sampaikan argumen dengan tenang dan percaya diri.</em> 🎓💼🔥</p>
+</body>
+</html>
