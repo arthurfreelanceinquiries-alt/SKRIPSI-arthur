@@ -204,6 +204,106 @@ def add_equation_paragraph(doc, formula_latex, align=WD_ALIGN_PARAGRAPH.CENTER):
     return p
 
 
+def clean_academic_text(text: str) -> str:
+    """Cleans raw LaTeX citations, math expressions, and artifact syntax into publication-grade text."""
+    if not text:
+        return text
+
+    # 1. LaTeX Citations
+    text = re.sub(r'\\citealp\{babin1994work\}', 'Babin et al., 1994', text)
+    text = re.sub(r'\\citealp\{arnold2003hedonic\}', 'Arnold & Reynolds, 2003', text)
+    text = re.sub(r'\\citealp\{gueltekin2012influence\}', 'Gültekin & Özer, 2012', text)
+    text = re.sub(r'\\citep\{aiken1991multiple,\s*ghozali2018aplikasi\}', '(Aiken & West, 1991; Ghozali, 2018)', text)
+    text = re.sub(r'\\citet\{green1991subjects\}', 'Green (1991)', text)
+    text = re.sub(r'\\citet\{cohen1988statistical\}', 'Cohen (1988)', text)
+    text = re.sub(r'\\citealp\{([^}]+)\}', r'\1', text)
+    text = re.sub(r'\\citep\{([^}]+)\}', r'(\1)', text)
+    text = re.sub(r'\\citet\{([^}]+)\}', r'\1', text)
+    text = re.sub(r'\\emph\{([^}]+)\}', r'*\1*', text)
+
+    # 2. Multi-variable & Complex math expressions
+    text = text.replace(r'$X_1, X_2, X_3, M, X_1 \cdot M, X_2 \cdot M, X_3 \cdot M$', '*X*₁, *X*₂, *X*₃, *M*, *X*₁ · *M*, *X*₂ · *M*, *X*₃ · *M*')
+    text = text.replace(r'$X_1 \cdot M, X_2 \cdot M, X_3 \cdot M$', '*X*₁ · *M*, *X*₂ · *M*, *X*₃ · *M*')
+    text = text.replace(r'$X_1, X_2, X_3$', '*X*₁, *X*₂, *X*₃')
+    text = text.replace(r'$Y, X_1, X_2, X_3, M$', '*Y*, *X*₁, *X*₂, *X*₃, *M*')
+
+    # Regression formulas
+    text = text.replace(r'$Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \beta_4 M + \beta_5 (X_1 \cdot M) + \beta_6 (X_2 \cdot M) + \beta_7 (X_3 \cdot M) + e$',
+                        '*Y* = α + β₁*X*₁ + β₂*X*₂ + β₃*X*₃ + β₄*M* + β₅(*X*₁ · *M*) + β₆(*X*₂ · *M*) + β₇(*X*₃ · *M*) + *e*')
+    text = text.replace(r'$Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + e$',
+                        '*Y* = α + β₁*X*₁ + β₂*X*₂ + β₃*X*₃ + *e*')
+
+    # Centering formula
+    text = text.replace(r'$X_i^* = X_i - \bar{X}_i; M^* = M - \bar{M}$', r'*X*ᵢ* = *X*ᵢ − *X̄*ᵢ; *M*\* = *M* − *M̄*')
+
+    # Sample size (Green & Cohen)
+    text = text.replace(r'$N \ge 104 + 7 = 111\text{ responden}$', '*N* ≥ 104 + 7 = 111 responden')
+    text = text.replace(r'$N \ge 104 + k$', '*N* ≥ 104 + *k*')
+    text = text.replace(r'$N \ge 50 + 8(7) = 50 + 56 = 106\text{ responden}$', '*N* ≥ 50 + 8(7) = 50 + 56 = 106 responden')
+    text = text.replace(r'$N \ge 50 + 8k$', '*N* ≥ 50 + 8*k*')
+    text = text.replace(r'$N > 200$', '*N* > 200')
+    text = text.replace(r'$r_{\text{hitung}} > r_{\text{tabel}}$', '*r*_{hitung} > *r*_{tabel}')
+
+    # Interaction & Single variables
+    text = text.replace(r'$X_1 \cdot M$', '*X*₁ · *M*')
+    text = text.replace(r'$X_2 \cdot M$', '*X*₂ · *M*')
+    text = text.replace(r'$X_3 \cdot M$', '*X*₃ · *M*')
+    text = text.replace(r'$X_1 \\cdot M$', '*X*₁ · *M*')
+    text = text.replace(r'$X_2 \\cdot M$', '*X*₂ · *M*')
+    text = text.replace(r'$X_3 \\cdot M$', '*X*₃ · *M*')
+
+    text = text.replace('($X_1$)', '(*X*₁)')
+    text = text.replace('($X_2$)', '(*X*₂)')
+    text = text.replace('($X_3$)', '(*X*₃)')
+    text = text.replace('$X_1$', '*X*₁')
+    text = text.replace('$X_2$', '*X*₂')
+    text = text.replace('$X_3$', '*X*₃')
+    text = text.replace('$Y$', '*Y*')
+    text = text.replace('$M$', '*M*')
+    text = text.replace('$Z$', '*Z*')
+    text = text.replace('$e$', '*e*')
+    text = text.replace('$X_i$', '*X*ᵢ')
+    text = text.replace(r'$\bar{X}_i$', '*X̄*ᵢ')
+    text = text.replace(r'$\bar{M}$', '*M̄*')
+
+    # Statistical coefficients & metrics
+    text = text.replace('$R^2$', '*R*²')
+    text = text.replace(r'$\Delta R^2$', 'Δ*R*²')
+    text = text.replace(r'$f^2 = 0,15$', '*f*² = 0,15')
+    text = text.replace(r'$k = 7$', '*k* = 7')
+    text = text.replace('$p < 0,05$', '*p* < 0,05')
+    text = text.replace('$p > 0,05$', '*p* > 0,05')
+    text = text.replace('$p < 0.05$', '*p* < 0,05')
+    text = text.replace(r'$\alpha = 0,05$', 'α = 0,05')
+    text = text.replace(r'$\alpha = 0.05$', 'α = 0,05')
+    text = text.replace(r'$\alpha \ge 0,60$', 'α ≥ 0,60')
+    text = text.replace(r'$\alpha >= 0,60$', 'α ≥ 0,60')
+    text = text.replace(r'$\ge 0,60$', '≥ 0,60')
+    text = text.replace(r'$\ge 17$', '≥ 17')
+    text = text.replace(r'$\alpha$', 'α')
+    text = text.replace(r'$\beta_1 \dots \beta_7$', 'β₁ ... β₇')
+    text = text.replace(r'$\bullet$', '•')
+    text = text.replace(r'$< 10$', '< 10')
+    text = text.replace(r'$> 0,10$', '> 0,10')
+    text = text.replace(r'$150$', '150')
+    text = text.replace(r'$n = 30$', '*n* = 30')
+    text = text.replace(r'$n=30$', '*n* = 30')
+    text = text.replace(r'$n=120$', '*n* = 120')
+    text = text.replace(r'$n=120--150$', '*n* = 120–150')
+    text = text.replace(r'$n=120-150$', '*n* = 120–150')
+    text = text.replace(r'$n = 120--150$', '*n* = 120–150')
+    text = text.replace(r'$n = 120-150$', '*n* = 120–150')
+
+    for i in range(1, 8):
+        sub = chr(0x2080 + i)
+        text = text.replace(f'$\\beta_{i}$', f'β{sub}')
+    text = text.replace(r'$\epsilon$', 'ε')
+
+    # Remove any remaining stray dollar signs
+    text = text.replace('$', '')
+    return text
+
+
 def add_body_paragraph(doc, text, bold_prefix=None, indent=True):
     """Add standard academic body paragraph."""
     p = doc.add_paragraph()
@@ -222,31 +322,74 @@ def add_body_paragraph(doc, text, bold_prefix=None, indent=True):
         r_pre.font.size = Pt(12)
         r_pre.font.bold = True
 
-    # Parse inline markdown formatting (*italic*, **bold**)
-    parse_markdown_runs(p, text)
+    clean_text = clean_academic_text(text)
+    parse_markdown_runs(p, clean_text)
     return p
 
 
-def parse_markdown_runs(paragraph, text):
-    """Parse inline bold (**text**) and italic (*text*) into Word runs."""
-    tokens = re.split(r'(\*\*.*?\*\*|\*.*?\*)', text)
+def parse_markdown_runs(paragraph, text, base_size=Pt(12), base_bold=False):
+    """Parse inline bold (***text***, **text**, *text*) into proper Word runs without raw asterisks."""
+    if not text:
+        return
+    pattern = re.compile(r'(\*\*\*.*?\*\*\*|\*\*.*?\*\*|\*.*?\*)')
+    tokens = pattern.split(text)
     for token in tokens:
         if not token:
             continue
-        if token.startswith('**') and token.endswith('**') and len(token) >= 4:
-            run = paragraph.add_run(token[2:-2])
+        if token.startswith('***') and token.endswith('***') and len(token) >= 6:
+            content = token[3:-3].replace('*', '')
+            run = paragraph.add_run(content)
             run.font.name = "Times New Roman"
-            run.font.size = Pt(12)
+            run.font.size = base_size
             run.font.bold = True
-        elif token.startswith('*') and token.endswith('*') and len(token) >= 2:
-            run = paragraph.add_run(token[1:-1])
-            run.font.name = "Times New Roman"
-            run.font.size = Pt(12)
             run.font.italic = True
+        elif token.startswith('**') and token.endswith('**') and len(token) >= 4:
+            content = token[2:-2]
+            sub_tokens = re.split(r'(\*.*?\*)', content)
+            for st in sub_tokens:
+                if not st:
+                    continue
+                if st.startswith('*') and st.endswith('*') and len(st) >= 2:
+                    run = paragraph.add_run(st[1:-1].replace('*', ''))
+                    run.font.name = "Times New Roman"
+                    run.font.size = base_size
+                    run.font.bold = True
+                    run.font.italic = True
+                else:
+                    clean_st = st.replace('*', '')
+                    if clean_st:
+                        run = paragraph.add_run(clean_st)
+                        run.font.name = "Times New Roman"
+                        run.font.size = base_size
+                        run.font.bold = True
+        elif token.startswith('*') and token.endswith('*') and len(token) >= 2:
+            content = token[1:-1]
+            sub_tokens = re.split(r'(\*\*.*?\*\*)', content)
+            for st in sub_tokens:
+                if not st:
+                    continue
+                if st.startswith('**') and st.endswith('**') and len(st) >= 4:
+                    run = paragraph.add_run(st[2:-2].replace('*', ''))
+                    run.font.name = "Times New Roman"
+                    run.font.size = base_size
+                    run.font.bold = True
+                    run.font.italic = True
+                else:
+                    clean_st = st.replace('*', '')
+                    if clean_st:
+                        run = paragraph.add_run(clean_st)
+                        run.font.name = "Times New Roman"
+                        run.font.size = base_size
+                        run.font.bold = True if base_bold else False
+                        run.font.italic = True
         else:
-            run = paragraph.add_run(token)
-            run.font.name = "Times New Roman"
-            run.font.size = Pt(12)
+            clean_plain = token.replace('*', '')
+            if clean_plain:
+                run = paragraph.add_run(clean_plain)
+                run.font.name = "Times New Roman"
+                run.font.size = base_size
+                if base_bold:
+                    run.font.bold = True
 
 
 def set_paragraph_outline_level(paragraph, level):
@@ -274,11 +417,8 @@ def add_heading_1(doc, title, page_break=True):
     p.paragraph_format.keep_with_next = True
     set_paragraph_outline_level(p, 0)
 
-    run = p.add_run(title.upper())
-    run.font.name = "Times New Roman"
-    run.font.size = Pt(12)
-    run.font.bold = True
-    run.font.color.rgb = RGBColor(0, 0, 0)
+    clean_title = clean_academic_text(title.upper())
+    parse_markdown_runs(p, clean_title, base_size=Pt(12), base_bold=True)
     return p
 
 
@@ -293,11 +433,8 @@ def add_heading_2(doc, title):
     p.paragraph_format.keep_with_next = True
     set_paragraph_outline_level(p, 1)
 
-    run = p.add_run(title)
-    run.font.name = "Times New Roman"
-    run.font.size = Pt(12)
-    run.font.bold = True
-    run.font.color.rgb = RGBColor(0, 0, 0)
+    clean_title = clean_academic_text(title)
+    parse_markdown_runs(p, clean_title, base_size=Pt(12), base_bold=True)
     return p
 
 
@@ -312,11 +449,8 @@ def add_heading_3(doc, title):
     p.paragraph_format.keep_with_next = True
     set_paragraph_outline_level(p, 2)
 
-    run = p.add_run(title)
-    run.font.name = "Times New Roman"
-    run.font.size = Pt(12)
-    run.font.bold = True
-    run.font.color.rgb = RGBColor(0, 0, 0)
+    clean_title = clean_academic_text(title)
+    parse_markdown_runs(p, clean_title, base_size=Pt(12), base_bold=True)
     return p
 
 
@@ -333,11 +467,8 @@ def add_frontmatter_heading(doc, title, page_break=False):
     p.paragraph_format.keep_with_next = True
     set_paragraph_outline_level(p, 0)
 
-    run = p.add_run(title.upper())
-    run.font.name = "Times New Roman"
-    run.font.size = Pt(12)
-    run.font.bold = True
-    run.font.color.rgb = RGBColor(0, 0, 0)
+    clean_title = clean_academic_text(title.upper())
+    parse_markdown_runs(p, clean_title, base_size=Pt(12), base_bold=True)
     return p
 
 
@@ -757,7 +888,7 @@ def build_full_proposal(skip_chapter3: bool = False):
     p_j4.paragraph_format.line_spacing = 1.15
     rj4 = p_j4.add_run("PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI\n\nArthur Reezan (312023002)\nProgram Studi S1 Manajemen, Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana\nDosen Pembimbing: Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A")
     rj4.font.name = "Times New Roman"
-    rj4.font.size = Pt(10)
+    rj4.font.size = Pt(12)
     rj4.font.bold = True
 
     p_abs = doc.add_paragraph()
@@ -783,15 +914,21 @@ def build_full_proposal(skip_chapter3: bool = False):
         "muda dalam menjaga kontrol diri finansial, serta masukan aplikatif bagi komunitas hobi dan pemangku kebijakan edukasi keuangan generasi muda di Indonesia."
     )
     r_abs.font.name = "Times New Roman"
-    r_abs.font.size = Pt(10)
+    r_abs.font.size = Pt(12)
 
     p_kw = doc.add_paragraph()
     p_kw.alignment = WD_ALIGN_PARAGRAPH.LEFT
     p_kw.paragraph_format.line_spacing = 1.15
     p_kw.paragraph_format.space_before = Pt(6)
     p_kw.paragraph_format.first_line_indent = Cm(0)
-    p_kw.add_run("Kata Kunci: ").font.bold = True
-    p_kw.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Keuangan Perilaku (Behavioral Finance).").font.italic = True
+    r_kw_pre = p_kw.add_run("Kata Kunci: ")
+    r_kw_pre.font.name = "Times New Roman"
+    r_kw_pre.font.size = Pt(12)
+    r_kw_pre.font.bold = True
+    r_kw_body = p_kw.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Keuangan Perilaku (Behavioral Finance).")
+    r_kw_body.font.name = "Times New Roman"
+    r_kw_body.font.size = Pt(12)
+    r_kw_body.font.italic = True
 
     # 6. Abstract English (hal. vii)
     add_frontmatter_heading(doc, "ABSTRACT", page_break=True)
@@ -803,7 +940,7 @@ def build_full_proposal(skip_chapter3: bool = False):
     p_j5.paragraph_format.line_spacing = 1.15
     rj5 = p_j5.add_run("THE EFFECT OF HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, AND SPECULATIVE MOTIVE ON IMPULSIVE BUYING OF POKÉMON TCG BOOSTER PACKS WITH SELF-CONTROL AS A MODERATING VARIABLE\n\nArthur Reezan (312023002)\nUndergraduate Program in Management, Faculty of Economics and Business, UKRIDA\nThesis Advisor: Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A")
     rj5.font.name = "Times New Roman"
-    rj5.font.size = Pt(10)
+    rj5.font.size = Pt(12)
     rj5.font.bold = True
 
     p_abs_en = doc.add_paragraph()
@@ -827,7 +964,7 @@ def build_full_proposal(skip_chapter3: bool = False):
         "consumers in exercising financial discipline regarding discretionary collectibles and provide strategic inputs for community organizers and financial educators targeting Generation Z."
     )
     r_abs_en.font.name = "Times New Roman"
-    r_abs_en.font.size = Pt(10)
+    r_abs_en.font.size = Pt(12)
     r_abs_en.font.italic = True
 
     p_kw_en = doc.add_paragraph()
@@ -835,8 +972,14 @@ def build_full_proposal(skip_chapter3: bool = False):
     p_kw_en.paragraph_format.line_spacing = 1.15
     p_kw_en.paragraph_format.space_before = Pt(6)
     p_kw_en.paragraph_format.first_line_indent = Cm(0)
-    p_kw_en.add_run("Keywords: ").font.bold = True
-    p_kw_en.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Behavioral Finance.").font.italic = True
+    r_kw_en_pre = p_kw_en.add_run("Keywords: ")
+    r_kw_en_pre.font.name = "Times New Roman"
+    r_kw_en_pre.font.size = Pt(12)
+    r_kw_en_pre.font.bold = True
+    r_kw_en_body = p_kw_en.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Behavioral Finance.")
+    r_kw_en_body.font.name = "Times New Roman"
+    r_kw_en_body.font.size = Pt(12)
+    r_kw_en_body.font.italic = True
 
     # 7. Daftar Isi (hal. viii)
     add_frontmatter_heading(doc, "DAFTAR ISI", page_break=True)
@@ -907,17 +1050,20 @@ def build_full_proposal(skip_chapter3: bool = False):
     else:
         toc_items = toc_items_full
 
+    target_right = Cm(13.8) # 2mm inside 14.0cm margin to guarantee dot leaders render
+
     for title_toc, page_toc in toc_items:
         p_toc = doc.add_paragraph()
         p_toc.paragraph_format.line_spacing = 1.15
         p_toc.paragraph_format.space_before = Pt(0)
         p_toc.paragraph_format.space_after = Pt(2)
-        p_toc.paragraph_format.tab_stops.add_tab_stop(Cm(14.0), WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
 
         if title_toc.startswith("      "):
             # Level 3: Anak sub-bab (e.g., 1.2.1)
-            p_toc.paragraph_format.left_indent = Cm(1.2)
+            left_indent = Cm(1.2)
+            p_toc.paragraph_format.left_indent = left_indent
             p_toc.paragraph_format.first_line_indent = Cm(0)
+            p_toc.paragraph_format.tab_stops.add_tab_stop(target_right - left_indent, WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
             clean_title = title_toc.strip()
             r_t = p_toc.add_run(clean_title)
             r_t.font.name = "Times New Roman"
@@ -930,8 +1076,10 @@ def build_full_proposal(skip_chapter3: bool = False):
             r_p.font.bold = False
         elif title_toc.startswith("  "):
             # Level 2: Sub-bab (e.g., 1.1)
-            p_toc.paragraph_format.left_indent = Cm(0.6)
+            left_indent = Cm(0.6)
+            p_toc.paragraph_format.left_indent = left_indent
             p_toc.paragraph_format.first_line_indent = Cm(0)
+            p_toc.paragraph_format.tab_stops.add_tab_stop(target_right - left_indent, WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
             clean_title = title_toc.strip()
             r_t = p_toc.add_run(clean_title)
             r_t.font.name = "Times New Roman"
@@ -944,8 +1092,10 @@ def build_full_proposal(skip_chapter3: bool = False):
             r_p.font.bold = False
         else:
             # Level 1: BAB / Frontmatter
-            p_toc.paragraph_format.left_indent = Cm(0)
+            left_indent = Cm(0)
+            p_toc.paragraph_format.left_indent = left_indent
             p_toc.paragraph_format.first_line_indent = Cm(0)
+            p_toc.paragraph_format.tab_stops.add_tab_stop(target_right, WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
             clean_title = title_toc.strip()
             r_t = p_toc.add_run(clean_title)
             r_t.font.name = "Times New Roman"
@@ -972,8 +1122,9 @@ def build_full_proposal(skip_chapter3: bool = False):
         p_lot.paragraph_format.line_spacing = 1.15
         p_lot.paragraph_format.space_before = Pt(0)
         p_lot.paragraph_format.space_after = Pt(4)
+        p_lot.paragraph_format.left_indent = Cm(0)
         p_lot.paragraph_format.first_line_indent = Cm(0)
-        p_lot.paragraph_format.tab_stops.add_tab_stop(Cm(14.0), WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
+        p_lot.paragraph_format.tab_stops.add_tab_stop(target_right, WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
 
         r_num = p_lot.add_run(f"{tab_num}.  ")
         r_num.font.name = "Times New Roman"
@@ -1002,8 +1153,9 @@ def build_full_proposal(skip_chapter3: bool = False):
         p_lof.paragraph_format.line_spacing = 1.15
         p_lof.paragraph_format.space_before = Pt(0)
         p_lof.paragraph_format.space_after = Pt(4)
+        p_lof.paragraph_format.left_indent = Cm(0)
         p_lof.paragraph_format.first_line_indent = Cm(0)
-        p_lof.paragraph_format.tab_stops.add_tab_stop(Cm(14.0), WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
+        p_lof.paragraph_format.tab_stops.add_tab_stop(target_right, WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
 
         r_num = p_lof.add_run(f"{fig_num}.  ")
         r_num.font.name = "Times New Roman"
@@ -1215,7 +1367,8 @@ def build_full_proposal(skip_chapter3: bool = False):
                 p_li.paragraph_format.line_spacing = 1.5
                 r_num = p_li.add_run(f"{prefix}  ")
                 r_num.font.bold = True
-                parse_markdown_runs(p_li, body)
+                clean_body = clean_academic_text(body)
+                parse_markdown_runs(p_li, clean_body)
                 line_idx += 1
                 continue
 
@@ -1231,7 +1384,8 @@ def build_full_proposal(skip_chapter3: bool = False):
                 p_li.paragraph_format.line_spacing = 1.5
                 r_b = p_li.add_run("•  ")
                 r_b.font.bold = True
-                parse_markdown_runs(p_li, body)
+                clean_body = clean_academic_text(body)
+                parse_markdown_runs(p_li, clean_body)
                 line_idx += 1
                 continue
 
@@ -1245,7 +1399,8 @@ def build_full_proposal(skip_chapter3: bool = False):
                 p_bq.paragraph_format.space_before = Pt(2)
                 p_bq.paragraph_format.space_after = Pt(2)
                 p_bq.paragraph_format.line_spacing = 1.15
-                parse_markdown_runs(p_bq, body)
+                clean_body = clean_academic_text(body)
+                parse_markdown_runs(p_bq, clean_body)
                 line_idx += 1
                 continue
 
@@ -1304,18 +1459,23 @@ def build_apa7_table(doc, table_lines):
             p.paragraph_format.first_line_indent = Cm(0)
 
             # Parse bold / italics
-            tokens = re.split(r'(\*\*.*?\*\*|\*.*?\*)', cell_text)
+            clean_cell = clean_academic_text(cell_text)
+            tokens = re.split(r'(\*\*.*?\*\*|\*.*?\*)', clean_cell)
             for token in tokens:
                 if not token:
                     continue
                 if token.startswith('**') and token.endswith('**'):
-                    run = p.add_run(token[2:-2])
+                    run = p.add_run(token[2:-2].replace('*', ''))
                     run.font.bold = True
                 elif token.startswith('*') and token.endswith('*'):
-                    run = p.add_run(token[1:-1])
+                    run = p.add_run(token[1:-1].replace('*', ''))
                     run.font.italic = True
                 else:
-                    run = p.add_run(token)
+                    clean_st = token.replace('*', '')
+                    if clean_st:
+                        run = p.add_run(clean_st)
+                    else:
+                        continue
                 run.font.name = "Times New Roman"
                 run.font.size = Pt(10 if is_header else 9.5)
                 if is_header:
@@ -1418,7 +1578,8 @@ def build_daftar_pustaka(doc, content):
         p.paragraph_format.left_indent = Cm(1.25)
         p.paragraph_format.first_line_indent = Cm(-1.25)
 
-        parse_markdown_runs(p, line_str)
+        clean_bib = clean_academic_text(line_str)
+        parse_markdown_runs(p, clean_bib)
 
 
 if __name__ == "__main__":
