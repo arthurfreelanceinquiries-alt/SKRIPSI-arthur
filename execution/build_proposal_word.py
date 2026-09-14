@@ -1188,12 +1188,7 @@ def build_full_proposal(skip_chapter3: bool = False):
         r_t = p_toc.add_run(clean_title)
         make_run_pure_black(r_t, "Times New Roman", f_size, bold=f_bold)
 
-        # Dedicated tab run for standard OpenXML dot leader rendering
-        r_tab = p_toc.add_run()
-        r_tab._r.append(parse_xml(f'<w:tab {nsdecls("w")}/>'))
-
-        # Dedicated page number run
-        r_p = p_toc.add_run(str(page_toc))
+        r_p = p_toc.add_run(f"\t{page_toc}")
         make_run_pure_black(r_p, "Times New Roman", f_size, bold=f_bold)
 
     # 8. Daftar Tabel
@@ -1225,12 +1220,7 @@ def build_full_proposal(skip_chapter3: bool = False):
         r_title = p_lot.add_run(tab_title)
         make_run_pure_black(r_title, "Times New Roman", Pt(11), bold=False)
 
-        # Dedicated tab run
-        r_tab = p_lot.add_run()
-        r_tab._r.append(parse_xml(f'<w:tab {nsdecls("w")}/>'))
-
-        # Dedicated page number run
-        r_page = p_lot.add_run(str(tab_page))
+        r_page = p_lot.add_run(f"\t{tab_page}")
         make_run_pure_black(r_page, "Times New Roman", Pt(11), bold=False)
 
     # 9. Daftar Gambar
@@ -1266,12 +1256,7 @@ def build_full_proposal(skip_chapter3: bool = False):
         r_title = p_lof.add_run(fig_title)
         make_run_pure_black(r_title, "Times New Roman", Pt(11), bold=False)
 
-        # Dedicated tab run
-        r_tab = p_lof.add_run()
-        r_tab._r.append(parse_xml(f'<w:tab {nsdecls("w")}/>'))
-
-        # Dedicated page number run
-        r_page = p_lof.add_run(str(fig_page))
+        r_page = p_lof.add_run(f"\t{fig_page}")
         make_run_pure_black(r_page, "Times New Roman", Pt(11), bold=False)
 
     # ------------------------------------------------------------------------
@@ -1741,6 +1726,8 @@ def build_full_proposal(skip_chapter3: bool = False):
     print("[*] Performing Document-Wide Pure Black & Typography Enforcement Pass...")
     for p in doc.paragraphs:
         for r in p.runs:
+            if not r.text:
+                continue
             r.font.color.rgb = RGBColor(0, 0, 0)
             rPr = r._r.get_or_add_rPr()
             for c in rPr.findall(qn('w:color')):
