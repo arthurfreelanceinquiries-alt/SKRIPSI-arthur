@@ -542,6 +542,23 @@ def add_frontmatter_heading(doc, title, page_break=False):
     return p
 
 
+def add_daftar_isi_heading(doc, page_break=True):
+    """Frontmatter Heading for DAFTAR ISI: Centered, Bold, 12pt, Pure Black, NO Heading 1 / outline level to prevent recursive inclusion in TOC."""
+    if page_break:
+        doc.add_page_break()
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.paragraph_format.space_before = Pt(0)
+    p.paragraph_format.space_after = Pt(18)
+    p.paragraph_format.line_spacing = 1.5
+    p.paragraph_format.first_line_indent = Cm(0)
+    p.paragraph_format.keep_with_next = True
+    r = p.add_run("DAFTAR ISI")
+    make_run_pure_black(r, "Times New Roman", Pt(12), bold=True)
+    return p
+
+
+
 # ============================================================================
 # MAIN BUILDER ENGINE
 # ============================================================================
@@ -1118,7 +1135,7 @@ def build_full_proposal(skip_chapter3: bool = False):
     r_kw_en_body.font.italic = True
 
     # 7. Daftar Isi
-    add_frontmatter_heading(doc, "DAFTAR ISI", page_break=True)
+    add_daftar_isi_heading(doc, page_break=True)
 
     toc_items_nobab3 = [
         ("DAFTAR TABEL", "viii"),
@@ -1783,6 +1800,16 @@ def build_full_proposal(skip_chapter3: bool = False):
                 line_idx += 1
                 continue
 
+            # Table Caption Detection in Markdown (**Tabel X.Y ...**)
+            if re.match(r'^\*{0,2}Tabel\s+\d+\.\d+', line_str):
+                p_tcap = add_body_paragraph(doc, line_str, indent=False)
+                p_tcap.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                p_tcap.paragraph_format.space_before = Pt(12)
+                p_tcap.paragraph_format.space_after = Pt(4)
+                p_tcap.paragraph_format.keep_with_next = True
+                line_idx += 1
+                continue
+
             # Standard paragraph
             add_body_paragraph(doc, line_str)
             line_idx += 1
@@ -1822,7 +1849,121 @@ def build_full_proposal(skip_chapter3: bool = False):
     # Save document
     doc.save(str(output_docx))
     print(f"\n[SUCCESS] Document saved cleanly to: {output_docx}")
+
+    # Inject and update native Word TableOfContents component
+    inject_native_word_toc(output_docx)
+
     return output_docx
+
+
+def inject_native_word_toc(docx_path):
+    """Inserts native Microsoft Word TableOfContents component via Word COM.
+    Ensures full compatibility with Google Docs Table of Contents widget and dot leaders."""
+    ps_script = f"""
+$docxPath = "{str(docx_path).replace('/', '\\')}"
+$word = New-Object -ComObject Word.Application
+$word.Visible = $false
+try {{
+    $doc = $word.Documents.Open($docxPath)
+    
+    # Configure TOC styles (toc 1, toc 2, toc 3) for Times New Roman 12pt, Pure Black
+    $stylesToFormat = @(
+        @("toc 1", 12, $true, 0),
+        @("toc 2", 12, $false, 18),
+        @("toc 3", 11, $false, 36)
+    )
+    foreach ($item in $stylesToFormat) {{
+        $sName = $item[0]
+        $fSize = $item[1]
+        $fBold = $item[2]
+        $indent = $item[3]
+        try {{
+            $st = $doc.Styles.Item($sName)
+            $st.Font.Name = "Times New Roman"
+            $st.Font.Size = $fSize
+            $st.Font.Bold = $fBold
+            $st.Font.ColorIndex = 1
+            $st.ParagraphFormat.LineSpacingRule = 0
+            $st.ParagraphFormat.SpaceBefore = 0
+            $st.ParagraphFormat.SpaceAfter = 2
+            $st.ParagraphFormat.LeftIndent = $indent
+        }} catch {{}}
+    }}
+    
+    # Locate DAFTAR ISI paragraph
+    for ($i = 1; $i -le $doc.Paragraphs.Count; $i++) {{
+        $pText = $doc.Paragraphs.Item($i).Range.Text.Trim()
+        if ($pText -eq "DAFTAR ISI") {{
+            $pStart = $i + 1
+            $pEnd = $pStart
+            for ($j = $pStart; $j -le $doc.Paragraphs.Count; $j++) {{
+                $nextText = $doc.Paragraphs.Item($j).Range.Text.Trim()
+                if ($nextText -eq "DAFTAR TABEL") {{
+                    $pEnd = $j - 1
+                    break
+                }}
+            }}
+            # Delete static TOC paragraphs between DAFTAR ISI and DAFTAR TABEL
+            if ($pEnd -ge $pStart) {{
+                $rangeToDelete = $doc.Range($doc.Paragraphs.Item($pStart).Range.Start, $doc.Paragraphs.Item($pEnd).Range.End)
+                $rangeToDelete.Delete()
+            }}
+            
+            # Insert native TOC at paragraph right after DAFTAR ISI
+            $insertRange = $doc.Paragraphs.Item($i).Range
+            $insertRange.Collapse(0)
+            $insertRange.InsertParagraphAfter()
+            $tocRange = $doc.Paragraphs.Item($i + 1).Range
+            
+            $toc = $doc.TablesOfContents.Add($tocRange, $true, 1, 3, $false, "", $true, $true, "", $true, $true)
+            $toc.Update()
+            break
+        }}
+    }}
+    $doc.Save()
+    $doc.Close()
+}} catch {{
+    Write-Error $_
+}} finally {{
+    $word.Quit()
+}}
+"""
+    temp_ps = Path(tempfile.gettempdir()) / f"inject_toc_{os.getpid()}.ps1"
+    temp_ps.write_text(ps_script, encoding="utf-8")
+    try:
+        subprocess.run(["powershell", "-ExecutionPolicy", "Bypass", "-File", str(temp_ps)], check=True, capture_output=True, text=True)
+        print(f"[SUCCESS] Native Word Table of Contents injected & updated cleanly for: {docx_path.name}")
+    except Exception as e:
+        print(f"[WARN] Could not run Word COM TOC injection: {e}")
+    finally:
+        if temp_ps.exists():
+            try:
+                temp_ps.unlink()
+            except Exception:
+                pass
+
+    # Re-enforce direct <w:outlineLvl> tags and run font properties on headings
+    try:
+        doc_post = Document(str(docx_path))
+        for p in doc_post.paragraphs:
+            style_name = p.style.name if p.style else ""
+            if "Heading 1" in style_name:
+                set_paragraph_outline_level(p, 0)
+            elif "Heading 2" in style_name:
+                set_paragraph_outline_level(p, 1)
+            elif "Heading 3" in style_name:
+                set_paragraph_outline_level(p, 2)
+            if any(h in style_name for h in ["Heading 1", "Heading 2", "Heading 3"]):
+                for r in p.runs:
+                    r.font.name = "Times New Roman"
+                    r.font.size = Pt(12)
+                    r.font.bold = True
+                    r.font.color.rgb = RGBColor(0, 0, 0)
+        doc_post.save(str(docx_path))
+    except Exception as e:
+        print(f"[WARN] Could not re-enforce outline levels: {e}")
+
+
 
 
 def build_apa7_table(doc, table_lines):

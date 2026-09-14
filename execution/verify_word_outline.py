@@ -7,6 +7,12 @@ Ensures full compatibility with Microsoft Word Navigation Pane and Google Docs D
 
 import sys
 from pathlib import Path
+
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+
 import docx
 from docx import Document
 from docx.oxml.ns import qn
@@ -88,18 +94,24 @@ def verify_document_outline(docx_path):
         "DAFTAR GAMBAR"
     ]
     
+    all_doc_texts = [p.text.strip().upper() for p in doc.paragraphs]
     missing_frontmatter = []
     for ef in expected_frontmatter:
-        found = any(ef in h['full_text'].upper() for h in headings_found)
+        if ef == "DAFTAR ISI":
+            found = any(ef == t for t in all_doc_texts)
+        else:
+            found = any(ef in h['full_text'].upper() for h in headings_found)
         if not found:
             missing_frontmatter.append(ef)
             
-    expected_babs = ["BAB 1", "BAB 2", "BAB 3", "DAFTAR PUSTAKA"]
+    is_nobab3 = "nobab3" in str(docx_path).lower()
+    expected_babs = ["BAB 1", "BAB 2", "DAFTAR PUSTAKA"] if is_nobab3 else ["BAB 1", "BAB 2", "BAB 3", "DAFTAR PUSTAKA"]
     missing_babs = []
     for eb in expected_babs:
         found = any(eb in h['full_text'].upper() for h in headings_found)
         if not found:
             missing_babs.append(eb)
+
             
     # Check compliance
     errors = []

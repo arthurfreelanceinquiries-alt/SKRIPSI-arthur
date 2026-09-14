@@ -17,8 +17,9 @@
 * **Status Naskah Terkini:**
   - Naskah Utama Lengkap: [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf|Proposal_Arthur_PokemonTCG.pdf]] (50 halaman)
   - Varian Siap Sidang/Review: [[01_Naskah_Utama/Proposal_Arthur_NoBab3.pdf|Proposal_Arthur_NoBab3.pdf]] (33 halaman, bersih tanpa Bab 3 & lembar formal)
-  - Dokumen Word Hybrid (Pandoc + Script): [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx|Proposal_Arthur_PokemonTCG.docx]] (6 rumus OMML native) & [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx|Proposal_Arthur_NoBab3.docx]] (varian review)
+  - Dokumen Word Hybrid (Native TOC Word/Docs): [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx|Proposal_Arthur_PokemonTCG.docx]] (6 rumus OMML native, Heading baku, TOC otomatis bertitik) & [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx|Proposal_Arthur_NoBab3.docx]] (varian review)
 * **Kickoff AI Sesi:** 🌐 [Buka Aplikasi Web Kickoff 1-Klik](file:///d:/Perkuliahan/Skripsi/SKRIPSI-arthur/PROMPT_KICKOFF.html) | 📋 [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md|Versi Dokumen Markdown]]
+
 
 ---
 
@@ -53,10 +54,12 @@
 ### 📁 C. Riset, Metodologi, & Riwayat Sesi
 * **Source of Truth:** [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] *(Dokumen rujukan mutlak parameter skripsi)*
 * **Catatan Log Sesi Otomatis:** [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] *(Catatan progres dan keputusan tiap sesi)*
+* **Panduan Standarisasi Heading & TOC:** [[04_Riset_&_Metodologi/PANDUAN_STANDARISASI_HEADING_DAN_DAFTAR_ISI_DOCX.md]] *(Kompatibilitas titik-titik Google Docs & Word)*
 * **PRD Arsitektur Hybrid Word:** [[04_Riset_&_Metodologi/PRD_HYBRID_PANDOC_SCRIPT_GENERATOR.md]]
 * **PRD Kualitas Tipografi DOCX:** [[04_Riset_&_Metodologi/PRD_REVISI_DOCX_KUALITAS_LATEX.md]]
 * **Grafik & Visual Empiris Bab 1:** [[04_Riset_&_Metodologi/PRD_GRAFIK_EMPIRIS_BAB1.md]]
 * **Riwayat Revisi Dosen:** [[07_Review_&_Audit/Revisi_Dosen/2026-09-09_Revisi_Dosen_dan_Opsi_Moderasi.md]]
+
 
 ### 📁 D. Referensi & Jurnal Ilmiah
 * **Katalog Lengkap:** [[06_Referensi_Jurnal_PDF/KATALOG_REFERENSI_JURNAL.md]]

@@ -113,12 +113,15 @@ def audit_docx(docx_path: Path) -> bool:
                 if len(tab_stops) == 0:
                     issues.append(f"TOC paragraph missing tab stop: {repr(p.text)}")
                 else:
-                    ts = tab_stops[0]
-                    if ts.leader != WD_TAB_LEADER.DOTS:
-                        issues.append(f"TOC tab stop does not have DOTS leader (leader={ts.leader}): {repr(p.text)}")
-                    # Check position: 14.0 cm is approx 396.85 pt (tolerance 10 pt)
-                    if abs(ts.position.pt - 396.85) > 15:
-                        issues.append(f"TOC tab stop pos not at 14.0cm (found {ts.position.pt} pt): {repr(p.text)}")
+                    dot_stops = [ts for ts in tab_stops if ts.leader == WD_TAB_LEADER.DOTS]
+                    if not dot_stops:
+                        issues.append(f"TOC tab stop does not have DOTS leader: {repr(p.text)}")
+                    else:
+                        ts = dot_stops[0]
+                        # Check position: 14.0 cm is approx 396.85 pt (tolerance 15 pt)
+                        if abs(ts.position.pt - 396.85) > 15:
+                            issues.append(f"TOC tab stop pos not at 14.0cm (found {ts.position.pt} pt): {repr(p.text)}")
+
 
     print(f"[*] Checked {toc_paragraphs_checked} TOC/LOT/LOF entry paragraphs for dot leaders and 0 right_indent.")
 

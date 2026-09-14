@@ -7,6 +7,21 @@
 
 ---
 
+## 📅 Sesi 14 September 2026 (Sesi 8): Inisialisasi Sesi Kerja & Sinkronisasi Ekosistem Second Brain
+
+* **Fokus Pekerjaan:**
+  - Inisialisasi sesi kerja skripsi dengan protokol resmi `obsidian-second-brain` dan anti-lupa konteks.
+  - Sinkronisasi graf pengetahuan (`graphify-out/GRAPH_REPORT.md` & `graphify-out/manifest.json`).
+  - Pemuatan status naskah aktif, parameter variabel ($Y$, $X_1$, $X_2$, $X_3$, $Z$), serta arahan bimbingan Dr. Fredella Colline dari `[[00_DASHBOARD_SECOND_BRAIN.md]]` dan `[[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]]`.
+* **Masalah yang Diselesaikan:**
+  - Memastikan seluruh parameter riset terkunci (D01–D19), aturan penulisan Pedoman TA FEB UKRIDA 2023, struktur 3-Layer, dan kualitas tipografi naskah Word & LaTeX termuat sempurna di memori kerja sebelum mengeksekusi tugas baru.
+* **Keputusan / Output Teknis:**
+  - Protokol dokumentasi baku ditegakkan: Callout `> [!SUMMARY]`, tautan bidirectional `[[...]]`, dan verifikasi deterministik.
+  - Konfirmasi status naskah (lengkap 50 halaman dan tanpa Bab 3 33 halaman dalam format PDF dan Word OMML) siap dipakai.
+  - Menunggu fokus pekerjaan spesifik dari pengguna untuk sesi hari ini.
+
+---
+
 ## 📅 Sesi 14 September 2026 (Sesi 7): Integrasi Arsitektur 3-Layer & Pipeline Hybrid (Pandoc + Script) untuk Native Word Equation OMML
 
 * **Fokus Pekerjaan:**
@@ -152,3 +167,26 @@
   - Skrip Otomasi: `[[execution/build_proposal_nobab3_pdf.py]]` dan `[[execution/verify_nobab3_pdf.py]]`.
   - Pengarsipan Scratch: 38 file diff lama diarsipkan ke `[[scratch/_legacy_diffs/]]`.
   - Dokumentasi: Catatan Walkthrough Sesi Kerja IDE.
+
+---
+
+## 📅 Sesi 14 September 2026 (Sesi 2): Standardisasi Heading & Injeksi Komponen Daftar Isi Otomatis Word/Docs
+
+> [!SUMMARY]
+> Mengatasi masalah garis titik-titik (*dot leaders*) Daftar Isi yang hilang saat dokumen Word diimpor ke Google Docs, serta menstandarisasi gaya `Heading 1`, `Heading 2`, dan `Heading 3` dari Bab 1 hingga Daftar Pustaka agar terdeteksi 100% otomatis oleh fitur *Table of Contents* Google Docs dan MS Word.
+
+* **Fokus Pekerjaan:**
+  - Diagnostik kendala hilangnya titik-titik Daftar Isi di Google Docs pada file `Proposal_Arthur_PokemonTCG.docx` dan `Proposal_Arthur_NoBab3.docx`.
+  - Menstandarisasi hierarki Heading (Bab, Sub-bab, Anak Sub-bab, dan Daftar Pustaka) dengan gaya resmi Word (`Heading 1`, `Heading 2`, `Heading 3`).
+  - Mengintegrasikan komponen resmi *Native Word Table of Contents* (`w:sdt` / `TablesOfContents.Add`) melalui otomatisasi Word COM dan OpenXML.
+  - Memproteksi judul tabel (*Tabel 2.1*, *3.1*, dst.) dan judul gambar (*Gambar 1.1*, dst.) agar tidak membawa gaya Heading yang bisa mengotori Daftar Isi.
+  - Memisahkan judul halaman "DAFTAR ISI" dari gaya `Heading 1` agar tidak terjadi duplikasi rekursif di dalam Daftar Isi.
+* **Masalah yang Diselesaikan:**
+  - **Akar Masalah Hilangnya Titik-Titik:** Generator Word sebelumnya menyusun Daftar Isi sebagai paragraf teks biasa dengan karakter tab (`\t`). Microsoft Word mendukung atribut XML `w:leader="dot"` pada tab, namun Google Docs mengabaikannya dan merender spasi kosong putih lebar.
+  - **Solusi Komponen Otomatis:** Google Docs hanya menampilkan garis titik-titik jika dokumen menggunakan komponen resmi *Table of Contents*. Dengan menginjeksi komponen native Word TOC, Google Docs secara otomatis mengonversinya menjadi widget Daftar Isi interaktif lengkap dengan garis titik-titik dan tombol *Update*.
+  - **Struktur Heading Rapi:** Semua Bab 1–3 dan DAFTAR PUSTAKA berstatus `Heading 1` (outline level 0), seluruh sub-bab `1.1`–`3.7` berstatus `Heading 2` (outline level 1), dan seluruh anak sub-bab `1.4.1`–`3.5.6` berstatus `Heading 3` (outline level 2).
+* **Keputusan / Output Teknis:**
+  - Generator Diperbarui: `[[execution/build_proposal_word.py]]` mengintegrasikan `inject_native_word_toc()`, `add_daftar_isi_heading()`, dan proteksi judul tabel/gambar.
+  - Validasi Tipografi: `[[execution/verify_docx_typography.py]]` lulus audit 100% pada kedua varian dokumen.
+  - Validasi Outline: `[[execution/verify_word_outline.py]]` lulus audit 100% (12 Level 0, 16 Level 1, 28 Level 2) pada `[[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]]`.
+  - Dokumen Output Bersih: `[[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]]` dan `[[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]]`.
