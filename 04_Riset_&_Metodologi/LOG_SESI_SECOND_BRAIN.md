@@ -7,6 +7,31 @@
 
 ---
 
+## 📅 Sesi 14 September 2026 (Sesi 7): Integrasi Arsitektur 3-Layer & Pipeline Hybrid (Pandoc + Script) untuk Native Word Equation OMML
+
+* **Fokus Pekerjaan:**
+  - Mengimplementasikan arsitektur 3-Layer (Directive, Orchestration, Execution) pada pipeline generator Microsoft Word (`execution/build_proposal_word.py`).
+  - Mengintegrasikan **Pandoc 3.11** (diinstal via Windows Package Manager / winget) sebagai sub-engine matematika untuk mengekstraksi notasi LaTeX menjadi objek rumus asli Microsoft Word (**OpenXML `<m:oMathPara>` / Cambria Math**).
+  - Menghilangkan kompromi konversi lama di mana rumus regresi MRA di Bab 3 diturunkan derajatnya (*downgraded*) menjadi teks datar biasa tanpa subskrip/superskrip matematika.
+  - Memperbarui naskah [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]] dan [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]].
+* **Masalah yang Diselesaikan:**
+  - **Kelemahan Pandoc Murni:** Pandoc murni tidak mampu memenuhi tata kelola baku FEB UKRIDA 2023 (margin 4-3-3-3 cm, pemisahan nomor Romawi bawah vs Arab kanan atas, titik-titik daftar isi di 14.0 cm, tabel APA 7th edition, dan mode NoBab3).
+  - **Kelemahan Python-docx Murni:** python-docx tidak memiliki parser LaTeX math built-in sehingga rumus matematika sebelumnya diubah menjadi teks datar polos (menghapus tanda subskrip `_` dan superskrip `^`).
+  - **Solusi Sinergis (Hybrid 2-Stage):** Pandoc mengekstraksi rumus matematika LaTeX menjadi pohon elemen `<m:oMathPara>`, kemudian `build_proposal_word.py` menyematkannya ke dalam dokumen berstandar UKRIDA FEB 2023.
+* **Keputusan / Output Teknis:**
+  - Dokumen PRD Baru: [[04_Riset_&_Metodologi/PRD_HYBRID_PANDOC_SCRIPT_GENERATOR.md]].
+  - Pembaruan Directive: [[directives/generate_thesis_word_document.md]].
+  - Pembangun Naskah Hybrid: [[execution/build_proposal_word.py]] (dengan `latex_to_omml_pandoc`).
+  - Naskah Word Tergenerasi & Tervalidasi:
+    1. [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]] (Varian review steril tanpa Bab 3, tanpa lembar pengesahan, pure black #000000, 36 halaman reflow).
+    2. [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]] (Varian proposal lengkap dengan 6 objek persamaan Word OMML native di Bab 3).
+  - Verifikasi:
+    - `verify_docx_typography.py`: PASS 100%.
+    - `verify_pdf_docx_parity.py`: PASS 100%.
+    - Word COM Headless Export (`convert_docx.ps1`): Berhasil mengekspor kedua dokumen tanpa galat atau popup peringatan.
+
+---
+
 ## 📅 Sesi 14 September 2026 (Sesi 6): Institusionalisasi Pedoman Wajib PRD & Penuntasan Masalah Dot Leaders Daftar Isi di Google Docs / Word
 
 * **Fokus Pekerjaan:**

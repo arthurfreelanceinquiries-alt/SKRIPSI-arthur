@@ -17,6 +17,10 @@ Standards:
 import os
 import re
 import sys
+import subprocess
+import tempfile
+import shutil
+import copy
 from pathlib import Path
 import docx
 from docx import Document
@@ -33,17 +37,69 @@ if hasattr(sys.stdout, 'reconfigure'):
 if hasattr(sys.stderr, 'reconfigure'):
     sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 
-# Add tex-math-to-word path for latex_to_omml
-SKILL_DIR = r"C:\Users\Arthur Reezan\.gemini\config\skills\tex-math-to-word"
-if SKILL_DIR not in sys.path:
-    sys.path.append(SKILL_DIR)
+# ============================================================================
+# HYBRID PANDOC OMML ENGINE SETUP
+# ============================================================================
 
-try:
-    from latex_to_word import latex_to_omml
-    HAS_OMML = True
-except Exception as e:
-    HAS_OMML = False
-    print(f"[WARN] OMML conversion module not loaded: {e}")
+def get_pandoc_path():
+    """Locate pandoc executable on Windows."""
+    p = shutil.which('pandoc')
+    if p and os.path.exists(p):
+        return p
+    candidates = [
+        r"C:\Users\arthu\AppData\Local\Pandoc\pandoc.exe",
+        r"C:\Program Files\Pandoc\pandoc.exe",
+        os.path.expandvars(r"%LOCALAPPDATA%\Pandoc\pandoc.exe"),
+        os.path.expandvars(r"%ProgramFiles%\Pandoc\pandoc.exe"),
+    ]
+    for c in candidates:
+        if os.path.exists(c):
+            return c
+    return None
+
+PANDOC_EXE = get_pandoc_path()
+HAS_OMML = PANDOC_EXE is not None
+if HAS_OMML:
+    print(f"[INFO] Hybrid Pandoc OMML engine active: {PANDOC_EXE}")
+else:
+    print("[WARN] Pandoc not found. Equations will use fallback format.")
+
+
+def latex_to_omml_pandoc(formula_latex: str):
+    """Converts a LaTeX formula into a native Word OMML (<m:oMathPara> or <m:oMath>) element via Pandoc."""
+    if not PANDOC_EXE:
+        return None
+
+    clean_tex = formula_latex.strip().strip('$').strip()
+    latex_input = f"\\begin{{equation*}}\n{clean_tex}\n\\end{{equation*}}"
+
+    with tempfile.NamedTemporaryFile(suffix='.docx', delete=False) as tmp:
+        tmp_path = tmp.name
+
+    try:
+        res = subprocess.run(
+            [PANDOC_EXE, '-f', 'latex', '-t', 'docx', '-o', tmp_path],
+            input=latex_input,
+            text=True,
+            encoding='utf-8',
+            capture_output=True
+        )
+        if res.returncode == 0 and os.path.exists(tmp_path):
+            temp_doc = docx.Document(tmp_path)
+            for p in temp_doc.paragraphs:
+                for c in p._p:
+                    if 'oMathPara' in c.tag or 'oMath' in c.tag:
+                        return copy.deepcopy(c)
+        return None
+    except Exception as e:
+        print(f"[WARN] Error converting equation via Pandoc: {e}")
+        return None
+    finally:
+        if os.path.exists(tmp_path):
+            try:
+                os.remove(tmp_path)
+            except Exception:
+                pass
 
 
 # ============================================================================
@@ -185,14 +241,10 @@ def add_equation_paragraph(doc, formula_latex, align=WD_ALIGN_PARAGRAPH.CENTER):
     p.paragraph_format.line_spacing = 1.5
 
     if HAS_OMML:
-        try:
-            omml_str = latex_to_omml(formula_latex)
-            if omml_str:
-                element = parse_xml(omml_str)
-                p._p.append(element)
-                return p
-        except Exception as e:
-            pass
+        elem = latex_to_omml_pandoc(formula_latex)
+        if elem is not None:
+            p._p.append(elem)
+            return p
 
     # Fallback clean text
     clean_math = formula_latex.replace(r'\alpha', 'α').replace(r'\beta', 'β').replace(r'\cdot', ' · ')
@@ -1654,8 +1706,27 @@ def build_full_proposal(skip_chapter3: bool = False):
                 build_apa7_table(doc, table_lines)
                 continue
 
-            # Equations
-            if line_str.startswith('$$') or (line_str.startswith('$') and line_str.endswith('$') and len(line_str) > 10):
+            # Equations ($$...$$ or multi-line $$)
+            if line_str.startswith('$$'):
+                if line_str.endswith('$$') and len(line_str) > 2:
+                    eq_formula = line_str[2:-2].strip()
+                    line_idx += 1
+                else:
+                    eq_lines = [line_str[2:].strip()]
+                    line_idx += 1
+                    while line_idx < len(lines):
+                        nxt = lines[line_idx].strip()
+                        if nxt.endswith('$$'):
+                            eq_lines.append(nxt[:-2].strip())
+                            line_idx += 1
+                            break
+                        else:
+                            eq_lines.append(nxt)
+                            line_idx += 1
+                    eq_formula = " ".join(eq_lines).strip()
+                add_equation_paragraph(doc, eq_formula)
+                continue
+            elif line_str.startswith('$') and line_str.endswith('$') and len(line_str) > 10:
                 eq_formula = line_str.strip('$').strip()
                 add_equation_paragraph(doc, eq_formula)
                 line_idx += 1
