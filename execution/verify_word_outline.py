@@ -142,9 +142,9 @@ def verify_document_outline(docx_path):
         return True
 
 if __name__ == "__main__":
-    target_path = Path(r"z:\SKRIPSII\SKRIPSI-arthur\01_Naskah_Utama\Proposal_Arthur_PokemonTCG.docx")
-    if len(sys.argv) > 1:
-        target_path = Path(sys.argv[1])
+    script_dir = Path(__file__).resolve().parent
+    default_path = script_dir.parent / "01_Naskah_Utama" / "Proposal_Arthur_PokemonTCG.docx"
+    target_path = Path(sys.argv[1]) if len(sys.argv) > 1 else default_path
         
     if not target_path.exists():
         print(f"[ERROR] Target file does not exist: {target_path}")

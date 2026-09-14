@@ -49,10 +49,10 @@ Penarikan sampel dilakukan dengan teknik sampel bertujuan (*purposive sampling*)
 
 1. **Warga Negara Indonesia (WNI) dan Berdomisili di Indonesia:** Menjamin bahwa responden mengalami langsung dinamika ketersediaan produk kartu resmi berbahasa Indonesia serta struktur harga ritel dan pasar sekunder domestik.
 2. **Berusia Minimal 17 Tahun pada Saat Pengisian Kuesioner:**
-   * *Aspek Legalitas dan Kedewasaan Hukum:* Sesuai Pasal 330 Kitab Undang-Undang Hukum Perdata (KUHPerdata) serta undang-undang administrasi kependudukan di Indonesia, usia 17 tahun menandai kedewasaan hukum dan kepemilikan Kartu Tanda Penduduk (KTP), sehingga responden memiliki kecakapan hukum penuh untuk membuat keputusan tanpa perwalian.
+   * *Aspek Kedewasaan Administratif dan Hak Sipil:* Berdasarkan Undang-Undang Republik Indonesia Nomor 24 Tahun 2013 tentang Perubahan atas Undang-Undang Nomor 23 Tahun 2006 tentang Administrasi Kependudukan, batas usia 17 tahun menandai kepemilikan Kartu Tanda Penduduk (KTP) sebagai bukti identitas kedewasaan administratif dan hak sipil di Indonesia. Pada usia ini, responden dipandang telah memiliki kecakapan hukum mandiri untuk memberikan persetujuan partisipasi penelitian (*informed consent*) secara sadar dan sukarela tanpa memerlukan perwalian.
    * *Diskresi Keuangan Mandiri:* Pada usia 17 tahun ke atas (umumnya berada pada jenjang pendidikan akhir SMA atau mahasiswa perguruan tinggi), individu telah memiliki alokasi diskresi keuangan pribadi (uang saku mandiri atau penghasilan kerja paruh waktu) yang dapat dibelanjakan secara independen di gerai kasir minimarket.
    * *Kapasitas Kognitif:* Memastikan kematangan kognitif responden dalam memahami butir-butir pernyataan kuesioner ilmiah secara objektif dan bertanggung jawab.
-3. **Pernah Membeli *Booster Pack* Resmi Pokémon TCG Fisik Minimal 1 Kali dalam 6–12 Bulan Terakhir:**
+3. **Pernah Membeli *Booster Pack* Resmi Pokémon TCG Fisik Minimal 1 Kali dalam Kurun Waktu 6 Bulan Terakhir (Maksimal 12 Bulan Terakhir):**
    * *Menjamin Pengalaman Riil Konsumsi:* Memastikan responden benar-benar pernah mengalami proses pengambilan keputusan belanja di etalase toko dan merasakan sensasi membuka bungkus kartu (*pack opening thrill*).
    * *Meminimalkan Bias Ingatan Retrospektif (Recall Bias):* Rentang waktu 6–12 bulan merupakan standar baku dalam riset perilaku konsumen untuk memastikan bahwa memori kognitif dan luapan afektif saat bertransaksi masih tersimpan segar dalam ingatan responden, sehingga data yang dilaporkan memiliki akurasi tinggi.
 
@@ -69,7 +69,7 @@ Penentuan ukuran sampel minimum dalam penelitian ini mengacu pada formula Green 
   $$N \ge 104 + k$$
   $$N \ge 104 + 7 = 111\text{ responden}$$
 
-Mengacu pada perhitungan di atas, ukuran sampel minimum absolut yang dipersyaratkan adalah 111 responden. Guna mengantisipasi kuesioner yang tidak terisi lengkap (*unusable responses*) serta memenuhi kriteria Cohen (1988) untuk mencapai kekuatan uji statistik (*statistical power*) sebesar 0,80 pada taraf signifikansi $\alpha = 0,05$ dengan *medium effect size* ($f^2 = 0,15$), peneliti menetapkan target sampel sebesar **120 hingga 150 responden**.
+Mengacu pada perhitungan formula Green (1991) di atas, ukuran sampel minimum absolut yang dipersyaratkan adalah 111 responden. Target sampel data bersih yang dapat dianalisis (*usable and analyzable sample*) dalam penelitian ini ditetapkan sebesar **120 hingga 150 responden**, di luar 30 responden yang dialokasikan khusus untuk uji coba instrumen kuesioner (*pilot testing*). Jumlah sampel 120–150 ini memenuhi kriteria Cohen (1988) untuk mencapai kekuatan uji statistik (*statistical power*) $\ge 0,80$ pada taraf signifikansi $\alpha = 0,05$ dengan asumsi ukuran efek sedang (*medium effect size*, $f^2 = 0,15$) pada estimasi model regresi utama.
 
 ### 3.2.4 Justifikasi Komparatif Pemilihan Teknik Sampling
 
@@ -84,24 +84,28 @@ Pemilihan *purposive sampling* merupakan pendekatan yang paling tepat (*the most
 
 ## 3.3 Model Penelitian
 
-Model penelitian mengadopsi *Moderated Regression Analysis* (MRA) yang diestimasi dalam dua model bertahap untuk menguji efek utama dan efek interaksi moderasi:
+Guna menguji hipotesis penelitian secara akurat dan mengisolasi efek moderasi murni terpisah dari efek langsung pemoderasi, penelitian ini mengadopsi prosedur regresi hirarkis *Moderated Regression Analysis* (MRA) berbasis OLS yang diestimasi dalam dua model bertahap (Aiken & West, 1991; Cohen, 1988; Hayes, 2018):
 
-**Model 1 — Regresi Linear Berganda (Pengaruh Langsung / Efek Utama):**
-$$Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + e$$
+**Model 1 — Regresi Linear Berganda Hirarkis (Model Aditif Baseline / Efek Utama):**
+$$Y = \alpha + \beta_1 X_1^* + \beta_2 X_2^* + \beta_3 X_3^* + \beta_4 M^* + e$$
 
 **Model 2 — *Moderated Regression Analysis* / MRA (Model Interaksi Moderasi Penuh):**
-$$Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \beta_4 M + \beta_5 (X_1 \cdot M) + \beta_6 (X_2 \cdot M) + \beta_7 (X_3 \cdot M) + e$$
+$$Y = \alpha + \beta_1 X_1^* + \beta_2 X_2^* + \beta_3 X_3^* + \beta_4 M^* + \beta_5 (X_1^* \cdot M^*) + \beta_6 (X_2^* \cdot M^*) + \beta_7 (X_3^* \cdot M^*) + e$$
 
 Di mana:
-* $Y$ = *Impulsive Buying* (variabel dependen)
-* $X_1$ = *Hedonic Motivation* (variabel independen 1)
-* $X_2$ = *Desire for Completeness* (variabel independen 2)
-* $X_3$ = *Speculative Motive* (variabel independen 3)
-* $M$ = *Self-Control* (variabel moderasi)
-* $X_1 \cdot M, X_2 \cdot M, X_3 \cdot M$ = Istilah interaksi pemoderasi (*interaction terms*)
-* $\alpha$ = Konstanta regresi
-* $\beta_1 \dots \beta_7$ = Koefisien regresi
+* $Y$ = Skor komposit *Impulsive Buying* (variabel dependen)
+* $X_1^*, X_2^*, X_3^*$ = Skor prediktor terpusat (*mean-centered*): $X_i^* = X_i - \bar{X}_i$ untuk $i \in \{1, 2, 3\}$ (*Hedonic Motivation*, *Desire for Completeness*, dan *Speculative Motive*)
+* $M^*$ = Skor variabel pemoderasi terpusat (*mean-centered*): $M^* = M - \bar{M}$ (*Self-Control*)
+* $X_1^* \cdot M^*, X_2^* \cdot M^*, X_3^* \cdot M^*$ = Istilah perkalian interaksi pemoderasi (*interaction terms*)
+* $\alpha$ = Nilai intersep konstan regresi
+* $\beta_1, \beta_2, \beta_3$ = Koefisien regresi efek utama prediktor pada nilai rata-rata pemoderasi ($M^* = 0$)
+* $\beta_4$ = Koefisien regresi efek langsung pemoderasi (*Self-Control*) terhadap $Y$
+* $\beta_5, \beta_6, \beta_7$ = Koefisien regresi interaksi moderasi (H4, H5, H6)
 * $e$ = *Error term* (residual pengganggu)
+
+Penyertaan $M^*$ pada Model 1 sebagai garis dasar aditif (*additive baseline*) menjamin bahwa peningkatan koefisien determinasi ($\Delta R^2 = R^2_{\text{Model 2}} - R^2_{\text{Model 1}}$) murni mengisolasi kontribusi penjelas tambahan dari ketiga variabel interaksi moderasi, yang diuji secara simultan melalui statistik $F_{\text{change}}$:
+$$F_{\text{change}} = \frac{(R^2_{\text{Model 2}} - R^2_{\text{Model 1}}) / 3}{(1 - R^2_{\text{Model 2}}) / (N - 8)}$$
+dengan derajat kebebasan $df_1 = 3$ dan $df_2 = N - 8$.
 
 ```
                     PENGARUH LANGSUNG
@@ -151,9 +155,9 @@ Operasionalisasi variabel menyajikan definisi operasional, dimensi, butir indika
 | :--- | :--- | :---: |
 | Petualangan (*Adventure*) | X1.1. Saya merasa berpetualang dan tertantang saat membeli dan membuka *booster pack* kartu Pokémon. | Likert 1–5 |
 | Petualangan (*Adventure*) | X1.2. Pengalaman membuka kemasan acak *booster pack* kartu Pokémon memberikan sensasi kejutan yang menyenangkan bagi saya. | Likert 1–5 |
-| Kepuasan (*Gratification*) | X1.3. Membeli *booster pack* kartu Pokémon merupakan cara saya untuk memanjakan diri atau menghilangkan stres. | Likert 1–5 |
-| Kepuasan (*Gratification*) | X1.4. Saya merasa bahagia dan terhibur secara emosional setelah berhasil menarik kartu langka dari *booster pack*. | Likert 1–5 |
-| Eksplorasi Ide (*Idea*) | X1.5. Saya senang mengikuti rilis seri ekspansi kartu Pokémon terbaru dan menjelajahi kartu-kartu baru di dalamnya. | Likert 1–5 |
+| Sosial (*Social*) | X1.3. Berbelanja kartu Pokémon mempererat ikatan dan kebersamaan dengan sesama teman sehobi. | Likert 1–5 |
+| Peran (*Role*) | X1.4. Saya menikmati berbelanja kartu Pokémon untuk dihadiahkan atau dimainkan bersama teman dan keluarga sehobi. | Likert 1–5 |
+| Eksplorasi Ide (*Idea*) | X1.5. Saya senang mengikuti rilis seri ekspansi kartu Pokémon terbaru dan inovasi desain terbarunya. | Likert 1–5 |
 
 *Sumber Adaptasi:* Diadaptasi dari *Hedonic Shopping Motivation Scale* Arnold & Reynolds (2003) dan Gültekin & Özer (2012).
 
@@ -163,10 +167,10 @@ Operasionalisasi variabel menyajikan definisi operasional, dimensi, butir indika
 | Dimensi | Indikator Butir Kuesioner | Skala |
 | :--- | :--- | :---: |
 | Ketegangan Kognitif (*Tension*) | X2.1. Saya merasa tidak nyaman dan terganggu ketika album binder koleksi kartu Pokémon saya masih memiliki slot kartu kosong. | Likert 1–5 |
-| Hasrat Penuntasan (*Closure*) | X2.2. Saya terdorong untuk terus membeli *booster pack* tambahan agar dapat melengkapi seluruh nomor kartu dalam satu seri secara utuh. | Likert 1–5 |
+| Hasrat Penuntasan (*Closure*) | X2.2. Hasrat melengkapi seluruh seri kartu dalam binder mendorong saya untuk terus menambah koleksi. | Likert 1–5 |
 | Ketegangan Kognitif (*Tension*) | X2.3. Mengetahui ada nomor kartu yang belum saya miliki dalam suatu seri membuat saya berhasrat untuk segera mendapatkannya. | Likert 1–5 |
 | Rasa Keutuhan (*Wholeness*) | X2.4. Melengkapi satu set penuh koleksi kartu Pokémon memberikan perasaan kepuasan, kebanggaan, dan keutuhan bagi saya. | Likert 1–5 |
-| Hasrat Penuntasan (*Closure*) | X2.5. Semakin sedikit kartu yang kurang dalam satu seri koleksi, semakin kuat desakan saya untuk membeli pack demi melengkapinya. | Likert 1–5 |
+| Hasrat Penuntasan (*Closure*) | X2.5. Semakin sedikit kartu yang kurang dalam satu seri koleksi, semakin kuat desakan psikologis saya untuk menuntaskannya. | Likert 1–5 |
 
 *Sumber Adaptasi:* Diadaptasi dari prinsip *The Completing the Set Effect* Gao et al. (2014), Barasz et al. (2017), dan Belk (1995).
 
@@ -175,11 +179,11 @@ Operasionalisasi variabel menyajikan definisi operasional, dimensi, butir indika
 
 | Dimensi | Indikator Butir Kuesioner | Skala |
 | :--- | :--- | :---: |
-| *Capital Gain* | X3.1. Saya mempertimbangkan potensi kenaikan harga jual kembali kartu di pasar sekunder saat memutuskan membeli *booster pack*. | Likert 1–5 |
-| *Grading Arbitrage* | X3.2. Saya berharap menarik kartu langka berkondisi sempurna untuk dikirim ke lembaga grading (PSA/BGS) agar nilai jualnya berlipat ganda. | Likert 1–5 |
-| *Overoptimism* | X3.3. Saya merasa peluang saya untuk mendapatkan kartu bernilai jutaan rupiah dari *booster pack* acak cukup besar. | Likert 1–5 |
-| Pandangan Aset (*Investment*) | X3.4. Saya memandang pembelian *booster pack* kartu Pokémon sebagai bentuk instrumen aset alternatif yang berpotensi menghasilkan keuntungan. | Likert 1–5 |
-| Kesadaran Pasar (*Market*) | X3.5. Saya aktif memantau pergerakan harga kartu Pokémon di pasar sekunder sebelum memutuskan membeli *pack*. | Likert 1–5 |
+| Apresiasi Modal | X3.1. Saya membeli kartu dengan ekspektasi menarik kartu langka bernilai jual tinggi. | Likert 1–5 |
+| Likuiditas | X3.2. Saya yakin kartu Pokémon langka memiliki likuiditas tinggi sehingga mudah dan cepat dijual kembali menjadi uang tunai di pasar sekunder. | Likert 1–5 |
+| Tren Nilai | X3.3. Saya memandang kartu Pokémon langka sebagai aset alternatif yang nilainya dapat naik di masa depan. | Likert 1–5 |
+| Potensi Laba | X3.4. Saya memandang modal membeli beberapa *pack* sebanding dengan potensi laba kartu langka. | Likert 1–5 |
+| Penilaian Kondisi | X3.5. Saya memeriksa kondisi fisik kartu (potensi grading tinggi) untuk memaksimalkan harga jual kembali. | Likert 1–5 |
 
 *Sumber Adaptasi:* Diadaptasi dari Shiller (2000), Baur et al. (2018), Colline (2024), dan Chen et al. (2021).
 
@@ -188,12 +192,12 @@ Operasionalisasi variabel menyajikan definisi operasional, dimensi, butir indika
 
 | Dimensi | Indikator Butir Kuesioner | Skala |
 | :--- | :--- | :---: |
-| Tahan Godaan | M1. Saya mampu menolak godaan membeli barang menarik jika barang tersebut di luar perencanaan anggaran saya. | Likert 1–5 |
-| Berpikir Rasional | M2. Saya terbiasa berpikir tenang dan mempertimbangkan dampak pengeluaran sebelum memutuskan untuk bertransaksi. | Likert 1–5 |
-| Tunda Kepuasan | M3. Saya mampu menahan diri dari kesenangan belanja saat ini demi menjaga tujuan keuangan masa depan saya. | Likert 1–5 |
-| Disiplin Diri | M4. Saya memiliki disiplin diri yang kuat untuk tidak membeli barang secara mendadak di kasir toko. | Likert 1–5 |
-| Kontrol Emosi | M5. Saya tidak mudah terhanyut oleh suasana hati atau kegembiraan sesaat dalam membelanjakan uang saya. | Likert 1–5 |
-| Taat Anggaran | M6. Saya secara konsisten mematuhi alokasi batas pengeluaran hobi yang telah saya rencanakan sebelumnya. | Likert 1–5 |
+| Tahan Godaan | M1. Saya mampu menolak godaan berbelanja barang yang tidak direncanakan. | Likert 1–5 |
+| Tunda Kepuasan | M2. Saya mampu menunda keinginan membeli sesuatu sampai waktu yang tepat. | Likert 1–5 |
+| Taat Anggaran | M3. Saya tetap mematuhi batas anggaran yang telah saya tetapkan. | Likert 1–5 |
+| Pertimbangan Konsekuensi | M4. Saya memikirkan konsekuensi jangka panjang sebelum membelanjakan uang. | Likert 1–5 |
+| Pengendalian Impuls | M5. Saya dapat mengendalikan diri dari desakan membeli barang secara spontan. | Likert 1–5 |
+| Kontrol Diri Global | M6. Secara umum, saya adalah pribadi yang memiliki pengendalian diri yang kuat. | Likert 1–5 |
 
 *Sumber Adaptasi:* Diadaptasi dari *Brief Self-Control Scale* (BSCS) Tangney et al. (2004), Vohs & Faber (2007), dan Sultan et al. (2012).
 
@@ -211,17 +215,18 @@ Dalam pengujian model penelitian kuantitatif eksplanatori yang melibatkan efek m
 Penelitian ini menetapkan bahwa **MRA berbasis OLS berbantuan IBM SPSS Statistics** adalah metode yang **paling cocok (_the most suitable_)**, dengan pertimbangan metodologis sebagai berikut:
 * Seluruh variabel penelitian diukur menggunakan skala komposit teruji dengan indikator-indikator yang terdefinisi secara terfokus.
 * Ukuran sampel penelitian (120–150 responden) berada pada rentang yang sangat ideal dan kokoh untuk OLS, tanpa menimbulkan risiko estimasi berlebih (*over-parameterization*) yang sering terjadi pada SEM (Hair et al., 2019).
-* Prosedur standarisasi *mean-centering* ($X_i^* = X_i - \bar{X}_i$; $M^* = M - \bar{M}$) yang diterapkan terbukti efektif secara matematis menghilangkan multikolinearitas struktural antar-istilah interaksi (Aiken & West, 1991; Ghozali, 2018).
-* Metode ini telah terbukti secara luas dan diadopsi oleh banyak penelitian bereputasi dalam menguji moderasi kontrol diri terhadap perilaku pembelian impulsif (Sultan et al., 2012; Hasanah et al., 2024; Fitriyani et al., 2022).
+* Prosedur *mean-centering* ($X_i^* = X_i - \bar{X}_i$; $M^* = M - \bar{M}$) yang diterapkan memfasilitasi interpretasi koefisien serta mereduksi multikolinearitas non-esensial antara variabel prediktor dengan produk interaksinya (Aiken & West, 1991; Hayes, 2018).
+* Metode ini telah terbukti secara luas dan diadopsi oleh banyak penelitian bereputasi dalam menguji moderasi kontrol diri terhadap perilaku pembelian impulsif (Sultan et al., 2012; Apidana & Kholifah, 2022; Lienardy & Panasea, 2024; Artadita & Firmialy, 2024).
 
-### 3.5.2 Uji Kualitas Data (Validitas dan Reliabilitas)
+### 3.5.2 Penyusunan Skor Komposit dan Uji Kualitas Data
 
-* **Uji Validitas Butir:** Menggunakan teknik korelasi *Pearson Product Moment*. Suatu butir pernyataan kuesioner dinyatakan valid jika nilai $r_{\text{hitung}} > r_{\text{tabel}}$ pada tingkat signifikansi $\alpha = 0,05$ untuk uji dua sisi.
-* **Uji Reliabilitas Konsistensi Internal:** Menggunakan koefisien *Cronbach's Alpha*. Instrumen penelitian dinyatakan reliabel jika nilai *Cronbach's Alpha* $\ge 0,60$ (Ghozali, 2018; Sekaran & Bougie, 2016).
+Skor masing-masing variabel penelitian dibentuk melalui penghitungan nilai rata-rata (*mean composite*) dari seluruh butir pernyataan indikator yang valid pada variabel bersangkutan. Seluruh butir kuesioner dikodekan secara searah dan positif (skor 5 menunjukkan tingkatan konstruk tertinggi). Sebelum pengujian model regresi, instrumen dievaluasi melalui:
+* **Uji Validitas Butir:** Menggunakan teknik korelasi butir-total (*Pearson Product Moment / corrected item-total correlation*) terhadap skor komposit konstruk yang dituju. Suatu butir pernyataan kuesioner dinyatakan valid jika nilai $r_{\text{hitung}} > r_{\text{tabel}}$ pada tingkat signifikansi $\alpha = 0,05$ untuk uji dua sisi.
+* **Uji Reliabilitas Konsistensi Internal:** Menggunakan koefisien *Cronbach's Alpha*. Seluruh konstruk penelitian dinyatakan reliabel dan memiliki konsistensi internal memadai jika nilai *Cronbach's Alpha* $\ge 0,60$ (Ghozali, 2018; Sekaran & Bougie, 2016).
 
 ### 3.5.3 Uji Asumsi Klasik
 
-Untuk menjamin bahwa estimator regresi OLS bersifat tidak bias dan efisien (*Best Linear Unbiased Estimator* / BLUE) pada data survei *cross-sectional*:
+Untuk memastikan terpenuhinya prasyarat estimasi regresi OLS agar parameter penduga bersifat tidak bias dan konsisten dalam pengujian hipotesis:
 
 1. **Uji Normalitas Residual:** Menguji apakah residual model berdistribusi normal menggunakan uji statistik non-parametrik *One-Sample Kolmogorov-Smirnov*, dengan kriteria residual berdistribusi normal jika nilai signifikansi asimtotik $p > 0,05$.
 2. **Uji Multikolinearitas:** Memastikan ketiadaan hubungan linear sempurna antarvariabel independen dengan memeriksa nilai *Tolerance* ($> 0,10$) dan nilai *Variance Inflation Factor* (VIF $< 10$).
@@ -229,22 +234,21 @@ Untuk menjamin bahwa estimator regresi OLS bersifat tidak bias dan efisien (*Bes
 
 *Catatan metodologis:* Uji autokorelasi (seperti uji Durbin-Watson) sengaja tidak dilakukan karena pengujian autokorelasi secara teoritis hanya relevan untuk data runtun waktu (*time-series*) atau data panel berurutan, bukan untuk survei *cross-sectional* primer (Ghozali, 2018).
 
-### 3.5.4 Estimasi Regresi Linear Berganda dan MRA
+### 3.5.4 Estimasi Regresi Hirarkis dan MRA
 
-Analisis regresi dilakukan dalam dua tahapan:
-1. Estimasi Model 1 untuk menguji pengaruh langsung ketiga variabel anteseden ($X_1, X_2, X_3$) terhadap $Y$.
-2. Estimasi Model 2 untuk menguji efek interaksi moderasi kontrol diri ($X_1 \cdot M, X_2 \cdot M, X_3 \cdot M$).
+Analisis regresi dilakukan dalam dua tahapan hirarkis berurutan:
+1. **Tahap 1 (Model 1 Aditif Baseline):** Mengestimasi efek utama ketiga variabel anteseden terpusat ($X_1^*, X_2^*, X_3^*$) beserta efek langsung variabel pemoderasi terpusat ($M^*$) terhadap $Y$.
+2. **Tahap 2 (Model 2 Interaksi Penuh MRA):** Memasukkan blok tiga istilah interaksi terpusat ($X_1^* \cdot M^*, X_2^* \cdot M^*, X_3^* \cdot M^*$) untuk menguji efek moderasi kontrol diri secara simultan dan parsial.
 
-Sebelum perkalian istilah interaksi dibentuk, variabel prediktor dan pemoderasi distandarisasi menggunakan prosedur *mean-centering* untuk mengeliminasi kolinearitas struktural (Aiken & West, 1991).
+### 3.5.5 Uji Koefisien Determinasi ($R^2$) dan Uji F Perubahan
 
-### 3.5.5 Uji Koefisien Determinasi ($R^2$)
+Evaluasi kecocokan model dilakukan dengan memeriksa nilai *Adjusted* $R^2$ pada Model 1 dan Model 2. Kontribusi penjelas murni dari blok variabel moderasi dibuktikan melalui nilai peningkatan koefisien determinasi ($\Delta R^2 = R^2_{\text{Model 2}} - R^2_{\text{Model 1}}$) yang diuji signifikansinya menggunakan statistik $F_{\text{change}}$ pada taraf signifikansi $p < 0,05$.
 
-Evaluasi kecocokan model dilakukan dengan memeriksa nilai *Adjusted* $R^2$ pada Model 1 dan Model 2, serta mengamati peningkatan koefisien determinasi ($\Delta R^2$) untuk membuktikan kontribusi penjelas tambahan dari variabel interaksi moderasi.
+### 3.5.6 Uji Hipotesis dan Analisis Kemiringan Bersyarat (*Simple Slopes*)
 
-### 3.5.6 Uji Hipotesis (Uji t dan Uji F)
-
-* **Uji Statistik t (Uji Parsial):** Menguji signifikansi pengaruh masing-masing koefisien regresi secara individual terhadap variabel dependen pada taraf $\alpha = 0,05$. Hipotesis didukung jika nilai signifikansi $p < 0,05$ dan arah koefisien sejalan dengan hipotesis yang diajukan.
-* **Uji Statistik F (Uji Simultan):** Menguji kelayakan model regresi secara keseluruhan pada taraf signifikansi $p < 0,05$.
+* **Uji Statistik t (Uji Parsial):** Menguji signifikansi pengaruh masing-masing koefisien regresi secara individual pada taraf $\alpha = 0,05$. Hipotesis didukung jika nilai signifikansi $p < 0,05$ dan arah koefisien sejalan dengan arah hipotesis. Koefisien $\beta_1, \beta_2, \beta_3$ pada Model 2 merefleksikan pengaruh utama pada rata-rata kontrol diri ($M^* = 0$).
+* **Uji Statistik F (Uji Kelayakan Model):** Menguji kelayakan model regresi secara simultan pada taraf signifikansi $p < 0,05$.
+* **Analisis Kemiringan Bersyarat (*Simple Slopes Analysis*):** Untuk hipotesis moderasi (H4, H5, H6), efek peredaman dibuktikan dengan mengevaluasi kemiringan bersyarat $\frac{\partial Y}{\partial X_i^*} = \beta_i + \beta_{\text{int}} M^*$ pada tingkat kontrol diri rendah ($-1\,\text{SD}$), rata-rata ($0\,\text{SD}$), dan tinggi ($+1\,\text{SD}$). Efek moderasi yang memperlemah terbukti jika kemiringan pengaruh $X_i$ terhadap $Y$ semakin mendatar pada tingkat kontrol diri tinggi (Aiken & West, 1991; Hayes, 2018).
 
 ---
 
@@ -260,7 +264,7 @@ graph TD
     D --> E[5. Uji Coba Instrumen Pilot Test<br>Penyebaran awal kuesioner kepada<br>n = 30 responden kolektor Pokémon TCG]
     E --> F{Uji Validitas &<br>Reliabilitas Valid?}
     F -- "Tidak (Revisi Butir Kuesioner)" --> D
-    F -- "Ya (p < 0,05; α ≥ 0,60)" --> G[6. Pengumpulan Data Survei Utama<br>Penyebaran daring kuesioner Google Forms<br>Target: 120-150 responden WNI usia ≥ 17 thn]
+    F -- "Ya (r_hitung > r_tabel; α ≥ 0,60)" --> G[6. Pengumpulan Data Survei Utama<br>Penyebaran daring kuesioner Google Forms<br>Target: 120-150 responden WNI usia ≥ 17 thn]
     G --> H[7. Analisis Data Statistik SPSS<br>Uji Asumsi Klasik, Regresi Berganda Model 1,<br>dan MRA Mean-Centering Model 2]
     H --> I[8. Pembahasan & Penarikan Kesimpulan<br>Interpretasi temuan empiris, implikasi keuangan perilaku,<br>keterbatasan, dan rekomendasi]
 ```

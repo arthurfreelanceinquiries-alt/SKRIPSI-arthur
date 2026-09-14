@@ -274,19 +274,39 @@ def clean_academic_text(text: str) -> str:
     text = re.sub(r'\\emph\{([^}]+)\}', r'*\1*', text)
 
     # 2. Multi-variable & Complex math expressions
+    text = text.replace(r'$X_1^*, X_2^*, X_3^*, M^*, X_1^* \cdot M^*, X_2^* \cdot M^*, X_3^* \cdot M*$', '*X*₁*, *X*₂*, *X*₃*, *M*\\*, *X*₁* · *M*\\*, *X*₂* · *M*\\*, *X*₃* · *M*\\*')
+    text = text.replace(r'$X_1^* \cdot M^*, X_2^* \cdot M^*, X_3^* \cdot M*$', '*X*₁* · *M*\\*, *X*₂* · *M*\\*, *X*₃* · *M*\\*')
+    text = text.replace(r'$X_1^*, X_2^*, X_3^*, M^*$', '*X*₁*, *X*₂*, *X*₃*, *M*\\*')
+    text = text.replace(r'$X_1^*, X_2^*, X_3^*$', '*X*₁*, *X*₂*, *X*₃*')
     text = text.replace(r'$X_1, X_2, X_3, M, X_1 \cdot M, X_2 \cdot M, X_3 \cdot M$', '*X*₁, *X*₂, *X*₃, *M*, *X*₁ · *M*, *X*₂ · *M*, *X*₃ · *M*')
     text = text.replace(r'$X_1 \cdot M, X_2 \cdot M, X_3 \cdot M$', '*X*₁ · *M*, *X*₂ · *M*, *X*₃ · *M*')
     text = text.replace(r'$X_1, X_2, X_3$', '*X*₁, *X*₂, *X*₃')
     text = text.replace(r'$Y, X_1, X_2, X_3, M$', '*Y*, *X*₁, *X*₂, *X*₃, *M*')
 
     # Regression formulas
+    text = text.replace(r'$Y = \alpha + \beta_1 X_1^* + \beta_2 X_2^* + \beta_3 X_3^* + \beta_4 M^* + \beta_5 (X_1^* \cdot M^*) + \beta_6 (X_2^* \cdot M^*) + \beta_7 (X_3^* \cdot M^*) + e$',
+                        '*Y* = α + β₁*X*₁* + β₂*X*₂* + β₃*X*₃* + β₄*M*\\* + β₅(*X*₁* · *M*\\*) + β₆(*X*₂* · *M*\\*) + β₇(*X*₃* · *M*\\*) + *e*')
+    text = text.replace(r'$Y = \alpha + \beta_1 X_1^* + \beta_2 X_2^* + \beta_3 X_3^* + \beta_4 M^* + e$',
+                        '*Y* = α + β₁*X*₁* + β₂*X*₂* + β₃*X*₃* + β₄*M*\\* + *e*')
     text = text.replace(r'$Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \beta_4 M + \beta_5 (X_1 \cdot M) + \beta_6 (X_2 \cdot M) + \beta_7 (X_3 \cdot M) + e$',
                         '*Y* = α + β₁*X*₁ + β₂*X*₂ + β₃*X*₃ + β₄*M* + β₅(*X*₁ · *M*) + β₆(*X*₂ · *M*) + β₇(*X*₃ · *M*) + *e*')
     text = text.replace(r'$Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + e$',
                         '*Y* = α + β₁*X*₁ + β₂*X*₂ + β₃*X*₃ + *e*')
 
-    # Centering formula
+    # Centering formula & simple slopes
     text = text.replace(r'$X_i^* = X_i - \bar{X}_i; M^* = M - \bar{M}$', r'*X*ᵢ* = *X*ᵢ − *X̄*ᵢ; *M*\* = *M* − *M̄*')
+    text = text.replace(r'$\frac{\partial Y}{\partial X_1^*} = \beta_1 + \beta_5 M^*$', '∂Y/∂X₁* = β₁ + β₅M*')
+    text = text.replace(r'$\frac{\partial Y}{\partial X_2^*} = \beta_2 + \beta_6 M^*$', '∂Y/∂X₂* = β₂ + β₆M*')
+    text = text.replace(r'$\frac{\partial Y}{\partial X_3^*} = \beta_3 + \beta_7 M^*$', '∂Y/∂X₃* = β₃ + β₇M*')
+    text = text.replace(r'$\frac{\partial Y}{\partial X_i^*} = \beta_i + \beta_{\text{int}} M^*$', '∂Y/∂Xᵢ* = βᵢ + β_int M*')
+    text = text.replace(r'$\beta_5 < 0$', 'β₅ < 0')
+    text = text.replace(r'$\beta_6 < 0$', 'β₆ < 0')
+    text = text.replace(r'$\beta_7 < 0$', 'β₇ < 0')
+    text = text.replace(r'$-1\,\text{SD}$', '−1 SD')
+    text = text.replace(r'$0\,\text{SD}$', '0 SD')
+    text = text.replace(r'$+1\,\text{SD}$', '+1 SD')
+    text = text.replace(r'$M^* = 0$', '*M*\\* = 0')
+    text = text.replace(r'$F_{\text{change}}$', '*F*_{change}')
 
     # Sample size (Green & Cohen)
     text = text.replace(r'$N \ge 104 + 7 = 111\text{ responden}$', '*N* ≥ 104 + 7 = 111 responden')
@@ -295,14 +315,32 @@ def clean_academic_text(text: str) -> str:
     text = text.replace(r'$N \ge 50 + 8k$', '*N* ≥ 50 + 8*k*')
     text = text.replace(r'$N > 200$', '*N* > 200')
     text = text.replace(r'$r_{\text{hitung}} > r_{\text{tabel}}$', '*r*_{hitung} > *r*_{tabel}')
+    text = text.replace(r'$F_{\text{hitung}} > F_{\text{tabel}}$', '*F*_{hitung} > *F*_{tabel}')
+    text = text.replace(r'$t_{\text{hitung}} > t_{\text{tabel}}$', '*t*_{hitung} > *t*_{tabel}')
 
     # Interaction & Single variables
+    text = text.replace(r'$X_1^* \cdot M^*$', '*X*₁* · *M*\\*')
+    text = text.replace(r'$X_2^* \cdot M^*$', '*X*₂* · *M*\\*')
+    text = text.replace(r'$X_3^* \cdot M^*$', '*X*₃* · *M*\\*')
+    text = text.replace(r'$X_1^* \cdot M^*, X_2^* \cdot M^*, X_3^* \cdot M^*$', '*X*₁* · *M*\\*, *X*₂* · *M*\\*, *X*₃* · *M*\\*')
     text = text.replace(r'$X_1 \cdot M$', '*X*₁ · *M*')
     text = text.replace(r'$X_2 \cdot M$', '*X*₂ · *M*')
     text = text.replace(r'$X_3 \cdot M$', '*X*₃ · *M*')
     text = text.replace(r'$X_1 \\cdot M$', '*X*₁ · *M*')
     text = text.replace(r'$X_2 \\cdot M$', '*X*₂ · *M*')
     text = text.replace(r'$X_3 \\cdot M$', '*X*₃ · *M*')
+
+    text = text.replace('($X_1^*$)', '(*X*₁*)')
+    text = text.replace('($X_2^*$)', '(*X*₂*)')
+    text = text.replace('($X_3^*$)', '(*X*₃*)')
+    text = text.replace('($M^*$)', '(*M*\\*)')
+    text = text.replace('$X_1^*, X_2^*, X_3^*, M^*$', '*X*₁*, *X*₂*, *X*₃*, *M*\\*')
+    text = text.replace('$X_1^*, X_2^*, X_3^*$', '*X*₁*, *X*₂*, *X*₃*')
+    text = text.replace('$X_1^*', '*X*₁*')
+    text = text.replace('$X_2^*', '*X*₂*')
+    text = text.replace('$X_3^*', '*X*₃*')
+    text = text.replace('$M^*$', '*M*\\*')
+    text = text.replace('$X_i^*$', '*X*ᵢ*')
 
     text = text.replace('($X_1$)', '(*X*₁)')
     text = text.replace('($X_2$)', '(*X*₂)')
@@ -346,10 +384,20 @@ def clean_academic_text(text: str) -> str:
     text = text.replace(r'$n = 120--150$', '*n* = 120–150')
     text = text.replace(r'$n = 120-150$', '*n* = 120–150')
 
-    for i in range(1, 8):
-        sub = chr(0x2080 + i)
-        text = text.replace(f'$\\beta_{i}$', f'β{sub}')
-    text = text.replace(r'$\epsilon$', 'ε')
+    # Comprehensive LaTeX Greek and math command replacement
+    text = re.sub(r'\\beta_\{?([0-9]+)\}?', lambda m: 'β' + ''.join(chr(0x2080 + int(d)) for d in m.group(1)), text)
+    text = text.replace(r'\beta_{\text{int}}', 'β_int')
+    text = text.replace(r'\beta_{int}', 'β_int')
+    text = text.replace(r'\beta', 'β')
+    text = text.replace(r'\alpha', 'α')
+    text = text.replace(r'\Delta', 'Δ')
+    text = text.replace(r'\cdot', '·')
+    text = text.replace(r'\partial', '∂')
+    text = text.replace(r'\epsilon', 'ε')
+    text = re.sub(r'\\text\{([^}]+)\}', r'\1', text)
+    text = text.replace(r'R^2_{Model 2}', 'R²_Model 2')
+    text = text.replace(r'R^2_{Model 1}', 'R²_Model 1')
+    text = text.replace(r'R^2', 'R²')
 
     # Unescape LaTeX escaped symbols and spaces (e.g. US\$ -> US$, US\ -> US )
     text = text.replace(r'US\$', 'US$')
@@ -1059,8 +1107,8 @@ def build_full_proposal(skip_chapter3: bool = False):
         "yang dipilih melalui teknik purposive sampling. Kriteria inklusi sampel adalah konsumen atau kolektor Warga Negara Indonesia (WNI) berusia minimal 17 tahun "
         "yang pernah membeli booster pack Pokémon TCG fisik resmi dalam rentang waktu 6–12 bulan terakhir. Jumlah sampel yang ditargetkan adalah 120 hingga 150 responden, "
         "mengacu pada rekomendasi ukuran sampel Green (1991) dan Cohen (1988) untuk mencapai kekuatan uji statistik (statistical power) yang memadai pada model regresi "
-        "linear berganda. Metode analisis data menggunakan analisis regresi berganda dan Moderated Regression Analysis (MRA) dengan prosedur standarisasi skor rata-rata "
-        "(mean-centering) guna mengatasi potensi multikolinearitas struktural antar-istilah interaksi (Aiken & West, 1991; Ghozali, 2018), yang diolah menggunakan perangkat lunak "
+        "linear berganda. Metode analisis data menggunakan analisis regresi berganda dan Moderated Regression Analysis (MRA) dengan prosedur pemusatan rata-rata "
+        "(mean-centering) guna mereduksi potensi multikolinearitas non-esensial antara variabel prediktor dengan produk interaksinya (Aiken & West, 1991; Ghozali, 2018), yang diolah menggunakan perangkat lunak "
         "IBM SPSS Statistics. Penelitian ini menawarkan kebaruan teoritis (novelty) dengan mengintegrasikan kerangka psikologi lingkungan Stimulus-Organism-Response (S-O-R), "
         "psikologi kolektor (Zeigarnik Effect dan The Completing the Set Effect), teori regulasi diri (Self-Regulation Theory), serta prinsip-prinsip keuangan perilaku "
         "(behavioral finance) pada fenomena komoditas hobi fisik bernilai spekulatif tinggi. Hasil penelitian ini diharapkan memberikan kontribusi empiris bagi konsumen "
@@ -1110,8 +1158,8 @@ def build_full_proposal(skip_chapter3: bool = False):
         "questionnaires employing a 5-point Likert scale, distributed to respondents selected through purposive sampling. The sample inclusion criteria comprise "
         "Indonesian citizens aged 17 and above who have purchased official physical booster packs within the past 6 to 12 months. The targeted sample size ranges from "
         "120 to 150 respondents, consistent with the statistical power criteria established by Green (1991) and Cohen (1988) for multiple regression frameworks. "
-        "The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to eliminate structural "
-        "multicollinearity (Aiken & West, 1991; Ghozali, 2018), executed via IBM SPSS Statistics software. This study provides theoretical novelty by synthesizing the "
+        "The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to reduce non-essential "
+        "multicollinearity between predictor variables and their interaction products (Aiken & West, 1991; Ghozali, 2018), executed via IBM SPSS Statistics software. This study provides theoretical novelty by synthesizing the "
         "Stimulus-Organism-Response (S-O-R) paradigm, collector psychology (the Zeigarnik Effect and The Completing the Set Effect), Self-Regulation Theory, and behavioral finance "
         "principles in the context of tangible alternative assets exhibiting volatile secondary market premiums. The findings are expected to offer practical insights for young "
         "consumers in exercising financial discipline regarding discretionary collectibles and provide strategic inputs for community organizers and financial educators targeting Generation Z."
@@ -1128,7 +1176,7 @@ def build_full_proposal(skip_chapter3: bool = False):
     r_kw_en_pre = p_kw_en.add_run("Keywords: ")
     r_kw_en_pre.font.name = "Times New Roman"
     r_kw_en_pre.font.size = Pt(12)
-    r_kw_pre.font.bold = True
+    r_kw_en_pre.font.bold = True
     r_kw_en_body = p_kw_en.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Behavioral Finance.")
     r_kw_en_body.font.name = "Times New Roman"
     r_kw_en_body.font.size = Pt(12)
@@ -1447,7 +1495,7 @@ def build_full_proposal(skip_chapter3: bool = False):
                         p_src.paragraph_format.space_before = Pt(0)
                         p_src.paragraph_format.space_after = Pt(12)
                         p_src.paragraph_format.first_line_indent = Cm(0)
-                        r_s = p_src.add_run("Sumber: Agregasi Riset TitleMax dan Statista (2024).")
+                        r_s = p_src.add_run("Sumber: Statista Research dan Laporan Keuangan Tahunan Korporat (2024).")
                         r_s.font.size = Pt(10)
                         r_s.font.italic = True
 
@@ -1594,7 +1642,7 @@ def build_full_proposal(skip_chapter3: bool = False):
                     p_src.paragraph_format.space_before = Pt(0)
                     p_src.paragraph_format.space_after = Pt(12)
                     p_src.paragraph_format.first_line_indent = Cm(0)
-                    r_s = p_src.add_run("Sumber: Agregasi Riset TitleMax dan Statista, 2024.")
+                    r_s = p_src.add_run("Sumber: Statista Research dan Laporan Keuangan Tahunan Korporat (2024).")
                     r_s.font.size = Pt(10)
                     r_s.font.italic = True
                 line_idx += 1

@@ -51,7 +51,8 @@
 45. Tangney, J. P., Baumeister, R. F., & Boone, A. L. (2004). High self-control predicts good adjustment, less pathology, better grades, and interpersonal success. *Journal of Personality*, 72(2), 271–324. https://doi.org/10.1111/j.0022-3506.2004.00263.x
 46. Thaler, R. (1985). Mental accounting and consumer choice. *Marketing Science*, 4(3), 199–214. https://doi.org/10.1287/mksc.4.3.199
 47. Thaler, R. H., & Shefrin, H. M. (1981). An economic theory of self-control. *Journal of Political Economy*, 89(2), 392–406. https://doi.org/10.1086/260971
-48. Verplanken, B., & Herabadi, A. (2001). Individual differences in impulse buying tendency: Feeling and no thinking. *European Journal of Personality*, 15(S1), S71–S83. https://doi.org/10.1002/per.423
-49. Vohs, K. D., & Faber, R. J. (2007). Spent resources: Self-regulatory resource depletion and impulsive buying. *Journal of Consumer Research*, 33(4), 537–547. https://doi.org/10.1086/510228
-50. Zeigarnik, B. (1927). Das Behalten erledigter und unerledigten Handlungen. *Psychologische Forschung*, 9, 1–85.
-51. Zheng, X., Men, J., Yang, F., & Gong, X. (2019). Understanding impulse buying in mobile commerce: An investigation into hedonic and utilitarian browsing. *International Journal of Information Management*, 48, 151–160. https://doi.org/10.1016/j.ijinfomgt.2019.02.010
+48. Tirtayasa, S., Lubis, A. P., & Khair, H. (2020). Keputusan pembelian: Pengaruh hedonic shopping motive dan store atmosphere dengan impulse buying sebagai pemediasi. *Jurnal Inspirasi Bisnis dan Manajemen*, 4(1), 35–48. https://doi.org/10.33603/jibm.v4i1.3090
+49. Verplanken, B., & Herabadi, A. (2001). Individual differences in impulse buying tendency: Feeling and no thinking. *European Journal of Personality*, 15(S1), S71–S83. https://doi.org/10.1002/per.423
+50. Vohs, K. D., & Faber, R. J. (2007). Spent resources: Self-regulatory resource depletion and impulsive buying. *Journal of Consumer Research*, 33(4), 537–547. https://doi.org/10.1086/510228
+51. Zeigarnik, B. (1927). Das Behalten erledigter und unerledigten Handlungen. *Psychologische Forschung*, 9, 1–85.
+52. Zheng, X., Men, J., Yang, F., & Gong, X. (2019). Understanding impulse buying in mobile commerce: An investigation into hedonic and utilitarian browsing. *International Journal of Information Management*, 48, 151–160. https://doi.org/10.1016/j.ijinfomgt.2019.02.010

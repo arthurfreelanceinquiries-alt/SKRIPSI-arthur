@@ -7,6 +7,27 @@
 
 ---
 
+## 📅 Sesi 14 September 2026 (Sesi 9 - Pukul 19:10 WIB): Audit Teknis Prism AI, PRD Resolusi, & Rencana Implementasi
+
+* **Fokus Pekerjaan:**
+  - Menjalankan skill `obsidian-second-brain` dan membedah laporan *Technical and Editorial Review* Prism AI (1.227 baris evaluasi proposal).
+  - Melakukan analisis kritis terhadap 11 temuan teknis: memilah temuan yang wajib direvisi (model aditif baseline MRA, terminologi mean-centering, pasal KUHPerdata, inkonsistensi sitasi, butir kuesioner) vs temuan false alarm / over-engineering (asset gambar lengkap, references.bib lengkap, cluster-robust overkill).
+  - Menyusun dokumen PRD lengkap di [[04_Riset_&_Metodologi/PRD_RESOLUSI_REVIEW_TEKNIS_PRISM_AI.md]] dan catatan review resmi di [[07_Review_&_Audit/Revisi_Dosen/2026-09-14_Review_Teknis_Prism_AI_dan_Matriks_Resolusi.md]].
+  - Mengunci keputusan baru **D20** di [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]].
+  - Menyusun rancangan eksekusi terstruktur pada dokumen `implementation_plan.md`.
+* **Masalah yang Diselesaikan:**
+  - Menemukan dan merancang perbaikan atas kelemahan mendasar model perbandingan MRA (Persamaan 3.1 & 3.2) di mana Model 1 sebelumnya belum menyertakan pemoderasi $M$, sehingga $\Delta R^2$ mencampuradukkan efek langsung $M$ dengan interaksi moderasi.
+  - Mengeliminasi kekeliruan sitasi hukum Pasal 330 KUHPerdata untuk batas usia 17 tahun, mengalihkan ke UU No. 24/2013 tentang Administrasi Kependudukan (KTP) dan diskresi finansial.
+  - Memperbaiki kontradiksi sitasi celah empiris Prasetio (2021) di Bab 1 dan typo "dimediasi" di Bab 2.
+  - Menyelaraskan butir kuesioner Tabel 3.2 ($X_1$ role shopping, $X_3$ likuiditas riil & eliminasi istilah cuan, $M$ kapasitas regulasi diri umum).
+* **Keputusan / Output Teknis:**
+  - Dokumen PRD Baru: [[04_Riset_&_Metodologi/PRD_RESOLUSI_REVIEW_TEKNIS_PRISM_AI.md]].
+  - Catatan Audit Baru: [[07_Review_&_Audit/Revisi_Dosen/2026-09-14_Review_Teknis_Prism_AI_dan_Matriks_Resolusi.md]].
+  - Source of Truth Diperbarui: Klausul **D20** resmi ditambahkan pada [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]].
+  - Implementation Plan Siap Eksekusi: menunggu konfirmasi pengguna untuk eksekusi modifikasi berkas LaTeX, draf markdown, dan skrip Word OMML.
+
+---
+
 ## 📅 Sesi 14 September 2026 (Sesi 8): Inisialisasi Sesi Kerja & Sinkronisasi Ekosistem Second Brain
 
 * **Fokus Pekerjaan:**
@@ -187,6 +208,44 @@
   - **Struktur Heading Rapi:** Semua Bab 1–3 dan DAFTAR PUSTAKA berstatus `Heading 1` (outline level 0), seluruh sub-bab `1.1`–`3.7` berstatus `Heading 2` (outline level 1), dan seluruh anak sub-bab `1.4.1`–`3.5.6` berstatus `Heading 3` (outline level 2).
 * **Keputusan / Output Teknis:**
   - Generator Diperbarui: `[[execution/build_proposal_word.py]]` mengintegrasikan `inject_native_word_toc()`, `add_daftar_isi_heading()`, dan proteksi judul tabel/gambar.
-  - Validasi Tipografi: `[[execution/verify_docx_typography.py]]` lulus audit 100% pada kedua varian dokumen.
-  - Validasi Outline: `[[execution/verify_word_outline.py]]` lulus audit 100% (12 Level 0, 16 Level 1, 28 Level 2) pada `[[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]]`.
-  - Dokumen Output Bersih: `[[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]]` dan `[[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]]`.
+    - Validasi Tipografi: `[[execution/verify_docx_typography.py]]` lulus audit 100% pada kedua varian dokumen.
+    - Validasi Outline: `[[execution/verify_word_outline.py]]` lulus audit 100% (12 Level 0, 16 Level 1, 28 Level 2) pada `[[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]]`.
+    - Dokumen Output Bersih: `[[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]]` dan `[[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]]`.
+
+---
+
+## 📅 Sesi 14 September 2026 (Sesi 3): Resolusi Review Teknis & Editorial Prism AI (Audit Metodologis, MRA Baseline, & Penyelarasan Multi-Format)
+
+> [!SUMMARY]
+> Merespons dan menyelesaikan 11 temuan telaah teknis (*peer review*) dari Prism AI terhadap naskah proposal skripsi Arthur, menyusun dokumen arsitektur PRD Resolusi Teknis, memperbaiki model ekonometrika MRA menjadi Model Aditif Baseline (mengisolasi $\Delta R^2$), mengoreksi terminologi *mean-centering*, memperbarui dasar hukum usia 17 tahun ke UU Adminduk, menyelaraskan butir kuesioner Tabel 3.2, serta memastikan *zero desync* di seluruh format (XeLaTeX PDF, Word DOCX, dan Markdown draf).
+
+* **Fokus Pekerjaan:**
+  - Audit dan klasifikasi triage 11 temuan Prism AI ke dalam tiga kelompok: Wajib Direvisi (koreksi fatal), Penyempurnaan Konten (rigoritas psikometri/ekonometrika), dan Non-Revisi (*false alarm* aset hilang & *over-engineering* analisis kluster/IRB medis).
+  - Rekonstruksi spesifikasi Model 1 menjadi Model Aditif Baseline yang menyertakan efek utama pemoderasi ($M^*$), sehingga Model 2 MRA Penuh murni mengisolasi peningkatan daya penjelas 3 istilah interaksi moderasi ($\Delta R^2$) melalui statistik $F_{\text{change}}$ ($df_1 = 3, df_2 = N - 8$).
+  - Koreksi terminologi statistik: mengganti "standarisasi skor rata-rata" menjadi "pemusatan rata-rata (*mean-centering*)", serta mengklarifikasi fungsinya dalam mereduksi multikolinearitas non-esensial antara prediktor dengan produk interaksinya tanpa mengubah nilai $R^2$ maupun koefisien interaksi.
+  - Koreksi dasar hukum kriteria inklusi usia 17 tahun: mengeliminasi Pasal 330 KUHPerdata (yang sebenarnya mengatur usia 21 tahun), beralih ke UU No. 24 Tahun 2013 tentang Administrasi Kependudukan (KTP sebagai bukti kedewasaan sipil/administratif), diskresi keuangan mandiri, dan kapasitas memberikan *informed consent*.
+  - Penyempurnaan instrumen kuesioner Tabel 3.2:
+    - $X_1$ butir X1.4: diselaraskan dengan dimensi *Role Shopping* Arnold & Reynolds (2003) (berbelanja untuk dihadiahkan/dimainkan bersama teman atau keluarga).
+    - $X_3$ butir X3.1–X3.5: mengeliminasi istilah percakapan non-formal "cuan" menjadi istilah akademik "apresiasi modal / potensi laba finansial", serta butir X3.2 mengukur persepsi kemudahan mencairkan kartu menjadi uang tunai di pasar sekunder (likuiditas riil).
+    - $M$ butir M1–M6: dirumuskan sebagai kapasitas volisional regulasi diri umum (Tangney BSCS 2004) dan kepatuhan anggaran, guna menjamin validitas diskriminan terhadap perilaku belanja kasir $Y$.
+  - Rekonsiliasi sitasi gap Bab 1: menghapus kontradiksi internal `prasetio2021hedonic` dari kelompok tidak signifikan di Bab 1 (diganti Zheng et al. 2019 dan Tirtayasa et al. 2020), dan mempertahankan Prasetio (2021) di kelompok pengaruh positif di Bab 2.
+  - Perbaikan tipografi & editorial: koreksi typo "dimediasi" menjadi "dimoderasi" pada H5, koreksi persentase lonjakan produksi menjadi "sebesar 125%", perbaikan legenda Gambar 2.1, dan penyempurnaan label diagram alur Gambar 3.1.
+* **Masalah yang Diselesaikan:**
+  - Menyelamatkan validitas metodologi ekonometrika dari kesalahan fatal percampuran efek langsung $M$ dengan efek interaksi moderasi pada uji $F_{\text{change}}$ dan $\Delta R^2$.
+  - Mencegah mahasiswa terpojok dalam seminar proposal akibat kesalahan kutipan fakta hukum perdata (KUHPerdata Pasal 330) dan kontradiksi sitasi gap antar-bab.
+  - Mengamankan validitas konstruk instrumen penelitian sebelum disebarkan ke responden survei lapangan.
+* **Keputusan / Output Teknis:**
+  - Dokumen PRD Arsitektur: `[[04_Riset_&_Metodologi/PRD_RESOLUSI_REVIEW_TEKNIS_PRISM_AI.md]]`.
+  - Catatan Riwayat Audit: `[[07_Review_&_Audit/Revisi_Dosen/2026-09-14_Review_Teknis_Prism_AI_dan_Matriks_Resolusi.md]]`.
+  - Keputusan Terkunci: D20 ditambahkan ke `[[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]]`.
+  - Master XeLaTeX Terkompilasi Bebas Galat:
+    - `[[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]]` (54 halaman — melampaui batas minimal 50 halaman K-02 UKRIDA 2023).
+    - `[[01_Naskah_Utama/Proposal_Arthur_NoBab3.pdf]]` (35 halaman — naskah bersih untuk bimbingan dosen).
+  - Generator Word & Output DOCX Bersih:
+    - `[[execution/build_proposal_word.py]]` diperbarui (OMML equations, clean text regex, Abstrak & Abstract updated).
+    - `[[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]]` dan `[[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]]`.
+  - Seluruh Skrip Verifikasi Lulus 100%:
+    - `[[execution/verify_docx_typography.py]]`: PASS 100% (Pure Black, 0 stray asterisks/dollars/LaTeX commands, valid dot leaders & 12pt abstracts).
+    - `[[execution/verify_word_outline.py]]`: PASS 100% (56 heading terverifikasi).
+    - `[[execution/verify_pdf_docx_parity.py]]`: PASS 100% (Paritas sempurna NoBab3 dan Full Proposal).
+    - `[[execution/verify_format_and_typos.py]]`: PASS 100% (Margin 4-4-3-3, APA 7th tables, 0 typo/leakage).
