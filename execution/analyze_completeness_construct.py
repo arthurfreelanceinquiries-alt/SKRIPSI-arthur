@@ -15,19 +15,19 @@ except ImportError:
 PAPERS_TO_SCAN = [
     {
         "name": "Barasz et al. (2017) - Pseudo-Set Framing",
-        "path": "05_Referensi_Jurnal_PDF/02_Jurnal_Teori_&_Metodologi/2017_Barasz_et_al_Pseudo_Set_Framing.pdf"
+        "path": "06_Referensi_Jurnal_PDF/02_Jurnal_Teori_&_Metodologi/2017_Barasz_et_al_Pseudo_Set_Framing.pdf"
     },
     {
         "name": "Tan & Adyantari (2024) - Bisma UNEJ",
-        "path": "05_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2024_Tan_Adyantari_Blind_Box_Impulsive_Bisma.pdf"
+        "path": "06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2024_Tan_Adyantari_Blind_Box_Impulsive_Bisma.pdf"
     },
     {
         "name": "Dewi et al. (2024) - Locus",
-        "path": "05_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2024_Dewi_et_al_Impulse_Buying_Blind_Box_Indonesia_Locus.pdf"
+        "path": "06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2024_Dewi_et_al_Impulse_Buying_Blind_Box_Indonesia_Locus.pdf"
     },
     {
         "name": "Aryadi & Lingga (2024) - Atlantis Press (TCG Jakarta)",
-        "path": "05_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2024_Aryadi_Lingga_TCG_Collectibles_Jakarta_Springer_Atlantis.pdf"
+        "path": "06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2024_Aryadi_Lingga_TCG_Collectibles_Jakarta_Springer_Atlantis.pdf"
     }
 ]
 

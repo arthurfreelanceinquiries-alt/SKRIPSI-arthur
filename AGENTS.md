@@ -62,8 +62,41 @@ Errors are learning opportunities. When something breaks:
 
 **Key principle:** Local files are only for processing. Deliverables live in cloud services (Google Sheets, Slides, etc.) where the user can access them. Everything in `.tmp/` can be deleted and regenerated.
 
+## Obsidian Second Brain & Graphify Integration
+
+This workspace is coupled with an Obsidian Second Brain and Graphify knowledge graph:
+1. **Session Start (Pre-Flight):**
+   - Read `graphify-out/manifest.json` or `graphify-out/GRAPH_REPORT.md` to load active entity clusters and file dependencies.
+   - Read `00_DASHBOARD_SECOND_BRAIN.md` to load thesis status, research constructs, and active priorities.
+2. **In-Flight Documentation (Purpose-Driven):**
+   - Every note, PRD, or analytical markdown document must begin with:
+     ```markdown
+     > [!SUMMARY] Tujuan & Solusi Catatan Ini
+     > - **Untuk Apa:** [Tujuan catatan/pekerjaan]
+     > - **Masalah yang Diselesaikan:** [Solusi masalah]
+     > - **Keputusan/Output:** [Hasil akhir]
+     ```
+   - Connect concepts with bidirectional links `[[...]]`.
+3. **Auto-Capture & Session Logging:**
+   - Record significant breakthroughs, bimbingan decisions, and structural changes to `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md`.
+
+## Mandatory Thesis Parity & Quality Directives (Inviolable)
+
+Whenever modifying the skripsi manuscript or related code, you MUST follow:
+- [[04_Riset_&_Metodologi/PRD_SINKRONISASI_DOCX_DAN_AUDIT_FILE.md]]
+- [[04_Riset_&_Metodologi/PRD_REVISI_DOCX_KUALITAS_LATEX.md]]
+- [[directives/generate_thesis_word_document.md]]
+- [[.agents/rules/mandatory_thesis_sync_and_quality.md]]
+
+**Key Non-Negotiables:**
+1. **Zero Desync:** LaTeX master (`Proposal_Arthur_NoBab3.pdf`) is the source of truth; Word (`Proposal_Arthur_NoBab3.docx` and `Proposal_Arthur_PokemonTCG.docx`) must match 100%.
+2. **Pure Black (#000000):** 0 theme colors anywhere. Explicit `#000000` on all headings, titles, tables, and footers.
+3. **Universal TOC Compatibility:** Tab stop strictly at 14.0 cm (7938 dxa) with `w:leader="dot"`, `right_indent = 0` (no conflicting right indent), and dedicated `<w:tab/>` run.
+4. **Mandatory Verification:** Before finishing, execute `python execution/verify_docx_typography.py` and `python execution/verify_pdf_docx_parity.py`. Both must PASS.
+
 ## Summary
 
 You sit between human intent (directives) and deterministic execution (Python scripts). Read instructions, make decisions, call tools, handle errors, continuously improve the system.
 
 Be pragmatic. Be reliable. Self-anneal.
+

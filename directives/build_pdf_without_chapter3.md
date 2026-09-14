@@ -28,6 +28,9 @@ Standar Operasional Prosedur (SOP) resmi untuk menghasilkan dokumen PDF proposal
 
 ## 4. Spesifikasi Pemotongan Bab 3
 - **Konten yang Dihilangkan:**
+  - Lembar Pernyataan Keaslian Karya Tugas Akhir.
+  - Lembar Persetujuan Proposal Skripsi.
+  - Lembar Pengesahan Tim Penguji Seminar Proposal Skripsi.
   - Heading bab: `\section*{BAB 3\\[0.3cm]METODE PENELITIAN}`
   - Entri TOC Bab 3: `\addcontentsline{toc}{section}{\texorpdfstring{BAB 3\quad METODE PENELITIAN}{BAB 3 METODE PENELITIAN}}`
   - Seluruh sub-bab (3.1 sampai 3.5 beserta seluruh paragraf dan rumus MRA).
@@ -35,16 +38,13 @@ Standar Operasional Prosedur (SOP) resmi untuk menghasilkan dokumen PDF proposal
   - Tabel 3.2 (Operasionalisasi Variabel Penelitian).
   - Tabel 3.3 (Jadwal Penelitian).
 - **Konten yang Dipertahankan 100%:**
-  - Halaman Judul Luar / Sampul (hal. i).
-  - Halaman Judul Dalam (hal. ii).
-  - Lembar Persetujuan Pembimbing (hal. iii).
-  - Lembar Pengesahan Tim Penguji (hal. iv).
-  - Kata Pengantar (hal. v).
-  - Abstrak Bahasa Indonesia (hal. vi).
-  - Abstract Bahasa Inggris (hal. vii).
+  - Halaman Judul Luar / Sampul (hal. i) dengan logo resmi UKRIDA.
+  - Kata Pengantar (hal. ii).
+  - Abstrak Bahasa Indonesia.
+  - Abstract Bahasa Inggris.
   - Daftar Isi (TOC) — diperbarui otomatis oleh XeLaTeX, hanya memuat BAB 1, BAB 2, DAFTAR PUSTAKA.
   - Daftar Tabel (LOT) — hanya memuat Tabel 2.1.
-  - Daftar Gambar (LOF) — memuat Gambar 2.1 (Rerangka Konseptual via TikZ).
+  - Daftar Gambar (LOF) — memuat Gambar 1.1, 1.2, 2.1 (Rerangka Konseptual via TikZ).
   - Bab 1 Pendahuluan (1.1 - 1.4).
   - Bab 2 Kajian Pustaka & Pengembangan Hipotesis (2.1 - 2.5).
   - Daftar Pustaka (seluruh referensi yang disitasi di Bab 1 & Bab 2).

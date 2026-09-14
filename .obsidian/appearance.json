@@ -1,1 +1,5 @@
-{}
+{
+  "enabledCssSnippets": [
+    "copy-button-style"
+  ]
+}

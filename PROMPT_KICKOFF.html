@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Kickoff — Antigravity & Obsidian Second Brain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #090d16;
+      --bg-surface: #0f172a;
+      --bg-card: rgba(30, 41, 59, 0.65);
+      --bg-card-hover: rgba(30, 41, 59, 0.9);
+      --border-card: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+
+      --text-main: #f8fafc;
+      --text-sub: #94a3b8;
+      --text-muted: #64748b;
+
+      --primary-blue: #2563eb;
+      --primary-blue-hover: #1d4ed8;
+      --accent-gold: #f59e0b;
+      --accent-emerald: #10b981;
+      --accent-purple: #8b5cf6;
+
+      --font-title: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', Consolas, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 36px 20px 60px 20px;
+      line-height: 1.6;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(37, 99, 235, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(245, 158, 11, 0.08) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 960px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-card);
+      border-radius: 20px;
+      padding: 28px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #3b82f6, #f59e0b, #10b981);
+    }
+
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(37, 99, 235, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      width: fit-content;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+
+    h1 {
+      font-family: var(--font-title);
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+    }
+
+    .subtitle {
+      color: var(--text-sub);
+      font-size: 14.5px;
+      max-width: 800px;
+    }
+
+    /* QUICK STATUS PILLS */
+    .status-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .status-pill {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-sub);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .status-pill strong {
+      color: var(--text-main);
+    }
+
+    /* GRID CARDS */
+    .cards-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* PROMPT CARD */
+    .prompt-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-card);
+      border-radius: 18px;
+      padding: 24px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: all 0.25s ease;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .prompt-card:hover {
+      border-color: rgba(59, 130, 246, 0.4);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    .prompt-card.featured {
+      border: 1.5px solid rgba(59, 130, 246, 0.5);
+      background: linear-gradient(180deg, rgba(30, 41, 59, 0.85) 0%, rgba(15, 23, 42, 0.95) 100%);
+      box-shadow: 0 12px 36px rgba(37, 99, 235, 0.15);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .card-title-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .tag-featured {
+      background: #f59e0b;
+      color: #000000;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 6px;
+      width: fit-content;
+      margin-bottom: 2px;
+      letter-spacing: 0.5px;
+    }
+
+    .card-title {
+      font-family: var(--font-title);
+      font-size: 19px;
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-desc {
+      font-size: 13.5px;
+      color: var(--text-sub);
+    }
+
+    /* COPY BUTTON */
+    .btn-copy {
+      background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-hover));
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 10px 22px;
+      font-size: 13.5px;
+      font-weight: 700;
+      font-family: var(--font-body);
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      flex-shrink: 0;
+    }
+
+    .btn-copy:hover {
+      background: linear-gradient(135deg, #1d4ed8, #1e40af);
+      transform: scale(1.03);
+      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.5);
+    }
+
+    .btn-copy:active {
+      transform: scale(0.97);
+    }
+
+    .btn-copy.copied {
+      background: linear-gradient(135deg, #059669, #10b981) !important;
+      border-color: #34d399 !important;
+      box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4) !important;
+    }
+
+    /* PROMPT TEXT PREVIEW BOX */
+    .prompt-box {
+      background: rgba(10, 14, 23, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 16px;
+      position: relative;
+    }
+
+    .prompt-text {
+      font-family: var(--font-mono);
+      font-size: 12.8px;
+      color: #e2e8f0;
+      white-space: pre-wrap;
+      line-height: 1.6;
+      max-height: 160px;
+      overflow-y: auto;
+      padding-right: 8px;
+    }
+
+    /* CUSTOM SCROLLBAR */
+    .prompt-text::-webkit-scrollbar {
+      width: 6px;
+    }
+    .prompt-text::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 4px;
+    }
+
+    /* TOAST NOTIFICATION */
+    .toast {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      background: #0f172a;
+      color: #ffffff;
+      border: 1.5px solid #10b981;
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), 0 0 20px rgba(16, 185, 129, 0.3);
+      transform: translateY(120px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1000;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <div class="header-badge">🚀 ANTIGRAVITY + OBSIDIAN SECOND BRAIN</div>
+      <h1>Dashboard Kickoff Prompt Skripsi</h1>
+      <p class="subtitle">
+        Pilih prompt di bawah ini, <strong>klik 1 kali tombol "Salin Prompt"</strong>, lalu langsung tempel (<strong>Ctrl+V</strong>) ke chat Antigravity IDE untuk memulai sesi dengan sinkronisasi konteks 100% utuh.
+      </p>
+
+      <div class="status-bar">
+        <span class="status-pill">📚 Objek: <strong>Pokémon TCG Booster Pack</strong></span>
+        <span class="status-pill">🎓 Kampus: <strong>FEB UKRIDA (Manajemen Keuangan)</strong></span>
+        <span class="status-pill">👩‍🏫 Pembimbing: <strong>Dr. Fredella Colline</strong></span>
+        <span class="status-pill">📄 Status: <strong>Proposal Lengkap (46 Hal) & NoBab3 (33 Hal)</strong></span>
+      </div>
+    </header>
+
+    <!-- CARDS GRID -->
+    <div class="cards-grid">
+
+      <!-- CARD 1: DEFAULT KICKOFF -->
+      <div class="prompt-card featured">
+        <div class="card-header">
+          <div class="card-title-group">
+            <span class="tag-featured">Paling Direkomendasikan (Default)</span>
+            <div class="card-title">⚡ Opsi 1: Mulai Sesi Utama (Anti-Lupa Konteks)</div>
+            <div class="card-desc">Memerintahkan AI membaca Graphify, Dashboard Obsidian, dan Source of Truth secara otomatis.</div>
+          </div>
+          <button class="btn-copy" onclick="copyPrompt('prompt1', this)">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Salin Prompt</span>
+          </button>
+        </div>
+
+        <div class="prompt-box">
+          <pre class="prompt-text" id="prompt1">Halo! Tolong jalankan skill "obsidian-second-brain" dan mulai sesi kerja skripsi ini dengan protokol anti-lupa konteks:
+
+1. [BACA PENGETAHUAN KODE & GRAF]: Tolong periksa `graphify-out/manifest.json` dan `graphify-out/GRAPH_REPORT.md` agar kamu memahami seluruh relasi file, dependensi script, dan entitas skripsi ini.
+2. [BACA KOKPIT OBSIDIAN]: Tolong baca `00_DASHBOARD_SECOND_BRAIN.md` dan `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` untuk memuat status naskah aktif, parameter variabel penelitian (Y: Impulsive Buying, X1: Hedonic, X2: Completeness, X3: Speculative, Z: Self-Control), dan catatan bimbingan Ibu Dr. Fredella Colline.
+3. [ATURAN DOKUMENTASI]: Pastikan setiap catatan/analisis baru di markdown selalu diawali dengan callout `> [!SUMMARY]` (Untuk apa & masalah apa yang diselesaikan), gunakan link `[[...]]`, dan patuhi arsitektur 3-Layer (directives -> orchestration -> execution).
+4. [AUTO-LOGGING]: Tolong catat progres atau keputusan penting sesi ini ke `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md`.
+
+Setelah kamu membaca file-file di atas, tolong berikan ringkasan 3 poin:
+- Status terkini naskah proposal (lengkap & tanpa Bab 3).
+- Konteks penelitian yang aktif di ingatanmu.
+- Tanyakan apa fokus pekerjaan yang ingin kita selesaikan hari ini!</pre>
+        </div>
+      </div>
+
+      <!-- CARD 2: REVISI DOSEN -->
+      <div class="prompt-card">
+        <div class="card-header">
+          <div class="card-title-group">
+            <div class="card-title">📝 Opsi 2: Sesi Bimbingan Dosen & Catatan Revisi</div>
+            <div class="card-desc">Gunakan saat Anda baru menerima chat/arahan dari Dosen Pembimbing untuk dieksekusi ke naskah.</div>
+          </div>
+          <button class="btn-copy" onclick="copyPrompt('prompt2', this)">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Salin Prompt</span>
+          </button>
+        </div>
+
+        <div class="prompt-box">
+          <pre class="prompt-text" id="prompt2">Halo! Jalankan skill "obsidian-second-brain". Saya baru saja mendapat catatan/revisi dari Dosen Pembimbing (Ibu Dr. Fredella Colline).
+
+1. Tolong baca `00_DASHBOARD_SECOND_BRAIN.md` dan file naskah induk `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex`.
+2. Saya akan tempelkan catatan bimbingan dosen di chat berikutnya.
+3. Tolong buatkan analisis perubahannya, petakan ke bab mana saja yang terdampak, gunakan format `> [!SUMMARY]`, dan catat ke `07_Review_&_Audit/Revisi_Dosen/` serta `LOG_SESI_SECOND_BRAIN.md`.
+
+Apakah kamu siap menerima catatan bimbingannya?</pre>
+        </div>
+      </div>
+
+      <!-- CARD 3: SIMULASI SIDANG -->
+      <div class="prompt-card">
+        <div class="card-header">
+          <div class="card-title-group">
+            <div class="card-title">🎯 Opsi 3: Simulasi Sidang & Pertanyaan Sulit</div>
+            <div class="card-desc">AI akan bertindak sebagai Dosen Penguji Sidang yang menguji mental dan penguasaan materi Anda.</div>
+          </div>
+          <button class="btn-copy" onclick="copyPrompt('prompt3', this)">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Salin Prompt</span>
+          </button>
+        </div>
+
+        <div class="prompt-box">
+          <pre class="prompt-text" id="prompt3">Halo! Jalankan skill "obsidian-second-brain". Hari ini saya ingin berlatih persiapan sidang/seminar proposal skripsi Pokémon TCG.
+
+1. Tolong baca `02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md` dan `02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/03_PERTANYAAN_SIDANG_SULIT.md`.
+2. Bertindaklah sebagai Dosen Penguji Sidang yang kritis namun konstruktif.
+3. Berikan saya 1 pertanyaan sidang (mulai dari level dasar hingga jebakan seperti SULIT 11 tentang asal-usul referensi). Tunggu jawaban saya, lalu berikan nilai dan evaluasi cara menjawab yang lebih tajam!
+
+Bisa kita mulai dari pertanyaan pertama?</pre>
+        </div>
+      </div>
+
+      <!-- CARD 4: AUDIT & PDF -->
+      <div class="prompt-card">
+        <div class="card-header">
+          <div class="card-title-group">
+            <div class="card-title">🔍 Opsi 4: Cek Kesehatan Naskah & Verifikasi PDF</div>
+            <div class="card-desc">Memvalidasi logo vektor UKRIDA, konsistensi halaman, dan kompilasi PDF tanpa error.</div>
+          </div>
+          <button class="btn-copy" onclick="copyPrompt('prompt4', this)">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Salin Prompt</span>
+          </button>
+        </div>
+
+        <div class="prompt-box">
+          <pre class="prompt-text" id="prompt4">Halo! Jalankan skill "obsidian-second-brain". Tolong lakukan audit kesehatan naskah dan build pipeline:
+
+1. Periksa integritas file di `01_Naskah_Utama/` (pastikan logo UKRIDA pentagram vektor terpasang baik di proposal lengkap maupun proposal tanpa Bab 3).
+2. Jalankan skrip verifikasi `execution/verify_nobab3_pdf.py` dan `execution/verify_pdf_headers.py`.
+3. Laporkan status kompilasi PDF dan pastikan dokumen Word (.docx) tetap sinkron.</pre>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      Repository Skripsi Arthur — Konsentrasi Manajemen Keuangan FEB UKRIDA • 3-Layer System
+    </footer>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast">
+    <svg width="20" height="20" fill="none" stroke="#10b981" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toast-text">Prompt berhasil disalin ke clipboard!</span>
+  </div>
+
+  <script>
+    function copyPrompt(id, btn) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        // Change button state
+        const originalHTML = btn.innerHTML;
+        btn.classList.add('copied');
+        btn.innerHTML = `
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span>Tersalin!</span>
+        `;
+
+        // Show Toast
+        const toast = document.getElementById('toast');
+        toast.classList.add('show');
+
+        // Reset after 2.2s
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          btn.innerHTML = originalHTML;
+          toast.classList.remove('show');
+        }, 2200);
+      }).catch(err => {
+        console.error('Failed to copy text: ', err);
+      });
+    }
+  </script>
+</body>
+</html>

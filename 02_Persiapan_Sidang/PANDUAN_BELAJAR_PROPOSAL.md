@@ -8,7 +8,7 @@
 
 > [!NOTE]
 > **Panduan ini telah disinkronisasi penuh dengan arahan revisi Dosen Pembimbing (Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A) per 9 September 2026.**  
-> Dokumen ini memuat penguasaan materi komprehensif BAB 1–3, argumen teoretis, justifikasi pemilihan variabel, konteks ekosistem Pokémon, industri sertifikasi *grading*, serta simulasi 16 pertanyaan kritis sidang/bimbingan.
+> Dokumen ini memuat penguasaan materi komprehensif BAB 1–3, argumen teoretis, justifikasi pemilihan variabel, konteks ekosistem Pokémon, industri sertifikasi *grading*, serta simulasi 17 pertanyaan kritis sidang/bimbingan.
 
 > **Versi:** 2.0 (9 September 2026)  
 > **Disinkronisasi dengan:** Naskah Proposal TeX/PDF (42 Halaman), `BAB_I_PENDAHULUAN.md`, `BAB_II_TINJAUAN_PUSTAKA.md`, `BAB_III_METODE_PENELITIAN.md`, dan `SOURCE_OF_TRUTH.md` v5.0.
@@ -25,7 +25,7 @@
 7. [Penelitian Terdahulu & Pemetaan Anteseden Impulsive Buying](#7-penelitian-terdahulu--anteseden-impulsive-buying)
 8. [Logika Kausalitas & 4-Tier Pembuktian Hipotesis (H1–H6)](#8-logika-kausalitas--pembuktian-hipotesis)
 9. [Metodologi Penelitian & Teknik Analisis MRA](#9-metodologi-penelitian--teknik-analisis-mra)
-10. [Simulasi Pertanyaan Bimbingan/Sidang & Kunci Jawaban (16 Skenario)](#10-simulasi-pertanyaan-bimbingan-sidang--kunci-jawaban)
+10. [Simulasi Pertanyaan Bimbingan/Sidang & Kunci Jawaban (17 Skenario)](#10-simulasi-pertanyaan-bimbingan-sidang--kunci-jawaban)
 11. [Cheat Sheet 1 Halaman (Hafalan Kilat Menjelang Sidang)](#11-cheat-sheet-1-halaman)
 
 ---
@@ -388,6 +388,23 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 > - **Butir 4–6:** Menguji efek interaksi pemoderasi *Self-Control* pada masing-masing jalur pengaruh langsung tersebut melalui metode MRA (*Moderated Regression Analysis*).  
 > 
 > **Mengenai referensi jurnal:** Penambahan butir tersebut **TIDAK memerlukan penambahan referensi baru**, karena ini adalah sinkronisasi formal antara Bab 1 dengan Bab 2 & Bab 3. Seluruh landasan teoretis untuk hipotesis moderasi (seperti *Self-Regulation Theory* oleh Baumeister 2002; model *Planner-Doer* oleh Thaler & Shefrin 1981; dan skala BSCS oleh Tangney et al. 2004) serta penelitian empiris pendukung (Apidana & Kholifah, 2022; Lienardy & Panasea, 2024; Artadita & Firmialy, 2024; Sultan et al., 2012; Katauke et al., 2023) **sudah tercakup secara lengkap dan komprehensif dalam 72 referensi ilmiah** pada naskah dan daftar pustaka proposal."
+
+---
+
+### ❓ Pertanyaan 17: "Bagaimana Anda memperoleh dan menelusuri referensi teori dan jurnal ilmiah yang begitu banyak dalam proposal ini?"
+> **💡 Jawaban Singkat (Situasi Kasual/Bimbingan):**  
+> *"Saya menelusurinya secara sistematis melalui **Google Scholar**, portal **ScienceDirect (Elsevier)**, dan **SINTA Kemendiktisaintek**, Pak/Bu. Untuk menemukan teori-teori dasarnya, saya menggunakan teknik **citation tracking (snowballing)**—yaitu membaca jurnal-jurnal empiris mutakhir 2023–2024 yang meneliti blind-box dan TCG, lalu menelusuri daftar pustaka mereka ke belakang untuk menarik garis lurus ke teori babon aslinya seperti S-O-R Mehrabian & Russell, Teori Prospek Kahneman-Tversky, dan skala kontrol diri Tangney."*
+>
+> **💡 Jawaban Mendalam (Situasi Seminar Proposal / Sidang Skripsi):**  
+> *"Jika ditinjau berdasarkan kelompok literatur ilmiahnya, saya mengelompokkannya ke dalam tiga pilar penelusuran:  
+> 1. **10 Jurnal Empiris Utama (2021–2025):** Seluruh file PDF naskah lengkapnya (*full-text*) telah saya unduh dan simpan di folder referensi. Jurnal-jurnal mutakhir ini berasal dari penerbit bereputasi internasional seperti **Elsevier (Heliyon - Scopus Q1)**, **MDPI (Sustainability - Scopus Q1)**, **Springer Nature**, serta jurnal nasional terindeks **SINTA 2** (seperti Jurnal Bisma Universitas Jember).  
+> 2. **Grand Theory & Buku Teori Klasik (1974–2000):** Untuk teori babon seperti *Environmental Psychology* Mehrabian & Russell (1974), *Collecting Behavior* Russell Belk (1995), dan *Irrational Exuberance* Robert Shiller (2000), sumber aslinya berupa buku teks monograf cetak. Saya mempelajari konsep bab intinya melalui repositori e-book perpustakaan, Google Books, dan tinjauan literatur pada artikel jurnal seminal.  
+> 3. **Skala Pengukuran Baku Kuesioner:** Untuk instrumen operasionalisasi variabel, saya menelusuri penelitian terdahulu yang mengadopsi instrumen tersebut di Indonesia—misalnya artikel Artadita & Firmialy (2024, Binus Business Review, Scopus Q3) yang mengadopsi *Brief Self-Control Scale* (BSCS) dari Tangney et al. (2004), lalu saya lakukan *cross-check* ke skala aslinya untuk menjamin validitas isi kuesioner. Khusus untuk paper *Pseudo-Set Framing* Barasz et al. (2017), naskah lengkapnya saya peroleh dari repositori universitas terbuka Harvard DASH (Digital Access to Scholarship at Harvard)."*
+>
+> **🎯 Tiga Kunci Penguat Argumen:**  
+> - **Teknik Metodologis:** Sebutkan istilah *"Citation Chaining / Snowballing"* (mahasiswa menelusuri silsilah sitasi secara terstruktur).  
+> - **Portal Resmi Legal:** Sebutkan akses melalui *E-Resources Perpusnas RI* atau *e-Library Kampus UKRIDA*.  
+> - **Bukti Fisik:** Tunjukkan bahwa seluruh arsip naskah telah terkatalogisasi rapi di folder `06_Referensi_Jurnal_PDF/KATALOG_REFERENSI_JURNAL.md`.
 
 ---
 

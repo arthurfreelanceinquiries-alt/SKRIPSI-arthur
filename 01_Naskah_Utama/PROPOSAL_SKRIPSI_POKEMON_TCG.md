@@ -242,14 +242,43 @@ Penelitian ini menawarkan kebaruan teoritis (*novelty*) dengan mengintegrasikan 
 
 ## 1.1 Latar Belakang Penelitian
 
-Waralaba media (*media franchise*) Pokémon yang diciptakan oleh Satoshi Tajiri bersama Game Freak dan diluncurkan oleh Nintendo pada tahun 1996 di Jepang telah berkembang menjadi fenomena budaya pop global paling berpengaruh di dunia. Berdasarkan data agregasi industri media internasional, Pokémon dinobatkan sebagai waralaba media dengan pendapatan tertinggi sepanjang masa (*the highest-grossing media franchise in history*), dengan estimasi pendapatan kotor kumulatif melampaui USD 100 miliar. Angka ini melampaui waralaba legendaris dunia lainnya seperti *Star Wars*, *Marvel Cinematic Universe*, maupun *Mickey Mouse*. Keberhasilan masif ini dibangun di atas fondasi ekosistem multimedia yang saling memperkuat:
+Waralaba media (*media franchise*) Pokémon yang diciptakan oleh Satoshi Tajiri bersama Game Freak dan diluncurkan oleh Nintendo pada tahun 1996 di Jepang telah berkembang menjadi fenomena budaya pop global paling berpengaruh di dunia. Berdasarkan data agregasi industri media internasional, Pokémon dinobatkan sebagai waralaba media dengan pendapatan tertinggi sepanjang masa (*the highest-grossing media franchise in history*), dengan estimasi pendapatan kotor kumulatif melampaui US\$ 105,0 miliar. Angka ini melampaui waralaba legendaris dunia lainnya seperti *Mickey Mouse*, *Star Wars*, maupun *Marvel Cinematic Universe*. Keberhasilan masif ini dibangun di atas fondasi ekosistem multimedia yang saling memperkuat:
 - **Lini Permainan Video (*Video Games*):** Dimulai dari RPG Generasi I (*Pokémon Red/Green/Blue*) di konsol Nintendo Game Boy hingga Generasi IX (*Pokémon Scarlet/Violet*) di Nintendo Switch, serta revolusi permainan seluler berbasis *Augmented Reality* *Pokémon GO* yang memecahkan rekor interaksi ratusan juta pemain global secara simultan, disusul inovasi digital mutakhir seperti *Pokémon Sleep*, *Pokémon UNITE*, dan *Pokémon Trading Card Game Pocket*.
 - **Lini Animasi dan Film Bioskop:** Serial televisi anime yang mengisahkan 25 tahun perjalanan Satoshi (Ash Ketchum) dan Pikachu yang telah ditayangkan di lebih dari 190 negara, deretan film layar lebar monumental seperti *Pokémon: The First Movie – Mewtwo Strikes Back* (1998) yang merajai *box office* dunia, film aksi langsung (*live-action*) Hollywood berpendapatan tinggi *Pokémon Detective Pikachu* (2019), hingga serial anime generasi terbaru *Pokémon Horizons*.
 - **Lini Lisensi, Merchandise, dan Gerai Ritel:** Jaringan gerai resmi *Pokémon Center* di berbagai kota metropolitan dunia serta penyelenggaraan turnamen tahunan bergengsi berskala internasional yakni *Pokémon World Championships*.
 
-Di antara seluruh pilar ekosistem multimedia tersebut, **permainan kartu fisik atau *Pokémon Trading Card Game* (Pokémon TCG)** memegang peranan yang paling sentral, monumental, dan memiliki perputaran ekonomi koleksi fisik (*physical collectibles*) terbesar di dunia. Hingga tahun 2024, The Pokémon Company mencatat bahwa produksi kumulatif kartu Pokémon fisik telah menembus lebih dari 52,9 miliar lembar kartu yang didistribusikan ke 93 wilayah dan diterjemahkan ke dalam 14 bahasa. Kartu Pokémon bukan lagi sekadar alat permainan meja (*tabletop game*) anak-anak, melainkan telah bertransformasi menjadi **instrumen aset alternatif koleksi (*alternative collectibles asset*)** bernilai ekonomi tinggi yang diperdagangkan secara aktif oleh kalangan dewasa muda, investor hobi, dan balai lelang global.
+Berdasarkan data komparasi industri media global, dominasi ekonomi waralaba Pokémon disajikan pada Gambar 1.1.
 
-Di Indonesia, kehadiran kartu resmi Pokémon TCG berbahasa Indonesia sejak tahun 2019 melalui The Pokémon Company bekerja sama dengan AKG Games (PT Adiperkasa Citra Lestari) mengalami akselerasi luar biasa. Strategi distribusinya sangat unik dan agresif: produk kartu tidak hanya dipasarkan melalui toko hobi khusus (*Local Game Stores* / LGS), melainkan didistribusikan secara masif di ribuan gerai jaringan ritel modern minimarket terkemuka (Indomaret, Alfamart, Gramedia, Toys Kingdom). Penempatan produk kartu langsung di etalase meja kasir ritel modern ini berhasil mendemokratisasi akses dan mengubah hobi kartu dari komunitas ceruk (*niche*) menjadi fenomena konsumsi populer berskala nasional. Minat masyarakat Indonesia—khususnya kalangan mahasiswa dan Generasi Z—terhadap kartu fisik ini didorong oleh konvergensi antara fungsi rekreasi permainan, prestise sosial, hobi mengoleksi kartu langka, serta motif spekulasi finansial.
+\begin{figure}[htbp]
+  \includegraphics[width=0.90\textwidth]{images/gambar1_1_media_franchise_ranking.png}
+  \caption{Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa}
+  \label{fig:media_franchise_ranking}
+  {\footnotesize *Sumber: Agregasi Riset TitleMax dan Statista (2024)*}
+\end{figure}
+
+Sebagaimana ditunjukkan pada Gambar 1.1, Pokémon menempati posisi puncak sebagai waralaba media nomor satu di dunia dengan total pendapatan melampaui US$ 105,0 miliar. Nilai ini bahkan lebih dari dua kali lipat pendapatan waralaba legendaris Disney *Mickey Mouse* (US$ 52,2 miliar) dan melampaui *Star Wars* (US$ 46,7 miliar) serta *Marvel Cinematic Universe* (US$ 38,5 miliar). Bukti empiris ini mengonfirmasi bahwa Pokémon bukan sekadar hiburan musiman anak-anak, melainkan entitas komersial raksasa dengan basis perputaran kapital lintas generasi yang sangat kokoh.
+
+Di antara seluruh pilar ekosistem multimedia tersebut, **permainan kartu fisik atau *Pokémon Trading Card Game* (Pokémon TCG)** memegang peranan yang paling sentral, monumental, dan memiliki perputaran ekonomi koleksi fisik (*physical collectibles*) terbesar di dunia. Hingga tahun 2024, The Pokémon Company mencatat bahwa produksi kumulatif kartu Pokémon fisik telah menembus lebih dari 64,8 miliar lembar kartu yang didistribusikan ke lebih dari 93 wilayah dan diterjemahkan ke dalam berbagai bahasa dunia. Kartu Pokémon bukan lagi sekadar alat permainan meja (*tabletop game*) anak-anak, melainkan telah bertransformasi menjadi **instrumen aset alternatif koleksi (*alternative collectibles asset*)** bernilai ekonomi tinggi yang diperdagangkan secara aktif oleh kalangan dewasa muda, investor hobi, dan balai lelang global. Akselerasi pertumbuhan produksi kartu Pokémon TCG secara global diilustrasikan pada Gambar 1.2.
+
+\begin{figure}[htbp]
+  \includegraphics[width=0.90\textwidth]{images/gambar1_2_pokemon_tcg_production_growth.png}
+  \caption{Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024}
+  \label{fig:pokemon_card_growth}
+  {\footnotesize *Sumber: The Pokémon Company Corporate Business Data (2024)*}
+\end{figure}
+
+Berdasarkan Gambar 1.2, terlihat jelas terjadinya lonjakan produksi kartu fisik yang sangat tajam dalam lima tahun terakhir. Pada Maret 2019, total produksi kumulatif global tercatat sebesar 28,8 miliar lembar kartu. Namun, pasca dimulainya ekspansi pencetakan kartu versi resmi bahasa lokal—termasuk peluncuran resmi kartu berbahasa Indonesia pada Agustus 2019—serta meledaknya tren hobi koleksi fisik selama masa pandemi, akumulasi produksi meroket lebih dari 125% hingga menembus 64,8 miliar lembar kartu pada Maret 2024. Pencetakan lebih dari 11,9 miliar lembar kartu hanya dalam kurun waktu satu tahun fiskal (2023–2024) mengindikasikan tingginya permintaan pasar dan mengonfirmasi terjadinya gelombang antusiasme belanja yang masif di kalangan konsumen.
+
+Di Indonesia, kehadiran kartu resmi Pokémon TCG berbahasa Indonesia sejak tahun 2019 melalui The Pokémon Company bekerja sama dengan AKG Games (PT Adiperkasa Citra Lestari) mengalami akselerasi luar biasa. Strategi distribusinya sangat unik dan agresif: produk kartu tidak hanya dipasarkan melalui toko hobi khusus (*Local Game Stores* / LGS), melainkan didistribusikan secara masif di ribuan gerai jaringan ritel modern minimarket terkemuka (Indomaret, Alfamart, Gramedia, Toys Kingdom). Penempatan produk kartu langsung di etalase meja kasir ritel modern ini berhasil mendemokratisasi akses dan mengubah hobi kartu dari komunitas ceruk (*niche*) menjadi fenomena konsumsi populer berskala nasional. Pangsa pasar Pokémon TCG di industri permainan kartu fisik diperkuat oleh estimasi data pada Gambar 1.3.
+
+\begin{figure}[htbp]
+  \includegraphics[width=0.78\textwidth]{images/gambar1_3_tcg_market_share_donut.png}
+  \caption{Estimasi Pangsa Pasar Industri Trading Card Game (TCG) Global Tahun 2024}
+  \label{fig:tcg_market_share}
+  {\footnotesize *Sumber: ICv2 dan TCGplayer Industry Research (2024)*}
+\end{figure}
+
+Sebagaimana disajikan pada Gambar 1.3, Pokémon TCG menguasai estimasi 41,5% pangsa pasar industri kartu koleksi fisik dunia, mengungguli waralaba kompetitor utama seperti Yu-Gi-Oh! (23,8%) dan Magic: The Gathering (21,2%). Dominasi pangsa pasar ini menciptakan likuiditas transaksi sekunder yang sangat tinggi di pasar daring Indonesia, serta memicu terbentuknya ekosistem kolektor aktif yang memperdagangkan kartu langka secara berkesinambungan. Minat masyarakat Indonesia—khususnya kalangan mahasiswa dan Generasi Z—terhadap kartu fisik ini didorong oleh konvergensi antara fungsi rekreasi permainan, prestise sosial, hobi mengoleksi kartu langka, serta motif spekulasi finansial.
 
 Dinamika pasar Pokémon TCG fisik di Indonesia memunculkan fenomena perilaku konsumsi yang sangat unik sekaligus problematis. Produk kartu fisik dijual dalam format kemasan acak tertutup (*blind pack* atau *booster pack*) dengan harga eceran resmi yang sangat terjangkau, berkisar antara Rp20.000 hingga Rp30.000 per bungkus (berisi 5 lembar kartu acak). Namun, di dalam bungkus tersebut tersimpan peluang probabilitas untuk menarik kartu dengan tingkat kelangkaan tinggi (*Special Illustration Rare / SAR*, kartu *Super Rare / SR*, atau *Ultra Rare / UR*). Di pasar sekunder daring (Tokopedia, Shopee, grup lelang Facebook, dan komunitas media sosial), kartu-kartu berkarakter favorit (seperti Charizard, Pikachu, atau kartu pelatih wanita/waifu populer) diperjualbelikan dengan harga fantastis mulai dari ratusan ribu hingga puluhan juta rupiah per lembar.
 
@@ -258,7 +287,7 @@ Fenomena disparitas harga pasar sekunder ini diperkuat oleh keberadaan industri 
 Disparitas nilai yang ekstrem dan mekanisme kemasan acak berbasis probabilitas (*gacha mechanism*) tersebut mendorong antusiasme transaksi yang berlebihan. Setiap kali ekspansi seri baru diluncurkan (seperti Seri 151, Kilau Hitam, atau Terastal), gerai ritel modern kerap diserbu antrean pembeli dan produk ludes terjual dalam hitungan jam. Banyak pembeli melakukan transaksi pembelian *booster pack* secara berulang-ulang, mendadak di kasir toko, dan tidak direncanakan sebelumnya dalam alokasi anggaran bulanan. Transaksi belanja yang tiba-tiba, didorong oleh letupan emosional sesaat, dan mengabaikan pertimbangan rasional ini mengindikasikan terjadinya gejala **pembelian impulsif (*impulsive buying*)** yang masif pada komoditas kartu Pokémon fisik di Indonesia.
 
 Fenomena *impulsive buying* telah lama menjadi pusat perhatian utama dalam literatur perilaku konsumen dan psikologi ekonomi. Stern (1962) dalam karya klasiknya mengklasifikasikan pembelian impulsif ke dalam empat kategori: *pure impulse*, *reminder impulse*, *suggestion impulse*, dan *planned impulse buying*. Rook (1987) mendefinisikan *impulsive buying* sebagai desakan pembelian yang terjadi seketika, kuat, dan persisten tanpa adanya pertimbangan kognitif sadar sebelumnya mengenai konsekuensi pengeluaran. Lebih lanjut, Beatty and Ferrell (1998) serta studi meta-analisis komprehensif oleh Amos et al. (2014) mengungkapkan bahwa keputusan pembelian impulsif sesungguhnya merupakan muara perilaku yang dipengaruhi oleh spektrum faktor penentu (*antecedents*) yang sangat luas dalam literatur ilmiah terdahulu:
-- **Faktor Emosional dan Afektif (*Affective Drivers*):** Meliputi motivasi berbelanja untuk kesenangan (*hedonic shopping motivations*), pencarian pelepasan stres dan petualangan (Babin et al., 1994; Arnold & Reynolds, 2003), suasana hati positif (*positive affect*), serta luapan kegembiraan sesaat (*excitement and arousal*) (Gültekin & Özer, 2012).
+- **Faktor Emosional dan Afektif (*Affective Drivers*):** Meliputi motivasi berbelanja untuk kesenangan (*hedonic shopping motivations*), pencarian pelepasan stres dan petualangan (\citealp{babin1994work}; \citealp{arnold2003hedonic}), suasana hati positif (*positive affect*), serta luapan kegembiraan sesaat (*excitement and arousal*) (\citealp{gueltekin2012influence}).
 - **Faktor Kognitif dan Psikologi Kolektor (*Cognitive and Collector Drivers*):** Meliputi ketegangan mental ketidaktuntasan himpunan (*Zeigarnik Effect*) (Zeigarnik, 1927), dorongan psikologis melengkapi set koleksi (*The Completing the Set Effect*) (Gao et al., 2014), pembingkaian himpunan semu (*Pseudo-Set Framing*) (Barasz et al., 2017), serta hasrat kepemilikan materialistik atas objek langka (Belk, 1995).
 - **Faktor Finansial dan Spekulasi Pasar (*Economic and Speculative Drivers*):** Meliputi ekspektasi apresiasi nilai modal (*capital gain*), likuiditas pasar sekunder, anomali psikologi pasar modal dan bias optimisme berlebihan (*overoptimism bias*) (Shiller, 2000; Baur et al., 2018), persepsi memenangkan lotre (*gambler's fallacy*), serta bias perilaku investor muda (Colline, 2024).
 - **Faktor Situasional dan Rangsangan Toko (*Situational and Atmospheric Drivers*):** Meliputi mekanisme kejutan kemasan tertutup (*blind pack mystery*), display etalase kasir yang memancing sentuhan fisik (*need for touch*) (Peck and Childers, 2006), diskon promosi sesaat, serta desakan kelangkaan stok fisik (Amos et al., 2014).
@@ -373,20 +402,20 @@ Berikut disajikan ringkasan penelitian-penelitian terdahulu yang relevan dengan 
 
 **Tabel 2.1 Ringkasan Penelitian Sebelumnya**
 
-| No | Peneliti (Tahun) | Judul Penelitian | Variabel & Metode | Hasil Utama Penelitian |
+| No | Peneliti (Tahun) | Judul Penelitian | Variabel & Metode | Hasil Utama |
 |:--:|:--|:--|:--|:--|
-| 1 | Arnold & Reynolds (2003) | *Hedonic Shopping Motivations* | Motivasi hedonis; Analisis faktor | Mengidentifikasi 6 dimensi hedonis; kesenangan emosional memicu belanja spontan. |
-| 2 | Gültekin & Özer (2012) | *The Influence of Hedonic Motives on Impulse Buying* | X: *Hedonic motives*; Y: *Impulse buying*; Regresi | Motivasi hedonis berpengaruh positif signifikan terhadap *impulsive buying*. |
-| 3 | Gao, Huang, & Simonson (2014) | *The "Completing the Set" Effect* | X: *Set framing*; Y: Niat beli; Desain eksperimen | Hasrat melengkapi set secara signifikan memicu pembelian terburu-buru dan spontan. |
-| 4 | Barasz et al. (2017) | *Pseudo-Set Framing toward Completeness* | X: *Pseudo-set*; Y: Keputusan beli; Eksperimen | Pembingkaian item sebagai kesatuan himpunan menciptakan dorongan melengkapi item. |
-| 5 | Shiller (2000) | *Irrational Exuberance* | X: Spekulasi, psikologi pasar; Y: Gelembung harga | Bias optimisme pasar memicu euforia transaksi spekulatif spontan berlebihan. |
-| 6 | Baur, Hong, & Lee (2018) | *Alternative Collectibles Speculative Dynamics* | X: Motif spekulasi; Y: Volume transaksi | Pasar aset alternatif memperlihatkan dinamika transaksi spekulatif mirip aset finansial. |
-| 7 | Vohs & Faber (2007) | *Self-Regulatory Resource Depletion* | X: Penipisan kontrol diri; Y: *Impulse buying*; Eksperimen | Kegagalan kontrol diri meningkatkan belanja impulsif; kontrol diri tinggi membatasi belanja spontan. |
-| 8 | Sultan, Joireman, & Sprott (2012) | *Building Consumers' Impulsive Buying Model* | X: Stimulus emosi; Y: *Impulse*; Mod: *Self-control*; SEM | Kontrol diri secara signifikan memperlemah pengaruh dorongan emosional terhadap *impulse buying*. |
-| 9 | Fitriyani, Widodo, & Fauzi (2022) | Hubungan *Hedonic Shopping* dengan *Impulse Buying* | X: *Hedonic motivation*; Y: *Impulse buying*; Regresi | Motivasi hedonis berkorelasi positif signifikan dengan perilaku belanja impulsif konsumen muda. |
-| 10 | Tangney, Baumeister, & Boone (2004) | *High Self-Control Predicts Good Adjustment* | *Trait self-control*; Skala BSCS; Validasi psikometri | Mengembangkan skala kontrol diri baku; individu kontrol diri tinggi mampu menunda kepuasan. |
+| 1 | Pranggabayu and Andjarwati (2022) | Pengaruh Hedonic Shopping Motivation dan Store Atmosphere terhadap Impulsive Buying | X1: Hedonic shopping motivation, X2: Store atmosphere; Y: Impulsive buying; Regresi linear berganda (100 pengunjung) | Motivasi belanja hedonis berpengaruh positif dan signifikan terhadap *impulsive buying*; kesenangan berbelanja menurunkan deliberasi rasional konsumen. |
+| 2 | Apidana and Kholifah (2022) | Peran Self Control dalam Memoderasi Pengaruh Hedonic Motives dan Shopping Lifestyle terhadap Impulse Buying | X1: Hedonic motives, X2: Shopping lifestyle; Y: Impulse buying; Mod: Self-control; MRA | Motif hedonis berpengaruh positif signifikan terhadap *impulsive buying*; kontrol diri secara empiris memoderasi dan memperlemah kecenderungan belanja impulsif. |
+| 3 | Lienardy and Panasea (2024) | The Role of Self-Control in Moderating the Influence of Shopping Lifestyle and Hedonistic Behavior on Impulsive Buying | X1: Shopping lifestyle, X2: Hedonistic behavior; Y: Impulsive buying; Mod: Self-control; MRA (160 responden) | Perilaku hedonis berpengaruh positif signifikan terhadap pembelian impulsif; kontrol diri terbukti memoderasi dan memperlemah pengaruh perilaku hedonis terhadap *impulsive buying*. |
+| 4 | Gong et al. (2024) | Unveiling the Enigma of Blind Box Impulse Buying Curiosity: The Moderating Role of Price Consciousness | X: Karakteristik kemasan blind box; Med: Rasa ingin tahu; Y: Impulse buying; Kerangka S-O-R; PLS-SEM (306 responden) | Mekanisme kejutan kemasan tertutup (*blind box/booster pack*) memicu rasa ingin tahu afektif yang secara langsung mendorong pembelian impulsif; kesadaran harga memoderasi hubungan tersebut. |
+| 5 | Tan and Adyantari (2024) | Ketidakpastian Blind Box dan Perilaku Pembelian Impulsif: Peran Nilai Fungsional, Emosional, dan Sosial | X: Ketidakpastian blind box, Nilai konsumsi; Y: Pembelian impulsif; Kuantitatif survei di Indonesia | Ketidakpastian isi kemasan acak membangkitkan nilai emosional yang kuat, secara signifikan mendorong perilaku pembelian impulsif konsumen di Indonesia. |
+| 6 | Dewi et al. (2024) | Understanding Impulse Buying Behavior: The Case of Blind Box Purchases in Indonesia | X1: Perceived scarcity, X2: Perceived uncertainty; Med: FOMO; Y: Impulse buying; PLS-SEM (211 Gen Z Indonesia) | Persepsi kelangkaan item dan ketidakpastian memicu FOMO dan hasrat memiliki set koleksi utuh, yang secara langsung dan signifikan memicu *impulse buying* pada Generasi Z di Indonesia. |
+| 7 | Aryadi and Lingga (2024) | Personal Traits and Motivation Impact on Collectibles as an Alternative Investment: A Case Study of Trading Card Game Community in Greater Jakarta | X: Motivasi kolektor & ciri kepribadian; Y: Keputusan investasi TCG; Regresi logistik biner (158 anggota komunitas TCG) | Membuktikan bahwa motivasi kolektor dan motif spekulasi finansial secara positif mendorong partisipasi dalam transaksi kartu TCG (Pokémon, dkk.) sebagai aset alternatif investasi di Jabodetabek. |
+| 8 | Colline (2024) | Biases in Indonesian Stock Investor Behavior | X: Bias perilaku kognitif (overconfidence, herding); Y: Keputusan investasi; Kuantitatif survei di Indonesia | Membuktikan kuatnya pengaruh bias optimisme berlebih (*overconfidence*) dan perilaku ikut-ikutan (*herding*) pada pengambilan keputusan finansial investor muda di Indonesia. |
+| 9 | Artadita and Firmialy (2024) | How Does Self-Control Moderate Shopping Enjoyment and Impulse Buying Among Generation Z Online Gamers? | X: Kenikmatan belanja (shopping enjoyment); Y: Impulse buying; Mod: Self-control; MRA (220 Gen Z Gamers) | Kenikmatan berbelanja komoditas game berpengaruh positif kuat terhadap pembelian impulsif; kontrol diri kognitif memegang peranan esensial dalam menahan dorongan belanja spontan. |
+| 10 | Katauke et al. (2023) | Financial Literacy and Impulsivity: Evidence from Japan | X: Literasi & disiplin finansial; Y: Impulsivity (hyperbolic discounting); Instrumental variables & regresi | Kapasitas regulasi diri dan kontrol finansial secara signifikan menekan impulsivitas belanja dan mencegah keputusan konsumtif yang merugikan. |
 
-*Sumber: Data diolah dari publikasi jurnal ilmiah bereputasi (2026).*
+*Sumber: Data diolah dari publikasi jurnal ilmiah bereputasi 2021–2025 (2026).*
 
 ## 2.4 Pengembangan Hipotesis
 
@@ -528,7 +557,7 @@ Penarikan sampel dilakukan dengan teknik sampel bertujuan (*purposive sampling*)
 - *Kapasitas Kognitif:* Memastikan kematangan kognitif responden dalam memahami butir-butir pernyataan kuesioner ilmiah secara objektif dan bertanggung jawab.
 - **Pernah Membeli *Booster Pack* Resmi Pokémon TCG Fisik Minimal 1 Kali dalam 6–12 Bulan Terakhir:**
 - *Menjamin Pengalaman Riil Konsumsi:* Memastikan responden benar-benar pernah mengalami proses pengambilan keputusan belanja di etalase toko dan merasakan sensasi membuka bungkus kartu (*pack opening thrill*).
-- *Meminimalkan Bias Ingatan Retrospektif (*Recall Bias*):* Rentang waktu 6–12 bulan merupakan standar baku dalam riset perilaku konsumen untuk memastikan bahwa memori kognitif dan luapan afektif saat bertransaksi masih tersimpan segar dalam ingatan responden, sehingga data yang dilaporkan memiliki akurasi tinggi.
+- *Meminimalkan Bias Ingatan Retrospektif (\emph{Recall Bias*):} Rentang waktu 6–12 bulan merupakan standar baku dalam riset perilaku konsumen untuk memastikan bahwa memori kognitif dan luapan afektif saat bertransaksi masih tersimpan segar dalam ingatan responden, sehingga data yang dilaporkan memiliki akurasi tinggi.
   
 
 ### 3.2.3 Penentuan Ukuran Sampel
@@ -667,7 +696,7 @@ Evaluasi kecocokan model dilakukan dengan memeriksa nilai *Adjusted* $R^2$ pada 
 
 ## 3.6 Diagram Alur Penelitian
 
-Tahapan pelaksanaan penelitian ini dari awal perumusan gagasan hingga penarikan kesimpulan disajikan secara skematis pada Gambar:
+Tahapan pelaksanaan penelitian ini dari awal perumusan gagasan hingga penarikan kesimpulan disajikan secara skematis pada Gambar 3.1:
 
 \begin{figure}[H]
 
@@ -714,7 +743,7 @@ Tahapan pelaksanaan penelitian ini dari awal perumusan gagasan hingga penarikan 
 
 ## 3.7 Jadwal Pelaksanaan Penelitian
 
-Jadwal pelaksanaan tahapan kegiatan penelitian direncanakan berlangsung selama 6 (enam) bulan kalender, sebagaimana dirangkum pada Tabel:
+Jadwal pelaksanaan tahapan kegiatan penelitian direncanakan berlangsung selama 6 (enam) bulan kalender, sebagaimana dirangkum pada Tabel 3.3:
 
 \begin{table}[H]
 

@@ -5,9 +5,9 @@ Mengunduh naskah lengkap (full-text) artikel jurnal dan konferensi yang menjadi 
 
 ## Struktur Penyimpanan
 Semua file referensi disimpan dalam direktori:
-- `05_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/` (10 Jurnal Empiris Inti Tabel 2.1 & Subbab 2.4)
-- `05_Referensi_Jurnal_PDF/02_Jurnal_Teori_&_Metodologi/` (Landasan Teori Seminal & Skala Pengukuran)
-- `05_Referensi_Jurnal_PDF/KATALOG_REFERENSI_JURNAL.md` (Katalog Metadata Lengkap)
+- `06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/` (10 Jurnal Empiris Inti Tabel 2.1 & Subbab 2.4)
+- `06_Referensi_Jurnal_PDF/02_Jurnal_Teori_&_Metodologi/` (Landasan Teori Seminal & Skala Pengukuran)
+- `06_Referensi_Jurnal_PDF/KATALOG_REFERENSI_JURNAL.md` (Katalog Metadata Lengkap)
 
 ## Aturan Penamaan File
 Format baku: `[Tahun]_[NamaPenulisUtama]_[KataKunciJudul]_[NamaJurnalSingkat].pdf`  

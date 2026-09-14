@@ -56,17 +56,35 @@ def get_file_hash(path: Path) -> str:
 
 def extract_nobab3_tex(source_text: str) -> str:
     """
-    Safely slice out Bab 3 from the canonical TeX source.
+    Safely slice out Bab 3 and formal academic approval sheets from the canonical TeX source.
     Keeps:
     - Preamble & Document Setup
-    - Frontmatter (Sampul, Pengesahan, Kata Pengantar, Abstrak, TOC, LOT, LOF)
+    - Sampul / Cover Page (hal. i)
+    - Kata Pengantar, Abstrak, Abstract, TOC, LOT, LOF
     - Bab 1 (Pendahuluan)
     - Bab 2 (Kajian Pustaka & Model Konseptual TikZ)
     - Daftar Pustaka & References
     Removes:
+    - Lembar Pernyataan Keaslian Karya Tugas Akhir
+    - Lembar Persetujuan Proposal Skripsi
+    - Lembar Pengesahan Tim Penguji Seminar Proposal
     - Bab 3 (Metode Penelitian) in its entirety.
     """
-    # Identify Bab 3 beginning
+    # 1. Remove formal approval sheets (Pernyataan Keaslian, Persetujuan, Pengesahan)
+    fm_start = re.search(r'(?m)^%\s*-+\s*\n%\s*2\.\s*HALAMAN PERNYATAAN KEASLIAN', source_text)
+    if not fm_start:
+        fm_start = re.search(r'(?m)^\\begin\{center\}\s*\n\s*\{\\large\\bfseries\s*PERNYATAAN KEASLIAN', source_text)
+    
+    fm_end = re.search(r'(?m)^%\s*-+\s*\n%\s*5\.\s*KATA PENGANTAR', source_text)
+    if not fm_end:
+        fm_end = re.search(r'(?m)^\\begin\{center\}\s*\n\s*\{\\large\\bfseries\s*KATA PENGANTAR', source_text)
+
+    if fm_start and fm_end:
+        pre_sheets = source_text[:fm_start.start()].rstrip()
+        post_sheets = source_text[fm_end.start():].lstrip()
+        source_text = pre_sheets + "\n\n" + post_sheets
+
+    # 2. Identify Bab 3 beginning
     # Pattern: look for '%  BAB 3: METODE PENELITIAN' or '\section*{BAB 3'
     bab3_match = re.search(r'(?m)^%\s*=+\s*\n%\s*BAB 3:\s*METODE PENELITIAN', source_text)
     if not bab3_match:
@@ -137,6 +155,10 @@ def main():
     nobab3_content = extract_nobab3_tex(canonical_content)
 
     # Sanity checks on sliced content
+    assert "PERNYATAAN KEASLIAN" not in nobab3_content, "Error: PERNYATAAN KEASLIAN still present!"
+    assert "PERSETUJUAN PROPOSAL" not in nobab3_content, "Error: PERSETUJUAN PROPOSAL still present!"
+    assert "PENGESAHAN TIM PENGUJI" not in nobab3_content, "Error: PENGESAHAN TIM PENGUJI still present!"
+    assert "KATA PENGANTAR" in nobab3_content, "Error: KATA PENGANTAR missing!"
     assert "BAB 1" in nobab3_content, "Error: BAB 1 missing!"
     assert "BAB 2" in nobab3_content, "Error: BAB 2 missing!"
     assert "DAFTAR PUSTAKA" in nobab3_content, "Error: DAFTAR PUSTAKA missing!"

@@ -32,11 +32,11 @@ Jika dua sumber bertentangan, jelaskan konflik, kutip atau rujuk lokasi keduanya
 ## Alur kerja
 
 1. Baca pedoman dan ekstrak aturan yang relevan sebelum menilai kepatuhan.
-2. Audit format dan tata letak dengan [review-format.md](review-format.md).
-3. Audit logika penelitian dan metodologi dengan [review-methodology.md](review-methodology.md).
-4. Audit bahasa, istilah, sitasi, dan daftar pustaka dengan [review-language.md](review-language.md).
+2. Audit format dan tata letak dengan [review-format.md](../07_Review_&_Audit/review-format.md).
+3. Audit logika penelitian dan metodologi dengan [review-methodology.md](../07_Review_&_Audit/review-methodology.md).
+4. Audit bahasa, istilah, sitasi, dan daftar pustaka dengan [review-language.md](../07_Review_&_Audit/review-language.md).
 5. Uji konsistensi lintas bagian, terutama antara judul, rumusan masalah, tujuan, hipotesis, metode, hasil, pembahasan, dan kesimpulan.
-6. Susun laporan akhir dengan [review-output.md](review-output.md).
+6. Susun laporan akhir dengan [review-output.md](../07_Review_&_Audit/review-output.md).
 
 ## Aturan bukti
 

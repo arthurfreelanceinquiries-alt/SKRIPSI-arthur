@@ -63,7 +63,7 @@
 $$Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \beta_4 M + \beta_5 (X_1 \cdot M) + \beta_6 (X_2 \cdot M) + \beta_7 (X_3 \cdot M) + e$$
 
 ### 3.1 Bank Cadangan Opsi Variabel Moderasi (Plan B Bimbingan)
-Dokumen rujukan lengkap: [`06_Review_&_Audit/Revisi_Dosen/2026-09-09_Revisi_Dosen_dan_Opsi_Moderasi.md`](../06_Review_&_Audit/Revisi_Dosen/2026-09-09_Revisi_Dosen_dan_Opsi_Moderasi.md).
+Dokumen rujukan lengkap: [`07_Review_&_Audit/Revisi_Dosen/2026-09-09_Revisi_Dosen_dan_Opsi_Moderasi.md`](../07_Review_&_Audit/Revisi_Dosen/2026-09-09_Revisi_Dosen_dan_Opsi_Moderasi.md).
 
 1. **Status Saat Ini (Adopted):** ***Self-Control* (Kontrol Diri)** — Arah: **Memperlemah (-)**. Landasan: Baumeister (2002); Thaler & Shefrin (1981); Tangney et al. (2004). Rem volisional eksekutif terhadap impulsif.
 2. **Alternatif Memperkuat (+) 1:** ***Fear of Missing Out* (FoMO)** (Przybylski et al., 2013; Hodkinson, 2019) — Akselerator belanja akibat kepanikan ketinggalan tren/hype komunitas.

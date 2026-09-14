@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Obsidian Second Brain: 1-Click Copy Button & High-Contrast Codeblock Snippet
+   ========================================================================== */
+
+/* 1. Tombol Copy: Dibuat SELALU TAMPIL, Berwarna Biru Kontras, & Jelas */
+.copy-code-button {
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: absolute !important;
+    top: 10px !important;
+    right: 12px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    background-color: #2563eb !important; /* Warna Biru Royal */
+    color: #ffffff !important;           /* Teks Putih Terang */
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    padding: 6px 14px !important;
+    border-radius: 6px !important;
+    border: 1px solid #1d4ed8 !important;
+    cursor: pointer !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) !important;
+    transition: all 0.2s ease-in-out !important;
+    z-index: 10 !important;
+}
+
+.copy-code-button:hover {
+    background-color: #1d4ed8 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25) !important;
+}
+
+.copy-code-button:active {
+    transform: translateY(0) !important;
+}
+
+/* 2. Format Kotak Kode: Otomatis Bungkus Teks (Anti Scrollbar Horizontal) */
+.markdown-rendered pre,
+.markdown-source-view.mod-cm6 .cm-embed-block,
+pre[class*="language-"],
+.HyperMD-codeblock {
+    position: relative !important;
+    white-space: pre-wrap !important;       /* Bungkus teks otomatis */
+    word-break: break-word !important;       /* Hindari teks keluar batas */
+    overflow-x: hidden !important;          /* Hilangkan scrollbar horizontal */
+    background-color: #f8fafc !important;   /* Latar abu-abu sangat muda bersih */
+    border: 1.5px solid #cbd5e1 !important; /* Garis tepi tegas */
+    border-radius: 8px !important;
+    padding: 38px 18px 18px 18px !important;/* Ruang ekstra di atas agar tombol tidak menutupi teks */
+}
+
+/* 3. Teks di Dalam Kotak Kode: Hitam Pekat & Kontras Tinggi (Anti Pudar) */
+.markdown-rendered pre code,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock,
+pre code,
+code[class*="language-"] {
+    color: #0f172a !important;              /* Hitam pekat pekat (Slate 900) */
+    font-weight: 500 !important;
+    font-size: 13.5px !important;
+    font-family: 'Consolas', 'Courier New', monospace, sans-serif !important;
+    line-height: 1.65 !important;
+}
+
+/* Tema Gelap (Dark Mode Support) */
+.theme-dark .markdown-rendered pre,
+.theme-dark pre[class*="language-"],
+.theme-dark .markdown-source-view.mod-cm6 .cm-embed-block {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+}
+
+.theme-dark .markdown-rendered pre code,
+.theme-dark .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock,
+.theme-dark pre code {
+    color: #f1f5f9 !important;              /* Putih terang pada mode gelap */
+}

@@ -61,8 +61,9 @@ def audit_docx(docx_path: Path) -> bool:
                 # We allow standalone bullet points if any, but in text runs, stray asterisks represent unparsed markdown
                 issues.append(f"Stray asterisk '*' in run text at P{p_idx} R{r_idx}: {repr(r.text)}")
 
-            # Check for dollar signs
-            if "$" in r.text:
+            # Check for dollar signs (allowing legitimate US$ currency)
+            text_without_currency = r.text.replace("US$", "").replace("USD", "")
+            if "$" in text_without_currency:
                 issues.append(f"Stray dollar '$' in run text at P{p_idx} R{r_idx}: {repr(r.text)}")
 
             # Check for raw LaTeX syntax
@@ -86,20 +87,27 @@ def audit_docx(docx_path: Path) -> bool:
                             if raw_cmd in r.text:
                                 issues.append(f"Raw LaTeX command '{raw_cmd}' in Table {t_idx} Row {r_idx} Col {c_idx}: {repr(r.text)}")
 
-    # 3. Audit Table of Contents tab leaders
-    print(f"[*] Inspecting Table of Contents for dot leaders...")
+    # 3. Audit Table of Contents tab leaders & positions
+    print(f"[*] Inspecting Table of Contents for dot leaders & 14.0cm tab stops...")
     toc_paragraphs_checked = 0
     in_toc = False
     for p in doc.paragraphs:
-        if p.text.strip() == "DAFTAR ISI":
+        txt = p.text.strip()
+        if txt in ["DAFTAR ISI", "DAFTAR TABEL", "DAFTAR GAMBAR"]:
             in_toc = True
             continue
         if in_toc:
-            if p.text.strip() == "DAFTAR TABEL" or p.text.strip() == "BAB 1 PENDAHULUAN":
+            # The actual body Chapter 1 heading has no tab '\t' and is BAB 1 PENDAHULUAN
+            if txt == "BAB 1 PENDAHULUAN" and "\t" not in p.text:
                 in_toc = False
                 break
             if "\t" in p.text:
                 toc_paragraphs_checked += 1
+                # Check right indent: MUST be 0 to prevent Google Docs / Word Online tab stop discard
+                r_ind = p.paragraph_format.right_indent
+                if r_ind is not None and r_ind.pt > 1:
+                    issues.append(f"TOC paragraph has non-zero right_indent ({r_ind.pt} pt): {repr(p.text)}")
+
                 # Check tab stop leader
                 tab_stops = p.paragraph_format.tab_stops
                 if len(tab_stops) == 0:
@@ -108,8 +116,48 @@ def audit_docx(docx_path: Path) -> bool:
                     ts = tab_stops[0]
                     if ts.leader != WD_TAB_LEADER.DOTS:
                         issues.append(f"TOC tab stop does not have DOTS leader (leader={ts.leader}): {repr(p.text)}")
+                    # Check position: 14.0 cm is approx 396.85 pt (tolerance 10 pt)
+                    if abs(ts.position.pt - 396.85) > 15:
+                        issues.append(f"TOC tab stop pos not at 14.0cm (found {ts.position.pt} pt): {repr(p.text)}")
 
-    print(f"[*] Checked {toc_paragraphs_checked} TOC entry paragraphs for dot leaders.")
+    print(f"[*] Checked {toc_paragraphs_checked} TOC/LOT/LOF entry paragraphs for dot leaders and 0 right_indent.")
+
+    # 4. Audit Run Font Color (Pure Black #000000, zero blue/themeColor)
+    print(f"[*] Inspecting all runs across document for pure black (#000000) color...")
+    non_black_runs = 0
+    for p_idx, p in enumerate(doc.paragraphs):
+        for r_idx, r in enumerate(p.runs):
+            rPr = r._element.find("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr")
+            if rPr is not None:
+                color_elem = rPr.find("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}color")
+                if color_elem is not None:
+                    val = color_elem.get("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val")
+                    theme_color = color_elem.get("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}themeColor")
+                    if val != "000000" and val != "auto":
+                        issues.append(f"Non-black run color val='{val}' at P{p_idx} R{r_idx}: {repr(r.text[:30])}")
+                        non_black_runs += 1
+                    if theme_color is not None:
+                        issues.append(f"Stray themeColor='{theme_color}' at P{p_idx} R{r_idx}: {repr(r.text[:30])}")
+                        non_black_runs += 1
+
+    # Check table runs as well
+    for t_idx, tbl in enumerate(doc.tables):
+        for r_idx, row in enumerate(tbl.rows):
+            for c_idx, cell in enumerate(row.cells):
+                for p in cell.paragraphs:
+                    for r in p.runs:
+                        rPr = r._element.find("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr")
+                        if rPr is not None:
+                            color_elem = rPr.find("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}color")
+                            if color_elem is not None:
+                                val = color_elem.get("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val")
+                                theme_color = color_elem.get("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}themeColor")
+                                if val != "000000" and val != "auto":
+                                    issues.append(f"Non-black run color val='{val}' in T{t_idx} R{r_idx} C{c_idx}: {repr(r.text[:30])}")
+                                    non_black_runs += 1
+                                if theme_color is not None:
+                                    issues.append(f"Stray themeColor='{theme_color}' in T{t_idx} R{r_idx} C{c_idx}: {repr(r.text[:30])}")
+                                    non_black_runs += 1
 
     # Results
     if issues:
@@ -120,7 +168,7 @@ def audit_docx(docx_path: Path) -> bool:
             print(f"  ... and {len(issues) - 20} more issues.")
         return False
     else:
-        print(f"\n[PASS] {docx_path.name} is 100% CLEAN of AI artifacts, stray asterisks, math symbols, and has valid 12pt abstracts and dot leaders!")
+        print(f"\n[PASS] {docx_path.name} is 100% CLEAN of AI artifacts, stray asterisks, math symbols, has 100% PURE BLACK font, and has valid 12pt abstracts and dot leaders!")
         return True
 
 

@@ -3,15 +3,50 @@
 
 ## 1.1 Latar Belakang Masalah
 
-Waralaba media (*media franchise*) Pokémon yang diciptakan oleh Satoshi Tajiri bersama Game Freak dan diluncurkan oleh Nintendo pada tahun 1996 di Jepang telah berkembang menjadi fenomena budaya pop global paling berpengaruh di dunia. Berdasarkan data agregasi industri media internasional, Pokémon dinobatkan sebagai waralaba media dengan pendapatan tertinggi sepanjang masa (*the highest-grossing media franchise in history*), dengan estimasi pendapatan kotor kumulatif melampaui US$ 100 miliar. Angka fantastis ini melampaui waralaba legendaris dunia lainnya seperti *Star Wars*, *Marvel Cinematic Universe*, maupun *Mickey Mouse*. Keberhasilan masif ini dibangun di atas fondasi ekosistem multimedia yang sangat terintegrasi dan saling memperkuat:
+Waralaba media (*media franchise*) Pokémon yang diciptakan oleh Satoshi Tajiri bersama Game Freak dan diluncurkan oleh Nintendo pada tahun 1996 di Jepang telah berkembang menjadi fenomena budaya pop global paling berpengaruh di dunia. Berdasarkan data agregasi industri media internasional, Pokémon dinobatkan sebagai waralaba media dengan pendapatan tertinggi sepanjang masa (*the highest-grossing media franchise in history*), dengan estimasi pendapatan kotor kumulatif melampaui US$ 105,0 miliar. Angka fantastis ini melampaui waralaba legendaris dunia lainnya seperti *Mickey Mouse*, *Star Wars*, maupun *Marvel Cinematic Universe*. Keberhasilan masif ini dibangun di atas fondasi ekosistem multimedia yang sangat terintegrasi dan saling memperkuat:
 
 1. **Lini Permainan Video (*Video Games*):** Dimulai dari RPG Generasi I (*Pokémon Red/Green/Blue*) di konsol Nintendo Game Boy yang memperkenalkan konsep menangkap, melatih, dan menukar monster saku hingga Generasi IX (*Pokémon Scarlet/Violet*) di konsol modern Nintendo Switch, serta revolusi permainan seluler berbasis *Augmented Reality* *Pokémon GO* yang memecahkan rekor interaksi ratusan juta pemain global secara simultan, disusul inovasi digital mutakhir seperti *Pokémon Sleep*, *Pokémon UNITE*, dan *Pokémon Trading Card Game Pocket*.
 2. **Lini Animasi, Serial Televisi, dan Film Bioskop:** Serial televisi anime yang mengisahkan 25 tahun perjalanan Satoshi (Ash Ketchum) dan Pikachu yang telah ditayangkan di lebih dari 190 negara dan puluhan bahasa, deretan film layar lebar monumental seperti *Pokémon: The First Movie – Mewtwo Strikes Back* (1998) yang merajai *box office* dunia, film aksi langsung (*live-action*) Hollywood berpendapatan tinggi *Pokémon Detective Pikachu* (2019), hingga serial anime generasi terbaru *Pokémon Horizons*.
 3. **Lini Lisensi, Merchandise, dan Gerai Ritel:** Jaringan gerai resmi *Pokémon Center* di berbagai kota metropolitan dunia serta penyelenggaraan turnamen tahunan bergengsi berskala internasional yakni *Pokémon World Championships*.
 
-Di antara seluruh pilar ekosistem multimedia tersebut, **permainan kartu fisik atau *Pokémon Trading Card Game* (Pokémon TCG)** memegang peranan yang paling sentral, monumental, dan memiliki perputaran ekonomi koleksi fisik (*physical collectibles*) terbesar di dunia. Hingga tahun 2024, The Pokémon Company mencatat bahwa produksi kumulatif kartu Pokémon fisik telah menembus lebih dari 52,9 miliar lembar kartu yang didistribusikan ke 93 wilayah dan diterjemahkan ke dalam 14 bahasa. Kartu Pokémon bukan lagi sekadar alat permainan meja (*tabletop game*) anak-anak, melainkan telah bertransformasi menjadi **instrumen aset alternatif koleksi (*alternative collectibles asset*)** bernilai ekonomi tinggi yang diperdagangkan secara aktif oleh kalangan dewasa muda, investor hobi, dan balai lelang global.
+Berdasarkan data komparasi industri media global, dominasi ekonomi waralaba Pokémon disajikan pada Gambar 1.1.
 
-Di Indonesia, kehadiran kartu resmi Pokémon TCG berbahasa Indonesia sejak tahun 2019 melalui The Pokémon Company bekerja sama dengan AKG Games (PT Adiperkasa Citra Lestari) mengalami akselerasi luar biasa. Strategi distribusinya sangat unik dan agresif: produk kartu tidak hanya dipasarkan melalui toko hobi khusus (*Local Game Stores* / LGS), melainkan didistribusikan secara masif di ribuan gerai jaringan ritel modern minimarket terkemuka (Indomaret, Alfamart, Gramedia, Toys Kingdom). Penempatan produk kartu langsung di etalase meja kasir ritel modern ini berhasil mendemokratisasi akses dan mengubah hobi kartu dari komunitas ceruk (*niche*) menjadi fenomena konsumsi populer berskala nasional. Minat masyarakat Indonesia—khususnya kalangan mahasiswa dan Generasi Z—terhadap kartu fisik ini didorong oleh konvergensi antara fungsi rekreasi permainan, prestise sosial, hobi mengoleksi kartu langka, serta motif spekulasi finansial.
+<div align="center">
+
+![Gambar 1.1: Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa](../01_Naskah_Utama/images/gambar1_1_media_franchise_ranking.png)
+
+**Gambar 1.1: Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa**  
+*Sumber: Agregasi Riset TitleMax dan Statista (2024)*
+
+</div>
+
+Sebagaimana ditunjukkan pada Gambar 1.1, Pokémon menempati posisi puncak sebagai waralaba media nomor satu di dunia dengan total pendapatan melampaui US$ 105,0 miliar. Nilai ini bahkan lebih dari dua kali lipat pendapatan waralaba legendaris Disney *Mickey Mouse* (US$ 52,2 miliar) dan melampaui *Star Wars* (US$ 46,7 miliar) serta *Marvel Cinematic Universe* (US$ 38,5 miliar). Bukti empiris ini mengonfirmasi bahwa Pokémon bukan sekadar hiburan musiman anak-anak, melainkan entitas komersial raksasa dengan basis perputaran kapital lintas generasi yang sangat kokoh.
+
+Di antara seluruh pilar ekosistem multimedia tersebut, **permainan kartu fisik atau *Pokémon Trading Card Game* (Pokémon TCG)** memegang peranan yang paling sentral, monumental, dan memiliki perputaran ekonomi koleksi fisik (*physical collectibles*) terbesar di dunia. Hingga tahun 2024, The Pokémon Company mencatat bahwa produksi kumulatif kartu Pokémon fisik telah menembus lebih dari 64,8 miliar lembar kartu yang didistribusikan ke lebih dari 93 wilayah dan diterjemahkan ke dalam berbagai bahasa dunia. Kartu Pokémon bukan lagi sekadar alat permainan meja (*tabletop game*) anak-anak, melainkan telah bertransformasi menjadi **instrumen aset alternatif koleksi (*alternative collectibles asset*)** bernilai ekonomi tinggi yang diperdagangkan secara aktif oleh kalangan dewasa muda, investor hobi, dan balai lelang global. Akselerasi pertumbuhan produksi kartu Pokémon TCG secara global diilustrasikan pada Gambar 1.2.
+
+<div align="center">
+
+![Gambar 1.2: Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024](../01_Naskah_Utama/images/gambar1_2_pokemon_tcg_production_growth.png)
+
+**Gambar 1.2: Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024**  
+*Sumber: The Pokémon Company Corporate Business Data (2024)*
+
+</div>
+
+Berdasarkan Gambar 1.2, terlihat jelas terjadinya lonjakan produksi kartu fisik yang sangat tajam dalam lima tahun terakhir. Pada Maret 2019, total produksi kumulatif global tercatat sebesar 28,8 miliar lembar kartu. Namun, pasca dimulainya ekspansi pencetakan kartu versi resmi bahasa lokal—termasuk peluncuran resmi kartu berbahasa Indonesia pada Agustus 2019—serta meledaknya tren hobi koleksi fisik selama masa pandemi, akumulasi produksi meroket lebih dari 125% hingga menembus 64,8 miliar lembar kartu pada Maret 2024. Pencetakan lebih dari 11,9 miliar lembar kartu hanya dalam kurun waktu satu tahun fiskal (2023–2024) mengindikasikan tingginya permintaan pasar dan mengonfirmasi terjadinya gelombang antusiasme belanja yang masif di kalangan konsumen.
+
+Di Indonesia, kehadiran kartu resmi Pokémon TCG berbahasa Indonesia sejak tahun 2019 melalui The Pokémon Company bekerja sama dengan AKG Games (PT Adiperkasa Citra Lestari) mengalami akselerasi luar biasa. Strategi distribusinya sangat unik dan agresif: produk kartu tidak hanya dipasarkan melalui toko hobi khusus (*Local Game Stores* / LGS), melainkan didistribusikan secara masif di ribuan gerai jaringan ritel modern minimarket terkemuka (Indomaret, Alfamart, Gramedia, Toys Kingdom). Penempatan produk kartu langsung di etalase meja kasir ritel modern ini berhasil mendemokratisasi akses dan mengubah hobi kartu dari komunitas ceruk (*niche*) menjadi fenomena konsumsi populer berskala nasional. Pangsa pasar Pokémon TCG di industri permainan kartu fisik diperkuat oleh estimasi data pada Gambar 1.3.
+
+<div align="center">
+
+![Gambar 1.3: Estimasi Pangsa Pasar Industri Trading Card Game (TCG) Global Tahun 2024](../01_Naskah_Utama/images/gambar1_3_tcg_market_share_donut.png)
+
+**Gambar 1.3: Estimasi Pangsa Pasar Industri Trading Card Game (TCG) Global Tahun 2024**  
+*Sumber: ICv2 dan TCGplayer Industry Research (2024)*
+
+</div>
+
+Sebagaimana disajikan pada Gambar 1.3, Pokémon TCG menguasai estimasi 41,5% pangsa pasar industri kartu koleksi fisik dunia, mengungguli waralaba kompetitor utama seperti Yu-Gi-Oh! (23,8%) dan Magic: The Gathering (21,2%). Dominasi pangsa pasar ini menciptakan likuiditas transaksi sekunder yang sangat tinggi di pasar daring Indonesia, serta memicu terbentuknya ekosistem kolektor aktif yang memperdagangkan kartu langka secara berkesinambungan. Minat masyarakat Indonesia—khususnya kalangan mahasiswa dan Generasi Z—terhadap kartu fisik ini didorong oleh konvergensi antara fungsi rekreasi permainan, prestise sosial, hobi mengoleksi kartu langka, serta motif spekulasi finansial.
 
 Dinamika pasar Pokémon TCG fisik di Indonesia memunculkan fenomena perilaku konsumsi yang sangat unik sekaligus problematis. Produk kartu fisik dijual dalam format kemasan acak tertutup (*blind pack* atau *booster pack*) dengan harga eceran resmi yang sangat terjangkau, berkisar antara Rp20.000 hingga Rp30.000 per bungkus (berisi 5 lembar kartu acak). Namun, di dalam bungkus tersebut tersimpan peluang probabilitas untuk menarik kartu dengan tingkat kelangkaan tinggi (*Special Illustration Rare / SAR*, kartu *Super Rare / SR*, atau *Ultra Rare / UR*). Di pasar sekunder daring (Tokopedia, Shopee, grup lelang Facebook, dan komunitas media sosial), kartu-kartu berkarakter favorit (seperti Charizard, Pikachu, atau kartu pelatih wanita/waifu populer) diperjualbelikan dengan harga fantastis mulai dari ratusan ribu hingga puluhan juta rupiah per lembar.
 

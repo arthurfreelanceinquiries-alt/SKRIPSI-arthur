@@ -249,12 +249,12 @@ Gunakan 5 modul ini saat mengaudit naskah yang sudah ditulis:
 | Modul | File | Fokus |
 |-------|------|-------|
 | Definisi peran reviewer | `04_Riset_&_Metodologi/skills.md` | Peran, urutan otoritas, alur kerja |
-| Format | Lihat arsip `06_Review_&_Audit/review-format.md` | Struktur dokumen, tata letak, tabel/gambar |
-| Metodologi | Lihat arsip `06_Review_&_Audit/review-methodology.md` | Matriks keterlacakan, SEM-PLS, hipotesis |
-| Bahasa | Lihat arsip `06_Review_&_Audit/review-language.md` | Bahasa akademik, sitasi, daftar pustaka |
-| Output | Lihat arsip `06_Review_&_Audit/review-output.md` | Laporan akhir berprioritas |
+| Format | Lihat `07_Review_&_Audit/review-format.md` | Struktur dokumen, tata letak, tabel/gambar |
+| Metodologi | Lihat `07_Review_&_Audit/review-methodology.md` | Matriks keterlacakan, SEM-PLS, hipotesis |
+| Bahasa | Lihat `07_Review_&_Audit/review-language.md` | Bahasa akademik, sitasi, daftar pustaka |
+| Output | Lihat `07_Review_&_Audit/review-output.md` | Laporan akhir berprioritas |
 
-> Untuk topik baru, salin file review dari `_archive/KBMI4_GreenFinancing_2021-2025/06_Review_&_Audit/` ke `06_Review_&_Audit/` topik baru.
+> Untuk topik baru, file review berada di `07_Review_&_Audit/`.
 
 **Skala prioritas temuan:**
 - 🔴 **Kritis** — mengancam validitas penelitian, integritas akademik, atau kelayakan skripsi
@@ -396,7 +396,7 @@ _archive/KBMI4_GreenFinancing_2021-2025/
 - `02_Persiapan_Sidang/` — Panduan belajar dan bank soal sidang
 - `03_Draft_Per_Bab/` — Draft per bab dan proposal lengkap
 - `04_Riset_&_Metodologi/` — Data panel, metodologi, analisis
-- `06_Review_&_Audit/` — File review dan audit naskah
+- `07_Review_&_Audit/` — File review dan audit naskah
 - `latex/` — Source LaTeX master
 - `Proposal/` — Proposal skripsi
 - `website/` — Web interaktif skripsi

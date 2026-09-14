@@ -6,9 +6,9 @@
 
 ## 1. Input Data
 1. `02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md` — Master Study Guide (Bab 1–3, ekosistem Pokémon, grading PSA, operasionalisasi variabel, teori, hipotesis H1–H6, metodologi MRA, dan 15 skenario bimbingan dosen).
-2. `02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/01_BANK_SOAL_LATIHAN.md` — Bank soal latihan sidang.
-3. `02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/02_FLASHCARD_ISTILAH.md` — Istilah kunci flashcard.
-4. `02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/03_PERTANYAAN_SIDANG_SULIT.md` — 10 pertanyaan jebakan sidang sulit.
+2. `02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/01_BANK_SOAL_LATIHAN.md` — Bank soal latihan sidang.
+3. `02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/02_FLASHCARD_ISTILAH.md` — Istilah kunci flashcard.
+4. `02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/03_PERTANYAAN_SIDANG_SULIT.md` — 10 pertanyaan jebakan sidang sulit.
 5. `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` — Sumber kanonis variabel dan keputusan terkunci (D01–D13).
 
 ---

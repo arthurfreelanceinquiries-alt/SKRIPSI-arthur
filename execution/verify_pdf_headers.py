@@ -48,6 +48,6 @@ def verify_pdfs(base_dir):
     return invalid_count == 0
 
 if __name__ == "__main__":
-    target = sys.argv[1] if len(sys.argv) > 1 else "05_Referensi_Jurnal_PDF"
+    target = sys.argv[1] if len(sys.argv) > 1 else "06_Referensi_Jurnal_PDF"
     success = verify_pdfs(target)
     sys.exit(0 if success else 1)

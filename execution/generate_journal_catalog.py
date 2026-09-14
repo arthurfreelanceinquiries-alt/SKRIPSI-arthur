@@ -1,12 +1,12 @@
 """
 Layer 3 Execution Script: Generate Markdown Catalog for Downloaded Journal References
-Produces 05_Referensi_Jurnal_PDF/KATALOG_REFERENSI_JURNAL.md
+Produces 06_Referensi_Jurnal_PDF/KATALOG_REFERENSI_JURNAL.md
 """
 
 import os
 import sys
 
-CATALOG_PATH = "05_Referensi_Jurnal_PDF/KATALOG_REFERENSI_JURNAL.md"
+CATALOG_PATH = "06_Referensi_Jurnal_PDF/KATALOG_REFERENSI_JURNAL.md"
 
 EMPIRICAL_PAPERS = [
     {
@@ -156,11 +156,11 @@ def generate_catalog():
     lines.append("")
     lines.append("## Bagian 1: 10 Jurnal Empiris Utama (Periode 2021–2025)")
     lines.append("")
-    lines.append("Sesuai standar mutu akademik skripsi manajemen dan persyaratan pustaka mutakhir (maksimal 5 tahun terakhir), seluruh 10 artikel di bawah ini telah terbit pada rentang tahun **2021–2025**, terindeks resmi pada **Scopus, Web of Science, SINTA, Google Scholar, dan Garuda**, serta file PDF aslinya telah tersimpan di folder `05_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/`.")
+    lines.append("Sesuai standar mutu akademik skripsi manajemen dan persyaratan pustaka mutakhir (maksimal 5 tahun terakhir), seluruh 10 artikel di bawah ini telah terbit pada rentang tahun **2021–2025**, terindeks resmi pada **Scopus, Web of Science, SINTA, Google Scholar, dan Garuda**, serta file PDF aslinya telah tersimpan di folder `06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/`.")
     lines.append("")
 
     for p in EMPIRICAL_PAPERS:
-        full_p = os.path.join("05_Referensi_Jurnal_PDF", p["file"])
+        full_p = os.path.join("06_Referensi_Jurnal_PDF", p["file"])
         size_bytes = os.path.getsize(full_p) if os.path.exists(full_p) else 0
         size_kb = size_bytes / 1024
         size_str = f"{size_kb/1024:.2f} MB" if size_kb > 1024 else f"{size_kb:.1f} KB"
@@ -182,7 +182,7 @@ def generate_catalog():
     lines.append("")
 
     for t in THEORETICAL_PAPERS:
-        full_t = os.path.join("05_Referensi_Jurnal_PDF", t["file"])
+        full_t = os.path.join("06_Referensi_Jurnal_PDF", t["file"])
         size_bytes = os.path.getsize(full_t) if os.path.exists(full_t) else 0
         size_kb = size_bytes / 1024
         size_str = f"{size_kb/1024:.2f} MB" if size_kb > 1024 else f"{size_kb:.1f} KB"

@@ -299,8 +299,17 @@ def clean_academic_text(text: str) -> str:
         text = text.replace(f'$\\beta_{i}$', f'β{sub}')
     text = text.replace(r'$\epsilon$', 'ε')
 
-    # Remove any remaining stray dollar signs
+    # Unescape LaTeX escaped symbols and spaces (e.g. US\$ -> US$, US\ -> US )
+    text = text.replace(r'US\$', 'US$')
+    text = text.replace(r'US\\$', 'US$')
+    text = re.sub(r'\\([,%#&_])', r'\1', text)
+    text = re.sub(r'\\(?=\s)', '', text)
+    text = text.replace('~', ' ')
+
+    # Remove any remaining stray math dollar signs while preserving currency notation
+    text = text.replace('US$', '___USD_TOKEN___')
     text = text.replace('$', '')
+    text = text.replace('___USD_TOKEN___', 'US$')
     return text
 
 
@@ -327,8 +336,34 @@ def add_body_paragraph(doc, text, bold_prefix=None, indent=True):
     return p
 
 
+def make_run_pure_black(run, font_name="Times New Roman", font_size=Pt(12), bold=None, italic=None):
+    """Guarantees pure black #000000 run formatting at both python-docx and raw OpenXML levels."""
+    if font_name is not None:
+        run.font.name = font_name
+    if font_size is not None:
+        run.font.size = font_size
+    if bold is not None:
+        run.font.bold = bold
+    if italic is not None:
+        run.font.italic = italic
+    run.font.color.rgb = RGBColor(0, 0, 0)
+
+    rPr = run._r.get_or_add_rPr()
+    for c in rPr.findall(qn('w:color')):
+        rPr.remove(c)
+    color_elm = parse_xml(f'<w:color {nsdecls("w")} w:val="000000"/>')
+    rPr.append(color_elm)
+
+    if font_name is not None and font_name != "Cambria Math":
+        for rf in rPr.findall(qn('w:rFonts')):
+            rPr.remove(rf)
+        rFonts = parse_xml(f'<w:rFonts {nsdecls("w")} w:ascii="{font_name}" w:hAnsi="{font_name}" w:cs="{font_name}"/>')
+        rPr.append(rFonts)
+    return run
+
+
 def parse_markdown_runs(paragraph, text, base_size=Pt(12), base_bold=False):
-    """Parse inline bold (***text***, **text**, *text*) into proper Word runs without raw asterisks."""
+    """Parse inline bold (***text***, **text**, *text*) into proper Word runs with guaranteed pure black color."""
     if not text:
         return
     pattern = re.compile(r'(\*\*\*.*?\*\*\*|\*\*.*?\*\*|\*.*?\*)')
@@ -339,10 +374,7 @@ def parse_markdown_runs(paragraph, text, base_size=Pt(12), base_bold=False):
         if token.startswith('***') and token.endswith('***') and len(token) >= 6:
             content = token[3:-3].replace('*', '')
             run = paragraph.add_run(content)
-            run.font.name = "Times New Roman"
-            run.font.size = base_size
-            run.font.bold = True
-            run.font.italic = True
+            make_run_pure_black(run, "Times New Roman", base_size, bold=True, italic=True)
         elif token.startswith('**') and token.endswith('**') and len(token) >= 4:
             content = token[2:-2]
             sub_tokens = re.split(r'(\*.*?\*)', content)
@@ -351,17 +383,12 @@ def parse_markdown_runs(paragraph, text, base_size=Pt(12), base_bold=False):
                     continue
                 if st.startswith('*') and st.endswith('*') and len(st) >= 2:
                     run = paragraph.add_run(st[1:-1].replace('*', ''))
-                    run.font.name = "Times New Roman"
-                    run.font.size = base_size
-                    run.font.bold = True
-                    run.font.italic = True
+                    make_run_pure_black(run, "Times New Roman", base_size, bold=True, italic=True)
                 else:
                     clean_st = st.replace('*', '')
                     if clean_st:
                         run = paragraph.add_run(clean_st)
-                        run.font.name = "Times New Roman"
-                        run.font.size = base_size
-                        run.font.bold = True
+                        make_run_pure_black(run, "Times New Roman", base_size, bold=True, italic=False)
         elif token.startswith('*') and token.endswith('*') and len(token) >= 2:
             content = token[1:-1]
             sub_tokens = re.split(r'(\*\*.*?\*\*)', content)
@@ -370,26 +397,17 @@ def parse_markdown_runs(paragraph, text, base_size=Pt(12), base_bold=False):
                     continue
                 if st.startswith('**') and st.endswith('**') and len(st) >= 4:
                     run = paragraph.add_run(st[2:-2].replace('*', ''))
-                    run.font.name = "Times New Roman"
-                    run.font.size = base_size
-                    run.font.bold = True
-                    run.font.italic = True
+                    make_run_pure_black(run, "Times New Roman", base_size, bold=True, italic=True)
                 else:
                     clean_st = st.replace('*', '')
                     if clean_st:
                         run = paragraph.add_run(clean_st)
-                        run.font.name = "Times New Roman"
-                        run.font.size = base_size
-                        run.font.bold = True if base_bold else False
-                        run.font.italic = True
+                        make_run_pure_black(run, "Times New Roman", base_size, bold=True if base_bold else False, italic=True)
         else:
             clean_plain = token.replace('*', '')
             if clean_plain:
                 run = paragraph.add_run(clean_plain)
-                run.font.name = "Times New Roman"
-                run.font.size = base_size
-                if base_bold:
-                    run.font.bold = True
+                make_run_pure_black(run, "Times New Roman", base_size, bold=True if base_bold else False, italic=False)
 
 
 def set_paragraph_outline_level(paragraph, level):
@@ -476,176 +494,8 @@ def add_frontmatter_heading(doc, title, page_break=False):
 # MAIN BUILDER ENGINE
 # ============================================================================
 
-def build_full_proposal(skip_chapter3: bool = False):
-    # Resolve base_dir relative to this script's location
-    script_dir = Path(__file__).resolve().parent
-    base_dir = script_dir.parent / "01_Naskah_Utama"
-    if not base_dir.exists():
-        # Fallback: original hardcoded path
-        base_dir = Path(r"z:\SKRIPSII\SKRIPSI-arthur\01_Naskah_Utama")
-
-    if skip_chapter3:
-        output_docx = base_dir / "Proposal_Arthur_NoBab3.docx"
-    else:
-        output_docx = base_dir / "Proposal_Arthur_PokemonTCG.docx"
-    img_rerangka = base_dir / "images" / "gambar_rerangka_penelitian.png"
-    img_alur = base_dir / "images" / "diagram_alur_penelitian.png"
-
-    print(f"[*] Starting Publication-Grade Word Proposal Generation...")
-    doc = Document()
-
-    # Configure document base styles to match FEB UKRIDA 2023
-    try:
-        style_normal = doc.styles['Normal']
-        style_normal.font.name = 'Times New Roman'
-        style_normal.font.size = Pt(12)
-        style_normal.font.color.rgb = RGBColor(0, 0, 0)
-    except Exception as e:
-        print(f"[WARN] Could not customize Normal style: {e}")
-
-    try:
-        style_footer = doc.styles['Footer']
-        style_footer.font.name = 'Times New Roman'
-        style_footer.font.size = Pt(10)
-        style_footer.font.bold = True
-        style_footer.font.color.rgb = RGBColor(0, 0, 0)
-        style_footer.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    except Exception as e:
-        print(f"[WARN] Could not customize Footer style: {e}")
-
-    for level, style_name in [(1, 'Heading 1'), (2, 'Heading 2'), (3, 'Heading 3')]:
-        try:
-            h_style = doc.styles[style_name]
-            h_style.font.name = 'Times New Roman'
-            h_style.font.size = Pt(12)
-            h_style.font.bold = True
-            h_style.font.color.rgb = RGBColor(0, 0, 0)
-            h_style.paragraph_format.line_spacing = 1.5
-            h_style.paragraph_format.keep_with_next = True
-            h_style.paragraph_format.first_line_indent = Cm(0)
-            if level == 1:
-                h_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
-                h_style.paragraph_format.space_before = Pt(0)
-                h_style.paragraph_format.space_after = Pt(12)
-            elif level == 2:
-                h_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
-                h_style.paragraph_format.space_before = Pt(12)
-                h_style.paragraph_format.space_after = Pt(6)
-            elif level == 3:
-                h_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
-                h_style.paragraph_format.space_before = Pt(6)
-                h_style.paragraph_format.space_after = Pt(3)
-        except Exception as e:
-            print(f"[WARN] Could not customize style {style_name}: {e}")
-
-    # ------------------------------------------------------------------------
-    # SECTION 1: HALAMAN SAMPUL / COVER (hal. i - unnumbered)
-    # ------------------------------------------------------------------------
-    sec_cover = doc.sections[0]
-    sec_cover.page_width = Cm(21.0)
-    sec_cover.page_height = Cm(29.7)
-    sec_cover.top_margin = Cm(3.0)
-    sec_cover.bottom_margin = Cm(3.0)
-    sec_cover.left_margin = Cm(4.0)
-    sec_cover.right_margin = Cm(3.0)
-
-    # Empty unlinked footer for cover
-    sec_cover.different_first_page_header_footer = True
-    footer_cover = sec_cover.first_page_footer
-    p_fc = footer_cover.paragraphs[0]
-    p_fc.text = ""
-
-    # Cover Content
-    p = doc.add_paragraph()
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.paragraph_format.space_before = Pt(18)
-    p.paragraph_format.space_after = Pt(24)
-    r = p.add_run("PROPOSAL SKRIPSI")
-    r.font.name = "Times New Roman"
-    r.font.size = Pt(14)
-    r.font.bold = True
-
-    # Title
-    p_title = doc.add_paragraph()
-    p_title.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p_title.paragraph_format.space_before = Pt(12)
-    p_title.paragraph_format.space_after = Pt(24)
-    p_title.paragraph_format.line_spacing = 1.15
-
-    title_parts = [
-        ("PENGARUH ", False),
-        ("HEDONIC MOTIVATION", True),
-        (", ", False),
-        ("DESIRE FOR COMPLETENESS", True),
-        (", DAN ", False),
-        ("SPECULATIVE MOTIVE", True),
-        (" TERHADAP ", False),
-        ("IMPULSIVE BUYING", True),
-        (" BOOSTER PACK KARTU POKÉMON TCG DENGAN ", False),
-        ("SELF-CONTROL", True),
-        (" SEBAGAI VARIABEL MODERASI", False)
-    ]
-    for text_val, is_italic in title_parts:
-        run = p_title.add_run(text_val)
-        run.font.name = "Times New Roman"
-        run.font.size = Pt(14)
-        run.font.bold = True
-        run.font.italic = is_italic
-
-    # Subtitle
-    p_sub = doc.add_paragraph()
-    p_sub.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p_sub.paragraph_format.space_before = Pt(18)
-    p_sub.paragraph_format.space_after = Pt(24)
-    p_sub.paragraph_format.line_spacing = 1.15
-    r = p_sub.add_run("Diajukan Kepada Program Studi S1 Manajemen\nUntuk Menyusun Skripsi Sarjana Manajemen (S.M.)")
-    r.font.name = "Times New Roman"
-    r.font.size = Pt(12)
-
-    # Author
-    p_auth = doc.add_paragraph()
-    p_auth.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p_auth.paragraph_format.space_before = Pt(24)
-    p_auth.paragraph_format.space_after = Pt(36)
-    p_auth.paragraph_format.line_spacing = 1.15
-    r1 = p_auth.add_run("Diajukan Oleh:\n\n")
-    r1.font.name = "Times New Roman"
-    r1.font.size = Pt(12)
-    r2 = p_auth.add_run("Arthur Reezan\n(312023002)")
-    r2.font.name = "Times New Roman"
-    r2.font.size = Pt(12)
-    r2.font.bold = True
-
-    # Institution Footer
-    p_inst = doc.add_paragraph()
-    p_inst.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p_inst.paragraph_format.space_before = Pt(48)
-    p_inst.paragraph_format.space_after = Pt(0)
-    p_inst.paragraph_format.line_spacing = 1.15
-    r_inst = p_inst.add_run(
-        "PROGRAM STUDI S1 MANAJEMEN\n"
-        "FAKULTAS EKONOMI DAN BISNIS\n"
-        "UNIVERSITAS KRISTEN KRIDA WACANA\n"
-        "JAKARTA 2026"
-    )
-    r_inst.font.name = "Times New Roman"
-    r_inst.font.size = Pt(12)
-    r_inst.font.bold = True
-
-    # ------------------------------------------------------------------------
-    # SECTION 2: FRONTMATTER (Halaman ii s.d. x - Roman Numerals)
-    # ------------------------------------------------------------------------
-    sec_front = doc.add_section(WD_SECTION.NEW_PAGE)
-    sec_front.page_width = Cm(21.0)
-    sec_front.page_height = Cm(29.7)
-    sec_front.top_margin = Cm(3.0)
-    sec_front.bottom_margin = Cm(3.0)
-    sec_front.left_margin = Cm(4.0)
-    sec_front.right_margin = Cm(3.0)
-    sec_front.header.is_linked_to_previous = False
-    sec_front.footer.is_linked_to_previous = False
-    add_page_number_to_footer(sec_front, is_roman=True, start_num=2)
-
+def build_formal_approval_sheets(doc, id_data):
+    """Generates the 3 formal academic sheets required for full thesis proposals."""
     # 1. Pernyataan Keaslian (hal. ii)
     add_frontmatter_heading(doc, "PERNYATAAN KEASLIAN KARYA TUGAS AKHIR", page_break=False)
 
@@ -654,12 +504,6 @@ def build_full_proposal(skip_chapter3: bool = False):
     # Identity Table
     tbl_id = doc.add_table(rows=4, cols=3)
     tbl_id.alignment = WD_TABLE_ALIGNMENT.CENTER
-    id_data = [
-        ("Nama Mahasiswa", ":", "Arthur Reezan"),
-        ("NIM", ":", "312023002"),
-        ("Program Studi", ":", "Program Studi S1 Manajemen"),
-        ("Konsentrasi", ":", "Manajemen Keuangan")
-    ]
     for row_idx, (col1, col2, col3) in enumerate(id_data):
         row = tbl_id.rows[row_idx]
         for c_idx, val in enumerate([col1, col2, col3]):
@@ -777,7 +621,7 @@ def build_full_proposal(skip_chapter3: bool = False):
     p2 = ca2.paragraphs[0]
     p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p2.paragraph_format.line_spacing = 1.15
-    p2.add_run("Mengetahui,\nKetua Program Studi S1 Manajemen\n\n\n\n\n")
+    p2.add_run("Mengetahui,\nKetua Program Studi S1 Manajemen\n\n\n\n")
     r2 = p2.add_run("Rita Amelinda, S.E., M.M.\n")
     r2.font.bold = True
     p2.add_run("NIDN: [NIDN_KAPRODI]")
@@ -796,34 +640,29 @@ def build_full_proposal(skip_chapter3: bool = False):
     rj3.font.size = Pt(11)
     rj3.font.bold = True
 
-    add_body_paragraph(doc, "Telah dipertahankan di hadapan Tim Penguji Seminar Proposal Skripsi Program Studi S1 Manajemen Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana pada tanggal 12 September 2026 dan dinyatakan DITERIMA.", indent=False)
+    add_body_paragraph(doc, "Telah dipertahankan di hadapan Tim Penguji Seminar Proposal Skripsi Program Studi S1 Manajemen Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana pada tanggal yang ditetapkan dan dinyatakan telah memenuhi syarat kelayakan.", indent=False)
 
-    p_tm = doc.add_paragraph()
-    p_tm.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p_tm.paragraph_format.space_before = Pt(12)
-    p_tm.paragraph_format.space_after = Pt(12)
-    r = p_tm.add_run("TIM PENGUJI SEMINAR PROPOSAL")
-    r.font.bold = True
-
-    tbl_pg = doc.add_table(rows=2, cols=2)
-    tbl_pg.alignment = WD_TABLE_ALIGNMENT.CENTER
-    c_p1 = tbl_pg.rows[0].cells[0]
-    c_p2 = tbl_pg.rows[0].cells[1]
-    c_p3 = tbl_pg.rows[1].cells[0]
-    c_p4 = tbl_pg.rows[1].cells[1]
+    tbl_penguji = doc.add_table(rows=2, cols=2)
+    tbl_penguji.alignment = WD_TABLE_ALIGNMENT.CENTER
+    c_p1 = tbl_penguji.rows[0].cells[0]
+    c_p2 = tbl_penguji.rows[0].cells[1]
+    c_p3 = tbl_penguji.rows[1].cells[0]
+    c_p4 = tbl_penguji.rows[1].cells[1]
 
     p_p1 = c_p1.paragraphs[0]
     p_p1.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_p1.paragraph_format.line_spacing = 1.15
-    p_p1.add_run("Ketua Penguji\n\n\n\n")
-    p_p1.add_run("( _______________________ )\n").font.bold = True
+    p_p1.add_run("Ketua Tim Penguji\n\n\n\n\n")
+    r = p_p1.add_run("_________________________\n")
+    r.font.bold = True
     p_p1.add_run("NIDN: _________________")
 
     p_p2 = c_p2.paragraphs[0]
     p_p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_p2.paragraph_format.line_spacing = 1.15
-    p_p2.add_run("Anggota Penguji 1\n\n\n\n")
-    p_p2.add_run("( _______________________ )\n").font.bold = True
+    p_p2.add_run("Anggota Penguji 1\n\n\n\n\n")
+    r = p_p2.add_run("_________________________\n")
+    r.font.bold = True
     p_p2.add_run("NIDN: _________________")
 
     p_p3 = c_p3.paragraphs[0]
@@ -842,20 +681,265 @@ def build_full_proposal(skip_chapter3: bool = False):
     r.font.bold = True
     p_p4.add_run("NIDN: [NIDN_KAPRODI]")
 
-    # 4. Kata Pengantar (hal. v)
-    add_frontmatter_heading(doc, "KATA PENGANTAR", page_break=True)
 
-    add_body_paragraph(doc, "Puji dan syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa atas segala rahmat, berkat, dan anugerah-Nya yang melimpah, sehingga penulis dapat menyelesaikan naskah Proposal Skripsi yang berjudul **“PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI”** tepat pada waktunya.")
-    add_body_paragraph(doc, "Penyusunan proposal skripsi ini merupakan salah satu syarat akademik yang wajib dipenuhi oleh setiap mahasiswa Program Studi S1 Manajemen Konsentrasi Manajemen Keuangan Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana guna memperoleh gelar Sarjana Manajemen (S.M.).")
-    add_body_paragraph(doc, "Dalam proses penulisan proposal skripsi ini, penulis menyadari sepenuhnya bahwa penyelesaian naskah ini tidak terlepas dari bantuan, bimbingan, arahan, dan doa dari berbagai pihak. Oleh karena itu, dengan kerendahan hati penulis ingin menyampaikan rasa terima kasih dan apresiasi yang sebesar-besarnya kepada:")
+def build_full_proposal(skip_chapter3: bool = False):
+    # Resolve base_dir relative to this script's location
+    script_dir = Path(__file__).resolve().parent
+    base_dir = script_dir.parent / "01_Naskah_Utama"
+    if not base_dir.exists():
+        # Fallback: original hardcoded path
+        base_dir = Path(r"z:\SKRIPSII\SKRIPSI-arthur\01_Naskah_Utama")
+
+    if skip_chapter3:
+        output_docx = base_dir / "Proposal_Arthur_NoBab3.docx"
+    else:
+        output_docx = base_dir / "Proposal_Arthur_PokemonTCG.docx"
+    img_rerangka = base_dir / "images" / "gambar_rerangka_penelitian.png"
+    img_alur = base_dir / "images" / "diagram_alur_penelitian.png"
+    img_fig11 = base_dir / "images" / "gambar1_1_media_franchise_ranking.png"
+    img_fig12 = base_dir / "images" / "gambar1_2_pokemon_tcg_production_growth.png"
+    img_fig13 = base_dir / "images" / "gambar1_3_tcg_market_share_donut.png"
+
+    print(f"[*] Starting Publication-Grade Word Proposal Generation...")
+    doc = Document()
+
+    # Configure document base styles to match FEB UKRIDA 2023
+    try:
+        style_normal = doc.styles['Normal']
+        style_normal.font.name = 'Times New Roman'
+        style_normal.font.size = Pt(12)
+        style_normal.font.color.rgb = RGBColor(0, 0, 0)
+    except Exception as e:
+        print(f"[WARN] Could not customize Normal style: {e}")
+
+    try:
+        style_footer = doc.styles['Footer']
+        style_footer.font.name = 'Times New Roman'
+        style_footer.font.size = Pt(10)
+        style_footer.font.bold = True
+        style_footer.font.color.rgb = RGBColor(0, 0, 0)
+        style_footer.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+    except Exception as e:
+        print(f"[WARN] Could not customize Footer style: {e}")
+
+    # Configure Heading styles with explicit OpenXML pure black (no themeColor)
+    for level, style_name in [(1, 'Heading 1'), (2, 'Heading 2'), (3, 'Heading 3')]:
+        try:
+            h_style = doc.styles[style_name]
+            h_style.font.name = 'Times New Roman'
+            h_style.font.size = Pt(12)
+            h_style.font.bold = True
+            h_style.font.color.rgb = RGBColor(0, 0, 0)
+            h_style.paragraph_format.line_spacing = 1.5
+            h_style.paragraph_format.keep_with_next = True
+            h_style.paragraph_format.first_line_indent = Cm(0)
+            if level == 1:
+                h_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                h_style.paragraph_format.space_before = Pt(0)
+                h_style.paragraph_format.space_after = Pt(12)
+            elif level == 2:
+                h_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                h_style.paragraph_format.space_before = Pt(12)
+                h_style.paragraph_format.space_after = Pt(6)
+            elif level == 3:
+                h_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                h_style.paragraph_format.space_before = Pt(6)
+                h_style.paragraph_format.space_after = Pt(3)
+
+            rPr = h_style.element.get_or_add_rPr()
+            for c in rPr.findall(qn('w:color')):
+                rPr.remove(c)
+            rPr.append(parse_xml(f'<w:color {nsdecls("w")} w:val="000000"/>'))
+            for rf in rPr.findall(qn('w:rFonts')):
+                rPr.remove(rf)
+            rPr.append(parse_xml(f'<w:rFonts {nsdecls("w")} w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>'))
+        except Exception as e:
+            print(f"[WARN] Could not customize style {style_name}: {e}")
+
+    # Register and configure official TOC styles (TOC 1, TOC 2, TOC 3) with right tab stops & dot leaders
+    toc_styles_data = [
+        ('TOC 1', Pt(11), True, Cm(0)),
+        ('TOC 2', Pt(11), False, Cm(0.6)),
+        ('TOC 3', Pt(10.5), False, Cm(1.2))
+    ]
+    for toc_name, fsize, fbold, findent in toc_styles_data:
+        try:
+            try:
+                toc_style = doc.styles.add_style(toc_name, docx.enum.style.WD_STYLE_TYPE.PARAGRAPH)
+            except Exception:
+                toc_style = doc.styles[toc_name]
+            toc_style.font.name = 'Times New Roman'
+            toc_style.font.size = fsize
+            toc_style.font.bold = fbold
+            toc_style.font.color.rgb = RGBColor(0, 0, 0)
+            toc_style.paragraph_format.line_spacing = 1.15
+            toc_style.paragraph_format.space_before = Pt(0)
+            toc_style.paragraph_format.space_after = Pt(2)
+            toc_style.paragraph_format.left_indent = findent
+            toc_style.paragraph_format.first_line_indent = Cm(0)
+            toc_style.paragraph_format.right_indent = Cm(0)
+
+            pPr = toc_style.element.get_or_add_pPr()
+            for tb in pPr.findall(qn('w:tabs')):
+                pPr.remove(tb)
+            tabs_elm = parse_xml(f'<w:tabs {nsdecls("w")}><w:tab w:val="right" w:leader="dot" w:pos="7938"/></w:tabs>')
+            pPr.append(tabs_elm)
+
+            rPr = toc_style.element.get_or_add_rPr()
+            for c in rPr.findall(qn('w:color')):
+                rPr.remove(c)
+            rPr.append(parse_xml(f'<w:color {nsdecls("w")} w:val="000000"/>'))
+        except Exception as e:
+            print(f"[WARN] Could not setup {toc_name}: {e}")
+
+    # ------------------------------------------------------------------------
+    # SECTION 1: HALAMAN SAMPUL / COVER (hal. i - unnumbered)
+    # ------------------------------------------------------------------------
+    sec_cover = doc.sections[0]
+    sec_cover.page_width = Cm(21.0)
+    sec_cover.page_height = Cm(29.7)
+    sec_cover.top_margin = Cm(3.0)
+    sec_cover.bottom_margin = Cm(3.0)
+    sec_cover.left_margin = Cm(4.0)
+    sec_cover.right_margin = Cm(3.0)
+
+    # Empty unlinked footer for cover
+    sec_cover.different_first_page_header_footer = True
+    footer_cover = sec_cover.first_page_footer
+    p_fc = footer_cover.paragraphs[0]
+    p_fc.text = ""
+
+    # Cover Logo
+    img_pentagram = base_dir / "images" / "ukrida_pentagram.png"
+    if img_pentagram.exists():
+        p_logo = doc.add_paragraph()
+        p_logo.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p_logo.paragraph_format.space_before = Pt(0)
+        p_logo.paragraph_format.space_after = Pt(18)
+        p_logo.paragraph_format.first_line_indent = Cm(0)
+        p_logo.add_run().add_picture(str(img_pentagram), width=Cm(3.2))
+
+    # Cover Content
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.paragraph_format.space_before = Pt(6)
+    p.paragraph_format.space_after = Pt(18)
+    r = p.add_run("PROPOSAL SKRIPSI")
+    r.font.name = "Times New Roman"
+    r.font.size = Pt(14)
+    r.font.bold = True
+
+    # Title
+    p_title = doc.add_paragraph()
+    p_title.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p_title.paragraph_format.space_before = Pt(12)
+    p_title.paragraph_format.space_after = Pt(24)
+    p_title.paragraph_format.line_spacing = 1.15
+
+    title_parts = [
+        ("PENGARUH ", False),
+        ("HEDONIC MOTIVATION", True),
+        (", ", False),
+        ("DESIRE FOR COMPLETENESS", True),
+        (", DAN ", False),
+        ("SPECULATIVE MOTIVE", True),
+        (" TERHADAP ", False),
+        ("IMPULSIVE BUYING", True),
+        (" BOOSTER PACK KARTU POKÉMON TCG DENGAN ", False),
+        ("SELF-CONTROL", True),
+        (" SEBAGAI VARIABEL MODERASI", False)
+    ]
+    for text_val, is_italic in title_parts:
+        run = p_title.add_run(text_val)
+        run.font.name = "Times New Roman"
+        run.font.size = Pt(14)
+        run.font.bold = True
+        run.font.italic = is_italic
+
+    # Subtitle
+    p_sub = doc.add_paragraph()
+    p_sub.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p_sub.paragraph_format.space_before = Pt(18)
+    p_sub.paragraph_format.space_after = Pt(24)
+    p_sub.paragraph_format.line_spacing = 1.15
+    r = p_sub.add_run("Diajukan Kepada Program Studi S1 Manajemen\nUntuk Menyusun Skripsi Sarjana Manajemen (S.M.)")
+    r.font.name = "Times New Roman"
+    r.font.size = Pt(12)
+
+    # Author
+    p_auth = doc.add_paragraph()
+    p_auth.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p_auth.paragraph_format.space_before = Pt(24)
+    p_auth.paragraph_format.space_after = Pt(36)
+    p_auth.paragraph_format.line_spacing = 1.15
+    r1 = p_auth.add_run("Diajukan Oleh:\n\n")
+    r1.font.name = "Times New Roman"
+    r1.font.size = Pt(12)
+    r2 = p_auth.add_run("Arthur Reezan\n(312023002)")
+    r2.font.name = "Times New Roman"
+    r2.font.size = Pt(12)
+    r2.font.bold = True
+
+    # Institution Footer
+    p_inst = doc.add_paragraph()
+    p_inst.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p_inst.paragraph_format.space_before = Pt(48)
+    p_inst.paragraph_format.space_after = Pt(0)
+    p_inst.paragraph_format.line_spacing = 1.15
+    r_inst = p_inst.add_run(
+        "PROGRAM STUDI S1 MANAJEMEN\n"
+        "FAKULTAS EKONOMI DAN BISNIS\n"
+        "UNIVERSITAS KRISTEN KRIDA WACANA\n"
+        "JAKARTA 2026"
+    )
+    r_inst.font.name = "Times New Roman"
+    r_inst.font.size = Pt(12)
+    r_inst.font.bold = True
+
+    # ------------------------------------------------------------------------
+    # SECTION 2: FRONTMATTER (Halaman ii s.d. x - Roman Numerals)
+    # ------------------------------------------------------------------------
+    sec_front = doc.add_section(WD_SECTION.NEW_PAGE)
+    sec_front.page_width = Cm(21.0)
+    sec_front.page_height = Cm(29.7)
+    sec_front.top_margin = Cm(3.0)
+    sec_front.bottom_margin = Cm(3.0)
+    sec_front.left_margin = Cm(4.0)
+    sec_front.right_margin = Cm(3.0)
+    sec_front.header.is_linked_to_previous = False
+    sec_front.footer.is_linked_to_previous = False
+    add_page_number_to_footer(sec_front, is_roman=True, start_num=2)
+
+    # ------------------------------------------------------------------------
+    # SECTION 2: FRONTMATTER
+    # ------------------------------------------------------------------------
+    id_data = [
+        ("Nama Mahasiswa", ":", "Arthur Reezan"),
+        ("NIM", ":", "312023002"),
+        ("Program Studi", ":", "Program Studi S1 Manajemen"),
+        ("Konsentrasi", ":", "Manajemen Keuangan")
+    ]
+
+    if not skip_chapter3:
+        # Full proposal requires formal approval sheets
+        build_formal_approval_sheets(doc, id_data)
+        add_frontmatter_heading(doc, "KATA PENGANTAR", page_break=True)
+    else:
+        # NoBab3 proposal (review/bimbingan mode) starts directly with Kata Pengantar
+        add_frontmatter_heading(doc, "KATA PENGANTAR", page_break=False)
+
+    add_body_paragraph(doc, "Puji dan syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa atas kasih, anugerah, dan penyertaan-Nya yang senantiasa melimpah, sehingga penulis dapat menyelesaikan penyusunan proposal skripsi yang berjudul **“PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI”** dengan baik, lancar, dan tepat waktu.")
+    add_body_paragraph(doc, "Proposal skripsi ini disusun sebagai salah satu tahapan akademik yang diwajibkan dalam rangka menempuh ujian seminar proposal guna menyelesaikan studi pada Program Studi S1 Manajemen, Konsentrasi Manajemen Keuangan, Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana (UKRIDA), Jakarta.")
+    add_body_paragraph(doc, "Dalam proses penyusunan naskah proposal ini, penulis mendapatkan banyak bimbingan, arahan metodologis, dukungan moril, serta fasilitas dari berbagai pihak. Oleh karena itu, dengan penuh rasa hormat dan kerendahan hati, penulis menyampaikan terima kasih dan apresiasi yang setinggi-tingginya kepada:")
 
     kp_points = [
-        "Dr. Diana Frederica, S.E., M.Ak., CFP®, CHCP-A selaku Dekan Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana.",
-        "Rita Amelinda, S.E., M.M. selaku Ketua Program Studi S1 Manajemen Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana.",
-        "Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A selaku Dosen Pembimbing yang telah dengan penuh kesabaran, ketelitian, dan keahlian akademik membimbing, mengoreksi, dan memberikan masukan yang sangat konstruktif bagi penyempurnaan naskah ini.",
-        "Seluruh Dosen dan Staf Pengajar Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana yang telah membagikan ilmu pengetahuan dan wawasan berharga selama masa perkuliahan.",
-        "Kedua orang tua tercinta dan keluarga besar yang senantiasa memberikan doa tulus, kasih sayang, dan dukungan moril serta materiil yang tiada henti.",
-        "Rekan-rekan mahasiswa dan komunitas pemain serta kolektor Pokémon Trading Card Game (TCG) di Indonesia yang telah bersedia meluangkan waktu dan berpartisipasi dalam penelitian ini."
+        "Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A, selaku Dosen Pembimbing Skripsi, yang telah dengan luar biasa sabar, teliti, kritis, dan penuh dedikasi meluangkan waktu serta mencurahkan tenaga dan pikiran dalam membimbing, mengarahkan, dan menyempurnakan naskah proposal ini sejak tahap awal perumusan gagasan hingga penyusunan naskah komprehensif.",
+        "Rita Amelinda, S.E., M.M., selaku Ketua Program Studi S1 Manajemen FEB UKRIDA, atas segala arahan, kemudahan proses administratif, dan bimbingan akademik yang diberikan.",
+        "Bapak dan Ibu Dosen Penguji Seminar Proposal, yang telah bersedia meluangkan waktu untuk menguji, memberikan koreksi kritis, serta masukan yang konstruktif guna menyempurnakan naskah penelitian ini.",
+        "Seluruh Dosen dan Staf Pengajar FEB UKRIDA, yang telah membagikan ilmu pengetahuan, wawasan analisis keuangan, serta etika profesional selama masa perkuliahan penulis.",
+        "Kedua Orang Tua dan Keluarga Tercinta, atas doa yang tiada putus, limpahan kasih sayang, ketulusan pengorbanan, serta dorongan moral dan material yang menjadi sumber kekuatan utama bagi penulis.",
+        "Rekan-rekan Mahasiswa Manajemen FEB UKRIDA Angkatan 2023 dan sahabat seperjuangan, atas diskusi yang membangun, motivasi, dan kerja sama selama proses perkuliahan.",
+        "Komunitas Kolektor dan Pemain Pokémon TCG di Indonesia, yang telah memberikan gambaran nyata mengenai fenomena pasar kartu koleksi di lapangan."
     ]
     for idx, kpt in enumerate(kp_points):
         p_kp = doc.add_paragraph()
@@ -868,17 +952,17 @@ def build_full_proposal(skip_chapter3: bool = False):
         p_kp.add_run(f"{idx+1}.  ").font.bold = True
         p_kp.add_run(kpt)
 
-    add_body_paragraph(doc, "Penulis menyadari bahwa proposal skripsi ini masih jauh dari kesempurnaan. Oleh karena itu, segala kritik dan saran yang membangun sangat penulis harapkan demi perbaikan naskah di masa mendatang. Akhir kata, semoga proposal penelitian ini dapat memberikan manfaat empiris bagi pengembangan ilmu manajemen keuangan perilaku serta kontribusi praktis bagi masyarakat luas.")
+    add_body_paragraph(doc, "Penulis menyadari bahwa proposal ini masih jauh dari kesempurnaan. Kritik dan saran yang membangun sangat diharapkan demi penyempurnaan karya ilmiah ini ke depan. Semoga proposal skripsi ini dapat memberikan manfaat akademis dan praktis bagi perkembangan kajian ilmu manajemen keuangan perilaku di Indonesia.")
 
     p_tutup = doc.add_paragraph()
     p_tutup.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     p_tutup.paragraph_format.space_before = Pt(18)
     p_tutup.paragraph_format.line_spacing = 1.15
-    p_tutup.add_run("Jakarta, 12 September 2026\nPenulis,\n\n\n\n")
+    p_tutup.add_run("Jakarta,                  2026\nPenulis,\n\n\n\n")
     p_tutup.add_run("Arthur Reezan\n").font.bold = True
     p_tutup.add_run("NIM: 312023002")
 
-    # 5. Abstrak Bahasa Indonesia (hal. vi)
+    # 5. Abstrak Bahasa Indonesia
     add_frontmatter_heading(doc, "ABSTRAK", page_break=True)
 
     p_j4 = doc.add_paragraph()
@@ -930,7 +1014,7 @@ def build_full_proposal(skip_chapter3: bool = False):
     r_kw_body.font.size = Pt(12)
     r_kw_body.font.italic = True
 
-    # 6. Abstract English (hal. vii)
+    # 6. Abstract English
     add_frontmatter_heading(doc, "ABSTRACT", page_break=True)
 
     p_j5 = doc.add_paragraph()
@@ -975,201 +1059,220 @@ def build_full_proposal(skip_chapter3: bool = False):
     r_kw_en_pre = p_kw_en.add_run("Keywords: ")
     r_kw_en_pre.font.name = "Times New Roman"
     r_kw_en_pre.font.size = Pt(12)
-    r_kw_en_pre.font.bold = True
+    r_kw_pre.font.bold = True
     r_kw_en_body = p_kw_en.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Behavioral Finance.")
     r_kw_en_body.font.name = "Times New Roman"
     r_kw_en_body.font.size = Pt(12)
     r_kw_en_body.font.italic = True
 
-    # 7. Daftar Isi (hal. viii)
+    # 7. Daftar Isi
     add_frontmatter_heading(doc, "DAFTAR ISI", page_break=True)
 
-    toc_items_full = [
-        ("HALAMAN SAMPUL / JUDUL PROPOSAL", "i"),
-        ("HALAMAN PERNYATAAN KEASLIAN KARYA TUGAS AKHIR", "ii"),
-        ("HALAMAN PERSETUJUAN PROPOSAL SKRIPSI", "iii"),
-        ("HALAMAN PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL", "iv"),
-        ("KATA PENGANTAR", "v"),
-        ("ABSTRAK (BAHASA INDONESIA)", "vi"),
-        ("ABSTRACT (ENGLISH)", "vii"),
-        ("DAFTAR ISI", "viii"),
-        ("DAFTAR TABEL", "ix"),
-        ("DAFTAR GAMBAR", "x"),
+    toc_items_nobab3 = [
+        ("DAFTAR TABEL", "viii"),
+        ("DAFTAR GAMBAR", "ix"),
         ("BAB 1 PENDAHULUAN", "1"),
         ("  1.1 Latar Belakang Penelitian", "1"),
-        ("  1.2 Identifikasi dan Perumusan Masalah", "7"),
-        ("      1.2.1 Identifikasi Masalah", "7"),
-        ("      1.2.2 Perumusan Masalah", "8"),
-        ("  1.3 Tujuan Penelitian", "8"),
+        ("  1.2 Perumusan Masalah", "8"),
+        ("  1.3 Tujuan Penelitian", "9"),
         ("  1.4 Manfaat Penelitian", "9"),
-        ("      1.4.1 Manfaat Teoritis (Akademis)", "9"),
-        ("      1.4.2 Manfaat Praktis", "9"),
-        ("  1.5 Batasan Penelitian", "10"),
-        ("  1.6 Sistematika Penulisan Proposal", "10"),
-        ("BAB 2 TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "12"),
-        ("  2.1 Landasan Teori", "12"),
-        ("      2.1.1 Teori Stimulus-Organism-Response (S-O-R)", "12"),
-        ("      2.1.2 Teori Regulasi Diri (Self-Regulation Theory)", "13"),
-        ("      2.1.3 Teori Pengendalian Diri dan Keuangan Perilaku (Behavioral Finance)", "14"),
-        ("      2.1.4 Teori Psikologi Kolektor dan Completing the Set Effect", "15"),
-        ("  2.2 Definisi dan Konseptualisasi Variabel", "16"),
-        ("      2.2.1 Impulsive Buying (Variabel Dependen Y)", "16"),
-        ("      2.2.2 Hedonic Motivation (Variabel Independen X1)", "17"),
-        ("      2.2.3 Desire for Completeness (Variabel Independen X2)", "19"),
-        ("      2.2.4 Speculative Motive (Variabel Independen X3)", "20"),
-        ("      2.2.5 Self-Control (Variabel Moderasi Z)", "22"),
-        ("  2.3 Tinjauan Penelitian Empiris Terdahulu", "23"),
-        ("  2.4 Kerangka Pemikiran dan Model Konseptual Penelitian", "29"),
-        ("  2.5 Pengembangan Hipotesis Penelitian", "30"),
-        ("      2.5.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying", "30"),
-        ("      2.5.2 Pengaruh Desire for Completeness terhadap Impulsive Buying", "31"),
-        ("      2.5.3 Pengaruh Speculative Motive terhadap Impulsive Buying", "32"),
-        ("      2.5.4 Peran Moderasi Self-Control pada Pengaruh Hedonic Motivation", "33"),
-        ("      2.5.5 Peran Moderasi Self-Control pada Pengaruh Desire for Completeness", "34"),
-        ("      2.5.6 Peran Moderasi Self-Control pada Pengaruh Speculative Motive", "35"),
-        ("BAB 3 METODE PENELITIAN", "37"),
-        ("  3.1 Desain Penelitian", "37"),
-        ("  3.2 Objek dan Subjek Penelitian", "37"),
-        ("  3.3 Operasionalisasi Variabel dan Skala Pengukuran", "38"),
-        ("  3.4 Populasi, Sampel, dan Teknik Pengambilan Sampel", "41"),
-        ("  3.5 Teknik Pengumpulan Data", "42"),
-        ("  3.6 Diagram Alur Pelaksanaan Penelitian", "43"),
-        ("  3.7 Metode Analisis Data dan Uji Statistik", "44"),
-        ("      3.7.1 Uji Statistik Deskriptif", "44"),
-        ("      3.7.2 Uji Kualitas Data (Validitas dan Reliabilitas)", "44"),
-        ("      3.7.3 Uji Asumsi Klasik", "45"),
-        ("      3.7.4 Analisis Regresi Linear Berganda", "46"),
-        ("      3.7.5 Moderated Regression Analysis (MRA) dengan Mean-Centering", "47"),
-        ("      3.7.6 Uji Kelayakan Model dan Hipotesis (Uji F, Uji t, Koefisien Determinasi R2)", "48"),
-        ("  3.8 Jadwal Pelaksanaan Penelitian", "48"),
-        ("DAFTAR PUSTAKA", "49")
+        ("      1.4.1 Manfaat Teoritis", "9"),
+        ("      1.4.2 Manfaat Praktis", "10"),
+        ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "11"),
+        ("  2.1 Landasan Teori", "11"),
+        ("      2.1.1 Grand Theory: Keuangan Perilaku (Behavioral Finance)", "11"),
+        ("      2.1.2 Supporting Theory: Teori Stimulus-Organism-Response (S-O-R)", "11"),
+        ("      2.1.3 Supporting Theory: Psikologi Kolektor dan The 'Completing the Set' Effect", "12"),
+        ("      2.1.4 Supporting Theory: Teori Regulasi Diri (Self-Regulation Theory)", "12"),
+        ("  2.2 Kajian Variabel Penelitian", "12"),
+        ("      2.2.1 Variabel Dependen (Y): Impulsive Buying (Pembelian Impulsif)", "12"),
+        ("      2.2.2 Variabel Independen (X1): Hedonic Motivation (Motivasi Hedonis)", "13"),
+        ("      2.2.3 Variabel Independen (X2): Desire for Completeness (Hasrat Kelengkapan Koleksi)", "13"),
+        ("      2.2.4 Variabel Independen (X3): Speculative Motive (Motif Spekulasi Finansial)", "13"),
+        ("      2.2.5 Variabel Moderasi (M): Self-Control (Kontrol Diri)", "14"),
+        ("  2.3 Penelitian Sebelumnya", "14"),
+        ("  2.4 Pengembangan Hipotesis", "17"),
+        ("      2.4.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying", "17"),
+        ("      2.4.2 Pengaruh Desire for Completeness terhadap Impulsive Buying", "17"),
+        ("      2.4.3 Pengaruh Speculative Motive terhadap Impulsive Buying", "18"),
+        ("      2.4.4 Pengaruh Moderasi Self-Control terhadap Hubungan Hedonic Motivation dan Impulsive Buying", "18"),
+        ("      2.4.5 Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness dan Impulsive Buying", "19"),
+        ("      2.4.6 Pengaruh Moderasi Self-Control terhadap Hubungan Speculative Motive dan Impulsive Buying", "19"),
+        ("  2.5 Rerangka Penelitian", "20"),
+        ("DAFTAR PUSTAKA", "21")
     ]
 
-    if skip_chapter3:
-        toc_items = [(t, p) for t, p in toc_items_full if not t.strip().startswith(("BAB 3", "3."))]
-    else:
-        toc_items = toc_items_full
+    toc_items_full = [
+        ("DAFTAR TABEL", "xi"),
+        ("DAFTAR GAMBAR", "xii"),
+        ("BAB 1 PENDAHULUAN", "1"),
+        ("  1.1 Latar Belakang Penelitian", "1"),
+        ("  1.2 Perumusan Masalah", "8"),
+        ("  1.3 Tujuan Penelitian", "9"),
+        ("  1.4 Manfaat Penelitian", "9"),
+        ("      1.4.1 Manfaat Teoritis", "9"),
+        ("      1.4.2 Manfaat Praktis", "10"),
+        ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "11"),
+        ("  2.1 Landasan Teori", "11"),
+        ("      2.1.1 Grand Theory: Keuangan Perilaku (Behavioral Finance)", "11"),
+        ("      2.1.2 Supporting Theory: Teori Stimulus-Organism-Response (S-O-R)", "11"),
+        ("      2.1.3 Supporting Theory: Psikologi Kolektor dan The 'Completing the Set' Effect", "12"),
+        ("      2.1.4 Supporting Theory: Teori Regulasi Diri (Self-Regulation Theory)", "12"),
+        ("  2.2 Kajian Variabel Penelitian", "12"),
+        ("      2.2.1 Variabel Dependen (Y): Impulsive Buying (Pembelian Impulsif)", "12"),
+        ("      2.2.2 Variabel Independen (X1): Hedonic Motivation (Motivasi Hedonis)", "13"),
+        ("      2.2.3 Variabel Independen (X2): Desire for Completeness (Hasrat Kelengkapan Koleksi)", "13"),
+        ("      2.2.4 Variabel Independen (X3): Speculative Motive (Motif Spekulasi Finansial)", "13"),
+        ("      2.2.5 Variabel Moderasi (M): Self-Control (Kontrol Diri)", "14"),
+        ("  2.3 Penelitian Sebelumnya", "14"),
+        ("  2.4 Pengembangan Hipotesis", "17"),
+        ("      2.4.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying", "17"),
+        ("      2.4.2 Pengaruh Desire for Completeness terhadap Impulsive Buying", "17"),
+        ("      2.4.3 Pengaruh Speculative Motive terhadap Impulsive Buying", "18"),
+        ("      2.4.4 Pengaruh Moderasi Self-Control terhadap Hubungan Hedonic Motivation dan Impulsive Buying", "18"),
+        ("      2.4.5 Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness dan Impulsive Buying", "19"),
+        ("      2.4.6 Pengaruh Moderasi Self-Control terhadap Hubungan Speculative Motive dan Impulsive Buying", "19"),
+        ("  2.5 Rerangka Penelitian", "20"),
+        ("BAB 3 METODE PENELITIAN", "21"),
+        ("  3.1 Jenis dan Sumber Data", "21"),
+        ("      3.1.1 Batasan Penelitian dan Ruang Lingkup Operasional", "21"),
+        ("  3.2 Populasi dan Sampel", "22"),
+        ("      3.2.1 Populasi dan Identifikasi Sumber Komunitas", "22"),
+        ("      3.2.2 Sampel dan Justifikasi Kriteria Inklusi", "23"),
+        ("      3.2.3 Penentuan Ukuran Sampel", "24"),
+        ("      3.2.4 Justifikasi Komparatif Pemilihan Teknik Sampling", "24"),
+        ("  3.3 Model Penelitian", "25"),
+        ("  3.4 Operasionalisasi Variabel", "26"),
+        ("  3.5 Metode Analisis Data", "30"),
+        ("      3.5.1 Justifikasi Komparatif Pemilihan Metode Analisis", "30"),
+        ("      3.5.2 Uji Kualitas Data (Validitas dan Reliabilitas)", "31"),
+        ("      3.5.3 Uji Asumsi Klasik", "31"),
+        ("      3.5.4 Estimasi Regresi Linear Berganda dan MRA", "31"),
+        ("      3.5.5 Uji Koefisien Determinasi (R2)", "32"),
+        ("      3.5.6 Uji Hipotesis (Uji t dan Uji F)", "32"),
+        ("  3.6 Diagram Alur Penelitian", "32"),
+        ("  3.7 Jadwal Pelaksanaan Penelitian", "33"),
+        ("DAFTAR PUSTAKA", "35")
+    ]
 
-    target_right = Cm(13.8) # 2mm inside 14.0cm margin to guarantee dot leaders render
+    toc_items = toc_items_nobab3 if skip_chapter3 else toc_items_full
+    target_right = Cm(14.0)  # exact right margin (21.0 - 4.0 - 3.0 = 14.0 cm = 7938 dxa)
 
     for title_toc, page_toc in toc_items:
-        p_toc = doc.add_paragraph()
+        if title_toc.startswith("      "):
+            style_name = 'TOC 3'
+            left_indent = Cm(1.2)
+            f_size = Pt(10.5)
+            f_bold = False
+        elif title_toc.startswith("  "):
+            style_name = 'TOC 2'
+            left_indent = Cm(0.6)
+            f_size = Pt(11)
+            f_bold = False
+        else:
+            style_name = 'TOC 1'
+            left_indent = Cm(0)
+            f_size = Pt(11)
+            f_bold = True
+
+        p_toc = doc.add_paragraph(style=style_name)
         p_toc.paragraph_format.line_spacing = 1.15
         p_toc.paragraph_format.space_before = Pt(0)
         p_toc.paragraph_format.space_after = Pt(2)
+        p_toc.paragraph_format.left_indent = left_indent
+        p_toc.paragraph_format.first_line_indent = Cm(0)
+        p_toc.paragraph_format.right_indent = Cm(0)
+        p_toc.paragraph_format.tab_stops.add_tab_stop(target_right, WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
 
-        if title_toc.startswith("      "):
-            # Level 3: Anak sub-bab (e.g., 1.2.1)
-            left_indent = Cm(1.2)
-            p_toc.paragraph_format.left_indent = left_indent
-            p_toc.paragraph_format.first_line_indent = Cm(0)
-            p_toc.paragraph_format.tab_stops.add_tab_stop(target_right - left_indent, WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
-            clean_title = title_toc.strip()
-            r_t = p_toc.add_run(clean_title)
-            r_t.font.name = "Times New Roman"
-            r_t.font.size = Pt(10.5)
-            r_t.font.bold = False
+        clean_title = title_toc.strip()
+        r_t = p_toc.add_run(clean_title)
+        make_run_pure_black(r_t, "Times New Roman", f_size, bold=f_bold)
 
-            r_p = p_toc.add_run(f"\t{page_toc}")
-            r_p.font.name = "Times New Roman"
-            r_p.font.size = Pt(10.5)
-            r_p.font.bold = False
-        elif title_toc.startswith("  "):
-            # Level 2: Sub-bab (e.g., 1.1)
-            left_indent = Cm(0.6)
-            p_toc.paragraph_format.left_indent = left_indent
-            p_toc.paragraph_format.first_line_indent = Cm(0)
-            p_toc.paragraph_format.tab_stops.add_tab_stop(target_right - left_indent, WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
-            clean_title = title_toc.strip()
-            r_t = p_toc.add_run(clean_title)
-            r_t.font.name = "Times New Roman"
-            r_t.font.size = Pt(11)
-            r_t.font.bold = False
+        # Dedicated tab run for standard OpenXML dot leader rendering
+        r_tab = p_toc.add_run()
+        r_tab._r.append(parse_xml(f'<w:tab {nsdecls("w")}/>'))
 
-            r_p = p_toc.add_run(f"\t{page_toc}")
-            r_p.font.name = "Times New Roman"
-            r_p.font.size = Pt(11)
-            r_p.font.bold = False
-        else:
-            # Level 1: BAB / Frontmatter
-            left_indent = Cm(0)
-            p_toc.paragraph_format.left_indent = left_indent
-            p_toc.paragraph_format.first_line_indent = Cm(0)
-            p_toc.paragraph_format.tab_stops.add_tab_stop(target_right, WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
-            clean_title = title_toc.strip()
-            r_t = p_toc.add_run(clean_title)
-            r_t.font.name = "Times New Roman"
-            r_t.font.size = Pt(11)
-            r_t.font.bold = True
+        # Dedicated page number run
+        r_p = p_toc.add_run(str(page_toc))
+        make_run_pure_black(r_p, "Times New Roman", f_size, bold=f_bold)
 
-            r_p = p_toc.add_run(f"\t{page_toc}")
-            r_p.font.name = "Times New Roman"
-            r_p.font.size = Pt(11)
-            r_p.font.bold = True
-
-    # 8. Daftar Tabel (hal. ix)
+    # 8. Daftar Tabel
     add_frontmatter_heading(doc, "DAFTAR TABEL", page_break=True)
 
-    lot_items_full = [
-        ("Tabel 2.1", "Ringkasan Pemetaan Matriks Riset Empiris Terdahulu (2021–2025)", "24"),
-        ("Tabel 3.1", "Skala Pengukuran Likert 5 Poin", "38"),
-        ("Tabel 3.2", "Operasionalisasi Variabel, Dimensi, dan Butir Indikator Pengukuran", "39"),
-        ("Tabel 3.3", "Jadwal Pelaksanaan Kegiatan Penelitian (Tahun 2026)", "48")
+    lot_items_nobab3 = [
+        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "14")
     ]
-    lot_items = [(n, t, p) for n, t, p in lot_items_full if not n.startswith("Tabel 3")] if skip_chapter3 else lot_items_full
+    lot_items_full = [
+        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "14"),
+        ("Tabel 3.1", "Skala Pengukuran Likert 5 Poin", "21"),
+        ("Tabel 3.2", "Operasionalisasi Variabel Penelitian", "26"),
+        ("Tabel 3.3", "Jadwal Pelaksanaan Kegiatan Penelitian (Tahun 2026)", "34")
+    ]
+    lot_items = lot_items_nobab3 if skip_chapter3 else lot_items_full
     for tab_num, tab_title, tab_page in lot_items:
-        p_lot = doc.add_paragraph()
+        p_lot = doc.add_paragraph(style='TOC 1')
         p_lot.paragraph_format.line_spacing = 1.15
         p_lot.paragraph_format.space_before = Pt(0)
         p_lot.paragraph_format.space_after = Pt(4)
         p_lot.paragraph_format.left_indent = Cm(0)
         p_lot.paragraph_format.first_line_indent = Cm(0)
+        p_lot.paragraph_format.right_indent = Cm(0)
         p_lot.paragraph_format.tab_stops.add_tab_stop(target_right, WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
 
         r_num = p_lot.add_run(f"{tab_num}.  ")
-        r_num.font.name = "Times New Roman"
-        r_num.font.size = Pt(11)
-        r_num.font.bold = True
+        make_run_pure_black(r_num, "Times New Roman", Pt(11), bold=True)
 
         r_title = p_lot.add_run(tab_title)
-        r_title.font.name = "Times New Roman"
-        r_title.font.size = Pt(11)
+        make_run_pure_black(r_title, "Times New Roman", Pt(11), bold=False)
 
-        r_page = p_lot.add_run(f"\t{tab_page}")
-        r_page.font.name = "Times New Roman"
-        r_page.font.size = Pt(11)
-        r_page.font.bold = True
+        # Dedicated tab run
+        r_tab = p_lot.add_run()
+        r_tab._r.append(parse_xml(f'<w:tab {nsdecls("w")}/>'))
 
-    # 9. Daftar Gambar (hal. x)
+        # Dedicated page number run
+        r_page = p_lot.add_run(str(tab_page))
+        make_run_pure_black(r_page, "Times New Roman", Pt(11), bold=False)
+
+    # 9. Daftar Gambar
     add_frontmatter_heading(doc, "DAFTAR GAMBAR", page_break=True)
 
-    lof_items_full = [
-        ("Gambar 2.1", "Model Rerangka Konseptual Penelitian (Pengaruh Anteseden, Moderasi, dan Impulsive Buying)", "30"),
-        ("Gambar 3.1", "Diagram Alur Pelaksanaan Penelitian (Tahapan Operasional Riset Kuantitatif)", "43")
+    lof_items_nobab3 = [
+        ("Gambar 1.1", "Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa", "2"),
+        ("Gambar 1.2", "Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024", "3"),
+        ("Gambar 1.3", "Estimasi Pangsa Pasar Industri Trading Card Game (TCG) Global Tahun 2024", "4"),
+        ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "20")
     ]
-    lof_items = [(n, t, p) for n, t, p in lof_items_full if not n.startswith("Gambar 3")] if skip_chapter3 else lof_items_full
+    lof_items_full = [
+        ("Gambar 1.1", "Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa", "2"),
+        ("Gambar 1.2", "Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024", "3"),
+        ("Gambar 1.3", "Estimasi Pangsa Pasar Industri Trading Card Game (TCG) Global Tahun 2024", "4"),
+        ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "20"),
+        ("Gambar 3.1", "Diagram Alur Pelaksanaan Penelitian", "33")
+    ]
+    lof_items = lof_items_nobab3 if skip_chapter3 else lof_items_full
     for fig_num, fig_title, fig_page in lof_items:
-        p_lof = doc.add_paragraph()
+        p_lof = doc.add_paragraph(style='TOC 1')
         p_lof.paragraph_format.line_spacing = 1.15
         p_lof.paragraph_format.space_before = Pt(0)
         p_lof.paragraph_format.space_after = Pt(4)
         p_lof.paragraph_format.left_indent = Cm(0)
         p_lof.paragraph_format.first_line_indent = Cm(0)
+        p_lof.paragraph_format.right_indent = Cm(0)
         p_lof.paragraph_format.tab_stops.add_tab_stop(target_right, WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
 
         r_num = p_lof.add_run(f"{fig_num}.  ")
-        r_num.font.name = "Times New Roman"
-        r_num.font.size = Pt(11)
-        r_num.font.bold = True
+        make_run_pure_black(r_num, "Times New Roman", Pt(11), bold=True)
 
         r_title = p_lof.add_run(fig_title)
-        r_title.font.name = "Times New Roman"
-        r_title.font.size = Pt(11)
+        make_run_pure_black(r_title, "Times New Roman", Pt(11), bold=False)
 
-        r_page = p_lof.add_run(f"\t{fig_page}")
-        r_page.font.name = "Times New Roman"
-        r_page.font.size = Pt(11)
-        r_page.font.bold = True
+        # Dedicated tab run
+        r_tab = p_lof.add_run()
+        r_tab._r.append(parse_xml(f'<w:tab {nsdecls("w")}/>'))
+
+        # Dedicated page number run
+        r_page = p_lof.add_run(str(fig_page))
+        make_run_pure_black(r_page, "Times New Roman", Pt(11), bold=False)
 
     # ------------------------------------------------------------------------
     # SECTION 3: BAGIAN INTI / MAIN TEXT (BAB 1 s.d. BAB 3 & DAFTAR PUSTAKA)
@@ -1194,6 +1297,9 @@ def build_full_proposal(skip_chapter3: bool = False):
     # Split markdown into BAB 1, BAB 2, BAB 3, and DAFTAR PUSTAKA
     parts = re.split(r'\n#+\s+(BAB\s+\d+.*?|DAFTAR PUSTAKA.*?)\n', md_text)
     
+    has_inserted_fig11 = False
+    has_inserted_fig12 = False
+    has_inserted_fig13 = False
     has_inserted_fig21 = False
     has_inserted_fig31 = False
 
@@ -1254,38 +1360,150 @@ def build_full_proposal(skip_chapter3: bool = False):
                 line_idx += 1
                 continue
 
-            # LaTeX Figure block handling for Gambar 3.1
+            # LaTeX Figure block handling (Gambar 1.1, 1.2, 1.3, 2.1, 3.1)
             if r'\begin{figure}' in line_str:
-                # Consume till \end{figure}
-                while line_idx < len(lines) and r'\end{figure}' not in lines[line_idx]:
+                fig_lines = [lines[line_idx]]
+                while line_idx + 1 < len(lines) and r'\end{figure}' not in lines[line_idx]:
                     line_idx += 1
-                if line_idx < len(lines):
+                    fig_lines.append(lines[line_idx])
+                if line_idx < len(lines) and r'\end{figure}' in lines[line_idx]:
                     line_idx += 1
+                fig_text = '\n'.join(fig_lines)
 
-                # Insert Gambar 3.1
-                if img_alur.exists():
-                    p_img = doc.add_paragraph()
-                    p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
-                    p_img.paragraph_format.space_before = Pt(12)
-                    p_img.paragraph_format.space_after = Pt(4)
-                    p_img.paragraph_format.first_line_indent = Cm(0)
-                    p_img.add_run().add_picture(str(img_alur), width=Cm(13.0))
+                # 1. Gambar 1.1 (Media Franchise Ranking)
+                if ("gambar1_1" in fig_text or "media_franchise" in fig_text) and not has_inserted_fig11:
+                    has_inserted_fig11 = True
+                    if img_fig11.exists():
+                        p_img = doc.add_paragraph()
+                        p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_img.paragraph_format.space_before = Pt(12)
+                        p_img.paragraph_format.space_after = Pt(4)
+                        p_img.paragraph_format.first_line_indent = Cm(0)
+                        p_img.add_run().add_picture(str(img_fig11), width=Cm(13.5))
 
-                    p_cap = doc.add_paragraph()
-                    p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
-                    p_cap.paragraph_format.space_before = Pt(2)
-                    p_cap.paragraph_format.space_after = Pt(2)
-                    p_cap.paragraph_format.first_line_indent = Cm(0)
-                    p_cap.add_run("Gambar 3.1. Diagram Alur Pelaksanaan Penelitian").font.bold = True
+                        p_cap = doc.add_paragraph()
+                        p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_cap.paragraph_format.space_before = Pt(2)
+                        p_cap.paragraph_format.space_after = Pt(2)
+                        p_cap.paragraph_format.first_line_indent = Cm(0)
+                        p_cap.add_run("Gambar 1.1. Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa").font.bold = True
 
-                    p_src = doc.add_paragraph()
-                    p_src.alignment = WD_ALIGN_PARAGRAPH.CENTER
-                    p_src.paragraph_format.space_before = Pt(0)
-                    p_src.paragraph_format.space_after = Pt(12)
-                    p_src.paragraph_format.first_line_indent = Cm(0)
-                    r_s = p_src.add_run("Sumber: Dikembangkan oleh penulis untuk tahapan operasional penelitian, 2026.")
-                    r_s.font.size = Pt(10)
-                    r_s.font.italic = True
+                        p_src = doc.add_paragraph()
+                        p_src.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_src.paragraph_format.space_before = Pt(0)
+                        p_src.paragraph_format.space_after = Pt(12)
+                        p_src.paragraph_format.first_line_indent = Cm(0)
+                        r_s = p_src.add_run("Sumber: Agregasi Riset TitleMax dan Statista (2024).")
+                        r_s.font.size = Pt(10)
+                        r_s.font.italic = True
+
+                # 2. Gambar 1.2 (Pokemon Card Production Growth)
+                elif ("gambar1_2" in fig_text or "pokemon_card_growth" in fig_text or "production_growth" in fig_text) and not has_inserted_fig12:
+                    has_inserted_fig12 = True
+                    if img_fig12.exists():
+                        p_img = doc.add_paragraph()
+                        p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_img.paragraph_format.space_before = Pt(12)
+                        p_img.paragraph_format.space_after = Pt(4)
+                        p_img.paragraph_format.first_line_indent = Cm(0)
+                        p_img.add_run().add_picture(str(img_fig12), width=Cm(13.5))
+
+                        p_cap = doc.add_paragraph()
+                        p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_cap.paragraph_format.space_before = Pt(2)
+                        p_cap.paragraph_format.space_after = Pt(2)
+                        p_cap.paragraph_format.first_line_indent = Cm(0)
+                        p_cap.add_run("Gambar 1.2. Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024").font.bold = True
+
+                        p_src = doc.add_paragraph()
+                        p_src.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_src.paragraph_format.space_before = Pt(0)
+                        p_src.paragraph_format.space_after = Pt(12)
+                        p_src.paragraph_format.first_line_indent = Cm(0)
+                        r_s = p_src.add_run("Sumber: The Pokémon Company Corporate Business Data (2024).")
+                        r_s.font.size = Pt(10)
+                        r_s.font.italic = True
+
+                # 3. Gambar 1.3 (TCG Market Share Donut)
+                elif ("gambar1_3" in fig_text or "tcg_market_share" in fig_text or "market_share" in fig_text) and not has_inserted_fig13:
+                    has_inserted_fig13 = True
+                    if img_fig13.exists():
+                        p_img = doc.add_paragraph()
+                        p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_img.paragraph_format.space_before = Pt(12)
+                        p_img.paragraph_format.space_after = Pt(4)
+                        p_img.paragraph_format.first_line_indent = Cm(0)
+                        p_img.add_run().add_picture(str(img_fig13), width=Cm(12.5))
+
+                        p_cap = doc.add_paragraph()
+                        p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_cap.paragraph_format.space_before = Pt(2)
+                        p_cap.paragraph_format.space_after = Pt(2)
+                        p_cap.paragraph_format.first_line_indent = Cm(0)
+                        p_cap.add_run("Gambar 1.3. Estimasi Pangsa Pasar Industri Trading Card Game (TCG) Global Tahun 2024").font.bold = True
+
+                        p_src = doc.add_paragraph()
+                        p_src.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_src.paragraph_format.space_before = Pt(0)
+                        p_src.paragraph_format.space_after = Pt(12)
+                        p_src.paragraph_format.first_line_indent = Cm(0)
+                        r_s = p_src.add_run("Sumber: ICv2 dan TCGplayer Industry Research (2024).")
+                        r_s.font.size = Pt(10)
+                        r_s.font.italic = True
+
+                # 4. Gambar 2.1 (Kerangka Pemikiran)
+                elif ("rerangka" in fig_text or "Model Rerangka" in fig_text) and not has_inserted_fig21:
+                    has_inserted_fig21 = True
+                    if img_rerangka.exists():
+                        p_img = doc.add_paragraph()
+                        p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_img.paragraph_format.space_before = Pt(12)
+                        p_img.paragraph_format.space_after = Pt(4)
+                        p_img.paragraph_format.first_line_indent = Cm(0)
+                        p_img.add_run().add_picture(str(img_rerangka), width=Cm(14.0))
+
+                        p_cap = doc.add_paragraph()
+                        p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_cap.paragraph_format.space_before = Pt(2)
+                        p_cap.paragraph_format.space_after = Pt(2)
+                        p_cap.paragraph_format.first_line_indent = Cm(0)
+                        p_cap.add_run("Gambar 2.1. Model Rerangka Konseptual Penelitian").font.bold = True
+
+                        p_src = doc.add_paragraph()
+                        p_src.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_src.paragraph_format.space_before = Pt(0)
+                        p_src.paragraph_format.space_after = Pt(12)
+                        p_src.paragraph_format.first_line_indent = Cm(0)
+                        r_s = p_src.add_run("Keterangan: Garis lurus menunjukkan pengaruh langsung (H1, H2, H3); Garis putus-putus menunjukkan efek moderasi kontrol diri yang memperlemah (H4, H5, H6).")
+                        r_s.font.size = Pt(10)
+                        r_s.font.italic = True
+
+                # 5. Gambar 3.1 (Diagram Alur Pelaksanaan Penelitian)
+                elif ("alur_penelitian" in fig_text or "Diagram Alur" in fig_text or "tikzpicture" in fig_text) and not has_inserted_fig31:
+                    has_inserted_fig31 = True
+                    if img_alur.exists():
+                        p_img = doc.add_paragraph()
+                        p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_img.paragraph_format.space_before = Pt(12)
+                        p_img.paragraph_format.space_after = Pt(4)
+                        p_img.paragraph_format.first_line_indent = Cm(0)
+                        p_img.add_run().add_picture(str(img_alur), width=Cm(13.0))
+
+                        p_cap = doc.add_paragraph()
+                        p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_cap.paragraph_format.space_before = Pt(2)
+                        p_cap.paragraph_format.space_after = Pt(2)
+                        p_cap.paragraph_format.first_line_indent = Cm(0)
+                        p_cap.add_run("Gambar 3.1. Diagram Alur Pelaksanaan Penelitian").font.bold = True
+
+                        p_src = doc.add_paragraph()
+                        p_src.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        p_src.paragraph_format.space_before = Pt(0)
+                        p_src.paragraph_format.space_after = Pt(12)
+                        p_src.paragraph_format.first_line_indent = Cm(0)
+                        r_s = p_src.add_run("Sumber: Dikembangkan oleh penulis untuk tahapan operasional penelitian, 2026.")
+                        r_s.font.size = Pt(10)
+                        r_s.font.italic = True
                 continue
 
             # LaTeX Table block handling for Tabel 3.3 (Jadwal Kegiatan)
@@ -1297,6 +1515,111 @@ def build_full_proposal(skip_chapter3: bool = False):
 
                 # Insert Tabel 3.3
                 build_tabel_jadwal(doc)
+                continue
+
+            # Image detection for Gambar 1.1 (Media Franchise Ranking)
+            if ("gambar1_1_media_franchise_ranking" in line_str or "Gambar 1.1" in line_str) and not has_inserted_fig11:
+                has_inserted_fig11 = True
+                if img_fig11.exists():
+                    p_img = doc.add_paragraph()
+                    p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                    p_img.paragraph_format.space_before = Pt(12)
+                    p_img.paragraph_format.space_after = Pt(4)
+                    p_img.paragraph_format.first_line_indent = Cm(0)
+                    p_img.add_run().add_picture(str(img_fig11), width=Cm(13.5))
+
+                    p_cap = doc.add_paragraph()
+                    p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                    p_cap.paragraph_format.space_before = Pt(2)
+                    p_cap.paragraph_format.space_after = Pt(2)
+                    p_cap.paragraph_format.first_line_indent = Cm(0)
+                    p_cap.add_run("Gambar 1.1. Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa").font.bold = True
+
+                    p_src = doc.add_paragraph()
+                    p_src.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                    p_src.paragraph_format.space_before = Pt(0)
+                    p_src.paragraph_format.space_after = Pt(12)
+                    p_src.paragraph_format.first_line_indent = Cm(0)
+                    r_s = p_src.add_run("Sumber: Agregasi Riset TitleMax dan Statista, 2024.")
+                    r_s.font.size = Pt(10)
+                    r_s.font.italic = True
+                line_idx += 1
+                while line_idx < len(lines):
+                    nxt = lines[line_idx].strip()
+                    if nxt.startswith('*Sumber') or nxt.startswith('Sumber') or nxt.startswith('**Gambar 1.1') or not nxt or nxt.startswith('</div>') or nxt.startswith('<div'):
+                        line_idx += 1
+                    else:
+                        break
+                continue
+
+            # Image detection for Gambar 1.2 (Pokemon Card Production Growth)
+            if ("gambar1_2_pokemon_tcg_production_growth" in line_str or "Gambar 1.2" in line_str) and not has_inserted_fig12:
+                has_inserted_fig12 = True
+                if img_fig12.exists():
+                    p_img = doc.add_paragraph()
+                    p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                    p_img.paragraph_format.space_before = Pt(12)
+                    p_img.paragraph_format.space_after = Pt(4)
+                    p_img.paragraph_format.first_line_indent = Cm(0)
+                    p_img.add_run().add_picture(str(img_fig12), width=Cm(13.5))
+
+                    p_cap = doc.add_paragraph()
+                    p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                    p_cap.paragraph_format.space_before = Pt(2)
+                    p_cap.paragraph_format.space_after = Pt(2)
+                    p_cap.paragraph_format.first_line_indent = Cm(0)
+                    p_cap.add_run("Gambar 1.2. Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024").font.bold = True
+
+                    p_src = doc.add_paragraph()
+                    p_src.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                    p_src.paragraph_format.space_before = Pt(0)
+                    p_src.paragraph_format.space_after = Pt(12)
+                    p_src.paragraph_format.first_line_indent = Cm(0)
+                    r_s = p_src.add_run("Sumber: The Pokémon Company Corporate Business Data, 2024.")
+                    r_s.font.size = Pt(10)
+                    r_s.font.italic = True
+                line_idx += 1
+                while line_idx < len(lines):
+                    nxt = lines[line_idx].strip()
+                    if nxt.startswith('*Sumber') or nxt.startswith('Sumber') or nxt.startswith('**Gambar 1.2') or not nxt or nxt.startswith('</div>') or nxt.startswith('<div'):
+                        line_idx += 1
+                    else:
+                        break
+                continue
+
+            # Image detection for Gambar 1.3 (TCG Market Share Donut)
+            if ("gambar1_3_tcg_market_share_donut" in line_str or "Gambar 1.3" in line_str) and not has_inserted_fig13:
+                has_inserted_fig13 = True
+                if img_fig13.exists():
+                    p_img = doc.add_paragraph()
+                    p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                    p_img.paragraph_format.space_before = Pt(12)
+                    p_img.paragraph_format.space_after = Pt(4)
+                    p_img.paragraph_format.first_line_indent = Cm(0)
+                    p_img.add_run().add_picture(str(img_fig13), width=Cm(12.5))
+
+                    p_cap = doc.add_paragraph()
+                    p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                    p_cap.paragraph_format.space_before = Pt(2)
+                    p_cap.paragraph_format.space_after = Pt(2)
+                    p_cap.paragraph_format.first_line_indent = Cm(0)
+                    p_cap.add_run("Gambar 1.3. Estimasi Pangsa Pasar Industri Trading Card Game (TCG) Global Tahun 2024").font.bold = True
+
+                    p_src = doc.add_paragraph()
+                    p_src.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                    p_src.paragraph_format.space_before = Pt(0)
+                    p_src.paragraph_format.space_after = Pt(12)
+                    p_src.paragraph_format.first_line_indent = Cm(0)
+                    r_s = p_src.add_run("Sumber: ICv2 dan TCGplayer Industry Research, 2024.")
+                    r_s.font.size = Pt(10)
+                    r_s.font.italic = True
+                line_idx += 1
+                while line_idx < len(lines):
+                    nxt = lines[line_idx].strip()
+                    if nxt.startswith('*Sumber') or nxt.startswith('Sumber') or nxt.startswith('**Gambar 1.3') or not nxt or nxt.startswith('</div>') or nxt.startswith('<div'):
+                        line_idx += 1
+                    else:
+                        break
                 continue
 
             # Image detection for Gambar 2.1 (Kerangka Pemikiran)
@@ -1414,6 +1737,29 @@ def build_full_proposal(skip_chapter3: bool = False):
         subprocess.run(["powershell", "-Command", "Stop-Process -Name WINWORD -Force -ErrorAction SilentlyContinue"], check=False)
     except Exception:
         pass
+
+    print("[*] Performing Document-Wide Pure Black & Typography Enforcement Pass...")
+    for p in doc.paragraphs:
+        for r in p.runs:
+            r.font.color.rgb = RGBColor(0, 0, 0)
+            rPr = r._r.get_or_add_rPr()
+            for c in rPr.findall(qn('w:color')):
+                rPr.remove(c)
+            rPr.append(parse_xml(f'<w:color {nsdecls("w")} w:val="000000"/>'))
+            if r.font.name != "Cambria Math":
+                for rf in rPr.findall(qn('w:rFonts')):
+                    rPr.remove(rf)
+                rPr.append(parse_xml(f'<w:rFonts {nsdecls("w")} w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>'))
+    for tbl in doc.tables:
+        for row in tbl.rows:
+            for cell in row.cells:
+                for p in cell.paragraphs:
+                    for r in p.runs:
+                        r.font.color.rgb = RGBColor(0, 0, 0)
+                        rPr = r._r.get_or_add_rPr()
+                        for c in rPr.findall(qn('w:color')):
+                            rPr.remove(c)
+                        rPr.append(parse_xml(f'<w:color {nsdecls("w")} w:val="000000"/>'))
 
     # Save document
     doc.save(str(output_docx))
