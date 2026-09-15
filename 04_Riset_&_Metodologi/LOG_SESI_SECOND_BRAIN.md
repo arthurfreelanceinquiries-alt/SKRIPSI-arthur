@@ -7,6 +7,31 @@
 
 ---
 
+## 📅 Sesi 15 September 2026 (Sesi 10): Audit & Penyelarasan Kepatuhan Buku Pedoman Tugas Akhir FEB UKRIDA 2023
+
+* **Fokus Pekerjaan:**
+  - Mengaktifkan skill [[obsidian-second-brain]] dan membedah Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023 (SK Dekan No. 350a/SK/UKKW/FEB/D/VI/2023).
+  - Melakukan audit komparatif terhadap 7 pilar kepatuhan: kuota jurnal SINTA/Internasional, sitasi dosen FEB UKRIDA, tebal naskah, jumlah referensi, margin/layout fisik, kaidah sitasi dalam teks, dan format Daftar Pustaka.
+  - Menyusun dokumen PRD di [[04_Riset_&_Metodologi/PRD_AUDIT_DAN_PENYELARASAN_PEDOMAN_FEB_UKRIDA_2023.md]] dan rencana implementasi di `implementation_plan.md`.
+  - Menerapkan arsitektur 3-Layer:
+    - **Layer 1 (Directives):** Membuat [[directives/verify_ukrida_2023_guidelines.md]].
+    - **Layer 2 (Orchestration):** Menghapus nomor urut `1.` s.d. `51.` pada [[03_Draft_Per_Bab/DAFTAR_PUSTAKA_TENTATIF.md]] dan [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]], serta menyelaraskan sitasi dua penulis bahasa Indonesia dengan kata hubung "dan".
+    - **Layer 3 (Execution):** Memperbarui generator Word [[execution/build_proposal_word.py]], membuat skrip verifikasi otomatis [[execution/verify_ukrida_compliance.py]], serta meregenerasi kedua dokumen Word.
+* **Masalah yang Diselesaikan:**
+  - **Eliminasi Pelanggaran Format Nomor Urut:** Mengeliminasi seluruh angka nomor urut pada Daftar Pustaka sehingga 100% mematuhi aturan baku UKRIDA 2023 Subbab 3.7 (*"tanpa didahului oleh nomor urut atau garis pendek"*).
+  - **Standarisasi Sitasi Naratif:** Mengganti seluruh simbol ampersand `&` dan `and` pada sitasi naratif dua penulis menjadi kata baku "dan" (misal: *Aiken dan West*, *Tan dan Adyantari*, *Arnold dan Reynolds*), serta memastikan singkatan *et al.* konsisten miring.
+  - **Validasi Kuota Jurnal SINTA / Internasional:** Membuktikan secara terdokumentasi bahwa naskah Arthur memiliki 3 jurnal SINTA (SINTA 1, 2, 4) dan 4 jurnal Scopus Q1/WOS utama (total 7 artikel empiris mutakhir 2021–2025, melampaui kuota minimal 5).
+* **Keputusan / Output Teknis:**
+  - Dokumen PRD: [[04_Riset_&_Metodologi/PRD_AUDIT_DAN_PENYELARASAN_PEDOMAN_FEB_UKRIDA_2023.md]].
+  - Dokumen Directive: [[directives/verify_ukrida_2023_guidelines.md]].
+  - Skrip Verifikasi Baru: [[execution/verify_ukrida_compliance.py]] (LULUS 100% pada 5 pengujian kepatuhan).
+  - Naskah Word Tergenerasi Ulang & Bersih:
+    1. [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]] (Versi Lengkap, Daftar Pustaka tanpa nomor urut, hanging indent 1.25 cm).
+    2. [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]] (Varian bimbingan tanpa Bab 3, format steril).
+  - Seluruh rangkaian audit (`verify_ukrida_compliance.py`, `verify_docx_typography.py`, `verify_pdf_docx_parity.py`) berstatus **PASS 100%**.
+
+---
+
 ## 📅 Sesi 14 September 2026 (Sesi 9 - Pukul 19:10 WIB): Audit Teknis Prism AI, PRD Resolusi, & Rencana Implementasi
 
 * **Fokus Pekerjaan:**
@@ -249,3 +274,20 @@
     - `[[execution/verify_word_outline.py]]`: PASS 100% (56 heading terverifikasi).
     - `[[execution/verify_pdf_docx_parity.py]]`: PASS 100% (Paritas sempurna NoBab3 dan Full Proposal).
     - `[[execution/verify_format_and_typos.py]]`: PASS 100% (Margin 4-4-3-3, APA 7th tables, 0 typo/leakage).
+
+---
+
+### 📅 Sesi: 15 September 2026 — Pembersihan Codebase, Eliminasi Redundansi & Purging Proyek Usang
+* **Fokus Pekerjaan:**
+  - Audit menyeluruh dan pembersihan codebase repositori skripsi sesuai arsitektur Obsidian Second Brain.
+  - Menghapus artefak sementara (*temporary & scratch debris*), file duplikat identik di dalam vault, folder lepas luar proyek, serta arsip usang topik riset masa lalu yang telah dibatalkan (*dead code/data*).
+* **Tindakan & Solusi:**
+  - **Kategori 1 (Scratch & Temp):** Menghapus file lock sementara Word (`~$oposal_Arthur_PokemonTCG.docx`), seluruh folder `scratch/` (62 file pengujian, tangkapan layar, diff eksperimental), sisa build intermediate LaTeX (`.aux`, `.log`, `.toc`, `.bbl`, dll.), dan cache Python `__pycache__`.
+  - **Kategori 2 (Duplikat Vault):** Menghapus duplikat catatan di folder konfigurasi `.obsidian/SECOND_BRAIN_QUICKSTART.md`, file `.gitkeep` tak terpakai di folder berpopulasi, catatan bimbingan tidak lengkap `2026-09-08_Revisi_Dosen_Bab1.md`, serta salinan instruksi ganda `CLAUDE.md` dan `GEMINI.md` (mempertahankan `AGENTS.md` kanonis).
+  - **Kategori 3 (Folder Lepas):** Menghapus folder `ZIP proposal/` di root workspace yang memuat ekspor lama 14 September dan zip tools yang tidak digunakan.
+  - **Kategori 4 (Arsip Usang):** Menghapus seluruh folder `_archive/` (312 file, 144.7 MB) yang memuat PDF laporan keuangan perbankan lama (110 MB), pratinjau PNG LaTeX lama (24.4 MB), dan duplikasi naskah skripsi lama.
+* **Hasil & Verifikasi:**
+  - **Penghematan Ruang Disk:** Berhasil membebaskan **150.66 MB** (ukuran repositori menyusut drastis dari 165 MB menjadi **19.46 MB** murni).
+  - **Integritas Naskah & Pipeline:** Eksekusi `build_proposal_nobab3_pdf.py` menghasilkan `Proposal_Arthur_NoBab3.pdf` secara sempurna (XeLaTeX & BibTeX pass 100%).
+  - **Integritas Word & Paritas:** Skrip `verify_docx_typography.py` dan `verify_pdf_docx_parity.py` mengonfirmasi kelulusan 100% dengan zero-error.
+

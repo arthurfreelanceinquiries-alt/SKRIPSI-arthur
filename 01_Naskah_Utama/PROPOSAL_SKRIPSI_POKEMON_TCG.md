@@ -214,7 +214,7 @@ NIM: 312023002
 
 Penelitian ini bertujuan untuk menganalisis dan menguji secara empiris pengaruh *hedonic motivation* (motivasi hedonis), *desire for completeness* (hasrat melengkapi koleksi), dan *speculative motive* (motif spekulasi finansial) terhadap *impulsive buying* (pembelian impulsif) *booster pack* kartu Pokémon Trading Card Game (Pokémon TCG) fisik resmi berbahasa Indonesia, serta menguji peran *self-control* (kontrol diri) sebagai variabel moderasi dalam memperlemah pengaruh ketiga variabel anteseden tersebut.
 
-Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei *cross-sectional*. Data primer dikumpulkan melalui penyebaran kuesioner daring berbasis skala Likert 5 poin kepada responden yang dipilih melalui teknik *purposive sampling*. Kriteria inklusi sampel adalah konsumen atau kolektor Warga Negara Indonesia (WNI) berusia minimal 17 tahun yang pernah membeli *booster pack* Pokémon TCG fisik resmi dalam kurun waktu 6 bulan terakhir (maksimal 12 bulan terakhir). Target sampel data bersih yang dapat dianalisis (*usable sample*) adalah 120 hingga 150 responden, mengacu pada kaidah ukuran sampel Green (1991) serta kriteria Cohen (1988) untuk mencapai kekuatan uji statistik (*statistical power*) sebesar 0,80 pada model regresi utama. Metode analisis data menggunakan analisis regresi linear berganda hirarkis dan *Moderated Regression Analysis* (MRA) dengan prosedur pemusatan nilai rata-rata (*mean-centering*) guna memfasilitasi interpretasi koefisien serta mereduksi multikolinearitas non-esensial antara variabel prediktor dengan produk interaksinya (Aiken & West, 1991; Hayes, 2018), yang diolah menggunakan perangkat lunak IBM SPSS Statistics.
+Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei *cross-sectional*. Data primer dikumpulkan melalui penyebaran kuesioner daring berbasis skala Likert 5 poin kepada responden yang dipilih melalui teknik *purposive sampling*. Kriteria inklusi sampel adalah konsumen atau kolektor Warga Negara Indonesia (WNI) berusia minimal 17 tahun yang pernah membeli *booster pack* Pokémon TCG fisik resmi dalam kurun waktu 6 bulan terakhir (maksimal 12 bulan terakhir). Target sampel data bersih yang dapat dianalisis (*usable sample*) adalah 120 hingga 150 responden, mengacu pada kaidah ukuran sampel Green (1991) serta kriteria Cohen (1988) untuk mencapai kekuatan uji statistik (*statistical power*) sebesar 0,80 pada model regresi utama. Metode analisis data menggunakan analisis regresi linear berganda hirarkis dan *Moderated Regression Analysis* (MRA) dengan prosedur pemusatan nilai rata-rata (*mean-centering*) guna memfasilitasi interpretasi koefisien serta mereduksi multikolinearitas non-esensial antara variabel prediktor dengan produk interaksinya (Aiken dan West, 1991; Hayes, 2018), yang diolah menggunakan perangkat lunak IBM SPSS Statistics.
 
 Penelitian ini menawarkan kebaruan teoritis (*novelty*) dengan mengintegrasikan kerangka psikologi lingkungan *Stimulus-Organism-Response* (S-O-R), psikologi kolektor (*Zeigarnik Effect* dan *The Completing the Set Effect*), teori regulasi diri (*Self-Regulation Theory*), serta prinsip-prinsip keuangan perilaku (*behavioral finance*) pada fenomena komoditas hobi fisik bernilai spekulatif tinggi. Hasil penelitian ini diharapkan memberikan kontribusi empiris bagi konsumen muda dalam menjaga kontrol diri finansial, serta masukan aplikatif bagi komunitas hobi dan pemangku kebijakan edukasi keuangan generasi muda di Indonesia.
 
@@ -226,7 +226,7 @@ Penelitian ini menawarkan kebaruan teoritis (*novelty*) dengan mengintegrasikan 
 
 *This research aims to analyze and empirically test the effects of hedonic motivation, desire for completeness, and speculative motive on the impulsive buying behavior of official Indonesian-language physical Pokémon Trading Card Game (Pokémon TCG) booster packs, as well as to evaluate the moderating role of self-control in weakening the relationships between these three antecedent variables and impulsive buying.*
 
-*This study adopts an associative quantitative approach utilizing a cross-sectional survey design. Primary data are gathered via self-administered online questionnaires employing a 5-point Likert scale, distributed to respondents selected through purposive sampling. The sample inclusion criteria comprise Indonesian citizens aged 17 and above who have purchased official physical booster packs within the past 6 months (maximum 12 months). The targeted usable sample size ranges from 120 to 150 respondents, consistent with the sample guidelines by Green (1991) and Cohen (1988) to achieve statistical power of 0.80 for the overall regression model. The empirical model is estimated using hierarchical multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to facilitate conditional slope interpretation and mitigate non-essential multicollinearity between predictors and product terms (Aiken & West, 1991; Hayes, 2018), executed via IBM SPSS Statistics software.*
+*This study adopts an associative quantitative approach utilizing a cross-sectional survey design. Primary data are gathered via self-administered online questionnaires employing a 5-point Likert scale, distributed to respondents selected through purposive sampling. The sample inclusion criteria comprise Indonesian citizens aged 17 and above who have purchased official physical booster packs within the past 6 months (maximum 12 months). The targeted usable sample size ranges from 120 to 150 respondents, consistent with the sample guidelines by Green (1991) and Cohen (1988) to achieve statistical power of 0.80 for the overall regression model. The empirical model is estimated using hierarchical multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to facilitate conditional slope interpretation and mitigate non-essential multicollinearity between predictors and product terms (Aiken dan West, 1991; Hayes, 2018), executed via IBM SPSS Statistics software.*
 
 *This study provides theoretical novelty by synthesizing the Stimulus-Organism-Response (S-O-R) paradigm, collector psychology (the Zeigarnik Effect and The Completing the Set Effect), Self-Regulation Theory, and behavioral finance principles in the context of tangible alternative assets exhibiting volatile secondary market premiums. The findings are expected to offer practical insights for young consumers in exercising financial discipline regarding discretionary collectibles and provide strategic inputs for community organizers and financial educators targeting Generation Z.*
 
@@ -587,7 +587,7 @@ Pemilihan *purposive sampling* merupakan pendekatan yang paling tepat (*the most
 
 ## 3.3 Model Penelitian
 
-Guna menguji hipotesis penelitian secara akurat dan mengisolasi efek moderasi murni terpisah dari efek langsung pemoderasi, penelitian ini mengadopsi prosedur regresi hirarkis *Moderated Regression Analysis* (MRA) berbasis OLS yang diestimasi dalam dua model bertahap (Aiken & West, 1991; Cohen, 1988; Hayes, 2018):
+Guna menguji hipotesis penelitian secara akurat dan mengisolasi efek moderasi murni terpisah dari efek langsung pemoderasi, penelitian ini mengadopsi prosedur regresi hirarkis *Moderated Regression Analysis* (MRA) berbasis OLS yang diestimasi dalam dua model bertahap (Aiken dan West, 1991; Cohen, 1988; Hayes, 2018):
 
 **Model 1 — Regresi Linear Berganda Hirarkis (Model Aditif Baseline / Efek Utama):**
 
@@ -778,104 +778,106 @@ Jadwal pelaksanaan tahapan kegiatan penelitian direncanakan berlangsung selama 6
 
 # DAFTAR PUSTAKA
 
-1. Aiken, L. S. and West, S. G. (1991). *Multiple Regression: Testing and Interpreting Interactions*. Sage Publications, Newbury Park, CA.
+Aiken, L. S. dan West, S. G. 1991. *Multiple Regression: Testing and Interpreting Interactions*. Newbury Park, CA: Sage Publications.
 
-2. Amos, C., Holmes, G. R., and Keneson, W. C. (2014). A meta-analysis of consumer impulse buying. *Journal of Retailing and Consumer Services*, 21(2):86–97.
+Amos, C., Holmes, G. R., dan Keneson, W. C. 2014. “A meta-analysis of consumer impulse buying”. *Journal of Retailing and Consumer Services* 21(2): 86–97.
 
-3. Apidana, Y. H. and Kholifah (2022). Peran self control dalam memoderasi pengaruh hedonic motives dan shopping lifestyle terhadap impulse buying. *Journal of Digital Business and Management*, 1(1):26–40.
+Apidana, Y. H. dan Kholifah. 2022. “Peran self control dalam memoderasi pengaruh hedonic motives dan shopping lifestyle terhadap impulse buying”. *Journal of Digital Business and Management* 1(1): 26–40.
 
-4. Arnold, M. J. and Reynolds, K. E. (2003). Hedonic shopping motivations. *Journal of Retailing*, 79(2):77–95.
+Arnold, M. J. dan Reynolds, K. E. 2003. “Hedonic shopping motivations”. *Journal of Retailing* 79(2): 77–95.
 
-5. Artadita, S. and Firmialy, S. D. (2024). How does self-control moderate shopping enjoyment and impulse buying among generation z online gamers? *Binus Business Review*, 15(2):179–189.
+Artadita, S. dan Firmialy, S. D. 2024. “How does self-control moderate shopping enjoyment and impulse buying among Generation Z online gamers?”. *Binus Business Review* 15(2): 179–189.
 
-6. Aryadi, A. and Lingga, M. (2024). Personal traits and motivation impact on collectibles as an alternative investment: A case study of trading card game community in greater jakarta. In *Proceedings of the 5th International Conference on Global Innovation and Trends in Economy (INCOGITE 2024)*, volume 302 of *Advances in Economics, Business and Management Research*, pages 1–12. Atlantis Press.
+Aryadi, A. dan Lingga, M. 2024. “Personal traits and motivation impact on collectibles as an alternative investment: A case study of Trading Card Game community in Greater Jakarta”. *Advances in Economics, Business and Management Research* 302: 1–12.
 
-7. Babin, B. J., Darden, W. R., and Griffin, M. (1994). Work and/or fun: Measuring hedonic and utilitarian shopping value. *Journal of Consumer Research*, 20(4):644–656.
+Babin, B. J., Darden, W. R., dan Griffin, M. 1994. “Work and/or fun: Measuring hedonic and utilitarian shopping value”. *Journal of Consumer Research* 20(4): 644–656.
 
-8. Barasz, K., John, L. K., Keenan, E. A., and Norton, M. I. (2017). Pseudo-set framing: How framing directs consumer behavior toward completeness. *Journal of Consumer Research*, 44(4):737–759.
+Barasz, K., John, L. K., Keenan, E. A., dan Norton, M. I. 2017. “Pseudo-set framing: How framing directs consumer behavior toward completeness”. *Journal of Consumer Research* 44(4): 737–759.
 
-9. Barber, B. M. and Odean, T. (2008). All that glitters: The effect of attention and news on the buying behavior of individual and institutional investors. *The Review of Financial Studies*, 21(2):785–818.
+Barber, B. M. dan Odean, T. 2008. “All that glitters: The effect of attention and news on the buying behavior of individual and institutional investors”. *The Review of Financial Studies* 21(2): 785–818.
 
-10. Baumeister, R. F. (2002). Yielding to temptation: Self-control failure, impulsive purchasing, and consumer behavior. *Journal of Consumer Research*, 28(4):670–676.
+Baumeister, R. F. 2002. “Yielding to temptation: Self-control failure, impulsive purchasing, and consumer behavior”. *Journal of Consumer Research* 28(4): 670–676.
 
-11. Baur, D. G., Dimpfl, T., and Kuck, K. (2018). Bitcoin, gold and the US dollar – a replication and extension. *Finance Research Letters*, 25:103–110.
+Baur, D. G., Dimpfl, T., dan Kuck, K. 2018. “Bitcoin, gold and the US dollar – a replication and extension”. *Finance Research Letters* 25: 103–110.
 
-12. Beatty, S. E. and Ferrell, M. E. (1998). Impulse buying: Modeling its precursors. *Journal of Retailing*, 74(2):169–191.
+Beatty, S. E. dan Ferrell, M. E. 1998. “Impulse buying: Modeling its precursors”. *Journal of Retailing* 74(2): 169–191.
 
-13. Belk, R. W. (1995). *Collecting in a Consumer Society*. Routledge, London.
+Belk, R. W. 1995. *Collecting in a Consumer Society*. London: Routledge.
 
-14. Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences*. Lawrence Erlbaum Associates, Hillsdale, NJ, 2 edition.
+Cohen, J. 1988. *Statistical Power Analysis for the Behavioral Sciences*. Edisi 2. Hillsdale, NJ: Lawrence Erlbaum Associates.
 
-15. Colline, F. (2024). Biases in indonesian stock investor behavior. *Accounting and Finance Studies*, 4(2):88–98.
+Colline, F. 2024. “Biases in Indonesian stock investor behavior”. *Accounting and Finance Studies* 4(2): 88–98.
 
-16. Dewi, M. M. L. S., Budoyo, V. D., and Mustikasari, F. (2024). Understanding impulse buying behavior: The case of blind box purchases in indonesia. *Jurnal Locus: Penelitian dan Pengabdian*, 5(2):88–100.
+Dewi, M. M. L. S., Budoyo, V. D., dan Mustikasari, F. 2024. “Understanding impulse buying behavior: The case of blind box purchases in Indonesia”. *Jurnal Locus: Penelitian dan Pengabdian* 5(2): 88–100.
 
-17. Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. *The Journal of Finance*, 25(2):383–417.
+Fama, E. F. 1970. “Efficient capital markets: A review of theory and empirical work”. *The Journal of Finance* 25(2): 383–417.
 
-18. Gao, L., Huang, Y., and Simonson, I. (2014). The ``Completing the set'' effect. *Journal of Marketing Research*, 51(2):256–273.
+Gao, L., Huang, Y., dan Simonson, I. 2014. “The 'Completing the set' effect”. *Journal of Marketing Research* 51(2): 256–273.
 
-19. Ghozali, I. (2018). *Aplikasi Analisis Multivariate dengan Program IBM SPSS 25*. Badan Penerbit Universitas Diponegoro, Semarang, 9 edition.
+Ghozali, I. 2018. *Aplikasi Analisis Multivariate dengan Program IBM SPSS 25*. Edisi 9. Semarang: Badan Penerbit Universitas Diponegoro.
 
-20. Gong, X., Yee, C. L., Lee, S. Y., Saif, A. N. M., Liu, M., and Anonthi, F. (2024). Unveiling the enigma of blind box impulse buying curiosity: The moderating role of price consciousness. *Heliyon*, 10(24):e40564.
+Gong, X., Yee, C. L., Lee, S. Y., Saif, A. N. M., Liu, M., dan Anonthi, F. 2024. “Unveiling the enigma of blind box impulse buying curiosity: The moderating role of price consciousness”. *Heliyon* 10(24): e40564.
 
-21. Green, S. B. (1991). How many subjects does it take to do a regression analysis? *Multivariate Behavioral Research*, 26(3):499–510.
+Green, S. B. 1991. “How many subjects does it take to do a regression analysis?”. *Multivariate Behavioral Research* 26(3): 499–510.
 
-22. Gültekin, B. and Özer, L. (2012). The influence of hedonic motives and browsing on impulse buying. *Journal of Economics and Behavioral Studies*, 4(3):180–189.
+Gültekin, B. dan Özer, L. 2012. “The influence of hedonic motives and browsing on impulse buying”. *Journal of Economics and Behavioral Studies* 4(3): 180–189.
 
-23. Hair, J. F., Black, W. C., Babin, B. J., and Anderson, R. E. (2019). *Multivariate Data Analysis*. Cengage Learning, Boston, MA, 8th edition.
+Hair, J. F., Black, W. C., Babin, B. J., dan Anderson, R. E. 2019. *Multivariate Data Analysis*. Edisi 8. Boston, MA: Cengage Learning.
 
-24. Hayes, A. F. (2018). *Introduction to Mediation, Moderation, and Conditional Process Analysis: A Regression-Based Approach*. The Guilford Press, New York, 2nd edition.
+Hayes, A. F. 2018. *Introduction to Mediation, Moderation, and Conditional Process Analysis: A Regression-Based Approach*. Edisi 2. New York: The Guilford Press.
 
-25. Hirschman, E. C. and Holbrook, M. B. (1982). Hedonic consumption: Emerging concepts, methods and propositions. *Journal of Marketing*, 46(3):92–101.
+Hirschman, E. C. dan Holbrook, M. B. 1982. “Hedonic consumption: Emerging concepts, methods and propositions”. *Journal of Marketing* 46(3): 92–101.
 
-26. Kahneman, D. and Tversky, A. (1979). Prospect theory: An analysis of decision under risk. *Econometrica*, 47(2):263–292.
+Kahneman, D. dan Tversky, A. 1979. “Prospect theory: An analysis of decision under risk”. *Econometrica* 47(2): 263–292.
 
-27. Katauke, T., Fukuda, S., Khan, M. S. R., and Kadoya, Y. (2023). Financial literacy and impulsivity: Evidence from Japan. *Sustainability*, 15(9):7267.
+Katauke, T., Fukuda, S., Khan, M. S. R., dan Kadoya, Y. 2023. “Financial literacy and impulsivity: Evidence from Japan”. *Sustainability* 15(9): 7267.
 
-28. Lienardy, G. V. and Panasea, I. G. N. O. (2024). The role of self-control in moderating the influence of shopping lifestyle and hedonistic behavior on impulsive buying. *Business and Investment Review*, 2(2):13–28.
+Keynes, J. M. 1936. *The General Theory of Employment, Interest and Money*. London: Macmillan.
 
-29. Long, M. M. and Schiffman, L. G. (2000). Consumption values and relationships: segmenting the market for collectibles. *Journal of Consumer Marketing*, 17(3):214–229.
+Lienardy, G. V. dan Panasea, I. G. N. O. 2024. “The role of self-control in moderating the influence of shopping lifestyle and hedonistic behavior on impulsive buying”. *Business and Investment Review* 2(2): 13–28.
 
-30. Mehrabian, A. and Russell, J. A. (1974). *An Approach to Environmental Psychology*. MIT Press, Cambridge, MA.
+Long, M. M. dan Schiffman, L. G. 2000. “Consumption values and relationships: segmenting the market for collectibles”. *Journal of Consumer Marketing* 17(3): 214–229.
 
-31. Peck, J. and Childers, T. L. (2006). If i touch it i have to have it: Individual and environmental influences on impulse purchasing. *Journal of Business Research*, 59(6):765–769.
+Mehrabian, A. dan Russell, J. A. 1974. *An Approach to Environmental Psychology*. Cambridge, MA: MIT Press.
 
-32. Pranggabayu, B. and Andjarwati, A. L. (2022). Pengaruh hedonic shopping motivation dan store atmosphere terhadap impulsive buying. *Sibatik Journal*, 1(6):951–966.
+Peck, J. dan Childers, T. L. 2006. “If I touch it I have to have it: Individual and environmental influences on impulse purchasing”. *Journal of Business Research* 59(6): 765–769.
 
-33. Prasetio, A. et al. (2021). The role of hedonic motivation in impulsive buying on e-commerce platforms. *International Journal of Data and Network Science*, 5(4):689–698.
+Pranggabayu, B. dan Andjarwati, A. L. 2022. “Pengaruh hedonic shopping motivation dan store atmosphere terhadap impulsive buying”. *Sibatik Journal* 1(6): 951–966.
 
-34. Rook, D. W. (1987). The buying impulse. *Journal of Consumer Research*, 14(2):189–199.
+Prasetio, A., Fauzi, M., dan Irawan, A. 2021. “The role of hedonic motivation in impulsive buying on e-commerce platforms”. *International Journal of Data and Network Science* 5(4): 689–698.
 
-35. Rook, D. W. and Fisher, R. J. (1995). Normative influences on impulsive buying behavior. *Journal of Consumer Research*, 22(3):305–313.
+Rook, D. W. 1987. “The buying impulse”. *Journal of Consumer Research* 14(2): 189–199.
 
-36. Sekaran, U. and Bougie, R. (2016). *Research Methods for Business: A Skill-Building Approach*. John Wiley & Sons, Chichester, West Sussex, 7th edition.
+Rook, D. W. dan Fisher, R. J. 1995. “Normative influences on impulsive buying behavior”. *Journal of Consumer Research* 22(3): 305–313.
 
-37. Shiller, R. J. (2000). *Irrational Exuberance*. Princeton University Press, Princeton, NJ.
+Sekaran, U. dan Bougie, R. 2016. *Research Methods for Business: A Skill-Building Approach*. Edisi 7. Chichester, West Sussex: John Wiley & Sons.
 
-38. Simon, H. A. (1955). A behavioral model of rational choice. *The Quarterly Journal of Economics*, 69(1):99–118.
+Shiller, R. J. 2000. *Irrational Exuberance*. Princeton, NJ: Princeton University Press.
 
-39. Spero, I. and Stone, M. (2004). Agents of change: how young consumers are changing the world of marketing. *Qualitative Market Research: An International Journal*, 7(2):153–159.
+Simon, H. A. 1955. “A behavioral model of rational choice”. *The Quarterly Journal of Economics* 69(1): 99–118.
 
-40. Stern, H. (1962). The significance of impulse buying today. *Journal of Marketing*, 26(2):59–62.
+Spero, I. dan Stone, M. 2004. “Agents of change: how young consumers are changing the world of marketing”. *Qualitative Market Research: An International Journal* 7(2): 153–159.
 
-41. Sugiyono (2019). *Metode Penelitian Kuantitatif, Kualitatif, dan R&D*. Alfabeta, Bandung.
+Stern, H. 1962. “The significance of impulse buying today”. *Journal of Marketing* 26(2): 59–62.
 
-42. Sultan, A. J., Joireman, J., and Sprott, D. E. (2012). Building consumers' impulsive buying model: The moderating role of self-control. *Journal of Consumer Marketing*, 29(1):61–73.
+Sugiyono. 2019. *Metode Penelitian Kuantitatif, Kualitatif, dan R&D*. Edisi 2. Bandung: Alfabeta.
 
-43. Tan, D. A. and Adyantari, A. (2024). Ketidakpastian blind box dan perilaku pembelian impulsif: Peran nilai fungsional, emosional, dan sosial. *Bisma: Jurnal Bisnis dan Manajemen*, 18(2):145–158.
+Sultan, A. J., Joireman, J., dan Sprott, D. E. 2012. “Building consumers' impulsive buying model: The moderating role of self-control”. *Journal of Consumer Marketing* 29(1): 61–73.
 
-44. Tangney, J. P., Baumeister, R. F., and Boone, A. L. (2004). High self-control predicts good adjustment, less pathology, better grades, and interpersonal success. *Journal of Personality*, 72(2):271–324.
+Tan, D. A. dan Adyantari, A. 2024. “Ketidakpastian blind box dan perilaku pembelian impulsif: Peran nilai fungsional, emosional, dan sosial”. *Bisma: Jurnal Bisnis dan Manajemen* 20(2): 145–158.
 
-45. Thaler, R. (1985). Mental accounting and consumer choice. *Marketing Science*, 4(3):199–214.
+Tangney, J. P., Baumeister, R. F., dan Boone, A. L. 2004. “High self-control predicts good adjustment, less pathology, better grades, and interpersonal success”. *Journal of Personality* 72(2): 271–324.
 
-46. Thaler, R. H. and Shefrin, H. M. (1981). An economic theory of self-control. *Journal of Political Economy*, 89(2):392–406.
+Thaler, R. 1985. “Mental accounting and consumer choice”. *Marketing Science* 4(3): 199–214.
 
-47. Tirtayasa, S., Lubis, A. P., and Khair, H. (2020). Keputusan pembelian: Pengaruh hedonic shopping motive dan store atmosphere dengan impulse buying sebagai pemediasi. *Jurnal Inspirasi Bisnis dan Manajemen*, 4(1):35–48.
+Thaler, R. H. dan Shefrin, H. M. 1981. “An economic theory of self-control”. *Journal of Political Economy* 89(2): 392–406.
 
-48. Verplanken, B. and Herabadi, A. (2001). Individual differences in impulse buying tendency: Feeling and no thinking. *European Journal of Personality*, 15(S1):S71–S83.
+Tirtayasa, S., Lubis, A. P., dan Khair, H. 2020. “Keputusan pembelian: Pengaruh hedonic shopping motive dan store atmosphere dengan impulse buying sebagai pemediasi”. *Jurnal Inspirasi Bisnis dan Manajemen* 4(1): 35–48.
 
-49. Vohs, K. D. and Faber, R. J. (2007). Spent resources: Self-regulatory resource depletion and impulsive buying. *Journal of Consumer Research*, 33(4):537–547.
+Verplanken, B. dan Herabadi, A. 2001. “Individual differences in impulse buying tendency: Feeling and no thinking”. *European Journal of Personality* 15(S1): S71–S83.
 
-50. Zeigarnik, B. (1927). Ueber das Behalten von erledigten und unerledigten Handlungen. *Psychologische Forschung*, 9:1–85.
+Vohs, K. D. dan Faber, R. J. 2007. “Spent resources: Self-regulatory resource depletion and impulsive buying”. *Journal of Consumer Research* 33(4): 537–547.
 
-51. Zheng, X., Men, J., Yang, F., and Gong, X. (2019). Understanding impulse buying in mobile commerce: An investigation in baidu. *Information & Management*, 56(8):103148.
+Zeigarnik, B. 1927. “Das Behalten erledigter und unerledigten Handlungen”. *Psychologische Forschung* 9: 1–85.
+
+Zheng, X., Men, J., Yang, F., dan Gong, X. 2019. “Understanding impulse buying in mobile commerce: An investigation into hedonic and utilitarian browsing”. *International Journal of Information Management* 48: 151–160.

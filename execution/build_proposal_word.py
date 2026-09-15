@@ -262,16 +262,22 @@ def clean_academic_text(text: str) -> str:
         return text
 
     # 1. LaTeX Citations
-    text = re.sub(r'\\citealp\{babin1994work\}', 'Babin et al., 1994', text)
-    text = re.sub(r'\\citealp\{arnold2003hedonic\}', 'Arnold & Reynolds, 2003', text)
-    text = re.sub(r'\\citealp\{gueltekin2012influence\}', 'Gültekin & Özer, 2012', text)
-    text = re.sub(r'\\citep\{aiken1991multiple,\s*ghozali2018aplikasi\}', '(Aiken & West, 1991; Ghozali, 2018)', text)
+    text = re.sub(r'\\citealp\{babin1994work\}', 'Babin *et al.*, 1994', text)
+    text = re.sub(r'\\citealp\{arnold2003hedonic\}', 'Arnold dan Reynolds, 2003', text)
+    text = re.sub(r'\\citealp\{gueltekin2012influence\}', 'Gültekin dan Özer, 2012', text)
+    text = re.sub(r'\\citep\{aiken1991multiple,\s*ghozali2018aplikasi\}', '(Aiken dan West, 1991; Ghozali, 2018)', text)
     text = re.sub(r'\\citet\{green1991subjects\}', 'Green (1991)', text)
     text = re.sub(r'\\citet\{cohen1988statistical\}', 'Cohen (1988)', text)
     text = re.sub(r'\\citealp\{([^}]+)\}', r'\1', text)
     text = re.sub(r'\\citep\{([^}]+)\}', r'(\1)', text)
     text = re.sub(r'\\citet\{([^}]+)\}', r'\1', text)
     text = re.sub(r'\\emph\{([^}]+)\}', r'*\1*', text)
+
+    # Standarisasi sitasi dua penulis bahasa Indonesia (menggunakan 'dan', bukan '&' atau 'and')
+    text = re.sub(r'\b([A-Z][a-z]+)\s+&\s+([A-Z][a-z]+)\b', r'\1 dan \2', text)
+    text = re.sub(r'\b([A-Z][a-z]+)\s+and\s+([A-Z][a-z]+)\b', r'\1 dan \2', text)
+    text = re.sub(r'\bet al\b', r'*et al.*', text)
+    text = text.replace('**et al.**', '*et al.*').replace('**et al.*', '*et al.*').replace('***et al.***', '*et al.*')
 
     # 2. Multi-variable & Complex math expressions
     text = text.replace(r'$X_1^*, X_2^*, X_3^*, M^*, X_1^* \cdot M^*, X_2^* \cdot M^*, X_3^* \cdot M*$', '*X*₁*, *X*₂*, *X*₃*, *M*\\*, *X*₁* · *M*\\*, *X*₂* · *M*\\*, *X*₃* · *M*\\*')
@@ -1108,7 +1114,7 @@ def build_full_proposal(skip_chapter3: bool = False):
         "yang pernah membeli booster pack Pokémon TCG fisik resmi dalam rentang waktu 6–12 bulan terakhir. Jumlah sampel yang ditargetkan adalah 120 hingga 150 responden, "
         "mengacu pada rekomendasi ukuran sampel Green (1991) dan Cohen (1988) untuk mencapai kekuatan uji statistik (statistical power) yang memadai pada model regresi "
         "linear berganda. Metode analisis data menggunakan analisis regresi berganda dan Moderated Regression Analysis (MRA) dengan prosedur pemusatan rata-rata "
-        "(mean-centering) guna mereduksi potensi multikolinearitas non-esensial antara variabel prediktor dengan produk interaksinya (Aiken & West, 1991; Ghozali, 2018), yang diolah menggunakan perangkat lunak "
+        "(mean-centering) guna mereduksi potensi multikolinearitas non-esensial antara variabel prediktor dengan produk interaksinya (Aiken dan West, 1991; Ghozali, 2018), yang diolah menggunakan perangkat lunak "
         "IBM SPSS Statistics. Penelitian ini menawarkan kebaruan teoritis (novelty) dengan mengintegrasikan kerangka psikologi lingkungan Stimulus-Organism-Response (S-O-R), "
         "psikologi kolektor (Zeigarnik Effect dan The Completing the Set Effect), teori regulasi diri (Self-Regulation Theory), serta prinsip-prinsip keuangan perilaku "
         "(behavioral finance) pada fenomena komoditas hobi fisik bernilai spekulatif tinggi. Hasil penelitian ini diharapkan memberikan kontribusi empiris bagi konsumen "
@@ -1159,7 +1165,7 @@ def build_full_proposal(skip_chapter3: bool = False):
         "Indonesian citizens aged 17 and above who have purchased official physical booster packs within the past 6 to 12 months. The targeted sample size ranges from "
         "120 to 150 respondents, consistent with the statistical power criteria established by Green (1991) and Cohen (1988) for multiple regression frameworks. "
         "The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to reduce non-essential "
-        "multicollinearity between predictor variables and their interaction products (Aiken & West, 1991; Ghozali, 2018), executed via IBM SPSS Statistics software. This study provides theoretical novelty by synthesizing the "
+        "multicollinearity between predictor variables and their interaction products (Aiken dan West, 1991; Ghozali, 2018), executed via IBM SPSS Statistics software. This study provides theoretical novelty by synthesizing the "
         "Stimulus-Organism-Response (S-O-R) paradigm, collector psychology (the Zeigarnik Effect and The Completing the Set Effect), Self-Regulation Theory, and behavioral finance "
         "principles in the context of tangible alternative assets exhibiting volatile secondary market premiums. The findings are expected to offer practical insights for young "
         "consumers in exercising financial discipline regarding discretionary collectibles and provide strategic inputs for community organizers and financial educators targeting Generation Z."
@@ -2156,11 +2162,19 @@ def build_tabel_jadwal(doc):
 
 
 def build_daftar_pustaka(doc, content):
-    """Builds APA 7th style bibliography with 1.25cm hanging indent."""
+    """Builds FEB UKRIDA 2023 compliant bibliography with 1.25cm hanging indent without numbering."""
     lines = content.split('\n')
     for line in lines:
         line_str = line.strip()
         if not line_str or line_str.startswith('#'):
+            continue
+
+        # Strip any leading numbers or bullets (e.g. "1. ", "12. ", "- ", "• ")
+        line_str = re.sub(r'^\d+[\.\)]\s*', '', line_str)
+        line_str = re.sub(r'^[\*\-•]\s*', '', line_str)
+        line_str = line_str.strip()
+
+        if not line_str:
             continue
 
         p = doc.add_paragraph()
