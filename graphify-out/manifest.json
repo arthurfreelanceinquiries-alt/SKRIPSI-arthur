@@ -1,255 +1,129 @@
 {
   "03_Draft_Per_Bab/BAB_I_PENDAHULUAN.md": {
-    "mtime": 1789136878.6595452,
-    "seen": 1789227329.5905373,
-    "ast_hash": "06a7969dcc5effe587419fcef892bd52",
-    "semantic_hash": ""
+    "mtime": 1789538874.115766,
+    "seen": 1789550336.1421826,
+    "ast_hash": "1456daa294f4db340f8e3b2e236ff67a",
+    "semantic_hash": "1456daa294f4db340f8e3b2e236ff67a"
   },
   "04_Riset_&_Metodologi/KONSEP_SKRIPSI_POKEMON_TCG.md": {
-    "mtime": 1789053536.811572,
-    "seen": 1789227329.5905397,
-    "ast_hash": "3eba09b71f1c914cd09ec2796a55c79f",
-    "semantic_hash": ""
+    "mtime": 1789468788.4243152,
+    "seen": 1789550336.1421826,
+    "ast_hash": "807cb300d845974947d0b52722350f36",
+    "semantic_hash": "807cb300d845974947d0b52722350f36"
   },
   "04_Riset_&_Metodologi/PRD_PENELITIAN.md": {
-    "mtime": 1789053472.5425098,
-    "seen": 1789227329.5905433,
+    "mtime": 1789468788.435577,
+    "seen": 1789550336.1421826,
     "ast_hash": "44afe4c3978a9f90dd199e733f1e365c",
-    "semantic_hash": ""
+    "semantic_hash": "44afe4c3978a9f90dd199e733f1e365c"
   },
   "04_Riset_&_Metodologi/REUSABLE_THESIS_PLAYBOOK.md": {
-    "mtime": 1789048599.7195103,
-    "seen": 1789227329.5905447,
-    "ast_hash": "6f298d8be4de69d274f49d7b7a202136",
-    "semantic_hash": ""
+    "mtime": 1789468788.4395914,
+    "seen": 1789550336.1421826,
+    "ast_hash": "2c123f3ace36d35c684f84c1723da02e",
+    "semantic_hash": "2c123f3ace36d35c684f84c1723da02e"
   },
   "04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md": {
-    "mtime": 1789136592.223406,
-    "seen": 1789227329.5905466,
-    "ast_hash": "a36e4441bae8909dce338d16c2ee0046",
-    "semantic_hash": ""
+    "mtime": 1789538894.6448617,
+    "seen": 1789550336.1421826,
+    "ast_hash": "252db5692abbb175c137de3905be2605",
+    "semantic_hash": "252db5692abbb175c137de3905be2605"
   },
   "04_Riset_&_Metodologi/skills.md": {
-    "mtime": 1788956166.1767583,
-    "seen": 1789227329.5905483,
-    "ast_hash": "64606b024ef31edb81dd34d031da06af",
-    "semantic_hash": "64606b024ef31edb81dd34d031da06af"
+    "mtime": 1789468788.4431016,
+    "seen": 1789550336.1421826,
+    "ast_hash": "4f62b150b843762f9654963f917cbaeb",
+    "semantic_hash": "4f62b150b843762f9654963f917cbaeb"
   },
   "05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.md": {
-    "mtime": 1788956166.1777422,
-    "seen": 1789227329.5905495,
-    "ast_hash": "59e28c45212ad48972116bc484dd6d7a",
-    "semantic_hash": "59e28c45212ad48972116bc484dd6d7a"
+    "mtime": 1789468788.4481122,
+    "seen": 1789550336.1421826,
+    "ast_hash": "94499124a2687b675ac123b8b8f6c138",
+    "semantic_hash": "94499124a2687b675ac123b8b8f6c138"
   },
   "05_Pedoman_&_Referensi/PRD_AI_Dosen_Pembimbing_Skripsi_v2.md": {
-    "mtime": 1788956166.1807492,
-    "seen": 1789227329.5905514,
-    "ast_hash": "8a461c870a7d45ac47beab519e5b83fe",
-    "semantic_hash": "8a461c870a7d45ac47beab519e5b83fe"
+    "mtime": 1789468788.4591117,
+    "seen": 1789550336.1421826,
+    "ast_hash": "3c5416f01bdd6d47ca287e622cd831c5",
+    "semantic_hash": "3c5416f01bdd6d47ca287e622cd831c5"
   },
   "MASTER_GUIDE_SKRIPSI.md": {
-    "mtime": 1788956166.1912613,
-    "seen": 1789227329.5905633,
-    "ast_hash": "22552b629d56cefe447919185ea57c86",
-    "semantic_hash": "22552b629d56cefe447919185ea57c86"
+    "mtime": 1789468788.238717,
+    "seen": 1789550336.1421826,
+    "ast_hash": "1a1745d68845a9d313db202f893420b9",
+    "semantic_hash": "1a1745d68845a9d313db202f893420b9"
   },
   "README.md": {
-    "mtime": 1789053493.3676817,
-    "seen": 1789227329.5905645,
-    "ast_hash": "2e9f8713353f45cd01580fe420b7c1b3",
-    "semantic_hash": ""
-  },
-  "01_Naskah_Utama/sync_markdown_from_tex.py": {
-    "mtime": 1789150802.5767963,
-    "seen": 1789227329.5904994,
-    "ast_hash": "5069fe62d25a509609cd403864b14c05",
-    "semantic_hash": ""
+    "mtime": 1789468788.2412267,
+    "seen": 1789550336.1421826,
+    "ast_hash": "4236878e305e08f3700f3419d2d30b80",
+    "semantic_hash": "4236878e305e08f3700f3419d2d30b80"
   },
   "02_Persiapan_Sidang/presentasi_interaktif/app.js": {
-    "mtime": 1789227247.1741712,
-    "seen": 1789227329.5905035,
-    "ast_hash": "1b107b3beb5ac3b07052632989813c19",
-    "semantic_hash": ""
+    "mtime": 1789468788.410804,
+    "seen": 1789550336.1421826,
+    "ast_hash": "4d59dfcacb0e3f1ce6f15176f09f407c",
+    "semantic_hash": "4d59dfcacb0e3f1ce6f15176f09f407c"
   },
   "execution/analyze_completeness_construct.py": {
-    "mtime": 1789150145.3373003,
-    "seen": 1789227329.5905054,
-    "ast_hash": "778fd1d3d615329bd6bd1f27119de7cd",
-    "semantic_hash": ""
+    "mtime": 1789468788.578478,
+    "seen": 1789550336.1421826,
+    "ast_hash": "1b642e1abefe24f9a90b124864c6f91d",
+    "semantic_hash": "1b642e1abefe24f9a90b124864c6f91d"
   },
   "execution/build_interactive_presentation.py": {
-    "mtime": 1789227242.950634,
-    "seen": 1789227329.5905066,
+    "mtime": 1789468788.5794778,
+    "seen": 1789550336.1421826,
     "ast_hash": "60fd92ace352f7adc33162d7df551e57",
-    "semantic_hash": ""
+    "semantic_hash": "60fd92ace352f7adc33162d7df551e57"
   },
   "execution/build_proposal_word.py": {
-    "mtime": 1789223737.0522664,
-    "seen": 1789227329.5905075,
-    "ast_hash": "b54088beee4db3a52acce8cb1f572a48",
-    "semantic_hash": ""
+    "mtime": 1789538831.375627,
+    "seen": 1789550336.1421826,
+    "ast_hash": "cd9c0531129f579c2892113750f2ed2f",
+    "semantic_hash": "cd9c0531129f579c2892113750f2ed2f"
   },
   "execution/generate_journal_catalog.py": {
-    "mtime": 1789149864.2129254,
-    "seen": 1789227329.5905082,
-    "ast_hash": "bd5a741091671de64cebaa1b72bdc8c9",
-    "semantic_hash": ""
+    "mtime": 1789468788.587493,
+    "seen": 1789550336.1421826,
+    "ast_hash": "c2a1fcaca3f24eec8bcd8b10a098cd29",
+    "semantic_hash": "c2a1fcaca3f24eec8bcd8b10a098cd29"
   },
   "execution/verify_pdf_headers.py": {
-    "mtime": 1789149844.060631,
-    "seen": 1789227329.5905094,
-    "ast_hash": "ed33e15e241b068fed9d7bdaedcf8a8a",
-    "semantic_hash": ""
+    "mtime": 1789468788.5940094,
+    "seen": 1789550336.1421826,
+    "ast_hash": "716cb94e959030e882d0b0c3f777745f",
+    "semantic_hash": "716cb94e959030e882d0b0c3f777745f"
   },
   "execution/verify_word_layout.py": {
-    "mtime": 1789150872.0499442,
-    "seen": 1789227329.5905101,
+    "mtime": 1789468788.5960093,
+    "seen": 1789550336.1421826,
     "ast_hash": "6a8c3daaca88b1f49b7e9b73ded68238",
-    "semantic_hash": ""
+    "semantic_hash": "6a8c3daaca88b1f49b7e9b73ded68238"
   },
   "execution/verify_word_outline.py": {
-    "mtime": 1789222575.3689902,
-    "seen": 1789227329.5905108,
-    "ast_hash": "bf03d697664041ca3587257486413a7e",
-    "semantic_hash": ""
-  },
-  "scratch/compare_lamps.py": {
-    "mtime": 1789047756.204678,
-    "seen": 1789227329.5905116,
-    "ast_hash": "57b9154b97d430ad9536213e08e20df6",
-    "semantic_hash": ""
-  },
-  "scratch/compare_pedoman.py": {
-    "mtime": 1789047620.3858552,
-    "seen": 1789227329.5905128,
-    "ast_hash": "7818a0d0667e654f4cacb4a7d6f88401",
-    "semantic_hash": ""
-  },
-  "scratch/detailed_compare.py": {
-    "mtime": 1789047663.326436,
-    "seen": 1789227329.5905135,
-    "ast_hash": "d92fcdf45d4ad412a17442fc49247935",
-    "semantic_hash": ""
-  },
-  "scratch/diff_bab2.py": {
-    "mtime": 1789047728.6335547,
-    "seen": 1789227329.5905147,
-    "ast_hash": "1714084a7268157b626d1f2322213387",
-    "semantic_hash": ""
-  },
-  "scratch/diff_bab3.py": {
-    "mtime": 1789047703.2014287,
-    "seen": 1789227329.5905154,
-    "ast_hash": "b16e0a86f051facad5f4679c4030ba4f",
-    "semantic_hash": ""
-  },
-  "scratch/extract_all_diffs.py": {
-    "mtime": 1789047831.3898525,
-    "seen": 1789227329.5905163,
-    "ast_hash": "6798c405133d76dcb4c4a34ee478cfc4",
-    "semantic_hash": ""
-  },
-  "scratch/extract_anatomi.py": {
-    "mtime": 1789047786.4977832,
-    "seen": 1789227329.590517,
-    "ast_hash": "b62cdd5e7974d9563524e505850c991d",
-    "semantic_hash": ""
-  },
-  "scratch/extract_bab2.py": {
-    "mtime": 1789047743.5282989,
-    "seen": 1789227329.590518,
-    "ast_hash": "a0a7cb19ce4a68c459f2ee259da63405",
-    "semantic_hash": ""
-  },
-  "scratch/extract_bab3.py": {
-    "mtime": 1789047693.789003,
-    "seen": 1789227329.5905187,
-    "ast_hash": "264002662e54523e41c7403974eae933",
-    "semantic_hash": ""
-  },
-  "scratch/extract_bab4.py": {
-    "mtime": 1789047683.9528325,
-    "seen": 1789227329.59052,
-    "ast_hash": "b0dd8b9ae48cd59c3da1cd83f7ca9ed0",
-    "semantic_hash": ""
-  },
-  "scratch/extract_dp.py": {
-    "mtime": 1789047796.9711773,
-    "seen": 1789227329.5905206,
-    "ast_hash": "ce289ad0641f1b9eee7375ee687a50b1",
-    "semantic_hash": ""
-  },
-  "scratch/extract_model_b.py": {
-    "mtime": 1789047778.3659585,
-    "seen": 1789227329.5905213,
-    "ast_hash": "171b9f309bb6877ad165e5c8b22d1cee",
-    "semantic_hash": ""
-  },
-  "scratch/filter_diffs.py": {
-    "mtime": 1789047846.007758,
-    "seen": 1789227329.590522,
-    "ast_hash": "e66b1c1e842cd72799efde2342fc7428",
-    "semantic_hash": ""
-  },
-  "scratch/patch_docx_dosbim.py": {
-    "mtime": 1789051185.126563,
-    "seen": 1789227329.5905228,
-    "ast_hash": "130138a346142c1f4ba979d0bf52b7f9",
-    "semantic_hash": ""
-  },
-  "scratch/run_diff.py": {
-    "mtime": 1789047644.2135801,
-    "seen": 1789227329.590524,
-    "ast_hash": "70a0d3a5a613328ec3ae8f5d494da369",
-    "semantic_hash": ""
-  },
-  "scratch/surgical_patch_docx.py": {
-    "mtime": 1789052877.6349404,
-    "seen": 1789227329.5905247,
-    "ast_hash": "12b7732ffb30ca665fecb469ff9ee0a4",
-    "semantic_hash": ""
+    "mtime": 1789468788.5970092,
+    "seen": 1789550336.1421826,
+    "ast_hash": "5a6f74ff5bc692d1ba99e6db6e904134",
+    "semantic_hash": "5a6f74ff5bc692d1ba99e6db6e904134"
   },
   ".agents/rules/3_layer_architecture.md": {
-    "mtime": 1789150253.4514487,
-    "seen": 1789227329.5905254,
+    "mtime": 1789468788.2457366,
+    "seen": 1789550336.1421826,
     "ast_hash": "36c2e41ce2fd5e53e90317a539ddd153",
-    "semantic_hash": ""
+    "semantic_hash": "36c2e41ce2fd5e53e90317a539ddd153"
   },
   "01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md": {
-    "mtime": 1789224497.1173613,
-    "seen": 1789227329.590526,
-    "ast_hash": "01b272b75236ab63b89e1b932c42d301",
-    "semantic_hash": ""
-  },
-  "02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/01_BANK_SOAL_LATIHAN.md": {
-    "mtime": 1789053493.3686821,
-    "seen": 1789227329.590527,
-    "ast_hash": "461de51070c9891005cfe2158912173d",
-    "semantic_hash": ""
-  },
-  "02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/02_FLASHCARD_ISTILAH.md": {
-    "mtime": 1789053493.3696866,
-    "seen": 1789227329.590528,
-    "ast_hash": "b32b6a8a13b017fa18e3c3b33ff242a4",
-    "semantic_hash": ""
-  },
-  "02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/03_PERTANYAAN_SIDANG_SULIT.md": {
-    "mtime": 1789227173.2463493,
-    "seen": 1789227329.5905287,
-    "ast_hash": "fc8758462651f5541f949b8337285944",
-    "semantic_hash": ""
-  },
-  "02_Persiapan_Sidang/BELAJAR SKRIPSI SAMPAI BISA/04_STATISTIK_UNTUK_PEMULA.md": {
-    "mtime": 1789053493.3706858,
-    "seen": 1789227329.5905294,
-    "ast_hash": "01a3c0e6e752849a8f555585173ac546",
-    "semantic_hash": ""
+    "mtime": 1789538859.5099409,
+    "seen": 1789550336.1421826,
+    "ast_hash": "c57e9dac36f300a232f8b57485974753",
+    "semantic_hash": "c57e9dac36f300a232f8b57485974753"
   },
   "02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md": {
-    "mtime": 1789227160.4860704,
-    "seen": 1789227329.5905304,
-    "ast_hash": "4e646dcd4db1bfdc10b7eedb10be3b9d",
-    "semantic_hash": ""
+    "mtime": 1789468788.395762,
+    "seen": 1789550336.1421826,
+    "ast_hash": "bb521f4dfa1d9d57259c58a8e077ca64",
+    "semantic_hash": "bb521f4dfa1d9d57259c58a8e077ca64"
   },
   "02_Persiapan_Sidang/PRESENTASI_PANDUAN_BELAJAR.html": {
     "mtime": 1789227247.1947212,
@@ -258,10 +132,10 @@
     "semantic_hash": ""
   },
   "02_Persiapan_Sidang/PROGRESS_TRACKER_PROPOSAL.md": {
-    "mtime": 1789053493.3686821,
-    "seen": 1789227329.5905325,
-    "ast_hash": "b1d3bd7fa21c3801bb512bf69d21c1e5",
-    "semantic_hash": ""
+    "mtime": 1789468788.400193,
+    "seen": 1789550336.1421826,
+    "ast_hash": "46b4a21b4301a24d64cb53216e0c1b89",
+    "semantic_hash": "46b4a21b4301a24d64cb53216e0c1b89"
   },
   "02_Persiapan_Sidang/presentasi_interaktif/index.html": {
     "mtime": 1789227247.1751747,
@@ -270,232 +144,76 @@
     "semantic_hash": ""
   },
   "03_Draft_Per_Bab/BAB_III_METODE_PENELITIAN.md": {
-    "mtime": 1789136923.1737926,
-    "seen": 1789227329.5905342,
-    "ast_hash": "a2529eeacfcdada05f0eb4757d739f18",
-    "semantic_hash": ""
+    "mtime": 1789468788.4173152,
+    "seen": 1789550336.1421826,
+    "ast_hash": "dcec5b00ef5b10df22a0f84fe5fbe467",
+    "semantic_hash": "dcec5b00ef5b10df22a0f84fe5fbe467"
   },
   "03_Draft_Per_Bab/BAB_II_TINJAUAN_PUSTAKA.md": {
-    "mtime": 1789136376.4349976,
-    "seen": 1789227329.590535,
-    "ast_hash": "34cde69039fa14e5622f3352986c1b0d",
-    "semantic_hash": ""
+    "mtime": 1789468788.4183152,
+    "seen": 1789550336.1421826,
+    "ast_hash": "805c6becabe36a3d3bed3e25eb3cf1a3",
+    "semantic_hash": "805c6becabe36a3d3bed3e25eb3cf1a3"
   },
   "03_Draft_Per_Bab/DAFTAR_PUSTAKA_TENTATIF.md": {
-    "mtime": 1789137019.966369,
-    "seen": 1789227329.5905385,
-    "ast_hash": "77cc9ffcd07fc2d5ace46eca3e342813",
-    "semantic_hash": ""
+    "mtime": 1789536361.291092,
+    "seen": 1789550336.1421826,
+    "ast_hash": "44c686aa84a672cecf6ffad0fdb4c384",
+    "semantic_hash": "44c686aa84a672cecf6ffad0fdb4c384"
   },
   "04_Riset_&_Metodologi/LITERATURE_MATRIX.md": {
-    "mtime": 1789137037.329155,
-    "seen": 1789227329.590541,
-    "ast_hash": "1ade3a630d536921ac19f6a8f5d8bdfb",
-    "semantic_hash": ""
+    "mtime": 1789468788.4268198,
+    "seen": 1789550336.1421826,
+    "ast_hash": "821428afb416d2acb1020e689751447f",
+    "semantic_hash": "821428afb416d2acb1020e689751447f"
   },
   "04_Riset_&_Metodologi/PRD_DOCX_HEADING_OUTLINE_TABS.md": {
-    "mtime": 1789222338.4688284,
-    "seen": 1789227329.5905418,
+    "mtime": 1789468788.4320662,
+    "seen": 1789550336.1421826,
     "ast_hash": "2b6c91445d61b07c2debea0675872d1e",
-    "semantic_hash": ""
+    "semantic_hash": "2b6c91445d61b07c2debea0675872d1e"
   },
   "04_Riset_&_Metodologi/SEARCH_LOG.md": {
-    "mtime": 1789053493.3656776,
-    "seen": 1789227329.5905457,
-    "ast_hash": "9cbd8a170a58acec38d6f3360d646c0c",
-    "semantic_hash": ""
+    "mtime": 1789468788.4405963,
+    "seen": 1789550336.1421826,
+    "ast_hash": "140aa0995d657a9128b4ad916519f378",
+    "semantic_hash": "140aa0995d657a9128b4ad916519f378"
   },
   "05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Tugas Akhir 2023.md": {
-    "mtime": 1789047477.889405,
-    "seen": 1789227329.5905502,
+    "mtime": 1789468788.454112,
+    "seen": 1789550336.1421826,
     "ast_hash": "803edf10d782fd499f5e67aeb4d6d808",
-    "semantic_hash": ""
-  },
-  "05_Referensi_Jurnal_PDF/KATALOG_REFERENSI_JURNAL.md": {
-    "mtime": 1789149868.7570007,
-    "seen": 1789227329.5905526,
-    "ast_hash": "5d160b48d09c521b6bbac6b1c7421e3f",
-    "semantic_hash": ""
-  },
-  "06_Review_&_Audit/Revisi_Dosen/2026-09-08_Revisi_Dosen_Bab1.md": {
-    "mtime": 1788956166.18926,
-    "seen": 1789227329.5905535,
-    "ast_hash": "841c7d31cc03974836ab2aade710425c",
-    "semantic_hash": ""
-  },
-  "06_Review_&_Audit/Revisi_Dosen/2026-09-08_Revisi_Lengkap_Dosen_Bab1.md": {
-    "mtime": 1788956166.18926,
-    "seen": 1789227329.5905545,
-    "ast_hash": "1e39ef41e64712b1b36b81cee0c0b4aa",
-    "semantic_hash": ""
-  },
-  "06_Review_&_Audit/Revisi_Dosen/2026-09-09_Revisi_Dosen_dan_Opsi_Moderasi.md": {
-    "mtime": 1789048530.6168182,
-    "seen": 1789227329.5905552,
-    "ast_hash": "3ff8e0689d5cd1ebab7ccdff88adecad",
-    "semantic_hash": ""
-  },
-  "06_Review_&_Audit/Revisi_Dosen/README.md": {
-    "mtime": 1788956166.18926,
-    "seen": 1789227329.590556,
-    "ast_hash": "6673a1e25cda2daf4190aab731447e36",
-    "semantic_hash": ""
-  },
-  "06_Review_&_Audit/Revisi_Dosen/TEMPEL_CHAT_DOSEN_DISINI.md": {
-    "mtime": 1789048537.7994478,
-    "seen": 1789227329.5905566,
-    "ast_hash": "262a33b4b092b3132668cd746bdc8b10",
-    "semantic_hash": ""
-  },
-  "06_Review_&_Audit/review-format.md": {
-    "mtime": 1788956166.190259,
-    "seen": 1789227329.5905578,
-    "ast_hash": "c78ab4e4813a264c266cb009b0348bb0",
-    "semantic_hash": ""
-  },
-  "06_Review_&_Audit/review-language.md": {
-    "mtime": 1788956166.190259,
-    "seen": 1789227329.5905585,
-    "ast_hash": "d1d8766cf4f1d5ccfdfad349014bd5b9",
-    "semantic_hash": ""
-  },
-  "06_Review_&_Audit/review-methodology.md": {
-    "mtime": 1788956166.190259,
-    "seen": 1789227329.5905592,
-    "ast_hash": "81257c1afee39c072d89c1c05f30fc52",
-    "semantic_hash": ""
-  },
-  "06_Review_&_Audit/review-output.md": {
-    "mtime": 1788956166.190259,
-    "seen": 1789227329.59056,
-    "ast_hash": "b1dcd6de0e85669c7cef488a506019e7",
-    "semantic_hash": ""
+    "semantic_hash": "803edf10d782fd499f5e67aeb4d6d808"
   },
   "AGENTS.md": {
-    "mtime": 1789149803.7547245,
-    "seen": 1789227329.5905607,
-    "ast_hash": "ce4fbc02e90ef15def035596df93f308",
-    "semantic_hash": ""
-  },
-  "CLAUDE.md": {
-    "mtime": 1789149811.3306606,
-    "seen": 1789227329.5905616,
-    "ast_hash": "ce4fbc02e90ef15def035596df93f308",
-    "semantic_hash": ""
-  },
-  "GEMINI.md": {
-    "mtime": 1789149818.7185183,
-    "seen": 1789227329.5905623,
-    "ast_hash": "ce4fbc02e90ef15def035596df93f308",
-    "semantic_hash": ""
+    "mtime": 1789468788.2377112,
+    "seen": 1789550336.1421826,
+    "ast_hash": "68095f0b73a11ba1499d87f0b8a8464d",
+    "semantic_hash": "68095f0b73a11ba1499d87f0b8a8464d"
   },
   "directives/download_journal_references.md": {
-    "mtime": 1789149838.0135484,
-    "seen": 1789227329.5905654,
-    "ast_hash": "9620b5f796295d2133099605764280c9",
-    "semantic_hash": ""
+    "mtime": 1789468788.5695748,
+    "seen": 1789550336.1421826,
+    "ast_hash": "c5a4afdd7286473bcc56e3f48b24101c",
+    "semantic_hash": "c5a4afdd7286473bcc56e3f48b24101c"
   },
   "directives/generate_interactive_study_presentation.md": {
-    "mtime": 1789221544.9953802,
-    "seen": 1789227329.5905664,
-    "ast_hash": "643a1ed14bc8a5170c1942e26f713518",
-    "semantic_hash": ""
+    "mtime": 1789468788.5708776,
+    "seen": 1789550336.1421826,
+    "ast_hash": "1e60b4340ca593c058cf57de75768ffc",
+    "semantic_hash": "1e60b4340ca593c058cf57de75768ffc"
   },
   "directives/generate_thesis_word_document.md": {
-    "mtime": 1789224668.8872533,
-    "seen": 1789227329.590567,
-    "ast_hash": "6bac9d094b70fe3ae1c4054508fe860f",
-    "semantic_hash": ""
+    "mtime": 1789468788.5713818,
+    "seen": 1789550336.1421826,
+    "ast_hash": "c9a84ea448fe1a2672b62f212217aa0b",
+    "semantic_hash": "c9a84ea448fe1a2672b62f212217aa0b"
   },
   "directives/review_desire_for_completeness.md": {
-    "mtime": 1789150137.6139827,
-    "seen": 1789227329.5905678,
+    "mtime": 1789468788.5723872,
+    "seen": 1789550336.1421826,
     "ast_hash": "34dde5c468dd7a94790adef1fedd8330",
-    "semantic_hash": ""
-  },
-  "scratch/all_structural_diffs.txt": {
-    "mtime": 1789047838.1899378,
-    "seen": 1789227329.590569,
-    "ast_hash": "65337ae3052fb0362fc8799d7fdef8ee",
-    "semantic_hash": ""
-  },
-  "scratch/anatomi_model_b.txt": {
-    "mtime": 1789047791.787792,
-    "seen": 1789227329.59057,
-    "ast_hash": "0bcfdec45c74f41514e26c089f78a959",
-    "semantic_hash": ""
-  },
-  "scratch/bab2_diff.txt": {
-    "mtime": 1789047725.821421,
-    "seen": 1789227329.5905707,
-    "ast_hash": "a4fb7b05ab60d55f1a874c602050c33c",
-    "semantic_hash": ""
-  },
-  "scratch/bab2_difflib.txt": {
-    "mtime": 1789047748.248826,
-    "seen": 1789227329.5905714,
-    "ast_hash": "5ab87a41fe1f88585376caf0e8437da0",
-    "semantic_hash": ""
-  },
-  "scratch/bab3_diff.txt": {
-    "mtime": 1789047699.2934914,
-    "seen": 1789227329.5905724,
-    "ast_hash": "b015bc64f49584e9588431bb33fee2a7",
-    "semantic_hash": ""
-  },
-  "scratch/bab3_difflib.txt": {
-    "mtime": 1789047707.0800211,
-    "seen": 1789227329.5905733,
-    "ast_hash": "c232d007ccd4bb5211d583905f95f634",
-    "semantic_hash": ""
-  },
-  "scratch/bab4_compare.txt": {
-    "mtime": 1789047687.8056288,
-    "seen": 1789227329.590574,
-    "ast_hash": "0f551e192dd98fde513157738dd86584",
-    "semantic_hash": ""
-  },
-  "scratch/comparison_report.txt": {
-    "mtime": 1789047625.1294074,
-    "seen": 1789227329.5905747,
-    "ast_hash": "c91296be965d14cc15c6ef884713e4fe",
-    "semantic_hash": ""
-  },
-  "scratch/diff_analysis_detailed.txt": {
-    "mtime": 1789047649.1334305,
-    "seen": 1789227329.5905757,
-    "ast_hash": "aee9837ac8fffa32b975f34f02758895",
-    "semantic_hash": ""
-  },
-  "scratch/dp_compare.txt": {
-    "mtime": 1789047801.180151,
-    "seen": 1789227329.5905766,
-    "ast_hash": "cac4e647a991ddc43a92b27cea867764",
-    "semantic_hash": ""
-  },
-  "scratch/full_comparison_detailed.txt": {
-    "mtime": 1789047667.2920475,
-    "seen": 1789227329.5905774,
-    "ast_hash": "c263101337a6e231d98d2a651b93738a",
-    "semantic_hash": ""
-  },
-  "scratch/lampiran_compare.txt": {
-    "mtime": 1789047761.0017474,
-    "seen": 1789227329.590578,
-    "ast_hash": "895d011039f020353432fffa9a639087",
-    "semantic_hash": ""
-  },
-  "scratch/meaningful_diffs.txt": {
-    "mtime": 1789047849.8032713,
-    "seen": 1789227329.5905793,
-    "ast_hash": "d8b5251f728d57076b2bdd8898f2bf8d",
-    "semantic_hash": ""
-  },
-  "scratch/model_b_diff.txt": {
-    "mtime": 1789047782.1225555,
-    "seen": 1789227329.5905802,
-    "ast_hash": "f0747ac6895e8c4cdbfe592cb8fed942",
-    "semantic_hash": ""
+    "semantic_hash": "34dde5c468dd7a94790adef1fedd8330"
   },
   "01_Naskah_Utama/images/diagram_alur_penelitian.png": {
     "mtime": 1789150738.8603623,
@@ -508,5 +226,431 @@
     "seen": 1789227329.5905817,
     "ast_hash": "eb2cd1281a19ccf8bffcb2d17778d401",
     "semantic_hash": ""
+  },
+  ".agents/skills/paper-audit/scripts/proofing_scan.py": {
+    "mtime": 1789529665.2331738,
+    "seen": 1789550336.1421826,
+    "ast_hash": "29f90f155332e8ecd0d19648d6f883e7",
+    "semantic_hash": "29f90f155332e8ecd0d19648d6f883e7"
+  },
+  "execution/build_proposal_nobab3_pdf.py": {
+    "mtime": 1789533099.248363,
+    "seen": 1789550336.1421826,
+    "ast_hash": "744f62af202dce3f18bc6de69870b133",
+    "semantic_hash": "744f62af202dce3f18bc6de69870b133"
+  },
+  "execution/build_study_guide_pdf.py": {
+    "mtime": 1789468788.5834777,
+    "seen": 1789550336.1421826,
+    "ast_hash": "d48d7d5a9dc9bd97af9770015ae45d9a",
+    "semantic_hash": "d48d7d5a9dc9bd97af9770015ae45d9a"
+  },
+  "execution/compare_pdf_docx_fidelity.py": {
+    "mtime": 1789468788.5849824,
+    "seen": 1789550336.1421826,
+    "ast_hash": "41e59ba728147b32b0cfc3ebc42e236b",
+    "semantic_hash": "41e59ba728147b32b0cfc3ebc42e236b"
+  },
+  "execution/generate_bab1_figures.py": {
+    "mtime": 1789543402.8277338,
+    "seen": 1789550336.1421826,
+    "ast_hash": "d22d9cff002f59c3bc363759165966d5",
+    "semantic_hash": "d22d9cff002f59c3bc363759165966d5"
+  },
+  "execution/generate_mendeley_library.py": {
+    "mtime": 1789536378.368284,
+    "seen": 1789550336.1421826,
+    "ast_hash": "a206a292f7a85ab0eb3092f61403654c",
+    "semantic_hash": "a206a292f7a85ab0eb3092f61403654c"
+  },
+  "execution/sync_markdown_from_tex.py": {
+    "mtime": 1789468788.5884988,
+    "seen": 1789550336.1421826,
+    "ast_hash": "5f762b9653ee93a5d0fc95edda58e71e",
+    "semantic_hash": "5f762b9653ee93a5d0fc95edda58e71e"
+  },
+  "execution/verify_docx_typography.py": {
+    "mtime": 1789468788.5894988,
+    "seen": 1789550336.1421826,
+    "ast_hash": "6a54a51a9b7bf2bcc2b5ffd346fb451e",
+    "semantic_hash": "6a54a51a9b7bf2bcc2b5ffd346fb451e"
+  },
+  "execution/verify_format_and_typos.py": {
+    "mtime": 1789468788.5904987,
+    "seen": 1789550336.1421826,
+    "ast_hash": "9b393e74bff852c217b4a097f60bd151",
+    "semantic_hash": "9b393e74bff852c217b4a097f60bd151"
+  },
+  "execution/verify_live_urls.py": {
+    "mtime": 1789538742.2380874,
+    "seen": 1789550336.1421826,
+    "ast_hash": "9ea41f4afe0dc2f21176af24a201c215",
+    "semantic_hash": "9ea41f4afe0dc2f21176af24a201c215"
+  },
+  "execution/verify_mendeley_integrity.py": {
+    "mtime": 1789538760.0834224,
+    "seen": 1789550336.1421826,
+    "ast_hash": "4580a4e0f67f329019dec726babd9d62",
+    "semantic_hash": "4580a4e0f67f329019dec726babd9d62"
+  },
+  "execution/verify_nobab3_pdf.py": {
+    "mtime": 1789468788.5914986,
+    "seen": 1789550336.1421826,
+    "ast_hash": "018a75af60e1e8c08af1bd8126c2608b",
+    "semantic_hash": "018a75af60e1e8c08af1bd8126c2608b"
+  },
+  "execution/verify_pdf_docx_parity.py": {
+    "mtime": 1789468788.5930035,
+    "seen": 1789550336.1421826,
+    "ast_hash": "ab3ce288fe11277b6631eed3b67014de",
+    "semantic_hash": "ab3ce288fe11277b6631eed3b67014de"
+  },
+  "execution/verify_ukrida_compliance.py": {
+    "mtime": 1789532255.2567527,
+    "seen": 1789550336.1421826,
+    "ast_hash": "a53401bcb5a7d147b2e06777677552e4",
+    "semantic_hash": "a53401bcb5a7d147b2e06777677552e4"
+  },
+  ".agents/rules/mandatory_thesis_sync_and_quality.md": {
+    "mtime": 1789468788.2467365,
+    "seen": 1789550336.1421826,
+    "ast_hash": "4cd8f0e1e5852fb03be627f0ad42b60b",
+    "semantic_hash": "4cd8f0e1e5852fb03be627f0ad42b60b"
+  },
+  ".agents/rules/no_login_wall_empirical_sources.md": {
+    "mtime": 1789538007.2927828,
+    "seen": 1789550336.1421826,
+    "ast_hash": "1067fd82bdee9b7ffcdae82ad4c778c2",
+    "semantic_hash": "1067fd82bdee9b7ffcdae82ad4c778c2"
+  },
+  ".agents/rules/obsidian_second_brain.md": {
+    "mtime": 1789468788.2477367,
+    "seen": 1789550336.1421826,
+    "ast_hash": "f6799adfaa28b59afb63f296f4a9710b",
+    "semantic_hash": "f6799adfaa28b59afb63f296f4a9710b"
+  },
+  ".agents/skills/obsidian-second-brain/SKILL.md": {
+    "mtime": 1789468788.2542472,
+    "seen": 1789550336.1421826,
+    "ast_hash": "28dfa0e6b15be42e766a97ea54291bfc",
+    "semantic_hash": "28dfa0e6b15be42e766a97ea54291bfc"
+  },
+  ".agents/skills/paper-audit/SKILL.md": {
+    "mtime": 1789529665.2130525,
+    "seen": 1789550336.1421826,
+    "ast_hash": "821eaa20511ffc8914ee6e3f875cf5a7",
+    "semantic_hash": "821eaa20511ffc8914ee6e3f875cf5a7"
+  },
+  ".agents/skills/paper-audit/references/biomedical-ml.md": {
+    "mtime": 1789529665.2220926,
+    "seen": 1789550336.1421826,
+    "ast_hash": "4b8f09bd7842e278fcf208c72e89e831",
+    "semantic_hash": "4b8f09bd7842e278fcf208c72e89e831"
+  },
+  ".agents/skills/paper-audit/references/findings-and-evidence.md": {
+    "mtime": 1789529665.2240927,
+    "seen": 1789550336.1421826,
+    "ast_hash": "b9af724876274943c349f92042cc4bfb",
+    "semantic_hash": "b9af724876274943c349f92042cc4bfb"
+  },
+  ".agents/skills/paper-audit/references/formats.md": {
+    "mtime": 1789529665.2250931,
+    "seen": 1789550336.1421826,
+    "ast_hash": "0c8799acef5f903fac248709bffcae07",
+    "semantic_hash": "0c8799acef5f903fac248709bffcae07"
+  },
+  ".agents/skills/paper-audit/references/orchestration.md": {
+    "mtime": 1789529665.2260928,
+    "seen": 1789550336.1421826,
+    "ast_hash": "323ecd7cad2cc178a2aae24ddf31ed21",
+    "semantic_hash": "323ecd7cad2cc178a2aae24ddf31ed21"
+  },
+  ".agents/skills/paper-audit/references/review-rubric.md": {
+    "mtime": 1789529665.227604,
+    "seen": 1789550336.1421826,
+    "ast_hash": "d78089c61dea3e93596abd2f57b3eed9",
+    "semantic_hash": "d78089c61dea3e93596abd2f57b3eed9"
+  },
+  ".agents/skills/paper-audit/references/sources-and-integrations.md": {
+    "mtime": 1789529665.2286086,
+    "seen": 1789550336.1421826,
+    "ast_hash": "1091835a26a64bf906d7d28015d1a7f2",
+    "semantic_hash": "1091835a26a64bf906d7d28015d1a7f2"
+  },
+  ".agents/skills/paper-audit/references/thesis.md": {
+    "mtime": 1789529665.2301168,
+    "seen": 1789550336.1421826,
+    "ast_hash": "4064a49b700d1c3265fdfc560eb75809",
+    "semantic_hash": "4064a49b700d1c3265fdfc560eb75809"
+  },
+  "00_DASHBOARD_SECOND_BRAIN.md": {
+    "mtime": 1789536594.5428376,
+    "seen": 1789550336.1421826,
+    "ast_hash": "cdfcea697dfa9c59e160d56bbbc7e7a9",
+    "semantic_hash": "cdfcea697dfa9c59e160d56bbbc7e7a9"
+  },
+  "00_PANDUAN_OBSIDIAN_SECOND_BRAIN.md": {
+    "mtime": 1789468788.2352066,
+    "seen": 1789550336.1421826,
+    "ast_hash": "835d122f87d798afd8040e61aef9b029",
+    "semantic_hash": "835d122f87d798afd8040e61aef9b029"
+  },
+  "00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md": {
+    "mtime": 1789530327.086948,
+    "seen": 1789550336.1421826,
+    "ast_hash": "a22b650448bd5d1e8b08836feb43ccfa",
+    "semantic_hash": "a22b650448bd5d1e8b08836feb43ccfa"
+  },
+  "02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/01_BANK_SOAL_LATIHAN.md": {
+    "mtime": 1789468788.4032607,
+    "seen": 1789550336.1421826,
+    "ast_hash": "366445578fd7d2fe1585452d1a4ecbcd",
+    "semantic_hash": "366445578fd7d2fe1585452d1a4ecbcd"
+  },
+  "02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/02_FLASHCARD_ISTILAH.md": {
+    "mtime": 1789468788.4042692,
+    "seen": 1789550336.1421826,
+    "ast_hash": "ace91ca86e7f09828d462b3140a03426",
+    "semantic_hash": "ace91ca86e7f09828d462b3140a03426"
+  },
+  "02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/03_PERTANYAAN_SIDANG_SULIT.md": {
+    "mtime": 1789468788.405779,
+    "seen": 1789550336.1421826,
+    "ast_hash": "0b88a1fa6e09916193474d1342e2196a",
+    "semantic_hash": "0b88a1fa6e09916193474d1342e2196a"
+  },
+  "02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/04_STATISTIK_UNTUK_PEMULA.md": {
+    "mtime": 1789468788.4067845,
+    "seen": 1789550336.1421826,
+    "ast_hash": "62dc24ef089e66c208564634d044bb80",
+    "semantic_hash": "62dc24ef089e66c208564634d044bb80"
+  },
+  "04_Riset_&_Metodologi/LAPORAN_KOMPARASI_PDF_VS_DOCX.md": {
+    "mtime": 1789468788.425315,
+    "seen": 1789550336.1421826,
+    "ast_hash": "e75450f170e4fb8a7f4c540eb29fb843",
+    "semantic_hash": "e75450f170e4fb8a7f4c540eb29fb843"
+  },
+  "04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md": {
+    "mtime": 1789534995.9891667,
+    "seen": 1789550336.1421826,
+    "ast_hash": "078a4e0e834d38f4c5c607860ea969b0",
+    "semantic_hash": "078a4e0e834d38f4c5c607860ea969b0"
+  },
+  "04_Riset_&_Metodologi/PANDUAN_STANDARISASI_HEADING_DAN_DAFTAR_ISI_DOCX.md": {
+    "mtime": 1789468788.4290612,
+    "seen": 1789550336.1421826,
+    "ast_hash": "aac3d9a6ff30fccdf73f39a06078c69e",
+    "semantic_hash": "aac3d9a6ff30fccdf73f39a06078c69e"
+  },
+  "04_Riset_&_Metodologi/PRD_AUDIT_DAN_PENYELARASAN_PEDOMAN_FEB_UKRIDA_2023.md": {
+    "mtime": 1789468788.4300663,
+    "seen": 1789550336.1421826,
+    "ast_hash": "642f1a4e88824b00228c71786f58be94",
+    "semantic_hash": "642f1a4e88824b00228c71786f58be94"
+  },
+  "04_Riset_&_Metodologi/PRD_AUDIT_PDF_VS_DOCX.md": {
+    "mtime": 1789468788.4310665,
+    "seen": 1789550336.1421826,
+    "ast_hash": "d656ab3163f471338ffe9e985fd569de",
+    "semantic_hash": "d656ab3163f471338ffe9e985fd569de"
+  },
+  "04_Riset_&_Metodologi/PRD_ELIMINASI_SUMBER_PALSU_DAN_VERIFIKASI_DATA_PRIMER_BAB1.md": {
+    "mtime": 1789536230.4844234,
+    "seen": 1789550336.1421826,
+    "ast_hash": "c1b9d23dd69ce4a2ccfdc58cde9cab3a",
+    "semantic_hash": "c1b9d23dd69ce4a2ccfdc58cde9cab3a"
+  },
+  "04_Riset_&_Metodologi/PRD_GRAFIK_EMPIRIS_BAB1.md": {
+    "mtime": 1789468788.4330661,
+    "seen": 1789550336.1421826,
+    "ast_hash": "b3f876cd745041264352beff1e08139c",
+    "semantic_hash": "b3f876cd745041264352beff1e08139c"
+  },
+  "04_Riset_&_Metodologi/PRD_HYBRID_PANDOC_SCRIPT_GENERATOR.md": {
+    "mtime": 1789468788.434571,
+    "seen": 1789550336.1421826,
+    "ast_hash": "208bffbb403da59fa295a1488a5e173e",
+    "semantic_hash": "208bffbb403da59fa295a1488a5e173e"
+  },
+  "04_Riset_&_Metodologi/PRD_INTEGRASI_SKILL_PAPER_AUDIT.md": {
+    "mtime": 1789529772.1685336,
+    "seen": 1789550336.1421826,
+    "ast_hash": "d8f35c96ad4868c9ddd2698f0ba95d6d",
+    "semantic_hash": "d8f35c96ad4868c9ddd2698f0ba95d6d"
+  },
+  "04_Riset_&_Metodologi/PRD_RESOLUSI_REVIEW_TEKNIS_PRISM_AI.md": {
+    "mtime": 1789468788.4365766,
+    "seen": 1789550336.1421826,
+    "ast_hash": "af68b91cdd181c924c23d9b2b2fbeef3",
+    "semantic_hash": "af68b91cdd181c924c23d9b2b2fbeef3"
+  },
+  "04_Riset_&_Metodologi/PRD_REVISI_DOCX_KUALITAS_LATEX.md": {
+    "mtime": 1789468788.4380865,
+    "seen": 1789550336.1421826,
+    "ast_hash": "23dade5f7b49d0040c12dc6fd4912b5a",
+    "semantic_hash": "23dade5f7b49d0040c12dc6fd4912b5a"
+  },
+  "04_Riset_&_Metodologi/PRD_SINKRONISASI_DOCX_DAN_AUDIT_FILE.md": {
+    "mtime": 1789468788.439087,
+    "seen": 1789550336.1421826,
+    "ast_hash": "fb439ca7f25ea75638dc003a6134ccb8",
+    "semantic_hash": "fb439ca7f25ea75638dc003a6134ccb8"
+  },
+  "04_Riset_&_Metodologi/PRD_SISTEM_INTEGRITAS_DAN_VERIFIKASI_MENDELEY.md": {
+    "mtime": 1789532067.363383,
+    "seen": 1789550336.1421826,
+    "ast_hash": "fef64f41d0c540c149976c2123ffd5b9",
+    "semantic_hash": "fef64f41d0c540c149976c2123ffd5b9"
+  },
+  "04_Riset_&_Metodologi/PRD_STANDARISASI_URL_SITASI_APA7_DATA_POKEMON.md": {
+    "mtime": 1789534904.4029913,
+    "seen": 1789550336.1421826,
+    "ast_hash": "c07ff891bc13230e470a51a496748f1b",
+    "semantic_hash": "c07ff891bc13230e470a51a496748f1b"
+  },
+  "04_Riset_&_Metodologi/PRD_SUBSTITUSI_GAMBAR_1_3_DATA_LEGIT_BAB1.md": {
+    "mtime": 1789537406.119769,
+    "seen": 1789550336.1421826,
+    "ast_hash": "dbd6f92b6e3e596999d2753c6c216f7f",
+    "semantic_hash": "dbd6f92b6e3e596999d2753c6c216f7f"
+  },
+  "04_Riset_&_Metodologi/VERIFIED_EMPIRICAL_DATA.md": {
+    "mtime": 1789538883.2162971,
+    "seen": 1789550336.1421826,
+    "ast_hash": "14ee5e816e1bfc86828b99bf6a4d3253",
+    "semantic_hash": "14ee5e816e1bfc86828b99bf6a4d3253"
+  },
+  "06_Referensi_Jurnal_PDF/KATALOG_REFERENSI_JURNAL.md": {
+    "mtime": 1789468788.4761662,
+    "seen": 1789550336.1421826,
+    "ast_hash": "7457acbc4bf57f28e8dbc80b2f37be6c",
+    "semantic_hash": "7457acbc4bf57f28e8dbc80b2f37be6c"
+  },
+  "06_Referensi_Jurnal_PDF/PANDUAN_IMPORT_MENDELEY_1_MENIT.md": {
+    "mtime": 1789532284.8771307,
+    "seen": 1789550336.1421826,
+    "ast_hash": "818b981c7ef741b8ec9630f8d0216dec",
+    "semantic_hash": "818b981c7ef741b8ec9630f8d0216dec"
+  },
+  "07_Review_&_Audit/Paper_Audits/README.md": {
+    "mtime": 1789529807.5024571,
+    "seen": 1789550336.1421826,
+    "ast_hash": "1274770dc7ef3953ffa27fcea592b9bc",
+    "semantic_hash": "1274770dc7ef3953ffa27fcea592b9bc"
+  },
+  "07_Review_&_Audit/Revisi_Dosen/2026-09-08_Revisi_Lengkap_Dosen_Bab1.md": {
+    "mtime": 1789468788.5573485,
+    "seen": 1789550336.1421826,
+    "ast_hash": "c1ffb25a60d27d5be8cb81026e245fb2",
+    "semantic_hash": "c1ffb25a60d27d5be8cb81026e245fb2"
+  },
+  "07_Review_&_Audit/Revisi_Dosen/2026-09-09_Revisi_Dosen_dan_Opsi_Moderasi.md": {
+    "mtime": 1789468788.557853,
+    "seen": 1789550336.1421826,
+    "ast_hash": "27cc163eee46bd35d23e5b0d39a1c21d",
+    "semantic_hash": "27cc163eee46bd35d23e5b0d39a1c21d"
+  },
+  "07_Review_&_Audit/Revisi_Dosen/2026-09-14_Review_Teknis_Prism_AI_dan_Matriks_Resolusi.md": {
+    "mtime": 1789468788.5593574,
+    "seen": 1789550336.1421826,
+    "ast_hash": "a0cfac693c80044d44681ce3d5c26ebe",
+    "semantic_hash": "a0cfac693c80044d44681ce3d5c26ebe"
+  },
+  "07_Review_&_Audit/Revisi_Dosen/2026-09-16_Revisi_Dosen_Sumber_Pokemon_Mendeley_Daftar_Pustaka.md": {
+    "mtime": 1789530859.6088462,
+    "seen": 1789550336.1421826,
+    "ast_hash": "177c7f4294fb67c47a02fe12f7532ea6",
+    "semantic_hash": "177c7f4294fb67c47a02fe12f7532ea6"
+  },
+  "07_Review_&_Audit/Revisi_Dosen/README.md": {
+    "mtime": 1789468788.560363,
+    "seen": 1789550336.1421826,
+    "ast_hash": "682767ac17d46e8427ec2eb798642692",
+    "semantic_hash": "682767ac17d46e8427ec2eb798642692"
+  },
+  "07_Review_&_Audit/Revisi_Dosen/TEMPEL_CHAT_DOSEN_DISINI.md": {
+    "mtime": 1789530871.239851,
+    "seen": 1789550336.1421826,
+    "ast_hash": "4ffcf3865d19c8b23e04b5ed1cc48599",
+    "semantic_hash": "4ffcf3865d19c8b23e04b5ed1cc48599"
+  },
+  "07_Review_&_Audit/review-format.md": {
+    "mtime": 1789468788.550838,
+    "seen": 1789550336.1421826,
+    "ast_hash": "2d4ca7f2dfd54dadd2de92a65bfb8bbf",
+    "semantic_hash": "2d4ca7f2dfd54dadd2de92a65bfb8bbf"
+  },
+  "07_Review_&_Audit/review-language.md": {
+    "mtime": 1789468788.551838,
+    "seen": 1789550336.1421826,
+    "ast_hash": "97b54af00c37cefdf7a0d13b5326b8a0",
+    "semantic_hash": "97b54af00c37cefdf7a0d13b5326b8a0"
+  },
+  "07_Review_&_Audit/review-methodology.md": {
+    "mtime": 1789468788.552838,
+    "seen": 1789550336.1421826,
+    "ast_hash": "e9d5ec9477fd8edb2f9f368b0cf0a35b",
+    "semantic_hash": "e9d5ec9477fd8edb2f9f368b0cf0a35b"
+  },
+  "07_Review_&_Audit/review-output.md": {
+    "mtime": 1789468788.5538383,
+    "seen": 1789550336.1421826,
+    "ast_hash": "e61f1bbac5fc4832ff58d392023de5a1",
+    "semantic_hash": "e61f1bbac5fc4832ff58d392023de5a1"
+  },
+  "directives/audit_pdf_vs_docx_fidelity.md": {
+    "mtime": 1789468788.5648732,
+    "seen": 1789550336.1421826,
+    "ast_hash": "391328157f66a7f74ea4c24a91f8c790",
+    "semantic_hash": "391328157f66a7f74ea4c24a91f8c790"
+  },
+  "directives/build_docx_without_chapter3.md": {
+    "mtime": 1789468788.5658731,
+    "seen": 1789550336.1421826,
+    "ast_hash": "22bc12959914db59a574364c4c47aa48",
+    "semantic_hash": "22bc12959914db59a574364c4c47aa48"
+  },
+  "directives/build_pdf_without_chapter3.md": {
+    "mtime": 1789468788.5668733,
+    "seen": 1789550336.1421826,
+    "ast_hash": "66f0eab42419d9139332042a3f8edbe6",
+    "semantic_hash": "66f0eab42419d9139332042a3f8edbe6"
+  },
+  "directives/curate_bab1_market_graphics.md": {
+    "mtime": 1789468788.5678732,
+    "seen": 1789550336.1421826,
+    "ast_hash": "b3219da203bfa02659bfb81fbdb393cc",
+    "semantic_hash": "b3219da203bfa02659bfb81fbdb393cc"
+  },
+  "directives/empirical_source_verification.md": {
+    "mtime": 1789538017.0111933,
+    "seen": 1789550336.1421826,
+    "ast_hash": "77368fa2d393a3cc1628063a7ab247db",
+    "semantic_hash": "77368fa2d393a3cc1628063a7ab247db"
+  },
+  "directives/run_paper_audit.md": {
+    "mtime": 1789529802.5369189,
+    "seen": 1789550336.1421826,
+    "ast_hash": "4ab94c382e5bd11f10acab3652187f27",
+    "semantic_hash": "4ab94c382e5bd11f10acab3652187f27"
+  },
+  "directives/update_study_guide_and_pdf.md": {
+    "mtime": 1789468788.5733874,
+    "seen": 1789550336.1421826,
+    "ast_hash": "dbc9ad1fc09239c7c04ec0a3b28a040f",
+    "semantic_hash": "dbc9ad1fc09239c7c04ec0a3b28a040f"
+  },
+  "directives/verify_mendeley_integrity.md": {
+    "mtime": 1789532889.590132,
+    "seen": 1789550336.1421826,
+    "ast_hash": "f28153a6fd9c675d9cc8975ef866197b",
+    "semantic_hash": "f28153a6fd9c675d9cc8975ef866197b"
+  },
+  "directives/verify_ukrida_2023_guidelines.md": {
+    "mtime": 1789468788.5743878,
+    "seen": 1789550336.1421826,
+    "ast_hash": "f23942ff774a4ded6d5eef925b961470",
+    "semantic_hash": "f23942ff774a4ded6d5eef925b961470"
   }
 }
