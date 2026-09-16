@@ -26,7 +26,7 @@ if hasattr(sys.stderr, 'reconfigure'):
     sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 
 def verify_docx():
-    docx_path = Path(r"z:\SKRIPSII\SKRIPSI-arthur\01_Naskah_Utama\Proposal_Arthur_PokemonTCG.docx")
+    docx_path = Path(__file__).resolve().parent.parent / "01_Naskah_Utama" / "Proposal_Arthur_PokemonTCG.docx"
     assert docx_path.exists(), f"File {docx_path} does not exist!"
 
     print("=" * 60)

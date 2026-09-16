@@ -26,7 +26,7 @@
 Halo! Tolong jalankan skill "obsidian-second-brain" dan mulai sesi kerja skripsi ini dengan protokol anti-lupa konteks:
 
 1. [BACA PENGETAHUAN KODE & GRAF]: Tolong periksa `graphify-out/manifest.json` dan `graphify-out/GRAPH_REPORT.md` agar kamu memahami seluruh relasi file, dependensi script, dan entitas skripsi ini.
-2. [BACA KOKPIT OBSIDIAN]: Tolong baca `00_DASHBOARD_SECOND_BRAIN.md` dan `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` untuk memuat status naskah aktif, parameter variabel penelitian (Y: Impulsive Buying, X1: Hedonic, X2: Completeness, X3: Speculative, Z: Self-Control), dan catatan bimbingan Ibu Dr. Fredella Colline.
+2. [BACA KOKPIT OBSIDIAN]: Tolong baca `00_DASHBOARD_SECOND_BRAIN.md`, `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md`, dan framework universal `04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md` (+ SOP `directives/universal_thesis_graph_of_agents.md`) untuk memuat status naskah aktif, parameter variabel penelitian (Y: Impulsive Buying, X1: Hedonic, X2: Completeness, X3: Speculative, Z: Self-Control), dan catatan bimbingan Ibu Dr. Fredella Colline.
 3. [ATURAN DOKUMENTASI]: Pastikan setiap catatan/analisis baru di markdown selalu diawali dengan callout `> [!SUMMARY]` (Untuk apa & masalah apa yang diselesaikan), gunakan link `[[...]]`, dan patuhi arsitektur 3-Layer (directives -> orchestration -> execution).
 4. [AUTO-LOGGING]: Tolong catat progres atau keputusan penting sesi ini ke `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md`.
 
@@ -81,10 +81,9 @@ Bisa kita mulai dari pertanyaan pertama?
 Halo! Jalankan skill "obsidian-second-brain". Tolong lakukan audit kesehatan naskah, kepatuhan UKRIDA, dan verifikasi dokumen:
 
 1. Periksa integritas file di `01_Naskah_Utama/` (pastikan logo UKRIDA pentagram vektor terpasang baik di proposal lengkap maupun proposal tanpa Bab 3).
-2. Jalankan skrip verifikasi kepatuhan UKRIDA 2023: `execution/verify_ukrida_compliance.py`.
-3. Jalankan skrip verifikasi tipografi Word publikasi: `execution/verify_docx_typography.py`.
-4. Jalankan skrip paritas PDF vs Word: `execution/verify_pdf_docx_parity.py`.
-5. Laporkan status kompilasi PDF dan pastikan dokumen Word (.docx) tetap 100% sinkron.
+2. Jalankan orchestrator 7 gerbang verifikasi: `py execution/run_thesis_graph.py --gate parity` (G1 Mendeley, G2 live-URL, G3 UKRIDA 2023, G4 tipografi, G5 paritas PDF-vs-Word, G6 outline, G7 buku LibGen). Satu FAIL = BUILD BROKEN, dilarang ke pembimbing.
+3. Jika ada gerbang FAIL, perbaiki secara surgical di agen pemiliknya lalu ulangi dari gerbang yang gagal (lihat SOP `directives/universal_thesis_graph_of_agents.md`).
+4. Laporkan status kompilasi PDF dan pastikan dokumen Word (.docx) tetap 100% sinkron.
 ```
 
 ---
@@ -114,6 +113,7 @@ Dengan mengirimkan prompt di atas, Anda secara eksplisit **memerintahkan AI untu
 2. **`00_DASHBOARD_SECOND_BRAIN.md`**: Memberitahu AI judul, dosen, variabel, dan bab yang sedang dikerjakan.
 3. **`SOURCE_OF_TRUTH.md`**: Mencegah AI mengarang rumus, data pasar, atau referensi fiktif.
 4. **`LOG_SESI_SECOND_BRAIN.md`**: Mengingatkan AI pada keputusan terakhir yang Anda buat di sesi sebelumnya.
+5. **`execution/run_thesis_graph.py`**: Satu perintah menjalankan 7 gerbang verifikasi (G1–G7) — tidak ada skipped-check yang diklaim lolos.
 
 ---
 *Simpan file ini di bookmark Obsidian Anda. Setiap kali mau mulai kerja, cukup klik tombol Copy di pojok kanan atas kotak, lalu paste ke AI!* 🚀

@@ -74,12 +74,12 @@ def generate_figure_1_1():
         "The Pokémon Co. / Nintendo"
     ]
 
-    fig, ax = plt.subplots(figsize=(8.5, 4.8), dpi=300)
+    fig, ax = plt.subplots(figsize=(7.2, 4.6), dpi=300)
     fig.patch.set_facecolor('#FFFFFF')
     ax.set_facecolor('#FFFFFF')
 
     y_pos = np.arange(len(franchises))
-    
+
     # Colors: Highlight Pokemon with Dark Navy + Gold border
     bar_colors = [SLATE_MUTED] * 9 + [NAVY_PRIMARY]
     edge_colors = [SLATE_MUTED] * 9 + [GOLD_ACCENT]
@@ -87,27 +87,28 @@ def generate_figure_1_1():
 
     bars = ax.barh(y_pos, revenues, color=bar_colors, edgecolor=edge_colors, linewidth=edge_widths, height=0.65)
 
-    # Add data labels
+    # Add data labels (font dibesarkan: cetak 0.90\textwidth dari 7.2in
+    # -> faktor skala ~0.69, sehingga 11pt native = ~7.6pt efektif)
     for i, (bar, rev, owner) in enumerate(zip(bars, revenues, owners)):
         width = bar.get_width()
         if i == 9:  # Pokémon
             label_text = f"US$ {rev:.1f} Miliar (No. 1)"
             ax.text(width + 1.5, bar.get_y() + bar.get_height() / 2, label_text,
-                    va='center', ha='left', fontsize=10, fontweight='bold', color=NAVY_PRIMARY)
+                    va='center', ha='left', fontsize=12, fontweight='bold', color=NAVY_PRIMARY)
         else:
             label_text = f"US$ {rev:.1f} M ({owner})"
             ax.text(width + 1.2, bar.get_y() + bar.get_height() / 2, label_text,
-                    va='center', ha='left', fontsize=8.5, color='#333333')
+                    va='center', ha='left', fontsize=11, color='#333333')
 
     ax.set_yticks(y_pos)
-    ax.set_yticklabels(franchises, fontsize=10, fontweight='normal')
+    ax.set_yticklabels(franchises, fontsize=11, fontweight='normal')
     # Bold the Pokemon label
     ax.get_yticklabels()[9].set_fontweight('bold')
     ax.get_yticklabels()[9].set_color(NAVY_PRIMARY)
 
-    ax.set_xlabel("Estimasi Pendapatan Kumulatif Sepanjang Masa (Miliar Dolar AS / US$ Billion)", 
-                  fontsize=9.5, fontweight='bold', labelpad=8)
-    ax.set_xlim(0, 125)
+    ax.set_xlabel("Estimasi Pendapatan Kumulatif Sepanjang Masa (Miliar Dolar AS / US$ Billion)",
+                  fontsize=11, fontweight='bold', labelpad=8)
+    ax.set_xlim(0, 135)
     
     # Clean grid
     ax.xaxis.grid(True, linestyle='--', alpha=0.5, color='#E2E8F0')
@@ -117,11 +118,11 @@ def generate_figure_1_1():
     ax.spines['left'].set_color('#A0AEC0')
     ax.spines['bottom'].set_color('#A0AEC0')
 
-    # Sub-annotation
-    ax.text(0.98, 0.04, "*Estimasi mencakup penjualan merchandise, TCG, box office, & video game.",
-            transform=ax.transAxes, fontsize=7.5, fontstyle='italic', color='#718096', ha='right')
+    # Sub-annotation di luar area plot agar tidak menabrak label bar terbawah
+    fig.text(0.97, 0.02, "*Estimasi mencakup penjualan merchandise, TCG, box office, & video game.",
+             ha='right', va='bottom', fontsize=9.5, fontstyle='italic', color='#718096')
 
-    plt.tight_layout()
+    plt.subplots_adjust(left=0.30, right=0.98, top=0.95, bottom=0.20)
     output_path = OUTPUT_DIR / "gambar1_1_media_franchise_ranking.png"
     plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor=fig.get_facecolor())
     plt.close()

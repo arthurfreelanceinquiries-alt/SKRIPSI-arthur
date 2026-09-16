@@ -26,7 +26,7 @@ if hasattr(sys.stdout, 'reconfigure'):
 if hasattr(sys.stderr, 'reconfigure'):
     sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 
-BASE_DIR = Path(r"d:\Perkuliahan\Skripsi\SKRIPSI-arthur")
+BASE_DIR = Path(__file__).resolve().parent.parent
 PDF_PATH = BASE_DIR / "01_Naskah_Utama" / "Proposal_Arthur_PokemonTCG.pdf"
 DOCX_PATH = BASE_DIR / "01_Naskah_Utama" / "Proposal_Arthur_PokemonTCG.docx"
 

@@ -24,10 +24,10 @@
     "semantic_hash": "2c123f3ace36d35c684f84c1723da02e"
   },
   "04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md": {
-    "mtime": 1789538894.6448617,
-    "seen": 1789550336.1421826,
-    "ast_hash": "252db5692abbb175c137de3905be2605",
-    "semantic_hash": "252db5692abbb175c137de3905be2605"
+    "mtime": 1789552246.2651584,
+    "seen": 1789556983.5212402,
+    "ast_hash": "db2800d59e1a45ec38600c75237cffaa",
+    "semantic_hash": "db2800d59e1a45ec38600c75237cffaa"
   },
   "04_Riset_&_Metodologi/skills.md": {
     "mtime": 1789468788.4431016,
@@ -126,10 +126,10 @@
     "semantic_hash": "bb521f4dfa1d9d57259c58a8e077ca64"
   },
   "02_Persiapan_Sidang/PRESENTASI_PANDUAN_BELAJAR.html": {
-    "mtime": 1789227247.1947212,
-    "seen": 1789227329.5905313,
-    "ast_hash": "b9f153d3fb3a2177a40eaa70810cde41",
-    "semantic_hash": ""
+    "mtime": 1789468788.3987615,
+    "seen": 1789556983.5212402,
+    "ast_hash": "f80fe7ccee2d1c8eb731fcf1d478bc0b",
+    "semantic_hash": "f80fe7ccee2d1c8eb731fcf1d478bc0b"
   },
   "02_Persiapan_Sidang/PROGRESS_TRACKER_PROPOSAL.md": {
     "mtime": 1789468788.400193,
@@ -138,10 +138,10 @@
     "semantic_hash": "46b4a21b4301a24d64cb53216e0c1b89"
   },
   "02_Persiapan_Sidang/presentasi_interaktif/index.html": {
-    "mtime": 1789227247.1751747,
-    "seen": 1789227329.5905335,
-    "ast_hash": "89da76fb51dc05713e4700da81328b65",
-    "semantic_hash": ""
+    "mtime": 1789468788.410804,
+    "seen": 1789556983.5212402,
+    "ast_hash": "606f29730ef475b314959225ce94e1b0",
+    "semantic_hash": "606f29730ef475b314959225ce94e1b0"
   },
   "03_Draft_Per_Bab/BAB_III_METODE_PENELITIAN.md": {
     "mtime": 1789468788.4173152,
@@ -216,16 +216,16 @@
     "semantic_hash": "34dde5c468dd7a94790adef1fedd8330"
   },
   "01_Naskah_Utama/images/diagram_alur_penelitian.png": {
-    "mtime": 1789150738.8603623,
-    "seen": 1789227329.590581,
+    "mtime": 1789468788.3749301,
+    "seen": 1789556983.5212402,
     "ast_hash": "f738446f7e79e912e49bda2d6c0cf036",
-    "semantic_hash": ""
+    "semantic_hash": "f738446f7e79e912e49bda2d6c0cf036"
   },
   "01_Naskah_Utama/images/gambar_rerangka_penelitian.png": {
-    "mtime": 1789223456.3597703,
-    "seen": 1789227329.5905817,
+    "mtime": 1789468788.3852518,
+    "seen": 1789556983.5212402,
     "ast_hash": "eb2cd1281a19ccf8bffcb2d17778d401",
-    "semantic_hash": ""
+    "semantic_hash": "eb2cd1281a19ccf8bffcb2d17778d401"
   },
   ".agents/skills/paper-audit/scripts/proofing_scan.py": {
     "mtime": 1789529665.2331738,
@@ -384,10 +384,10 @@
     "semantic_hash": "4064a49b700d1c3265fdfc560eb75809"
   },
   "00_DASHBOARD_SECOND_BRAIN.md": {
-    "mtime": 1789536594.5428376,
-    "seen": 1789550336.1421826,
-    "ast_hash": "cdfcea697dfa9c59e160d56bbbc7e7a9",
-    "semantic_hash": "cdfcea697dfa9c59e160d56bbbc7e7a9"
+    "mtime": 1789551621.726448,
+    "seen": 1789556983.5212402,
+    "ast_hash": "4e8b09b2a3849f48d7198e0a360f60cc",
+    "semantic_hash": "4e8b09b2a3849f48d7198e0a360f60cc"
   },
   "00_PANDUAN_OBSIDIAN_SECOND_BRAIN.md": {
     "mtime": 1789468788.2352066,
@@ -396,10 +396,10 @@
     "semantic_hash": "835d122f87d798afd8040e61aef9b029"
   },
   "00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md": {
-    "mtime": 1789530327.086948,
-    "seen": 1789550336.1421826,
-    "ast_hash": "a22b650448bd5d1e8b08836feb43ccfa",
-    "semantic_hash": "a22b650448bd5d1e8b08836feb43ccfa"
+    "mtime": 1789556757.534039,
+    "seen": 1789556983.5212402,
+    "ast_hash": "ce27d9b0a36e1a8119146aff2c55c4a0",
+    "semantic_hash": "ce27d9b0a36e1a8119146aff2c55c4a0"
   },
   "02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/01_BANK_SOAL_LATIHAN.md": {
     "mtime": 1789468788.4032607,
@@ -432,10 +432,10 @@
     "semantic_hash": "e75450f170e4fb8a7f4c540eb29fb843"
   },
   "04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md": {
-    "mtime": 1789534995.9891667,
-    "seen": 1789550336.1421826,
-    "ast_hash": "078a4e0e834d38f4c5c607860ea969b0",
-    "semantic_hash": "078a4e0e834d38f4c5c607860ea969b0"
+    "mtime": 1789556525.164809,
+    "seen": 1789556983.5212402,
+    "ast_hash": "a5ea6d3967b597bb42b7cc13d9b3300b",
+    "semantic_hash": "a5ea6d3967b597bb42b7cc13d9b3300b"
   },
   "04_Riset_&_Metodologi/PANDUAN_STANDARISASI_HEADING_DAN_DAFTAR_ISI_DOCX.md": {
     "mtime": 1789468788.4290612,
@@ -652,5 +652,137 @@
     "seen": 1789550336.1421826,
     "ast_hash": "f23942ff774a4ded6d5eef925b961470",
     "semantic_hash": "f23942ff774a4ded6d5eef925b961470"
+  },
+  "07_Review_&_Audit/Paper_Audits/audit_libgen_books_report.json": {
+    "mtime": 1789552863.2987304,
+    "seen": 1789556983.5202396,
+    "ast_hash": "31bb4f08f20379e18098bc3b267da0e8",
+    "semantic_hash": "31bb4f08f20379e18098bc3b267da0e8"
+  },
+  "execution/download_libgen_books.py": {
+    "mtime": 1789553980.6702733,
+    "seen": 1789556983.5212402,
+    "ast_hash": "eaf0ee0885dc4944a38a4447205e23ce",
+    "semantic_hash": "eaf0ee0885dc4944a38a4447205e23ce"
+  },
+  "execution/run_thesis_graph.py": {
+    "mtime": 1789556487.6141868,
+    "seen": 1789556983.5212402,
+    "ast_hash": "b632f90fd18ba14d12a9afe9b9c98f4c",
+    "semantic_hash": "b632f90fd18ba14d12a9afe9b9c98f4c"
+  },
+  "execution/verify_book_sources.py": {
+    "mtime": 1789552816.0263405,
+    "seen": 1789556983.5212402,
+    "ast_hash": "fdf4826f1a54da6628c7059360f3e76f",
+    "semantic_hash": "fdf4826f1a54da6628c7059360f3e76f"
+  },
+  ".agents/rules/mandatory_verifiable_theories_and_books.md": {
+    "mtime": 1789552237.3550394,
+    "seen": 1789556983.5212402,
+    "ast_hash": "ba4962bc0500283e9a85b0047cc2108d",
+    "semantic_hash": "ba4962bc0500283e9a85b0047cc2108d"
+  },
+  ".agents/skills/paper-audit/agents/openai.yaml": {
+    "mtime": 1789529665.2165651,
+    "seen": 1789556983.5212402,
+    "ast_hash": "1d1b4111f963970b986a1a4e4f762c09",
+    "semantic_hash": "1d1b4111f963970b986a1a4e4f762c09"
+  },
+  "02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.html": {
+    "mtime": 1789468788.3947618,
+    "seen": 1789556983.5212402,
+    "ast_hash": "b6095ac07f687b46d1f4a766d98099e6",
+    "semantic_hash": "b6095ac07f687b46d1f4a766d98099e6"
+  },
+  "04_Riset_&_Metodologi/PRD_DOWNLOAD_BUKU_REFERENSI_LIBGEN.md": {
+    "mtime": 1789553447.144024,
+    "seen": 1789556983.5212402,
+    "ast_hash": "63fc8382cbf7848ae8a6804f10a5f902",
+    "semantic_hash": "63fc8382cbf7848ae8a6804f10a5f902"
+  },
+  "04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md": {
+    "mtime": 1789555979.7184567,
+    "seen": 1789556983.5212402,
+    "ast_hash": "3e60de8002044ef64cc3f1915f637bea",
+    "semantic_hash": "3e60de8002044ef64cc3f1915f637bea"
+  },
+  "04_Riset_&_Metodologi/PRD_VERIFIKASI_SUMBER_BUKU_LIBGEN_DAN_RULES.md": {
+    "mtime": 1789552728.2454233,
+    "seen": 1789556983.5212402,
+    "ast_hash": "d1f49d826498085f3c5f9b9d7f1d88c1",
+    "semantic_hash": "d1f49d826498085f3c5f9b9d7f1d88c1"
+  },
+  "04_Riset_&_Metodologi/TEMPLATE_SOURCE_OF_TRUTH_UNIVERSAL.md": {
+    "mtime": 1789556498.8401952,
+    "seen": 1789556983.5212402,
+    "ast_hash": "6dda949fd3c0a9aaf7e5ddcf34463302",
+    "semantic_hash": "6dda949fd3c0a9aaf7e5ddcf34463302"
+  },
+  "06_Referensi_Jurnal_PDF/Buku_Referensi/README.md": {
+    "mtime": 1789552717.4270153,
+    "seen": 1789556983.5212402,
+    "ast_hash": "2f3684dc3d1f2f57a4be819b8a20697f",
+    "semantic_hash": "2f3684dc3d1f2f57a4be819b8a20697f"
+  },
+  "07_Review_&_Audit/Paper_Audits/review-2026-09-16-164500.md": {
+    "mtime": 1789551787.99379,
+    "seen": 1789556983.5212402,
+    "ast_hash": "fdf57696274aa59edda9e0f33af8b0e0",
+    "semantic_hash": "fdf57696274aa59edda9e0f33af8b0e0"
+  },
+  "PROMPT_KICKOFF.html": {
+    "mtime": 1789556760.2326312,
+    "seen": 1789556983.5212402,
+    "ast_hash": "b6736bc604ab28cdfb0f2fc1db08cd0f",
+    "semantic_hash": "b6736bc604ab28cdfb0f2fc1db08cd0f"
+  },
+  "directives/universal_thesis_graph_of_agents.md": {
+    "mtime": 1789556465.8243039,
+    "seen": 1789556983.5212402,
+    "ast_hash": "9a466e01d47567752fde14dac39cecb9",
+    "semantic_hash": "9a466e01d47567752fde14dac39cecb9"
+  },
+  "directives/verify_book_sources_libgen.md": {
+    "mtime": 1789552222.5530412,
+    "seen": 1789556983.5212402,
+    "ast_hash": "8502da32b57b01d67edaef9b79ae4c4f",
+    "semantic_hash": "8502da32b57b01d67edaef9b79ae4c4f"
+  },
+  "01_Naskah_Utama/images/Logo_UKRIDA_300x300.png": {
+    "mtime": 1789468788.3724132,
+    "seen": 1789556983.5212402,
+    "ast_hash": "1676b08f435f4419ccbdec6213d6d118",
+    "semantic_hash": "1676b08f435f4419ccbdec6213d6d118"
+  },
+  "01_Naskah_Utama/images/gambar1_1_media_franchise_ranking.png": {
+    "mtime": 1789543410.9298618,
+    "seen": 1789556983.5212402,
+    "ast_hash": "0b5cba420803751da5dceb318206203c",
+    "semantic_hash": "0b5cba420803751da5dceb318206203c"
+  },
+  "01_Naskah_Utama/images/gambar1_2_pokemon_tcg_production_growth.png": {
+    "mtime": 1789543411.3888905,
+    "seen": 1789556983.5212402,
+    "ast_hash": "5298a2968bd2c6c0180050bc4bb3c51f",
+    "semantic_hash": "5298a2968bd2c6c0180050bc4bb3c51f"
+  },
+  "01_Naskah_Utama/images/gambar1_3_psa_grading_price_disparity.png": {
+    "mtime": 1789543411.8814926,
+    "seen": 1789556983.5212402,
+    "ast_hash": "403eb061e80f8c9a0995f196ffa1346a",
+    "semantic_hash": "403eb061e80f8c9a0995f196ffa1346a"
+  },
+  "01_Naskah_Utama/images/ukrida_pentagram.png": {
+    "mtime": 1789468788.389251,
+    "seen": 1789556983.5212402,
+    "ast_hash": "bda6caca8cf84717edd7bfbc6268bca6",
+    "semantic_hash": "bda6caca8cf84717edd7bfbc6268bca6"
+  },
+  "01_Naskah_Utama/images/ukrida_pentagram.svg": {
+    "mtime": 1789468788.3902514,
+    "seen": 1789556983.5212402,
+    "ast_hash": "146ee1e92d6fc8dd77bfcdbfb2c07e31",
+    "semantic_hash": "146ee1e92d6fc8dd77bfcdbfb2c07e31"
   }
 }
