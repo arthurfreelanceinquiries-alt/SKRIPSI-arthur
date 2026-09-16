@@ -7,6 +7,38 @@
 
 ---
 
+## 📅 Sesi 16 September 2026 (Sesi 14): Penegakan Rules Kewajiban Sumber Teori, SOP Verifikasi Buku LibGen (3-Layer Architecture), & Eliminasi Ghost Citations
+
+* **Fokus Pekerjaan:**
+  - Menegakkan mandat pengguna terkait aturan baku (*mandatory rule*): seluruh teori dari buku dan artikel ilmiah wajib memiliki sumber terverifikasi yang dapat dilacak dan diunduh (link aktif atau PDF).
+  - Melakukan verifikasi 100% ketersediaan seluruh buku referensi yang disitasi dalam naskah skripsi ke basis data Library Genesis (LibGen: `https://libgen.li/`).
+  - Menerapkan arsitektur 3-Layer (*3-Layer Architecture*):
+    * **Layer 1 (Directives/SOP):** Menerbitkan SOP Baku `directives/verify_book_sources_libgen.md`.
+    * **Layer 2 (Rules & Source of Truth):** Menetapkan aturan permanen `.agents/rules/mandatory_verifiable_theories_and_books.md` dan mengunci Keputusan D23 pada `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md`.
+    * **Layer 3 (Execution):** Mengembangkan skrip otomatis `execution/verify_book_sources.py` dengan mekanisme live search, failover mirror, dan logging JSON resmi.
+  - Mengaudit seluruh 11 buku referensi yang disitasi: 9 buku teks internasional seminal (Mehrabian 1974, Belk 1995, Keynes 1936, Shiller 2000, Cohen 1988, Aiken 1991, Hayes 2018, Sekaran 2016, Hair 2019) dan 2 buku metodologi nasional (Ghozali 2018, Sugiyono 2019).
+  - Mengeliminasi entri orphan `mowen1990consumer` yang tidak disitasi dalam naskah dan tidak ditemukan di LibGen, menghasilkan **ZERO GHOST CITATIONS**.
+* **Masalah yang Diselesaikan:**
+  - Mencegah risiko sitasi fiktif (*hallucinated citations*) atau teori tanpa sumber buku fisik/digital yang valid saat sidang skripsi di hadapan dewan penguji FEB UKRIDA.
+  - Memastikan seluruh buku teks internasional terdaftar di LibGen dengan tautan unduhan langsung yang aktif (`https://libgen.li/ads.php?md5=...`), serta buku teks lokal Indonesia didukung salinan pindaian bab digital di `06_Referensi_Jurnal_PDF/Buku_Referensi/`.
+  - Menjaga paritas 6-arah (TeX, Word, Markdown, BibTeX, RIS Mendeley, Bib Mendeley) tetap konsisten 100% pada 55 referensi aktif.
+* **Keputusan / Output Teknis:**
+  - Dokumen PRD: [[04_Riset_&_Metodologi/PRD_VERIFIKASI_SUMBER_BUKU_LIBGEN_DAN_RULES.md]].
+  - SOP Layer 1: [[directives/verify_book_sources_libgen.md]].
+  - Rules Layer 2: [[.agents/rules/mandatory_verifiable_theories_and_books.md]].
+  - Keputusan D23: [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]].
+  - Repositori Bukti Digital Buku: [[06_Referensi_Jurnal_PDF/Buku_Referensi/README.md]].
+  - Skrip Audit Layer 3: [[execution/verify_book_sources.py]].
+  - Laporan Audit LibGen JSON: [[07_Review_&_Audit/Paper_Audits/audit_libgen_books_report.json]] (9/9 buku internasional verified di LibGen, 2 buku metodologi lokal terdata di Perpusnas & repositori lokal, 0 buku fiktif).
+  - Hasil Uji Verifikasi Otomatis (Semua PASS 100%):
+    1. `verify_book_sources.py`: **PASS (100%)** — 11/11 buku referensi valid, 0 ghost citations.
+    2. `verify_mendeley_integrity.py`: **PASS (100%)** — paritas 6-arah 55 referensi terpenuhi, 0 tag terlarang.
+    3. `verify_ukrida_compliance.py`: **PASS (100%)** — standar FEB UKRIDA 2023 terpenuhi penuh.
+    4. `verify_docx_typography.py`: **PASS (100%)** — tipografi publikasi Word sempurna.
+    5. `verify_pdf_docx_parity.py`: **PASS (100%)** — paritas PDF vs Word 100%.
+
+---
+
 ## 📅 Sesi 16 September 2026 (Sesi 13): Audit Kesehatan Naskah, Kepatuhan UKRIDA 2023, Gambar 1.3 Ultra-HD, & Sinkronisasi Graphify
 
 * **Fokus Pekerjaan:**

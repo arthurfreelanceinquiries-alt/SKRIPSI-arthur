@@ -1,0 +1,112 @@
+[
+  {
+    "key": "mehrabian1974approach",
+    "title": "An Approach to Environmental Psychology",
+    "author": "Mehrabian, Albert and Russell, James A.",
+    "year": "1974",
+    "status": "AVAILABLE_LIBGEN",
+    "mirrors_count": 5,
+    "download_link": "https://libgen.li/",
+    "is_local": false
+  },
+  {
+    "key": "belk1995collecting",
+    "title": "Collecting in a Consumer Society",
+    "author": "Belk, Russell W.",
+    "year": "1995",
+    "status": "AVAILABLE_LIBGEN",
+    "mirrors_count": 3,
+    "download_link": "https://libgen.li/",
+    "is_local": false
+  },
+  {
+    "key": "keynes1936general",
+    "title": "The General Theory of Employment, Interest and Money",
+    "author": "Keynes, John Maynard",
+    "year": "1936",
+    "status": "AVAILABLE_LIBGEN",
+    "mirrors_count": 25,
+    "download_link": "https://libgen.li/",
+    "is_local": false
+  },
+  {
+    "key": "shiller2000irrational",
+    "title": "Irrational Exuberance",
+    "author": "Shiller, Robert J.",
+    "year": "2000",
+    "status": "AVAILABLE_LIBGEN",
+    "mirrors_count": 25,
+    "download_link": "https://libgen.li/",
+    "is_local": false
+  },
+  {
+    "key": "cohen1988statistical",
+    "title": "Statistical Power Analysis for the Behavioral Sciences",
+    "author": "Cohen, Jacob",
+    "year": "1988",
+    "status": "AVAILABLE_LIBGEN",
+    "mirrors_count": 14,
+    "download_link": "https://libgen.li/",
+    "is_local": false
+  },
+  {
+    "key": "aiken1991multiple",
+    "title": "Multiple Regression: Testing and Interpreting Interactions",
+    "author": "Aiken, Leona S. and West, Stephen G.",
+    "year": "1991",
+    "status": "AVAILABLE_LIBGEN",
+    "mirrors_count": 6,
+    "download_link": "https://libgen.li/",
+    "is_local": false
+  },
+  {
+    "key": "hayes2018introduction",
+    "title": "Introduction to Mediation, Moderation, and Conditional Process Analysis",
+    "author": "Hayes, Andrew F.",
+    "year": "2018",
+    "status": "AVAILABLE_LIBGEN",
+    "mirrors_count": 7,
+    "download_link": "https://libgen.li/",
+    "is_local": false
+  },
+  {
+    "key": "sekaran2016research",
+    "title": "Research Methods for Business: A Skill-Building Approach",
+    "author": "Sekaran, Uma and Bougie, Roger",
+    "year": "2016",
+    "status": "AVAILABLE_LIBGEN",
+    "mirrors_count": 1,
+    "download_link": "https://libgen.li/",
+    "is_local": false
+  },
+  {
+    "key": "hair2019multivariate",
+    "title": "Multivariate Data Analysis",
+    "author": "Hair, Joseph F. and Black, William C. and Babin, Barry J. and Anderson, Rolph E.",
+    "year": "2019",
+    "status": "AVAILABLE_LIBGEN",
+    "mirrors_count": 6,
+    "download_link": "https://libgen.li/",
+    "is_local": false
+  },
+  {
+    "key": "ghozali2018aplikasi",
+    "title": "Aplikasi Analisis Multivariate dengan Program IBM SPSS 25",
+    "author": "Ghozali, Imam",
+    "year": "2018",
+    "status": "LOCAL_INDONESIAN_BOOK",
+    "mirrors_count": 0,
+    "download_link": "Local Digital Repository (06_Referensi_Jurnal_PDF/Buku_Referensi/)",
+    "is_local": true
+  },
+  {
+    "key": "sugiyono2019metode",
+    "title": "Metode Penelitian Kuantitatif, Kualitatif, dan R&D",
+    "author": "Sugiyono",
+    "year": "2019",
+    "status": "LOCAL_INDONESIAN_BOOK",
+    "mirrors_count": 0,
+    "download_link": "Local Digital Repository (06_Referensi_Jurnal_PDF/Buku_Referensi/)",
+    "is_local": true
+  }
+]

@@ -44,6 +44,7 @@
 | **D20** | Injeksi 4 Rujukan Data Industri Pokémon Resmi | 16 Sep 2026 | Arahan Dosen: Statista (2024), The Pokémon Company (2024), ICv2 & TCGplayer (2024), dan PSA (2024) berstandar internasional disitasi di Bab 1 dan bibliografi. |
 | **D21** | Kebijakan Paritas 1:1 Mendeley & Whitelist Tag RIS | 16 Sep 2026 | Mengunci paritas 56 referensi (TeX == Word == MD == RIS == Bib == Mendeley UI), memblokir total tag ilegal `ELEC`/`WEB` untuk mengeliminasi bahaya *Silent Drop*, serta menetapkan tag `RPRT` untuk seluruh data industri. |
 | **D22** | Standarisasi Tautan URL Aktif APA 7 pada Data Industri Pokémon | 16 Sep 2026 | Mewajibkan seluruh data industri Pokémon di Daftar Pustaka (Word, PDF, Markdown, Mendeley) dilengkapi dengan tautan URL langsung (*deep link*) yang aktif diklik (*clickable OpenXML hyperlink*), memudahkan verifikasi dosen pembimbing. |
+| **D23** | Kewajiban Sumber Terverifikasi Teori Buku & Audit LibGen | 16 Sep 2026 | Mewajibkan seluruh kutipan teori dari buku teks memiliki bukti fisik/digital yang dapat diakses dan diunduh di Library Genesis (`libgen.li`) atau arsip resmi, mengeliminasi sitasi hantu (*ghost citations*), serta mewajibkan penggantian jika tidak dapat diunduh. |
 
 ---
 
