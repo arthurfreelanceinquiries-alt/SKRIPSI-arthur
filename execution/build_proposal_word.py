@@ -1318,13 +1318,15 @@ def build_full_proposal(skip_chapter3: bool = False):
     add_frontmatter_heading(doc, "DAFTAR TABEL", page_break=True)
 
     lot_items_nobab3 = [
-        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "14")
+        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian", "6"),
+        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "15")
     ]
     lot_items_full = [
-        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "14"),
-        ("Tabel 3.1", "Skala Pengukuran Likert 5 Poin", "21"),
-        ("Tabel 3.2", "Operasionalisasi Variabel Penelitian", "26"),
-        ("Tabel 3.3", "Jadwal Pelaksanaan Kegiatan Penelitian (Tahun 2026)", "34")
+        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian", "6"),
+        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "15"),
+        ("Tabel 3.1", "Skala Pengukuran Likert 5 Poin", "22"),
+        ("Tabel 3.2", "Operasionalisasi Variabel Penelitian", "27"),
+        ("Tabel 3.3", "Jadwal Pelaksanaan Kegiatan Penelitian (Tahun 2026)", "35")
     ]
     lot_items = lot_items_nobab3 if skip_chapter3 else lot_items_full
     for tab_num, tab_title, tab_page in lot_items:

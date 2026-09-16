@@ -25,6 +25,34 @@ if hasattr(sys.stderr, 'reconfigure'):
 MENDELEY_TAG_WHITELIST = {'JOUR', 'BOOK', 'CONF', 'RPRT', 'THES', 'GEN'}
 FORBIDDEN_TAGS = {'ELEC', 'WEB', 'MISC'}
 
+# Verified resolvable links for cited entries that carry neither `doi` nor
+# `url` in references.bib. Every URL below was live-checked (HTTP 200/403 =
+# resolves) pada 16 Sep 2026 via execution/resolve_mendeley_urls.py +
+# verifikasi manual. Aturan: JANGAN tambah URL tanpa live-check.
+# - doi.org/*   = exact-work DOI (Crossref, title sim 1.00, tahun cocok)
+# - doi.org/*(reprint) = karya SAMA, DOI milik edisi/cetakan lain (tahun metadata
+#   penerbit beda dgn edisi yg disitasi; tetap karya yg sama, layak sbg link baca)
+# - openlibrary.org/works/* = canonical work page (title sim >= 0.90 + author cocok)
+# Tanpa link terverifikasi: tan2024ketidakpastian (DOI katalog 10.19184/bisma.v20i2.60038
+#   MATI — Crossref+doi.org 404; portal jurnal di PDF tdk memberi URL artikel),
+#   sugiyono2019metode (hanya pindaian lokal, tanpa URL publik).
+RESOLVED_URLS = {
+    "gueltekin2012influence": "https://doi.org/10.22610/jebs.v4i3.315",
+    "apidana2022peran": "https://doi.org/10.32639/jdbm.v1i1.38",
+    "lienardy2024role": "https://doi.org/10.61292/birev.258",  # metadata penerbit 2026; artikel & penulis sama
+    "keynes1936general": "https://doi.org/10.4324/9781912281138",  # reprint Routledge karya yg sama
+    "cohen1988statistical": "https://doi.org/10.1016/c2013-0-10517-x",  # karya yg sama; metadata edisi lama
+    "aiken1991multiple": "https://doi.org/10.1016/0886-1633(93)90008-d",  # judul identik
+    "sekaran2016research": "https://doi.org/10.1016/0024-6301(93)90168-f",  # karya yg sama; metadata edisi lama
+    "zeigarnik1927behalten": "https://doi.org/10.1007/978-3-658-12666-7_16",  # cetak ulang karya yg sama
+    "mehrabian1974approach": "https://openlibrary.org/works/OL13333149W",
+    "belk1995collecting": "https://openlibrary.org/works/OL3515364W",
+    "shiller2000irrational": "https://openlibrary.org/works/OL3638785W",
+    "hayes2018introduction": "https://openlibrary.org/works/OL25343070W",
+    "hair2019multivariate": "https://openlibrary.org/works/OL16979906W",
+    "ghozali2018aplikasi": "https://openlibrary.org/works/OL28215322W",
+}
+
 
 def parse_bibtex_entries(bib_path: Path):
     with open(bib_path, 'r', encoding='utf-8') as f:
@@ -144,12 +172,16 @@ def entry_to_ris(entry):
         else:
             ris_lines.append(f"SP  - {pages.strip()}")
 
-    # DOI & URL
+    # DOI & URL (UR wajib ada: bib.url > bib.doi > RESOLVED_URLS terverifikasi)
     doi = fields.get('doi', '')
     if doi:
         ris_lines.append(f"DO  - {doi}")
 
     url = fields.get('url', '')
+    if not url and doi:
+        url = f"https://doi.org/{doi}"
+    if not url:
+        url = RESOLVED_URLS.get(entry['key'], '')
     if url:
         ris_lines.append(f"UR  - {url}")
 

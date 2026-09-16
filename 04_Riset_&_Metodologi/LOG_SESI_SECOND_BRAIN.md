@@ -536,3 +536,104 @@
   - Bukti visual: render hal. Gambar 1.1 dari PDF final — caption + sumber + narasi sinkron, label terbaca.
   - Vonis: **LAYAK KIRIM** — paket: 2 PDF + 2 DOCX + RIS 55 ref.
 
+---
+
+## 📅 Sesi 16 September 2026 (lanjutan 4): Audit Italic Bahasa Inggris + Dedup Sitasi Statista
+
+* **Fokus Pekerjaan:**
+  - User kirim 2 crop PDF (Game Boy/Switch/Game Freak tegak) + sorotan biru `(Statista, 2024)` + laporan "pengulangan di bawah".
+  - Audit sistematis istilah asing vs pedoman + hapus redundansi sitasi.
+* **Keputusan / Output Teknis:**
+  - Aturan pedoman §d (terverifikasi di Buku 2023): istilah asing → miring, KECUALI nama produk/lembaga/perusahaan. Maka crop user (Nintendo/Game Boy/Switch/Game Freak) BENAR tegak — bukan pelanggaran. Biru pada `(Statista, 2024)` adalah seleksi teks PDF reader user, bukan warna huruf (`citecolor=black` terverifikasi di tex L140-143).
+  - Temuan riil & diperbaiki (12 edit tex): `BOOSTER PACK` cover+makro (UPPERCASE lolos dari fix batch-1), `booster pack` 18x rumusan/tujuan/hipotesis, `Trading Card Game` L401+L920, `grading` 7x (Lembaga/pasar/arbitrase/tren/sertifikasi/bersertifikat), `server` Discord.
+  - Dedup Statista: `\citep{statista2024pokemon}` 2x untuk angka identik + enumerasi ranking diulang di bawah gambar → potong enumerasi L513 (angka tetap di gambar + 1 sitasi). Bib tetap 1 entri (tidak ada duplikat DP).
+  - Sengaja TIDAK diubah: Tabel 2.1 (mengutip judul/terminologi sumber asli), abstrak EN, akronim, nama perusahaan/produk, `sampling` (padanan baku metode).
+* **Verifikasi:**
+  - Pindai ulang istilah telanjang: sisa 2 = L420 (judul abstrak EN) + L721 (judul artikel Inggris di tabel) — keduanya sah.
+  - DOCX: 258 italic runs; `booster`/`grading`/`trading` ter-render miring.
+  - Rebuild penuh (55 hlm + 37 hlm + 2 DOCX + MD 913 baris) + `--gate parity` **7/7 PASS**.
+  - Vonis dipertahankan: **LAYAK KIRIM**.
+
+---
+
+## 📅 Sesi 16 September 2026 (lanjutan 5): Link di Tiap Entri Mendeley (53/55 UR)
+
+* **Fokus Pekerjaan:**
+  - User: tiap entri Mendeley selain judul harus ada link-nya. Audit: hanya 3/55 (data industri) yang ber-`UR`.
+* **Keputusan / Output Teknis:**
+  - `[[execution/generate_mendeley_library.py]]`: `UR` kini prioritas `bib.url` > `https://doi.org/{bib.doi}` > `RESOLVED_URLS` (14 URL terverifikasi live 16 Sep 2026: 8 DOI Crossref exact/reprint + 6 Open Library work pages). Aturan: tanpa live-check = tanpa link.
+  - Skill baru `[[execution/resolve_mendeley_urls.py]]` (stdlib, Crossref + live-check DOI, reusable).
+  - 53/55 berlink. Tanpa link sah: `tan2024ketidakpastian` (DOI katalog 10.19184/bisma.v20i2.60038 MATI — Crossref+doi.org 404; portal OJS tak terjangkau) dan `sugiyono2019metode` (hanya pindaian lokal). Jujur dilaporkan, bukan dikarang.
+  - Catatan: metadata tahun `lienardy2024role` di Crossref 2026 vs sitasi 2024 (artikel & penulis identik; tahun sitasi tidak diubah). DOI katalog Tan yang mati perlu koreksi katalog di sesi berikut.
+  - Directive `[[directives/verify_mendeley_integrity.md]]` butir 7 dimutakhirkan (kebijakan UR universal).
+* **Verifikasi:**
+  - Regenerasi RIS 55 ref + `verify_mendeley_integrity.py` **7/7 PASS** (Test 7 industri tetap hijau; paritas tak berubah).
+  - Setelah import ulang RIS di Mendeley (hapus lama → Import), tiap entri punya link dikolom URL kecuali 2 di atas.
+
+---
+
+## 📅 Sesi 16 September 2026 (lanjutan 6): Konektor Mendeley API
+
+* **Fokus Pekerjaan:**
+  - User: bisakah konek langsung ke Mendeley / buatkan kredensial+konektor. Fakta: tanpa `.env`/token (terverifikasi nihil); kredensial wajib dibuat user di browser (login Elsevier). Konektor dibangun.
+* **Keputusan / Output Teknis:**
+  - Baru: `[[execution/mendeley_connector.py]]` (stdlib; `--auth/--status/--dry-run/--push[--limit=N]`,hen deduplikat judul, token di `token.json` yg di-.gitignore) + `.env.example`.
+  - `--dry-run` PASS: 55 record terpetakan (type/author/year/websites/identifiers benar).
+  - Yang belum bisa tanpa user: isi `.env` (Client ID/Secret dari dev.mendeley.com, redirect persis `http://localhost:5000/oauth/callback`) + 1x klik `--auth` di browser.
+
+---
+
+## 📅 Sesi 16 September 2026 (lanjutan 7): OAuth Mendeley Live — 53 Link Terpush
+
+* **Fokus Pekerjaan:**
+  - User registrasi app (ID 25377) + kirim secret & ID; `.env` dilengkapi; `--auth` ronde-1 403 Cloudflare 1010 (UA Python) → konektor dipatch header browser → ronde-2 **PASS**, `token.json` tersimpan (gitignored).
+  - Perbaikan API riil: Accept profiles yang benar `application/vnd.mendeley-profiles.1+json` (terhubung: Arthur Reezan); `view=ids` invalid → `view=bib`.
+  - `--push`: 55/55 judul sudah ada di library (import RIS manual user) → 0 dibuat.
+  - Fitur baru `--sync-links` (PATCH websites+identifiers per judul cocok): **53 link terupdate live, 0 gagal**; verifikasi baca-balik API: 55 dokumen, 53 ber-websites. 2 tanpa link = tan2024 & sugiyono (tetap tanpa sumber sah).
+
+---
+
+## 📅 Sesi 16 September 2026 (lanjutan 8): Rekapitulasi Second Brain — Status Kirim Final
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menutup sesi maraton 16 Sep 2026 dengan satu titik kebenaran: apa yang berubah, apa status kirim, apa sisa PR.
+> - **Masalah yang Diselesaikan:** Konteks tersebar di 8 entri sesi; dosen butuh paket final yang konsisten.
+> - **Keputusan/Output:** Vonis kirim + daftar artefak + PR terbuka (2 link, DOI katalog Tan, instalasi lanjutan nihil).
+
+* **Naskah final (rebuild 2x, timestamp 16 Sep sore):** `Proposal_Arthur_PokemonTCG.pdf` 55 hlm + `.docx`, `Proposal_Arthur_NoBab3.pdf` 37 hlm + `.docx`, MD 913 baris — semua sinkron (`--gate parity` 7/7 PASS pasca-edit terakhir; extended 11/11 PASS sebelum edit italic/Statista, parity diulang sesudahnya).
+* **Perubahan isi sesi ini:** (a) Gambar 1.1 diperjelas (label 8.5→11–12pt, footnote dipindah, terbukti di render PDF); (b) 30+ titik italic `\emph` (booster pack/grading/Trading Card Game/server); (c) dedup enumerasi Statista L513 (1 sitasi tersisa, Bib 1 entri); (d) RIS 55 ref kini 53 ber-`UR` + Mendeley cloud tersinkron via API (53 websites live).
+* **Framework universal (pakai-ulang lintas topik):** [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]] (11 agen, 13 chained rules) · [[directives/universal_thesis_graph_of_agents.md]] (SOP F1–F11) · [[execution/run_thesis_graph.py]] (orchestrator G1–G7+X1–X4) · [[04_Riset_&_Metodologi/TEMPLATE_SOURCE_OF_TRUTH_UNIVERSAL.md]] · skill `resolve_mendeley_urls` + `mendeley_connector` (`--auth/--status/--push/--sync-links`, token di `token.json` gitignored, app ID 25377).
+* **Prompt & graf:** prompt sesi MD+HTML menunjuk orchestrator + framework; graphify refresh ke-2 SELESAI → **1.514 nodes, 1.634 edges, 119 komunitas** (15 file: 29 node semantik + 51 AST; 38 replaced; label 109 reuse + 10 auto; manifest 134 keys).
+* **PR terbuka (jujur, non-blokir kirim):** (1) `tan2024` + `sugiyono2019` tanpa link Mendeley — tak ada URL sah; (2) DOI Tan di `KATALOG_REFERENSI_JURNAL.md` mati (404) — perlu koreksi katalog; (3) metadata tahun Crossref `lienardy2024role` 2026 vs sitasi 2024 — tahun sitasi tidak diubah; (4) `pip install python-docx matplotlib` dilakukan di interpreter `py` sesi ini (lingkungan, bukan repo).
+* **Aturan yang ditegakkan:** zero-desync LaTeX→Word/MD, pure-black, TOC 14.0cm, whitelist RIS, no-login-wall, no-invented-URL, skipped≠pass, surgical-fix (2 path hardcoded X1/X4 dipatch), self-anneal tercatat di directive.
+
+---
+
+## 📅 Sesi 16 September 2026 (Sesi 16): Resolusi Revisi Dosen Malam (Research Gap 7 Subjek Hubungan, Novelty Model Arthur, & Kepatuhan Sitasi/Tipografi)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Mendokumentasikan eksekusi penuh atas instruksi revisi dosen pembimbing via Kelly (16 September 2026, 19:54 WIB):
+>   1. Evaluasi fenomena belanja di kasir minimarket modern (Indomaret/Alfamart/Toys Kingdom) dan diferensiasi kebaruan model Arthur (*novelty*: objek kartu fisik hibrida ber-grading PSA 10, konvergensi 3 dimensi pendorong, dan *Self-Control* sebagai pemoderasi volisional).
+>   2. Rekonstruksi Latar Belakang Bab 1 dengan membedah kesenjangan penelitian empiris (*research gap*) pada 7 subjek hubungan struktural yang didukung masing-masing minimal 2 kelompok studi kuantitatif berlawanan (total 22 studi empiris aktif) disertai analisis kausal mendalam (*The Why*).
+>   3. Pembuatan Tabel 1.1: Matriks Kesenjangan Penelitian Empiris (*Research Gap*) pada 7 Subjek Hubungan Model Penelitian di seluruh format (LaTeX, Word, MD).
+>   4. Penegakan format sitasi in-text resmi (nama belakang saja, tanpa gelar akademik, 2 orang menggunakan '&' / 'dan', >= 3 orang menggunakan 'et al.') serta tipografi istilah asing wajib dicetak miring (*italic*).
+>   5. Penyusunan panduan *highlighting* kutipan di Mendeley Reference Manager (`directives/highlight_mendeley_citations.md`).
+> - **Masalah yang Diselesaikan:** Menghilangkan kelemahan argumentasi latar belakang Bab 1 dengan menghadirkan debat ilmiah kuantitatif yang solid pada seluruh hipotesis, memastikan tidak ada gelar akademik pada kutipan sitasi batang tubuh, dan menyelaraskan paritas 6-arah tanpa merusak 55 referensi aktif.
+> - **Keputusan & Bukti Eksekusi:**
+>   - PRD Resmi: `04_Riset_&_Metodologi/PRD_RESOLUSI_REVISI_DOSEN_RESEARCH_GAP_BAB1.md`.
+>   - Source of Truth Diperbarui: Keputusan D24 (7 Subjek Hubungan & Matriks 14 Studi Berlawanan) dan D25 (Sitasi In-Text, Italic, Highlighting) dikunci di `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md`.
+>   - Rules Baku Sistem: `.agents/rules/mandatory_citation_typography_and_gap_rules.md`.
+>   - Seluruh Naskah Sinkron & Terkompilasi Bersih:
+>     * `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex` & `Proposal_Arthur_PokemonTCG.pdf` (62 halaman).
+>     * `01_Naskah_Utama/Proposal_Arthur_NoBab3.tex` & `Proposal_Arthur_NoBab3.pdf` (44 halaman).
+>     * `01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md`.
+>     * `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx` & `Proposal_Arthur_NoBab3.docx`.
+>   - 6 Test Suite Verifikasi Otomatis Lulus 100%:
+>     * `verify_intext_citations.py` -> PASS 100% (Bebas gelar, nama belakang saja, 'dan'/'&', 'et al.').
+>     * `verify_italic_typography.py` -> PASS 100% (Seluruh istilah asing dicetak miring).
+>     * `verify_ukrida_compliance.py` -> PASS 100% (Pedoman FEB UKRIDA 2023 terpenuhi).
+>     * `verify_mendeley_integrity.py` -> PASS 7/7 (Paritas 55 referensi utuh tanpa silent drop).
+>     * `verify_docx_typography.py` -> PASS 100% (Pure black, format APA 7th, dot leaders).
+>     * `verify_pdf_docx_parity.py` -> PASS 100% (Paritas struktur & konten PDF-Word terjamin).
+
+

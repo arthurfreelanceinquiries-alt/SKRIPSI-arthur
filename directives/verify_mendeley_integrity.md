@@ -45,7 +45,7 @@ Setiap blok referensi di dalam file `.ris` wajib ditutup dengan `ER  - ` dan mem
 4. `PY  - [Tahun]` & `Y1  - [Tahun]` : Tahun 4 digit numerik.
 5. `PB  - [Penerbit]` atau `JO  - [Nama Jurnal]` : Instansi penerbit atau jurnal ilmiah penampung.
 6. `ID  - [CiteKey]` : Kunci sitasi unik yang identik dengan BibTeX dan LaTeX.
-7. `UR  - [URL]` : Wajib memuat tautan web aktif berprotokol `https://` untuk seluruh entri laporan industri (`RPRT`), sehingga tombol *"Open URL"* pada Mendeley Reference Manager aktif. Di dokumen Word, URL wajib dirender sebagai elemen OpenXML `<w:hyperlink>` yang dapat diklik langsung oleh dosen.
+7. `UR  - [URL]` : Wajib memuat tautan web aktif berprotokol `https://` untuk seluruh entri laporan industri (`RPRT`), sehingga tombol *"Open URL"* pada Mendeley Reference Manager aktif. Sejak 16 Sep 2026, **seluruh** entri wajib ber-`UR` dengan prioritas `bib.url` > `https://doi.org/{bib.doi}` > `RESOLVED_URLS` terverifikasi di `execution/generate_mendeley_library.py` (dilarang mengarang URL; tanpa link terverifikasi = tanpa `UR` + wajib dilaporkan). Di dokumen Word, URL wajib dirender sebagai elemen OpenXML `<w:hyperlink>` yang dapat diklik langsung oleh dosen.
 
 ---
 

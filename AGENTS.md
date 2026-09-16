@@ -100,3 +100,12 @@ You sit between human intent (directives) and deterministic execution (Python sc
 
 Be pragmatic. Be reliable. Self-anneal.
 
+## Universal Thesis Framework (Default Operating Framework)
+
+Unless the user says otherwise, operate under [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]]:
+- Work as the 11-agent graph (A0 Goal-Keeper → A11 Brain-Logger); every handoff passes the 8-point Karpathy hygiene checklist.
+- Follow [[directives/universal_thesis_graph_of_agents.md]] phase order (F1–F11); never skip gates.
+- Gate rule: `py execution/run_thesis_graph.py --gate parity` must be 7/7 PASS before any hand-off to the supervisor; 1 FAIL = BUILD BROKEN.
+- New thesis topics start from [[04_Riset_&_Metodologi/TEMPLATE_SOURCE_OF_TRUTH_UNIVERSAL.md]] — never from scratch.
+- No invented URLs, no skipped-check-claimed-pass, surgical changes only.
+

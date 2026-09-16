@@ -24,6 +24,33 @@ File ini bisa langsung Anda pakai untuk menempelkan teks chat (WhatsApp, Email, 
 
 ## Riwayat Bimbingan Terkini:
 
+### Bimbingan: 16 September 2026 (Pukul 19:54 WIB)
+- **Dosen / Rekan Bimbingan:** Kelly (Arahan Dosen Skripsi)
+- **Media:** WhatsApp Chat Bimbingan Skripsi
+- **Topik / Bab yang Dibahas:** Penajaman Research Gap Bab 1 (Temuan Berlawanan), 7 Subjek Hubungan Empiris (14 Studi Berlawanan 2-2-2), Eksplanasi Kausal Gap (*The Why*), Evaluasi Paragraf 3 & Diferensiasi Model (*Novelty*), Format Sitasi In-Text (Nama belakang, 2 orang `&`, banyak orang `et al.`), dan Tipografi (*Italic* Bahasa Asing & *Highlight* Mendeley).
+- **Dokumen Analisis Lengkap:** [`2026-09-16_Revisi_Malam_Research_Gap_Bab1_dan_Format_Sitasi.md`](2026-09-16_Revisi_Malam_Research_Gap_Bab1_dan_Format_Sitasi.md)
+
+#### Isi Chat / Catatan Dosen:
+> *"[7:54 PM, 9/16/2026] Kelly: di bab 1 kita cari semua penelitian, kita cari gap nya dari misalnya hasil berbeda kyk positif dan negarif dari beberapa penelitian lainnya yang konteksnya sama"*  
+> *"[7:54 PM, 9/16/2026] Kelly: makanya kita harus telitis kembali kenapa sih ada gap nyaa"*  
+> *"[7:54 PM, 9/16/2026] Kelly: evaluasi nya jg sama"*  
+> *"[7:54 PM, 9/16/2026] Kelly: paragraf 3 nya gmn blabla"*  
+> *"[7:54 PM, 9/16/2026] Kelly: sisanya hanya merangkum saja sehingga penelitian ini mau untuk apa dan bagusnya bisa bedakan penelitian lain dan penelitian dengan saya itu bedanya apa"*  
+> *"[7:54 PM, 9/16/2026] Kelly: kalau sama variabel x nya itu variabel mediasi nya harus beda makanya berbeda"*  
+> *"[7:54 PM, 9/16/2026] Kelly: Sitasi : yahawi sh, atau nama belakang nya saja, kalau ada 2 org pakai & klo ada banyak pake at all baru belakang nya tahunnya"*  
+> *"[7:54 PM, 9/16/2026] Kelly: bikin pendahuluannya itu nyangkut sama 7 subjek"*  
+> *"[7:54 PM, 9/16/2026] Kelly: 14 penelitian yang menunjuakan gap, atau 10 yang membahan perbedaan hasil, 2 2 2 misal penelitian si a menjadikan perilaku keuangan jadi mediasi faktor ap aterhadap apa, klo si b menjadikan faktor apa jadi fakto apa aku ememdiasi jg tapi memediasi perilaku yg berbeda klo ada 7 hubungan itu harus ada masing masing 2 yang berlawanan kuantitatif"*  
+> *"[7:54 PM, 9/16/2026] Kelly: bahasa asing italic trus yg di sitasi di highlight aja di mendeley biar pas ditanya di buka langsung keliatan"*
+
+#### Poin Utama & Tindakan:
+1. **Penataan Research Gap Bab 1:** Menyajikan komparasi temuan empiris kuantitatif yang berlawanan (Temuan A positif/signifikan vs Temuan B negatif/tidak signifikan) untuk 7 subjek hubungan struktural model penelitian.
+2. **Eksplanasi Kausal Gap (*The Why*):** Menjelaskan secara teoritis dan kontekstual mengapa hasil penelitian terdahulu saling bertolak belakang pada komoditas sejenis.
+3. **Evaluasi, Paragraf 3, & Diferensiasi (*Novelty*):** Merangkum arah penelitian dan membedakan secara tegas kebaruan model Arthur (peran moderasi *Self-Control* pada aset alternatif Pokémon TCG) dibanding penelitian terdahulu.
+4. **Format Sitasi In-Text:** Memastikan nama belakang penulis saja tanpa gelar, 2 penulis menggunakan `&` (atau `dan` dalam narasi), dan $\ge 3$ penulis menggunakan `et al.`.
+5. **Tipografi & Mendeley:** Memastikan seluruh istilah asing bercetak miring (*italic*) serta menyediakan panduan *highlighting* sitasi di Mendeley.
+
+---
+
 ### Bimbingan: 16 September 2026 (Pukul 10:27–10:28 WIB)
 - **Dosen:** Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A
 - **Media:** WhatsApp Chat Bimbingan Skripsi
