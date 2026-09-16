@@ -24,8 +24,8 @@
 | F4 Construct | A4 | `py execution/analyze_completeness_construct.py` (atau padanannya per topik) | Tiap konstruk → teori + skala baku |
 | F5 Method | A5 | Tulis Bab 3, freeze Model 1/2 + N + etik | Estimand + model frozen verbatim |
 | F6 Stats | A6 | Olah data (SPSS/R) + laporkan ΔR², effect size | p-value tidak pernah tanpa effect size |
-| F7 Build | A7 | `py execution/build_proposal_word.py [--no-chapter3]` + `py execution/build_proposal_nobab3_pdf.py` + `py execution/sync_markdown_from_tex.py` | File ter-build tanpa error XML |
-| F8 Parity | A8 | `py execution/run_thesis_graph.py --gate parity` (G1–G7) | 7/7 PASS, 1 FAIL = BUILD BROKEN |
+| F7 Build | A7 | `py execution/build_proposal_word.py [--no-chapter3]` + `py execution/build_proposal_nobab3_pdf.py` + `py execution/sync_markdown_from_tex.py`. Wajib: angka TOC/LOT/LOF = angka cetak PDF (C-LOT-1); `\caption{...}` mentah dilarang lolos; entri LOT/LOF terhyperlink 100% (laporan builder `N caption, M entri` harus imbang) | File ter-build tanpa error XML |
+| F8 Parity | A8 | `py execution/run_thesis_graph.py --gate parity` (G1–G7) + `verify_all_citation_links.py` (0 DEAD). Mendeley cloud: `--push` + `--prune --dry` + `--sync-links`, lalu verifikasi baca-balik (N dokumen = N RIS). Token mati → `--refresh` | 7/7 PASS, 1 FAIL = BUILD BROKEN |
 | F9 Audit | A9 | `directives/run_paper_audit.md` **hanya** pada 5 trigger (Pra-Bimbingan, Pra-Sempro, Major Rewrite, Verifikasi Resolusi, On-demand) | Critical=0, Major selesai/terjustifikasi |
 | F10 Defense | A10 | `py execution/build_interactive_presentation.py` + `py execution/build_study_guide_pdf.py` | Panduan sinkron SoT; PDF <5MB |
 | F11 Log | A11 | Append [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] + update dashboard | Timestamp + keputusan + file tersentuh |

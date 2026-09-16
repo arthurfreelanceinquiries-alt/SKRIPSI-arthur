@@ -486,6 +486,36 @@ Apakah kamu siap memulai audit naskah ini?</pre>
         </div>
       </div>
 
+      <!-- CARD 6: UPDATE PROGRES -->
+      <div class="prompt-card">
+        <div class="card-header">
+          <div class="card-title-group">
+            <div class="card-title">🔄 Opsi 6: Update Progres &amp; Sinkronisasi Workspace</div>
+            <div class="card-desc">Verifikasi gerbang, catat log sesi, refresh dashboard, dan update graphify
+              di akhir sesi kerja.</div>
+          </div>
+          <button type="button" class="btn-copy" onclick="copyPrompt('prompt6', this)">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Salin Prompt</span>
+          </button>
+        </div>
+
+        <div class="prompt-box">
+          <pre class="prompt-text" id="prompt6">Halo! Jalankan skill "obsidian-second-brain". Tolong lakukan update progres dan sinkronisasi workspace:
+
+1. Jalankan `py execution/run_thesis_graph.py --gate parity` dan `py execution/verify_all_citation_links.py`. Syarat lanjut: 7/7 PASS dan 0 tautan MATI. Jika ada FAIL, perbaiki dulu secara surgical baru ulangi.
+2. Catat progres/keputusan sesi ini ke `04_Riset_&amp;_Metodologi/LOG_SESI_SECOND_BRAIN.md` (awali `&gt; [!SUMMARY]`, gunakan `[[wikilinks]]`).
+3. Perbarui `00_DASHBOARD_SECOND_BRAIN.md` bila ada yang berubah (halaman naskah, status Mendeley, angka graphify).
+4. Jalankan graphify incremental update sesuai skill graphify (`/graphify --update`) agar `graphify-out/` mencakup file baru/berubah, lalu sinkronkan angka graf ke dashboard.
+5. Laporkan ringkasan perubahan dan TANYAKAN dulu sebelum commit/push ke GitHub (jangan push diam-diam).
+
+File apa saja yang berubah, dan apa status akhirnya?</pre>
+        </div>
+      </div>
+
     </div>
 
     <footer>

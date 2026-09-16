@@ -9,6 +9,44 @@ import sys
 from pathlib import Path
 from docx import Document
 from docx.enum.text import WD_TAB_LEADER
+
+
+def _style_tab_stops(doc, paragraph):
+    """Fallback: baca tab-stop dari definisi style paragraf.
+
+    Mengembalikan [(is_dot, pos_pt, src)] atau []. Word menghapus stop
+    paragraf yg identik dgn style saat save (normalisasi), sehingga
+    satu-satunya sumber kebenaran render adalah style (mis. TOC11:
+    right-dot-7938). Hanya menerima dot di ~14.0cm; style lain diabaikan.
+    """
+    W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+    try:
+        pPr = paragraph._p.find(f"{W}pPr")
+        sid = None
+        if pPr is not None:
+            ps = pPr.find(f"{W}pStyle")
+            if ps is not None:
+                sid = ps.get(f"{W}val")
+        if not sid:
+            return []
+        for st in doc.styles.element.iterfind(f"{W}style"):
+            if st.get(f"{W}styleId") != sid:
+                continue
+            out = []
+            for tb in st.iterfind(f".//{W}tabs/{W}tab"):
+                leader = tb.get(f"{W}leader")
+                pos = tb.get(f"{W}pos")
+                if tb.get(f"{W}val") != 'right' or not pos:
+                    continue
+                try:
+                    pt = int(pos) / 20.0
+                except (TypeError, ValueError):
+                    continue
+                out.append((leader == 'dot', pt, f"style:{sid}"))
+            return out
+    except Exception:
+        pass
+    return []
 from docx.shared import Pt
 
 
@@ -108,19 +146,22 @@ def audit_docx(docx_path: Path) -> bool:
                 if r_ind is not None and r_ind.pt > 1:
                     issues.append(f"TOC paragraph has non-zero right_indent ({r_ind.pt} pt): {repr(p.text)}")
 
-                # Check tab stop leader
-                tab_stops = p.paragraph_format.tab_stops
-                if len(tab_stops) == 0:
+                # Check tab stop leader (direct pPr stops, else style-inherited:
+                # Word menormalisasi stop paragraf yg identik dgn style)
+                stops = [(ts.leader == WD_TAB_LEADER.DOTS, ts.position.pt, 'direct')
+                         for ts in p.paragraph_format.tab_stops]
+                if not stops:
+                    stops = _style_tab_stops(doc, p)
+                if not stops:
                     issues.append(f"TOC paragraph missing tab stop: {repr(p.text)}")
                 else:
-                    dot_stops = [ts for ts in tab_stops if ts.leader == WD_TAB_LEADER.DOTS]
+                    dot_stops = [s for s in stops if s[0]]
                     if not dot_stops:
                         issues.append(f"TOC tab stop does not have DOTS leader: {repr(p.text)}")
                     else:
-                        ts = dot_stops[0]
                         # Check position: 14.0 cm is approx 396.85 pt (tolerance 15 pt)
-                        if abs(ts.position.pt - 396.85) > 15:
-                            issues.append(f"TOC tab stop pos not at 14.0cm (found {ts.position.pt} pt): {repr(p.text)}")
+                        if abs(dot_stops[0][1] - 396.85) > 15:
+                            issues.append(f"TOC tab stop pos not at 14.0cm (found {dot_stops[0][1]:.1f} pt via {dot_stops[0][2]}): {repr(p.text)}")
 
 
     print(f"[*] Checked {toc_paragraphs_checked} TOC/LOT/LOF entry paragraphs for dot leaders and 0 right_indent.")

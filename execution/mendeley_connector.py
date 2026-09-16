@@ -427,6 +427,18 @@ def main(argv):
         return cmd_sync_links(env, tok, dry='--dry' in argv)
     if cmd == '--prune':
         return cmd_prune(env, tok, dry='--dry' in argv)
+    if cmd == '--refresh':
+        if not tok.get('refresh_token'):
+            print("[ERROR] tidak ada refresh_token. Jalankan --auth dulu.")
+            return 1
+        try:
+            new_tok = refresh_token(env, tok)
+        except urllib.error.HTTPError as e:
+            print(f"[ERROR] refresh HTTP {e.code}. Jalankan --auth ulang.")
+            return 1
+        save_token(new_tok)
+        print("[PASS] token diperbarui.")
+        return 0
     print(f"perintah tak dikenal: {cmd} (lihat --help)")
     return 1
 

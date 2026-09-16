@@ -1192,90 +1192,90 @@ def build_full_proposal(skip_chapter3: bool = False):
     add_daftar_isi_heading(doc, page_break=True)
 
     toc_items_nobab3 = [
-        ("DAFTAR TABEL", "viii"),
-        ("DAFTAR GAMBAR", "ix"),
+        ("DAFTAR TABEL", "ix"),
+        ("DAFTAR GAMBAR", "x"),
         ("BAB 1 PENDAHULUAN", "1"),
         ("  1.1 Latar Belakang Penelitian", "1"),
-        ("  1.2 Perumusan Masalah", "8"),
-        ("  1.3 Tujuan Penelitian", "9"),
-        ("  1.4 Manfaat Penelitian", "9"),
-        ("      1.4.1 Manfaat Teoritis", "9"),
-        ("      1.4.2 Manfaat Praktis", "10"),
-        ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "11"),
-        ("  2.1 Landasan Teori", "11"),
-        ("      2.1.1 Grand Theory: Keuangan Perilaku (Behavioral Finance)", "11"),
-        ("      2.1.2 Supporting Theory: Teori Stimulus-Organism-Response (S-O-R)", "11"),
-        ("      2.1.3 Supporting Theory: Psikologi Kolektor dan The 'Completing the Set' Effect", "12"),
-        ("      2.1.4 Supporting Theory: Teori Regulasi Diri (Self-Regulation Theory)", "12"),
-        ("  2.2 Kajian Variabel Penelitian", "12"),
-        ("      2.2.1 Variabel Dependen (Y): Impulsive Buying (Pembelian Impulsif)", "12"),
-        ("      2.2.2 Variabel Independen (X1): Hedonic Motivation (Motivasi Hedonis)", "13"),
-        ("      2.2.3 Variabel Independen (X2): Desire for Completeness (Hasrat Kelengkapan Koleksi)", "13"),
-        ("      2.2.4 Variabel Independen (X3): Speculative Motive (Motif Spekulasi Finansial)", "13"),
-        ("      2.2.5 Variabel Moderasi (M): Self-Control (Kontrol Diri)", "14"),
-        ("  2.3 Penelitian Sebelumnya", "14"),
-        ("  2.4 Pengembangan Hipotesis", "17"),
-        ("      2.4.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying", "17"),
-        ("      2.4.2 Pengaruh Desire for Completeness terhadap Impulsive Buying", "17"),
-        ("      2.4.3 Pengaruh Speculative Motive terhadap Impulsive Buying", "18"),
-        ("      2.4.4 Pengaruh Moderasi Self-Control terhadap Hubungan Hedonic Motivation dan Impulsive Buying", "18"),
-        ("      2.4.5 Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness dan Impulsive Buying", "19"),
-        ("      2.4.6 Pengaruh Moderasi Self-Control terhadap Hubungan Speculative Motive dan Impulsive Buying", "19"),
-        ("  2.5 Rerangka Penelitian", "20"),
-        ("DAFTAR PUSTAKA", "21")
+        ("  1.2 Perumusan Masalah", "16"),
+        ("  1.3 Tujuan Penelitian", "17"),
+        ("  1.4 Manfaat Penelitian", "17"),
+        ("      1.4.1 Manfaat Teoritis", "17"),
+        ("      1.4.2 Manfaat Praktis", "18"),
+        ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "19"),
+        ("  2.1 Landasan Teori", "19"),
+        ("      2.1.1 Grand Theory: Keuangan Perilaku (Behavioral Finance)", "19"),
+        ("      2.1.2 Supporting Theory: Teori Stimulus-Organism-Response (S-O-R)", "19"),
+        ("      2.1.3 Supporting Theory: Psikologi Kolektor dan Collection-Goal Tipping Point Effect", "20"),
+        ("      2.1.4 Supporting Theory: Teori Regulasi Diri (Self-Regulation Theory)", "20"),
+        ("  2.2 Kajian Variabel Penelitian", "20"),
+        ("      2.2.1 Variabel Dependen (Y): Impulsive Buying (Pembelian Impulsif)", "20"),
+        ("      2.2.2 Variabel Independen (X1): Hedonic Motivation (Motivasi Hedonis)", "21"),
+        ("      2.2.3 Variabel Independen (X2): Desire for Completeness (Hasrat Kelengkapan Koleksi)", "21"),
+        ("      2.2.4 Variabel Independen (X3): Speculative Motive (Motif Spekulasi Finansial)", "21"),
+        ("      2.2.5 Variabel Moderasi (M): Self-Control (Kontrol Diri)", "22"),
+        ("  2.3 Penelitian Sebelumnya", "22"),
+        ("  2.4 Pengembangan Hipotesis", "25"),
+        ("      2.4.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying", "25"),
+        ("      2.4.2 Pengaruh Desire for Completeness terhadap Impulsive Buying", "25"),
+        ("      2.4.3 Pengaruh Speculative Motive terhadap Impulsive Buying", "26"),
+        ("      2.4.4 Pengaruh Moderasi Self-Control terhadap Hubungan Hedonic Motivation dan Impulsive Buying", "26"),
+        ("      2.4.5 Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness dan Impulsive Buying", "27"),
+        ("      2.4.6 Pengaruh Moderasi Self-Control terhadap Hubungan Speculative Motive dan Impulsive Buying", "28"),
+        ("  2.5 Rerangka Penelitian", "28"),
+        ("DAFTAR PUSTAKA", "30")
     ]
 
     toc_items_full = [
-        ("DAFTAR TABEL", "xi"),
-        ("DAFTAR GAMBAR", "xii"),
+        ("DAFTAR TABEL", "xii"),
+        ("DAFTAR GAMBAR", "xiii"),
         ("BAB 1 PENDAHULUAN", "1"),
         ("  1.1 Latar Belakang Penelitian", "1"),
-        ("  1.2 Perumusan Masalah", "8"),
-        ("  1.3 Tujuan Penelitian", "9"),
-        ("  1.4 Manfaat Penelitian", "9"),
-        ("      1.4.1 Manfaat Teoritis", "9"),
-        ("      1.4.2 Manfaat Praktis", "10"),
-        ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "11"),
-        ("  2.1 Landasan Teori", "11"),
-        ("      2.1.1 Grand Theory: Keuangan Perilaku (Behavioral Finance)", "11"),
-        ("      2.1.2 Supporting Theory: Teori Stimulus-Organism-Response (S-O-R)", "11"),
-        ("      2.1.3 Supporting Theory: Psikologi Kolektor dan The 'Completing the Set' Effect", "12"),
-        ("      2.1.4 Supporting Theory: Teori Regulasi Diri (Self-Regulation Theory)", "12"),
-        ("  2.2 Kajian Variabel Penelitian", "12"),
-        ("      2.2.1 Variabel Dependen (Y): Impulsive Buying (Pembelian Impulsif)", "12"),
-        ("      2.2.2 Variabel Independen (X1): Hedonic Motivation (Motivasi Hedonis)", "13"),
-        ("      2.2.3 Variabel Independen (X2): Desire for Completeness (Hasrat Kelengkapan Koleksi)", "13"),
-        ("      2.2.4 Variabel Independen (X3): Speculative Motive (Motif Spekulasi Finansial)", "13"),
-        ("      2.2.5 Variabel Moderasi (M): Self-Control (Kontrol Diri)", "14"),
-        ("  2.3 Penelitian Sebelumnya", "14"),
-        ("  2.4 Pengembangan Hipotesis", "17"),
-        ("      2.4.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying", "17"),
-        ("      2.4.2 Pengaruh Desire for Completeness terhadap Impulsive Buying", "17"),
-        ("      2.4.3 Pengaruh Speculative Motive terhadap Impulsive Buying", "18"),
-        ("      2.4.4 Pengaruh Moderasi Self-Control terhadap Hubungan Hedonic Motivation dan Impulsive Buying", "18"),
-        ("      2.4.5 Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness dan Impulsive Buying", "19"),
-        ("      2.4.6 Pengaruh Moderasi Self-Control terhadap Hubungan Speculative Motive dan Impulsive Buying", "19"),
-        ("  2.5 Rerangka Penelitian", "20"),
-        ("BAB 3 METODE PENELITIAN", "21"),
-        ("  3.1 Jenis dan Sumber Data", "21"),
-        ("      3.1.1 Batasan Penelitian dan Ruang Lingkup Operasional", "21"),
-        ("  3.2 Populasi dan Sampel", "22"),
-        ("      3.2.1 Populasi dan Identifikasi Sumber Komunitas", "22"),
-        ("      3.2.2 Sampel dan Justifikasi Kriteria Inklusi", "23"),
-        ("      3.2.3 Penentuan Ukuran Sampel", "24"),
-        ("      3.2.4 Justifikasi Komparatif Pemilihan Teknik Sampling", "24"),
-        ("  3.3 Model Penelitian", "25"),
-        ("  3.4 Operasionalisasi Variabel", "26"),
-        ("  3.5 Metode Analisis Data", "30"),
-        ("      3.5.1 Justifikasi Komparatif Pemilihan Metode Analisis", "30"),
-        ("      3.5.2 Uji Kualitas Data (Validitas dan Reliabilitas)", "31"),
-        ("      3.5.3 Uji Asumsi Klasik", "31"),
-        ("      3.5.4 Estimasi Regresi Linear Berganda dan MRA", "31"),
-        ("      3.5.5 Uji Koefisien Determinasi (R2)", "32"),
-        ("      3.5.6 Uji Hipotesis (Uji t dan Uji F)", "32"),
-        ("  3.6 Diagram Alur Penelitian", "32"),
-        ("  3.7 Jadwal Pelaksanaan Penelitian", "33"),
-        ("DAFTAR PUSTAKA", "35")
+        ("  1.2 Perumusan Masalah", "16"),
+        ("  1.3 Tujuan Penelitian", "17"),
+        ("  1.4 Manfaat Penelitian", "17"),
+        ("      1.4.1 Manfaat Teoritis", "17"),
+        ("      1.4.2 Manfaat Praktis", "18"),
+        ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "19"),
+        ("  2.1 Landasan Teori", "19"),
+        ("      2.1.1 Grand Theory: Keuangan Perilaku (Behavioral Finance)", "19"),
+        ("      2.1.2 Supporting Theory: Teori Stimulus-Organism-Response (S-O-R)", "19"),
+        ("      2.1.3 Supporting Theory: Psikologi Kolektor dan Collection-Goal Tipping Point Effect", "20"),
+        ("      2.1.4 Supporting Theory: Teori Regulasi Diri (Self-Regulation Theory)", "20"),
+        ("  2.2 Kajian Variabel Penelitian", "20"),
+        ("      2.2.1 Variabel Dependen (Y): Impulsive Buying (Pembelian Impulsif)", "20"),
+        ("      2.2.2 Variabel Independen (X1): Hedonic Motivation (Motivasi Hedonis)", "21"),
+        ("      2.2.3 Variabel Independen (X2): Desire for Completeness (Hasrat Kelengkapan Koleksi)", "21"),
+        ("      2.2.4 Variabel Independen (X3): Speculative Motive (Motif Spekulasi Finansial)", "21"),
+        ("      2.2.5 Variabel Moderasi (M): Self-Control (Kontrol Diri)", "22"),
+        ("  2.3 Penelitian Sebelumnya", "22"),
+        ("  2.4 Pengembangan Hipotesis", "25"),
+        ("      2.4.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying", "25"),
+        ("      2.4.2 Pengaruh Desire for Completeness terhadap Impulsive Buying", "25"),
+        ("      2.4.3 Pengaruh Speculative Motive terhadap Impulsive Buying", "26"),
+        ("      2.4.4 Pengaruh Moderasi Self-Control terhadap Hubungan Hedonic Motivation dan Impulsive Buying", "26"),
+        ("      2.4.5 Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness dan Impulsive Buying", "27"),
+        ("      2.4.6 Pengaruh Moderasi Self-Control terhadap Hubungan Speculative Motive dan Impulsive Buying", "28"),
+        ("  2.5 Rerangka Penelitian", "28"),
+        ("BAB 3 METODE PENELITIAN", "30"),
+        ("  3.1 Jenis dan Sumber Data", "30"),
+        ("      3.1.1 Batasan Penelitian dan Ruang Lingkup Operasional", "30"),
+        ("  3.2 Populasi dan Sampel", "31"),
+        ("      3.2.1 Populasi dan Identifikasi Sumber Komunitas", "31"),
+        ("      3.2.2 Sampel dan Justifikasi Kriteria Inklusi", "32"),
+        ("      3.2.3 Penentuan Ukuran Sampel", "33"),
+        ("      3.2.4 Justifikasi Komparatif Pemilihan Teknik Sampling", "33"),
+        ("  3.3 Model Penelitian", "34"),
+        ("  3.4 Operasionalisasi Variabel", "35"),
+        ("  3.5 Metode Analisis Data", "40"),
+        ("      3.5.1 Justifikasi Komparatif Pemilihan Metode Analisis", "40"),
+        ("      3.5.2 Penyusunan Skor Komposit dan Uji Kualitas Data", "41"),
+        ("      3.5.3 Uji Asumsi Klasik", "41"),
+        ("      3.5.4 Estimasi Regresi Hirarkis dan MRA", "42"),
+        ("      3.5.5 Uji Koefisien Determinasi (R2) dan Uji F Perubahan", "42"),
+        ("      3.5.6 Uji Hipotesis dan Analisis Kemiringan Bersyarat (Simple Slopes)", "42"),
+        ("  3.6 Diagram Alur Penelitian", "43"),
+        ("  3.7 Jadwal Pelaksanaan Penelitian", "44"),
+        ("DAFTAR PUSTAKA", "45")
     ]
 
     toc_items = toc_items_nobab3 if skip_chapter3 else toc_items_full
@@ -1305,7 +1305,8 @@ def build_full_proposal(skip_chapter3: bool = False):
         p_toc.paragraph_format.left_indent = left_indent
         p_toc.paragraph_format.first_line_indent = Cm(0)
         p_toc.paragraph_format.right_indent = Cm(0)
-        p_toc.paragraph_format.tab_stops.add_tab_stop(target_right, WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
+        _clear_latent_tab_stops(p_toc)
+        _add_dot_tab_7938(p_toc)
 
         clean_title = title_toc.strip()
         r_t = p_toc.add_run(clean_title)
@@ -1318,15 +1319,19 @@ def build_full_proposal(skip_chapter3: bool = False):
     add_frontmatter_heading(doc, "DAFTAR TABEL", page_break=True)
 
     lot_items_nobab3 = [
-        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian", "6"),
-        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "15")
+        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian", "13"),
+        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian (lanjutan)", "14"),
+        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian (lanjutan)", "15"),
+        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "22")
     ]
     lot_items_full = [
-        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian", "6"),
-        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "15"),
-        ("Tabel 3.1", "Skala Pengukuran Likert 5 Poin", "22"),
-        ("Tabel 3.2", "Operasionalisasi Variabel Penelitian", "27"),
-        ("Tabel 3.3", "Jadwal Pelaksanaan Kegiatan Penelitian (Tahun 2026)", "35")
+        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian", "13"),
+        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian (lanjutan)", "14"),
+        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian (lanjutan)", "15"),
+        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "22"),
+        ("Tabel 3.1", "Skala Pengukuran Likert 5 Poin", "30"),
+        ("Tabel 3.2", "Operasionalisasi Variabel Penelitian", "36"),
+        ("Tabel 3.3", "Jadwal Pelaksanaan Kegiatan Penelitian (Tahun 2026)", "44")
     ]
     lot_items = lot_items_nobab3 if skip_chapter3 else lot_items_full
     for tab_num, tab_title, tab_page in lot_items:
@@ -1337,7 +1342,8 @@ def build_full_proposal(skip_chapter3: bool = False):
         p_lot.paragraph_format.left_indent = Cm(0)
         p_lot.paragraph_format.first_line_indent = Cm(0)
         p_lot.paragraph_format.right_indent = Cm(0)
-        p_lot.paragraph_format.tab_stops.add_tab_stop(target_right, WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
+        _clear_latent_tab_stops(p_lot)
+        _add_dot_tab_7938(p_lot)
 
         r_num = p_lot.add_run(f"{tab_num}.  ")
         make_run_pure_black(r_num, "Times New Roman", Pt(11), bold=True)
@@ -1355,14 +1361,14 @@ def build_full_proposal(skip_chapter3: bool = False):
         ("Gambar 1.1", "Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa", "2"),
         ("Gambar 1.2", "Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024", "3"),
         ("Gambar 1.3", "Disparitas Harga Pasar Sekunder Kartu Pokémon Mentah (Ungraded) vs. Bersertifikasi PSA 10 Gem Mint Seri Shining Fates", "5"),
-        ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "20")
+        ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "29")
     ]
     lof_items_full = [
         ("Gambar 1.1", "Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa", "2"),
         ("Gambar 1.2", "Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024", "3"),
         ("Gambar 1.3", "Disparitas Harga Pasar Sekunder Kartu Pokémon Mentah (Ungraded) vs. Bersertifikasi PSA 10 Gem Mint Seri Shining Fates", "5"),
-        ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "20"),
-        ("Gambar 3.1", "Diagram Alur Pelaksanaan Penelitian", "33")
+        ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "29"),
+        ("Gambar 3.1", "Diagram Alur Pelaksanaan Penelitian", "43")
     ]
     lof_items = lof_items_nobab3 if skip_chapter3 else lof_items_full
     for fig_num, fig_title, fig_page in lof_items:
@@ -1373,7 +1379,8 @@ def build_full_proposal(skip_chapter3: bool = False):
         p_lof.paragraph_format.left_indent = Cm(0)
         p_lof.paragraph_format.first_line_indent = Cm(0)
         p_lof.paragraph_format.right_indent = Cm(0)
-        p_lof.paragraph_format.tab_stops.add_tab_stop(target_right, WD_TAB_ALIGNMENT.RIGHT, WD_TAB_LEADER.DOTS)
+        _clear_latent_tab_stops(p_lof)
+        _add_dot_tab_7938(p_lof)
 
         r_num = p_lof.add_run(f"{fig_num}.  ")
         make_run_pure_black(r_num, "Times New Roman", Pt(11), bold=True)
@@ -1856,6 +1863,28 @@ def build_full_proposal(skip_chapter3: bool = False):
                 line_idx += 1
                 continue
 
+            # Raw LaTeX \caption{...} (mis. longtable Tabel 1.1) -> caption tubuh
+            # via peta judul LOT (anti-bocor sintaks LaTeX mentah ke DOCX)
+            m_cap = re.match(r'^\\caption\{(.*)\}\s*(\\label\{[^}]*\})?\s*(\\\\)?\s*$', line_str)
+            if m_cap:
+                cap_title = m_cap.group(1).strip()
+                cap_num = None
+                for _tn, _tt, _tp in lot_items:
+                    if cap_title[:30].lower() in _tt.lower() or _tt[:30].lower() in cap_title.lower():
+                        cap_num = _tn
+                        break
+                p_tcap = doc.add_paragraph()
+                p_tcap.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                p_tcap.paragraph_format.space_before = Pt(12)
+                p_tcap.paragraph_format.space_after = Pt(4)
+                p_tcap.paragraph_format.keep_with_next = True
+                if cap_num:
+                    r_cn = p_tcap.add_run(f"{cap_num}: ")
+                    make_run_pure_black(r_cn, "Times New Roman", Pt(12), bold=True)
+                parse_markdown_runs(p_tcap, cap_title)
+                line_idx += 1
+                continue
+
             # Table Caption Detection in Markdown (**Tabel X.Y ...**)
             if re.match(r'^\*{0,2}Tabel\s+\d+\.\d+', line_str):
                 p_tcap = add_body_paragraph(doc, line_str, indent=False)
@@ -1878,6 +1907,7 @@ def build_full_proposal(skip_chapter3: bool = False):
         pass
 
     print("[*] Performing Document-Wide Pure Black & Typography Enforcement Pass...")
+    link_lot_lof_entries(doc)
     for p in doc.paragraphs:
         for r in p.runs:
             if not r.text:
@@ -2162,6 +2192,94 @@ def build_tabel_jadwal(doc):
     r_s.font.name = "Times New Roman"
     r_s.font.size = Pt(9.5)
     r_s.font.italic = True
+
+
+def _clear_latent_tab_stops(paragraph):
+    """Hapus tab-stop bawaan latent style (penyebab dot-leader hilang di Word)."""
+    pPr = paragraph._p.get_or_add_pPr()
+    tabs = pPr.find(qn('w:tabs'))
+    if tabs is not None:
+        pPr.remove(tabs)
+
+
+def _add_dot_tab_7938(paragraph):
+    """Satu tab-stop kanan 14.0cm (7938 dxa) + dot leader — spek inviolable."""
+    pPr = paragraph._p.get_or_add_pPr()
+    tabs = OxmlElement('w:tabs')
+    tab = OxmlElement('w:tab')
+    tab.set(qn('w:val'), 'right')
+    tab.set(qn('w:leader'), 'dot')
+    tab.set(qn('w:pos'), '7938')
+    tabs.append(tab)
+    pPr.append(tabs)
+
+
+_LOTLOF_BM_SEQ = [1000]
+
+
+def link_lot_lof_entries(doc):
+    """Post-pass: bookmark caption tubuh + hyperlink entri LOT/LOF (tetap hitam)."""
+    cap_re = re.compile(r'^(Tabel|Gambar)\s+(\d+)\.(\d+)\b')
+    WNS = {'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
+
+    def _para_text(p):
+        return ''.join((n.text or '') for n in p._p.iterfind('.//w:t', namespaces=WNS))
+
+    targets = {}
+    for p in doc.paragraphs:
+        try:
+            st_name = p.style.name
+        except Exception:
+            st_name = ''
+        if st_name.startswith('TOC'):
+            continue
+        t = _para_text(p).strip()
+        m = cap_re.match(t)
+        if not m:
+            continue
+        if '<w:hyperlink' in p._p.xml or 'w:fldChar' in p._p.xml:
+            continue
+        key = '%s %s.%s' % (m.group(1), m.group(2), m.group(3))
+        if key in targets:
+            continue
+        _LOTLOF_BM_SEQ[0] += 1
+        bid = _LOTLOF_BM_SEQ[0]
+        name = '_Cap_%s_%s_%s' % (m.group(1), m.group(2), m.group(3))
+        bs = OxmlElement('w:bookmarkStart')
+        bs.set(qn('w:id'), str(bid))
+        bs.set(qn('w:name'), name)
+        be = OxmlElement('w:bookmarkEnd')
+        be.set(qn('w:id'), str(bid))
+        p._p.insert(0, bs)
+        p._p.append(be)
+        targets[key] = name
+
+    n_linked = 0
+    for p in doc.paragraphs:
+        try:
+            st_name = p.style.name
+        except Exception:
+            st_name = ''
+        if not st_name.startswith('TOC'):
+            continue
+        if '<w:hyperlink' in p._p.xml or 'w:fldChar' in p._p.xml:
+            continue
+        t = _para_text(p).strip()
+        m = cap_re.match(t)
+        if not m:
+            continue
+        key = '%s %s.%s' % (m.group(1), m.group(2), m.group(3))
+        if key not in targets:
+            continue
+        h = OxmlElement('w:hyperlink')
+        h.set(qn('w:anchor'), targets[key])
+        h.set(qn('w:history'), '1')
+        for r in list(p._p.findall(qn('w:r'))):
+            h.append(r)
+        p._p.append(h)
+        n_linked += 1
+    print('[*] LOT/LOF hyperlink: %d caption ditandai, %d entri terhubung.' % (len(targets), n_linked))
+    return n_linked
 
 
 def add_hyperlink(paragraph, url, text, color="0563C1", underline=True):

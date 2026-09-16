@@ -21,7 +21,7 @@
 * **Kickoff AI Sesi:** 🌐 [Buka Aplikasi Web Kickoff 1-Klik](file:///z:/SKRIPSII/SKRIPSI%20ARTHUR/SKRIPSI-arthur-main/SKRIPSI-arthur-main/PROMPT_KICKOFF.html) | 📋 [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md|Versi Dokumen Markdown]]
 * **Status Mendeley Live:** 55 dokumen sinkron via API (app ID 25377); 53 ber-websites terverifikasi, 2 tanpa link sah (`tan2024`, `sugiyono2019`); RIS siap impor [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris|Berkas RIS (55 Ref)]]
 * **Framework Universal (pakai-ulang):** [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md|Graph of Agents A0–A11]] · SOP [[directives/universal_thesis_graph_of_agents.md|F1–F11]] · Orchestrator `py execution/run_thesis_graph.py --gate parity` · Template [[04_Riset_&_Metodologi/TEMPLATE_SOURCE_OF_TRUTH_UNIVERSAL.md|SoT Baru]] · Konektor `execution/mendeley_connector.py`
-* **Status Graphify Knowledge Graph:** 🌐 [[graphify-out/graph.html|Peta Pengetahuan Interaktif]] (1.514 Nodes, 1.634 Edges, 119 Komunitas Terkini)
+* **Status Graphify Knowledge Graph:** 🌐 [[graphify-out/graph.html|Peta Pengetahuan Interaktif]] (1.541 Nodes, 1.686 Edges, 134 Komunitas Terkini)
 
 
 ---

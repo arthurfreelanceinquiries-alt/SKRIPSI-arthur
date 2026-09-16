@@ -104,6 +104,23 @@ Apakah kamu siap memulai audit naskah ini?
 
 ---
 
+### 🔹 Opsi 6: Update Progres & Sinkronisasi Workspace (Verifikasi + Log + Graphify)
+*Gunakan ini di akhir sesi kerja untuk memastikan semua progres tercatat, terverifikasi, dan graf pengetahuan mutakhir:*
+
+```text
+Halo! Jalankan skill "obsidian-second-brain". Tolong lakukan update progres dan sinkronisasi workspace:
+
+1. Jalankan `py execution/run_thesis_graph.py --gate parity` dan `py execution/verify_all_citation_links.py`. Syarat lanjut: 7/7 PASS dan 0 tautan MATI. Jika ada FAIL, perbaiki dulu secara surgical baru ulangi.
+2. Catat progres/keputusan sesi ini ke `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md` (awali `> [!SUMMARY]`, gunakan `[[wikilinks]]`).
+3. Perbarui `00_DASHBOARD_SECOND_BRAIN.md` bila ada yang berubah (halaman naskah, status Mendeley, angka graphify).
+4. Jalankan graphify incremental update sesuai skill graphify (`/graphify --update`) agar `graphify-out/` mencakup file baru/berubah, lalu sinkronkan angka graf ke dashboard.
+5. Laporkan ringkasan perubahan dan TANYAKAN dulu sebelum commit/push ke GitHub (jangan push diam-diam).
+
+File apa saja yang berubah, dan apa status akhirnya?
+```
+
+---
+
 ## 🧠 MENGAPA PROMPT INI BIKIN KONTEKS TIDAK HILANG?
 
 Banyak pengguna AI mengeluhkan *"Kok AI-nya lupa ya kemarin kita ngomongin apa?"*. Hal itu terjadi karena sistem AI tidak tahu file mana yang harus dibaca duluan.

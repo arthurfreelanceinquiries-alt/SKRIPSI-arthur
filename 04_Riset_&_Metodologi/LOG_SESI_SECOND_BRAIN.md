@@ -655,4 +655,19 @@
 >     * `verify_docx_typography.py` -> PASS 100% (Pure black, format APA 7th, dot leaders).
 >     * `verify_pdf_docx_parity.py` -> PASS 100% (Paritas struktur & konten PDF-Word terjamin).
 
+---
+
+## Sesi 16 September 2026 (lanjutan 10): LOT/LOF Hyperlink + Mendeley Cloud Restore + Opsi-6 Penuh
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Eksekusi 3 kendala user (LOT/LOF Word, linkage Mendeley-DP-sitasi, push cloud tak lengkap) + Opsi-6 end-to-end pertama.
+> - **Masalah yang Diselesaikan:** Angka LOT/LOF/TOC basi era 55 hlm, entri tak ber-titik dan tak bisa diklik, caption longtable bocor mentah, baris highlight Gao/Sultan fiktif, cloud anjlok ke 3/55 dokumen.
+> - **Keputusan/Output:** Builder + verifier dipatch, cloud 55/55 pulih, framework terupdate (C-MEND-2, C-LOT-1, IMPLEMENTATION_PLAN), graphify 1.541/1.686/134.
+
+* **LOT/LOF:** angka diganti angka cetak PDF (LOT full 13,14,15,22,30,36,44; LOF 2,3,5,29,43; NoBab3 13,14,15,22 + 2,3,5,29; TOC statis + label 2.1.3 diselaraskan). Stop ganda dihapus; misteri style "TOC11" terpecahkan (rename anti-tabrakan oleh Word COM; style right-dot-7938 adalah kebenaran render). Entri dihyperlink ke bookmark caption (full 10/12, NoBab3 6/8). Caption longtable bocor diperbaiki via peta LOT. G4 sempat FAIL lalu verifier di-upgrade fallback style (`_style_tab_stops`); final **11/11 PASS**.
+* **Mendeley:** kunci 3-arah utuh; highlight Gao/Sultan ditulis ulang + status PDF jujur; `--refresh` baru (PASS); cloud 3/55 lalu `--push` 52 sehingga API **55 dokumen, 53 websites, 0 hilang**.
+* **Framework:** PRD +`C-MEND-2`/`C-LOT-1`; SOP F7/F8; baru `IMPLEMENTATION_PLAN_LOT_LOF_MENDELEY.md`.
+* **Opsi-6:** parity 7/7; link 31/22/0 MATI; graphify 22 file menjadi **1.541 nodes, 1.686 edges, 134 komunitas** (125 reuse + 9 auto; manifest 142); dashboard + LOG sinkron.
+* **PR terbuka:** PDF Gao/Sultan belum diarsipkan; `tan2024`/`sugiyono2019` tanpa link sah; DOI Tan di katalog mati.
+
 
