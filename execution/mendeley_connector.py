@@ -375,6 +375,38 @@ def cmd_sync_links(env, tok, dry=False):
     return 0 if not fail else 1
 
 
+def cmd_prune(env, tok, dry=False):
+    """Hapus dokumen cloud yg judulnya tak ada di RIS (entri basi pasca-ganti sumber)."""
+    if not RIS.exists():
+        print(f"[ERROR] RIS tidak ada: {RIS}")
+        return 1
+    want = set()
+    for r in parse_ris(RIS):
+        if r.get('TI'):
+            want.add(r['TI'][0].strip().lower())
+    st, docs = api_request("GET", "/documents?limit=500&view=bib", tok["access_token"])
+    if st != 200 or not isinstance(docs, list):
+        print(f"[ERROR] list dokumen HTTP {st}")
+        return 1
+    stale = [(d['id'], d.get('title', '?')) for d in docs
+             if d.get('id') and (d.get('title') or '').strip().lower() not in want]
+    if dry:
+        print(f"DRY-RUN: {len(stale)} entri basi akan dihapus:")
+        for _, t in stale[:10]:
+            print(f"  - {t[:80]}")
+        return 0
+    fails = 0
+    for did, t in stale:
+        st2, _ = api_request("DELETE", f"/documents/{did}", tok["access_token"])
+        if st2 not in (200, 204):
+            fails += 1
+            print(f"  GAGAL hapus [{st2}]: {t[:70]}")
+        else:
+            print(f"  dihapus: {t[:70]}")
+    print(f"HASIL: {len(stale)-fails} dihapus, {fails} gagal")
+    return 0 if not fails else 1
+
+
 def main(argv):
     if len(argv) < 2 or argv[1] in ('-h', '--help'):
         print(__doc__)
@@ -393,6 +425,8 @@ def main(argv):
         return cmd_push(env, tok, dry=False, limit=limit)
     if cmd == '--sync-links':
         return cmd_sync_links(env, tok, dry='--dry' in argv)
+    if cmd == '--prune':
+        return cmd_prune(env, tok, dry='--dry' in argv)
     print(f"perintah tak dikenal: {cmd} (lihat --help)")
     return 1
 

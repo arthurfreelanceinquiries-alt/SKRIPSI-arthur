@@ -57,7 +57,7 @@ Persamaan / proposisi beku:
 
 ## 5. Evidence Ledger (satu baris per klaim — tambah baris sesuai kebutuhan)
 
-| # | Klaim di naskah | Kelas (fact/observation/inference/assumption/unknown) | Sumber + tgl akses | Cek (live/PDF hash/screenshot) | Falsifier (bukti yang menggugurkan) |
+| # | Klaim di naskah | Kelas (fact/observation/inference/assumption/unknown) | Sumber + tgl akses | Cek (live/PDF hash/screenshot/status link ALIVE-WALLED-DEAD) | Falsifier (bukti yang menggugurkan; DOI mati = sumber DIGANTI) |
 |---|---|---|---|---|---|
 | E01 | [ISI] | [ISI] | [ISI] | [ISI] | [ISI] |
 | E02 | [ISI] | [ISI] | [ISI] | [ISI] | [ISI] |
@@ -75,7 +75,7 @@ Aturan: `inference` tanpa falsifier = turunkan menjadi `assumption`, dilarang ma
 |---|---|
 | A1 | [ISI] |
 | A2 | NOT_FOUND=0, 0 login-wall |
-| A3 | semua PDF %PDF; katalog lengkap; live PASS |
+| A3 | semua PDF %PDF; katalog lengkap; `verify_all_citation_links` 0 DEAD (C-LINK-1) |
 | A4 | tiap konstruk → teori + skala baku |
 | A5 | estimand + model frozen + etik |
 | A6 | [ISI: ΔR²/effect size/...] |

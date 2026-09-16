@@ -609,6 +609,25 @@
 
 ---
 
+## 📅 Sesi 16 September 2026 (lanjutan 9): Audit Klikabilitas SEMUA Sitasi — 6 DOI Mati Diperbaiki/Diganti
+
+* **Pemicu:** User klik link Gao di Mendeley → `DOI NOT FOUND` (`10.1509/jmr.12.0281`). Perintah: cek SEMUA sitasi; yang tak berlink/tak ketemu DIGANTI; update PRD, plan, template.
+* **Audit (`execution/verify_all_citation_links.py`, baru, stdlib+threads):** 53 tautan diperiksa → 29 hidup / 18 terhalang-bot (401/403 = terdaftar, anti-bot) / **6 MATI**.
+* **Temuan & tindakan (tanpa satu pun karangan):**
+  1. `gao2014completing` — DOI mati + **entri fiktif** (judul/jurnal/vol/hlm/DOI salah semua; karya aslinya JM 2014 v78 pp143–156). Bib ditulis ulang ke ground truth; label teks `The Completing the Set Effect` → `collection-goal tipping point effect` (9 titik: abstrak ID/EN, Bab 1–2, heading, TikZ).
+  2. `sultan2012building` — judul+jurnal fiktif (karya aslinya Marketing Letters 2012, DOI live 200). Bib ditulis ulang; teks tak menyebut judul → aman.
+  3. `tirtayasa2020keputusan` — entri campuran tak eksis → **DIGANTI** karya nyata Tirtayasa–Nevianda–Syahrial (IJBE 2020, DOI live 200). Key rename → `tirtayasa2020effect`; karena temuan aslinya POSITIF, sitasi dipindah Temuan B→A + matriks gap L644 + klaim "minimal dua" dilunakkan jujur (Temuan B kini Zheng saja).
+  4. `long2000consuming` — satu digit salah (`...211`→`...201`, Crossref eksak; WALLED Emerald).
+  5. `dewi2024understanding` — suffix salah (`...289`→`...5619`, live 200).
+  6. `colline2024biases` — DOI terdaftar (Crossref eksak); 468 = wall penerbit pasca-redirect 302 (bukan DOI mati). Dipertahankan + C-LINK-1 mendokumentasikan kelas WALLED.
+  - Shiller (Open Library) sempat timeout → terbukti throttling sementara (sebelumnya 200 + cocok; lolos lagi di audit final).
+* **Mendeley cloud:** `--push` 3 dokumen judul-baru + `--prune` hapus 3 entri basi + `--sync-links` 53 link. Verifikasi baca-balik: 55 dokumen.
+* **Framework (sesuai perintah user):** PRD +aturan `C-LINK-1` + 3 skill baru di registry; SOP `universal_thesis_graph_of_agents` (F3 + G2b); template (kolom Cek ledger + acceptance A3).
+* **Verifikasi final pohon 62/44 hlm (pasca-Sesi 16):** `--gate parity` **7/7 PASS**; link audit **32 hidup / 21 walled / 0 MATI**; sisa bare-Inggris 0 (kecuali abstrak EN + judul artikel di tabel).
+* **PR terbuka:** `tan2024`/`sugiyono2019` tetap tanpa link sah; DOI Tan di katalog mati (koreksi katalog menunda); tahun Crossref Lienardy 2026 vs sitasi 2024 (tak diubah).
+
+---
+
 ## 📅 Sesi 16 September 2026 (Sesi 16): Resolusi Revisi Dosen Malam (Research Gap 7 Subjek Hubungan, Novelty Model Arthur, & Kepatuhan Sitasi/Tipografi)
 
 > [!SUMMARY] Tujuan & Solusi Catatan Ini

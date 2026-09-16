@@ -20,7 +20,7 @@
 |---|---|---|---|
 | F1 Framing | A1 | Isi `TEMPLATE_SOURCE_OF_TRUTH_UNIVERSAL.md` → bekukan unit/populasi/periode/estimand/eksklusi/selesai-jika | Checklist Layak 10 poin playbook ✅ |
 | F2 Canon | A2 | `py execution/verify_book_sources.py` + uji incognito/curl tiap URL | `NOT_FOUND=0`, 0 login-wall |
-| F3 Evidence | A3 | `py execution/verify_pdf_headers.py` → `py execution/generate_journal_catalog.py` → `py execution/verify_live_urls.py` | `%PDF` semua; katalog lengkap; live-check PASS |
+| F3 Evidence | A3 | `py execution/verify_pdf_headers.py` → `py execution/generate_journal_catalog.py` → `py execution/verify_live_urls.py` → `py execution/verify_all_citation_links.py` (0 DEAD; WALLED dicatat; DEAD = perbaiki via Crossref/PDF primer atau GANTI sumber + selaraskan klaim, C-LINK-1) | `%PDF` semua; katalog lengkap; live-check PASS |
 | F4 Construct | A4 | `py execution/analyze_completeness_construct.py` (atau padanannya per topik) | Tiap konstruk → teori + skala baku |
 | F5 Method | A5 | Tulis Bab 3, freeze Model 1/2 + N + etik | Estimand + model frozen verbatim |
 | F6 Stats | A6 | Olah data (SPSS/R) + laporkan ΔR², effect size | p-value tidak pernah tanpa effect size |
@@ -39,6 +39,7 @@ py execution/run_thesis_graph.py --gate parity
 # setara manual:
 py execution/verify_mendeley_integrity.py   # G1
 py execution/verify_live_urls.py            # G2
+py execution/verify_all_citation_links.py   # G2b (0 DEAD, C-LINK-1)
 py execution/verify_ukrida_compliance.py    # G3
 py execution/verify_docx_typography.py      # G4
 py execution/verify_pdf_docx_parity.py      # G5

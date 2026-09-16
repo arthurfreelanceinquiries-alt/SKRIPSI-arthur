@@ -277,6 +277,7 @@ Berjalan di atas pyramid §1; tiap tahap dimiliki satu agen:
 | C-CANON-1 | Klaim kuantitatif wajib T1–T3 + deep-link + HTTP 200 | A2→A3→A8-G2 | hapus grafik/klaim |
 | C-BOOK-1 | Tiap `@book` wajib PDF LibGen + mirror aktif | A2→A8-G7 | ganti setara / hapus jika non-esensial |
 | C-LEDGER-1 | Tiap inference wajib falsifier; tanpa falsifier = assumption | A3→A9 | turunkan kelas klaim |
+| C-LINK-1 | Tiap DOI/URL sitasi wajib lolos `verify_all_citation_links.py` (0 DEAD). Klasifikasi: ALIVE (2xx/3xx) / WALLED (401/403/405/429/468 = terdaftar & me-resolve, anti-bot) / DEAD (404/timeout = perbaiki atau GANTI sumber). DOI mati → cari ground truth (Crossref + PDF primer + web), bukan nebak suffix. Kasus preseden 16 Sep 2026: Gao (judul+jurnal+vol+DOI fiktif → tulis ulang ke JM 2014), Sultan (judul+jurnal fiktif → Marketing Letters 2012), Tirtayasa (entri campuran → ganti IJBE 2020 + selaraskan klaim gap), Dewi/Long (satu digit salah → betulkan). Klaim teks yang menempel pada sumber yang diganti WAJIB diselaraskan (gap Temuan A/B, matriks, label konsep). | A2→A3→A8 | BUILD BROKEN sampai 0 DEAD |
 | C-SCOPE-1 | 1 sampel ≠ klaim universal; tulis batas generalisasi | A3→A4→A9 | revisi Bab 1/3 |
 | C-OBJ-1 | Purposive ≠ representatif; kontradiksi diawetkan eksplisit | A5→A9 | revisi Bab 3 + simpulan bounded |
 | C-MODEL-1 | Freeze Model 1 (aditif+M*) + Model 2 (penuh mean-centered) | A5→A6→A7 | A9 Critical |
@@ -301,6 +302,9 @@ Berjalan di atas pyramid §1; tiap tahap dimiliki satu agen:
 | `skill-mendeley-gen` (55 ref, whitelist, UTF-8) | `generate_mendeley_library.py` | A7, A8 |
 | `skill-verify-mendeley` (7 tes) | `verify_mendeley_integrity.py` | A8-G1 |
 | `skill-verify-url` (blacklist + live) | `verify_live_urls.py` | A8-G2 |
+| `skill-verify-all-links` (DOI/URL 0-DEAD + saran Crossref) | `verify_all_citation_links.py` | A3, A8 (C-LINK-1) |
+| `skill-resolve-urls` (Crossref + live-check DOI) | `resolve_mendeley_urls.py` | A3 |
+| `skill-mendeley-push` (OAuth + push + sync-links + prune) | `mendeley_connector.py` | A8 |
 | `skill-verify-ukrida` (7 pilar) | `verify_ukrida_compliance.py` | A8-G3 |
 | `skill-verify-typo` (pure-black, TOC 14cm) | `verify_docx_typography.py` | A8-G4 |
 | `skill-verify-parity` (NoBab3 vs Full) | `verify_pdf_docx_parity.py` | A8-G5 |
