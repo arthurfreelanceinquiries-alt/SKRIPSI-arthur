@@ -15,10 +15,11 @@
 * **Dosen Pembimbing:** [[07_Review_&_Audit/Revisi_Dosen/|Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A]]
 * **Metodologi Analisis:** Kuantitatif Asosiatif, Survei Kros-Seksional, *Moderated Regression Analysis (MRA)* dengan *Mean-Centering*.
 * **Status Naskah Terkini:**
-  - Naskah Utama Lengkap: [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf|Proposal_Arthur_PokemonTCG.pdf]] (54 halaman — melampaui standar K-02 UKRIDA 2023, 55 entri referensi lengkap 100% terverifikasi nyata dengan sitasi data Pokémon)
-  - Varian Siap Sidang/Review: [[01_Naskah_Utama/Proposal_Arthur_NoBab3.pdf|Proposal_Arthur_NoBab3.pdf]] (36 halaman, bersih tanpa Bab 3 & lembar formal)
+  - Naskah Utama Lengkap: [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf|Proposal_Arthur_PokemonTCG.pdf]] (55 halaman — melampaui standar K-02 UKRIDA 2023, 55 entri referensi lengkap 100% terverifikasi nyata dengan sitasi data Pokémon)
+  - Varian Siap Sidang/Review: [[01_Naskah_Utama/Proposal_Arthur_NoBab3.pdf|Proposal_Arthur_NoBab3.pdf]] (37 halaman, bersih tanpa Bab 3 & lembar formal)
   - Dokumen Word Hybrid (Native TOC Word/Docs): [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx|Proposal_Arthur_PokemonTCG.docx]] (OMML native, 55 entri daftar pustaka alfabetis bebas angka 1, 2, 3) & [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx|Proposal_Arthur_NoBab3.docx]] (varian review)
 * **Kickoff AI Sesi:** 🌐 [Buka Aplikasi Web Kickoff 1-Klik](file:///z:/SKRIPSII/SKRIPSI%20ARTHUR/SKRIPSI-arthur-main/SKRIPSI-arthur-main/PROMPT_KICKOFF.html) | 📋 [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md|Versi Dokumen Markdown]]
+* **Status Graphify Knowledge Graph:** 🌐 [[graphify-out/graph.html|Peta Pengetahuan Interaktif]] (1.365 Nodes, 1.494 Edges, 109 Komunitas Terkini)
 
 
 ---
