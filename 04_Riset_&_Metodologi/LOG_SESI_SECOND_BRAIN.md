@@ -517,3 +517,22 @@
   - `graph.json` 1.478 nodes memuat konsep framework + orchestrator parity.
   - Naskah `01_Naskah_Utama/` tidak disentuh sepanjang sesi (zero-desync).
 
+---
+
+## 📅 Sesi 16 September 2026 (lanjutan 3): Pre-Flight Kirim Dosen — Perjelas Gambar 1.1 + Full Rebuild + 11/11 PASS
+
+* **Fokus Pekerjaan:**
+  - User mau kirim ke dosen sekarang; satu-satunya revisi user: Gambar 1.1 teks terlalu kecil.
+  - Audit kelayakan kirim penuh + perbaiki gambar + rebuild + verifikasi ulang.
+* **Keputusan / Output Teknis:**
+  - Diagnosis: Gbr 1.1 native 8.5in di-include `0.90\textwidth` (12.6cm) → faktor skala 0.58; label 8.5pt → **~5.0pt efektif**, footnote 7.5pt → ~4.4pt. Terbukti kekecilan.
+  - Perbaikan `[[execution/generate_bab1_figures.py]]` (hanya fungsi 1.1): figsize 7.2×4.6in (faktor ~0.69), label 8.5→11pt (Pokémon 12 bold), ytick 10→11pt, xlabel 9.5→11pt, footnote 7.5→9.5pt + pindah ke `fig.text` bawah (dari `ax.text` yang menabrak label Harry Potter — ditemukan via inspeksi visual, diperbaiki sebelum rebuild), xlim 125→135.
+  - Rebuild penuh: XeLaTeX full 55 hlm + `build_proposal_nobab3_pdf.py` 37 hlm + `build_proposal_word.py` full & NoBab3 + `sync_markdown_from_tex.py` (913 baris).
+  - Toolchain: `pip install python-docx matplotlib` (sebelumnya hilang → G6 FAIL environnemental; kini sembuh).
+  - Self-anneal: `verify_format_and_typos.py` + `verify_word_layout.py` menunjuk path hardcoded mesin lama → dipatch ke `Path(__file__).parent.parent` (X1/X4 FAIL → PASS).
+* **Verifikasi:**
+  - `run_thesis_graph.py --gate parity`: **7/7 PASS** (G1 Mendeley, G2 URL, G3 UKRIDA, G4 tipografi, G5 paritas, G6 outline, G7 LibGen).
+  - `--gate extended`: **11/11 PASS** (+X1 forensik, X2 NoBab3, X3 header PDF, X4 layout).
+  - Bukti visual: render hal. Gambar 1.1 dari PDF final — caption + sumber + narasi sinkron, label terbaca.
+  - Vonis: **LAYAK KIRIM** — paket: 2 PDF + 2 DOCX + RIS 55 ref.
+
