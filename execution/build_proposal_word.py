@@ -261,6 +261,12 @@ def clean_academic_text(text: str) -> str:
     if not text:
         return text
 
+    # 0. Normalisasi aksen LaTeX ke Unicode (mencegah bocoran mentah)
+    text = text.replace(r"{\'e}", 'é').replace(r"\'e", 'é')
+    text = text.replace(r'{\"u}', 'ü').replace(r'\"u', 'ü')
+    text = text.replace(r'{\"o}', 'ö').replace(r'\"o', 'ö')
+    text = text.replace(r'{\`e}', 'è').replace(r'\`e', 'è')
+
     # 1. LaTeX Citations
     text = re.sub(r'\\citealp\{babin1994work\}', 'Babin *et al.*, 1994', text)
     text = re.sub(r'\\citealp\{arnold2003hedonic\}', 'Arnold dan Reynolds, 2003', text)
@@ -276,7 +282,7 @@ def clean_academic_text(text: str) -> str:
     # Standarisasi sitasi dua penulis bahasa Indonesia (menggunakan 'dan', bukan '&' atau 'and')
     text = re.sub(r'\b([A-Z][a-z]+)\s+&\s+([A-Z][a-z]+)\b', r'\1 dan \2', text)
     text = re.sub(r'\b([A-Z][a-z]+)\s+and\s+([A-Z][a-z]+)\b', r'\1 dan \2', text)
-    text = re.sub(r'\bet al\b', r'*et al.*', text)
+    text = re.sub(r'\bet al\.?', r'*et al.*', text)
     text = text.replace('**et al.**', '*et al.*').replace('**et al.*', '*et al.*').replace('***et al.***', '*et al.*')
 
     # 2. Multi-variable & Complex math expressions
@@ -1421,6 +1427,7 @@ def build_full_proposal(skip_chapter3: bool = False):
     has_inserted_fig31 = False
 
     # Process each section
+    ref_bookmarks = {}
     for idx in range(1, len(parts), 2):
         sec_header = parts[idx].strip()
         sec_content = parts[idx+1] if idx+1 < len(parts) else ""
@@ -1435,7 +1442,18 @@ def build_full_proposal(skip_chapter3: bool = False):
             add_heading_1(doc, sec_header, page_break=False if idx == 1 else True)
         elif "DAFTAR PUSTAKA" in sec_header:
             add_heading_1(doc, "DAFTAR PUSTAKA", page_break=True)
-            build_daftar_pustaka(doc, sec_content)
+            dp_paras = build_daftar_pustaka(doc, sec_content) or []
+            bbl_keys = _parse_bbl_keys(base_dir / "Proposal_Arthur_PokemonTCG.bbl")
+            if bbl_keys and len(dp_paras) == len(bbl_keys):
+                for _p, _k in zip(dp_paras, bbl_keys):
+                    _CITE_BM_SEQ[0] += 1
+                    _add_bookmark(_p, '_Ref_' + re.sub(r'\W', '_', _k), _CITE_BM_SEQ[0])
+                print('[*] DP bookmark: %d entri.' % len(dp_paras))
+            else:
+                print('[WARN] DP %d vs bbl %d — bookmark dilewati (anti salah-taut).'
+                      % (len(dp_paras), len(bbl_keys)))
+            ref_bookmarks = {k: '_Ref_' + re.sub(r'\W', '_', k) for k in bbl_keys} \
+                if bbl_keys and len(dp_paras) == len(bbl_keys) else {}
             continue
 
         # Parse subsections, paragraphs, lists, tables, and images
@@ -1908,6 +1926,11 @@ def build_full_proposal(skip_chapter3: bool = False):
 
     print("[*] Performing Document-Wide Pure Black & Typography Enforcement Pass...")
     link_lot_lof_entries(doc)
+    aux_map = _parse_aux_cites(base_dir / "Proposal_Arthur_PokemonTCG.aux")
+    if ref_bookmarks and aux_map:
+        link_citations_to_dp(doc, aux_map, ref_bookmarks)
+    else:
+        print('[WARN] sitasi hyperlink dilewati (bookmark/aux tak lengkap).')
     for p in doc.paragraphs:
         for r in p.runs:
             if not r.text:
@@ -2215,6 +2238,17 @@ def _add_dot_tab_7938(paragraph):
 
 
 _LOTLOF_BM_SEQ = [1000]
+_CITE_BM_SEQ = [2000]
+
+
+def _add_bookmark(paragraph, name, bid):
+    bs = OxmlElement('w:bookmarkStart')
+    bs.set(qn('w:id'), str(bid))
+    bs.set(qn('w:name'), name)
+    be = OxmlElement('w:bookmarkEnd')
+    be.set(qn('w:id'), str(bid))
+    paragraph._p.insert(0, bs)
+    paragraph._p.append(be)
 
 
 def link_lot_lof_entries(doc):
@@ -2282,6 +2316,296 @@ def link_lot_lof_entries(doc):
     return n_linked
 
 
+def _parse_aux_cites(aux_path):
+    """{key: (author_raw, year)} dari .aux \\bibcite (bentuk display natbib)."""
+    from pathlib import Path as _P
+    try:
+        aux = _P(aux_path).read_text(encoding='utf-8')
+    except OSError:
+        return {}
+    out = {}
+    for key, year, author in re.findall(r'\\bibcite\{([^}]+)\}\{\{\d+\}\{(\d{4})\}\{(.*?)\}\}', aux):
+        a = author.strip('{}').replace('~', ' ')
+        a = (a.replace(r'{\"u}', 'ü').replace(r'{\"O}', 'Ö')
+              .replace(r"{\'e}", 'é').replace(r"\'e", 'é')
+              .replace('{', '').replace('}', ''))
+        out[key.strip()] = (a.strip(), year)
+    return out
+
+
+def _parse_bbl_keys(bbl_path):
+    from pathlib import Path as _P
+    try:
+        bbl = _P(bbl_path).read_text(encoding='utf-8')
+    except OSError:
+        return []
+    return [k.strip() for k in re.findall(r'\\bibitem\[[^\]]*\]\{([^}]+)\}', bbl)]
+
+
+def _add_bookmark(paragraph, name, bid):
+    bs = OxmlElement('w:bookmarkStart')
+    bs.set(qn('w:id'), str(bid))
+    bs.set(qn('w:name'), name)
+    be = OxmlElement('w:bookmarkEnd')
+    be.set(qn('w:id'), str(bid))
+    paragraph._p.insert(0, bs)
+    paragraph._p.append(be)
+
+
+_CITE_BM_SEQ = [3000]
+
+
+def _author_regex(author_raw):
+    """Regex fragmen display penulis: 'A and B'->dan/and/&; 'X et al.'; korporat."""
+    a = author_raw.replace('~', ' ').strip()
+    a = re.sub(r'\s+', ' ', a)
+    if 'et al' in a.lower():
+        base = re.split(r'\bet\s*al\b', a, flags=re.I)[0].strip(' .')
+        return re.escape(base) + r'\s+et al\.+'
+    parts = re.split(r'\s+and\s+', a, flags=re.I)
+    if len(parts) == 2:
+        return re.escape(parts[0].strip()) + r'\s+(?:dan|and|&)\s+' + re.escape(parts[1].strip())
+    return re.escape(a)
+
+
+def link_citations_to_dp(doc, aux_map, ref_bookmarks):
+    """Post-pass: hyperlink setiap sitasi tubuh ke bookmark entri DP (tetap hitam).
+
+    Pola: (Penulis, Tahun) multi, Penulis (Tahun), dan bare multi-kata.
+    Melewati: heading/TOC, field Word, rentang hyperlink eksisting, seksi DP.
+    """
+    import copy as _copy
+    W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'
+    NS = {'w': W}
+
+    # Batas seksi DP: hyperlink hanya SEBELUM heading DAFTAR PUSTAKA
+    dp_idx = None
+    paras = list(doc.paragraphs)
+    for i, p in enumerate(paras):
+        try:
+            st = p.style.name
+        except Exception:
+            st = ''
+        if st.startswith('Heading') and p.text.strip() == 'DAFTAR PUSTAKA':
+            dp_idx = i
+            break
+
+    WR = qn('w:r')
+    WT = qn('w:t')
+    WTAB = qn('w:tab')
+    WBR = qn('w:br')
+
+    def _para_map(p):
+        """(full, seq) dgn full == p.text persis; seq = (teks, run|None, tnode|None).
+
+        Hanya w:t di bawah w:r LANGSUNG yg splittable. Segala teks lain
+        (oMath, instr, del) = atomik. None bila tak konsisten -> lewati.
+        """
+        seq = []
+        for node in p._p.iter():
+            par = node.getparent()
+            if node.tag == WT and par is not None and par.tag == WR \
+                    and par.getparent() is p._p:
+                seq.append((node.text or '', par, node))
+            elif node.tag in (WTAB, WBR) and par is not None and par.tag == WR \
+                    and par.getparent() is p._p:
+                seq.append(('\t' if node.tag == WTAB else '\n', None, None))
+            elif node.tag.endswith('}t') and (node.text or ''):
+                # teks non-direct (hyperlink bersarang, oMath, instr): atomik
+                seq.append((node.text, None, None))
+        full = ''.join(t for t, _, _ in seq)
+        if full != p.text:
+            return None, None
+        return full, seq
+
+    def _split_seq(p, seq, off):
+        """Belah run pada offset global off (dlm koordinat seq)."""
+        import copy as _c
+        WTloc = qn('w:t')
+        XS = '{http://www.w3.org/XML/1998/namespace}space'
+        pos = 0
+        for (t, r, nd) in seq:
+            if r is None or nd is None:
+                pos += len(t)
+                continue
+            if pos < off < pos + len(t):
+                k = off - pos
+                try:
+                    at = list(r).index(nd)
+                except ValueError:
+                    return False
+                new_run = _c.deepcopy(r)
+                for sib in list(new_run)[:at]:
+                    new_run.remove(sib)
+                first = new_run[0] if len(new_run) else None
+                if first is None or first.tag != WTloc:
+                    return False
+                first.text = t[k:]
+                first.set(XS, 'preserve')
+                nd.text = t[:k]
+                nd.set(XS, 'preserve')
+                for sib in list(r)[at + 1:]:
+                    r.remove(sib)
+                idx = list(p._p).index(r)
+                p._p.insert(idx + 1, new_run)
+                return True
+            pos += len(t)
+        return True
+
+    def _wrap_span(p, s, e, anchor):
+        """Bungkus rentang [s,e) p.text dalam hyperlink internal.
+
+        Invarian keras: teks paragraf tak boleh berubah; bila berubah,
+        paragraf dipulihkan dari snapshot dan False dikembalikan.
+        """
+        import copy as _c
+        before_text = p.text
+        before_xml = _c.deepcopy(p._p)
+        try:
+            # 1. peta seq; tolak bila span menyentuh unit atomik
+            mapped = _para_map(p)
+            if mapped[0] is None or mapped[0] != before_text:
+                return False
+            _, seq = mapped
+            pos = 0
+            for (t, r, _nd) in seq:
+                if pos < e and pos + len(t) > s and r is None:
+                    return False
+                pos += len(t)
+            # 2. belah di e lalu s (kanan dulu agar offset kiri valid)
+            _split_seq(p, seq, e)
+            mapped2 = _para_map(p)
+            if mapped2[0] is None:
+                raise RuntimeError('map-e')
+            _, seq = mapped2
+            _split_seq(p, seq, s)
+            mapped3 = _para_map(p)
+            if mapped3[0] is None:
+                raise RuntimeError('map-s')
+            _, seq = mapped3
+            # 3. kumpulkan run langsung yg sepenuhnya di dalam [s,e)
+            pos = 0
+            inside = []
+            for (t, r, _nd) in seq:
+                if r is not None and s <= pos and pos + len(t) <= e and len(t) > 0:
+                    if not inside or inside[-1] is not r:
+                        inside.append(r)
+                pos += len(t)
+            if not inside:
+                return False
+            # verifikasi cakupan persis
+            covered = before_text[s:e]
+            got = ''
+            for r in inside:
+                for n in r.iterfind('.//w:t', namespaces={'w': W}):
+                    got += n.text or ''
+                got += '\t' * len(r.findall(qn('w:tab')))
+            if got != covered:
+                return False
+            h = OxmlElement('w:hyperlink')
+            h.set(qn('w:anchor'), anchor)
+            h.set(qn('w:history'), '1')
+            idx = list(p._p).index(inside[0])
+            for r in inside:
+                h.append(r)
+            p._p.insert(idx, h)
+            if p.text != before_text:
+                p._p.getparent().replace(p._p, before_xml)
+                return False
+            return True
+        except Exception:
+            try:
+                p._p.getparent().replace(p._p, before_xml)
+            except Exception:
+                pass
+            return False
+
+    # Susun pola per kunci (terpanjang dulu agar multi-cite menang)
+    matchers = []
+    seg_matchers = []
+    for key, (author_raw, year) in aux_map.items():
+        if key not in ref_bookmarks:
+            continue
+        au = _author_regex(author_raw)
+        multiword = (' ' in author_raw.replace('~', ' ').strip()) or ('et al' in author_raw.lower())
+        matchers.append((key, re.compile(r'\(\s*' + au + r'\s*,\s*' + year + r'\s*\)'), 'paren'))
+        matchers.append((key, re.compile(au + r'\s*\(\s*' + year + r'\s*\)'), 'narr'))
+        if multiword:
+            matchers.append((key, re.compile(au + r'\s*,\s*' + year), 'bare'))
+        # segmen di dalam grup multi-sitasi "(A, 2000; B, 2010)": semua kunci
+        seg_matchers.append((key, re.compile(au + r'\s*,\s*' + year)))
+    matchers.sort(key=lambda m: -len(m[1].pattern))
+    seg_matchers.sort(key=lambda m: -len(m[1].pattern))
+    paren_group_rx = re.compile(r'\([^()]{2,300}\)')
+
+    all_paras = list(doc.paragraphs)
+    for tbl in doc.tables:
+        for row in tbl.rows:
+            for cell in row.cells:
+                all_paras.extend(cell.paragraphs)
+
+    n_linked = 0
+    for idx, p in enumerate(all_paras):
+        if dp_idx is not None and idx < len(paras) and idx >= dp_idx and p in paras:
+            continue
+        try:
+            st = p.style.name
+        except Exception:
+            st = ''
+        if st.startswith(('TOC', 'Heading')):
+            continue
+        if 'w:fldChar' in p._p.xml:
+            continue
+        text = p.text
+        if not text or '(' not in text and 'et al' not in text:
+            # tetap izinkan bare multiword tanpa paren
+            if not re.search(r'et al\.| dan \d{4}| and \d{4}', text):
+                continue
+        spans = []
+        used = [False] * len(text)
+        for key, rx, _kind in matchers:
+            for m in rx.finditer(text):
+                s, e = m.span()
+                if any(used[s:e]):
+                    continue
+                for i in range(s, e):
+                    used[i] = True
+                spans.append((s, e, key))
+        # segmen multi-sitasi: pecah grup "(...)" per ';' lalu cocokkan per kunci
+        for g in paren_group_rx.finditer(text):
+            gs, ge = g.span()
+            if all(used[gs:ge]):
+                continue
+            for seg in g.group(0)[1:-1].split(';'):
+                seg = seg.strip()
+                if not seg:
+                    continue
+                for key, rx in seg_matchers:
+                    m = rx.search(seg)
+                    if not m:
+                        continue
+                    # offset absolut eksak dalam teks paragraf
+                    base = gs + 1
+                    rel = g.group(0)[1:-1].find(seg)
+                    s = base + rel + seg.find(m.group(0))
+                    e = s + len(m.group(0))
+                    if e > len(text) or any(used[s:e]):
+                        continue
+                    if text[s:e] != m.group(0):
+                        continue
+                    for i in range(s, e):
+                        used[i] = True
+                    spans.append((s, e, key))
+                    break
+        if not spans:
+            continue
+        for s, e, key in sorted(spans, reverse=True):
+            if _wrap_span(p, s, e, ref_bookmarks[key]):
+                n_linked += 1
+    print('[*] Sitasi hyperlink: %d tautan ke Daftar Pustaka.' % n_linked)
+    return n_linked
+
+
 def add_hyperlink(paragraph, url, text, color="0563C1", underline=True):
     """Adds an active, clickable hyperlink to a paragraph in python-docx using OpenXML."""
     try:
@@ -2321,7 +2645,11 @@ def add_hyperlink(paragraph, url, text, color="0563C1", underline=True):
 
 
 def build_daftar_pustaka(doc, content):
-    """Builds FEB UKRIDA 2023 compliant bibliography with 1.25cm hanging indent without numbering."""
+    """Builds FEB UKRIDA 2023 compliant bibliography with 1.25cm hanging indent without numbering.
+
+    Mengembalikan daftar paragraf entri (urutan = urutan .bbl) untuk bookmark.
+    """
+    built = []
     lines = content.split('\n')
     for line in lines:
         line_str = line.strip()
@@ -2359,6 +2687,8 @@ def build_daftar_pustaka(doc, content):
                 p.add_run(" " + suffix)
         else:
             parse_markdown_runs(p, clean_bib)
+        built.append(p)
+    return built
 
 
 if __name__ == "__main__":

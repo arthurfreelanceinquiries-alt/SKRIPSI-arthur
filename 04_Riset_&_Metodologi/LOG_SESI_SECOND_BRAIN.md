@@ -670,4 +670,18 @@
 * **Opsi-6:** parity 7/7; link 31/22/0 MATI; graphify 22 file menjadi **1.541 nodes, 1.686 edges, 134 komunitas** (125 reuse + 9 auto; manifest 142); dashboard + LOG sinkron.
 * **PR terbuka:** PDF Gao/Sultan belum diarsipkan; `tan2024`/`sugiyono2019` tanpa link sah; DOI Tan di katalog mati.
 
+---
+
+## Sesi 16 September 2026 (lanjutan 11): Sitasi Tubuh Bisa Diklik + Insiden `(;` Tertangkap
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menjawab "Mendeley tak terhubung ke docx, diklik diam" — sitasi `(Penulis, Tahun)` menjadi hyperlink internal ke entri Daftar Pustaka.
+> - **Masalah yang Diselesaikan:** Sitasi teks mati; `et al..` ganda; aksen mentah; bookmark DP per kunci `.bbl`.
+> - **Keputusan/Output:** Full 55/55 + NoBab3 51 terhubung, 0 yatim; field plugin Mendeley dinyatakan di luar jangkauan (butuh Mendeley Cite); framework +`C-CITE-2`.
+
+* **Mekanisme (jujur):** field plugin Mendeley Cite tak bisa dibuat manual andal → dipakai hyperlink internal Word (Ctrl+klik; di Docs klik biasa) + bookmark `_Ref_<kunci>` + link cloud tetap via Mendeley. Rantai: paragraf → DP → URL biru → sumber/Mendeley.
+* **Insiden serius tertangkap pre-kirim:** pass hyperlink v1 MENGHAPUS teks (`(; Hayes, 2018)`) karena offset `p.text` vs run bergeser oleh teks hyperlink bersarang. Bukti: DOCX commit = 0 kasus; perbaikan: peta offset jujur + split node + snapshot/restore + verifikasi per paragraf. Pelajaran diabadikan di IMPLEMENTATION_PLAN §6.
+* **Verifikasi:** full 55/55 (NoBab3 51; 4 khusus-Bab-3 sah); 0 `(;`; 0 kunci mentah; 0 anchor yatim; 11/11 gerbang + 0 MATI.
+* **Framework:** PRD +`C-CITE-2`; SOP F7; IMPLEMENTATION_PLAN §6 (termasuk cara klik + batas plugin).
+
 
