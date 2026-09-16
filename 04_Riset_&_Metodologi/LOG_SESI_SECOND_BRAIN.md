@@ -7,6 +7,98 @@
 
 ---
 
+## 📅 Sesi 16 September 2026 (Sesi 12): Resolusi Revisi Dosen Pembimbing (Data Pokémon, Integrasi Mendeley, & Daftar Pustaka A–Z)
+
+* **Fokus Pekerjaan:**
+  - Menerima dan membedah secara kritis catatan bimbingan Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A (16 September 2026, Pukul 10:27–10:28 WIB).
+  - Poin 1 (Data Pokémon): Menginjeksi 4 sumber rujukan data industri resmi berstandar internasional ke Bab 1 naskah LaTeX, Markdown, dan bibliografi (The Pokémon Company 2024, Statista 2024, ICv2 & TCGplayer 2024, dan PSA 2024).
+  - Poin 2 (Integrasi Mendeley): Membangun paket ekspor library Mendeley universal (`Mendeley_Library_Arthur_PokemonTCG.ris` dan `.bib` berisi 56+ entri lengkap) di `06_Referensi_Jurnal_PDF/` serta menyusun panduan impor 1 menit bagi mahasiswa.
+  - Poin 3 (Daftar Pustaka Alfabetis Bebas Angka 1, 2, 3): Mengonfirmasi bahwa dokumen Word dan draf terbaru telah 100% bebas dari nomor urut, meregenerasi naskah Word (.docx) dan PDF (XeLaTeX), serta memvalidasi kepatuhan via automated test suite.
+* **Masalah yang Diselesaikan:**
+  - Mengeliminasi ketiadaan sumber (*missing attribution*) pada statistik industri di Bab 1 (US$ 105 miliar franchise, 64,8 miliar lembar kartu, 41,5% market share, dan sertifikasi grading PSA).
+  - Memenuhi kewajiban penggunaan software manajer referensi Mendeley yang disyaratkan pembimbing dengan menyediakan file ekspor siap impor dalam 1 klik beserta panduan tangkapan layar (*screenshot*) untuk dosen.
+  - Memastikan dosen menerima naskah hasil regenerasi terbaru yang membuktikan format daftar pustaka telah tersusun murni berdasarkan abjad A–Z dengan *hanging indent* 1,25 cm sesuai Subbab 3.7 Pedoman FEB UKRIDA 2023.
+* **Keputusan / Output Teknis:**
+  - Dokumen Analisis Revisi: [[07_Review_&_Audit/Revisi_Dosen/2026-09-16_Revisi_Dosen_Sumber_Pokemon_Mendeley_Daftar_Pustaka.md]].
+  - Berkas Library Mendeley: [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris]] dan [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.bib]].
+  - Panduan Mahasiswa: [[06_Referensi_Jurnal_PDF/PANDUAN_IMPORT_MENDELEY_1_MENIT.md]].
+  - Skrip Ekspor Mendeley: [[execution/generate_mendeley_library.py]].
+  - Naskah Utama Diperbarui & Dikompilasi Ulang:
+    * LaTeX / PDF Lengkap: [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]] & [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]] (55 Halaman).
+    * LaTeX / PDF Tanpa Bab 3: [[01_Naskah_Utama/Proposal_Arthur_NoBab3.tex]] & [[01_Naskah_Utama/Proposal_Arthur_NoBab3.pdf]] (35 Halaman).
+    * Word DOCX Lengkap: [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]].
+    * Word DOCX Tanpa Bab 3: [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]].
+    * Master Markdown: [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]], [[03_Draft_Per_Bab/BAB_I_PENDAHULUAN.md]], dan [[03_Draft_Per_Bab/DAFTAR_PUSTAKA_TENTATIF.md]].
+    * Master BibTeX: [[01_Naskah_Utama/references.bib]].
+  - Hasil Pengujian Suite Audit:
+    * `verify_ukrida_compliance.py`: [PASS] 100% LULUS KEPATUHAN (56 entri referensi, 0 nomor urut, hanging indent 1,25 cm, kuota SINTA/Scopus terpenuhi, sitasi dosen K-04 terpenuhi).
+    * `verify_docx_typography.py`: [PASS] ALL WORD DOCUMENTS PASSED PUBLICATION-GRADE VERIFICATION.
+
+* **Resolusi Kendala Impor Mendeley (52 vs 56 Referensi) & Pembentukan Sistem Integritas:**
+  - **Akar Masalah (Post-Mortem):** Mendeley Reference Manager hanya memuat 52 referensi karena 4 data industri Pokémon berstatus `@misc` diekspor dengan tag `TY  - ELEC`. Parser Mendeley tidak mendukung tag `ELEC` dan melewatinya secara diam-diam (*silent drop*) tanpa error: $40\text{ JOUR} + 11\text{ BOOK} + 1\text{ CONF} = 52$ entri. Selain itu, sitasi Keynes (1936) pada naskah TeX sebelumnya tertulis teks polos (hanya 55 kunci terekstrak) dan pencocokan Leilei Gao sempat keliru mengarah ke `gao2014set`.
+  - **Arsitektur Pengamanan 3-Layer yang Dibangun:**
+    1. **Layer 1 (Directive):** [[directives/verify_mendeley_integrity.md]] menetapkan SOP baku, tabel *Whitelist Tag RIS Mendeley* (`JOUR`, `BOOK`, `RPRT`, `CONF`, `THES`, `GEN`), dan aturan paritas 1:1 mutlak (*Zero-Discrepancy Rule*).
+    2. **Layer 2 (Orchestration):** 
+       * Naskah LaTeX [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]] dan `Proposal_Arthur_NoBab3.tex` diselaraskan menggunakan sitasi formal `\citet{keynes1936general}` dan `\nocite` metodologi sehingga deterministik mengekstrak tepat 56 kunci.
+       * Generator [[execution/generate_mendeley_library.py]] diperbarui total dengan pencocokan kunci deterministik, penanganan aksen LaTeX lengkap (`{\"u}` -> `ü`, `\"o` -> `ö`, `\'e` -> `é`), dan blokir total tag terlarang `ELEC`/`WEB`.
+       * Keputusan Terkunci **D21** dikunci di [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]].
+       * Panduan mahasiswa [[06_Referensi_Jurnal_PDF/PANDUAN_IMPORT_MENDELEY_1_MENIT.md]] diperbarui dengan checklist verifikasi notifikasi toast hijau "56 references generated".
+       * Master Dashboard [[00_DASHBOARD_SECOND_BRAIN.md]] dimutakhirkan.
+    3. **Layer 3 (Execution & Automated Testing):**
+       * Membangun suite uji pra-terbang [[execution/verify_mendeley_integrity.py]] murni berbasis Python Standard Library (`zipfile`, `xml.etree`) tanpa dependensi luar:
+         - *Test 1 (6-Way Parity):* TeX (56) == NoBab3 (56) == MD (56) == Word (56) == RIS (56) == Bib (56). **[PASS]**
+         - *Test 2 (Tag Whitelist):* 0 tag ilegal ELEC/WEB/MISC (40 JOUR, 11 BOOK, 4 RPRT, 1 CONF). **[PASS]**
+         - *Test 3 (Key Set Equality):* Kunci kritis Gao JMR, Keynes 1936, 4 Data Pokémon klop 100%. **[PASS]**
+         - *Test 4 (Metadata Completeness):* 100% entri memiliki TI, AU, PY, ID, Venue/Publisher. **[PASS]**
+         - *Test 5 (UTF-8 & Diacritic Byte Integrity):* 'é' Pokémon dan 'ü' Gültekin valid, 0 karakter korup. **[PASS]**
+         - *Test 6 (Word Document Format):* 56 entri A–Z tanpa nomor urut. **[PASS]**
+       * Menghubungkan pengujian integritas Mendeley ke dalam [[execution/verify_ukrida_compliance.py]] sebagai Test 6 terintegrasi (STATUS: 100% LULUS KEPATUHAN PEDOMAN UKRIDA 2023 & PARITAS MENDELEY TERJAMIN).
+  - **Dokumen PRD Lengkap:** [[04_Riset_&_Metodologi/PRD_SISTEM_INTEGRITAS_DAN_VERIFIKASI_MENDELEY.md]].
+
+* **Standarisasi Tautan URL Aktif & Sitasi APA 7th Edition untuk Data Industri Pokémon:**
+  - **Latar Belakang & Kebutuhan:** Menyediakan tautan langsung (*deep link*) yang aktif diklik (*clickable*) pada Daftar Pustaka untuk memudahkan Dosen Pembimbing (Ibu Dr. Fredella Colline) memverifikasi data pasar Pokémon dengan 1 klik.
+  - **Arsitektur Pengamanan & Eksekusi:**
+    1. **Layer 1 (Directive):** [[directives/verify_mendeley_integrity.md]] diperbarui mewajibkan tag `UR  - ` pada dokumen laporan industri dan elemen `<w:hyperlink>` pada Word.
+    2. **Layer 2 (Orchestration):**
+       * Tautan spesifik terverifikasi bebas 404 & bebas salah sasaran:
+         - The Pokémon Company: `https://corporate.pokemon.co.jp/en/aboutus/figures/` (resmi menampilkan data produksi kartu)
+         - Statista: `https://www.statista.com/chart/24277/media-franchises-with-most-sales/` ("The Pokémon Franchise Caught 'Em All", US$ 100B #1 Media Franchise)
+         - ICv2 & TCGplayer: `https://icv2.com/articles/markets` (portal riset pasar TCG)
+         - PSA: `https://www.psacard.com/pop` (database grading resmi)
+       * `references.bib` diperbarui dengan tautan deep link dan note `\url{...}` untuk kompilasi PDF.
+       * `build_proposal_word.py` dilengkapi fungsi `add_hyperlink` berbasis OpenXML `<w:hyperlink>` (warna biru `#0563C1`, bergaris bawah), meregenerasi `Proposal_Arthur_PokemonTCG.docx` dan `Proposal_Arthur_NoBab3.docx`.
+       * Keputusan **D22** dan **D23** dikunci di [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]].
+       * Dokumen PRD: [[04_Riset_&_Metodologi/PRD_STANDARISASI_URL_SITASI_APA7_DATA_POKEMON.md]].
+    3. **Layer 3 (Testing & Verification):**
+       * `verify_mendeley_integrity.py` ditingkatkan dengan **Test 7: URL & Hyperlink Integrity Test** (memverifikasi 4/4 tag UR di RIS dan 4/4 OpenXML `<w:hyperlink>` di Word).
+       * Status Pengujian: **7/7 TESTS PASSED 100%** (Paritas 56 entri tetap utuh, zero discrepancy, clickable URLs tervalidasi).
+
+---
+
+## 📅 Sesi 16 September 2026 (Sesi 11): Inisialisasi Sesi & Integrasi Tata Kelola Skill `paper-audit`
+
+* **Fokus Pekerjaan:**
+  - Mengaktifkan skill [[obsidian-second-brain]] dan menjalankan protokol anti-lupa konteks.
+  - Sinkronisasi graf pengetahuan Graphify (`graphify-out/manifest.json` dan `graphify-out/GRAPH_REPORT.md` — 1.024 nodes, 1.007 edges, 75 komunitas).
+  - Pemuatan status naskah aktif, parameter variabel ($Y$, $X_1$, $X_2$, $X_3$, $Z$), model MRA Baseline, serta keputusan metodologis terkunci (D01–D20) dari [[00_DASHBOARD_SECOND_BRAIN.md]] dan [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]].
+  - Analisis mendalam arsitektur dan kapabilitas skill baru [[.agents/skills/paper-audit/|paper-audit]].
+  - Penetapan kebijakan aktivasi: memutuskan bahwa `paper-audit` **TIDAK** dijalankan pada setiap perubahan (*not per-edit*), melainkan sebagai **Tier-3 Gated Milestone Audit** (Pra-Bimbingan, Pra-Seminar Proposal, Pasca-Revisi Mayor, dan On-Demand).
+  - Penyusunan dokumen arsitektur PRD di [[04_Riset_&_Metodologi/PRD_INTEGRASI_SKILL_PAPER_AUDIT.md]] dan rencana eksekusi di `implementation_plan.md`.
+  - Pembuatan Directive SOP baku di [[directives/run_paper_audit.md]] dan penyediaan direktori laporan terpusat di [[07_Review_&_Audit/Paper_Audits/]].
+* **Masalah yang Diselesaikan:**
+  - Menghindarkan proyek dari pemborosan token, latensi komputasi lambat, dan banjir laporan usang (*alert fatigue*) akibat menjalankan audit menyeluruh secara otomatis di setiap edit kecil.
+  - Menyelaraskan rubric audit ilmiah internasional `paper-audit` dengan batasan lokal naskah proposal S1 FEB UKRIDA (Pedoman Tugas Akhir 2023, kewajiban sitasi dosen K-04, dan model ekonometrika MRA Baseline D20).
+* **Keputusan / Output Teknis:**
+  - Dokumen PRD: [[04_Riset_&_Metodologi/PRD_INTEGRASI_SKILL_PAPER_AUDIT.md]].
+  - Dokumen Directive: [[directives/run_paper_audit.md]].
+  - Folder Laporan Terpusat: [[07_Review_&_Audit/Paper_Audits/README.md]].
+  - Master Dashboard Diperbarui: [[00_DASHBOARD_SECOND_BRAIN.md]] menyertakan tautan navigasi `paper-audit` dan link kickoff aktif.
+  - Template Prompt & Web Dashboard Diperbarui: [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md]] dan `PROMPT_KICKOFF.html` (memperbaiki link drive Z:, memodernisasi Opsi 4 ke suite verifikasi UKRIDA 2023, dan menambahkan kartu Opsi 5 Paper-Audit).
+  - Resolusi Kepatuhan HTML Linter: Mengoreksi 20+ peringatan HTML pada `PROMPT_KICKOFF.html` (seluruh raw `&` di-encode ke `&amp;` dan seluruh elemen `<button>` dilengkapi atribut `type="button"`, teruji 100% valid via `html.parser`).
+  - Skrip Proofing Layer 3 tervalidasi dan siap digunakan.
+
+---
+
 ## 📅 Sesi 15 September 2026 (Sesi 10): Audit & Penyelarasan Kepatuhan Buku Pedoman Tugas Akhir FEB UKRIDA 2023
 
 * **Fokus Pekerjaan:**

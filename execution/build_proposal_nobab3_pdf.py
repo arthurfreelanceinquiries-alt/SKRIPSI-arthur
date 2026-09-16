@@ -110,6 +110,11 @@ def extract_nobab3_tex(source_text: str) -> str:
     pre_bab3 = source_text[:bab3_start_idx].rstrip()
     post_bab3 = source_text[pustaka_start_idx:].lstrip()
 
+    # Pastikan referensi metodologi Bab 3 tetap terbit di Daftar Pustaka NoBab3 (Paritas 56 Ref)
+    nocite_block = "\n% Menyertakan referensi metodologi Bab 3 agar bibliografi lengkap 56 entri\n\\nocite{sekaran2016research, sugiyono2019metode, hair2019multivariate, ghozali2018aplikasi}\n"
+    if "\\nocite" not in post_bab3:
+        post_bab3 = re.sub(r'(\\bibliography\{)', lambda m: nocite_block + m.group(1), post_bab3, count=1)
+
     nobab3_text = pre_bab3 + "\n\n" + post_bab3
     return nobab3_text
 

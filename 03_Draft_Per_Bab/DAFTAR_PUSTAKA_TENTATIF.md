@@ -72,6 +72,8 @@ Pranggabayu, B. dan Andjarwati, A. L. 2022. “Pengaruh hedonic shopping motivat
 
 Prasetio, A., Fauzi, M., dan Irawan, A. 2021. “The role of hedonic motivation in impulsive buying on e-commerce platforms”. *International Journal of Data and Network Science* 5(4): 689–698.
 
+Professional Sports Authenticator (PSA). 2024. *Trading Card Population Report and Collectibles Auction Price Realized Index*. Santa Ana, CA: Collectors Universe. https://www.psacard.com/pop
+
 Rook, D. W. 1987. “The buying impulse”. *Journal of Consumer Research* 14(2): 189–199.
 
 Rook, D. W. dan Fisher, R. J. 1995. “Normative influences on impulsive buying behavior”. *Journal of Consumer Research* 22(3): 305–313.
@@ -84,6 +86,8 @@ Simon, H. A. 1955. “A behavioral model of rational choice”. *The Quarterly J
 
 Spero, I. dan Stone, M. 2004. “Agents of change: how young consumers are changing the world of marketing”. *Qualitative Market Research: An International Journal* 7(2): 153–159.
 
+Statista. 2024. *Top 10 Highest-Grossing Media Franchises Worldwide of All Time*. New York: Statista Inc. https://www.statista.com/chart/24277/media-franchises-with-most-sales/
+
 Stern, H. 1962. “The significance of impulse buying today”. *Journal of Marketing* 26(2): 59–62.
 
 Sugiyono. 2019. *Metode Penelitian Kuantitatif, Kualitatif, dan R&D*. Edisi 2. Bandung: Alfabeta.
@@ -91,6 +95,8 @@ Sugiyono. 2019. *Metode Penelitian Kuantitatif, Kualitatif, dan R&D*. Edisi 2. B
 Sultan, A. J., Joireman, J., dan Sprott, D. E. 2012. “Building consumers' impulsive buying model: The moderating role of self-control”. *Journal of Consumer Marketing* 29(1): 61–73.
 
 Tan, D. A. dan Adyantari, A. 2024. “Ketidakpastian blind box dan perilaku pembelian impulsif: Peran nilai fungsional, emosional, dan sosial”. *Bisma: Jurnal Bisnis dan Manajemen* 20(2): 145–158.
+
+The Pokémon Company. 2024. *Corporate Business Data and Trading Card Game Historical Production Statistics*. Tokyo: The Pokémon Company. https://corporate.pokemon.co.jp/en/aboutus/figures/
 
 Tangney, J. P., Baumeister, R. F., dan Boone, A. L. 2004. “High self-control predicts good adjustment, less pathology, better grades, and interpersonal success”. *Journal of Personality* 72(2): 271–324.
 

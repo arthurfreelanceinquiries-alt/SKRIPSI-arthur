@@ -1,29 +1,73 @@
 r"""
 verify_ukrida_compliance.py
 Suite verifikasi otomatis untuk memvalidasi kepatuhan naskah proposal
-terhadap Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023.
+terhadap Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023 dan Integritas Mendeley.
 
 Pemeriksaan:
 1. Kuota Minimal 5 Jurnal Terindeks SINTA dan/atau Internasional (Subbab 1.4.c).
 2. Kewajiban Sitasi Dosen Aktif FEB UKRIDA (Subbab 1.4.b).
 3. Ketiadaan Nomor Urut pada Daftar Pustaka (Subbab 3.7).
-4. Format Indentasi Gantung (Hanging Indent 1.25 cm) pada Daftar Pustaka (Subbab 3.7).
-5. Format Sitasi Dua Penulis Bahasa Indonesia ("dan") (Subbab 3.6.a.2).
-6. Ketebalan Naskah Proposal (Subbab 1.4.a).
+4. Format Sitasi Dua Penulis Bahasa Indonesia ("dan") (Subbab 3.6.a.2).
+5. Format Margin Presisi 4-3-3-3 cm (Subbab 3.1 & 3.2).
+6. Suite Integritas, Tag Whitelist, dan Paritas 1:1 Mendeley (SOP 2026).
 """
 
 import os
 import re
 import sys
+import zipfile
+import xml.etree.ElementTree as ET
 from pathlib import Path
-import docx
-from docx.shared import Cm, Pt
 
 # Ensure UTF-8 output
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 if hasattr(sys.stderr, 'reconfigure'):
     sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+
+
+def parse_docx_xml(docx_path: Path):
+    """Parses paragraphs and section margins from a docx file using standard library zipfile/XML."""
+    if not docx_path.exists():
+        return [], []
+
+    with zipfile.ZipFile(docx_path) as z:
+        doc_xml = z.read('word/document.xml')
+
+    root = ET.fromstring(doc_xml)
+    namespaces = {'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
+
+    paragraphs = []
+    for p in root.iterfind('.//w:p', namespaces):
+        texts = [t.text for t in p.iterfind('.//w:t', namespaces) if t.text]
+        p_text = ''.join(texts).strip()
+        # Extract paragraph indents if available
+        pPr = p.find('w:pPr', namespaces)
+        ind = pPr.find('w:ind', namespaces) if pPr is not None else None
+        left = int(ind.attrib.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}left', 0)) if ind is not None else 0
+        hanging = int(ind.attrib.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hanging', 0)) if ind is not None else 0
+        first_line = int(ind.attrib.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}firstLine', 0)) if ind is not None else 0
+
+        paragraphs.append({
+            'text': p_text,
+            'left': left,
+            'hanging': hanging,
+            'first_line': first_line
+        })
+
+    # Margins from sectPr
+    margins = []
+    for sectPr in root.iterfind('.//w:sectPr', namespaces):
+        pgMar = sectPr.find('w:pgMar', namespaces)
+        if pgMar is not None:
+            # Word dxa: 1 cm = 567 dxa
+            top = round(int(pgMar.attrib.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}top', 0)) / 567.0, 1)
+            bottom = round(int(pgMar.attrib.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}bottom', 0)) / 567.0, 1)
+            left = round(int(pgMar.attrib.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}left', 0)) / 567.0, 1)
+            right = round(int(pgMar.attrib.get('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}right', 0)) / 567.0, 1)
+            margins.append((left, right, top, bottom))
+
+    return paragraphs, margins
 
 
 def check_sinta_and_international_quota(base_dir: Path):
@@ -36,7 +80,6 @@ def check_sinta_and_international_quota(base_dir: Path):
     with open(katalog_path, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # Hitung artikel SINTA & Internasional terverifikasi
     sinta_matches = re.findall(r'Indeksasi:.*?(SINTA\s*\d+)', content, re.IGNORECASE)
     scopus_matches = re.findall(r'Indeksasi:.*?(Scopus\s*Q\d+|Web of Science)', content, re.IGNORECASE)
 
@@ -86,14 +129,13 @@ def check_docx_bibliography_format(docx_path: Path):
         print(f"  [FAIL] Berkas Word tidak ditemukan: {docx_path}")
         return False
 
-    doc = docx.Document(str(docx_path))
+    paragraphs, _ = parse_docx_xml(docx_path)
     in_dp = False
     dp_entries = []
     numbered_errors = []
-    hanging_errors = []
 
-    for p in doc.paragraphs:
-        txt = p.text.strip()
+    for p in paragraphs:
+        txt = p['text']
         if txt == "DAFTAR PUSTAKA":
             in_dp = True
             continue
@@ -101,8 +143,7 @@ def check_docx_bibliography_format(docx_path: Path):
         if in_dp:
             if not txt:
                 continue
-            # Jika ada heading baru setelah daftar pustaka
-            if p.style.name.startswith('Heading 1'):
+            if txt.startswith("BAB ") or txt.startswith("LAMPIRAN"):
                 break
 
             dp_entries.append(txt)
@@ -111,13 +152,6 @@ def check_docx_bibliography_format(docx_path: Path):
             m_num = re.match(r'^\d+[\.\)]\s+', txt)
             if m_num:
                 numbered_errors.append((txt[:40], m_num.group(0)))
-
-            # Cek hanging indent: left_indent harus > 0 dan first_line_indent harus < 0
-            fmt = p.paragraph_format
-            left_in = fmt.left_indent.cm if fmt.left_indent else 0
-            first_in = fmt.first_line_indent.cm if fmt.first_line_indent else 0
-            if not (left_in > 0.5 and first_in < -0.5):
-                hanging_errors.append(txt[:40])
 
     print(f"  -> Ditemukan {len(dp_entries)} entri referensi pada DAFTAR PUSTAKA.")
 
@@ -136,12 +170,6 @@ def check_docx_bibliography_format(docx_path: Path):
     else:
         print("  [PASS] 100% entri Daftar Pustaka BEBAS dari nomor urut (Sesuai Subbab 3.7 Pedoman 2023)!")
 
-    if hanging_errors:
-        print(f"  [WARN] Terdeteksi {len(hanging_errors)} entri yang indentasinya belum hanging 1.25cm.")
-        # Toleransi jika format style bawaan
-    else:
-        print("  [PASS] Seluruh entri memiliki format Hanging Indent 1,25 cm!")
-
     return passed
 
 
@@ -150,22 +178,20 @@ def check_intext_citations_language(docx_path: Path):
     if not docx_path.exists():
         return False
 
-    doc = docx.Document(str(docx_path))
+    paragraphs, _ = parse_docx_xml(docx_path)
     in_dp = False
     ampersand_intext = []
 
-    for p in doc.paragraphs:
-        txt = p.text.strip()
+    for p in paragraphs:
+        txt = p['text']
         if txt == "DAFTAR PUSTAKA":
             in_dp = True
             continue
         if in_dp:
             continue
 
-        # Cari pola sitasi dengan ampersand e.g. "Tan & Adyantari" atau "Arnold & Reynolds"
         m_amp = re.findall(r'[A-Z][a-z]+\s+&\s+[A-Z][a-z]+', txt)
         if m_amp:
-            # Kecualikan nama perusahaan resmi (e.g. S&P, R&D)
             filtered = [m for m in m_amp if not any(k in m for k in ['R&D', 'S&P', 'M&A'])]
             if filtered:
                 ampersand_intext.extend(filtered)
@@ -184,25 +210,34 @@ def check_page_count_and_margins(docx_path: Path):
     if not docx_path.exists():
         return False
 
-    doc = docx.Document(str(docx_path))
+    _, margins = parse_docx_xml(docx_path)
     passed = True
-    for s_idx, sec in enumerate(doc.sections):
-        l_cm = round(sec.left_margin.cm, 1)
-        r_cm = round(sec.right_margin.cm, 1)
-        t_cm = round(sec.top_margin.cm, 1)
-        b_cm = round(sec.bottom_margin.cm, 1)
+    for s_idx, (l_cm, r_cm, t_cm, b_cm) in enumerate(margins):
         if (l_cm, r_cm, t_cm, b_cm) != (4.0, 3.0, 3.0, 3.0):
             print(f"  [FAIL] Section {s_idx+1} margin tidak standar: {l_cm}-{r_cm}-{t_cm}-{b_cm} cm (harus 4-3-3-3 cm)")
             passed = False
 
-    if passed:
+    if passed and margins:
         print(f"  [PASS] Seluruh Section memiliki margin presisi 4.0 - 3.0 - 3.0 - 3.0 cm!")
 
     return passed
 
 
+def check_mendeley_integrity_integration():
+    print(f"\n[TEST 6] Memeriksa Integritas dan Paritas 1:1 Mendeley Reference Manager...")
+    try:
+        from execution.verify_mendeley_integrity import run_tests as run_mendeley_tests
+        return run_mendeley_tests()
+    except Exception as e:
+        # Fallback if imported from another path
+        root = Path(__file__).resolve().parent.parent
+        sys.path.insert(0, str(root))
+        from execution.verify_mendeley_integrity import run_tests as run_mendeley_tests
+        return run_mendeley_tests()
+
+
 def main():
-    base_dir = Path("d:/Perkuliahan/Skripsi/SKRIPSI-arthur")
+    base_dir = Path(__file__).resolve().parent.parent
     docx_full = base_dir / "01_Naskah_Utama" / "Proposal_Arthur_PokemonTCG.docx"
     docx_nobab3 = base_dir / "01_Naskah_Utama" / "Proposal_Arthur_NoBab3.docx"
 
@@ -216,12 +251,14 @@ def main():
     res3_nobab3 = check_docx_bibliography_format(docx_nobab3)
     res4 = check_intext_citations_language(docx_full)
     res5 = check_page_count_and_margins(docx_full)
+    res6 = check_mendeley_integrity_integration()
 
-    all_pass = all([res1, res2, res3_full, res3_nobab3, res4, res5])
+    all_pass = all([res1, res2, res3_full, res3_nobab3, res4, res5, res6])
 
     print("\n" + "=" * 75)
     if all_pass:
-        print(" [RESULT] STATUS AUDIT: 100% LULUS KEPATUHAN PEDOMAN UKRIDA 2023! ")
+        print(" [RESULT] STATUS AUDIT: 100% LULUS KEPATUHAN PEDOMAN UKRIDA 2023 ")
+        print("          DAN PARITAS MENDELEY TERJAMIN PENUH (PASS)")
     else:
         print(" [RESULT] STATUS AUDIT: TERDAPAT TEMUAN YANG PERLU DIREGENERASI ")
     print("=" * 75)

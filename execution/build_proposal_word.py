@@ -821,7 +821,7 @@ def build_full_proposal(skip_chapter3: bool = False):
     img_alur = base_dir / "images" / "diagram_alur_penelitian.png"
     img_fig11 = base_dir / "images" / "gambar1_1_media_franchise_ranking.png"
     img_fig12 = base_dir / "images" / "gambar1_2_pokemon_tcg_production_growth.png"
-    img_fig13 = base_dir / "images" / "gambar1_3_tcg_market_share_donut.png"
+    img_fig13 = base_dir / "images" / "gambar1_3_psa_grading_price_disparity.png"
 
     print(f"[*] Starting Publication-Grade Word Proposal Generation...")
     doc = Document()
@@ -1352,13 +1352,13 @@ def build_full_proposal(skip_chapter3: bool = False):
     lof_items_nobab3 = [
         ("Gambar 1.1", "Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa", "2"),
         ("Gambar 1.2", "Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024", "3"),
-        ("Gambar 1.3", "Estimasi Pangsa Pasar Industri Trading Card Game (TCG) Global Tahun 2024", "4"),
+        ("Gambar 1.3", "Disparitas Harga Pasar Sekunder Kartu Pokémon Mentah (Ungraded) vs. Bersertifikasi PSA 10 Gem Mint Seri Shining Fates", "5"),
         ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "20")
     ]
     lof_items_full = [
         ("Gambar 1.1", "Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa", "2"),
         ("Gambar 1.2", "Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024", "3"),
-        ("Gambar 1.3", "Estimasi Pangsa Pasar Industri Trading Card Game (TCG) Global Tahun 2024", "4"),
+        ("Gambar 1.3", "Disparitas Harga Pasar Sekunder Kartu Pokémon Mentah (Ungraded) vs. Bersertifikasi PSA 10 Gem Mint Seri Shining Fates", "5"),
         ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "20"),
         ("Gambar 3.1", "Diagram Alur Pelaksanaan Penelitian", "33")
     ]
@@ -1532,8 +1532,8 @@ def build_full_proposal(skip_chapter3: bool = False):
                         r_s.font.size = Pt(10)
                         r_s.font.italic = True
 
-                # 3. Gambar 1.3 (TCG Market Share Donut)
-                elif ("gambar1_3" in fig_text or "tcg_market_share" in fig_text or "market_share" in fig_text) and not has_inserted_fig13:
+                # 3. Gambar 1.3 (PriceCharting PSA Grading Price Disparity)
+                elif ("gambar1_3" in fig_text or "psa_grading_disparity" in fig_text or "pricecharting_disparity" in fig_text or "pricecharting" in fig_text or "psa_grading" in fig_text) and not has_inserted_fig13:
                     has_inserted_fig13 = True
                     if img_fig13.exists():
                         p_img = doc.add_paragraph()
@@ -1541,21 +1541,21 @@ def build_full_proposal(skip_chapter3: bool = False):
                         p_img.paragraph_format.space_before = Pt(12)
                         p_img.paragraph_format.space_after = Pt(4)
                         p_img.paragraph_format.first_line_indent = Cm(0)
-                        p_img.add_run().add_picture(str(img_fig13), width=Cm(12.5))
+                        p_img.add_run().add_picture(str(img_fig13), width=Cm(13.5))
 
                         p_cap = doc.add_paragraph()
                         p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
                         p_cap.paragraph_format.space_before = Pt(2)
                         p_cap.paragraph_format.space_after = Pt(2)
                         p_cap.paragraph_format.first_line_indent = Cm(0)
-                        p_cap.add_run("Gambar 1.3. Estimasi Pangsa Pasar Industri Trading Card Game (TCG) Global Tahun 2024").font.bold = True
+                        p_cap.add_run("Gambar 1.3. Disparitas Harga Pasar Sekunder Kartu Pokémon Mentah (Ungraded) vs. Bersertifikasi PSA 10 Gem Mint Seri Shining Fates").font.bold = True
 
                         p_src = doc.add_paragraph()
                         p_src.alignment = WD_ALIGN_PARAGRAPH.CENTER
                         p_src.paragraph_format.space_before = Pt(0)
                         p_src.paragraph_format.space_after = Pt(12)
                         p_src.paragraph_format.first_line_indent = Cm(0)
-                        r_s = p_src.add_run("Sumber: ICv2 dan TCGplayer Industry Research (2024).")
+                        r_s = p_src.add_run("Sumber: PriceCharting Market Database – Pokémon Shining Fates Price Guide (2024).")
                         r_s.font.size = Pt(10)
                         r_s.font.italic = True
 
@@ -1695,8 +1695,8 @@ def build_full_proposal(skip_chapter3: bool = False):
                         break
                 continue
 
-            # Image detection for Gambar 1.3 (TCG Market Share Donut)
-            if ("gambar1_3_tcg_market_share_donut" in line_str or "Gambar 1.3" in line_str) and not has_inserted_fig13:
+            # Image detection for Gambar 1.3 (PSA Grading Price Disparity)
+            if ("gambar1_3_psa_grading_price_disparity" in line_str or "Gambar 1.3" in line_str) and not has_inserted_fig13:
                 has_inserted_fig13 = True
                 if img_fig13.exists():
                     p_img = doc.add_paragraph()
@@ -1704,21 +1704,21 @@ def build_full_proposal(skip_chapter3: bool = False):
                     p_img.paragraph_format.space_before = Pt(12)
                     p_img.paragraph_format.space_after = Pt(4)
                     p_img.paragraph_format.first_line_indent = Cm(0)
-                    p_img.add_run().add_picture(str(img_fig13), width=Cm(12.5))
+                    p_img.add_run().add_picture(str(img_fig13), width=Cm(13.5))
 
                     p_cap = doc.add_paragraph()
                     p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
                     p_cap.paragraph_format.space_before = Pt(2)
                     p_cap.paragraph_format.space_after = Pt(2)
                     p_cap.paragraph_format.first_line_indent = Cm(0)
-                    p_cap.add_run("Gambar 1.3. Estimasi Pangsa Pasar Industri Trading Card Game (TCG) Global Tahun 2024").font.bold = True
+                    p_cap.add_run("Gambar 1.3. Disparitas Harga Rata-rata Pasar Sekunder Kartu Pokémon Mentah (Raw) vs. Bersertifikasi PSA 10 Gem Mint").font.bold = True
 
                     p_src = doc.add_paragraph()
                     p_src.alignment = WD_ALIGN_PARAGRAPH.CENTER
                     p_src.paragraph_format.space_before = Pt(0)
                     p_src.paragraph_format.space_after = Pt(12)
                     p_src.paragraph_format.first_line_indent = Cm(0)
-                    r_s = p_src.add_run("Sumber: ICv2 dan TCGplayer Industry Research, 2024.")
+                    r_s = p_src.add_run("Sumber: PSA (Professional Sports Authenticator) Population Report dan Auction Prices Realized (2024).")
                     r_s.font.size = Pt(10)
                     r_s.font.italic = True
                 line_idx += 1
@@ -1913,8 +1913,9 @@ def build_full_proposal(skip_chapter3: bool = False):
 def inject_native_word_toc(docx_path):
     """Inserts native Microsoft Word TableOfContents component via Word COM.
     Ensures full compatibility with Google Docs Table of Contents widget and dot leaders."""
+    win_path = str(docx_path).replace('/', '\\')
     ps_script = f"""
-$docxPath = "{str(docx_path).replace('/', '\\')}"
+$docxPath = "{win_path}"
 $word = New-Object -ComObject Word.Application
 $word.Visible = $false
 try {{
@@ -2161,6 +2162,44 @@ def build_tabel_jadwal(doc):
     r_s.font.italic = True
 
 
+def add_hyperlink(paragraph, url, text, color="0563C1", underline=True):
+    """Adds an active, clickable hyperlink to a paragraph in python-docx using OpenXML."""
+    try:
+        import docx.opc.constants
+        part = paragraph.part
+        r_id = part.relate_to(url, docx.opc.constants.RELATIONSHIP_TYPE.HYPERLINK, is_external=True)
+
+        hyperlink = parse_xml(f'<w:hyperlink xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" r:id="{r_id}" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"/>')
+        new_run = parse_xml(f'<w:r xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"/>')
+        rPr = parse_xml(f'<w:rPr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"/>')
+
+        if color:
+            c = parse_xml(f'<w:color xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" w:val="{color}"/>')
+            rPr.append(c)
+        if underline:
+            u = parse_xml(f'<w:u xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" w:val="single"/>')
+            rPr.append(u)
+
+        rFonts = parse_xml(f'<w:rFonts xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>')
+        rPr.append(rFonts)
+        sz = parse_xml(f'<w:sz xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" w:val="24"/>')
+        rPr.append(sz)
+
+        new_run.append(rPr)
+        text_node = parse_xml(f'<w:t xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">{text}</w:t>')
+        new_run.append(text_node)
+        hyperlink.append(new_run)
+        paragraph._p.append(hyperlink)
+        return hyperlink
+    except Exception as e:
+        # Fallback to standard styled run if XML fails
+        r = paragraph.add_run(text)
+        r.font.name = "Times New Roman"
+        r.font.size = Pt(12)
+        r.font.underline = True
+        return r
+
+
 def build_daftar_pustaka(doc, content):
     """Builds FEB UKRIDA 2023 compliant bibliography with 1.25cm hanging indent without numbering."""
     lines = content.split('\n')
@@ -2186,7 +2225,20 @@ def build_daftar_pustaka(doc, content):
         p.paragraph_format.first_line_indent = Cm(-1.25)
 
         clean_bib = clean_academic_text(line_str)
-        parse_markdown_runs(p, clean_bib)
+
+        # Detect URL in the bibliography entry (e.g. https://...)
+        url_match = re.search(r'(https?://[^\s<>"]+)', clean_bib)
+        if url_match:
+            url = url_match.group(1).rstrip('.')
+            prefix = clean_bib[:url_match.start()].rstrip()
+            parse_markdown_runs(p, prefix)
+            p.add_run(" ")
+            add_hyperlink(p, url, url, color="0563C1", underline=True)
+            suffix = clean_bib[url_match.end():].strip()
+            if suffix:
+                p.add_run(" " + suffix)
+        else:
+            parse_markdown_runs(p, clean_bib)
 
 
 if __name__ == "__main__":

@@ -11,7 +11,7 @@
 ## 🌐 1. KICKOFF WEB DASHBOARD (PILIHAN TERBAIK & PALING INTERAKTIF)
 
 > 🚀 **Rekomendasi Utama:** Buka aplikasi web interaktif dengan tombol salin 1-klik di browser Anda:  
-> 👉 **[KLIK DI SINI UNTUK MEMBUKA PROMPT_KICKOFF.HTML](file:///d:/Perkuliahan/Skripsi/SKRIPSI-arthur/PROMPT_KICKOFF.html)**  
+> 👉 **[KLIK DI SINI UNTUK MEMBUKA PROMPT_KICKOFF.HTML](file:///z:/SKRIPSII/SKRIPSI%20ARTHUR/SKRIPSI-arthur-main/SKRIPSI-arthur-main/PROMPT_KICKOFF.html)**  
 > *(Memiliki tombol salin beranimasi, status hijau otomatis saat tersalin, dan notifikasi mengambang).*
 
 <iframe src="PROMPT_KICKOFF.html" width="100%" height="700px" style="border: 1.5px solid rgba(59, 130, 246, 0.3); border-radius: 14px; margin-top: 10px; margin-bottom: 20px;"></iframe>
@@ -38,7 +38,7 @@ Setelah kamu membaca file-file di atas, tolong berikan ringkasan 3 poin:
 
 ---
 
-## 🎯 2. PROMPT ALTERNATIF (SESUAI KEBUTUHAN KHUSUS)
+## 🎯 3. PROMPT ALTERNATIF (SESUAI KEBUTUHAN KHUSUS)
 
 Jika Anda ingin sesi hari ini berfokus pada pekerjaan spesifik, silakan klik tombol **Copy** pada salah satu opsi berikut:
 
@@ -74,15 +74,33 @@ Bisa kita mulai dari pertanyaan pertama?
 
 ---
 
-### 🔹 Opsi 4: Sesi Cek & Verifikasi Naskah / Kompilasi PDF
-*Gunakan ini jika Anda ingin memastikan semua file, grafik, dan PDF bebas dari error:*
+### 🔹 Opsi 4: Sesi Cek & Verifikasi Naskah / Kepatuhan UKRIDA 2023
+*Gunakan ini jika Anda ingin memastikan semua file, grafik, kepatuhan pedoman UKRIDA, dan format Word bebas dari error:*
 
 ```text
-Halo! Jalankan skill "obsidian-second-brain". Tolong lakukan audit kesehatan naskah dan build pipeline:
+Halo! Jalankan skill "obsidian-second-brain". Tolong lakukan audit kesehatan naskah, kepatuhan UKRIDA, dan verifikasi dokumen:
 
 1. Periksa integritas file di `01_Naskah_Utama/` (pastikan logo UKRIDA pentagram vektor terpasang baik di proposal lengkap maupun proposal tanpa Bab 3).
-2. Jalankan skrip verifikasi `execution/verify_nobab3_pdf.py` dan `execution/verify_pdf_headers.py`.
-3. Laporkan status kompilasi PDF dan pastikan dokumen Word (.docx) tetap sinkron.
+2. Jalankan skrip verifikasi kepatuhan UKRIDA 2023: `execution/verify_ukrida_compliance.py`.
+3. Jalankan skrip verifikasi tipografi Word publikasi: `execution/verify_docx_typography.py`.
+4. Jalankan skrip paritas PDF vs Word: `execution/verify_pdf_docx_parity.py`.
+5. Laporkan status kompilasi PDF dan pastikan dokumen Word (.docx) tetap 100% sinkron.
+```
+
+---
+
+### 🔹 Opsi 5: Sesi Audit Ilmiah Naskah (Pra-Bimbingan / Pra-Sidang dengan Paper-Audit)
+*Gunakan ini jika Anda ingin melakukan peer review ilmiah berstandar tinggi sebelum setor draf ke Ibu Fredella atau sebelum seminar proposal:*
+
+```text
+Halo! Jalankan skill "obsidian-second-brain" dan lakukan audit ilmiah naskah menggunakan skill "paper-audit":
+
+1. Tolong baca SOP audit di `directives/run_paper_audit.md` dan pedoman di `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md`.
+2. Lakukan audit ilmiah komprehensif (methods, technical/math, claims/citations) terhadap naskah proposal `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf` (atau `.tex`).
+3. Jalankan "challenger pass" untuk menyaring temuan agar tidak terjadi false alarm terhadap standar lokal FEB UKRIDA 2023.
+4. Terbitkan laporan audit resmi dengan format F001, F002, dst. ke dalam folder `07_Review_&_Audit/Paper_Audits/` dan catat ke `LOG_SESI_SECOND_BRAIN.md`.
+
+Apakah kamu siap memulai audit naskah ini?
 ```
 
 ---
