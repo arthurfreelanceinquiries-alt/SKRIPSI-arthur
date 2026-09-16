@@ -204,7 +204,7 @@ def generate_figure_1_2():
 
 def generate_figure_1_3():
     """Gambar 1.3: Disparitas Harga Pasar Sekunder Kartu Pokémon Mentah (Ungraded) vs. Bersertifikasi PSA 10 Gem Mint Seri Shining Fates"""
-    print("[3/3] Generating Gambar 1.3: PriceCharting Shining Fates Ungraded vs PSA 10 Disparity...")
+    print("[3/3] Generating Gambar 1.3: PriceCharting Shining Fates Ungraded vs PSA 10 Disparity (Ultra HD)...")
 
     cards = [
         "Charizard VMAX\n(#SV107)",
@@ -218,58 +218,69 @@ def generate_figure_1_3():
     psa10_prices = [250.25, 110.00, 96.55, 65.00, 55.00]
     multipliers = ["2,0x", "5,9x", "23,7x", "26,0x", "17,5x"]
 
-    fig, ax = plt.subplots(figsize=(8.5, 4.8), dpi=300)
+    # Vibrant, prestige executive palette (Royal Cobalt Blue vs. Radiant Amber Gold)
+    COLOR_RAW = '#2563EB'       # Vibrant Royal Blue
+    COLOR_RAW_EDGE = '#1D4ED8'  # Deep Blue border
+    COLOR_PSA = '#D97706'       # Radiant Amber Gold
+    COLOR_PSA_EDGE = '#B45309'  # Rich Bronze border
+
+    fig, ax = plt.subplots(figsize=(10.0, 5.8), dpi=400)
     fig.patch.set_facecolor('#FFFFFF')
     ax.set_facecolor('#FFFFFF')
 
     x_pos = np.arange(len(cards))
-    width = 0.35
+    width = 0.34
 
-    # Bars
+    # Bars with sharp edges and vibrant fill
     bars_raw = ax.bar(x_pos - width/2, raw_prices, width, label='Kartu Mentah (Ungraded / Tanpa Sertifikasi)',
-                      color='#A0AEC0', edgecolor='#718096', linewidth=0.8, zorder=3)
+                      color=COLOR_RAW, edgecolor=COLOR_RAW_EDGE, linewidth=1.2, zorder=3)
     bars_psa = ax.bar(x_pos + width/2, psa10_prices, width, label='Bersertifikasi PSA 10 Gem Mint',
-                      color=NAVY_PRIMARY, edgecolor=GOLD_ACCENT, linewidth=1.5, zorder=3)
+                      color=COLOR_PSA, edgecolor=COLOR_PSA_EDGE, linewidth=1.2, zorder=3)
 
-    # Add data labels for raw
+    # Add data labels for raw cards
     for bar in bars_raw:
         h = bar.get_height()
-        ax.text(bar.get_x() + bar.get_width()/2, h + 3, f"US${h:.2f}",
-                ha='center', va='bottom', fontsize=8.2, color='#4A5568', fontweight='bold', zorder=5)
+        ax.text(bar.get_x() + bar.get_width()/2, h + 3.5, f"US${h:.2f}",
+                ha='center', va='bottom', fontsize=8.8, color='#1E40AF', fontweight='bold', zorder=5)
 
     # Add data labels for PSA 10 + Multiplier badge
     for bar, mult in zip(bars_psa, multipliers):
         h = bar.get_height()
-        ax.text(bar.get_x() + bar.get_width()/2, h + 4, f"US${h:.2f}",
-                ha='center', va='bottom', fontsize=8.5, color=NAVY_PRIMARY, fontweight='bold', zorder=5)
-        # Multiplier badge above
-        ax.text(bar.get_x() + bar.get_width()/2, h + 22, f"▲ {mult}",
-                ha='center', va='bottom', fontsize=8.2, color=CRIMSON_ACCENT, fontweight='bold',
-                bbox=dict(boxstyle="round,pad=0.2", fc="#FFF5F5", ec=CRIMSON_ACCENT, lw=0.8),
+        # Price label
+        ax.text(bar.get_x() + bar.get_width()/2, h + 4.0, f"US${h:.2f}",
+                ha='center', va='bottom', fontsize=9.2, color='#92400E', fontweight='bold', zorder=5)
+        # Multiplier badge above price
+        ax.text(bar.get_x() + bar.get_width()/2, h + 19.0, f"▲ {mult}",
+                ha='center', va='bottom', fontsize=8.8, color='#991B1B', fontweight='bold',
+                bbox=dict(boxstyle="round,pad=0.25,rounding_size=0.2", fc="#FEF2F2", ec="#EF4444", lw=0.9),
                 zorder=5)
 
     ax.set_xticks(x_pos)
-    ax.set_xticklabels(cards, fontsize=9.2, fontweight='bold')
-    ax.set_ylabel("Harga Transaksi Pasar Sekunder (Dolar AS / US$)", fontsize=9.5, fontweight='bold', labelpad=8)
-    ax.set_ylim(0, 310)
+    ax.set_xticklabels(cards, fontsize=10.0, fontweight='bold', color='#1E293B')
+    ax.set_ylabel("Harga Transaksi Pasar Sekunder (Dolar AS / US$)", fontsize=10.5, fontweight='bold', labelpad=10, color='#1E293B')
+    ax.yaxis.set_major_formatter(ticker.FuncFormatter(lambda y, _: f"${int(y)}" if y > 0 else "$0"))
+    ax.tick_params(axis='y', labelsize=9.5, colors='#334155')
+    ax.tick_params(axis='x', length=0)
+    ax.set_ylim(0, 315)
 
-    ax.yaxis.grid(True, linestyle='--', alpha=0.5, color='#E2E8F0', zorder=0)
+    ax.yaxis.grid(True, linestyle='--', alpha=0.6, color='#E2E8F0', zorder=0)
     ax.xaxis.grid(False)
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
-    ax.spines['left'].set_color('#A0AEC0')
-    ax.spines['bottom'].set_color('#A0AEC0')
+    ax.spines['left'].set_color('#CBD5E1')
+    ax.spines['bottom'].set_color('#94A3B8')
+    ax.spines['bottom'].set_linewidth(1.0)
 
-    # Legend
-    ax.legend(loc='upper right', frameon=True, facecolor='#FFFFFF', edgecolor='#CBD5E0', fontsize=8.8)
+    # Legend with clean border
+    ax.legend(loc='upper right', frameon=True, facecolor='#FFFFFF', edgecolor='#CBD5E1', fontsize=9.5, framealpha=0.95)
 
-    # Note
-    ax.text(0.98, 0.03, "*Data pasar sekunder terbuka bersumber dari PriceCharting: Pokémon Shining Fates Price Guide (2024).",
-            transform=ax.transAxes, fontsize=7.5, fontstyle='italic', color='#718096', ha='right')
+    # Note placed outside plot at bottom-right to ensure zero text collision
+    fig.text(0.96, 0.018, "*Sumber Data: PriceCharting.com — Pokémon Shining Fates Set Price Guide (Data Riil Pasar Sekunder 2024)",
+             ha='right', va='bottom', fontsize=8.2, fontstyle='italic', color='#64748B')
 
-    plt.tight_layout()
+    plt.subplots_adjust(left=0.09, right=0.96, top=0.93, bottom=0.14)
     output_path = OUTPUT_DIR / "gambar1_3_psa_grading_price_disparity.png"
-    plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor=fig.get_facecolor())
+    plt.savefig(output_path, dpi=400, facecolor=fig.get_facecolor())
     plt.close()
     print(f"    -> Saved successfully: {output_path}")
 
