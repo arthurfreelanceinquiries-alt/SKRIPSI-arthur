@@ -1,0 +1,6 @@
+interface:
+  display_name: "Humanizer ID"
+  short_description: "Bahasa alami untuk dokumen umum dan skripsi"
+  default_prompt: "Gunakan $humanizer-id untuk menyunting teks ini agar alami, menjaga makna dan sitasi, serta mempertahankan istilah Inggris yang lazim."
+policy:
+  allow_implicit_invocation: true

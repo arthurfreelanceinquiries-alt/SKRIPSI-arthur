@@ -49,4 +49,15 @@ Bab 1 (Latar Belakang) wajib mengintegrasikan 7 koefisien struktural model regre
 
 ## 4. Protokol Highlighting Sitasi di Mendeley
 
-Setiap referensi yang disitasi dalam naskah wajib memiliki salinan digital PDF di folder `06_Referensi_Jurnal_PDF/` dan ditandai (*highlight*) pada kalimat/angka kunci dalam aplikasi Mendeley Reference Manager, mengacu pada panduan [`directives/highlight_mendeley_citations.md`](file:///z:/SKRIPSII/SKRIPSI%20ARTHUR/SKRIPSI-arthur-main/SKRIPSI-arthur-main/directives/highlight_mendeley_citations.md).
+Setiap referensi yang disitasi dalam naskah wajib memiliki salinan digital PDF di folder `06_Referensi_Jurnal_PDF/` dan ditandai (*highlight*) pada kalimat/angka kunci dalam aplikasi Mendeley Reference Manager, mengacu pada panduan [`directives/highlight_mendeley_citations.md`](file:///d:/Perkuliahan/Skripsi/SKRIPSI-arthur/directives/highlight_mendeley_citations.md).
+
+---
+
+## 5. Penegakan Tautan Sitasi Lintas Platform (Word & Google Docs)
+
+Setiap sitasi in-text **BUKAN TEKS MATI**. Wajib terhubung ke DAFTAR PUSTAKA via 3-Layer Cross-Referencing:
+1. **Word DOCX:** Visible bookmarks `Ref_<kunci>` tanpa awalan underscore `_Ref_` (Ctrl+klik navigasi).
+2. **Parity Check:** 0 anchor yatim, teks paragraf snapshot identik 100%.
+3. **Google Docs Web:** Wajib eksekusi `relinkCitationsToDP()` via Apps Script [`execution/fix_gdocs_citation_links.gs`](file:///d:/Perkuliahan/Skripsi/SKRIPSI-arthur/execution/fix_gdocs_citation_links.gs) untuk mengaktifkan native bookmark `#bookmark=<id>` (klik biasa tanpa Ctrl).
+Rujukan lengkap: [`.agents/rules/mandatory_gdocs_and_docx_citation_linking.md`](file:///d:/Perkuliahan/Skripsi/SKRIPSI-arthur/.agents/rules/mandatory_gdocs_and_docx_citation_linking.md) dan skill `gdocs-citation-linker`.
+

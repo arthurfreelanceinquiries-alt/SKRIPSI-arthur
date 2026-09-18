@@ -1,7 +1,7 @@
 r"""
 verify_mendeley_integrity.py
 Suite pengujian pra-terbang (pre-flight test suite) otomatis untuk memvalidasi:
-1. Paritas Mutlak 6-Arah (TeX == NoBab3 == MD == Word == RIS == Bib == 55)
+1. Paritas Mutlak 6-Arah (TeX == NoBab3 == MD == Word == RIS == Bib == 54)
 2. Kepatuhan Whitelist Tag RIS Mendeley (0 tag ilegal ELEC/WEB/MISC)
 3. Kesetaraan Himpunan Kunci Sitasi (Set Difference == Empty)
 4. Kelengkapan Bidang Metadata Wajib (TI, AU, PY, ID, PB/JO/BT)
@@ -30,7 +30,7 @@ if hasattr(sys.stderr, 'reconfigure'):
 
 MENDELEY_TAG_WHITELIST = {'JOUR', 'BOOK', 'CONF', 'RPRT', 'THES', 'GEN'}
 FORBIDDEN_TAGS = {'ELEC', 'WEB', 'MISC'}
-EXPECTED_COUNT = 55
+EXPECTED_COUNT = 54
 
 
 def get_tex_keys(tex_path: Path):

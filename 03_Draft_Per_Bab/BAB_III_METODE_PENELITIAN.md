@@ -23,10 +23,10 @@ Data sekunder diperoleh melalui studi kepustakaan yang mencakup laporan resmi Th
 
 ### 3.1.1 Batasan Penelitian dan Ruang Lingkup Operasional
 
-Guna memastikan kejelasan ruang lingkup serta arah analisis yang terfokus, penelitian ini menetapkan batasan-batasan operasional sebagai berikut:
+Guna memastikan kejelasan ruang lingkup serta arah analisis yang terfokus, penelitian ini menetapkan batasan operasional sebagai berikut:
 
 1. **Batasan Komoditas Objek:** Penelitian ini secara ketat dibatasi pada pembelian produk kemasan acak tertutup (*booster pack*) fisik resmi *Pokémon Trading Card Game* (Pokémon TCG) berbahasa Indonesia yang dirilis oleh The Pokémon Company / AKG Games. Penelitian ini tidak meneliti kartu permainan digital (seperti *Pokémon TCG Live* atau *Pokémon TCG Pocket*) maupun produk kartu dari waralaba lain (*Yu-Gi-Oh!*, *Magic: The Gathering*, atau *One Piece Card Game*).
-2. **Batasan Responden:** Subjek penelitian dibatasi pada konsumen dan kolektor Warga Negara Indonesia (WNI) yang berdomisili di Indonesia, berusia minimal 17 tahun, dan memiliki riwayat pembelian aktif *booster pack* fisik dalam 6 hingga 12 bulan terakhir.
+2. **Batasan Responden:** Subjek penelitian dibatasi pada konsumen dan kolektor Warga Negara Indonesia (WNI) yang berdomisili di Indonesia, berusia minimal 17 tahun, dan memiliki riwayat pembelian aktif *booster pack* fisik minimal 1 kali dalam 12 bulan terakhir (diutamakan 6 bulan terakhir).
 3. **Batasan Konseptual dan Metodologis:** Variabel yang diteliti dibatasi pada pengaruh tiga variabel independen (*Hedonic Motivation*, *Desire for Completeness*, dan *Speculative Motive*) terhadap satu variabel dependen (*Impulsive Buying*) dengan satu variabel moderasi (*Self-Control*), yang diestimasi menggunakan teknik regresi moderasi (*Moderated Regression Analysis* / MRA) berbantuan perangkat lunak IBM SPSS Statistics.
 
 ---
@@ -35,7 +35,7 @@ Guna memastikan kejelasan ruang lingkup serta arah analisis yang terfokus, penel
 
 ### 3.2.1 Populasi dan Identifikasi Sumber Komunitas
 
-Populasi dalam penelitian ini didefinisikan sebagai seluruh konsumen atau kolektor kartu fisik Pokémon Trading Card Game resmi berbahasa Indonesia di wilayah Republik Indonesia. Populasi ini diklasifikasikan sebagai populasi tidak terbatas (*infinite / unknown population*) karena jumlah pasti seluruh pembeli kartu di Indonesia tidak dapat diketahui secara persis akibat luasnya jaringan distribusi minimarket modern di seluruh pelosok Nusantara.
+Populasi dalam penelitian ini didefinisikan sebagai seluruh konsumen atau kolektor kartu fisik Pokémon Trading Card Game resmi berbahasa Indonesia di wilayah Republik Indonesia. Populasi ini diklasifikasikan sebagai populasi tidak terbatas (*infinite / unknown population*) karena jumlah pasti seluruh pembeli kartu di Indonesia tidak dapat diketahui secara pasti mengingat luasnya jaringan distribusi ritel modern di seluruh Indonesia.
 
 Keberadaan dan identifikasi populasi sasaran dalam penelitian ini bersumber dari ekosistem nyata komunitas TCG di Indonesia:
 
@@ -49,16 +49,16 @@ Penarikan sampel dilakukan dengan teknik sampel bertujuan (*purposive sampling*)
 
 1. **Warga Negara Indonesia (WNI) dan Berdomisili di Indonesia:** Menjamin bahwa responden mengalami langsung dinamika ketersediaan produk kartu resmi berbahasa Indonesia serta struktur harga ritel dan pasar sekunder domestik.
 2. **Berusia Minimal 17 Tahun pada Saat Pengisian Kuesioner:**
-   * *Aspek Kedewasaan Administratif dan Hak Sipil:* Berdasarkan Undang-Undang Republik Indonesia Nomor 24 Tahun 2013 tentang Perubahan atas Undang-Undang Nomor 23 Tahun 2006 tentang Administrasi Kependudukan, batas usia 17 tahun menandai kepemilikan Kartu Tanda Penduduk (KTP) sebagai bukti identitas kedewasaan administratif dan hak sipil di Indonesia. Pada usia ini, responden dipandang telah memiliki kecakapan hukum mandiri untuk memberikan persetujuan partisipasi penelitian (*informed consent*) secara sadar dan sukarela tanpa memerlukan perwalian.
+   * *Aspek Kedewasaan Administratif dan Hak Sipil:* Berdasarkan Undang-Undang Republik Indonesia Nomor 24 Tahun 2013 tentang Perubahan atas Undang-Undang Nomor 23 Tahun 2006 tentang Administrasi Kependudukan, batas usia 17 tahun menandai kepemilikan Kartu Tanda Penduduk (KTP) sebagai bukti identitas kedewasaan administratif dan hak sipil di Indonesia. Pada usia ini, responden dipandang telah memiliki kecakapan hukum mandiri. Artinya, responden dapat memberikan persetujuan partisipasi penelitian (*informed consent*) secara sadar dan sukarela tanpa memerlukan perwalian.
    * *Diskresi Keuangan Mandiri:* Pada usia 17 tahun ke atas (umumnya berada pada jenjang pendidikan akhir SMA atau mahasiswa perguruan tinggi), individu telah memiliki alokasi diskresi keuangan pribadi (uang saku mandiri atau penghasilan kerja paruh waktu) yang dapat dibelanjakan secara independen di gerai kasir minimarket.
    * *Kapasitas Kognitif:* Memastikan kematangan kognitif responden dalam memahami butir-butir pernyataan kuesioner ilmiah secara objektif dan bertanggung jawab.
-3. **Pernah Membeli *Booster Pack* Resmi Pokémon TCG Fisik Minimal 1 Kali dalam Kurun Waktu 6 Bulan Terakhir (Maksimal 12 Bulan Terakhir):**
+3. **Pernah Membeli *Booster Pack* Resmi Pokémon TCG Fisik Minimal 1 Kali dalam 12 Bulan Terakhir (Diutamakan 6 Bulan Terakhir):**
    * *Menjamin Pengalaman Riil Konsumsi:* Memastikan responden benar-benar pernah mengalami proses pengambilan keputusan belanja di etalase toko dan merasakan sensasi membuka bungkus kartu (*pack opening thrill*).
-   * *Meminimalkan Bias Ingatan Retrospektif (Recall Bias):* Rentang waktu 6–12 bulan merupakan standar baku dalam riset perilaku konsumen untuk memastikan bahwa memori kognitif dan luapan afektif saat bertransaksi masih tersimpan segar dalam ingatan responden, sehingga data yang dilaporkan memiliki akurasi tinggi.
+   * *Meminimalkan Bias Ingatan Retrospektif (Recall Bias):* Rentang waktu 12 bulan (diutamakan 6 bulan) lazim dipakai dalam riset perilaku konsumen agar memori kognitif dan luapan afektif saat bertransaksi masih tersimpan segar dalam ingatan responden, sehingga data yang dilaporkan lebih dapat diandalkan.
 
 ### 3.2.3 Penentuan Ukuran Sampel
 
-Penentuan ukuran sampel minimum dalam penelitian ini mengacu pada formula Green (1991) yang dirancang khusus untuk mendeteksi efek pada analisis regresi linear berganda:
+Penentuan ukuran sampel minimum dalam penelitian ini mengacu pada formula Green (1991) untuk menentukan ukuran sampel minimum pada analisis regresi linear berganda:
 
 * **Untuk pengujian model korelasi keseluruhan (*overall model*):**
   $$N \ge 50 + 8k$$
@@ -75,10 +75,10 @@ Mengacu pada perhitungan formula Green (1991) di atas, ukuran sampel minimum abs
 
 Dalam literatur metodologi penelitian kuantitatif (Sekaran & Bougie, 2016; Sugiyono, 2019), metode pengambilan sampel terbagi ke dalam dua rumpun utama: *Probability Sampling* dan *Non-Probability Sampling*:
 
-* *Probability Sampling* (seperti *Simple Random Sampling* atau *Stratified Random Sampling*) menuntut adanya kerangka sampling (*sampling frame*) yang memuat daftar lengkap seluruh anggota populasi. Pada penelitian ini, kerangka sampling sensus pembeli kartu Pokémon di Indonesia tidak tersedia secara terpusat, sehingga teknik probabilitas murni mustahil diterapkan secara akurat.
+* *Probability Sampling* (seperti *Simple Random Sampling* atau *Stratified Random Sampling*) menuntut adanya kerangka sampling (*sampling frame*) yang memuat daftar lengkap seluruh anggota populasi. Pada penelitian ini, kerangka sampling sensus pembeli kartu Pokémon di Indonesia tidak tersedia secara terpusat, sehingga teknik probabilitas murni tidak dapat diterapkan secara sahih.
 * Oleh karena itu, penelitian ini memilih rumpun *Non-Probability Sampling* dengan teknik spesifik **_Purposive Sampling_** (sampel bertujuan). Teknik ini memilih responden berdasarkan pertimbangan dan kriteria inklusi terdefinisi yang ditetapkan peneliti.
 
-Pemilihan *purposive sampling* merupakan pendekatan yang paling tepat (*the most suitable*) karena menjamin bahwa data yang dikumpulkan berasal murni dari individu yang memiliki kualifikasi relevan (kolektor/pembeli aktif kartu Pokémon resmi berusia dewasa), sehingga data yang diperoleh memiliki validitas isi yang tinggi. Pendekatan *purposive sampling* pada komunitas hobi dan kartu koleksi ini sejalan dengan praktik riset terdahulu pada konteks barang koleksi dan komunitas hobi (Belk, 1995; Gao et al., 2014; Aryadi & Lingga, 2024).
+Pemilihan *purposive sampling* merupakan pendekatan yang tepat karena menjamin bahwa data yang dikumpulkan berasal murni dari individu yang memiliki kualifikasi relevan (kolektor/pembeli aktif kartu Pokémon resmi berusia dewasa), sehingga data yang diperoleh memiliki validitas isi yang tinggi. Pendekatan *purposive sampling* pada komunitas hobi dan kartu koleksi ini sejalan dengan praktik riset terdahulu pada konteks komunitas kolektor (Aryadi & Lingga, 2024).
 
 ---
 
@@ -185,7 +185,7 @@ Operasionalisasi variabel menyajikan definisi operasional, dimensi, butir indika
 | Potensi Laba | X3.4. Saya memandang modal membeli beberapa *pack* sebanding dengan potensi laba kartu langka. | Likert 1–5 |
 | Penilaian Kondisi | X3.5. Saya memeriksa kondisi fisik kartu (potensi grading tinggi) untuk memaksimalkan harga jual kembali. | Likert 1–5 |
 
-*Sumber Adaptasi:* Diadaptasi dari Shiller (2000), Baur et al. (2018), Colline (2024), dan Chen et al. (2021).
+*Sumber Adaptasi:* Diadaptasi dari Shiller (2000), Baur et al. (2018), dan Colline (2024).
 
 ### E. Variabel Moderasi: *Self-Control* ($M$)
 *Definisi Operasional:* Kapasitas volisional individu untuk menolak godaan belanja spontan, menunda kepuasan sesaat (*delay of gratification*), dan mendisiplinkan pengeluaran agar selaras dengan rencana keuangan pribadi (Tangney et al., 2004; Sultan et al., 2012).
@@ -216,7 +216,7 @@ Penelitian ini menetapkan bahwa **MRA berbasis OLS berbantuan IBM SPSS Statistic
 * Seluruh variabel penelitian diukur menggunakan skala komposit teruji dengan indikator-indikator yang terdefinisi secara terfokus.
 * Ukuran sampel penelitian (120–150 responden) berada pada rentang yang sangat ideal dan kokoh untuk OLS, tanpa menimbulkan risiko estimasi berlebih (*over-parameterization*) yang sering terjadi pada SEM (Hair et al., 2019).
 * Prosedur *mean-centering* ($X_i^* = X_i - \bar{X}_i$; $M^* = M - \bar{M}$) yang diterapkan memfasilitasi interpretasi koefisien serta mereduksi multikolinearitas non-esensial antara variabel prediktor dengan produk interaksinya (Aiken & West, 1991; Hayes, 2018).
-* Metode ini telah terbukti secara luas dan diadopsi oleh banyak penelitian bereputasi dalam menguji moderasi kontrol diri terhadap perilaku pembelian impulsif (Sultan et al., 2012; Apidana & Kholifah, 2022; Lienardy & Panasea, 2024; Artadita & Firmialy, 2024).
+* Metode ini telah dipakai sejumlah penelitian untuk menguji moderasi kontrol diri terhadap perilaku pembelian impulsif (Sultan et al., 2012; Apidana & Kholifah, 2022; Lienardy & Panasea, 2024).
 
 ### 3.5.2 Penyusunan Skor Komposit dan Uji Kualitas Data
 
@@ -242,7 +242,7 @@ Analisis regresi dilakukan dalam dua tahapan hirarkis berurutan:
 
 ### 3.5.5 Uji Koefisien Determinasi ($R^2$) dan Uji F Perubahan
 
-Evaluasi kecocokan model dilakukan dengan memeriksa nilai *Adjusted* $R^2$ pada Model 1 dan Model 2. Kontribusi penjelas murni dari blok variabel moderasi dibuktikan melalui nilai peningkatan koefisien determinasi ($\Delta R^2 = R^2_{\text{Model 2}} - R^2_{\text{Model 1}}$) yang diuji signifikansinya menggunakan statistik $F_{\text{change}}$ pada taraf signifikansi $p < 0,05$.
+Evaluasi kecocokan model dilakukan dengan memeriksa nilai *Adjusted* $R^2$ pada Model 1 dan Model 2. Kontribusi penjelas murni dari blok variabel moderasi ditunjukkan melalui nilai peningkatan koefisien determinasi ($\Delta R^2 = R^2_{\text{Model 2}} - R^2_{\text{Model 1}}$) yang diuji signifikansinya menggunakan statistik $F_{\text{change}}$ pada taraf signifikansi $p < 0,05$.
 
 ### 3.5.6 Uji Hipotesis dan Analisis Kemiringan Bersyarat (*Simple Slopes*)
 

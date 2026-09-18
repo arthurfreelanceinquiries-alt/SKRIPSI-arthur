@@ -18,7 +18,7 @@ Aryadi, A. dan Lingga, M. 2024. “Personal traits and motivation impact on coll
 
 Babin, B. J., Darden, W. R., dan Griffin, M. 1994. “Work and/or fun: Measuring hedonic and utilitarian shopping value”. *Journal of Consumer Research* 20(4): 644–656.
 
-Barasz, K., John, L. K., Keenan, E. A., dan Norton, M. I. 2017. “Pseudo-set framing: How framing directs consumer behavior toward completeness”. *Journal of Consumer Research* 44(4): 737–759.
+Barasz, K., John, L. K., Keenan, E. A., dan Norton, M. I. 2017. “Pseudo-set framing”. *Journal of Experimental Psychology: General* 146(10): 1460–1477.
 
 Barber, B. M. dan Odean, T. 2008. “All that glitters: The effect of attention and news on the buying behavior of individual and institutional investors”. *The Review of Financial Studies* 21(2): 785–818.
 
@@ -69,8 +69,6 @@ Mehrabian, A. dan Russell, J. A. 1974. *An Approach to Environmental Psychology*
 Peck, J. dan Childers, T. L. 2006. “If I touch it I have to have it: Individual and environmental influences on impulse purchasing”. *Journal of Business Research* 59(6): 765–769.
 
 Pranggabayu, B. dan Andjarwati, A. L. 2022. “Pengaruh hedonic shopping motivation dan store atmosphere terhadap impulsive buying”. *Sibatik Journal* 1(6): 951–966.
-
-Prasetio, A., Fauzi, M., dan Irawan, A. 2021. “The role of hedonic motivation in impulsive buying on e-commerce platforms”. *International Journal of Data and Network Science* 5(4): 689–698.
 
 Professional Sports Authenticator (PSA). 2024. *Trading Card Population Report and Collectibles Auction Price Realized Index*. Santa Ana, CA: Collectors Universe. https://www.psacard.com/pop
 

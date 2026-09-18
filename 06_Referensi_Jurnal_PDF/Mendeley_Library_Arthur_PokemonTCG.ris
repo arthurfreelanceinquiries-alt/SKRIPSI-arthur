@@ -40,6 +40,7 @@ VL  - 1
 IS  - 1
 SP  - 26
 EP  - 40
+DO  - 10.32639/jdbm.v1i1.38
 UR  - https://doi.org/10.32639/jdbm.v1i1.38
 ID  - apidana2022peran
 ER  - 
@@ -82,17 +83,34 @@ TY  - CONF
 TI  - Personal Traits and Motivation Impact on Collectibles as an Alternative Investment: A Case Study of Trading Card Game Community in Greater Jakarta
 AU  - Aryadi, Aldrich
 AU  - Lingga, Margaretha
-PY  - 2024
-Y1  - 2024
+PY  - 2026
+Y1  - 2026
 BT  - Proceedings of the 5th International Conference on Global Innovation and Trends in Economy (INCOGITE 2024)
 PB  - Atlantis Press
 VL  - 302
 SP  - 1
 EP  - 12
-DO  - 10.2991/978-94-6463-525-6_1
-UR  - https://doi.org/10.2991/978-94-6463-525-6_1
+DO  - 10.2991/978-94-6463-585-0_7
+UR  - https://doi.org/10.2991/978-94-6463-585-0_7
 T2  - Advances in Economics, Business and Management Research
 ID  - aryadi2024personal
+ER  - 
+
+TY  - JOUR
+TI  - Exploring the drivers of impulsive buying in e-commerce: the role of hedonic motivation, shopping lifestyle, and positive emotions
+AU  - Azizah, Nurifa Laksmitasari
+AU  - Fauzi, Muhammad
+PY  - 2025
+Y1  - 2025
+JO  - Jurnal Inovasi Ekonomi
+JF  - Jurnal Inovasi Ekonomi
+VL  - 10
+IS  - 2
+SP  - 79
+EP  - 94
+UR  - https://ejournal.umm.ac.id/index.php/JIKO/article/view/35353
+N1  - DOI tercetak \urlhttps://doi.org/10.22219/jiko.v10i02.35353 belum teregistrasi di Crossref/doi.org per audit 18 Sep 2026; sitasi via URL langsung terverifikasi HTTP 200
+ID  - azizah2025exploring
 ER  - 
 
 TY  - JOUR
@@ -114,21 +132,21 @@ ID  - babin1994work
 ER  - 
 
 TY  - JOUR
-TI  - Pseudo-Set Framing: How Framing Directs Consumer Behavior toward Completeness
+TI  - Pseudo-Set Framing
 AU  - Barasz, Kate
 AU  - John, Leslie K.
 AU  - Keenan, Elizabeth A.
 AU  - Norton, Michael I.
 PY  - 2017
 Y1  - 2017
-JO  - Journal of Consumer Research
-JF  - Journal of Consumer Research
-VL  - 44
-IS  - 4
-SP  - 737
-EP  - 759
-DO  - 10.1093/jcr/ucx067
-UR  - https://doi.org/10.1093/jcr/ucx067
+JO  - Journal of Experimental Psychology: General
+JF  - Journal of Experimental Psychology: General
+VL  - 146
+IS  - 10
+SP  - 1460
+EP  - 1477
+DO  - 10.1037/xge0000337
+UR  - https://doi.org/10.1037/xge0000337
 ID  - barasz2017pseudo
 ER  - 
 
@@ -242,17 +260,17 @@ TI  - Understanding Impulse Buying Behavior: The Case of Blind Box Purchases in 
 AU  - Dewi, Made Melvina Lystiani Sandra
 AU  - Budoyo, Vernandhita D.
 AU  - Mustikasari, Faranita
-PY  - 2024
-Y1  - 2024
+PY  - 2026
+Y1  - 2026
 JO  - Jurnal Locus: Penelitian dan Pengabdian
 JF  - Jurnal Locus: Penelitian dan Pengabdian
 VL  - 5
 IS  - 2
-SP  - 88
-EP  - 100
+SP  - 1082
+EP  - 1089
 DO  - 10.58344/locus.v5i2.5619
 UR  - https://doi.org/10.58344/locus.v5i2.5619
-ID  - dewi2024understanding
+ID  - dewi2026understanding
 ER  - 
 
 TY  - JOUR
@@ -347,6 +365,7 @@ VL  - 4
 IS  - 3
 SP  - 180
 EP  - 189
+DO  - 10.22610/jebs.v4i3.315
 UR  - https://doi.org/10.22610/jebs.v4i3.315
 ID  - gueltekin2012influence
 ER  - 
@@ -443,20 +462,19 @@ TY  - JOUR
 TI  - The Role of Self-Control in Moderating the Influence of Shopping Lifestyle and Hedonistic Behavior on Impulsive Buying
 AU  - Lienardy, Geoffrey Vigo
 AU  - Panasea, I Gede Nandya Oktora
-PY  - 2024
-Y1  - 2024
+PY  - 2026
+Y1  - 2026
 JO  - Business and Investment Review
 JF  - Business and Investment Review
-VL  - 2
-IS  - 2
-SP  - 13
-EP  - 28
+VL  - 4
+IS  - 3
+DO  - 10.61292/birev.258
 UR  - https://doi.org/10.61292/birev.258
-ID  - lienardy2024role
+ID  - lienardy2026role
 ER  - 
 
 TY  - JOUR
-TI  - Consumption values and relationships: segmenting the market for collectibles
+TI  - Consumption values and relationships: segmenting the market for frequency programs
 AU  - Long, Mary M.
 AU  - Schiffman, Leon G.
 PY  - 2000
@@ -518,23 +536,6 @@ UR  - https://doi.org/10.54443/sibatik.v1i6.112
 ID  - pranggabayu2022pengaruh
 ER  - 
 
-TY  - JOUR
-TI  - The role of hedonic motivation in impulsive buying on e-commerce platforms
-AU  - Prasetio, Arif
-AU  - others
-PY  - 2021
-Y1  - 2021
-JO  - International Journal of Data and Network Science
-JF  - International Journal of Data and Network Science
-VL  - 5
-IS  - 4
-SP  - 689
-EP  - 698
-DO  - 10.5267/j.ijdns.2021.7.011
-UR  - https://doi.org/10.5267/j.ijdns.2021.7.011
-ID  - prasetio2021hedonic
-ER  - 
-
 TY  - RPRT
 TI  - Pokémon Shining Fates Card Price Guide: Historical Market Values for Ungraded and PSA 10 Graded Cards
 AU  - PriceCharting
@@ -543,7 +544,7 @@ Y1  - 2024
 PB  - PriceCharting / Video Game Price Charts
 CY  - New York
 UR  - https://www.pricecharting.com/console/pokemon-shining-fates
-N1  - PriceCharting Historical Collectibles Database, New York | Tersedia di: \urlhttps://www.pricecharting.com/console/pokemon-shining-fates (Diakses 15 Januari 2025)
+N1  - PriceCharting Historical Collectibles Database, New York | Tersedia di: \urlhttps://www.pricecharting.com/console/pokemon-shining-fates (Diakses 18 September 2026)
 ID  - pricecharting2024
 ER  - 
 
@@ -639,12 +640,12 @@ ER  -
 TY  - RPRT
 TI  - Top 10 Highest-Grossing Media Franchises Worldwide of All Time
 AU  - Statista
-PY  - 2024
-Y1  - 2024
+PY  - 2021
+Y1  - 2021
 PB  - Statista Inc.
 CY  - New York
 UR  - https://www.statista.com/chart/24277/media-franchises-with-most-sales/
-N1  - Statista Consumer Market Insights & Research, New York: Statista Inc. | Tersedia di: \urlhttps://www.statista.com/chart/24277/media-franchises-with-most-sales/ (Diakses 15 Januari 2025)
+N1  - Statista Chart 24277, Consumer Market Insights & Research, New York: Statista Inc.\ (terbit Februari 2021) | Tersedia di: \urlhttps://www.statista.com/chart/24277/media-franchises-with-most-sales/ (Diakses 15 Januari 2025)
 ID  - statista2024pokemon
 ER  - 
 
@@ -690,21 +691,6 @@ EP  - 72
 DO  - 10.1007/s11002-011-9135-4
 UR  - https://doi.org/10.1007/s11002-011-9135-4
 ID  - sultan2012building
-ER  - 
-
-TY  - JOUR
-TI  - Ketidakpastian Blind Box dan Perilaku Pembelian Impulsif: Peran Nilai Fungsional, Emosional, dan Sosial
-AU  - Tan, Davina Anabelle
-AU  - Adyantari, Api
-PY  - 2024
-Y1  - 2024
-JO  - Bisma: Jurnal Bisnis dan Manajemen
-JF  - Bisma: Jurnal Bisnis dan Manajemen
-VL  - 18
-IS  - 2
-SP  - 145
-EP  - 158
-ID  - tan2024ketidakpastian
 ER  - 
 
 TY  - JOUR
@@ -837,19 +823,19 @@ ID  - zeigarnik1927behalten
 ER  - 
 
 TY  - JOUR
-TI  - Understanding impulse buying in mobile commerce: An investigation in Baidu
-AU  - Zheng, Xiangmin
-AU  - Men, Jie
-AU  - Yang, Fan
-AU  - Gong, Xiaoting
+TI  - Understanding impulse buying in mobile commerce: An investigation into hedonic and utilitarian browsing
+AU  - Zheng, Xiabing
+AU  - Men, Jinqi
+AU  - Yang, Feng
+AU  - Gong, Xiuyuan
 PY  - 2019
 Y1  - 2019
-JO  - Information & Management
-JF  - Information & Management
-VL  - 56
-IS  - 8
-SP  - 103148
-DO  - 10.1016/j.im.2019.04.004
-UR  - https://doi.org/10.1016/j.im.2019.04.004
+JO  - International Journal of Information Management
+JF  - International Journal of Information Management
+VL  - 48
+SP  - 151
+EP  - 160
+DO  - 10.1016/j.ijinfomgt.2019.02.010
+UR  - https://doi.org/10.1016/j.ijinfomgt.2019.02.010
 ID  - zheng2019impact
 ER  - 

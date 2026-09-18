@@ -190,15 +190,15 @@ Mengacu pada meta-analisis komprehensif Amos et al. (2014) dalam *Journal of Ret
 | No | Peneliti (Tahun) | Judul Penelitian | Variabel & Metode | Hasil Utama Penelitian |
 |:---:|:---|:---|:---|:---|
 | 1 | Pranggabayu & Andjarwati (2022) | *Pengaruh Hedonic Shopping Motivation dan Store Atmosphere terhadap Impulsive Buying* | X1: Hedonic motivation, X2: Store atmosphere; Y: Impulsive buying; Regresi berganda | Motivasi hedonis berpengaruh positif signifikan terhadap pembelian impulsif. |
-| 2 | Apidana & Kholifah (2022) | *Peran Self Control dalam Memoderasi Pengaruh Hedonic Motives terhadap Impulse Buying* | X: Hedonic motives; Y: Impulse buying; Mod: Self-control; MRA | Motif hedonis berpengaruh positif terhadap impulse buying; kontrol diri memoderasi/memperlemah pengaruh tersebut. |
-| 3 | Lienardy & Panasea (2024) | *The Role of Self-Control in Moderating Hedonistic Behavior on Impulsive Buying* | X: Hedonistic behavior; Y: Impulsive buying; Mod: Self-control; MRA | Perilaku hedonis positif signifikan terhadap impulsif; kontrol diri terbukti memoderasi dan memperlemah pengaruh hedonis. |
+| 2 | Apidana & Kholifah (2022) | *Peran Self Control dalam Memoderasi Pengaruh Hedonic Motives terhadap Impulse Buying* | X: Hedonic motives; Y: Impulse buying; Mod: Self-control; MRA | Motif hedonis positif; kontrol diri memoderasi lifestyle (H4 diterima) tetapi GAGAL memoderasi hedonis (H3 ditolak, p=0,597). |
+| 3 | Lienardy & Panasea (2026) | *The Role of Self-Control in Moderating Hedonistic Behavior on Impulsive Buying* | X: Hedonistic behavior; Y: Impulsive buying; Mod: Self-control; MRA | Perilaku hedonis positif signifikan terhadap impulsif; kontrol diri terbukti memoderasi dan memperlemah pengaruh hedonis. |
 | 4 | Gong et al. (2024) | *Unveiling the Enigma of Blind Box Impulse Buying Curiosity* (*Heliyon* Scopus Q1) | X: Karakteristik blind box; Med: Rasa ingin tahu; Y: Impulse buying; S-O-R PLS-SEM | Kemasan acak blind box memicu rasa ingin tahu afektif yang langsung mendorong impulse buying. |
-| 5 | Tan & Adyantari (2024) | *Ketidakpastian Blind Box dan Perilaku Pembelian Impulsif* (SINTA 2) | X: Ketidakpastian blind box, Nilai emosional; Y: Pembelian impulsif; Survei | Ketidakpastian isi kemasan acak membangkitkan nilai emosional yang mendorong impulse buying. |
-| 6 | Dewi et al. (2024) | *Understanding Impulse Buying Behavior: The Case of Blind Box Purchases in Indonesia* | X1: Scarcity, X2: Uncertainty; Med: FOMO; Y: Impulse buying; PLS-SEM | Kelangkaan dan ketidakpastian memicu FOMO dan hasrat koleksi yang mendorong impulse buying Gen Z di Indonesia. |
+| 5 | Azizah & Fauzi (2025) | *Exploring the drivers of impulsive buying in e-commerce: hedonic motivation, shopping lifestyle, positive emotions* (*Jurnal Inovasi Ekonomi*) | X1: Hedonic motivation; Med: Positive emotions; Y: Impulse buying; PLS-SEM | Motivasi hedonis positif signifikan terhadap impulse buying; emosi positif memediasi parsial. |
+| 6 | Dewi et al. (2026) | *Understanding Impulse Buying Behavior: The Case of Blind Box Purchases in Indonesia* | X1: Scarcity, X2: Uncertainty; Med: FOMO; Y: Impulse buying; PLS-SEM | Kelangkaan dan ketidakpastian memicu FOMO dan hasrat koleksi yang mendorong impulse buying Gen Z di Indonesia. |
 | 7 | Aryadi & Lingga (2024) | *Trading Card Game Community in Greater Jakarta* (Springer Nature / Atlantis Press) | X: Motivasi kolektor; Y: Keputusan investasi TCG; Regresi logistik | Membuktikan komunitas TCG di Jakarta memiliki motif spekulasi finansial dalam mengoleksi kartu sebagai aset alternatif. |
-| 8 | Colline (2024) | *Biases in Indonesian Stock Investor Behavior* (*Accounting and Finance Studies*) | X: Overconfidence, Herding; Y: Keputusan finansial; Survei | Dosen FEB UKRIDA (K-04); membuktikan tingginya bias optimisme dan ikut-ikutan pada generasi muda Indonesia. |
-| 9 | Artadita & Firmialy (2024) | *How Does Self-Control Moderate Shopping Enjoyment and Impulse Buying?* (*BBR* Scopus Q3/SINTA 1) | X: Shopping enjoyment; Y: Impulse buying; Mod: Self-control; MRA | Kesenangan belanja game berpengaruh kuat terhadap impulse buying; kontrol diri memoderasi dan menahan dorongan belanja. |
-| 10 | Katauke et al. (2023) | *Financial Literacy and Impulsivity: Evidence from Japan* (*Sustainability* MDPI Scopus Q1) | X: Regulasi finansial; Y: Impulsivity; Ekonometrika | Kapasitas regulasi diri dan kontrol finansial secara signifikan menekan impulsivitas belanja. |
+| 8 | Colline (2024) | *Biases in Indonesian Stock Investor Behavior* (*Accounting and Finance Studies*) | X: Herding, loss aversion; Y: Keputusan investasi; Kualitatif n=5 | Dosen FEB UKRIDA (K-04); dokumentasi herding investor Indonesia (analogi bias pasar aset). |
+| 9 | Artadita & Firmialy (2024) | *How Does Self-Control Moderate Shopping Enjoyment and Impulse Buying?* (*BBR* Scopus Q3/SINTA 1) | X: Shopping enjoyment; Y: Impulse buying; PLS-SEM (bukan MRA) | Enjoyment→impuls kuat (β=0,581); moderasi DITOLAK (β=0,092 n.s.; hanya kontrol-kognitif 10%). |
+| 10 | Katauke et al. (2023) | *Financial Literacy and Impulsivity: Evidence from Japan* (*Sustainability* MDPI Scopus Q1) | X: Literasi finansial; Y: Impulsivity (diskonto hiperbolik); Probit + IV | Literasi finansial berhubungan negatif dengan impulsivitas (proksi regulasi rasional). |
 
 ---
 
@@ -223,7 +223,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### H2: *Desire for Completeness* $\rightarrow$ *Impulsive Buying* (+)
 * **Teori:** *Zeigarnik Effect* (Zeigarnik, 1927) & *The "Completing the Set" Effect* (Gao et al., 2014; Barasz et al., 2017).
-* **Empiris:** Gao et al. (2014); Gong et al. (2024); Tan & Adyantari (2024); Dewi et al. (2024).
+* **Empiris:** Gao et al. (2014); Gong et al. (2024); Dewi et al. (2026).
 * **Objek Pokémon TCG:** Binder album kolektor yang memiliki nomor seri resmi menciptakan ketegangan kognitif saat melihat slot kosong melompong. Desakan melengkapi set mendorong pembelian berulang booster pack secara mendadak.
 * **Hipotesis:**
   > **H2: *Desire for Completeness* berpengaruh positif dan signifikan terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.**
@@ -241,7 +241,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### H4: Peran Moderasi *Self-Control* pada Hubungan *Hedonic Motivation* dan *Impulsive Buying* (-)
 * **Teori:** *Self-Regulation Theory* (Baumeister, 2002) & *Planner-Doer Model* (Thaler & Shefrin, 1981).
-* **Empiris:** Apidana & Kholifah (2022); Lienardy & Panasea (2024); Artadita & Firmialy (2024); Katauke et al. (2023).
+* **Empiris:** Lienardy & Panasea (2026, MRA genuine); Katauke et al. (2023, regulasi-literasi); Apidana & Kholifah (2022, hanya lifestyle).
 * **Objek Pokémon TCG:** Ketika pembeli tergoda merobek kemasan kartu di kasir toko, individu dengan *Self-Control* tinggi mampu mengaktifkan fungsi kognitif *Planner*, menolak kenikmatan instan, dan mematuhi batas anggaran. Pengaruh motivasi hedonis terhadap pembelian impulsif pun melemah.
 * **Hipotesis:**
   > **H4: *Self-Control* memoderasi (memperlemah) pengaruh *Hedonic Motivation* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.**
@@ -250,7 +250,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### H5: Peran Moderasi *Self-Control* pada Hubungan *Desire for Completeness* dan *Impulsive Buying* (-)
 * **Teori:** Regulasi Diri (Tangney et al., 2004) dalam mengelola ketegangan kognitif ketiadaan resolusi.
-* **Empiris:** Apidana & Kholifah (2022); Katauke et al. (2023).
+* **Empiris:** Artadita & Firmialy (2024, parsial kognitif 10%); Katauke et al. (2023).
 * **Objek Pokémon TCG:** Kolektor berkontrol diri tinggi menyadari bahwa membeli kemasan acak demi mencari 1 kartu spesifik yang belum lengkap memiliki probabilitas sangat kecil dan memboroskan uang. Kontrol diri meredam desakan belanja impulsif dan mengalihkannya ke pembelian kartu lepasan (*singles*) secara terencana.
 * **Hipotesis:**
   > **H5: *Self-Control* memoderasi (memperlemah) pengaruh *Desire for Completeness* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.**
@@ -259,7 +259,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### H6: Peran Moderasi *Self-Control* pada Hubungan *Speculative Motive* dan *Impulsive Buying* (-)
 * **Teori:** *Behavioral Finance* & Disiplin Risiko Finansial (Thaler & Shefrin, 1981; Barber & Odean, 2008).
-* **Empiris:** Aryadi & Lingga (2024); Colline (2024); Katauke et al. (2023).
+* **Empiris:** Katauke et al. (2023); mekanisme *Planner-Doer* (Thaler & Shefrin, 1981).
 * **Objek Pokémon TCG:** Godaan cuan jutaan rupiah dari sertifikasi PSA 10 sangat menggiurkan. Namun, konsumen dengan kontrol diri kokoh memahami risiko volatilitas pasar dan biaya grading, sehingga tidak terburu-buru melakukan pembelian impulsif. Kontrol diri bertindak sebagai rem volisional terhadap ambisi spekulatif.
 * **Hipotesis:**
   > **H6: *Self-Control* memoderasi (memperlemah) pengaruh *Speculative Motive* terhadap *Impulsive Buying* booster pack kartu Pokémon TCG.**
@@ -271,7 +271,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 ### 1. Populasi, Sampel, & Sampling
 - **Populasi:** Seluruh pembeli/kolektor kartu fisik Pokémon TCG resmi berbahasa Indonesia di Indonesia (populasi tak terbatas / *infinite population*).
 - **Teknik Sampling:** *Purposive Sampling* (Non-Probability).
-- **Kriteria Inklusi:** WNI, usia $\ge 17$ tahun, pernah membeli *booster pack* fisik resmi minimal 1 kali dalam 6–12 bulan terakhir.
+- **Kriteria Inklusi:** WNI, usia $\ge 17$ tahun, pernah membeli *booster pack* fisik resmi minimal 1 kali dalam 12 bulan terakhir (diutamakan 6 bulan terakhir).
 - **Ukuran Sampel:** Formula Green (1991): $N \ge 50 + 8k$ (untuk $k=7 \rightarrow N \ge 106$). Target ditetapkan **120 hingga 150 responden** guna menjamin *statistical power* $\ge 0,80$ pada $\alpha = 0,05$ (*medium effect size* $f^2 = 0,15$ - Cohen, 1988).
 
 ### 2. Prosedur *Mean-Centering* pada MRA (Krusial untuk Uji Asumsi)
@@ -387,7 +387,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 > - **Butir 1–3:** Menguji pengaruh langsung (*direct effect*) dari *Hedonic Motivation*, *Desire for Completeness*, dan *Speculative Motive* terhadap *Impulsive Buying*.  
 > - **Butir 4–6:** Menguji efek interaksi pemoderasi *Self-Control* pada masing-masing jalur pengaruh langsung tersebut melalui metode MRA (*Moderated Regression Analysis*).  
 > 
-> **Mengenai referensi jurnal:** Penambahan butir tersebut **TIDAK memerlukan penambahan referensi baru**, karena ini adalah sinkronisasi formal antara Bab 1 dengan Bab 2 & Bab 3. Seluruh landasan teoretis untuk hipotesis moderasi (seperti *Self-Regulation Theory* oleh Baumeister 2002; model *Planner-Doer* oleh Thaler & Shefrin 1981; dan skala BSCS oleh Tangney et al. 2004) serta penelitian empiris pendukung (Apidana & Kholifah, 2022; Lienardy & Panasea, 2024; Artadita & Firmialy, 2024; Sultan et al., 2012; Katauke et al., 2023) **sudah tercakup secara lengkap dan komprehensif dalam 72 referensi ilmiah** pada naskah dan daftar pustaka proposal."
+> **Mengenai referensi jurnal:** Penambahan butir tersebut **TIDAK memerlukan penambahan referensi baru**, karena ini adalah sinkronisasi formal antara Bab 1 dengan Bab 2 & Bab 3. Seluruh landasan teoretis untuk hipotesis moderasi (seperti *Self-Regulation Theory* oleh Baumeister 2002; model *Planner-Doer* oleh Thaler & Shefrin 1981; dan skala BSCS oleh Tangney et al. 2004) serta penelitian empiris pendukung (Apidana & Kholifah, 2022; Lienardy & Panasea, 2026; Sultan et al., 2012; Katauke et al., 2023) **sudah tercakup secara lengkap dan komprehensif dalam 54 referensi tersitasi** pada naskah dan daftar pustaka proposal."
 
 ---
 

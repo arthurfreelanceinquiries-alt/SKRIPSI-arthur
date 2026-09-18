@@ -5,9 +5,9 @@
 
 ---
 
-## Bagian 1: 10 Jurnal Empiris Utama (Periode 2021–2025)
+## Bagian 1: 10 Jurnal Empiris Utama (Periode 2021–2026)
 
-Sesuai standar mutu akademik skripsi manajemen dan persyaratan pustaka mutakhir (maksimal 5 tahun terakhir), seluruh 10 artikel di bawah ini telah terbit pada rentang tahun **2021–2025**, terindeks resmi pada **Scopus, Web of Science, SINTA, Google Scholar, dan Garuda**, serta file PDF aslinya telah tersimpan di folder `06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/`.
+Sesuai standar mutu akademik skripsi manajemen dan persyaratan pustaka mutakhir (maksimal 5 tahun terakhir), seluruh 10 artikel di bawah ini telah terbit pada rentang tahun **2021–2026**, terindeks resmi pada **Scopus, Web of Science, SINTA, Google Scholar, dan Garuda**, serta file PDF aslinya telah tersimpan di folder `06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/`.
 
 ### 1. Xiyun Gong, Choy Leong Yee, Shin Yiing Lee, Abu Naser Mohammad Saif, Meilian Liu, Fariah Anonthi (2024)
 - **Judul:** *Unveiling the enigma of blind box impulse buying curiosity: The moderating role of price consciousness*
@@ -23,15 +23,15 @@ Sesuai standar mutu akademik skripsi manajemen dan persyaratan pustaka mutakhir 
 - **Indeksasi:** Scopus Q1 (MDPI), Web of Science (SSCI/SCIE), DOAJ
 - **DOI:** [10.3390/su15097267](https://doi.org/10.3390/su15097267)
 - **File PDF:** [`2023_Katauke_et_al_Blind_Box_Consumption_Sustainability_MDPI_Q1.pdf`](file:///D:/Perkuliahan/Skripsi/SKRIPSI-arthur/06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2023_Katauke_et_al_Blind_Box_Consumption_Sustainability_MDPI_Q1.pdf) (282.9 KB, 14 halaman)
-- **Keterkaitan dalam Skripsi:** Rujukan Empiris Inti H1 & Moderasi Z: Menjelaskan interaksi stimulus kejutan produk misteri dengan literasi/kontrol diri konsumen muda terhadap dorongan belanja impulsif.
+- **Keterkaitan dalam Skripsi:** Rujukan Empiris H1 & Bukti Regulator Umum: Literasi finansial berhubungan negatif dengan impulsivitas diskonto hiperbolik (Jepang, probit + IV) — proksi regulasi rasional, bukan uji self-control.
 
-### 3. Davina Anabelle Tan, Api Adyantari (2024)
-- **Judul:** *Ketidakpastian Blind Box dan Perilaku Pembelian Impulsif: Peran Nilai Fungsional, Emosional, dan Sosial*
-- **Publikasi:** Bisma: Jurnal Bisnis dan Manajemen (Universitas Jember), Vol. 20, No. 2, pp. 145-158
-- **Indeksasi:** SINTA 2, Google Scholar, Garuda (Kemdiktisaintek)
-- **DOI:** [10.19184/bisma.v20i2.60038](https://doi.org/10.19184/bisma.v20i2.60038)
-- **File PDF:** [`2024_Tan_Adyantari_Blind_Box_Impulsive_Bisma.pdf`](file:///D:/Perkuliahan/Skripsi/SKRIPSI-arthur/06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2024_Tan_Adyantari_Blind_Box_Impulsive_Bisma.pdf) (341.5 KB, 14 halaman)
-- **Keterkaitan dalam Skripsi:** Rujukan Empiris H1 & H2 Konteks Indonesia: Membuktikan bahwa faktor ketidakpastian blind box memicu emosi positif dan hasrat mengoleksi yang mendorong perilaku pembelian impulsif di Indonesia.
+### 3. Nurifa Laksmitasari Azizah, Muhammad Fauzi (2025)
+- **Judul:** *Exploring the drivers of impulsive buying in e-commerce: the role of hedonic motivation, shopping lifestyle, and positive emotions*
+- **Publikasi:** Jurnal Inovasi Ekonomi (Universitas Muhammadiyah Malang), Vol. 10, No. 2, pp. 79-94
+- **Indeksasi:** Google Scholar, OJS UMM open-access (tanpa login-wall; DOI tercetak 10.22219/jiko.v10i02.35353 belum teregistrasi di Crossref per 18 Sep 2026 → sitasi via URL langsung)
+- **URL:** [https://ejournal.umm.ac.id/index.php/JIKO/article/view/35353](https://ejournal.umm.ac.id/index.php/JIKO/article/view/35353) (HTTP 200 terverifikasi via curl)
+- **File PDF:** [`2025_Azizah_Fauzi_Hedonic_Impulse_JIKO.pdf`](file:///D:/Perkuliahan/Skripsi/SKRIPSI-arthur/06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2025_Azizah_Fauzi_Hedonic_Impulse_JIKO.pdf) (0.68 MB, 16 halaman; HTTP 200 terverifikasi)
+- **Keterkaitan dalam Skripsi:** Rujukan Empiris H1 Konteks Indonesia (pengganti ghost Tan & Adyantari per audit 18 Sep 2026): Membuktikan motivasi hedonis berpengaruh positif signifikan terhadap pembelian impulsif e-commerce fashion Indonesia (n=140 purposive, PLS-SEM); emosi positif memediasi parsial.
 
 ### 4. Fredella Colline (2024)
 - **Judul:** *Biases in Indonesian Stock Investor Behavior*
@@ -39,37 +39,37 @@ Sesuai standar mutu akademik skripsi manajemen dan persyaratan pustaka mutakhir 
 - **Indeksasi:** SINTA 4, Google Scholar, Garuda, CrossRef
 - **DOI:** [10.47153/afs42.9372024](https://doi.org/10.47153/afs42.9372024)
 - **File PDF:** [`2024_Colline_Biases_Indonesian_Stock_Investor_AFS.pdf`](file:///D:/Perkuliahan/Skripsi/SKRIPSI-arthur/06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2024_Colline_Biases_Indonesian_Stock_Investor_AFS.pdf) (519.3 KB, 11 halaman)
-- **Keterkaitan dalam Skripsi:** Rujukan Empiris H3 & Keahlian Pembimbing (Behavioral Finance): Membuktikan kuatnya bias optimisme berlebih (overconfidence) dan ikut-ikutan (herding) pada generasi muda Indonesia; mendasari variabel X3 (Speculative Motive / Ekspektasi Cuan Pasar Sekunder) dan peran moderasi kontrol diri (Z).
+- **Keterkaitan dalam Skripsi:** Rujukan Empiris H3 & Keahlian Pembimbing (Behavioral Finance): Mendokumentasikan bias *herding*, *loss aversion*, dan *disposition effect* investor Indonesia (kualitatif n=5); analogi bias pasar untuk X3 (tanpa klaim overconfidence/generasi muda/moderasi).
 
 ### 5. Aldrich Aryadi, Margaretha Lingga (2024)
 - **Judul:** *Personal Traits and Motivation Impact on Collectibles as an Alternative Investment: A Case Study of Trading Card Game Community in Greater Jakarta*
 - **Publikasi:** Proceedings of the 5th INCOGITE 2024 (Springer Nature / Atlantis Press), AEBMR Vol. 302, pp. 1-12
 - **Indeksasi:** Springer Nature, Atlantis Press, Web of Science / CPCI, Google Scholar
-- **DOI:** [10.2991/978-94-6463-525-6_1](https://doi.org/10.2991/978-94-6463-525-6_1)
-- **File PDF:** [`2024_Aryadi_Lingga_TCG_Collectibles_Jakarta_Springer_Atlantis.pdf`](file:///D:/Perkuliahan/Skripsi/SKRIPSI-arthur/06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2024_Aryadi_Lingga_TCG_Collectibles_Jakarta_Springer_Atlantis.pdf) (388.9 KB, 8 halaman)
-- **Keterkaitan dalam Skripsi:** Rujukan Empiris H3 Spesifik Objek: Membuktikan secara empiris bahwa komunitas Trading Card Game (TCG) di Jabodetabek memandang kartu sebagai aset investasi alternatif dengan motif spekulasi finansial kuat.
+- **DOI:** [10.2991/978-94-6463-585-0_7](https://doi.org/10.2991/978-94-6463-585-0_7) (dikoreksi 18 Sep 2026; DOI lama salah menunjuk front-matter)
+- **File PDF:** [`2024_Aryadi_Lingga_TCG_Collectibles_Jakarta_Springer_Atlantis.pdf`](file:///D:/Perkuliahan/Skripsi/SKRIPSI-arthur/06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2024_Aryadi_Lingga_TCG_Collectibles_Jakarta_Springer_Atlantis.pdf) (0.61 MB, 17 halaman; berkas lama salah isi diganti dari Atlantis Press open-access)
+- **Keterkaitan dalam Skripsi:** Rujukan Empiris H3 Spesifik Objek: Motivasi kolektor berpengaruh positif signifikan terhadap keputusan investasi TCG Jabodetabek (CM p=0,000, Exp(B)=4,097; Y=partisipasi investasi, analogi).
 
-### 6. Vionna Artadita, Sri Bramantoro Abdinagoro, Ferdi Firmialy (2024)
-- **Judul:** *The Role of Self-Control in In-Game Purchases Among Indonesian Gamers*
-- **Publikasi:** Binus Business Review (Bina Nusantara University), Vol. 15, No. 2, pp. 165-177
+### 6. Sherly Artadita, Sita Deliyana Firmialy (2024)
+- **Judul:** *How Does Self-Control Moderate Shopping Enjoyment and Impulse Buying Among Generation Z Online Gamers?*
+- **Publikasi:** Binus Business Review (Bina Nusantara University), Vol. 15, No. 2, pp. 179-189
 - **Indeksasi:** Scopus Q3, SINTA 1/2, DOAJ, Google Scholar
 - **DOI:** [10.21512/bbr.v15i2.10697](https://doi.org/10.21512/bbr.v15i2.10697)
 - **File PDF:** [`2024_Artadita_Firmialy_Self_Control_Gamers_BBR_Scopus_Q3.pdf`](file:///D:/Perkuliahan/Skripsi/SKRIPSI-arthur/06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2024_Artadita_Firmialy_Self_Control_Gamers_BBR_Scopus_Q3.pdf) (486.3 KB, 11 halaman)
-- **Keterkaitan dalam Skripsi:** Rujukan Empiris H4 (Moderasi Z): Membuktikan bahwa kontrol diri (Self-Control) terbukti secara empiris mampu memitigasi pembelian acak (gacha/loot box) pada ekosistem gamers di Indonesia.
+- **Keterkaitan dalam Skripsi:** Rujukan Empiris H1 (kenikmatan belanja → impulsif, β=0,581 didukung) + bukti gagal-moderasi untuk gap 5B/6B (moderasi DITOLAK β=0,092 n.s.; PLS-SEM bukan MRA).
 
-### 7. Geoffrey Vigo Lienardy, I Gede Nandya Oktora Panasea (2024)
+### 7. Geoffrey Vigo Lienardy, I Gede Nandya Oktora Panasea (2026)
 - **Judul:** *The Role of Self-Control in Moderating the Influence of Shopping Lifestyle and Hedonistic Behavior on Impulsive Buying*
-- **Publikasi:** Business and Investment Review, Vol. 2, No. 2, pp. 13-28
-- **Indeksasi:** Google Scholar, Copernicus, Garuda
-- **DOI:** [10.59653/birev.v2i02.258](https://doi.org/10.59653/birev.v2i02.258)
+- **Publikasi:** Business and Investment Review (LGD Publishing), Vol. 4, No. 3 (terbit 12 Mei 2026 per metadata OJS; naskah berhak cipta 2025)
+- **Indeksasi:** Google Scholar, OJS LGD Publishing open-access (tanpa klaim SINTA/Garuda/Copernicus — tak terverifikasi)
+- **DOI:** [10.61292/birev.258](https://doi.org/10.61292/birev.258) (terverifikasi HTTP 200 ke article/view/258; DOI lama 10.59653/birev.v2i02.258 mati)
 - **File PDF:** [`2024_Lienardy_Panasea_Self_Control_Hedonistic_Shopee_BIREV.pdf`](file:///D:/Perkuliahan/Skripsi/SKRIPSI-arthur/06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2024_Lienardy_Panasea_Self_Control_Hedonistic_Shopee_BIREV.pdf) (458.9 KB, 7 halaman)
-- **Keterkaitan dalam Skripsi:** Rujukan Empiris H4 (Moderasi Z): Membuktikan fungsi kontrol diri sebagai variabel moderator yang memperlemah dorongan gaya hidup belanja hedonis terhadap pembelian impulsif konsumen daring di Indonesia.
+- **Keterkaitan dalam Skripsi:** Rujukan Empiris H4 (Moderasi Z): Membuktikan via MRA bahwa kontrol diri memperlemah dorongan perilaku hedonis (H4 diterima); moderasi lifestyle DITOLAK (H3) — konsumen Shopee Denpasar.
 
-### 8. Made Melvina Lystiani Sandra Dewi, Vernandhita D. Budoyo, Faranita Mustikasari (2024)
+### 8. Made Melvina Lystiani Sandra Dewi, Vernandhita D. Budoyo, Faranita Mustikasari (2026)
 - **Judul:** *Understanding Impulse Buying Behavior: The Case of Blind Box Purchases in Indonesia*
-- **Publikasi:** Jurnal Locus: Penelitian dan Pengabdian, Vol. 5, No. 2, pp. 88-100
+- **Publikasi:** Jurnal Locus: Penelitian dan Pengabdian, Vol. 5, No. 2 (Februari 2026), pp. 1082-1089
 - **Indeksasi:** Google Scholar, Garuda, CrossRef
-- **DOI:** [10.58344/locus.v5i2.289](https://doi.org/10.58344/locus.v5i2.289)
+- **DOI:** [10.58344/locus.v5i2.5619](https://doi.org/10.58344/locus.v5i2.5619)
 - **File PDF:** [`2024_Dewi_et_al_Impulse_Buying_Blind_Box_Indonesia_Locus.pdf`](file:///D:/Perkuliahan/Skripsi/SKRIPSI-arthur/06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2024_Dewi_et_al_Impulse_Buying_Blind_Box_Indonesia_Locus.pdf) (695.4 KB, 8 halaman)
 - **Keterkaitan dalam Skripsi:** Rujukan Empiris H1 & Fenomena Konsumen Indonesia: Membuktikan bahwa sensasi keterkejutan membuka produk tertutup menjadi pendorong utama pembelian tidak terencana pada konsumen muda.
 
@@ -85,9 +85,9 @@ Sesuai standar mutu akademik skripsi manajemen dan persyaratan pustaka mutakhir 
 - **Judul:** *Peran Self Control dalam Memoderasi Pengaruh Hedonic Motives dan Shopping Lifestyle terhadap Impulse Buying*
 - **Publikasi:** Journal of Digital Business and Management (JDBM), Vol. 1, No. 1, pp. 26-40
 - **Indeksasi:** Google Scholar, Garuda, CrossRef
-- **DOI:** [10.59888/jdbm.v1i1.38](https://doi.org/10.59888/jdbm.v1i1.38)
+- **DOI:** [10.32639/jdbm.v1i1.38](https://doi.org/10.32639/jdbm.v1i1.38) (dikoreksi 18 Sep 2026; terverifikasi HTTP 200 ke article/view/38)
 - **File PDF:** [`2022_Apidana_Kholifah_Self_Control_Hedonic_JDBM.pdf`](file:///D:/Perkuliahan/Skripsi/SKRIPSI-arthur/06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2022_Apidana_Kholifah_Self_Control_Hedonic_JDBM.pdf) (1.17 MB, 15 halaman)
-- **Keterkaitan dalam Skripsi:** Rujukan Empiris H4 (Moderasi Z): Membuktikan peran moderasi negatif Self-Control terhadap perilaku impulse buying dengan teknik Moderated Regression Analysis (MRA).
+- **Keterkaitan dalam Skripsi:** Rujukan Empiris H1 + Bukti Gagal-Moderasi (MRA): Motif hedonis positif; kontrol diri memoderasi lifestyle (H4 diterima) tetapi GAGAL memoderasi hedonis (H3 ditolak, p=0,597).
 
 ---
 
@@ -103,17 +103,33 @@ Berisi literatur teori fundamental (grand theory, middle-range theory) dan skala
 - **File PDF:** [`2017_Barasz_et_al_Pseudo_Set_Framing.pdf`](file:///D:/Perkuliahan/Skripsi/SKRIPSI-arthur/06_Referensi_Jurnal_PDF/02_Jurnal_Teori_&_Metodologi/2017_Barasz_et_al_Pseudo_Set_Framing.pdf) (599.3 KB, 63 halaman)
 - **Fungsi Teoretis:** Landasan Teoretis Utama Variabel X2 (Desire for Completeness): Membuktikan secara eksperimental bahwa mengelompokkan barang ke dalam format himpunan bernomor (pseudo-set) memicu dorongan psikologis kuat untuk mengoleksi hingga lengkap.
 
+### • Beyza Gültekin, Leyla Özer (2012)
+- **Judul:** *The Influence of Hedonic Motives and Browsing On Impulse Buying*
+- **Publikasi:** Journal of Economics and Behavioral Studies, Vol. 4, No. 3, pp. 180-189
+- **Indeksasi:** Google Scholar, DOI CrossRef terverifikasi HTTP 200
+- **DOI:** [10.22610/jebs.v4i3.315](https://doi.org/10.22610/jebs.v4i3.315)
+- **File PDF:** [`2012_Gueltekin_Ozer_Hedonic_Browsing_JEBS.pdf`](file:///D:/Perkuliahan/Skripsi/SKRIPSI-arthur/06_Referensi_Jurnal_PDF/02_Jurnal_Teori_&_Metodologi/2012_Gueltekin_Ozer_Hedonic_Browsing_JEBS.pdf) (0.38 MB, 10 halaman; OJS terbuka)
+- **Fungsi Teoretis:** Bukti hedonis → impulsif (B=0,448, p<0,001, n=420 Ankara; mediasi browsing) untuk gap Subjek 1A.
+
+### • Satria Tirtayasa, Myisha Nevianda, Hery Syahrial (2020)
+- **Judul:** *The Effect of Hedonic Shopping Motivation, Shopping Lifestyle and Fashion Involvement with Impulse Buying*
+- **Publikasi:** International Journal of Business Economics, Vol. 2, No. 1, pp. 18-28
+- **Indeksasi:** Google Scholar, Garuda, DOI CrossRef terverifikasi HTTP 200
+- **DOI:** [10.30596/ijbe.v2i1.5715](https://doi.org/10.30596/ijbe.v2i1.5715)
+- **File PDF:** [`2020_Tirtayasa_Nevianda_Syahrial_Hedonic_IJBE.pdf`](file:///D:/Perkuliahan/Skripsi/SKRIPSI-arthur/06_Referensi_Jurnal_PDF/02_Jurnal_Teori_&_Metodologi/2020_Tirtayasa_Nevianda_Syahrial_Hedonic_IJBE.pdf) (0.35 MB, 11 halaman; OJS UMSU terbuka)
+- **Fungsi Teoretis:** Bukti hedonis → impulsif positif signifikan (t=2,528) untuk gap Subjek 1A.
+
 ---
 
 ## Rangkuman Pemetaan Variabel Penelitian
 
-| Simbol | Variabel Penelitian | Jurnal Rujukan Utama Empiris (2021-2025) | Rujukan Teori Klasik / Seminal |
+| Simbol | Variabel Penelitian | Jurnal Rujukan Utama Empiris (2021-2026) | Rujukan Teori Klasik / Seminal |
 |---|---|---|---|
-| **$X_1$** | Blind-Box Product Characteristics | Gong et al. (2024), Katauke et al. (2023), Tan & Adyantari (2024), Dewi et al. (2024) | Mehrabian & Russell (1974) S-O-R Framework |
-| **$X_2$** | Desire for Completeness | Tan & Adyantari (2024), Dewi et al. (2024) | Barasz et al. (2017) Pseudo-Set Framing, Gao et al. (2014) |
+| **$X_1$** | Blind-Box Product Characteristics | Gong et al. (2024), Katauke et al. (2023), Azizah & Fauzi (2025), Dewi et al. (2026) | Mehrabian & Russell (1974) S-O-R Framework |
+| **$X_2$** | Desire for Completeness | Dewi et al. (2026) | Barasz et al. (2017) Pseudo-Set Framing, Gao et al. (2014) |
 | **$X_3$** | Speculative Motive | Aryadi & Lingga (2024), Colline (2024) | Shiller (2000) Irrational Exuberance, Baur et al. (2018) |
-| **$Z$** | Self-Control (Moderasi) | Artadita & Firmialy (2024), Lienardy & Panasea (2024), Apidana & Kholifah (2022), Colline (2024) | Tangney et al. (2004) BSCS, Baumeister (2002), Vohs & Faber (2007) |
-| **$Y$** | Impulsive Buying | Gong et al. (2024), Katauke et al. (2023), Dewi et al. (2024), Pranggabayu & Andjarwati (2022) | Rook (1987), Verplanken & Herabadi (2001) IBTS, Amos et al. (2014) |
+| **$Z$** | Self-Control (Moderasi) | Artadita & Firmialy (2024), Lienardy & Panasea (2026), Apidana & Kholifah (2022), Colline (2024) | Tangney et al. (2004) BSCS, Baumeister (2002), Vohs & Faber (2007) |
+| **$Y$** | Impulsive Buying | Gong et al. (2024), Katauke et al. (2023), Dewi et al. (2026), Pranggabayu & Andjarwati (2022) | Rook (1987), Verplanken & Herabadi (2001) IBTS, Amos et al. (2014) |
 
 ---
 

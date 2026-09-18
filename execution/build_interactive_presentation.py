@@ -205,8 +205,8 @@ DEFENSE_QUESTIONS = [
         "type": "jebakan",
         "badge": "Jebakan Penguji ⭐⭐⭐⭐⭐",
         "question": "Saudara menggunakan Zeigarnik Effect dari tahun 1927 — itu hampir 100 tahun lalu. Apakah teori itu masih relevan? Ada bukti terbaru?",
-        "keywords": ["Replikasi modern", "Gao et al. (2014, JMR)", "Gong et al. (2024, Heliyon Scopus Q1)", "Tan & Adyantari (2024)", "Validasi konteks blind box"],
-        "answer": "Zeigarnik Effect memang dicetuskan pada 1927, namun mekanisme psikologisnya telah direplikasi dan dikonfirmasi berulang kali dalam literatur perilaku konsumen modern. Dalam konteks pemasaran, Gao, Huang, & Simonson (2014) di Journal of Marketing Research membuktikannya sebagai The Completing the Set Effect. Studi terbaru oleh Gong et al. (2024) di jurnal Heliyon (Scopus Q1) serta Tan & Adyantari (2024) membuktikan bahwa ketidakpastian himpunan pada produk blind box modern memicu rasa ingin tahu dan ketegangan penyelesaian set yang secara signifikan mendorong impulsive buying. Jadi mekanisme psikologisnya telah divalidasi penuh dalam konteks produk koleksi kontemporer."
+        "keywords": ["Replikasi modern", "Gao et al. (2014, JMR)", "Gong et al. (2024, Heliyon Scopus Q1)", "Dewi et al. (2024, blind box Indonesia)", "Validasi konteks blind box"],
+        "answer": "Zeigarnik Effect memang dicetuskan pada 1927, namun mekanisme psikologisnya telah direplikasi dan dikonfirmasi berulang kali dalam literatur perilaku konsumen modern. Dalam konteks pemasaran, Gao, Huang, & Simonson (2014) di Journal of Marketing Research membuktikannya sebagai The Completing the Set Effect. Studi terbaru oleh Gong et al. (2024) di jurnal Heliyon (Scopus Q1) serta Dewi et al. (2026) pada blind box Indonesia membuktikan bahwa ketidakpastian himpunan pada produk blind box modern memicu rasa ingin tahu dan ketegangan penyelesaian set yang secara signifikan mendorong impulsive buying. Jadi mekanisme psikologisnya telah divalidasi penuh dalam konteks produk koleksi kontemporer."
     },
     {
         "id": 8,
@@ -246,7 +246,7 @@ DEFENSE_QUESTIONS = [
         "badge": "Teknik Sampling",
         "question": "Mengapa Anda menggunakan teknik Purposive Sampling, bukan Random Sampling?",
         "keywords": ["Non-Probability Purposive Sampling", "Kriteria inklusi spesifik", "Populasi tak terbatas (infinite)", "Screening questions"],
-        "answer": "Purposive sampling digunakan karena penelitian ini memerlukan responden yang memiliki kriteria pengalaman spesifik terhadap objek penelitian. Jika digunakan random sampling pada populasi umum, mayoritas responden mungkin tidak pernah membeli booster pack Pokémon TCG sehingga data yang terkumpul tidak valid. Kriteria inklusi kami menetapkan: WNI, usia minimal 17 tahun, dan pernah membeli booster pack fisik resmi berbahasa Indonesia minimal 1 kali dalam 6-12 bulan terakhir."
+        "answer": "Purposive sampling digunakan karena penelitian ini memerlukan responden yang memiliki kriteria pengalaman spesifik terhadap objek penelitian. Jika digunakan random sampling pada populasi umum, mayoritas responden mungkin tidak pernah membeli booster pack Pokémon TCG sehingga data yang terkumpul tidak valid. Kriteria inklusi kami menetapkan: WNI, usia minimal 17 tahun, dan pernah membeli booster pack fisik resmi berbahasa Indonesia minimal 1 kali dalam 12 bulan terakhir (diutamakan 6 bulan terakhir)."
     },
     {
         "id": 13,
@@ -277,8 +277,8 @@ DEFENSE_QUESTIONS = [
         "type": "bimbingan",
         "badge": "Konsistensi RM & Hipotesis",
         "question": "Mengapa Rumusan Masalah dan Tujuan Penelitian Anda ada 6 butir? Apakah referensi jurnal perlu bertambah seiring ekspansi ini?",
-        "keywords": ["Hukum Simetris 1-to-1", "Benang Merah (Golden Thread)", "H1-H3 Pengaruh Langsung", "H4-H6 Efek Moderasi MRA", "72 Referensi Lengkap"],
-        "answer": "Penelitian ini memiliki 3 variabel independen dan 1 variabel moderasi (Self-Control). Perumusan 6 butir di BAB 1 merupakan penegasan benang merah ilmiah (golden thread) dengan prinsip simetris 1-to-1 antara Rumusan Masalah (1–6), Tujuan Penelitian (1–6), dan Pengembangan Hipotesis (H1–H6 di BAB 2): Butir 1–3 menguji pengaruh langsung (direct effect: Hedonic, Completeness, Speculative terhadap Impulsive Buying), sedangkan butir 4–6 menguji efek interaksi moderasi Self-Control melalui MRA. Penambahan butir ini TIDAK memerlukan penambahan referensi baru, karena seluruh landasan teori moderasi (Self-Regulation Theory, Planner-Doer) dan kajian empiris pendukung H4–H6 (Apidana & Kholifah, 2022; Lienardy & Panasea, 2024; Artadita & Firmialy, 2024; Sultan et al., 2012; dsb.) sudah tercakup secara lengkap dan komprehensif dalam 72 referensi ilmiah di naskah dan daftar pustaka."
+        "keywords": ["Hukum Simetris 1-to-1", "Benang Merah (Golden Thread)", "H1-H3 Pengaruh Langsung", "H4-H6 Efek Moderasi MRA", "54 Referensi Tersitasi"],
+        "answer": "Penelitian ini memiliki 3 variabel independen dan 1 variabel moderasi (Self-Control). Perumusan 6 butir di BAB 1 merupakan penegasan benang merah ilmiah (golden thread) dengan prinsip simetris 1-to-1 antara Rumusan Masalah (1–6), Tujuan Penelitian (1–6), dan Pengembangan Hipotesis (H1–H6 di BAB 2): Butir 1–3 menguji pengaruh langsung (direct effect: Hedonic, Completeness, Speculative terhadap Impulsive Buying), sedangkan butir 4–6 menguji efek interaksi moderasi Self-Control melalui MRA. Penambahan butir ini TIDAK memerlukan penambahan referensi baru, karena seluruh landasan teori moderasi (Self-Regulation Theory, Planner-Doer) dan kajian empiris pendukung H4–H6 (Apidana & Kholifah, 2022; Lienardy & Panasea, 2026; Sultan et al., 2012; dsb.) sudah tercakup secara lengkap dan komprehensif dalam 54 referensi tersitasi di naskah dan daftar pustaka."
     }
 ]
 
@@ -432,12 +432,12 @@ QUIZ_QUESTIONS = [
         "q": "Kriteria inklusi responden dalam teknik Purposive Sampling penelitian ini adalah...",
         "options": [
             "A. Siapa saja yang bermain game Pokémon di Nintendo Switch",
-            "B. WNI, usia minimal 17 tahun, dan pernah membeli booster pack fisik resmi minimal 1x dalam 6-12 bulan terakhir",
+            "B. WNI, usia minimal 17 tahun, dan pernah membeli booster pack fisik resmi minimal 1x dalam 12 bulan terakhir (diutamakan 6 bulan terakhir)",
             "C. Warga negara asing yang tinggal di Jakarta",
             "D. Anak-anak usia di bawah 12 tahun yang ditemani orang tua"
         ],
         "ans": 1,
-        "exp": "Kriteria inklusi spesifik: WNI, usia >= 17 tahun (memiliki kapasitas hukum dan pertimbangan finansial mandiri), dan pernah membeli booster pack fisik resmi berbahasa Indonesia minimal 1x dalam 6-12 bulan terakhir."
+        "exp": "Kriteria inklusi spesifik: WNI, usia >= 17 tahun (memiliki kapasitas hukum dan pertimbangan finansial mandiri), dan pernah membeli booster pack fisik resmi berbahasa Indonesia minimal 1x dalam 12 bulan terakhir (diutamakan 6 bulan terakhir)."
     },
     {
         "id": 14,

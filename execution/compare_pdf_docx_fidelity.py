@@ -337,12 +337,12 @@ Audit komparatif ini membuktikan bahwa **substansi akademik dan struktur inti pe
 - **Tabel 2.1 (Penelitian Terdahulu)**: 100% Terisi 10 Jurnal Empiris Terverifikasi (2021–2025):
   1. Gong et al. (2024) - *Heliyon (Q1)*
   2. Katauke et al. (2023) - *Sustainability MDPI (Q1)*
-  3. Tan & Adyantari (2024) - *Jurnal Bisma SINTA 2*
+  3. Azizah & Fauzi (2025) - *Jurnal Inovasi Ekonomi*
   4. Colline (2024) - *Applied Finance & Sustainability*
   5. Aryadi & Lingga (2024) - *Springer Atlantis Press*
   6. Artadita et al. (2024) - *Binus Business Review Scopus Q3*
-  7. Lienardy & Panasea (2024) - *BIREV SINTA 4*
-  8. Dewi et al. (2024) - *Jurnal Locus*
+  7. Lienardy & Panasea (2026) - *BIREV (LGD Publishing)*
+  8. Dewi et al. (2026) - *Jurnal Locus*
   9. Pranggabayu & Andjarwati (2022) - *Sibatik Journal*
   10. Apidana & Kholifah (2022) - *JDBM*
 

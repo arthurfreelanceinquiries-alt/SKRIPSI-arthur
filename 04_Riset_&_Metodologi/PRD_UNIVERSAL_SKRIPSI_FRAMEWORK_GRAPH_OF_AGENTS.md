@@ -285,7 +285,8 @@ Berjalan di atas pyramid §1; tiap tahap dimiliki satu agen:
 | C-PARITY-1 | LaTeX golden → Word/MD sinkron 100%; pure black; TOC 14.0cm/`7938`/`right_indent=0`/`<w:tab/>` | A7→A8-G4/G5/G6 | BUILD BROKEN |
 | C-MEND-1 | Whitelist RIS; `TeX=MD=Word=RIS=Bib=Mendeley`; selisih 1 = BROKEN | A7→A8-G1 | regenerate + re-import Mendeley |
 | C-MEND-2 | Tiga-arah terkunci: kunci sitasi (`\cite`) = kunci BibTeX = `ID` RIS = judul dokumen cloud (cocok string). Cloud WAJIB cermin RIS: `--push` (idempoten) + `--prune` (hapus basi) + `--sync-links` (PATCH websites/identifiers); verifikasi baca-balik (55 dokumen, N ber-websites). Token kedaluwarsa → `--refresh`, bukan `--auth` ulang. Peta highlight (`directives/highlight_mendeley_citations.md`) wajib sinkron dgn metadata Bib (judul/jurnal/hlm/DOI ground truth; tanpa PDF = tulis statusnya, jangan karang hlm). | A7→A8 | cloud tak cermin = BROKEN |
-| C-CITE-2 | Sitasi tubuh BUKAN teks mati: tiap `(Penulis, Tahun)` / `Penulis (Tahun)` di DOCX adalah hyperlink internal (tetap hitam, tanpa garis bawah) ke bookmark entri DP (`_Ref_<kunci>` dari urutan `.bbl`; jumlah tak sama = bookmark mati total, anti salah-taut). Dilarang: kunci mentah (`(key2020)`), titik ganda (`et al..`), aksen mentah (`Pok{\'e}mon`). Pola pencocokan dari `.aux` natbib (termasuk segmen multi-sitasi dan penulis tunggal); inwarian teruji: teks paragraf tak berubah (snapshot+restore), 0 yatim (anchor tanpa bookmark = FAIL). | A7→A8-G4/G5 | rebuild + perbaiki pola |
+| C-CITE-2 | Sitasi tubuh BUKAN teks mati di DOCX: tiap `(Penulis, Tahun)` / `Penulis (Tahun)` di DOCX adalah hyperlink internal (tetap hitam, tanpa garis bawah) ke visible bookmark entri DP (`Ref_<kunci>` tanpa awalan underscore `_Ref_` dari urutan `.bbl`; panjang `<40` char, mulai huruf). Dilarang: kunci mentah (`(key2020)`), titik ganda (`et al..`), aksen mentah (`Pok{\'e}mon`). Pola pencocokan dari `.aux` natbib (termasuk segmen multi-sitasi dan penulis tunggal); inwarian teruji: teks paragraf tak berubah (snapshot+restore), 0 yatim (anchor tanpa bookmark = FAIL). | A7→A8-G4/G5 | rebuild + perbaiki pola |
+| C-CITE-3 | Sitasi tubuh BUKAN teks mati di Google Docs: Saat DOCX di-upload dan di-convert ke Google Docs di Drive, konverter Google kerap membuang hyperlink internal Word. Wajib jalankan `relinkCitationsToDP()` dari `execution/fix_gdocs_citation_links.gs` via Google Docs Apps Script untuk membuat bookmark native Docs (`#bookmark=<id>`) pada tiap entri DP dan menautkan sitasi tubuh (navigasi klik biasa tanpa Ctrl). Audit via `verifyCitationLinks()` wajib menunjukkan 0 tak ber-link. | A7→A8-G4/G5 | jalankan Apps Script di Docs |
 | C-LOT-1 | Angka Daftar Isi/Tabel/Gambar Word = angka cetak PDF golden truth (bukan tebakan). Entri LOT/LOF: style TOC + SATU tab kanan-7938-dot (style-level; stop paragraf ganda/konflik dilarang), hyperlink internal ke bookmark caption tubuh (tetap hitam, tanpa garis bawah), tanpa bocoran sintaks LaTeX (`\caption{...}` longtable wajib dirender). Caption tubuh yang hilang = entri tak terhubung = FAIL. | A7→A8-G4/G5 | rebuild + perbaiki generator |
 | C-AUDIT-1 | T3 hanya pada 5 trigger; temuan ber-ID F001+ | A9 | tolak audit per-edit (boros) |
 | C-KAR-1 | Tiap output: asumsi + alternatif + goal-link + verified-vs-proposed | A0→semua | kembalikan ke agen |
@@ -293,13 +294,14 @@ Berjalan di atas pyramid §1; tiap tahap dimiliki satu agen:
 
 ---
 
-## 5. Skill Registry (dari `execution/*.py` — pakai sebelum tulis skrip baru)
+## 5. Skill Registry (dari `execution/*.py` / `*.gs` — pakai sebelum tulis skrip baru)
 
 | Skill | Script | Dipakai oleh |
 |---|---|---|
 | `skill-build-word` (hybrid Pandoc OMML, dual-mode) | `build_proposal_word.py` | A7 |
 | `skill-build-pdf-nobab3` (xelatex×3, hash-check) | `build_proposal_nobab3_pdf.py` | A7 |
 | `skill-sync-md` (TeX→MD, Tabel 2.1/3.1/3.2) | `sync_markdown_from_tex.py` | A7 |
+| `skill-gdocs-citation-linker` (Native Google Docs Apps Script relink, bookmark `#bookmark=<id>`, idempoten) | `fix_gdocs_citation_links.gs` | A7, A8 |
 | `skill-fig-bab1` (300/400 DPI, palet UKRIDA) | `generate_bab1_figures.py` | A1, A3 |
 | `skill-journal-catalog` | `generate_journal_catalog.py` | A3 |
 | `skill-mendeley-gen` (55 ref, whitelist, UTF-8) | `generate_mendeley_library.py` | A7, A8 |

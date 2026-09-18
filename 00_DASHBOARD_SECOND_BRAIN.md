@@ -15,11 +15,11 @@
 * **Dosen Pembimbing:** [[07_Review_&_Audit/Revisi_Dosen/|Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A]]
 * **Metodologi Analisis:** Kuantitatif Asosiatif, Survei Kros-Seksional, *Moderated Regression Analysis (MRA)* dengan *Mean-Centering*.
 * **Status Naskah Terkini:**
-  - Naskah Utama Lengkap: [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf|Proposal_Arthur_PokemonTCG.pdf]] (55 halaman — melampaui standar K-02 UKRIDA 2023, 55 entri referensi lengkap 100% terverifikasi nyata dengan sitasi data Pokémon; rebuild 16 Sep: Gambar 1.1 diperjelas, 30+ italic `\emph`, dedup Statista; parity 7/7 PASS)
-  - Varian Siap Sidang/Review: [[01_Naskah_Utama/Proposal_Arthur_NoBab3.pdf|Proposal_Arthur_NoBab3.pdf]] (37 halaman, bersih tanpa Bab 3 & lembar formal; rebuild 16 Sep sinkron)
-  - Dokumen Word Hybrid (Native TOC Word/Docs): [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx|Proposal_Arthur_PokemonTCG.docx]] (OMML native, 55 entri daftar pustaka alfabetis bebas angka 1, 2, 3; 258 italic runs terverifikasi) & [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx|Proposal_Arthur_NoBab3.docx]] (varian review)
+  - Naskah Utama Lengkap: [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf|Proposal_Arthur_PokemonTCG.pdf]] (65 halaman pasca-restrukturisasi jujur temuan baca-isi 18 Sep 2026 — melampaui standar K-02 UKRIDA 2023, 54 entri referensi; sitasi 245 hyperlink internal ke DP; paritas full-doc PASS, 0 link mati)
+  - Varian Siap Sidang/Review: DIHAPUS 17 Sep 2026 (Opsi-1 user, single-focus naskah utama; rebuild reversibel via `build_proposal_word.py --no-chapter3` + `build_proposal_nobab3_pdf.py`)
+  - Dokumen Word Hybrid (Native TOC Word/Docs): [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx|Proposal_Arthur_PokemonTCG.docx]] (OMML native, 54 entri daftar pustaka alfabetis bebas angka, 54 bookmark DP + 245 sitasi terhyperlink; tipografi full-doc PASS pure-black + dot leaders 14,0 cm)
 * **Kickoff AI Sesi:** 🌐 [Buka Aplikasi Web Kickoff 1-Klik](file:///z:/SKRIPSII/SKRIPSI%20ARTHUR/SKRIPSI-arthur-main/SKRIPSI-arthur-main/PROMPT_KICKOFF.html) | 📋 [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md|Versi Dokumen Markdown]]
-* **Status Mendeley Live:** 55 dokumen sinkron via API (app ID 25377); 53 ber-websites terverifikasi, 2 tanpa link sah (`tan2024`, `sugiyono2019`); RIS siap impor [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris|Berkas RIS (55 Ref)]]
+* **Status Mendeley Live:** 54 entri RIS/Bib (53 ber-websites; `sugiyono2019` buku cetak tanpa link — wajar); cloud Mendeley menunggu `--prune` (hapus ghost Tan & Prasetio) + `--push` (tambah Azizah) oleh user pasca-`--auth` (token sesi lama hilang); RIS siap impor [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris|Berkas RIS (54 Ref)]]
 * **Framework Universal (pakai-ulang):** [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md|Graph of Agents A0–A11]] · SOP [[directives/universal_thesis_graph_of_agents.md|F1–F11]] · Orchestrator `py execution/run_thesis_graph.py --gate parity` · Template [[04_Riset_&_Metodologi/TEMPLATE_SOURCE_OF_TRUTH_UNIVERSAL.md|SoT Baru]] · Konektor `execution/mendeley_connector.py`
 * **Status Graphify Knowledge Graph:** 🌐 [[graphify-out/graph.html|Peta Pengetahuan Interaktif]] (1.541 Nodes, 1.686 Edges, 134 Komunitas Terkini)
 
@@ -56,6 +56,7 @@
 
 ### 📁 C. Riset, Metodologi, & Riwayat Sesi
 * **Source of Truth:** [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] *(Dokumen rujukan mutlak parameter skripsi)*
+* **Ledger Bukti Halaman (D26):** [[04_Riset_&_Metodologi/EVIDENCE_LEDGER_HALAMAN.md]] *(15 klaim → halaman PDF; SOP [[directives/evidence_page_ledger.md]]; uji `verify_evidence_ledger.py`)*
 * **Catatan Log Sesi Otomatis:** [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] *(Catatan progres dan keputusan tiap sesi)*
 * **Panduan Standarisasi Heading & TOC:** [[04_Riset_&_Metodologi/PANDUAN_STANDARISASI_HEADING_DAN_DAFTAR_ISI_DOCX.md]] *(Kompatibilitas titik-titik Google Docs & Word)*
 * **PRD Resolusi Review Teknis Prism AI:** [[04_Riset_&_Metodologi/PRD_RESOLUSI_REVIEW_TEKNIS_PRISM_AI.md]] *(Resolusi 11 temuan audit metodologi)*
@@ -64,8 +65,8 @@
 * **Grafik & Visual Empiris Bab 1:** [[04_Riset_&_Metodologi/PRD_GRAFIK_EMPIRIS_BAB1.md]]
 * **PRD Integrasi Skill Paper-Audit:** [[04_Riset_&_Metodologi/PRD_INTEGRASI_SKILL_PAPER_AUDIT.md]] *(Kebijakan aktivasi bertingkat Tier-3 Gated Audit)*
 * **SOP Audit Ilmiah Naskah:** [[directives/run_paper_audit.md]] *(SOP pelaksanaan audit pra-bimbingan & pra-sidang)*
-* **Laporan Audit Ilmiah Formal:** [[07_Review_&_Audit/Paper_Audits/]] *(Penyimpanan terpusat laporan paper-audit)*
-* **PRD Integritas & Paritas Mendeley:** [[04_Riset_&_Metodologi/PRD_SISTEM_INTEGRITAS_DAN_VERIFIKASI_MENDELEY.md]] *(Sistem pencegahan Silent Drop & Paritas 55 Referensi)*
+* **Laporan Audit Ilmiah Formal:** [[07_Review_&_Audit/Paper_Audits/]] *(terbaru: [[07_Review_&_Audit/Paper_Audits/review-2026-09-18-213000.md|audit pasca-humanisasi 18 Sep 2026]] — F001–F019 resolved, F020–F025, 0 temuan terbuka)*
+* **PRD Integritas & Paritas Mendeley:** [[04_Riset_&_Metodologi/PRD_SISTEM_INTEGRITAS_DAN_VERIFIKASI_MENDELEY.md]] *(Sistem pencegahan Silent Drop & Paritas 54 Referensi)*
 * **PRD Eliminasi Sumber Fiktif & Verifikasi Data Primer:** [[04_Riset_&_Metodologi/PRD_ELIMINASI_SUMBER_PALSU_DAN_VERIFIKASI_DATA_PRIMER_BAB1.md]] *(Zero-Hallucination Protocol & Audit Faktual)*
 * **Ground Truth Data Empiris Terverifikasi:** [[04_Riset_&_Metodologi/VERIFIED_EMPIRICAL_DATA.md]] *(Catatan audit fisik Statista, Pokémon Company, PSA)*
 * **Directive Verifikasi Sumber Empiris:** [[directives/empirical_source_verification.md]] *(Aturan mutlak no-synthetic citations)*
@@ -78,10 +79,10 @@
 
 
 ### 📁 D. Referensi & Jurnal Ilmiah
-* **Paket Library Mendeley (Universal RIS):** [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris|Berkas RIS Siap Impor (55 Ref)]] | [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.bib|Berkas BibTeX (55 Ref)]]
+* **Paket Library Mendeley (Universal RIS):** [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris|Berkas RIS Siap Impor (54 Ref)]] | [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.bib|Berkas BibTeX (54 Ref)]]
 * **Panduan 1-Menit Impor Mendeley:** [[06_Referensi_Jurnal_PDF/PANDUAN_IMPORT_MENDELEY_1_MENIT.md]] *(Panduan tangkapan layar 55 referensi untuk dosen)*
 * **Katalog Lengkap:** [[06_Referensi_Jurnal_PDF/KATALOG_REFERENSI_JURNAL.md]]
-* **10 Jurnal Empiris Mutakhir (2021–2025):** [[06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/]]
+* **10 Jurnal Empiris Mutakhir (2021–2026):** [[06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/]]
 * **Paper Seminal Kelengkapan:** [[06_Referensi_Jurnal_PDF/02_Jurnal_Teori_&_Metodologi/2017_Barasz_et_al_Pseudo_Set_Framing.pdf]]
 
 ---
@@ -90,9 +91,9 @@
 
 | Simbol | Variabel Penelitian | Landasan Teori Utama | Skala Baku / Indikator | Jurnal Rujukan Mutakhir |
 |---|---|---|---|---|
-| **$Y$** | *Impulsive Buying* | Teori Impulsif Rook (1987) | Skala IBTS (Verplanken & Herabadi, 2001) | Dewi et al. (2024), Gong et al. (2024) |
+| **$Y$** | *Impulsive Buying* | Teori Impulsif Rook (1987) | Skala IBTS (Verplanken & Herabadi, 2001) | Dewi et al. (2026), Gong et al. (2024) |
 | **$X_1$** | *Hedonic Motivation* | *Hedonic Value* Babin et al. (1994) | 6 Dimensi Belanja (Arnold & Reynolds, 2003) | Pranggabayu (2022), Apidana (2022) |
-| **$X_2$** | *Desire for Completeness* | *Completing the Set* Gao (2014) & Zeigarnik (1927) | *Pseudo-Set Framing* (Barasz et al., 2017) | Tan & Adyantari (2024), Dewi et al. (2024) |
+| **$X_2$** | *Desire for Completeness* | *Completing the Set* Gao (2014) & Zeigarnik (1927) | *Pseudo-Set Framing* (Barasz et al., 2017) | Dewi et al. (2026) |
 | **$X_3$** | *Speculative Motive* | *Behavioral Finance* Shiller (2000) & Keynes (1936) | Arbitrase Grading PSA 10 & Secondary Market | Aryadi & Lingga (2024), Colline (2024) |
 | **$Z$** | *Self-Control* (Moderator) | *Self-Regulation Theory* Baumeister (2002) | *Brief Self-Control Scale* / BSCS (Tangney, 2004) | Artadita & Firmialy (2024), Lienardy (2024) |
 

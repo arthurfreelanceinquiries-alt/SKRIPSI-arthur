@@ -42,14 +42,18 @@ Fakta: akun cloud tinggal 3/55 dokumen (perpustakaan lama terhapus di sisi user/
 - Verifier G4: hapus fallback `_style_tab_stops` bila Word truth berubah.
 - Cloud: `--prune --dry` sebelum hapus massal; token di `token.json` (gitignored) dapat diregenerasi via `--auth`.
 
-## 6. Sitasi Tubuh Bisa Diklik → Daftar Pustaka (aturan `C-CITE-2`)
+## 6. Sitasi Tubuh Bisa Diklik → Daftar Pustaka (aturan `C-CITE-2` & `C-CITE-3`)
 
-| Gejala (bukti) | Akar masalah | Perbaikan |
+| Gejala (bukti) | Akar masalah | Perbaikan 3 Lapis |
 |---|---|---|
-| Sitasi `(Statista, 2024)` teks mati, diklik diam | Generator hanya menulis teks; field plugin Mendeley tak bisa dibuat manual andal | `link_citations_to_dp`: bookmark `_Ref_<kunci>` per entri DP (urutan `.bbl`; tak sama = mati total) + hyperlink internal tiap kemunculan (tetap hitam). Pola dari `.aux` natbib: paren, naratif, bare multi-kata, + segmen multi-sitasi (termasuk penulis tunggal) |
+| Sitasi `(Statista, 2024)` teks mati, diklik diam di Word | Generator hanya menulis teks; field plugin Mendeley tak bisa dibuat manual andal | **Layer 1 (DOCX):** `link_citations_to_dp`: bookmark visible `Ref_<kunci>` per entri DP (urutan `.bbl`; tak sama = mati total, tanpa awalan `_Ref_`) + hyperlink internal OOXML tiap kemunculan (tetap hitam, tanpa garis bawah). Pola dari `.aux` natbib: paren, naratif, bare multi-kata, + segmen multi-sitasi (termasuk penulis tunggal) |
+| Sitasi putus saat di-convert ke Google Docs Web | Konverter Google Drive membuang `<w:hyperlink w:anchor>` dan bookmark Word | **Layer 3 (Google Docs):** Jalankan Apps Script `execution/fix_gdocs_citation_links.gs` (`relinkCitationsToDP`) via menu Extensions > Apps Script. Membuat bookmark Docs native (`#bookmark=<id>`) per entri DP dan menautkan sitasi in-text. Navigasi cukup klik biasa (single click). |
 | `et al..` titik ganda di DOCX | `clean_academic_text` menambah titik di atas titik yg ada | Konsumsi titik opsional (`et al\.?`); pola toleran (`et al\.+`) |
 | `Pok{\'e}mon` mentah di DOCX | Jalur baca-TeX langsung lolos dari normalisasi aksen | Normalisasi aksen di `clean_academic_text` (é/ü/ö/è) |
 | `(; Hayes, 2018)` — teks HILANG (insiden serius, tertangkap sebelum kirim) | Offset `p.text` vs run langsung bergeser oleh teks hyperlink bersarang | Peta offset jujur (`_para_map`, unit atomik) + split pada node + snapshot/restore + verifikasi `p.text` per paragraf. Pelajaran: JANGAN rebuild run dari offset buta; JANGAN bungkam exception tanpa invariant check |
-| Kejujuran penting: hyperlink internal Word = **Ctrl+klik** (bukan klik biasa). Sampaikan ke user/dosen. Di Google Docs cukup klik biasa | — | — |
+| Navigasi berbeda antar platform | Perilaku native software pengolah kata | Di Word Desktop = **Ctrl+klik**; di Google Docs Web (setelah script) = **klik biasa** (single click) |
 
-Verifikasi: full 55/55 kunci terhubung (NoBab3 51 + 4 khusus-Bab-3 sah tak terhubung); 0 `(;`; 0 kunci mentah; 0 anchor yatim; teks paragraf identik pre/post (invariant check); 11/11 gerbang tetap PASS.
+Verifikasi:
+1. **Layer 1 & 2 (DOCX):** Full 55/55 kunci terhubung (NoBab3 51 + 4 khusus-Bab-3 sah tak terhubung); 0 `(;`; 0 kunci mentah; 0 anchor yatim; teks paragraf identik pre/post (invariant check); 11/11 gerbang tetap PASS.
+2. **Layer 3 (Google Docs):** `relinkCitationsToDP()` sukses memetakan DP dan sitasi tubuh; `verifyCitationLinks()` membuktikan 0 sitasi tak ber-link; klik biasa pada sitasi langsung melompat ke DAFTAR PUSTAKA.
+

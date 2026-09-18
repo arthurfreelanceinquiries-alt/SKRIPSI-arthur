@@ -684,4 +684,255 @@
 * **Verifikasi:** full 55/55 (NoBab3 51; 4 khusus-Bab-3 sah); 0 `(;`; 0 kunci mentah; 0 anchor yatim; 11/11 gerbang + 0 MATI.
 * **Framework:** PRD +`C-CITE-2`; SOP F7; IMPLEMENTATION_PLAN §6 (termasuk cara klik + batas plugin).
 
+---
+
+## 📅 Sesi: 17 September 2026 — Pre-Flight Second Brain & Sinkronisasi Konteks (A11)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Membuka sesi kerja 17 Sep 2026 dengan protokol anti-lupa konteks [[00_DASHBOARD_SECOND_BRAIN.md]] + Graphify.
+> - **Masalah yang Diselesaikan:** Memastikan status naskah, variabel, dan arahan [[Dr. Fredella Colline]] termuat sebelum eksekusi.
+> - **Keputusan/Output:** Pre-flight PASS; menunggu fokus pekerjaan user hari ini.
+
+- **Fokus Pekerjaan:** Baca `graphify-out/manifest.json` + `graphify-out/GRAPH_REPORT.md` (1.541 nodes, 1.686 edges, 134 komunitas); baca [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] (D01–D25), [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]] + [[directives/universal_thesis_graph_of_agents.md]] (A0–A11, F1–F11).
+- **Masalah yang Diselesaikan:** Konfirmasi naskah final 16 Sep tetap valid sebagai baseline sesi ini.
+- **Keputusan / Insight:** Tidak ada perubahan naskah pada pre-flight; zero-desync dipertahankan.
+- **File yang Diperbarui:** [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+---
+
+## 📅 Sesi: 17 September 2026 — Audit Tier-3 Paper-Audit On-Demand (A9)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Audit ilmiah komprehensif [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]] via `paper-audit` + `obsidian-second-brain`.
+> - **Masalah yang Diselesaikan:** 3 cabang paralel + challenger pass anti-false-alarm UKRIDA 2023.
+> - **Keputusan/Output:** 0 Critical, 10 Major, 5 Minor — layak sempro setelah Major diperbaiki; naskah read-only.
+
+- **Fokus Pekerjaan:** SOP [[directives/run_paper_audit.md]] 5-langkah; proofing_scan 0 kandidat; mapping Fenomena→RM→H→MRA; audit Methods (M1–M10), Math (T1–T6, Green/F-change terverifikasi benar), Claims (C1–C16).
+- **Masalah yang Diselesaikan:** Temuan inti: Zheng/Prasetio/Shiller-Aryadi/Long-Spero/Hirschman-Stern/Fama-Barber perlu relabel/keluarkan dari kolom empiris; β4 yatim; window 6/12bln; validitas Pearson; VIF interaksi; etik; generalisasi; PriceCharting overclaim; adaptasi skala.
+- **Keputusan / Insight:** Context anchors LULUS (Colline K-04, Model1+M*, centering, UU 24/2013). Urutan hemat: F007+F016 → F001–F006 → presisi data → selaraskan Bab 3/notasi.
+- **File yang Diperbarui:** [[07_Review_&_Audit/Paper_Audits/review-2026-09-17-164319.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+---
+
+## 📅 Sesi: 17 September 2026 — Pembuka Second Brain & Pre-Flight Anti-Lupa Konteks
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Membuka sesi kerja 17 Sep 2026 atas permintaan user dengan protokol [[obsidian-second-brain]] (pre-flight Graphify + kokpit dashboard).
+> - **Masalah yang Diselesaikan:** Memastikan status naskah, variabel Y/X1/X2/X3/Z, dan arahan [[Dr. Fredella Colline]] termuat sebelum eksekusi agar nol amnesia antar sesi.
+> - **Keputusan/Output:** Pre-flight PASS; verifikasi PDF aktual 62/44 hlm; menunggu fokus pekerjaan user hari ini.
+
+- **Fokus Pekerjaan:** Baca `graphify-out/manifest.json` (142 keys) + `graphify-out/GRAPH_REPORT.md` (1.541 nodes, 1.686 edges, 134 komunitas); baca [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] (D01–D25), [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]] (A0–A11) + [[directives/universal_thesis_graph_of_agents.md]] (F1–F11).
+- **Masalah yang Diselesaikan:** Deteksi stale dashboard (masih tulis 55/37 hlm vs aktual 62/44 hlm pasca-revisi Research Gap 16 Sep malam); dikonfirmasi via `fitz` page-count sebagai baseline sesi ini.
+- **Keputusan / Insight:** Baseline sesi ini = Full 62 hlm + NoBab3 44 hlm, paritas 55 ref, Mendeley cloud 55 dokumen (53 ber-websites); arsitektur 3-Layer (directives -> orchestration -> execution) ditegakkan; tidak ada perubahan naskah pada pre-flight.
+- **File yang Diperbarui:** [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+---
+
+## 📅 Sesi: 17 September 2026 — Perbaikan Sitasi-Klik Putus di Google Docs Web (C-CITE-2 + Docs-Native)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menjawab keluhan user: sitasi `(Penulis, Tahun)` tidak connect ke [[DAFTAR PUSTAKA]] setelah DOCX di-transfer/convert ke Google Docs web.
+> - **Masalah yang Diselesaikan:** Konverter Google membuang hyperlink internal `<w:hyperlink w:anchor>` + bookmark hidden `_Ref_*`; di Word 100% jalan (Ctrl+klik), di Docs jadi teks mati.
+> - **Keputusan/Output:** Dua lapis — DOCX visible-bookmark `Ref_*`/`Cap_*` + rebuild 241/202 tautan; script Docs-native [[execution/fix_gdocs_citation_links.gs]] + SOP [[directives/fix_gdocs_citation_links.md]]; 11/11 PASS, 0 link mati.
+
+- **Fokus Pekerjaan:** Inspeksi `execution/build_proposal_word.py` (`link_citations_to_dp`, `_Ref_` 55 bookmarks, 305 anchors); web-research importer Docs (hidden-bookmark drop, kasus Paperpile); regenerasi `.bbl`/`.aux` full via XeLaTeX×3+BibTeX (62 hlm pulih pasca-cleanup); rename `_Ref_`→`Ref_`, `_Cap_`→`Cap_`; rebuild full + NoBab3; buat Apps Script `relinkCitationsToDP`/`verifyCitationLinks` (`node --check` OK); buat SOP Layer-1.
+- **Masalah yang Diselesaikan:** (1) Rebuild awal FAIL total (DP 55 vs bbl 0, sitasi dilewati) karena `.bbl`/`.aux` gitignored ikut ter-cleanup — pulih via kompilasi full; (2) Bookmark hidden penyebab utama putus di Docs — diganti visible; (3) Garansi Docs: script membuat bookmark Docs-native + `#bookmark=<id>` (klik biasa).
+- **Keputusan / Insight:** Jawaban jujur: DOCX saja TIDAK bisa 100% garansi di Docs (limitasi Google); kombinasi Lapis-1 + Lapis-2 = selesai. Rantai resmi tetap paragraf→DP→URL biru→sumber/Mendeley (plugin Mendeley Cite tak bisa dimanualkan). Surgical: hanya 2 baris bookmark + 2 file baru; naskah isi tidak diubah.
+- **File yang Diperbarui:** [[execution/build_proposal_word.py]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]], [[execution/fix_gdocs_citation_links.gs]], [[directives/fix_gdocs_citation_links.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** `run_thesis_graph.py --gate parity` 7/7 PASS; `--gate extended` 11/11 PASS; `verify_all_citation_links.py` 31 hidup / 22 walled / 0 MATI; DP bookmark 55 entri, sitasi 241 (full) / 202 (NoBab3).
+
+---
+
+## 📅 Sesi: 17 September 2026 — Hapus Varian NoBab3, Fokus ke Naskah Utama (Opsi 1)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menjawab permintaan user agar varian tanpa Bab 3 dihapus dan semua berpusat ke dokumen utama berbab 3.
+> - **Masalah yang Diselesaikan:** Dual-mode (Full vs NoBab3) membingungkan; user ingin single-focus ke naskah utama.
+> - **Keputusan/Output:** Opsi 1 — hapus 3 artefak output NoBab3 saja; pipeline `--no-chapter3` + verifiers tetap ada (reversibel).
+
+- **Fokus Pekerjaan:** Inventarisasi `01_Naskah_Utama/Proposal_Arthur_NoBab3.{docx,pdf,tex}` + 40 referensi `NoBab3` di 8 scripts; konfirmasi scope via opsi 1 vs 2; eksekusi `Remove-Item` 3 file; verifikasi naskah utama utuh.
+- **Masalah yang Diselesaikan:** Folder `01_Naskah_Utama` kini hanya berisi naskah utama; tidak ada perubahan isi naskah.
+- **Keputusan / Insight:** Opsi 1 dipilih user (reversibel). Konsekuensi jujur: G1/G5/X2 akan FAIL sementara bila dijalankan (file NoBab3 hilang = BUILD BROKEN eksplisit, bukan klaim pass). Rebuild bila dosen minta varian: `py execution/build_proposal_word.py --no-chapter3` + `py execution/build_proposal_nobab3_pdf.py`. Single-mode penuh (Opsi 2) ditunda.
+- **File yang Dihapus:** [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]], [[01_Naskah_Utama/Proposal_Arthur_NoBab3.pdf]], [[01_Naskah_Utama/Proposal_Arthur_NoBab3.tex]]
+- **File yang Diperbarui:** [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** Naskah utama `Proposal_Arthur_PokemonTCG.pdf` 62 hlm + `.docx` + `.tex` utuh; `Get-ChildItem *NoBab3*` kosong.
+
+---
+
+## 📅 Sesi: 17 September 2026 — Hapus Label Lampiran di Halaman Persetujuan
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menghapus tulisan `Lampiran 2: Contoh ...` di atas judul sesuai permintaan user.
+> - **Masalah yang Diselesaikan:** Label contoh pedoman ikut tercetak di dokumen resmi pengajuan.
+> - **Keputusan/Output:** Paragraf header dihapus dari generator + DOCX/PDF/PNG diregenerate; PDF 1 hlm terverifikasi tanpa kata `Lampiran`.
+
+- **File yang Diperbarui:** [[execution/build_lembar_persetujuan.py]], [[01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/Halaman_Persetujuan_Proposal_Arthur_Reezan.docx]], [[01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/Halaman_Persetujuan_Proposal_Arthur_Reezan.pdf]], [[01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/Halaman_Persetujuan_Proposal_Arthur_Reezan.png]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+---
+
+## 📅 Sesi: 17 September 2026 — Audit Walled 55 Sitasi + PRD & Implementation Plan
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menjawab permintaan user: cek SEMUA sitasi tanpa kecuali, berapa yang terhalang; buatkan PRD plan + implementation plan.
+> - **Masalah yang Diselesaikan:** Bedakan WALLED (contoh user `verplanken2001` Sage 403: DOI sah, bot ditolak) vs DEAD per `C-LINK-1`.
+> - **Keputusan/Output:** 55 sitasi → 53 tautan → 32 hidup / 21 walled / 0 MATI (PASS); PRD + plan diterbitkan.
+
+- **Fokus Pekerjaan:** Baca [[execution/verify_all_citation_links.py]] (cakupan: semua `\cite` TEX → doi/url BIB + UR RIS); jalankan audit penuh; tulis [[04_Riset_&_Metodologi/PRD_AUDIT_SITASI_WALLED_2026-09-17.md]] + [[04_Riset_&_Metodologi/IMPLEMENTATION_PLAN_AUDIT_SITASI_WALLED.md]] (callout SUMMARY + wikilinks).
+- **Keputusan / Insight:** 21 WALLED = sah (terdaftar Crossref, me-resolve; perlu browser manusia/akses kampus untuk full-text), bukan FAIL — tanpa penggantian sumber. 2 sitasi tanpa tautan (`tan2024`, `sugiyono2019`) tetap PR terbuka. Audit read-only, naskah tak tersentuh.
+- **File yang Diperbarui:** [[04_Riset_&_Metodologi/PRD_AUDIT_SITASI_WALLED_2026-09-17.md]], [[04_Riset_&_Metodologi/IMPLEMENTATION_PLAN_AUDIT_SITASI_WALLED.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** `verify_all_citation_links.py` exit 0 → `memeriksa 53 tautan (55 sitasi)`, ringkas 32/21/0.
+
+---
+
+## 📅 Sesi: 17 September 2026 — Opsi A: Bukti Akses + Temuan Entri Campuran Barasz (C-LINK-1)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Opsi A — daftar bukti akses per sitasi walled; saat verifikasi judul-vs-DOI menemukan 1 entri campuran yang ditulis ulang ke ground truth.
+> - **Masalah yang Diselesaikan:** `barasz2017pseudo` tercampur (penulis+judul Barasz menempel pada jurnal/vol/hlm/DOI paper Rozenkrants JCR) — kelas kesalahan Gao/Sultan.
+> - **Keputusan/Output:** Ground truth JEP:G 146(10):1460–1477, DOI `10.1037/xge0000337` (ALIVE); audit ulang 33/20/0; parity 3/7 PASS dengan 4 FAIL eksplisit akibat penghapusan NoBab3 (bukan regresi).
+
+- **Fokus Pekerjaan:** Verifikasi 20 DOI walled ke Crossref (20/20 cocok; 3 gagal-cetak charmap diulang ASCII-SAFE ✓); tulis [[04_Riset_&_Metodologi/BUKTI_AKSES_SITASI_WALLED.md]] (5 kelompok + jalur bukti umum); telusur konteks 21 kunci di TEX (Barasz 10x, narasi tak menyebut nama jurnal); tulis ulang bib/MD/draf; regenerate PDF 62 hlm + DOCX 241 tautan + RIS/Bib 55 ref; audit ulang + parity.
+- **Keputusan / Insight:** (1) WALLED dipertahankan — tiap entri ≥2 jalur bukti; (2) Pelajaran sistemik: `verify_all_citation_links.py` buta terhadap DOI-salah-tapi-resolve → usulan cek judul-vs-Crossref berkala dicatat di PRD; (3) 4 FAIL parity (G1/G3/G4/G5) 100% Missing-File NoBab3 pasca-Opsi-1 — cek full-doc lulus (G4 full 100% clean, G2/G6/G7 PASS).
+- **File yang Diperbarui:** [[01_Naskah_Utama/references.bib]], [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]], [[03_Draft_Per_Bab/DAFTAR_PUSTAKA_TENTATIF.md]], [[03_Draft_Per_Bab/BAB_II_TINJAUAN_PUSTAKA.md]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris]], [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.bib]], [[04_Riset_&_Metodologi/BUKTI_AKSES_SITASI_WALLED.md]], [[04_Riset_&_Metodologi/PRD_AUDIT_SITASI_WALLED_2026-09-17.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** Link audit 33 hidup / 20 walled / 0 MATI; `.bbl` memuat JEP:G; parity 3 PASS / 4 FAIL (Missing NoBab3, eksplisit).
+
+---
+
+## 📅 Sesi: 18 September 2026 — Pre-Flight Second Brain & Sinkronisasi Konteks (Permintaan User)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Membuka sesi kerja atas permintaan user dengan protokol [[obsidian-second-brain]] (pre-flight Graphify + kokpit dashboard + framework universal).
+> - **Masalah yang Diselesaikan:** Memastikan status naskah, variabel Y/X1/X2/X3/Z, dan arahan [[Dr. Fredella Colline]] termuat sebelum eksekusi agar nol amnesia antar sesi.
+> - **Keputusan/Output:** Pre-flight PASS; baseline = naskah utama Full 62 hlm (NoBab3 dihapus Opsi-1); menunggu fokus pekerjaan user hari ini.
+
+- **Fokus Pekerjaan:** Baca `graphify-out/manifest.json` (142 keys) + `graphify-out/GRAPH_REPORT.md` (1.541 nodes, 1.686 edges, 134 komunitas); baca [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] (D01–D25), [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]] (A0–A11) + [[directives/universal_thesis_graph_of_agents.md]] (F1–F11); cek `01_Naskah_Utama/` + [[07_Review_&_Audit/Revisi_Dosen/TEMPEL_CHAT_DOSEN_DISINI.md]].
+- **Masalah yang Diselesaikan:** Deteksi stale dashboard (masih tulis 55/37 hlm vs aktual Full 62 hlm pasca-revisi Research Gap 16 Sep malam + NoBab3 sudah dihapus 17 Sep); dikonfirmasi via listing `01_Naskah_Utama/` sebagai baseline sesi ini.
+- **Keputusan / Insight:** Arsitektur 3-Layer ditegakkan (directives -> orchestration -> execution); tidak ada perubahan naskah pada pre-flight; zero-desync dipertahankan.
+- **File yang Diperbarui:** [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+---
+
+## 📅 Sesi: 18 September 2026 — Revisi Major Paper-Audit 17 Sep (F001–F019, Zero New Refs)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menuntaskan 10 Major + 5 Minor audit Tier-3 [[07_Review_&_Audit/Paper_Audits/review-2026-09-17-164319.md]] secara surgical tanpa menambah referensi (paritas 55 terjaga).
+> - **Masalah yang Diselesaikan:** Kutub gap terbalik (Zheng), klaim moderasi-gagal tanpa tabel interaksi (Prasetio), teori diklaim empiris (Shiller/Long/Spero/Hirschman/Stern/Fama/Barber), β4 yatim, inkonsistensi window sampel, prosedur validitas campur, VIF interaksi, overclaim etik, generalisasi purposive, overclaim PriceCharting, skala short-form, notasi α ganda.
+> - **Keputusan/Output:** Naskah utama Full 65 hlm + DOCX 250 hyperlink + MD 986 baris; full-doc verifiers PASS; FAIL tersisa hanya Missing-File NoBab3 (Opsi-1, eksplisit).
+
+- **Fokus Pekerjaan:** Urutan hemat audit §6 — (1) F007 β4 baseline eksplisit (caption + §3.3) + F016 RM/Tujuan direksional ``memperlemah'' + uji-t dua sisi konservatif; (2) F001 Zheng dipindah ke Temuan A Subjek 1 + bib terkoreksi (Xiabing/Men Jinqi, IJIM 48:151–160, DOI `10.1016/j.ijinfomgt.2019.02.010`, ALIVE); F002 Prasetio hanya bukti langsung; F003 Shiller→grand theory + Aryadi dikualifikasi (Y=partisipasi investasi, logistik biner); F004–F006 Long/Spero/Hirschman/Stern/Fama/Barber direlabel batas teoritis eksplisit; 5B/6B/7B menjadi argumen teoritis (*regulatory failure*/obsesi/euforia); Tabel 1.1 + Bab 2 H3 diselaraskan; (3) F015 Statista→2021 Chart 24277 + F013 PriceCharting dilunakkan ``mengilustrasikan plausibilitas'' + footnote snapshot/volatilitas/limitasi EN→ID; (4) F008 window 12 bln (diutamakan 6 bln) di 4 lokasi; F009 Pearson vs corrected dipisah (pilot r-tabel≈0,361); F010 pengecualian VIF interaksi; F011 etik dilunakkan + paket survei risiko-minimal; F012 ``validitas isi''→relevansi + limiter analitis; F014 ``mengadopsi''→adaptasi pendek (IBTS 20→6, Arnold 18→5, BSCS 13→6, X2/X3 dikembangkan peneliti); F017 ΔR² dari R² biasa; F018 α→taraf nyata 5% + Alpha/α_c; F019 β6<0/β7<0 + slopes per-H.
+- **Keputusan / Insight:** (1) 2-2-2 D24 diamandemen jujur: Temuan B boleh batas teoritis eksplisit; SoT D15 disinkron 6 butir direksional (tutup utang dokumen). (2) G1/G3/G4/G5 FAIL = Missing NoBab3 pasca-Opsi-1, bukan regresi — cek full-doc lulus semua. (3) PR terbuka tersisa: `tan2024`/`sugiyono2019` tanpa link sah; tahun cloud Mendeley Statista/Zheng perlu re-push manual; verifikasi full-text Tan sebelum sidang.
+- **File yang Diperbarui:** [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]], [[01_Naskah_Utama/references.bib]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]] (65 hlm stabil X4), [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]] (55 bookmark + 250 tautan), [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]] (986 baris), [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris]], [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.bib]], [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] (D15 + D24), [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** intext PASS; italic PASS; link audit 33 hidup / 20 walled / 0 MATI (Zheng ALIVE); DOCX full PASS pure-black + dot leaders; Mendeley T2–T7 PASS; PDF 65 hlm stabil.
+
+---
+
+## 📅 Sesi: 18 September 2026 — Ghost Removal Tan & Prasetio + Pengganti Azizah (Opsi B, N=54)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menjawab pertanyaan user (Tan & Sugiyono diapakan) + eksekusi Opsi B: hapus 2 ghost, admit 1 pengganti terverifikasi.
+> - **Masalah yang Diselesaikan:** `tan2024ketidakpastian` tak terverifikasi (4 bukti) + temuan susulan `prasetio2021hedonic` ghost (DOI milik artikel lain); Diagnosa Sugiyono = AMAN dipertahankan.
+> - **Keputusan/Output:** N 55→54, PDF 64 hlm + DOCX 54 bookmark/245 tautan + MD 984; link 33/20/0 MATI; kuota UKRIDA 6≥5 PASS; cloud menunggu aksi user.
+
+- **Fokus Pekerjaan:** (1) Verifikasi Tan: Garuda Vol 18 No 2 (6 artikel, Tan absen) + DOI katalog 404 + artikel 60038 404 + kontradiksi bib (Vol 18/2024) vs PDF lokal (Vol 20/2026) + nol jejak Scholar + PDF print-to-PDF macOS → GHOST. (2) Temuan susulan Prasetio: DOI resolve ke AlMujaini et al. 2021 + judul tak ada di Crossref → GHOST (pola Gao/Sultan). (3) Sugiyono: PERTAHANKAN (buku cetak kanonis, kebijakan buku lokal, dikutip dgn Sekaran). (4) Kandidat UPI IJDB treasure-hunting: GAGAL verifikasi mesin (Cloudflare challenge; metadata penulis tak diperoleh) → DITOLAK, user bisa supali PDF browser bila mau. (5) Pengganti admit: Azizah & Fauzi (2025) JIKO UMM — PDF HTTP 200 diunduh, judul/penulis/vol/hlm/DOI-pola terverifikasi dari PDF, temuan H1 wellness ("hedonic → impulse positif signifikan", n=140, PLS-SEM, sitasi Rook/Verplanken) dibaca langsung; DOI tercetak belum teregistrasi (404) → sitasi URL-only jujur + note di bib.
+- **Keputusan / Insight:** (1) Zero-Hallucination ditegakkan: Tan keluar total (4 sitasi), Prasetio keluar (3 sitasi); Subjek 2A kini Gao+Barasz+Dewi; Tabel 2.1 baris 5 = Azizah. (2) Bonus-bersih: KATALOG Dewi DOI (.289→.5619) + Artadita entry 6 (penulis/judul/hlm sesuai PDF; KATALOG sebelumnya salah) diperbaiki. (3) TEST 4 WARN `&` = false-positive header tabel (pre-existing). (4) PR terbuka: cloud `--auth→--push→--prune→--sync-links` oleh user (token hilang); DOI Azizah dimonitor (daftarkan ulang bila penerbit deposit).
+- **File yang Diperbarui:** [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]] (7 titik), [[01_Naskah_Utama/references.bib]] (−2+1), [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]] (64 hlm), [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]] (54/245), [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]] (984), [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris]], [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.bib]], [[06_Referensi_Jurnal_PDF/KATALOG_REFERENSI_JURNAL.md]], [[06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2025_Azizah_Fauzi_Hedonic_Impulse_JIKO.pdf]] (baru), [[04_Riset_&_Metodologi/LITERATURE_MATRIX.md]], [[03_Draft_Per_Bab/BAB_II_TINJAUAN_PUSTAKA.md]], [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]] + `.pdf`, [[02_Persiapan_Sidang/presentasi_interaktif/app.js]] + [[02_Persiapan_Sidang/PRESENTASI_PANDUAN_BELAJAR.html]] (regen Q7), [[execution/generate_mendeley_library.py]] + [[execution/verify_mendeley_integrity.py]] + [[execution/generate_journal_catalog.py]] + [[execution/analyze_completeness_construct.py]] + [[execution/build_interactive_presentation.py]] + [[execution/compare_pdf_docx_fidelity.py]] (54/Tan→Azizah), [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] (gap-2, D19, D21), [[00_DASHBOARD_SECOND_BRAIN.md]] (54), [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **File yang Dihapus:** [[06_Referensi_Jurnal_PDF/01_Empiris_Utama_2021-2025/2024_Tan_Adyantari_Blind_Box_Impulsive_Bisma.pdf]] (bukti tak terverifikasi)
+- **Verifikasi:** RIS/Bib 54 (JOUR 39/BOOK 11/CONF 1/RPRT 3); `.bbl` 54 (Azizah ada, Tan/Prasetio nihil); link 33/20/0; intext/italic/outline/typography-full PASS; UKRIDA T1 kuota 6≥5 + T2 K-04 + T3 + T5 PASS (FAIL hanya Missing NoBab3).
+
+---
+
+## 📅 Sesi: 18 September 2026 — Audit Ghost Total 54 Sitasi (Zero-Ghost Certification)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menjawab perintah user: pastikan 100% tidak ada lagi ghost seperti Tan/Prasetio — audit judul-vs-Crossref semua DOI + baca-isi semua PDF empiris + perbaiki semua temuan.
+> - **Masalah yang Diselesaikan:** 2 ghost baru dikonfirmasi GUGUR dari klaim ghost (Gültekin, Apidana: paper nyata); 5 metadata salah diperbaiki (Aryadi DOI + PDF salah-isi, Dewi tahun, Lienardy tahun/vol/DOI, Artadita-KATALOG, Dewi-DOI-KATALOG); 12 no-link tertriase (11 buku + Zeigarnik klasik).
+> - **Keputusan/Output:** 38/38 DOI title-match Crossref, 0 MISMATCH, 0 DEAD-DOI; link 33/20/0; buku 11/11; N tetap 54; PDF 64 hlm + DOCX 54/245; kuota UKRIDA 6≥5 PASS.
+
+- **Metode:** Skrip audit `ghost_hunt.py` (temp, read-only): 54 kunci tersitasi → 38 DOI (cek `api.crossref.org/works/{doi}`: similaritas judul ≥0.60 + marga penulis + tahun ±1) + 4 URL-only (live-check) + 12 no-link. Kunci `tan`/`prasetio` sudah nihil pasca-Opsi B.
+- **Temuan & tindakan:**
+  1. `aryadi2024personal` MISMATCH (DOI lama → front-matter "Peer-Review Statements"): paper NYATA (Crossref: DOI benar `10.2991/978-94-6463-585-0_7`, INCOGITE 2024) → bib diperbaiki + PDF lokal SALAH-ISI (broiler Brawijaya!) diganti unduhan Atlantis Press asli (17 hlm, TCG Jakarta, n=158 terverifikasi).
+  2. `dewi2024understanding` tahun 2024-vs-2026: PDF (kop Feb 2026 + sitasi 2024–2025) + Crossref (2026) sepakat → rename `dewi2026understanding`, pp 1082–1089, n=211 tervalidasi di PDF.
+  3. `lienardy2024role`: PDF (BIREV 4(3)/2026, n=160 tervalidasi) + metadata OJS Dublin Core (issued 2026-05-12, vol 4 issue 3) → rename `lienardy2026role`, DOI benar `10.61292/birev.258` (HTTP 200 ke article/view/258); DOI lama & klaim SINTA/Garuda/Copernicus dibuang.
+  4. `apidana2022peran`: PDF JDBM Jan 2022 cocok + DOI benar `10.32639/jdbm.v1i1.38` (HTTP 200 ke article/view/38; DOI lama KATALOG mati) → doi masuk bib.
+  5. `gueltekin2012influence`: NYATA (Crossref JEBS 2012 4(3):180–189, Beyza Gültekin) → doi masuk bib.
+  6. Window "2021–2025" → "2021–2026" (KATALOG, SoT D19, TeX, BAB_II, PANDUAN, dashboard); angka "72 referensi" → "54 tersitasi" (builder + PANDUAN); kriteria "6-12 bulan" → F008 di builder.
+  7. Bonus: KATALOG Artadita §6 (penulis/judul/hlm sesuai PDF) + Dewi DOI sudah benar.
+- **Keputusan / Insight:** (1) Ghost = NOL: tidak ada lagi entri fabrikan; semua sitasi punya ground truth (PDF lokal dibaca atau DOI-Crossref cocok atau URL-200 atau buku-LibGen). (2) Sugiyono & Zeigarnik & 11 buku = AMAN (kategori buku/klasik terverifikasi). (3) Kunci rename (dewi2026/lienardy2026) konsisten TeX=bib=RIS-cloud-title; tahun cloud untuk 2 entri perlu edit manual 1-klik di Mendeley UI (API hanya PATCH websites). (4) PRD/LOG lama dibiarkan sebagai rekam sejarah (tak ditulis ulang).
+- **File yang Diperbarui:** [[01_Naskah_Utama/references.bib]] (5 entri), [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]] (rename ×2), PDF 64 hlm + DOCX 54/245 + MD 984 (rebuild), RIS/Bib 54, PDF Aryadi (ganti isi), [[06_Referensi_Jurnal_PDF/KATALOG_REFERENSI_JURNAL.md]], [[04_Riset_&_Metodologi/LITERATURE_MATRIX.md]], [[03_Draft_Per_Bab/BAB_II_TINJAUAN_PUSTAKA.md]] + DAFTAR (hapus Prasetio), [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]] + `.pdf` + app.js + HTML (regen), builder + 4 scripts, highlight directive, [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] (D19), [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi final:** ghost_hunt rerun → doi-ok=38 flagged=0; links 33/20/0; intext/italic/outline/typography-full PASS; books 11/11; repo-sweep nihil kecuali catatan audit historis yang disengaja.
+
+---
+
+## 📅 Sesi: 18 September 2026 — D26 Bukti Halaman Tier Wajib + Restrukturisasi Jujur Temuan Baca-Isi
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Eksekusi keputusan user (Tier Wajib): semua sumber punya PDF + tiap klaim gap/hipotesis tertaut halaman; audit baca-isi 13 PDF membuahkan koreksi atribusi besar.
+> - **Masalah yang Diselesaikan:** Apidana-H3 & Artadita-H3 ternyata DITOLAK (bukan pendukung moderasi); Artadita bukan MRA; Colline kualitatif n=5 usia 34–69 (bukan survei muda/overconfidence); Pranggabayu n=200; Katauke bukan self-control; PDF Aryadi salah-isi (broiler) diganti asli.
+> - **Keputusan/Output:** Gap 5A/5B/6A/6B/7A direstrukturisasi jujur (Lienardy-H4 genuine; Apidana/Artadita-H3 jadi pasangan gagal-moderasi genuine); ledger 15 baris + verifier PASS; PDF 65 hlm + DOCX 54/245.
+
+- **Fokus Pekerjaan:** (1) Formalisasi D26 + `directives/evidence_page_ledger.md` + `EVIDENCE_LEDGER_HALAMAN.md` (15 klaim, kutipan ≤25 kata, peta PDF-vs-cetak) + `verify_evidence_ledger.py` (PASS). (2) Tier Web: snapshot Statista ✓ + Pokémon Co ✓ + PriceCharting 403-terdokumentasi. (3) Tier Pelengkap: landing 26 DOI terverifikasi (200/403 tepisah); +2 PDF OA (Gültekin JEBS, Tirtayasa IJBE); paywall-klasik → status AKSES-TERVERIFIKASI (LibGen scimag tak tersedia: .li tanpa scimag, .is/.st unreachable). (4) Baca-isi 13 PDF → temuan F-baru di atas → restrukturisasi TeX (gap 5/6/7, H3–H6, Tabel 1.1/2.1) + mirror PANDUAN/BAB_II/MATRIX/KATALOG/SoT/builder. (5) Sultan/Vohs/Tangney/Baumeister dipertahankan dengan flag ledger "isi paywalled, klaim setingkat-judul" (bukan ghost: metadata Crossref ✓).
+- **Keputusan / Insight:** (1) 5A kini berpilar Lienardy-H4 (genuine) + Katauke; 5B punya pasangan gagal-moderasi genuine pertama (Apidana p=0,597 + Artadita β=0,092) — audit F002 tertutup total. (2) 6A/7A dinyatakan tak langsung secara eksplisit (gap-nya sendiri jadi justifikasi H5/H6). (3) SoT gap matrix disinkron ke TeX (hapus nama non-bib: Grinblatt, Loewenstein, Hofmann, Barberis, Statman, Roberts, Tice). (4) PR terbuka: cloud auth/prune/push user; tahun cloud Dewi/Lienardy edit manual; DOI Azizah dimonitor.
+- **File yang Diperbarui:** TeX (gap+H+Tabel), PDF 65 hlm + DOCX 54/245 + MD, PANDUAN + `.pdf` + app.js + HTML (regen), BAB_II + DAFTAR, MATRIX, KATALOG (7 seksi + Bagian 2b), SoT (gap 1/3/4/5/6/7 + D26), builders/scripts (Q16, Q12, kuis, 6-12bln), highlight directive, dashboard, ledger + directive + verifier + snapshots/, PDF Gültekin/Tirtayasa/Aryadi-baru.
+- **Verifikasi:** ledger PASS (13/13 berkas + 3 snapshot); intext/italic/outline/typography-full PASS; links 33/20/0; mendeley 5×54 (FAIL hanya NoBab3); UKRIDA kuota 6≥5 + K-04 PASS.
+
+
+
+---
+
+## Sesi: 18 Sep 2026 (lanjutan) - PRD Humanisasi Keaslian Tulisan (skill humanizer-id)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** PRD + rencana 5 fase + implementation plan humanisasi Bab I-III menuju ambang praktik AI <= 20%.
+> - **Masalah yang Diselesaikan:** Naskah 65 hlm intensif-AI belum punya baseline/garis verifikasi; keputusan scope (penuh bertahap), kedalaman (seimbang), dan cek Pedoman 2023 dikunci.
+> - **Keputusan/Output:** [[04_Riset_&_Metodologi/PRD_HUMANISASI_KEASLIAN_TULISAN_AI_20_PERSEN.md]]; baseline scan BAB I=18, II=32, III=31 (dominan H07 struktural; 1 H02 di Bab III); Pedoman 2023 = Turnitin plagiarisme maks 30%, tanpa pasal AI; tanpa janji lolos detektor.
+
+
+---
+
+## Sesi: 18 Sep 2026 (lanjutan 2) - Adendum atribusi + Fase 1 Audit Bab III
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Mencatat poin revisi dosen (akuntabilitas 'benarkah penulis berkata begitu?', prioritas jurnal dosen) + eksekusi Fase 1 audit Bab III.
+> - **Masalah yang Diselesaikan:** 31 temuan scan + 5 klaim atribusi Bab III diperiksa; Colline terverifikasi penuh (herding/loss aversion/disposition + capital-gain, n=5 usia 34-69).
+> - **Keputusan/Output:** [[PRD]] adendum S11; .tmp/humanize/AUDIT_BAB_III.md menunggu persetujuan (gerbang Fase 1). 3 butir tindakan: Chen-2021 desync, Artadita bukan-MRA di L219, 'standar baku' tanpa sitasi L57. F-CARRY-1 ('investor muda' vs sampel 34-69) mengantre di audit Bab II.
+
+
+---
+
+## Sesi: 18 Sep 2026 (lanjutan 3) - Fase 2+3 Bab III + ghost Chen 2021
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Porting hasil Fase 2 Bab III yang disetujui ke master + bersih-bersih ghost Chen 2021.
+> - **Masalah yang Diselesaikan:** chen2021speculation TERBUKTI ghost (DOI 10.1016/j.jbef.2021.100570 milik Ranganathan & Lejarraga; judul Chen tak ditemukan di web) -> hapus dari draf + bib; Artadita keluar dari daftar pengadopsi MRA (PLS-SEM); klaim 'standar baku' dilunakkan; atribusi purposive kini hanya Aryadi (terverifikasi).
+> - **Keputusan/Output:** 8 suntingan TeX + 1 hapus bib; rebuild OK; intext/italic PASS; typography full-doc PASS (ERROR hanya varian NoBab3 yang dihapus Opsi-1); mendeley 5x54 (gagal hanya NoBab3); ledger PASS; draf Bab III diselaraskan dari salinan yang disetujui.
+
+
+---
+
+## Sesi: 18 Sep 2026 (lanjutan 4) - Fase 2+3 Bab II
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Porting hasil Fase 2 Bab II yang disetujui ke master + F-CARRY-1.
+> - **Masalah yang Diselesaikan:** Gong tirar sebagai bukti Indonesia (sampel China); 'kontrol-kognitif 10%' dipresisikan (taraf 10%, p=0,098); dopamin/UV/monumental/genuine dibersihkan (6 genuine -> 0); 'investor muda' -> 'investor Indonesia' (jurnal dosen); harga PSA 10 disitasi PriceCharting (entri dimutakhirkan 2026).
+> - **Keputusan/Output:** 17 suntingan draf + 18 porting TeX + 1 bib; rebuild OK; intext/italic/typography-full/Mendeley-5x54/ledger PASS (gagal hanya varian NoBab3 Opsi-1); draf Bab II diselaraskan.
+
+
+---
+
+## Sesi: 18 Sep 2026 (lanjutan 5) - Fase 2+3 Bab I + PENUTUP humanisasi Bab I-III
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Porting Fase 2 Bab I ke master + koreksi judul Long + rebuild final seluruh rangkaian humanisasi.
+> - **Masalah yang Diselesaikan:** 4 angka Statista draf diselaraskan ke gambar/snapshot (100,0/70,0/68,7/35,3); Tirtayasa ke kubu pendukung; judul Long dibetulkan (frequency programs); Zheng-kontra dikoreksi selaras master (batasan anggaran Thaler); PT dihapus; promo/superlatif dibersihkan.
+> - **Keputusan/Output:** 31 suntingan draf + 9 porting TeX + 1 bib; intext/italic/typography-full/Mendeley-5x54/ledger PASS (gagal hanya NoBab3 Opsi-1); sweep akhir 0 pola terlarang di master + 3 draf. RANGKAIAN HUMANISASI BAB I-III SELESAI (Fase 4). Sisa manual user: cek-ulang live 3 URL + angka Gambar 1.3 pra-sidang; uji mandiri Turnitin/AI di sistem kampus.
+
+
+---
+
+## Sesi: 18 Sep 2026 (malam) - Audit Tier-3 paper-audit pasca-humanisasi (F020-F025)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Audit Trigger E: verifikasi resolusi F001-F019 + audit perubahan baru + cek tanda baca $ * -.
+> - **Masalah yang Diselesaikan:** F001-F019 RESOLVED semua; 4 Minor baru diperbaiki dalam audit (** L555, citealp sync, tahun Statista draf, jurnal SoT D09); proofing 0 kandidat; $ - sah.
+> - **Keputusan/Output:** [[07_Review_&_Audit/Paper_Audits/review-2026-09-18-213000.md]] (0 Critical/Major/Minor terbuka); naskah layak bimbingan/sempro; tugas user: cek live pra-sidang + uji Turnitin mandiri.
 

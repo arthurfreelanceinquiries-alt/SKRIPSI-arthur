@@ -33,13 +33,13 @@ FORBIDDEN_TAGS = {'ELEC', 'WEB', 'MISC'}
 # - doi.org/*(reprint) = karya SAMA, DOI milik edisi/cetakan lain (tahun metadata
 #   penerbit beda dgn edisi yg disitasi; tetap karya yg sama, layak sbg link baca)
 # - openlibrary.org/works/* = canonical work page (title sim >= 0.90 + author cocok)
-# Tanpa link terverifikasi: tan2024ketidakpastian (DOI katalog 10.19184/bisma.v20i2.60038
-#   MATI — Crossref+doi.org 404; portal jurnal di PDF tdk memberi URL artikel),
-#   sugiyono2019metode (hanya pindaian lokal, tanpa URL publik).
+# Tanpa link terverifikasi: sugiyono2019metode (hanya pindaian lokal, tanpa URL publik).
+# Ghost audit 18 Sep 2026: tan2024ketidakpastian + prasetio2021hedonic DIHAPUS dari bib;
+# dewi2024understanding -> dewi2026understanding, lienardy2024role -> lienardy2026role.
 RESOLVED_URLS = {
     "gueltekin2012influence": "https://doi.org/10.22610/jebs.v4i3.315",
     "apidana2022peran": "https://doi.org/10.32639/jdbm.v1i1.38",
-    "lienardy2024role": "https://doi.org/10.61292/birev.258",  # metadata penerbit 2026; artikel & penulis sama
+    "lienardy2026role": "https://doi.org/10.61292/birev.258",  # BIREV 4(3)/2026 terverifikasi HTTP 200 ke article/view/258
     "keynes1936general": "https://doi.org/10.4324/9781912281138",  # reprint Routledge karya yg sama
     "cohen1988statistical": "https://doi.org/10.1016/c2013-0-10517-x",  # karya yg sama; metadata edisi lama
     "aiken1991multiple": "https://doi.org/10.1016/0886-1633(93)90008-d",  # judul identik
@@ -251,8 +251,8 @@ def main():
         print(f"[ERROR] Keys cited in TeX but missing in references.bib: {missing_in_bib}")
         sys.exit(1)
 
-    # Assert expected 55 keys
-    assert len(tex_keys) == 55, f"Expected exactly 55 cited keys, found {len(tex_keys)}!"
+    # Assert expected 54 keys (55 era ghost Tan & Prasetio dihapus 18 Sep 2026, diganti Azizah & Fauzi 2025)
+    assert len(tex_keys) == 54, f"Expected exactly 54 cited keys, found {len(tex_keys)}!"
 
     # 3. Export Master Archive RIS (All entries)
     archive_blocks = [entry_to_ris(e) for e in all_entries]
@@ -260,7 +260,7 @@ def main():
         f.write("\n\n".join(archive_blocks) + "\n")
     print(f"[SUCCESS] Exported Master Archive RIS: {ris_archive_out.name} ({len(all_entries)} items)")
 
-    # 4. Filter exact 55 entries and sort alphabetically by primary author
+    # 4. Filter exact 54 entries and sort alphabetically by primary author
     filtered_entries = [entry_map[k] for k in tex_keys]
 
     def sort_key(e):
@@ -269,7 +269,7 @@ def main():
 
     filtered_entries.sort(key=sort_key)
 
-    # 5. Validate Tag Whitelist & Write 55-entry RIS
+    # 5. Validate Tag Whitelist & Write 54-entry RIS
     ris_blocks = []
     tag_counter = collections.Counter()
 
@@ -290,7 +290,7 @@ def main():
     print(f"[SUCCESS] Exported Proposal-Only RIS: {ris_out.name} ({len(filtered_entries)} references)")
     print(f"          Distribution of Types: {dict(tag_counter)}")
 
-    # 6. Write Proposal-Only BibTeX (55 clean entries)
+    # 6. Write Proposal-Only BibTeX (54 clean entries)
     with open(bib_src, 'r', encoding='utf-8') as f:
         bib_full_text = f.read()
 
@@ -299,9 +299,9 @@ def main():
 
     clean_bib_parts = [
         "% ============================================================",
-        "%  Mendeley Library — 55 Referensi Khusus Naskah Skripsi Pokémon TCG",
+        "%  Mendeley Library — 54 Referensi Khusus Naskah Skripsi Pokémon TCG",
         "%  Selaras 100% dengan Sitasi Proposal Arthur Reezan (FEB UKRIDA)",
-        "%  Tag Whitelist: 40 JOUR, 11 BOOK, 3 RPRT, 1 CONF (Total = 55)",
+        "%  Tag Whitelist: 39 JOUR, 11 BOOK, 3 RPRT, 1 CONF (Total = 54)",
         "% ============================================================\n"
     ]
     for e in filtered_entries:
@@ -321,7 +321,7 @@ def main():
     assert b'\xef\xbf\xbd' not in ris_bytes, "Unicode replacement character \\ufffd detected in RIS output!"
 
     print("-" * 70)
-    print(f"[PASS] 100% PARITAS TERVERIFIKASI: TEPAT 55 REFERENSI SIAP IMPOR MENDELEY")
+    print(f"[PASS] 100% PARITAS TERVERIFIKASI: TEPAT 54 REFERENSI SIAP IMPOR MENDELEY")
     print("=" * 70)
 
 

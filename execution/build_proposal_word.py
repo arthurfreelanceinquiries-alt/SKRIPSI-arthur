@@ -1447,12 +1447,12 @@ def build_full_proposal(skip_chapter3: bool = False):
             if bbl_keys and len(dp_paras) == len(bbl_keys):
                 for _p, _k in zip(dp_paras, bbl_keys):
                     _CITE_BM_SEQ[0] += 1
-                    _add_bookmark(_p, '_Ref_' + re.sub(r'\W', '_', _k), _CITE_BM_SEQ[0])
+                    _add_bookmark(_p, 'Ref_' + re.sub(r'\W', '_', _k), _CITE_BM_SEQ[0])
                 print('[*] DP bookmark: %d entri.' % len(dp_paras))
             else:
                 print('[WARN] DP %d vs bbl %d — bookmark dilewati (anti salah-taut).'
                       % (len(dp_paras), len(bbl_keys)))
-            ref_bookmarks = {k: '_Ref_' + re.sub(r'\W', '_', k) for k in bbl_keys} \
+            ref_bookmarks = {k: 'Ref_' + re.sub(r'\W', '_', k) for k in bbl_keys} \
                 if bbl_keys and len(dp_paras) == len(bbl_keys) else {}
             continue
 
@@ -2278,7 +2278,7 @@ def link_lot_lof_entries(doc):
             continue
         _LOTLOF_BM_SEQ[0] += 1
         bid = _LOTLOF_BM_SEQ[0]
-        name = '_Cap_%s_%s_%s' % (m.group(1), m.group(2), m.group(3))
+        name = 'Cap_%s_%s_%s' % (m.group(1), m.group(2), m.group(3))
         bs = OxmlElement('w:bookmarkStart')
         bs.set(qn('w:id'), str(bid))
         bs.set(qn('w:name'), name)

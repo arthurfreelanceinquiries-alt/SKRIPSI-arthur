@@ -517,6 +517,17 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
                 res.append(k)
         return "; ".join(res)
 
+    def resolve_citealp(match):
+        keys = [k.strip() for k in match.group(1).split(',')]
+        res = []
+        for k in keys:
+            if k in cite_dict:
+                res.append(f"{cite_dict[k][0]}, {cite_dict[k][1]}")
+            else:
+                res.append(k)
+        return '; '.join(res)
+
+    s = re.sub(r'\\citealp\{([^}]+)\}', resolve_citealp, s)
     s = re.sub(r'\\citep\{([^}]+)\}', resolve_citep, s)
     s = re.sub(r'\\citet\{([^}]+)\}', resolve_citet, s)
     s = re.sub(r'\\cite\{([^}]+)\}', resolve_citep, s)
