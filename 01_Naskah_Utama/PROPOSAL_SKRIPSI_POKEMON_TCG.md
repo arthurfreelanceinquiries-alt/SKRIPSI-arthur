@@ -531,9 +531,7 @@ Berikut disajikan ringkasan sepuluh studi empiris 2021–2026 yang menopang peru
 
 ### 2.4.4 Pengaruh Moderasi *Self-Control* terhadap Hubungan *Hedonic Motivation* dan *Impulsive Buying*
 
-**Landasan Teoretis:** *Self-Regulation Theory* (Baumeister, 2002) dan model *Planner-Doer* (Thaler and Shefrin, 1981) menjelaskan bahwa dorongan hedonis sesaat (*doer*) dapat dinetralkan oleh kapasitas kontrol diri volisional entitas perencana (*planner*). Kontrol diri memungkinkan individu menolak godaan sensorik dan menunda kepuasan demi tujuan finansial jangka panjang (Tangney et al., 2004). Dalam perspektif statistik moderasi, efek interaksi negatif ($\beta_5 < 0$) menunjukkan bahwa kemiringan pengaruh (*conditional slope*) motivasi hedonis terhadap pembelian impulsif ($\frac{
-tial Y}{
-tial X_1^*} = \beta_1 + \beta_5 M^*$) akan semakin melemah atau teredam seiring dengan meningkatnya kontrol diri individu.
+**Landasan Teoretis:** *Self-Regulation Theory* (Baumeister, 2002) dan model *Planner-Doer* (Thaler and Shefrin, 1981) menjelaskan bahwa dorongan hedonis sesaat (*doer*) dapat dinetralkan oleh kapasitas kontrol diri volisional entitas perencana (*planner*). Kontrol diri memungkinkan individu menolak godaan sensorik dan menunda kepuasan demi tujuan finansial jangka panjang (Tangney et al., 2004). Dalam perspektif statistik moderasi, efek interaksi negatif ($\beta_5 < 0$) menunjukkan bahwa kemiringan pengaruh (*conditional slope*) motivasi hedonis terhadap pembelian impulsif ($\frac{\partial Y}{\partial X_1^*} = \beta_1 + \beta_5 M^*$) akan semakin melemah atau teredam seiring dengan meningkatnya kontrol diri individu.
 
 **Kajian Empiris Terdahulu:** Bukti moderasi langsung berasal dari Lienardy and Panasea (2026) yang membuktikan melalui MRA bahwa *Self-Control* secara signifikan memoderasi dan memperlemah pengaruh perilaku hedonis terhadap *impulsive buying* (H4 diterima; $n=160$ konsumen Shopee Denpasar). Dukungan tak langsung datang dari Katauke et al. (2023) bahwa kapasitas literasi finansial (proksi pengambilan keputusan rasional) berhubungan negatif dengan impulsivitas diskonto hiperbolik. Sebaliknya, Apidana and Kholifah (2022) justru menemukan interaksi $X_1 \cdot M$ TIDAK signifikan (p=0,597; H3 ditolak) dan Artadita and Firmialy (2024) menemukan efek moderasi TIDAK signifikan ($\beta=0{,}092$, n.s.) — keduanya dicatat sebagai bukti gagal-moderasi pada Subjek 5B, bukan pendukung H4.
 
@@ -543,9 +541,7 @@ tial X_1^*} = \beta_1 + \beta_5 M^*$) akan semakin melemah atau teredam seiring 
 
 ### 2.4.5 Pengaruh Moderasi *Self-Control* terhadap Hubungan *Desire for Completeness* dan *Impulsive Buying*
 
-**Landasan Teoretis:** Respon terhadap ketegangan kognitif celah koleksi (*Zeigarnik Effect*) dimoderasi oleh kapasitas regulasi diri individu. Seseorang dengan kontrol diri matang mampu mentoleransi ketidaknyamanan mental tanpa meresponnya secara reaktif atau tergesa-gesa (Tangney et al., 2004; Baumeister, 2002). Secara matematis, efek interaksi negatif ($\beta_6 < 0$) menunjukkan kontrol diri yang tinggi menghasilkan kemiringan bersyarat ($\frac{
-tial Y}{
-tial X_2^*} = \beta_2 + \beta_6 M^*$) yang lebih landai, sejalan dengan dugaan efek peredaman (*buffering effect*) terhadap dorongan menuntaskan koleksi.
+**Landasan Teoretis:** Respon terhadap ketegangan kognitif celah koleksi (*Zeigarnik Effect*) dimoderasi oleh kapasitas regulasi diri individu. Seseorang dengan kontrol diri matang mampu mentoleransi ketidaknyamanan mental tanpa meresponnya secara reaktif atau tergesa-gesa (Tangney et al., 2004; Baumeister, 2002). Secara matematis, efek interaksi negatif ($\beta_6 < 0$) menunjukkan kontrol diri yang tinggi menghasilkan kemiringan bersyarat ($\frac{\partial Y}{\partial X_2^*} = \beta_2 + \beta_6 M^*$) yang lebih landai, sejalan dengan dugaan efek peredaman (*buffering effect*) terhadap dorongan menuntaskan koleksi.
 
 **Kajian Empiris Terdahulu:** Uji interaksi $X_2 \cdot M$ secara langsung belum tersedia dalam korpus; dukungan bersifat tak langsung dan dinyatakan eksplisit sebagai demikian. Bukti parsial terdekat berasal dari Artadita and Firmialy (2024): hanya dimensi kontrol kognitif yang signifikan melemahkan impulsivitas koleksi item game ($-0{,}3473$, p$<0{,}10$ pada Model 3), sementara efek moderasi keseluruhan DITOLAK ($\beta=0{,}092$, n.s.). Dukungan umum datang dari Katauke et al. (2023) bahwa kapasitas regulasi (literasi finansial) menekan impulsivitas, serta bukti MRA Apidana and Kholifah (2022) bahwa kontrol diri memperlemah dorongan non-afektif (*shopping lifestyle*, H4 diterima, $\beta<0$) — keduanya analogi, bukan uji $X_2 \cdot M$.
 
@@ -555,9 +551,7 @@ tial X_2^*} = \beta_2 + \beta_6 M^*$) yang lebih landai, sejalan dengan dugaan e
 
 ### 2.4.6 Pengaruh Moderasi *Self-Control* terhadap Hubungan *Speculative Motive* dan *Impulsive Buying*
 
-**Landasan Teoretis:** Dalam *Behavioral Finance*, kontrol diri mendisiplinkan individu untuk menimbang risiko kerugian modal riil dan tidak terjebak dalam euforia transaksi spekulatif berlebihan (Thaler and Shefrin, 1981; Barber and Odean, 2008). Efek interaksi negatif ($\beta_7 < 0$) menunjukkan pengaruh spekulasi terhadap pembelian spontan teredam secara bersyarat ($\frac{
-tial Y}{
-tial X_3^*} = \beta_3 + \beta_7 M^*$) ketika kapasitas volisional konsumen membatasi toleransi risiko spekulatif.
+**Landasan Teoretis:** Dalam *Behavioral Finance*, kontrol diri mendisiplinkan individu untuk menimbang risiko kerugian modal riil dan tidak terjebak dalam euforia transaksi spekulatif berlebihan (Thaler and Shefrin, 1981; Barber and Odean, 2008). Efek interaksi negatif ($\beta_7 < 0$) menunjukkan pengaruh spekulasi terhadap pembelian spontan teredam secara bersyarat ($\frac{\partial Y}{\partial X_3^*} = \beta_3 + \beta_7 M^*$) ketika kapasitas volisional konsumen membatasi toleransi risiko spekulatif.
 
 **Kajian Empiris Terdahulu:** Dukungan tak langsung (dinyatakan eksplisit): Katauke et al. (2023) membuktikan kapasitas literasi finansial berhubungan negatif dengan impulsivitas diskonto hiperbolik (Jepang, probit + IV) — proksi regulasi rasional, bukan uji $X_3 \cdot M$. Aryadi and Lingga (2026) dan Colline (2024) mendokumentasikan kuatnya motif investasi koleksi (CM p=0,000) dan bias *herding* investor — keduanya bukti sisi pendorong spekulasi (ranah H3), bukan bukti efek meredam kontrol diri.
 
@@ -785,13 +779,7 @@ Kecocokan model dinilai dari *Adjusted* $R^2$ pada Model 1 dan Model 2 sebagai d
 ### 3.5.6 Uji Hipotesis dan Analisis Kemiringan Bersyarat (*Simple Slopes*)
 - **Uji Statistik t (Uji Parsial):** Menguji signifikansi pengaruh masing-masing koefisien regresi secara individual pada taraf nyata 5\
 - **Uji Statistik F (Uji Kelayakan Model):** Menguji kelayakan model regresi secara simultan pada taraf signifikansi $p < 0,05$.
-- **Analisis Kemiringan Bersyarat (*Simple Slopes Analysis*):** Hipotesis moderasi (H4, H5, H6) diuji lewat kemiringan bersyarat per-hipotesis –- H4: $\frac{
-tial Y}{
-tial X_1^*} = \beta_1 + \beta_5 M^*$; H5: $\frac{
-tial Y}{
-tial X_2^*} = \beta_2 + \beta_6 M^*$; H6: $\frac{
-tial Y}{
-tial X_3^*} = \beta_3 + \beta_7 M^*$ –- pada kontrol diri rendah ($-1\,\text{SD}$), rata-rata ($0\,\text{SD}$), dan tinggi ($+1\,\text{SD}$). Efek memperlemah terbukti bila kemiringan $X_i$ terhadap $Y$ mendatar pada kontrol diri tinggi (Aiken and West, 1991; Hayes, 2018).
+- **Analisis Kemiringan Bersyarat (*Simple Slopes Analysis*):** Hipotesis moderasi (H4, H5, H6) diuji lewat kemiringan bersyarat per-hipotesis –- H4: $\frac{\partial Y}{\partial X_1^*} = \beta_1 + \beta_5 M^*$; H5: $\frac{\partial Y}{\partial X_2^*} = \beta_2 + \beta_6 M^*$; H6: $\frac{\partial Y}{\partial X_3^*} = \beta_3 + \beta_7 M^*$ –- pada kontrol diri rendah ($-1\,\text{SD}$), rata-rata ($0\,\text{SD}$), dan tinggi ($+1\,\text{SD}$). Efek memperlemah terbukti bila kemiringan $X_i$ terhadap $Y$ mendatar pada kontrol diri tinggi (Aiken and West, 1991; Hayes, 2018).
 
 ## 3.6 Diagram Alur Penelitian
 

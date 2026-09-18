@@ -565,7 +565,10 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
         cleaned_lines.append(l)
     s = '\n'.join(cleaned_lines)
     s = s.replace(r'\noindent', '')
-    s = s.replace(r'\par', '\n')
+    # Self-anneal 18 Sep 2026 (Simple Slopes DOCX): '\par' hanya sebagai perintah
+    # mandiri — replace naif merusak '\partial' (turunan parsial), '\parindent',
+    # '\parskip' sehingga rumus \frac bocor sebagai teks mentah di MD/DOCX.
+    s = re.sub(r'\\par(?![A-Za-z])', '\n', s)
     s = re.sub(r'\\vspace\{[^}]+\}', '', s)
     s = re.sub(r'\\hspace\{[^}]+\}', '', s)
 

@@ -1111,3 +1111,17 @@
 - **Keputusan / Insight:** (1) Force-write sah KARENA terverifikasi, bukan tebakan (aturan #479). (2) Baris "Corpus Check" report dianotasi jujur (skope focused-update, bukan full rebuild). (3) 13 file tak-stamp dikembalikan antre (re-queue jujur #2015) untuk update berikut.
 - **File yang Diperbarui:** [[graphify-out/graph.json]], [[graphify-out/graph.html]], [[graphify-out/GRAPH_REPORT.md]], [[graphify-out/manifest.json]], [[graphify-out/cost.json]], [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
 - **Verifikasi:** health OK; per-file coverage 9/9 ≥ lama; manifest tersimpan; cost run ke-5 tercatat.
+
+---
+
+## 📅 Sesi: 18 September 2026 — Perbaikan Render Rumus Simple Slopes di DOCX (`\partial` → `tial`)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Memperbaiki eror laporan user (screenshot): butir Simple Slopes §3.5.6 di DOCX menampilkan `\frac{tial Y}…` mentah.
+> - **Masalah yang Diselesaikan:** `sync_markdown_from_tex.py` me-replace `\par` secara naif sehingga `\partial` (12×) hancur → exact-match unicode builder gagal → LaTeX mentah bocor ke DOCX. Bug pra-ada (terbukti di MD komit lama), bukan regresi humanisasi.
+> - **Keputusan/Output:** Guard regex `\\par(?![A-Za-z])`; MD 984→972 baris; DOCX kini `∂Y/∂X₁ = β₁ + β₅M` bersih, `frac` 0; tipografi PASS 2/2 DOCX.
+
+- **Fokus Pekerjaan:** Verifikasi pra-ada via MD komit (`tial` sudah ada, `partial` 0); petakan korban (`\partial` ×12, `\parindent`, `\parskip`); bedah builder (`clean_academic_text` 310–313 butuh `\partial` utuh; `parse_markdown_runs` menghapus semua `*` sehingga asterisk-centered memang dikorbankan untuk gate zero-artifact — PDF tetap golden truth notasi).
+- **Keputusan / Insight:** (1) Di luar skope (pra-ada, dibiarkan jujur): sisa `\` dari escape `\\*` (`M\ = 0`) dan `_{…}` literal — memperbaikinya butuh ubah semantik gate G4, diusulkan sebagai follow-up. (2) Pelajaran self-anneal kedua untuk pipeline sync→build.
+- **File yang Diperbarui:** [[execution/sync_markdown_from_tex.py]] (guard `\par`), [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]] (972 baris), [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** MD `\partial` 12/12 utuh; DOCX `frac` 0 + bullet slopes bersih; `verify_docx_typography.py` PASS Full + NoBab3.
