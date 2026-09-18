@@ -936,3 +936,178 @@
 > - **Masalah yang Diselesaikan:** F001-F019 RESOLVED semua; 4 Minor baru diperbaiki dalam audit (** L555, citealp sync, tahun Statista draf, jurnal SoT D09); proofing 0 kandidat; $ - sah.
 > - **Keputusan/Output:** [[07_Review_&_Audit/Paper_Audits/review-2026-09-18-213000.md]] (0 Critical/Major/Minor terbuka); naskah layak bimbingan/sempro; tugas user: cek live pra-sidang + uji Turnitin mandiri.
 
+---
+
+## 📅 Sesi: 18 September 2026 — Penyelarasan Data & Penerbitan PDF Form Bimbingan Skripsi
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menjawab permintaan user untuk menyesuaikan data identitas pada `00 - Form Bimbingan Skripsi.docx` dan menerbitkan berkas resmi `00 - Form Bimbingan Skripsi.pdf`.
+> - **Masalah yang Diselesaikan:** Formulir bimbingan asli masih memuat garis bawah kosong (`____`). Sesuai arahan user, data identitas resmi (Nama: Arthur Reezan, NIM: 312023002, Pembimbing 1: Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A, Pembimbing 2: -) diisikan dengan rapi dan terstandardisasi, sementara tabel log bimbingan dipertahankan kosong bersih (tinggi baris 60 pt) untuk pencatatan dan paraf basah dosen pembimbing.
+> - **Keputusan/Output:** Naskah Word `[[01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/00 - Form Bimbingan Skripsi.docx]]` diperbarui dan berkas PDF `[[01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/00 - Form Bimbingan Skripsi.pdf]]` (2 halaman A4 pas) berhasil dikonversi via Word COM; skrip generator reproducible `[[execution/build_form_bimbingan.py]]` ditambahkan.
+
+- **Fokus Pekerjaan:**
+  - Inspeksi mendalam berkas Word template: logo resmi UKRIDA (Picture 2), struktur header, paragraf identitas, tabel log bimbingan (Tabel 0 dan Tabel 1 dengan 6 baris @ 60 pt), dan kotak rekomendasi pembimbing.
+  - Penyelarasan data identitas pada Halaman 1 & Halaman 2:
+    * Nama Mahasiswa: **Arthur Reezan**
+    * N I M: **312023002**
+    * Dosen Pembimbing (1): **Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A**
+    * Dosen Pembimbing (2): **-**
+  - Pembuatan skrip otomasi `build_form_bimbingan.py` di folder `execution/` yang mengotomatisasi injeksi teks identitas, konversi Word COM ke PDF, dan rendering pratinjau PNG halaman 1 & 2.
+- **Hasil & Verifikasi:**
+  - `00 - Form Bimbingan Skripsi.docx`: Terformat rapi dengan font Verdana 10 pt tebal untuk identitas, logo UKRIDA tetap utuh di kedua halaman.
+  - `00 - Form Bimbingan Skripsi.pdf`: Terbit sempurna tepat 2 halaman A4 (Halaman 1 untuk Bimbingan 1–6 Proposal, Halaman 2 untuk Bimbingan 7–12 Lanjutan).
+  - Pratinjau Visual: `page_1.png` dan `page_2.png` telah diinspeksi secara visual dan lulus verifikasi layout.
+
+---
+
+## 📅 Sesi: 18 September 2026 — Pre-Flight Second Brain & Sinkronisasi Konteks (Anti-Lupa)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Membuka sesi kerja 18 Sep 2026 atas permintaan user dengan protokol [[obsidian-second-brain]] (pre-flight Graphify + kokpit dashboard + framework universal).
+> - **Masalah yang Diselesaikan:** Memastikan status naskah, variabel Y/X1/X2/X3/Z, dan arahan [[Dr. Fredella Colline]] termuat sebelum eksekusi agar nol amnesia antar sesi.
+> - **Keputusan/Output:** Pre-flight PASS; baseline = naskah utama Full 65 hlm single-focus (NoBab3 dihapus Opsi-1); menunggu fokus pekerjaan user hari ini.
+
+- **Fokus Pekerjaan:** Baca `graphify-out/manifest.json` (142+ keys) + `graphify-out/GRAPH_REPORT.md` (1.541 nodes, 1.686 edges, 134 komunitas); baca [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] (D01–D26), [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]] (A0–A11) + [[directives/universal_thesis_graph_of_agents.md]] (F1–F11); cek `01_Naskah_Utama/` + [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] ekor (humanisasi selesai + audit 21:30 0 terbuka + Form Bimbingan terbit).
+- **Masalah yang Diselesaikan:** Konfirmasi tidak ada drift konteks: Full 65 hlm / 54 ref / 245 tautan sitasi-klik, NoBab3 tetap dihapus reversibel, Mendeley cloud menunggu aksi user (`--prune` ghost Tan & Prasetio + `--push` Azizah), Graphify selaras dashboard.
+- **Keputusan / Insight:** Arsitektur 3-Layer ditegakkan (directives -> orchestration -> execution); tidak ada perubahan naskah pada pre-flight; zero-desync dipertahankan.
+- **File yang Diperbarui:** [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+---
+
+## 📅 Sesi: 18 September 2026 — PRD Remediasi AI 70% (Humanizer-ID × Universal)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menjawab file [[05_Pedoman_&_Referensi/hasil-cek-ai-Proposal_Arthur_PokemonTCG (1).pdf]] (AI Probability 70%) dengan PRD remediasi terintegrasi framework universal memakai skill `humanizer-id`.
+> - **Masalah yang Diselesaikan:** Skor 70% adalah probabilitas klasifikasi (bukan % teks); scan lokal pasca-humanisasi (BAB I 19, BAB II 30, BAB III 30 — dominan H07 struktural sah) tidak menjelaskan skor detektor; perlu rencana terarah tanpa janji lolos.
+> - **Keputusan/Output:** [[04_Riset_&_Metodologi/PRD_REMEDIASI_AI_70_PERSEN_HUMANIZER.md]] v1.0 + registrasi C-HUM-1 & `skill-humanize-id` di [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]]; naskah tidak diubah (read-only); menunggu persetujuan R1 per bab.
+
+- **Fokus Pekerjaan:** Baca hasil-cek-AI PDF (70%, multilingual 2026-06-10, tanpa plagiarism scan); jalankan `audit_text.py scan` 3 draf via Layer 3; susun PRD 7 seksi (bukti → batas jujur → diagnosis H13/H04/H14/H10/H11 → 5 fase R0–R4 → implementation → acceptance → integrasi universal); daftarkan C-HUM-1 + skill di PRD Universal.
+- **Keputusan / Insight:** (1) Tanpa jaminan ≤20% (skill melarang klaim detektor); uji akhir mandiri user di sistem kampus. (2) Eksekusi R1–R3 bab-per-bab, porting hanya prosa disetujui + paritas penuh. (3) Kandidat utama: ritme seragam + ringkasan berderet Tabel 1.1/2.1 + pembuka generik.
+- **File yang Diperbarui:** [[04_Riset_&_Metodologi/PRD_REMEDIASI_AI_70_PERSEN_HUMANIZER.md]], [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** `scan` 3/3 sukses; `write` PRD sukses; `edit` 2 baris universal sukses (C-HUM-1 + registry); naskah `01_Naskah_Utama/` tidak tersentuh.
+
+---
+
+## 📅 Sesi: 18 September 2026 — Audit R1 Bab III Remediasi AI 70% (mode audit)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Audit R1 Bab III tanpa menyunting naskah — memisahkan 30 temuan `scan` struktural (dipertahankan) dari 13 titik prosa detector-sensitive untuk R2.
+> - **Masalah yang Diselesaikan:** Ritme seragam, pembuka generik, bullet triplet identik, dan duplikasi justifikasi Model 1 dipetakan dengan tindakan + batas fidelity per titik.
+> - **Keputusan/Output:** [[.tmp/humanize/AUDIT_R1_BIII.md]] (R1-01–R1-13) menunggu persetujuan user; gerbang R1→R2 belum dibuka.
+
+- **Fokus Pekerjaan:** Baca [[03_Draft_Per_Bab/BAB_III_METODE_PENELITIAN.md]] 296 baris + [[.tmp/humanize/AUDIT_BAB_III.md]] warisan (tidak diulang: H02/B2/B3/B5 sudah resolved); tulis audit R1 baru (A: scan verdict; B: 13 temuan; C: 3 pertanyaan gerbang).
+- **Keputusan / Insight:** Target R2 hanya 13 titik (R1-01–R1-13); H07/H06/H10 scan = struktur sah; kontrak fidelity (N/α/β/sitasi/rumus) mengikat R2.
+- **File yang Diperbarui:** [[.tmp/humanize/AUDIT_R1_BIII.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** `read` draf + audit warisan sukses; `write` AUDIT_R1_BIII sukses; naskah tidak tersentuh.
+
+---
+
+## 📅 Sesi: 18 September 2026 — R2 Bab III Humanized-R1 (13 titik, salinan saja)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Tulis-ulang seimbang 13 titik R1 di salinan `.humanized-R1.md` tanpa menyentuh master TeX/MD/DOCX.
+> - **Masalah yang Diselesaikan:** Ritme seragam, pasif bertumpuk, pembuka pengisi, dan triplet identik dipecah/divariasikan; angka/sitasi/rumus dibekukan.
+> - **Keputusan/Output:** [[.tmp/humanize/BAB_III_METODE_PENELITIAN.humanized-R1.md]] selesai; `compare` 1 token tambah (111 restatement, nilai sama) + 0 diff sitasi; menunggu terima/tolak user sebelum porting (tanpa auto-porting).
+
+- **Fokus Pekerjaan:** Copy MD → salinan; 15 suntingan prosa (R1-01–R1-13: L6/L8/L22/L26/L38/L48/L50/L55/L61/L72/L76/L78/L87/L215/L223/L231/L245/L251); `compare` + hitung `111` (2→3, restatement konsisten).
+- **Keputusan / Insight:** Tambahan 1× `111` di kalimat pertama §3.2.3 adalah pengulangan nilai yang sama (bukan perubahan nilai) — dinyatakan eksplisit agar lolos baca-akhir; seluruh sitasi/rumus/caption/label utuh.
+- **File yang Diperbarui:** [[.tmp/humanize/BAB_III_METODE_PENELITIAN.humanized-R1.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** `compare` numbers added {111:1}, sitasi 0 diff; panjang 27641→26476 char (pemadatan ~4%); master tidak tersentuh.
+
+---
+
+## 📅 Sesi: 18 September 2026 — R3 Porting Bab III ke Master + Rebuild Penuh + Self-Anneal Sync
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Porting 13 titik R1–R2 yang disetujui user ke master TeX + rebuild PDF/MD/DOCX + verifikasi paritas penuh.
+> - **Masalah yang Diselesaikan:** Insiden sync-awal menulis 29 kunci mentah + DOCX 29 tautan (regresi dari 245) karena sync jalan sebelum xelatex+bibtex (aux basi tanpa `\bibcite`); diperbaiki via re-sync + rebuild + guard FATAL di skrip.
+> - **Keputusan/Output:** PDF 64 hlm + MD 984 baris (0 kunci mentah) + DOCX 54 bookmark/245 tautan; full-doc verifiers PASS (FAIL hanya Missing-File NoBab3 Opsi-1 + WARN header `&` false-positive, keduanya pra-ada); skrip sync dikeraskan (self-anneal).
+
+- **Fokus Pekerjaan:** 15 suntingan TeX Bab III (§3.1–§3.5.6, sitasi/rumus/label utuh) → xelatex+bibtex+xelatex×2 (64 hlm) → sync (insiden aux basi → re-sync OK) → build word (245 tautan) → baterai verifier → guard `SystemExit` di [[execution/sync_markdown_from_tex.py]] (aux tanpa `\bibcite` = FATAL; kunci tanpa peta = FATAL).
+- **Keputusan / Insight:** (1) Urutan inviolable: TeX → xelatex+bibtex+2x → sync → build word; sync sebelum kompilasi = MD rusak. (2) Regresi tertangkap oleh angka builder (29 vs 245) + audit kunci mentah, bukan oleh verifier existing — guard menutup lubang ini permanen. (3) `verify_pdf_docx_parity.py` crash pada NoBab3 hilang (pra-ada sejak Opsi-1); paritas full-doc dibuktikan via tipografi/intext/italic/outline/mendeley-T2–T7/ledger/links.
+- **File yang Diperbarui:** [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]] (15 titik), [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]] (64 hlm), [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]] (50 baris), [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]] (54/245), [[execution/sync_markdown_from_tex.py]] (guard), [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** intext PASS; italic PASS; typography-full PASS; outline 12/16/28 PASS; mendeley T2–T7 PASS (T1 FAIL = NoBab3 hilang, eksplisit); UKRIDA T1 kuota 6≥5 + T2 K-04 + T3-full PASS; ledger PASS; links 33/20/0 MATI; MD 0 kunci mentah; PDF 64 hlm stabil.
+
+---
+
+## 📅 Sesi: 18 September 2026 — Audit R1 Bab II Remediasi AI 70% (mode audit)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Audit R1 Bab II tanpa menyunting naskah — memisahkan 30 temuan `scan` struktural (dipertahankan) dari 12 titik ritme prosa untuk R2 (atribusi sudah resolved di audit warisan).
+> - **Masalah yang Diselesaikan:** Sinyal mesin terkuat Bab II dipetakan: 6 penutup hipotesis identik, 10 baris Tabel 2.1 seragam, 6 blok daftar definisi berkatalog, pembuka "Penelitian ini" ×4.
+> - **Keputusan/Output:** [[.tmp/humanize/AUDIT_R1_BII.md]] (R2-01–R2-12) menunggu persetujuan user; gerbang R1→R2 belum dibuka.
+
+- **Fokus Pekerjaan:** Baca [[03_Draft_Per_Bab/BAB_II_TINJAUAN_PUSTAKA.md]] 241 baris + [[.tmp/humanize/AUDIT_BAB_II.md]] warisan (tidak diulang); tulis audit R1 baru (A: scan verdict; B: 12 temuan; C: 3 pertanyaan gerbang).
+- **Keputusan / Insight:** R2-07 (6× "Berdasarkan uraian tersebut…") adalah target bernilai tertinggi; R2-05/R2-06 Tabel 2.1 butuh variasi tanpa membuka atribusi resolved.
+- **File yang Diperbarui:** [[.tmp/humanize/AUDIT_R1_BII.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** `read` draf + audit warisan sukses; `write` AUDIT_R1_BII sukses; naskah tidak tersentuh.
+
+---
+
+## 📅 Sesi: 18 September 2026 — R2 Bab II Humanized-R1 (12 titik, salinan saja)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Tulis-ulang seimbang 12 titik R1 di salinan `.humanized-R1.md` tanpa menyentuh master TeX/MD/DOCX.
+> - **Masalah yang Diselesaikan:** 6 penutup hipotesis identik divariasikan, 10 baris Tabel 2.1 dibedakan verbanya, 2 daftar katalog (Stern, BSCS) dijadikan prosa inline, 4× "sangat" dibuang, pembuka generik dipadatkan.
+> - **Keputusan/Output:** [[.tmp/humanize/BAB_II_TINJAUAN_PUSTAKA.humanized-R1.md]] selesai; `compare` menjelaskan semua diff (list-number Stern/BSCS → inline; 2021/2026 restatement rentang tabel); H1–H6 verbatim 6/6; menunggu terima/tolak user sebelum porting.
+
+- **Fokus Pekerjaan:** Copy MD → salinan; ~30 suntingan prosa (R2-01–R2-12); `compare` + cek H verbatim.
+- **Keputusan / Insight:** Diff `compare` semuanya disengaja & terdokumentasi: removed 1/2/3/4 = nomor daftar Stern+BSCS yang dijadikan inline (isi 4+4 butir utuh); added 2021/2026 = restatement rentang Tabel 2.1 yang sudah ada. Nol diff sitasi; redaksi H1–H6 tak tersentuh.
+- **File yang Diperbarui:** [[.tmp/humanize/BAB_II_TINJAUAN_PUSTAKA.humanized-R1.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** `compare` numbers dijelaskan; H verbatim 6/6; panjang 40347→38588 char (~4%); master tidak tersentuh.
+
+---
+
+## 📅 Sesi: 18 September 2026 — R3 Porting Bab II ke Master + Rebuild Penuh
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Porting 12 titik R1–R2 Bab II yang disetujui user ke master TeX + rebuild PDF/MD/DOCX + verifikasi penuh (urutan benar: kompilasi → sync → build).
+> - **Masalah yang Diselesaikan:** TeX Bab II adalah versi ringkas draf — 5 butir R2 tanpa padanan TeX (daftar Stern/BSCS, kolom Relevansi, 6 penutup hipotesis, rekap L241) tetap hidup di trek draf/panduan; 7 butir berpadanan diporting (~20 suntingan).
+> - **Keputusan/Output:** PDF 64 hlm + MD 984 baris (0 kunci mentah) + DOCX 54/245; full-doc verifiers PASS (FAIL hanya NoBab3 Opsi-1, eksplisit); H1–H6 TeX 6/6 utuh.
+
+- **Fokus Pekerjaan:** 20 suntingan TeX Bab II (§2.1–2.5: pembuka grand/S-O-R, ringkasan 10 studi, baris tabel 1/3/5, Landasan/Kajian/Keterkaitan H1–H6, 2× "Dengan demikian"→"Akibatnya", "sangat memikat"→"kuat memikat", rantai Gambar 2.1) → xelatex+bibtex+2x → sync (guard lolos) → build word → baterai verifier.
+- **Keputusan / Insight:** (1) Pemetaan jujur: R2-02/06/07/12 = trek draf saja (TeX tak punya daftar/kolom/penutup/rekap tersebut); tidak dipaksakan ke TeX (surgical). (2) "membuktikan"→"menunjukkan/melaporkan" hanya pada klaim H1–H3; presentasi grand-theory (Kahneman/Vohs) dipertahankan. (3) Tidak ada insiden build — guard sync + urutan benar bekerja.
+- **File yang Diperbarui:** [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]] (Bab II), [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]] (64 hlm), [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]] (54/245), [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** typography-full PASS; outline 12/16/28 PASS; intext PASS; italic PASS; mendeley T2–T7 PASS (T1 NoBab3 eksplisit); UKRIDA T1+T2+T3-full PASS; ledger PASS; links 33/20/0; MD 0 kunci mentah; H-TeX 6/6.
+
+---
+
+## 📅 Sesi: 18 September 2026 — Audit R1 Bab I Remediasi AI 70% (mode audit)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Audit R1 Bab I (bab terakhir, paling naratif) tanpa menyunting naskah — memisahkan 19 temuan `scan` struktural (dipertahankan) dari 12 titik prosa untuk R2.
+> - **Masalah yang Diselesaikan:** Pola Bab I dipetakan: 5 penunjuk gambar seragam, klaster "sangat" ~7×, 3 peluru gap identik, 6 tujuan berbunyi sama, rantai pengisi antar-subbab.
+> - **Keputusan/Output:** [[.tmp/humanize/AUDIT_R1_BI.md]] (R1-01–R1-12) menunggu persetujuan user; R1-09 (redaksi 6 tujuan) ditandai materiil; naskah TIDAK diubah.
+
+- **Fokus Pekerjaan:** Baca [[03_Draft_Per_Bab/BAB_I_PENDAHULUAN.md]] 127 baris + [[.tmp/humanize/AUDIT_BAB_I.md]] warisan (tidak diulang); tulis audit R1 baru (A: scan verdict; B: 12 temuan; C: 3 pertanyaan gerbang termasuk keputusan R1-09).
+- **Keputusan / Insight:** R1-09 ("menganalisis dan membuktikan"→"menguji") menyentuh rumusan formal — diserahkan eksplisit ke user, bukan default. Rangkaian R1 Bab I–III kini lengkap (R1 Bab III + Bab II + Bab I).
+- **File yang Diperbarui:** [[.tmp/humanize/AUDIT_R1_BI.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** `read` draf + audit warisan sukses; `write` AUDIT_R1_BI sukses; naskah tidak tersentuh.
+
+---
+
+## 📅 Sesi: 18 September 2026 — Sinkronisasi Workspace & Gate Parity 7/7
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Update progres + sinkronisasi workspace atas perintah user: gate parity, log, dashboard, graphify, dan status Git.
+> - **Masalah yang Diselesaikan:** Gate awal 3/7 (4 FAIL Missing-File NoBab3 pasca-Opsi-1 17 Sep) dipulihkan ke 7/7 via rebuild reversibel; audit tautan 0 MATI.
+> - **Keputusan/Output:** `run_thesis_graph.py --gate parity` 7/7 PASS; `verify_all_citation_links.py` 33/20/0 MATI; NoBab3 hidup kembali (46 hlm); menunggu perintah commit/push (tidak push diam-diam).
+
+- **Fokus Pekerjaan:** Pre-flight [[obsidian-second-brain]] (Graphify 1.541/1.686/134 + [[00_DASHBOARD_SECOND_BRAIN.md]]); `--gate parity` awal 3/7 → bedah 4 FAIL (G1/G3/G4/G5 = Missing NoBab3, full-doc PASS semua) → rebuild [[01_Naskah_Utama/Proposal_Arthur_NoBab3.pdf]] (46 hlm) + [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]] (54 bookmark/208 tautan) via pipeline non-destruktif → gate ulang 7/7 PASS → audit links 0 MATI.
+- **Keputusan / Insight:** (1) FAIL 100% file-hilang Opsi-1, nol regresi isi humanisasi Bab II/III. (2) Rebuild NoBab3 reversibel dari TeX kanonis (hash-protected, master utuh) — user memutuskan tetap dipertahankan atau dihapus ulang. (3) Tanpa commit/push sebelum persetujuan eksplisit.
+- **File yang Diperbarui:** [[01_Naskah_Utama/Proposal_Arthur_NoBab3.tex]], [[01_Naskah_Utama/Proposal_Arthur_NoBab3.pdf]], [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** gate parity 7/7 PASS; links 33 hidup / 20 walled / 0 MATI; Full 64 hlm + NoBab3 46 hlm stabil.
+
+---
+
+## 📅 Sesi: 18 September 2026 — Graphify Refresh & Sinkronisasi Dashboard (Anti-Lupa)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Refresh inkremental [[graphify-out/graph.html]] agar mencakup file sesi (PRD remediasi, TeX/MD humanisasi, LOG, dashboard) + sinkronkan angka ke [[00_DASHBOARD_SECOND_BRAIN.md]].
+> - **Masalah yang Diselesaikan:** Graf 17 Sep (1.541/1.686/134) basi terhadap ~10 artefak sesi 18 Sep; CLI `update` hanya mencakup kode; guard shrink menolak overwrite buta (-93) hingga legitimasi terverifikasi.
+> - **Keputusan/Output:** Graf 1.851 nodes / 1.980 edges / 166 komunitas (health bersih, force terverifikasi); dashboard disinkron; `GRAPH_REPORT.md` + manifest + labels + html terbit.
+
+- **Fokus Pekerjaan:** Pre-flight skill; `graphify update .` (AST 120 file → 1.944 nodes); focused semantic 9 dok via 1 subagen ekstraksi (30 nodes/30 edges/2 hyperedges, cache 9/9) → `build_merge` (replace 15, dedup 108) → guard menolak (-93) → verifikasi legitimasi (cakupan per-file ≥ lama untuk 9 dok; reduksi = kolaps duplikat eksak; health 0 dangling/missing/collapsed) → force-write → cluster/label-hub → report + html + manifest + cost → sinkron dashboard.
+- **Keputusan / Insight:** (1) Force-write sah KARENA terverifikasi, bukan tebakan (aturan #479). (2) Baris "Corpus Check" report dianotasi jujur (skope focused-update, bukan full rebuild). (3) 13 file tak-stamp dikembalikan antre (re-queue jujur #2015) untuk update berikut.
+- **File yang Diperbarui:** [[graphify-out/graph.json]], [[graphify-out/graph.html]], [[graphify-out/GRAPH_REPORT.md]], [[graphify-out/manifest.json]], [[graphify-out/cost.json]], [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** health OK; per-file coverage 9/9 ≥ lama; manifest tersimpan; cost run ke-5 tercatat.

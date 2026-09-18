@@ -1,4 +1,4 @@
-<!-- converted from Proposal_Arthur_PokemonTCG.docx -->
+<!-- converted from Proposal_Arthur_NoBab3.docx -->
 
 
 PROPOSAL SKRIPSI
@@ -13,25 +13,6 @@ PROGRAM STUDI S1 MANAJEMEN
 FAKULTAS EKONOMI DAN BISNIS
 UNIVERSITAS KRISTEN KRIDA WACANA
 JAKARTA 2026
-
-# PERNYATAAN KEASLIAN KARYA TUGAS AKHIR
-Saya mahasiswa Universitas Kristen Krida Wacana:
-Dengan ini menyatakan dengan sesungguhnya bahwa Proposal Skripsi yang berjudul:
-“PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI”
-adalah:
-1.  Benar-benar hasil karya saya sendiri, bukan merupakan jiplakan, plagiarisme, fabrikasi, atau tiruan dari karya tulis ilmiah orang lain yang pernah diajukan untuk memperoleh gelar akademik di perguruan tinggi manapun.
-2.  Seluruh kutipan, data, dan rujukan ilmiah yang digunakan dalam naskah ini telah dicantumkan sumbernya secara jelas dan lengkap sesuai dengan kaidah penulisan ilmiah yang berlaku di Universitas Kristen Krida Wacana.
-3.  Apabila di kemudian hari terbukti bahwa pernyataan ini tidak benar atau ditemukan indikasi plagiarisme, saya bersedia menerima sanksi akademik yang berlaku sesuai dengan peraturan perundang-undangan dan ketentuan di lingkungan Universitas Kristen Krida Wacana.
-
-# HALAMAN PERSETUJUAN PROPOSAL SKRIPSI
-Proposal Skripsi ini diajukan oleh:
-“PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI”
-Telah disetujui untuk diajukan dalam Seminar Proposal Skripsi Program Studi S1 Manajemen Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana.
-
-# HALAMAN PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL
-Proposal Skripsi yang berjudul:
-“PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI”
-Telah dipertahankan di hadapan Tim Penguji Seminar Proposal Skripsi Program Studi S1 Manajemen Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana pada tanggal yang ditetapkan dan dinyatakan telah memenuhi syarat kelayakan.
 
 # KATA PENGANTAR
 Puji dan syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa atas kasih, anugerah, dan penyertaan-Nya yang senantiasa melimpah, sehingga penulis dapat menyelesaikan penyusunan proposal skripsi yang berjudul “PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI” dengan baik, lancar, dan tepat waktu.
@@ -72,14 +53,11 @@ This research aims to analyze and empirically test the effects of hedonic motiva
 Keywords: Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Behavioral Finance.
 
 DAFTAR ISI
-PERNYATAAN KEASLIAN KARYA TUGAS AKHIR	ii
-HALAMAN PERSETUJUAN PROPOSAL SKRIPSI	iii
-HALAMAN PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL	iv
-KATA PENGANTAR	v
-ABSTRAK	vii
-ABSTRACT	viii
-DAFTAR TABEL	x
-DAFTAR GAMBAR	xi
+KATA PENGANTAR	ii
+ABSTRAK	iv
+ABSTRACT	v
+DAFTAR TABEL	vii
+DAFTAR GAMBAR	viii
 BAB 1 PENDAHULUAN	1
 1.1 Latar Belakang Penelitian	1
 1.2 Perumusan Masalah	19
@@ -108,41 +86,18 @@ BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS	22
 2.4.5 Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness dan Impulsive Buying	31
 2.4.6 Pengaruh Moderasi Self-Control terhadap Hubungan Speculative Motive dan Impulsive Buying	32
 2.5 Rerangka Penelitian	32
-BAB 3 METODE PENELITIAN	34
-3.1 Jenis dan Sumber Data	34
-3.1.1 Batasan Penelitian dan Ruang Lingkup Operasional	34
-3.2 Populasi dan Sampel	35
-3.2.1 Populasi dan Identifikasi Sumber Komunitas	35
-3.2.2 Sampel dan Justifikasi Kriteria Inklusi	36
-3.2.3 Penentuan Ukuran Sampel	37
-3.2.4 Justifikasi Komparatif Pemilihan Teknik Sampling	38
-3.3 Model Penelitian	38
-3.4 Operasionalisasi Variabel	40
-3.5 Metode Analisis Data	45
-3.5.1 Justifikasi Komparatif Pemilihan Metode Analisis	45
-3.5.2 Penyusunan Skor Komposit dan Uji Kualitas Data	46
-3.5.3 Uji Asumsi Klasik	46
-3.5.4 Estimasi Regresi Hirarkis dan MRA	47
-3.5.5 Uji Koefisien Determinasi (R²) dan Uji F Perubahan	47
-3.5.6 Uji Hipotesis dan Analisis Kemiringan Bersyarat (Simple Slopes)	47
-3.6 Diagram Alur Penelitian	48
-3.7 Jadwal Pelaksanaan Penelitian	49
-DAFTAR PUSTAKA	50
+DAFTAR PUSTAKA	34
 # DAFTAR TABEL
 Tabel 1.1.  Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian	13
 Tabel 1.1.  Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian (lanjutan)	14
 Tabel 1.1.  Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian (lanjutan)	15
 Tabel 2.1.  Ringkasan Penelitian Sebelumnya	22
-Tabel 3.1.  Skala Pengukuran Likert 5 Poin	30
-Tabel 3.2.  Operasionalisasi Variabel Penelitian	36
-Tabel 3.3.  Jadwal Pelaksanaan Kegiatan Penelitian (Tahun 2026)	44
 
 # DAFTAR GAMBAR
 Gambar 1.1.  Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa	2
 Gambar 1.2.  Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024	3
 Gambar 1.3.  Disparitas Harga Pasar Sekunder Kartu Pokémon Mentah (Ungraded) vs. Bersertifikasi PSA 10 Gem Mint Seri Shining Fates	5
 Gambar 2.1.  Model Rerangka Konseptual Penelitian	29
-Gambar 3.1.  Diagram Alur Pelaksanaan Penelitian	43
 
 # BAB 1 PENDAHULUAN
 ## 1.1 Latar Belakang Penelitian
@@ -344,123 +299,6 @@ Hubungan struktural antarvariabel disajikan pada Gambar 2.1:
 Gambar 2.1. Model Rerangka Konseptual Penelitian
 Keterangan: Garis lurus menunjukkan pengaruh langsung (H1, H2, H3); Garis putus-putus menunjukkan efek moderasi kontrol diri yang memperlemah (H4, H5, H6).
 
-# BAB 3 METODE PENELITIAN
-## 3.1 Jenis dan Sumber Data
-Penelitian ini menguji hipotesis empiris H1–H6 mengenai hubungan struktural antarvariabel dengan pendekatan kuantitatif asosiatif dan desain survei cross-sectional. Pendekatan ini dipilih karena kerangka teoritis telah merumuskan hubungan tersebut secara eksplisit. Pengumpulan data primer dilakukan satu kali pada satu titik waktu kepada sampel responden untuk memotret fenomena yang diteliti (Sekaran dan Bougie, 2016).
-Penulis mengumpulkan data primer langsung dari responden dengan menyebarkan kuesioner daring (online questionnaire) melalui Google Forms. Kuesioner tersebut memakai pertanyaan tertutup berskala Likert 5 poin (Sugiyono, 2019), sebagaimana disajikan pada Tabel 3.1:
-Tabel 3.1 Skala Pengukuran Likert 5 Poin
-
-Sumber: Dikembangkan untuk instrumen kuesioner penelitian, 2026.
-Data sekunder berasal dari studi kepustakaan. Sumbernya meliputi laporan resmi The Pokémon Company dan data agregasi industri hiburan global, dilengkapi buku teks metodologi dan keuangan perilaku serta artikel jurnal nasional dan internasional bereputasi terindeks SINTA dan Scopus.
-### 3.1.1 Batasan Penelitian dan Ruang Lingkup Operasional
-Penelitian ini menetapkan batasan operasional sebagai berikut:
-•  Batasan Komoditas Objek: Penelitian ini secara ketat dibatasi pada pembelian produk kemasan acak tertutup (booster pack) fisik resmi Pokémon Trading Card Game (Pokémon TCG) berbahasa Indonesia yang dirilis oleh The Pokémon Company / AKG Games. Penelitian ini tidak meneliti kartu permainan digital (seperti Pokémon TCG Live atau Pokémon TCG Pocket) maupun produk kartu dari waralaba lain (Yu-Gi-Oh!, Magic: The Gathering, atau One Piece Card Game).
-•  Batasan Responden: Subjek penelitian dibatasi pada konsumen dan kolektor Warga Negara Indonesia (WNI) yang berdomisili di Indonesia, berusia minimal 17 tahun, dan memiliki riwayat pembelian aktif booster pack fisik minimal 1 kali dalam 12 bulan terakhir (diutamakan 6 bulan terakhir untuk kesegaran recall).
-•  Batasan Konseptual dan Metodologis: Variabel yang diteliti dibatasi pada pengaruh tiga variabel independen (Hedonic Motivation, Desire for Completeness, dan Speculative Motive) terhadap satu variabel dependen (Impulsive Buying) dengan satu variabel moderasi (Self-Control), yang diestimasi menggunakan teknik regresi moderasi (Moderated Regression Analysis / MRA) berbantuan perangkat lunak IBM SPSS Statistics.
-## 3.2 Populasi dan Sampel
-### 3.2.1 Populasi dan Identifikasi Sumber Komunitas
-Populasi penelitian ini adalah seluruh konsumen atau kolektor kartu fisik Pokémon Trading Card Game resmi berbahasa Indonesia di wilayah Republik Indonesia. Populasi ini tergolong tidak terbatas (infinite / unknown population) karena jumlah seluruh pembeli kartu tidak dapat diketahui secara pasti mengingat luasnya jaringan distribusi ritel modern di Indonesia.
-Keberadaan dan identifikasi populasi sasaran dalam penelitian ini bersumber dari ekosistem nyata komunitas TCG di Indonesia:
-•  Komunitas Toko Hobi Resmi (Local Game Stores / LGS): Jaringan komunitas pemain dan kolektor terdaftar yang aktif berkegiatan di toko hobi resmi mitra AKG Games di wilayah Jabodetabek, Bandung, Surabaya, Yogyakarta, Medan, dan kota-kota besar lainnya.
-•  Komunitas Digital Berskala Nasional: Grup komunitas daring aktif, antara lain grup Facebook Pokémon TCG Indonesia (dengan puluhan ribu anggota aktif), server Discord komunitas pemain kartu Indonesia, serta grup lelang dan jual-beli kartu di WhatsApp dan Telegram.
-•  Peserta Turnamen Resmi: Komunitas pemain yang berpartisipasi dalam ajang kompetisi resmi seperti Town League dan Regional League yang diselenggarakan secara berkala di Indonesia.
-### 3.2.2 Sampel dan Justifikasi Kriteria Inklusi
-Penarikan sampel memakai teknik sampel bertujuan (purposive sampling). Responden wajib memenuhi kriteria inklusi beserta justifikasi ilmiah berikut:
-•  Warga Negara Indonesia (WNI) dan Berdomisili di Indonesia: Kriteria ini memastikan responden mengalami langsung dinamika ketersediaan produk kartu resmi berbahasa Indonesia serta struktur harga ritel dan pasar sekunder domestik.
-•  Berusia Minimal 17 Tahun pada Saat Pengisian Kuesioner:
-•  Aspek Kedewasaan Administratif dan Hak Sipil: Berdasarkan Undang-Undang Republik Indonesia Nomor 24 Tahun 2013 tentang Perubahan atas Undang-Undang Nomor 23 Tahun 2006 tentang Administrasi Kependudukan, batas usia 17 tahun menandai kepemilikan Kartu Tanda Penduduk (KTP) sebagai bukti identitas kedewasaan administratif dan hak sipil di Indonesia. Pada usia ini, responden dipandang cakap memberikan persetujuan partisipasi survei risiko-minimal (informed consent) secara sadar dan sukarela. Perlindungan etik: partisipasi sukarela, anonim tanpa nama, data rahasia hanya untuk akademik, responden boleh mundur kapan saja; tanpa memerlukan komite etik formal untuk survei risiko-minimal ini.
-•  Diskresi Keuangan Mandiri: Pada usia 17 tahun ke atas (umumnya berada pada jenjang pendidikan akhir SMA atau mahasiswa perguruan tinggi), individu telah memiliki alokasi diskresi keuangan pribadi (uang saku mandiri atau penghasilan kerja paruh waktu) yang dapat dibelanjakan secara independen di gerai kasir minimarket.
-•  Kapasitas Kognitif: Memastikan kematangan kognitif responden dalam memahami butir-butir pernyataan kuesioner ilmiah secara objektif dan bertanggung jawab.
-•  Pernah Membeli Booster Pack Resmi Pokémon TCG Fisik Minimal 1 Kali dalam 12 Bulan Terakhir (Diutamakan 6 Bulan Terakhir untuk Kesegaran Recall):
-•  Pengalaman Riil Konsumsi: Kriteria ini memastikan responden benar-benar pernah mengalami proses pengambilan keputusan belanja di etalase toko dan merasakan sensasi membuka bungkus kartu (pack opening thrill).
-•  Bias Ingatan Retrospektif (Recall Bias): Rentang waktu 12 bulan (diutamakan 6 bulan) lazim dipakai dalam riset perilaku konsumen agar memori kognitif dan luapan afektif saat bertransaksi masih tersimpan segar dalam ingatan responden, sehingga data yang dilaporkan lebih dapat diandalkan.
-### 3.2.3 Penentuan Ukuran Sampel
-Ukuran sampel minimum yang dipersyaratkan adalah 111 responden, dihitung dengan formula Green (1991) untuk analisis regresi linear berganda:
-•  Untuk pengujian model korelasi keseluruhan (overall model):
-
-Dengan k = 7 prediktor (X₁, X₂, X₃, M, X₁ · M, X₂ · M, X₃ · M), maka:
-
-•  Untuk pengujian prediktor individual (individual predictors):
-
-
-Hasil perhitungan Green (1991) di atas menetapkan syarat minimum absolut 111 responden. Penelitian ini menargetkan 120 hingga 150 responden sebagai sampel bersih yang dapat dianalisis (usable and analyzable sample), di luar 30 responden untuk uji coba instrumen (pilot testing). Rentang 120–150 tersebut memenuhi kriteria Cohen (1988) untuk kekuatan uji (statistical power) \ge 0,80 pada taraf nyata 5\
-### 3.2.4 Justifikasi Komparatif Pemilihan Teknik Sampling
-Literatur metodologi kuantitatif (Sekaran dan Bougie, 2016; Sugiyono, 2019) membagi pengambilan sampel ke dalam dua rumpun utama: Probability Sampling dan Non-Probability Sampling:
-•  Probability Sampling (seperti Simple Random Sampling atau Stratified Random Sampling) menuntut adanya kerangka sampling (sampling frame) yang memuat daftar lengkap seluruh anggota populasi. Kerangka sampling sensus pembeli kartu Pokémon di Indonesia tidak tersedia secara terpusat sehingga teknik probabilitas murni tidak dapat diterapkan secara sahih.
-•  Karena itu, penelitian ini memakai rumpun Non-Probability Sampling dengan teknik spesifik Purposive Sampling (sampel bertujuan) berdasarkan kriteria inklusi yang ditetapkan peneliti.
-Pemilihan purposive sampling merupakan pendekatan yang tepat karena menjamin bahwa data yang dikumpulkan berasal murni dari individu yang memiliki kualifikasi relevan (kolektor/pembeli aktif kartu Pokémon resmi berusia dewasa), sehingga data yang diperoleh memiliki kesesuaian dan relevansi sampel yang tinggi terhadap segmen yang diteliti. Temuan bersifat analitis pada segmen WNI berusia minimal 17 tahun pembeli aktif; bukan estimasi probabilistik nasional, karena tanpa sampling frame terpusat generalisasi statistik ke seluruh populasi nasional tidak diklaim. Pendekatan purposive sampling pada komunitas hobi dan kartu koleksi ini sejalan dengan praktik riset internasional terdahulu pada konteks komunitas kolektor (Aryadi dan Lingga, 2026).
-## 3.3 Model Penelitian
-Penelitian ini menguji hipotesis dengan prosedur regresi hirarkis Moderated Regression Analysis (MRA) berbasis OLS dalam dua model bertahap (Aiken dan West, 1991; Cohen, 1988; Hayes, 2018). Prosedur ini memisahkan efek moderasi murni dari efek langsung pemoderasi:
-Model 1 — Regresi Linear Berganda Hirarkis (Model Aditif Baseline / Efek Utama):
-
-Model 2 — Moderated Regression Analysis / MRA (Model Interaksi Moderasi Penuh):
-
-Di mana:
-[noitemsep,topsep=2pt]
-•  Y = Skor komposit Impulsive Buying (variabel dependen)
-•  X₁, X₂, X₃ = Skor prediktor terpusat (mean-centered): X_i^ = X_i - \bar{X}_i untuk i \in \{1, 2, 3\} (Hedonic Motivation, Desire for Completeness, dan Speculative Motive)
-•  M\ = Skor variabel pemoderasi terpusat (mean-centered): M^ = M - \bar{M} (Self-Control)
-•  X₁ · M\, X₂ · M\, X₃ · M\ = Istilah perkalian interaksi pemoderasi (interaction terms)
-•  α = Nilai intersep konstan regresi
-•  β₁, β₂, β₃ = Koefisien regresi efek utama prediktor pada nilai rata-rata pemoderasi (M\ = 0)
-•  β₄ = Koefisien regresi efek langsung pemoderasi (Self-Control) terhadap Y
-•  β₅, β₆, β₇ = Koefisien regresi interaksi moderasi (H4, H5, H6)
-•  e = Error term (residual pengganggu)
-Penyertaan M\ pada Model 1 sebagai garis dasar aditif (additive baseline) menjamin bahwa peningkatan koefisien determinasi (Δ R² = R²_Model 2 - R²_Model 1) murni mengisolasi kontribusi penjelas tambahan dari ketiga variabel interaksi moderasi, yang diuji secara simultan melalui statistik F_{change}: Koefisien β₄ (M^ \rightarrow Y) pada Model 1 semata-mata merupakan kontrol baseline aditif agar ΔR² tidak tercampur efek langsung pemoderasi; β₄ tidak diuji sebagai hipotesis tersendiri dan tidak memiliki pasangan RM/Tujuan/H (hipotesis penelitian tetap 6: H1–H3 langsung, H4–H6 moderasi memperlemah). Baris 4 pada matriks kesenjangan (Subjek M \rightarrow Y) berfungsi sebagai justifikasi teoretis perlunya memasukkan M\ sebagai baseline, bukan sebagai hipotesis tambahan.
-
-dengan derajat kebebasan df_1 = 3 dan df_2 = N - 8.
-## 3.4 Operasionalisasi Variabel
-Operasionalisasi variabel penelitian disajikan secara komprehensif pada Tabel 3.2. Tabel disusun menggunakan format terbuka (open table) standar publikasi jurnal tanpa garis vertikal, dengan penataan kolom proporsional:
-Tabel 3.2 Operasionalisasi Variabel Penelitian
-
-Sumber: Diadaptasi dari instrumen penelitian terdahulu yang tervalidasi (2026).
-## 3.5 Metode Analisis Data
-### 3.5.1 Justifikasi Komparatif Pemilihan Metode Analisis
-Dalam pengujian model penelitian kuantitatif eksplanatori yang melibatkan efek moderasi, terdapat beberapa alternatif metode analisis dalam literatur statistik:
-•  Structural Equation Modeling (SEM) Berbasis Kovarians (SEM-CB) atau Varian (SEM-PLS): Cocok untuk model bertingkat dengan konstruk laten kompleks dan variabel mediasi simultan. Namun, SEM-CB menuntut asumsi distribusi normal multivariat yang sangat ketat serta sampel besar (N > 200), sedangkan SEM-PLS lebih ditujukan untuk pemodelan prediktif eksploratif (Hair et al., 2019).
-•  Moderated Regression Analysis (MRA) Berbasis Ordinary Least Squares (OLS): Merupakan metode klasik dan baku yang dirancang khusus untuk menguji apakah kekuatan atau arah hubungan antara variabel independen dan dependen dipengaruhi oleh variabel pemoderasi kuantitatif (Aiken dan West, 1991; Hayes, 2018; Ghozali, 2018).
-Penelitian ini menetapkan MRA berbasis OLS berbantuan IBM SPSS Statistics sebagai metode yang dipilih, dengan pertimbangan metodologis sebagai berikut:
-•  Seluruh variabel penelitian diukur menggunakan skala komposit teruji dengan indikator-indikator yang terdefinisi secara terfokus.
-•  Ukuran sampel penelitian (120–150 responden) berada pada rentang yang sangat ideal dan kokoh untuk OLS, tanpa menimbulkan risiko estimasi berlebih (over-parameterization) yang sering terjadi pada SEM (Hair et al., 2019).
-•  Prosedur pemusatan nilai rata-rata (mean-centering) (Xᵢ = Xᵢ − X̄ᵢ; M\ = M − M̄) yang diterapkan secara efektif mereduksi multikolinearitas non-esensial antara variabel prediktor dengan produk interaksinya tanpa mengubah nilai prediksi model (R²) maupun koefisien interaksi, serta memfasilitasi interpretasi koefisien efek utama β₁, β₂, β₃ pada nilai rata-rata pemoderasi (M\ = 0) (Aiken dan West, 1991; Hayes, 2018).
-•  Metode ini telah dipakai sejumlah penelitian untuk menguji moderasi kontrol diri terhadap perilaku pembelian impulsif (Sultan et al., 2012; Apidana dan Kholifah, 2022; Lienardy dan Panasea, 2026).
-Tahapan analisis data secara sistematis dilaksanakan sebagai berikut:
-### 3.5.2 Penyusunan Skor Komposit dan Uji Kualitas Data
-Skor tiap variabel merupakan nilai rata-rata (mean composite) dari seluruh butir indikator yang valid pada variabel tersebut. Seluruh butir dikodekan searah dan positif (skor 5 menunjukkan tingkatan konstruk tertinggi). Instrumen diuji kualitasnya sebelum estimasi regresi melalui:
-•  Uji Validitas Butir: Teknik korelasi butir-total Pearson (Pearson product-moment item-total) terhadap skor komposit konstruk tujuan dipakai. Butir dinyatakan valid jika r_{hitung} > r_{tabel} pada taraf nyata 5\
-•  Uji Reliabilitas Konsistensi Internal: Koefisien Cronbach's Alpha dipakai. Konstruk dinyatakan reliabel jika Cronbach's Alpha ≥ 0,60 (Ghozali, 2018; Sekaran dan Bougie, 2016).
-### 3.5.3 Uji Asumsi Klasik
-Untuk memastikan terpenuhinya prasyarat estimasi regresi OLS agar parameter penduga bersifat tidak bias dan konsisten dalam pengujian hipotesis:
-•  Uji Normalitas Residual: Uji non-parametrik One-Sample Kolmogorov-Smirnov dipakai untuk menilai kenormalan residual; residual dinyatakan normal jika signifikansi asimtotik p > 0,05.
-•  Uji Multikolinearitas: Ketiadaan hubungan linear sempurna antarvariabel independen dinilai dari Tolerance (> 0,10) dan Variance Inflation Factor (VIF < 10) pada Model 1/efek utama. VIF tinggi pada blok interaksi Model 2 pasca-mean-centering yang didorong teori tidak serta-merta dinyatakan pelanggaran, karena korelasi struktural prediktor–interaksi bersifat ekspektasian dan centering hanya mereduksi multikolinearitas non-esensial.
-•  Uji Heteroskedastisitas: Uji Glejser dipakai untuk kesamaan varians residual; model bebas heteroskedastisitas apabila signifikansi parameter terhadap nilai absolut residual p > 0,05.
-Catatan metodologis: Uji autokorelasi (seperti uji Durbin-Watson) sengaja tidak dilakukan karena pengujian autokorelasi secara teoritis hanya relevan untuk data runtun waktu (time-series) atau data panel berurutan, bukan untuk survei cross-sectional primer (Ghozali, 2018).
-### 3.5.4 Estimasi Regresi Hirarkis dan MRA
-Analisis regresi dilakukan dalam dua tahapan hirarkis berurutan:
-•  Tahap 1 (Model 1 Aditif Baseline, Persamaan Mengestimasi efek utama ketiga variabel anteseden terpusat (X₁, X₂, X₃) beserta efek langsung variabel pemoderasi terpusat (M\) terhadap Y.
-•  Tahap 2 (Model 2 Interaksi Penuh MRA, Persamaan Memasukkan blok tiga istilah interaksi terpusat (X₁ · M\, X₂ · M\, X₃ · M\) untuk menguji efek moderasi kontrol diri secara simultan dan parsial.
-### 3.5.5 Uji Koefisien Determinasi (R²) dan Uji F Perubahan
-Kecocokan model dinilai dari Adjusted R² pada Model 1 dan Model 2 sebagai deskriptif. Aturan keputusannya: kontribusi murni blok moderasi terlihat pada peningkatan R² biasa (Δ R² = R²_Model 2 - R²_Model 1, bukan dari Adjusted R²), yang diuji dengan F_{change} pada taraf nyata 5\
-### 3.5.6 Uji Hipotesis dan Analisis Kemiringan Bersyarat (Simple Slopes)
-•  Uji Statistik t (Uji Parsial): Menguji signifikansi pengaruh masing-masing koefisien regresi secara individual pada taraf nyata 5\
-•  Uji Statistik F (Uji Kelayakan Model): Menguji kelayakan model regresi secara simultan pada taraf signifikansi p < 0,05.
-•  Analisis Kemiringan Bersyarat (Simple Slopes Analysis): Hipotesis moderasi (H4, H5, H6) diuji lewat kemiringan bersyarat per-hipotesis –- H4: \frac{
-tial Y}{
-tial X_1^} = β₁ + β₅ M^; H5: \frac{
-tial Y}{
-tial X_2^} = β₂ + β₆ M^; H6: \frac{
-tial Y}{
-tial X_3^} = β₃ + β₇ M^ –- pada kontrol diri rendah (−1 SD), rata-rata (0 SD), dan tinggi (+1 SD). Efek memperlemah terbukti bila kemiringan Xᵢ terhadap Y mendatar pada kontrol diri tinggi (Aiken dan West, 1991; Hayes, 2018).
-## 3.6 Diagram Alur Penelitian
-Tahapan pelaksanaan penelitian ini dari awal perumusan gagasan hingga penarikan kesimpulan disajikan secara skematis pada Gambar:
-
-Gambar 3.1. Diagram Alur Pelaksanaan Penelitian
-Sumber: Dikembangkan oleh penulis untuk tahapan operasional penelitian, 2026.
-## 3.7 Jadwal Pelaksanaan Penelitian
-Jadwal pelaksanaan tahapan kegiatan penelitian direncanakan berlangsung selama 6 (enam) bulan kalender, sebagaimana dirangkum pada Tabel:
-Tabel 3.3. Jadwal Pelaksanaan Kegiatan Penelitian (Tahun 2026)
-Keterangan: B1 = Bulan ke-1; B2 = Bulan ke-2; B3 = Bulan ke-3; B4 = Bulan ke-4; B5 = Bulan ke-5; B6 = Bulan ke-6 tahun akademik 2026.
-
 # DAFTAR PUSTAKA
 Aiken, L. S. and West, S. G. (1991). Multiple Regression: Testing dan Interpreting Interactions. Sage Publications, Newbury Park, CA.
 Amos, C., Holmes, G. R., and Keneson, W. C. (2014). A meta-analysis of consumer impulse buying. Journal of Retailing dan Consumer Services, 21(2):86–97.
@@ -516,66 +354,6 @@ Verplanken, B. and Herabadi, A. (2001). Individual differences in impulse buying
 Vohs, K. D. and Faber, R. J. (2007). Spent resources: Self-regulatory resource depletion and impulsive buying. Journal of Consumer Research, 33(4):537–547.
 Zeigarnik, B. (1927). Ueber das Behalten von erledigten und unerledigten Handlungen. Psychologische Forschung, 9:1–85.
 Zheng, X., Men, J., Yang, F., and Gong, X. (2019). Understanding impulse buying in mobile commerce: An investigation into hedonic and utilitarian browsing. International Journal of Information Management, 48:151–160.
-| Nama Mahasiswa | : | Arthur Reezan |
-| --- | --- | --- |
-| NIM | : | 312023002 |
-| Program Studi | : | Program Studi S1 Manajemen |
-| Konsentrasi | : | Manajemen Keuangan |
-| [ Materai Rp10.000 ] | Jakarta, 12 September 2026
-Yang membuat pernyataan,
-
-
-
-
-Arthur Reezan
-NIM: 312023002 |
-| --- | --- |
-| Nama Mahasiswa | : | Arthur Reezan |
-| --- | --- | --- |
-| NIM | : | 312023002 |
-| Program Studi | : | Program Studi S1 Manajemen |
-| Konsentrasi | : | Manajemen Keuangan |
-| Menyetujui,
-Dosen Pembimbing
-
-
-
-
-Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A
-NIDN: [NIDN_DOSEN] | Mengetahui,
-Ketua Program Studi S1 Manajemen
-
-
-
-Rita Amelinda, S.E., M.M.
-NIDN: [NIDN_KAPRODI] |
-| --- | --- |
-| Ketua Tim Penguji
-
-
-
-
-_________________________
-NIDN: _________________ | Anggota Penguji 1
-
-
-
-
-_________________________
-NIDN: _________________ |
-| --- | --- |
-| Anggota Penguji 2 / Pembimbing
-
-
-
-Dr. Fredella Colline, S.E., M.M.
-NIDN: [NIDN_DOSEN] | Mengetahui,
-Ketua Program Studi S1 Manajemen
-
-
-
-Rita Amelinda, S.E., M.M.
-NIDN: [NIDN_KAPRODI] |
 | No | Peneliti (Tahun) | Judul Penelitian | Variabel dan Metode | Hasil Utama Penelitian |
 | --- | --- | --- | --- | --- |
 | 1 | Arnold dan Reynolds (2003) | Hedonic Shopping Motivations | Motivasi hedonis; Analisis faktor | Mengidentifikasi 6 dimensi hedonis; kesenangan emosional memicu belanja spontan. |
@@ -588,51 +366,3 @@ NIDN: [NIDN_KAPRODI] |
 | 8 | Sultan, Joireman, & Sprott (2012) | Building Consumers' Impulsive Buying Model | X: Stimulus emosi; Y: Impulse; Mod: Self-control; SEM | Kontrol diri secara signifikan memperlemah pengaruh dorongan emosional terhadap impulse buying. |
 | 9 | Fitriyani, Widodo, & Fauzi (2022) | Hubungan Hedonic Shopping dengan Impulse Buying | X: Hedonic motivation; Y: Impulse buying; Regresi | Motivasi hedonis berkorelasi positif signifikan dengan perilaku belanja impulsif konsumen muda. |
 | 10 | Tangney, Baumeister, & Boone (2004) | High Self-Control Predicts Good Adjustment | Trait self-control; Skala BSCS; Validasi psikometri | Mengembangkan skala kontrol diri baku; individu kontrol diri tinggi mampu menunda kepuasan. |
-| Skor | Pernyataan Sikap | Singkatan |
-| --- | --- | --- |
-| 1 | Sangat Tidak Setuju | STS |
-| 2 | Tidak Setuju | TS |
-| 3 | Netral / Ragu-ragu | N |
-| 4 | Setuju | S |
-| 5 | Sangat Setuju | SS |
-| Variabel | Definisi Operasional | Dimensi | Indikator Pernyataan | Skala |
-| --- | --- | --- | --- | --- |
-| Impulsive Buying (Y) | Kecenderungan membeli booster pack Pokémon TCG tanpa rencana awal dan didorong emosi sesaat (Rook, 1987; Verplanken dan Herabadi, 2001). | Kognitif | Y1. Saya sering membeli booster pack kartu Pokémon tanpa rencana anggaran sebelumnya. | Likert 1–5 |
-|  |  | Kognitif | Y2. Saya tidak mempertimbangkan dampak finansial saat membeli kartu Pokémon di toko. | Likert 1–5 |
-|  |  | Afektif | Y3. Saya merasa terdorong secara spontan untuk membeli pack saat melihatnya di etalase toko. | Likert 1–5 |
-|  |  | Afektif | Y4. Saya merasakan kegembiraan sesaat ketika memutuskan membeli kartu secara mendadak. | Likert 1–5 |
-|  |  | Kognitif | Y5. Saya sering membeli pack lebih banyak dari yang semula saya niatkan. | Likert 1–5 |
-|  |  | Afektif | Y6. Saya sulit menahan hasrat berbelanja kartu Pokémon saat rilis seri baru. | Likert 1–5 |
-| Hedonic Motivation (X₁) | Motivasi belanja untuk kesenangan emosional dan sensasi petualangan (Arnold dan Reynolds, 2003). | Adventure | X1.1. Membuka kemasan booster pack memberikan sensasi petualangan dan kejutan mendebarkan. | Likert 1–5 |
-|  |  | Adventure | X1.2. Saya menikmati sensasi penasaran terhadap kartu acak di dalam kemasan bungkus. | Likert 1–5 |
-|  |  | Gratification | X1.3. Membeli kartu Pokémon adalah cara saya memanjakan diri atau melepas penat stres. | Likert 1–5 |
-|  |  | Gratification | X1.4. Menemukan kartu dengan ilustrasi langka (SAR) membuat saya sangat bahagia. | Likert 1–5 |
-|  |  | Idea | X1.5. Saya senang mengikuti tren rilis seri kartu Pokémon dan inovasi desain terbarunya. | Likert 1–5 |
-| Desire for Completeness (X₂) | Dorongan psikologis menuntaskan set koleksi akibat Zeigarnik Effect (Belk, 1995; Gao et al., 2014; Barasz et al., 2017). | Cognitive Tension | X2.1. Saya merasa tidak nyaman ketika album koleksi kartu Pokémon saya memiliki slot kosong. | Likert 1–5 |
-|  |  | Drive for Closure | X2.2. Saya terdorong untuk terus membeli booster pack agar dapat melengkapi seluruh kartu dalam satu seri. | Likert 1–5 |
-|  |  | Cognitive Tension | X2.3. Mengetahui ada kartu yang belum saya miliki dalam suatu seri membuat saya ingin segera membelinya. | Likert 1–5 |
-|  |  | Wholeness | X2.4. Melengkapi satu set penuh kartu Pokémon memberikan perasaan pencapaian dan kepuasan batin. | Likert 1–5 |
-|  |  | Drive for Closure | X2.5. Semakin sedikit kartu yang kurang dalam satu seri, semakin kuat desakan saya membeli pack baru. | Likert 1–5 |
-| Speculative Motive (X₃) | Ekspektasi memperoleh keuntungan finansial dari apresiasi harga di pasar sekunder (Shiller, 2000; Baur et al., 2018). | Ekspektasi Cuan | X3.1. Saya membeli pack dengan harapan menarik kartu langka bernilai jual tinggi. | Likert 1–5 |
-|  |  | Likuiditas | X3.2. Likuiditas pasar sekunder yang aktif mendorong saya membeli kartu sebagai aset berharga. | Likert 1–5 |
-|  |  | Capital Gain | X3.3. Saya memantau kenaikan harga pasar kartu langka untuk dijual kembali demi keuntungan. | Likert 1–5 |
-|  |  | Potensi Nilai | X3.4. Saya memandang modal membeli beberapa pack sebanding dengan potensi laba kartu langka. | Likert 1–5 |
-|  |  | Grading Value | X3.5. Saya tertarik dengan sertifikasi keaslian (grading) kartu demi menaikkan nilai investasi lelang. | Likert 1–5 |
-| Self-Control (M) | Kapasitas volisional menolak godaan belanja spontan dan menunda kepuasan sesaat (Tangney et al., 2004; Vohs dan Faber, 2007; Sultan et al., 2012). | Tahan Godaan | M1. Saya mampu menolak godaan membeli barang menarik jika di luar perencanaan anggaran saya. | Likert 1–5 |
-|  |  | Non-Impulsif | M2. Saya terbiasa berpikir tenang dan mempertimbangkan dampak pengeluaran sebelum bertransaksi. | Likert 1–5 |
-|  |  | Tunda Kepuasan | M3. Saya mampu menahan diri dari kesenangan belanja saat ini demi menjaga tujuan keuangan masa depan. | Likert 1–5 |
-|  |  | Disiplin Diri | M4. Saya memiliki disiplin diri yang kuat untuk tidak membeli barang secara mendadak di kasir toko. | Likert 1–5 |
-|  |  | Kontrol Emosi | M5. Saya tidak mudah terhanyut oleh suasana hati atau kegembiraan sesaat dalam membelanjakan uang. | Likert 1–5 |
-|  |  | Taat Anggaran | M6. Saya secara konsisten mematuhi alokasi batas pengeluaran hobi yang telah saya rencanakan. | Likert 1–5 |
-| No | Tahapan Kegiatan Penelitian | B1 | B2 | B3 | B4 | B5 | B6 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Identifikasi fenomena pasar dan perumusan topik | • |  |  |  |  |  |
-| 2 | Studi kepustakaan dan telaah literatur jurnal | • | • |  |  |  |  |
-| 3 | Penyusunan naskah proposal penelitian (Bab 1–3) |  | • | • |  |  |  |
-| 4 | Bimbingan intensif dan revisi proposal skripsi |  | • | • |  |  |  |
-| 5 | Pelaksanaan Seminar Proposal Skripsi |  |  | • |  |  |  |
-| 6 | Uji coba instrumen kuesioner (pilot test n=30) |  |  |  | • |  |  |
-| 7 | Pengumpulan data lapangan survei utama (n=120–150) |  |  |  | • | • |  |
-| 8 | Tabulasi data dan pengolahan statistik via SPSS |  |  |  |  | • |  |
-| 9 | Penyusunan laporan Bab 4 (Analisis) dan Bab 5 (Penutup) |  |  |  |  | • | • |
-| 10 | Ujian Sidang Skripsi dan Komprehensif |  |  |  |  |  | • |

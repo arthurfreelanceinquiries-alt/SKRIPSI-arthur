@@ -28,6 +28,16 @@ def main():
                 author = author.replace('~', ' ').replace(r'{\"u}', 'ü').replace(r'{\"O}', 'Ö')
                 author = author.replace('et~al.', 'et al.')
                 cite_dict[key] = (author, year)
+    # Self-anneal 18 Sep 2026 (R3 humanisasi): aux basi (mis. sebelum xelatex+bibtex)
+    # tidak memuat \bibcite sehingga sitasi bocor sebagai kunci mentah di MD/DOCX.
+    # Gagal lantang di sini, jangan tulis MD rusak. Urutan wajib: xelatex -> bibtex
+    # -> xelatex x2 -> sync ini -> build word.
+    cited_keys = set(k.strip() for grp in re.findall(r'\\cite[ptalp]*\{([^}]+)\}', tex) for k in grp.split(','))
+    if cited_keys and not cite_dict:
+        raise SystemExit('FATAL: 0 \\bibcite terparse dari .aux — jalankan xelatex+bibtex+2x xelatex dulu sebelum sync.')
+    missing = sorted(cited_keys - set(cite_dict))
+    if missing:
+        raise SystemExit('FATAL: %d kunci sitasi tanpa pemetaan author-year: %s' % (len(missing), ', '.join(missing[:8])))
 
     # Read bbl if available
     bbl_entries = []

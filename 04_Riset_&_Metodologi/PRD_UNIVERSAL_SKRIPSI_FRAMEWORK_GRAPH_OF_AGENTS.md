@@ -290,6 +290,7 @@ Berjalan di atas pyramid §1; tiap tahap dimiliki satu agen:
 | C-LOT-1 | Angka Daftar Isi/Tabel/Gambar Word = angka cetak PDF golden truth (bukan tebakan). Entri LOT/LOF: style TOC + SATU tab kanan-7938-dot (style-level; stop paragraf ganda/konflik dilarang), hyperlink internal ke bookmark caption tubuh (tetap hitam, tanpa garis bawah), tanpa bocoran sintaks LaTeX (`\caption{...}` longtable wajib dirender). Caption tubuh yang hilang = entri tak terhubung = FAIL. | A7→A8-G4/G5 | rebuild + perbaiki generator |
 | C-AUDIT-1 | T3 hanya pada 5 trigger; temuan ber-ID F001+ | A9 | tolak audit per-edit (boros) |
 | C-KAR-1 | Tiap output: asumsi + alternatif + goal-link + verified-vs-proposed | A0→semua | kembalikan ke agen |
+| C-HUM-1 | Remediasi humanisasi (`humanizer-id`, seimbang): tiap suntingan prosa wajib `audit_text.py scan/compare` 0-diff angka/sitasi/ref/kode + baca-akhir user sebelum porting; tanpa janji lolos detektor; detail [[04_Riset_&_Metodologi/PRD_REMEDIASI_AI_70_PERSEN_HUMANIZER.md]] | A0→A4→A7→A8 | kembalikan ke agen, dilarang porting |
 | C-LOG-1 | Tiap sesi: pre-flight Graphify+dashboard; post: log + dashboard | A11 | sesi dianggap tidak terjadi |
 
 ---
@@ -321,6 +322,7 @@ Berjalan di atas pyramid §1; tiap tahap dimiliki satu agen:
 | `skill-construct-mine` (keyword seminal) | `analyze_completeness_construct.py` | A4 |
 | `skill-study-suite` (web interaktif) | `build_interactive_presentation.py` + `build_study_guide_pdf.py` | A10 |
 | `skill-format-forensic` (margin/font/typo) | `verify_format_and_typos.py` + `verify_word_layout.py` + `verify_nobab3_pdf.py` | A8 |
+| `skill-humanize-id` (audit `scan`/`compare`, seimbang, fidelity; C-HUM-1) | `humanizer-id/scripts/audit_text.py` | A4, A9 |
 
 **Self-anneal loop (wajib):** error → perbaiki skrip → uji ulang → update directive terkait. Jangan manipulasi manual jika bisa diskrip. Jangan buat skrip baru jika skill sudah ada.
 
