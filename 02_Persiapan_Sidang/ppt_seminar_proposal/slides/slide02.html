@@ -1,0 +1,153 @@
+<!DOCTYPE html><html lang="id"><head>
+  <meta charset="utf-8">
+  <title>Slide 2: Fenomena Lapangan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 1280px;
+      height: 720px;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: radial-gradient(circle at 10% 90%, #152238 0%, #0b132b 70%, #060a17 100%);
+      color: #ffffff;
+    }
+    .slide-container {
+      width: 1280px;
+      height: 720px;
+      padding: 48px 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .header-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .kicker {
+      font-size: 13px;
+      font-weight: 700;
+      color: #f4a261;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+    .slide-num {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #64748b;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 4px 12px;
+      border-radius: 12px;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 16px 0;
+    }
+    .card {
+      background: rgba(28, 37, 65, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+    .card-badge {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 16px;
+      margin-bottom: 14px;
+    }
+    .badge-1 { background: rgba(72, 202, 228, 0.2); color: #48cae4; border: 1px solid #48cae4; }
+    .badge-2 { background: rgba(244, 162, 97, 0.2); color: #f4a261; border: 1px solid #f4a261; }
+    .badge-3 { background: rgba(230, 57, 70, 0.2); color: #e63946; border: 1px solid #e63946; }
+    .card-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    .card-desc {
+      font-size: 14px;
+      color: #cbd5e1;
+      line-height: 1.55;
+    }
+    .card-metric {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.15);
+      font-size: 13px;
+      font-weight: 700;
+      color: #f4a261;
+    }
+    .quote-box {
+      background: rgba(11, 37, 69, 0.7);
+      border-left: 4px solid #f4a261;
+      padding: 14px 20px;
+      border-radius: 0 10px 10px 0;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #e2e8f0;
+    }
+    .quote-box strong { color: #f4a261; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="header-block">
+      <div>
+        <p class="kicker">BAB 1 • Fenomena &amp; Latar Belakang</p>
+        <h2>Transformasi Komoditas: Dari Kartu Hobi Anak ke Aset Spekulatif Ritel</h2>
+      </div>
+      <div class="slide-num"><p>02 / 15</p></div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-badge badge-1"><p>01</p></div>
+        <p class="card-title">Aksesibilitas Ritel Massal</p>
+        <p class="card-desc">Kartu resmi fisik berbahasa Indonesia dipasarkan langsung di etalase kasir minimarket modern (Indomaret, Alfamart) tanpa hambatan impor.</p>
+        <div class="card-metric"><p>Harga Terjangkau: Rp20.000 – Rp30.000 / pack</p></div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-2"><p>02</p></div>
+        <p class="card-title">Mekanisme Kejutan Lotre (Loot Box)</p>
+        <p class="card-desc">Format kemasan bersegel acak (blind pack) memicu sensasi letupan dopamin saat dibuka, melumpuhkan rem pertimbangan kognitif secara instan.</p>
+        <div class="card-metric"><p>Pemicu: Sensasi Robek Kemasan (Pack Opening)</p></div>
+      </div>
+
+      <div class="card">
+        <div class="card-badge badge-3"><p>03</p></div>
+        <p class="card-title">Asimetri Nilai Finansial Ekstrem</p>
+        <p class="card-desc">Peluang memperoleh kartu langka (Special Illustration Rare / SAR) yang dapat dijual kembali di pasar sekunder dengan valuasi hingga jutaan rupiah.</p>
+        <div class="card-metric"><p>Valuasi Pasar: Rp500.000 – Rp3.000.000+</p></div>
+      </div>
+    </div>
+
+    <div class="quote-box"><p>
+      <strong>Inti Masalah Penelitian:</strong> Perpaduan antara <em>akses kasir instan</em>, <em>hasrat melengkapi set album</em>, dan <em>ilusi keuntungan spekulasi</em> mendorong lonjakan perilaku <strong>Impulsive Buying</strong> pada konsumen dan kolektor di Indonesia.
+    </p></div>
+  </div>
+
+
+</body></html>

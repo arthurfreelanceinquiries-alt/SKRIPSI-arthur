@@ -1,0 +1,282 @@
+<!DOCTYPE html><html lang="id"><head>
+  <meta charset="utf-8">
+  <title>Slide 14: Kepatuhan Pedoman FEB UKRIDA &amp; Integritas Ilmiah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 1280px;
+      height: 720px;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: radial-gradient(circle at 10% 50%, #152238 0%, #0b132b 75%, #060a17 100%);
+      color: #ffffff;
+    }
+    .slide-container {
+      width: 1280px;
+      height: 720px;
+      padding: 40px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .header-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .kicker {
+      font-size: 13px;
+      font-weight: 700;
+      color: #f4a261;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+    .slide-num {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #64748b;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 4px 12px;
+      border-radius: 12px;
+    }
+    .compliance-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin: 18px 0;
+    }
+    .card {
+      background: rgba(28, 37, 65, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+    }
+    .card-1::before { background: #06d6a0; }
+    .card-2::before { background: #48cae4; }
+    .card-3::before { background: #f4a261; }
+    .card-4::before { background: #e76f51; }
+    
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .card-badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .card-1 .card-badge { background: rgba(6, 214, 160, 0.2); color: #06d6a0; }
+    .card-2 .card-badge { background: rgba(72, 202, 228, 0.2); color: #48cae4; }
+    .card-3 .card-badge { background: rgba(244, 162, 97, 0.2); color: #f4a261; }
+    .card-4 .card-badge { background: rgba(231, 111, 81, 0.2); color: #e76f51; }
+
+    .card-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+    .rule-box {
+      background: rgba(11, 19, 43, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 12px;
+    }
+    .rule-label {
+      font-size: 10px;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+    .rule-val {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-top: 2px;
+    }
+    .card-bullets {
+      font-size: 12px;
+      color: #cbd5e1;
+      line-height: 1.5;
+      padding-left: 16px;
+    }
+    .card-bullets li {
+      margin-bottom: 6px;
+    }
+    .card-bullets strong {
+      color: #ffffff;
+    }
+    .bottom-banner {
+      background: rgba(17, 24, 39, 0.75);
+      border: 1px solid rgba(72, 202, 228, 0.3);
+      border-radius: 12px;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .banner-text {
+      font-size: 12px;
+      color: #cbd5e1;
+    }
+    .banner-text strong {
+      color: #48cae4;
+    }
+    .banner-badges {
+      display: flex;
+      gap: 12px;
+    }
+    .pill {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #e2e8f0;
+    }
+    .pill-green {
+      background: rgba(6, 214, 160, 0.15);
+      border-color: rgba(6, 214, 160, 0.4);
+      color: #06d6a0;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="header-block">
+      <div>
+        <div class="kicker"><p>TATA KELOLA &amp; INTEGRITAS ILMIAH</p></div>
+        <h2>Kepatuhan Pedoman Penulisan Skripsi FEB UKRIDA (2023)</h2>
+      </div>
+      <div class="slide-num"><p>14 / 15</p></div>
+    </div>
+
+    <div class="compliance-grid">
+      <!-- Card 1: Similarity Check -->
+      <div class="card card-1">
+        <div>
+          <div class="card-header">
+            <div class="card-badge"><p>01</p></div>
+            <div class="card-title"><p>Turnitin &amp; Originalitas</p></div>
+          </div>
+          <div class="rule-box">
+            <div class="rule-label"><p>Threshold FEB UKRIDA</p></div>
+            <div class="rule-val" style="color: #06d6a0;"><p>Similarity ≤ 30%</p></div>
+          </div>
+          <ul class="card-bullets">
+            <li><strong>Teknik Parafrase:</strong> Penulisan ulang sintesis riset terdahulu secara mandiri.</li>
+            <li><strong>Target Internal:</strong> Ambang batas ditekankan &lt; 15% untuk menjamin integritas.</li>
+            <li><strong>Bebas Plagiarisme:</strong> Tidak menggunakan copy-paste langsung dari publikasi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 2: Kelayakan Naskah -->
+      <div class="card card-2">
+        <div>
+          <div class="card-header">
+            <div class="card-badge"><p>02</p></div>
+            <div class="card-title"><p>Volume &amp; Tipografi</p></div>
+          </div>
+          <div class="rule-box">
+            <div class="rule-label"><p>Ketentuan Bab 3 Pedoman</p></div>
+            <div class="rule-val" style="color: #48cae4;"><p>Naskah ≥ 50 Halaman</p></div>
+          </div>
+          <ul class="card-bullets">
+            <li><strong>Ketebalan Akademik:</strong> Proposal &amp; naskah komprehensif melampaui standar minimal.</li>
+            <li><strong>Format Standar:</strong> Times New Roman 12 pt, spasi ganda, margin 4-4-3-3 cm.</li>
+            <li><strong>Sistematika Baku:</strong> Bab I Pendahuluan hingga Bab III Metodologi terstruktur.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 3: Sitasi Dosen Pembimbing -->
+      <div class="card card-3">
+        <div>
+          <div class="card-header">
+            <div class="card-badge"><p>03</p></div>
+            <div class="card-title"><p>Rujukan Pembimbing</p></div>
+          </div>
+          <div class="rule-box">
+            <div class="rule-label"><p>Integrasi Riset Dosen</p></div>
+            <div class="rule-val" style="color: #f4a261;"><p>Colline et al. (2024)</p></div>
+          </div>
+          <ul class="card-bullets">
+            <li><strong>Landasan Keputusan:</strong> Mengintegrasikan riset Ibu Dr. Fredella Colline (2024).</li>
+            <li><strong>Relevansi Topik:</strong> Hubungan literasi, bias psikologis, dan perilaku finansial.</li>
+            <li><strong>Kredibilitas Institusi:</strong> Menyelaraskan arah riset dengan fokus keilmuan prodi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 4: Bibliografi & LibGen -->
+      <div class="card card-4">
+        <div>
+          <div class="card-header">
+            <div class="card-badge"><p>04</p></div>
+            <div class="card-title"><p>Zero Ghost Citations</p></div>
+          </div>
+          <div class="rule-box">
+            <div class="rule-label"><p>Koleksi Buku Babon</p></div>
+            <div class="rule-val" style="color: #e76f51;"><p>11 Buku Teks Terverifikasi</p></div>
+          </div>
+          <ul class="card-bullets">
+            <li><strong>Bukti Fisik PDF:</strong> Ghozali, Sugiyono, Cooper, Sekaran, dkk. tersedia di repositori.</li>
+            <li><strong>Daftar Pustaka APA 7th:</strong> Urut alfabetis A-Z murni tanpa nomor urut (Pedoman FEB).</li>
+            <li><strong>Cross-Referencing:</strong> Seluruh in-text citation terhubung valid ke Daftar Pustaka.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-banner">
+      <div class="banner-text"><p>
+        <strong>Status Audit Dokumen:</strong> Seluruh ketentuan tata kelola Pedoman FEB UKRIDA 2023, orisinalitas naskah, dan verifikasi sitasi telah dipenuhi 100%.
+      </p></div>
+      <div class="banner-badges">
+        <span class="pill pill-green">✓ Turnitin Compliant</span>
+        <span class="pill pill-green">✓ APA 7th Validated</span>
+        <span class="pill">FEB UKRIDA 2026</span>
+      </div>
+    </div>
+  </div>
+
+
+</body></html>

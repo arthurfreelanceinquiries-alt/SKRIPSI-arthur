@@ -21,7 +21,7 @@
 * **Kickoff AI Sesi:** 🌐 [Buka Aplikasi Web Kickoff 1-Klik](file:///z:/SKRIPSII/SKRIPSI%20ARTHUR/SKRIPSI-arthur-main/SKRIPSI-arthur-main/PROMPT_KICKOFF.html) | 📋 [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md|Versi Dokumen Markdown]]
 * **Status Mendeley Live:** 54 entri RIS/Bib (53 ber-websites; `sugiyono2019` buku cetak tanpa link — wajar); cloud Mendeley menunggu `--prune` (hapus ghost Tan & Prasetio) + `--push` (tambah Azizah) oleh user pasca-`--auth` (token sesi lama hilang); RIS siap impor [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris|Berkas RIS (54 Ref)]]
 * **Framework Universal (pakai-ulang):** [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md|Graph of Agents A0–A11]] · SOP [[directives/universal_thesis_graph_of_agents.md|F1–F11]] · Orchestrator `py execution/run_thesis_graph.py --gate parity` · Template [[04_Riset_&_Metodologi/TEMPLATE_SOURCE_OF_TRUTH_UNIVERSAL.md|SoT Baru]] · Konektor `execution/mendeley_connector.py`
-* **Status Graphify Knowledge Graph:** 🌐 [[graphify-out/graph.html|Peta Pengetahuan Interaktif]] (1.851 Nodes, 1.980 Edges, 166 Komunitas Terkini — refresh 18 Sep 2026: AST kode + semantik 9 dok sesi)
+* **Status Graphify Knowledge Graph:** 🌐 [[graphify-out/graph.html|Peta Pengetahuan Interaktif]] (1.880 Nodes, 2.004 Edges, 174 Komunitas Terkini — refresh 21 Sep 2026: AST kode modul PPTAgent + 15 slide deck Sempro)
 
 
 ---
@@ -50,6 +50,7 @@
 
 ### 📁 B. Persiapan Sidang & Bimbingan
 * **Master Study Guide:** [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]] | [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.pdf|PDF Panduan Belajar]]
+* **Slide Deck Seminar Proposal (PPTX):** [[02_Persiapan_Sidang/ppt_seminar_proposal/Proposal_Arthur_Sempro_PokemonTCG.pptx]] *(15 slide FinTech Dark Mode, 5,17 MB, editable)* | [[02_Persiapan_Sidang/ppt_seminar_proposal/slides/|Folder Slide HTML]]
 * **Simulasi Sidang & Soal Sulit:** [[02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/03_PERTANYAAN_SIDANG_SULIT.md]] *(Termasuk SULIT 11: Cara menjawab asal usul referensi)*
 * **Flashcard & Kamus Istilah:** [[02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/02_FLASHCARD_ISTILAH.md]]
 * **Aplikasi Presentasi Interaktif:** [[02_Persiapan_Sidang/presentasi_interaktif/index.html]]

@@ -264,10 +264,10 @@
     "semantic_hash": "f53623ccb6d896da609c4e7b58b027a8"
   },
   "execution/sync_markdown_from_tex.py": {
-    "mtime": 1789711035.2038553,
-    "seen": 1789726393.4976175,
-    "ast_hash": "9f64ce6b9ad9726da401ba461584d9db",
-    "semantic_hash": "9f64ce6b9ad9726da401ba461584d9db"
+    "mtime": 1789728014.465622,
+    "seen": 1789997744.5450819,
+    "ast_hash": "9c2c2c1b8b7cee910eca0b93b1cc7592",
+    "semantic_hash": "9c2c2c1b8b7cee910eca0b93b1cc7592"
   },
   "execution/verify_docx_typography.py": {
     "mtime": 1789637421.1625328,
@@ -654,8 +654,8 @@
     "semantic_hash": "f23942ff774a4ded6d5eef925b961470"
   },
   "07_Review_&_Audit/Paper_Audits/audit_libgen_books_report.json": {
-    "mtime": 1789725319.1855547,
-    "seen": 1789725614.5667956,
+    "mtime": 1789997464.479706,
+    "seen": 1789997744.5449908,
     "ast_hash": "8ecbdda2ef5ebaaf71c8d5f266b3ee65",
     "semantic_hash": "8ecbdda2ef5ebaaf71c8d5f266b3ee65"
   },
@@ -1132,5 +1132,41 @@
     "seen": 1789725614.567306,
     "ast_hash": "5e2eb05c56362b48ab6f51e90525a992",
     "semantic_hash": ""
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/check_images.js": {
+    "mtime": 1789997096.5948813,
+    "seen": 1789997744.5449665,
+    "ast_hash": "8765d99fb5655213e76c259bfe31df04",
+    "semantic_hash": "8765d99fb5655213e76c259bfe31df04"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/check_slides.js": {
+    "mtime": 1789996756.2413647,
+    "seen": 1789997744.5449712,
+    "ast_hash": "4b7feab77f0db001f7c0fee483a5098a",
+    "semantic_hash": "4b7feab77f0db001f7c0fee483a5098a"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/check_text_styles.js": {
+    "mtime": 1789996983.259354,
+    "seen": 1789997744.5449743,
+    "ast_hash": "473925ef0bd1c94255a6e495eeb26e5a",
+    "semantic_hash": "473925ef0bd1c94255a6e495eeb26e5a"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/fix_slides.js": {
+    "mtime": 1789996801.3559036,
+    "seen": 1789997744.5449772,
+    "ast_hash": "d8e915e688e0088585ab39f0ccaf2479",
+    "semantic_hash": "d8e915e688e0088585ab39f0ccaf2479"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/fix_text_styles.js": {
+    "mtime": 1789997015.5271761,
+    "seen": 1789997744.5449798,
+    "ast_hash": "4f3e542627a363d46cc2b59c18c535b1",
+    "semantic_hash": "4f3e542627a363d46cc2b59c18c535b1"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/task.json": {
+    "mtime": 1789995606.3510792,
+    "seen": 1789997744.5449824,
+    "ast_hash": "c56c7bad6f4dc938921ef73516ec438b",
+    "semantic_hash": "c56c7bad6f4dc938921ef73516ec438b"
   }
 }

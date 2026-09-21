@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="id"><head>
+  <meta charset="utf-8">
+  <title>Slide 10: Desain Metodologi &amp; Sampling</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 1280px;
+      height: 720px;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: radial-gradient(circle at 80% 20%, #152238 0%, #0b132b 75%, #060a17 100%);
+      color: #ffffff;
+    }
+    .slide-container {
+      width: 1280px;
+      height: 720px;
+      padding: 40px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .header-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .kicker {
+      font-size: 13px;
+      font-weight: 700;
+      color: #48cae4;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+    .slide-num {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #64748b;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 4px 12px;
+      border-radius: 12px;
+    }
+    .method-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      margin: 12px 0;
+    }
+    .panel {
+      background: rgba(28, 37, 65, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .panel-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #f4a261;
+      border-bottom: 1px solid rgba(244, 162, 97, 0.3);
+      padding-bottom: 6px;
+    }
+    .criteria-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .criteria-badge {
+      font-family: 'JetBrains Mono', monospace;
+      background: rgba(72, 202, 228, 0.2);
+      border: 1px solid #48cae4;
+      color: #48cae4;
+      font-weight: 800;
+      font-size: 11.5px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .criteria-text {
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+    .sample-calc {
+      background: rgba(11, 37, 69, 0.85);
+      border: 1px solid rgba(244, 162, 97, 0.3);
+      border-radius: 10px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .calc-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12.5px;
+      color: #e2e8f0;
+    }
+    .target-highlight {
+      background: rgba(244, 162, 97, 0.15);
+      border: 1.5px solid #f4a261;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+    }
+    .target-val {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 900;
+      color: #f4a261;
+    }
+    .target-lbl {
+      font-size: 11.5px;
+      color: #cbd5e1;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .bottom-info {
+      background: rgba(11, 37, 69, 0.6);
+      border-left: 3px solid #48cae4;
+      padding: 10px 16px;
+      border-radius: 0 8px 8px 0;
+      font-size: 12px;
+      color: #cbd5e1;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="header-block">
+      <div>
+        <p class="kicker">BAB 3 • Prosedur Penelitian</p>
+        <h2>Desain Penelitian, Kriteria Inklusi, &amp; Ukuran Sampel</h2>
+      </div>
+      <div class="slide-num"><p>10 / 15</p></div>
+    </div>
+
+    <div class="method-grid">
+      <div class="panel">
+        <div class="panel-title"><p>🎯 Desain &amp; Kriteria Inklusi Purposive Sampling</p></div>
+        
+        <div class="criteria-item">
+          <span class="criteria-badge">Kriteria 1</span>
+          <p class="criteria-text"><strong>Warga Negara Indonesia (WNI) berusia minimal 17 tahun:</strong> Menjamin kepemilikan KTP, kapasitas hukum finansial mandiri, dan diskresi pengeluaran pribadi (UU 24/2013).</p>
+        </div>
+
+        <div class="criteria-item">
+          <span class="criteria-badge">Kriteria 2</span>
+          <p class="criteria-text"><strong>Pembelian booster pack resmi minimal 1x dalam 6–12 bulan:</strong> Memastikan responden memiliki pengalaman belanja aktual terkini dan mengeliminasi distorsi ingatan (recall bias).</p>
+        </div>
+
+        <div class="criteria-item">
+          <span class="criteria-badge">Kriteria 3</span>
+          <p class="criteria-text"><strong>Komoditas Fisik Bahasa Indonesia:</strong> Berfokus pada kartu cetak resmi ritel, bukan kartu simulasi digital / game online.</p>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-title"><p>📐 Justifikasi Ilmiah Ukuran Sampel</p></div>
+        
+        <div class="sample-calc">
+          <div class="calc-row">
+            <span>Kaidah Green (1991) Uji R²: N ≥ 50 + 8k</span>
+            <span style="font-weight: 700; color: #48cae4;">N ≥ 106</span>
+          </div>
+          <div class="calc-row">
+            <span>Kaidah Green (1991) Uji Koefisien: N ≥ 104 + k</span>
+            <span style="font-weight: 700; color: #48cae4;">N ≥ 111</span>
+          </div>
+          <div class="calc-row">
+            <span>Cohen (1988) Statistical Power: Power = 0.80</span>
+            <span style="font-weight: 700; color: #52b788;">Medium Effect</span>
+          </div>
+        </div>
+
+        <div class="target-highlight">
+          <p class="target-val">120 – 150</p>
+          <p class="target-lbl">Target Sampel Responden Valid</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-info"><p>
+      <strong>Kanal Distribusi:</strong> Kuesioner daring (Google Forms) disebarkan secara purposif di komunitas aktif Pokémon TCG Indonesia (Facebook TCG ID, Discord Pokémon Indo, dan Local Game Stores).
+    </p></div>
+  </div>
+
+
+</body></html>

@@ -200,6 +200,51 @@ Mengacu pada meta-analisis komprehensif Amos et al. (2014) dalam *Journal of Ret
 | 9 | Artadita & Firmialy (2024) | *How Does Self-Control Moderate Shopping Enjoyment and Impulse Buying?* (*BBR* Scopus Q3/SINTA 1) | X: Shopping enjoyment; Y: Impulse buying; PLS-SEM (bukan MRA) | Enjoyment→impuls kuat (β=0,581); moderasi DITOLAK (β=0,092 n.s.; hanya kontrol-kognitif 10%). |
 | 10 | Katauke et al. (2023) | *Financial Literacy and Impulsivity: Evidence from Japan* (*Sustainability* MDPI Scopus Q1) | X: Literasi finansial; Y: Impulsivity (diskonto hiperbolik); Probit + IV | Literasi finansial berhubungan negatif dengan impulsivitas (proksi regulasi rasional). |
 
+
+### 7.2 Evidence Ledger — Klaim → Halaman Sumber (D26 Tier Wajib)
+
+> [!IMPORTANT]
+> Tabel ini adalah **jembatan antara klaim di naskah dan halaman fisik di PDF sumber**. Saat sidang, dosen pembimbing/penguji dapat meminta Arthur membuka halaman tertentu — Evidence Ledger adalah panduan cepatnya. File master: [`04_Riset_&_Metodologi/EVIDENCE_LEDGER_HALAMAN.md`](file:///d:/Perkuliahan/Skripsi/SKRIPSI-arthur/04_Riset_&_Metodologi/EVIDENCE_LEDGER_HALAMAN.md).
+
+#### A. Klaim Terverifikasi Baca-Isi (15 Klaim — Tier Wajib)
+
+| ID | Klaim di Naskah | Sumber PDF Lokal | Halaman | Kutipan Kunci (Verbatim) |
+|:---:|:---|:---|:---:|:---|
+| **L01** | Gap-1A & H1: Hedonis → Impulsif (+) | `Pranggabayu_Andjarwati (2022)` — *Sibatik* | PDF p11 (cetak 961) | "hedonic shopping motivation mempunyai pengaruh positif terhadap impulsive buying" (B=0,879; t=24,860; p=0,000) |
+| **L02** | Gap-1A: Hedonis → Impulsif (+) | `Gültekin & Özer (2012)` — *JEBS* | PDF p6 (cetak 185) | "hedonic motives (B=0.448) significantly affected impulse buying (R²=0.211; F=111.502; p<0.001)" |
+| **L03** | Gap-1A: Afektif → Impulsif (+) | `Gong et al. (2024)` — *Heliyon* Q1 | PDF p8–9 | "curiosity can influence impulse purchase behavior favorably (β=0.288, t=5.041, p<0.05)" |
+| **L04** | Gap-1A: Hedonis → Impulsif (+) | `Tirtayasa et al. (2020)` — *IJBE* | PDF p7–8 | "t=2.528 > t-table 1.982, hedonic shopping motivation positive and significant" |
+| **L05** | Gap-2A & H2: Pseudo-set → Kelengkapan (+) | `Barasz et al. (2017)` — *JEP: General* | PDF p15–16 (cetak 14–15) | "pseudo-set 29% vs control 16% completed (χ²(1,N=201)=5.00, p=.025); rerata gamble 3,2 vs 2,9 (t(199)=−3,43, d=.49)" |
+| **L06** | Gap-2A & H2: Scarcity/Uncertainty → Impulsif (+) | `Dewi et al. (2026)` — *Locus* | PDF p5 (cetak 1086) | "H5 uncertainty→IB (O=0,286, p=0,000); H2 FOMO→IB (O=0,274); H3 scarcity→IB (O=0,267); n=211; R²=0,544" |
+| **L07** | H1: Hedonis → Impulsif (+) | `Azizah & Fauzi (2025)` — *JIKO* | PDF p8 (cetak 86) | "Hedonic motivation positively affects impulse buying (β=0.262, t=3.631, p<0.001); R²=0,563" |
+| **L08** | H1: Enjoyment → Impulsif (+) | `Artadita & Firmialy (2024)` — *BBR* Q3 | PDF p4 (cetak 182) | "shopping enjoyment positively affects impulse buying (β=0.581, p<0.05)" |
+| **L09** | Gap-3A & H3-analogi: Motif kolektor → Investasi (+) | `Aryadi & Lingga (2024)` — *Springer* | PDF p12 | "positive relationship … substantial significance (B=1,410, p=0,000, Exp(B)=4,097)" ⚠️ *Y = partisipasi investasi, bukan impulse buying; analogi* |
+| **L10** | Gap-3A-analogi: Bias herding investor | `Colline (2024)` — *AFS* | PDF p5–6 | "I buy the stock, which is recommended by a friend"; herding + loss aversion + disposition; **kualitatif** n=5 |
+| **L11** | H4 & Gap-5A: Moderasi hedonis genuine ✅ | `Lienardy & Panasea (2026)` — *BIREV* | PDF p4–5 | "Self-control significantly moderates and weakens hedonistic→impulse" (MRA SPSS 26; Adj. R²=0,528) |
+| **L12** | Gap-5B: Gagal-moderasi genuine (MRA) ❌ | `Apidana & Kholifah (2022)` — *JDBM* | PDF p10–11 (cetak 35–36) | H3 **DITOLAK**: "InteraksiX1 p=0,597" (hedonis gagal dimoderasi); H4 lifestyle DITERIMA |
+| **L13** | Gap-5B/6B: Gagal-moderasi koleksi ❌ | `Artadita & Firmialy (2024)` — *BBR* Q3 | PDF p4–5 (cetak 182–183) | H3 **DITOLAK**: "moderating effect … not supported (β=0.092, p>0.05)" |
+| **L14** | Gap-6A-parsial: Kontrol kognitif koleksi | `Artadita & Firmialy (2024)` — *BBR* Q3 | PDF p5 (cetak 183) | "only the cognitive control dimension (−0.3473; p=0.0979) is significant at 10%" — moderasi keseluruhan DITOLAK |
+| **L15** | Gap-7A: Regulasi-literasi menekan impulsivitas | `Katauke et al. (2023)` — *Sustainability* Q1 | PDF p1 (abstrak) | "probit results: financial literacy negatively associated with hyperbolic discounting" |
+
+#### B. Flag Jujur: Klaim Setingkat-Judul (Paywall — Metadata ✓, Isi Belum Dibuka Penuh)
+
+| Sumber | Status Akses | Peran di Naskah |
+|:---|:---|:---|
+| Sultan et al. (2012) — Springer | Paywall; judul mendukung peran self-control | Pendukung sekunder H4/H5; pilar utama = Lienardy (L11) |
+| Vohs & Faber (2007); Tangney et al. (2004); Baumeister (2002) | Paywall; judul selaras (depletion, BSCS, yielding) | Peran mekanisme teori; bukan angka empiris |
+| Teori/skala klasik (Rook, Hirschman, Stern, Fama, dll.) | Landing penerbit HTTP 200/403 ✓; arsip OA sebagian | Peran grand lineage; diverifikasi level abstrak |
+| 3 data industri (Statista, Pokémon Co, PriceCharting) | Snapshot HTML 18 Sep 2026 di `06_Referensi_Jurnal_PDF/snapshots/` | Angka Gambar 1.1–1.3 di Bab 1 |
+
+> [!CAUTION]
+> **⚠️ 7 Koreksi Atribusi Kritis (Jangan Tertukar Saat Sidang!):**
+> 1. **Apidana (2022):** H3-hedonis **DITOLAK** (p=0,597); H4-lifestyle DITERIMA — *bukan* pendukung H4-hedonis!
+> 2. **Artadita (2024):** Metode **PLS-SEM** (bukan MRA); H2/H3 DITOLAK; hanya kontrol-kognitif 10%.
+> 3. **Colline (2024):** **Kualitatif** n=5, usia 34–69 — bukan survei generasi muda; tanpa uji moderasi.
+> 4. **Pranggabayu (2022):** n=**200** (bukan 100).
+> 5. **Lienardy (2026):** H4-hedonis **DITERIMA** + H3-lifestyle DITOLAK (jangan tertukar!).
+> 6. **Katauke (2023):** Mengukur **literasi** → impulsivitas (bukan self-control langsung).
+> 7. **Aryadi (2024):** Y = partisipasi investasi; Pokémon hanya **26,6%** sampel — analogi, bukan bukti impulsif langsung.
+
 ---
 
 # 8. LOGIKA KAUSALITAS & 4-TIER PEMBUKTIAN HIPOTESIS

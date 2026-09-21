@@ -7,6 +7,60 @@
 
 ---
 
+## 📅 Sesi 21 September 2026 (Sesi 17): Pembuatan Deck Presentasi Seminar Proposal (15 Slide) via PPTAgent Engine, Patch Windows Compatibility, & Kompilasi File Microsoft PowerPoint PPTX Final
+
+* **Fokus Pekerjaan:**
+  - Mengimplementasikan seluruh rancangan PRD Presentasi Seminar Proposal ke dalam 15 slide deck visual modern (*FinTech & Collector Luxury Dark Mode*) beresolusi 1280x720 (16:9).
+  - Mengonfigurasi lingkungan runtime engine [[D:\SKILLS AI\PPTAgent-main|PPTAgent]] lokal (`playwright`, `html2pptx_cli.js`, `PptxGenJS`, Node.js):
+    * Mem-patch `deeppresenter/__init__.py` pada lingkungan virtual Python `.venv` untuk menghilangkan restriksi `os.name == "posix"` agar modul berjalan lancar di sistem operasi Windows.
+    * Mem-patch `html2pptx.js` untuk normalisasi URI file lokal Windows (`file:///D:/...` -> `D:/...`) dan menggunakan `pathToFileURL` Playwright untuk mencegah error origin file.
+    * Menautkan pustaka `python-pptx` dari Python 3.12 lokal melalui file `.pth` site-packages.
+  - Memproduksi 15 slide HTML mandiri pada direktori [[02_Persiapan_Sidang/ppt_seminar_proposal/slides/]]:
+    * Slide 01: Judul Skripsi, Afiliasi FEB UKRIDA, & Data Mahasiswa/Pembimbing
+    * Slide 02: Fenomena Lapangan, Booming Pasar Pokémon TCG di Indonesia & Anomali Impulsive Buying
+    * Slide 03: Data Empiris Industri ($100B Valuasi Media Franchise & 64,8 Miliar Lembar Kartu Dicetak)
+    * Slide 04: Disparitas Harga Pasar Sekunder, Kelangkaan Booster Pack, & Fenomena Grading PSA 10
+    * Slide 05: Research Gap & Mengapa Penelitian Ini Penting (*The Why* - Analisis 14 Studi Terdahulu)
+    * Slide 06: Rumusan Masalah & Tujuan Penelitian Terarah (*Directional Hypotheses Alignment*)
+    * Slide 07: Landasan Teori (*Grand, Middle, Application*: Behavioral Finance, S-O-R, Completing the Set, Self-Regulation)
+    * Slide 08: Rerangka Konseptual & 6 Hipotesis Penelitian ($H_1$ – $H_6$)
+    * Slide 09: Novelty & Diferensiasi Riset (3 Pilar Kebaruan)
+    * Slide 10: Desain Metodologi & Kriteria Penarikan Sampel Purposive (*Green N=111, Target 120–150*)
+    * Slide 11: Operasionalisasi 5 Variabel Penelitian & Skala Pengukuran Baku (5-point Likert)
+    * Slide 12: Model Ekonometrika MRA 2-Tahap Hierarkis & Transformasi Mean-Centering ($Z$-Score)
+    * Slide 13: Jadwal & Alur Pelaksanaan Riset (Timeline 6 Bulan)
+    * Slide 14: Kepatuhan Pedoman Penulisan Skripsi FEB UKRIDA (Turnitin ≤30%, Naskah ≥50 hlm, Sitasi Dr. Fredella Colline 2024, Zero Ghost Citations 11 Buku Teks LibGen)
+    * Slide 15: Kesiapan Eksekusi Riset, Nilai Tambah Teoretis/Praktis, & Sesi Tanya-Jawab (Q&A)
+  - Melakukan audit dan otomatisasi validasi teks (`check_slides.js`, `fix_slides.js`, `check_text_styles.js`, `fix_text_styles.js`):
+    * 100% teks di dalam elemen `<div>` terbungkus kontainer semantik (`<p>`, `<h1>`–`<h6>`) sesuai spesifikasi PowerPoint.
+    * Memindahkan atribut gaya visual (border, background, shadow) dari elemen teks ke elemen pembungkus `<div>` untuk kepatuhan parser PptxGenJS.
+  - Menjalankan proses build penuh menggunakan `html2pptx_cli.js` untuk menghasilkan berkas presentasi PowerPoint siap pakai:
+    * File Output: [[02_Persiapan_Sidang/ppt_seminar_proposal/Proposal_Arthur_Sempro_PokemonTCG.pptx]] (Ukuran: 5,17 MB, 15 slide ter-render sempurna dengan gambar dan grafik resolusi tinggi).
+    * File Salinan Standar: [[02_Persiapan_Sidang/ppt_seminar_proposal/answer.pptx]].
+* **Masalah yang Diselesaikan:**
+  - Mahasiswa kini memiliki bahan presentasi Seminar Proposal yang tidak hanya berstandar estetika visual tinggi (*wow factor*), namun juga memiliki ketajaman argumentasi ilmiah, kepatuhan 100% pada Pedoman FEB UKRIDA 2023, serta editable langsung di Microsoft PowerPoint.
+* **Keputusan / Output:**
+  - Seluruh artefak slide tersimpan rapi dan dapat dimodifikasi atau diekspor ulang kapan saja.
+  - Deck PPTX siap dipresentasikan di depan dosen pembimbing dan dewan penguji.
+
+---
+
+## 📅 Sesi 21 September 2026 (Sesi 16): Inisiasi Sesi Kerja, Sinkronisasi Konteks Obsidian Second Brain, & Pemuatan Framework Universal Graph of Agents
+
+* **Fokus Pekerjaan:**
+  - Mengaktifkan protokol [[.agents/skills/obsidian-second-brain/SKILL.md|obsidian-second-brain]] untuk sinkronisasi konteks awal sesi (*pre-flight hook*).
+  - Melakukan telaah graf pengetahuan terkini dari [[graphify-out/GRAPH_REPORT.md]] dan [[graphify-out/manifest.json]] (1.851 node, 1.980 edge, 166 komunitas; God Nodes: proposal builder, Bab sub-bab, Master Guide, simulasi sidang).
+  - Membaca dan menyinkronkan memori kokpit dari [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]], framework universal [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]], dan SOP [[directives/universal_thesis_graph_of_agents.md]].
+  - Memverifikasi status naskah aktif, parameter variabel ($Y$: *Impulsive Buying*, $X_1$: *Hedonic Motivation*, $X_2$: *Desire for Completeness*, $X_3$: *Speculative Motive*, $Z$: *Self-Control*), dan seluruh catatan bimbingan Dr. Fredella Colline.
+* **Masalah yang Diselesaikan:**
+  - Mencegah fenomena amnesia konteks antar-sesi, memastikan integritas 3-Layer Architecture (*Directives -> Orchestration -> Execution*), dan mempertahankan rantai pembuktian ilmiah (*reasoning hygiene* & *evidence ledger*).
+* **Keputusan / Insight:**
+  - Seluruh parameter riset terkunci (D01–D26) dan status naskah proposal aktif (versi lengkap 64 halaman dan varian tanpa Bab 3 46 halaman, paritas gate 7/7 lolos, 54 entri pustaka A-Z murni tanpa nomor) dimuat sempurna dalam ingatan kerja aktif.
+* **File yang Diperbarui:**
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+---
+
 ## 📅 Sesi 16 September 2026 (Sesi 15): Pengunduhan Berkas Digital 11 Buku Referensi LibGen ke `03_Buku_Referensi_PDF/`, Paritas Biner PyMuPDF, & Penegakan Protokol Zero Ghost Citations 100%
 
 * **Fokus Pekerjaan:**
@@ -1125,3 +1179,21 @@
 - **Keputusan / Insight:** (1) Di luar skope (pra-ada, dibiarkan jujur): sisa `\` dari escape `\\*` (`M\ = 0`) dan `_{…}` literal — memperbaikinya butuh ubah semantik gate G4, diusulkan sebagai follow-up. (2) Pelajaran self-anneal kedua untuk pipeline sync→build.
 - **File yang Diperbarui:** [[execution/sync_markdown_from_tex.py]] (guard `\par`), [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]] (972 baris), [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
 - **Verifikasi:** MD `\partial` 12/12 utuh; DOCX `frac` 0 + bullet slopes bersih; `verify_docx_typography.py` PASS Full + NoBab3.
+
+---
+
+## 📅 Sesi: 21 September 2026 — Kickoff Sesi Kerja Skripsi & Sinkronisasi Konteks Pre-Flight
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Membuka sesi kerja baru dengan protokol Obsidian Second Brain, memuat seluruh relasi file dari Graphify, membaca Source of Truth, dan memverifikasi status naskah aktif.
+> - **Masalah yang Diselesaikan:** Mencegah amnesia konteks antar-sesi, memastikan integritas parameter penelitian (Y, X1, X2, X3, Z) dan arahan bimbingan Dr. Fredella Colline tetap terjaga.
+> - **Keputusan/Output:** Protokol pre-flight sukses dimuat; seluruh variabel, keputusan terkunci (D01–D26), arsitektur 3-Layer, dan status naskah aktif siap untuk dieksekusi.
+
+- **Fokus Pekerjaan:** Kickoff sesi via protokol `obsidian-second-brain`; sinkronisasi pengetahuan via `graphify-out/GRAPH_REPORT.md` (1.851 node, 1.980 edge, 166 komunitas); pemuatan kokpit `00_DASHBOARD_SECOND_BRAIN.md`, `SOURCE_OF_TRUTH.md`, dan framework universal `PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md` (+ SOP `directives/universal_thesis_graph_of_agents.md`).
+- **Keputusan / Insight:** 
+  1. Naskah Proposal Lengkap (`Proposal_Arthur_PokemonTCG.pdf` 64 hlm & `.docx`) dan Varian Tanpa Bab 3 (`Proposal_Arthur_NoBab3.pdf` 46 hlm & `.docx`) berada pada status paritas 7/7 PASS (54 entri pustaka, 245 hyperlink sitasi internal).
+  2. Hasil audit dan draf humanisasi Bab I–III: Bab II dan Bab III sudah selesai di-porting ke master TeX (R3) dan terverifikasi bersih; Bab I (`.tmp/humanize/AUDIT_R1_BI.md`) telah dipetakan dan menunggu arahan pengguna apakah ingin lanjut ke tahap R2 (penulisan ulang draf salinan) atau fokus pada agenda lain.
+  3. Doktrin anti-regresi: LaTeX sebagai Golden Truth, Zero Desync, No-Login-Wall, Zero Ghost Citations, Pure Black `#000000`, dan callout `> [!SUMMARY]` wajib ditegakkan di setiap perubahan.
+- **File yang Diperbarui:** [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** Pre-flight Graphify OK, Source of Truth OK, Universal Framework OK, Log sesi berhasil di-append.
+

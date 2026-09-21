@@ -1,0 +1,223 @@
+<!DOCTYPE html><html lang="id"><head>
+  <meta charset="utf-8">
+  <title>Slide 8: Rerangka Konseptual &amp; Hipotesis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@600;800&amp;display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 1280px;
+      height: 720px;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: radial-gradient(circle at 50% 10%, #152238 0%, #0b132b 75%, #060a17 100%);
+      color: #ffffff;
+    }
+    .slide-container {
+      width: 1280px;
+      height: 720px;
+      padding: 38px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .header-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .kicker {
+      font-size: 13px;
+      font-weight: 700;
+      color: #48cae4;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+    .slide-num {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #64748b;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 4px 12px;
+      border-radius: 12px;
+    }
+    .framework-canvas {
+      background: rgba(28, 37, 65, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 24px 32px;
+      margin: 10px 0;
+      display: grid;
+      grid-template-columns: 1fr 0.4fr 1fr;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+    }
+    .col-indep {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .var-node {
+      background: rgba(11, 37, 69, 0.85);
+      border: 1.5px solid #48cae4;
+      border-radius: 10px;
+      padding: 12px 16px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    }
+    .var-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    .var-sub {
+      font-size: 11.5px;
+      color: #a0aec0;
+      margin-top: 2px;
+    }
+    .col-arrow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+    }
+    .hypo-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(72, 202, 228, 0.15);
+      color: #48cae4;
+      border: 1px solid #48cae4;
+      white-space: nowrap;
+    }
+    .col-dep {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .node-dep {
+      background: linear-gradient(135deg, rgba(244, 162, 97, 0.25) 0%, rgba(11, 37, 69, 0.9) 100%);
+      border: 2px solid #f4a261;
+      border-radius: 12px;
+      padding: 22px 24px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(244, 162, 97, 0.2);
+    }
+    .mod-anchor {
+      grid-column: 1 / -1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.15);
+    }
+    .mod-box {
+      background: rgba(230, 57, 70, 0.15);
+      border: 1.5px solid #e63946;
+      border-radius: 10px;
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .mod-box span.title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+    .mod-badges {
+      display: flex;
+      gap: 8px;
+    }
+    .badge-neg {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 800;
+      color: #e63946;
+      background: rgba(230, 57, 70, 0.2);
+      border: 1px solid #e63946;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .footer-statement {
+      font-size: 12px;
+      color: #cbd5e1;
+      line-height: 1.4;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="header-block">
+      <div>
+        <p class="kicker">BAB 2 • Kerangka Konseptual</p>
+        <h2>Model Penelitian &amp; 6 Hipotesis Asosiatif (MRA)</h2>
+      </div>
+      <div class="slide-num"><p>08 / 15</p></div>
+    </div>
+
+    <div class="framework-canvas">
+      <div class="col-indep">
+        <div class="var-node">
+          <p class="var-title">Hedonic Motivation (X1)</p>
+          <p class="var-sub">Kesenangan &amp; letupan dopamin belanja</p>
+        </div>
+        <div class="var-node">
+          <p class="var-title">Desire for Completeness (X2)</p>
+          <p class="var-sub">Hasrat menutup slot album kosong</p>
+        </div>
+        <div class="var-node">
+          <p class="var-title">Speculative Motive (X3)</p>
+          <p class="var-sub">Ekspektasi capital gain kartu langka</p>
+        </div>
+      </div>
+
+      <div class="col-arrow">
+        <span class="hypo-badge">H1 (+) ➔</span>
+        <span class="hypo-badge">H2 (+) ➔</span>
+        <span class="hypo-badge">H3 (+) ➔</span>
+      </div>
+
+      <div class="col-dep">
+        <div class="node-dep">
+          <p style="font-size: 12px; color: #f4a261; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;">Variabel Dependen (Y)</p>
+          <p style="font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 800; color: #ffffff; margin-top: 4px;">Impulsive Buying</p>
+          <p style="font-size: 12px; color: #cbd5e1; margin-top: 4px;">Pembelian Spontan Booster Pack Fisik</p>
+        </div>
+      </div>
+
+      <div class="mod-anchor">
+        <div class="mod-box">
+          <span class="title">Variabel Moderasi (M): Self-Control (Kontrol Diri)</span>
+          <div class="mod-badges">
+            <span class="badge-neg">H4: Mod X1 (-)</span>
+            <span class="badge-neg">H5: Mod X2 (-)</span>
+            <span class="badge-neg">H6: Mod X3 (-)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer-statement">
+      <strong>Arah Pengujian:</strong> H1–H3 menguji pengaruh positif langsung; H4–H6 menguji efek moderasi <strong>memperlemah (-)</strong> oleh kontrol diri konsumen.
+    </p>
+  </div>
+
+
+</body></html>
