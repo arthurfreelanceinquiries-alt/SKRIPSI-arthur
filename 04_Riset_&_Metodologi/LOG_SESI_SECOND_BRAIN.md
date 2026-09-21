@@ -7,6 +7,39 @@
 
 ---
 
+## 📅 Sesi 21 September 2026 (Sesi 18): Resolusi Permanen Glitch Layout Frontmatter Word (Pemisahan Halaman Mandiri DAFTAR TABEL & DAFTAR GAMBAR), Proteksi COM Interop, dan Penegakan Aturan Audit G4
+
+* **Fokus Pekerjaan:**
+  - Menindaklanjuti temuan tata letak naskah Word di mana `DAFTAR TABEL` menempel di bawah entri terakhir `DAFTAR ISI` (pada halaman yang sama).
+  - Melakukan telaah Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023 (Subbab 2.1 Bagian Awal hlm 9–10): memastikan bahwa `Daftar Isi` (huruf j), `Daftar Tabel` (huruf k), dan `Daftar Gambar` (huruf l) adalah entitas struktural mandiri yang masing-masing WAJIB berdiri sendiri pada halaman baru terpisah dengan penomoran angka romawi kecil. Praktik naskah kakak tingkat yang menggabungkan tabel/gambar ke dalam daftar isi utama diidentifikasi sebagai kesalahan teknis Word (*bad practice*).
+  - Mengisolasi akar masalah (*root-cause analysis*) pada generator Word (`execution/build_proposal_word.py`):
+    * Saat skrip PowerShell Word COM Interop membersihkan paragraf TOC statis untuk digantikan oleh field dinamis `{ TOC }`, rentang penghapusan `$rangeToDelete.Delete()` menghapus batas paragraf (`\r`) tepat sebelum `DAFTAR TABEL`.
+    * Akibatnya, teks `DAFTAR TABEL` melebur (*merged*) menjadi buntut paragraf terakhir field TOC.
+  - Menerapkan perbaikan komprehensif tingkat OOXML & Interop:
+    1. **Python-docx Generator (`build_proposal_word.py`):** Menyematkan properti `p.paragraph_format.page_break_before = True` (`<w:pageBreakBefore/>`) secara permanen pada fungsi `add_frontmatter_heading` dan `add_daftar_isi_heading`.
+    2. **PowerShell COM Interop (`inject_native_toc`):** Menyisipkan dua paragraf setelah DAFTAR ISI (satu sebagai kontainer TOC, satu sebagai buffer pemisah sebelum DAFTAR TABEL) untuk mencegah *paragraph merging*, serta melakukan iterasi penegasan eksplisit `$doc.Paragraphs.Item($k).Format.PageBreakBefore = $true` untuk seluruh heading `DAFTAR TABEL` dan `DAFTAR GAMBAR`.
+  - Memperbarui sistem audit tipografi Layer 3 (`execution/verify_docx_typography.py` / Gerbang G4):
+    * Menambahkan modul audit khusus `3b. Audit Frontmatter Mandatory Standalone Pages`.
+    * Memverifikasi bahwa `DAFTAR TABEL` dan `DAFTAR GAMBAR` wajib berupa paragraf mandiri terpisah (bukan entri tab TOC dan tidak terkontaminasi teks lain) serta memiliki properti `<w:pageBreakBefore/>` aktif.
+  - Memperbarui dokumentasi arsitektur:
+    * [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]] (standar pemisahan halaman frontmatter & kriteria PASS G4).
+    * [[directives/universal_thesis_graph_of_agents.md]] (aturan F7 Build dan penegasan Gerbang G4).
+    * [[directives/generate_thesis_word_document.md]] (poin 5 proteksi teknis OOXML dan COM Interop).
+* **Masalah yang Diselesaikan:**
+  - 100% melenyapkan glitch layout di mana `DAFTAR TABEL` menempel di bawah Daftar Isi.
+  - Menjamin bahwa naskah proposal lengkap 64 halaman (`Proposal_Arthur_PokemonTCG.docx`) dan naskah proposal tanpa Bab 3 (`Proposal_Arthur_NoBab3.docx`) memiliki struktur frontmatter yang presisi: Daftar Isi di hal. ix-x / xii, Daftar Tabel di hal. xi / xiii, dan Daftar Gambar di hal. xii / xiv, masing-masing berdiri di halaman baru sendiri.
+  - Menjamin 7 gerbang verifikasi orchestrator `run_thesis_graph.py --gate parity` lulus 100% (7 PASS, 0 FAIL).
+* **Keputusan / Output Teknis:**
+  - File Generator Terkoreksi: [[execution/build_proposal_word.py]].
+  - File Audit Terkoreksi: [[execution/verify_docx_typography.py]].
+  - Naskah Word Tergenerasi Ulang: [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]] & [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]].
+  - Pedoman & Directives Terupdate: [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]], [[directives/universal_thesis_graph_of_agents.md]], [[directives/generate_thesis_word_document.md]].
+  - Hasil Uji Verifikasi Otomatis:
+    1. `py execution/run_thesis_graph.py --gate parity`: **7 PASS / 0 FAIL / 0 SKIP** (G1 Mendeley, G2 Live URL, G3 UKRIDA 2023, G4 Tipografi DOCX, G5 Paritas PDF-Word, G6 Outline Word, G7 Sumber LibGen).
+    2. `py execution/verify_all_citation_links.py`: **33 Hidup / 20 Walled / 0 MATI**.
+
+---
+
 ## 📅 Sesi 21 September 2026 (Sesi 17): Pembuatan Deck Presentasi Seminar Proposal (15 Slide) via PPTAgent Engine, Patch Windows Compatibility, & Kompilasi File Microsoft PowerPoint PPTX Final
 
 * **Fokus Pekerjaan:**

@@ -202,6 +202,7 @@ Review bukti → ekspos ketidakpastian + alternatif → definisikan acceptance c
   - Sectioning: sampul unnumbered + romawi ii–x + arab 1+; footer `UKRIDA | hal`.
   - Heading: H1 `outlineLvl 0` (frontmatter + BAB + Pustaka + Lampiran, ALL CAPS center page-break); H2 lvl1 (1.1–1.7…); H3 lvl2; abstrak ID regular 1.0 vs abstract EN italic.
   - TOC universal: tab-stop kanan `14.0cm = 7938 dxa`, `w:leader="dot"`, `right_indent = 0`, struktur 3-run (title/tab/page) + `<w:sdt>` native (klik + update 1-klik di Word/Docs).
+  - **Pemisahan Halaman Frontmatter Mutlak (Pedoman FEB UKRIDA 2023 Subbab 2.1 hlm 9–10):** `DAFTAR ISI`, `DAFTAR TABEL`, dan `DAFTAR GAMBAR` adalah 3 entitas struktural independen yang masing-masing WAJIB berdiri sendiri pada halaman baru terpisah (dengan penomoran romawi kecil). Heading `DAFTAR TABEL` dan `DAFTAR GAMBAR` wajib menyematkan `<w:pageBreakBefore/>` (`p.paragraph_format.page_break_before = True`) dan diproteksi dengan buffer paragraf pada injeksi TOC Word COM Interop guna mencegah paragraph merging. Dilarang keras menggabungkan daftar tabel/gambar ke dalam daftar isi utama (seperti kecacatan pada naskah kakak tingkat).
   - Tabel APA7 (atas 1pt, header 0.75pt, bawah 1pt, tanpa vertikal); rumus OMML native; caption tabel atas / gambar bawah + `Sumber:`; zero AI artifacts (tidak ada `*`/`$`/`\cite` bocor; `X₁,X₂,X₃,Y,M,R²,ΔR²,p<0,05,α,n` dirender benar).
   - Dual-mode: `--no-chapter3` (tanpa Bab 3 + tanpa 3 lembar formal, frontmatter mulai ii) vs full.
 - **Tools:** `build_proposal_word.py` (+pandoc), `build_proposal_nobab3_pdf.py` (xelatex→bibtex→xelatex×2), `sync_markdown_from_tex.py`, `compare_pdf_docx_fidelity.py`.
@@ -216,7 +217,7 @@ Jalankan berurutan; 1 FAIL = BUILD BROKEN, dilarang ke pembimbing. (Dipetakan da
 | G1 | Mendeley 6-way parity | `verify_mendeley_integrity.py` (T1–T7) | `TeX=MD=Word=RIS=Bib=Mendeley=N`; whitelist `JOUR/BOOK/RPRT/CONF/THES/GEN` (larang `ELEC/WEB/MISC` — silent-drop); metadata TY/TI/AU/PY/PB-JO/ID/UR lengkap; UTF-8 bersih; `UR` + hyperlink OpenXML aktif |
 | G2 | Live URL | `verify_live_urls.py` | 0 pola blacklist; key+URL kanonis ada di bib; HTTP 200/301/302/403 = live |
 | G3 | UKRIDA compliance | `verify_ukrida_compliance.py` | ≥5 jurnal SINTA/Scopus; sitasi dosen; DP ≥20 tanpa nomor, hanging 1.25cm; `dan` (bukan `&`); `et al.` miring; margin 4-3-3-3 |
-| G4 | Tipografi DOCX | `verify_docx_typography.py` | 0 artefak; TOC tab 14.0cm + `right_indent=0`; semua run `#000000` tanpa themeColor |
+| G4 | Tipografi DOCX | `verify_docx_typography.py` | 0 artefak; TOC tab 14.0cm + `right_indent=0`; semua run `#000000` tanpa themeColor; pemisahan halaman mandiri (`pageBreakBefore`) `DAFTAR TABEL` & `DAFTAR GAMBAR` terisolasi 100% dari TOC |
 | G5 | Paritas PDF↔DOCX | `verify_pdf_docx_parity.py` | NoBab3 steril (tanpa Bab 3/lembar formal usang); Full lengkap; butir-1 = pembimbing |
 | G6 | Outline | `verify_word_outline.py` | H1/H2/H3 + `outlineLvl` + TNR12 (ref: 12/16/28) |
 | G7 | Buku | `verify_book_sources.py` | 12 buku verified, `NOT_FOUND=0` |

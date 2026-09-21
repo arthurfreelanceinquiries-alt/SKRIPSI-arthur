@@ -166,6 +166,40 @@ def audit_docx(docx_path: Path) -> bool:
 
     print(f"[*] Checked {toc_paragraphs_checked} TOC/LOT/LOF entry paragraphs for dot leaders and 0 right_indent.")
 
+    # 3b. Audit Frontmatter Mandatory Standalone Pages (DAFTAR TABEL & DAFTAR GAMBAR)
+    # UKRIDA FEB 2023: Subbab 2.1 hlm 9-10 menetapkan Daftar Isi, Daftar Tabel, dan Daftar Gambar
+    # masing-masing wajib berdiri sendiri pada halaman baru terpisah dengan angka romawi kecil.
+    print(f"[*] Inspecting frontmatter headings for mandatory standalone page breaks...")
+    W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+    for required_heading in ["DAFTAR TABEL", "DAFTAR GAMBAR"]:
+        found_heading = False
+        for p_idx, p in enumerate(doc.paragraphs):
+            raw_text = p.text.strip()
+            # Abaikan entri TOC (yang memiliki karakter tab '\t' diikuti nomor halaman)
+            if "\t" in raw_text:
+                continue
+
+            # Cek jika heading terkontaminasi/ter-merge dengan paragraf non-tab lain
+            if required_heading in raw_text and raw_text != required_heading:
+                issues.append(
+                    f"Frontmatter '{required_heading}' is merged/contaminated into paragraph at P{p_idx}: {repr(raw_text[:60])}"
+                )
+            elif raw_text == required_heading:
+                found_heading = True
+                pPr = p._p.find(f"{W}pPr")
+                has_pbb = False
+                if pPr is not None and pPr.find(f"{W}pageBreakBefore") is not None:
+                    has_pbb = True
+                elif p.paragraph_format.page_break_before:
+                    has_pbb = True
+                
+                if not has_pbb:
+                    issues.append(
+                        f"Frontmatter '{required_heading}' at P{p_idx} missing mandatory page_break_before (<w:pageBreakBefore/>)"
+                    )
+        if not found_heading:
+            issues.append(f"Frontmatter heading '{required_heading}' not found as standalone paragraph in document!")
+
     # 4. Audit Run Font Color (Pure Black #000000, zero blue/themeColor)
     print(f"[*] Inspecting all runs across document for pure black (#000000) color...")
     non_black_runs = 0

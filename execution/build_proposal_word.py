@@ -595,6 +595,8 @@ def add_frontmatter_heading(doc, title, page_break=False):
     p.paragraph_format.line_spacing = 1.5
     p.paragraph_format.first_line_indent = Cm(0)
     p.paragraph_format.keep_with_next = True
+    if page_break:
+        p.paragraph_format.page_break_before = True
     set_paragraph_outline_level(p, 0)
 
     clean_title = clean_academic_text(title.upper())
@@ -613,6 +615,8 @@ def add_daftar_isi_heading(doc, page_break=True):
     p.paragraph_format.line_spacing = 1.5
     p.paragraph_format.first_line_indent = Cm(0)
     p.paragraph_format.keep_with_next = True
+    if page_break:
+        p.paragraph_format.page_break_before = True
     r = p.add_run("DAFTAR ISI")
     make_run_pure_black(r, "Times New Roman", Pt(12), bold=True)
     return p
@@ -2019,9 +2023,11 @@ try {{
                 $rangeToDelete.Delete()
             }}
             
-            # Insert native TOC at paragraph right after DAFTAR ISI
+            # Insert TWO paragraphs after DAFTAR ISI:
+            # 1 for TOC field container, 1 buffer before DAFTAR TABEL to prevent merging
             $insertRange = $doc.Paragraphs.Item($i).Range
             $insertRange.Collapse(0)
+            $insertRange.InsertParagraphAfter()
             $insertRange.InsertParagraphAfter()
             $tocRange = $doc.Paragraphs.Item($i + 1).Range
             
@@ -2030,6 +2036,15 @@ try {{
             break
         }}
     }}
+    
+    # Enforce absolute page break before DAFTAR TABEL and DAFTAR GAMBAR
+    for ($k = 1; $k -le $doc.Paragraphs.Count; $k++) {{
+        $txt = $doc.Paragraphs.Item($k).Range.Text.Trim()
+        if ($txt -eq "DAFTAR TABEL" -or $txt -eq "DAFTAR GAMBAR") {{
+            $doc.Paragraphs.Item($k).Format.PageBreakBefore = $true
+        }}
+    }}
+    
     $doc.Save()
     $doc.Close()
 }} catch {{

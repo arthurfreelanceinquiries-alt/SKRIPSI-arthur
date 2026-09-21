@@ -43,15 +43,17 @@ Transform the raw, uncalibrated thesis proposal document into a pristine, public
    - **Abstrak (Bahasa Indonesia):** Judul 12 pt bold, identitas 12 pt bold, teks isi **12 pt regular** (1.0 spasi tunggal, alinea menjorok 1.25 cm), kata kunci 12 pt italic.
    - **Abstract (English):** Judul 12 pt bold, identitas 12 pt bold, teks isi **12 pt italic** (1.0 spasi tunggal, alinea menjorok 1.25 cm), keywords 12 pt italic.
 
-5. **Daftar Isi, Daftar Tabel, & Daftar Gambar (Dot Leaders & Tab Stops):**
-   - Menggunakan tab stop rata kanan (*Right Alignment*) dengan titik-titik (*Dot Leader*).
+5. **Daftar Isi, Daftar Tabel, & Daftar Gambar (Dot Leaders, Tab Stops, & Pemisahan Halaman Mandiri):**
+   - **Pemisahan Halaman Mandiri Mutlak:** Sesuai Pedoman FEB UKRIDA 2023 (Subbab 2.1 hlm 9–10), `Daftar Isi` (j), `Daftar Tabel` (k), dan `Daftar Gambar` (l) adalah 3 entitas struktural independen yang masing-masing WAJIB berdiri sendiri pada halaman baru terpisah dengan angka romawi kecil.
+   - **Proteksi Teknis OOXML & COM Interop:** Paragraf heading `DAFTAR TABEL` dan `DAFTAR GAMBAR` wajib disetel dengan `p.paragraph_format.page_break_before = True` (`<w:pageBreakBefore/>`). Pada injeksi native Table of Contents via Word COM Interop, wajib disisipkan buffer paragraf pemisah setelah DAFTAR ISI agar field TOC tidak melebur/merge dengan heading DAFTAR TABEL.
+   - **Tab Stop & Dot Leaders:** Menggunakan tab stop rata kanan (*Right Alignment*) dengan titik-titik (*Dot Leader*) pada `14.0 cm = 7938 dxa` dan `right_indent = 0`.
    - **Formula Posisi Tab Stop Relatif terhadap Indentasi Paragraf:**
-     Untuk mencegah tab stop melewati margin kanan (yang menyebabkan Word/WPS membatalkan titik-titik), posisi tab stop harus dihitung dengan rumus:
+     Untuk mencegah tab stop melewati margin kanan (yang menyebabkan Word/WPS membatalkan titik-titik), posisi tab stop dihitung dengan rumus:
      $$\text{Tab Stop Position} = 13.8\text{ cm} - \text{Left Indent}$$
-     - Tingkat 1 (Bab / Frontmatter, Left Indent 0 cm): Tab Stop di `13.8 cm`
+     - Tingkat 1 (Bab / Frontmatter, Left Indent 0 cm): Tab Stop di `13.8 cm` (atau `14.0 cm` di style native Word)
      - Tingkat 2 (Sub-bab, Left Indent 0.6 cm): Tab Stop di `13.2 cm`
      - Tingkat 3 (Anak Sub-bab, Left Indent 1.2 cm): Tab Stop di `12.6 cm`
-   - Dengan formula ini, seluruh nomor halaman di Daftar Isi akan rata kanan presisi pada garis `13.8 cm` (2 mm sebelum margin kertas 14.0 cm) dan titik-titik penghubung (*dot leaders*) dipastikan muncul 100% sempurna di Microsoft Word maupun WPS Office.
+   - Dengan formula ini, seluruh nomor halaman di Daftar Isi akan rata kanan presisi pada garis margin dan titik-titik penghubung (*dot leaders*) dipastikan muncul 100% sempurna di Microsoft Word maupun Google Docs/WPS Office.
 
 6. **Pagination & Sectioning:**
    - Section 1: Halaman Sampul (Unnumbered, separate first-page footer).

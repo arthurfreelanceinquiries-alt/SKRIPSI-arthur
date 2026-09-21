@@ -24,7 +24,7 @@
 | F4 Construct | A4 | `py execution/analyze_completeness_construct.py` (atau padanannya per topik) | Tiap konstruk → teori + skala baku |
 | F5 Method | A5 | Tulis Bab 3, freeze Model 1/2 + N + etik | Estimand + model frozen verbatim |
 | F6 Stats | A6 | Olah data (SPSS/R) + laporkan ΔR², effect size | p-value tidak pernah tanpa effect size |
-| F7 Build | A7 | `py execution/build_proposal_word.py [--no-chapter3]` + `py execution/build_proposal_nobab3_pdf.py` + `py execution/sync_markdown_from_tex.py`. Wajib: angka TOC/LOT/LOF = angka cetak PDF (C-LOT-1); `\caption{...}` mentah dilarang lolos; entri LOT/LOF terhyperlink 100% (laporan builder `N caption, M entri` harus imbang); sitasi tubuh terhyperlink ke DP 100% kunci (laporan `N tautan`; cakupan per-kunci NIHIL yatim; C-CITE-2) | File ter-build tanpa error XML |
+| F7 Build | A7 | `py execution/build_proposal_word.py [--no-chapter3]` + `py execution/build_proposal_nobab3_pdf.py` + `py execution/sync_markdown_from_tex.py`. Wajib: angka TOC/LOT/LOF = angka cetak PDF (C-LOT-1); `\caption{...}` mentah dilarang lolos; entri LOT/LOF terhyperlink 100% (laporan builder `N caption, M entri` harus imbang); sitasi tubuh terhyperlink ke DP 100% kunci (laporan `N tautan`; cakupan per-kunci NIHIL yatim; C-CITE-2); `DAFTAR ISI`, `DAFTAR TABEL`, dan `DAFTAR GAMBAR` wajib 100% berdiri sendiri di halaman baru terpisah (`pageBreakBefore = True`), dilarang menempel atau ter-merge ke dalam TOC (C-LOT-2). | File ter-build tanpa error XML & halaman frontmatter terpisah sempurna |
 | F8 Parity | A8 | `py execution/run_thesis_graph.py --gate parity` (G1–G7) + `verify_all_citation_links.py` (0 DEAD). Mendeley cloud: `--push` + `--prune --dry` + `--sync-links`, lalu verifikasi baca-balik (N dokumen = N RIS). Token mati → `--refresh` | 7/7 PASS, 1 FAIL = BUILD BROKEN |
 | F9 Audit | A9 | `directives/run_paper_audit.md` **hanya** pada 5 trigger (Pra-Bimbingan, Pra-Sempro, Major Rewrite, Verifikasi Resolusi, On-demand) | Critical=0, Major selesai/terjustifikasi |
 | F10 Defense | A10 | `py execution/build_interactive_presentation.py` + `py execution/build_study_guide_pdf.py` | Panduan sinkron SoT; PDF <5MB |
@@ -41,7 +41,7 @@ py execution/verify_mendeley_integrity.py   # G1
 py execution/verify_live_urls.py            # G2
 py execution/verify_all_citation_links.py   # G2b (0 DEAD, C-LINK-1)
 py execution/verify_ukrida_compliance.py    # G3
-py execution/verify_docx_typography.py      # G4
+py execution/verify_docx_typography.py      # G4 (pure black, tab stop 14.0cm, isolasi mandiri DAFTAR TABEL & GAMBAR pageBreakBefore)
 py execution/verify_pdf_docx_parity.py      # G5
 py execution/verify_word_outline.py         # G6
 py execution/verify_book_sources.py         # G7
