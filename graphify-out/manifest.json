@@ -78,10 +78,10 @@
     "semantic_hash": "c394d2f28b84f4ca4b5e55d911cfd5f9"
   },
   "execution/build_proposal_word.py": {
-    "mtime": 1789641809.6712792,
-    "seen": 1789726393.4976175,
-    "ast_hash": "00ae51d3fda6f50da08e6550610ce865",
-    "semantic_hash": "00ae51d3fda6f50da08e6550610ce865"
+    "mtime": 1789999148.777027,
+    "seen": 1790000237.923231,
+    "ast_hash": "c201310226c9d9136c8f659da5988877",
+    "semantic_hash": "c201310226c9d9136c8f659da5988877"
   },
   "execution/generate_journal_catalog.py": {
     "mtime": 1789676848.7491906,
@@ -114,16 +114,16 @@
     "semantic_hash": "284f3c5fb3092a372e294402a56357c8"
   },
   "01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md": {
-    "mtime": 1789723612.3004024,
-    "seen": 1789726393.4976175,
-    "ast_hash": "40d94d5d4157924b751fa56d25b83fcc",
-    "semantic_hash": "40d94d5d4157924b751fa56d25b83fcc"
+    "mtime": 1789728047.9168367,
+    "seen": 1790000237.9234931,
+    "ast_hash": "0bb1cdbccacd8b182ea9413af4b6fcc6",
+    "semantic_hash": "0bb1cdbccacd8b182ea9413af4b6fcc6"
   },
   "02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md": {
-    "mtime": 1789677838.6923306,
-    "seen": 1789726393.4976175,
-    "ast_hash": "7e96ca8cc3ebd7dc641785ca63789d3b",
-    "semantic_hash": "7e96ca8cc3ebd7dc641785ca63789d3b"
+    "mtime": 1789973121.1918044,
+    "seen": 1790000237.9235153,
+    "ast_hash": "3ce385800b49a7779bf20fe060807dcf",
+    "semantic_hash": "3ce385800b49a7779bf20fe060807dcf"
   },
   "02_Persiapan_Sidang/PRESENTASI_PANDUAN_BELAJAR.html": {
     "mtime": 1789678099.7226167,
@@ -186,10 +186,10 @@
     "semantic_hash": "13f4800a66429fd78df6f589c742f10f"
   },
   "AGENTS.md": {
-    "mtime": 1789637421.125189,
-    "seen": 1789726393.5056899,
-    "ast_hash": "afa8a814dcfa87ac6f24252e655d3103",
-    "semantic_hash": "afa8a814dcfa87ac6f24252e655d3103"
+    "mtime": 1790000154.836045,
+    "seen": 1790000237.9238045,
+    "ast_hash": "28e6b3a8de3d5a6a71bf81d66aacffe1",
+    "semantic_hash": "28e6b3a8de3d5a6a71bf81d66aacffe1"
   },
   "directives/download_journal_references.md": {
     "mtime": 1789325614.773078,
@@ -204,10 +204,10 @@
     "semantic_hash": "c62074f08ee766d72aef61696272a7c1"
   },
   "directives/generate_thesis_word_document.md": {
-    "mtime": 1789371905.073291,
-    "seen": 1789725614.5672526,
-    "ast_hash": "c9a84ea448fe1a2672b62f212217aa0b",
-    "semantic_hash": "c9a84ea448fe1a2672b62f212217aa0b"
+    "mtime": 1789999680.342879,
+    "seen": 1790000237.9238582,
+    "ast_hash": "32c412bf51c31342907b004f1fa7bc7f",
+    "semantic_hash": "32c412bf51c31342907b004f1fa7bc7f"
   },
   "directives/review_desire_for_completeness.md": {
     "mtime": 1789294771.1041574,
@@ -270,10 +270,10 @@
     "semantic_hash": "9c2c2c1b8b7cee910eca0b93b1cc7592"
   },
   "execution/verify_docx_typography.py": {
-    "mtime": 1789637421.1625328,
-    "seen": 1789726393.4976175,
-    "ast_hash": "d8bc61f215be496c8f21ce31b6f88e3b",
-    "semantic_hash": "d8bc61f215be496c8f21ce31b6f88e3b"
+    "mtime": 1789999547.5431733,
+    "seen": 1790000237.9232914,
+    "ast_hash": "a348d842ad44d1b1bf7c3e6ab0b13c32",
+    "semantic_hash": "a348d842ad44d1b1bf7c3e6ab0b13c32"
   },
   "execution/verify_format_and_typos.py": {
     "mtime": 1789637421.1652603,
@@ -384,10 +384,10 @@
     "semantic_hash": "89ebb43ee40e5880eaff0d35e57f8dd3"
   },
   "00_DASHBOARD_SECOND_BRAIN.md": {
-    "mtime": 1789725503.6556864,
-    "seen": 1789726393.4976175,
-    "ast_hash": "c4bb4cbe4c1ad18568a0739f3ca4d255",
-    "semantic_hash": "c4bb4cbe4c1ad18568a0739f3ca4d255"
+    "mtime": 1789997794.7593467,
+    "seen": 1790000237.9234722,
+    "ast_hash": "889f99738a6798c5d24a3dfb6dc6968a",
+    "semantic_hash": "889f99738a6798c5d24a3dfb6dc6968a"
   },
   "00_PANDUAN_OBSIDIAN_SECOND_BRAIN.md": {
     "mtime": 1789358505.9209876,
@@ -414,10 +414,10 @@
     "semantic_hash": "ace91ca86e7f09828d462b3140a03426"
   },
   "02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/03_PERTANYAAN_SIDANG_SULIT.md": {
-    "mtime": 1789391039.7227626,
-    "seen": 1789726393.4976175,
-    "ast_hash": "75b8f55a2126852f31815a5c9a901842",
-    "semantic_hash": "75b8f55a2126852f31815a5c9a901842"
+    "mtime": 1790000200.5702074,
+    "seen": 1790000237.9235063,
+    "ast_hash": "0b88a1fa6e09916193474d1342e2196a",
+    "semantic_hash": "0b88a1fa6e09916193474d1342e2196a"
   },
   "02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/04_STATISTIK_UNTUK_PEMULA.md": {
     "mtime": 1789294770.8752086,
@@ -432,10 +432,10 @@
     "semantic_hash": "e75450f170e4fb8a7f4c540eb29fb843"
   },
   "04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md": {
-    "mtime": 1789725478.6301649,
-    "seen": 1789726393.4976175,
-    "ast_hash": "b372650b5229fb2484c41206637a7b19",
-    "semantic_hash": "b372650b5229fb2484c41206637a7b19"
+    "mtime": 1789999718.3765473,
+    "seen": 1790000237.923614,
+    "ast_hash": "02a485cee9969b1e96382711b9f88442",
+    "semantic_hash": "02a485cee9969b1e96382711b9f88442"
   },
   "04_Riset_&_Metodologi/PANDUAN_STANDARISASI_HEADING_DAN_DAFTAR_ISI_DOCX.md": {
     "mtime": 1789377719.4951284,
@@ -654,8 +654,8 @@
     "semantic_hash": "f23942ff774a4ded6d5eef925b961470"
   },
   "07_Review_&_Audit/Paper_Audits/audit_libgen_books_report.json": {
-    "mtime": 1789997464.479706,
-    "seen": 1789997744.5449908,
+    "mtime": 1789999699.8342872,
+    "seen": 1790000237.923209,
     "ast_hash": "8ecbdda2ef5ebaaf71c8d5f266b3ee65",
     "semantic_hash": "8ecbdda2ef5ebaaf71c8d5f266b3ee65"
   },
@@ -690,10 +690,10 @@
     "semantic_hash": "1d1b4111f963970b986a1a4e4f762c09"
   },
   "02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.html": {
-    "mtime": 1789299656.4981358,
-    "seen": 1789726393.4976175,
-    "ast_hash": "89330ca525877e4bbc1a140dd04c05d9",
-    "semantic_hash": "89330ca525877e4bbc1a140dd04c05d9"
+    "mtime": 1789979832.765039,
+    "seen": 1790000237.9235125,
+    "ast_hash": "03f3ad65272f1c20219cd52d6b471243",
+    "semantic_hash": "03f3ad65272f1c20219cd52d6b471243"
   },
   "04_Riset_&_Metodologi/PRD_DOWNLOAD_BUKU_REFERENSI_LIBGEN.md": {
     "mtime": 1789637346.7569313,
@@ -702,10 +702,10 @@
     "semantic_hash": "518ac925059ffc6722adc78f7c8b1837"
   },
   "04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md": {
-    "mtime": 1789709038.5332673,
-    "seen": 1789726393.5035176,
-    "ast_hash": "adc239fc73b0584d0cd2df3f25a7e046",
-    "semantic_hash": "adc239fc73b0584d0cd2df3f25a7e046"
+    "mtime": 1789999654.5864441,
+    "seen": 1790000237.9236875,
+    "ast_hash": "6aa081d63395bca8db8d63088b496930",
+    "semantic_hash": "6aa081d63395bca8db8d63088b496930"
   },
   "04_Riset_&_Metodologi/PRD_VERIFIKASI_SUMBER_BUKU_LIBGEN_DAN_RULES.md": {
     "mtime": 1789637346.7639785,
@@ -738,10 +738,10 @@
     "semantic_hash": "ddc5eaa480fad5249ef211026c9ebdd9"
   },
   "directives/universal_thesis_graph_of_agents.md": {
-    "mtime": 1789637421.1319327,
-    "seen": 1789726393.507734,
-    "ast_hash": "f5ded18d07302e61495b34e4a829cd5e",
-    "semantic_hash": "f5ded18d07302e61495b34e4a829cd5e"
+    "mtime": 1789999668.286532,
+    "seen": 1790000237.9238775,
+    "ast_hash": "f766a3115d3d25f5f56e04df9b2060ac",
+    "semantic_hash": "f766a3115d3d25f5f56e04df9b2060ac"
   },
   "directives/verify_book_sources_libgen.md": {
     "mtime": 1789637421.1339424,
@@ -907,9 +907,9 @@
   },
   ".agents/skills/humanizer-id/humanizer-id/agents/openai.yaml": {
     "mtime": 1789468644.4449315,
-    "seen": 1789725614.5669203,
+    "seen": 1790000237.923371,
     "ast_hash": "e0f73577fcbe4c67ea844afff9f30bcb",
-    "semantic_hash": ""
+    "semantic_hash": "e0f73577fcbe4c67ea844afff9f30bcb"
   },
   ".agents/skills/humanizer-id/humanizer-id/references/evaluation.md": {
     "mtime": 1789468644.4728463,
@@ -967,9 +967,9 @@
   },
   ".agents/skills/paper-audit/paper-audit/agents/openai.yaml": {
     "mtime": 1789468662.7839642,
-    "seen": 1789725614.5669532,
+    "seen": 1790000237.9234176,
     "ast_hash": "1d1b4111f963970b986a1a4e4f762c09",
-    "semantic_hash": ""
+    "semantic_hash": "1d1b4111f963970b986a1a4e4f762c09"
   },
   ".agents/skills/paper-audit/paper-audit/references/biomedical-ml.md": {
     "mtime": 1789468662.8066807,
@@ -1069,21 +1069,21 @@
   },
   "06_Referensi_Jurnal_PDF/snapshots/pokemon_co_figures_2026-09-18.html": {
     "mtime": 1789677213.3053617,
-    "seen": 1789725614.567171,
+    "seen": 1790000237.9237416,
     "ast_hash": "2a5bf2bf5f3685ee91cd0a21f058a28d",
-    "semantic_hash": ""
+    "semantic_hash": "2a5bf2bf5f3685ee91cd0a21f058a28d"
   },
   "06_Referensi_Jurnal_PDF/snapshots/pricecharting_shining_fates_2026-09-18.html": {
     "mtime": 1789677213.6960745,
-    "seen": 1789725614.5671735,
+    "seen": 1790000237.9237454,
     "ast_hash": "c06013617ce0c1a4f3d24f67322d8e18",
-    "semantic_hash": ""
+    "semantic_hash": "c06013617ce0c1a4f3d24f67322d8e18"
   },
   "06_Referensi_Jurnal_PDF/snapshots/statista_24277_2026-09-18.html": {
     "mtime": 1789677212.4534466,
-    "seen": 1789725614.5671756,
+    "seen": 1790000237.9237483,
     "ast_hash": "c965e4894700261e0ffdefc95714e70e",
-    "semantic_hash": ""
+    "semantic_hash": "c965e4894700261e0ffdefc95714e70e"
   },
   "07_Review_&_Audit/Paper_Audits/review-2026-09-17-164319.md": {
     "mtime": 1789638234.132474,
@@ -1111,27 +1111,27 @@
   },
   "01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/Halaman_Persetujuan_Proposal_Arthur_Reezan.png": {
     "mtime": 1789645831.5467167,
-    "seen": 1789725614.5672762,
+    "seen": 1790000237.9238956,
     "ast_hash": "90bfd41d713c377c92086ecf3024381e",
-    "semantic_hash": ""
+    "semantic_hash": "90bfd41d713c377c92086ecf3024381e"
   },
   "01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/page_1.png": {
     "mtime": 1789707689.7136288,
-    "seen": 1789725614.5672786,
+    "seen": 1790000237.9238992,
     "ast_hash": "ee1f5875f699e52ef6a8b81f21b59ec3",
-    "semantic_hash": ""
+    "semantic_hash": "ee1f5875f699e52ef6a8b81f21b59ec3"
   },
   "01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/page_2.png": {
     "mtime": 1789707689.8169935,
-    "seen": 1789725614.567281,
+    "seen": 1790000237.9239035,
     "ast_hash": "d8c057d74cd2953d06283f9de835a2f7",
-    "semantic_hash": ""
+    "semantic_hash": "d8c057d74cd2953d06283f9de835a2f7"
   },
   "05_Pedoman_&_Referensi/lampiran_2_preview.png": {
     "mtime": 1789641957.276917,
-    "seen": 1789725614.567306,
+    "seen": 1790000237.9239807,
     "ast_hash": "5e2eb05c56362b48ab6f51e90525a992",
-    "semantic_hash": ""
+    "semantic_hash": "5e2eb05c56362b48ab6f51e90525a992"
   },
   "02_Persiapan_Sidang/ppt_seminar_proposal/check_images.js": {
     "mtime": 1789997096.5948813,
@@ -1168,5 +1168,149 @@
     "seen": 1789997744.5449824,
     "ast_hash": "c56c7bad6f4dc938921ef73516ec438b",
     "semantic_hash": "c56c7bad6f4dc938921ef73516ec438b"
+  },
+  "execution/update_graphify.py": {
+    "mtime": 1790000223.598369,
+    "seen": 1790000237.9232752,
+    "ast_hash": "2cb769476a53c86c223ecfff97b2b0f7",
+    "semantic_hash": "2cb769476a53c86c223ecfff97b2b0f7"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide01.html": {
+    "mtime": 1789997028.0030527,
+    "seen": 1790000237.9235258,
+    "ast_hash": "e2d010a3a0f24bbd82bbae4e086a2436",
+    "semantic_hash": "e2d010a3a0f24bbd82bbae4e086a2436"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide02.html": {
+    "mtime": 1789997028.1354997,
+    "seen": 1790000237.9235287,
+    "ast_hash": "7f9f06790e43846199bd6b7e66b72c3a",
+    "semantic_hash": "7f9f06790e43846199bd6b7e66b72c3a"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide03.html": {
+    "mtime": 1789997105.6599276,
+    "seen": 1790000237.9235318,
+    "ast_hash": "fce1fbdea60c58c6f0d622f92860fde6",
+    "semantic_hash": "fce1fbdea60c58c6f0d622f92860fde6"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide04.html": {
+    "mtime": 1789997028.975897,
+    "seen": 1790000237.9235344,
+    "ast_hash": "5d1646b29c7ebe7de3768e11c66aa0fe",
+    "semantic_hash": "5d1646b29c7ebe7de3768e11c66aa0fe"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide05.html": {
+    "mtime": 1789997029.4029033,
+    "seen": 1790000237.9235373,
+    "ast_hash": "febf12678eb20bb6c07ac20e4748bfc8",
+    "semantic_hash": "febf12678eb20bb6c07ac20e4748bfc8"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide06.html": {
+    "mtime": 1789997029.7119272,
+    "seen": 1790000237.92354,
+    "ast_hash": "c0c80db9344575f1935b25dff0a1a9fb",
+    "semantic_hash": "c0c80db9344575f1935b25dff0a1a9fb"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide07.html": {
+    "mtime": 1789997029.8597093,
+    "seen": 1790000237.9235427,
+    "ast_hash": "f09378bf62456cf5326b36341cd88a20",
+    "semantic_hash": "f09378bf62456cf5326b36341cd88a20"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide08.html": {
+    "mtime": 1789997030.2169511,
+    "seen": 1790000237.9235454,
+    "ast_hash": "bdfaf9516a51fe1741b50535959324df",
+    "semantic_hash": "bdfaf9516a51fe1741b50535959324df"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide09.html": {
+    "mtime": 1789997030.4092321,
+    "seen": 1790000237.9235485,
+    "ast_hash": "0fcde526a10f7bbba678d86324661392",
+    "semantic_hash": "0fcde526a10f7bbba678d86324661392"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide10.html": {
+    "mtime": 1789997031.115589,
+    "seen": 1790000237.9235506,
+    "ast_hash": "6edee6ac151d8c187ef3a1cda43a5c29",
+    "semantic_hash": "6edee6ac151d8c187ef3a1cda43a5c29"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide11.html": {
+    "mtime": 1789997031.3124528,
+    "seen": 1790000237.9235535,
+    "ast_hash": "74309d2b41b21b1a430dbe34156aeeec",
+    "semantic_hash": "74309d2b41b21b1a430dbe34156aeeec"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide12.html": {
+    "mtime": 1789997031.4496255,
+    "seen": 1790000237.9235559,
+    "ast_hash": "e093b51cb6ab02ffaabe81f685af2fab",
+    "semantic_hash": "e093b51cb6ab02ffaabe81f685af2fab"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide13.html": {
+    "mtime": 1789997031.6508348,
+    "seen": 1790000237.923559,
+    "ast_hash": "2fb95f052f8b70431a817216cc4b857e",
+    "semantic_hash": "2fb95f052f8b70431a817216cc4b857e"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide14.html": {
+    "mtime": 1789997031.9938762,
+    "seen": 1790000237.9235623,
+    "ast_hash": "1e01aedde6fa3ae6c85afb20341bc3e5",
+    "semantic_hash": "1e01aedde6fa3ae6c85afb20341bc3e5"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide15.html": {
+    "mtime": 1789997032.334033,
+    "seen": 1790000237.923565,
+    "ast_hash": "2aa3009fbee4aa7d8e52b2e14963a824",
+    "semantic_hash": "2aa3009fbee4aa7d8e52b2e14963a824"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/assets/Logo_UKRIDA_300x300.png": {
+    "mtime": 1789325417.536662,
+    "seen": 1790000237.9239373,
+    "ast_hash": "1676b08f435f4419ccbdec6213d6d118",
+    "semantic_hash": "1676b08f435f4419ccbdec6213d6d118"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/assets/diagram_alur_penelitian.png": {
+    "mtime": 1789294770.8574426,
+    "seen": 1790000237.9239545,
+    "ast_hash": "f738446f7e79e912e49bda2d6c0cf036",
+    "semantic_hash": "f738446f7e79e912e49bda2d6c0cf036"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/assets/gambar1_1_media_franchise_ranking.png": {
+    "mtime": 1789637346.7433324,
+    "seen": 1790000237.9239602,
+    "ast_hash": "7fef7af8d5447b15cd56baaff6fd6a17",
+    "semantic_hash": "7fef7af8d5447b15cd56baaff6fd6a17"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/assets/gambar1_2_pokemon_tcg_production_growth.png": {
+    "mtime": 1789314519.6350012,
+    "seen": 1790000237.923963,
+    "ast_hash": "5298a2968bd2c6c0180050bc4bb3c51f",
+    "semantic_hash": "5298a2968bd2c6c0180050bc4bb3c51f"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/assets/gambar1_3_psa_grading_price_disparity.png": {
+    "mtime": 1789637346.7488735,
+    "seen": 1790000237.9239676,
+    "ast_hash": "403eb061e80f8c9a0995f196ffa1346a",
+    "semantic_hash": "403eb061e80f8c9a0995f196ffa1346a"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/assets/gambar_rerangka_penelitian.png": {
+    "mtime": 1789294770.8574426,
+    "seen": 1790000237.9239712,
+    "ast_hash": "eb2cd1281a19ccf8bffcb2d17778d401",
+    "semantic_hash": "eb2cd1281a19ccf8bffcb2d17778d401"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/assets/ukrida_pentagram.png": {
+    "mtime": 1789325417.543301,
+    "seen": 1790000237.923974,
+    "ast_hash": "bda6caca8cf84717edd7bfbc6268bca6",
+    "semantic_hash": "bda6caca8cf84717edd7bfbc6268bca6"
+  },
+  "02_Persiapan_Sidang/ppt_seminar_proposal/assets/ukrida_pentagram.svg": {
+    "mtime": 1789325417.543301,
+    "seen": 1790000237.923977,
+    "ast_hash": "1292d506e1b6cfa404edf1a25d2c62bd",
+    "semantic_hash": "1292d506e1b6cfa404edf1a25d2c62bd"
   }
 }
