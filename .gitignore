@@ -18,6 +18,7 @@ tmp/
 *.fls
 *.fdb_latexmk
 graphify-out/cache/
+graphify-out/20*/
 scratch/
 ~$*
 .tmp/

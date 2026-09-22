@@ -26,7 +26,7 @@
 * **Keputusan Arsitektur:**
   - Halaman Sampul (hal. i) tetap di DOCX utama; hanya 6 halaman formal (hal. ii–viii) yang dipindah.
   - Penomoran DOCX `--no-frontmatter`: Daftar Isi reset ke hal. i, Bab 1 mulai hal. 1.
-  - DOCX lama (`Proposal_Arthur_PokemonTCG.docx`) tidak dihapus — tetap ada sebagai versi dengan frontmatter lengkap.
+  - DOCX utama (`Proposal_Arthur_PokemonTCG.docx`) telah diperbarui menggantikan versi lama sehingga bebas dari 6 halaman formal (langsung Judul/Cover → Daftar Isi → Bab 1), sementara 6 lembar formal tersimpan modular dan aman di folder terpisah.
 * **File yang Diperbarui/Dibuat:**
   - [[execution/extract_frontmatter_pages.py]] *(BARU)*
   - [[execution/build_proposal_word.py]] *(dimodifikasi: +_setup_doc_base_styles, +skip_frontmatter, +--no-frontmatter)*

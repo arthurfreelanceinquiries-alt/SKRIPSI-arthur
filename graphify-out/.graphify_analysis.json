@@ -106,6 +106,7 @@
       "execution_build_proposal_word_build_formal_approval_sheets",
       "execution_build_proposal_word_build_full_proposal",
       "execution_build_proposal_word_build_tabel_jadwal",
+      "execution_build_proposal_word_build_tabel_research_gap",
       "execution_build_proposal_word_clean_academic_text",
       "execution_build_proposal_word_clear_latent_tab_stops",
       "execution_build_proposal_word_get_pandoc_path",
@@ -113,43 +114,63 @@
       "execution_build_proposal_word_latex_to_omml_pandoc",
       "execution_build_proposal_word_link_citations_to_dp",
       "execution_build_proposal_word_link_lot_lof_entries",
+      "execution_build_proposal_word_link_static_toc_entries",
       "execution_build_proposal_word_make_run_pure_black",
+      "execution_build_proposal_word_norm_toc_title",
       "execution_build_proposal_word_parse_aux_cites",
       "execution_build_proposal_word_parse_bbl_keys",
       "execution_build_proposal_word_parse_markdown_runs",
       "execution_build_proposal_word_rationale_1",
+      "execution_build_proposal_word_rationale_1010",
       "execution_build_proposal_word_rationale_110",
       "execution_build_proposal_word_rationale_122",
       "execution_build_proposal_word_rationale_129",
-      "execution_build_proposal_word_rationale_163",
-      "execution_build_proposal_word_rationale_1969",
-      "execution_build_proposal_word_rationale_2080",
-      "execution_build_proposal_word_rationale_2146",
-      "execution_build_proposal_word_rationale_2221",
+      "execution_build_proposal_word_rationale_147",
+      "execution_build_proposal_word_rationale_180",
+      "execution_build_proposal_word_rationale_218",
       "execution_build_proposal_word_rationale_2229",
-      "execution_build_proposal_word_rationale_2255",
-      "execution_build_proposal_word_rationale_2320",
-      "execution_build_proposal_word_rationale_2359",
-      "execution_build_proposal_word_rationale_236",
-      "execution_build_proposal_word_rationale_2372",
-      "execution_build_proposal_word_rationale_260",
-      "execution_build_proposal_word_rationale_2610",
-      "execution_build_proposal_word_rationale_2648",
-      "execution_build_proposal_word_rationale_429",
+      "execution_build_proposal_word_rationale_2449",
+      "execution_build_proposal_word_rationale_2515",
+      "execution_build_proposal_word_rationale_2590",
+      "execution_build_proposal_word_rationale_2704",
+      "execution_build_proposal_word_rationale_2712",
+      "execution_build_proposal_word_rationale_2746",
+      "execution_build_proposal_word_rationale_2820",
+      "execution_build_proposal_word_rationale_2909",
+      "execution_build_proposal_word_rationale_291",
+      "execution_build_proposal_word_rationale_2956",
+      "execution_build_proposal_word_rationale_2969",
+      "execution_build_proposal_word_rationale_315",
+      "execution_build_proposal_word_rationale_3218",
+      "execution_build_proposal_word_rationale_3256",
       "execution_build_proposal_word_rationale_45",
-      "execution_build_proposal_word_rationale_452",
-      "execution_build_proposal_word_rationale_478",
-      "execution_build_proposal_word_rationale_526",
-      "execution_build_proposal_word_rationale_538",
-      "execution_build_proposal_word_rationale_556",
-      "execution_build_proposal_word_rationale_572",
-      "execution_build_proposal_word_rationale_588",
-      "execution_build_proposal_word_rationale_606",
-      "execution_build_proposal_word_rationale_627",
+      "execution_build_proposal_word_rationale_496",
+      "execution_build_proposal_word_rationale_519",
+      "execution_build_proposal_word_rationale_545",
+      "execution_build_proposal_word_rationale_593",
+      "execution_build_proposal_word_rationale_605",
+      "execution_build_proposal_word_rationale_623",
+      "execution_build_proposal_word_rationale_639",
+      "execution_build_proposal_word_rationale_655",
+      "execution_build_proposal_word_rationale_673",
       "execution_build_proposal_word_rationale_69",
+      "execution_build_proposal_word_rationale_695",
+      "execution_build_proposal_word_rationale_752",
+      "execution_build_proposal_word_remove_table_borders",
       "execution_build_proposal_word_set_cell_margins",
       "execution_build_proposal_word_set_cell_shading",
-      "execution_build_proposal_word_set_paragraph_outline_level"
+      "execution_build_proposal_word_set_col_widths_fixed",
+      "execution_build_proposal_word_set_paragraph_outline_level",
+      "execution_build_proposal_word_setup_doc_base_styles",
+      "execution_extract_frontmatter_pages",
+      "execution_extract_frontmatter_pages_build_01_pernyataan",
+      "execution_extract_frontmatter_pages_build_02_persetujuan",
+      "execution_extract_frontmatter_pages_build_03_pengesahan",
+      "execution_extract_frontmatter_pages_build_04_kata_pengantar",
+      "execution_extract_frontmatter_pages_build_05_abstrak",
+      "execution_extract_frontmatter_pages_build_06_abstract",
+      "execution_extract_frontmatter_pages_new_doc",
+      "execution_extract_frontmatter_pages_rationale_1"
     ],
     "2": [
       "05_pedoman_referensi_buku_pedoman_penyusunan_tugas_akhir_2023",
@@ -277,56 +298,6 @@
       "05_pedoman_referensi_buku_pedoman_penyusunan_skripsi_feb_ukrida_2022_yang_benar_adalah_sebagai_berikut_akuntansi_accounting_bukan_accounting"
     ],
     "4": [
-      "04_riset_metodologi_implementation_plan_lot_lof_mendeley_doc",
-      "04_riset_metodologi_prd_resolusi_revisi_dosen_research_gap_bab1_doc",
-      "04_riset_metodologi_prd_resolusi_revisi_dosen_research_gap_bab1_research_gap_7_hubungan",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_1_fear_of_missing_out_fomo_arah_memperkuat",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_1_salinan_chat_asli_dosen_verbatim_input_9_september_2026",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_2_intisari_5_poin_arahan_dosen_status_implementasinya",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_2_perceived_scarcity_persepsi_kelangkaan_arah_memperkuat",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_3_bank_komprehensif_opsi_variabel_moderasi",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_3_risk_tolerance_toleransi_risiko_finansial_arah_memperkuat",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_4_overconfidence_bias_bias_terlalu_percaya_diri_arah_memperkuat",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_4_panduan_respon_diplomatis_saat_bimbingan_dosen",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_5_hubungan_berkas_arsip_terkait",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_5_social_comparison_peer_influence_arah_memperkuat",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_6_mental_budgeting_akuntansi_anggaran_mental_arah_memperlemah",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_7_product_market_knowledge_pengetahuan_produk_rasio_peluang_arah_memperlemah",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_a_pilihan_saat_ini_rekomendasi_utama",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_b_alternatif_kelompok_yang_memperkuat_akselerator_perilaku",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_c_alternatif_kelompok_yang_memperlemah_faktor_rem_penahan",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_catatan_revisi_dosen_9_september_2026_bank_opsi_variabel_moderasi",
-      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_self_control_kontrol_diri_arah_memperlemah",
-      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka",
-      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_1_salinan_chat_asli_dosen_verbatim_input_16_september_2026",
-      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_2_dekonstruksi_analisis_kritis_butir_arahan_dosen",
-      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_3_matriks_pemetaan_dampak_per_bab",
-      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_4_rencana_aksi_eksekusi_action_plan",
-      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_catatan_bimbingan_analisis_revisi_dosen_16_september_2026",
-      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_dr_fredella_colline_s_e_m_m_cfp_pfm_chcp_a_s1_manajemen_keuangan_feb_ukrida",
-      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_poin_1_data_untuk_pokémon_belum_ada_sumbernya",
-      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_poin_2_referensi_penelitian_belum_masuk_mendeley",
-      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_poin_3_daftar_pustaka_berdasarkan_abjad_bukan_angka_1_2_3",
-      "07_review_audit_revisi_dosen_2026_09_16_revisi_malam_research_gap_bab1_dan_format_sitasi_doc",
-      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_bimbingan_16_september_2026_pukul_10_27_10_28_wib",
-      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_bimbingan_9_september_2026_pukul_20_30_wib",
-      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_catatan_salinan_chat_bimbingan_dosen",
-      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_doc",
-      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_format_pengisian_salin_blok_di_bawah_setiap_kali_ada_bimbingan_baru",
-      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_fredella_colline",
-      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_isi_chat_catatan_dosen",
-      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_poin_utama_tindakan",
-      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_riwayat_bimbingan_terkini",
-      "agents_rules_mandatory_citation_typography_and_gap_rules_apa7_citation_rule",
-      "agents_rules_mandatory_citation_typography_and_gap_rules_citation_format",
-      "agents_rules_mandatory_citation_typography_and_gap_rules_doc",
-      "agents_rules_mandatory_citation_typography_and_gap_rules_italic_typography",
-      "directives_highlight_mendeley_citations_doc",
-      "directives_highlight_mendeley_citations_mendeley_highlighting",
-      "directives_universal_thesis_graph_of_agents_doc"
-    ],
-    "5": [
       "agents_skills_paper_audit_paper_audit_references_biomedical_ml",
       "agents_skills_paper_audit_paper_audit_references_biomedical_ml_1_establish_the_question_and_applicable_standard",
       "agents_skills_paper_audit_paper_audit_references_biomedical_ml_2_cohort_labels_and_independence",
@@ -374,7 +345,7 @@
       "agents_skills_paper_audit_paper_audit_skill_paper_audit",
       "agents_skills_paper_audit_paper_audit_skill_review_workflow"
     ],
-    "6": [
+    "5": [
       "agents_skills_paper_audit_references_biomedical_ml",
       "agents_skills_paper_audit_references_biomedical_ml_1_establish_the_question_and_applicable_standard",
       "agents_skills_paper_audit_references_biomedical_ml_2_cohort_labels_and_independence",
@@ -422,7 +393,7 @@
       "agents_skills_paper_audit_skill_paper_audit",
       "agents_skills_paper_audit_skill_review_workflow"
     ],
-    "7": [
+    "6": [
       "05_pedoman_referensi_buku_pedoman_penyusunan_skripsi_feb_ukrida_2022_1_1_pendahuluan",
       "05_pedoman_referensi_buku_pedoman_penyusunan_skripsi_feb_ukrida_2022_1_2_persyaratan_penyusunan_skripsi",
       "05_pedoman_referensi_buku_pedoman_penyusunan_skripsi_feb_ukrida_2022_1_3_prosedur_penyusunan_skripsi",
@@ -469,125 +440,7 @@
       "05_pedoman_referensi_buku_pedoman_penyusunan_skripsi_feb_ukrida_2022_universitas_kristen_krida_wacana",
       "05_pedoman_referensi_buku_pedoman_penyusunan_skripsi_feb_ukrida_2022_untuk_menyusun_skripsi_s1"
     ],
-    "8": [
-      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit",
-      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_level_jebakan_dari_dosen_penguji_persiapan_seminar_proposal",
-      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_pertanyaan_sidang_sulit_jawaban_mendalam",
-      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_10_mengapa_rumusan_masalah_dan_tujuan_penelitian_anda_ada_6_butir_apakah_referensi_jurnal_dan_daftar_pustaka_perlu_ditambah_seiring_ekspansi_ini",
-      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_11_referensi_teori_dan_jurnal_di_proposal_saudara_sangat_banyak_dan_mendalam_dari_era_1974_hingga_2025_saudara_dapat_semua_itu_dari_mana_bagaimana_cara_menelusurinya",
-      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_12_data_grafik_di_bab_1_gambar_1_1_1_2_dan_1_3_itu_angka_angkanya_saudara_dapat_dari_mana_apakah_ada_tautan_link_resmi_perusahaannya_atau_ini_hanya_estimasi_blog_portal_berita",
-      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_1_saudara_menggunakan_zeigarnik_effect_dari_tahun_1927_itu_hampir_100_tahun_lalu_apakah_teori_itu_masih_relevan_ada_bukti_terbaru",
-      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_2_anda_menyebutkan_speculative_motive_dari_keynes_1936_tapi_keynes_bicara_tentang_preferensi_likuiditas_di_pasar_uang_bukan_kartu_mainan_bukankah_ini_peregangan_teori_yang_berlebihan",
-      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_3_bukankah_variabel_x1_x2_dan_x3_anda_saling_berkorelasi_misalnya_orang_yang_hedonis_juga_cenderung_ingin_melengkapi_koleksi_bagaimana_anda_memastikan_construct_validity",
-      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_4_anda_menggunakan_skala_likert_5_poin_untuk_mengukur_impulsive_buying_tapi_impulsive_buying_itu_perilaku_aktual_bukan_persepsi_bukankah_seharusnya_anda_mengukur_frekuensi_pembelian_riil",
-      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_5_sampel_anda_dari_komunitas_online_facebook_discord_bukankah_ini_sudah_bias_orang_yang_bergabung_di_komunitas_adalah_kolektor_yang_lebih_hardcore_dan_mungkin_lebih_impulsif",
-      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_6_self_control_sebagai_moderator_tapi_kontrol_diri_itu_bersifat_kontinum_bukan_biner_bagaimana_anda_menginterpretasikan_efek_moderasi_pada_kontinum",
-      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_7_anda_menyebutkan_bahwa_tidak_ditemukan_penelitian_serupa_apakah_anda_yakin_atau_hanya_belum_mencari_dengan_cukup_baik",
-      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_8_mengapa_tidak_memasukkan_variabel_kontrol_seperti_pendapatan_usia_atau_frekuensi_bermain_tcg",
-      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_9_mengapa_anda_tidak_mencantumkan_atau_melakukan_uji_autokorelasi_durbin_watson_bukankah_autokorelasi_adalah_salah_satu_uji_asumsi_klasik_regresi_ols",
-      "03_draft_per_bab_daftar_pustaka_tentatif",
-      "03_draft_per_bab_daftar_pustaka_tentatif_daftar_pustaka",
-      "04_riset_metodologi_bukti_akses_sitasi_walled",
-      "04_riset_metodologi_bukti_akses_sitasi_walled_bukti_akses_sitasi_walled_20_entri_1_diperbaiki_17_sep_2026",
-      "04_riset_metodologi_bukti_akses_sitasi_walled_cara_membaca_tiap_entri",
-      "04_riset_metodologi_bukti_akses_sitasi_walled_jalur_bukti_umum_berlaku_semua_entri",
-      "04_riset_metodologi_bukti_akses_sitasi_walled_kelompok_1_fondasional_y_skala_definisi_impulsive_buying",
-      "04_riset_metodologi_bukti_akses_sitasi_walled_kelompok_2_fondasional_x1_hedonis",
-      "04_riset_metodologi_bukti_akses_sitasi_walled_kelompok_3_inti_x2_irreplaceable",
-      "04_riset_metodologi_bukti_akses_sitasi_walled_kelompok_4_inti_z_finansial_irreplaceable",
-      "04_riset_metodologi_bukti_akses_sitasi_walled_kelompok_5_metodologi_empiris_terbuka_untuk_manusia",
-      "04_riset_metodologi_bukti_akses_sitasi_walled_keputusan_akhir",
-      "04_riset_metodologi_implementation_plan_audit_sitasi_walled",
-      "04_riset_metodologi_implementation_plan_audit_sitasi_walled_1_prasyarat",
-      "04_riset_metodologi_implementation_plan_audit_sitasi_walled_2_langkah_eksekusi",
-      "04_riset_metodologi_implementation_plan_audit_sitasi_walled_3_acceptance_criteria_observable",
-      "04_riset_metodologi_implementation_plan_audit_sitasi_walled_4_hasil_eksekusi_17_sep_2026",
-      "04_riset_metodologi_implementation_plan_audit_sitasi_walled_5_rollback_bila_dead_muncul",
-      "04_riset_metodologi_implementation_plan_audit_sitasi_walled_implementation_plan_audit_sitasi_walled_eksekusi_17_sep_2026",
-      "04_riset_metodologi_prd_audit_sitasi_walled_2026_09_17",
-      "04_riset_metodologi_prd_audit_sitasi_walled_2026_09_17_1_scope_tanpa_kecuali",
-      "04_riset_metodologi_prd_audit_sitasi_walled_2026_09_17_2_metodologi_c_link_1",
-      "04_riset_metodologi_prd_audit_sitasi_walled_2026_09_17_3_hasil_17_sep_2026_exit_0",
-      "04_riset_metodologi_prd_audit_sitasi_walled_2026_09_17_4_keputusan",
-      "04_riset_metodologi_prd_audit_sitasi_walled_2026_09_17_5_addendum_pasca_audit_temuan_entri_campuran_barasz2017pseudo",
-      "04_riset_metodologi_prd_audit_sitasi_walled_2026_09_17_prd_audit_walled_vs_dead_seluruh_sitasi_17_sep_2026"
-    ],
-    "9": [
-      "04_riset_metodologi_konsep_skripsi_pokemon_tcg",
-      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_1_identitas_topik_judul_usulan",
-      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_2_riwayat_ide_alasan_transisi_dari_mlbb_ke_pokémon_tcg",
-      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_3_struktur_variabel_operasionalisasi_konsep",
-      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_4_keunggulan_akademik_novelty_nilai_kebaruan",
-      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_5_rujukan_teori_skala_pengukuran_yang_direkomendasikan",
-      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_6_checklist_untuk_sesi_selanjutnya",
-      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_judul_skripsi_lengkap",
-      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_konsep_skripsi_kartu_pokémon_fisik_tcg_impulsive_buying",
-      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_rincian_variabel",
-      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_ringkasan_parameter_penelitian",
-      "04_riset_metodologi_reusable_thesis_playbook",
-      "04_riset_metodologi_reusable_thesis_playbook_10_data_sintetis_dan_integritas",
-      "04_riset_metodologi_reusable_thesis_playbook_11_peran_agen",
-      "04_riset_metodologi_reusable_thesis_playbook_12_comparator_dan_pedoman_ukrida",
-      "04_riset_metodologi_reusable_thesis_playbook_13_quick_start_topik_baru",
-      "04_riset_metodologi_reusable_thesis_playbook_14_checklist_sebelum_menyebut_layak",
-      "04_riset_metodologi_reusable_thesis_playbook_1_urutan_otoritas",
-      "04_riset_metodologi_reusable_thesis_playbook_2_gerbang_empat_fase",
-      "04_riset_metodologi_reusable_thesis_playbook_3_prinsip_source_of_truth",
-      "04_riset_metodologi_reusable_thesis_playbook_4_memilih_data_primer_atau_sekunder",
-      "04_riset_metodologi_reusable_thesis_playbook_5_audit_kandidat_dataset",
-      "04_riset_metodologi_reusable_thesis_playbook_6_protokol_literatur_dan_research_gap",
-      "04_riset_metodologi_reusable_thesis_playbook_7_operasionalisasi_dan_validitas",
-      "04_riset_metodologi_reusable_thesis_playbook_8_desain_sampling_dan_etika",
-      "04_riset_metodologi_reusable_thesis_playbook_9_analisis_yang_dapat_dipertanggungjawabkan",
-      "04_riset_metodologi_reusable_thesis_playbook_fase_1_minat_dan_fenomena",
-      "04_riset_metodologi_reusable_thesis_playbook_fase_2_masalah_penelitian",
-      "04_riset_metodologi_reusable_thesis_playbook_fase_3_uji_kelayakan",
-      "04_riset_metodologi_reusable_thesis_playbook_fase_4_judul",
-      "04_riset_metodologi_reusable_thesis_playbook_playbook_skripsi_s1_manajemen_feb_ukrida_pengetahuan_lintas_topik",
-      "master_guide_skripsi",
-      "readme",
-      "readme_arsip_topik_lama",
-      "readme_memulai_sesi_baru",
-      "readme_pedoman_resmi",
-      "readme_status_saat_ini",
-      "readme_struktur_folder",
-      "readme_workspace_skripsi_feb_ukrida"
-    ],
-    "10": [
-      "00_panduan_obsidian_second_brain",
-      "00_panduan_obsidian_second_brain_1_cara_memulai_sesi_dengan_antigravity",
-      "00_panduan_obsidian_second_brain_2_cara_kerja_pencatatan_otomatis_selama_sesi",
-      "00_panduan_obsidian_second_brain_3_pusat_kendali_map_of_content",
-      "00_panduan_obsidian_second_brain_apa_yang_otomatis_dilakukan_antigravity",
-      "00_panduan_obsidian_second_brain_integrasi_antigravity_ide_graphify_obsidian_vault",
-      "00_panduan_obsidian_second_brain_panduan_penggunaan_obsidian_second_brain_skripsi",
-      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai",
-      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_1_konteks_latar_belakang",
-      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_2_matriks_keputusan_revisi_vs_non_revisi",
-      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_3_spesifikasi_perubahan_berkas",
-      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_4_protokol_verifikasi_mutu",
-      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_a_tindakan_wajib_mandatory_fixes",
-      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_b_penyempurnaan_konstruk_butir_kuesioner_tabel_3_2",
-      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_c_alasan_pengecualian_temuan_non_revisi",
-      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_prd_resolusi_review_teknis_editorial_prism_ai_proposal_skripsi_pokémon_tcg",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_10_yordan_hermawan_apidana_kholifah_2022",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_1_xiyun_gong_choy_leong_yee_shin_yiing_lee_abu_naser_mohammad_saif_meilian_liu_fariah_anonthi_2024",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_2_natsuko_katauke_masao_nakagawa_kenichi_tanaka_2023",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_3_davina_anabelle_tan_api_adyantari_2024",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_4_fredella_colline_2024",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_5_aldrich_aryadi_margaretha_lingga_2024",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_6_vionna_artadita_sri_bramantoro_abdinagoro_ferdi_firmialy_2024",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_7_geoffrey_vigo_lienardy_i_gede_nandya_oktora_panasea_2024",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_8_made_melvina_lystiani_sandra_dewi_vernandhita_d_budoyo_faranita_mustikasari_2024",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_9_bargas_pranggabayu_a_lestari_andjarwati_2022",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_bagian_1_10_jurnal_empiris_utama_periode_2021_2025",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_bagian_2_landasan_teori_seminal_metodologi",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_katalog_referensi_jurnal_dan_naskah_ilmiah_skripsi",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_kate_barasz_leslie_john_elizabeth_a_keenan_michael_i_norton_2017",
-      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_rangkuman_pemetaan_variabel_penelitian"
-    ],
-    "11": [
+    "7": [
       "02_persiapan_sidang_presentasi_interaktif_app",
       "02_persiapan_sidang_presentasi_interaktif_app_currentfclist",
       "02_persiapan_sidang_presentasi_interaktif_app_fcmasteredset",
@@ -619,7 +472,7 @@
       "02_persiapan_sidang_presentasi_interaktif_app_togglenotes",
       "02_persiapan_sidang_presentasi_interaktif_app_updatemasteryprogress"
     ],
-    "12": [
+    "8": [
       "skripsi_arthur_00_dashboard_second_brain_dashboard_doc",
       "skripsi_arthur_01_naskah_utama_proposal_skripsi_pokemon_tcg_proposal_doc",
       "skripsi_arthur_03_draft_per_bab_bab_i_pendahuluan_bab1_doc",
@@ -649,36 +502,7 @@
       "skripsi_arthur_04_riset___metodologi_source_of_truth_x3_speculative_motive",
       "skripsi_arthur_04_riset___metodologi_source_of_truth_y_impulsive_buying"
     ],
-    "13": [
-      "master_guide_skripsi_10_format_standar_feb_ukrida_2022",
-      "master_guide_skripsi_11_sistem_review_5_modul",
-      "master_guide_skripsi_12_quick_start_topik_baru",
-      "master_guide_skripsi_13_checklist_kelayakan_10_poin_sebelum_bisa_ke_fase_4_judul",
-      "master_guide_skripsi_14_do_s_and_don_ts_pelajaran_dari_topik_sebelumnya",
-      "master_guide_skripsi_15_template_source_of_truth_md_untuk_topik_baru",
-      "master_guide_skripsi_16_informasi_arsip_topik_lama",
-      "master_guide_skripsi_1_hierarki_otoritas",
-      "master_guide_skripsi_2_sistem_4_gerbang_fase",
-      "master_guide_skripsi_3_sistem_source_of_truth",
-      "master_guide_skripsi_4_panduan_pemilihan_data",
-      "master_guide_skripsi_5_protokol_literatur_research_gap",
-      "master_guide_skripsi_6_operasionalisasi_validitas",
-      "master_guide_skripsi_7_desain_sampling_etika",
-      "master_guide_skripsi_8_standar_analisis_yang_dapat_dipertanggungjawabkan",
-      "master_guide_skripsi_9_integritas_batas_penggunaan_ai",
-      "master_guide_skripsi_ai_dilarang_keras",
-      "master_guide_skripsi_audit_12_poin_kandidat_dataset_wajib_sebelum_kunci_topik",
-      "master_guide_skripsi_cara_baca_dokumen_ini",
-      "master_guide_skripsi_data_sintetis_boleh_digunakan_hanya_untuk",
-      "master_guide_skripsi_do",
-      "master_guide_skripsi_don_t",
-      "master_guide_skripsi_fase_1_minat_dan_fenomena",
-      "master_guide_skripsi_fase_2_masalah_penelitian",
-      "master_guide_skripsi_fase_3_uji_kelayakan_4_gerbang",
-      "master_guide_skripsi_fase_4_judul",
-      "master_guide_skripsi_master_guide_skripsi_panduan_lintas_topik"
-    ],
-    "14": [
+    "9": [
       "03_draft_per_bab_bab_iii_metode_penelitian_3_1_1_batasan_penelitian_dan_ruang_lingkup_operasional",
       "03_draft_per_bab_bab_iii_metode_penelitian_3_1_jenis_dan_sumber_data",
       "03_draft_per_bab_bab_iii_metode_penelitian_3_2_1_populasi_dan_identifikasi_sumber_komunitas",
@@ -704,7 +528,7 @@
       "03_draft_per_bab_bab_iii_metode_penelitian_e_variabel_moderasi_self_control_m",
       "03_draft_per_bab_bab_iii_metode_penelitian_metode_penelitian"
     ],
-    "15": [
+    "10": [
       "execution_verify_mendeley_integrity",
       "execution_verify_mendeley_integrity_get_docx_dp_entries",
       "execution_verify_mendeley_integrity_get_markdown_dp_count",
@@ -728,7 +552,7 @@
       "execution_verify_ukrida_compliance_rationale_1",
       "execution_verify_ukrida_compliance_rationale_30"
     ],
-    "16": [
+    "11": [
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_2_1_1_grand_theory_keuangan_perilaku_behavioral_finance",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_2_1_2_supporting_theory_teori_stimulus_organism_response_s_o_r",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_2_1_3_supporting_theory_psikologi_kolektor_dan_the_completing_the_set_effect",
@@ -751,7 +575,30 @@
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_2_5_rerangka_penelitian",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_bab_2_kajian_pustaka_dan_pengembangan_hipotesis"
     ],
-    "17": [
+    "12": [
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_1_1_grand_theory_keuangan_perilaku_behavioral_finance",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_1_2_supporting_theory_teori_stimulus_organism_response_s_o_r",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_1_3_supporting_theory_psikologi_kolektor_dan_the_completing_the_set_effect",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_1_4_supporting_theory_teori_regulasi_diri_self_regulation_theory",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_1_landasan_teori",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_2_1_variabel_dependen_y_impulsive_buying_pembelian_impulsif",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_2_2_variabel_independen_x_1_hedonic_motivation_motivasi_hedonis",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_2_3_variabel_independen_x_2_desire_for_completeness_hasrat_kelengkapan_koleksi",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_2_4_variabel_independen_x_3_speculative_motive_motif_spekulasi_finansial",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_2_5_variabel_moderasi_m_self_control_kontrol_diri",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_2_kajian_variabel_penelitian",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_3_penelitian_terdahulu",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_4_1_pengaruh_hedonic_motivation_terhadap_impulsive_buying",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_4_2_pengaruh_desire_for_completeness_terhadap_impulsive_buying",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_4_3_pengaruh_speculative_motive_terhadap_impulsive_buying",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_4_4_pengaruh_moderasi_self_control_terhadap_hubungan_hedonic_motivation_dan_impulsive_buying",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_4_5_pengaruh_moderasi_self_control_terhadap_hubungan_desire_for_completeness_dan_impulsive_buying",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_4_6_pengaruh_moderasi_self_control_terhadap_hubungan_speculative_motive_dan_impulsive_buying",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_4_pengembangan_hipotesis",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_5_rerangka_pemikiran_konseptual",
+      "03_draft_per_bab_bab_ii_tinjauan_pustaka_kajian_pustaka_dan_pengembangan_hipotesis"
+    ],
+    "13": [
       "execution_mendeley_connector",
       "execution_mendeley_connector_api_request",
       "execution_mendeley_connector_cmd_auth",
@@ -773,7 +620,7 @@
       "execution_mendeley_connector_save_token",
       "execution_mendeley_connector_split_author"
     ],
-    "18": [
+    "14": [
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_3_1_1_batasan_penelitian_dan_ruang_lingkup_operasional",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_3_1_jenis_dan_sumber_data",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_3_2_1_populasi_dan_identifikasi_sumber_komunitas",
@@ -794,7 +641,7 @@
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_3_7_jadwal_pelaksanaan_penelitian",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_bab_3_metode_penelitian"
     ],
-    "19": [
+    "15": [
       "02_persiapan_sidang_01_bank_soal_flashcard_04_statistik_untuk_pemula",
       "02_persiapan_sidang_01_bank_soal_flashcard_04_statistik_untuk_pemula_1_apa_itu_regresi",
       "02_persiapan_sidang_01_bank_soal_flashcard_04_statistik_untuk_pemula_2_apa_itu_mra_moderated_regression_analysis",
@@ -809,13 +656,13 @@
       "02_persiapan_sidang_01_bank_soal_flashcard_04_statistik_untuk_pemula_langkah_5_uji_asumsi_klasik",
       "02_persiapan_sidang_01_bank_soal_flashcard_04_statistik_untuk_pemula_langkah_6_regresi_berganda_model_1",
       "02_persiapan_sidang_01_bank_soal_flashcard_04_statistik_untuk_pemula_langkah_7_mra_model_2",
-      "02_persiapan_sidang_01_bank_soal_flashcard_04_statistik_untuk_pemula_panduan_memahami_metode_analisis_data_proposal_skripsi_pokémon_tcg",
+      "02_persiapan_sidang_01_bank_soal_flashcard_04_statistik_untuk_pemula_panduan_memahami_metode_analisis_data_proposal_skripsi_pok\u00e9mon_tcg",
       "02_persiapan_sidang_01_bank_soal_flashcard_04_statistik_untuk_pemula_statistik_mra_untuk_pemula",
       "02_persiapan_sidang_01_bank_soal_flashcard_04_statistik_untuk_pemula_tabel_anova",
       "02_persiapan_sidang_01_bank_soal_flashcard_04_statistik_untuk_pemula_tabel_coefficients",
       "02_persiapan_sidang_01_bank_soal_flashcard_04_statistik_untuk_pemula_tabel_model_summary"
     ],
-    "20": [
+    "16": [
       "02_persiapan_sidang_panduan_belajar_proposal_10_simulasi_pertanyaan_bimbingan_sidang_kunci_jawaban",
       "02_persiapan_sidang_panduan_belajar_proposal_pertanyaan_10_berapa_target_sampel_anda_dan_apa_justifikasinya",
       "02_persiapan_sidang_panduan_belajar_proposal_pertanyaan_11_apa_novelty_kebaruan_utama_dari_penelitian_ini",
@@ -830,12 +677,12 @@
       "02_persiapan_sidang_panduan_belajar_proposal_pertanyaan_3_mengapa_grand_theory_yang_digunakan_adalah_behavioral_finance_bukan_teori_pemasaran_murni",
       "02_persiapan_sidang_panduan_belajar_proposal_pertanyaan_4_mengapa_di_bab_2_variabel_dependen_y_dibahas_terlebih_dahulu_sebelum_variabel_x",
       "02_persiapan_sidang_panduan_belajar_proposal_pertanyaan_5_bagaimana_kaitan_sertifikasi_grading_psa_bgs_cgc_dengan_variabel_speculative_motive",
-      "02_persiapan_sidang_panduan_belajar_proposal_pertanyaan_6_bagaimana_cara_anda_membuktikan_bahwa_h1_h2_dan_h3_benar_benar_berhubungan_dengan_objek_pokémon_tcg",
+      "02_persiapan_sidang_panduan_belajar_proposal_pertanyaan_6_bagaimana_cara_anda_membuktikan_bahwa_h1_h2_dan_h3_benar_benar_berhubungan_dengan_objek_pok\u00e9mon_tcg",
       "02_persiapan_sidang_panduan_belajar_proposal_pertanyaan_7_mengapa_hipotesis_moderasi_h4_h5_h6_dirumuskan_memperlemah_bukan_memperkuat",
       "02_persiapan_sidang_panduan_belajar_proposal_pertanyaan_8_apa_yang_anda_lakukan_jika_dalam_uji_mra_terjadi_multikolinearitas_tinggi_pada_istilah_interaksi",
       "02_persiapan_sidang_panduan_belajar_proposal_pertanyaan_9_mengapa_anda_menggunakan_teknik_purposive_sampling"
     ],
-    "21": [
+    "17": [
       "05_pedoman_referensi_prd_ai_dosen_pembimbing_skripsi_v2_0_catatan_perubahan_dari_v1_1",
       "05_pedoman_referensi_prd_ai_dosen_pembimbing_skripsi_v2_10_contoh_interaksi_mode_pembimbingan_fase_1",
       "05_pedoman_referensi_prd_ai_dosen_pembimbing_skripsi_v2_11_contoh_interaksi_mode_audit",
@@ -855,7 +702,26 @@
       "05_pedoman_referensi_prd_ai_dosen_pembimbing_skripsi_v2_md",
       "05_pedoman_referensi_prd_ai_dosen_pembimbing_skripsi_v2_product_requirements_document_prd_versi_2_0"
     ],
-    "22": [
+    "18": [
+      "execution_fix_libreoffice_toc_links",
+      "execution_fix_libreoffice_toc_links_collect_existing_ids",
+      "execution_fix_libreoffice_toc_links_ensure_heading_bookmarks",
+      "execution_fix_libreoffice_toc_links_find_heading_for_toc",
+      "execution_fix_libreoffice_toc_links_fix_bookmark_order",
+      "execution_fix_libreoffice_toc_links_link_static_toc",
+      "execution_fix_libreoffice_toc_links_norm_title",
+      "execution_fix_libreoffice_toc_links_process",
+      "execution_fix_libreoffice_toc_links_py_path",
+      "execution_fix_libreoffice_toc_links_rationale_1",
+      "execution_fix_libreoffice_toc_links_rationale_148",
+      "execution_fix_libreoffice_toc_links_rationale_162",
+      "execution_fix_libreoffice_toc_links_rationale_168",
+      "execution_fix_libreoffice_toc_links_rationale_34",
+      "execution_fix_libreoffice_toc_links_rationale_85",
+      "execution_fix_libreoffice_toc_links_slug",
+      "execution_fix_libreoffice_toc_links_verify_no_orphans"
+    ],
+    "19": [
       "04_riset_metodologi_log_sesi_second_brain_log_sesi_second_brain_riwayat_riset_pengembangan_skripsi",
       "04_riset_metodologi_log_sesi_second_brain_sesi_13_14_september_2026_reorganisasi_repositori_logo_vektor_ukrida_naskah_tanpa_bab_3",
       "04_riset_metodologi_log_sesi_second_brain_sesi_14_september_2026_sesi_1_penyusunan_kunci_jawaban_asal_usul_referensi",
@@ -871,9 +737,27 @@
       "04_riset_metodologi_log_sesi_second_brain_sesi_15_september_2026_pembersihan_codebase_eliminasi_redundansi_purging_proyek_usang",
       "04_riset_metodologi_log_sesi_second_brain_sesi_15_september_2026_sesi_10_audit_penyelarasan_kepatuhan_buku_pedoman_tugas_akhir_feb_ukrida_2023",
       "04_riset_metodologi_log_sesi_second_brain_sesi_16_september_2026_sesi_11_inisialisasi_sesi_integrasi_tata_kelola_skill_paper_audit",
-      "04_riset_metodologi_log_sesi_second_brain_sesi_16_september_2026_sesi_12_resolusi_revisi_dosen_pembimbing_data_pokémon_integrasi_mendeley_daftar_pustaka_a_z"
+      "04_riset_metodologi_log_sesi_second_brain_sesi_16_september_2026_sesi_12_resolusi_revisi_dosen_pembimbing_data_pok\u00e9mon_integrasi_mendeley_daftar_pustaka_a_z"
     ],
-    "23": [
+    "20": [
+      "master_guide_skripsi_10_format_standar_feb_ukrida_2022",
+      "master_guide_skripsi_11_sistem_review_5_modul",
+      "master_guide_skripsi_12_quick_start_topik_baru",
+      "master_guide_skripsi_13_checklist_kelayakan_10_poin_sebelum_bisa_ke_fase_4_judul",
+      "master_guide_skripsi_15_template_source_of_truth_md_untuk_topik_baru",
+      "master_guide_skripsi_16_informasi_arsip_topik_lama",
+      "master_guide_skripsi_1_hierarki_otoritas",
+      "master_guide_skripsi_3_sistem_source_of_truth",
+      "master_guide_skripsi_4_panduan_pemilihan_data",
+      "master_guide_skripsi_5_protokol_literatur_research_gap",
+      "master_guide_skripsi_6_operasionalisasi_validitas",
+      "master_guide_skripsi_7_desain_sampling_etika",
+      "master_guide_skripsi_8_standar_analisis_yang_dapat_dipertanggungjawabkan",
+      "master_guide_skripsi_audit_12_poin_kandidat_dataset_wajib_sebelum_kunci_topik",
+      "master_guide_skripsi_cara_baca_dokumen_ini",
+      "master_guide_skripsi_master_guide_skripsi_panduan_lintas_topik"
+    ],
+    "21": [
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_2026",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_abstract",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_abstrak",
@@ -883,18 +767,18 @@
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_halaman_persetujuan_proposal_skripsi",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_jakarta",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_kata_pengantar",
-      "01_naskah_utama_proposal_skripsi_pokemon_tcg_pengaruh_hedonic_motivation_desire_for_completeness_dan_speculative_motive_terhadap_impulsive_buying_booster_pack_kartu_pokémon_tcg_dengan_self_control_sebagai_variabel_moderasi",
+      "01_naskah_utama_proposal_skripsi_pokemon_tcg_pengaruh_hedonic_motivation_desire_for_completeness_dan_speculative_motive_terhadap_impulsive_buying_booster_pack_kartu_pok\u00e9mon_tcg_dengan_self_control_sebagai_variabel_moderasi",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_pengesahan_tim_penguji_seminar_proposal_skripsi",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_pernyataan_keaslian_karya_tugas_akhir",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_persetujuan_proposal_skripsi",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_proposal_skripsi",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_universitas_kristen_krida_wacana"
     ],
-    "24": [
+    "22": [
       "04_riset_metodologi_prd_eliminasi_sumber_palsu_dan_verifikasi_data_primer_bab1",
       "04_riset_metodologi_prd_eliminasi_sumber_palsu_dan_verifikasi_data_primer_bab1_1_root_cause_analysis_mengapa_insiden_icv2_terjadi",
       "04_riset_metodologi_prd_eliminasi_sumber_palsu_dan_verifikasi_data_primer_bab1_2_1_sumber_1_statista_chart_24277_peringkat_waralaba_media_dunia_terverifikasi_100_nyata",
-      "04_riset_metodologi_prd_eliminasi_sumber_palsu_dan_verifikasi_data_primer_bab1_2_2_sumber_2_the_pokémon_company_corporate_figures_statistik_produksi_kartu_tcg_terverifikasi_100_nyata",
+      "04_riset_metodologi_prd_eliminasi_sumber_palsu_dan_verifikasi_data_primer_bab1_2_2_sumber_2_the_pok\u00e9mon_company_corporate_figures_statistik_produksi_kartu_tcg_terverifikasi_100_nyata",
       "04_riset_metodologi_prd_eliminasi_sumber_palsu_dan_verifikasi_data_primer_bab1_2_3_sumber_3_psa_professional_sports_authenticator_population_report_terverifikasi_100_nyata",
       "04_riset_metodologi_prd_eliminasi_sumber_palsu_dan_verifikasi_data_primer_bab1_2_4_sumber_4_icv2_tcgplayer_gambar_1_3_donut_chart_pangsa_pasar_tcg_tidak_dapat_dipertanggungjawabkan",
       "04_riset_metodologi_prd_eliminasi_sumber_palsu_dan_verifikasi_data_primer_bab1_2_audit_100_data_empiris_bab_1_status_verifikasi_faktual",
@@ -907,7 +791,7 @@
       "04_riset_metodologi_prd_eliminasi_sumber_palsu_dan_verifikasi_data_primer_bab1_opsi_2_penggantian_dengan_laporan_resmi_circana_npd_group_award_global_top_toy_property",
       "04_riset_metodologi_prd_eliminasi_sumber_palsu_dan_verifikasi_data_primer_bab1_prd_eliminasi_sumber_tidak_terverifikasi_protokol_penjaminan_data_primer_empiris_bab_1"
     ],
-    "25": [
+    "23": [
       "05_pedoman_referensi_buku_pedoman_penyusunan_tugas_akhir_2023_1_4_manfaat_penelitian",
       "05_pedoman_referensi_buku_pedoman_penyusunan_tugas_akhir_2023_3_1_jenis_dan_sumber_data",
       "05_pedoman_referensi_buku_pedoman_penyusunan_tugas_akhir_2023_abstract",
@@ -924,7 +808,56 @@
       "05_pedoman_referensi_buku_pedoman_penyusunan_tugas_akhir_2023_pengaruh_perencanaan_pajak_terhadap_return_saham_pada_perusahaan_manufaktur_yang_listed_di_bursa_efek_indonesia",
       "05_pedoman_referensi_buku_pedoman_penyusunan_tugas_akhir_2023_pernyataan_persetujuan_publikasi_karya_tugas_akhir_untuk_kepentingan_akademis"
     ],
+    "24": [
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_10_yordan_hermawan_apidana_kholifah_2022",
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_1_xiyun_gong_choy_leong_yee_shin_yiing_lee_abu_naser_mohammad_saif_meilian_liu_fariah_anonthi_2024",
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_2_natsuko_katauke_masao_nakagawa_kenichi_tanaka_2023",
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_3_davina_anabelle_tan_api_adyantari_2024",
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_4_fredella_colline_2024",
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_5_aldrich_aryadi_margaretha_lingga_2024",
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_6_vionna_artadita_sri_bramantoro_abdinagoro_ferdi_firmialy_2024",
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_7_geoffrey_vigo_lienardy_i_gede_nandya_oktora_panasea_2024",
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_8_made_melvina_lystiani_sandra_dewi_vernandhita_d_budoyo_faranita_mustikasari_2024",
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_9_bargas_pranggabayu_a_lestari_andjarwati_2022",
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_bagian_1_10_jurnal_empiris_utama_periode_2021_2025",
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_bagian_2_landasan_teori_seminal_metodologi",
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_katalog_referensi_jurnal_dan_naskah_ilmiah_skripsi",
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_kate_barasz_leslie_john_elizabeth_a_keenan_michael_i_norton_2017",
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal_rangkuman_pemetaan_variabel_penelitian"
+    ],
+    "25": [
+      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_level_jebakan_dari_dosen_penguji_persiapan_seminar_proposal",
+      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_pertanyaan_sidang_sulit_jawaban_mendalam",
+      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_10_mengapa_rumusan_masalah_dan_tujuan_penelitian_anda_ada_6_butir_apakah_referensi_jurnal_dan_daftar_pustaka_perlu_ditambah_seiring_ekspansi_ini",
+      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_11_referensi_teori_dan_jurnal_di_proposal_saudara_sangat_banyak_dan_mendalam_dari_era_1974_hingga_2025_saudara_dapat_semua_itu_dari_mana_bagaimana_cara_menelusurinya",
+      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_12_data_grafik_di_bab_1_gambar_1_1_1_2_dan_1_3_itu_angka_angkanya_saudara_dapat_dari_mana_apakah_ada_tautan_link_resmi_perusahaannya_atau_ini_hanya_estimasi_blog_portal_berita",
+      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_1_saudara_menggunakan_zeigarnik_effect_dari_tahun_1927_itu_hampir_100_tahun_lalu_apakah_teori_itu_masih_relevan_ada_bukti_terbaru",
+      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_2_anda_menyebutkan_speculative_motive_dari_keynes_1936_tapi_keynes_bicara_tentang_preferensi_likuiditas_di_pasar_uang_bukan_kartu_mainan_bukankah_ini_peregangan_teori_yang_berlebihan",
+      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_3_bukankah_variabel_x1_x2_dan_x3_anda_saling_berkorelasi_misalnya_orang_yang_hedonis_juga_cenderung_ingin_melengkapi_koleksi_bagaimana_anda_memastikan_construct_validity",
+      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_4_anda_menggunakan_skala_likert_5_poin_untuk_mengukur_impulsive_buying_tapi_impulsive_buying_itu_perilaku_aktual_bukan_persepsi_bukankah_seharusnya_anda_mengukur_frekuensi_pembelian_riil",
+      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_5_sampel_anda_dari_komunitas_online_facebook_discord_bukankah_ini_sudah_bias_orang_yang_bergabung_di_komunitas_adalah_kolektor_yang_lebih_hardcore_dan_mungkin_lebih_impulsif",
+      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_6_self_control_sebagai_moderator_tapi_kontrol_diri_itu_bersifat_kontinum_bukan_biner_bagaimana_anda_menginterpretasikan_efek_moderasi_pada_kontinum",
+      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_7_anda_menyebutkan_bahwa_tidak_ditemukan_penelitian_serupa_apakah_anda_yakin_atau_hanya_belum_mencari_dengan_cukup_baik",
+      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_8_mengapa_tidak_memasukkan_variabel_kontrol_seperti_pendapatan_usia_atau_frekuensi_bermain_tcg",
+      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit_sulit_9_mengapa_anda_tidak_mencantumkan_atau_melakukan_uji_autokorelasi_durbin_watson_bukankah_autokorelasi_adalah_salah_satu_uji_asumsi_klasik_regresi_ols"
+    ],
     "26": [
+      "02_persiapan_sidang_panduan_belajar_proposal",
+      "02_persiapan_sidang_panduan_belajar_proposal_11_cheat_sheet_1_halaman_hafalan_kilat",
+      "02_persiapan_sidang_panduan_belajar_proposal_2_latar_belakang_ekosistem_waralaba_pok\u00e9mon",
+      "02_persiapan_sidang_panduan_belajar_proposal_3_mengapa_memilih_kartu_koleksi_tcg",
+      "02_persiapan_sidang_panduan_belajar_proposal_4_kamus_lengkap_istilah",
+      "02_persiapan_sidang_panduan_belajar_proposal_5_bedah_variabel_penelitian",
+      "02_persiapan_sidang_panduan_belajar_proposal_7_penelitian_terdahulu_anteseden_impulsive_buying",
+      "02_persiapan_sidang_panduan_belajar_proposal_a_istilah_pok\u00e9mon_tcg_ekosistem_kartu",
+      "02_persiapan_sidang_panduan_belajar_proposal_b_industri_sertifikasi_grading_profesional",
+      "02_persiapan_sidang_panduan_belajar_proposal_c_istilah_psikologi_keuangan_perilaku",
+      "02_persiapan_sidang_panduan_belajar_proposal_daftar_isi_panduan",
+      "02_persiapan_sidang_panduan_belajar_proposal_panduan_belajar_penguasaan_materi_proposal_skripsi_master_study_guide",
+      "02_persiapan_sidang_panduan_belajar_proposal_program_studi_s1_manajemen_konsentrasi_manajemen_keuangan_ukrida",
+      "02_persiapan_sidang_panduan_belajar_proposal_tabel_ringkasan_penelitian_sebelumnya_10_jurnal_empiris_terkini_2021_2025"
+    ],
+    "27": [
       "04_riset_metodologi_prd_penelitian",
       "04_riset_metodologi_prd_penelitian_1_judul_penelitian_final",
       "04_riset_metodologi_prd_penelitian_2_fenomena_latar_belakang",
@@ -934,13 +867,13 @@
       "04_riset_metodologi_prd_penelitian_6_metodologi_penelitian",
       "04_riset_metodologi_prd_penelitian_bukti_lapangan_industri",
       "04_riset_metodologi_prd_penelitian_m_self_control_moderator",
-      "04_riset_metodologi_prd_penelitian_prd_penelitian_skripsi_pokémon_tcg_impulsive_buying",
+      "04_riset_metodologi_prd_penelitian_prd_penelitian_skripsi_pok\u00e9mon_tcg_impulsive_buying",
       "04_riset_metodologi_prd_penelitian_x_1_hedonic_motivation",
       "04_riset_metodologi_prd_penelitian_x_2_desire_for_completeness",
       "04_riset_metodologi_prd_penelitian_x_3_speculative_motive",
       "04_riset_metodologi_prd_penelitian_y_impulsive_buying"
     ],
-    "27": [
+    "28": [
       "04_riset_metodologi_prd_sistem_integritas_dan_verifikasi_mendeley",
       "04_riset_metodologi_prd_sistem_integritas_dan_verifikasi_mendeley_1_1_kronologi_kejadian",
       "04_riset_metodologi_prd_sistem_integritas_dan_verifikasi_mendeley_1_2_akar_masalah_teknis_root_causes",
@@ -956,7 +889,23 @@
       "04_riset_metodologi_prd_sistem_integritas_dan_verifikasi_mendeley_6_integrasi_operasional_bimbingan_sop_mahasiswa",
       "04_riset_metodologi_prd_sistem_integritas_dan_verifikasi_mendeley_prd_sistem_penjaminan_integritas_validasi_tag_dan_paritas_1_1_mendeley_reference_manager"
     ],
-    "28": [
+    "29": [
+      "04_riset_metodologi_reusable_thesis_playbook_10_data_sintetis_dan_integritas",
+      "04_riset_metodologi_reusable_thesis_playbook_11_peran_agen",
+      "04_riset_metodologi_reusable_thesis_playbook_12_comparator_dan_pedoman_ukrida",
+      "04_riset_metodologi_reusable_thesis_playbook_13_quick_start_topik_baru",
+      "04_riset_metodologi_reusable_thesis_playbook_14_checklist_sebelum_menyebut_layak",
+      "04_riset_metodologi_reusable_thesis_playbook_1_urutan_otoritas",
+      "04_riset_metodologi_reusable_thesis_playbook_3_prinsip_source_of_truth",
+      "04_riset_metodologi_reusable_thesis_playbook_4_memilih_data_primer_atau_sekunder",
+      "04_riset_metodologi_reusable_thesis_playbook_5_audit_kandidat_dataset",
+      "04_riset_metodologi_reusable_thesis_playbook_6_protokol_literatur_dan_research_gap",
+      "04_riset_metodologi_reusable_thesis_playbook_7_operasionalisasi_dan_validitas",
+      "04_riset_metodologi_reusable_thesis_playbook_8_desain_sampling_dan_etika",
+      "04_riset_metodologi_reusable_thesis_playbook_9_analisis_yang_dapat_dipertanggungjawabkan",
+      "04_riset_metodologi_reusable_thesis_playbook_playbook_skripsi_s1_manajemen_feb_ukrida_pengetahuan_lintas_topik"
+    ],
+    "30": [
       "07_review_audit_paper_audits_audit_libgen_books_report_aiken1991multiple",
       "07_review_audit_paper_audits_audit_libgen_books_report_belk1995collecting",
       "07_review_audit_paper_audits_audit_libgen_books_report_cohen1988statistical",
@@ -972,7 +921,7 @@
       "07_review_audit_paper_audits_audit_libgen_books_report_status_local_indonesian_book",
       "07_review_audit_paper_audits_audit_libgen_books_report_sugiyono2019metode"
     ],
-    "29": [
+    "31": [
       "02_persiapan_sidang_progress_tracker_proposal",
       "02_persiapan_sidang_progress_tracker_proposal_bank_pertanyaan_potensial_sidang_proposal",
       "02_persiapan_sidang_progress_tracker_proposal_checklist_persiapan_seminar_proposal",
@@ -987,7 +936,7 @@
       "02_persiapan_sidang_progress_tracker_proposal_progress_tracker_persiapan_sidang_proposal_skripsi",
       "02_persiapan_sidang_progress_tracker_proposal_status_keseluruhan"
     ],
-    "30": [
+    "32": [
       "agents_skills_obsidian_second_brain_skill",
       "agents_skills_obsidian_second_brain_skill_1_protokol_awal_sesi_session_start_pre_flight_hook",
       "agents_skills_obsidian_second_brain_skill_2_protokol_dokumentasi_catatan_in_flight_rules",
@@ -1002,7 +951,7 @@
       "agents_skills_obsidian_second_brain_skill_langkah_auto_logging",
       "agents_skills_obsidian_second_brain_skill_obsidian_second_brain_skill_skripsi_pkm_architecture"
     ],
-    "31": [
+    "33": [
       "00_prompt_mulai_sesi_tinggal_copy_paste_1_kickoff_web_dashboard_pilihan_terbaik_paling_interaktif",
       "00_prompt_mulai_sesi_tinggal_copy_paste_2_prompt_utama_teks_cadangan",
       "00_prompt_mulai_sesi_tinggal_copy_paste_3_prompt_alternatif_sesuai_kebutuhan_khusus",
@@ -1016,7 +965,7 @@
       "00_prompt_mulai_sesi_tinggal_copy_paste_prompt_master_mulai_sesi_tinggal_1_klik_copy",
       "prompt_kickoff_doc"
     ],
-    "32": [
+    "34": [
       "01_naskah_utama_01_lembar_persetujuan_proposal_prd_halaman_persetujuan_proposal",
       "01_naskah_utama_01_lembar_persetujuan_proposal_prd_halaman_persetujuan_proposal_1_informasi_dokumen_metadata",
       "01_naskah_utama_01_lembar_persetujuan_proposal_prd_halaman_persetujuan_proposal_2_tujuan_sasaran_objectives",
@@ -1030,21 +979,21 @@
       "01_naskah_utama_01_lembar_persetujuan_proposal_prd_halaman_persetujuan_proposal_halaman_persetujuan_proposal_tugas_akhir_lampiran_2_pedoman_ukrida_2023",
       "01_naskah_utama_01_lembar_persetujuan_proposal_prd_halaman_persetujuan_proposal_product_requirements_document_prd"
     ],
-    "33": [
+    "35": [
       "04_riset_metodologi_prd_grafik_empiris_bab1",
       "04_riset_metodologi_prd_grafik_empiris_bab1_1_latar_belakang_urgensi",
       "04_riset_metodologi_prd_grafik_empiris_bab1_2_spesifikasi_visual_tipografi_pedoman_feb_ukrida_2023",
       "04_riset_metodologi_prd_grafik_empiris_bab1_3_data_empiris_resmi_yang_digunakan",
       "04_riset_metodologi_prd_grafik_empiris_bab1_4_persyaratan_narasi_akademik_pengait_di_bab_1",
       "04_riset_metodologi_prd_grafik_empiris_bab1_5_tautan_links_sumber_verifikasi_resmi_untuk_bimbingan_sidang",
-      "04_riset_metodologi_prd_grafik_empiris_bab1_a_gambar_1_2_pertumbuhan_produksi_kartu_pokémon_tcg_global_level_primer_a1",
+      "04_riset_metodologi_prd_grafik_empiris_bab1_a_gambar_1_2_pertumbuhan_produksi_kartu_pok\u00e9mon_tcg_global_level_primer_a1",
       "04_riset_metodologi_prd_grafik_empiris_bab1_b_gambar_1_1_peringkat_10_waralaba_media_berpendapatan_tertinggi",
       "04_riset_metodologi_prd_grafik_empiris_bab1_c_gambar_1_3_pangsa_pasar_tcg_global",
       "04_riset_metodologi_prd_grafik_empiris_bab1_data_gambar_1_1_top_10_highest_grossing_media_franchises_worldwide",
-      "04_riset_metodologi_prd_grafik_empiris_bab1_data_gambar_1_2_pertumbuhan_kumulatif_produksi_kartu_pokémon_tcg_global_2019_2024",
-      "04_riset_metodologi_prd_grafik_empiris_bab1_prd_kurasi_integrasi_grafik_empiris_pendukung_bab_1_skripsi_pokémon_tcg"
+      "04_riset_metodologi_prd_grafik_empiris_bab1_data_gambar_1_2_pertumbuhan_kumulatif_produksi_kartu_pok\u00e9mon_tcg_global_2019_2024",
+      "04_riset_metodologi_prd_grafik_empiris_bab1_prd_kurasi_integrasi_grafik_empiris_pendukung_bab_1_skripsi_pok\u00e9mon_tcg"
     ],
-    "34": [
+    "36": [
       "04_riset_metodologi_prd_humanisasi_keaslian_tulisan_ai_20_persen_10_keputusan_yang_sudah_dikunci_18_sep_2026",
       "04_riset_metodologi_prd_humanisasi_keaslian_tulisan_ai_20_persen_11_adendum_revisi_dosen_akuntabilitas_atribusi_klaim_jurnal_18_sep_2026",
       "04_riset_metodologi_prd_humanisasi_keaslian_tulisan_ai_20_persen_1_konteks_ruang_lingkup",
@@ -1058,7 +1007,7 @@
       "04_riset_metodologi_prd_humanisasi_keaslian_tulisan_ai_20_persen_9_kriteria_selesai_cara_menguji_20_secara_jujur",
       "04_riset_metodologi_prd_humanisasi_keaslian_tulisan_ai_20_persen_prd_humanisasi_naskah_proposal_menuju_uji_kemiripan_ai_20"
     ],
-    "35": [
+    "37": [
       "04_riset_metodologi_prd_standarisasi_url_sitasi_apa7_data_pokemon",
       "04_riset_metodologi_prd_standarisasi_url_sitasi_apa7_data_pokemon_1_latar_belakang_kebutuhan_pengguna",
       "04_riset_metodologi_prd_standarisasi_url_sitasi_apa7_data_pokemon_2_pemetaan_sumber_data_tautan_langsung_resmi_canonical_urls",
@@ -1070,9 +1019,23 @@
       "04_riset_metodologi_prd_standarisasi_url_sitasi_apa7_data_pokemon_layer_1_directives_standar_operasional",
       "04_riset_metodologi_prd_standarisasi_url_sitasi_apa7_data_pokemon_layer_2_orchestration_generator",
       "04_riset_metodologi_prd_standarisasi_url_sitasi_apa7_data_pokemon_layer_3_execution_automated_verification",
-      "04_riset_metodologi_prd_standarisasi_url_sitasi_apa7_data_pokemon_prd_standarisasi_tautan_url_aktif_sitasi_apa_7th_edition_untuk_data_industri_pokémon"
+      "04_riset_metodologi_prd_standarisasi_url_sitasi_apa7_data_pokemon_prd_standarisasi_tautan_url_aktif_sitasi_apa_7th_edition_untuk_data_industri_pok\u00e9mon"
     ],
-    "36": [
+    "38": [
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_1_fear_of_missing_out_fomo_arah_memperkuat",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_2_perceived_scarcity_persepsi_kelangkaan_arah_memperkuat",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_3_bank_komprehensif_opsi_variabel_moderasi",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_3_risk_tolerance_toleransi_risiko_finansial_arah_memperkuat",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_4_overconfidence_bias_bias_terlalu_percaya_diri_arah_memperkuat",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_5_social_comparison_peer_influence_arah_memperkuat",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_6_mental_budgeting_akuntansi_anggaran_mental_arah_memperlemah",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_7_product_market_knowledge_pengetahuan_produk_rasio_peluang_arah_memperlemah",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_a_pilihan_saat_ini_rekomendasi_utama",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_b_alternatif_kelompok_yang_memperkuat_akselerator_perilaku",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_c_alternatif_kelompok_yang_memperlemah_faktor_rem_penahan",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_self_control_kontrol_diri_arah_memperlemah"
+    ],
+    "39": [
       "agents_skills_paper_audit_paper_audit_scripts_proofing_scan",
       "agents_skills_paper_audit_paper_audit_scripts_proofing_scan_diagnostic",
       "agents_skills_paper_audit_paper_audit_scripts_proofing_scan_line_candidates",
@@ -1086,7 +1049,7 @@
       "agents_skills_paper_audit_paper_audit_scripts_proofing_scan_read_segments",
       "agents_skills_paper_audit_paper_audit_scripts_proofing_scan_scan_file"
     ],
-    "37": [
+    "40": [
       "agents_skills_paper_audit_scripts_proofing_scan",
       "agents_skills_paper_audit_scripts_proofing_scan_diagnostic",
       "agents_skills_paper_audit_scripts_proofing_scan_line_candidates",
@@ -1100,7 +1063,7 @@
       "agents_skills_paper_audit_scripts_proofing_scan_read_segments",
       "agents_skills_paper_audit_scripts_proofing_scan_scan_file"
     ],
-    "38": [
+    "41": [
       "directives_verify_ukrida_2023_guidelines",
       "directives_verify_ukrida_2023_guidelines_1_lingkup_otoritas_baku",
       "directives_verify_ukrida_2023_guidelines_2_tujuh_pilar_kepatuhan_feb_ukrida_2023",
@@ -1114,7 +1077,7 @@
       "directives_verify_ukrida_2023_guidelines_pilar_6_kaidah_sitasi_dalam_teks_in_text_subbab_3_6",
       "directives_verify_ukrida_2023_guidelines_pilar_7_kaidah_format_daftar_pustaka_subbab_3_7"
     ],
-    "39": [
+    "42": [
       "execution_build_lembar_persetujuan",
       "execution_build_lembar_persetujuan_convert_docx_to_pdf",
       "execution_build_lembar_persetujuan_create_document",
@@ -1128,7 +1091,7 @@
       "execution_build_lembar_persetujuan_set_cell_margins",
       "execution_build_lembar_persetujuan_set_run_font"
     ],
-    "40": [
+    "43": [
       "00_dashboard_second_brain_1_identitas_parameter_kunci_riset",
       "00_dashboard_second_brain_2_map_of_content_moc_peta_navigasi_vault",
       "00_dashboard_second_brain_3_matriks_teori_variabel_penelitian",
@@ -1138,10 +1101,10 @@
       "00_dashboard_second_brain_b_persiapan_sidang_bimbingan",
       "00_dashboard_second_brain_c_riset_metodologi_riwayat_sesi",
       "00_dashboard_second_brain_d_referensi_jurnal_ilmiah",
-      "00_dashboard_second_brain_dashboard_second_brain_skripsi_pokémon_tcg",
+      "00_dashboard_second_brain_dashboard_second_brain_skripsi_pok\u00e9mon_tcg",
       "00_dashboard_second_brain_s1_manajemen_keuangan_fakultas_ekonomi_dan_bisnis_universitas_kristen_krida_wacana_ukrida"
     ],
-    "41": [
+    "44": [
       "04_riset_metodologi_prd_audit_dan_penyelarasan_pedoman_feb_ukrida_2023",
       "04_riset_metodologi_prd_audit_dan_penyelarasan_pedoman_feb_ukrida_2023_1_latar_belakang_landasan_otoritas",
       "04_riset_metodologi_prd_audit_dan_penyelarasan_pedoman_feb_ukrida_2023_2_matriks_hasil_audit_komprehensif_status_kepatuhan",
@@ -1154,7 +1117,7 @@
       "04_riset_metodologi_prd_audit_dan_penyelarasan_pedoman_feb_ukrida_2023_layer_3_execution_skrip_otomasi_audit_deterministik",
       "04_riset_metodologi_prd_audit_dan_penyelarasan_pedoman_feb_ukrida_2023_prd_audit_penyelarasan_kepatuhan_pedoman_tugas_akhir_feb_ukrida_2023"
     ],
-    "42": [
+    "45": [
       "04_riset_metodologi_prd_docx_heading_outline_tabs",
       "04_riset_metodologi_prd_docx_heading_outline_tabs_1_latar_belakang_masalah_problem_statement",
       "04_riset_metodologi_prd_docx_heading_outline_tabs_2_tujuan_sasaran_produk_goals_objectives",
@@ -1167,7 +1130,7 @@
       "04_riset_metodologi_prd_docx_heading_outline_tabs_product_requirements_document_prd",
       "04_riset_metodologi_prd_docx_heading_outline_tabs_standardisasi_heading_sub_bab_dan_navigasi_outline_dokumen_word_proposal_skripsi"
     ],
-    "43": [
+    "46": [
       "04_riset_metodologi_prd_download_buku_referensi_libgen_doc",
       "04_riset_metodologi_prd_download_buku_referensi_libgen_multimirror",
       "04_riset_metodologi_prd_verifikasi_sumber_buku_libgen_dan_rules_book_inventory",
@@ -1180,7 +1143,7 @@
       "directives_verify_book_sources_libgen_doc",
       "directives_verify_book_sources_libgen_substitution_protocol"
     ],
-    "44": [
+    "47": [
       "04_riset_metodologi_prd_integrasi_skill_paper_audit_1_1_komponen_kapabilitas_inti_paper_audit",
       "04_riset_metodologi_prd_integrasi_skill_paper_audit_1_latar_belakang_analisis_skill_paper_audit",
       "04_riset_metodologi_prd_integrasi_skill_paper_audit_2_1_alasan_teknis_metodologis",
@@ -1193,7 +1156,7 @@
       "04_riset_metodologi_prd_integrasi_skill_paper_audit_keputusan_definitif_tidak_pada_setiap_perubahan_not_per_edit",
       "04_riset_metodologi_prd_integrasi_skill_paper_audit_prd_integrasi_tata_kelola_skill_paper_audit_pada_ekosistem_skripsi"
     ],
-    "45": [
+    "48": [
       "06_referensi_jurnal_pdf_panduan_import_mendeley_1_menit",
       "06_referensi_jurnal_pdf_panduan_import_mendeley_1_menit_khusus_untuk_arthur_reezan_memenuhi_arahan_pembimbing_dr_fredella_colline",
       "06_referensi_jurnal_pdf_panduan_import_mendeley_1_menit_langkah_1_impor_berkas_ris_56_referensi_sekali_klik",
@@ -1206,7 +1169,7 @@
       "06_referensi_jurnal_pdf_panduan_import_mendeley_1_menit_panduan_1_menit_impor_referensi_skripsi_ke_mendeley_reference_manager",
       "06_referensi_jurnal_pdf_panduan_import_mendeley_1_menit_pengetahuan_tambahan_root_cause_lesson_learned"
     ],
-    "46": [
+    "49": [
       "07_review_audit_review_output_10_pemeriksaan_akhir",
       "07_review_audit_review_output_1_ringkasan_eksekutif",
       "07_review_audit_review_output_2_ruang_lingkup_dan_keterbatasan",
@@ -1219,7 +1182,7 @@
       "07_review_audit_review_output_9_rencana_revisi",
       "07_review_audit_review_output_struktur_laporan"
     ],
-    "47": [
+    "50": [
       "agents_skills_gdocs_citation_linker_skill",
       "agents_skills_gdocs_citation_linker_skill_1_sitasi_in_text",
       "agents_skills_gdocs_citation_linker_skill_2_entri_daftar_pustaka",
@@ -1232,7 +1195,7 @@
       "agents_skills_gdocs_citation_linker_skill_logika_algoritma_pencocokan_parsedpentry_bestmatch",
       "agents_skills_gdocs_citation_linker_skill_panduan_operasional_layer_3_google_docs_apps_script"
     ],
-    "48": [
+    "51": [
       "agents_skills_humanizer_id_humanizer_id_references_examples_10_pola_yang_tampak_templat_tetapi_berfungsi",
       "agents_skills_humanizer_id_humanizer_id_references_examples_1_memo_operasional",
       "agents_skills_humanizer_id_humanizer_id_references_examples_2_email_yang_sopan",
@@ -1245,7 +1208,7 @@
       "agents_skills_humanizer_id_humanizer_id_references_examples_9_pasif_yang_tepat",
       "agents_skills_humanizer_id_humanizer_id_references_examples_contoh_penyuntingan"
     ],
-    "49": [
+    "52": [
       "agents_skills_humanizer_id_humanizer_id_skill_1_baca_dan_petakan",
       "agents_skills_humanizer_id_humanizer_id_skill_2_diagnosis_kontekstual",
       "agents_skills_humanizer_id_humanizer_id_skill_3_tulis_ulang_sesuai_ragam",
@@ -1258,7 +1221,7 @@
       "agents_skills_humanizer_id_humanizer_id_skill_penalaran_mendalam_dan_kolaborasi_pakar",
       "agents_skills_humanizer_id_humanizer_id_skill_tentukan_konteks"
     ],
-    "50": [
+    "53": [
       "01_naskah_utama_01_lembar_persetujuan_proposal_implementation_plan_halaman_persetujuan",
       "01_naskah_utama_01_lembar_persetujuan_proposal_implementation_plan_halaman_persetujuan_1_ringkasan_eksekutif",
       "01_naskah_utama_01_lembar_persetujuan_proposal_implementation_plan_halaman_persetujuan_2_struktur_folder_berkas",
@@ -1270,7 +1233,7 @@
       "01_naskah_utama_01_lembar_persetujuan_proposal_implementation_plan_halaman_persetujuan_tahap_2_kompilasi_docx_dan_konversi_pdf",
       "01_naskah_utama_01_lembar_persetujuan_proposal_implementation_plan_halaman_persetujuan_tahap_3_verifikasi_uji_mutu"
     ],
-    "51": [
+    "54": [
       "01_naskah_utama_images_diagram_alur_penelitian_diagram",
       "01_naskah_utama_images_diagram_alur_penelitian_keputusan_validitas",
       "01_naskah_utama_images_diagram_alur_penelitian_tahap1_identifikasi_masalah",
@@ -1282,19 +1245,55 @@
       "01_naskah_utama_images_diagram_alur_penelitian_tahap7_analisis_spss",
       "01_naskah_utama_images_diagram_alur_penelitian_tahap8_pembahasan_kesimpulan"
     ],
-    "52": [
-      "02_persiapan_sidang_panduan_belajar_proposal",
-      "02_persiapan_sidang_panduan_belajar_proposal_11_cheat_sheet_1_halaman_hafalan_kilat",
-      "02_persiapan_sidang_panduan_belajar_proposal_2_latar_belakang_ekosistem_waralaba_pokémon",
-      "02_persiapan_sidang_panduan_belajar_proposal_3_mengapa_memilih_kartu_koleksi_tcg",
-      "02_persiapan_sidang_panduan_belajar_proposal_5_bedah_variabel_penelitian",
-      "02_persiapan_sidang_panduan_belajar_proposal_7_penelitian_terdahulu_anteseden_impulsive_buying",
-      "02_persiapan_sidang_panduan_belajar_proposal_daftar_isi_panduan",
-      "02_persiapan_sidang_panduan_belajar_proposal_panduan_belajar_penguasaan_materi_proposal_skripsi_master_study_guide",
-      "02_persiapan_sidang_panduan_belajar_proposal_program_studi_s1_manajemen_konsentrasi_manajemen_keuangan_ukrida",
-      "02_persiapan_sidang_panduan_belajar_proposal_tabel_ringkasan_penelitian_sebelumnya_10_jurnal_empiris_terkini_2021_2025"
+    "55": [
+      "03_draft_per_bab_daftar_pustaka_tentatif",
+      "03_draft_per_bab_daftar_pustaka_tentatif_daftar_pustaka",
+      "04_riset_metodologi_implementation_plan_audit_sitasi_walled",
+      "04_riset_metodologi_implementation_plan_audit_sitasi_walled_1_prasyarat",
+      "04_riset_metodologi_implementation_plan_audit_sitasi_walled_2_langkah_eksekusi",
+      "04_riset_metodologi_implementation_plan_audit_sitasi_walled_3_acceptance_criteria_observable",
+      "04_riset_metodologi_implementation_plan_audit_sitasi_walled_4_hasil_eksekusi_17_sep_2026",
+      "04_riset_metodologi_implementation_plan_audit_sitasi_walled_5_rollback_bila_dead_muncul",
+      "04_riset_metodologi_implementation_plan_audit_sitasi_walled_implementation_plan_audit_sitasi_walled_eksekusi_17_sep_2026",
+      "04_riset_metodologi_prd_audit_sitasi_walled_2026_09_17"
     ],
-    "53": [
+    "56": [
+      "04_riset_metodologi_implementation_plan_lot_lof_mendeley_doc",
+      "04_riset_metodologi_prd_resolusi_revisi_dosen_research_gap_bab1_doc",
+      "04_riset_metodologi_prd_resolusi_revisi_dosen_research_gap_bab1_research_gap_7_hubungan",
+      "agents_rules_mandatory_citation_typography_and_gap_rules_apa7_citation_rule",
+      "agents_rules_mandatory_citation_typography_and_gap_rules_citation_format",
+      "agents_rules_mandatory_citation_typography_and_gap_rules_doc",
+      "agents_rules_mandatory_citation_typography_and_gap_rules_italic_typography",
+      "directives_highlight_mendeley_citations_doc",
+      "directives_highlight_mendeley_citations_mendeley_highlighting",
+      "directives_universal_thesis_graph_of_agents_doc"
+    ],
+    "57": [
+      "04_riset_metodologi_konsep_skripsi_pokemon_tcg",
+      "04_riset_metodologi_reusable_thesis_playbook",
+      "master_guide_skripsi",
+      "readme",
+      "readme_arsip_topik_lama",
+      "readme_memulai_sesi_baru",
+      "readme_pedoman_resmi",
+      "readme_status_saat_ini",
+      "readme_struktur_folder",
+      "readme_workspace_skripsi_feb_ukrida"
+    ],
+    "58": [
+      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_1_identitas_topik_judul_usulan",
+      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_2_riwayat_ide_alasan_transisi_dari_mlbb_ke_pok\u00e9mon_tcg",
+      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_3_struktur_variabel_operasionalisasi_konsep",
+      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_4_keunggulan_akademik_novelty_nilai_kebaruan",
+      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_5_rujukan_teori_skala_pengukuran_yang_direkomendasikan",
+      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_6_checklist_untuk_sesi_selanjutnya",
+      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_judul_skripsi_lengkap",
+      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_konsep_skripsi_kartu_pok\u00e9mon_fisik_tcg_impulsive_buying",
+      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_rincian_variabel",
+      "04_riset_metodologi_konsep_skripsi_pokemon_tcg_ringkasan_parameter_penelitian"
+    ],
+    "59": [
       "04_riset_metodologi_laporan_komparasi_pdf_vs_docx",
       "04_riset_metodologi_laporan_komparasi_pdf_vs_docx_1_tabel_matriks_komparasi_paritas_pdf_master_vs_docx",
       "04_riset_metodologi_laporan_komparasi_pdf_vs_docx_2_hasil_eksekusi_script_verifikasi_otomatis",
@@ -1306,7 +1305,7 @@
       "04_riset_metodologi_laporan_komparasi_pdf_vs_docx_hasil_uji_tipografi_artefak_ai_execution_verify_docx_typography_py",
       "04_riset_metodologi_laporan_komparasi_pdf_vs_docx_laporan_komparasi_sinkronisasi_naskah_pdf_vs_docx"
     ],
-    "54": [
+    "60": [
       "04_riset_metodologi_search_log",
       "04_riset_metodologi_search_log_1_identitas_penelusuran",
       "04_riset_metodologi_search_log_2_protokol_yang_dapat_direplikasi",
@@ -1316,9 +1315,9 @@
       "04_riset_metodologi_search_log_kriteria_eksklusi",
       "04_riset_metodologi_search_log_kriteria_inklusi",
       "04_riset_metodologi_search_log_rangkaian_kueri",
-      "04_riset_metodologi_search_log_search_log_literatur_pokémon_tcg_impulsive_buying"
+      "04_riset_metodologi_search_log_search_log_literatur_pok\u00e9mon_tcg_impulsive_buying"
     ],
-    "55": [
+    "61": [
       "04_riset_metodologi_source_of_truth_1_identitas_topik_judul_definitif",
       "04_riset_metodologi_source_of_truth_2_keputusan_terkunci_decisions_log",
       "04_riset_metodologi_source_of_truth_3_1_bank_cadangan_opsi_variabel_moderasi_plan_b_bimbingan",
@@ -1328,9 +1327,21 @@
       "04_riset_metodologi_source_of_truth_6_ketentuan_wajib_pedoman_tugas_akhir_feb_ukrida_2023",
       "04_riset_metodologi_source_of_truth_7_catatan_keputusan_revisi_metodologi_terkini_september_2026",
       "04_riset_metodologi_source_of_truth_checklist_kepatuhan_saat_ini",
-      "04_riset_metodologi_source_of_truth_source_of_truth_pokémon_tcg_impulsive_buying_topik_aktif"
+      "04_riset_metodologi_source_of_truth_source_of_truth_pok\u00e9mon_tcg_impulsive_buying_topik_aktif"
     ],
-    "56": [
+    "62": [
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_1_salinan_chat_asli_dosen_verbatim_input_9_september_2026",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_2_intisari_5_poin_arahan_dosen_status_implementasinya",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_4_panduan_respon_diplomatis_saat_bimbingan_dosen",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_5_hubungan_berkas_arsip_terkait",
+      "07_review_audit_revisi_dosen_2026_09_09_revisi_dosen_dan_opsi_moderasi_catatan_revisi_dosen_9_september_2026_bank_opsi_variabel_moderasi",
+      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka",
+      "07_review_audit_revisi_dosen_2026_09_16_revisi_malam_research_gap_bab1_dan_format_sitasi_doc",
+      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_doc",
+      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_fredella_colline"
+    ],
+    "63": [
       "directives_run_paper_audit_1_otoritas_kebijakan_aktivasi_activation_triggers",
       "directives_run_paper_audit_2_pengecualian_penyelarasan_lokal_context_anchors",
       "directives_run_paper_audit_3_alur_kerja_eksekusi_5_langkah_the_5_step_audit_workflow",
@@ -1342,7 +1353,7 @@
       "directives_run_paper_audit_langkah_4_pengujian_penantang_challenger_pass",
       "directives_run_paper_audit_langkah_5_penerbitan_laporan_auto_logging"
     ],
-    "57": [
+    "64": [
       "execution_build_proposal_nobab3_pdf",
       "execution_build_proposal_nobab3_pdf_extract_nobab3_tex",
       "execution_build_proposal_nobab3_pdf_get_file_hash",
@@ -1354,7 +1365,18 @@
       "execution_build_proposal_nobab3_pdf_rationale_58",
       "execution_build_proposal_nobab3_pdf_run_command"
     ],
-    "58": [
+    "65": [
+      "04_riset_metodologi_bukti_akses_sitasi_walled_bukti_akses_sitasi_walled_20_entri_1_diperbaiki_17_sep_2026",
+      "04_riset_metodologi_bukti_akses_sitasi_walled_cara_membaca_tiap_entri",
+      "04_riset_metodologi_bukti_akses_sitasi_walled_jalur_bukti_umum_berlaku_semua_entri",
+      "04_riset_metodologi_bukti_akses_sitasi_walled_kelompok_1_fondasional_y_skala_definisi_impulsive_buying",
+      "04_riset_metodologi_bukti_akses_sitasi_walled_kelompok_2_fondasional_x1_hedonis",
+      "04_riset_metodologi_bukti_akses_sitasi_walled_kelompok_3_inti_x2_irreplaceable",
+      "04_riset_metodologi_bukti_akses_sitasi_walled_kelompok_4_inti_z_finansial_irreplaceable",
+      "04_riset_metodologi_bukti_akses_sitasi_walled_kelompok_5_metodologi_empiris_terbuka_untuk_manusia",
+      "04_riset_metodologi_bukti_akses_sitasi_walled_keputusan_akhir"
+    ],
+    "66": [
       "04_riset_metodologi_prd_sinkronisasi_docx_dan_audit_file_1_1_temuan_desinkronisasi_docx_vs_pdf",
       "04_riset_metodologi_prd_sinkronisasi_docx_dan_audit_file_1_latar_belakang_akar_masalah_root_cause_analysis",
       "04_riset_metodologi_prd_sinkronisasi_docx_dan_audit_file_2_peta_audit_sinkronisasi_seluruh_file_repositori",
@@ -1362,10 +1384,10 @@
       "04_riset_metodologi_prd_sinkronisasi_docx_dan_audit_file_3_2_mode_skip_chapter3_false_proposal_arthur_pokemontcg_docx",
       "04_riset_metodologi_prd_sinkronisasi_docx_dan_audit_file_3_spesifikasi_teknis_pemutakhiran_docx_generator",
       "04_riset_metodologi_prd_sinkronisasi_docx_dan_audit_file_4_kriteria_keberhasilan_acceptance_criteria",
-      "04_riset_metodologi_prd_sinkronisasi_docx_dan_audit_file_naskah_proposal_tugas_akhir_s1_manajemen_feb_ukrida_pokémon_tcg_impulsive_buying",
+      "04_riset_metodologi_prd_sinkronisasi_docx_dan_audit_file_naskah_proposal_tugas_akhir_s1_manajemen_feb_ukrida_pok\u00e9mon_tcg_impulsive_buying",
       "04_riset_metodologi_prd_sinkronisasi_docx_dan_audit_file_product_requirements_document_prd_sinkronisasi_penuh_docx_audit_paritas_file"
     ],
-    "59": [
+    "67": [
       "07_review_audit_review_format",
       "07_review_audit_review_format_audit_format_dan_kepatuhan_dokumen",
       "07_review_audit_review_format_cara_mencatat_temuan",
@@ -1376,7 +1398,7 @@
       "07_review_audit_review_format_tabel_gambar_dan_persamaan",
       "07_review_audit_review_format_tata_letak_halaman"
     ],
-    "60": [
+    "68": [
       "07_review_audit_review_methodology_analisis_statistik",
       "07_review_audit_review_methodology_audit_isi_dan_metodologi",
       "07_review_audit_review_methodology_bab_pendahuluan",
@@ -1387,7 +1409,18 @@
       "07_review_audit_review_methodology_konsistensi_rancangan_penelitian",
       "07_review_audit_review_methodology_teori_penelitian_terdahulu_dan_hipotesis"
     ],
-    "61": [
+    "69": [
+      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_1_salinan_chat_asli_dosen_verbatim_input_16_september_2026",
+      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_2_dekonstruksi_analisis_kritis_butir_arahan_dosen",
+      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_3_matriks_pemetaan_dampak_per_bab",
+      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_4_rencana_aksi_eksekusi_action_plan",
+      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_catatan_bimbingan_analisis_revisi_dosen_16_september_2026",
+      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_dr_fredella_colline_s_e_m_m_cfp_pfm_chcp_a_s1_manajemen_keuangan_feb_ukrida",
+      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_poin_1_data_untuk_pok\u00e9mon_belum_ada_sumbernya",
+      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_poin_2_referensi_penelitian_belum_masuk_mendeley",
+      "07_review_audit_revisi_dosen_2026_09_16_revisi_dosen_sumber_pokemon_mendeley_daftar_pustaka_poin_3_daftar_pustaka_berdasarkan_abjad_bukan_angka_1_2_3"
+    ],
+    "70": [
       "execution_generate_bab1_figures",
       "execution_generate_bab1_figures_generate_figure_1_1",
       "execution_generate_bab1_figures_generate_figure_1_2",
@@ -1398,27 +1431,27 @@
       "execution_generate_bab1_figures_rationale_207",
       "execution_generate_bab1_figures_rationale_47"
     ],
-    "62": [
+    "71": [
       "02_persiapan_sidang_01_bank_soal_flashcard_01_bank_soal_latihan",
       "02_persiapan_sidang_01_bank_soal_flashcard_01_bank_soal_latihan_bagian_a_latar_belakang_fenomena_10_soal",
       "02_persiapan_sidang_01_bank_soal_flashcard_01_bank_soal_latihan_bagian_b_teori_variabel_12_soal",
       "02_persiapan_sidang_01_bank_soal_flashcard_01_bank_soal_latihan_bagian_c_metodologi_8_soal",
       "02_persiapan_sidang_01_bank_soal_flashcard_01_bank_soal_latihan_bagian_d_research_gap_novelty_5_soal",
-      "02_persiapan_sidang_01_bank_soal_flashcard_01_bank_soal_latihan_bank_soal_latihan_proposal_skripsi_pokémon_tcg",
+      "02_persiapan_sidang_01_bank_soal_flashcard_01_bank_soal_latihan_bank_soal_latihan_proposal_skripsi_pok\u00e9mon_tcg",
       "02_persiapan_sidang_01_bank_soal_flashcard_01_bank_soal_latihan_kunci_jawaban_bagian_a",
       "02_persiapan_sidang_01_bank_soal_flashcard_01_bank_soal_latihan_persiapan_seminar_proposal_s1_manajemen_keuangan_feb_ukrida"
     ],
-    "63": [
+    "72": [
       "02_persiapan_sidang_01_bank_soal_flashcard_02_flashcard_istilah",
-      "02_persiapan_sidang_01_bank_soal_flashcard_02_flashcard_istilah_flashcard_istilah_kunci_proposal_skripsi_pokémon_tcg",
+      "02_persiapan_sidang_01_bank_soal_flashcard_02_flashcard_istilah_flashcard_istilah_kunci_proposal_skripsi_pok\u00e9mon_tcg",
       "02_persiapan_sidang_01_bank_soal_flashcard_02_flashcard_istilah_kartu_biru_variabel_penelitian",
       "02_persiapan_sidang_01_bank_soal_flashcard_02_flashcard_istilah_kartu_hijau_teori_kerangka",
       "02_persiapan_sidang_01_bank_soal_flashcard_02_flashcard_istilah_kartu_kilat_untuk_hafalan_cepat_baca_bolak_balik",
-      "02_persiapan_sidang_01_bank_soal_flashcard_02_flashcard_istilah_kartu_kuning_istilah_pokémon_tcg",
+      "02_persiapan_sidang_01_bank_soal_flashcard_02_flashcard_istilah_kartu_kuning_istilah_pok\u00e9mon_tcg",
       "02_persiapan_sidang_01_bank_soal_flashcard_02_flashcard_istilah_kartu_merah_metodologi_statistik",
       "02_persiapan_sidang_01_bank_soal_flashcard_02_flashcard_istilah_kartu_ungu_angka_penting_hafal"
     ],
-    "64": [
+    "73": [
       "03_draft_per_bab_bab_i_pendahuluan",
       "03_draft_per_bab_bab_i_pendahuluan_bab_i",
       "03_draft_per_bab_bab_ii_tinjauan_pustaka",
@@ -1428,17 +1461,7 @@
       "04_riset_metodologi_prd_humanisasi_keaslian_tulisan_ai_20_persen",
       "04_riset_metodologi_prd_remediasi_ai_70_persen_humanizer"
     ],
-    "65": [
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_1_1_grand_theory_keuangan_perilaku_behavioral_finance",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_1_2_supporting_theory_teori_stimulus_organism_response_s_o_r",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_1_3_supporting_theory_psikologi_kolektor_dan_the_completing_the_set_effect",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_1_4_supporting_theory_teori_regulasi_diri_self_regulation_theory",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_1_landasan_teori",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_3_penelitian_terdahulu",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_5_rerangka_pemikiran_konseptual",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_kajian_pustaka_dan_pengembangan_hipotesis"
-    ],
-    "66": [
+    "74": [
       "04_riset_metodologi_panduan_standarisasi_heading_dan_daftar_isi_docx",
       "04_riset_metodologi_panduan_standarisasi_heading_dan_daftar_isi_docx_1_latar_belakang_akar_masalah_root_cause",
       "04_riset_metodologi_panduan_standarisasi_heading_dan_daftar_isi_docx_2_arsitektur_solusi_hierarki_heading_baku",
@@ -1448,7 +1471,7 @@
       "04_riset_metodologi_panduan_standarisasi_heading_dan_daftar_isi_docx_b_injeksi_komponen_resmi_native_table_of_contents_w_sdt",
       "04_riset_metodologi_panduan_standarisasi_heading_dan_daftar_isi_docx_c_proteksi_judul_tabel_dan_judul_gambar"
     ],
-    "67": [
+    "75": [
       "04_riset_metodologi_prd_hybrid_pandoc_script_generator",
       "04_riset_metodologi_prd_hybrid_pandoc_script_generator_1_spesifikasi_teknis_pembagian_peran_hybrid",
       "04_riset_metodologi_prd_hybrid_pandoc_script_generator_2_model_persamaan_yang_dikonversi_secara_hybrid",
@@ -1458,7 +1481,7 @@
       "04_riset_metodologi_prd_hybrid_pandoc_script_generator_b_peran_build_proposal_word_py_master_governor_assembler",
       "04_riset_metodologi_prd_hybrid_pandoc_script_generator_product_requirements_document_prd"
     ],
-    "68": [
+    "76": [
       "04_riset_metodologi_prd_integrasi_skill_paper_audit",
       "07_review_audit_paper_audits_readme",
       "07_review_audit_paper_audits_readme_direktori_laporan_audit_ilmiah_paper_audits",
@@ -1468,7 +1491,7 @@
       "07_review_audit_paper_audits_review_2026_09_18_213000",
       "directives_run_paper_audit"
     ],
-    "69": [
+    "77": [
       "04_riset_metodologi_prd_remediasi_ai_70_persen_humanizer_1_bukti_masuk_evidence_a3",
       "04_riset_metodologi_prd_remediasi_ai_70_persen_humanizer_2_batas_jujur_mengikat_dari_skill_humanizer_id_a0",
       "04_riset_metodologi_prd_remediasi_ai_70_persen_humanizer_3_diagnosis_terarah_a4_a9_bukan_daftar_kata_terlarang",
@@ -1478,17 +1501,27 @@
       "04_riset_metodologi_prd_remediasi_ai_70_persen_humanizer_7_integrasi_ke_prd_universal_surgical_aditif",
       "04_riset_metodologi_prd_remediasi_ai_70_persen_humanizer_prd_remediasi_ai_70_ambang_praktik_20_humanizer_id_universal_framework"
     ],
-    "70": [
+    "78": [
+      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_1_konteks_latar_belakang",
+      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_2_matriks_keputusan_revisi_vs_non_revisi",
+      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_3_spesifikasi_perubahan_berkas",
+      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_4_protokol_verifikasi_mutu",
+      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_a_tindakan_wajib_mandatory_fixes",
+      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_b_penyempurnaan_konstruk_butir_kuesioner_tabel_3_2",
+      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_c_alasan_pengecualian_temuan_non_revisi",
+      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai_prd_resolusi_review_teknis_editorial_prism_ai_proposal_skripsi_pok\u00e9mon_tcg"
+    ],
+    "79": [
       "04_riset_metodologi_prd_substitusi_gambar_1_3_data_legit_bab1",
       "04_riset_metodologi_prd_substitusi_gambar_1_3_data_legit_bab1_1_latar_belakang_kriteria_seleksi_100_legit",
       "04_riset_metodologi_prd_substitusi_gambar_1_3_data_legit_bab1_2_analisis_komparatif_3_kandidat_pengganti_gambar_1_3",
       "04_riset_metodologi_prd_substitusi_gambar_1_3_data_legit_bab1_3_rincian_data_numerik_faktual_kandidat",
       "04_riset_metodologi_prd_substitusi_gambar_1_3_data_legit_bab1_4_rencana_kerja_eksekusi_jika_salah_satu_opsi_disetujui",
-      "04_riset_metodologi_prd_substitusi_gambar_1_3_data_legit_bab1_kandidat_1_kinerja_finansial_korporat_the_pokémon_company_fy2020_fy2024",
+      "04_riset_metodologi_prd_substitusi_gambar_1_3_data_legit_bab1_kandidat_1_kinerja_finansial_korporat_the_pok\u00e9mon_company_fy2020_fy2024",
       "04_riset_metodologi_prd_substitusi_gambar_1_3_data_legit_bab1_kandidat_2_disparitas_harga_pasar_sekunder_kartu_mentah_raw_vs_psa_10_gem_mint",
       "04_riset_metodologi_prd_substitusi_gambar_1_3_data_legit_bab1_prd_penentuan_dan_substitusi_gambar_1_3_bab_1_dengan_data_empiris_terverifikasi_100_legit"
     ],
-    "71": [
+    "80": [
       "04_riset_metodologi_skills_alur_kerja",
       "04_riset_metodologi_skills_aturan_bukti",
       "04_riset_metodologi_skills_cakupan_minimum",
@@ -1498,7 +1531,7 @@
       "04_riset_metodologi_skills_skala_prioritas",
       "04_riset_metodologi_skills_urutan_otoritas"
     ],
-    "72": [
+    "81": [
       "07_review_audit_paper_audits_review_2026_09_17_164319_1_peta_klaim_ke_bukti_ringkas",
       "07_review_audit_paper_audits_review_2026_09_17_164319_2_context_anchors_dinyatakan_lulus_bukan_temuan",
       "07_review_audit_paper_audits_review_2026_09_17_164319_3_temuan_utama_diurut_konsekuensi",
@@ -1506,9 +1539,9 @@
       "07_review_audit_paper_audits_review_2026_09_17_164319_5_challenger_pass_anti_false_alarm",
       "07_review_audit_paper_audits_review_2026_09_17_164319_6_urutan_revisi_hemat_dependensi",
       "07_review_audit_paper_audits_review_2026_09_17_164319_7_evidence_ledger_coverage",
-      "07_review_audit_paper_audits_review_2026_09_17_164319_laporan_audit_ilmiah_proposal_pokémon_tcg_17_sep_2026"
+      "07_review_audit_paper_audits_review_2026_09_17_164319_laporan_audit_ilmiah_proposal_pok\u00e9mon_tcg_17_sep_2026"
     ],
-    "73": [
+    "82": [
       "07_review_audit_paper_audits_review_2026_09_18_213000_1_peta_klaim_ke_bukti_ringkas_status_kini",
       "07_review_audit_paper_audits_review_2026_09_18_213000_2_context_anchors_dinyatakan_lulus_bukan_temuan",
       "07_review_audit_paper_audits_review_2026_09_18_213000_3_uji_resolusi_f001_f019_17_sep_18_sep",
@@ -1516,9 +1549,9 @@
       "07_review_audit_paper_audits_review_2026_09_18_213000_5_challenger_pass_anti_false_alarm_dibuang_diturunkan",
       "07_review_audit_paper_audits_review_2026_09_18_213000_6_pemeriksaan_tanda_baca_permintaan_eksplisit_user",
       "07_review_audit_paper_audits_review_2026_09_18_213000_7_evidence_ledger_coverage",
-      "07_review_audit_paper_audits_review_2026_09_18_213000_laporan_audit_ilmiah_proposal_pokémon_tcg_18_sep_2026_pasca_humanisasi"
+      "07_review_audit_paper_audits_review_2026_09_18_213000_laporan_audit_ilmiah_proposal_pok\u00e9mon_tcg_18_sep_2026_pasca_humanisasi"
     ],
-    "74": [
+    "83": [
       "agents_agent_instructions",
       "agents_file_organization",
       "agents_mandatory_thesis_parity_quality_directives_inviolable",
@@ -1528,7 +1561,7 @@
       "agents_summary",
       "agents_the_3_layer_architecture"
     ],
-    "75": [
+    "84": [
       "agents_skills_auto_compact_skill",
       "agents_skills_auto_compact_skill_auto_compact",
       "agents_skills_auto_compact_skill_extract_and_prioritize",
@@ -1538,7 +1571,7 @@
       "agents_skills_auto_compact_skill_trigger_policy_and_configuration",
       "agents_skills_auto_compact_skill_verify_hand_off_and_resume"
     ],
-    "76": [
+    "85": [
       "agents_skills_humanizer_id_humanizer_id_references_indonesian",
       "agents_skills_humanizer_id_humanizer_id_references_indonesian_1_rujukan_dan_batas_kewenangannya",
       "agents_skills_humanizer_id_humanizer_id_references_indonesian_2_alur_memilih_istilah",
@@ -1548,7 +1581,7 @@
       "agents_skills_humanizer_id_humanizer_id_references_indonesian_6_gaya_yang_jelas_tanpa_aturan_rekaan",
       "agents_skills_humanizer_id_humanizer_id_references_indonesian_bahasa_indonesia_eyd_dan_istilah_teknis"
     ],
-    "77": [
+    "86": [
       "directives_build_docx_without_chapter3",
       "directives_build_docx_without_chapter3_directive_build_docx_proposal_tanpa_bab_3",
       "directives_build_docx_without_chapter3_elemen_bab_3_yang_dihilangkan",
@@ -1558,7 +1591,7 @@
       "directives_build_docx_without_chapter3_penyesuaian_otomatis",
       "directives_build_docx_without_chapter3_tujuan"
     ],
-    "78": [
+    "87": [
       "directives_build_pdf_without_chapter3",
       "directives_build_pdf_without_chapter3_1_tujuan",
       "directives_build_pdf_without_chapter3_2_jaminan_non_destructive_invariance_file_utama_tetap_utuh",
@@ -1568,7 +1601,7 @@
       "directives_build_pdf_without_chapter3_6_kriteria_keberhasilan_validasi",
       "directives_build_pdf_without_chapter3_directive_build_pdf_proposal_tanpa_bab_3_xelatex_native"
     ],
-    "79": [
+    "88": [
       "directives_verify_mendeley_integrity",
       "directives_verify_mendeley_integrity_1_aturan_paritas_mutlak_1_1_the_zero_discrepancy_rule",
       "directives_verify_mendeley_integrity_2_tabel_whitelist_resmi_tag_ris_mendeley_reference_manager",
@@ -1578,7 +1611,7 @@
       "directives_verify_mendeley_integrity_directive_verifikasi_integritas_validasi_tag_dan_paritas_1_1_mendeley_reference_manager",
       "directives_verify_mendeley_integrity_tag_yang_diharamkan_secara_mutlak_strictly_prohibited"
     ],
-    "80": [
+    "89": [
       "execution_compare_pdf_docx_fidelity",
       "execution_compare_pdf_docx_fidelity_extract_docx_data",
       "execution_compare_pdf_docx_fidelity_extract_pdf_data",
@@ -1588,7 +1621,7 @@
       "execution_compare_pdf_docx_fidelity_rationale_35",
       "execution_compare_pdf_docx_fidelity_run_comparative_audit"
     ],
-    "81": [
+    "90": [
       "execution_download_libgen_books",
       "execution_download_libgen_books_download_libgen_by_md5",
       "execution_download_libgen_books_generate_local_indonesian_pdf",
@@ -1598,7 +1631,7 @@
       "execution_download_libgen_books_rationale_242",
       "execution_download_libgen_books_verify_pdf"
     ],
-    "82": [
+    "91": [
       "execution_generate_mendeley_library",
       "execution_generate_mendeley_library_entry_to_ris",
       "execution_generate_mendeley_library_get_tex_cited_keys",
@@ -1608,7 +1641,7 @@
       "execution_generate_mendeley_library_rationale_1",
       "execution_generate_mendeley_library_rationale_208"
     ],
-    "83": [
+    "92": [
       "execution_run_thesis_graph",
       "execution_run_thesis_graph_find_repo_root",
       "execution_run_thesis_graph_main",
@@ -1618,7 +1651,7 @@
       "execution_run_thesis_graph_rationale_66",
       "execution_run_thesis_graph_run_gate"
     ],
-    "84": [
+    "93": [
       "01_naskah_utama_images_ukrida_pentagram_central_emblem",
       "01_naskah_utama_images_ukrida_pentagram_pentagon_shield",
       "01_naskah_utama_images_ukrida_pentagram_png_logo",
@@ -1627,7 +1660,7 @@
       "01_naskah_utama_images_ukrida_pentagram_svg_text_outlines",
       "01_naskah_utama_images_ukrida_pentagram_university_identity"
     ],
-    "85": [
+    "94": [
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_1_1_latar_belakang_penelitian",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_1_2_perumusan_masalah",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_1_3_tujuan_penelitian",
@@ -1636,7 +1669,7 @@
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_1_4_manfaat_penelitian",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_bab_1_pendahuluan"
     ],
-    "86": [
+    "95": [
       "02_persiapan_sidang_panduan_belajar_proposal_8_logika_kausalitas_4_tier_pembuktian_hipotesis",
       "02_persiapan_sidang_panduan_belajar_proposal_h1_hedonic_motivation_rightarrow_impulsive_buying",
       "02_persiapan_sidang_panduan_belajar_proposal_h2_desire_for_completeness_rightarrow_impulsive_buying",
@@ -1645,7 +1678,7 @@
       "02_persiapan_sidang_panduan_belajar_proposal_h5_peran_moderasi_self_control_pada_hubungan_desire_for_completeness_dan_impulsive_buying",
       "02_persiapan_sidang_panduan_belajar_proposal_h6_peran_moderasi_self_control_pada_hubungan_speculative_motive_dan_impulsive_buying"
     ],
-    "87": [
+    "96": [
       "03_draft_per_bab_bab_i_pendahuluan_1_1_latar_belakang_masalah",
       "03_draft_per_bab_bab_i_pendahuluan_1_2_perumusan_masalah",
       "03_draft_per_bab_bab_i_pendahuluan_1_3_tujuan_penelitian",
@@ -1654,25 +1687,16 @@
       "03_draft_per_bab_bab_i_pendahuluan_1_4_manfaat_penelitian",
       "03_draft_per_bab_bab_i_pendahuluan_pendahuluan"
     ],
-    "88": [
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_4_1_pengaruh_hedonic_motivation_terhadap_impulsive_buying",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_4_2_pengaruh_desire_for_completeness_terhadap_impulsive_buying",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_4_3_pengaruh_speculative_motive_terhadap_impulsive_buying",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_4_4_pengaruh_moderasi_self_control_terhadap_hubungan_hedonic_motivation_dan_impulsive_buying",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_4_5_pengaruh_moderasi_self_control_terhadap_hubungan_desire_for_completeness_dan_impulsive_buying",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_4_6_pengaruh_moderasi_self_control_terhadap_hubungan_speculative_motive_dan_impulsive_buying",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_4_pengembangan_hipotesis"
-    ],
-    "89": [
+    "97": [
       "04_riset_metodologi_literature_matrix",
       "04_riset_metodologi_literature_matrix_a_sumber_empiris_terkini_2021_2025_terverifikasi_10_jurnal_inti_skripsi",
       "04_riset_metodologi_literature_matrix_b_sumber_fondasional_pra_2021_label_fondasional",
       "04_riset_metodologi_literature_matrix_gap_yang_teridentifikasi_dari_korpus",
       "04_riset_metodologi_literature_matrix_landasan_teoretis_kerja",
-      "04_riset_metodologi_literature_matrix_matriks_literatur_skripsi_pokémon_tcg_impulsive_buying",
+      "04_riset_metodologi_literature_matrix_matriks_literatur_skripsi_pok\u00e9mon_tcg_impulsive_buying",
       "04_riset_metodologi_literature_matrix_protokol_ringkas"
     ],
-    "90": [
+    "98": [
       "04_riset_metodologi_prd_revisi_docx_kualitas_latex_1_identifikasi_masalah_akar_penyebab_root_cause_analysis",
       "04_riset_metodologi_prd_revisi_docx_kualitas_latex_2_rencana_eksekusi_tahapan_perubahan",
       "04_riset_metodologi_prd_revisi_docx_kualitas_latex_a_masalah_1_font_berwarna_biru_pada_judul_heading_1_heading_2_heading_3",
@@ -1681,7 +1705,7 @@
       "04_riset_metodologi_prd_revisi_docx_kualitas_latex_product_requirements_document_prd",
       "04_riset_metodologi_prd_revisi_docx_kualitas_latex_revisi_naskah_docx_eliminasi_font_biru_penyempurnaan_dot_leaders_daftar_isi_penyelarasan_kualitas_tipografi_latex_pdf"
     ],
-    "91": [
+    "99": [
       "04_riset_metodologi_skills",
       "07_review_audit_review_language",
       "07_review_audit_review_methodology",
@@ -1690,7 +1714,16 @@
       "07_review_audit_review_output_gaya_penulisan_laporan",
       "07_review_audit_review_output_prinsip_keluaran"
     ],
-    "92": [
+    "100": [
+      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_bimbingan_16_september_2026_pukul_10_27_10_28_wib",
+      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_bimbingan_9_september_2026_pukul_20_30_wib",
+      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_catatan_salinan_chat_bimbingan_dosen",
+      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_format_pengisian_salin_blok_di_bawah_setiap_kali_ada_bimbingan_baru",
+      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_isi_chat_catatan_dosen",
+      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_poin_utama_tindakan",
+      "07_review_audit_revisi_dosen_tempel_chat_dosen_disini_riwayat_bimbingan_terkini"
+    ],
+    "101": [
       "agents_rules_mandatory_gdocs_and_docx_citation_linking",
       "agents_rules_mandatory_gdocs_and_docx_citation_linking_1_prinsip_utama_sitasi_bukan_teks_mati_zero_dead_citation",
       "agents_rules_mandatory_gdocs_and_docx_citation_linking_2_standar_tipografi_tautan_sitasi_anti_visual_pollution",
@@ -1699,7 +1732,7 @@
       "agents_rules_mandatory_gdocs_and_docx_citation_linking_5_rujukan_skill_terkait",
       "agents_rules_mandatory_gdocs_and_docx_citation_linking_mandatory_rule_penegakan_tautan_sitasi_lintas_platform_word_docx_google_docs"
     ],
-    "93": [
+    "102": [
       "agents_rules_mandatory_thesis_sync_and_quality_1_core_principles_zero_regressions",
       "agents_rules_mandatory_thesis_sync_and_quality_2_mandatory_pre_completion_audit",
       "agents_rules_mandatory_thesis_sync_and_quality_a_single_source_of_truth_zero_desync",
@@ -1708,7 +1741,7 @@
       "agents_rules_mandatory_thesis_sync_and_quality_d_strict_dual_mode_separation",
       "agents_rules_mandatory_thesis_sync_and_quality_mandatory_rule_thesis_synchronization_parity_latex_grade_quality"
     ],
-    "94": [
+    "103": [
       "agents_skills_humanizer_id_humanizer_id_references_examples",
       "agents_skills_humanizer_id_humanizer_id_references_orchestration",
       "agents_skills_humanizer_id_humanizer_id_references_sources",
@@ -1717,7 +1750,7 @@
       "agents_skills_humanizer_id_humanizer_id_references_taxonomy_taksonomi_editorial_humanizer_id",
       "agents_skills_humanizer_id_humanizer_id_skill"
     ],
-    "95": [
+    "104": [
       "directives_audit_pdf_vs_docx_fidelity",
       "directives_audit_pdf_vs_docx_fidelity_1_tujuan",
       "directives_audit_pdf_vs_docx_fidelity_2_input_data",
@@ -1726,7 +1759,7 @@
       "directives_audit_pdf_vs_docx_fidelity_5_ambang_batas_toleransi_tolerance_thresholds",
       "directives_audit_pdf_vs_docx_fidelity_directive_sop_audit_komparasi_integritas_dokumen_pdf_vs_docx"
     ],
-    "96": [
+    "105": [
       "directives_download_journal_references",
       "directives_download_journal_references_aturan_penamaan_file",
       "directives_download_journal_references_directive_sop_download_dan_katalogisasi_referensi_jurnal_skripsi",
@@ -1735,7 +1768,7 @@
       "directives_download_journal_references_struktur_penyimpanan",
       "directives_download_journal_references_tujuan"
     ],
-    "97": [
+    "106": [
       "directives_fix_gdocs_citation_links",
       "directives_fix_gdocs_citation_links_1_akar_masalah_terverifikasi",
       "directives_fix_gdocs_citation_links_2_perbaikan_lapis_1_docx_sudah_diterapkan",
@@ -1744,16 +1777,24 @@
       "directives_fix_gdocs_citation_links_5_verifikasi_selesai",
       "directives_fix_gdocs_citation_links_directive_perbaikan_sitasi_klik_di_google_docs_web"
     ],
-    "98": [
+    "107": [
       "execution_verify_docx_typography",
       "execution_verify_docx_typography_audit_docx",
       "execution_verify_docx_typography_main",
       "execution_verify_docx_typography_py_path",
       "execution_verify_docx_typography_rationale_1",
-      "execution_verify_docx_typography_rationale_15",
+      "execution_verify_docx_typography_rationale_23",
       "execution_verify_docx_typography_style_tab_stops"
     ],
-    "99": [
+    "108": [
+      "00_panduan_obsidian_second_brain_1_cara_memulai_sesi_dengan_antigravity",
+      "00_panduan_obsidian_second_brain_2_cara_kerja_pencatatan_otomatis_selama_sesi",
+      "00_panduan_obsidian_second_brain_3_pusat_kendali_map_of_content",
+      "00_panduan_obsidian_second_brain_apa_yang_otomatis_dilakukan_antigravity",
+      "00_panduan_obsidian_second_brain_integrasi_antigravity_ide_graphify_obsidian_vault",
+      "00_panduan_obsidian_second_brain_panduan_penggunaan_obsidian_second_brain_skripsi"
+    ],
+    "109": [
       "01_naskah_utama_images_gambar1_1_media_franchise_ranking_chart",
       "01_naskah_utama_images_gambar1_1_media_franchise_ranking_estimate_scope_merchandise_tcg",
       "01_naskah_utama_images_gambar1_1_media_franchise_ranking_external_source_unknown",
@@ -1761,7 +1802,7 @@
       "01_naskah_utama_images_gambar1_1_media_franchise_ranking_label_readability",
       "01_naskah_utama_images_gambar1_1_media_franchise_ranking_metric_cumulative_revenue_usd_billion"
     ],
-    "100": [
+    "110": [
       "02_persiapan_sidang_panduan_belajar_proposal_behavioral_finance",
       "02_persiapan_sidang_panduan_belajar_proposal_completing_set",
       "02_persiapan_sidang_panduan_belajar_proposal_doc",
@@ -1769,7 +1810,7 @@
       "02_persiapan_sidang_panduan_belajar_proposal_self_regulation",
       "02_persiapan_sidang_panduan_belajar_proposal_sor_model"
     ],
-    "101": [
+    "111": [
       "02_persiapan_sidang_ppt_seminar_proposal_check_slides",
       "02_persiapan_sidang_ppt_seminar_proposal_check_slides_chromium",
       "02_persiapan_sidang_ppt_seminar_proposal_check_slides_fs",
@@ -1777,7 +1818,7 @@
       "02_persiapan_sidang_ppt_seminar_proposal_check_slides_path",
       "02_persiapan_sidang_ppt_seminar_proposal_check_slides_pathtofileurl"
     ],
-    "102": [
+    "112": [
       "02_persiapan_sidang_ppt_seminar_proposal_check_text_styles",
       "02_persiapan_sidang_ppt_seminar_proposal_check_text_styles_chromium",
       "02_persiapan_sidang_ppt_seminar_proposal_check_text_styles_fs",
@@ -1785,7 +1826,7 @@
       "02_persiapan_sidang_ppt_seminar_proposal_check_text_styles_path",
       "02_persiapan_sidang_ppt_seminar_proposal_check_text_styles_pathtofileurl"
     ],
-    "103": [
+    "113": [
       "02_persiapan_sidang_ppt_seminar_proposal_fix_slides",
       "02_persiapan_sidang_ppt_seminar_proposal_fix_slides_chromium",
       "02_persiapan_sidang_ppt_seminar_proposal_fix_slides_fs",
@@ -1793,7 +1834,7 @@
       "02_persiapan_sidang_ppt_seminar_proposal_fix_slides_path",
       "02_persiapan_sidang_ppt_seminar_proposal_fix_slides_pathtofileurl"
     ],
-    "104": [
+    "114": [
       "02_persiapan_sidang_ppt_seminar_proposal_fix_text_styles",
       "02_persiapan_sidang_ppt_seminar_proposal_fix_text_styles_chromium",
       "02_persiapan_sidang_ppt_seminar_proposal_fix_text_styles_fs",
@@ -1801,15 +1842,7 @@
       "02_persiapan_sidang_ppt_seminar_proposal_fix_text_styles_path",
       "02_persiapan_sidang_ppt_seminar_proposal_fix_text_styles_pathtofileurl"
     ],
-    "105": [
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_2_1_variabel_dependen_y_impulsive_buying_pembelian_impulsif",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_2_2_variabel_independen_x_1_hedonic_motivation_motivasi_hedonis",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_2_3_variabel_independen_x_2_desire_for_completeness_hasrat_kelengkapan_koleksi",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_2_4_variabel_independen_x_3_speculative_motive_motif_spekulasi_finansial",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_2_5_variabel_moderasi_m_self_control_kontrol_diri",
-      "03_draft_per_bab_bab_ii_tinjauan_pustaka_2_2_kajian_variabel_penelitian"
-    ],
-    "106": [
+    "115": [
       "04_riset_metodologi_prd_audit_pdf_vs_docx",
       "04_riset_metodologi_prd_audit_pdf_vs_docx_1_problem_statement",
       "04_riset_metodologi_prd_audit_pdf_vs_docx_2_tujuan_sasaran",
@@ -1817,7 +1850,15 @@
       "04_riset_metodologi_prd_audit_pdf_vs_docx_4_rencana_tindak_lanjut",
       "04_riset_metodologi_prd_audit_pdf_vs_docx_product_requirements_document_prd_audit_komparasi_dokumen_pdf_vs_docx"
     ],
-    "107": [
+    "116": [
+      "04_riset_metodologi_prd_audit_sitasi_walled_2026_09_17_1_scope_tanpa_kecuali",
+      "04_riset_metodologi_prd_audit_sitasi_walled_2026_09_17_2_metodologi_c_link_1",
+      "04_riset_metodologi_prd_audit_sitasi_walled_2026_09_17_3_hasil_17_sep_2026_exit_0",
+      "04_riset_metodologi_prd_audit_sitasi_walled_2026_09_17_4_keputusan",
+      "04_riset_metodologi_prd_audit_sitasi_walled_2026_09_17_5_addendum_pasca_audit_temuan_entri_campuran_barasz2017pseudo",
+      "04_riset_metodologi_prd_audit_sitasi_walled_2026_09_17_prd_audit_walled_vs_dead_seluruh_sitasi_17_sep_2026"
+    ],
+    "117": [
       "04_riset_metodologi_prd_revisi_docx_kualitas_latex",
       "04_riset_metodologi_prd_sinkronisasi_docx_dan_audit_file",
       "04_riset_metodologi_template_source_of_truth_universal_doc",
@@ -1825,15 +1866,15 @@
       "agents_rules_mandatory_thesis_sync_and_quality",
       "directives_generate_thesis_word_document"
     ],
-    "108": [
+    "118": [
       "04_riset_metodologi_verified_empirical_data",
       "04_riset_metodologi_verified_empirical_data_1_data_franchise_media_global_gambar_1_1",
-      "04_riset_metodologi_verified_empirical_data_2_data_produksi_fisik_kartu_pokémon_tcg_global_gambar_1_2",
+      "04_riset_metodologi_verified_empirical_data_2_data_produksi_fisik_kartu_pok\u00e9mon_tcg_global_gambar_1_2",
       "04_riset_metodologi_verified_empirical_data_3_data_disparitas_harga_pasar_sekunder_arbitrase_grading_gambar_1_3",
       "04_riset_metodologi_verified_empirical_data_4_status_eliminasi_icv2_donut_chart",
       "04_riset_metodologi_verified_empirical_data_berkas_verifikasi_data_empiris_bab_1_ground_truth_log"
     ],
-    "109": [
+    "119": [
       "07_review_audit_review_language_audit_bahasa_sitasi_dan_daftar_pustaka",
       "07_review_audit_review_language_bahasa_akademik",
       "07_review_audit_review_language_bentuk_rekomendasi_redaksi",
@@ -1841,7 +1882,7 @@
       "07_review_audit_review_language_rekonsiliasi_daftar_pustaka",
       "07_review_audit_review_language_sitasi_dalam_teks"
     ],
-    "110": [
+    "120": [
       "07_review_audit_revisi_dosen_2026_09_08_revisi_lengkap_dosen_bab1",
       "07_review_audit_revisi_dosen_2026_09_08_revisi_lengkap_dosen_bab1_1_salinan_chat_asli_dari_dosen_verbatim",
       "07_review_audit_revisi_dosen_2026_09_08_revisi_lengkap_dosen_bab1_2_blueprint_struktur_latar_belakang_bab_1_sesuai_permintaan_dosen",
@@ -1849,15 +1890,15 @@
       "07_review_audit_revisi_dosen_2026_09_08_revisi_lengkap_dosen_bab1_revisi_1",
       "07_review_audit_revisi_dosen_2026_09_08_revisi_lengkap_dosen_bab1_revisi_2_rincian_alur_paragraf_metodologi"
     ],
-    "111": [
+    "121": [
       "07_review_audit_revisi_dosen_2026_09_14_review_teknis_prism_ai_dan_matriks_resolusi",
       "07_review_audit_revisi_dosen_2026_09_14_review_teknis_prism_ai_dan_matriks_resolusi_1_ringkasan_eksekutif_hasil_review",
       "07_review_audit_revisi_dosen_2026_09_14_review_teknis_prism_ai_dan_matriks_resolusi_2_matriks_resolusi_11_temuan_teknis",
       "07_review_audit_revisi_dosen_2026_09_14_review_teknis_prism_ai_dan_matriks_resolusi_3_klarifikasi_temuan_yang_dikecualikan_non_revisi",
-      "07_review_audit_revisi_dosen_2026_09_14_review_teknis_prism_ai_dan_matriks_resolusi_audit_komprehensif_naskah_proposal_skripsi_pokémon_tcg_14_september_2026",
+      "07_review_audit_revisi_dosen_2026_09_14_review_teknis_prism_ai_dan_matriks_resolusi_audit_komprehensif_naskah_proposal_skripsi_pok\u00e9mon_tcg_14_september_2026",
       "07_review_audit_revisi_dosen_2026_09_14_review_teknis_prism_ai_dan_matriks_resolusi_catatan_review_teknis_prism_ai_matriks_resolusi"
     ],
-    "112": [
+    "122": [
       "agents_skills_humanizer_id_humanizer_id_references_fidelity",
       "agents_skills_humanizer_id_humanizer_id_references_fidelity_bahan_yang_kurang_jelas",
       "agents_skills_humanizer_id_humanizer_id_references_fidelity_bantuan_audit_teks",
@@ -1865,7 +1906,7 @@
       "agents_skills_humanizer_id_humanizer_id_references_fidelity_kontrak_isi",
       "agents_skills_humanizer_id_humanizer_id_references_fidelity_pelestarian_makna_dan_berkas"
     ],
-    "113": [
+    "123": [
       "agents_skills_humanizer_id_humanizer_id_references_orchestration_batas_istilah",
       "agents_skills_humanizer_id_humanizer_id_references_orchestration_graf_untuk_revisi_substantif",
       "agents_skills_humanizer_id_humanizer_id_references_orchestration_kontrak_tugas",
@@ -1873,7 +1914,7 @@
       "agents_skills_humanizer_id_humanizer_id_references_orchestration_orkestrasi_pakar_dan_graph_of_agents",
       "agents_skills_humanizer_id_humanizer_id_references_orchestration_pengaturan_penalaran"
     ],
-    "114": [
+    "124": [
       "agents_skills_humanizer_id_humanizer_id_references_registers",
       "agents_skills_humanizer_id_humanizer_id_references_registers_persona_pasif_dan_kehematan",
       "agents_skills_humanizer_id_humanizer_id_references_registers_pilih_suara_menurut_tujuan_dan_pembaca",
@@ -1881,7 +1922,7 @@
       "agents_skills_humanizer_id_humanizer_id_references_registers_tulisan_akademik_per_fungsi",
       "agents_skills_humanizer_id_humanizer_id_references_registers_tulisan_yang_sudah_baik"
     ],
-    "115": [
+    "125": [
       "agents_skills_humanizer_id_humanizer_id_scripts_audit_text",
       "agents_skills_humanizer_id_humanizer_id_scripts_audit_text_compare",
       "agents_skills_humanizer_id_humanizer_id_scripts_audit_text_main",
@@ -1889,7 +1930,7 @@
       "agents_skills_humanizer_id_humanizer_id_scripts_audit_text_rationale_28",
       "agents_skills_humanizer_id_humanizer_id_scripts_audit_text_scan"
     ],
-    "116": [
+    "126": [
       "agents_skills_task_breakdown_skill",
       "agents_skills_task_breakdown_skill_display_and_token_discipline",
       "agents_skills_task_breakdown_skill_extract_once",
@@ -1897,7 +1938,7 @@
       "agents_skills_task_breakdown_skill_status_and_evidence",
       "agents_skills_task_breakdown_skill_task_breakdown"
     ],
-    "117": [
+    "127": [
       "directives_curate_bab1_market_graphics",
       "directives_curate_bab1_market_graphics_directive_curate_generate_and_integrate_empirical_market_graphics_for_bab_1",
       "directives_curate_bab1_market_graphics_goal",
@@ -1905,7 +1946,7 @@
       "directives_curate_bab1_market_graphics_standards_formatting_rules",
       "directives_curate_bab1_market_graphics_tools_execution_scripts_layer_3"
     ],
-    "118": [
+    "128": [
       "directives_empirical_source_verification",
       "directives_empirical_source_verification_1_prinsip_dasar_integritas_akademik",
       "directives_empirical_source_verification_2_standar_4_tingkat_keabsahan_sumber_hierarchy_of_evidence",
@@ -1913,7 +1954,7 @@
       "directives_empirical_source_verification_4_aturan_bebas_hambatan_akses_no_login_wall_policy",
       "directives_empirical_source_verification_directive_protokol_verifikasi_data_primer_empiris_zero_hallucination"
     ],
-    "119": [
+    "129": [
       "directives_generate_interactive_study_presentation",
       "directives_generate_interactive_study_presentation_1_input_data",
       "directives_generate_interactive_study_presentation_2_alat_eksekusi_layer_3",
@@ -1921,7 +1962,7 @@
       "directives_generate_interactive_study_presentation_4_alur_kerja_sop",
       "directives_generate_interactive_study_presentation_directive_generate_interactive_study_web_presentation"
     ],
-    "120": [
+    "130": [
       "directives_generate_thesis_word_document_directive_generate_publication_grade_thesis_proposal_in_microsoft_word_docx",
       "directives_generate_thesis_word_document_goal",
       "directives_generate_thesis_word_document_inputs",
@@ -1929,7 +1970,7 @@
       "directives_generate_thesis_word_document_standards_formatting_rules_pedoman_feb_ukrida_2023",
       "directives_generate_thesis_word_document_tools_execution_script_3_layer_architecture"
     ],
-    "121": [
+    "131": [
       "directives_update_study_guide_and_pdf",
       "directives_update_study_guide_and_pdf_directive_update_panduan_belajar_generate_pdf",
       "directives_update_study_guide_and_pdf_kriteria_keberhasilan",
@@ -1937,7 +1978,7 @@
       "directives_update_study_guide_and_pdf_standar_format_pdf_output",
       "directives_update_study_guide_and_pdf_tujuan"
     ],
-    "122": [
+    "132": [
       "execution_build_form_bimbingan",
       "execution_build_form_bimbingan_convert_docx_to_pdf",
       "execution_build_form_bimbingan_rationale_1",
@@ -1945,7 +1986,7 @@
       "execution_build_form_bimbingan_set_run_font",
       "execution_build_form_bimbingan_update_identity"
     ],
-    "123": [
+    "133": [
       "execution_build_study_guide_pdf",
       "execution_build_study_guide_pdf_build_pdf",
       "execution_build_study_guide_pdf_py_path",
@@ -1953,7 +1994,7 @@
       "execution_build_study_guide_pdf_rationale_42",
       "execution_build_study_guide_pdf_strip_inline_md"
     ],
-    "124": [
+    "134": [
       "execution_verify_all_citation_links",
       "execution_verify_all_citation_links_crossref_suggest",
       "execution_verify_all_citation_links_fetch",
@@ -1961,7 +2002,7 @@
       "execution_verify_all_citation_links_norm",
       "execution_verify_all_citation_links_rationale_1"
     ],
-    "125": [
+    "135": [
       "execution_verify_live_urls",
       "execution_verify_live_urls_main",
       "execution_verify_live_urls_rationale_1",
@@ -1969,441 +2010,480 @@
       "execution_verify_live_urls_test_no_banned_keys",
       "execution_verify_live_urls_test_verified_urls_syntax_and_canonical"
     ],
-    "126": [
+    "136": [
+      "00_panduan_obsidian_second_brain",
+      "02_persiapan_sidang_01_bank_soal_flashcard_03_pertanyaan_sidang_sulit",
+      "04_riset_metodologi_bukti_akses_sitasi_walled",
+      "04_riset_metodologi_prd_resolusi_review_teknis_prism_ai",
+      "06_referensi_jurnal_pdf_katalog_referensi_jurnal"
+    ],
+    "137": [
       "01_naskah_utama_images_gambar1_2_pokemon_tcg_production_growth_chart",
       "01_naskah_utama_images_gambar1_2_pokemon_tcg_production_growth_event_ekspansi_indonesia_akg",
       "01_naskah_utama_images_gambar1_2_pokemon_tcg_production_growth_event_indomaret_seri_151",
       "01_naskah_utama_images_gambar1_2_pokemon_tcg_production_growth_metric_akumulasi_produksi",
       "01_naskah_utama_images_gambar1_2_pokemon_tcg_production_growth_trend_accelerating_growth"
     ],
-    "127": [
+    "138": [
       "02_persiapan_sidang_panduan_belajar_proposal_1_grand_theory_keuangan_perilaku_behavioral_finance",
       "02_persiapan_sidang_panduan_belajar_proposal_2_supporting_theory_1_model_s_o_r_stimulus_organism_response",
       "02_persiapan_sidang_panduan_belajar_proposal_3_supporting_theory_2_the_completing_the_set_effect_zeigarnik_effect",
       "02_persiapan_sidang_panduan_belajar_proposal_4_supporting_theory_3_teori_regulasi_diri_self_regulation_theory",
       "02_persiapan_sidang_panduan_belajar_proposal_6_struktur_teori_bab_2_grand_theory_supporting_theories"
     ],
-    "128": [
+    "139": [
       "02_persiapan_sidang_ppt_seminar_proposal_check_images",
       "02_persiapan_sidang_ppt_seminar_proposal_check_images_assetsdir",
       "02_persiapan_sidang_ppt_seminar_proposal_check_images_fs",
       "02_persiapan_sidang_ppt_seminar_proposal_check_images_path",
       "02_persiapan_sidang_ppt_seminar_proposal_check_images_slidesdir"
     ],
-    "129": [
+    "140": [
       "04_riset_metodologi_evidence_ledger_halaman",
       "04_riset_metodologi_evidence_ledger_halaman_a_klaim_terverifikasi_baca_isi_tier_wajib",
       "04_riset_metodologi_evidence_ledger_halaman_b_flag_jujur_isi_belum_diverifikasi_full_text_paywall_metadata_crossref_klaim_setingkat_judul",
       "04_riset_metodologi_evidence_ledger_halaman_c_koreksi_atribusi_dari_audit_baca_isi_jejak_agar_tak_terulang",
       "04_riset_metodologi_evidence_ledger_halaman_evidence_ledger_halaman_jejak_klaim_pdf_halaman_d26_tier_wajib"
     ],
-    "130": [
+    "141": [
+      "04_riset_metodologi_reusable_thesis_playbook_2_gerbang_empat_fase",
+      "04_riset_metodologi_reusable_thesis_playbook_fase_1_minat_dan_fenomena",
+      "04_riset_metodologi_reusable_thesis_playbook_fase_2_masalah_penelitian",
+      "04_riset_metodologi_reusable_thesis_playbook_fase_3_uji_kelayakan",
+      "04_riset_metodologi_reusable_thesis_playbook_fase_4_judul"
+    ],
+    "142": [
       "07_review_audit_paper_audits_review_2026_09_16_164500_doc",
       "07_review_audit_paper_audits_review_2026_09_16_164500_fchange",
       "07_review_audit_paper_audits_review_2026_09_16_164500_verdict",
       "agents_skills_paper_audit_agents_openai_config",
       "agents_skills_paper_audit_agents_openai_paper_audit_skill"
     ],
-    "131": [
+    "143": [
       "07_review_audit_revisi_dosen_readme",
       "07_review_audit_revisi_dosen_readme_cara_kerja_asisten_ai_dengan_folder_ini",
       "07_review_audit_revisi_dosen_readme_folder_drop_masukan_revisi_dosen_pembimbing",
       "07_review_audit_revisi_dosen_readme_jenis_berkas_yang_bisa_ditaruh_di_sini",
       "07_review_audit_revisi_dosen_readme_rekomendasi_penamaan_berkas_opsional"
     ],
-    "132": [
+    "144": [
       "agents_rules_no_login_wall_empirical_sources",
       "agents_rules_no_login_wall_empirical_sources_1_definisi_hambatan_akses_terlarang",
       "agents_rules_no_login_wall_empirical_sources_2_kriteria_sumber_pengganti_yang_sah",
       "agents_rules_no_login_wall_empirical_sources_3_protokol_verifikasi_mandatori_sebelum_terbit",
       "agents_rules_no_login_wall_empirical_sources_mandatory_rule_jaminan_akses_terbuka_tanpa_hambatan_login_no_login_wall_policy"
     ],
-    "133": [
+    "145": [
       "agents_rules_obsidian_second_brain",
       "agents_rules_obsidian_second_brain_1_session_start_pre_flight_hook",
       "agents_rules_obsidian_second_brain_2_in_flight_documentation_purpose_driven_notes",
       "agents_rules_obsidian_second_brain_3_auto_capture_session_end",
       "agents_rules_obsidian_second_brain_rule_obsidian_second_brain_session_synchronization_protocol"
     ],
-    "134": [
+    "146": [
       "agents_skills_humanizer_id_humanizer_id_references_evaluation",
       "agents_skills_humanizer_id_humanizer_id_references_evaluation_cara_menilai",
       "agents_skills_humanizer_id_humanizer_id_references_evaluation_evaluasi_perilaku_skill",
       "agents_skills_humanizer_id_humanizer_id_references_evaluation_hasil_yang_boleh_dilaporkan",
       "agents_skills_humanizer_id_humanizer_id_references_evaluation_matriks_kasus_yang_dapat_digunakan_ulang"
     ],
-    "135": [
+    "147": [
       "agents_skills_humanizer_id_humanizer_id_references_sources_bahasa_indonesia",
       "agents_skills_humanizer_id_humanizer_id_references_sources_deteksi_dan_kolaborasi",
       "agents_skills_humanizer_id_humanizer_id_references_sources_implementasi_humanizer_yang_dibandingkan",
       "agents_skills_humanizer_id_humanizer_id_references_sources_ragam_akademik",
       "agents_skills_humanizer_id_humanizer_id_references_sources_sumber_riset_dan_batas_penerapan"
     ],
-    "136": [
+    "148": [
       "directives_evidence_page_ledger",
       "directives_evidence_page_ledger_1_tiga_tier_urutan_wajib",
       "directives_evidence_page_ledger_2_aturan_pencatatan_halaman",
       "directives_evidence_page_ledger_3_eksekusi_layer_3",
       "directives_evidence_page_ledger_directive_ledger_bukti_halaman_pdf_lokal_d26_3_tier"
     ],
-    "137": [
+    "149": [
       "directives_review_desire_for_completeness",
       "directives_review_desire_for_completeness_directive_sop_review_konstruk_dan_terminologi_ilmiah_desire_for_completeness",
       "directives_review_desire_for_completeness_latar_belakang_masalah",
       "directives_review_desire_for_completeness_prosedur_eksekusi_layer_3",
       "directives_review_desire_for_completeness_tujuan"
     ],
-    "138": [
+    "150": [
       "execution_resolve_mendeley_urls",
       "execution_resolve_mendeley_urls_get",
       "execution_resolve_mendeley_urls_main",
       "execution_resolve_mendeley_urls_norm",
       "execution_resolve_mendeley_urls_rationale_1"
     ],
-    "139": [
+    "151": [
       "execution_verify_evidence_ledger",
       "execution_verify_evidence_ledger_main",
       "execution_verify_evidence_ledger_pdf_pages",
       "execution_verify_evidence_ledger_py_path",
       "execution_verify_evidence_ledger_rationale_1"
     ],
-    "140": [
+    "152": [
       "execution_verify_format_and_typos",
       "execution_verify_format_and_typos_audit_docx",
       "execution_verify_format_and_typos_audit_pdf",
       "execution_verify_format_and_typos_rationale_1",
       "execution_verify_format_and_typos_twip_to_cm"
     ],
-    "141": [
+    "153": [
       "execution_verify_intext_citations",
       "execution_verify_intext_citations_audit_latex_citations",
       "execution_verify_intext_citations_audit_markdown_citations",
       "execution_verify_intext_citations_extract_body",
       "execution_verify_intext_citations_main"
     ],
-    "142": [
+    "154": [
+      "master_guide_skripsi_2_sistem_4_gerbang_fase",
+      "master_guide_skripsi_fase_1_minat_dan_fenomena",
+      "master_guide_skripsi_fase_2_masalah_penelitian",
+      "master_guide_skripsi_fase_3_uji_kelayakan_4_gerbang",
+      "master_guide_skripsi_fase_4_judul"
+    ],
+    "155": [
       "01_naskah_utama_images_gambar1_3_psa_grading_price_disparity_chart",
       "01_naskah_utama_images_gambar1_3_psa_grading_price_disparity_grading_premium_insight",
       "01_naskah_utama_images_gambar1_3_psa_grading_price_disparity_price_metric",
       "01_naskah_utama_images_gambar1_3_psa_grading_price_disparity_pricecharting_source"
     ],
-    "143": [
+    "156": [
       "01_naskah_utama_images_logo_ukrida_300x300_cross",
       "01_naskah_utama_images_logo_ukrida_300x300_logo",
       "01_naskah_utama_images_logo_ukrida_300x300_open_book",
       "01_naskah_utama_images_logo_ukrida_300x300_universitas"
     ],
-    "144": [
+    "157": [
       "02_persiapan_sidang_panduan_belajar_proposal_1_populasi_sampel_sampling",
       "02_persiapan_sidang_panduan_belajar_proposal_2_prosedur_mean_centering_pada_mra_krusial_untuk_uji_asumsi",
       "02_persiapan_sidang_panduan_belajar_proposal_3_mengapa_menggunakan_mra_di_spss_daripada_sem_pls",
       "02_persiapan_sidang_panduan_belajar_proposal_9_metodologi_penelitian_teknik_analisis_mra"
     ],
-    "145": [
+    "158": [
       "02_persiapan_sidang_panduan_belajar_proposal_1_ringkasan_eksekutif_peta_konsep_penelitian",
       "02_persiapan_sidang_panduan_belajar_proposal_diagram_rerangka_konseptual_penelitian",
       "02_persiapan_sidang_panduan_belajar_proposal_mengapa_penelitian_ini_dibuat",
       "02_persiapan_sidang_panduan_belajar_proposal_persamaan_model_mra_moderated_regression_analysis"
     ],
-    "146": [
-      "02_persiapan_sidang_panduan_belajar_proposal_4_kamus_lengkap_istilah",
-      "02_persiapan_sidang_panduan_belajar_proposal_a_istilah_pokémon_tcg_ekosistem_kartu",
-      "02_persiapan_sidang_panduan_belajar_proposal_b_industri_sertifikasi_grading_profesional",
-      "02_persiapan_sidang_panduan_belajar_proposal_c_istilah_psikologi_keuangan_perilaku"
-    ],
-    "147": [
+    "159": [
       "02_persiapan_sidang_presentasi_interaktif_index_app",
       "02_persiapan_sidang_presentasi_interaktif_index_mra_visualizer",
       "02_persiapan_sidang_presentasi_panduan_belajar_doc",
       "02_persiapan_sidang_presentasi_panduan_belajar_interactive_deck"
     ],
-    "148": [
+    "160": [
       "agents_rules_3_layer_architecture",
       "agents_rules_3_layer_architecture_mandatory_rule_3_layer_architecture_execution",
       "agents_rules_3_layer_architecture_operating_principles",
       "agents_rules_3_layer_architecture_the_3_layer_architecture"
     ],
-    "149": [
+    "161": [
       "execution_sync_markdown_from_tex",
       "execution_sync_markdown_from_tex_convert_tex_section",
       "execution_sync_markdown_from_tex_main",
       "execution_sync_markdown_from_tex_rationale_1"
     ],
-    "150": [
+    "162": [
       "execution_verify_italic_typography",
       "execution_verify_italic_typography_check_latex_italics",
       "execution_verify_italic_typography_is_inside_command",
       "execution_verify_italic_typography_main"
     ],
-    "151": [
+    "163": [
       "execution_verify_pdf_docx_parity",
       "execution_verify_pdf_docx_parity_audit_full",
       "execution_verify_pdf_docx_parity_audit_nobab3",
       "execution_verify_pdf_docx_parity_rationale_1"
     ],
-    "152": [
+    "164": [
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_daftar_isi_naskah_proposal",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_halaman_sampul_judul_proposal",
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_proposal_skripsi_lengkap_universitas_kristen_krida_wacana"
     ],
-    "153": [
+    "165": [
       "05_pedoman_referensi_buku_pedoman_penyusunan_skripsi_feb_ukrida_2022_jakarta_2021",
       "05_pedoman_referensi_buku_pedoman_penyusunan_skripsi_feb_ukrida_2022_pernyataan_keaslian_karya_tugas_akhir",
       "05_pedoman_referensi_buku_pedoman_penyusunan_skripsi_feb_ukrida_2022_persetujuan_proposal_skripsi"
     ],
-    "154": [
+    "166": [
       "execution_analyze_completeness_construct",
       "execution_analyze_completeness_construct_analyze_papers",
       "execution_analyze_completeness_construct_rationale_1"
     ],
-    "155": [
+    "167": [
       "execution_generate_journal_catalog",
       "execution_generate_journal_catalog_generate_catalog",
       "execution_generate_journal_catalog_rationale_1"
     ],
-    "156": [
+    "168": [
       "execution_verify_book_sources",
       "execution_verify_book_sources_main",
       "execution_verify_book_sources_verify_local_pdf"
     ],
-    "157": [
+    "169": [
       "execution_verify_nobab3_pdf",
       "execution_verify_nobab3_pdf_rationale_1",
       "execution_verify_nobab3_pdf_run_audit"
     ],
-    "158": [
+    "170": [
       "execution_verify_pdf_headers",
       "execution_verify_pdf_headers_rationale_1",
       "execution_verify_pdf_headers_verify_pdfs"
     ],
-    "159": [
+    "171": [
       "execution_verify_word_layout",
       "execution_verify_word_layout_rationale_1",
       "execution_verify_word_layout_verify_docx"
     ],
-    "160": [
+    "172": [
       "execution_verify_word_outline",
       "execution_verify_word_outline_rationale_1",
       "execution_verify_word_outline_verify_document_outline"
     ],
-    "161": [
+    "173": [
+      "master_guide_skripsi_14_do_s_and_don_ts_pelajaran_dari_topik_sebelumnya",
+      "master_guide_skripsi_do",
+      "master_guide_skripsi_don_t"
+    ],
+    "174": [
+      "master_guide_skripsi_9_integritas_batas_penggunaan_ai",
+      "master_guide_skripsi_ai_dilarang_keras",
+      "master_guide_skripsi_data_sintetis_boleh_digunakan_hanya_untuk"
+    ],
+    "175": [
       "06_referensi_jurnal_pdf_03_buku_referensi_pdf_readme_repo",
       "06_referensi_jurnal_pdf_katalog_referensi_jurnal_catalog"
     ],
-    "162": [
+    "176": [
       "directives_verify_mendeley_integrity_ris_whitelist",
       "directives_verify_mendeley_integrity_zero_discrepancy_rule"
     ],
-    "163": [
+    "177": [
       "execution_build_interactive_presentation",
       "execution_build_interactive_presentation_main"
     ],
-    "164": [
+    "178": [
       "01_naskah_utama_images_gambar_rerangka_penelitian_self_control_m"
     ],
-    "165": [
+    "179": [
       "01_naskah_utama_proposal_skripsi_pokemon_tcg_daftar_pustaka"
     ],
-    "166": [
+    "180": [
       "04_riset_metodologi_prd_resolusi_revisi_dosen_research_gap_bab1_research_gap_7_relations"
     ],
-    "167": [
+    "181": [
       "04_riset_metodologi_template_source_of_truth_universal_evidence_ledger"
     ],
-    "168": [
+    "182": [
       "06_referensi_jurnal_pdf_03_buku_referensi_pdf_readme_book_repository"
     ],
-    "169": [
+    "183": [
       "06_referensi_jurnal_pdf_katalog_referensi_jurnal_empirical_journals"
     ],
-    "170": [
+    "184": [
       "06_referensi_jurnal_pdf_katalog_referensi_jurnal_pseudo_set_framing"
     ],
-    "171": [
+    "185": [
       "directives_universal_thesis_graph_of_agents_parity_gate"
     ],
-    "172": [
+    "186": [
       "skripsi_arthur_04_riset___metodologi_log_sesi_second_brain_log_doc"
     ],
-    "173": [
+    "187": [
       "skripsi_arthur_04_riset___metodologi_source_of_truth_zero_ghost_citations"
     ]
   },
   "cohesion": {
     "0": 0.023809523809523808,
-    "1": 0.059907834101382486,
+    "1": 0.055364314400458976,
     "2": 0.03278688524590164,
     "3": 0.03333333333333333,
-    "4": 0.044326241134751775,
+    "4": 0.043478260869565216,
     "5": 0.043478260869565216,
-    "6": 0.043478260869565216,
-    "7": 0.044444444444444446,
-    "8": 0.04878048780487805,
-    "9": 0.05128205128205128,
-    "10": 0.0625,
-    "11": 0.11264367816091954,
-    "12": 0.07936507936507936,
-    "13": 0.07407407407407407,
-    "14": 0.08333333333333333,
-    "15": 0.2077922077922078,
-    "16": 0.09523809523809523,
-    "17": 0.22105263157894736,
-    "18": 0.10526315789473684,
-    "19": 0.10526315789473684,
-    "20": 0.1111111111111111,
-    "21": 0.1111111111111111,
-    "22": 0.125,
+    "6": 0.044444444444444446,
+    "7": 0.11264367816091954,
+    "8": 0.07936507936507936,
+    "9": 0.08333333333333333,
+    "10": 0.2077922077922078,
+    "11": 0.09523809523809523,
+    "12": 0.09523809523809523,
+    "13": 0.22105263157894736,
+    "14": 0.10526315789473684,
+    "15": 0.10526315789473684,
+    "16": 0.1111111111111111,
+    "17": 0.1111111111111111,
+    "18": 0.16911764705882354,
+    "19": 0.125,
+    "20": 0.125,
+    "21": 0.13333333333333333,
+    "22": 0.13333333333333333,
     "23": 0.13333333333333333,
     "24": 0.13333333333333333,
-    "25": 0.13333333333333333,
+    "25": 0.14285714285714285,
     "26": 0.14285714285714285,
     "27": 0.14285714285714285,
-    "28": 0.24175824175824176,
-    "29": 0.15384615384615385,
-    "30": 0.15384615384615385,
-    "31": 0.16666666666666666,
-    "32": 0.16666666666666666,
+    "28": 0.14285714285714285,
+    "29": 0.14285714285714285,
+    "30": 0.24175824175824176,
+    "31": 0.15384615384615385,
+    "32": 0.15384615384615385,
     "33": 0.16666666666666666,
     "34": 0.16666666666666666,
     "35": 0.16666666666666666,
-    "36": 0.30303030303030304,
-    "37": 0.30303030303030304,
+    "36": 0.16666666666666666,
+    "37": 0.16666666666666666,
     "38": 0.16666666666666666,
-    "39": 0.21212121212121213,
-    "40": 0.18181818181818182,
-    "41": 0.18181818181818182,
-    "42": 0.18181818181818182,
-    "43": 0.2,
+    "39": 0.30303030303030304,
+    "40": 0.30303030303030304,
+    "41": 0.16666666666666666,
+    "42": 0.21212121212121213,
+    "43": 0.18181818181818182,
     "44": 0.18181818181818182,
     "45": 0.18181818181818182,
-    "46": 0.18181818181818182,
+    "46": 0.2,
     "47": 0.18181818181818182,
     "48": 0.18181818181818182,
     "49": 0.18181818181818182,
-    "50": 0.2,
-    "51": 0.4,
-    "52": 0.2,
+    "50": 0.18181818181818182,
+    "51": 0.18181818181818182,
+    "52": 0.18181818181818182,
     "53": 0.2,
-    "54": 0.2,
+    "54": 0.4,
     "55": 0.2,
-    "56": 0.2,
-    "57": 0.26666666666666666,
-    "58": 0.2222222222222222,
-    "59": 0.2222222222222222,
-    "60": 0.2222222222222222,
-    "61": 0.3055555555555556,
-    "62": 0.35714285714285715,
-    "63": 0.25,
-    "64": 0.35714285714285715,
-    "65": 0.25,
-    "66": 0.25,
-    "67": 0.25,
-    "68": 0.25,
-    "69": 0.25,
-    "70": 0.25,
-    "71": 0.25,
+    "56": 0.2222222222222222,
+    "57": 0.2,
+    "58": 0.2,
+    "59": 0.2,
+    "60": 0.2,
+    "61": 0.2,
+    "62": 0.2,
+    "63": 0.2,
+    "64": 0.26666666666666666,
+    "65": 0.2222222222222222,
+    "66": 0.2222222222222222,
+    "67": 0.2222222222222222,
+    "68": 0.2222222222222222,
+    "69": 0.2222222222222222,
+    "70": 0.3055555555555556,
+    "71": 0.35714285714285715,
     "72": 0.25,
-    "73": 0.25,
+    "73": 0.35714285714285715,
     "74": 0.25,
     "75": 0.25,
     "76": 0.25,
     "77": 0.25,
     "78": 0.25,
     "79": 0.25,
-    "80": 0.42857142857142855,
-    "81": 0.39285714285714285,
-    "82": 0.42857142857142855,
-    "83": 0.39285714285714285,
-    "84": 0.3333333333333333,
-    "85": 0.2857142857142857,
-    "86": 0.2857142857142857,
-    "87": 0.2857142857142857,
-    "88": 0.2857142857142857,
-    "89": 0.2857142857142857,
-    "90": 0.2857142857142857,
-    "91": 0.2857142857142857,
-    "92": 0.2857142857142857,
-    "93": 0.2857142857142857,
-    "94": 0.38095238095238093,
+    "80": 0.25,
+    "81": 0.25,
+    "82": 0.25,
+    "83": 0.25,
+    "84": 0.25,
+    "85": 0.25,
+    "86": 0.25,
+    "87": 0.25,
+    "88": 0.25,
+    "89": 0.42857142857142855,
+    "90": 0.39285714285714285,
+    "91": 0.42857142857142855,
+    "92": 0.39285714285714285,
+    "93": 0.3333333333333333,
+    "94": 0.2857142857142857,
     "95": 0.2857142857142857,
     "96": 0.2857142857142857,
     "97": 0.2857142857142857,
-    "98": 0.42857142857142855,
-    "99": 0.4,
-    "100": 0.3333333333333333,
-    "101": 0.3333333333333333,
-    "102": 0.3333333333333333,
-    "103": 0.3333333333333333,
-    "104": 0.3333333333333333,
-    "105": 0.3333333333333333,
-    "106": 0.3333333333333333,
-    "107": 0.5333333333333333,
+    "98": 0.2857142857142857,
+    "99": 0.2857142857142857,
+    "100": 0.38095238095238093,
+    "101": 0.2857142857142857,
+    "102": 0.2857142857142857,
+    "103": 0.38095238095238093,
+    "104": 0.2857142857142857,
+    "105": 0.2857142857142857,
+    "106": 0.2857142857142857,
+    "107": 0.42857142857142855,
     "108": 0.3333333333333333,
-    "109": 0.3333333333333333,
+    "109": 0.4,
     "110": 0.3333333333333333,
     "111": 0.3333333333333333,
     "112": 0.3333333333333333,
     "113": 0.3333333333333333,
     "114": 0.3333333333333333,
-    "115": 0.5333333333333333,
+    "115": 0.3333333333333333,
     "116": 0.3333333333333333,
-    "117": 0.3333333333333333,
+    "117": 0.5333333333333333,
     "118": 0.3333333333333333,
     "119": 0.3333333333333333,
     "120": 0.3333333333333333,
     "121": 0.3333333333333333,
-    "122": 0.4,
-    "123": 0.4,
-    "124": 0.5333333333333333,
+    "122": 0.3333333333333333,
+    "123": 0.3333333333333333,
+    "124": 0.3333333333333333,
     "125": 0.5333333333333333,
-    "126": 0.5,
-    "127": 0.4,
-    "128": 0.4,
-    "129": 0.4,
-    "130": 0.4,
-    "131": 0.4,
+    "126": 0.3333333333333333,
+    "127": 0.3333333333333333,
+    "128": 0.3333333333333333,
+    "129": 0.3333333333333333,
+    "130": 0.3333333333333333,
+    "131": 0.3333333333333333,
     "132": 0.4,
     "133": 0.4,
-    "134": 0.4,
-    "135": 0.4,
+    "134": 0.5333333333333333,
+    "135": 0.5333333333333333,
     "136": 0.4,
-    "137": 0.4,
-    "138": 0.6,
-    "139": 0.6,
-    "140": 0.5,
-    "141": 0.8,
-    "142": 0.5,
-    "143": 0.6666666666666666,
-    "144": 0.5,
-    "145": 0.5,
-    "146": 0.5,
-    "147": 0.5,
-    "148": 0.5,
-    "149": 0.6666666666666666,
-    "150": 0.8333333333333334,
-    "151": 0.5,
-    "152": 0.6666666666666666,
-    "153": 0.6666666666666666,
-    "154": 0.6666666666666666,
-    "155": 0.6666666666666666,
-    "156": 1.0,
-    "157": 0.6666666666666666,
-    "158": 0.6666666666666666,
-    "159": 0.6666666666666666,
-    "160": 0.6666666666666666,
-    "161": 1.0,
-    "162": 1.0,
-    "163": 1.0,
-    "164": 1.0,
-    "165": 1.0,
-    "166": 1.0,
-    "167": 1.0,
+    "137": 0.5,
+    "138": 0.4,
+    "139": 0.4,
+    "140": 0.4,
+    "141": 0.4,
+    "142": 0.4,
+    "143": 0.4,
+    "144": 0.4,
+    "145": 0.4,
+    "146": 0.4,
+    "147": 0.4,
+    "148": 0.4,
+    "149": 0.4,
+    "150": 0.6,
+    "151": 0.6,
+    "152": 0.5,
+    "153": 0.8,
+    "154": 0.4,
+    "155": 0.5,
+    "156": 0.6666666666666666,
+    "157": 0.5,
+    "158": 0.5,
+    "159": 0.5,
+    "160": 0.5,
+    "161": 0.6666666666666666,
+    "162": 0.8333333333333334,
+    "163": 0.5,
+    "164": 0.6666666666666666,
+    "165": 0.6666666666666666,
+    "166": 0.6666666666666666,
+    "167": 0.6666666666666666,
     "168": 1.0,
-    "169": 1.0,
-    "170": 1.0,
-    "171": 1.0,
-    "172": 1.0,
-    "173": 1.0
+    "169": 0.6666666666666666,
+    "170": 0.6666666666666666,
+    "171": 0.6666666666666666,
+    "172": 0.6666666666666666,
+    "173": 0.6666666666666666,
+    "174": 0.6666666666666666,
+    "175": 1.0,
+    "176": 1.0,
+    "177": 1.0,
+    "178": 1.0,
+    "179": 1.0,
+    "180": 1.0,
+    "181": 1.0,
+    "182": 1.0,
+    "183": 1.0,
+    "184": 1.0,
+    "185": 1.0,
+    "186": 1.0,
+    "187": 1.0
   },
   "gods": [
     {
@@ -2419,16 +2499,16 @@
     {
       "id": "execution_build_proposal_word_build_full_proposal",
       "label": "build_full_proposal()",
-      "degree": 24
-    },
-    {
-      "id": "master_guide_skripsi_master_guide_skripsi_panduan_lintas_topik",
-      "label": "MASTER GUIDE SKRIPSI — Panduan Lintas Topik",
-      "degree": 18
+      "degree": 27
     },
     {
       "id": "02_persiapan_sidang_panduan_belajar_proposal_10_simulasi_pertanyaan_bimbingan_sidang_kunci_jawaban",
       "label": "10. SIMULASI PERTANYAAN BIMBINGAN / SIDANG & KUNCI JAWABAN",
+      "degree": 18
+    },
+    {
+      "id": "master_guide_skripsi_master_guide_skripsi_panduan_lintas_topik",
+      "label": "MASTER GUIDE SKRIPSI \u2014 Panduan Lintas Topik",
       "degree": 18
     },
     {
@@ -2438,22 +2518,22 @@
     },
     {
       "id": "04_riset_metodologi_reusable_thesis_playbook_playbook_skripsi_s1_manajemen_feb_ukrida_pengetahuan_lintas_topik",
-      "label": "Playbook Skripsi S1 Manajemen FEB UKRIDA — Pengetahuan Lintas Topik",
+      "label": "Playbook Skripsi S1 Manajemen FEB UKRIDA \u2014 Pengetahuan Lintas Topik",
       "degree": 15
     },
     {
+      "id": "execution_build_proposal_word_add_frontmatter_heading",
+      "label": "add_frontmatter_heading()",
+      "degree": 14
+    },
+    {
+      "id": "execution_build_proposal_word_make_run_pure_black",
+      "label": "make_run_pure_black()",
+      "degree": 14
+    },
+    {
       "id": "05_pedoman_referensi_prd_ai_dosen_pembimbing_skripsi_v2_product_requirements_document_prd_versi_2_0",
-      "label": "Product Requirements Document (PRD) — Versi 2.0",
-      "degree": 14
-    },
-    {
-      "id": "04_riset_metodologi_log_sesi_second_brain_log_sesi_second_brain_riwayat_riset_pengembangan_skripsi",
-      "label": "📜 LOG SESI SECOND BRAIN — RIWAYAT RISET & PENGEMBANGAN SKRIPSI",
-      "degree": 14
-    },
-    {
-      "id": "01_naskah_utama_proposal_skripsi_pokemon_tcg_pengaruh_hedonic_motivation_desire_for_completeness_dan_speculative_motive_terhadap_impulsive_buying_booster_pack_kartu_pokémon_tcg_dengan_self_control_sebagai_variabel_moderasi",
-      "label": "PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI",
+      "label": "Product Requirements Document (PRD) \u2014 Versi 2.0",
       "degree": 14
     }
   ],
@@ -2514,41 +2594,8 @@
       "why": "connects across different repos/directories; semantically similar concepts with no structural link"
     }
   ],
-  "questions": [
-    {
-      "type": "ambiguous_edge",
-      "question": "What is the exact relationship between `Dr Fredella Colline Supervisor` and `Revisi Malam Research Gap Bab1 dan Format Sitasi`?",
-      "why": "Edge tagged AMBIGUOUS (relation: references) - confidence is low."
-    },
-    {
-      "type": "ambiguous_edge",
-      "question": "What is the exact relationship between `External data source citation not visible` and `Media Franchise Ranking Horizontal Bar Chart`?",
-      "why": "Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low."
-    },
-    {
-      "type": "ambiguous_edge",
-      "question": "What is the exact relationship between `Speculative Motive X3` and `Gambar 1.3 PriceCharting Shining Fates Disparity`?",
-      "why": "Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low."
-    },
-    {
-      "type": "bridge_node",
-      "question": "Why does `(322015175)` connect `(322015175)` to `Buku Pedoman Penyusunan Skripsi FEB`?",
-      "why": "High betweenness centrality (0.011) - this node is a cross-community bridge."
-    },
-    {
-      "type": "bridge_node",
-      "question": "Why does `Agent Instructions 3-Layer Architecture` connect `Orkestrasi pakar dan Graph of` to `Agent Instructions`, `B. Alternatif Kelompok yang MEMPERKUAT`?",
-      "why": "High betweenness centrality (0.009) - this node is a cross-community bridge."
-    },
-    {
-      "type": "bridge_node",
-      "question": "Why does `Bab ini terdiri dari sub bab berikut ini:` connect `Bab ini terdiri dari sub` to `Buku Pedoman Penyusunan Skripsi FEB`?",
-      "why": "High betweenness centrality (0.007) - this node is a cross-community bridge."
-    },
-    {
-      "type": "isolated_nodes",
-      "question": "What connects `1.1. Latar Belakang Penelitian`, `1.2. Perumusan Masalah`, `1.3. Tujuan Penelitian` to the rest of the system?",
-      "why": "1140 weakly-connected nodes found - possible documentation gaps or missing edges."
-    }
-  ]
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
 }

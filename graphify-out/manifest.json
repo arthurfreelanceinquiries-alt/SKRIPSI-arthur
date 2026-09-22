@@ -78,10 +78,10 @@
     "semantic_hash": "c394d2f28b84f4ca4b5e55d911cfd5f9"
   },
   "execution/build_proposal_word.py": {
-    "mtime": 1789999148.777027,
-    "seen": 1790000237.923231,
-    "ast_hash": "c201310226c9d9136c8f659da5988877",
-    "semantic_hash": "c201310226c9d9136c8f659da5988877"
+    "mtime": 1790068306.14802,
+    "seen": 1790068921.5374558,
+    "ast_hash": "bf04bbfde702b202dfd854787d8d6465",
+    "semantic_hash": "bf04bbfde702b202dfd854787d8d6465"
   },
   "execution/generate_journal_catalog.py": {
     "mtime": 1789676848.7491906,
@@ -264,16 +264,16 @@
     "semantic_hash": "f53623ccb6d896da609c4e7b58b027a8"
   },
   "execution/sync_markdown_from_tex.py": {
-    "mtime": 1789728014.465622,
-    "seen": 1789997744.5450819,
-    "ast_hash": "9c2c2c1b8b7cee910eca0b93b1cc7592",
-    "semantic_hash": "9c2c2c1b8b7cee910eca0b93b1cc7592"
+    "mtime": 1790006012.414063,
+    "seen": 1790068921.5403323,
+    "ast_hash": "505212c4e40dd54313a4045660f0c397",
+    "semantic_hash": "505212c4e40dd54313a4045660f0c397"
   },
   "execution/verify_docx_typography.py": {
-    "mtime": 1789999547.5431733,
-    "seen": 1790000237.9232914,
-    "ast_hash": "a348d842ad44d1b1bf7c3e6ab0b13c32",
-    "semantic_hash": "a348d842ad44d1b1bf7c3e6ab0b13c32"
+    "mtime": 1790066512.9022284,
+    "seen": 1790068921.54095,
+    "ast_hash": "2cf49c695a5a77927a916005aaddb8c4",
+    "semantic_hash": "2cf49c695a5a77927a916005aaddb8c4"
   },
   "execution/verify_format_and_typos.py": {
     "mtime": 1789637421.1652603,
@@ -654,8 +654,8 @@
     "semantic_hash": "f23942ff774a4ded6d5eef925b961470"
   },
   "07_Review_&_Audit/Paper_Audits/audit_libgen_books_report.json": {
-    "mtime": 1789999699.8342872,
-    "seen": 1790000237.923209,
+    "mtime": 1790068751.2531345,
+    "seen": 1790068921.5359766,
     "ast_hash": "8ecbdda2ef5ebaaf71c8d5f266b3ee65",
     "semantic_hash": "8ecbdda2ef5ebaaf71c8d5f266b3ee65"
   },
@@ -1169,12 +1169,6 @@
     "ast_hash": "c56c7bad6f4dc938921ef73516ec438b",
     "semantic_hash": "c56c7bad6f4dc938921ef73516ec438b"
   },
-  "execution/update_graphify.py": {
-    "mtime": 1790000223.598369,
-    "seen": 1790000237.9232752,
-    "ast_hash": "2cb769476a53c86c223ecfff97b2b0f7",
-    "semantic_hash": "2cb769476a53c86c223ecfff97b2b0f7"
-  },
   "02_Persiapan_Sidang/ppt_seminar_proposal/slides/slide01.html": {
     "mtime": 1789997028.0030527,
     "seen": 1790000237.9235258,
@@ -1312,5 +1306,17 @@
     "seen": 1790000237.923977,
     "ast_hash": "1292d506e1b6cfa404edf1a25d2c62bd",
     "semantic_hash": "1292d506e1b6cfa404edf1a25d2c62bd"
+  },
+  "execution/extract_frontmatter_pages.py": {
+    "mtime": 1790068119.9217637,
+    "seen": 1790068921.5383713,
+    "ast_hash": "bce0de900566cfe2917f63a55c4eb4d7",
+    "semantic_hash": "bce0de900566cfe2917f63a55c4eb4d7"
+  },
+  "execution/fix_libreoffice_toc_links.py": {
+    "mtime": 1790065374.8031385,
+    "seen": 1790068921.5383754,
+    "ast_hash": "e7f808465edc7505a99f725aeef17579",
+    "semantic_hash": "e7f808465edc7505a99f725aeef17579"
   }
 }
