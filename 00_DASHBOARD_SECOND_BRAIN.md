@@ -50,6 +50,7 @@
 
 ### 📁 B. Persiapan Sidang & Bimbingan
 * **Master Study Guide:** [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]] | [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.pdf|PDF Panduan Belajar]]
+* **Blueprint PPT Sempro Ringkas 7 Slide:** [[07_Review_&_Audit/Revisi_Dosen/2026-09-22_Arahan_Dosen_Struktur_PPT_Sempro_7_Slide.md|Cetak Biru 7 Slide & Talking Points (Arahan Ci Colline 22 Sep 2026)]]
 * **Slide Deck Seminar Proposal (PPTX):** [[02_Persiapan_Sidang/ppt_seminar_proposal/Proposal_Arthur_Sempro_PokemonTCG.pptx]] *(15 slide FinTech Dark Mode, 5,17 MB, editable)* | [[02_Persiapan_Sidang/ppt_seminar_proposal/slides/|Folder Slide HTML]]
 * **Simulasi Sidang & Soal Sulit:** [[02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/03_PERTANYAAN_SIDANG_SULIT.md]] *(Termasuk SULIT 11: Cara menjawab asal usul referensi)*
 * **Flashcard & Kamus Istilah:** [[02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/02_FLASHCARD_ISTILAH.md]]
@@ -75,7 +76,7 @@
 * **SOP Validasi Integritas Mendeley:** [[directives/verify_mendeley_integrity.md]] *(Whitelist tag RIS & SOP verifikasi pra-terbang)*
 * **Suite Uji Otomatis Integritas Mendeley:** [[execution/verify_mendeley_integrity.py]] *(Test suite 6-arah bebas dependensi)*
 * **Suite Uji Otomatis URL Empiris:** [[execution/verify_live_urls.py]] *(Pemeriksa link hidup & deteksi direktori fiktif)*
-* **Riwayat Revisi & Audit:** [[07_Review_&_Audit/Revisi_Dosen/2026-09-16_Revisi_Dosen_Sumber_Pokemon_Mendeley_Daftar_Pustaka.md|Revisi Dosen (16 Sep 2026: Sumber Pokemon, Mendeley, DP A-Z)]] | [[07_Review_&_Audit/Revisi_Dosen/2026-09-14_Review_Teknis_Prism_AI_dan_Matriks_Resolusi.md]] | [[07_Review_&_Audit/Revisi_Dosen/2026-09-09_Revisi_Dosen_dan_Opsi_Moderasi.md]]
+* **Riwayat Revisi & Audit:** [[07_Review_&_Audit/Revisi_Dosen/2026-09-22_Arahan_Dosen_Struktur_PPT_Sempro_7_Slide.md|Revisi Dosen (22 Sep 2026: Tips & Trik PPT Sempro Ringkas 7 Slide)]] | [[07_Review_&_Audit/Revisi_Dosen/2026-09-16_Revisi_Dosen_Sumber_Pokemon_Mendeley_Daftar_Pustaka.md|Revisi Dosen (16 Sep 2026: Sumber Pokemon, Mendeley, DP A-Z)]] | [[07_Review_&_Audit/Revisi_Dosen/2026-09-14_Review_Teknis_Prism_AI_dan_Matriks_Resolusi.md]] | [[07_Review_&_Audit/Revisi_Dosen/2026-09-09_Revisi_Dosen_dan_Opsi_Moderasi.md]]
 
 
 

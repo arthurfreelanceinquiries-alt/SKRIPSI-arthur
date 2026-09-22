@@ -7,6 +7,24 @@
 
 ---
 
+## 📅 Sesi 22 September 2026 (Sesi 23): Penyerapan & Kodifikasi Arahan Dosen (Ci Dr. Fredella Colline) — Tips & Trik Struktur PPT Sempro Ringkas 7 Slide
+
+* **Fokus Pekerjaan:**
+  - Menyerap, mendokumentasikan, dan menganalisis arahan dosen pembimbing (Dr. Fredella Colline) mengenai pembuatan materi presentasi Seminar Proposal (Sempro) yang padat, tajam, dan efisien (maksimal 7 slide).
+  - Merancang cetak biru arsitektur 7 slide di [[07_Review_&_Audit/Revisi_Dosen/2026-09-22_Arahan_Dosen_Struktur_PPT_Sempro_7_Slide.md]] lengkap dengan kartu visual ringkas, alokasi waktu bicara (1–1,5 menit per slide), naskah *talking points*, serta kisi-kisi jawaban pertanyaan kritis penguji.
+* **Masalah yang Diselesaikan:**
+  - Menghindari risiko *over-presentation* dan *wall-of-text* pada slide yang dapat mengaburkan pesan inti atau menghabiskan durasi sebelum mencapai bab metode.
+  - Memetakan 15 slide presentasi sebelumnya menjadi 7 slide eksekutif berdaya hantam tinggi (*high-impact executive deck*).
+* **Output yang Dihasilkan:**
+  - Dokumen panduan & cetak biru: [[07_Review_&_Audit/Revisi_Dosen/2026-09-22_Arahan_Dosen_Struktur_PPT_Sempro_7_Slide.md]] (Ringkasan 7 slide, narasi verbal, tips mentalitas sidang).
+  - Tautan navigasi di Dashboard Second Brain: [[00_DASHBOARD_SECOND_BRAIN.md]].
+* **File yang Diperbarui/Dibuat:**
+  - [[07_Review_&_Audit/Revisi_Dosen/2026-09-22_Arahan_Dosen_Struktur_PPT_Sempro_7_Slide.md]] *(BARU)*
+  - [[00_DASHBOARD_SECOND_BRAIN.md]] *(dimodifikasi: +link blueprint PPT 7 slide)*
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] *(log ini)*
+
+---
+
 ## 📅 Sesi 22 September 2026 (Sesi 22): Refaktorisasi Arsitektur Modular — Pemisahan 6 Halaman Frontmatter ke File DOCX Individual
 
 * **Fokus Pekerjaan:**
