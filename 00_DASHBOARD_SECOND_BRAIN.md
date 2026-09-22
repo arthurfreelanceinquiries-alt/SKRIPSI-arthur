@@ -51,6 +51,7 @@
 ### 📁 B. Persiapan Sidang & Bimbingan
 * **Master Study Guide:** [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]] | [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.pdf|PDF Panduan Belajar]]
 * **Blueprint PPT Sempro Ringkas 7 Slide:** [[07_Review_&_Audit/Revisi_Dosen/2026-09-22_Arahan_Dosen_Struktur_PPT_Sempro_7_Slide.md|Cetak Biru 7 Slide & Talking Points (Arahan Ci Colline 22 Sep 2026)]]
+* **Paket Handoff AI Lain (PRD & Plan PPT 7 Slide):** [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/README.md|Folder 02_Rencana_PPT_Sempro_7_Slide/]] · [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/PRD_PPT_SEMPRO_7_SLIDE.md|PRD]] · [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/IMPLEMENTATION_PLAN_PPT_SEMPRO_7_SLIDE.md|Implementation Plan]] · [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/PROMPT_UNTUK_AI_LAIN.md|Prompt Siap Copy-Paste]]
 * **Slide Deck Seminar Proposal (PPTX):** [[02_Persiapan_Sidang/ppt_seminar_proposal/Proposal_Arthur_Sempro_PokemonTCG.pptx]] *(15 slide FinTech Dark Mode, 5,17 MB, editable)* | [[02_Persiapan_Sidang/ppt_seminar_proposal/slides/|Folder Slide HTML]]
 * **Simulasi Sidang & Soal Sulit:** [[02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/03_PERTANYAAN_SIDANG_SULIT.md]] *(Termasuk SULIT 11: Cara menjawab asal usul referensi)*
 * **Flashcard & Kamus Istilah:** [[02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/02_FLASHCARD_ISTILAH.md]]

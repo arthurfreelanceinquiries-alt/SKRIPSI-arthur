@@ -17,10 +17,19 @@
   - Memetakan 15 slide presentasi sebelumnya menjadi 7 slide eksekutif berdaya hantam tinggi (*high-impact executive deck*).
 * **Output yang Dihasilkan:**
   - Dokumen panduan & cetak biru: [[07_Review_&_Audit/Revisi_Dosen/2026-09-22_Arahan_Dosen_Struktur_PPT_Sempro_7_Slide.md]] (Ringkasan 7 slide, narasi verbal, tips mentalitas sidang).
+  - Folder paket handoff AI lain di [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/]]:
+    1. `PRD_PPT_SEMPRO_7_SLIDE.md` — Spesifikasi fungsional & visual 7 slide.
+    2. `IMPLEMENTATION_PLAN_PPT_SEMPRO_7_SLIDE.md` — Rencana implementasi teknis (Python pptx / HTML / Marp) + data dictionary JSON.
+    3. `PROMPT_UNTUK_AI_LAIN.md` — Prompt master siap copy-paste ke ChatGPT, Claude, Gamma, atau Cursor.
+    4. `README.md` — Indeks dan panduan penggunaan paket handoff.
   - Tautan navigasi di Dashboard Second Brain: [[00_DASHBOARD_SECOND_BRAIN.md]].
 * **File yang Diperbarui/Dibuat:**
+  - [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/PRD_PPT_SEMPRO_7_SLIDE.md]] *(BARU)*
+  - [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/IMPLEMENTATION_PLAN_PPT_SEMPRO_7_SLIDE.md]] *(BARU)*
+  - [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/PROMPT_UNTUK_AI_LAIN.md]] *(BARU)*
+  - [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/README.md]] *(BARU)*
   - [[07_Review_&_Audit/Revisi_Dosen/2026-09-22_Arahan_Dosen_Struktur_PPT_Sempro_7_Slide.md]] *(BARU)*
-  - [[00_DASHBOARD_SECOND_BRAIN.md]] *(dimodifikasi: +link blueprint PPT 7 slide)*
+  - [[00_DASHBOARD_SECOND_BRAIN.md]] *(dimodifikasi: +link handoff PPT 7 slide)*
   - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] *(log ini)*
 
 ---
