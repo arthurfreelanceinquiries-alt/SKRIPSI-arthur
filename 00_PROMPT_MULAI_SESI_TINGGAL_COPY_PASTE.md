@@ -121,6 +121,27 @@ File apa saja yang berubah, dan apa status akhirnya?
 
 ---
 
+### 🔹 Opsi 7: Diagnostik Fatal Error Naskah DOCX & Auto-Repair Generator
+*Gunakan ini jika Anda menemukan kesalahan fatal pada naskah Word (kebocoran sintaks LaTeX mentah pada tabel/paragraf, border tabel liar pada lembar pengesahan, atau asimetri spasi tanda tangan):*
+
+```text
+Halo! Jalankan skill "obsidian-second-brain". Tolong lakukan audit diagnostik tipografi, deteksi kebocoran kode LaTeX mentah, dan auto-repair naskah Microsoft Word (.docx):
+
+1. [DIAGNOSTIK FATAL ERROR]: Jalankan audit ketat `python execution/verify_docx_typography.py`. Periksa apakah ada:
+   - Kebocoran sintaks mentah LaTeX (`\begin{longtable}`, `\toprule`, `\rightarrow`, `\begingroup`, dll.) di paragraf naskah.
+   - Border grid tabel liar pada Halaman Pernyataan & Persetujuan (hal ii & iii).
+   - Asimetri baseline tanda tangan Dosen Pembimbing vs Kaprodi.
+   - Font non-hitam atau themeColor pada heading/run dokumen.
+2. [AUTO-REPAIR JIKA ADA ERROR]: Jika ditemukan kegagalan/error fatal pada poin 1:
+   - Bersihkan dan format ulang menggunakan `execution/build_proposal_word.py` (kedua varian: proposal lengkap dan tanpa Bab 3).
+   - Pastikan Tabel 1.1 (Matriks Research Gap) dirender sebagai tabel Word APA 7 murni, bukan teks TeX mentah.
+   - Kunci tabel identitas & tanda tangan formal menjadi 100% borderless dengan struktur 3-baris presisi.
+3. [VERIFIKASI ULANG]: Jalankan kembali `python execution/verify_docx_typography.py` dan `python execution/run_thesis_graph.py --gate parity` hingga 100% PASS (0 fatal error).
+4. Laporkan ringkasan hasil audit sebelum vs sesudah perbaikan!
+```
+
+---
+
 ## 🧠 MENGAPA PROMPT INI BIKIN KONTEKS TIDAK HILANG?
 
 Banyak pengguna AI mengeluhkan *"Kok AI-nya lupa ya kemarin kita ngomongin apa?"*. Hal itu terjadi karena sistem AI tidak tahu file mana yang harus dibaca duluan.

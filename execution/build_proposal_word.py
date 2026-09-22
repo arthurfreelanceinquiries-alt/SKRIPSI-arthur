@@ -125,6 +125,57 @@ def set_cell_shading(cell, color_hex="F2F2F2"):
     tcPr.append(shd)
 
 
+def remove_table_borders(table):
+    """Remove all borders from a table (for borderless identity & signature blocks)."""
+    tblPr = table._tbl.tblPr
+    borders = parse_xml(f'''
+        <w:tblBorders {nsdecls("w")}>
+            <w:top w:val="none"/>
+            <w:left w:val="none"/>
+            <w:bottom w:val="none"/>
+            <w:right w:val="none"/>
+            <w:insideH w:val="none"/>
+            <w:insideV w:val="none"/>
+        </w:tblBorders>
+    ''')
+    for existing in tblPr.findall(qn('w:tblBorders')):
+        tblPr.remove(existing)
+    tblPr.append(borders)
+
+
+def set_col_widths_fixed(table, col_widths):
+    """Set explicit fixed column widths at both table grid and cell levels."""
+    tblPr = table._tbl.tblPr
+    for ex in tblPr.findall(qn('w:tblLayout')):
+        tblPr.remove(ex)
+    tblLayout = parse_xml(f'<w:tblLayout {nsdecls("w")} w:type="fixed"/>')
+    tblPr.append(tblLayout)
+
+    tblGrid = table._tbl.find(qn('w:tblGrid'))
+    if tblGrid is None:
+        tblGrid = OxmlElement('w:tblGrid')
+        table._tbl.insert(list(table._tbl).index(tblPr) + 1, tblGrid)
+    else:
+        tblGrid.clear()
+
+    for w in col_widths:
+        gridCol = OxmlElement('w:gridCol')
+        w_dxa = int(w.twips if hasattr(w, 'twips') else (w * 567 if isinstance(w, (int, float)) else w))
+        gridCol.set(qn('w:w'), str(w_dxa))
+        tblGrid.append(gridCol)
+
+    for row in table.rows:
+        for c_idx, cell in enumerate(row.cells):
+            if c_idx < len(col_widths):
+                cell.width = col_widths[c_idx]
+                tcPr = cell._tc.get_or_add_tcPr()
+                for tcW in tcPr.findall(qn('w:tcW')):
+                    tcPr.remove(tcW)
+                w_dxa = int(col_widths[c_idx].twips if hasattr(col_widths[c_idx], 'twips') else (col_widths[c_idx] * 567 if isinstance(col_widths[c_idx], (int, float)) else col_widths[c_idx]))
+                new_tcW = parse_xml(f'<w:tcW {nsdecls("w")} w:w="{w_dxa}" w:type="dxa"/>')
+                tcPr.append(new_tcW)
+
+
 def apply_apa7_table_borders(table):
     """Apply strict APA 7th Edition open table borders (no vertical lines, 3 horizontal rules)."""
     tblPr = table._tbl.tblPr
@@ -138,6 +189,8 @@ def apply_apa7_table_borders(table):
             <w:insideV w:val="none"/>
         </w:tblBorders>
     ''')
+    for existing in tblPr.findall(qn('w:tblBorders')):
+        tblPr.remove(existing)
     tblPr.append(borders)
 
     # Apply bottom border to header row (row 0)
@@ -149,6 +202,8 @@ def apply_apa7_table_borders(table):
                     <w:bottom w:val="single" w:sz="6" w:space="0" w:color="000000"/>
                 </w:tcBorders>
             ''')
+            for existing in tcPr.findall(qn('w:tcBorders')):
+                tcPr.remove(existing)
             tcPr.append(tcBorders)
 
     # Ensure rows do not split across pages and header repeats
@@ -397,6 +452,18 @@ def clean_academic_text(text: str) -> str:
     text = text.replace(r'$n = 120-150$', '*n* = 120–150')
 
     # Comprehensive LaTeX Greek and math command replacement
+    text = text.replace(r'$\rightarrow$', '→').replace(r'\rightarrow', '→')
+    text = text.replace(r'$\leftarrow$', '←').replace(r'\leftarrow', '←')
+    text = text.replace(r'$\Rightarrow$', '⇒').replace(r'\Rightarrow', '⇒')
+    text = text.replace(r'$\ge$', '≥').replace(r'\ge', '≥')
+    text = text.replace(r'$\le$', '≤').replace(r'\le', '≤')
+    text = text.replace(r'0{,}092', '0,092').replace(r'0{,}60', '0,60').replace(r'-0{,}3473', '-0,3473')
+    text = re.sub(r'\{([0-9]+)\}', r'\1', text)
+    text = text.replace(r'n.s.\ ', 'n.s. ').replace(r'n.s.\)', 'n.s.)').replace(r'n.s.\,', 'n.s.,')
+    text = text.replace(r'(\emph{The Why*):}', '(*The Why*):')
+    text = text.replace(r'(\emph{The Why*}):', '(*The Why*):')
+    text = text.replace(r'\emph{The Why*}', '*The Why*')
+
     text = re.sub(r'\\beta_\{?([0-9]+)\}?', lambda m: 'β' + ''.join(chr(0x2080 + int(d)) for d in m.group(1)), text)
     text = text.replace(r'\beta_{\text{int}}', 'β_int')
     text = text.replace(r'\beta_{int}', 'β_int')
@@ -586,8 +653,6 @@ def add_heading_3(doc, title):
 
 def add_frontmatter_heading(doc, title, page_break=False):
     """Frontmatter Heading: Centered, Bold, 12pt, ALL CAPS, Heading 1 style + outlineLvl 0."""
-    if page_break:
-        doc.add_page_break()
     p = doc.add_paragraph(style='Heading 1')
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p.paragraph_format.space_before = Pt(0)
@@ -606,8 +671,6 @@ def add_frontmatter_heading(doc, title, page_break=False):
 
 def add_daftar_isi_heading(doc, page_break=True):
     """Frontmatter Heading for DAFTAR ISI: Centered, Bold, 12pt, Pure Black, NO Heading 1 / outline level to prevent recursive inclusion in TOC."""
-    if page_break:
-        doc.add_page_break()
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p.paragraph_format.space_before = Pt(0)
@@ -627,30 +690,91 @@ def add_daftar_isi_heading(doc, page_break=True):
 # MAIN BUILDER ENGINE
 # ============================================================================
 
+
+def _setup_doc_base_styles(doc):
+    """Configure FEB UKRIDA 2023 base styles (Normal, Footer, Heading 1-3).
+    Extracted as standalone function so it can be imported by extract_frontmatter_pages.py.
+    """
+    import docx
+    try:
+        style_normal = doc.styles['Normal']
+        style_normal.font.name = 'Times New Roman'
+        style_normal.font.size = Pt(12)
+        style_normal.font.color.rgb = RGBColor(0, 0, 0)
+    except Exception as e:
+        print(f"[WARN] Could not customize Normal style: {e}")
+
+    try:
+        style_footer = doc.styles['Footer']
+        style_footer.font.name = 'Times New Roman'
+        style_footer.font.size = Pt(10)
+        style_footer.font.bold = True
+        style_footer.font.color.rgb = RGBColor(0, 0, 0)
+        style_footer.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+    except Exception as e:
+        print(f"[WARN] Could not customize Footer style: {e}")
+
+    for level, style_name in [(1, 'Heading 1'), (2, 'Heading 2'), (3, 'Heading 3')]:
+        try:
+            h_style = doc.styles[style_name]
+            h_style.font.name = 'Times New Roman'
+            h_style.font.size = Pt(12)
+            h_style.font.bold = True
+            h_style.font.color.rgb = RGBColor(0, 0, 0)
+            h_style.paragraph_format.line_spacing = 1.5
+            h_style.paragraph_format.keep_with_next = True
+            h_style.paragraph_format.first_line_indent = Cm(0)
+            if level == 1:
+                h_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                h_style.paragraph_format.space_before = Pt(0)
+                h_style.paragraph_format.space_after = Pt(12)
+            elif level == 2:
+                h_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                h_style.paragraph_format.space_before = Pt(12)
+                h_style.paragraph_format.space_after = Pt(6)
+            elif level == 3:
+                h_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+                h_style.paragraph_format.space_before = Pt(6)
+                h_style.paragraph_format.space_after = Pt(3)
+
+            rPr = h_style.element.get_or_add_rPr()
+            for c in rPr.findall(qn('w:color')):
+                rPr.remove(c)
+            rPr.append(parse_xml(f'<w:color {nsdecls("w")} w:val="000000"/>'))
+            for rf in rPr.findall(qn('w:rFonts')):
+                rPr.remove(rf)
+            rPr.append(parse_xml(f'<w:rFonts {nsdecls("w")} w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>'))
+        except Exception as e:
+            print(f"[WARN] Could not customize style {style_name}: {e}")
+
+
 def build_formal_approval_sheets(doc, id_data):
-    """Generates the 3 formal academic sheets required for full thesis proposals."""
+    """Generates the 3 formal academic sheets required for full thesis proposals with borderless tables and perfect alignment."""
     # 1. Pernyataan Keaslian (hal. ii)
     add_frontmatter_heading(doc, "PERNYATAAN KEASLIAN KARYA TUGAS AKHIR", page_break=False)
 
     add_body_paragraph(doc, "Saya mahasiswa Universitas Kristen Krida Wacana:", indent=False)
 
-    # Identity Table
+    # Identity Table (Border-free, snug colon, fixed widths matching 14.0cm text width)
     tbl_id = doc.add_table(rows=4, cols=3)
     tbl_id.alignment = WD_TABLE_ALIGNMENT.CENTER
+    col_id_widths = [Cm(3.8), Cm(0.4), Cm(9.8)]
+    set_col_widths_fixed(tbl_id, col_id_widths)
+    remove_table_borders(tbl_id)
+
     for row_idx, (col1, col2, col3) in enumerate(id_data):
         row = tbl_id.rows[row_idx]
         for c_idx, val in enumerate([col1, col2, col3]):
             cell = row.cells[c_idx]
-            set_cell_margins(cell, top=40, bottom=40, left=40, right=40)
+            set_cell_margins(cell, top=20, bottom=20, left=0 if c_idx == 0 else 40, right=40)
             p_cell = cell.paragraphs[0]
             p_cell.paragraph_format.space_before = Pt(0)
             p_cell.paragraph_format.space_after = Pt(0)
             p_cell.paragraph_format.line_spacing = 1.15
+            p_cell.paragraph_format.first_line_indent = Cm(0)
+            p_cell.alignment = WD_ALIGN_PARAGRAPH.CENTER if c_idx == 1 else WD_ALIGN_PARAGRAPH.LEFT
             rc = p_cell.add_run(val)
-            rc.font.name = "Times New Roman"
-            rc.font.size = Pt(12)
-            if c_idx == 2:
-                rc.font.bold = True
+            make_run_pure_black(rc, "Times New Roman", Pt(12), bold=(c_idx == 2))
 
     add_body_paragraph(doc, "Dengan ini menyatakan dengan sesungguhnya bahwa Proposal Skripsi yang berjudul:", indent=False)
 
@@ -659,10 +783,9 @@ def build_formal_approval_sheets(doc, id_data):
     p_j.paragraph_format.space_before = Pt(6)
     p_j.paragraph_format.space_after = Pt(6)
     p_j.paragraph_format.line_spacing = 1.15
+    p_j.paragraph_format.first_line_indent = Cm(0)
     rj = p_j.add_run("“PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI”")
-    rj.font.name = "Times New Roman"
-    rj.font.size = Pt(11)
-    rj.font.bold = True
+    make_run_pure_black(rj, "Times New Roman", Pt(11), bold=True)
 
     add_body_paragraph(doc, "adalah:", indent=False)
 
@@ -679,30 +802,37 @@ def build_formal_approval_sheets(doc, id_data):
         p_pt.paragraph_format.space_before = Pt(0)
         p_pt.paragraph_format.space_after = Pt(4)
         p_pt.paragraph_format.line_spacing = 1.15
-        p_pt.add_run(f"{idx+1}.  ").font.bold = True
-        p_pt.add_run(pt_text)
+        r_idx = p_pt.add_run(f"{idx+1}.  ")
+        make_run_pure_black(r_idx, "Times New Roman", Pt(12), bold=True)
+        r_txt = p_pt.add_run(pt_text)
+        make_run_pure_black(r_txt, "Times New Roman", Pt(12))
 
-    # Signature Block Pernyataan Keaslian
+    # Signature Block Pernyataan Keaslian (Border-free, fixed 7.0cm width)
     tbl_sig = doc.add_table(rows=1, cols=2)
     tbl_sig.alignment = WD_TABLE_ALIGNMENT.CENTER
+    set_col_widths_fixed(tbl_sig, [Cm(7.0), Cm(7.0)])
+    remove_table_borders(tbl_sig)
     c_left = tbl_sig.rows[0].cells[0]
     c_right = tbl_sig.rows[0].cells[1]
 
     p_l = c_left.paragraphs[0]
     p_l.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_l.paragraph_format.space_before = Pt(24)
+    p_l.paragraph_format.first_line_indent = Cm(0)
     rl = p_l.add_run("\n\n[ Materai Rp10.000 ]\n\n")
-    rl.font.size = Pt(10)
-    rl.font.italic = True
+    make_run_pure_black(rl, "Times New Roman", Pt(10), italic=True)
 
     p_r = c_right.paragraphs[0]
     p_r.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_r.paragraph_format.space_before = Pt(12)
     p_r.paragraph_format.line_spacing = 1.15
-    p_r.add_run("Jakarta, 12 September 2026\nYang membuat pernyataan,\n\n\n\n\n")
+    p_r.paragraph_format.first_line_indent = Cm(0)
+    r_hdr = p_r.add_run("Jakarta, 12 September 2026\nYang membuat pernyataan,\n\n\n\n\n")
+    make_run_pure_black(r_hdr, "Times New Roman", Pt(12))
     r_nm = p_r.add_run("Arthur Reezan\n")
-    r_nm.font.bold = True
-    p_r.add_run("NIM: 312023002")
+    make_run_pure_black(r_nm, "Times New Roman", Pt(12), bold=True)
+    r_nim = p_r.add_run("NIM: 312023002")
+    make_run_pure_black(r_nim, "Times New Roman", Pt(12))
 
     # 2. Halaman Persetujuan Proposal Skripsi (hal. iii)
     add_frontmatter_heading(doc, "HALAMAN PERSETUJUAN PROPOSAL SKRIPSI", page_break=True)
@@ -711,53 +841,104 @@ def build_formal_approval_sheets(doc, id_data):
 
     tbl_per = doc.add_table(rows=4, cols=3)
     tbl_per.alignment = WD_TABLE_ALIGNMENT.CENTER
+    set_col_widths_fixed(tbl_per, col_id_widths)
+    remove_table_borders(tbl_per)
+
     for row_idx, (col1, col2, col3) in enumerate(id_data):
         row = tbl_per.rows[row_idx]
         for c_idx, val in enumerate([col1, col2, col3]):
             cell = row.cells[c_idx]
-            set_cell_margins(cell, top=40, bottom=40, left=40, right=40)
+            set_cell_margins(cell, top=20, bottom=20, left=0 if c_idx == 0 else 40, right=40)
             p_cell = cell.paragraphs[0]
             p_cell.paragraph_format.space_before = Pt(0)
             p_cell.paragraph_format.space_after = Pt(0)
             p_cell.paragraph_format.line_spacing = 1.15
+            p_cell.paragraph_format.first_line_indent = Cm(0)
+            p_cell.alignment = WD_ALIGN_PARAGRAPH.CENTER if c_idx == 1 else WD_ALIGN_PARAGRAPH.LEFT
             rc = p_cell.add_run(val)
-            rc.font.name = "Times New Roman"
-            rc.font.size = Pt(12)
-            if c_idx == 2:
-                rc.font.bold = True
+            make_run_pure_black(rc, "Times New Roman", Pt(12), bold=(c_idx == 2))
 
     p_j2 = doc.add_paragraph()
     p_j2.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_j2.paragraph_format.space_before = Pt(12)
     p_j2.paragraph_format.space_after = Pt(12)
     p_j2.paragraph_format.line_spacing = 1.15
+    p_j2.paragraph_format.first_line_indent = Cm(0)
     rj2 = p_j2.add_run("“PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI”")
-    rj2.font.name = "Times New Roman"
-    rj2.font.size = Pt(11)
-    rj2.font.bold = True
+    make_run_pure_black(rj2, "Times New Roman", Pt(11), bold=True)
 
     add_body_paragraph(doc, "Telah disetujui untuk diajukan dalam Seminar Proposal Skripsi Program Studi S1 Manajemen Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana.", indent=False)
 
-    tbl_apv = doc.add_table(rows=1, cols=2)
+    # 3-Row Layout for Approval Signatures: Guaranteed Horizontal Baseline Parity & Border-Free
+    tbl_apv = doc.add_table(rows=3, cols=2)
     tbl_apv.alignment = WD_TABLE_ALIGNMENT.CENTER
-    ca1 = tbl_apv.rows[0].cells[0]
-    ca2 = tbl_apv.rows[0].cells[1]
+    set_col_widths_fixed(tbl_apv, [Cm(7.0), Cm(7.0)])
+    remove_table_borders(tbl_apv)
 
-    p1 = ca1.paragraphs[0]
-    p1.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p1.paragraph_format.line_spacing = 1.15
-    p1.add_run("Menyetujui,\nDosen Pembimbing\n\n\n\n\n")
-    r1 = p1.add_run("Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A\n")
-    r1.font.bold = True
-    p1.add_run("NIDN: [NIDN_DOSEN]")
+    # Row 0: Titles
+    ca0_left = tbl_apv.rows[0].cells[0]
+    set_cell_margins(ca0_left, top=0, bottom=0, left=20, right=20)
+    p0_l = ca0_left.paragraphs[0]
+    p0_l.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p0_l.paragraph_format.space_before = Pt(12)
+    p0_l.paragraph_format.space_after = Pt(0)
+    p0_l.paragraph_format.line_spacing = 1.15
+    p0_l.paragraph_format.first_line_indent = Cm(0)
+    r0_l = p0_l.add_run("Menyetujui,\nDosen Pembimbing")
+    make_run_pure_black(r0_l, "Times New Roman", Pt(12))
 
-    p2 = ca2.paragraphs[0]
-    p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p2.paragraph_format.line_spacing = 1.15
-    p2.add_run("Mengetahui,\nKetua Program Studi S1 Manajemen\n\n\n\n")
-    r2 = p2.add_run("Rita Amelinda, S.E., M.M.\n")
-    r2.font.bold = True
-    p2.add_run("NIDN: [NIDN_KAPRODI]")
+    ca0_right = tbl_apv.rows[0].cells[1]
+    set_cell_margins(ca0_right, top=0, bottom=0, left=20, right=20)
+    p0_r = ca0_right.paragraphs[0]
+    p0_r.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p0_r.paragraph_format.space_before = Pt(12)
+    p0_r.paragraph_format.space_after = Pt(0)
+    p0_r.paragraph_format.line_spacing = 1.15
+    p0_r.paragraph_format.first_line_indent = Cm(0)
+    r0_r = p0_r.add_run("Mengetahui,\nKetua Program Studi S1 Manajemen")
+    make_run_pure_black(r0_r, "Times New Roman", Pt(12))
+
+    # Row 1: Signature Space (fixed height ~55pt)
+    ca1_left = tbl_apv.rows[1].cells[0]
+    set_cell_margins(ca1_left, top=0, bottom=0, left=20, right=20)
+    p1_l = ca1_left.paragraphs[0]
+    p1_l.paragraph_format.space_before = Pt(55)
+    p1_l.paragraph_format.space_after = Pt(0)
+    p1_l.paragraph_format.line_spacing = 1.0
+
+    ca1_right = tbl_apv.rows[1].cells[1]
+    set_cell_margins(ca1_right, top=0, bottom=0, left=20, right=20)
+    p1_r = ca1_right.paragraphs[0]
+    p1_r.paragraph_format.space_before = Pt(55)
+    p1_r.paragraph_format.space_after = Pt(0)
+    p1_r.paragraph_format.line_spacing = 1.0
+
+    # Row 2: Names & NIDN (Locked at exact same horizontal baseline)
+    ca2_left = tbl_apv.rows[2].cells[0]
+    set_cell_margins(ca2_left, top=0, bottom=0, left=20, right=20)
+    p2_l = ca2_left.paragraphs[0]
+    p2_l.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p2_l.paragraph_format.space_before = Pt(0)
+    p2_l.paragraph_format.space_after = Pt(0)
+    p2_l.paragraph_format.line_spacing = 1.15
+    p2_l.paragraph_format.first_line_indent = Cm(0)
+    r2_l_name = p2_l.add_run("Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A\n")
+    make_run_pure_black(r2_l_name, "Times New Roman", Pt(12), bold=True)
+    r2_l_nidn = p2_l.add_run("NIDN: [NIDN_DOSEN]")
+    make_run_pure_black(r2_l_nidn, "Times New Roman", Pt(12))
+
+    ca2_right = tbl_apv.rows[2].cells[1]
+    set_cell_margins(ca2_right, top=0, bottom=0, left=20, right=20)
+    p2_r = ca2_right.paragraphs[0]
+    p2_r.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p2_r.paragraph_format.space_before = Pt(0)
+    p2_r.paragraph_format.space_after = Pt(0)
+    p2_r.paragraph_format.line_spacing = 1.15
+    p2_r.paragraph_format.first_line_indent = Cm(0)
+    r2_r_name = p2_r.add_run("Rita Amelinda, S.E., M.M.\n")
+    make_run_pure_black(r2_r_name, "Times New Roman", Pt(12), bold=True)
+    r2_r_nidn = p2_r.add_run("NIDN: [NIDN_KAPRODI]")
+    make_run_pure_black(r2_r_nidn, "Times New Roman", Pt(12))
 
     # 3. Halaman Pengesahan Tim Penguji (hal. iv)
     add_frontmatter_heading(doc, "HALAMAN PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL", page_break=True)
@@ -768,15 +949,17 @@ def build_formal_approval_sheets(doc, id_data):
     p_j3.paragraph_format.space_before = Pt(6)
     p_j3.paragraph_format.space_after = Pt(6)
     p_j3.paragraph_format.line_spacing = 1.15
+    p_j3.paragraph_format.first_line_indent = Cm(0)
     rj3 = p_j3.add_run("“PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI”")
-    rj3.font.name = "Times New Roman"
-    rj3.font.size = Pt(11)
-    rj3.font.bold = True
+    make_run_pure_black(rj3, "Times New Roman", Pt(11), bold=True)
 
     add_body_paragraph(doc, "Telah dipertahankan di hadapan Tim Penguji Seminar Proposal Skripsi Program Studi S1 Manajemen Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana pada tanggal yang ditetapkan dan dinyatakan telah memenuhi syarat kelayakan.", indent=False)
 
     tbl_penguji = doc.add_table(rows=2, cols=2)
     tbl_penguji.alignment = WD_TABLE_ALIGNMENT.CENTER
+    set_col_widths_fixed(tbl_penguji, [Cm(7.0), Cm(7.0)])
+    remove_table_borders(tbl_penguji)
+
     c_p1 = tbl_penguji.rows[0].cells[0]
     c_p2 = tbl_penguji.rows[0].cells[1]
     c_p3 = tbl_penguji.rows[1].cells[0]
@@ -785,37 +968,54 @@ def build_formal_approval_sheets(doc, id_data):
     p_p1 = c_p1.paragraphs[0]
     p_p1.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_p1.paragraph_format.line_spacing = 1.15
-    p_p1.add_run("Ketua Tim Penguji\n\n\n\n\n")
-    r = p_p1.add_run("_________________________\n")
-    r.font.bold = True
-    p_p1.add_run("NIDN: _________________")
+    p_p1.paragraph_format.first_line_indent = Cm(0)
+    p_p1.paragraph_format.space_before = Pt(6)
+    r = p_p1.add_run("Ketua Tim Penguji\n\n\n\n\n_________________________\n")
+    make_run_pure_black(r, "Times New Roman", Pt(12), bold=True)
+    r_nidn = p_p1.add_run("NIDN: _________________")
+    make_run_pure_black(r_nidn, "Times New Roman", Pt(12))
 
     p_p2 = c_p2.paragraphs[0]
     p_p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_p2.paragraph_format.line_spacing = 1.15
-    p_p2.add_run("Anggota Penguji 1\n\n\n\n\n")
-    r = p_p2.add_run("_________________________\n")
-    r.font.bold = True
-    p_p2.add_run("NIDN: _________________")
+    p_p2.paragraph_format.first_line_indent = Cm(0)
+    p_p2.paragraph_format.space_before = Pt(6)
+    r = p_p2.add_run("Anggota Penguji 1\n\n\n\n\n_________________________\n")
+    make_run_pure_black(r, "Times New Roman", Pt(12), bold=True)
+    r_nidn = p_p2.add_run("NIDN: _________________")
+    make_run_pure_black(r_nidn, "Times New Roman", Pt(12))
 
     p_p3 = c_p3.paragraphs[0]
     p_p3.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_p3.paragraph_format.line_spacing = 1.15
-    p_p3.add_run("\n\nAnggota Penguji 2 / Pembimbing\n\n\n\n")
-    r = p_p3.add_run("Dr. Fredella Colline, S.E., M.M.\n")
-    r.font.bold = True
-    p_p3.add_run("NIDN: [NIDN_DOSEN]")
+    p_p3.paragraph_format.first_line_indent = Cm(0)
+    p_p3.paragraph_format.space_before = Pt(12)
+    r = p_p3.add_run("Anggota Penguji 2 / Pembimbing\n\n\n\n\nDr. Fredella Colline, S.E., M.M.\n")
+    make_run_pure_black(r, "Times New Roman", Pt(12), bold=True)
+    r_nidn = p_p3.add_run("NIDN: [NIDN_DOSEN]")
+    make_run_pure_black(r_nidn, "Times New Roman", Pt(12))
 
     p_p4 = c_p4.paragraphs[0]
     p_p4.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_p4.paragraph_format.line_spacing = 1.15
-    p_p4.add_run("\n\nMengetahui,\nKetua Program Studi S1 Manajemen\n\n\n\n")
-    r = p_p4.add_run("Rita Amelinda, S.E., M.M.\n")
-    r.font.bold = True
-    p_p4.add_run("NIDN: [NIDN_KAPRODI]")
+    p_p4.paragraph_format.first_line_indent = Cm(0)
+    p_p4.paragraph_format.space_before = Pt(12)
+    r = p_p4.add_run("Mengetahui,\nKetua Program Studi S1 Manajemen\n\n\n\n\nRita Amelinda, S.E., M.M.\n")
+    make_run_pure_black(r, "Times New Roman", Pt(12), bold=True)
+    r_nidn = p_p4.add_run("NIDN: [NIDN_KAPRODI]")
+    make_run_pure_black(r_nidn, "Times New Roman", Pt(12))
 
 
-def build_full_proposal(skip_chapter3: bool = False):
+def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = False):
+    """Build the full thesis proposal DOCX.
+
+    Args:
+        skip_chapter3: If True, omit Bab 3 (review/bimbingan mode).
+        skip_frontmatter: If True, omit the 6 formal frontmatter pages
+            (Pernyataan Keaslian, Persetujuan, Pengesahan, Kata Pengantar,
+            Abstrak, Abstract). Document starts directly with Daftar Isi.
+            Page numbering resets: Daftar Isi = i, Bab 1 = 1.
+    """
     # Resolve base_dir relative to this script's location
     script_dir = Path(__file__).resolve().parent
     base_dir = script_dir.parent / "01_Naskah_Utama"
@@ -823,7 +1023,12 @@ def build_full_proposal(skip_chapter3: bool = False):
         # Fallback: original hardcoded path
         base_dir = Path(r"z:\SKRIPSII\SKRIPSI-arthur\01_Naskah_Utama")
 
-    if skip_chapter3:
+    if skip_frontmatter:
+        if skip_chapter3:
+            output_docx = base_dir / "Proposal_Arthur_NoBab3_NoFrontmatter.docx"
+        else:
+            output_docx = base_dir / "Proposal_Arthur_PokemonTCG_NoFrontmatter.docx"
+    elif skip_chapter3:
         output_docx = base_dir / "Proposal_Arthur_NoBab3.docx"
     else:
         output_docx = base_dir / "Proposal_Arthur_PokemonTCG.docx"
@@ -1041,7 +1246,12 @@ def build_full_proposal(skip_chapter3: bool = False):
     sec_front.right_margin = Cm(3.0)
     sec_front.header.is_linked_to_previous = False
     sec_front.footer.is_linked_to_previous = False
-    add_page_number_to_footer(sec_front, is_roman=True, start_num=2)
+
+    if skip_frontmatter:
+        # No formal pages: Daftar Isi starts at roman i
+        add_page_number_to_footer(sec_front, is_roman=True, start_num=1)
+    else:
+        add_page_number_to_footer(sec_front, is_roman=True, start_num=2)
 
     # ------------------------------------------------------------------------
     # SECTION 2: FRONTMATTER
@@ -1053,150 +1263,152 @@ def build_full_proposal(skip_chapter3: bool = False):
         ("Konsentrasi", ":", "Manajemen Keuangan")
     ]
 
-    if not skip_chapter3:
-        # Full proposal requires formal approval sheets
-        build_formal_approval_sheets(doc, id_data)
-        add_frontmatter_heading(doc, "KATA PENGANTAR", page_break=True)
-    else:
-        # NoBab3 proposal (review/bimbingan mode) starts directly with Kata Pengantar
-        add_frontmatter_heading(doc, "KATA PENGANTAR", page_break=False)
+    if not skip_frontmatter:
+        if not skip_chapter3:
+            # Full proposal requires formal approval sheets
+            build_formal_approval_sheets(doc, id_data)
+            add_frontmatter_heading(doc, "KATA PENGANTAR", page_break=True)
+        else:
+            # NoBab3 proposal (review/bimbingan mode) starts directly with Kata Pengantar
+            add_frontmatter_heading(doc, "KATA PENGANTAR", page_break=False)
 
-    add_body_paragraph(doc, "Puji dan syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa atas kasih, anugerah, dan penyertaan-Nya yang senantiasa melimpah, sehingga penulis dapat menyelesaikan penyusunan proposal skripsi yang berjudul **“PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI”** dengan baik, lancar, dan tepat waktu.")
-    add_body_paragraph(doc, "Proposal skripsi ini disusun sebagai salah satu tahapan akademik yang diwajibkan dalam rangka menempuh ujian seminar proposal guna menyelesaikan studi pada Program Studi S1 Manajemen, Konsentrasi Manajemen Keuangan, Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana (UKRIDA), Jakarta.")
-    add_body_paragraph(doc, "Dalam proses penyusunan naskah proposal ini, penulis mendapatkan banyak bimbingan, arahan metodologis, dukungan moril, serta fasilitas dari berbagai pihak. Oleh karena itu, dengan penuh rasa hormat dan kerendahan hati, penulis menyampaikan terima kasih dan apresiasi yang setinggi-tingginya kepada:")
+    if not skip_frontmatter:
+        add_body_paragraph(doc, "Puji dan syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa atas kasih, anugerah, dan penyertaan-Nya yang senantiasa melimpah, sehingga penulis dapat menyelesaikan penyusunan proposal skripsi yang berjudul **“PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI”** dengan baik, lancar, dan tepat waktu.")
+        add_body_paragraph(doc, "Proposal skripsi ini disusun sebagai salah satu tahapan akademik yang diwajibkan dalam rangka menempuh ujian seminar proposal guna menyelesaikan studi pada Program Studi S1 Manajemen, Konsentrasi Manajemen Keuangan, Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana (UKRIDA), Jakarta.")
+        add_body_paragraph(doc, "Dalam proses penyusunan naskah proposal ini, penulis mendapatkan banyak bimbingan, arahan metodologis, dukungan moril, serta fasilitas dari berbagai pihak. Oleh karena itu, dengan penuh rasa hormat dan kerendahan hati, penulis menyampaikan terima kasih dan apresiasi yang setinggi-tingginya kepada:")
 
-    kp_points = [
-        "Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A, selaku Dosen Pembimbing Skripsi, yang telah dengan luar biasa sabar, teliti, kritis, dan penuh dedikasi meluangkan waktu serta mencurahkan tenaga dan pikiran dalam membimbing, mengarahkan, dan menyempurnakan naskah proposal ini sejak tahap awal perumusan gagasan hingga penyusunan naskah komprehensif.",
-        "Rita Amelinda, S.E., M.M., selaku Ketua Program Studi S1 Manajemen FEB UKRIDA, atas segala arahan, kemudahan proses administratif, dan bimbingan akademik yang diberikan.",
-        "Bapak dan Ibu Dosen Penguji Seminar Proposal, yang telah bersedia meluangkan waktu untuk menguji, memberikan koreksi kritis, serta masukan yang konstruktif guna menyempurnakan naskah penelitian ini.",
-        "Seluruh Dosen dan Staf Pengajar FEB UKRIDA, yang telah membagikan ilmu pengetahuan, wawasan analisis keuangan, serta etika profesional selama masa perkuliahan penulis.",
-        "Kedua Orang Tua dan Keluarga Tercinta, atas doa yang tiada putus, limpahan kasih sayang, ketulusan pengorbanan, serta dorongan moral dan material yang menjadi sumber kekuatan utama bagi penulis.",
-        "Rekan-rekan Mahasiswa Manajemen FEB UKRIDA Angkatan 2023 dan sahabat seperjuangan, atas diskusi yang membangun, motivasi, dan kerja sama selama proses perkuliahan.",
-        "Komunitas Kolektor dan Pemain Pokémon TCG di Indonesia, yang telah memberikan gambaran nyata mengenai fenomena pasar kartu koleksi di lapangan."
-    ]
-    for idx, kpt in enumerate(kp_points):
-        p_kp = doc.add_paragraph()
-        p_kp.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-        p_kp.paragraph_format.left_indent = Cm(1.25)
-        p_kp.paragraph_format.first_line_indent = Cm(-0.63)
-        p_kp.paragraph_format.space_before = Pt(0)
-        p_kp.paragraph_format.space_after = Pt(3)
-        p_kp.paragraph_format.line_spacing = 1.15
-        p_kp.add_run(f"{idx+1}.  ").font.bold = True
-        p_kp.add_run(kpt)
+        kp_points = [
+            "Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A, selaku Dosen Pembimbing Skripsi, yang telah dengan luar biasa sabar, teliti, kritis, dan penuh dedikasi meluangkan waktu serta mencurahkan tenaga dan pikiran dalam membimbing, mengarahkan, dan menyempurnakan naskah proposal ini sejak tahap awal perumusan gagasan hingga penyusunan naskah komprehensif.",
+            "Rita Amelinda, S.E., M.M., selaku Ketua Program Studi S1 Manajemen FEB UKRIDA, atas segala arahan, kemudahan proses administratif, dan bimbingan akademik yang diberikan.",
+            "Bapak dan Ibu Dosen Penguji Seminar Proposal, yang telah bersedia meluangkan waktu untuk menguji, memberikan koreksi kritis, serta masukan yang konstruktif guna menyempurnakan naskah penelitian ini.",
+            "Seluruh Dosen dan Staf Pengajar FEB UKRIDA, yang telah membagikan ilmu pengetahuan, wawasan analisis keuangan, serta etika profesional selama masa perkuliahan penulis.",
+            "Kedua Orang Tua dan Keluarga Tercinta, atas doa yang tiada putus, limpahan kasih sayang, ketulusan pengorbanan, serta dorongan moral dan material yang menjadi sumber kekuatan utama bagi penulis.",
+            "Rekan-rekan Mahasiswa Manajemen FEB UKRIDA Angkatan 2023 dan sahabat seperjuangan, atas diskusi yang membangun, motivasi, dan kerja sama selama proses perkuliahan.",
+            "Komunitas Kolektor dan Pemain Pokémon TCG di Indonesia, yang telah memberikan gambaran nyata mengenai fenomena pasar kartu koleksi di lapangan."
+        ]
+        for idx, kpt in enumerate(kp_points):
+            p_kp = doc.add_paragraph()
+            p_kp.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+            p_kp.paragraph_format.left_indent = Cm(1.25)
+            p_kp.paragraph_format.first_line_indent = Cm(-0.63)
+            p_kp.paragraph_format.space_before = Pt(0)
+            p_kp.paragraph_format.space_after = Pt(3)
+            p_kp.paragraph_format.line_spacing = 1.15
+            p_kp.add_run(f"{idx+1}.  ").font.bold = True
+            p_kp.add_run(kpt)
 
-    add_body_paragraph(doc, "Penulis menyadari bahwa proposal ini masih jauh dari kesempurnaan. Kritik dan saran yang membangun sangat diharapkan demi penyempurnaan karya ilmiah ini ke depan. Semoga proposal skripsi ini dapat memberikan manfaat akademis dan praktis bagi perkembangan kajian ilmu manajemen keuangan perilaku di Indonesia.")
+        add_body_paragraph(doc, "Penulis menyadari bahwa proposal ini masih jauh dari kesempurnaan. Kritik dan saran yang membangun sangat diharapkan demi penyempurnaan karya ilmiah ini ke depan. Semoga proposal skripsi ini dapat memberikan manfaat akademis dan praktis bagi perkembangan kajian ilmu manajemen keuangan perilaku di Indonesia.")
 
-    p_tutup = doc.add_paragraph()
-    p_tutup.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    p_tutup.paragraph_format.space_before = Pt(18)
-    p_tutup.paragraph_format.line_spacing = 1.15
-    p_tutup.add_run("Jakarta,                  2026\nPenulis,\n\n\n\n")
-    p_tutup.add_run("Arthur Reezan\n").font.bold = True
-    p_tutup.add_run("NIM: 312023002")
+        p_tutup = doc.add_paragraph()
+        p_tutup.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+        p_tutup.paragraph_format.space_before = Pt(18)
+        p_tutup.paragraph_format.line_spacing = 1.15
+        p_tutup.add_run("Jakarta,                  2026\nPenulis,\n\n\n\n")
+        p_tutup.add_run("Arthur Reezan\n").font.bold = True
+        p_tutup.add_run("NIM: 312023002")
 
-    # 5. Abstrak Bahasa Indonesia
-    add_frontmatter_heading(doc, "ABSTRAK", page_break=True)
+        # 5. Abstrak Bahasa Indonesia
+        add_frontmatter_heading(doc, "ABSTRAK", page_break=True)
 
-    p_j4 = doc.add_paragraph()
-    p_j4.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p_j4.paragraph_format.space_before = Pt(0)
-    p_j4.paragraph_format.space_after = Pt(12)
-    p_j4.paragraph_format.line_spacing = 1.15
-    rj4 = p_j4.add_run("PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI\n\nArthur Reezan (312023002)\nProgram Studi S1 Manajemen, Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana\nDosen Pembimbing: Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A")
-    rj4.font.name = "Times New Roman"
-    rj4.font.size = Pt(12)
-    rj4.font.bold = True
+        p_j4 = doc.add_paragraph()
+        p_j4.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p_j4.paragraph_format.space_before = Pt(0)
+        p_j4.paragraph_format.space_after = Pt(12)
+        p_j4.paragraph_format.line_spacing = 1.15
+        rj4 = p_j4.add_run("PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI\n\nArthur Reezan (312023002)\nProgram Studi S1 Manajemen, Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana\nDosen Pembimbing: Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A")
+        rj4.font.name = "Times New Roman"
+        rj4.font.size = Pt(12)
+        rj4.font.bold = True
 
-    p_abs = doc.add_paragraph()
-    p_abs.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-    p_abs.paragraph_format.line_spacing = 1.0
-    p_abs.paragraph_format.space_before = Pt(6)
-    p_abs.paragraph_format.space_after = Pt(6)
-    p_abs.paragraph_format.first_line_indent = Cm(1.25)
-    r_abs = p_abs.add_run(
-        "Penelitian ini bertujuan untuk menganalisis dan menguji secara empiris pengaruh hedonic motivation (motivasi hedonis), "
-        "desire for completeness (hasrat kelengkapan koleksi), dan speculative motive (motif spekulasi finansial) terhadap impulsive buying "
-        "(pembelian impulsif) booster pack kartu Pokémon Trading Card Game (Pokémon TCG) fisik resmi berbahasa Indonesia, serta menguji peran kontrol diri "
-        "(self-control) sebagai variabel moderasi dalam memperlemah pengaruh ketiga variabel anteseden tersebut. Penelitian ini menggunakan pendekatan kuantitatif "
-        "asosiatif dengan desain survei cross-sectional. Data primer dikumpulkan melalui penyebaran kuesioner daring berbasis skala Likert 5 poin kepada responden "
-        "yang dipilih melalui teknik purposive sampling. Kriteria inklusi sampel adalah konsumen atau kolektor Warga Negara Indonesia (WNI) berusia minimal 17 tahun "
-        "yang pernah membeli booster pack Pokémon TCG fisik resmi dalam rentang waktu 6–12 bulan terakhir. Jumlah sampel yang ditargetkan adalah 120 hingga 150 responden, "
-        "mengacu pada rekomendasi ukuran sampel Green (1991) dan Cohen (1988) untuk mencapai kekuatan uji statistik (statistical power) yang memadai pada model regresi "
-        "linear berganda. Metode analisis data menggunakan analisis regresi berganda dan Moderated Regression Analysis (MRA) dengan prosedur pemusatan rata-rata "
-        "(mean-centering) guna mereduksi potensi multikolinearitas non-esensial antara variabel prediktor dengan produk interaksinya (Aiken dan West, 1991; Ghozali, 2018), yang diolah menggunakan perangkat lunak "
-        "IBM SPSS Statistics. Penelitian ini menawarkan kebaruan teoritis (novelty) dengan mengintegrasikan kerangka psikologi lingkungan Stimulus-Organism-Response (S-O-R), "
-        "psikologi kolektor (Zeigarnik Effect dan The Completing the Set Effect), teori regulasi diri (Self-Regulation Theory), serta prinsip-prinsip keuangan perilaku "
-        "(behavioral finance) pada fenomena komoditas hobi fisik bernilai spekulatif tinggi. Hasil penelitian ini diharapkan memberikan kontribusi empiris bagi konsumen "
-        "muda dalam menjaga kontrol diri finansial, serta masukan aplikatif bagi komunitas hobi dan pemangku kebijakan edukasi keuangan generasi muda di Indonesia."
-    )
-    r_abs.font.name = "Times New Roman"
-    r_abs.font.size = Pt(12)
+        p_abs = doc.add_paragraph()
+        p_abs.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+        p_abs.paragraph_format.line_spacing = 1.0
+        p_abs.paragraph_format.space_before = Pt(6)
+        p_abs.paragraph_format.space_after = Pt(6)
+        p_abs.paragraph_format.first_line_indent = Cm(1.25)
+        r_abs = p_abs.add_run(
+            "Penelitian ini bertujuan untuk menganalisis dan menguji secara empiris pengaruh hedonic motivation (motivasi hedonis), "
+            "desire for completeness (hasrat kelengkapan koleksi), dan speculative motive (motif spekulasi finansial) terhadap impulsive buying "
+            "(pembelian impulsif) booster pack kartu Pokémon Trading Card Game (Pokémon TCG) fisik resmi berbahasa Indonesia, serta menguji peran kontrol diri "
+            "(self-control) sebagai variabel moderasi dalam memperlemah pengaruh ketiga variabel anteseden tersebut. Penelitian ini menggunakan pendekatan kuantitatif "
+            "asosiatif dengan desain survei cross-sectional. Data primer dikumpulkan melalui penyebaran kuesioner daring berbasis skala Likert 5 poin kepada responden "
+            "yang dipilih melalui teknik purposive sampling. Kriteria inklusi sampel adalah konsumen atau kolektor Warga Negara Indonesia (WNI) berusia minimal 17 tahun "
+            "yang pernah membeli booster pack Pokémon TCG fisik resmi dalam rentang waktu 6–12 bulan terakhir. Jumlah sampel yang ditargetkan adalah 120 hingga 150 responden, "
+            "mengacu pada rekomendasi ukuran sampel Green (1991) dan Cohen (1988) untuk mencapai kekuatan uji statistik (statistical power) yang memadai pada model regresi "
+            "linear berganda. Metode analisis data menggunakan analisis regresi berganda dan Moderated Regression Analysis (MRA) dengan prosedur pemusatan rata-rata "
+            "(mean-centering) guna mereduksi potensi multikolinearitas non-esensial antara variabel prediktor dengan produk interaksinya (Aiken dan West, 1991; Ghozali, 2018), yang diolah menggunakan perangkat lunak "
+            "IBM SPSS Statistics. Penelitian ini menawarkan kebaruan teoritis (novelty) dengan mengintegrasikan kerangka psikologi lingkungan Stimulus-Organism-Response (S-O-R), "
+            "psikologi kolektor (Zeigarnik Effect dan The Completing the Set Effect), teori regulasi diri (Self-Regulation Theory), serta prinsip-prinsip keuangan perilaku "
+            "(behavioral finance) pada fenomena komoditas hobi fisik bernilai spekulatif tinggi. Hasil penelitian ini diharapkan memberikan kontribusi empiris bagi konsumen "
+            "muda dalam menjaga kontrol diri finansial, serta masukan aplikatif bagi komunitas hobi dan pemangku kebijakan edukasi keuangan generasi muda di Indonesia."
+        )
+        r_abs.font.name = "Times New Roman"
+        r_abs.font.size = Pt(12)
 
-    p_kw = doc.add_paragraph()
-    p_kw.alignment = WD_ALIGN_PARAGRAPH.LEFT
-    p_kw.paragraph_format.line_spacing = 1.15
-    p_kw.paragraph_format.space_before = Pt(6)
-    p_kw.paragraph_format.first_line_indent = Cm(0)
-    r_kw_pre = p_kw.add_run("Kata Kunci: ")
-    r_kw_pre.font.name = "Times New Roman"
-    r_kw_pre.font.size = Pt(12)
-    r_kw_pre.font.bold = True
-    r_kw_body = p_kw.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Keuangan Perilaku (Behavioral Finance).")
-    r_kw_body.font.name = "Times New Roman"
-    r_kw_body.font.size = Pt(12)
-    r_kw_body.font.italic = True
+        p_kw = doc.add_paragraph()
+        p_kw.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        p_kw.paragraph_format.line_spacing = 1.15
+        p_kw.paragraph_format.space_before = Pt(6)
+        p_kw.paragraph_format.first_line_indent = Cm(0)
+        r_kw_pre = p_kw.add_run("Kata Kunci: ")
+        r_kw_pre.font.name = "Times New Roman"
+        r_kw_pre.font.size = Pt(12)
+        r_kw_pre.font.bold = True
+        r_kw_body = p_kw.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Keuangan Perilaku (Behavioral Finance).")
+        r_kw_body.font.name = "Times New Roman"
+        r_kw_body.font.size = Pt(12)
+        r_kw_body.font.italic = True
 
-    # 6. Abstract English
-    add_frontmatter_heading(doc, "ABSTRACT", page_break=True)
+        # 6. Abstract English
+        add_frontmatter_heading(doc, "ABSTRACT", page_break=True)
 
-    p_j5 = doc.add_paragraph()
-    p_j5.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p_j5.paragraph_format.space_before = Pt(0)
-    p_j5.paragraph_format.space_after = Pt(12)
-    p_j5.paragraph_format.line_spacing = 1.15
-    rj5 = p_j5.add_run("THE EFFECT OF HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, AND SPECULATIVE MOTIVE ON IMPULSIVE BUYING OF POKÉMON TCG BOOSTER PACKS WITH SELF-CONTROL AS A MODERATING VARIABLE\n\nArthur Reezan (312023002)\nUndergraduate Program in Management, Faculty of Economics and Business, UKRIDA\nThesis Advisor: Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A")
-    rj5.font.name = "Times New Roman"
-    rj5.font.size = Pt(12)
-    rj5.font.bold = True
+        p_j5 = doc.add_paragraph()
+        p_j5.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p_j5.paragraph_format.space_before = Pt(0)
+        p_j5.paragraph_format.space_after = Pt(12)
+        p_j5.paragraph_format.line_spacing = 1.15
+        rj5 = p_j5.add_run("THE EFFECT OF HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, AND SPECULATIVE MOTIVE ON IMPULSIVE BUYING OF POKÉMON TCG BOOSTER PACKS WITH SELF-CONTROL AS A MODERATING VARIABLE\n\nArthur Reezan (312023002)\nUndergraduate Program in Management, Faculty of Economics and Business, UKRIDA\nThesis Advisor: Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A")
+        rj5.font.name = "Times New Roman"
+        rj5.font.size = Pt(12)
+        rj5.font.bold = True
 
-    p_abs_en = doc.add_paragraph()
-    p_abs_en.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-    p_abs_en.paragraph_format.line_spacing = 1.0
-    p_abs_en.paragraph_format.space_before = Pt(6)
-    p_abs_en.paragraph_format.space_after = Pt(6)
-    p_abs_en.paragraph_format.first_line_indent = Cm(1.25)
-    r_abs_en = p_abs_en.add_run(
-        "This research aims to analyze and empirically test the effects of hedonic motivation, desire for completeness, and speculative motive "
-        "on the impulsive buying behavior of official Indonesian-language physical Pokémon Trading Card Game (Pokémon TCG) booster packs, as well as to evaluate "
-        "the moderating role of self-control in weakening the relationships between these three antecedent variables and impulsive buying. "
-        "This study adopts an associative quantitative approach utilizing a cross-sectional survey design. Primary data are gathered via self-administered online "
-        "questionnaires employing a 5-point Likert scale, distributed to respondents selected through purposive sampling. The sample inclusion criteria comprise "
-        "Indonesian citizens aged 17 and above who have purchased official physical booster packs within the past 6 to 12 months. The targeted sample size ranges from "
-        "120 to 150 respondents, consistent with the statistical power criteria established by Green (1991) and Cohen (1988) for multiple regression frameworks. "
-        "The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to reduce non-essential "
-        "multicollinearity between predictor variables and their interaction products (Aiken dan West, 1991; Ghozali, 2018), executed via IBM SPSS Statistics software. This study provides theoretical novelty by synthesizing the "
-        "Stimulus-Organism-Response (S-O-R) paradigm, collector psychology (the Zeigarnik Effect and The Completing the Set Effect), Self-Regulation Theory, and behavioral finance "
-        "principles in the context of tangible alternative assets exhibiting volatile secondary market premiums. The findings are expected to offer practical insights for young "
-        "consumers in exercising financial discipline regarding discretionary collectibles and provide strategic inputs for community organizers and financial educators targeting Generation Z."
-    )
-    r_abs_en.font.name = "Times New Roman"
-    r_abs_en.font.size = Pt(12)
-    r_abs_en.font.italic = True
+        p_abs_en = doc.add_paragraph()
+        p_abs_en.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+        p_abs_en.paragraph_format.line_spacing = 1.0
+        p_abs_en.paragraph_format.space_before = Pt(6)
+        p_abs_en.paragraph_format.space_after = Pt(6)
+        p_abs_en.paragraph_format.first_line_indent = Cm(1.25)
+        r_abs_en = p_abs_en.add_run(
+            "This research aims to analyze and empirically test the effects of hedonic motivation, desire for completeness, and speculative motive "
+            "on the impulsive buying behavior of official Indonesian-language physical Pokémon Trading Card Game (Pokémon TCG) booster packs, as well as to evaluate "
+            "the moderating role of self-control in weakening the relationships between these three antecedent variables and impulsive buying. "
+            "This study adopts an associative quantitative approach utilizing a cross-sectional survey design. Primary data are gathered via self-administered online "
+            "questionnaires employing a 5-point Likert scale, distributed to respondents selected through purposive sampling. The sample inclusion criteria comprise "
+            "Indonesian citizens aged 17 and above who have purchased official physical booster packs within the past 6 to 12 months. The targeted sample size ranges from "
+            "120 to 150 respondents, consistent with the statistical power criteria established by Green (1991) and Cohen (1988) for multiple regression frameworks. "
+            "The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to reduce non-essential "
+            "multicollinearity between predictor variables and their interaction products (Aiken dan West, 1991; Ghozali, 2018), executed via IBM SPSS Statistics software. This study provides theoretical novelty by synthesizing the "
+            "Stimulus-Organism-Response (S-O-R) paradigm, collector psychology (the Zeigarnik Effect and The Completing the Set Effect), Self-Regulation Theory, and behavioral finance "
+            "principles in the context of tangible alternative assets exhibiting volatile secondary market premiums. The findings are expected to offer practical insights for young "
+            "consumers in exercising financial discipline regarding discretionary collectibles and provide strategic inputs for community organizers and financial educators targeting Generation Z."
+        )
+        r_abs_en.font.name = "Times New Roman"
+        r_abs_en.font.size = Pt(12)
+        r_abs_en.font.italic = True
 
-    p_kw_en = doc.add_paragraph()
-    p_kw_en.alignment = WD_ALIGN_PARAGRAPH.LEFT
-    p_kw_en.paragraph_format.line_spacing = 1.15
-    p_kw_en.paragraph_format.space_before = Pt(6)
-    p_kw_en.paragraph_format.first_line_indent = Cm(0)
-    r_kw_en_pre = p_kw_en.add_run("Keywords: ")
-    r_kw_en_pre.font.name = "Times New Roman"
-    r_kw_en_pre.font.size = Pt(12)
-    r_kw_en_pre.font.bold = True
-    r_kw_en_body = p_kw_en.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Behavioral Finance.")
-    r_kw_en_body.font.name = "Times New Roman"
-    r_kw_en_body.font.size = Pt(12)
-    r_kw_en_body.font.italic = True
+        p_kw_en = doc.add_paragraph()
+        p_kw_en.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        p_kw_en.paragraph_format.line_spacing = 1.15
+        p_kw_en.paragraph_format.space_before = Pt(6)
+        p_kw_en.paragraph_format.first_line_indent = Cm(0)
+        r_kw_en_pre = p_kw_en.add_run("Keywords: ")
+        r_kw_en_pre.font.name = "Times New Roman"
+        r_kw_en_pre.font.size = Pt(12)
+        r_kw_en_pre.font.bold = True
+        r_kw_en_body = p_kw_en.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Behavioral Finance.")
+        r_kw_en_body.font.name = "Times New Roman"
+        r_kw_en_body.font.size = Pt(12)
+        r_kw_en_body.font.italic = True
 
     # 7. Daftar Isi
     add_daftar_isi_heading(doc, page_break=True)
@@ -1645,6 +1857,25 @@ def build_full_proposal(skip_chapter3: bool = False):
                         r_s.font.italic = True
                 continue
 
+            # LaTeX Table block handling for Tabel 1.1 (Matriks Research Gap / longtable)
+            if r'\begin{longtable}' in line_str or (line_str.startswith(r'\begingroup') and line_idx + 4 < len(lines) and any(r'\begin{longtable}' in lines[j] for j in range(line_idx, min(line_idx+5, len(lines))))):
+                # Consume lines until \endgroup or end of longtable block
+                while line_idx < len(lines):
+                    curr = lines[line_idx].strip()
+                    line_idx += 1
+                    if r'\endgroup' in curr:
+                        break
+                    if r'\end{longtable}' in curr:
+                        # Check if flushleft source follows
+                        if line_idx < len(lines) and (r'\begin{flushleft}' in lines[line_idx] or r'\footnotesize' in lines[line_idx]):
+                            while line_idx < len(lines) and r'\endgroup' not in lines[line_idx]:
+                                line_idx += 1
+                            if line_idx < len(lines):
+                                line_idx += 1
+                        break
+                build_tabel_research_gap(doc)
+                continue
+
             # LaTeX Table block handling for Tabel 3.3 (Jadwal Kegiatan)
             if r'\begin{table}' in line_str:
                 while line_idx < len(lines) and r'\end{table}' not in lines[line_idx]:
@@ -1907,6 +2138,20 @@ def build_full_proposal(skip_chapter3: bool = False):
                 line_idx += 1
                 continue
 
+            # Intercept Tabel 1.1 markdown table if already synchronized into markdown table
+            if re.match(r'^\*{0,2}Tabel\s+1\.1\b', line_str):
+                # Check if followed by markdown table (| ... |)
+                temp_idx = line_idx + 1
+                while temp_idx < len(lines) and not lines[temp_idx].strip():
+                    temp_idx += 1
+                if temp_idx < len(lines) and lines[temp_idx].strip().startswith('|'):
+                    # Advance past the whole table and any source note
+                    line_idx = temp_idx
+                    while line_idx < len(lines) and (lines[line_idx].strip().startswith('|') or not lines[line_idx].strip() or lines[line_idx].strip().startswith('*Sumber') or lines[line_idx].strip().startswith('Sumber')):
+                        line_idx += 1
+                    build_tabel_research_gap(doc)
+                    continue
+
             # Table Caption Detection in Markdown (**Tabel X.Y ...**)
             if re.match(r'^\*{0,2}Tabel\s+\d+\.\d+', line_str):
                 p_tcap = add_body_paragraph(doc, line_str, indent=False)
@@ -1914,6 +2159,16 @@ def build_full_proposal(skip_chapter3: bool = False):
                 p_tcap.paragraph_format.space_before = Pt(12)
                 p_tcap.paragraph_format.space_after = Pt(4)
                 p_tcap.paragraph_format.keep_with_next = True
+                line_idx += 1
+                continue
+
+            # Skip rogue LaTeX tokens / unparsed environment artifacts from leaking into body paragraphs
+            if any(line_str.startswith(tk) for tk in [
+                r'\begingroup', r'\endgroup', r'\small', r'\footnotesize',
+                r'\toprule', r'\midrule', r'\bottomrule', r'\endhead', r'\endfoot', r'\endlastfoot',
+                r'\begin{flushleft}', r'\end{flushleft}', r'\begin{longtable}', r'\end{longtable}',
+                r'\multicolumn', r'\addlinespace'
+            ]) or r'\begin{longtable}' in line_str or r'\end{longtable}' in line_str:
                 line_idx += 1
                 continue
 
@@ -1935,6 +2190,7 @@ def build_full_proposal(skip_chapter3: bool = False):
         link_citations_to_dp(doc, aux_map, ref_bookmarks)
     else:
         print('[WARN] sitasi hyperlink dilewati (bookmark/aux tak lengkap).')
+    link_static_toc_entries(doc)
     for p in doc.paragraphs:
         for r in p.runs:
             if not r.text:
@@ -2033,14 +2289,25 @@ try {{
             
             $toc = $doc.TablesOfContents.Add($tocRange, $true, 1, 3, $false, "", $true, $true, "", $true, $true)
             $toc.Update()
+            
+            # Unlink TOC field: converts dynamic TOC into clean static text,
+            # eliminating Word's grey field shading while preserving exact page numbers and dot leaders
+            $toc.Range.Fields.Unlink()
             break
         }}
     }}
     
-    # Enforce absolute page break before DAFTAR TABEL and DAFTAR GAMBAR
+    # Enforce absolute page break before DAFTAR TABEL and DAFTAR GAMBAR and clean empty buffer paragraphs
     for ($k = 1; $k -le $doc.Paragraphs.Count; $k++) {{
         $txt = $doc.Paragraphs.Item($k).Range.Text.Trim()
         if ($txt -eq "DAFTAR TABEL" -or $txt -eq "DAFTAR GAMBAR") {{
+            if ($k -gt 1) {{
+                $prevText = $doc.Paragraphs.Item($k - 1).Range.Text.Trim()
+                if ($prevText -eq "") {{
+                    $doc.Paragraphs.Item($k - 1).Range.Delete()
+                    $k--
+                }}
+            }}
             $doc.Paragraphs.Item($k).Format.PageBreakBefore = $true
         }}
     }}
@@ -2084,6 +2351,93 @@ try {{
                     r.font.size = Pt(12)
                     r.font.bold = True
                     r.font.color.rgb = RGBColor(0, 0, 0)
+        # Sanitasi residu Word-COM pada entri TOC: bookmark yatim tak-tertutup
+        # + webHidden (disembunyikan Google Docs) membuat entri lenyap saat
+        # konversi Docs. noProof dipertahankan (anti garis merah ejaan).
+        try:
+            _plist = list(doc_post.paragraphs)
+            _isi = next((i for i, _pp in enumerate(_plist) if _pp.text.strip() == 'DAFTAR ISI' and '\t' not in _pp.text), None)
+            _dtb = None
+            if _isi is not None:
+                for _j in range(_isi + 1, len(_plist)):
+                    _pp = _plist[_j]
+                    try:
+                        _sn = _pp.style.name
+                    except Exception:
+                        _sn = ''
+                    if _pp.text.strip() == 'DAFTAR TABEL' and _sn.startswith('Heading'):
+                        _dtb = _j
+                        break
+            _n_san = 0
+            if _isi is not None and _dtb is not None:
+                for _pp in _plist[_isi + 1:_dtb]:
+                    if '\t' not in (_pp.text or ''):
+                        continue
+                    for _el in list(_pp._p.iter()):
+                        if _el.tag in (qn('w:bookmarkStart'), qn('w:bookmarkEnd')):
+                            _el.getparent().remove(_el)
+                            _n_san += 1
+                        elif _el.tag == qn('w:webHidden'):
+                            _el.getparent().remove(_el)
+                            _n_san += 1
+            print(f"[*] TOC sanitasi: {_n_san} residu COM dibersihkan (bookmark yatim/webHidden).")
+        except Exception as e:
+            print(f"[WARN] Sanitasi TOC gagal: {e}")
+        # Pasca-COM: tautkan ulang entri TOC statis hasil Word (Unlink menghapus
+        # hyperlink bawaan). Gaya 'toc 1/2/3' cocok case-insensitive; bookmark
+        # TOC_* heading dipakai ulang (idempoten); teks dijamin identik.
+        try:
+            n_toc_post = link_static_toc_entries(doc_post)
+            print(f"[*] TOC pasca-COM: {n_toc_post} entri terhubung ulang (statis ber-hyperlink).")
+        except Exception as e:
+            print(f"[WARN] TOC pasca-COM gagal: {e}")
+        # Pedoman FEB 2023 "huruf berwarna hitam pekat dan seragam": netralkan
+        # rStyle Hyperlink (biru + garis bawah) bawaan Word pada hyperlink TOC.
+        # Lingkup HANYA DAFTAR ISI (hyperlink URL biru di DP dipertahankan).
+        # Preseden kakak tingkat: TOC statis hitam tanpa warna tema.
+        try:
+            _plist = list(doc_post.paragraphs)
+            _isi = next((i for i, _pp in enumerate(_plist) if _pp.text.strip() == 'DAFTAR ISI' and '\t' not in _pp.text), None)
+            _dtb = None
+            if _isi is not None:
+                for _j in range(_isi + 1, len(_plist)):
+                    _pp = _plist[_j]
+                    try:
+                        _sn = _pp.style.name
+                    except Exception:
+                        _sn = ''
+                    if _pp.text.strip() == 'DAFTAR TABEL' and _sn.startswith('Heading'):
+                        _dtb = _j
+                        break
+            _n_blk = 0
+            if _isi is not None and _dtb is not None:
+                for _pp in _plist[_isi + 1:_dtb]:
+                    if '\t' not in (_pp.text or ''):
+                        continue
+                    for _h in list(_pp._p.iter()):
+                        if _h.tag != qn('w:hyperlink'):
+                            continue
+                        for _r in list(_h):
+                            if _r.tag != qn('w:r'):
+                                continue
+                            _rPr = _r.find(qn('w:rPr'))
+                            if _rPr is None:
+                                _rPr = OxmlElement('w:rPr')
+                                _r.insert(0, _rPr)
+                            for _rs in list(_rPr.findall(qn('w:rStyle'))):
+                                if (_rs.get(qn('w:val')) or '').lower() == 'hyperlink':
+                                    _rPr.remove(_rs)
+                            for _uu in list(_rPr.findall(qn('w:u'))):
+                                _rPr.remove(_uu)
+                            _cc = _rPr.find(qn('w:color'))
+                            if _cc is None:
+                                _cc = OxmlElement('w:color')
+                                _rPr.append(_cc)
+                            _cc.set(qn('w:val'), '000000')
+                            _n_blk += 1
+            print(f"[*] TOC hitam pekat: {_n_blk} run hyperlink dinetralkan (tanpa biru/underline).")
+        except Exception as e:
+            print(f"[WARN] Penetrasi hitam TOC gagal: {e}")
         doc_post.save(str(docx_path))
     except Exception as e:
         print(f"[WARN] Could not re-enforce outline levels: {e}")
@@ -2232,6 +2586,120 @@ def build_tabel_jadwal(doc):
     r_s.font.italic = True
 
 
+def build_tabel_research_gap(doc):
+    """Builds Tabel 1.1: Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian."""
+    p_cap = doc.add_paragraph()
+    p_cap.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p_cap.paragraph_format.space_before = Pt(12)
+    p_cap.paragraph_format.space_after = Pt(4)
+    p_cap.paragraph_format.first_line_indent = Cm(0)
+    p_cap.paragraph_format.keep_with_next = True
+    r_c = p_cap.add_run("Tabel 1.1: Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian")
+    make_run_pure_black(r_c, "Times New Roman", Pt(11), bold=True)
+
+    headers = [
+        "No",
+        "Subjek Hubungan",
+        "Kelompok Temuan Positif / Meredam",
+        "Kelompok Temuan Negatif / Lemah",
+        "Inti Kesenjangan Kausal (The Why)"
+    ]
+    data = [
+        (
+            "1",
+            "X₁ → Y (Hedonic Motivation ke Impulsive Buying)",
+            "Arnold dan Reynolds (2003); Gültekin dan Özer (2012); Pranggabayu dan Andjarwati (2022); Gong et al. (2024); Tirtayasa et al. (2020); Zheng et al. (2019) (Pengaruh positif signifikan; penelusuran hedonis memicu dorongan impulsif).",
+            "Batas konseptual Thaler (1985); Thaler dan Shefrin (1981) (Dorongan tertahan batasan anggaran/mental budgeting; bukan klaim n.s. pada kolektibel).",
+            "Perbedaan elastisitas anggaran dan dominasi orientasi utiliter vs afektif konsumen."
+        ),
+        (
+            "2",
+            "X₂ → Y (Desire for Completeness ke Impulsive Buying)",
+            "Gao et al. (2014); Barasz et al. (2017); Dewi et al. (2026) (Pengaruh positif signifikan; ketegangan psikologis set memicu akselerasi transaksi).",
+            "Argumen teoritis Long dan Schiffman (2000); Spero dan Stone (2004) (Kolektor matang menolak produk acak dan memilih kartu satuan; bukan klaim n.s.).",
+            "Perbedaan tingkat kematangan kolektor (collector maturity) dan kalkulasi probabilitas kemasan acak."
+        ),
+        (
+            "3",
+            "X₃ → Y (Speculative Motive ke Impulsive Buying)",
+            "Baur et al. (2018); Aryadi dan Lingga (2026) (analogi: Y=partisipasi investasi TCG); Colline (2024) (analogi: herding investor Indonesia, kualitatif n=5; teori Shiller (2000) sebagai grand theory).",
+            "Analogi saham Barber dan Odean (2008); Fama (1970) (Kesadaran risiko menahan spontanitas; bukan bukti n.s. kolektibel).",
+            "Asimetri informasi pasar dan bias ilusi kendali keuntungan vs evaluasi risiko kerugian modal."
+        ),
+        (
+            "4",
+            "M → Y (Self-Control ke Impulsive Buying)",
+            "Baumeister (2002); Tangney et al. (2004); Vohs dan Faber (2007); Sultan et al. (2012) (Pengaruh negatif signifikan; regulasi diri disiplin menunda kepuasan belanja).",
+            "Batas konseptual Hirschman dan Holbrook (1982); Stern (1962) (Cognitive bypass saat stimulus intens; bukan uji regresi).",
+            "Keterbatasan kapasitas energi kognitif (ego depletion) saat menghadapi stimulus lingkungan toko yang intens."
+        ),
+        (
+            "5",
+            "X₁ · M → Y (Moderasi M pada X₁ → Y)",
+            "Lienardy dan Panasea (2026) (MRA: H4 diterima, buffer); Katauke et al. (2023) (regulasi-literasi, tak langsung).",
+            "Gagal-moderasi: Apidana dan Kholifah (2022) (p=0,597) + Artadita dan Firmialy (2024) (β=0,092, n.s.) + teori regulatory failure.",
+            "Ambang batas intensitas stimulus hedonis yang melampaui kapasitas kontrol volisional."
+        ),
+        (
+            "6",
+            "X₂ · M → Y (Moderasi M pada X₂ → Y)",
+            "Parsial/tak langsung: Artadita dan Firmialy (2024) (kontrol kognitif signifikan pada taraf 10%, moderasi keseluruhan DITOLAK); Apidana dan Kholifah (2022) (buffer lifestyle, adjacent).",
+            "Teori obsesi Belk (1995); Barasz et al. (2017) + gagal-moderasi koleksi Artadita dan Firmialy (2024) (H3 ditolak).",
+            "Tingkat keterikatan emosional kolektor (involvement); hobi kasual vs fanatisme koleksi mendalam."
+        ),
+        (
+            "7",
+            "X₃ · M → Y (Moderasi M pada X₃ → Y)",
+            "Tak langsung: Katauke et al. (2023) (literasi menekan impulsivitas) + mekanisme Planner-Doer.",
+            "Argumen teoritis Shiller (2000); Aryadi dan Lingga (2026) (Euforia/herding melumpuhkan rem; bukan uji X₃ · M).",
+            "Tekanan sosial komunitas, bias herding, dan ketakutan tertinggal momentum keuntungan (FOMO)."
+        )
+    ]
+
+    tbl = doc.add_table(rows=1+len(data), cols=5)
+    tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
+    col_widths = [Cm(0.8), Cm(2.8), Cm(3.7), Cm(3.7), Cm(3.0)]
+    set_col_widths_fixed(tbl, col_widths)
+
+    # Header
+    for c_idx, h_text in enumerate(headers):
+        cell = tbl.rows[0].cells[c_idx]
+        set_cell_margins(cell, top=60, bottom=60, left=50, right=50)
+        set_cell_shading(cell, "F2F2F2")
+        p = cell.paragraphs[0]
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.paragraph_format.space_before = Pt(0)
+        p.paragraph_format.space_after = Pt(0)
+        p.paragraph_format.line_spacing = 1.15
+        r = p.add_run(h_text)
+        make_run_pure_black(r, "Times New Roman", Pt(9.5), bold=True)
+
+    # Data Rows
+    for r_idx, row_vals in enumerate(data):
+        row = tbl.rows[r_idx + 1]
+        for c_idx, val in enumerate(row_vals):
+            cell = row.cells[c_idx]
+            set_cell_margins(cell, top=50, bottom=50, left=50, right=50)
+            p = cell.paragraphs[0]
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER if c_idx == 0 else WD_ALIGN_PARAGRAPH.LEFT
+            p.paragraph_format.space_before = Pt(0)
+            p.paragraph_format.space_after = Pt(0)
+            p.paragraph_format.line_spacing = 1.15
+            p.paragraph_format.first_line_indent = Cm(0)
+            clean_val = clean_academic_text(val)
+            parse_markdown_runs(p, clean_val, base_size=Pt(9.0), base_bold=False)
+
+    apply_apa7_table_borders(tbl)
+
+    p_src = doc.add_paragraph()
+    p_src.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p_src.paragraph_format.space_before = Pt(2)
+    p_src.paragraph_format.space_after = Pt(12)
+    p_src.paragraph_format.first_line_indent = Cm(0)
+    r_s = p_src.add_run("Sumber: Data diolah dari sintesis kajian literatur empiris terdahulu (2026).")
+    make_run_pure_black(r_s, "Times New Roman", Pt(9.0), italic=True)
+
+
 def _clear_latent_tab_stops(paragraph):
     """Hapus tab-stop bawaan latent style (penyebab dot-leader hilang di Word)."""
     pPr = paragraph._p.get_or_add_pPr()
@@ -2257,12 +2725,20 @@ _CITE_BM_SEQ = [2000]
 
 
 def _add_bookmark(paragraph, name, bid):
+    # LibreOffice-strict: <w:pPr> wajib anak pertama <w:p>, jadi bookmark
+    # disisipkan SESUDAH pPr (Word toleran, LibreOffice mengabaikan bookmark
+    # yang sebelum pPr sehingga hyperlink Ref_/Cap_ mati di LibreOffice).
     bs = OxmlElement('w:bookmarkStart')
     bs.set(qn('w:id'), str(bid))
     bs.set(qn('w:name'), name)
     be = OxmlElement('w:bookmarkEnd')
     be.set(qn('w:id'), str(bid))
-    paragraph._p.insert(0, bs)
+    pPr = paragraph._p.find(qn('w:pPr'))
+    if pPr is not None:
+        idx = list(paragraph._p).index(pPr) + 1
+        paragraph._p.insert(idx, bs)
+    else:
+        paragraph._p.insert(0, bs)
     paragraph._p.append(be)
 
 
@@ -2280,7 +2756,7 @@ def link_lot_lof_entries(doc):
             st_name = p.style.name
         except Exception:
             st_name = ''
-        if st_name.startswith('TOC'):
+        if st_name.lower().startswith('toc'):
             continue
         t = _para_text(p).strip()
         m = cap_re.match(t)
@@ -2294,13 +2770,7 @@ def link_lot_lof_entries(doc):
         _LOTLOF_BM_SEQ[0] += 1
         bid = _LOTLOF_BM_SEQ[0]
         name = 'Cap_%s_%s_%s' % (m.group(1), m.group(2), m.group(3))
-        bs = OxmlElement('w:bookmarkStart')
-        bs.set(qn('w:id'), str(bid))
-        bs.set(qn('w:name'), name)
-        be = OxmlElement('w:bookmarkEnd')
-        be.set(qn('w:id'), str(bid))
-        p._p.insert(0, bs)
-        p._p.append(be)
+        _add_bookmark(p, name, bid)
         targets[key] = name
 
     n_linked = 0
@@ -2309,7 +2779,7 @@ def link_lot_lof_entries(doc):
             st_name = p.style.name
         except Exception:
             st_name = ''
-        if not st_name.startswith('TOC'):
+        if not st_name.lower().startswith('toc'):
             continue
         if '<w:hyperlink' in p._p.xml or 'w:fldChar' in p._p.xml:
             continue
@@ -2329,6 +2799,110 @@ def link_lot_lof_entries(doc):
         n_linked += 1
     print('[*] LOT/LOF hyperlink: %d caption ditandai, %d entri terhubung.' % (len(targets), n_linked))
     return n_linked
+
+
+_TOC_BM_SEQ = [5000]
+
+
+def _norm_toc_title(s: str) -> str:
+    sub_map = str.maketrans({
+        '₁': '1', '₂': '2', '₃': '3', '₄': '4', '₅': '5',
+        '₆': '6', '₇': '7', '₈': '8', '₉': '9', '₀': '0',
+        '¹': '1', '²': '2', '³': '3', 'ᵢ': 'i',
+        '−': '-', '–': '-', '—': '-',
+    })
+    s = s.translate(sub_map)
+    s = re.sub(r'\s+', ' ', s.strip()).upper().replace('R²', 'R2')
+    return s
+
+
+def link_static_toc_entries(doc):
+    """Post-pass LibreOffice: bookmark Heading + hyperlink entri Daftar Isi statis.
+
+    Word COM TOC injection sering gagal di mesin tanpa MS Word sehingga Daftar Isi
+    tertinggal sebagai teks statis tanpa hyperlink (Ctrl+Klik mati di LibreOffice),
+    sedangkan Daftar Tabel/Gambar tetap bisa diklik (Cap_*). Fungsi ini membuat TOC
+    statis tetap klikabel: tiap Heading 1/2/3 diberi bookmark TOC_*, lalu tiap entri
+    TOC di antara DAFTAR ISI s.d. DAFTAR TABEL dibungkus <w:hyperlink>. Teks 100%
+    identik, format hitam tetap, idempoten.
+    """
+    existing = set()
+    max_id = 0
+    for p in list(doc.paragraphs):
+        for el in p._p.iter():
+            if el.tag == qn('w:bookmarkStart'):
+                existing.add(el.get(qn('w:name')))
+            if el.tag in (qn('w:bookmarkStart'), qn('w:bookmarkEnd')):
+                try:
+                    max_id = max(max_id, int(el.get(qn('w:id'))))
+                except (TypeError, ValueError):
+                    pass
+    _TOC_BM_SEQ[0] = max(_TOC_BM_SEQ[0], max_id + 1)
+    hmap = {}
+    for p in doc.paragraphs:
+        try:
+            st = p.style.name
+        except Exception:
+            st = ''
+        if not st.startswith('Heading'):
+            continue
+        title = p.text.strip()
+        if not title:
+            continue
+        own = [el.get(qn('w:name')) for el in p._p.iter() if el.tag == qn('w:bookmarkStart')]
+        if own:
+            hmap[_norm_toc_title(title)] = own[0]
+            continue
+        slug = re.sub(r'\W+', '_', title.strip(), flags=re.UNICODE)
+        slug = re.sub(r'_+', '_', slug).strip('_')[:60] or 'SEC'
+        name = f"TOC_{slug.upper()}"
+        suffix = 1
+        base = name
+        while name in existing:
+            suffix += 1
+            name = f"{base}_{suffix}"
+        existing.add(name)
+        _add_bookmark(p, name, _TOC_BM_SEQ[0])
+        _TOC_BM_SEQ[0] += 1
+        hmap[_norm_toc_title(title)] = name
+    paras = list(doc.paragraphs)
+    isi_idx = next((i for i, p in enumerate(paras) if p.text.strip() == 'DAFTAR ISI'), None)
+    if isi_idx is None:
+        return 0
+    tabel_idx = next((i for i in range(isi_idx + 1, len(paras))
+                      if paras[i].text.strip() == 'DAFTAR TABEL'
+                      and getattr(paras[i].style, 'name', '').startswith('Heading')), len(paras))
+    n = 0
+    for p in paras[isi_idx + 1:tabel_idx]:
+        try:
+            st = p.style.name
+        except Exception:
+            st = ''
+        if not st.lower().startswith('toc'):
+            continue
+        if '<w:hyperlink' in p._p.xml or 'w:fldChar' in p._p.xml:
+            continue
+        before = p.text
+        if not before.strip():
+            continue
+        title_part = before.rsplit('\t', 1)[0].strip() if '\t' in before else before.strip()
+        target = hmap.get(_norm_toc_title(title_part))
+        if target is None:
+            continue
+        runs = [r for r in list(p._p) if r.tag == qn('w:r')]
+        if not runs:
+            continue
+        h = OxmlElement('w:hyperlink')
+        h.set(qn('w:anchor'), target)
+        h.set(qn('w:history'), '1')
+        idx0 = list(p._p).index(runs[0])
+        for r in runs:
+            h.append(r)
+        p._p.insert(idx0, h)
+        assert p.text == before, 'TOC text changed!'
+        n += 1
+    print('[*] TOC statis hyperlink: %d entri Daftar Isi terhubung (LibreOffice-safe).' % n)
+    return n
 
 
 def _parse_aux_cites(aux_path):
@@ -2358,12 +2932,20 @@ def _parse_bbl_keys(bbl_path):
 
 
 def _add_bookmark(paragraph, name, bid):
+    # LibreOffice-strict: <w:pPr> wajib anak pertama <w:p>, jadi bookmark
+    # disisipkan SESUDAH pPr (Word toleran, LibreOffice mengabaikan bookmark
+    # yang sebelum pPr sehingga hyperlink Ref_/Cap_ mati di LibreOffice).
     bs = OxmlElement('w:bookmarkStart')
     bs.set(qn('w:id'), str(bid))
     bs.set(qn('w:name'), name)
     be = OxmlElement('w:bookmarkEnd')
     be.set(qn('w:id'), str(bid))
-    paragraph._p.insert(0, bs)
+    pPr = paragraph._p.find(qn('w:pPr'))
+    if pPr is not None:
+        idx = list(paragraph._p).index(pPr) + 1
+        paragraph._p.insert(idx, bs)
+    else:
+        paragraph._p.insert(0, bs)
     paragraph._p.append(be)
 
 
@@ -2571,6 +3153,17 @@ def link_citations_to_dp(doc, aux_map, ref_bookmarks):
             continue
         if 'w:fldChar' in p._p.xml:
             continue
+        # Anti-self-link: lewati entri DP (sudah ber-bookmark Ref_*) agar pola
+        # naratif korporat ("PriceCharting (2024)") di awal entri tidak menaut
+        # ke bookmark dirinya sendiri — Word COM menghapus bookmark yang
+        # menaungi hyperlink internal ke dirinya (orphan Ref_*).
+        _has_dp_bm = False
+        for _el in p._p.iter():
+            if _el.tag == qn('w:bookmarkStart') and (_el.get(qn('w:name')) or '').startswith('Ref_'):
+                _has_dp_bm = True
+                break
+        if _has_dp_bm:
+            continue
         text = p.text
         if not text or '(' not in text and 'et al' not in text:
             # tetap izinkan bare multiword tanpa paren
@@ -2714,5 +3307,15 @@ if __name__ == "__main__":
         action="store_true",
         help="Skip Bab 3 (Metode Penelitian) — output: Proposal_Arthur_NoBab3.docx"
     )
+    parser.add_argument(
+        "--no-frontmatter",
+        action="store_true",
+        help=(
+            "Skip 6 halaman formal frontmatter (Pernyataan, Persetujuan, Pengesahan, "
+            "Kata Pengantar, Abstrak, Abstract). "
+            "DOCX utama mulai dari Daftar Isi (hal. i) dan Bab 1 (hal. 1). "
+            "Output: Proposal_Arthur_PokemonTCG_NoFrontmatter.docx"
+        )
+    )
     args = parser.parse_args()
-    build_full_proposal(skip_chapter3=args.no_chapter3)
+    build_full_proposal(skip_chapter3=args.no_chapter3, skip_frontmatter=args.no_frontmatter)

@@ -516,6 +516,39 @@ File apa saja yang berubah, dan apa status akhirnya?</pre>
         </div>
       </div>
 
+      <!-- CARD 7: DIAGNOSTIK FATAL ERROR & AUTO-REPAIR DOCX -->
+      <div class="prompt-card">
+        <div class="card-header">
+          <div class="card-title-group">
+            <div class="card-title">🛠️ Opsi 7: Diagnostik Fatal Error Naskah DOCX &amp; Auto-Repair Generator</div>
+            <div class="card-desc">Cek kebocoran sintaks LaTeX mentah (tabel/panah/rumus), border liar lembar pengesahan, dan perbaiki naskah Word secara otomatis.</div>
+          </div>
+          <button type="button" class="btn-copy" onclick="copyPrompt('prompt7', this)">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Salin Prompt</span>
+          </button>
+        </div>
+
+        <div class="prompt-box">
+          <pre class="prompt-text" id="prompt7">Halo! Jalankan skill "obsidian-second-brain". Tolong lakukan audit diagnostik tipografi, deteksi kebocoran kode LaTeX mentah, dan auto-repair naskah Microsoft Word (.docx):
+
+1. [DIAGNOSTIK FATAL ERROR]: Jalankan audit ketat `python execution/verify_docx_typography.py`. Periksa apakah ada:
+   - Kebocoran sintaks mentah LaTeX (`\begin{longtable}`, `\toprule`, `\rightarrow`, `\begingroup`, dll.) di paragraf naskah.
+   - Border grid tabel liar pada Halaman Pernyataan &amp; Persetujuan (hal ii &amp; iii).
+   - Asimetri baseline tanda tangan Dosen Pembimbing vs Kaprodi.
+   - Font non-hitam atau themeColor pada heading/run dokumen.
+2. [AUTO-REPAIR JIKA ADA ERROR]: Jika ditemukan kegagalan/error fatal pada poin 1:
+   - Bersihkan dan format ulang menggunakan `execution/build_proposal_word.py` (kedua varian: proposal lengkap dan tanpa Bab 3).
+   - Pastikan Tabel 1.1 (Matriks Research Gap) dirender sebagai tabel Word APA 7 murni, bukan teks TeX mentah.
+   - Kunci tabel identitas &amp; tanda tangan formal menjadi 100% borderless dengan struktur 3-baris presisi.
+3. [VERIFIKASI ULANG]: Jalankan kembali `python execution/verify_docx_typography.py` dan `python execution/run_thesis_graph.py --gate parity` hingga 100% PASS (0 fatal error).
+4. Laporkan ringkasan hasil audit sebelum vs sesudah perbaikan!</pre>
+        </div>
+      </div>
+
     </div>
 
     <footer>

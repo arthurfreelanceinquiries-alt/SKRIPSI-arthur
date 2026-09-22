@@ -7,6 +7,113 @@
 
 ---
 
+## 📅 Sesi 22 September 2026 (Sesi 22): Refaktorisasi Arsitektur Modular — Pemisahan 6 Halaman Frontmatter ke File DOCX Individual
+
+* **Fokus Pekerjaan:**
+  - Memisahkan 6 halaman frontmatter formal dari naskah utama menjadi file DOCX mandiri di [[01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/]].
+  - Membuat skrip baru [[execution/extract_frontmatter_pages.py]] yang menghasilkan 6 file DOCX individual secara reproducible.
+  - Memodifikasi [[execution/build_proposal_word.py]] dengan menambahkan: fungsi `_setup_doc_base_styles()` (dapat di-import), parameter `skip_frontmatter`, dan flag CLI `--no-frontmatter`.
+* **Masalah yang Diselesaikan:**
+  - Sebelumnya frontmatter (Pernyataan, Persetujuan, Pengesahan, Kata Pengantar, Abstrak, Abstract) embedded di DOCX utama sehingga sulit dikelola dan diganti secara individual untuk keperluan tanda tangan/stempel institusional.
+  - Arsitektur modular memungkinkan merge kembali saat diperlukan tanpa merubah pipeline build utama.
+* **Output yang Dihasilkan:**
+  - `01_Pernyataan_Keaslian.docx` — Pernyataan Keaslian Karya Tugas Akhir (38 KB)
+  - `02_Halaman_Persetujuan.docx` — Halaman Persetujuan Dosen Pembimbing & Kaprodi (38 KB)
+  - `03_Halaman_Pengesahan_Penguji.docx` — Halaman Pengesahan Tim Penguji (38 KB)
+  - `04_Kata_Pengantar.docx` — Kata Pengantar + 7 ucapan terima kasih (39 KB)
+  - `05_Abstrak_Indonesia.docx` — Abstrak Bahasa Indonesia + Kata Kunci (38 KB)
+  - `06_Abstract_English.docx` — Abstract Bahasa Inggris + Keywords (38 KB)
+* **Keputusan Arsitektur:**
+  - Halaman Sampul (hal. i) tetap di DOCX utama; hanya 6 halaman formal (hal. ii–viii) yang dipindah.
+  - Penomoran DOCX `--no-frontmatter`: Daftar Isi reset ke hal. i, Bab 1 mulai hal. 1.
+  - DOCX lama (`Proposal_Arthur_PokemonTCG.docx`) tidak dihapus — tetap ada sebagai versi dengan frontmatter lengkap.
+* **File yang Diperbarui/Dibuat:**
+  - [[execution/extract_frontmatter_pages.py]] *(BARU)*
+  - [[execution/build_proposal_word.py]] *(dimodifikasi: +_setup_doc_base_styles, +skip_frontmatter, +--no-frontmatter)*
+  - [[01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/01_Pernyataan_Keaslian.docx]] *(BARU)*
+  - [[01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/02_Halaman_Persetujuan.docx]] *(BARU)*
+  - [[01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/03_Halaman_Pengesahan_Penguji.docx]] *(BARU)*
+  - [[01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/04_Kata_Pengantar.docx]] *(BARU)*
+  - [[01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/05_Abstrak_Indonesia.docx]] *(BARU)*
+  - [[01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/06_Abstract_English.docx]] *(BARU)*
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] *(log ini)*
+
+---
+
+## 📅 Sesi 22 September 2026 (Sesi 21): Inisiasi Sesi Kerja via Protokol Obsidian Second Brain, Sinkronisasi Graphify, dan Rekonsiliasi Konteks Naskah Skripsi
+
+* **Fokus Pekerjaan:**
+  - Mengaktifkan protokol [[.agents/skills/obsidian-second-brain/SKILL.md|obsidian-second-brain]] untuk sinkronisasi pengetahuan dan eliminasi amnesia konteks riset skripsi.
+  - Menelaah graf pengetahuan [[graphify-out/manifest.json]] dan [[graphify-out/GRAPH_REPORT.md]] (1.880 node, 2.004 edge, 174 komunitas; relasi skrip generator Word, orkestrasi 7 gerbang parity, dan entitas variabel).
+  - Menyerap status operasional dari [[00_DASHBOARD_SECOND_BRAIN.md]], parameter definitif riset pada [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] (keputusan D01–D26), serta framework universal [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]] dan SOP [[directives/universal_thesis_graph_of_agents.md]] (A0–A11, F1–F11).
+  - Memverifikasi kesiapan naskah aktif:
+    1. Proposal Lengkap: [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]] (64 halaman) & [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]] (frontmatter mandiri DAFTAR TABEL & GAMBAR, sitasi terhyperlink ke DP, 0 sintaks LaTeX mentah).
+    2. Varian Tanpa Bab 3: [[01_Naskah_Utama/Proposal_Arthur_NoBab3.pdf]] (46 halaman) & [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]].
+    3. Slide Deck Sidang: [[02_Persiapan_Sidang/ppt_seminar_proposal/Proposal_Arthur_Sempro_PokemonTCG.pptx]] (15 slide FinTech Dark Mode).
+* **Masalah yang Diselesaikan:**
+  - Pemulihan menyeluruh memori kerja skripsi: status terkini naskah, parameter riset kuantitatif $Y, X_1, X_2, X_3, Z$, dan arahan bimbingan Dr. Fredella Colline terserap sempurna.
+* **Keputusan / Insight:**
+  - Menegakkan protokol dokumentasi 3-Layer secara ketat, mewajibkan callout `> [!SUMMARY]` pada setiap berkas analisis baru, serta mempertahankan standardisasi sitasi dan tipografi tanpa regresi.
+* **File yang Diperbarui:**
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+---
+
+## 📅 Sesi 21 September 2026 (Sesi 20): Resolusi Fatal Error Kebocoran Sintaks LaTeX Mentah Tabel 1.1, Border Grid Liar & Asimetri Tanda Tangan Formal, Penerbitan Rule Baru, dan Pembaruan Prompt Kickoff Website (Opsi 7)
+
+* **Fokus Pekerjaan:**
+  - Menindaklanjuti dan menuntaskan 3 kesalahan fatal pada naskah Microsoft Word (`Proposal_Arthur_PokemonTCG.docx` dan `Proposal_Arthur_NoBab3.docx`):
+    1. **Kebocoran Mentah LaTeX Tabel 1.1:** Paragraf Bab 1 tercemar blok kode mentah TeX (`\begingroup`, `\small`, `\begin{longtable}`, `\toprule`, `&`, `\\`, `\end{longtable}`).
+    2. **Border Grid Liar & Spasi Kejauhan:** Tabel identitas mahasiswa pada Halaman Pernyataan Keaslian (hal. ii) dan Halaman Persetujuan (hal. iii) memiliki garis grid terlihat dan titik dua (`:`) terletak terlalu jauh di tengah halaman akibat pembagian kolom rata 33%-33%-33%.
+    3. **Asimetri Spasi Tanda Tangan:** Tabel tanda tangan memiliki kotak border dan posisi vertikal nama Kaprodi (Rita Amelinda) naik ~1,5 cm lebih tinggi daripada Dosen Pembimbing (Dr. Fredella Colline).
+  - Melakukan refaktorisasi arsitektur 3-Layer:
+    - **Layer 1 (Directives & PRD):** Memperbarui [[04_Riset_&_Metodologi/PRD_REVISI_DOCX_KUALITAS_LATEX.md]] dengan Masalah 4 & 5 serta menerbitkan aturan baku baru [[.agents/rules/mandatory_no_raw_latex_in_docx.md]].
+    - **Layer 2 (Orchestration & Rules):** Menormalkan draf Markdown [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]] dan skrip konversi [[execution/sync_markdown_from_tex.py]] agar menangkap lingkungan `\begin{longtable}` Tabel 1.1 secara atomik.
+    - **Layer 3 (Execution):** 
+      * Menambahkan `remove_table_borders(table)` dan `set_col_widths_fixed(table, [Cm(3.8), Cm(0.4), Cm(9.8)])` pada tabel identitas formal.
+      * Merestrukturisasi tabel tanda tangan `tbl_apv` menjadi tabel 3-baris presisi (Row 0: Jabatan, Row 1: Spasi Tanda Tangan 55 pt, Row 2: Nama & NIDN) untuk menjamin 100% simetri garis dasar horizontal tanpa border kotak.
+      * Membangun `build_tabel_research_gap(doc)` yang memproduksi 8 baris × 5 kolom tabel Word APA 7 murni (*open format*, tanpa border vertikal, shading `#F2F2F2`, garis horizontal `#000000`).
+      * Menyempurnakan `clean_academic_text()` untuk konversi panah `\rightarrow` → `→`, angka berkoma `0{,}092` → `0,092`, dan eliminasi command TeX liar.
+  - Memperbarui sistem prompt aplikasi web interaktif [[PROMPT_KICKOFF.html]] dan panduan master [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md]] dengan menambahkan **Opsi 7: Diagnostik Fatal Error Naskah DOCX & Auto-Repair Generator** dengan fitur 1-klik copy.
+  - Memperbarui skrip audit [[execution/verify_docx_typography.py]] dengan deteksi command TeX, audit border frontmatter, dan konfigurasi output UTF-8 untuk konsol Windows.
+* **Masalah yang Diselesaikan:**
+  - 100% melenyapkan kebocoran sintaks TeX pada naskah Word. Tabel 1.1 kini berwujud tabel Word APA 7 murni yang elegan dan profesional.
+  - 100% menghilangkan border liar pada lembar pengesahan formal dan mengunci kerapatan titik dua di 3,8 cm.
+  - 100% mengunci garis dasar horizontal penandatangan sehingga nama Dr. Fredella Colline dan Rita Amelinda sejajar presisi.
+  - Memberikan pengguna tombol prompt 1-klik di browser web untuk melakukan diagnostik instan dan auto-repair naskah kapan saja.
+* **Keputusan / Output Teknis:**
+  - Aturan Baru: [[.agents/rules/mandatory_no_raw_latex_in_docx.md]].
+  - PRD Diperbarui: [[04_Riset_&_Metodologi/PRD_REVISI_DOCX_KUALITAS_LATEX.md]].
+  - Prompt Web Kickoff Diperbarui: [[PROMPT_KICKOFF.html]] (Opsi 7 ditambahkan) & [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md]].
+  - Generator Diperbarui: [[execution/build_proposal_word.py]].
+  - Verifikator Diperbarui: [[execution/verify_docx_typography.py]].
+  - Naskah Word Tergenerasi Ulang: [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]] & [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]].
+  - Hasil Uji Verifikasi Otomatis (100% PASS):
+    1. `python execution/verify_docx_typography.py`: **ALL WORD DOCUMENTS PASSED PUBLICATION-GRADE VERIFICATION** (0 fatal LaTeX, 0 frontmatter border leaks, 100% pure black, valid dot leaders).
+    2. `python execution/run_thesis_graph.py --gate parity`: **7 PASS / 0 FAIL / 0 SKIP** (G1 Mendeley, G2 Live URL, G3 UKRIDA 2023, G4 Tipografi DOCX, G5 Paritas PDF-Word, G6 Outline Word, G7 Sumber LibGen).
+
+---
+
+## 📅 Sesi 21 September 2026 (Sesi 19): Inisiasi Sesi Kerja via Protokol Obsidian Second Brain, Sinkronisasi Graphify (1.880 Nodes), & Pemuatan Status Naskah Aktif
+
+* **Fokus Pekerjaan:**
+  - Mengaktifkan protokol [[.agents/skills/obsidian-second-brain/SKILL.md|obsidian-second-brain]] untuk sinkronisasi pengetahuan dan pencegahan amnesia konteks antar-sesi.
+  - Membaca manifest dan struktur graf pengetahuan dari [[graphify-out/manifest.json]] dan [[graphify-out/GRAPH_REPORT.md]] (1.880 node, 2.004 edge, 174 komunitas, 0 import cycle; God Nodes: build_proposal_word, bab sub-bab, Master Guide, simulasi sidang).
+  - Menyerap status operasional dari [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] (keputusan terkunci D01–D26), serta framework universal [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]] (Graph of Agents A0–A11) dan SOP [[directives/universal_thesis_graph_of_agents.md]] (F1–F11).
+  - Memverifikasi status naskah:
+    1. Naskah Lengkap: [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]] (64 halaman, 54 pustaka terverifikasi, paritas full-doc PASS) & [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]] (frontmatter mandiri DAFTAR TABEL & DAFTAR GAMBAR terpisah via PageBreakBefore, 54 bookmark DP + 245 sitasi terhyperlink).
+    2. Varian Tanpa Bab 3: [[01_Naskah_Utama/Proposal_Arthur_NoBab3.pdf]] (46 halaman) & [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]].
+    3. Slide Deck Seminar Proposal: [[02_Persiapan_Sidang/ppt_seminar_proposal/Proposal_Arthur_Sempro_PokemonTCG.pptx]] (15 slide FinTech Dark Mode, 5,17 MB).
+* **Masalah yang Diselesaikan:**
+  - Konteks penelitian dan arsitektur 3-layer dipulihkan 100% tanpa kehilangan riwayat keputusan metodologis atau arahan dosen.
+* **Keputusan / Insight:**
+  - Seluruh variabel penelitian ($Y$: *Impulsive Buying*, $X_1$: *Hedonic Motivation*, $X_2$: *Desire for Completeness*, $X_3$: *Speculative Motive*, $Z$: *Self-Control*) dan model MRA dua-tahap hierarkis dengan mean-centering terpetakan kuat.
+  - Menegakkan kepatuhan dokumentasi: Callout `> [!SUMMARY]`, bidirectional links `[[...]]`, dan arsitektur 3-Layer.
+* **File yang Diperbarui:**
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+---
+
 ## 📅 Sesi 21 September 2026 (Sesi 18): Resolusi Permanen Glitch Layout Frontmatter Word (Pemisahan Halaman Mandiri DAFTAR TABEL & DAFTAR GAMBAR), Proteksi COM Interop, dan Penegakan Aturan Audit G4
 
 * **Fokus Pekerjaan:**
@@ -1229,4 +1336,84 @@
   3. Doktrin anti-regresi: LaTeX sebagai Golden Truth, Zero Desync, No-Login-Wall, Zero Ghost Citations, Pure Black `#000000`, dan callout `> [!SUMMARY]` wajib ditegakkan di setiap perubahan.
 - **File yang Diperbarui:** [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
 - **Verifikasi:** Pre-flight Graphify OK, Source of Truth OK, Universal Framework OK, Log sesi berhasil di-append.
+
+---
+
+## 📅 Sesi: 22 September 2026 — Kickoff Sesi Kerja Skripsi & Pre-Flight Anti-Lupa Konteks
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Inisialisasi sesi kerja riset skripsi baru dengan mengaktifkan protokol [[obsidian-second-brain]], menyinkronkan graf pengetahuan Graphify, serta membaca Source of Truth dan Dashboard Kokpit.
+> - **Masalah yang Diselesaikan:** Menghilangkan risiko amnesia antar-sesi; memuat memori kerja seputar keputusan metodologi terkunci (D01–D26), struktur model MRA 2-tahap, arahan bimbingan [[Dr. Fredella Colline]], dan status paritas naskah proposal.
+> - **Keputusan/Output:** Pengetahuan sistem terverifikasi sinkron (Graphify terhubung: 1.880 nodes/2.004 edges, Dashboard & Source of Truth termuat, Framework Universal A0–A11 aktif). Menunggu penetapan target kerja spesifik dari pengguna.
+
+- **Fokus Pekerjaan:** Inisialisasi pre-flight skill [[obsidian-second-brain]]; inspeksi `graphify-out/manifest.json` dan `graphify-out/GRAPH_REPORT.md`; pembacaan `00_DASHBOARD_SECOND_BRAIN.md`, `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md`, `04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md`, dan SOP `directives/universal_thesis_graph_of_agents.md`.
+- **Keputusan / Insight:**
+  1. **Status Naskah:** Proposal Lengkap (`Proposal_Arthur_PokemonTCG.pdf` 64 hlm & `.docx`) dan Varian Tanpa Bab 3 (`Proposal_Arthur_NoBab3.pdf` 46 hlm & `.docx`) dalam kondisi terkunci, paritas 7/7 PASS, 54 pustaka terverifikasi nol sitasi hantu, 245 hyperlink internal aktif.
+  2. **Variabel & Model:** $Y$ (*Impulsive Buying*), $X_1$ (*Hedonic Motivation*), $X_2$ (*Desire for Completeness*), $X_3$ (*Speculative Motive*), $Z$ (*Self-Control*) dalam model MRA 2-tahap *mean-centered baseline* ($N \ge 111$ target 120–150 responden, kuesioner skala Likert baku).
+  3. **Doktrin & Kepatuhan:** Zero Desync, Golden Truth XeLaTeX, Pure Black `#000000`, Titik-titik TOC 14,0 cm, Kepatuhan Pedoman FEB UKRIDA 2023 (margin 4-3-3-3, sitasi dosen K-04 Dr. Fredella Colline, kuota jurnal SINTA/Scopus $\ge 5$).
+- **File yang Diperbarui:** [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** Seluruh file prasyarat terbaca tanpa error, log ter-append dengan format standar Obsidian Second Brain.
+
+---
+
+## 📅 Sesi: 22 September 2026 (Sesi lanjutan) — Re-Pre-Flight Second Brain & Konfirmasi Fokus Harian
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Re-aktivasi protokol [[obsidian-second-brain]] atas permintaan user untuk anti-lupa konteks sesi 22 Sep 2026.
+> - **Masalah yang Diselesaikan:** Memastikan [[graphify-out/GRAPH_REPORT.md]] (1.880 nodes / 2.004 edges), [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] (D01–D26), dan framework [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]] + [[directives/universal_thesis_graph_of_agents.md]] termuat ulang sebelum kerja.
+> - **Keputusan/Output:** Pre-flight PASS ulang; baseline Full 64 hlm + NoBab3 46 hlm / 54 ref / 245 tautan dikonfirmasi; menunggu fokus harian user.
+
+- **Fokus Pekerjaan:** Baca `graphify-out/manifest.json` + `graphify-out/GRAPH_REPORT.md`; baca [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]], PRD universal + SOP; cek `01_Naskah_Utama/` (Full + NoBab3 `.tex/.pdf/.docx` ada).
+- **Keputusan / Insight:** Tidak ada perubahan naskah pada pre-flight; arsitektur 3-Layer (directives -> orchestration -> execution) ditegakkan; callout `> [!SUMMARY]` + `[[wikilinks]]` dipatuhi.
+- **File yang Diperbarui:** [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** 7 file pre-flight terbaca OK; `01_Naskah_Utama/` berisi kedua varian; log ter-append.
+
+---
+
+## 📅 Sesi: 22 September 2026 — Audit Diagnostik DOCX, Auto-Repair TOC Hyperlink + Orphan Ref_*, & Parity 7/7
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Audit diagnostik tipografi [[execution/verify_docx_typography.py]], deteksi kebocoran LaTeX mentah, dan auto-repair hyperlink Daftar Isi + bookmark DP via [[execution/build_proposal_word.py]] (Opsi 7).
+> - **Masalah yang Diselesaikan:** Daftar Isi 0-hyperlink (56 plain/67 Full, 34 plain/42 NoBab3) + 4 orphan `Ref_*` ([[PriceCharting]], [[Statista]], [[Sugiyono]], [[Pokemon Company]]) yang lolos gate G4/G5.
+> - **Keputusan/Output:** 2 bug Layer-3 diperbaiki + rebuild 2 varian; tipografi PASS 2/2, TOC 109/109 terhubung (67 Full + 42 NoBab3), `Ref_*` 54/54, parity 7/7 PASS.
+
+- **Fokus Pekerjaan:** Pre-flight [[obsidian-second-brain]]; `verify_docx_typography.py` awal PASS 2/2 (300/2/42 NoBab3, 453/10/68 Full); deep-audit menemukan (a) TOC `TOC_*` 0 karena cek `startswith('TOC')` case-sensitive vs style `toc 1/2/3` + COM `Delete` + `Unlink` menghapus hyperlink statis, (b) 4 DP self-link (`Author (Year)` korporat menaut ke bookmark dirinya) yang dihapus Word COM saat Save.
+- **Masalah yang Diselesaikan:**
+  1. `link_static_toc_entries` + `link_lot_lof_entries` kini case-insensitive (`lower().startswith('toc')`); sinkron `[[execution/fix_libreoffice_toc_links.py]]`.
+  2. `link_citations_to_dp` kini melewati paragraf ber-bookmark `Ref_*` (anti-self-link; sitasi Full 249→245, NoBab3 212→208 = tepat 4 self-link musnah).
+  3. Post-pass TOC pasca-COM di `inject_native_word_toc` (reopen → `link_static_toc_entries` → save): Full 56 + NoBab3 34 entri terhubung ulang dengan nomor halaman Word asli.
+- **Keputusan / Insight:** (1) LaTeX mentah 0, border frontmatter Full OK (NoBab3 `single` = garis APA7 Tabel Gap, bukan liar), tanda tangan 3-baris simetris, pure-black 100%. (2) Biseksi no-COM (54/54) vs COM (50/54) membuktikan Python benar, Word yang membuang bookmark self-referensial. (3) Self-anneal tercatat di sini; directive tidak diubah (perilaku sesuai C-CITE-2/C-LOT-1).
+- **File yang Diperbarui:** [[execution/build_proposal_word.py]], [[execution/fix_libreoffice_toc_links.py]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** tipografi PASS 2/2; deep-audit TOC 67/67 + 42/42 linked, `Ref_*` 54/54, orphan 0; `run_thesis_graph.py --gate parity` 7/7 PASS.
+
+---
+
+## 📅 Sesi: 22 September 2026 — Perbaikan Daftar Isi Biru → Hitam Pekat (Pedoman FEB 2023)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menjawab temuan user (Daftar Isi tampil biru pasca-repair) dengan merujuk [[05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Tugas Akhir 2023]] + preseden kakak tingkat.
+> - **Masalah yang Diselesaikan:** Run TOC hasil Word COM membawa `rStyle Hyperlink` (biru + underline) tanpa warna direct — lolos gate G4 lama.
+> - **Keputusan/Output:** Penetrasi hitam pasca-COM (167 run Full + 119 run NoBab3) + guard G4 baru; TOC tetap 109/109 terhubung, hitam, tanpa garis bawah; parity 7/7 PASS.
+
+- **Fokus Pekerjaan:** Cek pedoman 2023 (TNR 12 seluruh naskah; "huruf berwarna hitam pekat dan seragam"); file kakak tingkat `Skripsi_Arthur_FINAL.docx` sudah tidak ada di repo (dibersihkan) → otoritas = pedoman + struktur statis-hitam yang dulu disetujui. Inspeksi XML membuktikan `<w:rStyle w:val="Hyperlink"/>` tanpa `<w:color>` pada run TOC pasca-`Unlink`.
+- **Masalah yang Diselesaikan:** (1) Penyebab: pure-black pass berjalan SEBELUM COM, sehingga run TOC regenerasi Word tak tersentuh. (2) Perbaikan `[[execution/build_proposal_word.py]]`: hapus `rStyle Hyperlink` + `w:u`, suntik `w:color 000000` khusus rentang DAFTAR ISI (URL biru [[DAFTAR PUSTAKA]] dipertahankan). (3) `[[execution/verify_docx_typography.py]]` (G4) kini mengaudit warna hyperlink TOC → regresi biru = FAIL eksplisit.
+- **Keputusan / Insight:** Rebuild sempat `PermissionError` (LibreOffice mengunci berkas; user menutup → rebuild sukses). Hiperlink dipertahankan (klik) + hitam sesuai pedoman — kombinasi keduanya, bukan salah satu.
+- **File yang Diperbarui:** [[execution/build_proposal_word.py]], [[execution/verify_docx_typography.py]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** tipografi PASS 2/2 (termasuk cek biru baru); TOC 67/67 + 42/42 linked-hitam; `Ref_*` 54/54; parity 7/7 PASS.
+
+---
+
+## 📅 Sesi: 22 September 2026 — Perbaikan Daftar Isi Hilang di Google Docs (Sanitasi Residu COM)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menjawab temuan user (halaman Daftar Isi kosong saat DOCX dibuka di Google Docs) dengan membedah XML dan mensterilkannya.
+> - **Masalah yang Diselesaikan:** 1 bookmark yatim tak-tertutup + 56 `webHidden` warisan Word-COM di entri TOC membuat konverter Docs membuang seluruh isi halaman.
+> - **Keputusan/Output:** Sanitasi pasca-COM (57 residu Full + 35 NoBab3) + guard G4 baru; TOC 109/109 terhubung-hitam; parity 7/7 PASS; user verifikasi ulang via upload-convert.
+
+- **Fokus Pekerjaan:** Dump XML paragraf TOC (`TOC1`, tab `7927`-dot): ditemukan (a) `<w:bookmarkStart id=12 name=TOC_DAFTAR_TABEL>` yatim tanpa `bookmarkEnd` di entri pertama, (b) `<w:webHidden/>` di run nomor-halaman ke-56 entri, (c) `noProof` 223× (tidak berbahaya → dipertahankan anti-garis-merah).
+- **Masalah yang Diselesaikan:** `[[execution/build_proposal_word.py]]` kini membersihkan bookmark yatim + `webHidden` KHUSUS rentang ISI→DT sebelum relink (URL biru DP & bookmark heading tidak tersentuh); `[[execution/verify_docx_typography.py]]` (G4) kini mem-FAIL-kan keduanya bila muncul lagi.
+- **Keputusan / Insight:** Struktur entri kini identik pola sitasi (teks + hyperlink internal hitam) yang terbukti lolos konverter Docs sebagai teks terlihat. Verifikasi visual Docs tidak bisa dilakukan dari sini → user wajib upload-ulang + convert + konfirmasi.
+- **File yang Diperbarui:** [[execution/build_proposal_word.py]], [[execution/verify_docx_typography.py]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** tipografi PASS 2/2 (cek residu baru); TOC 67/67 + 42/42 linked-hitam; `Ref_*` 54/54; parity 7/7 PASS.
+
 

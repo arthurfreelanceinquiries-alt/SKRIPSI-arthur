@@ -377,6 +377,24 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
     s = s.replace(r'\judulskripsi', 'PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI')
     s = s.replace("``", "“").replace("''", "”")
 
+    # Convert Table 1.1 (Matriks Research Gap)
+    if r"\caption{Matriks Kesenjangan Penelitian Empiris" in s:
+        tab11_pattern = re.compile(r'\\begingroup.*?\\caption\{Matriks Kesenjangan Penelitian Empiris.*?\}.*?\\endgroup', re.DOTALL)
+        tab11_md = """**Tabel 1.1: Matriks Kesenjangan Penelitian Empiris (*Research Gap*) pada 7 Subjek Hubungan Model Penelitian**
+
+| No | Subjek Hubungan | Kelompok Temuan Positif / Meredam | Kelompok Temuan Negatif / Lemah | Inti Kesenjangan Kausal (*The Why*) |
+|:---:|:---|:---|:---|:---|
+| 1 | $X_1 \\rightarrow Y$ (*Hedonic Motivation* ke *Impulsive Buying*) | Arnold dan Reynolds (2003); Gültekin dan Özer (2012); Pranggabayu dan Andjarwati (2022); Gong *et al.* (2024); Tirtayasa *et al.* (2020); Zheng *et al.* (2019) (Pengaruh positif signifikan; penelusuran hedonis memicu dorongan impulsif). | Batas konseptual Thaler (1985); Thaler dan Shefrin (1981) (Dorongan tertahan batasan anggaran/mental budgeting; bukan klaim n.s. pada kolektibel). | Perbedaan elastisitas anggaran dan dominasi orientasi utiliter vs afektif konsumen. |
+| 2 | $X_2 \\rightarrow Y$ (*Desire for Completeness* ke *Impulsive Buying*) | Gao *et al.* (2014); Barasz *et al.* (2017); Dewi *et al.* (2026) (Pengaruh positif signifikan; ketegangan psikologis set memicu akselerasi transaksi). | Argumen teoritis Long dan Schiffman (2000); Spero dan Stone (2004) (Kolektor matang menolak produk acak dan memilih kartu satuan; bukan klaim n.s.). | Perbedaan tingkat kematangan kolektor (*collector maturity*) dan kalkulasi probabilitas kemasan acak. |
+| 3 | $X_3 \\rightarrow Y$ (*Speculative Motive* ke *Impulsive Buying*) | Baur *et al.* (2018); Aryadi dan Lingga (2026) (analogi: Y=partisipasi investasi TCG); Colline (2024) (analogi: herding investor Indonesia, kualitatif n=5; teori Shiller (2000) sebagai grand theory). | Analogi saham Barber dan Odean (2008); Fama (1970) (Kesadaran risiko menahan spontanitas; bukan bukti n.s. kolektibel). | Asimetri informasi pasar dan bias ilusi kendali keuntungan vs evaluasi risiko kerugian modal. |
+| 4 | $M \\rightarrow Y$ (*Self-Control* ke *Impulsive Buying*) | Baumeister (2002); Tangney *et al.* (2004); Vohs dan Faber (2007); Sultan *et al.* (2012) (Pengaruh negatif signifikan; regulasi diri disiplin menunda kepuasan belanja). | Batas konseptual Hirschman dan Holbrook (1982); Stern (1962) (*Cognitive bypass* saat stimulus intens; bukan uji regresi). | Keterbatasan kapasitas energi kognitif (*ego depletion*) saat menghadapi stimulus lingkungan toko yang intens. |
+| 5 | $X_1 \\cdot M \\rightarrow Y$ (Moderasi $M$ pada $X_1 \\rightarrow Y$) | Lienardy dan Panasea (2026) (MRA: H4 diterima, buffer); Katauke *et al.* (2023) (regulasi-literasi, tak langsung). | Gagal-moderasi: Apidana dan Kholifah (2022) (p=0,597) + Artadita dan Firmialy (2024) ($\\beta=0{,}092$, n.s.) + teori *regulatory failure*. | Ambang batas intensitas stimulus hedonis yang melampaui kapasitas kontrol volisional. |
+| 6 | $X_2 \\cdot M \\rightarrow Y$ (Moderasi $M$ pada $X_2 \\rightarrow Y$) | Parsial/tak langsung: Artadita dan Firmialy (2024) (kontrol kognitif signifikan pada taraf 10%, moderasi keseluruhan DITOLAK); Apidana dan Kholifah (2022) (buffer lifestyle, adjacent). | Teori obsesi Belk (1995); Barasz *et al.* (2017) + gagal-moderasi koleksi Artadita dan Firmialy (2024) (H3 ditolak). | Tingkat keterikatan emosional kolektor (*involvement*); hobi kasual vs fanatisme koleksi mendalam. |
+| 7 | $X_3 \\cdot M \\rightarrow Y$ (Moderasi $M$ pada $X_3 \\rightarrow Y$) | Tak langsung: Katauke *et al.* (2023) (literasi menekan impulsivitas) + mekanisme *Planner-Doer*. | Argumen teoritis Shiller (2000); Aryadi dan Lingga (2026) (Euforia/herding melumpuhkan rem; bukan uji $X_3 \\cdot M$). | Tekanan sosial komunitas, bias *herding*, dan ketakutan tertinggal momentum keuntungan (*FOMO*). |
+
+*Sumber: Data diolah dari sintesis kajian literatur empiris terdahulu (2026).*"""
+        s = tab11_pattern.sub(tab11_md, s)
+
     # Convert Table 2.1
     if r"\caption{Ringkasan Penelitian Sebelumnya}" in s:
         tab21_pattern = re.compile(r'\\begingroup.*?\\caption\{Ringkasan Penelitian Sebelumnya\}.*?\\endgroup', re.DOTALL)

@@ -9,6 +9,14 @@ import sys
 from pathlib import Path
 from docx import Document
 from docx.enum.text import WD_TAB_LEADER
+from docx.oxml.ns import qn
+from docx.shared import Pt
+
+# Ensure UTF-8 output on Windows console
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 
 
 def _style_tab_stops(doc, paragraph):
@@ -92,7 +100,19 @@ def audit_docx(docx_path: Path) -> bool:
                         f"Abstract font size too small ({r.font.size.pt} pt) at P{p_idx} R{r_idx}: '{r.text[:30]}...'"
                     )
 
-        # Check for stray asterisks in runs
+        # Check for paragraph-level raw LaTeX environment leaks
+        for raw_env in [r"\begin{", r"\end{", r"\toprule", r"\midrule", r"\bottomrule", r"\begingroup", r"\endgroup", r"\multicolumn"]:
+            if raw_env in p_text:
+                issues.append(f"FATAL: Raw LaTeX environment '{raw_env}' in paragraph text at P{p_idx}: {repr(p_text[:60])}")
+
+        # Check for stray asterisks and tokens in runs
+        raw_latex_tokens = [
+            r"\cite", r"\ref", r"\emph", r"\beta", r"\alpha", r"\Delta", r"\cdot",
+            r"\begin{", r"\end{", r"\toprule", r"\midrule", r"\bottomrule",
+            r"\begingroup", r"\endgroup", r"\multicolumn", r"\small", r"\footnotesize",
+            r"\addlinespace", r"\rightarrow", r"\label{", r"\caption{", r"\endhead",
+            r"\endfoot", r"\endlastfoot"
+        ]
         for r_idx, r in enumerate(p.runs):
             # Check for literal asterisks
             if "*" in r.text:
@@ -105,9 +125,9 @@ def audit_docx(docx_path: Path) -> bool:
                 issues.append(f"Stray dollar '$' in run text at P{p_idx} R{r_idx}: {repr(r.text)}")
 
             # Check for raw LaTeX syntax
-            for raw_cmd in [r"\cite", r"\ref", r"\emph", r"\beta", r"\alpha", r"\Delta", r"\cdot"]:
+            for raw_cmd in raw_latex_tokens:
                 if raw_cmd in r.text:
-                    issues.append(f"Raw LaTeX command '{raw_cmd}' at P{p_idx} R{r_idx}: {repr(r.text)}")
+                    issues.append(f"FATAL: Raw LaTeX command '{raw_cmd}' at P{p_idx} R{r_idx}: {repr(r.text)}")
 
     # 2. Audit Table Cells
     total_tables = len(doc.tables)
@@ -121,9 +141,22 @@ def audit_docx(docx_path: Path) -> bool:
                             issues.append(f"Stray asterisk '*' in Table {t_idx} Row {r_idx} Col {c_idx}: {repr(r.text)}")
                         if "$" in r.text:
                             issues.append(f"Stray dollar '$' in Table {t_idx} Row {r_idx} Col {c_idx}: {repr(r.text)}")
-                        for raw_cmd in [r"\cite", r"\ref", r"\emph"]:
+                        for raw_cmd in raw_latex_tokens:
                             if raw_cmd in r.text:
-                                issues.append(f"Raw LaTeX command '{raw_cmd}' in Table {t_idx} Row {r_idx} Col {c_idx}: {repr(r.text)}")
+                                issues.append(f"FATAL: Raw LaTeX command '{raw_cmd}' in Table {t_idx} Row {r_idx} Col {c_idx}: {repr(r.text)}")
+
+    # 2b. Audit Frontmatter Tables (Table 0, 1, 2, 3) for borderless status & layout
+    W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+    if len(doc.tables) >= 6:
+        for t_idx in [0, 1, 2, 3]:
+            tbl = doc.tables[t_idx]
+            tblPr = tbl._tbl.tblPr
+            borders = tblPr.find(f"{W}tblBorders")
+            if borders is not None:
+                for b_tag in ['top', 'left', 'bottom', 'right', 'insideH', 'insideV']:
+                    b_node = borders.find(f"{W}{b_tag}")
+                    if b_node is not None and b_node.get(f"{W}val") not in ['none', 'nil']:
+                        issues.append(f"Frontmatter Table {t_idx} has visible border on '{b_tag}' ({b_node.get(f'{W}val')}). Must be borderless!")
 
     # 3. Audit Table of Contents tab leaders & positions
     print(f"[*] Inspecting Table of Contents for dot leaders & 14.0cm tab stops...")
@@ -165,6 +198,64 @@ def audit_docx(docx_path: Path) -> bool:
 
 
     print(f"[*] Checked {toc_paragraphs_checked} TOC/LOT/LOF entry paragraphs for dot leaders and 0 right_indent.")
+
+    # 3b2. Audit warna hyperlink TOC (Pedoman FEB 2023: hitam pekat dan seragam)
+    # Run di dalam hyperlink TOC wajib: tanpa rStyle Hyperlink (biru bawaan
+    # Word), tanpa underline, warna eksplisit 000000. Lingkup DAFTAR ISI saja
+    # (hyperlink URL biru di Daftar Pustaka adalah sah dan tidak diperiksa).
+    _plist = list(doc.paragraphs)
+    _isi = next((i for i, _pp in enumerate(_plist) if _pp.text.strip() == 'DAFTAR ISI' and '\t' not in _pp.text), None)
+    _dtb = None
+    if _isi is not None:
+        for _j in range(_isi + 1, len(_plist)):
+            _pp = _plist[_j]
+            try:
+                _sn = _pp.style.name
+            except Exception:
+                _sn = ''
+            if _pp.text.strip() == 'DAFTAR TABEL' and _sn.startswith('Heading'):
+                _dtb = _j
+                break
+    if _isi is not None and _dtb is not None:
+        for _pp in _plist[_isi + 1:_dtb]:
+            if '\t' not in (_pp.text or ''):
+                continue
+            for _el in _pp._p.iter():
+                if _el.tag == qn('w:bookmarkStart'):
+                    issues.append(f"Bookmark yatim '{_el.get(qn('w:name'))}' di dalam entri TOC (dibuang Google Docs): {repr(_pp.text[:50])}")
+                elif _el.tag == qn('w:webHidden'):
+                    issues.append(f"Run webHidden di entri TOC (disembunyikan Google Docs): {repr(_pp.text[:50])}")
+                    break
+        for _pp in _plist[_isi + 1:_dtb]:
+            if '\t' not in (_pp.text or ''):
+                continue
+            for _h in _pp._p.iter():
+                if _h.tag != qn('w:hyperlink'):
+                    continue
+                for _r in list(_h):
+                    if _r.tag != qn('w:r'):
+                        continue
+                    _rPr = _r.find(qn('w:rPr'))
+                    _has_hstyle = False
+                    _has_u = False
+                    _cval = None
+                    if _rPr is not None:
+                        for _rs in _rPr.findall(qn('w:rStyle')):
+                            if (_rs.get(qn('w:val')) or '').lower() == 'hyperlink':
+                                _has_hstyle = True
+                        if _rPr.find(qn('w:u')) is not None:
+                            _has_u = True
+                        _ce = _rPr.find(qn('w:color'))
+                        if _ce is not None:
+                            _cval = _ce.get(qn('w:val'))
+                    if _has_hstyle:
+                        issues.append(f"TOC hyperlink run memakai rStyle Hyperlink (biru) di: {repr(_pp.text[:50])}")
+                    if _has_u:
+                        issues.append(f"TOC hyperlink run bergaris bawah di: {repr(_pp.text[:50])}")
+                    if _cval not in (None, '000000', 'auto') or (_cval is None and _has_hstyle):
+                        issues.append(f"TOC hyperlink run tidak hitam pekat (val={_cval}) di: {repr(_pp.text[:50])}")
+                    elif _cval is None and not _has_hstyle and not _has_u:
+                        pass  # hitam default tanpa style — sah
 
     # 3b. Audit Frontmatter Mandatory Standalone Pages (DAFTAR TABEL & DAFTAR GAMBAR)
     # UKRIDA FEB 2023: Subbab 2.1 hlm 9-10 menetapkan Daftar Isi, Daftar Tabel, dan Daftar Gambar

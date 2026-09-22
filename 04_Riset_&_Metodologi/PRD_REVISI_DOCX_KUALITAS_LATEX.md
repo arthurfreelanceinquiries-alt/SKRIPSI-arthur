@@ -47,6 +47,38 @@
 
 ---
 
+### D. Masalah 4: Kebocoran Sintaks Mentah LaTeX Tabel 1.1 pada Paragraf DOCX
+* **Gejala:** Di Bab 1, tabel matriks kesenjangan empiris (Tabel 1.1) tercetak sebagai blok kode mentah TeX (`\begingroup`, `\small`, `\begin{longtable}`, `\toprule`, `&`, `\\`, `\end{longtable}`) sebagai paragraf isi biasa, bukan tabel Word.
+* **Akar Masalah Teknis:**
+  1. Pipeline sinkronisasi `execution/sync_markdown_from_tex.py` memiliki regex konversi untuk Tabel 2.1, 3.1, dan 3.2, tetapi tidak memiliki konverter untuk `\begin{longtable}` Tabel 1.1.
+  2. Parser baris di `execution/build_proposal_word.py` hanya menangkap blok `\begin{table}` (Tabel 3.3) dan tabel Markdown pipes (`|...|`), namun tidak memiliki *interceptor* untuk lingkungan `\begin{longtable}` maupun `\begingroup`, sehingga baris mentah dilewatkan ke `add_body_paragraph()`.
+  3. Inline math expressions seperti `$X_3 \rightarrow Y$`, `$\rightarrow$`, `\emph{The Why*}`, dan `n.s.\` tidak dinormalisasi secara tuntas oleh `clean_academic_text()`.
+* **Solusi Mutlak:**
+  - Tambahkan fungsi *builder* tabel khusus `build_tabel_research_gap(doc)` yang memproduksi 8 baris × 5 kolom tabel Word APA 7 murni (*open format*, tanpa garis vertikal, header abu-abu tipis `#F2F2F2`, garis horizontal hitam pekat `#000000`).
+  - Pasang *interceptor* di parser `build_proposal_word.py` yang mendeteksi `\begin{longtable}` atau tanda Markdown `Tabel 1.1` dan memanggil `build_tabel_research_gap(doc)` secara atomik.
+  - Sempurnakan `clean_academic_text()` dengan pembersihan tuntas: konversi panah `\rightarrow` → `→`, normalisasi angka koma `0{,}092` → `0,092`, dan eliminasi seluruh token perintah TeX liar.
+  - Tambahkan audit fatal pada `execution/verify_docx_typography.py` untuk menggagalkan *build* jika ditemukan token `\begin{`, `\toprule`, `\rightarrow`, atau token TeX lainnya di paragraf naskah Word.
+
+---
+
+### E. Masalah 5: Border Grid Liar dan Asimetri Spasi Tanda Tangan pada Lembar Formal
+* **Gejala:** 
+  1. Pada lembar *Pernyataan Keaslian* (hal. ii) dan *Halaman Persetujuan* (hal. iii), tabel identitas mahasiswa memiliki garis tepi (*grid borders*) yang terlihat jelas dan titik dua (`:`) terletak terlalu jauh di tengah halaman akibat pembagian kolom default yang sama rata (33%-33%-33%).
+  2. Blok tanda tangan pada *Halaman Persetujuan* memiliki kotak border terlihat dan posisi vertikal nama Kaprodi (Rita Amelinda) naik ~1,5 cm lebih tinggi daripada Dosen Pembimbing (Dr. Fredella Colline).
+* **Akar Masalah Teknis:**
+  1. Pembuatan tabel `tbl_id` dan `tbl_per` di `build_formal_approval_sheets()` tidak menerapkan `tblBorders w:val="none"`, sehingga OpenXML merender border bawaan tabel default. Lebar kolom juga tidak ditentukan secara eksplisit, menyebabkan Word membagi lebar 14,0 cm secara merata menjadi ~4,67 cm per kolom.
+  2. Blok tanda tangan `tbl_apv` dibangun sebagai tabel 1-baris dengan memasukkan karakter baris baru manual (`\n\n\n\n\n` vs `\n\n\n\n`). Perbedaan panjang teks judul jabatan ("Dosen Pembimbing Skripsi," [2 baris] vs "Ketua Program Studi S1 Manajemen," [1 baris]) menyebabkan tinggi dasar teks tanda tangan menjadi asimetris (*misaligned baseline*).
+* **Solusi Mutlak:**
+  - Terapkan helper `remove_table_borders(table)` yang menyematkan elemen `<w:tblBorders>` dengan `<w:top w:val="none"/>`, `<w:left w:val="none"/>`, `<w:bottom w:val="none"/>`, `<w:right w:val="none"/>`, `<w:insideH w:val="none"/>`, `<w:insideV w:val="none"/>` ke seluruh tabel frontmatter.
+  - Kunci lebar kolom identitas dengan `set_col_widths_fixed(table, [Cm(3.8), Cm(0.4), Cm(9.8)])` dan hilangkan batas kiri tabel agar titik dua rapat rapi di posisi 3,8 cm.
+  - Ubah arsitektur tabel tanda tangan `tbl_apv` menjadi tabel 3-baris × 2-kolom:
+    - Baris 0: Judul Jabatan ("Menyetujui,\nDosen Pembimbing Skripsi," dan "Mengetahui,\nKetua Program Studi S1 Manajemen,")
+    - Baris 1: Ruang Tanda Tangan Kosong (tinggi tetap minimal 55 pt)
+    - Baris 2: Nama Lengkap dan NIDN Penandatangan.
+    - Struktur 3-baris ini menjamin 100% simetri garis dasar (*horizontal baseline alignment*) terlepas dari variasi pembungkusan teks judul jabatan.
+
+---
+
 ## 2. Rencana Eksekusi & Tahapan Perubahan
 
 1. **Refaktorisasi Style Engine di `execution/build_proposal_word.py`:**
@@ -55,9 +87,15 @@
    - Tambahkan pewarnaan eksplisit `RGBColor(0, 0, 0)` pada `parse_markdown_runs()`, `add_heading_1()`, `add_heading_2()`, `add_heading_3()`, `add_frontmatter_heading()`.
 3. **Penyempurnaan Generator Daftar Isi (TOC, LOT, LOF):**
    - Terapkan `TOC 1`, `TOC 2`, `TOC 3` dengan tab stop dot leader kanan `14.0 cm` dan perataan hanging indent.
-4. **Kompilasi & Pembuatan Dokumen DOCX:**
+4. **Pencegahan Border Liar & Perapihan Identitas / Tanda Tangan Formal:**
+   - Implementasikan `remove_table_borders()` dan `set_col_widths_fixed()` pada seluruh tabel frontmatter.
+   - Restrukturisasi `tbl_apv` menjadi 3-baris (Jabatan, Spasi Tanda Tangan 55pt, Nama/NIDN).
+5. **Konstruksi Tabel 1.1 Matriks Kesenjangan APA 7:**
+   - Bangun `build_tabel_research_gap()` dan pasang pencegat parser untuk `\begin{longtable}`.
+6. **Kompilasi & Pembuatan Dokumen DOCX:**
    - Bangun ulang `01_Naskah_Utama/Proposal_Arthur_NoBab3.docx`.
    - Bangun ulang `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx`.
-5. **Verifikasi Kualitas:**
+7. **Verifikasi Kualitas:**
+   - Audit otomatis dengan `execution/verify_docx_typography.py` (0 error fatal LaTeX, 0 border bocor di frontmatter, 100% font hitam, dot leaders valid).
    - Ekspor via Word COM ke PDF dan inspeksi setiap blok teks untuk memastikan warna `#000000` dan keberadaan garis titik-titik.
-   - Uji paritas dengan master LaTeX/PDF menggunakan `execution/verify_pdf_docx_parity.py`.
+   - Uji paritas dengan master LaTeX/PDF menggunakan `execution/run_thesis_graph.py --gate parity`.

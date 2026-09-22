@@ -2,22 +2,22 @@
 ### *Khusus untuk Arthur Reezan — Memenuhi Arahan Pembimbing (Dr. Fredella Colline)*
 
 > [!SUMMARY] Ringkasan Cepat & Target Mutlak
-> - **Tujuan:** Memasukkan seluruh **tepat 56 referensi** proposal skripsi Pokémon TCG ke aplikasi **Mendeley Reference Manager** dalam 1 kali klik, dan mengambil tangkapan layar (*screenshot*) untuk ditunjukkan kepada Ibu Dr. Fredella Colline.
-> - **Target Notifikasi Mendeley:** Toast hijau di kanan bawah wajib menampilkan: **"1 file uploaded, 56 references generated"**.
+> - **Tujuan:** Memasukkan seluruh **tepat 54 referensi** proposal skripsi Pokémon TCG ke aplikasi **Mendeley Reference Manager** dalam 1 kali klik, dan mengambil tangkapan layar (*screenshot*) untuk ditunjukkan kepada Ibu Dr. Fredella Colline.
+> - **Target Notifikasi Mendeley:** Toast hijau di kanan bawah wajib menampilkan: **"1 file uploaded, 54 references generated"**.
 > - **Berkas yang Digunakan:** `06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris`.
 > - **Waktu yang Dibutuhkan:** Kurang dari 1 menit.
 
 ---
 
 ## ⚠️ Langkah Pra-Syarat: Bersihkan Library Lama (Cegah Duplikat)
-Jika sebelumnya Anda sudah pernah mengimpor file yang menampilkan 52 atau 71 referensi:
+Jika sebelumnya Anda sudah pernah mengimpor file yang menampilkan 52, 55, 56, atau 71 referensi:
 1. Klik pada daftar referensi di Mendeley, tekan tombol **`Ctrl + A`** pada keyboard untuk memilih semua.
 2. Klik kanan lalu pilih **`Delete`** atau **`Move to Trash`**.
 3. Pastikan daftar kepustakaan Anda bersih.
 
 ---
 
-## Langkah 1: Impor Berkas RIS 56 Referensi (Sekali Klik)
+## Langkah 1: Impor Berkas RIS 54 Referensi (Sekali Klik)
 
 ### Opsi A (Melalui Menu — Sangat Direkomendasikan):
 1. Klik tombol **`+ Add new`** berwarna biru di pojok kiri atas aplikasi Mendeley.
@@ -25,7 +25,7 @@ Jika sebelumnya Anda sudah pernah mengimpor file yang menampilkan 52 atau 71 ref
 3. Pilih **`RIS (*.ris)`**.
 4. Cari dan pilih berkas:
    ```text
-   z:\SKRIPSII\SKRIPSI ARTHUR\SKRIPSI-arthur-main\SKRIPSI-arthur-main\06_Referensi_Jurnal_PDF\Mendeley_Library_Arthur_PokemonTCG.ris
+   06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris
    ```
 5. Klik **`Open`**.
 
@@ -35,11 +35,11 @@ Jika sebelumnya Anda sudah pernah mengimpor file yang menampilkan 52 atau 71 ref
 
 ---
 
-## Langkah 2: Verifikasi Notifikasi Hijau (Tepat 56 Referensi)
+## Langkah 2: Verifikasi Notifikasi Hijau (Tepat 54 Referensi)
 Perhatikan notifikasi *toast* hijau di pojok kanan bawah aplikasi Mendeley Anda:
-> **"1 file uploaded, 56 references generated"**
+> **"1 file uploaded, 54 references generated"**
 
-Jika angka menunjukkan tepat **56**, maka paritas kepustakaan antara Mendeley dan Naskah Skripsi Arthur sudah **100% klop sempurna**!
+Jika angka menunjukkan tepat **54**, maka paritas kepustakaan antara Mendeley dan Naskah Skripsi Arthur sudah **100% klop sempurna**!
 
 ---
 
