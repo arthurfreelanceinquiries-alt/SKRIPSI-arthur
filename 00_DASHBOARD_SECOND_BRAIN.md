@@ -49,7 +49,8 @@
   - Daftar Pustaka: [[03_Draft_Per_Bab/DAFTAR_PUSTAKA_TENTATIF.md]]
 
 ### 📁 B. Persiapan Sidang & Bimbingan
-* **Master Study Guide:** [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]] | [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.pdf|PDF Panduan Belajar]]
+* **Master Study Guide v3.0:** [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]] | [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.pdf|PDF Panduan Belajar]] *(38 hlm: 34 Q&A + §17 bedah Bab 3 + §18 anatomi rumus + §19 anatomi Bab 1–2, edisi nol-pengetahuan H-1 sempro)*
+* **Alur Presentasi 7 Slide (naskah bicara + durasi):** [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/ALUR_PRESENTASI_7_SLIDE_DETAIL.md]] | **Prompt siap-tempel Claude:** [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/PROMPT_CLAUDE_7SLIDE_SIAP_TEMPEL.md]] *(spesifikasi terkoreksi: 6H, N 120–150, tanpa klaim paylater)*
 * **Blueprint PPT Sempro Ringkas 7 Slide:** [[07_Review_&_Audit/Revisi_Dosen/2026-09-22_Arahan_Dosen_Struktur_PPT_Sempro_7_Slide.md|Cetak Biru 7 Slide & Talking Points (Arahan Ci Colline 22 Sep 2026)]]
 * **Paket Handoff AI Lain (PRD & Plan PPT 7 Slide):** [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/README.md|Folder 02_Rencana_PPT_Sempro_7_Slide/]] · [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/PRD_PPT_SEMPRO_7_SLIDE.md|PRD]] · [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/IMPLEMENTATION_PLAN_PPT_SEMPRO_7_SLIDE.md|Implementation Plan]] · [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/PROMPT_UNTUK_AI_LAIN.md|Prompt Siap Copy-Paste]]
 * **Slide Deck Seminar Proposal (PPTX):** [[02_Persiapan_Sidang/ppt_seminar_proposal/Proposal_Arthur_Sempro_PokemonTCG.pptx]] *(15 slide FinTech Dark Mode, 5,17 MB, editable)* | [[02_Persiapan_Sidang/ppt_seminar_proposal/slides/|Folder Slide HTML]]

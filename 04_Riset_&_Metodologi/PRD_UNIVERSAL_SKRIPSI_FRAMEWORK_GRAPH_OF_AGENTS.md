@@ -23,7 +23,7 @@
 |---|---|---|
 | Pedoman format | Buku Pedoman TA FEB UKRIDA 2023 (A4, margin 4-3-3-3, TNR 12, spasi 1.5, `#000000`, pustaka tanpa nomor, hanging 1.25cm) | Pedoman kampusmu → update 1 file `verify_ukrida_compliance.py` + `PRD_AUDIT_DAN_PENYELARASAN*` |
 | Syarat minimal | ≥50 hlm, ≥20 ref, ≥5 jurnal SINTA/Scopus ≤5 thn, sitasi dosen FEB | Ganti angka di A8 acceptance |
-| Master naskah | LaTeX `Proposal_Arthur_NoBab3.pdf` = golden truth | `.tex` / `.docx` / `.md` apapun — tetapkan 1 golden truth, jangan dua |
+| Master naskah | LaTeX `Proposal_Arthur_PokemonTCG.pdf` = golden truth (varian NoBab3 dihapus 23 Sep 2026; 6 lembar formal modular) | `.tex` / `.docx` / `.md` apapun — tetapkan 1 golden truth, jangan dua |
 | Variabel | Y=Impulsive Buying, X1=Hedonic, X2=Desire Completeness, X3=Speculative, M=Self-Control, MRA mean-centering | X/Y/Z apapun + metode apapun (regresi/SEM/kualitatif) — ganti hanya di A4–A6 |
 | Tools sitasi | Mendeley RIS whitelist JOUR/BOOK/RPRT/CONF/THES/GEN | Zotero/Mendeley apapun — pertahankan aturan "no silent-drop" |
 
