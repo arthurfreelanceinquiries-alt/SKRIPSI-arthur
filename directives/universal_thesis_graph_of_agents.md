@@ -25,7 +25,7 @@
 | F5 Method | A5 | Tulis Bab 3, freeze Model 1/2 + N + etik | Estimand + model frozen verbatim |
 | F6 Stats | A6 | Olah data (SPSS/R) + laporkan ΔR², effect size | p-value tidak pernah tanpa effect size |
 | F7 Build | A7 | `py execution/build_proposal_word.py [--no-chapter3]` + `py execution/build_proposal_nobab3_pdf.py` + `py execution/sync_markdown_from_tex.py`. Wajib: angka TOC/LOT/LOF = angka cetak PDF (C-LOT-1); `\caption{...}` mentah dilarang lolos; entri LOT/LOF terhyperlink 100% (laporan builder `N caption, M entri` harus imbang); sitasi tubuh terhyperlink ke DP 100% kunci (laporan `N tautan`; cakupan per-kunci NIHIL yatim; C-CITE-2); `DAFTAR ISI`, `DAFTAR TABEL`, dan `DAFTAR GAMBAR` wajib 100% berdiri sendiri di halaman baru terpisah (`pageBreakBefore = True`), dilarang menempel atau ter-merge ke dalam TOC (C-LOT-2). | File ter-build tanpa error XML & halaman frontmatter terpisah sempurna |
-| F8 Parity | A8 | `py execution/run_thesis_graph.py --gate parity` (G1–G7) + `verify_all_citation_links.py` (0 DEAD). Mendeley cloud: `--push` + `--prune --dry` + `--sync-links`, lalu verifikasi baca-balik (N dokumen = N RIS). Token mati → `--refresh` | 7/7 PASS, 1 FAIL = BUILD BROKEN |
+| F8 Parity | A8 | `py execution/run_thesis_graph.py --gate parity` (G1–G7) + `verify_all_citation_links.py` (0 DEAD; WALLED/WALLED-SERVER dicatat — DOI terdaftar tapi publisher tak terjangkau = bukan sumber fiktif bila PDF lokal terarsip + ledger baca-isi ✓). Mendeley cloud: `--push` + `--prune --dry` + `--sync-links`, lalu verifikasi baca-balik (N dokumen = N RIS). Token mati → `--refresh` | 7/7 PASS, 1 FAIL = BUILD BROKEN |
 | F9 Audit | A9 | `directives/run_paper_audit.md` **hanya** pada 5 trigger (Pra-Bimbingan, Pra-Sempro, Major Rewrite, Verifikasi Resolusi, On-demand) | Critical=0, Major selesai/terjustifikasi |
 | F10 Defense | A10 | `py execution/build_interactive_presentation.py` + `py execution/build_study_guide_pdf.py` | Panduan sinkron SoT; PDF <5MB |
 | F11 Log | A11 | Append [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] + update dashboard | Timestamp + keputusan + file tersentuh |
@@ -48,6 +48,8 @@ py execution/verify_book_sources.py         # G7
 ```
 
 Aturan: jalankan berurutan; berhenti di FAIL pertama; perbaiki secara surgical di agen pemilik; ulangi dari gerbang yang gagal (self-anneal: fix script → test → update directive ini).
+
+**Settled-build (C-LOT-3, pelajaran 23 Sep 2026):** angka halaman PDF hanya sah dari build *settled* — jalankan `xelatex` berulang hingga 2 run beruntun menghasilkan jumlah halaman identik + 0 `LaTeX Warning: Rerun`. Angka sekali-pass (pernah tercatat 52) adalah transien dan dilarang dipakai. TOC/LOT/LOF statis DOCX (`toc_items_full`/`lot_items_full`/`lof_items_full` di `build_proposal_word.py`) wajib diukur ulang dari `.toc`/`.lot`/`.lof` hasil build settled, lalu rebuild DOCX + ulangi G4–G5.
 
 ## 4. Kebijakan Audit Tier (anti-boros)
 

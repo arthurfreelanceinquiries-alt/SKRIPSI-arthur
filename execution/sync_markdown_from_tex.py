@@ -76,12 +76,6 @@ def main():
     md_lines.append("## DAFTAR ISI NASKAH PROPOSAL")
     md_lines.append("")
     md_lines.append("- [HALAMAN SAMPUL / JUDUL PROPOSAL](#halaman-sampul--judul-proposal)")
-    md_lines.append("- [HALAMAN PERNYATAAN KEASLIAN](#halaman-pernyataan-keaslian)")
-    md_lines.append("- [HALAMAN PERSETUJUAN PROPOSAL SKRIPSI](#halaman-persetujuan-proposal-skripsi)")
-    md_lines.append("- [HALAMAN PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL](#halaman-pengesahan-tim-penguji-seminar-proposal)")
-    md_lines.append("- [KATA PENGANTAR](#kata-pengantar)")
-    md_lines.append("- [ABSTRAK (BAHASA INDONESIA)](#abstrak)")
-    md_lines.append("- [ABSTRACT (ENGLISH)](#abstract)")
     md_lines.append("- [BAB 1 PENDAHULUAN](#bab-1-pendahuluan)")
     md_lines.append("  - [1.1 Latar Belakang Penelitian](#11-latar-belakang-penelitian)")
     md_lines.append("  - [1.2 Perumusan Masalah](#12-perumusan-masalah)")
@@ -149,157 +143,9 @@ def main():
     md_lines.append("")
     md_lines.append("---")
     md_lines.append("")
-    md_lines.append("### HALAMAN PERNYATAAN KEASLIAN")
-    md_lines.append("")
-    md_lines.append("<div align=\"center\">")
-    md_lines.append("")
-    md_lines.append("### PERNYATAAN KEASLIAN KARYA TUGAS AKHIR")
-    md_lines.append("")
-    md_lines.append("</div>")
-    md_lines.append("")
-    md_lines.append("Saya mahasiswa Universitas Kristen Krida Wacana:")
-    md_lines.append("")
-    md_lines.append("| Identitas | Keterangan |")
-    md_lines.append("|:---|:---|")
-    md_lines.append("| Nama Mahasiswa | Arthur Reezan |")
-    md_lines.append("| NIM | 312023002 |")
-    md_lines.append("| Program Studi | Program Studi S1 Manajemen |")
-    md_lines.append("| Konsentrasi | Manajemen Keuangan |")
-    md_lines.append("")
-    md_lines.append("Dengan ini menyatakan dengan sesungguhnya bahwa Proposal Skripsi yang berjudul:")
-    md_lines.append("")
-    md_lines.append("> **\"PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI\"**")
-    md_lines.append("")
-    md_lines.append("adalah:")
-    md_lines.append("1. Benar-benar hasil karya saya sendiri, bukan merupakan jiplakan, plagiarisme, fabrikasi, atau tiruan dari karya tulis ilmiah orang lain yang pernah diajukan untuk memperoleh gelar akademik di perguruan tinggi manapun.")
-    md_lines.append("2. Seluruh kutipan, data, dan rujukan ilmiah yang digunakan dalam naskah ini telah dicantumkan sumbernya secara jelas dan lengkap sesuai dengan kaidah penulisan ilmiah yang berlaku di Universitas Kristen Krida Wacana.")
-    md_lines.append("3. Apabila di kemudian hari terbukti bahwa pernyataan ini tidak benar atau ditemukan indikasi plagiarisme, saya bersedia menerima sanksi akademik yang berlaku sesuai dengan peraturan perundang-undangan dan ketentuan di lingkungan Universitas Kristen Krida Wacana.")
-    md_lines.append("")
-    md_lines.append("Jakarta, __________________ 2026  ")
-    md_lines.append("Yang menyatakan,  ")
-    md_lines.append("")
-    md_lines.append("| [ Materai Rp10.000 ] | **Arthur Reezan**<br>NIM: 312023002 |")
-    md_lines.append("|---|---|")
-    md_lines.append("")
-    md_lines.append("---")
-    md_lines.append("")
-    md_lines.append("### HALAMAN PERSETUJUAN PROPOSAL SKRIPSI")
-    md_lines.append("*(Format Baku Sesuai Lampiran 2 Pedoman Tugas Akhir FEB UKRIDA 2023)*")
-    md_lines.append("")
-    md_lines.append("<div align=\"center\">")
-    md_lines.append("")
-    md_lines.append("### PERSETUJUAN PROPOSAL SKRIPSI")
-    md_lines.append("")
-    md_lines.append("</div>")
-    md_lines.append("")
-    md_lines.append("| Identitas | Keterangan |")
-    md_lines.append("|:---|:---|")
-    md_lines.append("| Nama | Arthur Reezan |")
-    md_lines.append("| N.I.M. | 312023002 |")
-    md_lines.append("| Program Studi | Program Studi S1 Manajemen |")
-    md_lines.append("| Konsentrasi | Manajemen Keuangan |")
-    md_lines.append("")
-    md_lines.append("**Judul yang Diajukan:**  ")
-    md_lines.append("**PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI**  ")
-    md_lines.append("")
-    md_lines.append("Jakarta, __________________ 2026  ")
-    md_lines.append("")
-    md_lines.append("Menyetujui,")
-    md_lines.append("")
-    md_lines.append("| Dosen Pembimbing | Dosen Pendamping |")
-    md_lines.append("|:---|:---|")
-    md_lines.append("| <br><br><br>**Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A**<br>NIDN: [NIDN_DOSEN] | <br><br><br>( ____________________________________ )<br>&nbsp; |")
-    md_lines.append("")
-    md_lines.append("Mengetahui,  ")
-    md_lines.append("Ketua Program Studi S1 Manajemen  ")
-    md_lines.append("")
-    md_lines.append("<br><br>**Rita Amelinda, S.E., M.M.**  ")
-    md_lines.append("NIDN: 0323047201  ")
-    md_lines.append("")
-    md_lines.append("---")
-    md_lines.append("")
-    md_lines.append("### HALAMAN PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL")
-    md_lines.append("")
-    md_lines.append("<div align=\"center\">")
-    md_lines.append("")
-    md_lines.append("### PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL SKRIPSI")
-    md_lines.append("")
-    md_lines.append("Proposal Skripsi dengan Judul:  ")
-    md_lines.append("**PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI**  ")
-    md_lines.append("")
-    md_lines.append("Diajukan Oleh:  ")
-    md_lines.append("**Arthur Reezan**  ")
-    md_lines.append("**(312023002)**  ")
-    md_lines.append("")
-    md_lines.append("</div>")
-    md_lines.append("")
-    md_lines.append("Telah dipertahankan di hadapan Tim Penguji Seminar Proposal Skripsi Program Studi S1 Manajemen Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana pada:")
-    md_lines.append("")
-    md_lines.append("**Hari / Tanggal Seminar:** __________________________, _____________________ 2026  ")
-    md_lines.append("")
-    md_lines.append("**Tim Penguji Seminar Proposal:**")
-    md_lines.append("")
-    md_lines.append("| No | Peran Penguji | Nama Dosen | Tanda Tangan |")
-    md_lines.append("|:---|:---|:---|:---|")
-    md_lines.append("| 1. | Ketua Penguji | __________________________________________ | ( ______________________ ) |")
-    md_lines.append("| 2. | Anggota Penguji | __________________________________________ | ( ______________________ ) |")
-    md_lines.append("| 3. | Dosen Pembimbing | Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A | ( ______________________ ) |")
-    md_lines.append("")
-    md_lines.append("---")
-    md_lines.append("")
-    md_lines.append("### KATA PENGANTAR")
-    md_lines.append("")
-    md_lines.append("Puji dan syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa atas kasih, anugerah, dan penyertaan-Nya yang senantiasa melimpah, sehingga penulis dapat menyelesaikan penyusunan proposal skripsi yang berjudul **“PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI”** dengan baik, lancar, dan tepat waktu.")
-    md_lines.append("")
-    md_lines.append("Proposal skripsi ini disusun sebagai salah satu tahapan akademik yang diwajibkan dalam rangka menempuh ujian seminar proposal guna menyelesaikan studi pada Program Studi S1 Manajemen, Konsentrasi Manajemen Keuangan, Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana (UKRIDA), Jakarta.")
-    md_lines.append("")
-    md_lines.append("Dalam proses penyusunan naskah proposal ini, penulis mendapatkan banyak bimbingan, arahan metodologis, dukungan moril, serta fasilitas dari berbagai pihak. Oleh karena itu, dengan penuh rasa hormat dan kerendahan hati, penulis menyampaikan terima kasih dan apresiasi yang setinggi-tingginya kepada:")
-    md_lines.append("")
-    md_lines.append("1. **Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A**, selaku Dosen Pembimbing Skripsi, yang telah dengan luar biasa sabar, teliti, kritis, dan penuh dedikasi meluangkan waktu serta mencurahkan tenaga dan pikiran dalam membimbing, mengarahkan, dan menyempurnakan naskah proposal ini sejak tahap awal perumusan gagasan hingga penyusunan naskah komprehensif.")
-    md_lines.append("2. **Rita Amelinda, S.E., M.M.**, selaku Ketua Program Studi S1 Manajemen FEB UKRIDA, atas segala arahan, kemudahan proses administratif, dan bimbingan akademik yang diberikan.")
-    md_lines.append("3. **Bapak dan Ibu Dosen Penguji Seminar Proposal**, yang telah bersedia meluangkan waktu untuk menguji, memberikan koreksi kritis, serta masukan yang konstruktif guna menyempurnakan naskah penelitian ini.")
-    md_lines.append("4. **Seluruh Dosen dan Staf Pengajar FEB UKRIDA**, yang telah membagikan ilmu pengetahuan, wawasan analisis keuangan, serta etika profesional selama masa perkuliahan penulis.")
-    md_lines.append("5. **Kedua Orang Tua dan Keluarga Tercinta**, atas doa yang tiada putus, limpahan kasih sayang, ketulusan pengorbanan, serta dorongan moral dan material yang menjadi sumber kekuatan utama bagi penulis.")
-    md_lines.append("6. **Rekan-rekan Mahasiswa Manajemen FEB UKRIDA Angkatan 2023** dan sahabat seperjuangan, atas diskusi yang membangun, motivasi, dan kerja sama selama proses perkuliahan.")
-    md_lines.append("7. **Komunitas Kolektor dan Pemain Pokémon TCG di Indonesia**, yang telah memberikan gambaran nyata mengenai fenomena pasar kartu koleksi di lapangan.")
-    md_lines.append("")
-    md_lines.append("Penulis menyadari bahwa proposal ini masih jauh dari kesempurnaan. Kritik dan saran yang membangun sangat diharapkan demi penyempurnaan karya ilmiah ini ke depan. Semoga proposal skripsi ini dapat memberikan manfaat akademis dan praktis bagi perkembangan kajian ilmu manajemen keuangan perilaku di Indonesia.")
-    md_lines.append("")
-    md_lines.append("Jakarta, __________________ 2026  ")
-    md_lines.append("**Penulis**  ")
-    md_lines.append("<br><br>**Arthur Reezan**  ")
-    md_lines.append("NIM: 312023002  ")
-    md_lines.append("")
-    md_lines.append("---")
-    md_lines.append("")
-    md_lines.append("### ABSTRAK")
-    md_lines.append("")
-    md_lines.append("Penelitian ini bertujuan untuk menganalisis dan menguji secara empiris pengaruh *hedonic motivation* (motivasi hedonis), *desire for completeness* (hasrat melengkapi koleksi), dan *speculative motive* (motif spekulasi finansial) terhadap *impulsive buying* (pembelian impulsif) *booster pack* kartu Pokémon Trading Card Game (Pokémon TCG) fisik berbahasa Indonesia, serta menguji peran *self-control* (kontrol diri) sebagai variabel moderasi dalam memperlemah pengaruh ketiga variabel anteseden tersebut.")
-    md_lines.append("")
-    md_lines.append("Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei *cross-sectional*. Data primer dikumpulkan melalui penyebaran kuesioner daring berbasis skala Likert 5 poin kepada responden yang dipilih melalui teknik *purposive sampling*. Kriteria inklusi sampel adalah konsumen atau kolektor Warga Negara Indonesia (WNI) berusia minimal 17 tahun yang pernah membeli *booster pack* Pokémon TCG fisik resmi dalam rentang waktu 6–12 bulan terakhir. Jumlah sampel yang ditargetkan adalah 120 hingga 150 responden, mengacu pada rekomendasi ukuran sampel Green (1991) dan Cohen (1988) untuk mencapai kekuatan uji statistik (*statistical power*) yang memadai pada model regresi linear berganda. Metode analisis data menggunakan analisis regresi berganda dan *Moderated Regression Analysis* (MRA) dengan prosedur standarisasi skor rata-rata (*mean-centering*) guna mengatasi potensi multikolinearitas struktural antar-istilah interaksi (Aiken & West, 1991; Ghozali, 2018), yang diolah menggunakan perangkat lunak SPSS.")
-    md_lines.append("")
-    md_lines.append("Penelitian ini menawarkan kebaruan teoritis (*novelty*) dengan mengintegrasikan kerangka *Behavioral Finance* sebagai *Grand Theory*, didukung paradigma *Stimulus-Organism-Response* (S-O-R), *The Completing the Set Effect* / *Zeigarnik Effect*, serta *Self-Regulation Theory* pada fenomena komoditas hobi fisik bernilai spekulatif tinggi. Hasil penelitian ini diharapkan memberikan kontribusi empiris bagi konsumen muda dalam mengelola alokasi pengeluaran gaya hidup, serta masukan aplikatif bagi otoritas perencana keuangan dalam merancang edukasi pengelolaan keuangan perilaku yang kontekstual bagi Generasi Z.")
-    md_lines.append("")
-    md_lines.append("**Kata Kunci:** *Impulsive Buying*, *Hedonic Motivation*, *Desire for Completeness*, *Speculative Motive*, *Self-Control*, *Moderated Regression Analysis*, Pokémon TCG, Keuangan Perilaku (*Behavioral Finance*).")
-    md_lines.append("")
-    md_lines.append("---")
-    md_lines.append("")
-    md_lines.append("### ABSTRACT")
-    md_lines.append("")
-    md_lines.append("*This research aims to analyze and empirically test the effects of hedonic motivation, desire for completeness, and speculative motive on the impulsive buying behavior of official Indonesian-language physical Pokémon Trading Card Game (Pokémon TCG) booster packs, as well as to evaluate the moderating role of self-control in weakening the relationships between these three antecedent variables and impulsive buying.*")
-    md_lines.append("")
-    md_lines.append("*This study adopts an associative quantitative approach utilizing a cross-sectional survey design. Primary data are gathered via self-administered online questionnaires employing a 5-point Likert scale, distributed to respondents selected through purposive sampling. The sample inclusion criteria comprise Indonesian citizens aged 17 and above who have purchased official physical booster packs within the past 6 to 12 months. The targeted sample size ranges from 120 to 150 respondents, consistent with the statistical power criteria established by Green (1991) and Cohen (1988) for multiple regression frameworks. The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to eliminate structural multicollinearity (Aiken & West, 1991; Ghozali, 2018), executed via SPSS software.*")
-    md_lines.append("")
-    md_lines.append("*This study provides theoretical novelty by synthesizing Behavioral Finance as the Grand Theory, supported by the Stimulus-Organism-Response (S-O-R) paradigm, the Completing the Set Effect / Zeigarnik Effect, and Self-Regulation Theory in the context of tangible alternative hobby assets exhibiting secondary market speculative premiums. The findings are expected to offer practical insights for young consumers in exercising self-regulatory discipline regarding discretionary collectibles and provide strategic inputs for financial planners in formulating contextual behavioral financial management programs for Generation Z.*")
-    md_lines.append("")
-    md_lines.append("***Keywords:*** *Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Behavioral Finance.*")
-    md_lines.append("")
-    md_lines.append("| Mahasiswa | Dosen Pembimbing |")
-    md_lines.append("|:---|:---|")
-    md_lines.append("| <br><br>**Arthur Reezan**<br>NIM: 312023002 | <br><br>**Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A**<br>NIDN: [NIDN_DOSEN] |")
-    md_lines.append("")
-    md_lines.append("---")
-    md_lines.append("")
+    # Modular 23 Sep 2026: Pernyataan/Persetujuan/Pengesahan/Kata Pengantar/
+    # Abstrak/Abstract hidup mandiri di 01_Lembar_Persetujuan_Proposal/ dan
+    # SUDAH dihapus dari TeX master — tidak lagi disinkron ke MD.
 
     # Extract Chapters from TeX
     # BAB 1
@@ -357,6 +203,8 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
         cite_dict = {}
 
     # Strip LaTeX comments and page breaks early
+    # Lindungi \% \& \_ dulu agar tidak dimakan penghapus komentar (self-anneal Sylvia 23 Sep 2026)
+    s = s.replace(r'\%', '___PCT___').replace(r'\&', '___AMP___').replace(r'\_', '___US___')
     s = re.sub(r'%.*?\n', '\n', s)
     s = re.sub(r'\\newpage', '', s)
     s = re.sub(r'\\pagebreak', '', s)
@@ -384,16 +232,16 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
 
 | No | Subjek Hubungan | Kelompok Temuan Positif / Meredam | Kelompok Temuan Negatif / Lemah | Inti Kesenjangan Kausal (*The Why*) |
 |:---:|:---|:---|:---|:---|
-| 1 | $X_1 \\rightarrow Y$ (*Hedonic Motivation* ke *Impulsive Buying*) | Arnold dan Reynolds (2003); Gültekin dan Özer (2012); Pranggabayu dan Andjarwati (2022); Gong *et al.* (2024); Tirtayasa *et al.* (2020); Zheng *et al.* (2019) (Pengaruh positif signifikan; penelusuran hedonis memicu dorongan impulsif). | Batas konseptual Thaler (1985); Thaler dan Shefrin (1981) (Dorongan tertahan batasan anggaran/mental budgeting; bukan klaim n.s. pada kolektibel). | Perbedaan elastisitas anggaran dan dominasi orientasi utiliter vs afektif konsumen. |
-| 2 | $X_2 \\rightarrow Y$ (*Desire for Completeness* ke *Impulsive Buying*) | Gao *et al.* (2014); Barasz *et al.* (2017); Dewi *et al.* (2026) (Pengaruh positif signifikan; ketegangan psikologis set memicu akselerasi transaksi). | Argumen teoritis Long dan Schiffman (2000); Spero dan Stone (2004) (Kolektor matang menolak produk acak dan memilih kartu satuan; bukan klaim n.s.). | Perbedaan tingkat kematangan kolektor (*collector maturity*) dan kalkulasi probabilitas kemasan acak. |
-| 3 | $X_3 \\rightarrow Y$ (*Speculative Motive* ke *Impulsive Buying*) | Baur *et al.* (2018); Aryadi dan Lingga (2026) (analogi: Y=partisipasi investasi TCG); Colline (2024) (analogi: herding investor Indonesia, kualitatif n=5; teori Shiller (2000) sebagai grand theory). | Analogi saham Barber dan Odean (2008); Fama (1970) (Kesadaran risiko menahan spontanitas; bukan bukti n.s. kolektibel). | Asimetri informasi pasar dan bias ilusi kendali keuntungan vs evaluasi risiko kerugian modal. |
-| 4 | $M \\rightarrow Y$ (*Self-Control* ke *Impulsive Buying*) | Baumeister (2002); Tangney *et al.* (2004); Vohs dan Faber (2007); Sultan *et al.* (2012) (Pengaruh negatif signifikan; regulasi diri disiplin menunda kepuasan belanja). | Batas konseptual Hirschman dan Holbrook (1982); Stern (1962) (*Cognitive bypass* saat stimulus intens; bukan uji regresi). | Keterbatasan kapasitas energi kognitif (*ego depletion*) saat menghadapi stimulus lingkungan toko yang intens. |
-| 5 | $X_1 \\cdot M \\rightarrow Y$ (Moderasi $M$ pada $X_1 \\rightarrow Y$) | Lienardy dan Panasea (2026) (MRA: H4 diterima, buffer); Katauke *et al.* (2023) (regulasi-literasi, tak langsung). | Gagal-moderasi: Apidana dan Kholifah (2022) (p=0,597) + Artadita dan Firmialy (2024) ($\\beta=0{,}092$, n.s.) + teori *regulatory failure*. | Ambang batas intensitas stimulus hedonis yang melampaui kapasitas kontrol volisional. |
-| 6 | $X_2 \\cdot M \\rightarrow Y$ (Moderasi $M$ pada $X_2 \\rightarrow Y$) | Parsial/tak langsung: Artadita dan Firmialy (2024) (kontrol kognitif signifikan pada taraf 10%, moderasi keseluruhan DITOLAK); Apidana dan Kholifah (2022) (buffer lifestyle, adjacent). | Teori obsesi Belk (1995); Barasz *et al.* (2017) + gagal-moderasi koleksi Artadita dan Firmialy (2024) (H3 ditolak). | Tingkat keterikatan emosional kolektor (*involvement*); hobi kasual vs fanatisme koleksi mendalam. |
-| 7 | $X_3 \\cdot M \\rightarrow Y$ (Moderasi $M$ pada $X_3 \\rightarrow Y$) | Tak langsung: Katauke *et al.* (2023) (literasi menekan impulsivitas) + mekanisme *Planner-Doer*. | Argumen teoritis Shiller (2000); Aryadi dan Lingga (2026) (Euforia/herding melumpuhkan rem; bukan uji $X_3 \\cdot M$). | Tekanan sosial komunitas, bias *herding*, dan ketakutan tertinggal momentum keuntungan (*FOMO*). |
+| 1 | X1 terhadap Y (*Hedonic Motivation*) | Arnold dan Reynolds (2003); Gultekin dan Ozer (2012); Pranggabayu dan Andjarwati (2022); Gong *et al.* (2024); Tirtayasa *et al.* (2020); Zheng *et al.* (2019) (positif signifikan). | Batas Thaler (1985); Thaler dan Shefrin (1981) (tertahan anggaran; bukan temuan tidak signifikan pada kolektibel). | Elastisitas anggaran dan orientasi utiliter vs afektif. |
+| 2 | X2 terhadap Y (*Desire for Completeness*) | Gao *et al.* (2014); Barasz *et al.* (2017); Dewi *et al.* (2026) (positif signifikan). | Long dan Schiffman (2000); Spero dan Stone (2004) (kolektor matang pilih single; bukan temuan tidak signifikan). | Kematangan kolektor dan kalkulasi probabilitas. |
+| 3 | X3 terhadap Y (*Speculative Motive*) | Baur *et al.* (2018); Aryadi dan Lingga (2024) (analogi partisipasi TCG); Colline (2024) (herding; kualitatif). Shiller (2000) sebagai grand theory. | Barber dan Odean (2008); Fama (1970) (analogi saham; bukan temuan tidak signifikan pada kolektibel). | Asimetri informasi dan ilusi kendali vs evaluasi risiko. |
+| 4 | M terhadap Y (*Self-Control*) | Baumeister (2002); Tangney *et al.* (2004); Vohs dan Faber (2007); Sultan *et al.* (2012) (negatif signifikan). | Hirschman (1982); Stern (1962) (cognitive bypass; bukan regresi). | Ego depletion saat stimulus intens. |
+| 5 | Moderasi M pada X1 terhadap Y | Lienardy dan Panasea (2026) (MRA H4 diterima); Katauke *et al.* (2023) (tak langsung). | Gagal-moderasi Apidana dan Kholifah (2022) (p=0,597) dan Artadita dan Firmialy (2024) (beta=0,092, n.s.). | Ambang intensitas hedonis vs kapasitas volisional. |
+| 6 | Moderasi M pada X2 terhadap Y | Parsial: Artadita dan Firmialy (2024) (kontrol kognitif; moderasi keseluruhan ditolak); Apidana dan Kholifah (2022) (adjacent). | Teori Belk (1995); Barasz *et al.* (2017) + Artadita dan Firmialy (2024) H3 ditolak. | Keterikatan koleksi: kasual vs fanatik. |
+| 7 | Moderasi M pada X3 terhadap Y | Tak langsung: Katauke *et al.* (2023) + Planner-Doer. | Teoritis Shiller (2000); Aryadi dan Lingga (2024) (bukan uji interaksi). | Herding dan FOMO saat euforia. |
 
 *Sumber: Data diolah dari sintesis kajian literatur empiris terdahulu (2026).*"""
-        s = tab11_pattern.sub(tab11_md, s)
+        s = tab11_pattern.sub(lambda m: tab11_md, s)
 
     # Convert Table 2.1
     if r"\caption{Ringkasan Penelitian Sebelumnya}" in s:
@@ -573,6 +421,7 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
     s = s.replace(r'\%', '%')
     s = s.replace(r'\_', '_')
     s = s.replace(r'\&', '&')
+    s = s.replace('___PCT___', '%').replace('___AMP___', '&').replace('___US___', '_')
     s = s.replace(r'--', '–')
     s = s.replace(r'---', '—')
     # Restore table markdown separator dashes if affected
@@ -597,6 +446,9 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
     s = re.sub(r'\\end\{itemize\}', '', s)
     s = re.sub(r'\\item\s*', '\n- ', s)
     s = re.sub(r'\n\s*\n\s*-\s*', '\n- ', s)
+    # Pedoman/kakak tingkat 23 Sep 2026: Rumusan Masalah (1.2) & Tujuan (1.3)
+    # wajib penomoran angka 1-6 (bukan bullet) — selaras enumerate PDF.
+    s = _number_rumusan_tujuan(s)
 
     # Clean table refs and figure refs
     s = re.sub(r'Tabel~\\ref\{tab:penelitian_terdahulu\}', 'Tabel 2.1', s)
@@ -607,12 +459,41 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
     s = re.sub(r'Gambar~\\ref\{fig:rerangka\}', 'Gambar 2.1', s)
     s = re.sub(r'Persamaan~\\ref\{eq:model1_regresi\}', 'Persamaan (3.3)', s)
     s = re.sub(r'Persamaan~\\ref\{eq:model2_mra\}', 'Persamaan (3.4)', s)
+    s = re.sub(r'Persamaan~\\ref\{eq:f_change\}', 'Persamaan (3.5)', s)
+    s = re.sub(r'Gambar~\\ref\{fig:alur_penelitian\}', 'Gambar 3.1', s)
+    s = re.sub(r'Tabel~\\ref\{tab:jadwal_penelitian\}', 'Tabel 3.3', s)
+    s = re.sub(r'Gambar~\\ref\{fig:media_franchise_ranking\}', 'Gambar 1.1', s)
+    s = re.sub(r'Gambar~\\ref\{fig:pokemon_card_growth\}', 'Gambar 1.2', s)
+    s = re.sub(r'Gambar~\\ref\{fig:pricecharting_disparity\}', 'Gambar 1.3', s)
+    s = re.sub(r'Tabel~\\ref\{tab:research_gap\}', 'Tabel 1.1', s)
     s = re.sub(r'~\\ref\{[^}]+\}', '', s)
 
     # Clean extra blank lines
     s = re.sub(r'\n{3,}', '\n\n', s)
 
     return s.strip()
+
+
+def _number_rumusan_tujuan(s: str) -> str:
+    """Renumber `- ` items to `1.`-`6.` inside 1.2 & 1.3 sections only."""
+    lines = s.splitlines()
+    out = []
+    in_target = False
+    counter = 0
+    for ln in lines:
+        stripped = ln.strip()
+        if stripped.startswith('## '):
+            in_target = stripped in ('## 1.2 Perumusan Masalah',
+                                     '## 1.3 Tujuan Penelitian')
+            counter = 0
+            out.append(ln)
+            continue
+        if in_target and stripped.startswith('- '):
+            counter += 1
+            out.append('%d. %s' % (counter, stripped[2:].lstrip()))
+            continue
+        out.append(ln)
+    return '\n'.join(out)
 
 if __name__ == '__main__':
     main()

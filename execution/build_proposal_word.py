@@ -25,7 +25,7 @@ from pathlib import Path
 import docx
 from docx import Document
 from docx.shared import Pt, Cm, Inches, RGBColor
-from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING, WD_TAB_ALIGNMENT, WD_TAB_LEADER
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING, WD_TAB_ALIGNMENT, WD_TAB_LEADER, WD_BREAK
 from docx.enum.section import WD_SECTION, WD_SECTION_START
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml import parse_xml, OxmlElement
@@ -322,6 +322,15 @@ def clean_academic_text(text: str) -> str:
     text = text.replace(r'{\"o}', 'ö').replace(r'\"o', 'ö')
     text = text.replace(r'{\`e}', 'è').replace(r'\`e', 'è')
 
+    # 0a. Hardening anti-bocoran sintaks (temuan revisi Sylvia 23 Sep 2026):
+    # \% di ujung paragraf, sisa backslash, \url, dan \ref yatim.
+    text = text.replace(r'\%', '%')
+    text = re.sub(r'\\url\s*\{?([^}\s]+)\}?', r'\1', text)
+    text = re.sub(r'~?\\ref\{[^}]+\}', '', text)
+    text = re.sub(r'\\+\s*$', '', text)
+    text = re.sub(r'[ \t]{2,}', ' ', text)
+    text = text.strip()
+
     # 1. LaTeX Citations
     text = re.sub(r'\\citealp\{babin1994work\}', 'Babin *et al.*, 1994', text)
     text = re.sub(r'\\citealp\{arnold2003hedonic\}', 'Arnold dan Reynolds, 2003', text)
@@ -341,9 +350,9 @@ def clean_academic_text(text: str) -> str:
     text = text.replace('**et al.**', '*et al.*').replace('**et al.*', '*et al.*').replace('***et al.***', '*et al.*')
 
     # 2. Multi-variable & Complex math expressions
-    text = text.replace(r'$X_1^*, X_2^*, X_3^*, M^*, X_1^* \cdot M^*, X_2^* \cdot M^*, X_3^* \cdot M*$', '*X*₁*, *X*₂*, *X*₃*, *M*\\*, *X*₁* · *M*\\*, *X*₂* · *M*\\*, *X*₃* · *M*\\*')
-    text = text.replace(r'$X_1^* \cdot M^*, X_2^* \cdot M^*, X_3^* \cdot M*$', '*X*₁* · *M*\\*, *X*₂* · *M*\\*, *X*₃* · *M*\\*')
-    text = text.replace(r'$X_1^*, X_2^*, X_3^*, M^*$', '*X*₁*, *X*₂*, *X*₃*, *M*\\*')
+    text = text.replace(r'$X_1^*, X_2^*, X_3^*, M^*, X_1^* \cdot M^*, X_2^* \cdot M^*, X_3^* \cdot M*$', '*X*₁*, *X*₂*, *X*₃*, *M**, *X*₁* · *M**, *X*₂* · *M**, *X*₃* · *M**')
+    text = text.replace(r'$X_1^* \cdot M^*, X_2^* \cdot M^*, X_3^* \cdot M*$', '*X*₁* · *M**, *X*₂* · *M**, *X*₃* · *M**')
+    text = text.replace(r'$X_1^*, X_2^*, X_3^*, M^*$', '*X*₁*, *X*₂*, *X*₃*, *M**')
     text = text.replace(r'$X_1^*, X_2^*, X_3^*$', '*X*₁*, *X*₂*, *X*₃*')
     text = text.replace(r'$X_1, X_2, X_3, M, X_1 \cdot M, X_2 \cdot M, X_3 \cdot M$', '*X*₁, *X*₂, *X*₃, *M*, *X*₁ · *M*, *X*₂ · *M*, *X*₃ · *M*')
     text = text.replace(r'$X_1 \cdot M, X_2 \cdot M, X_3 \cdot M$', '*X*₁ · *M*, *X*₂ · *M*, *X*₃ · *M*')
@@ -352,9 +361,9 @@ def clean_academic_text(text: str) -> str:
 
     # Regression formulas
     text = text.replace(r'$Y = \alpha + \beta_1 X_1^* + \beta_2 X_2^* + \beta_3 X_3^* + \beta_4 M^* + \beta_5 (X_1^* \cdot M^*) + \beta_6 (X_2^* \cdot M^*) + \beta_7 (X_3^* \cdot M^*) + e$',
-                        '*Y* = α + β₁*X*₁* + β₂*X*₂* + β₃*X*₃* + β₄*M*\\* + β₅(*X*₁* · *M*\\*) + β₆(*X*₂* · *M*\\*) + β₇(*X*₃* · *M*\\*) + *e*')
+                        '*Y* = α + β₁*X*₁* + β₂*X*₂* + β₃*X*₃* + β₄*M** + β₅(*X*₁* · *M**) + β₆(*X*₂* · *M**) + β₇(*X*₃* · *M**) + *e*')
     text = text.replace(r'$Y = \alpha + \beta_1 X_1^* + \beta_2 X_2^* + \beta_3 X_3^* + \beta_4 M^* + e$',
-                        '*Y* = α + β₁*X*₁* + β₂*X*₂* + β₃*X*₃* + β₄*M*\\* + *e*')
+                        '*Y* = α + β₁*X*₁* + β₂*X*₂* + β₃*X*₃* + β₄*M** + *e*')
     text = text.replace(r'$Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \beta_4 M + \beta_5 (X_1 \cdot M) + \beta_6 (X_2 \cdot M) + \beta_7 (X_3 \cdot M) + e$',
                         '*Y* = α + β₁*X*₁ + β₂*X*₂ + β₃*X*₃ + β₄*M* + β₅(*X*₁ · *M*) + β₆(*X*₂ · *M*) + β₇(*X*₃ · *M*) + *e*')
     text = text.replace(r'$Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + e$',
@@ -372,7 +381,7 @@ def clean_academic_text(text: str) -> str:
     text = text.replace(r'$-1\,\text{SD}$', '−1 SD')
     text = text.replace(r'$0\,\text{SD}$', '0 SD')
     text = text.replace(r'$+1\,\text{SD}$', '+1 SD')
-    text = text.replace(r'$M^* = 0$', '*M*\\* = 0')
+    text = text.replace(r'$M^* = 0$', '*M** = 0')
     text = text.replace(r'$F_{\text{change}}$', '*F*_{change}')
 
     # Sample size (Green & Cohen)
@@ -386,10 +395,10 @@ def clean_academic_text(text: str) -> str:
     text = text.replace(r'$t_{\text{hitung}} > t_{\text{tabel}}$', '*t*_{hitung} > *t*_{tabel}')
 
     # Interaction & Single variables
-    text = text.replace(r'$X_1^* \cdot M^*$', '*X*₁* · *M*\\*')
-    text = text.replace(r'$X_2^* \cdot M^*$', '*X*₂* · *M*\\*')
-    text = text.replace(r'$X_3^* \cdot M^*$', '*X*₃* · *M*\\*')
-    text = text.replace(r'$X_1^* \cdot M^*, X_2^* \cdot M^*, X_3^* \cdot M^*$', '*X*₁* · *M*\\*, *X*₂* · *M*\\*, *X*₃* · *M*\\*')
+    text = text.replace(r'$X_1^* \cdot M^*$', '*X*₁* · *M**')
+    text = text.replace(r'$X_2^* \cdot M^*$', '*X*₂* · *M**')
+    text = text.replace(r'$X_3^* \cdot M^*$', '*X*₃* · *M**')
+    text = text.replace(r'$X_1^* \cdot M^*, X_2^* \cdot M^*, X_3^* \cdot M^*$', '*X*₁* · *M**, *X*₂* · *M**, *X*₃* · *M**')
     text = text.replace(r'$X_1 \cdot M$', '*X*₁ · *M*')
     text = text.replace(r'$X_2 \cdot M$', '*X*₂ · *M*')
     text = text.replace(r'$X_3 \cdot M$', '*X*₃ · *M*')
@@ -400,13 +409,13 @@ def clean_academic_text(text: str) -> str:
     text = text.replace('($X_1^*$)', '(*X*₁*)')
     text = text.replace('($X_2^*$)', '(*X*₂*)')
     text = text.replace('($X_3^*$)', '(*X*₃*)')
-    text = text.replace('($M^*$)', '(*M*\\*)')
-    text = text.replace('$X_1^*, X_2^*, X_3^*, M^*$', '*X*₁*, *X*₂*, *X*₃*, *M*\\*')
+    text = text.replace('($M^*$)', '(*M**)')
+    text = text.replace('$X_1^*, X_2^*, X_3^*, M^*$', '*X*₁*, *X*₂*, *X*₃*, *M**')
     text = text.replace('$X_1^*, X_2^*, X_3^*$', '*X*₁*, *X*₂*, *X*₃*')
     text = text.replace('$X_1^*', '*X*₁*')
     text = text.replace('$X_2^*', '*X*₂*')
     text = text.replace('$X_3^*', '*X*₃*')
-    text = text.replace('$M^*$', '*M*\\*')
+    text = text.replace('$M^*$', '*M**')
     text = text.replace('$X_i^*$', '*X*ᵢ*')
 
     text = text.replace('($X_1$)', '(*X*₁)')
@@ -458,7 +467,9 @@ def clean_academic_text(text: str) -> str:
     text = text.replace(r'$\ge$', '≥').replace(r'\ge', '≥')
     text = text.replace(r'$\le$', '≤').replace(r'\le', '≤')
     text = text.replace(r'0{,}092', '0,092').replace(r'0{,}60', '0,60').replace(r'-0{,}3473', '-0,3473')
+    text = re.sub(r'(\d)\{,\}(\d)', r'\1,\2', text)
     text = re.sub(r'\{([0-9]+)\}', r'\1', text)
+    text = re.sub(r'_\{([A-Za-z]+)\}', r'_\1', text)
     text = text.replace(r'n.s.\ ', 'n.s. ').replace(r'n.s.\)', 'n.s.)').replace(r'n.s.\,', 'n.s.,')
     text = text.replace(r'(\emph{The Why*):}', '(*The Why*):')
     text = text.replace(r'(\emph{The Why*}):', '(*The Why*):')
@@ -471,6 +482,7 @@ def clean_academic_text(text: str) -> str:
     text = text.replace(r'\alpha', 'α')
     text = text.replace(r'\Delta', 'Δ')
     text = text.replace(r'\cdot', '·')
+    text = text.replace(r'\approx', '≈')
     text = text.replace(r'\partial', '∂')
     text = text.replace(r'\epsilon', 'ε')
     text = re.sub(r'\\text\{([^}]+)\}', r'\1', text)
@@ -541,15 +553,49 @@ def make_run_pure_black(run, font_name="Times New Roman", font_size=Pt(12), bold
     return run
 
 
+_CENTERED_SUB = {'1': '₁', '2': '₂', '3': '₃',
+                   '₁': '₁', '₂': '₂', '₃': '₃'}
+_CENTERED_RE = re.compile(
+    r'\*?X\*?([123₁₂₃])\*+|\*?Xᵢ\*+|\*M\*+|(?<![A-Za-z*])M\*(?![A-Za-z*])')
+
+
 def parse_markdown_runs(paragraph, text, base_size=Pt(12), base_bold=False):
-    """Parse inline bold (***text***, **text**, *text*) into proper Word runs with guaranteed pure black color."""
+    """Parse inline bold (***text***, **text**, *text*) into proper Word runs with guaranteed pure black color.
+
+    Notasi terpusat (X1*/M*/X₁*/Xᵢ* — bintang = makna statistik mean-centered,
+    BUKAN italic markdown) dilindungi via placeholder lalu dipulihkan sebagai
+    run italic. Tanpa ini bintang dimakan mentah oleh pemisah '*' (temuan
+    23 Sep 2026: DOCX kehilangan makna terpusat vs PDF).
+    """
     if not text:
         return
-    pattern = re.compile(r'(\*\*\*.*?\*\*\*|\*\*.*?\*\*|\*.*?\*)')
-    tokens = pattern.split(text)
-    for token in tokens:
-        if not token:
+    protected = []
+
+    def _hold(m):
+        g0 = m.group(0)
+        if 'X' in g0 and 'ᵢ' in g0:
+            uni = 'Xᵢ*'
+        elif 'X' in g0:
+            uni = 'X' + _CENTERED_SUB[m.group(1)] + '*'
+        else:
+            uni = 'M*'
+        protected.append(uni)
+        return '\x00%d\x00' % (len(protected) - 1)
+
+    text = _CENTERED_RE.sub(_hold, text)
+    # Potong placeholder DULU (mengandung \x00 yang haram bagi lxml):
+    # tiap placeholder jadi run italic sendiri, sisanya ikut logika lama.
+    segments = re.split(r'(\x00\d+\x00)', text)
+    for seg in segments:
+        if not seg:
             continue
+        m_hold = re.fullmatch(r'\x00(\d+)\x00', seg)
+        if m_hold:
+            run = paragraph.add_run(protected[int(m_hold.group(1))])
+            make_run_pure_black(run, "Times New Roman", base_size,
+                                bold=True if base_bold else False, italic=True)
+            continue
+        token = seg
         if token.startswith('***') and token.endswith('***') and len(token) >= 6:
             content = token[3:-3].replace('*', '')
             run = paragraph.add_run(content)
@@ -615,7 +661,15 @@ def add_heading_1(doc, title, page_break=True):
     set_paragraph_outline_level(p, 0)
 
     clean_title = clean_academic_text(title.upper())
-    parse_markdown_runs(p, clean_title, base_size=Pt(12), base_bold=True)
+    m_bab = re.match(r'^(BAB\s+\d+)\s+(.*)$', clean_title)
+    if m_bab:
+        # Judul Bab dua baris via jeda baris lunak (shift+enter): "BAB 1" + <w:br/> + "PENDAHULUAN"
+        r1 = p.add_run(m_bab.group(1))
+        make_run_pure_black(r1, "Times New Roman", Pt(12), bold=True)
+        r1.add_break(WD_BREAK.LINE)
+        parse_markdown_runs(p, m_bab.group(2), base_size=Pt(12), base_bold=True)
+    else:
+        parse_markdown_runs(p, clean_title, base_size=Pt(12), base_bold=True)
     return p
 
 
@@ -1013,8 +1067,8 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         skip_chapter3: If True, omit Bab 3 (review/bimbingan mode).
         skip_frontmatter: If True, omit the 6 formal frontmatter pages
             (Pernyataan Keaslian, Persetujuan, Pengesahan, Kata Pengantar,
-            Abstrak, Abstract). Document starts directly with Daftar Isi.
-            Page numbering resets: Daftar Isi = i, Bab 1 = 1.
+            Abstrak, Abstract). Document runs Cover -> TOC -> Bab 1.
+            Page numbering: Cover = i, Daftar Isi = ii, Bab 1 = 1.
     """
     # Resolve base_dir relative to this script's location
     script_dir = Path(__file__).resolve().parent
@@ -1023,12 +1077,10 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         # Fallback: original hardcoded path
         base_dir = Path(r"z:\SKRIPSII\SKRIPSI-arthur\01_Naskah_Utama")
 
-    if skip_frontmatter:
-        if skip_chapter3:
-            output_docx = base_dir / "Proposal_Arthur_NoBab3_NoFrontmatter.docx"
-        else:
-            output_docx = base_dir / "Proposal_Arthur_PokemonTCG_NoFrontmatter.docx"
-    elif skip_chapter3:
+    # Modular 23 Sep 2026: 6 lembar formal hidup mandiri di
+    # 01_Lembar_Persetujuan_Proposal/ — file utama SELALU tanpa frontmatter
+    # (Cover -> TOC -> Bab 1), kecuali --with-frontmatter eksplisit.
+    if skip_chapter3:
         output_docx = base_dir / "Proposal_Arthur_NoBab3.docx"
     else:
         output_docx = base_dir / "Proposal_Arthur_PokemonTCG.docx"
@@ -1447,57 +1499,54 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         ("DAFTAR PUSTAKA", "30")
     ]
 
+    # C-LOT-1: angka = halaman cetak PDF 47 hlm (settled, modular 23 Sep 2026:
+    # 6 lembar formal keluar; frontmatter = Cover i + TOC ii-iii + LOT iv + LOF v).
     toc_items_full = [
-        ("DAFTAR TABEL", "xii"),
-        ("DAFTAR GAMBAR", "xiii"),
+        ("DAFTAR TABEL", "iv"),
+        ("DAFTAR GAMBAR", "v"),
         ("BAB 1 PENDAHULUAN", "1"),
         ("  1.1 Latar Belakang Penelitian", "1"),
-        ("  1.2 Perumusan Masalah", "16"),
-        ("  1.3 Tujuan Penelitian", "17"),
-        ("  1.4 Manfaat Penelitian", "17"),
-        ("      1.4.1 Manfaat Teoritis", "17"),
-        ("      1.4.2 Manfaat Praktis", "18"),
-        ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "19"),
-        ("  2.1 Landasan Teori", "19"),
-        ("      2.1.1 Grand Theory: Keuangan Perilaku (Behavioral Finance)", "19"),
-        ("      2.1.2 Supporting Theory: Teori Stimulus-Organism-Response (S-O-R)", "19"),
-        ("      2.1.3 Supporting Theory: Psikologi Kolektor dan Collection-Goal Tipping Point Effect", "20"),
-        ("      2.1.4 Supporting Theory: Teori Regulasi Diri (Self-Regulation Theory)", "20"),
-        ("  2.2 Kajian Variabel Penelitian", "20"),
-        ("      2.2.1 Variabel Dependen (Y): Impulsive Buying (Pembelian Impulsif)", "20"),
-        ("      2.2.2 Variabel Independen (X1): Hedonic Motivation (Motivasi Hedonis)", "21"),
-        ("      2.2.3 Variabel Independen (X2): Desire for Completeness (Hasrat Kelengkapan Koleksi)", "21"),
-        ("      2.2.4 Variabel Independen (X3): Speculative Motive (Motif Spekulasi Finansial)", "21"),
-        ("      2.2.5 Variabel Moderasi (M): Self-Control (Kontrol Diri)", "22"),
-        ("  2.3 Penelitian Sebelumnya", "22"),
-        ("  2.4 Pengembangan Hipotesis", "25"),
-        ("      2.4.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying", "25"),
-        ("      2.4.2 Pengaruh Desire for Completeness terhadap Impulsive Buying", "25"),
-        ("      2.4.3 Pengaruh Speculative Motive terhadap Impulsive Buying", "26"),
-        ("      2.4.4 Pengaruh Moderasi Self-Control terhadap Hubungan Hedonic Motivation dan Impulsive Buying", "26"),
-        ("      2.4.5 Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness dan Impulsive Buying", "27"),
-        ("      2.4.6 Pengaruh Moderasi Self-Control terhadap Hubungan Speculative Motive dan Impulsive Buying", "28"),
-        ("  2.5 Rerangka Penelitian", "28"),
-        ("BAB 3 METODE PENELITIAN", "30"),
-        ("  3.1 Jenis dan Sumber Data", "30"),
-        ("      3.1.1 Batasan Penelitian dan Ruang Lingkup Operasional", "30"),
-        ("  3.2 Populasi dan Sampel", "31"),
-        ("      3.2.1 Populasi dan Identifikasi Sumber Komunitas", "31"),
-        ("      3.2.2 Sampel dan Justifikasi Kriteria Inklusi", "32"),
-        ("      3.2.3 Penentuan Ukuran Sampel", "33"),
-        ("      3.2.4 Justifikasi Komparatif Pemilihan Teknik Sampling", "33"),
-        ("  3.3 Model Penelitian", "34"),
-        ("  3.4 Operasionalisasi Variabel", "35"),
-        ("  3.5 Metode Analisis Data", "40"),
-        ("      3.5.1 Justifikasi Komparatif Pemilihan Metode Analisis", "40"),
-        ("      3.5.2 Penyusunan Skor Komposit dan Uji Kualitas Data", "41"),
-        ("      3.5.3 Uji Asumsi Klasik", "41"),
-        ("      3.5.4 Estimasi Regresi Hirarkis dan MRA", "42"),
-        ("      3.5.5 Uji Koefisien Determinasi (R2) dan Uji F Perubahan", "42"),
-        ("      3.5.6 Uji Hipotesis dan Analisis Kemiringan Bersyarat (Simple Slopes)", "42"),
-        ("  3.6 Diagram Alur Penelitian", "43"),
-        ("  3.7 Jadwal Pelaksanaan Penelitian", "44"),
-        ("DAFTAR PUSTAKA", "45")
+        ("  1.2 Perumusan Masalah", "8"),
+        ("  1.3 Tujuan Penelitian", "8"),
+        ("  1.4 Manfaat Penelitian", "9"),
+        ("      1.4.1 Manfaat Teoritis", "9"),
+        ("      1.4.2 Manfaat Praktis", "9"),
+        ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "11"),
+        ("  2.1 Landasan Teori", "11"),
+        ("      2.1.1 Grand Theory: Keuangan Perilaku (Behavioral Finance)", "11"),
+        ("      2.1.2 Supporting Theory: Teori Stimulus-Organism-Response (S-O-R)", "11"),
+        ("      2.1.3 Supporting Theory: Psikologi Kolektor dan Collection-Goal Tipping Point Effect", "12"),
+        ("      2.1.4 Supporting Theory: Teori Regulasi Diri (Self-Regulation Theory)", "12"),
+        ("  2.2 Kajian Variabel Penelitian", "12"),
+        ("      2.2.1 Variabel Dependen (Y): Impulsive Buying (Pembelian Impulsif)", "12"),
+        ("      2.2.2 Variabel Independen (X1): Hedonic Motivation (Motivasi Hedonis)", "13"),
+        ("      2.2.3 Variabel Independen (X2): Desire for Completeness (Hasrat Kelengkapan Koleksi)", "13"),
+        ("      2.2.4 Variabel Independen (X3): Speculative Motive (Motif Spekulasi Finansial)", "13"),
+        ("      2.2.5 Variabel Moderasi (M): Self-Control (Kontrol Diri)", "14"),
+        ("  2.3 Penelitian Sebelumnya", "14"),
+        ("  2.4 Pengembangan Hipotesis", "17"),
+        ("      2.4.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying", "17"),
+        ("      2.4.2 Pengaruh Desire for Completeness terhadap Impulsive Buying", "17"),
+        ("      2.4.3 Pengaruh Speculative Motive terhadap Impulsive Buying", "18"),
+        ("      2.4.4 Pengaruh Moderasi Self-Control terhadap Hubungan Hedonic Motivation dan Impulsive Buying", "19"),
+        ("      2.4.5 Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness dan Impulsive Buying", "20"),
+        ("      2.4.6 Pengaruh Moderasi Self-Control terhadap Hubungan Speculative Motive dan Impulsive Buying", "20"),
+        ("  2.5 Rerangka Penelitian", "21"),
+        ("BAB 3 METODE PENELITIAN", "22"),
+        ("  3.1 Jenis dan Sumber Data", "22"),
+        ("      3.1.1 Batasan Penelitian dan Ruang Lingkup Operasional", "22"),
+        ("  3.2 Populasi dan Sampel", "23"),
+        ("      3.2.1 Populasi dan Identifikasi Sumber Komunitas", "23"),
+        ("      3.2.2 Sampel dan Justifikasi Kriteria Inklusi", "24"),
+        ("      3.2.3 Penentuan Ukuran Sampel", "25"),
+        ("      3.2.4 Justifikasi Komparatif Pemilihan Teknik Sampling", "25"),
+        ("  3.3 Model Penelitian", "26"),
+        ("  3.4 Operasionalisasi Variabel", "27"),
+        ("  3.5 Metode Analisis Data", "32"),
+        ("      3.5.1 Justifikasi Komparatif Pemilihan Metode Analisis", "32"),
+        ("  3.6 Diagram Alur Penelitian", "34"),
+        ("  3.7 Jadwal Pelaksanaan Penelitian", "36"),
+        ("DAFTAR PUSTAKA", "38")
     ]
 
     toc_items = toc_items_nobab3 if skip_chapter3 else toc_items_full
@@ -1541,19 +1590,15 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
     add_frontmatter_heading(doc, "DAFTAR TABEL", page_break=True)
 
     lot_items_nobab3 = [
-        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian", "13"),
-        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian (lanjutan)", "14"),
-        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian (lanjutan)", "15"),
-        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "22")
+        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian", "7"),
+        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "16")
     ]
     lot_items_full = [
-        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian", "13"),
-        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian (lanjutan)", "14"),
-        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian (lanjutan)", "15"),
-        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "22"),
-        ("Tabel 3.1", "Skala Pengukuran Likert 5 Poin", "30"),
-        ("Tabel 3.2", "Operasionalisasi Variabel Penelitian", "36"),
-        ("Tabel 3.3", "Jadwal Pelaksanaan Kegiatan Penelitian (Tahun 2026)", "44")
+        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian", "6"),
+        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "14"),
+        ("Tabel 3.1", "Skala Pengukuran Likert 5 Poin", "22"),
+        ("Tabel 3.2", "Operasionalisasi Variabel Penelitian", "28"),
+        ("Tabel 3.3", "Jadwal Pelaksanaan Kegiatan Penelitian (Tahun 2026)", "37")
     ]
     lot_items = lot_items_nobab3 if skip_chapter3 else lot_items_full
     for tab_num, tab_title, tab_page in lot_items:
@@ -1583,14 +1628,14 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         ("Gambar 1.1", "Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa", "2"),
         ("Gambar 1.2", "Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024", "3"),
         ("Gambar 1.3", "Disparitas Harga Pasar Sekunder Kartu Pokémon Mentah (Ungraded) vs. Bersertifikasi PSA 10 Gem Mint Seri Shining Fates", "5"),
-        ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "29")
+        ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "23")
     ]
     lof_items_full = [
-        ("Gambar 1.1", "Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa", "2"),
-        ("Gambar 1.2", "Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024", "3"),
-        ("Gambar 1.3", "Disparitas Harga Pasar Sekunder Kartu Pokémon Mentah (Ungraded) vs. Bersertifikasi PSA 10 Gem Mint Seri Shining Fates", "5"),
-        ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "29"),
-        ("Gambar 3.1", "Diagram Alur Pelaksanaan Penelitian", "43")
+        ("Gambar 1.1", "Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa", "1"),
+        ("Gambar 1.2", "Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024", "2"),
+        ("Gambar 1.3", "Disparitas Harga Pasar Sekunder Kartu Pokémon Mentah (Ungraded) vs. Bersertifikasi PSA 10 Gem Mint Seri Shining Fates", "4"),
+        ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "21"),
+        ("Gambar 3.1", "Diagram Alur Pelaksanaan Penelitian", "35")
     ]
     lof_items = lof_items_nobab3 if skip_chapter3 else lof_items_full
     for fig_num, fig_title, fig_page in lof_items:
@@ -2501,7 +2546,7 @@ def build_apa7_table(doc, table_lines):
                     else:
                         continue
                 run.font.name = "Times New Roman"
-                run.font.size = Pt(10 if is_header else 9.5)
+                run.font.size = Pt(9.5 if is_header else 9.0)
                 if is_header:
                     run.font.bold = True
 
@@ -2607,52 +2652,52 @@ def build_tabel_research_gap(doc):
     data = [
         (
             "1",
-            "X₁ → Y (Hedonic Motivation ke Impulsive Buying)",
-            "Arnold dan Reynolds (2003); Gültekin dan Özer (2012); Pranggabayu dan Andjarwati (2022); Gong et al. (2024); Tirtayasa et al. (2020); Zheng et al. (2019) (Pengaruh positif signifikan; penelusuran hedonis memicu dorongan impulsif).",
-            "Batas konseptual Thaler (1985); Thaler dan Shefrin (1981) (Dorongan tertahan batasan anggaran/mental budgeting; bukan klaim n.s. pada kolektibel).",
-            "Perbedaan elastisitas anggaran dan dominasi orientasi utiliter vs afektif konsumen."
+            "X1 terhadap Y (Hedonic Motivation)",
+            "Arnold dan Reynolds (2003); Gültekin dan Özer (2012); Pranggabayu dan Andjarwati (2022); Gong et al. (2024); Tirtayasa et al. (2020); Zheng et al. (2019) (positif signifikan).",
+            "Batas Thaler (1985); Thaler dan Shefrin (1981) (tertahan anggaran; bukan temuan tidak signifikan pada kolektibel).",
+            "Elastisitas anggaran dan orientasi utiliter vs afektif."
         ),
         (
             "2",
-            "X₂ → Y (Desire for Completeness ke Impulsive Buying)",
-            "Gao et al. (2014); Barasz et al. (2017); Dewi et al. (2026) (Pengaruh positif signifikan; ketegangan psikologis set memicu akselerasi transaksi).",
-            "Argumen teoritis Long dan Schiffman (2000); Spero dan Stone (2004) (Kolektor matang menolak produk acak dan memilih kartu satuan; bukan klaim n.s.).",
-            "Perbedaan tingkat kematangan kolektor (collector maturity) dan kalkulasi probabilitas kemasan acak."
+            "X2 terhadap Y (Desire for Completeness)",
+            "Gao et al. (2014); Barasz et al. (2017); Dewi et al. (2026) (positif signifikan).",
+            "Long dan Schiffman (2000); Spero dan Stone (2004) (kolektor matang pilih single; bukan temuan tidak signifikan).",
+            "Kematangan kolektor dan kalkulasi probabilitas."
         ),
         (
             "3",
-            "X₃ → Y (Speculative Motive ke Impulsive Buying)",
-            "Baur et al. (2018); Aryadi dan Lingga (2026) (analogi: Y=partisipasi investasi TCG); Colline (2024) (analogi: herding investor Indonesia, kualitatif n=5; teori Shiller (2000) sebagai grand theory).",
-            "Analogi saham Barber dan Odean (2008); Fama (1970) (Kesadaran risiko menahan spontanitas; bukan bukti n.s. kolektibel).",
-            "Asimetri informasi pasar dan bias ilusi kendali keuntungan vs evaluasi risiko kerugian modal."
+            "X3 terhadap Y (Speculative Motive)",
+            "Baur et al. (2018); Aryadi dan Lingga (2024) (analogi partisipasi TCG); Colline (2024) (herding; kualitatif). Shiller (2000) sebagai grand theory.",
+            "Barber dan Odean (2008); Fama (1970) (analogi saham; bukan temuan tidak signifikan pada kolektibel).",
+            "Asimetri informasi dan ilusi kendali vs evaluasi risiko."
         ),
         (
             "4",
-            "M → Y (Self-Control ke Impulsive Buying)",
-            "Baumeister (2002); Tangney et al. (2004); Vohs dan Faber (2007); Sultan et al. (2012) (Pengaruh negatif signifikan; regulasi diri disiplin menunda kepuasan belanja).",
-            "Batas konseptual Hirschman dan Holbrook (1982); Stern (1962) (Cognitive bypass saat stimulus intens; bukan uji regresi).",
-            "Keterbatasan kapasitas energi kognitif (ego depletion) saat menghadapi stimulus lingkungan toko yang intens."
+            "M terhadap Y (Self-Control)",
+            "Baumeister (2002); Tangney et al. (2004); Vohs dan Faber (2007); Sultan et al. (2012) (negatif signifikan).",
+            "Hirschman (1982); Stern (1962) (cognitive bypass; bukan regresi).",
+            "Ego depletion saat stimulus intens."
         ),
         (
             "5",
-            "X₁ · M → Y (Moderasi M pada X₁ → Y)",
-            "Lienardy dan Panasea (2026) (MRA: H4 diterima, buffer); Katauke et al. (2023) (regulasi-literasi, tak langsung).",
-            "Gagal-moderasi: Apidana dan Kholifah (2022) (p=0,597) + Artadita dan Firmialy (2024) (β=0,092, n.s.) + teori regulatory failure.",
-            "Ambang batas intensitas stimulus hedonis yang melampaui kapasitas kontrol volisional."
+            "Moderasi M pada X1 terhadap Y",
+            "Lienardy dan Panasea (2026) (MRA H4 diterima); Katauke et al. (2023) (tak langsung).",
+            "Gagal-moderasi Apidana dan Kholifah (2022) (p=0,597) dan Artadita dan Firmialy (2024) (beta=0,092, n.s.) + regulatory failure.",
+            "Ambang intensitas hedonis vs kapasitas volisional."
         ),
         (
             "6",
-            "X₂ · M → Y (Moderasi M pada X₂ → Y)",
-            "Parsial/tak langsung: Artadita dan Firmialy (2024) (kontrol kognitif signifikan pada taraf 10%, moderasi keseluruhan DITOLAK); Apidana dan Kholifah (2022) (buffer lifestyle, adjacent).",
-            "Teori obsesi Belk (1995); Barasz et al. (2017) + gagal-moderasi koleksi Artadita dan Firmialy (2024) (H3 ditolak).",
-            "Tingkat keterikatan emosional kolektor (involvement); hobi kasual vs fanatisme koleksi mendalam."
+            "Moderasi M pada X2 terhadap Y",
+            "Parsial: Artadita dan Firmialy (2024) (kontrol kognitif; moderasi keseluruhan ditolak); Apidana dan Kholifah (2022) (adjacent).",
+            "Teori Belk (1995); Barasz et al. (2017) + Artadita dan Firmialy (2024) H3 ditolak.",
+            "Keterikatan koleksi: kasual vs fanatik."
         ),
         (
             "7",
-            "X₃ · M → Y (Moderasi M pada X₃ → Y)",
-            "Tak langsung: Katauke et al. (2023) (literasi menekan impulsivitas) + mekanisme Planner-Doer.",
-            "Argumen teoritis Shiller (2000); Aryadi dan Lingga (2026) (Euforia/herding melumpuhkan rem; bukan uji X₃ · M).",
-            "Tekanan sosial komunitas, bias herding, dan ketakutan tertinggal momentum keuntungan (FOMO)."
+            "Moderasi M pada X3 terhadap Y",
+            "Tak langsung: Katauke et al. (2023) + Planner-Doer.",
+            "Teoritis Shiller (2000); Aryadi dan Lingga (2024) (bukan uji interaksi).",
+            "Herding dan FOMO saat euforia."
         )
     ]
 
@@ -3308,14 +3353,14 @@ if __name__ == "__main__":
         help="Skip Bab 3 (Metode Penelitian) — output: Proposal_Arthur_NoBab3.docx"
     )
     parser.add_argument(
-        "--no-frontmatter",
+        "--with-frontmatter",
         action="store_true",
         help=(
-            "Skip 6 halaman formal frontmatter (Pernyataan, Persetujuan, Pengesahan, "
-            "Kata Pengantar, Abstrak, Abstract). "
-            "DOCX utama mulai dari Daftar Isi (hal. i) dan Bab 1 (hal. 1). "
-            "Output: Proposal_Arthur_PokemonTCG_NoFrontmatter.docx"
+            "Sertakan 6 halaman formal frontmatter (Pernyataan, Persetujuan, "
+            "Pengesahan, Kata Pengantar, Abstrak, Abstract) ke file utama. "
+            "Default: TANPA frontmatter (modular di 01_Lembar_Persetujuan_Proposal/)."
         )
     )
     args = parser.parse_args()
-    build_full_proposal(skip_chapter3=args.no_chapter3, skip_frontmatter=args.no_frontmatter)
+    build_full_proposal(skip_chapter3=args.no_chapter3,
+                        skip_frontmatter=(not args.with_frontmatter))

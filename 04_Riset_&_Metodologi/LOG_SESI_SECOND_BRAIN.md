@@ -1443,4 +1443,227 @@
 - **File yang Diperbarui:** [[execution/build_proposal_word.py]], [[execution/verify_docx_typography.py]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
 - **Verifikasi:** tipografi PASS 2/2 (cek residu baru); TOC 67/67 + 42/42 linked-hitam; `Ref_*` 54/54; parity 7/7 PASS.
 
+---
+
+## 📅 Sesi: 23 September 2026 — Pre-Flight Second Brain & Sinkronisasi Konteks (A11)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Membuka sesi kerja 23 Sep 2026 atas permintaan user dengan protokol [[obsidian-second-brain]] (pre-flight Graphify + kokpit dashboard).
+> - **Masalah yang Diselesaikan:** Memastikan status naskah, variabel Y/X1/X2/X3/Z, dan arahan [[Dr. Fredella Colline]] termuat sebelum eksekusi agar nol amnesia antar sesi.
+> - **Keputusan/Output:** Pre-flight PASS; menunggu fokus pekerjaan user hari ini.
+
+- **Fokus Pekerjaan:** Baca `graphify-out/manifest.json` + `graphify-out/GRAPH_REPORT.md` (1880 nodes, 2004 edges, 174 komunitas); baca [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] (D01–D26), [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]] (A0–A11) + [[directives/universal_thesis_graph_of_agents.md]] (F1–F11).
+- **Masalah yang Diselesaikan:** Konteks penelitian dan arsitektur 3-Layer dipulihkan 100% tanpa kehilangan riwayat keputusan metodologis atau arahan dosen.
+- **Keputusan / Insight:** Baseline sesi ini = Full 64 hlm + NoBab3 46 hlm, paritas 54 ref A-Z, Mendeley cloud menunggu `--prune` + `--push` pasca-`--auth`; PPT Sempro 15 slide + blueprint 7 slide arahan 22 Sep 2026 siap.
+- **File yang Diperbarui:** [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+---
+
+## 📅 Sesi: 23 September 2026 — Audit & Perbaikan LOT/LOF (Collapse Triple Tabel 1.1 + Sinkronisasi Paginasi Word Aktual)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menindaklanjuti temuan user (triple Tabel 1.1 di Daftar Tabel) dengan audit penuh LOT/LOF vs lokasi caption sebenarnya di PDF dan DOCX.
+> - **Masalah yang Diselesaikan:** 7 angka LOT/LOF DOCX stale (drift -4 s.d. -5 hlm) + 3 baris Tabel 1.1 vs 1 hlm aktual di Word; PDF hanya triple 1.1 yang redundan.
+> - **Keputusan/Output:** Builder di-patch, kedua DOCX di-rebuild, tipografi PASS, parity 5/7 (G5/G6 FAIL pre-existing arsitektur modular, bukan regresi LOT).
+
+- **Fokus Pekerjaan:** Audit PyMuPDF footer PDF (golden truth 64 hlm: T1.1=15, T2.1=24, T3.1=32, T3.2=38, T3.3=46, G2.1=31, G3.1=45) vs DOCX statis + render LibreOffice proksi Word (T1.1=16, T2.1=26, T3.1=34, T3.2=40, T3.3=48, G2.1=33, G3.1=48; G1.1-1.3=2/3/5 benar di keduanya).
+- **Masalah yang Diselesaikan:** `[[execution/build_proposal_word.py]]` lot_items (13/14/15/22/30/36/44) dan lof_items (G2.1=29, G3.1=43) diperbarui ke paginasi Word aktual (16/26/34/40/48, G2.1=33, G3.1=48); triple `(lanjutan)` 1.1 di-collapse menjadi 1 baris tunggal di varian Full dan NoBab3.
+- **Keputusan / Insight:** (1) TOC native-field Word tetap benar (auto-update COM) — hanya LOT/LOF statis yang stale. (2) Re-render pasca-rebuild mengonfirmasi LOT 16/26/34/40/48 cocok footer aktual. (3) G5/G6 FAIL karena Full modular (tanpa 6 lembar formal, Sesi 22) vs verifier yang menuntut formal sheets — pre-existing, bukan akibat patch LOT; NoBab3 parity PASS.
+- **File yang Diperbarui:** [[execution/build_proposal_word.py]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** `verify_docx_typography.py` PASS 2/2; `run_thesis_graph.py --gate parity` 5 PASS / 2 FAIL (G5 paritas Full modular, G6 outline formal-headings); LOT hyperlink Full 10/10, NoBab3 6/6 terhubung.
+
+---
+
+## 📅 Sesi: 23 September 2026 — Pangkas Latar Belakang 18→10 Hlm + Bersihkan Simbol Non-Keyboard
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menindaklanjuti keluhan user (Latar Belakang 18 hlm terlalu panjang/mendalam + simbol AI seperti panah dan strip panjang).
+> - **Masalah yang Diselesaikan:** Bab 1 dipangkas ke 10 hlm; 11 em dash dan 14 panah di Bab 1 dieliminasi; elaborasi 7 subjek + paragraf instrumen ukur dikeluarkan dari Bab 1.
+> - **Keputusan/Output:** TeX master + MD + kedua DOCX + kedua PDF direbuild sinkron; Tabel 1.1 dipertahankan ringkas; parity tetap 5/7 (pre-existing modular).
+
+- **Fokus Pekerjaan:** Audit Bab 1 (baris TeX 482–711, 45931 chars): hapus elaborasi 7 subjek + Temuan A/B + The Why (±3,5 hlm) menjadi 1 paragraf sintesis; hapus paragraf instrumen ukur (materi Bab 3); padatkan anteseden, novelty, fenomena ganda, dan ekosistem enum; padatkan 7 sel Tabel 1.1; kecilkan 3 gambar Bab 1 ke 0.80 textwidth; rapatkan spasi baris tabel dan font footnote.
+- **Masalah yang Diselesaikan:** (1) Simbol: 11 `—` menjadi koma, 14 `\rightarrow`/`\cdot` menjadi kata ("terhadap", "Moderasi M pada"), sel DOCX/MD bebas `→·β`. (2) Self-anneal: `[[execution/sync_markdown_from_tex.py]]` diperbaiki (replacement lambda anti `bad escape`, isi Tabel 1.1 MD diselaraskan ringkas) + `[[execution/build_proposal_word.py]]` fungsi `build_tabel_research_gap` dipadatkan; LOT/LOF diukur ulang pasca-susut (T1.1=7, T2.1=17, T3.1=25, T3.2=31, T3.3=39, G2.1=24, G3.1=39). (3) Akar duplikat PDF: caption di blok head berulang longtable diperbaiki dengan `endfirsthead` sehingga Daftar Tabel PDF tinggal 1 baris Tabel 1.1.
+- **Keputusan / Insight:** Tabel 1.1 dipertahankan di Bab 1 sesuai arahan dosen (opsi user); kedalaman dipindah ke Bab 2. Total naskah 64→54 hlm (NoBab3 46→36). Semua sitasi dipertahankan (0 kunci berubah).
+- **File yang Diperbarui:** [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]], [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]], [[01_Naskah_Utama/Proposal_Arthur_NoBab3.pdf]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[01_Naskah_Utama/Proposal_Arthur_NoBab3.docx]], [[execution/sync_markdown_from_tex.py]], [[execution/build_proposal_word.py]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** Bab 1 = footer 1–10 (10 hlm); TeX/DOCX Bab 1 nol simbol non-keyboard; `verify_docx_typography.py` PASS 2/2; parity 5/7 (G5/G6 FAIL modular pre-existing).
+
+---
+
+## 📅 Sesi: 23 September 2026 — Eksekusi 12 Butir Revisi Sylvia + Hapus Varian NoBab3
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menindaklanjuti 12 butir revisi Sylvia atas naskah utama (hal iii/2/3/9/46, Bab 3, diagram) yang diminta untuk dicatat dan diperbaiki.
+> - **Masalah yang Diselesaikan:** Judul Bab satu baris, rujukan gambar tanpa nomor, typo backslash massal, singkatan n.s. ambigu, ambang Alpha salah, struktur 3.5 tak sesuai arahan, diagram tanpa rincian uji dan input-output.
+> - **Keputusan/Output:** Seluruh butir diperbaiki di TeX + pipeline; file NoBab3 dihapus (mengerucut ke file utama); parity 7/7 PASS pertama sejak arsitektur modular.
+
+- **Fokus Pekerjaan:** (1) Audit forensik DOCX: `BAB 1 PENDAHULUAN` sebaris, `pada Gambar.` tanpa nomor ×6+, `125\` (sisa `\%`+newline), 17 paragraf bocor sintaks (`\bar`, `\in`, `\{`, `\url`, `\ref`, `M*\`). (2) Perbaikan TeX: 15 rujukan hardcoded angkanya; legenda model 3.3 + penjelas centering ditulis ulang kata-kata; 3.5.2–3.5.6 menjadi Tahap 1–5; klarifikasi Pearson (-1 hingga +1); Alpha 0,60→0,70 (naskah + diagram); `n.s.`→`tidak signifikan`; em dash `—`/`---` dihapus dari naskah; `Generasi Z` di Manfaat; diagram dirinci (KS, Tolerance/VIF, Glejser) + 9 pasangan input-output. (3) Perbaikan pipeline: jeda baris lunak judul Bab; hardening `clean_academic_text` (`\%`, sisa `\`, `\url`, `\ref`, spasi); font tubuh tabel diseragamkan 9,0pt; TOC statis tanpa 3.5.x; perbaiki bug urutan penghapus komentar vs `\%` di sync. (4) Penghapusan NoBab3 (11 berkas + 2 skrip) + penyesuaian 6 verifier (paritas 5-arah, outline modular, ukrida/typography/live-urls, drop X2) + dashboard.
+- **Masalah yang Diselesaikan:** Akar `125\` adalah bug urutan (penghapus komentar menelan `%` dari `\%`); akar typo `\` massal adalah notasi sebaris + `\ref`/`\url` lolos konverter; semuanya diperbaiki di level konverter agar rebuild mendatang tetap bersih.
+- **Keputusan / Insight:** Total naskah 52 hlm (Bab 1 tetap 10); 0 backslash dan 0 `n.s.` di DOCX; LOT/LOF terukur ulang (7/16/24/30/39; 2/3/5/23/38). Terbuka: konfirmasi maksud butir hal iii soal nama tabel.
+- **File yang Diperbarui:** [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]], [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[01_Naskah_Utama/images/diagram_alur_penelitian.png]], [[07_Review_&_Audit/Revisi_Dosen/2026-09-23_Revisi_Sylvia_Pascapangkas_Bab1.md]], [[00_DASHBOARD_SECOND_BRAIN.md]], [[execution/build_proposal_word.py]], [[execution/sync_markdown_from_tex.py]], [[execution/verify_pdf_docx_parity.py]], [[execution/verify_word_outline.py]], [[execution/verify_mendeley_integrity.py]], [[execution/verify_ukrida_compliance.py]], [[execution/verify_docx_typography.py]], [[execution/verify_live_urls.py]], [[execution/run_thesis_graph.py]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Dihapus:** `Proposal_Arthur_NoBab3.*` (11 berkas), `build_proposal_nobab3_pdf.py`, `verify_nobab3_pdf.py`
+- **Verifikasi:** `verify_docx_typography.py` PASS; `run_thesis_graph.py --gate parity` 7/7 PASS.
+
+---
+
+## 📅 Sesi: 23 September 2026 — Audit Kesehatan + Koreksi Halaman Settled 52→55 (C-LOT-3)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Audit kesehatan naskah + 7 gerbang parity atas permintaan user; memastikan logo UKRIDA dan sinkron PDF↔DOCX.
+> - **Masalah yang Diselesaikan:** Rekomendasi ulang settled (3 run identik) membuktikan PDF = 55 hlm, bukan 52 (transien sekali-pass); TOC/LOT/LOF statis DOCX yang masih bernomor lama disinkron ulang ke angka cetak.
+> - **Keputusan/Output:** DOCX direbuild (LOT 6/14/22/28/37; LOF 1/2/4/21/35 = `lot`/`lof` PDF); gate 7/7 PASS pada pasangan baru; aturan settled-build diabadikan sebagai C-LOT-3 di SOP.
+
+- **Fokus Pekerjaan:** Pre-flight second-brain (graphify 1880 nodes/2004 edges/174 komunitas; dashboard; SOP F1–F11). Integritas `01_Naskah_Utama/`: varian NoBab3 sudah terhapus (3 lockfile `~$*.docx` basi dibersihkan); logo pentagram vektor `images/ukrida_pentagram.pdf` terpasang di TeX baris 184 (cover) + `ukrida_pentagram.png` 248078 bytes ter-embed sebagai image1 DOCX + 1 logo di `01_Lembar_Persetujuan_Proposal/00 - Form Bimbingan Skripsi.docx`. Gate awal 7/7 PASS, lalu rekompilasi verifikasi justru menemukan drift 52→55.
+- **Masalah yang Diselesaikan:** (1) Akar drift: angka 52 diukur dari build tak-settled; 3 run `xelatex` beruntun kini stabil 55 + 0 rerun-warning (frontmatter xiii + Bab1 footer 1–10 + Bab2 11–21 + Bab3 22–37 + DP 38–42). (2) `toc_items_full`/`lot_items_full`/`lof_items_full` di `[[execution/build_proposal_word.py]]` diperbarui ke angka cetak (.toc/.lot/.lof) + rebuild DOCX (sitasi 186, LOT/LOF 10/10, TOC 51). (3) Temuan arsitektur: entri `TOC 1` statis digantikan field TOC native Word (`toc 1/2/3`, angka paginasi Word — wajar berbeda dari PDF); LOT/LOF (`TOC 11`) tetap angka cetak PDF per C-LOT-1.
+- **Keputusan / Insight:** Golden truth = sumber TeX tetap; output mengikuti. Evidence ledger tak terdampak (merujuk PDF jurnal eksternal). Dashboard dikoreksi 52→55.
+- **File yang Diperbarui:** [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[execution/build_proposal_word.py]], [[directives/universal_thesis_graph_of_agents.md]] (C-LOT-3), [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** `xelatex` ×3 settled 55 hlm A4; `verify_docx_typography.py` PASS; `run_thesis_graph.py --gate parity` 7/7 PASS (G1–G7).
+
+---
+
+## 📅 Sesi: 23 September 2026 — Refresh Prompt Kickoff HTML+MD + Perkuat Prompt Audit
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menindaklanjuti permintaan user: seluruh prompt kickoff diselaraskan ke keadaan terbaru + prompt cek kesehatan/audit diperbaiki dan dilengkapi.
+> - **Masalah yang Diselesaikan:** Prompt masih menyebut varian NoBab3 (sudah dihapus), angka halaman basi (54/52), link `file:///z:/...` mati, dan prompt audit belum mencakup settled-build, sinkron angka cetak, hygiene pasca-Sylvia, dan format vonis.
+> - **Keputusan/Output:** 7 prompt ditulis ulang sinkron HTML↔MD (terverifikasi identik per-karakter); Opsi 4 menjadi audit 7 langkah; link kickoff dashboard diperbaiki ke path lokal.
+
+- **Fokus Pekerjaan:** (1) Status pill HTML: `Proposal Utama 55 Hal (settled) · Tanpa Varian · Gate 7/7`. (2) Opsi 1: ringkasan status menyebut satu file utama + NoBab3 dihapus + 55 hlm + 7/7. (3) Opsi 2: revisi dari pembimbing/reviewerr + rujuk contoh Sylvia + konvensi nama arsip + update dashboard. (4) Opsi 3: tambahan opsional blueprint PPT 7 slide. (5) Opsi 4: ditulis ulang total — blok KONTEKS KANONIS + 7 langkah (integritas, settled-build C-LOT-3, sinkron angka C-LOT-1 + angka kanonis LOT/LOF/TOC, 7 gerbang + citation-links, hygiene pasca-Sylvia, self-anneal, laporan bervonis). (6) Opsi 5: pengingat Tier-3 Gated + trigger F9. (7) Opsi 6: larangan rekompilasi sia-sia + settled-build bila TeX berubah. (8) Opsi 7: file UTAMA saja + lembar modular + tanpa varian. (9) MD: link HTML diperbaiki ke relatif; dashboard: link kickoff ke `[[PROMPT_KICKOFF.html]]`.
+- **Keputusan / Insight:** Prompt kickoff kini anti-asumsi-basi: setiap prompt audit membawa konteks kanonis inline sehingga AI sesi baru tak perlu menebak.
+- **File yang Diperbarui:** [[PROMPT_KICKOFF.html]], [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md]], [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** Parser HTML 0 error tag; 7/7 prompt HTML==MD identik (1526/758/765/2336/874/1028/1419 chars); grep sisa: 0 angka basi, 0 path `z:/`, sisa `NoBab3` hanya historis "dihapus".
+
+---
+
+## 📅 Sesi: 23 September 2026 — Cek Rapi Format + Integritas Sitasi Pascarevisi
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menjawab permintaan user: memastikan banyaknya perubahan hari ini tidak merusak kerapihan format dan tidak mengubah sitasi.
+> - **Masalah yang Diselesaikan:** 2 DOI sempat terlabel MATI oleh skrip (padahal sumber asli); skrip diperbaiki agar DOI terdaftar + publisher tak terjangkau terklasifikasi jujur.
+> - **Keputusan/Output:** 0 sitasi hilang/baru (54 kunci utuh); format rapi (0 cacat); citation-links 0 MATI; gate 7/7 PASS.
+
+- **Fokus Pekerjaan:** (1) Diff kunci `\cite` TeX worktree vs git HEAD: 54 = 54, HILANG nihil, BARU nihil; frekuensi 251→195 (56 kutipan berulang terbuang bersama paragraf Bab 1 yang dipangkas — wajar, kunci utuh). (2) Silang bib: 73 entri (19 tak-disitasi = superset pre-existing), cited-but-missing nihil; `.bbl` 54 `bibitem`; DP DOCX 54 entri alfabetis tanpa nomor; hyperlink sitasi DOCX 186. (3) Investigasi 2 DEAD: `dewi2026understanding` (doi.org 302 valid → publisher 403/502 fluktuatif = anti-bot) dan `pranggabayu2022pengaruh` (doi.org 302 valid → publisher timeout); keduanya TERBUKTI asli via metadata Crossref + sitasi sekunder independen + PDF lokal terarsip baca-isi (ledger L01/L06). (4) Perbaikan surgical `[[execution/verify_all_citation_links.py]]`: cek DOI dua lapis (`_NoRedirect` + `fetch_doi`) + kelas WALLED-SERVER; hasil kini 31 hidup / 20 walled / 2 server-tak-terjangkau / 0 MATI, exit 0. (5) Hygiene DOCX 378 paragraf: backslash 0, `n.s.` 0, spasi-sebelum-tanda-baca 0, rujukan-tanpa-nomor 0, `??` 0, `()` 0; spasi ganda hanya pola list/enumerasi + alignment tanda tangan (bukan cacat); 10 tabel Word murni (Tabel 1.1 = 8×5). (6) SOP F8 dianneal satu baris (WALLED-SERVER).
+- **Keputusan / Insight:** Tidak ada sitasi yang berubah; tidak ada penggantian sumber. Klaim "0 link mati" dashboard tetap jujur dengan kualifikasi walled/server.
+- **File yang Diperbarui:** [[execution/verify_all_citation_links.py]], [[directives/universal_thesis_graph_of_agents.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** `verify_all_citation_links.py` exit 0 (0 MATI); `verify_evidence_ledger.py` PASS; `verify_docx_typography.py` PASS (via gate); `run_thesis_graph.py --gate parity` 7/7 PASS.
+
+---
+
+## 📅 Sesi: 23 September 2026 — Lengkapi Panduan Belajar H-1 Sempro (Edisi Nol Pengetahuan)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Permintaan user: panduan belajar harus lengkap-detail untuk bekal presentasi besok dengan asumsi 0 pengetahuan skripsi.
+> - **Masalah yang Diselesaikan:** Panduan v2.0 basi (42 hlm, pra-Sylvia) + belum ada materi briefing sempro, bedah gap 2 menit, ambang batas, naskah bicara, Q&A lanjutan, dan checklist; file statistik menyebut Alpha 0,60 yang sudah direvisi.
+> - **Keputusan/Output:** Panduan v3.0 (§0 + §12–§16 baru, 30 Q&A); PDF 27 hlm + HTML diregenerasi; PRD slide dikoreksi ke 6 hipotesis.
+
+- **Fokus Pekerjaan:** (1) Header v3.0 sinkron 55 hlm + revisi Sylvia. (2) §0 Briefing H-1: format sempro, 5 mindset nol, rencana belajar 2 jam. (3) §12 Bedah Tabel 1.1: 7 gap (1A/2A/3A + 4A/5A-5B/6A-6B/7A) + kalimat penutup novelty. (4) §13 Tahap 1–5 bahasa sehari-hari + tabel 7 ambang batas (r-tabel pilot 0,361; Alpha ≥ 0,70; KS/VIF/Glejser; t/F/F-change p < 0,05; Pearson −1..+1) — dikutip verbatim dari TeX baris 1137–1146. (5) §14 Naskah bicara 7 slide + timing + taktik jawab 4 langkah/3 larangan. (6) §15 Q18–Q30 (usia 17/UU Adminduk, infinite pop, pilot 30, operasionalisasi, SPSS-vs-PLS/Hair, mean-centering + simple slopes β1+β5M*, H-ditolak, keterbatasan, pasca-sempro, taktik tidak-tahu, cross-sectional/Likert). (7) §16 Checklist malam-pagi. (8) Koreksi `04_STATISTIK_UNTUK_PEMULA.md` Alpha 0,60→0,70. (9) Regenerasi HTML panduan (python-markdown; versi lama mojibake). (10) Koreksi PRD PPT: slide 5 H1–H7→H1–H6 + sampel N≥150→120–150/pilot 30; cek deck `.pptx` 15 slide: hipotesis H1–H6 ✅ konsisten.
+- **Keputusan / Insight:** Satu-satunya konflik ditemukan (PRD 7 hipotesis) sudah diluruskan; deck existing aman.
+- **File yang Diperbarui:** [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]], [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.pdf]], [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.html]], [[02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/04_STATISTIK_UNTUK_PEMULA.md]], [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/PRD_PPT_SEMPRO_7_SLIDE.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** PDF 27 hlm (semua seksi baru ADA, "42 Halaman" HILANG); HTML 0 mojibake; deck pptx slide 8 = H1–H6.
+
+---
+
+## 📅 Sesi: 23 September 2026 — Rule Nol Penanda AI (M1–M9) + Bersihkan File Final
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Permintaan user: semua file jadi tidak boleh mengandung tanda-tanda AI seperti `$`, `*`.
+> - **Masalah yang Diselesaikan:** PDF panduan membocorkan rumus LaTeX mentah (`$\alpha$`, `$$..$$`) dan satu slide PPTX membocorkan `$\rightarrow$`; generator diperbaiki di akarnya.
+> - **Keputusan/Output:** Rule permanen + skrip `verify_no_ai_markers.py` ([PASS] di semua file final); AGENTS.md dianneal.
+
+- **Fokus Pekerjaan:** (1) Baseline scan: DOCX/PDF skripsi + 7 DOCX modular BERSIH (temuan `$`/`#` = konten legit `US$`, `#SV107`); PDF panduan KOTOR (math mentah) + 1 slide PPTX KOTOR (`$\rightarrow$`). (2) Rule baru [[.agents/rules/mandatory_no_ai_markers.md]]: skop source-vs-final, larangan M1–M9, allowlist eksplisit (`US$`, kode kartu `#`, notasi terpusat `X1*`, unicode ilmiah), tabel konversi, gerbang verifikasi wajib. (3) Skrip baru [[execution/verify_no_ai_markers.py]]: pindai DOCX+PDF+PPTX+modular dengan allowlist anti-false-alarm, exit 0/1. (4) Perbaikan akar di `[[execution/build_study_guide_pdf.py]]`: ekstraksi math via placeholder (agar `*` markdown tak memakan `^*`), `_latex_to_unicode` (`\alpha`→α, `\bar{X}_i`→mean(Xi), `r_hitung`→r-hitung), checkbox→`( )`, buang emoji; rebuild PDF panduan. (5) Temuan font: Helvetica/WinAnsi tak punya glyph ₁₂₃/ᵢ/☐ (tofu ■ terbukti via probe) → mapping memakai digit polos + `( )`; hasil akhir 0 tofu. (6) PPTX diperbaiki via python-pptx (`$\rightarrow$`→`→`). (7) AGENTS.md: master dikoreksi (NoBab3→file utama) + verifikasi wajib kini 3 skrip.
+- **Keputusan / Insight:** Aturan membedakan tegas penanda vs konten (`US$`, `#SV107`, `X1*` = legit, bukan pelanggaran).
+- **File yang Diperbarui:** [[.agents/rules/mandatory_no_ai_markers.md]], [[execution/verify_no_ai_markers.py]], [[execution/build_study_guide_pdf.py]], [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.pdf]], [[02_Persiapan_Sidang/ppt_seminar_proposal/Proposal_Arthur_Sempro_PokemonTCG.pptx]], [[AGENTS.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** `verify_no_ai_markers.py` [PASS] 11 target 0 temuan; PDF panduan 0 `$`, 0 `\alpha`, 0 `■`; gate parity tak tersentuh (7/7 terakhir tetap berlaku).
+
+---
+
+## 📅 Sesi: 23 September 2026 — Rumusan Masalah Bullet → Nomor 1–6 (Pedoman)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Permintaan user (pakai contoh kakak tingkat + pedoman): daftar Rumusan Masalah memakai bullet `•`, harusnya penomoran 1–6.
+> - **Masalah yang Diselesaikan:** Konverter MD→DOCX mengubah semua `\item` menjadi bullet; TeX/PDF sebenarnya sudah bernomor (`enumerate`).
+> - **Keputusan/Output:** `_number_rumusan_tujuan()` di sync script; 1.2 & 1.3 kini bernomor di MD + DOCX; gate 7/7 PASS.
+
+- **Fokus Pekerjaan:** Akar di `[[execution/sync_markdown_from_tex.py]]` (`\item`→`- ` global); builder hanya mengikuti MD. Post-pass baru menomori ulang `- `→`1.`–`6.` khusus blok `## 1.2` dan `## 1.3` (Manfaat 1.4.1/1.4.2 tetap bullet — sesuai pedoman). Rebuild sempat tertahan lock LibreOffice (`soffice`); user menutup dokumen lalu rebuild sukses: `1. Apakah …` s.d. `6. …` (angka bold + hanging indent) di kedua seksi.
+- **File yang Diperbarui:** [[execution/sync_markdown_from_tex.py]], [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** `verify_docx_typography.py` PASS; `verify_no_ai_markers.py` PASS; `run_thesis_graph.py --gate parity` 7/7 PASS.
+
+---
+
+## 📅 Sesi: 23 September 2026 — Eksisi 6 Lembar Formal ke Modular + Sinkron Ulang Halaman
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Keluhan user: TOC DOCX mencantumkan ii–viii (Pernyataan s.d. Abstract) yang tak ada di TOC PDF + 6 lembar formal kembali ke naskah utama padahal perintah lama memodularkannya.
+> - **Masalah yang Diselesaikan:** Regresi builder (lembar formal hardcode selalu ikut rebuild); TeX master ikut memuatnya sehingga PDF pun tak modular.
+> - **Keputusan/Output:** Eksisi penuh dari TeX + MD-hardcode + default builder; naskah utama = Cover→TOC→Bab 1; PDF 47 hlm settled; semua angka daftar isi terverifikasi benar.
+
+- **Fokus Pekerjaan:** (1) Audit: DOCX memuat 6 lembar + TOC native ii–viii; PDF memuatnya tapi `.toc` tak mencatatnya → desync. Akar kembalinya: `build_formal_approval_sheets` hardcode + `\newpage` TeX + `md_lines` hardcode di sync. (2) Eksisi TeX baris ±214–443 (6 lembar; Cover + TOC/LOT/LOF dipertahankan; komentar seksi 8/9/10→2/3/4) — dengan penanda `% Modular 23 Sep 2026` per lembar. (3) Builder: output utama SELALU `skip_frontmatter=True` (flag baru `--with-frontmatter` opt-in; file `*NoFrontmatter*` pensiun). (4) Sync: mini-TOC + 6 seksi hardcode MD dihapus (895→738 baris). (5) Rebuild settled 47 hlm (2 run identik); body arab 1–42 tak bergeser (LOT/LOF lama tetap valid); TOC statis hanya romawi LOT iv + LOF v yang berubah (xii/xiii).
+- **Keputusan / Insight:** Golden truth ditegakkan di TeX (bukan tambalan DOCX). G3 UKRIDA tetap PASS dengan arsitektur modular.
+- **File yang Diperbarui:** [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]], [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[execution/build_proposal_word.py]], [[execution/sync_markdown_from_tex.py]], [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** Audit halaman-vs-daftar isi: PDF 13/13 OK (LOT iv, LOF v, Bab 1=1, 1.2=8, Bab 2=11, 2.3=14, Bab 3=22, 3.5=32, DP=38, caption 6/37/35); DOCX LOT/LOF 10/10 OK; formal sheets di DOCX utama nihil; `verify_docx_typography.py` PASS; `verify_no_ai_markers.py` PASS; `run_thesis_graph.py --gate parity` 7/7 PASS.
+
+---
+
+## 📅 Sesi: 23 September 2026 — Bintang Terpusat X1*/M*: Legit, Bukan Markup (Fix Converter)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Keluhan user: "kenapa masih ada * nya" pada naskah.
+> - **Masalah yang Diselesaikan:** Bintang `X1*`/`M*` adalah notasi statistik mean-centered (Aiken & West) — tapi konverter DOCX memakannya mentah sehingga makna hilang; lalu verifier tipografi over-strict memFAIL-kannya.
+> - **Keputusan/Output:** DOCX kini menampilkan italic `X₁*`/`M*` selaras makna PDF; verifier dikecualikan presisi; gate 7/7 PASS.
+
+- **Fokus Pekerjaan:** (1) Forensik: DOCX 0 `*` (bintang dimakan `parse_markdown_runs` baris `token.replace('*','')`); PDF 14 `*` semuanya `X1*/M*/Xᵢ*` sahih (allowlist rule §3). (2) Perbaikan `[[execution/build_proposal_word.py]]`/`parse_markdown_runs`: lindungi notasi terpusat via placeholder `\x00` → run italic; pelajaran: placeholder NULL haram bagi lxml (gagal build) → pola potong-dulu-restore-per-segmen. (3) Perbaikan `[[execution/verify_docx_typography.py]]`: cek asterisk mengecualikan `[XM][₁₂₃ᵢ\d]?\*` (paragraf + tabel) + `import re`; uji presisi: `*italic*`/`a*b`/`**` tetap FLAG.
+- **File yang Diperbarui:** [[execution/build_proposal_word.py]], [[execution/verify_docx_typography.py]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** Legenda DOCX `X₁*, X₂*, X₃*`/`M*` italic; `verify_docx_typography.py` PASS; `verify_no_ai_markers.py` PASS; `run_thesis_graph.py --gate parity` 7/7 PASS.
+
+---
+
+## 📅 Sesi: 23 September 2026 — Audit Penguji Penuh + Plan Disetujui (P1–P3)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Permintaan user: berperan sebagai dosen penguji, audit seluruh isi, temukan inkonsistensi sejenis kasus Gen Z; buat plan sebelum eksekusi.
+> - **Masalah yang Diselesaikan:** Satu celah riil (X1: 6 dimensi vs 5 indikator tanpa alasan) + koreksi panduan; sisanya terverifikasi aman.
+> - **Keputusan/Output:** Plan diajukan via question-tool, user memilih P1+P2+P3; dieksekusi + gate 7/7 PASS; PDF tetap 47 hlm settled.
+
+- **Fokus Pekerjaan:** (1) Baca penuh TeX 1037 baris sebagai penguji. (2) Temuan AMAN (tak perlu aksi): M→Y dangling sudah dicover 2× (caption Gbr 2.1 + §Model baseline); Statista key-2024/year-2021 hanya nama kunci; simbol Z-vs-M konsisten M di naskah (drift hanya dokumen luar); NIDN tak ter-render di file utama; N 106/111 konsisten (min absolut 111); 10 studi 2021–2026 + n responden = ledger. (3) P1: klausa adaptasi 5-dari-6 dimensi Arnold di §2.2.1 (Value Shopping tak relevan — harga pack pasti). (4) P2: Q10 panduan → batas mengikat 111. (5) P3: matriks panduan + §5 → 5 dimensi + anotasi Value; dashboard diselaraskan.
+- **File yang Diperbarui:** [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]], [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]], [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.pdf]], [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** xelatex ×2 settled 47 hlm; 54 kunci sitasi utuh; sitasi hyperlink 178 (susut wajar pasca-eksisi abstrak); `verify_docx_typography.py` PASS; `verify_no_ai_markers.py` PASS; `run_thesis_graph.py --gate parity` 7/7 PASS.
+
+---
+
+## 📅 Sesi: 23 September 2026 — Tanam Kartu Jawaban + Bedah Bab 3 ke Panduan (34 Q&A)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Permintaan user: bekal jawaban + seluruh detail (khususnya Bab 3) masuk panduan belajar untuk pembaca berpengetahuan nol.
+> - **Masalah yang Diselesaikan:** Temuan audit penguji + dispositions Bab 3 belum ada di panduan; PDF panduan masih 27 hlm pra-kartu.
+> - **Keputusan/Output:** Panduan 30 hlm (Q31–Q34 + §17); 0 tofu; HTML sinkron.
+
+- **Fokus Pekerjaan:** (1) Q31 (Gen Z vs umum — kartu bekal #1), Q32 (5-vs-6 dimensi — kartu #2), Q33 (β4 baseline), Q34 (106/111/120–150). (2) §17 Penguasaan Bab 3 Total: 3.1–3.7 bahasa sehari-hari + jebakan per subbab (Purposive-vs-random, Green ganda, baca Model 1/2 + F-change, presentasi Tabel 3.1–3.2 dua menit, 8 kotak + belah ketupat, jadwal B1–B6). (3) Perbaikan builder panduan: cover v3.0 + transliterasi box-drawing→ASCII (175 tofu diagram §1). (4) Regenerasi PDF 30 hlm + HTML.
+- **File yang Diperbarui:** [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]], [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.pdf]], [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.html]], [[execution/build_study_guide_pdf.py]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** PDF 30 hlm; Q31/Q34/§17 ADA; 0 `■`; HTML sinkron.
+
+---
+
+## 📅 Sesi: 23 September 2026 — Alur Presentasi 7 Slide Detail (Himbauan Dosen)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Permintaan user yang membuat presentasi sendiri: alur slide-per-slide sedetail mungkin + diajari tiap detailnya.
+> - **Masalah yang Diselesaikan:** Tidak ada peta cerita, naskah bicara, durasi, dan transisi antar-slide.
+> - **Keputusan/Output:** Dokumen `ALUR_PRESENTASI_7_SLIDE_DETAIL.md` (7 slide per himbauan: 1 buka, 2–3 latar, 4–5 pustaka, 6 metode, 7 tutup).
+
+- **Fokus Pekerjaan:** Golden thread Fenomena→Gap→Teori→Model→Metode→Penutup; tiap slide berisi tujuan, isi visual, naskah bicara kata-per-kata, detail pengajaran (angka wajib, tameng antisipasi, larangan), kalimat transisi; rekap durasi 8:40 + protokol latihan 3 putaran.
+- **File yang Diperbarui:** [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/ALUR_PRESENTASI_7_SLIDE_DETAIL.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** Isi selaras naskah (6 hipotesis, N 120–150, Alpha 0,70, 7 gap → 3 kelompok); konsisten dengan PRD terkoreksi.
+
+---
+
+## 📅 Sesi: 23 September 2026 — Plan PPT untuk Claude (Koreksi Fakta Handoff)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Permintaan user: plan pembuatan PPT yang akan diserahkan ke Claude.
+> - **Masalah yang Diselesaikan:** Paket handoff lama mengandung fakta basi yang akan diwariskan ke deck (7 hipotesis, N≥150 Jabodetabek, klaim paylater, Shefrin 2000, simbol Z).
+> - **Keputusan/Output:** 3 dokumen handoff dikoreksi + 1 prompt siap-tempel baru dengan aturan anti-halusinasi + self-check.
+
+- **Fokus Pekerjaan:** (1) Audit `PROMPT_UNTUK_AI_LAIN.md` + `IMPLEMENTATION_PLAN` + `PRD`: temukan 5 kelas fakta basi. (2) Koreksi: 6 hipotesis + larangan H7/panah M→Y; sampel WNI 120–150 + pilot 30; hapus klaim paylater/dana darurat; teori hanya dari naskah; simbol M (bukan Z); novelty 3 poin. (3) File baru `PROMPT_CLAUDE_7SLIDE_SIAP_TEMPEL.md`: blok copy-paste (data kunci, 5 aturan anti-halusinasi, isi 7 slide, output python-pptx/HTML, self-check 4 poin) + lampiran 3 dokumen.
+- **File yang Diperbarui:** [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/PROMPT_UNTUK_AI_LAIN.md]], [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/IMPLEMENTATION_PLAN_PPT_SEMPRO_7_SLIDE.md]], [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/PRD_PPT_SEMPRO_7_SLIDE.md]], [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/PROMPT_CLAUDE_7SLIDE_SIAP_TEMPEL.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** Grep sisa: `H7`/paylater/Jabodetabek-only/Shefrin-2000 hanya dalam konteks larangan; deck `.pptx` existing (15 slide, H1–H6) tak tersentuh.
+
 

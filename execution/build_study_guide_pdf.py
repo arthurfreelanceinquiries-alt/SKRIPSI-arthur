@@ -38,14 +38,65 @@ MARGIN_B = 56
 CONTENT_W = PAGE_W - MARGIN_L - MARGIN_R
 
 
+# CATATAN FONT: PDF panduan memakai Helvetica (WinAnsi) — subscript unicode
+# ₁₂₃ (U+2080+), ᵢ (U+1D62), dan ☐/☑ TIDAK punya glyph (tofu ■). Maka digit
+# subscript ditulis polos (X1), dan checkbox memakai ( )/(x). Superscript
+# ¹²³ (Latin-1) AMAN. Hasil probe render 23 Sep 2026.
+LATEX_UNICODE = [
+    (r'\\text\{([^}]*)\}', r'\1'),
+    (r'\\bar\{X\}_i', 'mean(Xi)'),
+    (r'\\bar\{M\}', 'mean(M)'),
+    (r'\\bar\{([A-Za-z])\}', r'mean(\1)'),
+    (r'\\alpha', '\u03b1'), (r'\\beta', '\u03b2'),
+    (r'\\Delta', '\u0394'), (r'\\cdot', '\u00b7'),
+    (r'\\ge', '\u2265'), (r'\\le', '\u2264'),
+    (r'\\times', '\u00d7'), (r'\\rightarrow', '\u2192'),
+    (r'\\quad', ' '), (r'\\[ ,;]', ' '),
+]
+_SUP = {'1': '\u00b9', '2': '\u00b2', '3': '\u00b3'}
+
+
+def _latex_to_unicode(s: str) -> str:
+    """Convert common LaTeX math fragments to readable unicode (rule M1/M2)."""
+    for pat, rep in LATEX_UNICODE:
+        s = re.sub(pat, rep, s)
+    s = re.sub(r'_\{?([1-7])\}?', r'\1', s)  # X_1 -> X1 (subscript tofu)
+    s = re.sub(r'_\{?i\}?', 'i', s)  # X_i -> Xi (setelah \bar ditangani)
+    s = re.sub(r'\^([123])', lambda m: _SUP[m.group(1)], s)
+    s = re.sub(r'\^(?=\*)', '', s)  # M^* -> M*
+    s = re.sub(r'r_\{?hitung\}?', 'r-hitung', s)
+    s = re.sub(r'r_\{?tabel\}?', 'r-tabel', s)
+    s = re.sub(r'[{}]', '', s)
+    s = re.sub(r'\\[a-zA-Z]+', '', s)
+    return s
+
+
 def strip_inline_md(text: str) -> str:
-    """Remove inline markdown markers from text for plain-text rendering."""
+    """Remove inline markdown markers from text for plain-text rendering.
+
+    Math is extracted to placeholders FIRST so markdown *-stripping never
+    eats asterisks inside formulas (e.g. X_i^* ... M^*).
+    """
+    held = []
+
+    def _hold(m):
+        held.append(_latex_to_unicode(m.group(1)))
+        return '\x00%d\x00' % len(held)
+
+    text = re.sub(r'\$\$(.+?)\$\$', _hold, text, flags=re.S)
+    text = re.sub(r'\$([^$\n]+?)\$', _hold, text)
     text = re.sub(r'\*\*\*(.*?)\*\*\*', r'\1', text)
     text = re.sub(r'\*\*(.*?)\*\*', r'\1', text)
     text = re.sub(r'\*(.*?)\*', r'\1', text)
     text = re.sub(r'`(.*?)`', r'\1', text)
     text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
-    text = re.sub(r'\$([^$]+)\$', r'\1', text)
+    for i, conv in enumerate(held, 1):
+        text = text.replace('\x00%d\x00' % i, conv)
+    # Printable checklist (rule M6): ( ) Helvetica-safe (☐/☑ tofu di WinAnsi).
+    text = re.sub(r'^\s*(?:- )?\[ \]', '( ) ', text)
+    text = re.sub(r'^\s*(?:- )?\[x\]', '(x) ', text, flags=re.I)
+    text = re.sub(r'[\U0001F300-\U0001FAFF\u2600-\u27BF\u2B00-\u2BFF\uFE0F]',
+                  '', text)
     # Replace special chars that may cause issues
     text = text.replace('\u2014', '-').replace('\u2013', '-').replace('\u2019', "'").replace('\u2018', "'")
     text = text.replace('\u201c', '"').replace('\u201d', '"').replace('\u00ae', '(R)').replace('\u00e9', 'e')
@@ -136,7 +187,7 @@ def build_pdf(input_path: Path, output_path: Path):
     story.append(Spacer(1, 12))
     story.append(Paragraph("<b>Arthur Reezan | NIM: 312023002</b>", styles['cover_body']))
     story.append(Paragraph("Pembimbing: Dr. Fredella Colline, S.E., M.M., CFP(R), PFM, CHCP-A", styles['cover_body']))
-    story.append(Paragraph("Versi 2.0 | September 2026", styles['cover_body']))
+    story.append(Paragraph("Versi 3.0 | September 2026", styles['cover_body']))
     story.append(HRFlowable(width='100%', thickness=1, color=C_MED_BLUE, spaceBefore=14))
     story.append(PageBreak())
 
@@ -151,10 +202,16 @@ def build_pdf(input_path: Path, output_path: Path):
     in_table = False
     table_lines_buf = []
 
+    # Box-drawing (Courier/Helvetica tak punya glyph -> tofu). Petakan ke ASCII.
+    _BOX = str.maketrans({'┌': '+', '┐': '+', '└': '+', '┘': '+', '├': '+',
+                          '┤': '+', '┬': '+', '┴': '+', '┼': '+', '─': '-',
+                          '│': '|', '►': '>', '▲': '^', '▼': 'v'})
+
     def flush_code():
         nonlocal code_lines, in_code
         if code_lines:
-            txt = '\n'.join(strip_inline_md(l) for l in code_lines)
+            txt = '\n'.join(strip_inline_md(l).translate(_BOX)
+                            for l in code_lines)
             story.append(Preformatted(txt, styles['code']))
             story.append(Spacer(1, 4))
         code_lines = []

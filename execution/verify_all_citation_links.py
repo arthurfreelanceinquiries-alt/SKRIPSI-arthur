@@ -6,7 +6,15 @@ DISITASI naskah) + setiap `UR` di RIS Mendeley: wajib hidup (resolves).
   ALIVE        : HTTP 200/301/302/303/307/308
   ALIVE-BLOCKED: HTTP 403/401/405/429 (resolves, tapi anti-bot; di browser
                  manusia biasanya terbuka — dilaporkan terpisah, bukan FAIL)
-  DEAD         : 404/410/5xx/timeout/DNS — WAJIB diperbaiki/diganti.
+  WALLED-SERVER: DOI terdaftar di doi.org (302 + Location valid) tetapi server
+                 publisher timeout/5xx/DNS — identifier sah, landing tak
+                 terjangkau dari jaringan ini; dilaporkan terpisah, bukan FAIL
+                 bila PDF lokal terarsip + baca-isi terverifikasi di ledger
+                 (pelajaran 23 Sep 2026: 10.54443/sibatik.v1i6.112 —
+                 doi.org 302 valid, publisher timeout; artikel terkonfirmasi
+                 via Crossref + sitasi sekunder + PDF lokal L01).
+  DEAD         : DOI tak terdaftar (doi.org 404) / 404/410 final — WAJIB
+                 diperbaiki/diganti.
 
 Untuk DOI yg DEAD, otomatis cari kandidat pengganti via Crossref (judul;
 sim >= 0.85 + tahun cocok) — hanya SARAN, tidak otomatis menimpa bib.
@@ -42,6 +50,15 @@ ALIVE = {200, 301, 302, 303, 307, 308}
 BLOCKED = {401, 403, 405, 429, 468}
 
 
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    """Opener yang TIDAK mengikuti redirect: mengembalikan respons 3xx asli
+    agar pendaftar DOI (doi.org 302 + Location) bisa dibedakan dari
+    kegagalan server publisher di ujung redirect."""
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return None
+
+
 def fetch(url, timeout=20, retries=2):
     for attempt in range(retries + 1):
         try:
@@ -55,6 +72,28 @@ def fetch(url, timeout=20, retries=2):
                 time.sleep(10)
                 continue
             return f"ERR:{str(e)[:50]}"
+
+
+def fetch_doi(url, timeout=20):
+    """Cek DOI dua lapis: (terdaftar, status_final).
+
+    terdaftar=True bila doi.org menjawab 3xx + header Location (identifier
+    sah ter-resolve, apa pun kondisi server publisher). status_final diambil
+    via fetch() biasa (mengikuti redirect). Timeout publisher TIDAK
+    dimaknai DOI mati.
+    """
+    registered = False
+    try:
+        opener = urllib.request.build_opener(_NoRedirect)
+        req = urllib.request.Request(url, headers=UA)
+        with opener.open(req, timeout=timeout) as r:
+            loc = r.headers.get("Location", "")
+            registered = r.status in (301, 302, 303, 307, 308) and bool(loc)
+    except urllib.error.HTTPError as e:
+        registered = e.code in (301, 302, 303, 307, 308)
+    except Exception:  # noqa: BLE001 - doi.org tak terjangkau: registered=False
+        registered = False
+    return registered, fetch(url, timeout=timeout, retries=1)
 
 
 def norm(s):
@@ -120,27 +159,43 @@ def main():
     print(f"memeriksa {len(jobs)} tautan ({len(cited)} sitasi)...")
     results = {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as ex:
-        fut = {ex.submit(fetch, u): (label, u) for label, u in jobs}
+        fut = {}
+        for label, u in jobs:
+            if "[doi]" in label:
+                fut[ex.submit(fetch_doi, u)] = (label, u, True)
+            else:
+                fut[ex.submit(fetch, u)] = (label, u, False)
         for f in concurrent.futures.as_completed(fut):
-            label, u = fut[f]
+            label, u, is_doi = fut[f]
             try:
-                results[label] = (u, f.result())
+                results[label] = (u, f.result(), is_doi)
             except Exception as e:  # noqa: BLE001
-                results[label] = (u, f"ERR:{e}")
+                results[label] = (u, f"ERR:{e}", is_doi)
 
-    dead, blocked = [], []
+    dead, blocked, walled_srv = [], [], []
     for label in sorted(results):
-        u, st = results[label]
+        u, st, is_doi = results[label]
+        if is_doi:
+            registered, final = st
+            st = final
+        else:
+            registered = False
         if st in ALIVE:
             print(f"  ALIVE  {label} -> {u}")
         elif st in BLOCKED:
             blocked.append((label, u, st))
             print(f"  WALLED {label} [{st}] -> {u}")
+        elif is_doi and registered and (isinstance(st, str) or st in
+                                        {500, 502, 503, 504, 521, 522, 523, 524}):
+            walled_srv.append((label, u, st))
+            print(f"  WALLED-SERVER {label} [{st}] -> {u} (doi.org 302 valid)")
         else:
             dead.append((label, u, st))
             print(f"  DEAD   {label} [{st}] -> {u}")
 
-    print(f"\nringkas: {len(jobs)-len(dead)-len(blocked)} hidup / {len(blocked)} terhalang-bot / {len(dead)} MATI")
+    print(f"\nringkas: {len(jobs)-len(dead)-len(blocked)-len(walled_srv)} hidup / "
+          f"{len(blocked)} terhalang-bot / {len(walled_srv)} server-tak-terjangkau / "
+          f"{len(dead)} MATI")
     if dead:
         print("\n--- saran Crossref untuk DOI mati ---")
         for label, u, st in dead:

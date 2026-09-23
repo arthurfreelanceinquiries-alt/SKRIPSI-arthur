@@ -43,7 +43,6 @@ def test_no_banned_keys():
     files_to_check = [
         BASE_DIR / "01_Naskah_Utama" / "references.bib",
         BASE_DIR / "01_Naskah_Utama" / "Proposal_Arthur_PokemonTCG.tex",
-        BASE_DIR / "01_Naskah_Utama" / "Proposal_Arthur_NoBab3.tex",
         BASE_DIR / "01_Naskah_Utama" / "PROPOSAL_SKRIPSI_POKEMON_TCG.md",
         BASE_DIR / "03_Draft_Per_Bab" / "DAFTAR_PUSTAKA_TENTATIF.md",
         BASE_DIR / "06_Referensi_Jurnal_PDF" / "Mendeley_Library_Arthur_PokemonTCG.bib",

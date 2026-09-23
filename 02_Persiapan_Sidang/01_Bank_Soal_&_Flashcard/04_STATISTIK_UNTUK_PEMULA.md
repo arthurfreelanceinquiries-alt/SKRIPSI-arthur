@@ -57,7 +57,7 @@ Y = a + b₁X₁ + b₂X₂ + b₃X₃ + b₄M + b₅(X₁×M) + b₆(X₂×M) +
 ### Langkah 3: Uji Reliabilitas
 1. Analyze → Scale → Reliability Analysis
 2. Masukkan item-item satu variabel → Model: Alpha
-3. **Reliabel** jika Cronbach's Alpha ≥ 0,60
+3. **Reliabel** jika Cronbach's Alpha ≥ 0,70 (ambang revisi Sylvia 23 Sep 2026; sinkron Bab 3 Tahap 1)
 
 ### Langkah 4: Statistik Deskriptif
 1. Analyze → Descriptive Statistics → Descriptives

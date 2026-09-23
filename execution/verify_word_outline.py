@@ -95,10 +95,28 @@ def verify_document_outline(docx_path):
     ]
     
     all_doc_texts = [p.text.strip().upper() for p in doc.paragraphs]
+    # Arsitektur modular (Sesi 22 + Sylvia 23 Sep 2026): 6 lembar formal hidup
+    # di 01_Lembar_Persetujuan_Proposal/*.docx, bukan di DOCX utama.
+    modular_texts = []
+    try:
+        modular_dir = Path(docx_path).parent / "01_Lembar_Persetujuan_Proposal"
+        if modular_dir.exists():
+            for f in sorted(modular_dir.glob("0*.docx")):
+                try:
+                    dd = Document(str(f))
+                    modular_texts += [p.text.strip().upper() for p in dd.paragraphs]
+                except Exception:
+                    pass
+    except Exception:
+        pass
+    formal_pool = all_doc_texts + modular_texts
     missing_frontmatter = []
     for ef in expected_frontmatter:
         if ef == "DAFTAR ISI":
             found = any(ef == t for t in all_doc_texts)
+        elif ef in ("PERNYATAAN KEASLIAN", "HALAMAN PERSETUJUAN", "HALAMAN PENGESAHAN",
+                    "KATA PENGANTAR", "ABSTRAK", "ABSTRACT"):
+            found = any(ef in h['full_text'].upper() for h in headings_found) or any(ef in t for t in modular_texts)
         else:
             found = any(ef in h['full_text'].upper() for h in headings_found)
         if not found:

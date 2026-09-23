@@ -89,10 +89,10 @@ Whenever modifying the skripsi manuscript or related code, you MUST follow:
 - [[.agents/rules/mandatory_thesis_sync_and_quality.md]]
 
 **Key Non-Negotiables:**
-1. **Zero Desync:** LaTeX master (`Proposal_Arthur_NoBab3.pdf`) is the source of truth; Word (`Proposal_Arthur_NoBab3.docx` and `Proposal_Arthur_PokemonTCG.docx`) must match 100%.
+1. **Zero Desync:** LaTeX master (`Proposal_Arthur_PokemonTCG.pdf`, varian NoBab3 dihapus 23 Sep 2026) is the source of truth; Word (`Proposal_Arthur_PokemonTCG.docx`) must match 100%.
 2. **Pure Black (#000000):** 0 theme colors anywhere. Explicit `#000000` on all headings, titles, tables, and footers.
 3. **Universal TOC Compatibility:** Tab stop strictly at 14.0 cm (7938 dxa) with `w:leader="dot"`, `right_indent = 0` (no conflicting right indent), and dedicated `<w:tab/>` run.
-4. **Mandatory Verification:** Before finishing, execute `python execution/verify_docx_typography.py` and `python execution/verify_pdf_docx_parity.py`. Both must PASS.
+4. **Mandatory Verification:** Before finishing, execute `python execution/verify_docx_typography.py`, `python execution/verify_pdf_docx_parity.py`, and `python execution/verify_no_ai_markers.py` (zero AI-telltale markers `$ * # \ emoji` in finals — rule `.agents/rules/mandatory_no_ai_markers.md`). All must PASS.
 
 ## Summary
 

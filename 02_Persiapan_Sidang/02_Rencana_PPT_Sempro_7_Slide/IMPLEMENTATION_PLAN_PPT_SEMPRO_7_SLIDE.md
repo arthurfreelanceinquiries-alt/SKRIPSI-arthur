@@ -100,7 +100,7 @@ SLIDES_DATA = [
                 "highlight": "Finansial Terancam",
                 "points": [
                     "Pembelian spontan (unplanned), emosional, dan berulang tanpa evaluasi konsekuensi finansial.",
-                    "Kolektor kerap mengorbankan dana darurat atau menggunakan paylater demi menyobek pack."
+                    "Berpotensi mengorbankan alokasi keuangan pribadi. (JANGAN klaim dana darurat/paylater — tidak ada di naskah!)"
                 ]
             }
         ],
@@ -126,8 +126,9 @@ SLIDES_DATA = [
                 "title": "Kebaruan Penelitian (Novelty)",
                 "accent": "#10B981",
                 "items": [
-                    "Integrasi Teori Pseudo-Set Framing (Barasz et al., 2017) dengan Motif Spekulasi Arbitrase Pasar Sekunder.",
-                    "Penempatan Self-Control (Z) sebagai Variabel Moderasi guna menguji kapasitas pengendalian diri dalam meredam impulsivitas belanja kartu fisik."
+                    "Tiga anteseden (hedonis, kelengkapan set, spekulasi) diuji simultan pada satu komoditas hobi berpasar sekunder aktif.",
+                    "Self-Control (M) sebagai Variabel Moderasi: menguji kapasitas pengendalian diri dalam meredam impulsivitas belanja kartu fisik.",
+                    "Studi pionir kartu Pokemon TCG berbahasa Indonesia di FEB UKRIDA."
                 ]
             }
         ],
@@ -140,15 +141,15 @@ SLIDES_DATA = [
         "title": "TINJAUAN PUSTAKA: TEORI & VARIABEL",
         "subtitle": "Pijakan Teoretis Multidisiplin & Pengukuran Skala Baku",
         "theories": [
-            "Grand Theory: Behavioral Finance (Shiller, 2000; Shefrin, 2000) — Menjelaskan bias psikologis keputusan keuangan.",
-            "Supporting Theory: S-O-R (Mehrabian & Russell, 1974), Pseudo-Set Framing (Barasz et al., 2017), Teori Regulasi Diri (Baumeister, 2002)."
+            "Grand Theory: Behavioral Finance (Simon, 1955; Kahneman & Tversky, 1979; Shiller, 2000; Thaler & Shefrin, 1981) — Menjelaskan bias psikologis keputusan keuangan.",
+            "Supporting Theory: S-O-R (Mehrabian & Russell, 1974), Completing the Set / Zeigarnik Effect (Gao, 2014; Barasz et al., 2017), Teori Regulasi Diri (Baumeister, 2002)."
         ],
         "variables": [
             {"var": "Y: Impulsive Buying", "scale": "IBTS (Verplanken & Herabadi, 2001)", "desc": "Pembelian spontan tanpa evaluasi konsekuensi."},
-            {"var": "X1: Hedonic Motivation", "scale": "Arnold & Reynolds (2003)", "desc": "Belanja untuk kesenangan & pelepasan stres."},
-            {"var": "X2: Desire for Completeness", "scale": "Barasz et al. (2017)", "desc": "Dorongan melengkapi master set koleksi."},
+            {"var": "X1: Hedonic Motivation", "scale": "Arnold & Reynolds (2003), 5 dimensi diadaptasi", "desc": "Belanja untuk kesenangan & pelepasan stres."},
+            {"var": "X2: Desire for Completeness", "scale": "Gao (2014); Barasz et al. (2017)", "desc": "Dorongan melengkapi master set koleksi."},
             {"var": "X3: Speculative Motive", "scale": "Keynes (1936); Shiller (2000)", "desc": "Ekspektasi keuntungan arbitrase pasar sekunder."},
-            {"var": "Z: Self-Control (Moderasi)", "scale": "BSCS (Tangney et al., 2004)", "desc": "Kapasitas menahan dorongan sesaat."}
+            {"var": "M: Self-Control (Moderasi)", "scale": "BSCS (Tangney et al., 2004)", "desc": "Kapasitas menahan dorongan sesaat."}
         ],
         "notes": "Riset ini berakar pada Grand Theory Behavioral Finance, didukung teori regulasi diri Baumeister dan pseudo-set framing Barasz. Seluruh variabel operasional diukur menggunakan instrumen baku internasional yang valid dan reliabel."
     },
@@ -157,17 +158,16 @@ SLIDES_DATA = [
         "slide_number": 5,
         "type": "conceptual_model",
         "title": "KERANGKA KONSEPTUAL & HIPOTESIS",
-        "subtitle": "Model Moderated Regression Analysis (MRA) dengan 7 Hipotesis",
+        "subtitle": "Model Moderated Regression Analysis (MRA) dengan TEPAT 6 Hipotesis",
         "hypotheses": [
             "H1 (+): Hedonic Motivation berpengaruh positif terhadap Impulsive Buying.",
             "H2 (+): Desire for Completeness berpengaruh positif terhadap Impulsive Buying.",
             "H3 (+): Speculative Motive berpengaruh positif terhadap Impulsive Buying.",
-            "H4 (-): Self-Control berpengaruh negatif terhadap Impulsive Buying.",
-            "H5 (Meredam -): Self-Control memoderasi (meredam) pengaruh Hedonic Motivation terhadap Impulsive Buying.",
-            "H6 (Meredam -): Self-Control memoderasi (meredam) pengaruh Desire for Completeness terhadap Impulsive Buying.",
-            "H7 (Meredam -): Self-Control memoderasi (meredam) pengaruh Speculative Motive terhadap Impulsive Buying."
+            "H4 (Meredam -): Self-Control memoderasi (meredam) pengaruh Hedonic Motivation terhadap Impulsive Buying.",
+            "H5 (Meredam -): Self-Control memoderasi (meredam) pengaruh Desire for Completeness terhadap Impulsive Buying.",
+            "H6 (Meredam -): Self-Control memoderasi (meredam) pengaruh Speculative Motive terhadap Impulsive Buying."
         ],
-        "notes": "Dari telaah pustaka, saya merumuskan 7 hipotesis. H1 hingga H3 menguji pengaruh langsung variabel X terhadap Y, H4 menguji pengaruh langsung Z, dan H5 hingga H7 menguji peran moderasi Self-Control yang dihipotesiskan meredam belanja impulsif."
+        "notes": "Dari telaah pustaka, saya merumuskan TEPAT 6 hipotesis. H1 hingga H3 menguji pengaruh langsung variabel X terhadap Y, H4 hingga H6 menguji peran moderasi Self-Control yang dihipotesiskan meredam belanja impulsif. DILARANG membuat H7; DILARANG menggambar panah langsung M ke Y sebagai hipotesis."
     },
     # SLIDE 6
     {
@@ -182,7 +182,7 @@ SLIDES_DATA = [
             },
             {
                 "title": "2. Populasi & Sampel",
-                "items": ["Komunitas Pokémon TCG Jabodetabek", "Purposive Sampling (N >= 150)", "Kriteria: Usia >= 17 th, beli booster pack 6 bln terakhir"]
+                "items": ["Kolektor WNI, populasi infinite", "Purposive Sampling, target N = 120-150 (+ pilot n = 30)", "Kriteria: WNI domisili Indonesia, Usia >= 17 th, beli pack fisik min. 1x/12 bln (diutamakan 6 bln)"]
             },
             {
                 "title": "3. Uji Kualitas Data",
@@ -193,7 +193,7 @@ SLIDES_DATA = [
                 "items": ["MRA dengan teknik Mean-Centering (cegah multikolinearitas struktural)", "Uji t parsial, Uji F simultan", "Koefisien Determinasi R2 & Delta R2"]
             }
         ],
-        "notes": "Riset menggunakan metode kuantitatif asosiatif dengan purposive sampling 150 responden komunitas Pokémon TCG Jabodetabek. Analisis menggunakan MRA dengan teknik mean-centering guna menjamin independensi variabel interaksi dari multikolinearitas."
+        "notes": "Riset menggunakan metode kuantitatif asosiatif dengan purposive sampling target 120-150 responden kolektor WNI (plus pilot n = 30). Analisis menggunakan MRA dengan teknik mean-centering guna mereduksi multikolinearitas non-esensial prediktor-interaksi."
     },
     # SLIDE 7
     {

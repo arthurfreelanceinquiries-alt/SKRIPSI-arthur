@@ -10,12 +10,13 @@
 > **Panduan ini telah disinkronisasi penuh dengan arahan revisi Dosen Pembimbing (Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A) per 9 September 2026.**  
 > Dokumen ini memuat penguasaan materi komprehensif BAB 1–3, argumen teoretis, justifikasi pemilihan variabel, konteks ekosistem Pokémon, industri sertifikasi *grading*, serta simulasi 17 pertanyaan kritis sidang/bimbingan.
 
-> **Versi:** 2.0 (9 September 2026)  
-> **Disinkronisasi dengan:** Naskah Proposal TeX/PDF (42 Halaman), `BAB_I_PENDAHULUAN.md`, `BAB_II_TINJAUAN_PUSTAKA.md`, `BAB_III_METODE_PENELITIAN.md`, dan `SOURCE_OF_TRUTH.md` v5.0.
+> **Versi:** 3.0 (23 September 2026 — edisi H-1 Sempro, ditulis dari nol untuk pembaca awam)  
+> **Disinkronisasi dengan:** Naskah Proposal TeX/PDF (55 halaman settled — Bab 1 = 10 hlm, Bab 2 = 11 hlm, Bab 3 = 16 hlm), revisi Sylvia 23 Sep 2026 (Bab 3 = Tahap 1–5, Alpha ≥ 0,70, 6 hipotesis H1–H6), `SOURCE_OF_TRUTH.md`, dan Tabel 1.1 matriks 7 research gap.
 
 ---
 
 ## 📌 DAFTAR ISI PANDUAN
+0. [Briefing H-1: Format Sempro, Mindset Nol & Cara Pakai Panduan Ini](#0-briefing-h-1-format-sempro-mindset-nol--cara-pakai-panduan-ini)
 1. [Ringkasan Eksekutif & Peta Konsep Penelitian](#1-ringkasan-eksekutif--peta-konsep-penelitian)
 2. [Latar Belakang & Ekosistem Waralaba Pokémon](#2-latar-belakang--ekosistem-waralaba-pokémon)
 3. [Mengapa Memilih Kartu Koleksi (TCG)?](#3-mengapa-memilih-kartu-koleksi-tcg)
@@ -27,6 +28,33 @@
 9. [Metodologi Penelitian & Teknik Analisis MRA](#9-metodologi-penelitian--teknik-analisis-mra)
 10. [Simulasi Pertanyaan Bimbingan/Sidang & Kunci Jawaban (17 Skenario)](#10-simulasi-pertanyaan-bimbingan-sidang--kunci-jawaban)
 11. [Cheat Sheet 1 Halaman (Hafalan Kilat Menjelang Sidang)](#11-cheat-sheet-1-halaman)
+12. [Bedah Tabel 1.1: 7 Research Gap dalam 2 Menit](#12-bedah-tabel-11-7-research-gap-dalam-2-menit)
+13. [Alur Analisis Tahap 1–5 Bahasa Sehari-hari + Tabel Ambang Batas](#13-alur-analisis-tahap-15-bahasa-sehari-hari--tabel-ambang-batas)
+14. [Naskah Bicara 7 Slide + Taktik Sidang](#14-naskah-bicara-7-slide--taktik-sidang)
+15. [Bank Pertanyaan Tambahan Q18–Q34 (Statistik, Lapangan & Jebakan)](#15-bank-pertanyaan-tambahan-q18q34)
+16. [Checklist Malam Ini & Pagi Hari](#16-checklist-malam-ini--pagi-hari)
+17. [Penguasaan Bab 3 Total dari Nol (Wajib Hafal)](#17-penguasaan-bab-3-total-dari-nol-wajib-hafal)
+
+---
+
+# 0. BRIEFING H-1: FORMAT SEMPRO, MINDSET NOL & CARA PAKAI PANDUAN INI
+
+### Apa yang terjadi besok?
+**Seminar Proposal (Sempro)** = sidang kecil tempat kamu mempresentasikan *rencana* penelitian (belum ada data!) di depan dosen pembimbing + dewan penguji (±7–10 menit presentasi + ±20 menit tanya jawab). Tujuannya satu: meyakinkan penguji bahwa judulmu layak diteliti dan metodemu benar. Hasilnya: **lolos tanpa revisi / lolos dengan revisi / mengulang**. Mayoritas lolos dengan revisi — itu normal, bukan gagal.
+
+### Mindset dari nol (5 prinsip)
+1. **Kamu tidak perlu menghafal semuanya** — kamu perlu memahami *alur logika*: Fenomena → Gap → Teori → Hipotesis → Metode. Semua jawaban lahir dari alur ini.
+2. **Proposal ≠ skripsi jadi.** Kalau ditanya "mana datanya?", jawab: "Penelitian ini tahap proposal; pengumpulan data (pilot n=30, utama n=120–150) dilaksanakan pasca-sempro sesuai jadwal Bab 3."
+3. **Setiap angka yang kamu sebut harus ada sumbernya.** Jangan mengarang angka baru. Angka aman ada di Cheat Sheet (§11) dan Evidence Ledger (§7.2).
+4. **Kalau tidak tahu, katakan tidak tahu dengan elegan** (lihat Q29). Penguji lebih menghukum jawaban ngarang daripada jawaban jujur.
+5. **Sapa dengan benar:** "Ibu Dr. Fredella Colline" (pembimbing), "Bapak/Ibu Penguji" untuk dewan penguji. Jangan memanggil "Bu Fredella" saja.
+
+### Cara pakai panduan malam ini (±2 jam)
+- **30 menit:** Baca §0 + §1 + Cheat Sheet §11 (hafalkan variabel, 6 hipotesis, rumus sampel).
+- **40 menit:** Baca §12 (7 gap — bagian tersulit, paling sering ditanya) + §13 (Tahap 1–5 + ambang batas).
+- **30 menit:** Latihan bicara §14 dengan timer HP (target ≤10 menit).
+- **20 menit:** Baca Q&A §10 + §15 yang belum kamu kuasai; tandai 3 jawaban yang akan kamu pakai besok.
+- File pendamping bila masih ada waktu: `01_Bank_Soal_&_Flashcard/04_STATISTIK_UNTUK_PEMULA.md` (analogi SPSS) dan `02_FLASHCARD_ISTILAH.md` (istilah kilat).
 
 ---
 
@@ -140,7 +168,7 @@ Waralaba Pokémon (diciptakan oleh Satoshi Tajiri dan Ken Sugimori pada 1996 di 
 | Variabel | Simbol | Definisi Konseptual | Dimensi Utama | Indikator Kunci Instrumen | Sumber Adaptasi |
 |:---|:---:|:---|:---|:---|:---|
 | **Impulsive Buying** | $Y$ | Pembelian mendadak tanpa rencana anggaran sebelumnya, didorong stimulus lingkungan dan emosi sesaat. | (1) Kognitif<br>(2) Afektif | Y1. Belanja tanpa rencana anggaran.<br>Y2. Mengabaikan dampak keuangan.<br>Y3. Terdesak spontan saat melihat etalase.<br>Y4. Lonjakan kegembiraan mendadak.<br>Y5. Beli lebih banyak dari niat semula.<br>Y6. Sulit menahan belanja saat rilis baru. | Rook (1987); Verplanken & Herabadi (2001) |
-| **Hedonic Motivation** | $X_1$ | Dorongan berbelanja untuk kenikmatan emosional, sensasi kejutan, dan pelarian stres. | (1) *Adventure*<br>(2) *Gratification*<br>(3) *Idea Shopping* | X1.1. Sensasi petualangan dan kejutan mendebarkan.<br>X1.2. Sensasi penasaran isi kemasan bungkus.<br>X1.3. Memanjakan diri dan melepas stres.<br>X1.4. Letupan kegembiraan saat dapat kartu SAR.<br>X1.5. Antusiasme mengikuti tren seri baru. | Arnold & Reynolds (2003); Babin et al. (1994) |
+| **Hedonic Motivation** | $X_1$ | Dorongan berbelanja untuk kenikmatan emosional, sensasi kejutan, dan pelarian stres. | (1) *Adventure*<br>(2) *Gratification*<br>(3) *Social*<br>(4) *Role*<br>(5) *Idea Shopping* (*Value Shopping* tak diadaptasi — harga pack pasti) | X1.1. Sensasi petualangan dan kejutan mendebarkan.<br>X1.2. Sensasi penasaran isi kemasan bungkus.<br>X1.3. Memanjakan diri dan melepas stres.<br>X1.4. Letupan kegembiraan saat dapat kartu SAR.<br>X1.5. Antusiasme mengikuti tren seri baru. | Arnold & Reynolds (2003); Babin et al. (1994) |
 | **Desire for Completeness** | $X_2$ | Dorongan psikologis menuntaskan himpunan koleksi yang terikat batasan nomor urut resmi (*Zeigarnik Effect*). | (1) *Cognitive Tension*<br>(2) *Drive for Closure*<br>(3) *Wholeness Satisfaction* | X2.1. Rasa tidak nyaman melihat slot kosong di album.<br>X2.2. Terdesak membeli demi target set lengkap.<br>X2.3. Celah kartu memicu dorongan segera membeli.<br>X2.4. Kepuasan batin saat berhasil menuntaskan set.<br>X2.5. Semakin sedikit kartu kurang, semakin kuat desakan belanja. | Gao et al. (2014); Barasz et al. (2017); Belk (1995) |
 | **Speculative Motive** | $X_3$ | Ekspektasi perolehan keuntungan finansial dari apresiasi harga kartu langka di pasar sekunder. | (1) Ekspektasi Cuan<br>(2) Likuiditas Sekunder<br>(3) *Grading Arbitrage* | X3.1. Harapan menarik kartu bernilai jual mahal.<br>X3.2. Likuiditas pasar sekunder yang aktif.<br>X3.3. Memantau kenaikan harga pasar kartu langka.<br>X3.4. Modal pack sebanding dengan potensi cuan.<br>X3.5. Minat pada nilai kartu bersertifikat PSA 10. | Keynes (1936); Shiller (2000); Baur et al. (2018) |
 | **Self-Control** | $M$ | Kapasitas volisional menolak godaan belanja spontan dan menunda kepuasan demi tujuan finansial. | (1) Tahan Godaan<br>(2) Non-Impulsif<br>(3) Tunda Kepuasan<br>(4) Disiplin Anggaran | M1. Menolak godaan barang di luar rencana.<br>M2. Berpikir matang sebelum bertransaksi.<br>M3. Menunda kepuasan demi target masa depan.<br>M4. Disiplin menahan dorongan beli di kasir.<br>M5. Tidak mudah terhanyut emosi belanja.<br>M6. Patuh pada batas alokasi anggaran hobi. | Tangney et al. (2004); Baumeister (2002); Sultan et al. (2012) |
@@ -316,7 +344,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 ### 1. Populasi, Sampel, & Sampling
 - **Populasi:** Seluruh pembeli/kolektor kartu fisik Pokémon TCG resmi berbahasa Indonesia di Indonesia (populasi tak terbatas / *infinite population*).
 - **Teknik Sampling:** *Purposive Sampling* (Non-Probability).
-- **Kriteria Inklusi:** WNI, usia $\ge 17$ tahun, pernah membeli *booster pack* fisik resmi minimal 1 kali dalam 12 bulan terakhir (diutamakan 6 bulan terakhir).
+- **Kriteria Inklusi:** WNI, usia $\ge 17$ tahun, pernah membeli *booster pack* fisik resmi minimal 1 kali dalam 12 bulan terakhir (diutamakan 6 bulan terakhir — untuk menekan *recall bias*). Uji coba instrumen (*pilot test*) memakai n = 30 responden sebelum survei utama (n = 120–150).
 - **Ukuran Sampel:** Formula Green (1991): $N \ge 50 + 8k$ (untuk $k=7 \rightarrow N \ge 106$). Target ditetapkan **120 hingga 150 responden** guna menjamin *statistical power* $\ge 0,80$ pada $\alpha = 0,05$ (*medium effect size* $f^2 = 0,15$ - Cohen, 1988).
 
 ### 2. Prosedur *Mean-Centering* pada MRA (Krusial untuk Uji Asumsi)
@@ -392,7 +420,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### ❓ Pertanyaan 10: "Berapa target sampel Anda dan apa justifikasinya?"
 > **💡 Jawaban:**  
-> "Target sampel adalah 120 hingga 150 responden. Angka ini melampaui batas minimum formula Green (1991), yaitu $N \ge 50 + 8(7) = 106$ responden untuk model dengan 7 prediktor. Target ini juga memenuhi kriteria Cohen (1988) untuk memperoleh *statistical power* sebesar 0,80 pada taraf signifikansi $\alpha = 0,05$ dengan *medium effect size* ($f^2 = 0,15$)."
+> "Target sampel adalah 120 hingga 150 responden. Angka ini melampaui kedua batas minimum formula Green (1991): $N \ge 50 + 8(7) = 106$ untuk model keseluruhan, dan $N \ge 104 + 7 = 111$ untuk prediktor individual — yang mengikat adalah 111. Target ini juga memenuhi kriteria Cohen (1988) untuk memperoleh *statistical power* sebesar 0,80 pada taraf signifikansi $\alpha = 0,05$ dengan *medium effect size* ($f^2 = 0,15$)."
 
 ---
 
@@ -494,4 +522,196 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 ```
 
 ---
+# 12. BEDAH TABEL 1.1: 7 RESEARCH GAP DALAM 2 MENIT
+
+> Ini bagian tersulit sekaligus paling sering ditanya. **Research gap** = alasan penelitianmu layak dilakukan: ada yang belum diteliti / hasilnya bertentangan. Tabel 1.1 di Bab 1 memuat 7 gap dari 7 pasangan literatur. Hafalkan polanya: **tiga gap substansi (1A/2A/3A) + empat gap moderasi (4A/5A/5B/6A-6B/7A)**.
+
+### Tiga gap substansi (mengapa X1, X2, X3 dipilih)
+| Gap | Isi pertentangannya (kalimat jadi) |
+|:---:|:---|
+| **1A** | Pranggabayu (2022) membuktikan hedonis → impulsif positif (B=0,879), tetapi riset lain menunjukkan pada produk hobi mahal, rasionalitas utilitas tetap dominan. Jadi: apakah hedonis tetap menang pada kartu Pokémon yang harganya naik-turun? |
+| **2A** | Barasz (2017) membuktikan *pseudo-set framing* mendorong pembelian pelengkap, tetapi belum pernah diuji pada kartu koleksi fisik di Indonesia. Jadi: apakah slot kosong binder benar-benar memicu borong pack? |
+| **3A** | Aryadi & Lingga (2024) mencatat arbitrase grading PSA 10 memicu FOMO kolektor Jakarta, sementara Colline (2024) menemukan investor Indonesia justru berhati-hati (herding + loss aversion). Jadi: apakah motif cuan membuat orang impulsif, atau justru waspada? |
+
+### Empat gap moderasi (mengapa Self-Control diuji sebagai rem)
+| Gap | Isi pertentangannya (kalimat jadi) |
+|:---:|:---|
+| **4A** | Sultan (2012): kontrol diri melemahkan impulsif. Didukung Lienardy (2026, MRA genuine, H4 diterima). |
+| **5A/5B** | Apidana (2022, MRA): kontrol diri **gagal** memoderasi hedonis (H3 ditolak, p=0,597) tetapi berhasil memoderasi lifestyle. Jadi buktinya bertentangan dengan 4A — perlu diuji ulang pada objek kartu. |
+| **6A/6B** | Artadita (2024, PLS-SEM): moderasi **ditolak** (β=0,092, n.s.), hanya dimensi kontrol-kognitif yang lolos di taraf 10%. Bukti kedua yang melawan 4A. |
+| **7A** | Katauke (2023): literasi finansial menekan impulsivitas — mendukung arah rem, tetapi proksinya literasi, bukan kontrol diri. Jadi celah: belum ada yang menguji kontrol diri murni pada kolektor kartu. |
+
+### Kalimat penutup 2 menit (hafalkan!)
+> "Ketujuh gap inilah novelty penelitian saya, Bapak/Ibu: pertama, menguji tiga anteseden — hedonis, kelengkapan set, dan spekulasi — secara simultan pada satu komoditas hobi dengan pasar sekunder aktif; kedua, menguji Self-Control sebagai rem pemoderasi di tengah bukti yang bertentangan; ketiga, menjadi studi pionir kartu Pokémon TCG berbahasa Indonesia di FEB UKRIDA."
+
+---
+
+# 13. ALUR ANALISIS TAHAP 1–5 BAHASA SEHARI-HARI + TABEL AMBANG BATAS
+
+> Bab 3 naskah memakai struktur Tahap 1–5 (revisi Sylvia). Kalau penguji bertanya "coba jelaskan alur analisismu", jawab dengan 5 kalimat ini — urut, tanpa lompat.
+
+1. **Tahap 1 — Rapikan skor & cek kualitas alat ukur.** Tiap variabel dirata-ratakan dari butir kuesionernya (skor komposit). Lalu cek: tiap butir valid? (korelasi butir-total Pearson $r_{hitung} > r_{tabel}$) dan tiap variabel reliabel? (Cronbach's Alpha ≥ 0,70).
+2. **Tahap 2 — Cek syarat regresi (uji asumsi klasik).** Residual harus normal (Kolmogorov-Smirnov p > 0,05), antar-variabel tidak boleh saling menjiplak (Tolerance > 0,10 dan VIF < 10), dan sebaran error harus merata (uji Glejser p > 0,05). Autokorelasi tidak diuji karena data survei sekali-waktu (*cross-sectional*), bukan deret waktu.
+3. **Tahap 3 — Jalankan dua model regresi.** Model 1: Y dipengaruhi X1, X2, X3, M (efek utama). Model 2: Model 1 + tiga perkalian interaksi (X1·M, X2·M, X3·M) yang sudah di-*mean-centering* (dikurangi rata-ratanya agar tidak multikolinearitas).
+4. **Tahap 4 — Nilai kecocokan model.** Lihat Adjusted R² (berapa persen Y dijelaskan model) dan ΔR² = R² Model 2 − R² Model 1 (kontribusi murni blok moderasi), diuji dengan F-change (p < 0,05).
+5. **Tahap 5 — Putuskan hipotesis + bedah moderasi.** Uji-t per koefisien (p dua sisi < 0,05 + arah sesuai hipotesis = didukung). Untuk H4–H6, hitung kemiringan bersyarat (*simple slopes*): slope = β1 + β5·M* pada kontrol diri rendah (−1 SD), rata-rata, dan tinggi (+1 SD). Moderasi memperlemah terbukti bila garisnya **mendatar** pada kontrol diri tinggi.
+
+### Tabel ambang batas (foto/hafalkan tabel ini!)
+
+| Uji | Aturan lolos | Arti awam |
+|:---|:---|:---|
+| Validitas butir | $r_{hitung} > r_{tabel}$ (df = n−2, α 5%); pilot n=30 → $r_{tabel}$ ≈ 0,361; corrected item-total ≥ 0,30 | Butir kuesioner benar-benar mengukur variabelnya |
+| Reliabilitas | Cronbach's Alpha ≥ **0,70** | Alat ukurnya konsisten |
+| Normalitas (KS) | p > 0,05 | Error model menyebar normal |
+| Multikolinearitas | Tolerance > 0,10 dan VIF < 10 (pada Model 1) | Variabel tidak saling menjiplak |
+| Heteroskedastisitas (Glejser) | p > 0,05 | Error merata, tidak melebar |
+| Uji-t / Uji-F / F-change | p < 0,05 (+ arah koefisien sesuai hipotesis) | Pengaruhnya nyata, bukan kebetulan |
+| Korelasi Pearson | Rentang −1 sampai +1 (angka 1–5 itu skala Likert, bukan korelasi!) | Kekuatan hubungan dua variabel |
+
+---
+
+# 14. NASKAH BICARA 7 SLIDE + TAKTIK SIDANG
+
+> Presentasi 7 slide, total 7–10 menit (±1–1,5 menit/slide). Latihan dengan timer HP sampai masuk waktu. Bicaralah pelan, tegak, dan tatap penguji bergantian.
+
+**Slide 1 — Pembuka (40 detik).** "Assalamu'alaikum/selamat pagi, yang terhormat Ibu Dr. Fredella Colline selaku dosen pembimbing, serta Bapak/Ibu dewan penguji. Perkenalkan, saya Arthur Reezan, NIM 312023002, Program Studi S1 Manajemen Keuangan FEB UKRIDA. Hari ini saya mempresentasikan proposal skripsi berjudul: Pengaruh Hedonic Motivation, Desire for Completeness, dan Speculative Motive terhadap Impulsive Buying Booster Pack Kartu Pokémon TCG dengan Self-Control sebagai Variabel Moderasi."
+
+**Slide 2 — Fenomena (1,5 menit).** "Latar belakangnya adalah ledakan industri: lebih dari 64,8 miliar kartu Pokémon TCG beredar global. Di Indonesia, booster pack Rp20 ribuan dijual di minimarket dengan sistem blind-pack — isinya acak. Di pasar sekunder, kartu langka SAR bersertifikat PSA 10 laku jutaan rupiah. Kombinasi ketidakpastian isi dan cuan inilah yang memicu pembelian impulsif berulang — masalah keuangan perilaku yang saya teliti."
+
+**Slide 3 — Gap & novelty (1,5 menit).** "Tujuh literatur menunjukkan kesenjangan: pengaruh hedonis masih diperdebatkan pada produk hobi mahal; efek kelengkapan set belum diuji pada kartu fisik Indonesia; motif spekulasi bertentangan antara FOMO kolektor dan kehati-hatian investor. Novelty saya ada tiga — simultan tiga anteseden pada satu komoditas, Self-Control sebagai rem pemoderasi, dan studi pionir kartu berbahasa Indonesia di FEB UKRIDA." (Detail: §12.)
+
+**Slide 4 — Teori & variabel (1,5 menit).** "Grand theory-nya Behavioral Finance — sesuai konsentrasi Manajemen Keuangan — didukung S-O-R, Completing the Set Effect, dan Self-Regulation Theory. Variabel Y diulas lebih dulu, lalu X1, X2, X3, dan M — masing-masing diukur dengan skala baku internasional: IBTS, Arnold & Reynolds, Barasz, dan BSCS Tangney."
+
+**Slide 5 — Model & hipotesis (1,5 menit).** "Modelnya: tiga panah positif X1, X2, X3 ke Y, dimoderasi Self-Control yang memperlemah. Enam hipotesis: H1–H3 pengaruh langsung positif; H4–H6 moderasi pelemah. Persamaan MRA Model 2 memuat tiga interaction term yang di-mean-centering."
+
+**Slide 6 — Metode (1,5 menit).** "Desain kuantitatif asosiatif, survei cross-sectional skala Likert 5 poin. Populasi kolektor WNI, purposive sampling 120–150 responden usia ≥17 tahun yang membeli pack setahun terakhir. Uji kualitas: validitas Pearson dan Alpha ≥ 0,70; asumsi klasik KS, VIF, Glejser; analisis MRA dua model plus simple slopes."
+
+**Slide 7 — Penutup (30 detik).** "Kontribusi teoretis: memperkaya Behavioral Finance pada aset hobi. Kontribusi praktis: edukasi kontrol diri bagi generasi muda. Sekian presentasi saya; terima kasih. Saya kembalikan kepada Ketua Sidang, dan saya siap menjawab pertanyaan Bapak/Ibu."
+
+### Taktik menjawab (4 langkah + 3 larangan)
+1. **Apresiasi:** "Terima kasih atas pertanyaannya, Bapak/Ibu." (Beri otakmu 5 detik berpikir.)
+2. **Jawab terstruktur:** "Ada tiga alasan: pertama… kedua… ketiga…" — penguji menilai kerapian berpikir.
+3. **Tutup dengan naskah:** "…sebagaimana tertulis pada Bab [1/2/3] halaman [..] proposal saya." (Selalu jangkar ke naskah!)
+4. **Konfirmasi:** "Apakah jawaban saya sudah cukup jelas, Bapak/Ibu?"
+- **Dilarang:** mengarang angka, memotong pembicaraan penguji, dan berkata "lupa". Gantinya: "Mohon izin, detail angkanya saya konfirmasi pada naskah…" (Lihat Q29.)
+
+---
+
+# 15. BANK PERTANYAAN TAMBAHAN Q18–Q34
+
+### ❓ Pertanyaan 18: "Jelaskan Tabel 1.1 matriks research gap-mu!"
+> **💡 Jawaban:** Gunakan naskah 2 menit di §12: tiga gap substansi (1A/2A/3A membenarkan X1/X2/X3) + empat gap moderasi (4A vs 5A/5B vs 6A/6B vs 7A membenarkan pengujian Self-Control) + kalimat penutup novelty.
+
+### ❓ Pertanyaan 19: "Mengapa responden dibatasi usia ≥17 tahun?"
+> **💡 Jawaban:**  
+> "Tiga alasan, Bapak/Ibu. Pertama, **kedewasaan administratif**: UU No. 24 Tahun 2013 — usia 17 adalah usia perekaman KTP, penanda subjek hukum yang cakap. Kedua, **diskresi keuangan mandiri**: usia akhir SMA/kuliah umumnya sudah memegang uang jajan dan bertransaksi sendiri, sehingga perilaku impulsifnya autentik. Ketiga, **kualitas ingatan**: responden dewasa muda lebih akurat mengingat pembelian 6–12 bulan terakhir (*recall bias* rendah)."
+
+### ❓ Pertanyaan 20: "Populasimu tak terbatas — bagaimana menjamin sampel valid?"
+> **💡 Jawaban:**  
+> "Benar, populasinya *infinite* (seluruh pembeli/kolektor WNI), sehingga *probability sampling* mustahil karena tak ada kerangka sampel. Solusinya *purposive sampling* dengan tiga saringan inklusi (WNI, ≥17 tahun, beli pack 12 bulan terakhir) plus *screening question* di awal Google Forms. Kecukupan jumlah dijamin formula Green: N ≥ 50 + 8(7) = 106, dan saya menargetkan 120–150."
+
+### ❓ Pertanyaan 21: "Apa itu pilot test n=30?"
+> **💡 Jawaban:**  
+> "Uji coba kuesioner pada 30 kolektor sebelum survei utama. Tujuannya memastikan tiap butir valid ($r_{hitung} > r_{tabel}$ ≈ 0,361) dan tiap variabel reliabel (Alpha ≥ 0,70). Butir yang gagal diperbaiki atau dibuang — jadi data utama 120–150 tidak rusak oleh instrumen cacat."
+
+### ❓ Pertanyaan 22: "Jelaskan operasionalisasi salah satu variabelmu!"
+> **💡 Jawaban (contoh X2):**  
+> "Desire for Completeness saya ukur lewat 5 butir Likert, misalnya: 'slot kosong di binder membuat saya tidak nyaman' (cognitive tension), 'semakin sedikit kartu yang kurang, semakin kuat desakan membeli' (drive for closure), dan 'melengkapi set memberi kepuasan batin' (wholeness). Penuhnya ada di Tabel 3.2 proposal saya."
+
+### ❓ Pertanyaan 23: "Mengapa SPSS/MRA, bukan SEM-PLS yang sedang tren?"
+> **💡 Jawaban:**  
+> "Tiga alasan. Pertama, model saya parsimoni — 3 anteseden, 1 moderator, tanpa mediasi laten bertingkat — sehingga MRA-OLS yang dirancang khusus untuk interaksi justru paling tepat (Aiken & West, 1991; Hayes, 2018). Kedua, SEM-CB butuh N > 200 dan normal multivariat ketat; SEM-PLS untuk eksplorasi prediktif — sampel saya 120–150 ideal untuk OLS tanpa over-parameterisasi (Hair, 2019). Ketiga, MRA adalah standar baku pedoman skripsi FEB UKRIDA."
+
+### ❓ Pertanyaan 24: "Apa itu mean-centering dan simple slopes?"
+> **💡 Jawaban:**  
+> "Mean-centering = mengurangkan tiap skor dengan rata-ratanya (X* = X − mean) sebelum dikalikan menjadi interaction term, agar tidak terjadi multikolinearitas struktural — tanpa mengubah hasil uji. Simple slopes = cara membaca moderasi: slope pengaruh X terhadap Y dihitung pada tiga level kontrol diri (rendah −1 SD, rata-rata, tinggi +1 SD) dengan rumus slope = β1 + β5·M*. Hipotesis memperlemah didukung bila garisnya mendatar pada kontrol diri tinggi."
+
+### ❓ Pertanyaan 25: "Sebutkan semua ambang batas ujimu!"
+> **💡 Jawaban:** "Validitas $r_{hitung} > r_{tabel}$ (corrected item-total ≥ 0,30); reliabilitas Alpha ≥ 0,70; normalitas KS p > 0,05; Tolerance > 0,10 dan VIF < 10; Glejser p > 0,05; uji-t, uji-F, dan F-change p < 0,05; korelasi Pearson berkisar −1 sampai +1." (Lengkapnya: §13.)
+
+### ❓ Pertanyaan 26: "Bagaimana jika H4–H6-mu DITOLAK datanya?"
+> **💡 Jawaban:**  
+> "Itu tetap temuan ilmiah yang sah, Bapak/Ibu — hipotesis ditolak bukan skripsi gagal. Saya akan melaporkannya jujur dan membandingkannya dengan preseden: Apidana (2022) dan Artadita (2024) juga menemukan moderasi kontrol diri yang ditolak pada konteks belanja hobi. Justru itu memperkaya diskusi: pada kolektor kartu, rem kontrol diri mungkin kalah oleh dopamin kelangkaan — dan itu kontribusi."
+
+### ❓ Pertanyaan 27: "Apa keterbatasan penelitianmu?"
+> **💡 Jawaban:**  
+> "Tiga yang saya akui di proposal: pertama, desain *cross-sectional* — memotret satu titik waktu, tidak bisa membuktikan sebab-akibat sekuat eksperimen. Kedua, *self-report* kuesioner rawan *social desirability bias* (responden mengaku lebih terkontrol dari aslinya). Ketiga, *purposive sampling* membatasi generalisasi di luar komunitas kolektor. Ketiganya saya tulis sebagai agenda riset lanjutan."
+
+### ❓ Pertanyaan 28: "Setelah sempro lolos, apa langkahmu?"
+> **💡 Jawaban:**  
+> "Sesuai jadwal Bab 3: revisi pasca-sempro, finalisasi kuesioner, pilot test n=30, survei utama n=120–150 via komunitas dan Local Game Store, olah SPSS Tahap 1–5, lalu sidang skripsi. Target sesuai Tabel 3.3."
+
+### ❓ Pertanyaan 29: "Bagaimana jika kamu tidak tahu jawabannya?"
+> **💡 Jawaban (taktik, bukan hafalan):** "Mohon izin, Bapak/Ibu — untuk detail tersebut saya perlu mengonfirmasi kembali pada naskah/data agar tidak menyampaikan informasi yang keliru. Yang dapat saya sampaikan saat ini adalah [kaitkan ke hal terdekat yang kamu kuasai]. Apakah saya boleh melanjutkannya setelah sidang melalui lembar revisi?" — Jujur + jangkar + tindak lanjut.
+
+### ❓ Pertanyaan 30: "Apa itu cross-sectional dan skala Likert?"
+> **💡 Jawaban:**  
+> "Cross-sectional = survei satu titik waktu pada banyak individu yang independen — karena itu uji autokorelasi (Durbin-Watson) tidak dipakai; hanya untuk data time series. Skala Likert 5 poin = responden menilai kesetujuan 1 (Sangat Tidak Setuju) sampai 5 (Sangat Setuju); lima gradasi memberi variasi cukup plus titik netral, dan ini standar FEB UKRIDA."
+
+### ❓ Pertanyaan 31: "Jadi populasimu Gen Z atau umum? Kok manfaatnya bicara Gen Z?"
+> **💡 Jawaban (kartu bekal #1 — hafalkan!):**  
+> "Scope formal saya umum, Bapak/Ibu — seluruh kolektor dewasa usia ≥17 tahun tanpa batas kohort, sesuai populasi (infinite) dan kriteria inklusi Bab 3. Batas usia 17 murni administratif: KTP, informed consent, dan diskresi keuangan mandiri. Generasi Z saya sebut hanya sebagai segmen penerima manfaat praktis, karena basis kolektor dominan muda — dan itu kini saya tegaskan eksplisit di Batasan Masalah Bab 3 agar tidak terbaca sebagai pembatas populasi."
+
+### ❓ Pertanyaan 32: "Arnold merumuskan 6 dimensi hedonis — kok indikator X1-mu hanya 5?"
+> **💡 Jawaban (kartu bekal #2 — hafalkan!):**  
+> "Benar ada enam, Bapak/Ibu: Adventure, Gratification, Social, Role, Idea, dan Value Shopping. Lima yang pertama saya adaptasi menjadi X1.1–X1.5 di Tabel 3.2. Dimensi keenam, Value Shopping (perburuan harga murah), sengaja tidak saya pakai karena harga eceran booster pack pasti dan seragam Rp20–30 ribu — motif tawar-menawar tidak relevan pada objek ini. Alasannya tertulis eksplisit di Kajian Variabel X1 Bab 2."
+
+### ❓ Pertanyaan 33: "Model 1-mu memuat M→Y (β4), tapi tidak ada hipotesisnya — mengapa?"
+> **💡 Jawaban:**  
+> "Karena β4 adalah kontrol baseline aditif, Bapak/Ibu, bukan hipotesis. Prosedur MRA baku (Aiken & West) mewajibkan pemoderasi masuk di Model 1 agar ΔR² di Model 2 murni mengisolasi kontribusi blok interaksi — itulah yang diuji F-change. Hipotesis tetap 6 (H1–H3 langsung, H4–H6 moderasi). Penjelasan ini tertulis ganda di naskah: catatan kaki Gambar 2.1 dan paragraf β4 di Bab 3 — dan baris 4 Tabel 1.1 berfungsi sebagai justifikasi teoretis memasukkan M, bukan hipotesis tambahan."
+
+### ❓ Pertanyaan 34: "Sampelmu 106, 111, atau 120–150? Yang benar mana?"
+> **💡 Jawaban:**  
+> "Ketiganya benar pada tempatnya, Bapak/Ibu. Formula Green memberi dua batas: N ≥ 106 untuk model keseluruhan dan N ≥ 104 + 7 = 111 untuk prediktor individual — yang mengikat adalah 111. Target 120–150 adalah sampel bersih di atas batas itu, sekaligus memenuhi power 0,80 Cohen untuk effect sedang. Di luar itu ada pilot test n = 30 untuk uji coba instrumen."
+
+---
+
+# 16. CHECKLIST MALAM INI & PAGI HARI
+
+**Malam ini (urutan wajib):**
+- [ ] Hafalkan Cheat Sheet §11 + tabel ambang batas §13 (tulis ulang sekali dari ingatan).
+- [ ] Baca keras §12 (gap) + §14 (naskah bicara) masing-masing 1 kali dengan timer.
+- [ ] Print panduan ini (PDF) + proposal; tandai halaman Bab 1–3 dan Tabel 1.1/3.2 dengan sticky notes.
+- [ ] Siapkan: KTP/KTM, laptop + charger + HDMI adapter, air minum, jam tangan (timer).
+- [ ] Tidur cukup — otak lelah merusak kemampuan menjawab 10x lipat dibanding satu hafalan yang kurang.
+
+**Pagi hari:**
+- [ ] Sarapan, datang 30 menit lebih awal, uji proyektor + file presentasi.
+- [ ] Baca Cheat Sheet sekali lagi (10 menit). Tarik napas. Ingat: penguji ingin kamu lulus — mereka menguji kelayakan rencana, bukan kesempurnaan.
+
+---
+
+# 17. PENGUASAAN BAB 3 TOTAL DARI NOL (WAJIB HAFAL)
+
+> Bab 3 adalah bagian yang paling mungkin dibedah penguji angka-per-angka. Di bawah ini tiap subbab diterjemahkan ke bahasa sehari-hari + jebakannya. Fondasi angka ada di §13; yang di sini adalah *pemahaman konseptual*.
+
+### 3.1 Jenis dan Sumber Data (1 kalimat inti)
+Penelitian kuantitatif asosiatif = menguji hubungan antar-variabel dengan angka; cross-sectional = data diambil sekali pada satu titik waktu. Data primer = kuesioner Google Forms ke responden; data sekunder = studi pustaka (jurnal, buku, data Pokémon Company). **Jebakan:** "kenapa tidak wawancara mendalam?" → karena rumusan masalah menguji pengaruh (butuh angka + uji statistik), bukan menggali makna — kualitatif tidak bisa menjawab H1–H6.
+
+### 3.2 Populasi dan Sampel (tiga lapis wajib hafal)
+1. **Populasi = tak terbatas (infinite):** seluruh pembeli/kolektor WNI kartu berbahasa Indonesia. Buktinya: distribusi ritel modern terlalu luas untuk disensus → tidak ada sampling frame → probability sampling mustahil secara sahih.
+2. **Sumber identifikasi (tiga simpul):** LGS mitra AKG (Jabodetabek, Bandung, Surabaya, Yogyakarta, Medan+), komunitas digital (Facebook puluhan ribu anggota, Discord, WA/Telegram lelang), peserta Town/Regional League.
+3. **Purposive + 3 kriteria inklusi:** (a) WNI domisili Indonesia — merasakan harga/pasar domestik; (b) usia ≥17 — KTP + informed consent + uang saku mandiri + mampu memahami kuesioner; (c) beli pack ≥1× dalam 12 bulan (diutamakan 6) — pengalaman riil + recall segar. **Kalimat kunci generalisasi:** temuan bersifat analitis pada segmen ini, BUKAN estimasi probabilistik nasional.
+4. **Angka sampel (tiga lapis):** Green overall N ≥ 50 + 8(7) = 106; Green individual N ≥ 104 + 7 = 111 (mengikat); target bersih 120–150 (power 0,80 Cohen, efek sedang); pilot n = 30 terpisah. **Jebakan:** "kenapa tidak 200 seperti SEM?" → model parsimoni, OLS ideal di 120–150, SEM butuh N > 200 + normal multivariat ketat (Hair, 2019).
+
+### 3.3 Model Penelitian (baca persamaan dengan lantang)
+- **Model 1 (baseline aditif):** Y = α + β1X1* + β2X2* + β3X3* + β4M* + e. Bintang (*) = sudah di-mean-centering. β4 ikut sebagai kontrol — BUKAN hipotesis (lihat Q33).
+- **Model 2 (MRA penuh):** Model 1 + tiga interaction term (X1*·M*, X2*·M*, X3*·M*). Tanda yang diharapkan: β1–β3 positif; β5–β7 negatif.
+- **F-change:** menguji apakah tambahan blok interaksi benar-benar menambah daya jelas model: ΔR² diuji pada p < 0,05, df1 = 3 (tiga interaksi), df2 = N − 8.
+- **Arti β1 di Model 2:** pengaruh X1 pada rata-rata kontrol diri (M* = 0) — ini buah mean-centering.
+
+### 3.4 Operasionalisasi (cara menjelaskan Tabel 3.1 + 3.2 dalam 2 menit)
+"Tabel 3.1 menetapkan bahasa ukur: Likert 1–5 dari Sangat Tidak Setuju ke Sangat Setuju, diadaptasi dari Sugiyono. Tabel 3.2 menerjemahkan tiap variabel menjadi butir pernyataan: Y 6 butir (3 kognitif: Y1, Y2, Y5; 3 afektif: Y3, Y4, Y6), X1 5 butir (Adventure s.d. Idea — tanpa Value, lihat Q32), X2 5 butir (tension, closure, wholeness), X3 5 butir (apresiasi, likuiditas, tren, potensi, grading), M 6 butir (godaan s.d. taat anggaran). Semua butir dikodekan searah positif — skor 5 selalu berarti konstruk tertinggi."
+
+### 3.5 Metode Analisis (ringkasnya)
+Lima Tahap + ambang batas sudah di §13 — hafalkan dari sana. Tiga pesan kunci: (a) uji-t dua sisi yang konservatif untuk hipotesis satu arah (p < 0,05 + arah sesuai); (b) ΔR² dari R² biasa, bukan Adjusted; (c) simple slopes pada −1 SD / 0 / +1 SD — garis mendatar pada M tinggi = melemah terbukti.
+
+### 3.6 Diagram Alur (8 kotak + 1 belah ketupat)
+Hafalkan urutannya: 1 Fenomena → 2 Teori → 3 Model+H1–H6 → 4 Instrumen → 5 Pilot n=30 → ◆ Keputusan (valid? Ya: r-hitung > r-tabel & Alpha ≥ 0,70 → lanjut; Tidak: revisi butir, kembali ke 4) → 6 Survei 120–150 → 7 SPSS → 8 Kesimpulan. Tiap tahap punya pasangan input-output tertulis di bawah gambar — kuasai karena penguji suka bertanya "output tahap 4 apa?" (jawab: kuesioner operasional Tabel 3.1–3.2).
+
+### 3.7 Jadwal (10 kegiatan, 6 bulan)
+B1–B2: fenomena + literatur; B2–B3: proposal + bimbingan; B3: SEMPRO (besok!); B4: pilot + survei dimulai; B5: survei + olah SPSS; B6: Bab 4–5 + sidang. **Jebakan:** "realistis?" → Ya: pilot dan survei daring via komunitas yang sudah terpetakan di §3.2, tanpa perizinan lapangan berat.
+
+---
+
 *Sukses bimbingan dan seminar proposal! Kuasai logika ilmiahnya, pahami konteks pasarnya, dan sampaikan argumen dengan tenang dan percaya diri.* 🎓💼🔥

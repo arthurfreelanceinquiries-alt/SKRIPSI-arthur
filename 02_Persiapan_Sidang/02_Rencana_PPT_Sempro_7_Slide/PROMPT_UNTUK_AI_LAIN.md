@@ -24,7 +24,7 @@ BERIKUT ADALAH STRUKTUR DETAIL 7 SLIDE YANG HARUS DIBUAT:
 SLIDE 1: PEMBUKA & IDENTITAS RISET
 --------------------------------------------------
 - Badge: SEMINAR PROPOSAL SKRIPSI — S1 MANAJEMEN KEUANGAN
-- Judul Skripsi: Pengaruh Hedonic Motivation (X1), Desire for Completeness (X2), dan Speculative Motive (X3) terhadap Impulsive Buying (Y) Booster Pack Kartu Pokémon TCG dengan Self-Control (Z) sebagai Variabel Moderasi
+- Judul Skripsi: Pengaruh Hedonic Motivation (X1), Desire for Completeness (X2), dan Speculative Motive (X3) terhadap Impulsive Buying (Y) Booster Pack Kartu Pokémon TCG dengan Self-Control (M) sebagai Variabel Moderasi
 - Peneliti: Arthur Reezan (NIM: 312023002)
 - Dosen Pembimbing: Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A
 - Institusi: Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana (UKRIDA), Jakarta 2026
@@ -37,7 +37,7 @@ SLIDE 2: LATAR BELAKANG — KONTEKS INDUSTRI & FENOMENA MASALAH
 - Subjudul: Ledakan Komoditas Pokémon TCG & Maraknya Pembelian Impulsif
 - Kartu 1 (Pasar TCG Masif): Penjualan global tembus > 64,8 Miliar Kartu (The Pokémon Company, 2024). Pasar Indonesia berkembang pesat sejak edisi bahasa Indonesia (2019).
 - Kartu 2 (Mekanisme Blind-Box/Gacha): Sistem probabilistic reward; konsumen membeli ketidakpastian. Memicu dopamin, efek penasaran (near-miss), dan perburuan kartu langka (secret rare).
-- Kartu 3 (Masalah Finansial): Pembelian impulsif tanpa rencana (unplanned, spur-of-the-moment), emosional, dan berulang. Kolektor kerap mengorbankan dana darurat atau menggunakan paylater.
+- Kartu 3 (Masalah Finansial): Pembelian impulsif tanpa rencana (unplanned, spur-of-the-moment), emosional, dan berulang. Berpotensi mengorbankan alokasi keuangan pribadi. (CATATAN: jangan mengklaim dana darurat/paylater — tidak ada di naskah!)
 - Speaker Notes: Jelaskan transisi Pokémon TCG dari mainan anak menjadi komoditas investasi bernilai tinggi, cara kerja sistem gacha, dan timbulnya masalah impulsive buying yang merusak stabilitas keuangan konsumen (~1,5 menit).
 
 --------------------------------------------------
@@ -49,9 +49,10 @@ SLIDE 3: LATAR BELAKANG — RESEARCH GAP & KEBARUAN (NOVELTY)
   * Gap X1 (Hedonis): Pranggabayu (2022) menemukan pengaruh positif, namun Apidana (2022) menemukan pada produk hobi bernilai tinggi, utilitas dan rasionalitas tetap dominan.
   * Gap X2 (Kelengkapan): Efek pseudo-set framing Barasz et al. (2017) belum diuji pada produk fisik berbasis kartu acak di Indonesia.
   * Gap X3 (Spekulasi): Aryadi & Lingga (2024) mencatat arbitrase PSA 10 memicu FOMO, sedangkan Colline (2024) menemukan investor rasional bersikap kalkulatif.
-- Kolom Kanan (Kebaruan Riset Arthur):
-  * Memadukan teori psikologi kolektor Pseudo-Set Framing dengan motif spekulasi finansial secondary market.
-  * Menempatkan Self-Control (Z) sebagai Variabel Moderasi untuk menguji kapasitas pengendalian diri dalam meredam impulsivitas belanja kartu fisik.
+- Kolom Kanan (Kebaruan Riset Arthur — 3 poin, jangan dikurangi!):
+  * Menguji 3 anteseden (hedonis, kelengkapan set, spekulasi) secara simultan pada satu komoditas hobi dengan pasar sekunder aktif.
+  * Menempatkan Self-Control (M) sebagai Variabel Moderasi untuk menguji kapasitas pengendalian diri dalam meredam impulsivitas belanja kartu fisik.
+  * Studi pionir kartu Pokémon TCG berbahasa Indonesia di FEB UKRIDA.
 - Speaker Notes: Tegaskan pertentangan temuan empiris terdahulu dan soroti kebaruan penelitian ini yang menghadirkan Self-Control sebagai pemoderasi (~1,5 menit).
 
 --------------------------------------------------
@@ -59,34 +60,33 @@ SLIDE 4: TINJAUAN PUSTAKA — TEORI & KONSTELASI VARIABEL
 --------------------------------------------------
 - Judul: TINJAUAN PUSTAKA: LANDASAN TEORI & VARIABEL
 - Subjudul: Pijakan Teoretis Multidisiplin & Operasionalisasi Skala Baku
-- Blok Teori:
-  * Grand Theory: Behavioral Finance (Shiller, 2000; Shefrin, 2000) — Menjelaskan bias psikologis dalam keputusan keuangan.
-  * Supporting Theories: Teori S-O-R (Mehrabian & Russell, 1974), Pseudo-Set Framing (Barasz et al., 2017), Teori Regulasi Diri (Baumeister, 2002).
+- Blok Teori (HANYA sumber yang ada di naskah — jangan tambah!):
+  * Grand Theory: Behavioral Finance (Simon, 1955; Kahneman & Tversky, 1979; Shiller, 2000; Thaler & Shefrin, 1981) — Menjelaskan bias psikologis dalam keputusan keuangan.
+  * Supporting Theories: Teori S-O-R (Mehrabian & Russell, 1974), Completing the Set / Zeigarnik Effect (Gao, 2014; Barasz et al., 2017), Teori Regulasi Diri (Baumeister, 2002).
 - 5 Kartu Variabel:
   * Y: Impulsive Buying — Pembelian spontan tanpa evaluasi (Skala IBTS, Verplanken & Herabadi, 2001).
-  * X1: Hedonic Motivation — Belanja demi kesenangan & pelepasan stres (Arnold & Reynolds, 2003).
-  * X2: Desire for Completeness — Dorongan melengkapi master set koleksi (Barasz et al., 2017).
+  * X1: Hedonic Motivation — Belanja demi kesenangan & pelepasan stres (Arnold & Reynolds, 2003; 5 dimensi diadaptasi, tanpa Value Shopping).
+  * X2: Desire for Completeness — Dorongan melengkapi master set koleksi (Gao, 2014; Barasz et al., 2017).
   * X3: Speculative Motive — Ekspektasi cuan arbitrase pasar sekunder (Keynes, 1936; Shiller, 2000).
-  * Z: Self-Control (Moderasi) — Kapasitas menahan dorongan sesaat (BSCS, Tangney et al., 2004).
+  * M: Self-Control (Moderasi) — Kapasitas menahan dorongan sesaat (BSCS, Tangney et al., 2004).
 - Speaker Notes: Paparkan landasan grand theory keuangan perilaku dan operasionalisasi kelima variabel berbasis skala baku internasional (~1,5 menit).
 
 --------------------------------------------------
 SLIDE 5: KERANGKA KONSEPTUAL & HIPOTESIS
 --------------------------------------------------
 - Judul: KERANGKA KONSEPTUAL & MODEL PENELITIAN
-- Subjudul: Model Moderated Regression Analysis (MRA) dengan 7 Hipotesis
+- Subjudul: Model Moderated Regression Analysis (MRA) dengan TEPAT 6 Hipotesis (dilarang membuat H7!)
 - Visual Model Diagram:
   * Jalur Langsung Anteseden: X1, X2, X3 -> Y (H1, H2, H3 berpengaruh Positif)
-  * Jalur Langsung Moderator: Z -> Y (H4 berpengaruh Negatif)
-  * Jalur Moderasi Interaksi: X1*Z, X2*Z, X3*Z -> Y (H5, H6, H7 bersifat Meredam/Negatif)
-- 7 Hipotesis:
+  * Jalur Moderasi Interaksi (garis putus-putus): X1·M, X2·M, X3·M -> Y (H4, H5, H6 bersifat Meredam/Negatif)
+  * DILARANG menggambar panah langsung M -> Y sebagai hipotesis (M masuk Model 1 hanya sebagai kontrol baseline, bukan H).
+- 6 Hipotesis:
   * H1 (+): Hedonic Motivation berpengaruh positif terhadap Impulsive Buying.
   * H2 (+): Desire for Completeness berpengaruh positif terhadap Impulsive Buying.
   * H3 (+): Speculative Motive berpengaruh positif terhadap Impulsive Buying.
-  * H4 (-): Self-Control berpengaruh negatif terhadap Impulsive Buying.
-  * H5 (Meredam): Self-Control memoderasi (meredam) pengaruh Hedonic Motivation terhadap Impulsive Buying.
-  * H6 (Meredam): Self-Control memoderasi (meredam) pengaruh Desire for Completeness terhadap Impulsive Buying.
-  * H7 (Meredam): Self-Control memoderasi (meredam) pengaruh Speculative Motive terhadap Impulsive Buying.
+  * H4 (Meredam): Self-Control memoderasi (meredam) pengaruh Hedonic Motivation terhadap Impulsive Buying.
+  * H5 (Meredam): Self-Control memoderasi (meredam) pengaruh Desire for Completeness terhadap Impulsive Buying.
+  * H6 (Meredam): Self-Control memoderasi (meredam) pengaruh Speculative Motive terhadap Impulsive Buying.
 - Speaker Notes: Tunjukkan diagram jalur MRA dan jelaskan arah pengaruh masing-masing hipotesis (~1,5 menit).
 
 --------------------------------------------------
@@ -96,7 +96,7 @@ SLIDE 6: METODE PENELITIAN & ANALISIS DATA
 - Subjudul: Pendekatan Kuantitatif Asosiatif & Ketepatan Metode MRA
 - 4 Kartu Kuadran:
   * Kuadran 1 (Desain & Pengukuran): Kuantitatif Asosiatif Kausal, Kuesioner daring Google Forms, Skala Likert 5 Poin (1-5).
-  * Kuadran 2 (Populasi & Sampel): Komunitas Pokémon TCG Jabodetabek, Purposive Sampling (N >= 150), Kriteria: Usia >= 17 tahun, aktif beli booster pack 6 bulan terakhir.
+  * Kuadran 2 (Populasi & Sampel): Kolektor WNI (populasi infinite), Purposive Sampling target N = 120–150 (+ pilot test n = 30). Kriteria: WNI domisili Indonesia, Usia >= 17 tahun, beli booster pack fisik min. 1x dalam 12 bulan terakhir (diutamakan 6 bulan).
   * Kuadran 3 (Uji Instrumen & Asumsi): Validitas Pearson Product Moment, Reliabilitas Cronbach's Alpha (>= 0.70), Uji Asumsi Klasik (Normalitas KS, Multikolinearitas VIF < 10, Heteroskedastisitas Glejser).
   * Kuadran 4 (Alat Analisis Data): Moderated Regression Analysis (MRA) dengan teknik Mean-Centering (mencegah multikolinearitas struktural), Uji t, Uji F, Koefisien Determinasi R2 & Delta R2.
 - Speaker Notes: Terangkan kriteria purposive sampling, sampel N>=150, validitas reliabilitas, serta rasionalisasi penggunaan mean-centering pada MRA (~1,5 menit).

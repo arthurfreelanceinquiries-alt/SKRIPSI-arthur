@@ -239,21 +239,20 @@ def check_mendeley_integrity_integration():
 def main():
     base_dir = Path(__file__).resolve().parent.parent
     docx_full = base_dir / "01_Naskah_Utama" / "Proposal_Arthur_PokemonTCG.docx"
-    docx_nobab3 = base_dir / "01_Naskah_Utama" / "Proposal_Arthur_NoBab3.docx"
 
     print("=" * 75)
     print(" SUITE AUDIT KEPATUHAN BUKU PEDOMAN TUGAS AKHIR FEB UKRIDA 2023 ")
+    print(" (file utama; varian NoBab3 dihapus Sylvia 23 Sep 2026)")
     print("=" * 75)
 
     res1 = check_sinta_and_international_quota(base_dir)
     res2 = check_dosbim_citation(base_dir)
     res3_full = check_docx_bibliography_format(docx_full)
-    res3_nobab3 = check_docx_bibliography_format(docx_nobab3)
     res4 = check_intext_citations_language(docx_full)
     res5 = check_page_count_and_margins(docx_full)
     res6 = check_mendeley_integrity_integration()
 
-    all_pass = all([res1, res2, res3_full, res3_nobab3, res4, res5, res6])
+    all_pass = all([res1, res2, res3_full, res4, res5, res6])
 
     print("\n" + "=" * 75)
     if all_pass:

@@ -5,6 +5,7 @@ Layer 3 Verification Script: Audits Word documents (.docx) for publication-grade
 zero AI artifacts, proper dot leaders in TOC, and 12pt font sizes for abstracts.
 """
 
+import re
 import sys
 from pathlib import Path
 from docx import Document
@@ -114,8 +115,10 @@ def audit_docx(docx_path: Path) -> bool:
             r"\endfoot", r"\endlastfoot"
         ]
         for r_idx, r in enumerate(p.runs):
-            # Check for literal asterisks
-            if "*" in r.text:
+            # Check for literal asterisks (notasi terpusat X1*/M*/X₁* = LEGIT
+            # statistik mean-centered, rule mandatory_no_ai_markers §3)
+            _t = re.sub(r'[XM][\u2081\u2082\u2083\u1d62\d]?\*', '', r.text)
+            if "*" in _t:
                 # We allow standalone bullet points if any, but in text runs, stray asterisks represent unparsed markdown
                 issues.append(f"Stray asterisk '*' in run text at P{p_idx} R{r_idx}: {repr(r.text)}")
 
@@ -137,7 +140,8 @@ def audit_docx(docx_path: Path) -> bool:
             for c_idx, cell in enumerate(row.cells):
                 for p in cell.paragraphs:
                     for r in p.runs:
-                        if "*" in r.text:
+                        _t = re.sub(r'[XM][\u2081\u2082\u2083\u1d62\d]?\*', '', r.text)
+                        if "*" in _t:
                             issues.append(f"Stray asterisk '*' in Table {t_idx} Row {r_idx} Col {c_idx}: {repr(r.text)}")
                         if "$" in r.text:
                             issues.append(f"Stray dollar '$' in Table {t_idx} Row {r_idx} Col {c_idx}: {repr(r.text)}")
@@ -343,13 +347,12 @@ def audit_docx(docx_path: Path) -> bool:
 
 def main():
     base_dir = Path(__file__).resolve().parent.parent / "01_Naskah_Utama"
-    doc_no_bab3 = base_dir / "Proposal_Arthur_NoBab3.docx"
+    # Varian NoBab3 dihapus Sylvia 23 Sep 2026: hanya file utama.
     doc_full = base_dir / "Proposal_Arthur_PokemonTCG.docx"
 
-    success1 = audit_docx(doc_no_bab3)
-    success2 = audit_docx(doc_full)
+    success = audit_docx(doc_full)
 
-    if success1 and success2:
+    if success:
         print("\n=======================================================")
         print("ALL WORD DOCUMENTS PASSED PUBLICATION-GRADE VERIFICATION!")
         print("=======================================================")

@@ -14,11 +14,12 @@
   *Pengaruh Hedonic Motivation ($X_1$), Desire for Completeness ($X_2$), dan Speculative Motive ($X_3$) terhadap Impulsive Buying ($Y$) Booster Pack Kartu Pokémon TCG dengan Self-Control ($Z$) sebagai Variabel Moderasi.*
 * **Dosen Pembimbing:** [[07_Review_&_Audit/Revisi_Dosen/|Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A]]
 * **Metodologi Analisis:** Kuantitatif Asosiatif, Survei Kros-Seksional, *Moderated Regression Analysis (MRA)* dengan *Mean-Centering*.
-* **Status Naskah Terkini:**
-  - Naskah Utama Lengkap: [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf|Proposal_Arthur_PokemonTCG.pdf]] (64 halaman pasca-humanisasi R3 Bab II+III 18 Sep 2026 — melampaui standar K-02 UKRIDA 2023, 54 entri referensi; sitasi 245 hyperlink internal ke DP; paritas full-doc PASS, 0 link mati)
-  - Varian Tanpa Bab 3: [[01_Naskah_Utama/Proposal_Arthur_NoBab3.pdf|Proposal_Arthur_NoBab3.pdf]] (46 halaman — diregenerasi 18 Sep 2026 dari TeX kanonis via pipeline non-destruktif agar gate parity 7/7; keputusan Opsi-1 17 Sep tetap berlaku bila user ingin hapus ulang)
-  - Dokumen Word Hybrid (Native TOC Word/Docs): [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx|Proposal_Arthur_PokemonTCG.docx]] (OMML native, 54 entri daftar pustaka alfabetis bebas angka, 54 bookmark DP + 245 sitasi terhyperlink; tipografi full-doc PASS pure-black + dot leaders 14,0 cm; **Frontmatter modular 6 lembar formal dipisah mandiri ke [[01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/|01_Lembar_Persetujuan_Proposal/]], naskah DOCX utama bersih mulai Cover → TOC → Bab 1**; Daftar Tabel & Gambar terpisah mandiri via `PageBreakBefore: True`)
-* **Kickoff AI Sesi:** 🌐 [Buka Aplikasi Web Kickoff 1-Klik](file:///z:/SKRIPSII/SKRIPSI%20ARTHUR/SKRIPSI-arthur-main/SKRIPSI-arthur-main/PROMPT_KICKOFF.html) | 📋 [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md|Versi Dokumen Markdown]]
+* **Status Naskah Terkini (revisi Sylvia 23 Sep 2026):**
+  - Naskah Utama Lengkap: [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf|Proposal_Arthur_PokemonTCG.pdf]] (47 halaman settled — 6 lembar formal dieksisi ke modular 23 Sep 2026; frontmatter ramping Cover i + TOC ii–iii + LOT iv + LOF v; Bab 1–3 + DP arab 1–42 tak bergeser; Alpha 0,70; 54 entri referensi; paritas full-doc 7/7 PASS)
+  - Varian Tanpa Bab 3: DIHAPUS 23 Sep 2026 atas arahan Sylvia — semua mengerucut ke file utama (skrip `build_proposal_nobab3_pdf.py`/`verify_nobab3_pdf.py` dan gerbang X2 ikut dihapus; paritas kini 5-arah)
+  - Dokumen Word Hybrid (Native TOC Word/Docs): [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx|Proposal_Arthur_PokemonTCG.docx]] (54 entri daftar pustaka alfabetis bebas angka, 54 bookmark DP; judul BAB dua baris via shift+enter; rujukan gambar/persamaan/tabel bernomor eksplisit; 0 typo backslash; tipografi full-doc PASS pure-black + dot leaders 14,0 cm; **Frontmatter modular 6 lembar formal dipisah mandiri ke [[01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/|01_Lembar_Persetujuan_Proposal/]], naskah DOCX utama bersih mulai Cover → TOC → Bab 1**; Daftar Tabel & Gambar terpisah mandiri via `PageBreakBefore: True`)
+  - Revisi berjalan: [[07_Review_&_Audit/Revisi_Dosen/2026-09-23_Revisi_Sylvia_Pascapangkas_Bab1.md|Catatan revisi Sylvia 23 Sep 2026]] (12 butir; terbuka: konfirmasi format nama tabel hal iii)
+* **Kickoff AI Sesi:** 🌐 [[PROMPT_KICKOFF.html|Buka Aplikasi Web Kickoff 1-Klik]] | 📋 [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md|Versi Dokumen Markdown]]
 * **Status Mendeley Live:** 54 entri RIS/Bib (53 ber-websites; `sugiyono2019` buku cetak tanpa link — wajar); cloud Mendeley menunggu `--prune` (hapus ghost Tan & Prasetio) + `--push` (tambah Azizah) oleh user pasca-`--auth` (token sesi lama hilang); RIS siap impor [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris|Berkas RIS (54 Ref)]]
 * **Framework Universal (pakai-ulang):** [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md|Graph of Agents A0–A11]] · SOP [[directives/universal_thesis_graph_of_agents.md|F1–F11]] · Orchestrator `py execution/run_thesis_graph.py --gate parity` (7/7 PASS) · Template [[04_Riset_&_Metodologi/TEMPLATE_SOURCE_OF_TRUTH_UNIVERSAL.md|SoT Baru]] · Konektor `execution/mendeley_connector.py`
 * **Status Graphify Knowledge Graph:** 🌐 [[graphify-out/graph.html|Peta Pengetahuan Interaktif]] (1.918 Nodes, 2.103 Edges, 188 Komunitas — refresh 22 Sep 2026: modular frontmatter DOCX, AST skrip ekstraksi lembar formal)
@@ -40,8 +41,7 @@
 ```
 
 ### 📁 A. Naskah & Dokumen Induk
-* **Naskah Utama LaTeX:** [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]]
-* **Naskah Varian Tanpa Bab 3:** [[01_Naskah_Utama/Proposal_Arthur_NoBab3.tex]]
+* **Naskah Utama LaTeX:** [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]] (satu-satunya master; varian NoBab3 dihapus 23 Sep 2026)
 * **Draft Markdown Terpisah:**
   - Bab I Pendahuluan: [[03_Draft_Per_Bab/BAB_I_PENDAHULUAN.md]]
   - Bab II Tinjauan Pustaka: [[03_Draft_Per_Bab/BAB_II_TINJAUAN_PUSTAKA.md]]
@@ -95,7 +95,7 @@
 | Simbol | Variabel Penelitian | Landasan Teori Utama | Skala Baku / Indikator | Jurnal Rujukan Mutakhir |
 |---|---|---|---|---|
 | **$Y$** | *Impulsive Buying* | Teori Impulsif Rook (1987) | Skala IBTS (Verplanken & Herabadi, 2001) | Dewi et al. (2026), Gong et al. (2024) |
-| **$X_1$** | *Hedonic Motivation* | *Hedonic Value* Babin et al. (1994) | 6 Dimensi Belanja (Arnold & Reynolds, 2003) | Pranggabayu (2022), Apidana (2022) |
+| **$X_1$** | *Hedonic Motivation* | *Hedonic Value* Babin et al. (1994) | 6 dimensi sumber, 5 diadaptasi (tanpa *Value Shopping*; Bab 2 §2.2.1) | Pranggabayu (2022), Apidana (2022) |
 | **$X_2$** | *Desire for Completeness* | *Completing the Set* Gao (2014) & Zeigarnik (1927) | *Pseudo-Set Framing* (Barasz et al., 2017) | Dewi et al. (2026) |
 | **$X_3$** | *Speculative Motive* | *Behavioral Finance* Shiller (2000) & Keynes (1936) | Arbitrase Grading PSA 10 & Secondary Market | Aryadi & Lingga (2024), Colline (2024) |
 | **$Z$** | *Self-Control* (Moderator) | *Self-Regulation Theory* Baumeister (2002) | *Brief Self-Control Scale* / BSCS (Tangney, 2004) | Artadita & Firmialy (2024), Lienardy (2024) |
@@ -120,7 +120,7 @@ Setiap perubahan pada naskah, bab, tabel, gambar, atau skrip generator **wajib**
 * 📜 **SOP Generator Word:** [[directives/generate_thesis_word_document.md]]
 
 **Prinsip yang Tidak Boleh Dilanggar:**
-1. **Source of Truth:** Master utama adalah LaTeX (`Proposal_Arthur_NoBab3.pdf`). Dokumen Word (`Proposal_Arthur_NoBab3.docx`) wajib 100% selaras (*zero desync*).
+1. **Source of Truth:** Master utama adalah LaTeX (`Proposal_Arthur_PokemonTCG.pdf`). Dokumen Word (`Proposal_Arthur_PokemonTCG.docx`) wajib 100% selaras (*zero desync*).
 2. **Pure Black (#000000):** Dilarang keras menggunakan *theme accent colors*. Semua judul, tabel, dan nomor halaman wajib warna hitam pekat `#000000`.
 3. **Kompatibilitas Penuh Daftar Isi di Google Docs & Word:** Tab stop kanan wajib `14.0 cm` (7938 dxa) dengan `w:leader="dot"` dan **tanpa `right_indent`** agar titik-titik dan nomor halaman tidak hilang atau rusak saat dibuka di Google Docs / Word Online.
 4. **Verifikasi Wajib Sebelum Selesai:** Wajib menjalankan `python execution/verify_docx_typography.py` dan `python execution/verify_pdf_docx_parity.py`.

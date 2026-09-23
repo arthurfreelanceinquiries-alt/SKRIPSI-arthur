@@ -126,7 +126,6 @@ def parse_bib_keys(bib_path: Path):
 def run_tests():
     root = Path(__file__).resolve().parent.parent
     tex_path = root / "01_Naskah_Utama" / "Proposal_Arthur_PokemonTCG.tex"
-    nobab3_path = root / "01_Naskah_Utama" / "Proposal_Arthur_NoBab3.tex"
     md_path = root / "01_Naskah_Utama" / "PROPOSAL_SKRIPSI_POKEMON_TCG.md"
     docx_path = root / "01_Naskah_Utama" / "Proposal_Arthur_PokemonTCG.docx"
     ris_path = root / "06_Referensi_Jurnal_PDF" / "Mendeley_Library_Arthur_PokemonTCG.ris"
@@ -134,16 +133,16 @@ def run_tests():
 
     print("=" * 75)
     print("  SUITE VERIFIKASI INTEGRITAS & PARITAS 1:1 MENDELEY REFERENCE MANAGER")
+    print("  (5-arah: varian NoBab3 dihapus Sylvia 23 Sep 2026, mengerucut ke file utama)")
     print("=" * 75)
 
     all_passed = True
 
     # -------------------------------------------------------------
-    # TEST 1: 6-Way Parity Count
+    # TEST 1: 5-Way Parity Count
     # -------------------------------------------------------------
-    print(f"\n[TEST 1] Memeriksa Paritas Jumlah Entri 6-Arah (Target: Tepat {EXPECTED_COUNT} Referensi)...")
+    print(f"\n[TEST 1] Memeriksa Paritas Jumlah Entri 5-Arah (Target: Tepat {EXPECTED_COUNT} Referensi)...")
     tex_keys = get_tex_keys(tex_path)
-    nobab3_keys = get_tex_keys(nobab3_path)
     md_count = get_markdown_dp_count(md_path)
     docx_entries = get_docx_dp_entries(docx_path)
     docx_count = len(docx_entries)
@@ -153,15 +152,14 @@ def run_tests():
     bib_count = len(bib_keys)
 
     print(f"  1. LaTeX Proposal (Proposal_Arthur_PokemonTCG.tex) : {len(tex_keys)} kunci")
-    print(f"  2. LaTeX NoBab3   (Proposal_Arthur_NoBab3.tex)    : {len(nobab3_keys)} kunci")
-    print(f"  3. Markdown Master (PROPOSAL_SKRIPSI_POKEMON_TCG) : {md_count} entri")
-    print(f"  4. Dokumen Word   (Proposal_Arthur_PokemonTCG.docx): {docx_count} entri")
-    print(f"  5. Mendeley RIS   (Mendeley_Library_Arthur_...ris): {ris_count} rekaman")
-    print(f"  6. Mendeley BibTeX(Mendeley_Library_Arthur_...bib): {bib_count} entri")
+    print(f"  2. Markdown Master (PROPOSAL_SKRIPSI_POKEMON_TCG) : {md_count} entri")
+    print(f"  3. Dokumen Word   (Proposal_Arthur_PokemonTCG.docx): {docx_count} entri")
+    print(f"  4. Mendeley RIS   (Mendeley_Library_Arthur_...ris): {ris_count} rekaman")
+    print(f"  5. Mendeley BibTeX(Mendeley_Library_Arthur_...bib): {bib_count} entri")
 
-    counts = [len(tex_keys), len(nobab3_keys), md_count, docx_count, ris_count, bib_count]
+    counts = [len(tex_keys), md_count, docx_count, ris_count, bib_count]
     if all(c == EXPECTED_COUNT for c in counts):
-        print(f"  -> [PASS] Paritas 6-Arah Sempurna! Seluruh media tepat memuat {EXPECTED_COUNT} referensi.")
+        print(f"  -> [PASS] Paritas 5-Arah Sempurna! Seluruh media tepat memuat {EXPECTED_COUNT} referensi.")
     else:
         print(f"  -> [FAIL] Terjadi diskrepansi jumlah referensi! Seluruh format harus tepat {EXPECTED_COUNT}.")
         all_passed = False

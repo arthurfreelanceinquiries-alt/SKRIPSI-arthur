@@ -33,7 +33,7 @@ AI penerima dokumen ini **DILARANG KERAS** mengubah parameter riset di bawah ini
 | **Variabel Independen 3 ($X_3$)** | *Speculative Motive* (Behavioral Finance: Shiller, 2000; Keynes, 1936; PSA 10 Arbitrage) |
 | **Variabel Moderasi ($Z$)** | *Self-Control* (Brief Self-Control Scale / BSCS: Tangney et al., 2004; Baumeister, 2002) |
 | **Pendekatan Metodologi** | Kuantitatif Asosiatif Kausal, Survei Kuesioner (Skala Likert 1–5) |
-| **Populasi & Sampel** | Komunitas Pokémon TCG Jabodetabek, *Purposive Sampling*, $N \ge 150$ responden (Usia $\ge 17$ tahun, aktif membeli booster pack fisik dalam 6 bulan terakhir) |
+| **Populasi & Sampel** | Kolektor WNI Pokémon TCG, *Purposive Sampling*, target $N = 120$–$150$ responden (Usia $\ge 17$ tahun, beli booster pack fisik min. 1× dalam 12 bulan terakhir, diutamakan 6 bulan; pilot test $n = 30$) |
 | **Alat Analisis Data** | *Moderated Regression Analysis (MRA)* dengan teknik *Mean-Centering* |
 
 ---
@@ -79,7 +79,7 @@ AI penerima dokumen ini **DILARANG KERAS** mengubah parameter riset di bawah ini
   - **Kartu 2 — Mekanisme Gacha / Blind-Box:**
     - Poin: Sistem *probabilistic reward* (ketidakpastian isi kartu). Konsumen membeli peluang acak demi sensasi dopamin, *near-miss effect*, dan perburuan kartu langka (*secret rare*).
   - **Kartu 3 — Masalah Finansial (Impulsive Buying):**
-    - Poin: Konsumen melakukan pembelian spontan (*unplanned, spur-of-the-moment*), berulang, dan emosional; banyak kolektor mengorbankan dana darurat atau menggunakan fasilitas paylater demi menyobek pack.
+    - Poin: Konsumen melakukan pembelian spontan (*unplanned, spur-of-the-moment*), berulang, dan emosional; berpotensi mengorbankan alokasi keuangan pribadi. (JANGAN klaim dana darurat/paylater — tidak ada di naskah!)
 * **Catatan Presenter (*Speaker Notes*):** Jelaskan bahwa Pokémon TCG bukan sekadar mainan melainkan komoditas bernilai tinggi dengan sistem pembelian blind-box/gacha yang memicu fenomena impulsive buying yang merugikan keuangan kolektor (durasi: 1,5 menit).
 
 ---
@@ -102,7 +102,7 @@ AI penerima dokumen ini **DILARANG KERAS** mengubah parameter riset di bawah ini
 * **Tujuan:** Memperlihatkan rigor teoritis dan operasionalisasi variabel berbasis instrumen baku.
 * **Layout:** 2 Blok (Atas: Teori Rujukan; Bawah: 5 Kartu Variabel):
   - **Blok Teori:**
-    - *Grand Theory:* **Behavioral Finance** (Shiller, 2000; Shefrin, 2000) — Bias psikologis dalam keputusan keuangan.
+    - *Grand Theory:* **Behavioral Finance** (Simon, 1955; Kahneman & Tversky, 1979; Shiller, 2000; Thaler & Shefrin, 1981) — Bias psikologis dalam keputusan keuangan.
     - *Supporting Theories:* Teori Stimulus-Organism-Response / S-O-R (Mehrabian & Russell, 1974), Pseudo-Set Framing (Barasz et al., 2017), Teori Regulasi Diri (Baumeister, 2002).
   - **Blok Variabel:**
     - **$Y$ (Impulsive Buying):** Pembelian spontan tanpa evaluasi konsekuensi (Skala IBTS, Verplanken & Herabadi, 2001).
@@ -115,21 +115,19 @@ AI penerima dokumen ini **DILARANG KERAS** mengubah parameter riset di bawah ini
 ---
 
 ### 🔹 SLIDE 5: Model Penelitian & Perumusan Hipotesis
-* **Tujuan:** Menampilkan visualisasi konseptual model MRA dan 7 hipotesis operasional secara kristal.
-* **Layout:** Kiri Diagram Model Jalur (Path Model), Kanan Daftar 7 Hipotesis:
+* **Tujuan:** Menampilkan visualisasi konseptual model MRA dan 6 hipotesis operasional secara kristal (TEPAT 6 — dilarang H7).
+* **Layout:** Kiri Diagram Model Jalur (Path Model), Kanan Daftar 6 Hipotesis (sinkron naskah Bab 1–2: H1–H6; koreksi 23 Sep 2026 — tidak ada H7):
   - **Diagram Model Jalur:**
     - Panah Langsung: $X_1, X_2, X_3 \rightarrow Y$ ($+$)
-    - Panah Langsung Moderator: $Z \rightarrow Y$ ($-$)
     - Panah Moderasi Interaksi: $X_1 \cdot Z, X_2 \cdot Z, X_3 \cdot Z \rightarrow Y$ (Meredam / $-$)
-  - **7 Hipotesis Riset:**
+  - **6 Hipotesis Riset:**
     - **$H_1$:** Hedonic Motivation berpengaruh positif terhadap Impulsive Buying.
     - **$H_2$:** Desire for Completeness berpengaruh positif terhadap Impulsive Buying.
     - **$H_3$:** Speculative Motive berpengaruh positif terhadap Impulsive Buying.
-    - **$H_4$:** Self-Control berpengaruh negatif terhadap Impulsive Buying.
-    - **$H_5$:** Self-Control memoderasi (meredam) pengaruh Hedonic Motivation terhadap Impulsive Buying.
-    - **$H_6$:** Self-Control memoderasi (meredam) pengaruh Desire for Completeness terhadap Impulsive Buying.
-    - **$H_7$:** Self-Control memoderasi (meredam) pengaruh Speculative Motive terhadap Impulsive Buying.
-* **Catatan Presenter (*Speaker Notes*):** Tunjukkan diagram model, jelaskan 3 pengaruh anteseden, 1 pengaruh langsung self-control, dan 3 efek moderasi yang dihipotesiskan memperlemah/meredam impulsivitas (durasi: 1,5 menit).
+    - **$H_4$:** Self-Control memoderasi (meredam) pengaruh Hedonic Motivation terhadap Impulsive Buying.
+    - **$H_5$:** Self-Control memoderasi (meredam) pengaruh Desire for Completeness terhadap Impulsive Buying.
+    - **$H_6$:** Self-Control memoderasi (meredam) pengaruh Speculative Motive terhadap Impulsive Buying.
+* **Catatan Presenter (*Speaker Notes*):** Tunjukkan diagram model, jelaskan 3 pengaruh anteseden dan 3 efek moderasi yang dihipotesiskan memperlemah/meredam impulsivitas (durasi: 1,5 menit).
 
 ---
 
@@ -140,8 +138,8 @@ AI penerima dokumen ini **DILARANG KERAS** mengubah parameter riset di bawah ini
     - Kuantitatif Asosiatif Kausal; Survei Kuesioner Daring (Google Forms).
     - Skala Likert 5 Poin (1 = Sangat Tidak Setuju s.d. 5 = Sangat Setuju).
   - **Kuadran 2 — Populasi & Sampling:**
-    - Komunitas Pokémon TCG Jabodetabek; *Purposive Sampling* target $N \ge 150$ responden.
-    - Kriteria: Domisili Jabodetabek, Usia $\ge 17$ tahun, Pernah membeli booster pack fisik dalam 6 bulan terakhir.
+    - Kolektor WNI, populasi infinite; *Purposive Sampling* target $N = 120$–$150$ responden (+ pilot test $n = 30$).
+    - Kriteria: WNI domisili Indonesia, Usia $\ge 17$ tahun, beli booster pack fisik min. 1× dalam 12 bulan terakhir (diutamakan 6 bulan).
   - **Kuadran 3 — Uji Kualitas Data & Asumsi Klasik:**
     - Validitas Pearson ($r_{\text{hitung}} > r_{\text{tabel}}$) & Reliabilitas Cronbach's Alpha ($\alpha \ge 0,70$).
     - Uji Asumsi Klasik: Normalitas (Kolmogorov-Smirnov), Multikolinearitas (VIF < 10, Tolerance > 0,10), Heteroskedastisitas (Glejser).

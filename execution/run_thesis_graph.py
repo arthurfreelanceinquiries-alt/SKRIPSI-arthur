@@ -38,7 +38,6 @@ GATES = [
 
 EXTENDED = [
     ("X1", "Forensik format + typo", "verify_format_and_typos.py", "A8"),
-    ("X2", "Audit PDF NoBab3", "verify_nobab3_pdf.py", "A8"),
     ("X3", "Header PDF massal", "verify_pdf_headers.py", "A3"),
     ("X4", "Layout section Word", "verify_word_layout.py", "A8"),
 ]
