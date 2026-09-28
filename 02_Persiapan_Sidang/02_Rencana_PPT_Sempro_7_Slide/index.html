@@ -1,0 +1,2303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seminar Proposal Skripsi — Arthur Reezan (FEB UKRIDA)</title>
+  
+  <!-- Modern Clean Typography: Outfit (Heading/Hero) + Plus Jakarta Sans (Editorial Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CANVA-INSPIRED EDITORIAL ACADEMIC DESIGN SYSTEM
+       Dibuat khusus untuk presentasi akademik FEB UKRIDA:
+       - Tampak manusiawi, elegan, prestisius, dan berwibawa (bukan bot AI/cyberpunk).
+       - Zero layout overflow pada rasio 16:9.
+       - Aset visual tajam, jernih, dan proporsional.
+       ========================================================================== */
+    :root {
+      /* Theme 1: Canva Editorial Light (Default) */
+      --bg-page: #E2E8F0;
+      --slide-bg: #FFFFFF;
+      --slide-border: #E2E8F0;
+      
+      --text-main: #0F172A;
+      --text-muted: #475569;
+      --text-light: #64748B;
+      
+      --card-bg: #F8FAFC;
+      --card-border: #E2E8F0;
+      --card-subtle: #F1F5F9;
+      
+      /* Canva Institutional Palette */
+      --brand-navy: #0F2642;
+      --brand-navy-light: #1E3A8A;
+      --brand-gold: #D97706;
+      --brand-gold-soft: #FEF3C7;
+      
+      --color-blue: #0284C7;
+      --color-blue-soft: #E0F2FE;
+      --color-emerald: #059669;
+      --color-emerald-soft: #D1FAE5;
+      --color-rose: #E11D48;
+      --color-rose-soft: #FFE4E6;
+      --color-purple: #7C3AED;
+      --color-purple-soft: #EDE9FE;
+      
+      --font-heading: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      
+      --slide-shadow: 0 20px 45px -15px rgba(15, 23, 42, 0.16), 0 0 0 1px rgba(15, 23, 42, 0.08);
+      --card-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.05), 0 2px 4px -1px rgba(15, 23, 42, 0.03);
+    }
+
+    /* Theme 2: Canva Executive Navy (Dark Variant via Toggle '🌓') */
+    [data-theme="dark"] {
+      --bg-page: #080D1A;
+      --slide-bg: #0F172A;
+      --slide-border: #1E293B;
+      
+      --text-main: #F8FAFC;
+      --text-muted: #CBD5E1;
+      --text-light: #94A3B8;
+      
+      --card-bg: #1E293B;
+      --card-border: #334155;
+      --card-subtle: #0F172A;
+      
+      --brand-navy: #1E3A8A;
+      --brand-navy-light: #38BDF8;
+      --brand-gold: #F59E0B;
+      --brand-gold-soft: rgba(245, 158, 11, 0.18);
+      
+      --color-blue: #38BDF8;
+      --color-blue-soft: rgba(56, 189, 248, 0.16);
+      --color-emerald: #10B981;
+      --color-emerald-soft: rgba(16, 185, 129, 0.16);
+      --color-rose: #FB7185;
+      --color-rose-soft: rgba(244, 63, 94, 0.16);
+      --color-purple: #C084FC;
+      --color-purple-soft: rgba(168, 85, 247, 0.16);
+      
+      --slide-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.1);
+      --card-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      font-family: var(--font-body);
+      color: var(--text-main);
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+      transition: background-color 0.25s ease;
+    }
+
+    /* Fixed 16:9 Presentation Canvas Stage */
+    .slide-canvas-viewport {
+      width: 100vw;
+      height: 56.25vw; /* 16:9 aspect ratio */
+      max-height: 100vh;
+      max-width: 177.78vh; /* 16:9 aspect ratio */
+      background: var(--slide-bg);
+      border-radius: 12px;
+      box-shadow: var(--slide-shadow);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: background-color 0.25s ease, border-color 0.25s ease;
+    }
+
+    /* Canva Style Top Accent Line */
+    .slide-top-accent {
+      height: 5px;
+      width: 100%;
+      background: linear-gradient(90deg, #0F2642 0%, #0284C7 45%, #D97706 85%, #E11D48 100%);
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       ANIMATED BACKGROUND POKÉBALLS (Continuous Watermark Spinner)
+       ========================================================================== */
+    .bg-pokeball-container {
+      position: absolute;
+      right: -130px;
+      bottom: -130px;
+      width: 580px;
+      height: 580px;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.042;
+      color: var(--brand-navy);
+      transition: opacity 0.3s ease, color 0.3s ease;
+    }
+    .bg-pokeball-secondary {
+      position: absolute;
+      left: -90px;
+      top: -90px;
+      width: 360px;
+      height: 360px;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.032;
+      color: var(--brand-gold);
+      transition: opacity 0.3s ease, color 0.3s ease;
+    }
+    [data-theme="dark"] .bg-pokeball-container {
+      opacity: 0.085;
+      color: var(--brand-navy-light);
+    }
+    [data-theme="dark"] .bg-pokeball-secondary {
+      opacity: 0.055;
+      color: var(--brand-gold);
+    }
+
+    .bg-pokeball-spinner {
+      width: 100%;
+      height: 100%;
+      animation: pokeballSpinClockwise 36s linear infinite;
+      transform-origin: center center;
+    }
+    .bg-pokeball-spinner-reverse {
+      width: 100%;
+      height: 100%;
+      animation: pokeballSpinCounter 48s linear infinite;
+      transform-origin: center center;
+    }
+
+    @keyframes pokeballSpinClockwise {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes pokeballSpinCounter {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+
+    /* Ambient Outer Body Pokéball */
+    .body-ambient-pokeball {
+      position: fixed;
+      right: -160px;
+      top: -160px;
+      width: 680px;
+      height: 680px;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.025;
+      color: var(--brand-navy);
+      animation: pokeballSpinClockwise 60s linear infinite;
+      transform-origin: center center;
+    }
+    [data-theme="dark"] .body-ambient-pokeball {
+      opacity: 0.045;
+      color: #38BDF8;
+    }
+
+    /* Slide Deck Container */
+    .slides-deck {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      z-index: 2;
+    }
+
+    /* Individual Slide View */
+    .slide {
+      position: absolute;
+      inset: 0;
+      padding: 22px 36px 14px 36px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(16px);
+      transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden; /* Mencegah overflow keluar slide */
+      z-index: 2;
+    }
+    .slide.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+
+    /* Canva Standard Slide Header */
+    .canva-header {
+      margin-bottom: 10px;
+      flex-shrink: 0;
+    }
+    .canva-kicker-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 2px 9px;
+      background: var(--brand-gold-soft);
+      color: var(--brand-gold);
+      border-radius: 999px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .canva-title {
+      font-family: var(--font-heading);
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.2;
+      letter-spacing: -0.015em;
+    }
+    .canva-subtitle {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* Common Card Styling */
+    .canva-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      box-shadow: var(--card-shadow);
+    }
+
+    /* Canva Slide Footer */
+    .canva-footer {
+      height: 26px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--card-border);
+      padding: 0 4px;
+      font-size: 0.66rem;
+      color: var(--text-light);
+      margin-top: auto;
+      flex-shrink: 0;
+    }
+    .canva-footer-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .canva-footer-inst {
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    .canva-footer-page {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.72rem;
+      color: var(--brand-gold);
+      background: var(--brand-gold-soft);
+      padding: 1px 8px;
+      border-radius: 4px;
+    }
+
+    /* ==========================================================================
+       SLIDE 1: COVER (Canva Split Editorial Layout)
+       ========================================================================== */
+    .slide-1-split {
+      flex: 1;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 28px;
+      align-items: center;
+      padding: 6px 0;
+    }
+    .cover-left-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .cover-uni-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .cover-uni-badge img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+    .cover-uni-text h3 {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: 0.02em;
+    }
+    .cover-uni-text p {
+      font-size: 0.73rem;
+      color: var(--text-muted);
+    }
+    .cover-kicker {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--brand-gold);
+      margin-bottom: 6px;
+    }
+    .cover-h1 {
+      font-family: var(--font-heading);
+      font-size: 1.52rem;
+      font-weight: 800;
+      line-height: 1.24;
+      color: var(--text-main);
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+    .cover-h1 span.hl-x1 {
+      color: var(--color-blue);
+      background: var(--color-blue-soft);
+      padding: 0 5px;
+      border-radius: 4px;
+    }
+    .cover-h1 span.hl-x2 {
+      color: var(--color-emerald);
+      background: var(--color-emerald-soft);
+      padding: 0 5px;
+      border-radius: 4px;
+    }
+    .cover-h1 span.hl-x3 {
+      color: var(--brand-gold);
+      background: var(--brand-gold-soft);
+      padding: 0 5px;
+      border-radius: 4px;
+    }
+    .cover-h1 span.hl-y {
+      color: var(--color-rose);
+      background: var(--color-rose-soft);
+      padding: 0 5px;
+      border-radius: 4px;
+    }
+    .cover-h1 span.hl-m {
+      color: var(--color-purple);
+      background: var(--color-purple-soft);
+      padding: 0 5px;
+      border-radius: 4px;
+    }
+    .cover-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    .cover-right-col {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 20px 22px;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .cover-right-title {
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: var(--text-main);
+      border-bottom: 2px solid var(--brand-gold);
+      padding-bottom: 6px;
+    }
+    .meta-person-row {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .meta-person-label {
+      font-size: 0.66rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 700;
+      color: var(--text-light);
+    }
+    .meta-person-name {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+    .meta-person-sub {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+    }
+    .cover-session-box {
+      background: var(--brand-gold-soft);
+      border-radius: 8px;
+      padding: 8px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2px;
+    }
+    .cover-session-box span {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--brand-gold);
+    }
+
+    /* ==========================================================================
+       SLIDE 2: LATAR BELAKANG — FENOMENA PASAR
+       ========================================================================== */
+    .slide-2-layout {
+      flex: 1;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 20px;
+      margin-bottom: 6px;
+    }
+    .slide-2-left {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      height: 100%;
+    }
+    .stat-hero-duo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .stat-hero-card {
+      padding: 10px 12px;
+      border-radius: 8px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-left: 4px solid var(--brand-gold);
+    }
+    .stat-hero-number {
+      font-family: var(--font-heading);
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--brand-gold);
+      line-height: 1.1;
+    }
+    .stat-hero-label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+
+    .hero-photo-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-height: 0;
+    }
+    .hero-photo-wrapper {
+      flex: 1;
+      min-height: 0;
+      background: #FFFFFF;
+      border-radius: 6px;
+      border: 1px solid #E2E8F0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      overflow: hidden;
+    }
+    .hero-photo-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .hero-photo-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+      padding: 0 4px;
+    }
+    .hero-photo-title {
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .hero-photo-sub {
+      font-size: 0.64rem;
+      color: var(--text-light);
+    }
+
+    .features-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .feature-item-canva {
+      display: flex;
+      gap: 12px;
+      padding: 11px 14px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      flex: 1;
+      align-items: center;
+    }
+    .feature-num-badge {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--brand-navy);
+      color: #FFFFFF;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .feature-body h4 {
+      font-family: var(--font-heading);
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 2px;
+    }
+    .feature-body p {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      line-height: 1.36;
+    }
+
+    /* ==========================================================================
+       SLIDE 3: MASALAH PENELITIAN & RESEARCH GAP
+       ========================================================================== */
+    .slide-3-layout {
+      flex: 1;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 1.15fr 1.25fr;
+      gap: 18px;
+      margin-bottom: 6px;
+    }
+    .slide-3-left {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      height: 100%;
+    }
+    .problem-stepper-box {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 8px 12px;
+      flex-shrink: 0;
+    }
+    .stepper-header-title {
+      font-family: var(--font-heading);
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: var(--brand-gold);
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .stepper-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .stepper-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.7rem;
+    }
+    .step-pill {
+      font-size: 0.65rem;
+      font-weight: 700;
+      background: var(--color-blue-soft);
+      color: var(--color-blue);
+      padding: 2px 7px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    .step-sep {
+      color: var(--text-light);
+      font-size: 0.64rem;
+    }
+
+    .psa-exhibit-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-height: 0;
+    }
+    .psa-image-wrapper {
+      flex: 1;
+      min-height: 0;
+      background: #FFFFFF;
+      border-radius: 6px;
+      border: 1px solid #E2E8F0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      overflow: hidden;
+    }
+    .psa-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .psa-caption {
+      margin-top: 5px;
+      padding: 0 4px;
+    }
+    .psa-caption h4 {
+      font-family: var(--font-heading);
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .psa-caption p {
+      font-size: 0.66rem;
+      color: var(--text-muted);
+      line-height: 1.3;
+      margin-top: 1px;
+    }
+    .psa-footnote {
+      font-size: 0.62rem;
+      color: var(--brand-gold);
+      font-style: italic;
+    }
+
+    .gap-cards-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .gap-pill-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-left: 4px solid var(--color-blue);
+      border-radius: 0 8px 8px 0;
+      padding: 8px 12px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .gap-pill-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2px;
+    }
+    .gap-pill-title {
+      font-family: var(--font-heading);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--brand-navy-light);
+    }
+    .gap-pill-status {
+      font-size: 0.62rem;
+      font-weight: 700;
+      color: var(--color-rose);
+      background: var(--color-rose-soft);
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+    .gap-pill-text {
+      font-size: 0.69rem;
+      color: var(--text-muted);
+      line-height: 1.32;
+    }
+
+    .novelty-highlight-banner {
+      background: var(--color-emerald-soft);
+      border: 1px solid rgba(5, 150, 105, 0.3);
+      border-radius: 8px;
+      padding: 8px 12px;
+      flex-shrink: 0;
+    }
+    .novelty-highlight-title {
+      font-family: var(--font-heading);
+      font-size: 0.73rem;
+      font-weight: 800;
+      color: var(--color-emerald);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 2px;
+    }
+    .novelty-highlight-p {
+      font-size: 0.71rem;
+      color: var(--text-main);
+      line-height: 1.34;
+    }
+
+    /* ==========================================================================
+       SLIDE 4: TINJAUAN PUSTAKA & 5 VARIABEL BAKU (Anti-Overflow Layout)
+       ========================================================================== */
+    .slide-4-layout {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+    .theory-pill-banner {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 7px 12px;
+      display: grid;
+      grid-template-columns: 1fr 1.35fr;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+    .grand-box h4 {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--brand-gold);
+      margin-bottom: 2px;
+    }
+    .grand-box p {
+      font-size: 0.67rem;
+      color: var(--text-muted);
+      line-height: 1.3;
+    }
+    .supp-box h4 {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--color-blue);
+      margin-bottom: 2px;
+    }
+    .supp-box p {
+      font-size: 0.66rem;
+      color: var(--text-muted);
+      line-height: 1.28;
+    }
+
+    .variables-5-canva {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 7px;
+      flex: 1;
+      min-height: 0;
+    }
+    .var-canva-box {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 7px 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+    .var-canva-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3px;
+    }
+    .var-tag-circle {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 0.76rem;
+    }
+    .var-canva-name {
+      font-family: var(--font-heading);
+      font-size: 0.77rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 2px;
+      line-height: 1.15;
+    }
+    .var-canva-def {
+      font-size: 0.63rem;
+      color: var(--text-muted);
+      line-height: 1.24;
+      margin-bottom: 4px;
+    }
+    .var-canva-context {
+      font-size: 0.60rem;
+      color: var(--text-main);
+      background: rgba(15, 38, 66, 0.035);
+      border-left: 2.5px solid var(--card-border);
+      padding: 3px 5px;
+      border-radius: 3px;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+    [data-theme="dark"] .var-canva-context {
+      background: rgba(255, 255, 255, 0.04);
+    }
+    .var-canva-ind {
+      font-size: 0.61rem;
+      color: var(--text-main);
+      background: var(--slide-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 4px;
+      padding: 3px 5px;
+      line-height: 1.22;
+      margin-bottom: 3px;
+    }
+    .var-canva-scale {
+      font-size: 0.59rem;
+      font-weight: 700;
+      color: var(--text-light);
+      border-top: 1px solid var(--card-border);
+      padding-top: 2.5px;
+      text-align: center;
+    }
+
+    /* ==========================================================================
+       SLIDE 5: RISET TERDAHULU, MODEL MRA & 6 HIPOTESIS
+       ========================================================================== */
+    .slide-5-layout {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-bottom: 4px;
+    }
+    .lit-table-wrapper {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 3px 8px;
+      flex-shrink: 0;
+    }
+    .lit-table-canva {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.68rem;
+    }
+    .lit-table-canva th {
+      background: var(--brand-gold-soft);
+      color: var(--brand-gold);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      text-align: left;
+      padding: 3px 6px;
+      font-size: 0.65rem;
+    }
+    .lit-table-canva th:first-child { border-radius: 4px 0 0 4px; }
+    .lit-table-canva th:last-child { border-radius: 0 4px 4px 0; }
+    .lit-table-canva td {
+      padding: 2.5px 6px;
+      color: var(--text-main);
+      border-bottom: 1px solid var(--card-border);
+      line-height: 1.2;
+    }
+    .lit-table-canva tr:last-child td {
+      border-bottom: none;
+    }
+
+    .model-hypo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 10px;
+      flex: 1;
+      min-height: 0;
+    }
+    .model-chart-box {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 6px 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+    .rerangka-photo-wrapper {
+      flex: 1;
+      min-height: 0;
+      background: #FFFFFF;
+      border-radius: 6px;
+      border: 1px solid #E2E8F0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      overflow: hidden;
+    }
+    .rerangka-photo-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .model-chart-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 4px;
+      padding: 0 4px;
+    }
+    .model-chart-title {
+      font-family: var(--font-heading);
+      font-size: 0.70rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .model-chart-sub {
+      font-size: 0.61rem;
+      color: var(--text-light);
+    }
+
+    /* Right Column: Hypotheses & Two-Stage MRA Explanation */
+    .hypo-mra-column {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      min-height: 0;
+    }
+    .hypo-group-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 6px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .hypo-group-header {
+      font-family: var(--font-heading);
+      font-size: 0.67rem;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2px;
+      border-bottom: 1px dashed var(--card-border);
+      padding-bottom: 2px;
+    }
+    .hypo-item-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.65rem;
+      color: var(--text-main);
+      line-height: 1.22;
+      padding: 2px 5px;
+      background: var(--slide-bg);
+      border-radius: 4px;
+      border: 1px solid rgba(0,0,0,0.03);
+    }
+    [data-theme="dark"] .hypo-item-row {
+      border-color: rgba(255,255,255,0.05);
+    }
+    .hypo-pill {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 0.62rem;
+      padding: 1px 4px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    .mra-explain-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-left: 3px solid var(--brand-gold);
+      border-radius: 8px;
+      padding: 6px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .mra-explain-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1px;
+    }
+    .mra-explain-title {
+      font-family: var(--font-heading);
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: var(--brand-gold);
+    }
+    .mra-stage-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+    }
+    .mra-stage-box {
+      background: var(--slide-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 4px;
+      padding: 3px 5px;
+      font-size: 0.60rem;
+      line-height: 1.2;
+      color: var(--text-main);
+    }
+    .mra-stage-box strong {
+      display: block;
+      color: var(--text-main);
+      font-size: 0.62rem;
+      margin-bottom: 1px;
+    }
+    .mra-stage-formula {
+      font-family: monospace;
+      font-size: 0.58rem;
+      color: var(--color-blue);
+      margin-top: 1px;
+      display: block;
+    }
+    [data-theme="dark"] .mra-stage-formula {
+      color: #93C5FD;
+    }
+    .mra-fchange-tag {
+      font-size: 0.59rem;
+      background: var(--brand-gold-soft);
+      color: var(--brand-gold);
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2px;
+    }
+
+    /* ==========================================================================
+       SLIDE 6: METODOLOGI PENELITIAN (Executive Visual Chunking)
+       ========================================================================== */
+    .slide-6-grid {
+      flex: 1;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+    .canva-quad-box {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 7px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      overflow: hidden;
+    }
+    .canva-quad-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 2px;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .canva-quad-title {
+      font-family: var(--font-heading);
+      font-size: 0.77rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+    .quad-pill-highlight {
+      font-weight: 700;
+      font-size: 0.60rem;
+      color: var(--color-blue);
+      background: var(--color-blue-soft);
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+    .quad-chips-row {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+    .quad-chip {
+      font-size: 0.59rem;
+      font-weight: 600;
+      color: var(--text-main);
+      background: var(--slide-bg);
+      border: 1px solid var(--card-border);
+      padding: 1.5px 5px;
+      border-radius: 3px;
+    }
+    .likert-scale-bar {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 3px;
+      text-align: center;
+    }
+    .likert-cell {
+      background: var(--slide-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 3px;
+      padding: 1.5px 0;
+      font-size: 0.57rem;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+    .green-formula-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+    }
+    .green-formula-cell {
+      background: var(--slide-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 4px;
+      padding: 3px 5px;
+      font-size: 0.58rem;
+      line-height: 1.2;
+    }
+    .green-formula-cell strong {
+      display: block;
+      color: var(--text-main);
+      font-size: 0.60rem;
+    }
+    .green-target-bar {
+      background: var(--color-emerald-soft);
+      color: var(--color-emerald);
+      border-radius: 4px;
+      padding: 2.5px 6px;
+      font-size: 0.59rem;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .quad-mini-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5px;
+    }
+    .quad-mini-row {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.62rem;
+      color: var(--text-muted);
+      line-height: 1.22;
+    }
+    .quad-mini-row strong {
+      color: var(--text-main);
+    }
+    .defense-alert-clean {
+      font-size: 0.58rem;
+      color: var(--color-rose);
+      background: var(--color-rose-soft);
+      padding: 2.5px 6px;
+      border-radius: 4px;
+      line-height: 1.22;
+      font-weight: 600;
+    }
+    .centering-highlight-box {
+      background: var(--brand-gold-soft);
+      border-left: 2.5px solid var(--brand-gold);
+      border-radius: 3px;
+      padding: 2.5px 6px;
+      font-size: 0.59rem;
+      color: var(--text-main);
+      line-height: 1.2;
+    }
+    .centering-highlight-box strong {
+      color: var(--brand-gold);
+    }
+
+    /* ==========================================================================
+       SLIDE 7: PENUTUP & KONTRIBUSI
+       ========================================================================== */
+    .slide-7-layout {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 6px;
+      gap: 12px;
+    }
+    .contrib-canva-duo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .contrib-canva-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-top: 4px solid var(--color-blue);
+      border-radius: 10px;
+      padding: 14px 18px;
+    }
+    .contrib-canva-kicker {
+      font-family: var(--font-heading);
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 3px;
+    }
+    .contrib-canva-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.02rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 5px;
+    }
+    .contrib-canva-card p {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .qa-center-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      text-align: center;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .qa-center-card h2 {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.01em;
+    }
+    .qa-center-card p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+    .qa-canva-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--brand-gold-soft);
+      color: var(--brand-gold);
+      font-family: var(--font-heading);
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 5px 16px;
+      border-radius: 999px;
+      margin-top: 10px;
+      letter-spacing: 0.04em;
+    }
+
+    /* Floating Navigation Controls */
+    .floating-presenter-bar {
+      position: absolute;
+      bottom: 10px;
+      right: 16px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(15, 23, 42, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 3px 8px;
+      border-radius: 999px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+      z-index: 50;
+      opacity: 0.35;
+      transition: opacity 0.2s ease;
+    }
+    .floating-presenter-bar:hover {
+      opacity: 1;
+    }
+    .bar-btn {
+      background: none;
+      border: none;
+      color: #FFFFFF;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 4px 7px;
+      border-radius: 999px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: background 0.15s ease;
+    }
+    .bar-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .bar-counter {
+      color: #F8FAFC;
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0 6px;
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Speaker Notes Drawer (Toggled with 'N') */
+    .notes-drawer-canva {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.96);
+      border-top: 3px solid var(--brand-gold);
+      padding: 12px 24px;
+      box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(16px);
+      z-index: 60;
+      display: none;
+    }
+    .notes-drawer-canva.open {
+      display: block;
+    }
+    .notes-drawer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .notes-drawer-title {
+      font-family: var(--font-heading);
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: #F59E0B;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .notes-drawer-hint {
+      font-size: 0.66rem;
+      color: #94A3B8;
+    }
+    .notes-drawer-body {
+      font-size: 0.8rem;
+      line-height: 1.48;
+      color: #F1F5F9;
+      max-height: 110px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Outer Rotating Pokéball for Broad Screen Display -->
+  <div class="body-ambient-pokeball" aria-hidden="true">
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 4 50 A 46 46 0 0 1 96 50 Z" fill="currentColor" fill-opacity="0.1" />
+      <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="3.5" fill="none" />
+      <line x1="4" y1="50" x2="35" y2="50" stroke="currentColor" stroke-width="3.5" />
+      <line x1="65" y1="50" x2="96" y2="50" stroke="currentColor" stroke-width="3.5" />
+      <circle cx="50" cy="50" r="15" stroke="currentColor" stroke-width="3.5" fill="none" />
+      <circle cx="50" cy="50" r="6" stroke="currentColor" stroke-width="2.5" fill="currentColor" fill-opacity="0.2" />
+    </svg>
+  </div>
+
+  <!-- Presentation Canvas (16:9 Viewport) -->
+  <main class="slide-canvas-viewport">
+    
+    <!-- Top Canva Accent Ribbon -->
+    <div class="slide-top-accent"></div>
+
+    <!-- Animated Pokéball Watermarks in Background -->
+    <div class="bg-pokeball-container" aria-hidden="true">
+      <div class="bg-pokeball-spinner">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 4 50 A 46 46 0 0 1 96 50 Z" fill="currentColor" fill-opacity="0.12" />
+          <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="4.5" fill="none" />
+          <line x1="4" y1="50" x2="35" y2="50" stroke="currentColor" stroke-width="4.5" />
+          <line x1="65" y1="50" x2="96" y2="50" stroke="currentColor" stroke-width="4.5" />
+          <circle cx="50" cy="50" r="15" stroke="currentColor" stroke-width="4.5" fill="var(--slide-bg)" />
+          <circle cx="50" cy="50" r="7" stroke="currentColor" stroke-width="3" fill="currentColor" fill-opacity="0.25" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="bg-pokeball-secondary" aria-hidden="true">
+      <div class="bg-pokeball-spinner-reverse">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 4 50 A 46 46 0 0 1 96 50 Z" fill="currentColor" fill-opacity="0.1" />
+          <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="4" fill="none" />
+          <line x1="4" y1="50" x2="35" y2="50" stroke="currentColor" stroke-width="4" />
+          <line x1="65" y1="50" x2="96" y2="50" stroke="currentColor" stroke-width="4" />
+          <circle cx="50" cy="50" r="15" stroke="currentColor" stroke-width="4" fill="var(--slide-bg)" />
+          <circle cx="50" cy="50" r="7" stroke="currentColor" stroke-width="2.5" fill="currentColor" fill-opacity="0.2" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Slides Deck -->
+    <div class="slides-deck">
+
+      <!-- ===================================================================
+           SLIDE 1: COVER
+           =================================================================== -->
+      <section class="slide active" id="slide-1" data-notes="Selamat pagi/siang Bapak/Ibu dosen penguji yang saya hormati, serta Ibu Dr. Fredella Colline selaku dosen pembimbing. Perkenalkan, saya Arthur Reezan, NIM 312023002, mahasiswa Program Studi S1 Manajemen konsentrasi Keuangan FEB UKRIDA. Pada kesempatan ini saya akan mempresentasikan proposal penelitian saya yang berjudul: Pengaruh Hedonic Motivation, Desire for Completeness, dan Speculative Motive terhadap Impulsive Buying Booster Pack Kartu Pokémon TCG dengan Self-Control sebagai Variabel Moderasi.">
+        <div class="slide-1-split">
+          <!-- Left Column -->
+          <div class="cover-left-col">
+            <div class="cover-uni-badge">
+              <img src="./assets/Logo_UKRIDA_300x300.png" alt="Logo UKRIDA Transparan">
+              <div class="cover-uni-text">
+                <h3>UNIVERSITAS KRISTEN KRIDA WACANA</h3>
+                <p>Fakultas Ekonomi dan Bisnis • S1 Manajemen Keuangan</p>
+              </div>
+            </div>
+
+            <div class="cover-kicker">SEMINAR PROPOSAL TUGAS AKHIR (MODEL B)</div>
+            
+            <h1 class="cover-h1">
+              PENGARUH <span class="hl-x1">HEDONIC MOTIVATION</span>, <span class="hl-x2">DESIRE FOR COMPLETENESS</span>, DAN <span class="hl-x3">SPECULATIVE MOTIVE</span> TERHADAP <span class="hl-y">IMPULSIVE BUYING</span> BOOSTER PACK KARTU POKÉMON TCG DENGAN <span class="hl-m">SELF-CONTROL</span> SEBAGAI VARIABEL MODERASI
+            </h1>
+
+            <p class="cover-desc">
+              Studi Perilaku Konsumen Ekonometrika Keuangan Perilaku (<em>Behavioral Finance</em>) pada Komoditas Kolektibel Fisik di Indonesia
+            </p>
+          </div>
+
+          <!-- Right Column Card -->
+          <div class="cover-right-col">
+            <div class="cover-right-title">Informasi Presentasi &amp; Identitas</div>
+
+            <div class="meta-person-row">
+              <span class="meta-person-label">Peneliti / Mahasiswa</span>
+              <span class="meta-person-name">Arthur Reezan</span>
+              <span class="meta-person-sub">NIM: 312023002 • Konsentrasi Keuangan</span>
+            </div>
+
+            <div class="meta-person-row">
+              <span class="meta-person-label">Dosen Pembimbing</span>
+              <span class="meta-person-name">Dr. Fredella Colline</span>
+              <span class="meta-person-sub">S.E., M.M., CFP®, PFM, CHCP-A</span>
+            </div>
+
+            <div class="meta-person-row">
+              <span class="meta-person-label">Institusi &amp; Waktu Sidang</span>
+              <span class="meta-person-name" style="font-size: 0.95rem;">FEB UKRIDA, Jakarta</span>
+              <span class="meta-person-sub">Tahun Akademik 2026</span>
+            </div>
+
+            <div class="cover-session-box">
+              <span>✦ Sesi Seminar Proposal</span>
+              <span>10 Menit Paparan</span>
+            </div>
+          </div>
+        </div>
+
+        <footer class="canva-footer">
+          <div class="canva-footer-left">
+            <span class="canva-footer-inst">Arthur Reezan • S1 Manajemen Keuangan UKRIDA</span>
+          </div>
+          <div class="canva-footer-page">01 / 07</div>
+        </footer>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 2: LATAR BELAKANG — FENOMENA PASAR
+           =================================================================== -->
+      <section class="slide" id="slide-2" data-notes="Penelitian ini dilatarbelakangi oleh fenomena perkembangan Pokémon Trading Card Game sebagai komoditas hobi yang bertransformasi menjadi aset alternatif bernilai finansial. Secara global, Pokémon merupakan waralaba media terbesar di dunia dengan pendapatan melebihi 100 miliar dolar AS, dan produksi kartu kumulatifnya melonjak drastis hingga 64,8 miliar lembar pada 2024. Di Indonesia, kartu resmi berbahasa Indonesia hadir sejak 2019 dan kini terdistribusi masif di jaringan ritel modern seperti Indomaret. Karakteristik produk ini sangat unik: dijual dengan kemasan acak (blind pack) seharga Rp20.000–Rp30.000, di mana pembeli tidak mengetahui isi kartu sebelum membuka segel. Peluang memperoleh kartu langka dengan nilai fantastis menciptakan ilusi kelangkaan yang mendorong perilaku pembelian berulang.">
+        <div class="canva-header">
+          <div class="canva-kicker-pill">01 | Pendahuluan • Fenomena &amp; Pasar</div>
+          <h2 class="canva-title">Fenomena Pokémon TCG &amp; Perkembangan Pasar Koleksi</h2>
+          <p class="canva-subtitle">Transformasi kartu hobi menjadi aset alternatif bernilai finansial dengan skala produksi global masif</p>
+        </div>
+
+        <div class="slide-2-layout">
+          <!-- Left: Hero Stat Cards + Sharp Exhibit 1.2 -->
+          <div class="slide-2-left">
+            <div class="stat-hero-duo">
+              <div class="stat-hero-card">
+                <div class="stat-hero-number">&gt; US$ 100 Miliar</div>
+                <div class="stat-hero-label">Waralaba Media #1 di Dunia (Statista)</div>
+              </div>
+              <div class="stat-hero-card" style="border-left-color: var(--color-blue);">
+                <div class="stat-hero-number" style="color: var(--color-blue);">64,8 Miliar</div>
+                <div class="stat-hero-label">Produksi Kumulatif Global (+125% sejak 2019)</div>
+              </div>
+            </div>
+
+            <!-- Single Sharp Hero Image: Production Growth -->
+            <div class="hero-photo-card">
+              <div class="hero-photo-wrapper">
+                <img src="./assets/gambar1_2_pokemon_tcg_production_growth.png" alt="Gambar 1.2: Pertumbuhan Produksi Kartu Global">
+              </div>
+              <div class="hero-photo-meta">
+                <span class="hero-photo-title">Gambar 1.2: Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global (2019–2024)</span>
+                <span class="hero-photo-sub">The Pokémon Company (2024)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: 3 Canva Feature Blocks -->
+          <div class="features-stack">
+            <div class="feature-item-canva">
+              <div class="feature-num-badge">1</div>
+              <div class="feature-body">
+                <h4>Distribusi Ritel Modern di Indonesia</h4>
+                <p>Kartu resmi berbahasa Indonesia dipasarkan sejak 2019 dan masuk ke jaringan minimarket (Indomaret, Alfamart) tanpa hambatan impor.</p>
+              </div>
+            </div>
+
+            <div class="feature-item-canva">
+              <div class="feature-num-badge" style="background: var(--color-blue);">2</div>
+              <div class="feature-body">
+                <h4>Karakteristik Kemasan Acak (Blind Pack)</h4>
+                <p>Booster pack seharga Rp20.000–Rp30.000 dijual dalam segel tertutup acak; pembeli tidak mengetahui isi kartu sebelum menyobek kemasan.</p>
+              </div>
+            </div>
+
+            <div class="feature-item-canva">
+              <div class="feature-num-badge" style="background: var(--brand-gold);">3</div>
+              <div class="feature-body">
+                <h4>Peluang Kartu Langka &amp; Spekulasi</h4>
+                <p>Peluang memperoleh kartu langka (<em>Secret Rare</em>) memicu efek <em>near-miss</em> dan ekspektasi nilai pasar sekunder yang mendorong pembelian berulang.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="canva-footer">
+          <div class="canva-footer-left">
+            <span class="canva-footer-inst">Arthur Reezan • S1 Manajemen Keuangan UKRIDA</span>
+          </div>
+          <div class="canva-footer-page">02 / 07</div>
+        </footer>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 3: MASALAH PENELITIAN & RESEARCH GAP
+           =================================================================== -->
+      <section class="slide" id="slide-3" data-notes="Permasalahan utama yang diangkat dalam penelitian ini adalah bagaimana kombinasi harga murah, kemasan acak, dan peluang mendapatkan kartu langka memicu pembelian impulsif berulang tanpa perencanaan anggaran. Di pasar sekunder, data PriceCharting membuktikan terjadinya disparitas harga ekstrem: kartu mentah dapat melonjak hingga 26 kali lipat setelah memperoleh penilaian profesional PSA 10. Fenomena ini menciptakan ekspektasi spekulatif bagi kolektor. Dari sisi literatur empiris, terdapat 3 research gap: inkonsistensi efek moderasi kontrol diri pada belanja hedonis antara temuan Pranggabayu dan Apidana; kekosongan empiris teori pseudo-set Barasz pada komoditas kartu fisik di Indonesia; serta riset motif investasi kartu terdahulu baru meneliti transaksi pasar terencana, belum pernah menguji apakah ekspektasi untung arbitrase memicu belanja impulsif di kasir ritel dengan kontrol diri sebagai pemoderasi. Kebaruan penelitian ini adalah mengintegrasikan motif hedonis, kelengkapan koleksi, dan spekulasi secara terpadu dengan Self-Control sebagai pemoderasi.">
+        <div class="canva-header">
+          <div class="canva-kicker-pill">01 | Pendahuluan • Masalah &amp; Gap</div>
+          <h2 class="canva-title">Masalah Penelitian &amp; Kesenjangan Riset Terdahulu</h2>
+          <p class="canva-subtitle">Kombinasi rangsangan produk kasir dan inkonsistensi temuan literatur empiris terdahulu</p>
+        </div>
+
+        <div class="slide-3-layout">
+          <!-- Left: Problem Stepper + PSA Disparity Exhibit -->
+          <div class="slide-3-left">
+            <div class="problem-stepper-box">
+              <div class="stepper-header-title">Alur Rantai Kausalitas Masalah Belanja Impulsif</div>
+              <div class="stepper-flow">
+                <div class="stepper-row">
+                  <span class="step-pill">1. Blind Pack (Acak)</span>
+                  <span class="step-sep">➔</span>
+                  <span class="step-pill">2. Harga Murah (Rp20rb)</span>
+                  <span class="step-sep">➔</span>
+                  <span class="step-pill">3. Peluang Kartu Langka</span>
+                </div>
+                <div class="stepper-row" style="margin-top: 2px;">
+                  <span class="step-pill" style="background: var(--brand-gold-soft); color: var(--brand-gold);">4. Disparitas PSA 10 Pasar Sekunder</span>
+                  <span class="step-sep">➔</span>
+                  <span class="step-pill" style="background: var(--color-rose-soft); color: var(--color-rose);">5. Pembelian Impulsif Berulang (Y)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="psa-exhibit-card">
+              <div class="psa-image-wrapper">
+                <img src="./assets/gambar1_3_psa_grading_price_disparity.png" alt="Gambar 1.3: Disparitas Harga Grading PSA 10">
+              </div>
+              <div class="psa-caption">
+                <h4>Gambar 1.3: Disparitas Harga Pasar Sekunder (Ungraded vs. PSA 10)</h4>
+                <p>Data PriceCharting membuktikan grading profesional melipatgandakan harga kartu hingga 26× lipat, memicu ekspektasi spekulasi.</p>
+                <div class="psa-footnote">*Ilustrasi fenomena pasar sekunder, bukan data sekunder yang diolah.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: 3 Gaps & Novelty Box -->
+          <div class="gap-cards-stack">
+            <div class="gap-pill-card">
+              <div class="gap-pill-head">
+                <span class="gap-pill-title">Gap X₁: Hedonic Motivation</span>
+                <span class="gap-pill-status">Inkonsistensi Moderasi</span>
+              </div>
+              <p class="gap-pill-text">
+                <strong>Pranggabayu &amp; Andjarwati (2022)</strong> mencatat pengaruh positif kuat, namun <strong>Apidana (2022)</strong> membuktikan kontrol diri gagal memoderasi dorongan belanja hedonis.
+              </p>
+            </div>
+
+            <div class="gap-pill-card" style="border-left-color: var(--brand-gold);">
+              <div class="gap-pill-head">
+                <span class="gap-pill-title" style="color: var(--brand-gold);">Gap X₂: Desire for Completeness</span>
+                <span class="gap-pill-status" style="background: var(--brand-gold-soft); color: var(--brand-gold);">Kekosongan Fisik</span>
+              </div>
+              <p class="gap-pill-text">
+                Teori <em>pseudo-set framing</em> (<strong>Barasz et al., 2017</strong>) terbukti di laboratorium, namun belum pernah diuji empiris pada kartu fisik bernomor seri di Indonesia.
+              </p>
+            </div>
+
+            <div class="gap-pill-card" style="border-left-color: var(--color-purple);">
+              <div class="gap-pill-head">
+                <span class="gap-pill-title" style="color: var(--color-purple);">Gap X₃: Speculative Motive</span>
+                <span class="gap-pill-status" style="background: var(--color-purple-soft); color: var(--color-purple);">Kasir vs. Investasi</span>
+              </div>
+              <p class="gap-pill-text">
+                <strong>Aryadi &amp; Lingga (2024)</strong> baru meneliti motif investasi pada transaksi terencana; <strong>belum ada studi yang menguji apakah ekspektasi spekulasi (arbitrase PSA 10) memicu belanja impulsif di kasir</strong> serta ketiadaan uji moderasi kontrol diri.
+              </p>
+            </div>
+
+            <div class="novelty-highlight-banner">
+              <div class="novelty-highlight-title">✨ Kebaruan Penelitian (Novelty)</div>
+              <div class="novelty-highlight-p">
+                Mengintegrasikan faktor hedonis (<em>X</em>₁), kelengkapan koleksi (<em>X</em>₂), dan motif spekulasi (<em>X</em>₃) secara terpadu dalam satu model struktural dengan <strong>Self-Control (<em>M</em>)</strong> sebagai variabel moderasi.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="canva-footer">
+          <div class="canva-footer-left">
+            <span class="canva-footer-inst">Arthur Reezan • S1 Manajemen Keuangan UKRIDA</span>
+          </div>
+          <div class="canva-footer-page">03 / 07</div>
+        </footer>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 4: TINJAUAN PUSTAKA & 5 VARIABEL
+           =================================================================== -->
+      <section class="slide" id="slide-4" data-notes="Penelitian ini dibangun di atas Behavioral Finance sebagai Grand Theory, yang menegaskan bahwa keputusan finansial individu tidak selalu rasional melainkan bias oleh faktor psikologis. Grand theory ini ditopang oleh 3 supporting theories: Teori S-O-R mengenai stimulus ritel kasir, Teori Pseudo-Set Framing dari Barasz et al. (2017) mengenai dorongan menuntaskan koleksi, serta Self-Regulation Theory dari Baumeister (2002) mengenai kapasitas volisional menahan dorongan belanja. Berdasarkan teori tersebut, penelitian ini mengoperasionalkan 5 variabel baku internasional: Y Impulsive Buying (skala IBTS), X1 Hedonic Motivation (skala Babin et al.), X2 Desire for Completeness (skala Barasz et al.), X3 Speculative Motive (skala Keynes & Shiller), serta M Self-Control (skala BSCS dari Tangney et al.).">
+        <div class="canva-header">
+          <div class="canva-kicker-pill">02 | Tinjauan Pustaka • Teori &amp; Variabel</div>
+          <h2 class="canva-title">Landasan Teori dan Operasionalisasi Variabel</h2>
+          <p class="canva-subtitle">Hierarki Grand Theory, Supporting Theories, dan 5 skala pengukuran baku internasional</p>
+        </div>
+
+        <div class="slide-4-layout">
+          <!-- Theory Banner: Grand Theory & 3 Supporting Theories Diperluas -->
+          <div class="theory-pill-banner">
+            <div class="grand-box">
+              <h4>🏛️ Grand Theory: Keuangan Perilaku (Behavioral Finance)</h4>
+              <p>
+                <strong>Tokoh Kunci:</strong> Simon (1955) • Kahneman &amp; Tversky (1979) • Shiller (2000) • Thaler &amp; Shefrin (1981).<br>
+                <strong>Premis Inti:</strong> Membuktikan keputusan finansial individu tidak rasional murni (<em>Homo Economicus</em>), melainkan dipengaruhi bias keterbatasan kognitif (<em>bounded rationality</em>), ilusi kendali (<em>gambler's fallacy</em>), dan dorongan afektif sesaat di etalase kasir.
+              </p>
+            </div>
+            <div class="supp-box">
+              <h4>3 Supporting Theories</h4>
+              <p>
+                <strong>1. S-O-R (1974):</strong> Stimulus kemasan etalase kasir (<em>S</em>) membangkitkan gairah afektif pembeli (<em>O</em>) ➔ menghasilkan respons belanja impulsif tanpa rencana (<em>R</em>).<br>
+                <strong>2. Pseudo-Set (2017):</strong> Pembingkaian seri bernomor urut memicu efek <em>Zeigarnik</em>—ketegangan slot kosong album yang memaksa penuntasan koleksi secara reaktif.<br>
+                <strong>3. Self-Regulation (2002):</strong> Kapasitas volisional (<em>planner-doer</em>) sebagai rem mental untuk menahan godaan belanja sesaat dan menunda gratifikasi demi anggaran.
+              </p>
+            </div>
+          </div>
+
+          <!-- 5 Columns: Definisi Mendalam + Konteks Ritel TCG + 4 Indikator + Skala Baku -->
+          <div class="variables-5-canva">
+            <!-- Y: Impulsive Buying -->
+            <div class="var-canva-box" style="border-top: 3px solid var(--color-rose);">
+              <div>
+                <div class="var-canva-top">
+                  <div class="var-tag-circle" style="background: var(--color-rose-soft); color: var(--color-rose);">Y</div>
+                  <span style="font-size: 0.62rem; font-weight: 700; color: var(--color-rose);">Dependen</span>
+                </div>
+                <div class="var-canva-name">Impulsive Buying</div>
+                <div class="var-canva-def">
+                  Pembelian seketika tanpa perencanaan anggaran awal (<em>unplanned</em>), dipicu desakan emosi mendadak dengan mengabaikan evaluasi konsekuensi finansial jangka panjang (Rook, 1987; Beatty &amp; Ferrell, 1998).
+                </div>
+                <div class="var-canva-context" style="border-left-color: var(--color-rose);">
+                  <strong>Fenomena Kasir:</strong> Aksi spontan comot <em>pack</em> di kasir minimarket tanpa rencana belanja kartu sebelumnya.
+                </div>
+              </div>
+              <div>
+                <div class="var-canva-ind">
+                  • Spontanitas pembelian tanpa rencana<br>
+                  • Desakan emosional seketika di kasir<br>
+                  • Pengabaian dampak alokasi anggaran<br>
+                  • Kecepatan eksekusi keputusan beli
+                </div>
+                <div class="var-canva-scale">IBTS (Verplanken, 2001) • 9 Item</div>
+              </div>
+            </div>
+
+            <!-- X1: Hedonic Motivation -->
+            <div class="var-canva-box" style="border-top: 3px solid var(--color-blue);">
+              <div>
+                <div class="var-canva-top">
+                  <div class="var-tag-circle" style="background: var(--color-blue-soft); color: var(--color-blue);">X₁</div>
+                  <span style="font-size: 0.62rem; font-weight: 700; color: var(--color-blue);">Independen</span>
+                </div>
+                <div class="var-canva-name">Hedonic Motivation</div>
+                <div class="var-canva-def">
+                  Motivasi belanja yang dipandu pencarian kenikmatan emosional, sensasi sensorik, hiburan (<em>fun &amp; novelty</em>), dan pelepasan stres di luar fungsi kegunaan produk (Babin et al., 1994; Arnold &amp; Reynolds, 2003).
+                </div>
+                <div class="var-canva-context" style="border-left-color: var(--color-blue);">
+                  <strong>Sensasi Hobi:</strong> Euforia merobek bungkus foil kemasan (<em>pack opening thrill</em>) demi memburu kejutan kartu langka.
+                </div>
+              </div>
+              <div>
+                <div class="var-canva-ind">
+                  • Sensasi petualangan berbelanja kartu<br>
+                  • Pelepasan stres &amp; gratifikasi emosional<br>
+                  • Kenikmatan sensorik merobek pack<br>
+                  • Kesenangan intrinsik tanpa beban
+                </div>
+                <div class="var-canva-scale">Babin et al. (1994) • 8 Item</div>
+              </div>
+            </div>
+
+            <!-- X2: Desire for Completeness -->
+            <div class="var-canva-box" style="border-top: 3px solid var(--color-emerald);">
+              <div>
+                <div class="var-canva-top">
+                  <div class="var-tag-circle" style="background: var(--color-emerald-soft); color: var(--color-emerald);">X₂</div>
+                  <span style="font-size: 0.62rem; font-weight: 700; color: var(--color-emerald);">Independen</span>
+                </div>
+                <div class="var-canva-name">Desire for Completeness</div>
+                <div class="var-canva-def">
+                  Ketegangan kognitif dan desakan psikologis untuk melengkapi seluruh elemen dalam sebuah himpunan bernomor seri resmi hingga genap sempurna (Barasz et al., 2017; Belk, 1995).
+                </div>
+                <div class="var-canva-context" style="border-left-color: var(--color-emerald);">
+                  <strong>Ketegangan Mental:</strong> Obsesi menutup slot kosong album <em>binder</em> koleksi (<em>Zeigarnik effect</em>).
+                </div>
+              </div>
+              <div>
+                <div class="var-canva-ind">
+                  • Obsesi menuntaskan nomor seri kartu<br>
+                  • Ketidaknyamanan mental slot kosong<br>
+                  • Desakan melengkapi saat mendekati finis<br>
+                  • Ambisi kepemilikan <em>master set</em> utuh
+                </div>
+                <div class="var-canva-scale">Barasz et al. (2017) • 6 Item</div>
+              </div>
+            </div>
+
+            <!-- X3: Speculative Motive -->
+            <div class="var-canva-box" style="border-top: 3px solid var(--brand-gold);">
+              <div>
+                <div class="var-canva-top">
+                  <div class="var-tag-circle" style="background: var(--brand-gold-soft); color: var(--brand-gold);">X₃</div>
+                  <span style="font-size: 0.62rem; font-weight: 700; color: var(--brand-gold);">Independen</span>
+                </div>
+                <div class="var-canva-name">Speculative Motive</div>
+                <div class="var-canva-def">
+                  Motif akuisisi yang didorong ekspektasi kenaikan nilai ekonomi, perolehan <em>capital gain</em>, dan peluang arbitrase kartu di pasar sekunder (Keynes, 1936; Shiller, 2000; Baur et al., 2018).
+                </div>
+                <div class="var-canva-context" style="border-left-color: var(--brand-gold);">
+                  <strong>Ekspektasi Cuan:</strong> Peluang menarik kartu langka bernilai jutaan rupiah untuk sertifikasi <em>grading</em> PSA 10.
+                </div>
+              </div>
+              <div>
+                <div class="var-canva-ind">
+                  • Ekspektasi kenaikan harga kartu langka<br>
+                  • Potensi arbitrase sertifikasi PSA 10<br>
+                  • Persepsi likuiditas pasar sekunder kartu<br>
+                  • Motif akumulasi aset bernilai investasi
+                </div>
+                <div class="var-canva-scale">Keynes &amp; Shiller • 6 Item</div>
+              </div>
+            </div>
+
+            <!-- M: Self-Control -->
+            <div class="var-canva-box" style="border-top: 3px solid var(--color-purple);">
+              <div>
+                <div class="var-canva-top">
+                  <div class="var-tag-circle" style="background: var(--color-purple-soft); color: var(--color-purple);">M</div>
+                  <span style="font-size: 0.62rem; font-weight: 700; color: var(--color-purple);">Moderasi</span>
+                </div>
+                <div class="var-canva-name">Self-Control</div>
+                <div class="var-canva-def">
+                  Kapasitas regulasi diri volisional untuk mengendalikan impuls sesaat, meredam godaan kasir, dan menunda kepuasan demi disiplin finansial (Baumeister, 2002; Tangney et al., 2004).
+                </div>
+                <div class="var-canva-context" style="border-left-color: var(--color-purple);">
+                  <strong>Rem Volisional:</strong> Disiplin kognitif menahan diri dari godaan memborong pack secara spontan di etalase kasir.
+                </div>
+              </div>
+              <div>
+                <div class="var-canva-ind">
+                  • Disiplin alokasi anggaran belanja<br>
+                  • Resistensi godaan display etalase kasir<br>
+                  • Kemampuan menunda kepuasan instan<br>
+                  • Kepatuhan rencana finansial pribadi
+                </div>
+                <div class="var-canva-scale">BSCS (Tangney, 2004) • 8 Item</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="canva-footer">
+          <div class="canva-footer-left">
+            <span class="canva-footer-inst">Arthur Reezan • S1 Manajemen Keuangan UKRIDA</span>
+          </div>
+          <div class="canva-footer-page">04 / 07</div>
+        </footer>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 5: RISET TERDAHULU & MODEL PENELITIAN
+           =================================================================== -->
+      <section class="slide" id="slide-5" data-notes="Berdasarkan sintesis riset terdahulu, hubungan antarvariabel dirumuskan ke dalam 6 hipotesis terarah. H1, H2, dan H3 menguji pengaruh langsung positif dari Hedonic Motivation, Desire for Completeness, dan Speculative Motive terhadap Impulsive Buying. Sedangkan H4, H5, dan H6 menguji efek moderasi Self-Control yang dihipotesiskan memperlemah hubungan masing-masing variabel independen terhadap pembelian impulsif. Pengujian dilakukan melalui Moderated Regression Analysis (MRA) 2-tahap, di mana Model 1 mengestimasi pengaruh simultan X1, X2, X3, dan M, sedangkan Model 2 memasukkan tiga istilah interaksi perkalian untuk menguji peningkatan Delta R-Square secara murni.">
+        <div class="canva-header">
+          <div class="canva-kicker-pill">02 | Rerangka Penelitian • Model &amp; 6 Hipotesis</div>
+          <h2 class="canva-title">Penelitian Sebelumnya, Model Penelitian &amp; Hipotesis</h2>
+          <p class="canva-subtitle">Dasar empiris pengujian struktural Moderated Regression Analysis (MRA)</p>
+        </div>
+
+        <div class="slide-5-layout">
+          <!-- Top Table -->
+          <div class="lit-table-wrapper">
+            <table class="lit-table-canva">
+              <thead>
+                <tr>
+                  <th>Hubungan Model</th>
+                  <th>Fokus Riset Terdahulu</th>
+                  <th>Rujukan Empiris Kunci</th>
+                  <th>Dasar Hipotesis</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>X₁ ➔ Y</strong></td>
+                  <td>Motivasi hedonis memicu belanja impulsif tanpa rencana</td>
+                  <td>Pranggabayu &amp; Andjarwati (2022); Gong et al. (2024)</td>
+                  <td><span style="font-weight: 700; color: var(--color-blue);">Dasar H₁ (+)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>X₂ ➔ Y</strong></td>
+                  <td>Hasrat kelengkapan set memicu ketegangan belanja</td>
+                  <td>Barasz et al. (2017); Dewi et al. (2026)</td>
+                  <td><span style="font-weight: 700; color: var(--color-emerald);">Dasar H₂ (+)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>X₃ ➔ Y</strong></td>
+                  <td>Motif investasi &amp; spekulasi arbitrase mendorong transaksi</td>
+                  <td>Aryadi &amp; Lingga (2024); Colline (2024)</td>
+                  <td><span style="font-weight: 700; color: var(--brand-gold);">Dasar H₃ (+)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>M ➔ (X₁₋₃ ➔ Y)</strong></td>
+                  <td>Kontrol diri volisional meredam impulsivitas belanja</td>
+                  <td>Artadita &amp; Firmialy (2024); Lienardy &amp; Panasea (2026)</td>
+                  <td><span style="font-weight: 700; color: var(--color-purple);">Dasar H₄, H₅, H₆ (-)</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Bottom: Clean Flowchart & Hypotheses List -->
+          <div class="model-hypo-grid">
+            <div class="model-chart-box">
+              <div class="rerangka-photo-wrapper">
+                <img src="./assets/gambar_rerangka_penelitian.png" alt="Gambar 2.1: Model Rerangka Konseptual Penelitian">
+              </div>
+              <div class="model-chart-meta">
+                <span class="model-chart-title">Gambar 2.1: Model Rerangka Konseptual Penelitian</span>
+                <span class="model-chart-sub">MRA OLS Dua-Tahap (Aiken &amp; West, 1991)</span>
+              </div>
+            </div>
+
+            <!-- Right Column: Hypotheses & Detailed Two-Stage MRA Explanation -->
+            <div class="hypo-mra-column">
+              <!-- Hypotheses Group Card -->
+              <div class="hypo-group-card">
+                <div class="hypo-group-header">
+                  <span>🎯 Enam Hipotesis Penelitian Terarah</span>
+                  <span style="font-size: 0.58rem; color: var(--text-light); font-weight: 500;">H₁–H₃ Langsung (+) • H₄–H₆ Moderasi (-)</span>
+                </div>
+                <div class="hypo-item-row">
+                  <span class="hypo-pill" style="background: var(--color-blue-soft); color: var(--color-blue);">H₁</span>
+                  <span><strong>Hedonic Motivation</strong> berpengaruh positif terhadap <strong>Impulsive Buying</strong>.</span>
+                </div>
+                <div class="hypo-item-row">
+                  <span class="hypo-pill" style="background: var(--color-emerald-soft); color: var(--color-emerald);">H₂</span>
+                  <span><strong>Desire for Completeness</strong> berpengaruh positif terhadap <strong>Impulsive Buying</strong>.</span>
+                </div>
+                <div class="hypo-item-row">
+                  <span class="hypo-pill" style="background: var(--brand-gold-soft); color: var(--brand-gold);">H₃</span>
+                  <span><strong>Speculative Motive</strong> berpengaruh positif terhadap <strong>Impulsive Buying</strong>.</span>
+                </div>
+                <div class="hypo-item-row">
+                  <span class="hypo-pill" style="background: var(--color-purple-soft); color: var(--color-purple);">H₄</span>
+                  <span><strong>Self-Control</strong> memoderasi (memperlemah) pengaruh <strong>Hedonic Motivation</strong>.</span>
+                </div>
+                <div class="hypo-item-row">
+                  <span class="hypo-pill" style="background: var(--color-purple-soft); color: var(--color-purple);">H₅</span>
+                  <span><strong>Self-Control</strong> memoderasi (memperlemah) pengaruh <strong>Desire for Completeness</strong>.</span>
+                </div>
+                <div class="hypo-item-row">
+                  <span class="hypo-pill" style="background: var(--color-purple-soft); color: var(--color-purple);">H₆</span>
+                  <span><strong>Self-Control</strong> memoderasi (memperlemah) pengaruh <strong>Speculative Motive</strong>.</span>
+                </div>
+              </div>
+
+              <!-- Two-Stage MRA Explanation Card -->
+              <div class="mra-explain-card">
+                <div class="mra-explain-head">
+                  <span class="mra-explain-title">📐 Prosedur Hierarkis MRA Dua-Tahap (Aiken &amp; West, 1991)</span>
+                  <span style="font-size: 0.58rem; color: var(--text-light); font-weight: 600;">Mean-Centered (<em>X</em>* &amp; <em>M</em>*)</span>
+                </div>
+
+                <div class="mra-stage-grid">
+                  <div class="mra-stage-box">
+                    <strong>Tahap 1: Model Baseline (Efek Utama)</strong>
+                    Menguji pengaruh aditif <em>X</em>₁, <em>X</em>₂, <em>X</em>₃ serta kontrol <em>M</em>* untuk mengisolasi baseline daya jelas (<em>R</em>₁²).
+                    <span class="mra-stage-formula">Y = α + β₁X₁* + β₂X₂* + β₃X₃* + β₄M* + e</span>
+                  </div>
+
+                  <div class="mra-stage-box">
+                    <strong>Tahap 2: Model Interaksi Penuh (Moderasi)</strong>
+                    Memasukkan 3 istilah interaksi (<em>X</em>* · <em>M</em>*) untuk membuktikan efek moderasi murni (<em>R</em>₂²).
+                    <span class="mra-stage-formula">Model 1 + β₅(X₁*·M*) + β₆(X₂*·M*) + β₇(X₃*·M*) + e</span>
+                  </div>
+                </div>
+
+                <div class="mra-fchange-tag">
+                  <span>💡 <strong>Uji Moderasi Murni:</strong> Signifikansi kenaikan Δ<em>R</em>² (<em>R</em>₂² − <em>R</em>₁²) diuji via <strong><em>F</em><sub>change</sub> (<em>p</em> &lt; 0,05)</strong></span>
+                  <span>Efek Memperlemah: β₅, β₆, β₇ &lt; 0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="canva-footer">
+          <div class="canva-footer-left">
+            <span class="canva-footer-inst">Arthur Reezan • S1 Manajemen Keuangan UKRIDA</span>
+          </div>
+          <div class="canva-footer-page">05 / 07</div>
+        </footer>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 6: METODOLOGI PENELITIAN
+           =================================================================== -->
+      <section class="slide" id="slide-6" data-notes="Metodologi penelitian dirancang dengan pendekatan kuantitatif asosiatif kausal dan survei cross-sectional berbasis kuesioner skala Likert 5 poin. Populasi adalah komunitas kolektor Pokémon TCG di Indonesia yang bersifat tak terbatas, dengan teknik purposive sampling bagi WNI berusia minimal 17 tahun yang pernah membeli booster pack fisik dalam setahun terakhir. Berdasarkan formula Green (1991), ukuran sampel minimum adalah 111 responden, dengan target pengumpulan 120 hingga 150 responden, didahului pilot test 30 responden. Untuk pengujian instrumen digunakan korelasi Pearson dan Cronbach's Alpha minimal 0,70, serta pemenuhan asumsi klasik normalitas, multikolinearitas, dan heteroskedastisitas Glejser—tanpa uji autokorelasi karena data bersifat cross-sectional. Yang paling krusial, untuk mengatasi multikolinearitas esensial akibat perkalian variabel moderasi, seluruh variabel prediktor dan moderator ditransformasikan menggunakan teknik Mean-Centering sesuai kaidah Aiken & West (1991).">
+        <div class="canva-header">
+          <div class="canva-kicker-pill">03 | Metode Penelitian • Desain &amp; Analisis</div>
+          <h2 class="canva-title">Rancangan Metode Penelitian &amp; Analisis Data</h2>
+          <p class="canva-subtitle">Protokol purposive sampling, kaidah sampel Green (1991), dan ekonometrika MRA mean-centering</p>
+        </div>
+
+        <div class="slide-6-grid">
+          <!-- Quad 1: Desain Riset & Pengumpulan Data -->
+          <div class="canva-quad-box">
+            <div class="canva-quad-head">
+              <span class="canva-quad-title">1. Desain Riset &amp; Pengumpulan Data</span>
+              <span class="quad-pill-highlight">Kuantitatif</span>
+            </div>
+            <div class="quad-chips-row">
+              <span class="quad-chip">🔬 Asosiatif Kausal</span>
+              <span class="quad-chip">⏱️ Kros-Seksional</span>
+              <span class="quad-chip">📋 <em>Google Forms</em> Daring</span>
+            </div>
+            <div style="font-size: 0.62rem; color: var(--text-muted); line-height: 1.25;">
+              <strong>Penyebaran:</strong> Kuesioner daring terstruktur dibagikan ke komunitas resmi Pokémon TCG di Indonesia.
+            </div>
+            <div style="margin-top: 1px;">
+              <div style="font-size: 0.59rem; font-weight: 700; color: var(--text-main); margin-bottom: 2px;">Skala Ordinal Likert 5-Poin:</div>
+              <div class="likert-scale-bar">
+                <div class="likert-cell">1: STS</div>
+                <div class="likert-cell">2: TS</div>
+                <div class="likert-cell">3: N</div>
+                <div class="likert-cell">4: S</div>
+                <div class="likert-cell" style="background: var(--color-blue-soft); color: var(--color-blue); border-color: var(--color-blue);">5: SS</div>
+              </div>
+            </div>
+            <div style="font-size: 0.58rem; color: var(--text-light); line-height: 1.2;">
+              • <strong>Skor Komposit:</strong> Rata-rata butir per konstruk variabel penelitian (Ghozali, 2018).
+            </div>
+          </div>
+
+          <!-- Quad 2: Populasi & Ukuran Sampel -->
+          <div class="canva-quad-box">
+            <div class="canva-quad-head">
+              <span class="canva-quad-title">2. Populasi &amp; Ukuran Sampel</span>
+              <span class="quad-pill-highlight" style="color: var(--color-emerald); background: var(--color-emerald-soft);">Sampling</span>
+            </div>
+            <div class="quad-chips-row">
+              <span class="quad-chip">🌐 Populasi: <em>Infinite</em></span>
+              <span class="quad-chip">🎯 <em>Purposive Sampling</em></span>
+            </div>
+            <div style="font-size: 0.60rem; color: var(--text-muted); line-height: 1.22;">
+              <strong>Kriteria Inklusi:</strong> WNI usia ≥ 17 tahun &amp; pernah beli <em>booster pack</em> fisik resmi min. 1× (12 bulan terakhir).
+            </div>
+            <div class="green-formula-grid">
+              <div class="green-formula-cell">
+                <strong>Uji-F Simultan (Green, 1991)</strong>
+                <em>N</em> ≥ 50 + 8(<em>k</em>=7) = <strong>106 Responden</strong>
+              </div>
+              <div class="green-formula-cell">
+                <strong>Uji-t Parsial (Ambang Mutlak)</strong>
+                <em>N</em> ≥ 104 + (<em>k</em>=7) = <strong>111 Responden</strong>
+              </div>
+            </div>
+            <div class="green-target-bar">
+              <span>🎯 Target Sampel: <strong>120 s.d. 150 Responden</strong></span>
+              <span>Pilot Test: <em>N</em> = 30</span>
+            </div>
+          </div>
+
+          <!-- Quad 3: Uji Kualitas Data & Asumsi Klasik -->
+          <div class="canva-quad-box">
+            <div class="canva-quad-head">
+              <span class="canva-quad-title">3. Uji Kualitas Data &amp; Asumsi Klasik</span>
+              <span class="quad-pill-highlight" style="color: var(--brand-gold); background: var(--brand-gold-soft);">Asumsi</span>
+            </div>
+            <div class="quad-mini-rows">
+              <div class="quad-mini-row">
+                <span style="font-size: 0.65rem;">✔️</span>
+                <span><strong>Validitas Konstruk:</strong> Pearson Product Moment (<em>r</em><sub>hitung</sub> &gt; <em>r</em><sub>tabel</sub>; sig &lt; 0,05).</span>
+              </div>
+              <div class="quad-mini-row">
+                <span style="font-size: 0.65rem;">✔️</span>
+                <span><strong>Reliabilitas Konsistensi:</strong> Cronbach's Alpha (α ≥ 0,70 standar Sekaran &amp; Ghozali).</span>
+              </div>
+              <div class="quad-mini-row">
+                <span style="font-size: 0.65rem;">✔️</span>
+                <span><strong>Uji Asumsi Klasik OLS:</strong> Normalitas K-S (&gt; 0,05), Multiko VIF &lt; 10, Glejser (&gt; 0,05).</span>
+              </div>
+            </div>
+            <div class="defense-alert-clean">
+              🛡️ <strong>Tameng Sidang (Bebas Autokorelasi):</strong> Tidak dilakukan karena data survei primer bersifat kros-seksional (<em>cross-sectional</em>), bukan data runtun waktu / <em>time-series</em> (Ghozali, 2018).
+            </div>
+          </div>
+
+          <!-- Quad 4: Ekonometrika MRA & Centering -->
+          <div class="canva-quad-box">
+            <div class="canva-quad-head">
+              <span class="canva-quad-title">4. Ekonometrika MRA &amp; Centering</span>
+              <span class="quad-pill-highlight" style="color: var(--color-purple); background: var(--color-purple-soft);">MRA OLS</span>
+            </div>
+            <div class="centering-highlight-box">
+              <strong>Solusi Mutlak: Mean-Centering (Aiken &amp; West, 1991)</strong><br>
+              <em>X<sub>i</sub></em>* = <em>X<sub>i</sub></em> − <em>X̄<sub>i</sub></em> &amp; <em>M</em>* = <em>M</em> − <em>M̄</em> untuk melumpuhkan multikolinearitas esensial.
+            </div>
+            <div class="quad-mini-rows">
+              <div class="quad-mini-row">
+                <span style="color: var(--color-purple); font-weight: 800;">1.</span>
+                <span><strong>Uji Parsial (t-test):</strong> Arah efek langsung H₁–H₃ (β &gt; 0); Moderasi H₄–H₆ (β &lt; 0).</span>
+              </div>
+              <div class="quad-mini-row">
+                <span style="color: var(--color-purple); font-weight: 800;">2.</span>
+                <span><strong>Uji Moderasi Murni:</strong> Peningkatan <strong>Δ<em>R</em>²</strong> &amp; signifikansi <strong><em>F</em><sub>change</sub> (<em>p</em> &lt; 0,05)</strong>.</span>
+              </div>
+              <div class="quad-mini-row">
+                <span style="color: var(--color-purple); font-weight: 800;">3.</span>
+                <span><strong>Simple Slopes Analysis:</strong> Uji kemiringan pada 3 level <em>Self-Control</em> (−1 SD, Mean, +1 SD).</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="canva-footer">
+          <div class="canva-footer-left">
+            <span class="canva-footer-inst">Arthur Reezan • S1 Manajemen Keuangan UKRIDA</span>
+          </div>
+          <div class="canva-footer-page">06 / 07</div>
+        </footer>
+      </section>
+
+      <!-- ===================================================================
+           SLIDE 7: PENUTUP & KONTRIBUSI
+           =================================================================== -->
+      <section class="slide" id="slide-7" data-notes="Sebagai penutup, penelitian ini diharapkan memberikan dua kontribusi utama: secara teoretis memperkaya literasi Behavioral Finance pada komoditas hobi fisik di Indonesia dan memvalidasi efek moderasi Self-Control; serta secara praktis memberikan edukasi literasi keuangan dan kesadaran proteksi finansial bagi generasi muda agar terhindar dari jebakan impulsif di etalase kasir ritel modern. Demikian pemaparan proposal skripsi saya. Saya mengucapkan terima kasih yang sebesar-besarnya kepada Ibu Dr. Fredella Colline atas bimbingannya, serta kepada Bapak/Ibu Dewan Penguji. Sesi tanya jawab dengan hormat saya buka.">
+        <div class="canva-header">
+          <div class="canva-kicker-pill">04 | Penutup • Kontribusi &amp; Tanya Jawab</div>
+          <h2 class="canva-title">Kesimpulan Rancangan &amp; Kontribusi Penelitian</h2>
+          <p class="canva-subtitle">Nilai kemanfaatan riset bagi perkembangan ilmu ekonomi dan pembukaan sesi tanya jawab</p>
+        </div>
+
+        <div class="slide-7-layout">
+          <!-- 2 Benefit Cards -->
+          <div class="contrib-canva-duo">
+            <div class="contrib-canva-card">
+              <div class="contrib-canva-kicker" style="color: var(--color-blue);">📚 Kontribusi Teoretis</div>
+              <h3>Pengayaan Literatur Behavioral Finance</h3>
+              <p>
+                Memperluas penerapan teori keuangan perilaku pada komoditas hobi fisik bernilai pasar sekunder nyata di Indonesia, serta memvalidasi peran <em>Self-Control</em> sebagai rem volisional kognitif peredam bias kelengkapan koleksi dan spekulasi arbitrase.
+              </p>
+            </div>
+
+            <div class="contrib-canva-card" style="border-top-color: var(--color-emerald);">
+              <div class="contrib-canva-kicker" style="color: var(--color-emerald);">💼 Kontribusi Praktis</div>
+              <h3>Edukasi Literasi &amp; Proteksi Finansial Kolektor</h3>
+              <p>
+                Menjadi pedoman kesadaran finansial bagi komunitas kolektor generasi muda agar terhindar dari jebakan pengeluaran impulsif tanpa anggaran akibat euforia perburuan kartu langka (<em>SAR / PSA 10</em>) di etalase kasir ritel modern.
+              </p>
+            </div>
+          </div>
+
+          <!-- Closing Card -->
+          <div class="qa-center-card">
+            <h2>"Demikian Pemaparan Usulan Proposal Skripsi"</h2>
+            <p>Terima Kasih atas Bimbingan Ibu Dr. Fredella Colline dan Perhatian Bapak/Ibu Dewan Penguji</p>
+            <div class="qa-canva-pill">
+              💬 Sesi Tanya Jawab (Q&amp;A) Dibuka
+            </div>
+          </div>
+        </div>
+
+        <footer class="canva-footer">
+          <div class="canva-footer-left">
+            <span class="canva-footer-inst">Arthur Reezan • S1 Manajemen Keuangan UKRIDA</span>
+          </div>
+          <div class="canva-footer-page">07 / 07</div>
+        </footer>
+      </section>
+
+    </div>
+
+    <!-- Floating Discreet Presenter Controls (Canva Presentation Mode) -->
+    <div class="floating-presenter-bar">
+      <button class="bar-btn" id="prevBtn" title="Slide Sebelumnya (Panah Kiri)">◀</button>
+      <span class="bar-counter"><span id="slideCurrent">1</span> / 7</span>
+      <button class="bar-btn" id="nextBtn" title="Slide Berikutnya (Panah Kanan / Spasi)">▶</button>
+      <button class="bar-btn" id="themeToggleBtn" title="Ganti Tema (Light / Dark)">🌓</button>
+      <button class="bar-btn" id="notesBtn" title="Naskah Narasi (N)">🎙️</button>
+      <button class="bar-btn" id="fullscreenBtn" title="Layar Penuh (F)">⛶</button>
+    </div>
+
+    <!-- Speaker Notes Drawer (Toggled by 'N') -->
+    <div class="notes-drawer-canva" id="notesDrawer">
+      <div class="notes-drawer-top">
+        <span class="notes-drawer-title">🎙️ Naskah Narasi Bicara — Slide <span id="notesSlideNumber">1</span></span>
+        <span class="notes-drawer-hint">Tekan tombol 'N' pada keyboard untuk menutup</span>
+      </div>
+      <div class="notes-drawer-body" id="notesContent">
+        Memuat naskah bicara...
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const slides = document.querySelectorAll('.slide');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const notesBtn = document.getElementById('notesBtn');
+      const fullscreenBtn = document.getElementById('fullscreenBtn');
+      const themeToggleBtn = document.getElementById('themeToggleBtn');
+      const slideCurrent = document.getElementById('slideCurrent');
+      const notesDrawer = document.getElementById('notesDrawer');
+      const notesContent = document.getElementById('notesContent');
+      const notesSlideNumber = document.getElementById('notesSlideNumber');
+
+      let currentSlide = 0;
+      const totalSlides = slides.length;
+
+      // Update Slide View
+      function updateSlide(index) {
+        if (index < 0) index = 0;
+        if (index >= totalSlides) index = totalSlides - 1;
+        currentSlide = index;
+
+        slides.forEach((slide, i) => {
+          slide.classList.toggle('active', i === currentSlide);
+        });
+
+        slideCurrent.textContent = currentSlide + 1;
+
+        // Update speaker notes
+        const activeSlide = slides[currentSlide];
+        const notes = activeSlide.getAttribute('data-notes') || 'Tidak ada catatan pembicara.';
+        notesContent.textContent = notes;
+        notesSlideNumber.textContent = currentSlide + 1;
+      }
+
+      // Prev / Next Listeners
+      prevBtn.addEventListener('click', () => updateSlide(currentSlide - 1));
+      nextBtn.addEventListener('click', () => updateSlide(currentSlide + 1));
+
+      // Speaker Notes Toggle
+      function toggleNotes() {
+        notesDrawer.classList.toggle('open');
+      }
+      notesBtn.addEventListener('click', toggleNotes);
+
+      // Fullscreen Toggle
+      function toggleFullscreen() {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen().catch(err => {
+            console.error(`Gagal fullscreen: ${err.message}`);
+          });
+        } else {
+          document.exitFullscreen();
+        }
+      }
+      fullscreenBtn.addEventListener('click', toggleFullscreen);
+
+      // Theme Switcher (Canva Editorial Light vs Canva Navy Dark)
+      let isDark = false;
+      themeToggleBtn.addEventListener('click', () => {
+        isDark = !isDark;
+        if (isDark) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+      });
+
+      // Keyboard Controls
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+          e.preventDefault();
+          updateSlide(currentSlide + 1);
+        } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+          e.preventDefault();
+          updateSlide(currentSlide - 1);
+        } else if (e.key === 'Home') {
+          e.preventDefault();
+          updateSlide(0);
+        } else if (e.key === 'End') {
+          e.preventDefault();
+          updateSlide(totalSlides - 1);
+        } else if (e.key.toLowerCase() === 'n') {
+          e.preventDefault();
+          toggleNotes();
+        } else if (e.key.toLowerCase() === 'f') {
+          e.preventDefault();
+          toggleFullscreen();
+        }
+      });
+
+      // Initialize Slide 1
+      updateSlide(0);
+    });
+  </script>
+</body>
+</html>

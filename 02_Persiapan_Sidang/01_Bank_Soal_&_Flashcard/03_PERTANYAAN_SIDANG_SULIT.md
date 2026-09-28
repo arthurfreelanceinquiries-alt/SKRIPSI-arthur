@@ -158,7 +158,20 @@
 >
 > Seluruh tautan resmi dan dokumentasi verifikasi asal data ini telah tercatat rapi pada dokumen metodologi penelitian saya."
 
+### ❓ SULIT 13: "Pada Bab 3, mengapa Anda mencantumkan rumus F-change (Persamaan 3.5) dengan angka 3 dan N − 8? Mengapa tidak memakai uji F biasa, dan dari mana asal angka-angka itu?"
+
+> **💡 Jawaban:**
+> "Terima kasih atas pertanyaannya yang sangat mendalam mengenai ekonometrika model MRA, Bapak/Ibu Penguji.
+>
+> 1. **Mengapa F-change, bukan F biasa:** Uji F biasa hanya menguji apakah seluruh prediktor secara gabungan berpengaruh terhadap $Y$. Sedangkan **$F_{\text{change}}$ (*Incremental $F$-Test*)** khusus dirancang untuk menguji regresi hierarkis: apakah penambahan blok variabel interaksi moderasi di Model 2 secara signifikan mampu meningkatkan daya penjelas model ($\Delta R^2$) melampaui Model 1 *baseline* aditif (Aiken & West, 1991; Cohen et al., 2003; Ghozali, 2018).
+>
+> 2. **Dari mana asal angka 3 ($df_1 = 3$):** Pembilang $df_1$ adalah jumlah variabel prediktor baru yang ditambahkan saat melangkah dari Model 1 ke Model 2. Model 1 memiliki 4 prediktor ($X_1, X_2, X_3, M$), sedangkan Model 2 memiliki 7 prediktor. Selisih penambahannya tepat **3 variabel interaksi moderasi**: $X_1^* \cdot M^*$, $X_2^* \cdot M^*$, dan $X_3^* \cdot M^*$.
+>
+> 3. **Dari mana asal angka 8 ($df_2 = N - 8$):** Penyebut $df_2$ adalah derajat kebebasan residual regresi dengan rumus baku $N - (k + 1)$ atau $N - k - 1$. Pada Model 2 ada 7 prediktor ($k = 7$) ditambah 1 konstanta intersep ($\alpha$), sehingga total ada **8 parameter** yang dihitung SPSS. Sisa derajat kebebasannya menjadi $N - (7 + 1) = \mathbf{N - 8}$. Misal sampel saya $N = 120$, maka $df_2 = 112$.
+>
+> 4. **Kaitan dengan SPSS:** Nilai ini persis mencerminkan baris uji pada tabel output SPSS *Model Summary* di kolom *R Square Change*, *F Change*, *df1*, *df2*, dan *Sig. F Change*."
+
 ---
 
-*Total: 12 pertanyaan level sulit. Jika bisa menjawab semua ini, seminar proposal dan sidang skripsi akan dilalui dengan sangat percaya diri!* 🏆
+*Total: 13 pertanyaan level sulit. Jika bisa menjawab semua ini, seminar proposal dan sidang skripsi akan dilalui dengan sangat percaya diri!* 🏆
 

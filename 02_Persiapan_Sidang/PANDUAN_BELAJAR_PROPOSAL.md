@@ -15,31 +15,33 @@
 
 ---
 
-## 📌 DAFTAR ISI PANDUAN
-0. [Briefing H-1: Format Sempro, Mindset Nol & Cara Pakai Panduan Ini](#0-briefing-h-1-format-sempro-mindset-nol--cara-pakai-panduan-ini)
-1. [Ringkasan Eksekutif & Peta Konsep Penelitian](#1-ringkasan-eksekutif--peta-konsep-penelitian)
-2. [Latar Belakang & Ekosistem Waralaba Pokémon](#2-latar-belakang--ekosistem-waralaba-pokémon)
-3. [Mengapa Memilih Kartu Koleksi (TCG)?](#3-mengapa-memilih-kartu-koleksi-tcg)
-4. [Kamus Lengkap Istilah: TCG, Grading, & Psikologi Keuangan](#4-kamus-lengkap-istilah)
-5. [Bedah Variabel Penelitian: Konsep, Dimensi, & Operasionalisasi](#5-bedah-variabel-penelitian)
-6. [Struktur Teori BAB 2: Grand Theory & Supporting Theories](#6-struktur-teori-bab-2)
-7. [Penelitian Terdahulu & Pemetaan Anteseden Impulsive Buying](#7-penelitian-terdahulu--anteseden-impulsive-buying)
-8. [Logika Kausalitas & 4-Tier Pembuktian Hipotesis (H1–H6)](#8-logika-kausalitas--pembuktian-hipotesis)
-9. [Metodologi Penelitian & Teknik Analisis MRA](#9-metodologi-penelitian--teknik-analisis-mra)
-10. [Simulasi Pertanyaan Bimbingan/Sidang & Kunci Jawaban (17 Skenario)](#10-simulasi-pertanyaan-bimbingan-sidang--kunci-jawaban)
-11. [Cheat Sheet 1 Halaman (Hafalan Kilat Menjelang Sidang)](#11-cheat-sheet-1-halaman)
-12. [Bedah Tabel 1.1: 7 Research Gap dalam 2 Menit](#12-bedah-tabel-11-7-research-gap-dalam-2-menit)
-13. [Alur Analisis Tahap 1–5 Bahasa Sehari-hari + Tabel Ambang Batas](#13-alur-analisis-tahap-15-bahasa-sehari-hari--tabel-ambang-batas)
-14. [Naskah Bicara 7 Slide + Taktik Sidang](#14-naskah-bicara-7-slide--taktik-sidang)
-15. [Bank Pertanyaan Tambahan Q18–Q34 (Statistik, Lapangan & Jebakan)](#15-bank-pertanyaan-tambahan-q18q34)
-16. [Checklist Malam Ini & Pagi Hari](#16-checklist-malam-ini--pagi-hari)
-17. [Penguasaan Bab 3 Total dari Nol (Wajib Hafal)](#17-penguasaan-bab-3-total-dari-nol-wajib-hafal)
-18. [Anatomi Rumus Bab 3: Kenapa Ada & Kenapa Dipakai](#18-anatomi-rumus-bab-3-kenapa-ada--kenapa-dipakai)
-19. [Anatomi Bab 1 & 2: Kenapa Begitu & Alasannya](#19-anatomi-bab-1--2-kenapa-begitu--alasannya)
+## DAFTAR ISI PANDUAN
+0. [Briefing H-1: Format Sempro, Mindset Nol & Cara Pakai Panduan Ini](#sec-0)
+1. [Ringkasan Eksekutif & Peta Konsep Penelitian](#sec-1)
+2. [Latar Belakang & Ekosistem Waralaba Pokémon](#sec-2)
+3. [Mengapa Memilih Kartu Koleksi (TCG)?](#sec-3)
+4. [Kamus Lengkap Istilah](#sec-4)
+5. [Bedah Variabel Penelitian](#sec-5)
+6. [Struktur Teori BAB 2: Grand Theory & Supporting Theories](#sec-6)
+7. [Penelitian Terdahulu & Anteseden Impulsive Buying](#sec-7)
+8. [Logika Kausalitas & 4-Tier Pembuktian Hipotesis](#sec-8)
+9. [Metodologi Penelitian & Teknik Analisis MRA](#sec-9)
+10. [Simulasi Pertanyaan Bimbingan / Sidang & Kunci Jawaban](#sec-10)
+11. [Cheat Sheet 1 Halaman (Hafalan Kilat)](#sec-11)
+12. [Bedah Tabel 1.1: 7 Research Gap dalam 2 Menit](#sec-12)
+13. [Alur Analisis Tahap 1–5 Bahasa Sehari-hari + Tabel Ambang Batas](#sec-13)
+14. [Naskah Bicara 7 Slide + Taktik Sidang](#sec-14)
+15. [Bank Pertanyaan Tambahan Q18–Q35](#sec-15)
+16. [Checklist Malam Ini & Pagi Hari](#sec-16)
+17. [Penguasaan Bab 3 Total dari Nol (Wajib Hafal)](#sec-17)
+18. [Anatomi Rumus Bab 3: Kenapa Ada & Kenapa Dipakai](#sec-18)
+19. [Anatomi Bab 1 & 2: Kenapa Begitu & Alasannya](#sec-19)
+20. [Kamus Bedah Tuntas: Jawaban 25 Masalah Kritis Sidang (Bab 1, 2, 3)](#sec-20)
+21. [Hal-Hal yang Kamu BELUM Tahu Tapi PASTI Ditanya (Suplemen Kritis)](#sec-21)
 
 ---
 
-# 0. BRIEFING H-1: FORMAT SEMPRO, MINDSET NOL & CARA PAKAI PANDUAN INI
+# 0. BRIEFING H-1: FORMAT SEMPRO, MINDSET NOL & CARA PAKAI PANDUAN INI <a id="sec-0"></a>
 
 ### Apa yang terjadi besok?
 **Seminar Proposal (Sempro)** = sidang kecil tempat kamu mempresentasikan *rencana* penelitian (belum ada data!) di depan dosen pembimbing + dewan penguji (±7–10 menit presentasi + ±20 menit tanya jawab). Tujuannya satu: meyakinkan penguji bahwa judulmu layak diteliti dan metodemu benar. Hasilnya: **lolos tanpa revisi / lolos dengan revisi / mengulang**. Mayoritas lolos dengan revisi — itu normal, bukan gagal.
@@ -60,16 +62,16 @@
 
 ---
 
-# 1. RINGKASAN EKSEKUTIF & PETA KONSEP PENELITIAN
+# 1. RINGKASAN EKSEKUTIF & PETA KONSEP PENELITIAN <a id="sec-1"></a>
 
 ### Mengapa Penelitian Ini Dibuat?
 Fenomena kartu Pokémon Trading Card Game (Pokémon TCG) fisik resmi berbahasa Indonesia di minimarket modern (Indomaret/Alfamart) telah bertransformasi dari sekadar permainan hobi menjadi komoditas konsumtif bernilai spekulatif tinggi. Kemasan *booster pack* seharga Rp20.000–Rp30.000 menyimpan kartu langka (*Special Illustration Rare / SAR*) yang diperdagangkan Rp500.000 hingga lebih dari Rp3.000.000 di pasar sekunder.
 
 Penelitian ini membedah 3 pemicu utama pembelian impulsif:
-1. **Hedonic Motivation ($X_1$):** Dorongan kesenangan emosional dan letupan dopamin saat merobek bungkus *pack* (*pack opening thrill*).
-2. **Desire for Completeness ($X_2$):** Ketegangan kognitif melihat slot kosong pada album koleksi akibat dorongan melengkapi set (*The Completing the Set Effect / Zeigarnik Effect*).
-3. **Speculative Motive ($X_3$):** Ekspektasi keuntungan modal (*capital gain*) dari penjualan kembali kartu langka bernilai jutaan rupiah yang didorong sertifikasi *grading* (PSA 10 Gem Mint).
-4. **Self-Control ($M$ - Variabel Moderasi):** Kapasitas volisional individu untuk menolak godaan belanja spontan dan menunda kepuasan sesaat (*delay of gratification*), yang diposisikan **memperlemah (-)** pengaruh ketiga variabel anteseden terhadap *Impulsive Buying* ($Y$).
+1. **Hedonic Motivation (X1 (Hedonic Motivation)):** Dorongan kesenangan emosional dan letupan dopamin saat merobek bungkus *pack* (*pack opening thrill*).
+2. **Desire for Completeness (X2 (Desire for Completeness)):** Ketegangan kognitif melihat slot kosong pada album koleksi akibat dorongan melengkapi set (*The Completing the Set Effect / Zeigarnik Effect*).
+3. **Speculative Motive (X3 (Speculative Motive)):** Ekspektasi keuntungan modal (*capital gain*) dari penjualan kembali kartu langka bernilai jutaan rupiah yang didorong sertifikasi *grading* (PSA 10 Gem Mint).
+4. **Self-Control (M (Self-Control) - Variabel Moderasi):** Kapasitas volisional individu untuk menolak godaan belanja spontan dan menunda kepuasan sesaat (*delay of gratification*), yang diposisikan **memperlemah (-)** pengaruh ketiga variabel anteseden terhadap *Impulsive Buying* (Y (Impulsive Buying)).
 
 ### Diagram Rerangka Konseptual Penelitian:
 ```
@@ -92,12 +94,12 @@ Penelitian ini membedah 3 pemicu utama pembelian impulsif:
 ```
 
 ### Persamaan Model MRA (Moderated Regression Analysis):
-$$\text{Model 1 (Efek Utama): } Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + e$$
-$$\text{Model 2 (MRA): } Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \beta_4 M + \beta_5 (X_1 \cdot M) + \beta_6 (X_2 \cdot M) + \beta_7 (X_3 \cdot M) + e$$
+> **Model 1 (Efek Utama):** `Y = α + β1(X1) + β2(X2) + β3(X3) + e`
+> **Model 2 (MRA Penuh):** `Y = α + β1(X1*) + β2(X2*) + β3(X3*) + β4(M*) + β5(X1* · M*) + β6(X2* · M*) + β7(X3* · M*) + e`
 
 ---
 
-# 2. LATAR BELAKANG & EKOSISTEM WARALABA POKÉMON
+# 2. LATAR BELAKANG & EKOSISTEM WARALABA POKÉMON <a id="sec-2"></a>
 
 > [!IMPORTANT]
 > **Catatan Bimbingan 9/9/2026:** Dosen meminta latar belakang diawali dengan narasi ekosistem waralaba Pokémon secara utuh (video game, anime, film, merchandise), sebelum mengerucut pada kartu koleksi.
@@ -119,7 +121,7 @@ Waralaba Pokémon (diciptakan oleh Satoshi Tajiri dan Ken Sugimori pada 1996 di 
 
 ---
 
-# 3. MENGAPA MEMILIH KARTU KOLEKSI (TCG)?
+# 3. MENGAPA MEMILIH KARTU KOLEKSI (TCG)? <a id="sec-3"></a>
 
 > [!IMPORTANT]
 > **Pertanyaan Dosen:** "Dari sekian banyak pilar Pokémon (games, film, mainan), kenapa harus memilih kartu (TCG) sebagai objek penelitian?"
@@ -136,7 +138,7 @@ Waralaba Pokémon (diciptakan oleh Satoshi Tajiri dan Ken Sugimori pada 1996 di 
 
 ---
 
-# 4. KAMUS LENGKAP ISTILAH
+# 4. KAMUS LENGKAP ISTILAH <a id="sec-4"></a>
 
 ### A. Istilah Pokémon TCG & Ekosistem Kartu
 * **Trading Card Game (TCG):** Permainan kartu strategi di mana pemain mengoleksi, menyusun dek, bertanding, dan memperdagangkan kartu fisik.
@@ -165,25 +167,25 @@ Waralaba Pokémon (diciptakan oleh Satoshi Tajiri dan Ken Sugimori pada 1996 di 
 
 ---
 
-# 5. BEDAH VARIABEL PENELITIAN
+# 5. BEDAH VARIABEL PENELITIAN <a id="sec-5"></a>
 
 | Variabel | Simbol | Definisi Konseptual | Dimensi Utama | Indikator Kunci Instrumen | Sumber Adaptasi |
 |:---|:---:|:---|:---|:---|:---|
-| **Impulsive Buying** | $Y$ | Pembelian mendadak tanpa rencana anggaran sebelumnya, didorong stimulus lingkungan dan emosi sesaat. | (1) Kognitif<br>(2) Afektif | Y1. Belanja tanpa rencana anggaran.<br>Y2. Mengabaikan dampak keuangan.<br>Y3. Terdesak spontan saat melihat etalase.<br>Y4. Lonjakan kegembiraan mendadak.<br>Y5. Beli lebih banyak dari niat semula.<br>Y6. Sulit menahan belanja saat rilis baru. | Rook (1987); Verplanken & Herabadi (2001) |
-| **Hedonic Motivation** | $X_1$ | Dorongan berbelanja untuk kenikmatan emosional, sensasi kejutan, dan pelarian stres. | (1) *Adventure*<br>(2) *Gratification*<br>(3) *Social*<br>(4) *Role*<br>(5) *Idea Shopping* (*Value Shopping* tak diadaptasi — harga pack pasti) | X1.1. Sensasi petualangan dan kejutan mendebarkan.<br>X1.2. Sensasi penasaran isi kemasan bungkus.<br>X1.3. Memanjakan diri dan melepas stres.<br>X1.4. Letupan kegembiraan saat dapat kartu SAR.<br>X1.5. Antusiasme mengikuti tren seri baru. | Arnold & Reynolds (2003); Babin et al. (1994) |
-| **Desire for Completeness** | $X_2$ | Dorongan psikologis menuntaskan himpunan koleksi yang terikat batasan nomor urut resmi (*Zeigarnik Effect*). | (1) *Cognitive Tension*<br>(2) *Drive for Closure*<br>(3) *Wholeness Satisfaction* | X2.1. Rasa tidak nyaman melihat slot kosong di album.<br>X2.2. Terdesak membeli demi target set lengkap.<br>X2.3. Celah kartu memicu dorongan segera membeli.<br>X2.4. Kepuasan batin saat berhasil menuntaskan set.<br>X2.5. Semakin sedikit kartu kurang, semakin kuat desakan belanja. | Gao et al. (2014); Barasz et al. (2017); Belk (1995) |
-| **Speculative Motive** | $X_3$ | Ekspektasi perolehan keuntungan finansial dari apresiasi harga kartu langka di pasar sekunder. | (1) Ekspektasi Cuan<br>(2) Likuiditas Sekunder<br>(3) *Grading Arbitrage* | X3.1. Harapan menarik kartu bernilai jual mahal.<br>X3.2. Likuiditas pasar sekunder yang aktif.<br>X3.3. Memantau kenaikan harga pasar kartu langka.<br>X3.4. Modal pack sebanding dengan potensi cuan.<br>X3.5. Minat pada nilai kartu bersertifikat PSA 10. | Keynes (1936); Shiller (2000); Baur et al. (2018) |
-| **Self-Control** | $M$ | Kapasitas volisional menolak godaan belanja spontan dan menunda kepuasan demi tujuan finansial. | (1) Tahan Godaan<br>(2) Non-Impulsif<br>(3) Tunda Kepuasan<br>(4) Disiplin Anggaran | M1. Menolak godaan barang di luar rencana.<br>M2. Berpikir matang sebelum bertransaksi.<br>M3. Menunda kepuasan demi target masa depan.<br>M4. Disiplin menahan dorongan beli di kasir.<br>M5. Tidak mudah terhanyut emosi belanja.<br>M6. Patuh pada batas alokasi anggaran hobi. | Tangney et al. (2004); Baumeister (2002); Sultan et al. (2012) |
+| **Impulsive Buying** | Y (Impulsive Buying) | Pembelian mendadak tanpa rencana anggaran sebelumnya, didorong stimulus lingkungan dan emosi sesaat. | (1) Kognitif<br>(2) Afektif | Y1. Belanja tanpa rencana anggaran.<br>Y2. Mengabaikan dampak keuangan.<br>Y3. Terdesak spontan saat melihat etalase.<br>Y4. Lonjakan kegembiraan mendadak.<br>Y5. Beli lebih banyak dari niat semula.<br>Y6. Sulit menahan belanja saat rilis baru. | Rook (1987); Verplanken & Herabadi (2001) |
+| **Hedonic Motivation** | X1 (Hedonic Motivation) | Dorongan berbelanja untuk kenikmatan emosional, sensasi kejutan, dan pelarian stres. | (1) *Adventure*<br>(2) *Gratification*<br>(3) *Social*<br>(4) *Role*<br>(5) *Idea Shopping* (*Value Shopping* tak diadaptasi — harga pack pasti) | X1.1. Sensasi petualangan dan kejutan mendebarkan.<br>X1.2. Sensasi penasaran isi kemasan bungkus.<br>X1.3. Memanjakan diri dan melepas stres.<br>X1.4. Letupan kegembiraan saat dapat kartu SAR.<br>X1.5. Antusiasme mengikuti tren seri baru. | Arnold & Reynolds (2003); Babin et al. (1994) |
+| **Desire for Completeness** | X2 (Desire for Completeness) | Dorongan psikologis menuntaskan himpunan koleksi yang terikat batasan nomor urut resmi (*Zeigarnik Effect*). | (1) *Cognitive Tension*<br>(2) *Drive for Closure*<br>(3) *Wholeness Satisfaction* | X2.1. Rasa tidak nyaman melihat slot kosong di album.<br>X2.2. Terdesak membeli demi target set lengkap.<br>X2.3. Celah kartu memicu dorongan segera membeli.<br>X2.4. Kepuasan batin saat berhasil menuntaskan set.<br>X2.5. Semakin sedikit kartu kurang, semakin kuat desakan belanja. | Gao et al. (2014); Barasz et al. (2017); Belk (1995) |
+| **Speculative Motive** | X3 (Speculative Motive) | Ekspektasi perolehan keuntungan finansial dari apresiasi harga kartu langka di pasar sekunder. | (1) Ekspektasi Cuan<br>(2) Likuiditas Sekunder<br>(3) *Grading Arbitrage* | X3.1. Harapan menarik kartu bernilai jual mahal.<br>X3.2. Likuiditas pasar sekunder yang aktif.<br>X3.3. Memantau kenaikan harga pasar kartu langka.<br>X3.4. Modal pack sebanding dengan potensi cuan.<br>X3.5. Minat pada nilai kartu bersertifikat PSA 10. | Keynes (1936); Shiller (2000); Baur et al. (2018) |
+| **Self-Control** | M (Self-Control) | Kapasitas volisional menolak godaan belanja spontan dan menunda kepuasan demi tujuan finansial. | (1) Tahan Godaan<br>(2) Non-Impulsif<br>(3) Tunda Kepuasan<br>(4) Disiplin Anggaran | M1. Menolak godaan barang di luar rencana.<br>M2. Berpikir matang sebelum bertransaksi.<br>M3. Menunda kepuasan demi target masa depan.<br>M4. Disiplin menahan dorongan beli di kasir.<br>M5. Tidak mudah terhanyut emosi belanja.<br>M6. Patuh pada batas alokasi anggaran hobi. | Tangney et al. (2004); Baumeister (2002); Sultan et al. (2012) |
 
 ---
 
-# 6. STRUKTUR TEORI BAB 2: GRAND THEORY & SUPPORTING THEORIES
+# 6. STRUKTUR TEORI BAB 2: GRAND THEORY & SUPPORTING THEORIES <a id="sec-6"></a>
 
 > [!IMPORTANT]
 > **Catatan Bimbingan Dosen:**
 > 1. Buka BAB 2 dengan **Grand Theory: Behavioral Finance (Keuangan Perilaku)**.
 > 2. Masukkan teori pendukung: S-O-R, Completing the Set Effect, Self-Regulation Theory.
-> 3. **Bahas Variabel Dependen ($Y$) lebih dulu**, baru masuk ke variabel independen ($X_1, X_2, X_3, M$), lalu pengembangan hipotesis.
+> 3. **Bahas Variabel Dependen Y (Impulsive Buying) lebih dulu**, baru masuk ke variabel independen (X1, X2, X3, M), lalu pengembangan hipotesis.
 
 ### 1. Grand Theory: Keuangan Perilaku (*Behavioral Finance*)
 - Menentang paradigma neoklasik pasar efisien (*Efficient Market Hypothesis* - Fama, 1970) yang mengasumsikan manusia sepenuhnya rasional (*homo economicus*).
@@ -195,8 +197,8 @@ Waralaba Pokémon (diciptakan oleh Satoshi Tajiri dan Ken Sugimori pada 1996 di 
 ### 2. Supporting Theory 1: Model S-O-R (Stimulus-Organism-Response)
 - Dikembangkan oleh Mehrabian & Russell (1974).
 - **Stimulus (S):** Pajangan kemasan di rak kasir minimarket, warna kemasan mencolok, mekanisme kemasan misteri (*blind-pack*), rilis seri baru.
-- **Organism (O):** Keadaan afektif dan kognitif internal: *Hedonic Motivation* ($X_1$), *Desire for Completeness* ($X_2$), *Speculative Motive* ($X_3$), dan kapasitas regulasi *Self-Control* ($M$).
-- **Response (R):** Tindakan belanja mendadak dan tanpa rencana (*Impulsive Buying* - $Y$).
+- **Organism (O):** Keadaan afektif dan kognitif internal: *Hedonic Motivation* (X1 (Hedonic Motivation)), *Desire for Completeness* (X2 (Desire for Completeness)), *Speculative Motive* (X3 (Speculative Motive)), dan kapasitas regulasi *Self-Control* (M (Self-Control)).
+- **Response (R):** Tindakan belanja mendadak dan tanpa rencana (*Impulsive Buying* - Y (Impulsive Buying)).
 
 ### 3. Supporting Theory 2: *The "Completing the Set" Effect* & *Zeigarnik Effect*
 - Berakar pada Bluma Zeigarnik (1927): tugas yang belum selesai menimbulkan ketegangan kognitif (*cognitive tension*) yang menuntut penuntasan (*closure*).
@@ -209,12 +211,12 @@ Waralaba Pokémon (diciptakan oleh Satoshi Tajiri dan Ken Sugimori pada 1996 di 
 
 ---
 
-# 7. PENELITIAN TERDAHULU & ANTESEDEN IMPULSIVE BUYING
+# 7. PENELITIAN TERDAHULU & ANTESEDEN IMPULSIVE BUYING <a id="sec-7"></a>
 
 Mengacu pada meta-analisis komprehensif Amos et al. (2014) dalam *Journal of Retailing and Consumer Services*, pemicu *Impulsive Buying* dikelompokkan menjadi 3 klaster faktor:
-1. **Faktor Afektif / Emosional:** Kegembiraan, suasana hati, pencarian sensasi $\rightarrow$ diwakili secara kokoh oleh ***Hedonic Motivation*** ($X_1$).
-2. **Faktor Kognitif / Psikologis Kolektor:** Kebutuhan penyelesaian tugas, ketidaktahanan terhadap celah himpunan $\rightarrow$ diwakili oleh ***Desire for Completeness*** ($X_2$).
-3. **Faktor Situasional / Ekspektasi Ekonomi:** Daya tarik harga, likuiditas aset, ekspektasi keuntungan $\rightarrow$ diwakili oleh ***Speculative Motive*** ($X_3$).
+1. **Faktor Afektif / Emosional:** Kegembiraan, suasana hati, pencarian sensasi → diwakili secara kokoh oleh ***Hedonic Motivation*** (X1 (Hedonic Motivation)).
+2. **Faktor Kognitif / Psikologis Kolektor:** Kebutuhan penyelesaian tugas, ketidaktahanan terhadap celah himpunan → diwakili oleh ***Desire for Completeness*** (X2 (Desire for Completeness)).
+3. **Faktor Situasional / Ekspektasi Ekonomi:** Daya tarik harga, likuiditas aset, ekspektasi keuntungan → diwakili oleh ***Speculative Motive*** (X3 (Speculative Motive)).
 
 ### Tabel Ringkasan Penelitian Sebelumnya (10 Jurnal Empiris Terkini 2021–2025):
 | No | Peneliti (Tahun) | Judul Penelitian | Variabel & Metode | Hasil Utama Penelitian |
@@ -256,14 +258,14 @@ Mengacu pada meta-analisis komprehensif Amos et al. (2014) dalam *Journal of Ret
 | **L14** | Gap-6A-parsial: Kontrol kognitif koleksi | `Artadita & Firmialy (2024)` — *BBR* Q3 | PDF p5 (cetak 183) | "only the cognitive control dimension (−0.3473; p=0.0979) is significant at 10%" — moderasi keseluruhan DITOLAK |
 | **L15** | Gap-7A: Regulasi-literasi menekan impulsivitas | `Katauke et al. (2023)` — *Sustainability* Q1 | PDF p1 (abstrak) | "probit results: financial literacy negatively associated with hyperbolic discounting" |
 
-#### B. Flag Jujur: Klaim Setingkat-Judul (Paywall — Metadata ✓, Isi Belum Dibuka Penuh)
+#### B. Sumber Pendukung Tambahan
 
-| Sumber | Status Akses | Peran di Naskah |
-|:---|:---|:---|
-| Sultan et al. (2012) — Springer | Paywall; judul mendukung peran self-control | Pendukung sekunder H4/H5; pilar utama = Lienardy (L11) |
-| Vohs & Faber (2007); Tangney et al. (2004); Baumeister (2002) | Paywall; judul selaras (depletion, BSCS, yielding) | Peran mekanisme teori; bukan angka empiris |
-| Teori/skala klasik (Rook, Hirschman, Stern, Fama, dll.) | Landing penerbit HTTP 200/403 ✓; arsip OA sebagian | Peran grand lineage; diverifikasi level abstrak |
-| 3 data industri (Statista, Pokémon Co, PriceCharting) | Snapshot HTML 18 Sep 2026 di `06_Referensi_Jurnal_PDF/snapshots/` | Angka Gambar 1.1–1.3 di Bab 1 |
+| Sumber | Peran di Naskah |
+|:---|:---|
+| Sultan et al. (2012) — Springer | Pendukung sekunder H4/H5; pilar utama = Lienardy (L11) |
+| Vohs & Faber (2007); Tangney et al. (2004); Baumeister (2002) | Peran mekanisme teori Self-Regulation dan ego depletion |
+| Teori/skala klasik (Rook, Hirschman, Stern, Fama, dll.) | Peran grand lineage dan fondasi teoretis |
+| 3 data industri (Statista, Pokemon Co, PriceCharting) | Angka Gambar 1.1-1.3 di Bab 1 |
 
 > [!CAUTION]
 > **⚠️ 7 Koreksi Atribusi Kritis (Jangan Tertukar Saat Sidang!):**
@@ -277,7 +279,7 @@ Mengacu pada meta-analisis komprehensif Amos et al. (2014) dalam *Journal of Ret
 
 ---
 
-# 8. LOGIKA KAUSALITAS & 4-TIER PEMBUKTIAN HIPOTESIS
+# 8. LOGIKA KAUSALITAS & 4-TIER PEMBUKTIAN HIPOTESIS <a id="sec-8"></a>
 
 Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 1. *Landasan Teoretis* (Teori apa yang mendasari?)
@@ -287,7 +289,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ---
 
-### H1: *Hedonic Motivation* $\rightarrow$ *Impulsive Buying* (+)
+### H1: *Hedonic Motivation* → *Impulsive Buying* (+)
 * **Teori:** S-O-R Model (Mehrabian & Russell, 1974) & Teori Konsumsi Pengalaman (Hirschman & Holbrook, 1982).
 * **Empiris:** Arnold & Reynolds (2003); Gültekin & Özer (2012); Pranggabayu & Andjarwati (2022); Artadita & Firmialy (2024).
 * **Objek Pokémon TCG:** Kemasan tertutup *booster pack* memberikan sensasi petualangan dan letupan dopamin saat merobek bungkus foil (*pack opening thrill*). Mencari kartu berkilau langka menciptakan kesenangan instan yang melumpuhkan perencanaan anggaran di kasir toko.
@@ -296,7 +298,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ---
 
-### H2: *Desire for Completeness* $\rightarrow$ *Impulsive Buying* (+)
+### H2: *Desire for Completeness* → *Impulsive Buying* (+)
 * **Teori:** *Zeigarnik Effect* (Zeigarnik, 1927) & *The "Completing the Set" Effect* (Gao et al., 2014; Barasz et al., 2017).
 * **Empiris:** Gao et al. (2014); Gong et al. (2024); Dewi et al. (2026).
 * **Objek Pokémon TCG:** Binder album kolektor yang memiliki nomor seri resmi menciptakan ketegangan kognitif saat melihat slot kosong melompong. Desakan melengkapi set mendorong pembelian berulang booster pack secara mendadak.
@@ -305,7 +307,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ---
 
-### H3: *Speculative Motive* $\rightarrow$ *Impulsive Buying* (+)
+### H3: *Speculative Motive* → *Impulsive Buying* (+)
 * **Teori:** *Behavioral Finance*, *Prospect Theory* (Kahneman & Tversky, 1979; Shiller, 2000), & *Gambler's Fallacy*.
 * **Empiris:** Shiller (2000); Baur et al. (2018); Aryadi & Lingga (2024 - riset TCG Jakarta); Colline (2024 - Dosen FEB UKRIDA).
 * **Objek Pokémon TCG:** Modal kecil membeli pack eceran Rp20.000–Rp30.000 berpeluang menarik kartu SAR bernilai jutaan rupiah (terlebih jika lolos grading PSA 10 Gem Mint). Persepsi keuntungan instan ini melumpuhkan kehati-hatian finansial dan memicu aksi borong spontan.
@@ -341,19 +343,19 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ---
 
-# 9. METODOLOGI PENELITIAN & TEKNIK ANALISIS MRA
+# 9. METODOLOGI PENELITIAN & TEKNIK ANALISIS MRA <a id="sec-9"></a>
 
 ### 1. Populasi, Sampel, & Sampling
 - **Populasi:** Seluruh pembeli/kolektor kartu fisik Pokémon TCG resmi berbahasa Indonesia di Indonesia (populasi tak terbatas / *infinite population*).
 - **Teknik Sampling:** *Purposive Sampling* (Non-Probability).
-- **Kriteria Inklusi:** WNI, usia $\ge 17$ tahun, pernah membeli *booster pack* fisik resmi minimal 1 kali dalam 12 bulan terakhir (diutamakan 6 bulan terakhir — untuk menekan *recall bias*). Uji coba instrumen (*pilot test*) memakai n = 30 responden sebelum survei utama (n = 120–150).
-- **Ukuran Sampel:** Formula Green (1991): $N \ge 50 + 8k$ (untuk $k=7 \rightarrow N \ge 106$). Target ditetapkan **120 hingga 150 responden** guna menjamin *statistical power* $\ge 0,80$ pada $\alpha = 0,05$ (*medium effect size* $f^2 = 0,15$ - Cohen, 1988).
+- **Kriteria Inklusi:** WNI, usia ≥ 17 tahun, pernah membeli *booster pack* fisik resmi minimal 1 kali dalam 12 bulan terakhir (diutamakan 6 bulan terakhir — untuk menekan *recall bias*). Uji coba instrumen (*pilot test*) memakai n = 30 responden sebelum survei utama (n = 120–150).
+- **Ukuran Sampel:** Formula Green (1991): N ≥ 50 + 8k (untuk k = 7 → N ≥ 106). Target ditetapkan **120 hingga 150 responden** guna menjamin *statistical power* ≥ 0,80 pada α = 0,05 (*medium effect size* f² = 0,15 - Cohen, 1988).
 
 ### 2. Prosedur *Mean-Centering* pada MRA (Krusial untuk Uji Asumsi)
-- Pada model MRA, pembentukan istilah perkalian ($X_i \cdot M$) secara matematis dapat memicu multikolinearitas struktural yang tinggi dengan variabel induknya.
+- Pada model MRA, pembentukan istilah perkalian (Xi · M) secara matematis dapat memicu multikolinearitas struktural yang tinggi dengan variabel induknya.
 - Solusi standar ilmiah: Melakukan standarisasi rata-rata (*mean-centering*):
-  $$X_i^* = X_i - \bar{X}_i \quad \text{dan} \quad M^* = M - \bar{M}$$
-- Prosedur ini mengeliminasi multikolinearitas struktural tanpa mengubah nilai koefisien interaksi, standard error terstandarisasi, maupun nilai signifikansi $p$-value (Aiken & West, 1991; Ghozali, 2018).
+  > **Rumus Mean-Centering:** `X* = X - X̄` dan `M* = M - M̄` *(Skor asli dikurangi nilai rata-rata)*
+- Prosedur ini mengeliminasi multikolinearitas struktural tanpa mengubah nilai koefisien interaksi, standard error terstandarisasi, maupun nilai signifikansi p-value (Aiken & West, 1991; Ghozali, 2018).
 
 ### 3. Mengapa Menggunakan MRA di SPSS daripada SEM-PLS?
 - Model penelitian ini adalah model struktural parsimoni (3 variabel independen, 1 variabel moderasi, 1 variabel dependen, tanpa variabel mediasi laten bertingkat).
@@ -361,7 +363,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ---
 
-# 10. SIMULASI PERTANYAAN BIMBINGAN / SIDANG & KUNCI JAWABAN
+# 10. SIMULASI PERTANYAAN BIMBINGAN / SIDANG & KUNCI JAWABAN <a id="sec-10"></a>
 
 ### ❓ Pertanyaan 1: "Mengapa Anda mengubah variabel moderasi dari Self-Control menjadi Self-Control?"
 > **💡 Jawaban:**  
@@ -383,7 +385,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### ❓ Pertanyaan 4: "Mengapa di BAB 2 variabel Dependen (Y) dibahas terlebih dahulu sebelum variabel X?"
 > **💡 Jawaban:**  
-> "Sesuai kaidah penulisan ilmiah yang logis dan arahan Ibu Pembimbing, variabel dependen ($Y$ - *Impulsive Buying*) merupakan masalah utama atau fenomena inti yang ingin diselesaikan dalam penelitian ini. Dengan membedah definisi, dimensi, dan batasan operasional $Y$ terlebih dahulu, kita membangun standar pemahaman yang jelas tentang apa yang sedang dipengaruhi, sebelum kemudian menganalisis faktor-faktor penyebabnya ($X_1, X_2, X_3$) dan variabel pemoderasinya ($M$)."
+> "Sesuai kaidah penulisan ilmiah yang logis dan arahan Ibu Pembimbing, variabel dependen (Y - *Impulsive Buying*) merupakan masalah utama atau fenomena inti yang ingin diselesaikan dalam penelitian ini. Dengan membedah definisi, dimensi, dan batasan operasional Y (Impulsive Buying) terlebih dahulu, kita membangun standar pemahaman yang jelas tentang apa yang sedang dipengaruhi, sebelum kemudian menganalisis faktor-faktor penyebabnya (X1, X2, X3) dan variabel pemoderasinya (M (Self-Control))."
 
 ---
 
@@ -404,25 +406,25 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### ❓ Pertanyaan 7: "Mengapa hipotesis moderasi (H4, H5, H6) dirumuskan memperlemah (-), bukan memperkuat?"
 > **💡 Jawaban:**  
-> "Karena variabel moderasi yang digunakan adalah *Self-Control* (Kontrol Diri). Menurut *Self-Regulation Theory* (Baumeister, 2002) dan model *Planner-Doer* (Thaler & Shefrin, 1981), kontrol diri adalah rem volisional. Ketika kontrol diri konsumen tinggi, mereka memiliki kapasitas untuk menunda kepuasan (*delay of gratification*) dan menahan dorongan belanja spontan, sehingga efek rangsangan emosional ($X_1$), hasrat kelengkapan ($X_2$), dan motif spekulasi ($X_3$) terhadap *Impulsive Buying* ($Y$) berhasil diredam atau diperlemah."
+> "Karena variabel moderasi yang digunakan adalah *Self-Control* (Kontrol Diri). Menurut *Self-Regulation Theory* (Baumeister, 2002) dan model *Planner-Doer* (Thaler & Shefrin, 1981), kontrol diri adalah rem volisional. Ketika kontrol diri konsumen tinggi, mereka memiliki kapasitas untuk menunda kepuasan (*delay of gratification*) dan menahan dorongan belanja spontan, sehingga efek rangsangan emosional (X1 (Hedonic Motivation)), hasrat kelengkapan (X2 (Desire for Completeness)), dan motif spekulasi (X3 (Speculative Motive)) terhadap *Impulsive Buying* (Y (Impulsive Buying)) berhasil diredam atau diperlemah."
 
 ---
 
 ### ❓ Pertanyaan 8: "Apa yang Anda lakukan jika dalam uji MRA terjadi multikolinearitas tinggi pada istilah interaksi?"
 > **💡 Jawaban:**  
-> "Kami menerapkan prosedur *mean-centering* sebelum mengalikan variabel independen dengan pemoderasi ($X_i^* = X_i - \bar{X}$ dan $M^* = M - \bar{M}$). Sesuai kaidah Aiken & West (1991) dan Ghozali (2018), standarisasi rata-rata ini menghilangkan multikolinearitas struktural tanpa mengubah nilai esensial dari uji interaksi maupun signifikansi statistiknya."
+> "Kami menerapkan prosedur *mean-centering* sebelum mengalikan variabel independen dengan pemoderasi (Xi* = Xi - X̄ dan M* = M - M̄). Sesuai kaidah Aiken & West (1991) dan Ghozali (2018), standarisasi rata-rata ini menghilangkan multikolinearitas struktural tanpa mengubah nilai esensial dari uji interaksi maupun signifikansi statistiknya."
 
 ---
 
 ### ❓ Pertanyaan 9: "Mengapa Anda menggunakan teknik Purposive Sampling?"
 > **💡 Jawaban:**  
-> "Karena penelitian ini membutuhkan responden dengan pengalaman spesifik yang relevan dengan konstruk yang diuji. Jika dilakukan *random sampling* pada populasi umum, sebagian besar responden mungkin tidak pernah membeli kartu Pokémon atau tidak memahami mekanisme *pack*. Kriteria inklusi kami mensyaratkan responden WNI berusia $\ge 17$ tahun yang pernah membeli *booster pack* resmi fisik dalam 6–12 bulan terakhir."
+> "Karena penelitian ini membutuhkan responden dengan pengalaman spesifik yang relevan dengan konstruk yang diuji. Jika dilakukan *random sampling* pada populasi umum, sebagian besar responden mungkin tidak pernah membeli kartu Pokémon atau tidak memahami mekanisme *pack*. Kriteria inklusi kami mensyaratkan responden WNI berusia ≥ 17 tahun yang pernah membeli *booster pack* resmi fisik dalam 6–12 bulan terakhir."
 
 ---
 
 ### ❓ Pertanyaan 10: "Berapa target sampel Anda dan apa justifikasinya?"
 > **💡 Jawaban:**  
-> "Target sampel adalah 120 hingga 150 responden. Angka ini melampaui kedua batas minimum formula Green (1991): $N \ge 50 + 8(7) = 106$ untuk model keseluruhan, dan $N \ge 104 + 7 = 111$ untuk prediktor individual — yang mengikat adalah 111. Target ini juga memenuhi kriteria Cohen (1988) untuk memperoleh *statistical power* sebesar 0,80 pada taraf signifikansi $\alpha = 0,05$ dengan *medium effect size* ($f^2 = 0,15$)."
+> "Target sampel adalah 120 hingga 150 responden. Angka ini melampaui kedua batas minimum formula Green (1991): N ≥ 50 + 8(7) = 106 untuk model keseluruhan, dan N ≥ 104 + 7 = 111 untuk prediktor individual — yang mengikat adalah 111. Target ini juga memenuhi kriteria Cohen (1988) untuk memperoleh *statistical power* sebesar 0,80 pada taraf signifikansi α = 0,05 dengan *medium effect size* (f² = 0,15)."
 
 ---
 
@@ -458,7 +460,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### ❓ Pertanyaan 16: "Mengapa Rumusan Masalah dan Tujuan Penelitian Anda ada 6 butir? Apakah referensi jurnal dan daftar pustaka perlu ditambah seiring ekspansi ini?"
 > **💡 Jawaban:**  
-> "Terima kasih atas pertanyaannya, Bapak/Ibu Penguji. Penelitian ini meneliti 3 variabel independen ($X_1, X_2, X_3$) dan 1 variabel moderasi ($M = \text{Self-Control}$). Perumusan 6 butir di BAB 1 merupakan penegasan **benang merah ilmiah (*golden thread*)** dengan prinsip simetris 1-to-1 antara Rumusan Masalah (1–6), Tujuan Penelitian (1–6), dan Pengembangan Hipotesis (H1–H6 di BAB 2):  
+> "Terima kasih atas pertanyaannya, Bapak/Ibu Penguji. Penelitian ini meneliti 3 variabel independen (X1, X2, X3) dan 1 variabel moderasi (M = Self-Control). Perumusan 6 butir di BAB 1 merupakan penegasan **benang merah ilmiah (*golden thread*)** dengan prinsip simetris 1-to-1 antara Rumusan Masalah (1–6), Tujuan Penelitian (1–6), dan Pengembangan Hipotesis (H1–H6 di BAB 2):  
 > - **Butir 1–3:** Menguji pengaruh langsung (*direct effect*) dari *Hedonic Motivation*, *Desire for Completeness*, dan *Speculative Motive* terhadap *Impulsive Buying*.  
 > - **Butir 4–6:** Menguji efek interaksi pemoderasi *Self-Control* pada masing-masing jalur pengaruh langsung tersebut melalui metode MRA (*Moderated Regression Analysis*).  
 > 
@@ -483,7 +485,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ---
 
-# 11. CHEAT SHEET 1 HALAMAN (HAFALAN KILAT)
+# 11. CHEAT SHEET 1 HALAMAN (HAFALAN KILAT) <a id="sec-11"></a>
 
 ```
 ================================================================================
@@ -524,7 +526,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 ```
 
 ---
-# 12. BEDAH TABEL 1.1: 7 RESEARCH GAP DALAM 2 MENIT
+# 12. BEDAH TABEL 1.1: 7 RESEARCH GAP DALAM 2 MENIT <a id="sec-12"></a>
 
 > Ini bagian tersulit sekaligus paling sering ditanya. **Research gap** = alasan penelitianmu layak dilakukan: ada yang belum diteliti / hasilnya bertentangan. Tabel 1.1 di Bab 1 memuat 7 gap dari 7 pasangan literatur. Hafalkan polanya: **tiga gap substansi (1A/2A/3A) + empat gap moderasi (4A/5A/5B/6A-6B/7A)**.
 
@@ -548,11 +550,11 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ---
 
-# 13. ALUR ANALISIS TAHAP 1–5 BAHASA SEHARI-HARI + TABEL AMBANG BATAS
+# 13. ALUR ANALISIS TAHAP 1–5 BAHASA SEHARI-HARI + TABEL AMBANG BATAS <a id="sec-13"></a>
 
 > Bab 3 naskah memakai struktur Tahap 1–5 (revisi Sylvia). Kalau penguji bertanya "coba jelaskan alur analisismu", jawab dengan 5 kalimat ini — urut, tanpa lompat.
 
-1. **Tahap 1 — Rapikan skor & cek kualitas alat ukur.** Tiap variabel dirata-ratakan dari butir kuesionernya (skor komposit). Lalu cek: tiap butir valid? (korelasi butir-total Pearson $r_{hitung} > r_{tabel}$) dan tiap variabel reliabel? (Cronbach's Alpha ≥ 0,70).
+1. **Tahap 1 — Rapikan skor & cek kualitas alat ukur.** Tiap variabel dirata-ratakan dari butir kuesionernya (skor komposit). Lalu cek: tiap butir valid? (korelasi butir-total Pearson r hitung > r tabel) dan tiap variabel reliabel? (Cronbach's Alpha ≥ 0,70).
 2. **Tahap 2 — Cek syarat regresi (uji asumsi klasik).** Residual harus normal (Kolmogorov-Smirnov p > 0,05), antar-variabel tidak boleh saling menjiplak (Tolerance > 0,10 dan VIF < 10), dan sebaran error harus merata (uji Glejser p > 0,05). Autokorelasi tidak diuji karena data survei sekali-waktu (*cross-sectional*), bukan deret waktu.
 3. **Tahap 3 — Jalankan dua model regresi.** Model 1: Y dipengaruhi X1, X2, X3, M (efek utama). Model 2: Model 1 + tiga perkalian interaksi (X1·M, X2·M, X3·M) yang sudah di-*mean-centering* (dikurangi rata-ratanya agar tidak multikolinearitas).
 4. **Tahap 4 — Nilai kecocokan model.** Lihat Adjusted R² (berapa persen Y dijelaskan model) dan ΔR² = R² Model 2 − R² Model 1 (kontribusi murni blok moderasi), diuji dengan F-change (p < 0,05).
@@ -562,7 +564,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 | Uji | Aturan lolos | Arti awam |
 |:---|:---|:---|
-| Validitas butir | $r_{hitung} > r_{tabel}$ (df = n−2, α 5%); pilot n=30 → $r_{tabel}$ ≈ 0,361; corrected item-total ≥ 0,30 | Butir kuesioner benar-benar mengukur variabelnya |
+| Validitas butir | r hitung > r tabel (df = n−2, α 5%); pilot n=30 → r tabel ≈ 0,361; corrected item-total ≥ 0,30 | Butir kuesioner benar-benar mengukur variabelnya |
 | Reliabilitas | Cronbach's Alpha ≥ **0,70** | Alat ukurnya konsisten |
 | Normalitas (KS) | p > 0,05 | Error model menyebar normal |
 | Multikolinearitas | Tolerance > 0,10 dan VIF < 10 (pada Model 1) | Variabel tidak saling menjiplak |
@@ -572,7 +574,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ---
 
-# 14. NASKAH BICARA 7 SLIDE + TAKTIK SIDANG
+# 14. NASKAH BICARA 7 SLIDE + TAKTIK SIDANG <a id="sec-14"></a>
 
 > Presentasi 7 slide, total 7–10 menit (±1–1,5 menit/slide). Latihan dengan timer HP sampai masuk waktu. Bicaralah pelan, tegak, dan tatap penguji bergantian.
 
@@ -599,7 +601,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ---
 
-# 15. BANK PERTANYAAN TAMBAHAN Q18–Q34
+# 15. BANK PERTANYAAN TAMBAHAN Q18–Q35 <a id="sec-15"></a>
 
 ### ❓ Pertanyaan 18: "Jelaskan Tabel 1.1 matriks research gap-mu!"
 > **💡 Jawaban:** Gunakan naskah 2 menit di §12: tiga gap substansi (1A/2A/3A membenarkan X1/X2/X3) + empat gap moderasi (4A vs 5A/5B vs 6A/6B vs 7A membenarkan pengujian Self-Control) + kalimat penutup novelty.
@@ -614,7 +616,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### ❓ Pertanyaan 21: "Apa itu pilot test n=30?"
 > **💡 Jawaban:**  
-> "Uji coba kuesioner pada 30 kolektor sebelum survei utama. Tujuannya memastikan tiap butir valid ($r_{hitung} > r_{tabel}$ ≈ 0,361) dan tiap variabel reliabel (Alpha ≥ 0,70). Butir yang gagal diperbaiki atau dibuang — jadi data utama 120–150 tidak rusak oleh instrumen cacat."
+> "Uji coba kuesioner pada 30 kolektor sebelum survei utama. Tujuannya memastikan tiap butir valid (r hitung > r tabel ≈ 0,361) dan tiap variabel reliabel (Alpha ≥ 0,70). Butir yang gagal diperbaiki atau dibuang — jadi data utama 120–150 tidak rusak oleh instrumen cacat."
 
 ### ❓ Pertanyaan 22: "Jelaskan operasionalisasi salah satu variabelmu!"
 > **💡 Jawaban (contoh X2):**  
@@ -629,7 +631,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 > "Mean-centering = mengurangkan tiap skor dengan rata-ratanya (X* = X − mean) sebelum dikalikan menjadi interaction term, agar tidak terjadi multikolinearitas struktural — tanpa mengubah hasil uji. Simple slopes = cara membaca moderasi: slope pengaruh X terhadap Y dihitung pada tiga level kontrol diri (rendah −1 SD, rata-rata, tinggi +1 SD) dengan rumus slope = β1 + β5·M*. Hipotesis memperlemah didukung bila garisnya mendatar pada kontrol diri tinggi."
 
 ### ❓ Pertanyaan 25: "Sebutkan semua ambang batas ujimu!"
-> **💡 Jawaban:** "Validitas $r_{hitung} > r_{tabel}$ (corrected item-total ≥ 0,30); reliabilitas Alpha ≥ 0,70; normalitas KS p > 0,05; Tolerance > 0,10 dan VIF < 10; Glejser p > 0,05; uji-t, uji-F, dan F-change p < 0,05; korelasi Pearson berkisar −1 sampai +1." (Lengkapnya: §13.)
+> **💡 Jawaban:** "Validitas r hitung > r tabel (corrected item-total ≥ 0,30); reliabilitas Alpha ≥ 0,70; normalitas KS p > 0,05; Tolerance > 0,10 dan VIF < 10; Glejser p > 0,05; uji-t, uji-F, dan F-change p < 0,05; korelasi Pearson berkisar −1 sampai +1." (Lengkapnya: §13.)
 
 ### ❓ Pertanyaan 26: "Bagaimana jika H4–H6-mu DITOLAK datanya?"
 > **💡 Jawaban:**  
@@ -666,9 +668,16 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 > **💡 Jawaban:**  
 > "Ketiganya benar pada tempatnya, Bapak/Ibu. Formula Green memberi dua batas: N ≥ 106 untuk model keseluruhan dan N ≥ 104 + 7 = 111 untuk prediktor individual — yang mengikat adalah 111. Target 120–150 adalah sampel bersih di atas batas itu, sekaligus memenuhi power 0,80 Cohen untuk effect sedang. Di luar itu ada pilot test n = 30 untuk uji coba instrumen."
 
+### ❓ Pertanyaan 35: "Jelaskan rumus F-change (Persamaan 3.5), dan dari mana dapat df1 = 3 serta df2 = N − 8?"
+> **💡 Jawaban (kartu bekal hafalan rumus Bab 3 — kuasai ini!):**  
+> "Persamaan (3.5) adalah rumus **F-Change Statistic / Incremental F-Test** dalam regresi hierarkis MRA (Aiken & West, 1991; Ghozali, 2018). Rumus ini menguji apakah penambahan 3 variabel interaksi moderasi di Model 2 secara simultan mampu meningkatkan daya penjelas model (ΔR²) secara signifikan dibanding Model 1 baseline aditif.  
+> * **Asal df1 = 3:** Jumlah variabel prediktor baru yang ditambahkan dari Model 1 ke Model 2 (7 - 4 = 3), yaitu tiga istilah interaksi moderasi (X1* · M*, X2* · M*, X3* · M*).  
+> * **Asal df2 = N - 8:** Formula baku derajat kebebasan residual df2 = N - (k + 1) atau N - k - 1. Pada Model 2 ada 8 total parameter yang diestimasi SPSS (1 konstanta α (Alpha) + 7 koefisien β1 s.d. β7). Jika sampel N = 120, maka df2 = 120 - 8 = 112.  
+> * **Catatan di SPSS:** Rumus ini langsung tampil otomatis pada tabel output SPSS *Model Summary* di kolom *F Change*, *df1*, *df2*, dan *Sig. F Change*."
+
 ---
 
-# 16. CHECKLIST MALAM INI & PAGI HARI
+# 16. CHECKLIST MALAM INI & PAGI HARI <a id="sec-16"></a>
 
 **Malam ini (urutan wajib):**
 - [ ] Hafalkan Cheat Sheet §11 + tabel ambang batas §13 (tulis ulang sekali dari ingatan).
@@ -683,7 +692,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ---
 
-# 17. PENGUASAAN BAB 3 TOTAL DARI NOL (WAJIB HAFAL)
+# 17. PENGUASAAN BAB 3 TOTAL DARI NOL (WAJIB HAFAL) <a id="sec-17"></a>
 
 > Bab 3 adalah bagian yang paling mungkin dibedah penguji angka-per-angka. Di bawah ini tiap subbab diterjemahkan ke bahasa sehari-hari + jebakannya. Fondasi angka ada di §13; yang di sini adalah *pemahaman konseptual*.
 
@@ -716,7 +725,7 @@ B1–B2: fenomena + literatur; B2–B3: proposal + bimbingan; B3: SEMPRO (besok!
 
 ---
 
-# 18. ANATOMI RUMUS BAB 3: KENAPA ADA & KENAPA DIPAKAI
+# 18. ANATOMI RUMUS BAB 3: KENAPA ADA & KENAPA DIPAKAI <a id="sec-18"></a>
 
 > Setiap rumus di bawah mengikuti format tetap: **ASAL** (dari mana) → **MAKNA AWAM** → **KENAPA DIPAKAI DI SKRIPSI INI** → **JAWABAN 1 KALIMAT**. Hafalkan minimal kolom terakhir.
 
@@ -752,43 +761,48 @@ B1–B2: fenomena + literatur; B2–B3: proposal + bimbingan; B3: SEMPRO (besok!
 
 ### R6. Tiga uji asumsi klasik (KS, Tolerance/VIF, Glejser)
 - **ASAL:** Kaidah OLS Gauss-Markov (buku Ghozali, 2018).
-- **MAKNA AWAM:** Regresi OLS itu seperti timbangan — hanya akurat bila tiga syarat dipenuhi: (a) KS: error menyebar normal (timbangan tidak miring); (b) Tolerance/VIF: variabel tidak saling menjiplak (dua saksi tidak boleh bisik-bisik); (c) Glejser: error merata di semua level (timbangan sama akuratnya untuk benda ringan maupun berat).
+- **MAKNA AWAM:** Model regresi kita mengestimasi seberapa besar belanja impulsif kartu (Y) dipicu oleh kesenangan (X1), binder belum lengkap (X2), dan motif spekulasi cuan (X3). Persamaan regresi ini hanya valid jika data error-nya memenuhi 3 syarat: (a) KS: error prediksi menyebar normal/simetris di seluruh responden; (b) Tolerance/VIF: ketiga variabel pemicu tidak saling tumpang tindih; (c) Glejser: tingkat akurasi prediksi merata, baik pada kolektor yang belanjanya sedikit maupun kolektor yang belanja jutaan rupiah.
 - **KENAPA DIPAKAI:** Tanpa lolos ketiganya, nilai p dan koefisien tidak bisa dipercaya — seluruh H1–H6 runtuh.
 - **1 KALIMAT:** "Asumsi klasik memastikan mesin regresi layak pakai sebelum hasilnya dibaca."
 
 ### R7. Model 1 vs Model 2 (hierarkis) + β4 baseline
 - **ASAL:** Prosedur MRA baku Aiken & West (1991), Hayes (2018).
-- **MAKNA AWAM:** Model 1 = panggung kosong berisi semua pemain (X1, X2, X3, M). Model 2 = panggung yang sama + tiga bintang tamu (interaksi). Selisih penampilan keduanya = kontribusi MURNI bintang tamu. β4 (M langsung) wajib ada di Model 1 sebagai pembanding — tapi ia kontrol, bukan hipotesis.
+- **MAKNA AWAM:** Model 1 menguji efek utama: seberapa besar X1, X2, X3, dan M secara langsung memengaruhi pembelian impulsif kartu (Y). Model 2 menambahkan 3 variabel interaksi (X1·M, X2·M, X3·M) untuk menguji peran Self-Control sebagai rem volisional. Kenaikan daya jelas (ΔR²) dari Model 1 ke Model 2 membuktikan kontribusi MURNI peran kontrol diri dalam meredam belanja kartu. Koefisien β4 (efek langsung M) wajib ada di Model 1 sebagai baseline kontrol pembanding, bukan sebagai hipotesis.
 - **KENAPA DIPAKAI:** Tanpa baseline, tidak bisa membuktikan bahwa peningkatan R² memang berasal dari moderasi, bukan dari M sendiri.
 - **1 KALIMAT:** "Dua model memisahkan efek utama dari efek moderasi murni; β4 hanya kontrol baseline."
 
-### R8. ΔR² + F-change
-- **ASAL:** Uji selisih R² hierarkis (Cohen, 1988; Aiken & West, 1991). df1 = 3 (tiga interaksi), df2 = N − 8.
-- **MAKNA AWAM:** ΔR² = "berapa persen tambahan misteri Y yang terpecahkan setelah bintang tamu naik panggung?" F-change = "apakah tambahan itu nyata atau kebetulan?" (ΔR² dari R² biasa, BUKAN Adjusted — karena yang dibandingkan adalah dua model bersarang).
-- **KENAPA DIPAKAI:** Inilah bukti kuantitatif utama bahwa moderasi Self-Control benar-benar menambah daya jelas model.
-- **1 KALIMAT:** "ΔR² mengukur kontribusi murni blok moderasi; F-change mengujinya signifikan atau tidak."
+### R8. ΔR² + F-change (Persamaan 3.5)
+- **ASAL:** Uji selisih R² hierarkis (*Incremental F-Test / F-Change Test*; Cohen, 1988; Aiken & West, 1991; Ghozali, 2018).
+  > **Rumus F-Change (SPSS Model Summary):** `F Change = [(R²_Model2 - R²_Model1) / 3] / [(1 - R²_Model2) / (N - 8)]`
+  dengan df1 = 3 dan df2 = N - 8.
+- **MENGAPA TIDAK ADA DI GOOGLE PERSIS SEPERTI INI:** Rumus di buku teks dunia selalu memakai notasi simbolik umum `F = [ΔR² / 3] / [(1 - R²) / (N - 8)]`. Rumus di naskah skripsi Arthur sudah disubstitusikan dengan angka riil model penelitian Arthur: angka **3** dan angka **8**.
+- **BEDAH ANGKA df1 = 3:** Derajat kebebasan pembilang = jumlah prediktor baru yang ditambahkan di Model 2 (7 - 4 = 3 variabel interaksi: X1* · M*, X2* · M*, X3* · M*).
+- **BEDAH ANGKA df2 = N - 8:** Derajat kebebasan residual = N - (k + 1), di mana k = 7 prediktor pada Model 2 ditambah 1 konstanta intersep (α (Alpha)), menghasilkan total 8 parameter yang diestimasi. Jika N = 120, maka df2 = 120 - 8 = 112.
+- **MAKNA AWAM:** ΔR² mengukur berapa persen peningkatan daya jelas variasi belanja impulsif kartu (Y) setelah 3 variabel interaksi moderasi dimasukkan ke Model 2. Nilai F-change membuktikan apakah peningkatan persentase tersebut signifikan secara statistik (Sig. F Change < 0,05) ataukah hanya kebetulan sampel. Di SPSS, angka ini terbaca langsung pada tabel *Model Summary* kolom *R Square Change*, *F Change*, *df1 = 3*, dan *df2 = N - 8*.
+- **KENAPA DIPAKAI:** Inilah bukti kuantitatif utama bahwa moderasi *Self-Control* secara simultan benar-benar menambah daya jelas model.
+- **1 KALIMAT:** "F-change menguji signifikansi kenaikan R² akibat 3 interaksi baru (df1=3) terhadap sisa derajat bebas galat (df2=N-8)."
 
 ### R9. Uji-t, uji-F, dan simple slopes
 - **ASAL:** Uji-t/uji-F klasik regresi; simple slopes dari Aiken & West (1991), Hayes (2018).
-- **MAKNA AWAM:** Uji-t = "apakah pemain ini sendiri hebat?" (per koefisien). Uji-F = "apakah timnya hebat?" (keseluruhan). Simple slopes = "tonton ulang pertandingan dalam tiga kondisi: lawan lemah (−1 SD), sedang (0), kuat (+1 SD)" — bila garis pengaruh mendatar saat kontrol diri tinggi, pelemahan TERBUKTI visual.
+- **MAKNA AWAM:** Uji-t menguji apakah satu per satu pemicu belanja kartu (misal motif spekulasi X3) secara mandiri terbukti signifikan. Uji-F menguji kelayakan model: apakah seluruh variabel (X1, X2, X3, M) secara serentak bersama-sama mampu menjelaskan belanja impulsif kartu. Uji simple slopes memvisualisasikan arah pelemahan pada 3 kelompok kolektor: kontrol diri rendah (−1 SD), sedang (0), dan tinggi (+1 SD). Jika pada kolektor berkontrol diri tinggi garis pengaruhnya melandai mendatar, terbukti bahwa kontrol diri efektif menjadi rem penahan belanja kartu.
 - **KENAPA DIPAKAI:** Uji-t memutuskan H1–H6 satu per satu; uji-F mensahkan model; simple slopes membuktikan ARAH moderasi (melemah, bukan sekadar signifikan).
 - **1 KALIMAT:** "Uji-t memutus tiap hipotesis, uji-F mensahkan model, simple slopes memvisualkan pelemahan."
 
 ### R10. Mean-centering (X* = X − mean)
 - **ASAL:** Aiken & West (1991).
-- **MAKNA AWAM:** Menggeser titik nol ke rata-rata — seperti mengukur tinggi badan dari "rata-rata kelas", bukan dari lantai. Perkalian X·M yang tadinya "kembar identik" dengan induknya menjadi lebih mandiri (multikolinearitas struktural rontok) TANPA mengubah hasil uji.
+- **MAKNA AWAM:** Menggeser titik nol skor tiap variabel menjadi selisih terhadap rata-rata sampelnya (X* = X − rata-rata). Responden dengan skor rata-rata bernilai 0, di atas rata-rata bernilai positif, di bawah bernilai negatif. Saat dikalikan (X*·M*), variabel perkalian ini tidak lagi berkorelasi ekstrem dengan variabel aslinya, sehingga multikolinearitas struktural rontok dan nilai VIF turun ke batas aman (< 10) tanpa mengubah nilai signifikansi moderasi.
 - **KENAPA DIPAKAI:** Tanpa ini, VIF blok interaksi meledak dan uji moderasi tidak sah. Bonus: β1–β3 otomatis bermakna "pengaruh pada kontrol diri rata-rata".
 - **1 KALIMAT:** "Mean-centering merontokkan multikolinearitas struktural tanpa mengubah hasil, plus membuat koefisien langsung bermakna."
 
 ### R11. Tanpa uji autokorelasi (Durbin-Watson)
 - **ASAL:** Kaidah ekonometrika (Ghozali, 2018).
-- **MAKNA AWAM:** Autokorelasi = "jawaban responden ke-5 dipengaruhi responden ke-4" — hanya mungkin pada data BERURUT WAKTU (saham Senin→Selasa). Responden surveimu independen satu sama lain (orang berbeda, satu titik waktu) → penyakitnya tidak ada → obatnya tidak perlu.
+- **MAKNA AWAM:** Autokorelasi hanya terjadi pada data yang berurut waktu secara serial (time series seperti harga saham harian). Pada penelitian survei kartu Pokémon, responden adalah individu-individu berbeda yang mengisi kuesioner secara independen pada satu titik waktu (cross-sectional), sehingga asumsi autokorelasi secara teoretis tidak relevan dan tidak perlu diuji.
 - **KENAPA (TIDAK) DIPAKAI:** Sengaja dieksklusi dengan alasan tertulis di Bab 3 — penguji yang menanyakan ini justru sedang mengujimu, dan jawabannya sudah siap.
 - **1 KALIMAT:** "Autokorelasi hanya untuk data time series; survei cross-sectional antar-individu independen tidak memerlukannya."
 
 ---
 
-# 19. ANATOMI BAB 1 & 2: KENAPA BEGITU & ALASANNYA
+# 19. ANATOMI BAB 1 & 2: KENAPA BEGITU & ALASANNYA <a id="sec-19"></a>
 
 > Format sama seperti §18: **ASAL → MAKNA AWAM → KENAPA BEGITU DI SKRIPSI INI → 1 KALIMAT**. Bagian tersulit Bab 1–2 bukan rumus, melainkan *keputusan narasi* — dan setiap keputusan di bawah ini punya alasan yang bisa kamu pertahankan.
 
@@ -796,119 +810,570 @@ B1–B2: fenomena + literatur; B2–B3: proposal + bimbingan; B3: SEMPRO (besok!
 
 ### B1-1. Kenapa latar belakang dibuka dengan ekosistem Pokémon (game, anime), bukan langsung kartu?
 - **ASAL:** Arahan pembimbing (9 Sep 2026) + kaidah funnel penulisan ilmiah (umum → khusus).
-- **MAKNA AWAM:** Seperti kamera drone: mulai dari langit (waralaba raksasa), turun ke kota (TCG), masuk ke rumah (booster pack di kasir), berhenti di meja (kasir impulsif). Pembaca yang awam hobi tetap bisa mendarat.
-- **KENAPA:** Tanpa konteks raksasa, kartu terlihat seperti "mainan anak" — urgensi penelitian runtuh. Angka US$ 100 miliar memaksa penguji menganggap objekmu serius.
+- **MAKNA AWAM:** Latar belakang disusun dengan pendekatan piramida terbalik: dimulai dari skala makro industri waralaba Pokémon (USD 100 miliar), mengerucut ke penetrasi kartu fisik Pokémon TCG (64,8 miliar kartu), masuk ke mekanisme blind-pack di toko hobi/minimarket, lalu berfokus pada masalah mikro keputusan finansial: pembelian impulsif kartu tanpa rencana anggaran.
+- **KENAPA:** Tanpa konteks raksasa, kartu terlihat seperti "mainan anak" — urgensi penelitian runtuh. Angka USD 100 miliar memaksa penguji menganggap objekmu serius.
 - **1 KALIMAT:** "Ekosistem raksasa membuktikan objek saya layak diteliti sebelum saya mengerucut ke kartu."
 
-### B1-2. Kenapa angka 64,8 miliar & US$ 100 miliar penting?
+### B1-2. Kenapa angka 64,8 miliar & USD 100 miliar penting?
 - **ASAL:** The Pokémon Company (2024); Statista Chart 24277 (2021).
-- **MAKNA AWAM:** 64,8 miliar = bukti skala fisik (bukan klaim "ramai"); US$ 100 miliar = bukti nilai ekonomi (bukan "mainan receh"). Dua angka ini adalah "paspor" Bab 1 melewati pertanyaan "memangnya sepenting apa sih kartu itu?"
+- **MAKNA AWAM:** Angka 64,8 miliar lembar kartu membuktikan skala produksi fisik yang masif, sedangkan valuasi waralaba USD 100 miliar membuktikan nilai ekonomi riil di pasar global. Dua angka ini menjadi bukti empiris pembuka Bab 1 untuk menjawab tuntas pertanyaan penguji: *"Kenapa kartu Pokémon layak diteliti di Fakultas Ekonomi & Bisnis?"*
 - **KENAPA:** Latar belakang tanpa angka = opini. Dengan angka = fenomena empiris yang menuntut penjelasan ilmiah.
 - **1 KALIMAT:** "Dua angka itu mengubah kartu dari mainan menjadi fenomena ekonomi yang wajib diteliti."
 
 ### B1-3. Kenapa mekanisme blind-pack dijelaskan panjang?
 - **ASAL:** Karakteristik objek + teori lottery effect/gambler's fallacy.
-- **MAKNA AWAM:** Blind-pack adalah mesin judi legal mini: bayar pasti Rp20 ribu, hadiah tak pasti (zonk vs SAR jutaan). Ketidakpastian inilah bahan bakar dopamin — tanpa bagian ini, hubungan ke impulsive buying tidak masuk akal.
+- **MAKNA AWAM:** Kemasan booster pack foil dijual tersegel acak (blind-pack) seharga Rp20.000–Rp50.000. Pembeli mengeluarkan biaya pasti, namun nilai kartu di dalamnya tidak pasti—bisa kartu biasa seharga ribuan rupiah, atau kartu Special Illustration Rare (SAR) bernilai ratusan ribu hingga jutaan rupiah. Ketidakpastian inilah yang memicu rasa penasaran emosional (X1), celah binder yang belum lengkap (X2), dan harapan cuan (X3) hingga berujung pada pembelian impulsif di kasir (Y).
 - **KENAPA:** Inilah jembatan kausal Bab 1: ketidakpastian → emosi → impulsif (X1), koleksi → celah (X2), cuan → spekulasi (X3). Hapus bagian ini = tiga variabelmu mengambang tanpa kaki.
 - **1 KALIMAT:** "Blind-pack adalah mesin kausal yang menghubungkan objek ke ketiga variabel saya."
 
 ### B1-4. Kenapa ada industri grading (PSA/BGS/CGC)?
 - **ASAL:** Fakta pasar + PriceCharting (2024).
-- **MAKNA AWAM:** Grading mengubah kartu dari "kertas bergambar" menjadi "aset bersertifikat bernomor" — seperti sertifikat tanah untuk properti. Tanpa grading, tidak ada harga jutaan, tidak ada arbitrase, tidak ada X3.
+- **MAKNA AWAM:** Lembaga grading (PSA, BGS) menginspeksi kondisi fisik kartu secara objektif dan menyegelnya dalam slab plastik kedap udara dengan skor 1–10. Sertifikasi ini memberikan jaminan keaslian dan kondisi prima, sehingga kartu Pokémon bertransformasi dari sekadar lembaran hobi menjadi aset alternatif yang memiliki likuiditas harga di pasar sekunder internasional (fondasi variabel X3 Speculative Motive).
 - **KENAPA:** X3 (Speculative Motive) butuh bukti bahwa spekulasinya NYATA dan terlembaga — grading adalah buktinya.
 - **1 KALIMAT:** "Grading adalah mesin yang mengubah hobi menjadi pasar spekulatif — fondasi X3."
 
 ### B1-5. Kenapa data PriceCharting edisi Inggris dipakai + ada catatan keterbatasan?
 - **ASAL:** PriceCharting Shining Fates (snapshot Jan 2025, N = 5); keterbatasan transferabilitas tertulis eksplisit.
-- **MAKNA AWAM:** Data pack Indonesia per-kartu tidak tersedia seterbuka data Inggris — jadi dipakai ilustrasi arah (ada disparitas puluhan kali lipat), BUKAN angka final. Catatan kaki yang jujur ("bukan estimasi nasional") justru perisai: penguji tidak bisa menuduhmu menggeneralisasi berlebihan karena kamu sudah membatasinya sendiri.
+- **MAKNA AWAM:** Data pergerakan harga kartu edisi Indonesia belum terdokumentasi dalam pangkalan data internasional selengkap edisi Inggris. Oleh karena itu, data PriceCharting digunakan sebagai bukti konseptual adanya disparitas harga puluhan kali lipat antara kartu biasa dan kartu langka di pasar sekunder, yang juga terbukti terjadi pada listing kartu Indonesia di marketplace lokal (Tokopedia/Shopee).
 - **KENAPA:** Kejujuran metodologis yang dinyatakan duluan = serangan yang dilucuti duluan. Ditambah jembatan domestik (listing Tokopedia/Shopee searah).
 - **1 KALIMAT:** "Data Inggris hanya ilustrasi arah disparitas; batasnya saya tulis sendiri agar tidak bisa diserang."
 
 ### B1-6. Kenapa research gap-nya 7 subjek (bukan 3)?
 - **ASAL:** Struktur model: 3 langsung (X→Y) + 1 langsung M→Y + 3 moderasi.
-- **MAKNA AWAM:** Setiap panah di diagram model harus punya "surat izin" berupa gap. Tujuh panah (termasuk M sebagai baseline) = tujuh surat izin. Baris 4 (M→Y) izinnya untuk memasukkan M sebagai kontrol, bukan hipotesis.
+- **MAKNA AWAM:** Setiap panah hubungan pada kerangka model harus memiliki justifikasi kesenjangan penelitian (gap). Model Arthur memiliki 7 panah hubungan (3 efek langsung X1, X2, X3 terhadap Y; 1 efek kontrol M terhadap Y; dan 3 efek moderasi X1·M, X2·M, X3·M terhadap Y). Tujuh baris matriks gap menjamin tidak ada satu pun panah hubungan yang tidak memiliki dasar ilmiah.
 - **KENAPA:** Menutup pertanyaan "panah ini dasarnya apa?" untuk SELURUH model sekaligus — tidak ada panah yatim.
 - **1 KALIMAT:** "Tujuh subjek = tujuh surat izin untuk tujuh panah model, termasuk izin kontrol M."
 
 ### B1-7. Kenapa novelty-nya 3 poin itu?
 - **ASAL:** Sintesis gap 1A–7A.
-- **MAKNA AWAM:** (1) Orang lain meneliti satu-satu, kamu meneliti bertiga sekaligus pada satu objek — seperti turnamen tiga divisi sekaligus. (2) Orang lain menaruh psikologi sebagai pendorong, kamu menaruhnya sebagai REM — posisi yang jarang diuji. (3) Belum ada yang meneliti kartu berbahasa Indonesia di kampusmu — kamu yang pertama.
+- **MAKNA AWAM:** Tiga kebaruan (novelty) skripsi ini: (1) Menggabungkan tiga faktor pemicu sekaligus (emosi kesenangan X1, hasrat kelengkapan binder X2, dan motif spekulasi cuan X3) dalam satu model penelitian pada kartu Pokémon TCG. (2) Memposisikan Self-Control bukan sebagai pemicu belanja, melainkan sebagai variabel moderasi (rem kognitif) yang menguji apakah kontrol diri mampu menahan dorongan belanja kartu tersebut. (3) Menjadi penelitian pionir yang mengkaji kartu fisik Pokémon TCG edisi resmi berbahasa Indonesia pada kolektor di Indonesia.
 - **KENAPA:** Tiga poin menyerang tiga keraguan penguji: "apa bedanya dengan riset lama?" (simultan), "apa istimewanya?" (rem, bukan gas), "kenapa di sini?" (pionir lokal).
 - **1 KALIMAT:** "Tiga anteseden sekaligus, psikologi sebagai rem, dan pionir lokal — itu kebaruan saya."
 
 ### B1-8. Kenapa rumusan masalah & tujuan masing-masing 6 butir?
 - **ASAL:** Prinsip golden thread 1-to-1 (RM ↔ Tujuan ↔ H1–H6).
-- **MAKNA AWAM:** Enam pertanyaan, enam janji jawaban, enam hipotesis pengujiannya. Seperti enam kunci untuk enam gembok — tidak ada pertanyaan yang tidak diuji, tidak ada pengujian yang tidak ditanya.
+- **MAKNA AWAM:** Benang merah penelitian (golden thread) tersusun selaras 1-to-1: ada 6 Rumusan Masalah di Bab 1, 6 Tujuan Penelitian di Bab 1, dan 6 Hipotesis (H1–H6) di Bab 2. Tiga butir pertama menguji pengaruh langsung (X1→Y, X2→Y, X3→Y), dan tiga butir berikutnya menguji efek moderasi Self-Control (X1·M→Y, X2·M→Y, X3·M→Y).
 - **KENAPA:** Simetri ini membuat naskah anti-bocor: penguji tidak bisa bertanya "tujuan nomor 4 diuji di hipotesis mana?" karena jawabannya selalu sejajar.
 - **1 KALIMAT:** "Enam butir menjaga benang merah: tiap masalah punya tujuan dan hipotesis sejajar."
 
-### B1-9. Kenapa manfaat dibagi teoritis vs praktis (+ sebut Gen Z)?
+### B1-9. Kenapa manfaat dibagi teoretis vs praktis (+ sebut Gen Z)?
 - **ASAL:** Konvensi skripsi Indonesia + posisi pembaca ganda (akademisi vs masyarakat).
-- **MAKNA AWAM:** Manfaat teoritis = "sumbangan untuk ilmu" (dosen penguji membacanya). Manfaat praktis = "gunanya untuk orang biasa" (kolektor, toko, pembuat kebijakan). Gen Z disebut sebagai SEGMENT penerima manfaat — kini dipertegas bukan pembatas populasi (lihat Q31).
+- **MAKNA AWAM:** Manfaat teoretis memberikan kontribusi bagi pengembangan literatur Keuangan Perilaku pada aset alternatif hobi fisik. Manfaat praktis memberikan masukan edukasi anggaran bagi komunitas kolektor kartu Pokémon, toko hobi ritel, dan orang tua. Gen Z disebut sebagai salah satu segmen demografis utama yang aktif dalam hobi TCG (bukan sebagai batasan populasi).
 - **KENAPA:** Tanpa split ini, penguji bertanya "gunanya apa penelitianmu?" dan kamu hanya punya satu sisi jawaban.
-- **1 KALIMAT:** "Teoritis untuk ilmu, praktis untuk masyarakat — Gen Z sebagai penerima manfaat, bukan batas populasi."
+- **1 KALIMAT:** "Teoretis untuk ilmu, praktis untuk masyarakat — Gen Z sebagai penerima manfaat, bukan batas populasi."
 
 ## B. BAB 2 — Keputusan Teori
 
 ### B2-1. Kenapa grand theory-nya Behavioral Finance, bukan pemasaran?
 - **ASAL:** Konsentrasi Manajemen Keuangan + sifat objek (aset spekulatif berpasar sekunder).
-- **MAKNA AWAM:** Teori pemasaran menjawab "kenapa orang MEMBELI"; Behavioral Finance menjawab "kenapa orang MENGAMBIL RISIKO UANG secara irasional". Skripsimu tentang uang, risiko, dan cuan — jadi rumahnya keuangan perilaku.
+- **MAKNA AWAM:** Teori pemasaran hanya menjelaskan motif konsumsi, sedangkan Keuangan Perilaku (*Behavioral Finance*) menjelaskan bagaimana bias kognitif dan ilusi keuntungan membuat individu mengambil keputusan alokasi uang yang tidak rasional. Karena kartu Pokémon memiliki pasar sekunder terorganisir dan motif spekulasi modal (X3), Keuangan Perilaku adalah payung teori yang paling tepat.
 - **KENAPA:** Menjawab pertanyaan paling mematikan ("kamu anak keuangan kok pakai teori marketing?") sebelum ditanyakan; sekaligus membenarkan X3 yang murni finansial.
 - **1 KALIMAT:** "Objek saya aset spekulatif dan saya anak keuangan — Behavioral Finance rumah yang tepat."
 
 ### B2-2. Kenapa S-O-R, dan apa petanya ke variabel?
 - **ASAL:** Mehrabian & Russell (1974).
-- **MAKNA AWAM:** S-O-R = "ada pemicu → ada yang terjadi di kepala → ada tindakan". Petanya: S = display kasir + blind-pack + harga sekunder; O = X1, X2, X3 (+ M sebagai rem); R = Y. Ini GPS yang menempatkan tiap variabel pada jalurnya.
+- **MAKNA AWAM:** Kerangka Stimulus-Organism-Response (S-O-R) memetakan proses perilaku: (S) Stimulus lingkungan seperti pajangan booster pack di kasir, segel blind-pack, dan informasi kenaikan harga kartu di komunitas; (O) Organism adalah kondisi internal mental kolektor, yaitu rasa senang unboxing (X1), hasrat melengkapi binder (X2), motif spekulasi cuan (X3), serta kontrol diri (M) sebagai rem; (R) Response adalah tindakan nyata berbelanja kartu secara impulsif di kasir (Y).
 - **KENAPA:** Tanpa S-O-R, variabelmu tumpukan acak. Dengan S-O-R, penguji melihat arsitektur berpikir.
 - **1 KALIMAT:** "S-O-R memetakan display toko ke kepala pembeli ke kasir — tiap variabel duduk di jalurnya."
 
 ### B2-3. Kenapa rantai Zeigarnik → tipping point → pseudo-set (tiga lapis)?
 - **ASAL:** Zeigarnik (1927) → Gao (2014) → Barasz (2017).
-- **MAKNA AWAM:** Kakek (1927): "manusia gelisah pada yang belum selesai". Ayah (2014): "kegelisahan memuncak saat SET hampir lengkap". Anak (2017): "bahkan set bohongan pun memicu beli". Tiga generasi teori = silsilah lengkap X2 dari psikologi dasar sampai perilaku belanja.
+- **MAKNA AWAM:** Tiga generasi teori melandasi variabel X2 (Desire for Completeness): (1) Zeigarnik (1927) menemukan bahwa manusia secara psikologis gelisah melihat tugas yang belum selesai; (2) Gao et al. (2014) membuktikan bahwa dorongan belanja melonjak drastis saat koleksi mendekati lengkap (*The Completing the Set Effect*); (3) Barasz et al. (2017) membuktikan efek *Pseudo-Set Framing*, yaitu dorongan membeli tambahan barang ketika produk dibingkai dalam format himpunan bernomor (seperti checklist kartu Pokémon nomor 001 s.d. 150).
 - **KENAPA:** Menunjukkan kedalaman literatur: kamu tidak comot satu jurnal, kamu kuasai garis keturunannya — persis yang ditanya di SULIT 11.
 - **1 KALIMAT:** "Tiga lapis = silsilah X2 dari psikologi dasar hingga perilaku belanja."
 
 ### B2-4. Kenapa Self-Regulation + Planner-Doer + ego depletion sekaligus?
 - **ASAL:** Baumeister (2002), Thaler & Shefrin (1981), Vohs & Faber (2007), Tangney (2004).
-- **MAKNA AWAM:** Planner-Doer = drama dua tokoh (perencana vs pemboros). Ego depletion = "baterai rem bisa habis". Self-Regulation/BSCS = "cara mengukur sisa baterai". Tiga konsep = cerita + mekanisme + alat ukur M yang utuh.
+- **MAKNA AWAM:** Tiga konsep pendukung variabel kontrol diri: (1) Model Planner-Doer menjelaskan konflik batin kolektor antara sisi 'Doer' yang tergoda membeli kartu saat itu juga vs sisi 'Planner' yang ingin menabung. (2) Teori Ego Depletion menjelaskan batas ketahanan mental kolektor: jika seharian energinya sudah terkuras, rem kontrol dirinya melemah dan ia rentan belanja impulsif saat melihat kartu di kasir. (3) Skala BSCS (Tangney) menjadi kuesioner ilmiah untuk mengukur kapasitas kontrol diri kolektor tersebut.
 - **KENAPA:** M butuh legitimasi tiga sisi: kenapa ia ada (teori), kapan ia gagal (deplesi — menjelaskan juga bila H4–H6 ditolak!), dan bagaimana diukur (BSCS).
 - **1 KALIMAT:** "Tiga konsep memberi M cerita, mekanisme gagal, dan alat ukur sekaligus."
 
 ### B2-5. Kenapa Y dibahas lebih dulu, bukan X?
 - **ASAL:** Arahan pembimbing + logika masalah → sebab.
-- **MAKNA AWAM:** Y adalah "pasien", X adalah "calon penyebab". Dokter memeriksa pasien dulu sebelum menuduh penyebab. Membahas X dulu = menuduh sebelum memeriksa.
+- **MAKNA AWAM:** Variabel Y (Impulsive Buying kartu Pokémon) adalah fenomena masalah utama yang terjadi di lapangan dan ingin kita pecahkan. Oleh karena itu, di Bab 2 variabel Y harus dibahas tuntas terlebih dahulu, baru kemudian disusul oleh variabel penjelasnya (X1 kesenangan gacha, X2 kelengkapan set, X3 motif spekulasi) yang diduga memicu timbulnya perilaku belanja impulsif tersebut.
 - **KENAPA:** Menjawab pertanyaan dosen yang sudah pernah ditanyakan (Q4) — urutan ini keputusan sadar, bukan kebetulan.
 - **1 KALIMAT:** "Y dulu karena ia masalahnya; X kemudian karena ia penjelasnya."
 
 ### B2-6. Kenapa tiap hipotesis pakai format 4-tier?
 - **ASAL:** Standar pengembangan hipotesis (teori → empiris → objek → rumusan).
-- **MAKNA AWAM:** Empat lapis = empat saksi di persidangan: ahli teori, peneliti terdahulu, TKP (objek kartu), lalu vonis (hipotesis). Hipotesis tanpa 4-tier = vonis tanpa sidang.
+- **MAKNA AWAM:** Setiap hipotesis dibangun melalui empat tingkatan argumentasi yang runtut: (Tier 1) Teori rujukan utama; (Tier 2) Bukti empiris dari jurnal penelitian sebelumnya; (Tier 3) Karakteristik dan dinamika riil pada kartu Pokémon TCG; (Tier 4) Rumusan pernyataan hipotesis final. Struktur 4-tier ini membuat argumen hipotesis sangat kokoh dan tidak bisa dibantah saat diuji dosen.
 - **KENAPA:** Membuat tiap H1–H6 tahan gebukan: serang teorinya ada empirisnya, serang empirisnya ada objeknya.
 - **1 KALIMAT:** "Empat tier = empat saksi yang membuat tiap hipotesis tahan sidang."
 
 ### B2-7. Kenapa 10 studi terdahulu, dan bagaimana membacanya cepat?
 - **ASAL:** Korpus 2021–2026 (Tabel 2.1).
-- **MAKNA AWAM:** Sepuluh studi = sepuluh "tentara" yang dibagi dua kubu: kubu pendukung H (Pranggabayu, Lienardy, Gong, Azizah, Dewi, Aryadi-analogi) vs kubu penantang (Apidana gagal-moderasi, Artadita ditolak, Colline kualitatif, Katauke proksi). Skripsimu lahir dari perang dua kubu ini.
+- **MAKNA AWAM:** Sepuluh penelitian terdahulu di Tabel 2.1 dipetakan menjadi dua kelompok hasil empiris: kelompok yang mendukung pengaruh motif belanja (Pranggabayu, Lienardy, Gong, Azizah, Dewi), serta kelompok studi penantang yang menemukan hasil berbeda (Apidana di mana kontrol diri gagal memoderasi, Artadita di mana motif finansial tidak signifikan, dan Colline yang membedah bias perilaku investor). Penelitian skripsi ini hadir untuk menguji secara objektif di tengah inkonsistensi temuan empiris tersebut.
 - **KENAPA:** Menunjukkan kamu tidak cherry-picking (hanya comot yang mendukung) — bukti yang melawan pun kamu catat jujur (L12–L14). Kejujuran ini justru nilai plus terbesar di mata penguji.
 - **1 KALIMAT:** "Sepuluh studi dibagi dua kubu — saya mencatat yang melawan juga, itulah kejujuran ilmiah."
 
-### B2-8. Kenapa analogi (Aryadi, Colline) ditandai eksplisit sebagai analogi?
+### B2-8. Kenapa studi Aryadi dan Colline ditandai eksplisit sebagai kajian pembanding/analogi?
 - **ASAL:** Aturan no-synthetic-claims + evidence ledger.
-- **MAKNA AWAM:** Aryadi meneliti investasi (bukan impulsif), Colline meneliti 5 investor tua (bukan kolektor muda). Kamu meminjamnya sebagai "teropong", bukan "bukti". Menandai "ini analogi" = berkata jujur sebelum ditanya.
+- **MAKNA AWAM:** Studi Aryadi & Lingga (2024) meneliti niat investasi kartu (bukan belanja impulsif), sedangkan studi Dr. Fredella Colline (2024) meneliti bias investor pasar modal. Kamu mengadopsi konsep bias perilaku tersebut sebagai rujukan teoretis untuk memperkuat hipotesis motif spekulasi kartu Pokémon (X3), dan menyatakan secara eksplisit batasannya di naskah agar terhindar dari tuduhan generalisasi berlebihan saat sidang.
 - **KENAPA:** Penguji yang menemukan Y-berbeda-sendiri akan menyerang; penguji yang melihat kamu sudah menandainya sendiri akan mengangguk. Senjata makan tuan vs tameng.
-- **1 KALIMAT:** "Analogi yang ditandai sendiri adalah tameng; yang disembunyikan adalah bom waktu."
+- **1 KALIMAT:** "Kajian pembanding yang ditandai sendiri adalah tameng ilmiah; metodologi menjadi transparan dan kokoh."
 
 ### B2-9. Kenapa diagram pakai garis lurus vs putus-putus?
 - **ASAL:** Konvensi diagram jalur (Gambar 2.1).
-- **MAKNA AWAM:** Garis lurus = "jalan tol langsung" (X→Y, H1–H3). Garis putus-putus = "tangan tak terlihat yang menekan" (M melemah, H4–H6). Beda garis = beda jenis pengaruh — penguji membaca model dalam 10 detik.
+- **MAKNA AWAM:** Pada bagan kerangka konseptual (Gambar 2.1): panah garis lurus tegas melambangkan pengaruh langsung pemicu belanja kartu ke pembelian impulsif (H1 Hedonic, H2 Completeness, H3 Speculative). Sedangkan panah garis putus-putus yang menunjuk ke tengah garis utama melambangkan efek moderasi Self-Control yang berperan memperlemah hubungan tersebut (H4, H5, H6).
 - **KENAPA:** Satu gambar menggantikan tiga paragraf penjelasan; plus catatan kaki diagram sudah mengantisipasi pertanyaan β4 (lihat Q33).
-- **1 KALIMAT:** "Lurus = pengaruh langsung; putus-putus = tangan pelemah."
+- **1 KALIMAT:** "Lurus = pengaruh langsung; putus-putus = peran moderasi pelemah."
 
 ### B2-10. Kenapa kutipan "mahasiswa dan Gen Z" ada di latar + manfaat?
 - **ASAL:** Fakta basis kolektor + segmen manfaat (lihat Q31).
 - **MAKNA AWAM:** Di latar: deskripsi FAKTA (yang ramai memang muda). Di manfaat: alamat SURAT (untuk siapa gunanya). Dua fungsi berbeda, dua tempat berbeda — dan Batasan Masalah kini menegaskan keduanya bukan batas populasi.
 - **KENAPA:** Menutup lingkaran isu generasi dari tiga sisi (fakta, manfaat, batasan) sehingga tidak ada sisi yang bisa diserang.
 - **1 KALIMAT:** "Di latar itu fakta, di manfaat itu alamat surat — batas populasinya tetap umum."
+
+---
+
+# 20. KAMUS BEDAH TUNTAS: JAWABAN 25 MASALAH KRITIS SIDANG (BAB 1, 2, 3) <a id="sec-20"></a>
+
+> Bagian ini disusun khusus dalam bahasa sehari-hari yang sangat mudah dipahami, tanpa jargon rumit yang membingungkan. Hafalkan inti logikanya dan gunakan kalimat kunci yang dicetak tebal saat menjawab dosen pembimbing (Dr. Fredella Colline) dan dewan penguji besok.
+
+---
+
+## 📘 KELOMPOK BAB 1: LATAR BELAKANG & FENOMENA
+
+### 1. Tabel 1.1 itu bahasa sederhananya mereka itu apa?
+* **Bahasa Sederhana:** Tabel 1.1 adalah **"Surat Izin Meneliti"** atau **"Peta Perdebatan Peneliti Terdahulu (Research Gap)"**.
+* **Penjelasan:** Bayangkan kamu mau meneliti pengaruh A ke B. Penguji pasti bertanya: *"Untuk apa kamu teliti ini lagi? Bukankah sudah diteliti orang lain?"*  
+  Jawabanmu ada di Tabel 1.1: Peneliti terdahulu **berbeda pendapat / ada pertentangan hasil**. Kelompok A menemukan hasil positif signifikan, sedangkan Kelompok B menemukan batas konseptual/hasil tidak signifikan. Karena belum ada kesepakatan bulat, kamu hadir menguji bagaimana hasilnya pada konteks unik kartu Pokémon TCG di Indonesia. Ada 7 baris di tabel itu karena modelmu punya 7 panah hubungan (3 langsung, 1 baseline M, 3 moderasi).
+* **Jawaban 1 Kalimat ke Dosen:** *"Tabel 1.1 merangkum 7 kesenjangan empiris dari penelitian terdahulu yang membuktikan bahwa hubungan antar-variabel dalam model saya masih diperdebatkan dan belum tuntas, sehingga memerlukan pengujian pada objek kartu Pokémon TCG."*
+
+### 2. Self-Control diposisikan sebagai rem volisional, yakni kapasitas menunda kepuasan (apa itu rem volisional)?
+* **Bahasa Sederhana:** "Volisional" artinya **kehendak sadar / niat yang disengaja** (*willpower*). "Rem volisional" = **Rem otak sadar kamu**.
+* **Penjelasan:** Saat kamu berdiri di depan kasir minimarket dan melihat booster pack Pokémon yang berkilau, ada dorongan "gas" (nafsu belanja/dopamin ingin gacha kartu langka). Rem volisional adalah kemampuan sadar kamu untuk menginjak rem dan berkata: *"Tahan, jangan beli sekarang, uangnya lebih baik ditabung untuk kebutuhan penting."* Ini adalah kapasitas menunda kesenangan sesaat (*delay of gratification*) demi tujuan keuangan masa depan.
+* **Jawaban 1 Kalimat ke Dosen:** *"Rem volisional adalah kapasitas pengendalian diri yang bekerja secara sadar untuk menunda kepuasan instan belanja gacha demi menjaga stabilitas alokasi keuangan jangka panjang."*
+
+### 3. Inti masalah dari skripsi ini apa?
+* **Bahasa Sederhana:** Inti masalahnya adalah **perilaku kalap belanja kartu Pokémon acak (*blind-pack*) yang dipicu oleh kesenangan gacha, nafsu melengkapi binder, dan ilusi cuan spekulasi, serta bagaimana kontrol diri mampu mengerem kekalapan tersebut**.
+* **Penjelasan:** Kartu Pokémon bukan lagi mainan receh anak-anak, melainkan komoditas ekonomi bernilai tinggi dengan sistem pembelian acak (*blind-pack*) dan pasar sekunder bernilai jutaan rupiah. Konsumen sering melakukan pembelian impulsif tanpa rencana yang merugikan keuangan pribadi. Penelitian ini mencari tahu: faktor mana yang paling mendorong kekalapan belanja tersebut, dan apakah *Self-Control* efektif menjadi rem penahannya.
+* **Jawaban 1 Kalimat ke Dosen:** *"Inti masalah penelitian ini adalah fenomena pembelian impulsif booster pack kartu Pokémon TCG akibat percampuran dorongan hedonis, hasrat melengkapi koleksi, dan motif spekulasi pasar sekunder, serta menguji efektivitas Self-Control sebagai mekanisme peredamnya."*
+
+### 4. Tujuan penelitian apakah harus ada misal untuk perusahaan yang mau melakukan sesuatu dari data ini?
+* **Bahasa Sederhana:** **TIDAK di bagian Tujuan Penelitian**, tetapi **WAJIB di bagian Manfaat Praktis Penelitian!**
+* **Penjelasan:**  
+  - **Subbab 1.3 (Tujuan Penelitian):** Murni menjawab Rumusan Masalah secara akademis (misal: "menganalisis pengaruh Hedonic Motivation terhadap Impulsive Buying"). Jangan mencampuradukkan tujuan ilmiah dengan rekomendasi bisnis di sini.
+  - **Subbab 1.4.2 (Manfaat Praktis):** Di sinilah tempatnya menuliskan kegunaan data ini bagi perusahaan (The Pokémon Company / AKG Games untuk mendesain edukasi belanja etis) dan bagi masyarakat/kolektor muda (agar sadar literasi keuangan dan tidak boncos).
+* **Jawaban 1 Kalimat ke Dosen:** *"Tujuan penelitian di Subbab 1.3 difokuskan murni untuk menjawab rumusan masalah secara akademis, sedangkan kegunaan aplikatif bagi perusahaan dan konsumen diuraikan secara khusus pada Manfaat Praktis di Subbab 1.4.2."*
+
+### 5. Khususnya dalam menjelaskan bagaimana motif spekulasi finansial, bias perilaku investor Indonesia (Colline, 2024), dan bias kognitif koleksi berinteraksi memicu keputusan pembelian impulsif. (Ini maksudnya apa, kalau ditanya Ci Colline jawab apa?)
+* **Bahasa Sederhana:** Ini adalah **pemenuhan syarat wajib sitasi karya dosen pembimbing FEB UKRIDA (Pedoman TA 2023 Subbab 1.4.b)** dengan cara yang sangat cerdas dan terhormat.
+* **Penjelasan:** Paper Dr. Fredella Colline (2024) meneliti tentang **bias perilaku investor saham di Indonesia** (seperti perilaku ikut-ikutan tren /*herding*, optimisme berlebihan, dan ilusi cuan). Di skripsi ini, kamu menganalogikan pembeli booster pack Pokémon dengan investor saham di riset Ci Colline: pembeli kartu melihat kartu langka seperti saham yang harganya bisa meledak di pasar sekunder, lalu terjebak ilusi keuntungan dan ikut-ikutan tren komunitas (*herding*) sehingga membeli secara impulsif di kasir.
+* **Jawaban Siap Pakai ke Ci Colline:** *"Izin Ibu Fredella, dalam naskah ini saya mengadopsi studi Ibu (Colline, 2024) mengenai bias perilaku investor pasar modal Indonesia sebagai landasan analogi teoretis. Pembeli kartu Pokémon TCG menunjukkan bias perilaku yang serupa dengan investor ritel—mereka mengalami herding saat melihat tren harga kartu di komunitas dan terjebak ilusi probabilitas nilai pasar sekunder, yang memicu dorongan spekulasi finansial dan pembelian impulsif."*
+
+---
+
+## 📗 KELOMPOK BAB 2: LANDASAN TEORI & HIPOTESIS
+
+### 6. S-O-R apakah berpengaruh ke satisficing-nya Simon?
+* **Bahasa Sederhana:** S-O-R adalah **KERANGKA PROSESNYA**, sedangkan *Satisficing* Herbert Simon adalah **KONDISI KOGNITIF DI DALAM ORGANISM (O)-NYA**.
+* **Penjelasan:**  
+  - **S (*Stimulus*):** Rangsangan luar (kemasan foil berkilau di etalase kasir, display promo).
+  - **O (*Organism*):** Proses mental di dalam kepala pembeli. Di sinilah teori Herbert Simon (*Bounded Rationality*) bekerja: manusia punya keterbatasan kapasitas berpikir rasional di depan kasir, sehingga alih-alih menghitung peluang secara matematis, mereka mengambil keputusan yang *"cukup memuaskan hasrat saat itu"* (*satisficing*).
+  - **R (*Response*):** Tindakan nyata berupa pembelian impulsif di kasir.
+* **Jawaban 1 Kalimat ke Dosen:** *"S-O-R memayungi proses alur dari display kasir (Stimulus) ke kondisi kognitif satisficing manusia yang terbatas (Organism) hingga melahirkan tindakan pembelian impulsif (Response)."*
+
+### 7. Apa itu Pseudo-Set Framing?
+* **Bahasa Sederhana:** *"Pseudo-Set"* = **"Set Semu / Set Bikinan Pabrik"**.
+* **Penjelasan:** Diteliti oleh Barasz et al. (2017) di Harvard University. Bayangkan pabrik mencetak 151 kartu dan menaruh nomor 001 sampai 151 di binder. Secara logika dingin, kamu tidak punya kewajiban apa-apa untuk melengkapinya. Tetapi otak manusia terkena bias: begitu melihat ada 3 slot binder kosong di halaman terakhir, otak merasa gelisah dan tidak tuntas (*Zeigarnik effect*). Akibatnya, kamu terdorong membeli booster pack lagi demi menutup lubang tersebut. Itulah *pseudo-set framing*—ilusi bahwa benda-benda acak harus disatukan menjadi satu set utuh.
+* **Jawaban 1 Kalimat ke Dosen:** *"Pseudo-Set Framing adalah bias kognitif di mana konsumen mempersepsikan kumpulan barang acak sebagai satu kesatuan set yang wajib dilengkapi, sehingga slot kosong memicu dorongan belanja impulsif."*
+
+### 8. Apa itu kajian variabel penelitian?
+* **Bahasa Sederhana:** Kajian variabel adalah **"Sesi Bedah Anatomi Bahan Baku"** di Bab 2.
+* **Penjelasan:** Sebelum menguji hubungan antar-variabel, kamu harus menjelaskan secara ilmiah apa arti masing-masing variabel tersebut menurut pakar dunia: apa definisinya, apa dimensinya, dan bagaimana variabel itu diukur. Di naskahmu: Subbab 2.2 membedah Y (Impulsive Buying), X1 (Hedonic), X2 (Completeness), X3 (Speculative), dan Z (Self-Control).
+* **Jawaban 1 Kalimat ke Dosen:** *"Kajian variabel adalah telaah konseptual mendalam yang menguraikan definisi, dimensi, dan batasan teoretis masing-masing variabel penelitian sebelum dirangkai ke dalam hipotesis."*
+
+### 9. Apa itu variabel independen?
+* **Bahasa Sederhana:** Variabel independen = **Variabel Bebas (Simbol X)** = **Variabel PENYEBAB / Pemicu**.
+* **Penjelasan:** Variabel yang nilainya berdiri sendiri dan diduga memengaruhi atau menyebabkan perubahan pada variabel lain (Y (Impulsive Buying)). Di skripsi Arthur ada 3 variabel independen:
+  1. X1 (Hedonic Motivation): *Hedonic Motivation* (dorongan kesenangan)
+  2. X2 (Desire for Completeness): *Desire for Completeness* (dorongan melengkapi koleksi)
+  3. X3 (Speculative Motive): *Speculative Motive* (dorongan mencari keuntungan finansial)
+* **Jawaban 1 Kalimat ke Dosen:** *"Variabel independen adalah variabel prediktor bebas yang menjadi anteseden penjelas dan memengaruhi variabel terikat (Y) secara langsung."*
+
+### 10. Tabel 2.1 itu maksudnya apa?
+* **Bahasa Sederhana:** Tabel 2.1 adalah **"Daftar 10 Saksi Ahli Mutakhir (Penelitian Terdahulu 2021–2026)"**.
+* **Penjelasan:** Menunjukkan kepada dewan penguji bahwa skripsi Arthur berpijak pada 10 jurnal ilmiah bereputasi (SINTA, Scopus Q1 Heliyon, Scopus Q3, Springer) yang terbit dalam 5 tahun terakhir. Tabel ini merinci nama peneliti, judul, variabel, metode analisis, dan temuan empiris mereka.
+* **Jawaban 1 Kalimat ke Dosen:** *"Tabel 2.1 merangkum 10 artikel jurnal empiris mutakhir bereputasi (2021–2026) yang menjadi landasan komparasi dan pijakan pengembangan hipotesis penelitian ini."*
+
+### 11. Pengembangan hipotesis itu apa sederhananya, saya ga tau konsep pengembangan hipotesis?
+* **Bahasa Sederhana:** "Hipotesis" = **Tebakan/Dugaan Ilmiah Sementara**. "Pengembangan Hipotesis" = **Cara Arthur mendongengkan alasan logisnya kenapa Arthur menebak begitu**.
+* **Penjelasan:** Kamu tidak boleh langsung menebak: *"X1 berpengaruh ke Y."* Kamu harus menyusun 4 rantai logika (4-Tier):
+  1. *Tier 1 (Teori):* Teori apa yang mendasarinya (teori hedonis Babin).
+  2. *Tier 2 (Bukti Empiris):* Peneliti sebelumnya menemukan apa (Pranggabayu & Gong membuktikan positif).
+  3. *Tier 3 (Konteks Objek):* Pada kartu Pokémon kenapa begitu (sensasi merobek pack memicu dopamin).
+  4. *Tier 4 (Rumusan):* Maka dirumuskan H1: *Hedonic Motivation berpengaruh positif terhadap Impulsive Buying*.
+* **Jawaban 1 Kalimat ke Dosen:** *"Pengembangan hipotesis adalah proses argumentasi logis deduktif yang memadukan teori dasar, bukti empiris terdahulu, dan konteks objek untuk menurunkan dugaan arah hubungan antar-variabel."*
+
+### 12. Apakah Gong et al. ini benar-benar harus saya pelajari? Kalau perlu tolong dijelaskan.
+* **Bahasa Sederhana:** **Cukup pelajari intinya saja!** Gong et al. (2024) adalah artikel sangat bergengsi terindeks **Scopus Q1 di jurnal internasional Heliyon**.
+* **Penjelasan Inti:** Gong et al. meneliti perilaku belanja konsumen pada produk **Blind Box (Kotak Misteri)** yang mekanisme produknya persis sama dengan booster pack Pokémon (isinya acak dan mengandalkan keberuntungan). Hasil penelitian Gong membuktikan bahwa motivasi hedonis dan rasa penasaran terbukti secara signifikan memicu pembelian impulsif. Jika penguji bertanya rujukan internasional terkuatmu tentang produk berkemasan misteri acak, sebutkan nama Gong et al. (2024).
+* **Jawaban 1 Kalimat ke Dosen:** *"Gong et al. (2024) di jurnal Heliyon Scopus Q1 adalah rujukan empiris mutakhir yang meneliti produk blind box acak dan membuktikan bahwa dorongan hedonis secara signifikan memicu pembelian impulsif."*
+
+### 13. Bukti domestik Indonesia ditopang oleh Dewi et al. (ini aman kah)?
+* **Bahasa Sederhana:** **SANGAT AMAN.**
+* **Penjelasan:** Dewi et al. adalah artikel jurnal terverifikasi terbitan tahun **2026** di *Jurnal Locus* Indonesia. Mereka meneliti perilaku konsumtif dan pembelian impulsif pada kolektor barang hobi di Indonesia. Artikel ini menjadi bukti bahwa hasrat melengkapi koleksi benar-benar terjadi secara nyata pada konsumen domestik Indonesia.
+* **Jawaban 1 Kalimat ke Dosen:** *"Studi Dewi et al. (2026) sangat aman dan valid sebagai bukti empiris domestik bahwa perilaku impulsif pada kolektor hobi terjadi secara faktual di Indonesia."*
+
+### 14. Angka-angka, rumus, dan nomor-nomor di 2.4.5. dan 2.4.6. pengaruh moderasi self control maksudnya apa?
+* **Bahasa Sederhana:** Itu adalah **notasi arah hipotesis moderasi (H5 dan H6)**.
+* **Penjelasan:** Di subbab 2.4.5 dan 2.4.6 tertulis koefisien β6 < 0 dan β7 < 0.
+  - Tanda lebih kecil dari nol (< 0) artinya nilainya **NEGATIF**.
+  - Nilai negatif pada koefisien interaksi moderasi artinya **MEMPERLEMAH**.
+  - Maksudnya: Semakin tinggi kontrol diri (*Self-Control*) seseorang, maka pengaruh hasrat melengkapi koleksi (X2 (Desire for Completeness)) dan nafsu spekulasi (X3 (Speculative Motive)) terhadap belanja kalap (Y (Impulsive Buying)) akan **semakin melemah / diredam**.
+* **Jawaban 1 Kalimat ke Dosen:** *"Notasi koefisien interaksi negatif (β < 0) pada Subbab 2.4.5 dan 2.4.6 merepresentasikan hipotesis direksional bahwa Self-Control berperan memperlemah pengaruh X2 dan X3 terhadap Impulsive Buying."*
+
+### 15. Kerangka penelitian itu apa dan maksudnya apa ini?
+* **Bahasa Sederhana:** Kerangka penelitian (Gambar 2.1) adalah **"Peta Denah / Alur Pikir Hubungan Variabel"** dalam satu gambar ringkas.
+* **Penjelasan:**  
+  - Sisi Kiri: Kotak X1, X2, X3 (variabel bebas).
+  - Sisi Kanan: Kotak Y (Impulsive Buying) (variabel terikat).
+  - Garis Panah Lurus: Pengaruh langsung positif (H1, H2, H3).
+  - Kotak Atas/Tengah: Kotak M (Self-Control) (*Self-Control*) dengan garis panah putus-putus menunjuk ke badan panah utama (menandakan peran moderasi yang menekan/memperlemah, H4, H5, H6).
+* **Jawaban 1 Kalimat ke Dosen:** *"Kerangka penelitian adalah representasi grafis struktural yang memetakan seluruh konstelasi pengaruh langsung tiga anteseden dan interaksi pelemahan variabel moderasi terhadap variabel dependen."*
+
+### 16. Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness / Speculative Motive ... (kenapa mereka ada, mereka itu apa?)
+* **Bahasa Sederhana:** Mereka adalah **Variabel Rem Penahan (Moderasi)**. Mereka ada untuk menguji apakah manusia punya kemampuan menahan diri dari godaan hobi dan ilusi uang.
+* **Penjelasan:** Kalau skripsimu cuma meneliti "orang senang → orang belanja", itu terlalu sederhana. Di dunia nyata, manusia punya akal sehat dan pertimbangan keuangan. Variabel interaksi ini ada untuk menjawab pertanyaan kritis konsentrasi Manajemen Keuangan: *"Apakah kontrol diri seseorang mampu menjadi rem ketika dia sangat ingin melengkapi kartu di bindernya (H5) atau saat dia tergiur harga kartu bernilai jutaan rupiah (H6)?"*
+* **Jawaban 1 Kalimat ke Dosen:** *"Kedua hipotesis moderasi tersebut hadir untuk membuktikan apakah kapasitas volisional kontrol diri mampu menahan dorongan psikologis koleksi dan motif spekulasi finansial agar tidak berujung pada kerugian finansial akibat belanja impulsif."*
+
+---
+
+## 📙 KELOMPOK BAB 3: METODOLOGI PENELITIAN & EKONOMETRIKA
+
+### 17. Batasan responden, riwayat cuma beli sekali setahun apakah valid?
+* **Bahasa Sederhana:** **SANGAT VALID.**
+* **Penjelasan:** Kriteria inklusi mensyaratkan: *WNI ≥ 17 tahun yang pernah membeli booster pack resmi minimal 1 kali dalam 6–12 bulan terakhir*.
+  1. *Kenapa minimal 1 kali?* Karena membeli 1 bungkus saja sudah cukup membuat seseorang mengalami sensasi merobek bungkus acak (*pack opening experience*) dan merasakan godaan impulsif.
+  2. *Kenapa dibatasi dalam 12 bulan terakhir (diutamakan 6 bulan)?* Untuk mencegah **Recall Bias** (distorsi lupa ingatan). Pembelian dalam kurun waktu tersebut memorinya masih segar sehingga jawaban kuesionernya akurat dan dapat dipercaya.
+* **Jawaban 1 Kalimat ke Dosen:** *"Kriteria pembelian minimal 1 kali dalam 12 bulan terakhir valid karena menjamin responden memiliki pengalaman riil merobek kemasan acak sekaligus meminimalkan distorsi ingatan (recall bias)."*
+
+### 18. Penentuan ukuran sampel maksudnya apa?, itu pakai rumus apa, kenapa pakai rumus itu?
+* **Bahasa Sederhana:** Penentuan ukuran sampel adalah **menghitung berapa jumlah minimal lembar kuesioner yang harus terkumpul** agar hasil hitungan SPSS sah dan tidak ditolak secara statistik.
+* **Penjelasan:** Menggunakan rumus **Samuel B. Green (1991)** untuk analisis regresi:
+  - Aturan 1 (Uji Simultan / Uji-F Model Keseluruhan): N ≥ 50 + 8k  
+    Untuk k = 7 prediktor → N ≥ 50 + 8(7) = **106**.
+  - Aturan 2 (Uji Parsial / Uji-t Koefisien Individual): N ≥ 104 + k  
+    Untuk k = 7 prediktor → N ≥ 104 + 7 = **111**.
+  - Kita mengambil batas yang paling ketat yaitu **minimal 111 responden**. Target Arthur ditetapkan **120–150 responden** agar berada di atas batas minimal sekaligus memenuhi kaidah *Statistical Power* 0,80 Cohen (1988) untuk mendeteksi *medium effect size*.
+* **Jawaban 1 Kalimat ke Dosen:** *"Ukuran sampel ditentukan berdasarkan formula Green (1991) dengan batas minimum 111 responden untuk menguji 7 prediktor secara parsial, dan saya menargetkan 120–150 responden agar memenuhi statistical power 0,80 Cohen."*
+
+### 19. Model penelitian itu apa? Maksudnya simbol apa? Kenapa ada bintang-bintang? Beta itu buat apa?
+* **Bahasa Sederhana:** Model penelitian adalah **persamaan matematika yang menggambarkan hubungan variabel skripsi Arthur**.
+* **Arti Simbol-simbolnya:**
+  - **Y (Impulsive Buying)**: Variabel terikat (*Impulsive Buying*).
+  - **α (Alpha) (Alpha)**: Konstanta (nilai dasar Y (Impulsive Buying) jika semua variabel prediktor bernilai nol).
+  - **β (Koefisien Beta / β1, β2, ...)**: Koefisien regresi, yaitu angka yang mengukur seberapa kuat pengaruh variabel tersebut. Misalnya β1 = 0,35, artinya setiap kenaikan 1 poin Hedonic, belanja impulsif naik 0,35 poin.
+  - **Tanda Bintang (X^*, M*)**: Menandakan bahwa variabel tersebut **sudah di-*mean-centering*** (skornya sudah dikurangi nilai rata-ratanya).
+  - **e (Error)**: Faktor pengganggu di luar model yang tidak diteliti.
+* **Jawaban 1 Kalimat ke Dosen:** *"Simbol beta menunjukkan besaran koefisien pengaruh masing-masing prediktor, tanda bintang menandakan variabel telah melalui prosedur mean-centering, dan alpha adalah intersep konstanta model."*
+
+### 20. Paragraf panjang: "Penyertaan M* pada Model 1 sebagai garis dasar aditif (additive baseline) menjamin bahwa peningkatan koefisien determinasi..." (Ini maksudnya apa?)
+* **Bahasa Sederhana:** Paragraf ini menjelaskan **mengapa M* harus ikut dimasukkan di Model 1 padahal kita tidak membuat hipotesis untuk mengujinya**.
+* **Penjelasan:**  
+  Dalam regresi hierarkis MRA, kita membandingkan dua model:
+  - **Model 1 (Baseline):** `Y = α + β1(X1*) + β2(X2*) + β3(X3*) + β4(M*) + e`
+  - **Model 2 (Penuh):** Model 1 + 3 variabel interaksi perkalian.
+  Jika di Model 1 kita TIDAK memasukkan M*, lalu di Model 2 kita masukkan interaksi yang mengandung M*, maka kenaikan R² (ΔR²) akan tercampur antara pengaruh langsung M (Self-Control) dengan pengaruh interaksinya. Dengan menaruh M* di Model 1 sebagai "garis dasar" (*baseline*), maka ketika R² naik di Model 2, kita bisa menjamin 100% bahwa kenaikan itu **MURNI karena efek interaksi moderasi**! Jadi β4 di Model 1 cuma bertugas sebagai "satpam baseline", bukan hipotesis baru.
+* **Jawaban 1 Kalimat ke Dosen:** *"Penyertaan M* di Model 1 berfungsi sebagai kontrol baseline aditif agar peningkatan R-square pada Model 2 murni mengisolasi kontribusi interaksi moderasi tanpa tercemar oleh efek langsung variabel pemoderasi."*
+
+### 21. Operasionalisasi Variabel Penelitian (ini tabel apa, maksudnya apa?)
+* **Bahasa Sederhana:** Tabel 3.2 adalah **"Kamus Penerjemah dari Teori Abstrak Menjadi Soal Kuesioner Konkret"**.
+* **Penjelasan:** Konsep seperti "Hasrat Kelengkapan Koleksi" itu kan tidak bisa dilihat dengan mata telanjang. Penguji ingin tahu: *"Bagaimana cara kamu mengukurnya ke responden?"* Di tabel inilah dijelaskan: variabel X2 (Desire for Completeness) dijabarkan menjadi 3 indikator (ketegangan kognitif, dorongan penutupan, kepuasan keutuhan), lalu dari indikator itu diturunkan menjadi butir-butir pernyataan yang akan diisi responden dengan skala 1 (Sangat Tidak Setuju) sampai 5 (Sangat Setuju).
+* **Jawaban 1 Kalimat ke Dosen:** *"Tabel operasionalisasi variabel adalah pedoman translasi yang menerjemahkan konsep teoretis masing-masing variabel menjadi indikator empiris dan butir-butir instrumen kuesioner berskala Likert 1–5."*
+
+### 22. Metode analisis data apa itu SEM? Apa itu MRA berbasis OLS? Pakai MRA berbasis OLS simplenya kenapa?
+* **Bahasa Sederhana:**  
+  - **SEM (*Structural Equation Modeling*):** Alat analisis canggih untuk model bertingkat yang rumit dengan banyak variabel mediasi laten. Kelemahannya: butuh sampel besar (N > 200) dan asumsi normalitas multivariat yang sangat ketat.
+  - **MRA berbasis OLS (*Ordinary Least Squares*):** Regresi berganda standar kuadrat terkecil yang ditambahkan variabel perkalian interaksi (X × M).
+  - **Kenapa pakai MRA OLS? (Jawaban simpel ke dosen):**
+    1. *Model kita parsimoni (sederhana & terarah):* Ada 3 independen, 1 moderator, tanpa variabel mediasi laten bertingkat.
+    2. *Ukuran sampel ideal:* Sampel kita 120–150 responden sangat pas dan kokoh dianalisis dengan OLS tanpa risiko *over-parameterization* (Hair et al., 2019).
+    3. *Standar FEB UKRIDA:* MRA berbasis OLS adalah metode resmi standar baku Pedoman Skripsi FEB UKRIDA.
+* **Jawaban 1 Kalimat ke Dosen:** *"MRA berbasis OLS dipilih karena model penelitian ini bersifat parsimoni tanpa jalur mediasi laten, ukuran sampel 120–150 sangat ideal dan stabil untuk estimasi OLS, serta memenuhi standar baku pedoman tugas akhir FEB UKRIDA."*
+
+### 23. Prosedur pemusatan nilai rata-rata (mean-centering) maksudnya apa?
+* **Bahasa Sederhana:** *Mean-Centering* artinya: **Nilai jawaban kuesioner setiap responden dikurangi dengan nilai rata-rata seluruh responden** (X* = X - X̄).
+* **Penjelasan:** Kenapa harus dikurangi rata-ratanya? Kalau variabel X dan M (Self-Control) langsung dikalikan begitu saja (X · M), angka perkaliannya akan sangat mirip dengan angka aslinya. Akibatnya di SPSS akan terjadi penyakit statistik bernama **multikolinearitas struktural** (SPSS bingung dan nilai VIF-nya meledak > 10). Dengan mengurangkan nilai rata-ratanya terlebih dahulu, multikolinearitas langsung rontok dan VIF menjadi aman (< 10), tanpa mengubah nilai signifikansi uji hipotesis sama sekali.
+* **Jawaban 1 Kalimat ke Dosen:** *"Mean-centering adalah prosedur standarisasi skor dengan mengurangkan nilai rata-rata sampel guna merontokkan multikolinearitas struktural pada istilah interaksi tanpa mengubah nilai estimasi substansial."*
+
+### 24. Tahapan analisis data tahap 1–5 tolong jelaskan detail kata-kata sulitnya.
+* **Bahasa Sederhana:** Lima tahapan olah data di SPSS:
+  1. **Tahap 1 — Uji Mutu Alat Ukur (Kuesioner):**
+     - *Validitas Pearson:* Menguji apakah tiap butir soal kuesioner tepat sasaran (r hitung > r tabel).
+     - *Reliabilitas Cronbach's Alpha:* Menguji apakah jawaban responden konsisten dan jujur (Alpha ≥ 0,70).
+  2. **Tahap 2 — Uji Asumsi Klasik (Cek Kelayakan Mesin Regresi):**
+     - *Normalitas (Kolmogorov-Smirnov):* Memastikan error residual tersebar merata seperti lonceng simetris (Sig. > 0,05).
+     - *Multikolinearitas:* Memastikan antar-variabel independen tidak saling contek (Tolerance > 0,10 dan VIF < 10).
+     - *Heteroskedastisitas (Uji Glejser):* Memastikan variasi error tidak membesar/melebar di titik tertentu (Sig. > 0,05).
+     - *(Catatan: Autokorelasi Durbin-Watson TIDAK diuji karena data survei cross-sectional, bukan data saham time-series!)*.
+  3. **Tahap 3 — Regresi MRA Dua Tahap:**
+     - Menjalankan Model 1 (baseline efek utama) lalu Model 2 (memasukkan 3 variabel perkalian interaksi).
+  4. **Tahap 4 — Evaluasi Kelayakan Model (Goodness of Fit):**
+     - Menilai *Adjusted R²* dan menguji signifikansi lonjakan daya jelas ΔR² melalui uji **F change** (Sig. F Change < 0,05).
+  5. **Tahap 5 — Putusan Hipotesis & Grafik Simple Slopes:**
+     - Membaca Uji-t koefisien (Sig. t < 0,05 dan arah koefisien sesuai hipotesis = hipotesis diterima).
+     - *Simple Slopes:* Membuat grafik garis moderasi pada 3 kelompok kontrol diri (rendah, sedang, tinggi). Jika saat kontrol diri tinggi garisnya **mendatar**, berarti hipotesis moderasi memperlemah terbukti sah!
+* **Jawaban 1 Kalimat ke Dosen:** *"Analisis data dijalankan dalam 5 tahap sistematis: uji validitas-reliabilitas instrumen, uji asumsi klasik OLS, regresi MRA dua model, evaluasi R² dan F-change, serta uji-t hipotesis yang dilengkapi analisis grafik simple slopes."*
+
+### 25. Diagram alur penelitian jelaskan, kenapa bentuknya begitu, kenapa ga ada ovalnya, itu semua maksudnya apa? Tulisan Ya (hitung > tabel : alpha maksudnya apa)?
+* **Bahasa Sederhana:**  
+  - **Kenapa bentuknya kotak dan belah ketupat (tidak ada oval)?**  
+    Sesuai standar bagan alir metodologi penelitian:
+    - *Kotak Persegi Panjang:* Menggambarkan **Aktivitas Pelaksanaan Riset** (Tahap 1 s.d. Tahap 8).
+    - *Belah Ketupat (Diamond):* Menggambarkan **Titik Evaluasi / Pengambilan Keputusan (*Decision Node*)**. Simbol oval umumnya hanya untuk tanda "Mulai/Selesai", sedangkan diagram proposal UKRIDA berfokus pada tahapan eksekusi ilmiah.
+  - **Maksud tulisan "Ya (hitung > tabel : alpha)":**  
+    Itu adalah gerbang seleksi hasil **Pilot Test (n = 30)**:
+    - **PILIH JALUR "YA":** Jika uji coba pada 30 responden menghasilkan seluruh butir valid (r hitung > r tabel) DAN seluruh variabel reliabel (*Cronbach's Alpha* ≥ 0,70), maka penelitian **DIIZINKAN LANJUT** menyebarkan kuesioner survei utama (N = 120–150).
+    - **JALUR "TIDAK":** Jika ada butir yang gagal/rusak, alur berputar kembali ke Tahap 4 untuk memperbaiki atau mengganti butir pernyataan kuesioner sebelum data utama diambil.
+* **Jawaban 1 Kalimat ke Dosen:** *"Diagram alur menggambarkan 8 tahapan metodologi dengan belah ketupat sebagai decision gate pilot test n=30, di mana jalur 'Ya' hanya ditempuh bila syarat r-hitung > r-tabel dan Cronbach's Alpha ≥ 0,70 terpenuhi sebelum survei utama disebarkan."*
+
+---
+
+# 21. HAL-HAL YANG KAMU BELUM TAHU TAPI PASTI DITANYA (SUPLEMEN KRITIS) <a id="sec-21"></a>
+
+> Bagian ini disusun berdasarkan pola kebingunganmu di sesi belajar sebelumnya. Kamu bertanya hal-hal yang sangat mendasar (seperti "rem volisional itu apa?", "angka 3 dan 8 dapat dari mana?", "pengembangan hipotesis itu apa?") — ini menunjukkan fondasi konseptualmu masih rapuh. Bagian ini mengisi lubang-lubang tersebut secara tuntas.
+
+---
+
+## A. KONSEP DASAR YANG WAJIB PAHAM SEBELUM SIDANG
+
+### 21.1 Apa Bedanya Variabel Dependen, Independen, dan Moderasi?
+* **Variabel Dependen (Y)** = Yang DIPENGARUHI = Perilaku belanja yang ingin kita teliti dan jelaskan.
+  - **Di skripsimu:** **Impulsive Buying kartu Pokémon TCG**. Yaitu pembelian kartu (booster pack atau kartu satuan/singles) yang dilakukan secara spontan, mendadak, dan tanpa perencanaan anggaran sebelumnya saat melihat kartu di toko hobi, minimarket, atau marketplace daring.
+* **Variabel Independen (X)** = Yang MEMENGARUHI = Faktor-faktor pemicu yang mendorong timbulnya belanja impulsif kartu:
+  - **X1 (Hedonic Motivation):** Kesenangan emosional, sensasi seru unboxing, dan letupan dopamin saat membuka segel booster pack Pokémon.
+  - **X2 (Desire for Completeness):** Dorongan psikologis ingin melengkapi binder kartu (The Completing the Set Effect; misalnya binder sudah terisi 90%, gatal ingin segera melengkapi slot kosong bernomor yang tersisa).
+  - **X3 (Speculative Motive):** Motif spekulasi finansial untuk meraih keuntungan (*capital gain*), karena tergiur lonjakan harga kartu langka (seperti kartu SAR) di pasar sekunder atau potensi nilai jual tinggi setelah di-grading PSA 10.
+* **Variabel Moderasi (M)** = BUKAN penyebab belanja langsung, tetapi faktor yang MENGUBAH KEKUATAN hubungan antara pemicu (X) dan pembelian impulsif (Y):
+  - **Di skripsimu:** **Self-Control (Kontrol Diri Kolektor)**. Berperan sebagai rem volisional internal.
+  - **Contoh riil perannya di skripsi:** Dua orang kolektor sama-sama melihat penawaran kartu Charizard langka dengan diskon kilat di grup komunitas. Kolektor dengan Self-Control rendah (rem blong) akan langsung melakukan transfer dan checkout saat itu juga (pembelian impulsif tinggi). Sebaliknya, kolektor dengan Self-Control tinggi (rem pakem) mampu menahan desakan emosional tersebut, mengingat batasan anggaran bulanan, dan membatalkan niat belanja (pembelian impulsif berhasil dicegah).
+
+### 21.2 Apa Bedanya Variabel Mediasi dan Moderasi?
+* **MODERASI** = mengubah KEKUATAN hubungan. Self-Control tidak berada di jalur X→Y, tapi "menekan" jalur itu dari luar. Rumusnya pakai perkalian interaksi (X·M).
+* **MEDIASI** = berada DI TENGAH jalur. Contoh: X → Emosi Positif → Y. Emosi positif adalah perantara/jembatan. Skripsimu TIDAK ada mediasi.
+* **Kenapa penting:** Penguji bisa bertanya "kenapa moderasi bukan mediasi?" Jawab: Self-Control bukan perantara yang dilalui sinyal X, melainkan rem dari luar yang menekan sinyal tersebut. Mekanismenya sesuai Planner-Doer: Planner (rem) menahan Doer (gas), bukan menyalurkan Doer.
+
+### 21.3 Apa Itu "Signifikan" dalam Statistik?
+* **BUKAN sekadar berarti "penting"** dalam bahasa percakapan sehari-hari!
+* **Signifikan secara statistik** = bukti kuantitatif bahwa hubungan antara variabel pemicu dengan pembelian kartu Pokémon BUKAN terjadi karena kebetulan sampel semata, melainkan benar-benar ada di populasi kolektor secara nyata (tingkat kesalahan kurang dari 5%, atau p < 0,05).
+* **Contoh riil di skripsimu:** Dari survei terhadap 140 kolektor Pokémon TCG, kita menguji hipotesis H1 (pengaruh Hedonic Motivation terhadap Impulsive Buying). Output SPSS menunjukkan nilai koefisien regresi β1 = 0,35 dengan p-value = 0,003. Karena p-value (0,003) jauh lebih kecil dari 0,05, kita menyimpulkan hasilnya **signifikan**. Artinya, ada keyakinan 99,7% bahwa dorongan kesenangan unboxing pack benar-benar memicu pembelian impulsif pada kolektor Pokémon, dan bukan karena kebetulan data semata. Hipotesis H1 terbukti diterima secara ilmiah.
+
+### 21.4 Apa Itu p-value?
+* **p-value** = probabilitas (angka 0–1) bahwa hasil yang kamu amati terjadi secara kebetulan bila SEBENARNYA tidak ada pengaruh.
+* **Aturan main:** p < 0,05 → signifikan (tolak H0, terima H1). p ≥ 0,05 → tidak signifikan (gagal menolak H0).
+* **H0 dan H1:** H0 (null hypothesis) = "tidak ada pengaruh". H1 (alternative hypothesis) = "ada pengaruh" (inilah hipotesismu H1–H6). Kita selalu menguji H0 dan berharap bisa menolaknya.
+* **Jawaban 1 Kalimat:** *"p-value adalah probabilitas memperoleh hasil yang teramati jika sebenarnya tidak ada efek — jika lebih kecil dari 0,05, kita menyimpulkan efek tersebut nyata dan bukan kebetulan."*
+
+### 21.5 Apa Bedanya Uji-t dan Uji-F?
+* **Uji-t (Uji Parsial)** = Menguji pengaruh satu per satu variabel independen secara mandiri terhadap pembelian impulsif kartu.
+  - **Contoh di skripsimu:** "Apakah motif spekulasi finansial (X3) secara mandiri terbukti signifikan mendorong pembelian impulsif kartu Pokémon?" (Dilihat dari t-hitung dan p-value pada baris X3 di tabel *Coefficients* SPSS). Begitu juga diuji terpisah untuk X1, X2, dan masing-masing istilah interaksi moderasi.
+* **Uji-F (Uji Simultan / Kelayakan Model)** = Menguji apakah seluruh variabel penjelas di dalam model secara bersama-sama/serentak berpengaruh signifikan terhadap pembelian impulsif kartu.
+  - **Contoh di skripsimu:** "Apakah faktor kesenangan (X1), hasrat kelengkapan binder (X2), motif spekulasi (X3), dan kontrol diri (M) secara serentak bersama-sama mampu menjelaskan variasi pembelian impulsif kartu Pokémon?" (Dilihat dari nilai F-hitung dan Sig. pada tabel *ANOVA* SPSS; jika Sig. < 0,05, model dinyatakan fit dan layak digunakan).
+* **F-change (Incremental F-Test)** = Uji-F khusus untuk membandingkan Model 1 (tanpa moderasi) dengan Model 2 (dengan 3 interaksi moderasi). Membuktikan secara matematis apakah penambahan efek moderasi Self-Control benar-benar memberikan kontribusi nyata yang signifikan dalam menjelaskan perilaku belanja kartu Pokémon.
+
+### 21.6 Apa Itu R² (R-Square) dan Adjusted R²?
+* **R²** = persentase variasi Y yang BISA DIJELASKAN oleh model. Jika R² = 0,65, artinya 65% variasi Impulsive Buying bisa dijelaskan oleh X1, X2, X3, M; sisanya 35% oleh faktor lain yang tidak diteliti.
+* **Adjusted R²** = versi R² yang sudah dipotong penalti karena jumlah variabel. Lebih jujur dari R² biasa karena R² biasa SELALU naik setiap tambah variabel (walau variabel itu sampah).
+* **ΔR²** = selisih R² Model 2 dikurangi R² Model 1. Ini mengukur kontribusi MURNI blok interaksi moderasi.
+
+### 21.7 Apa Itu Koefisien Regresi (Beta / β)?
+* **β (beta)** = angka yang menunjukkan berapa besar perubahan Y jika X naik 1 satuan (dengan variabel lain konstan).
+* **β positif** = hubungan searah (X naik → Y naik). Ini yang diharapkan untuk H1–H3.
+* **β negatif** = hubungan berlawanan (X naik → Y turun ATAU interaksi memperlemah). Ini yang diharapkan untuk β5–β7 (moderasi H4–H6).
+* **Contoh:** β1 = 0,35 → setiap kenaikan 1 poin skor Hedonic Motivation, skor Impulsive Buying naik 0,35 poin (dengan X2, X3, M konstan).
+
+### 21.8 Apa Itu Multikolinearitas dan Kenapa Bahaya?
+* **Multikolinearitas** = dua variabel independen saling "menjiplak" / sangat mirip satu sama lain.
+* **Bahaya:** SPSS jadi bingung menentukan pengaruh masing-masing variabel karena mereka kembar — koefisien jadi tidak stabil, bisa berubah drastis.
+* **Cara cek:** Tolerance > 0,10 dan VIF < 10 = AMAN.
+* **Multikolinearitas STRUKTURAL:** terjadi khusus saat membuat variabel perkalian (X·M) — otomatis berkorelasi tinggi dengan X dan M induknya. Solusi: mean-centering.
+
+### 21.9 Apa Itu Heteroskedastisitas?
+* **Hetero** = berbeda/tidak sama, **skedastisitas** = sebaran varians error.
+* **Artinya:** Nilai kesalahan prediksi (*residual error*) pada model regresimu tidak merata sebarannya di antara para responden.
+* **Contoh riil di skripsimu:** Misalnya model regresimu sangat akurat memprediksi pengeluaran impulsif pada kolektor biasa yang belanjanya sedikit (skor X rendah, error prediksinya kecil). Namun pada kolektor besar (*whale*) atau spekulan kelas kakap yang membeli puluhan pack kartu (skor X sangat tinggi), selisih tebakan model meleset tidak beraturan ke mana-mana (error prediksinya membesar tidak terkontrol membentuk pola corong).
+* **Bahayanya:** Bila terjadi heteroskedastisitas, nilai standar error regresi menjadi bias dan tidak akurat. Akibatnya, nilai t-hitung dan p-value tidak bisa dipercaya, sehingga keputusan penerimaan hipotesis H1–H6 bisa salah fatal.
+* **Cara cek:** Uji Glejser di SPSS: regresikan nilai absolut residual (|e|) terhadap variabel independen. Jika nilai p-value seluruh prediktor > 0,05, artinya varians error merata (homoskedastisitas terpenuhi = model regresi terbebas dari heteroskedastisitas dan aman dipakai).
+
+### 21.10 Apa Itu Normalitas dan Kenapa Error Harus Normal?
+* **Normalitas** = distribusi residual (error) mengikuti kurva lonceng simetris.
+* **Kenapa harus normal?** Karena semua rumus uji-t dan uji-F MENGASUMSIKAN residual normal. Jika tidak normal, nilai p-value yang dihasilkan SALAH.
+* **Cara cek:** Kolmogorov-Smirnov (KS): jika Sig. > 0,05 = residual normal = AMAN.
+* **Catatan:** Yang diuji normalnya adalah RESIDUAL (sisa/error), BUKAN data asli variabel.
+
+---
+
+## B. KONSEP TEORI YANG SERING MEMBINGUNGKAN
+
+### 21.11 Apa Bedanya Behavioral Finance dengan Behavioral Economics?
+* **Behavioral Economics** = payung besar: studi tentang keputusan ekonomi manusia yang tidak rasional.
+* **Behavioral Finance** = cabang spesifik: fokus pada keputusan KEUANGAN dan INVESTASI yang irasional.
+* **Di skripsimu:** Karena objekmu (kartu Pokémon) sudah bertransformasi menjadi komoditas spekulatif bernilai finansial, dan kamu anak Manajemen Keuangan, maka Behavioral Finance lebih tepat.
+
+### 21.12 Apa Bedanya Prospect Theory dengan Expected Utility Theory?
+* **Expected Utility Theory** (tradisional) = manusia menghitung peluang dan nilai secara rasional sempurna, lalu memilih opsi terbaik. Ini asumsi "manusia robot".
+* **Prospect Theory** (Kahneman & Tversky, 1979) = manusia TIDAK rasional sempurna: mereka lebih takut rugi daripada senang untung (*loss aversion*), dan menilai probabilitas secara bengkok (overweight probabilitas kecil, underweight probabilitas besar).
+* **Relevansi:** Kolektor Pokémon meng-*overweight* peluang kecil menarik kartu SAR langka (padahal <3%) — mirip orang beli lotre yang tahu peluang menang sangat kecil tapi tetap membeli.
+
+### 21.13 Apa Itu Bounded Rationality (Simon, 1955)?
+* **Bounded** = terbatas, **Rationality** = kemampuan berpikir rasional.
+* Herbert Simon bilang: manusia INGIN rasional tapi OTAKNYA TERBATAS — tidak punya waktu, informasi, dan kapasitas kognitif untuk menghitung semua opsi. Maka mereka mengambil jalan pintas (*heuristic*) dan memilih yang "cukup memuaskan" (*satisficing*), bukan yang TERBAIK (*maximizing*).
+* **Relevansi:** Di depan kasir, kolektor tidak menghitung peluang pull rate, biaya per kartu, atau NPV investasi kartu — mereka hanya merasa "kayaknya kali ini hoki" lalu beli.
+
+### 21.14 Apa Itu Gambler's Fallacy dan Relevansinya?
+* **Gambler's Fallacy** = kepercayaan keliru bahwa setelah serangkaian hasil buruk, hasil baik "sudah waktunya" datang.
+* **Contoh di skripsimu:** Seorang kolektor sudah membuka 10 booster pack Pokémon berturut-turut dan isinya kartu biasa semua (*zonk*) → alam bawah sadarnya keliru meyakini: *"Pack ke-11 ini PASTI keluar kartu SAR!"* Padahal secara probabilitas independen, peluang setiap pack baru dibuka tetap sama kecilnya (sekitar 1–3%). Bias inilah yang memicu pembelian impulsif berulang kali di kasir.
+* **Relevansi:** Ini mekanisme psikologis yang memperkuat X1 (hedonis: sensasi coba-coba lagi) dan X3 (spekulasi: "investasi saya pasti balik").
+
+### 21.15 Apa Itu Ego Depletion (Baumeister, 2002)?
+* **Teori Ego Depletion:** Kontrol diri (*Self-Control*) dipandang sebagai sumber daya energi mental yang kapasitasnya terbatas. Jika energi mental ini terus-menerus dipakai untuk menahan godaan, cadangannya akan habis terkuras (*depleted*).
+* **Contoh riil di skripsimu:** Seorang kolektor kartu Pokémon sejak pagi sudah berusaha keras menahan nafsu belanja—ia menolak ajakan teman membuka booster box bersama, menahan diri tidak menawar lelang kartu di grup Facebook, dan menahan godaan melihat siaran langsung (*live streaming*) unboxing kartu di TikTok. Namun pada malam harinya, ketika ia mampir ke toko hobi atau minimarket dan melihat etalase booster pack Pokémon edisi terbaru di depan kasir, energi kontrol dirinya sudah habis terkuras seharian. Akibatnya, pertahanan mentalnya runtuh dan ia langsung melakukan pembelian impulsif memborong 10 pack di tempat.
+* **Relevansi sidang:** Jika pada hasil olah data nanti hipotesis moderasi (H4–H6) ternyata ditolak (kontrol diri tidak mampu meredam belanja), teori Ego Depletion adalah senjata argumentasi ilmiah terbaikmu untuk menjelaskan ke dosen: rangsangan blind-pack dan godaan kartu di komunitas begitu intens sehingga menguras habis kapasitas kontrol diri kolektor.
+
+### 21.16 Apa Itu Delay of Gratification (Penundaan Kepuasan)?
+* **Delay of Gratification** = Kapasitas volisional seseorang untuk menolak atau menunda kepuasan instan saat ini demi meraih hasil atau nilai yang jauh lebih baik di masa depan.
+* **Contoh riil di skripsimu:** 
+  - Kolektor dengan *Self-Control* rendah mengejar **kepuasan instan sesaat**: melihat booster pack di kasir langsung dibeli demi sensasi seru merobek kemasan (gacha), meski uangnya menipis dan hasilnya berisiko kartu biasa (*zonk*).
+  - Kolektor dengan *Self-Control* tinggi mampu melakukan **penundaan kepuasan**: ia menahan nafsu membeli booster pack gacha secara acak, dan memilih menabung uangnya secara disiplin untuk membeli satu lembar kartu incaran bernomor seri yang sudah bersertifikat PSA 10 Gem Mint secara terencana dengan nilai investasi yang pasti.
+
+---
+
+## C. PERTANYAAN JEBAKAN YANG BELUM TERCOVER
+
+### 21.17 "Kenapa tidak pakai variabel intervening/mediasi seperti Emosi Positif?"
+* **Jawaban:** Model penelitian ini SENGAJA dibuat parsimoni (sederhana dan terarah) sesuai level proposal S1. Fokusnya adalah menguji APAKAH tiga anteseden berpengaruh dan APAKAH kontrol diri bisa meredamnya. Menambah mediasi akan membuat model terlalu kompleks, membutuhkan SEM (bukan MRA), dan sampel >200. Mediasi bisa jadi agenda penelitian lanjutan (Bab 5 nanti).
+
+### 21.18 "Apa bedanya skripsimu dengan penelitian blind box Gong et al. (2024)?"
+* **Jawaban:** Tiga perbedaan fundamental: (1) Gong meneliti blind box umum (figur/mainan), saya meneliti kartu koleksi bernomor resmi (ada checklist set) — sehingga saya punya variabel X2 yang tidak ada di Gong. (2) Gong meneliti rasa ingin tahu sebagai mediasi, saya meneliti Self-Control sebagai moderasi — posisi variabel berbeda. (3) Gong tidak meneliti motif spekulasi finansial (X3) — objek blind box-nya tidak punya pasar sekunder seterstruktur kartu Pokémon yang ada grading PSA/BGS.
+
+### 21.19 "Kenapa tidak meneliti variabel lain seperti FOMO, Peer Pressure, atau Social Media?"
+* **Jawaban:** Pemilihan variabel didasarkan pada (1) ketersediaan gap empiris di literatur, (2) kesesuaian dengan konsentrasi Manajemen Keuangan (maka X3 Speculative bersifat finansial), dan (3) parsimoni model S1. FOMO, peer pressure, dan social media memang relevan dan saya catat sebagai saran penelitian lanjutan — tetapi memasukkan semuanya akan membuat model terlalu gemuk dan tidak fokus.
+
+### 21.20 "Kuesionermu daring (Google Forms) — bagaimana menjamin kejujuran responden?"
+* **Jawaban:** Empat langkah: (1) Screening question awal untuk mengeliminasi non-kolektor. (2) Reverse-coded items (butir terbalik) untuk mendeteksi responden yang asal klik. (3) Attention check ("Pilih Setuju untuk pertanyaan ini"). (4) Social desirability bias diakui sebagai keterbatasan penelitian dan ditulis eksplisit di Bab 5.
+
+### 21.21 "Skala Likert 1-5 itu data ordinal, kok dipakai regresi yang butuh data interval?"
+* **Jawaban WAJIB hafal (jebakan klasik!):** Secara filosofis, skala Likert memang ordinal. TETAPI, dalam praktik ilmu sosial selama >50 tahun (Norman, 2010; Carifio & Perla, 2008), skala Likert 5-7 poin DIPERLAKUKAN sebagai interval (equal-appearing interval) dan dianalisis dengan statistik parametrik. Semua buku teks rujukan kita (Ghozali 2018, Sugiyono 2019, Hair 2019) mengikuti konvensi ini. Ditambah, kita menggunakan SKOR KOMPOSIT (rata-rata beberapa butir) yang memperkuat sifat interval data. Ini bukan kecurangan — ini konvensi ilmiah yang diterima universal.
+
+### 21.22 "Bagaimana kalau data normalitasnya TIDAK lolos?"
+* **Jawaban:** Dua opsi: (1) Transformasi data (logaritma, akar kuadrat) lalu uji ulang. (2) Jika masih tidak lolos, gunakan argumentasi Central Limit Theorem: dengan N > 100, distribusi sampling RATA-RATA akan mendekati normal terlepas dari distribusi populasi (CLT). Ghozali (2018) menyatakan bahwa pada N besar, pelanggaran normalitas ringan tidak mengancam kesahihan estimasi OLS.
+
+### 21.23 "Apa kontribusi TEORETIS skripsimu?"
+* **Jawaban:** Tiga kontribusi: (1) Memperkaya literatur Behavioral Finance pada domain aset hobi fisik — selama ini BF fokus pada saham/kripto, belum ada yang menguji pada kartu koleksi. (2) Menguji relevansi Completing the Set Effect (Gao, 2014) pada kolektor Indonesia — belum pernah diuji empiris. (3) Memberikan bukti empiris baru mengenai efektivitas Self-Control sebagai moderator di tengah bukti yang masih bertentangan (Apidana ditolak vs Lienardy diterima).
+
+---
+
+## D. ISTILAH-ISTILAH YANG SERING TERTUKAR
+
+### 21.24 Tabel Istilah yang Mirip Tapi Beda
+
+| Sering Tertukar | Arti Sebenarnya | Bedanya |
+|:---|:---|:---|
+| Populasi vs Sampel | Populasi = seluruh subjek; Sampel = sebagian yang diambil | Populasimu infinite (semua kolektor WNI), sampelmu 120–150 |
+| Validitas vs Reliabilitas | Validitas = ketepatan alat ukur mengukur variabel; Reliabilitas = konsistensi alat ukur | Contoh kuesioner skripsimu: Butir pernyataan *"Saya merasa gembira dan antusias saat merobek bungkus kartu Pokémon"* adalah VALID untuk mengukur Hedonic Motivation (X1). Kalau pertanyaannya diganti *"Saya suka menonton film anime Pokémon"*, butir itu TIDAK VALID karena mengukur kesukaan tontonan hiburan, bukan motif belanja kartu. Sedangkan reliabilitas menjamin bila responden yang sama ditanya hal serupa dengan redaksi berbeda, skor jawabannya tetap konsisten tinggi. |
+| Korelasi vs Regresi | Korelasi = ukuran kekuatan hubungan (−1 s/d +1); Regresi = memprediksi Y dari X | Korelasi simetris (X↔Y); Regresi asimetris (X→Y) |
+| Cross-sectional vs Longitudinal | Cross-sectional = data 1 titik waktu; Longitudinal = data beberapa titik waktu | Kamu pakai cross-sectional (satu kali survei) |
+| Pilot test vs Survei utama | Pilot = uji coba instrumen (n=30); Survei utama = pengumpulan data riil (n=120–150) | Data pilot TIDAK dipakai di analisis utama |
+| R² vs r (Pearson) | R² = koefisien determinasi model (0–1); r = koefisien korelasi variabel (−1 s/d +1) | R² = r dikuadratkan (untuk regresi sederhana) |
+| α (Alpha signifikansi) vs α (konstanta regresi) vs α (Cronbach's Alpha) | Tiga hal berbeda! | α signifikansi = 0,05 (ambang batas p); α regresi = intersep persamaan; Cronbach's α = ukuran reliabilitas |
+
+### 21.25 Tabel Singkatan yang Wajib Hafal
+
+| Singkatan | Kepanjangan | Artinya |
+|:---|:---|:---|
+| MRA | Moderated Regression Analysis | Regresi berganda + variabel interaksi moderasi |
+| OLS | Ordinary Least Squares | Metode estimasi regresi yang meminimalkan jumlah kuadrat error |
+| SEM | Structural Equation Modeling | Analisis model jalur kompleks (bukan untuk skripsimu) |
+| PLS | Partial Least Squares | Varian SEM untuk eksplorasi (bukan untuk skripsimu) |
+| VIF | Variance Inflation Factor | Indikator multikolinearitas (harus < 10) |
+| KS | Kolmogorov-Smirnov | Uji normalitas distribusi |
+| BSCS | Brief Self-Control Scale | Skala ukur kontrol diri (Tangney et al., 2004) |
+| SAR | Special Illustration Rare | Tingkat kelangkaan kartu tertinggi |
+| PSA | Professional Sports Authenticator | Lembaga grading kartu terbesar dunia |
+| LGS | Local Game Store | Toko permainan lokal resmi |
+| TCG | Trading Card Game | Permainan kartu koleksi |
+| IBTS | Impulse Buying Tendency Scale | Skala ukur kecenderungan belanja impulsif |
+
+---
+
+## E. SKENARIO "KALAU DITANYA X, JAWAB Y" (TAMBAHAN KRITIS)
+
+### 21.26 "Jelaskan perbedaan Impulsive Buying dengan Compulsive Buying!"
+* **Impulsive Buying** = pembelian mendadak, spontan, tidak direncanakan, dipicu stimulus SESAAT (lihat pack → beli). Bersifat EPISODIK (sekali-sekali).
+* **Compulsive Buying** = gangguan perilaku kronis, berulang-ulang secara patologis, didorong kebutuhan psikologis mendalam (seperti kecanduan). Bersifat KLINIS.
+* **Di skripsimu:** Kamu meneliti IMPULSIVE (episode spontan), bukan compulsive (gangguan klinis). Jangan tertukar!
+
+### 21.27 "Apa itu Kuantitatif Asosiatif?"
+* **Kuantitatif** = menggunakan data angka dan analisis statistik (bukan wawancara mendalam/kualitatif).
+* **Asosiatif** = menguji HUBUNGAN / PENGARUH antar-variabel (bukan sekadar mendeskripsikan).
+* **Gabungan:** Penelitian yang menggunakan angka untuk menguji apakah variabel satu memengaruhi variabel lain. Itu persis yang kamu lakukan: menguji pengaruh X1, X2, X3 terhadap Y dengan moderasi M.
+
+### 21.28 "Apa itu Parsimoni dan kenapa sering disebut?"
+* **Parsimoni** (Occam's Razor) = prinsip ilmiah bahwa model yang PALING SEDERHANA yang bisa menjelaskan fenomena adalah yang TERBAIK.
+* **Relevansi:** Modelmu punya 3 X + 1 M = 4 variabel + 3 interaksi = 7 prediktor. Ini CUKUP KOMPLEKS untuk S1 tapi masih PARSIMONI (tidak berlebihan). SEM membutuhkan model yang lebih rumit. MRA adalah pilihan parsimoni yang tepat.
+
+### 21.29 "Kenapa kamu sebut Self-Control sebagai Pure Moderator?"
+* **Pure Moderator** = variabel yang HANYA berfungsi sebagai moderator, tidak punya pengaruh langsung yang dihipotesiskan ke Y.
+* **Quasi Moderator** = variabel yang selain memoderasi, juga punya pengaruh langsung ke Y (artinya M masuk Model 1 DAN juga punya hipotesis sendiri M→Y).
+* **Di skripsimu:** β4 (M→Y di Model 1) memang ada, tapi ia BUKAN hipotesis — hanya kontrol baseline. Artinya Self-Control diposisikan sebagai pure moderator. Jika β4 ternyata signifikan di output SPSS, kamu bisa membahasnya sebagai "temuan tambahan" di Bab 5, tapi tetap bukan hipotesis utama.
+
+### 21.30 "Kenapa hipotesismu satu arah (positif/negatif) tapi ujinya dua sisi?"
+* **Hipotesis satu arah (directional):** H1 mengatakan "X1 berpengaruh POSITIF" — kamu sudah menebak arahnya.
+* **Uji dua sisi (two-tailed):** Di SPSS, output p-value default selalu dua sisi. Ini LEBIH KONSERVATIF (lebih sulit lolos) — artinya jika hipotesismu lolos uji dua sisi, ia pasti juga lolos uji satu sisi.
+* **Strategi:** Menggunakan uji dua sisi untuk hipotesis satu arah = pendekatan KONSERVATIF yang dipuji penguji karena tidak memudahkan diri sendiri. Jika p dua sisi < 0,05 DAN arah koefisien sesuai hipotesis → H diterima.
+
+---
+
+## F. RINGKASAN MENTAL MAP: DARI FENOMENA KE KESIMPULAN
+
+### 21.31 Alur Berpikir Utuh (Hafalkan Urutan Ini!)
+
+```
+FENOMENA (Kartu Pokémon laris, orang kalap belanja di kasir)
+    ↓
+PERTANYAAN (Apa yang mendorong kekalapan ini? Bisa ditahan?)
+    ↓
+TEORI (Behavioral Finance + S-O-R + Completing Set + Self-Regulation)
+    ↓
+VARIABEL (Y = impulsif, X1 = hedonis, X2 = kelengkapan, X3 = spekulasi, M = kontrol diri)
+    ↓
+HIPOTESIS (H1–H3: pemicu positif, H4–H6: rem negatif)
+    ↓
+METODE (Kuesioner Likert → 120–150 responden → SPSS → MRA dua model)
+    ↓
+ANALISIS (Pilot → Validitas/Reliabilitas → Asumsi Klasik → MRA → F-change → Simple Slopes)
+    ↓
+KESIMPULAN (H diterima/ditolak → implikasi teoretis + praktis)
+```
+
+### 21.32 "Kalau Semua H Diterima, Artinya Apa?"
+* X1, X2, X3 masing-masing terbukti mendorong belanja impulsif kartu Pokémon.
+* Self-Control terbukti mampu melemahkan ketiga dorongan tersebut.
+* **Implikasi praktis:** Kolektor perlu memperkuat kontrol diri (buat anggaran hobi, jangan bawa kartu kredit ke minimarket, dsb). Perusahaan/komunitas perlu mengedukasi belanja etis.
+
+### 21.33 "Kalau Semua H Moderasi (H4–H6) DITOLAK, Artinya Apa?"
+* Kontrol diri GAGAL menahan dorongan belanja impulsif pada kolektor kartu.
+* **Bukan berarti skripsi gagal!** Ini temuan yang justru menarik karena selaras dengan ego depletion: dopamin dan FOMO dari gacha mungkin terlalu kuat untuk ditahan oleh rem kognitif biasa.
+* **Implikasi:** Pendekatan yang dibutuhkan bukan hanya penguatan kontrol diri individual, tetapi juga intervensi struktural (misalnya pembatasan pembelian pack per transaksi oleh retailer, fitur peringatan budget di aplikasi).
+
+---
+
+## G. QUICK FIRE: 10 PERTANYAAN KILAT YANG WAJIB BISA DIJAWAB DALAM 10 DETIK
+
+| # | Pertanyaan | Jawaban Kilat |
+|:---:|:---|:---|
+| 1 | Berapa variabel? | 5 (Y, X1, X2, X3, M) |
+| 2 | Berapa hipotesis? | 6 (H1–H3 langsung, H4–H6 moderasi) |
+| 3 | Grand theory? | Behavioral Finance |
+| 4 | Metode analisis? | MRA berbasis OLS dengan mean-centering |
+| 5 | Minimum sampel? | 111 (Green, 1991) |
+| 6 | Target sampel? | 120–150 responden |
+| 7 | Pilot test berapa? | n = 30 |
+| 8 | Alpha reliabilitas? | ≥ 0,70 |
+| 9 | Kenapa tanpa autokorelasi? | Data cross-sectional, bukan time series |
+| 10 | Apa itu mean-centering? | X* = X − rata-rata, mencegah multikolinearitas struktural |
 
 ---
 

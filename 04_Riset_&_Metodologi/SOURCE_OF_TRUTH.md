@@ -57,18 +57,18 @@
                     PENGARUH LANGSUNG
      ┌─────────────────────────────────────────────────────────┐
      │                                                         │
-     │   [ X1: Hedonic Motivation     ] ──── H1 (+) ────┐      │
+      │   ( X1: Hedonic Motivation     ) ──── H1 (+) ────┐      │
      │                                                   │      │
-     │   [ X2: Desire for Completeness] ──── H2 (+) ────┼──►  [ Y: Impulsive Buying ]
+      │   ( X2: Desire for Completeness) ──── H2 (+) ────┼──►  ( Y: Impulsive Buying )
      │                                                   │      │
-     │   [ X3: Speculative Motive     ] ──── H3 (+) ────┘      │
+      │   ( X3: Speculative Motive     ) ──── H3 (+) ────┘      │
      │                                                         │
      └─────────────────────────────────────────────────────────┘
                                                          ▲
                                                          │
                               H4, H5, H6 (Memperlemah / -)
                                                          │
-                                            [ M: Self-Control ]
+                                             ( M: Self-Control )
                                             (Variabel Moderasi)
 ```
 
@@ -154,6 +154,11 @@ Berdasarkan telaah kritis terhadap arahan Dosen Pembimbing (Dr. Fredella Colline
 | **D24** | **Eliminasi Total Sumber Sintetis ICv2 & Zero-Hallucination Protocol Data Empiris Bab 1** | Berdasarkan audit fakta mendalam dan mandat tegas pengguna (*"antara cari sumber yang nyata atau tidak sama sekali"*): (1) Mengeliminasi total Gambar 1.3 (Donut Chart Pangsa Pasar TCG 41,5%) dan rujukan `icv2tcgplayer2024` dari seluruh ekosistem naskah karena tidak memiliki dokumen primer publik yang sah; (2) Mempertahankan 2 grafik data primer yang 100% nyata dan terverifikasi: Gambar 1.1 (Statista US$ 100B, Chart 24277) dan Gambar 1.2 (The Pokémon Company 64,8 Miliar kartu); (3) Menyelaraskan paritas 1:1 tepat **55 referensi** di seluruh 6 media (LaTeX, Word, Markdown, RIS, BibTeX, dan Mendeley UI); (4) Menerapkan *Zero-Hallucination Policy* permanen via `directives/empirical_source_verification.md` dan skrip otomatis `execution/verify_live_urls.py` yang menguji HTTP 200 dan memblokir URL direktori/kategori umum. |
 | **D25** | **Integrasi Awal Gambar 1.3: Disparitas Harga Pasar Sekunder PSA 10 vs. Raw Card** | Eksplorasi data PSA (Professional Sports Authenticator) Population Report & Auction Prices Realized untuk membuktikan fenomena disparitas harga pasar sekunder dan motif spekulasi finansial ($X_3$). |
 | **D26** | **Aturan Bebas Dinding Login (No Login Wall) & Adopsi PriceCharting Shining Fates (Gambar 1.3)** | Mengatasi kendala dinding verifikasi nomor telepon/login PSA (`psacard.com`) yang menghalangi penguji independen dengan menetapkan kebijakan permanen **No-Login-Wall**: (1) Memilih sumber data sekunder terbuka tanpa halangan login yaitu **PriceCharting — Pokémon Shining Fates Set Price Guide** (`https://www.pricecharting.com/console/pokemon-shining-fates`); (2) Mengambil data riil transaksi pasar sekunder kartu mentah (*Ungraded*) vs bersertifikasi *PSA 10 Gem Mint* (Charizard VMAX SV107 2,0x, Suicune SV022 5,9x, Kyogre #21 23,7x, Reshiram #17 26,0x, Ditto VMAX #51 17,5x) sebagai visualisasi Gambar 1.3; (3) Mengganti kunci `psa2024popreport` secara 1:1 dengan `pricecharting2024` sehingga paritas 1:1 tepat **55 referensi** tetap terjaga sempurna di seluruh 6 media (LaTeX, Word, Markdown, BibTeX, RIS, Mendeley); (4) Memformalisasikan aturan di `.agents/rules/no_login_wall_empirical_sources.md` dan `directives/empirical_source_verification.md`. |
+| **D27** | **Bentuk Rerangka Konseptual Wajib Elips (Konstruk Laten vs Manifes)** | Arahan Sempro 24 Sep 2026: Mengubah seluruh node kotak pada diagram Gambar 2.1 menjadi elips. Berdasarkan konvensi SEM dan diagram jalur (*Bollen 1989; Kline 2015; Hair et al. 2010/2021*), kotak adalah untuk *observed variables* (data tunggal manifes), sedangkan elips adalah untuk *unobserved/latent variables* (konstruk teoretis multi-item). Tuntas dieksekusi di TikZ TeX, PNG 300 DPI, Word DOCX, dan teks MD `( ... )`. |
+| **D28** | **Rasio Kemutakhiran Pustaka 80/20 (Maksimal 10 Tahun, Prioritas $\le$ 5 Tahun)** | Arahan Sempro 24 Sep 2026: Membatasi jurnal tua (>10 tahun) dengan proporsi minimal 80% jurnal baru (2016–2026, diutamakan $\le 5$ tahun/2021–2026) dan maksimal 20% literatur klasik/seminal yang benar-benar tidak tergantikan (Rook 1987, Babin 1994, Barasz 2017, Tangney 2004, Verplanken 2001, Aiken & West 1991, Cohen 1988, Green 1991, buku metodologi). Tercatat di Second Brain untuk eksekusi terencana. |
+| **D29** | **Narasi Jembatan Alur $X \rightarrow Y \rightarrow Z$ di Bab 1 bagi Kalangan Awam (Tabel 1.1 Dipertahankan)** | Arahan Sempro 24 Sep 2026: Menyisipkan 2–3 paragraf *storytelling* psikologis konsumen awam (Sensasi Gacha $X_1 \rightarrow$ Obsesi Slot Binder $X_2 \rightarrow$ Godaan Spekulasi Cuan PSA 10 $X_3 \rightarrow$ Impulsive Buying $Y$ di kasir, dimoderasi oleh Rem Volisional Self-Control $Z/M$) sebelum Tabel 1.1. Tabel 1.1 ditegaskan dosen **sudah sangat baik dan tidak boleh dihapus**. Tercatat di Second Brain untuk eksekusi terencana. |
+| **D30** | **Eliminasi Pelabelan Kaku "Grand Theory" di Bab 2** | Arahan Sempro 24 Sep 2026: Menghapus pelabelan formal hierarkis "Grand Theory" pada §2.1.1 yang dinilai penguji sudah usang dan terlalu tua untuk skripsi S1 terapan. Diganti menjadi "Landasan Teoretis: Pendekatan Keuangan Perilaku" dengan narasi mengalir tanpa label hierarkis kaku (*Grand* / *Supporting*). Tercatat di Second Brain untuk eksekusi terencana. |
+
 
 
 

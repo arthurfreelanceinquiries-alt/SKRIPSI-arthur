@@ -5,6 +5,209 @@
 > - **Masalah yang Diselesaikan:** Menghilangkan amnesia progres; mendokumentasikan alasan di balik setiap perubahan naskah atau penambahan fitur agar selalu siap dipertanggungjawabkan saat sidang.
 > - **Keputusan/Output:** Diperbarui secara otomatis oleh asisten di setiap akhir sesi kerja.
 
+## 📅 Sesi 24 September 2026 (Sesi 30): Tindak Lanjut Revisi Seminar Proposal (Sempro) Dosen #1 — Transformasi Model Rerangka Konseptual Penelitian Menjadi Bentuk Elips (Kaidah Konstruk Laten SEM & Diagram Jalur)
+
+* **Fokus Pekerjaan:**
+  - Mengaktifkan protokol [[.agents/skills/obsidian-second-brain/SKILL.md|obsidian-second-brain]] untuk sinkronisasi pengetahuan dan pencegahan amnesia konteks riset skripsi.
+  - Menindaklanjuti revisi seminar proposal (Sempro) dari dosen penguji: **perbaikan bentuk kotak pada diagram model rerangka konseptual penelitian (Gambar 2.1) menjadi bentuk elips/oval**.
+  - **Kajian Metodologis Mengapa Harus Berbentuk Elips (The Why):**
+    1. **Konvensi Baku Diagram Jalur & Pemodelan Struktural (*Path Analysis & SEM* - Bollen 1989; Kline 2015; Hair et al. 2010/2019/2021):**
+       - **Persegi / Kotak (*Rectangle/Square*):** Diperuntukkan secara mutlak bagi **Observed Variables / Manifest Variables / Measured Variables**, yaitu variabel atau data yang diobservasi dan diukur langsung (misal: satu item butir kuesioner individual, skor tes, laba bersih, ROA, DER, inflasi).
+       - **Elips / Oval / Lingkaran (*Ellipse/Circle*):** Diperuntukkan secara mutlak bagi **Unobserved Variables / Latent Variables / Konstruk Teoretis**, yaitu konsep abstrak psikologis atau keperilakuan yang *tidak dapat diukur secara langsung* (*unobservable*), melainkan diestimasi melalui kumpulan indikator empiris (*multi-item measurement*).
+       - Dalam penelitian ini, seluruh variabel ($X_1$: *Hedonic Motivation*, $X_2$: *Desire for Completeness*, $X_3$: *Speculative Motive*, $Y$: *Impulsive Buying*, $M$: *Self-Control*) adalah **konstruk laten** yang diukur melalui indikator-indikator skala psikometri (Babin, Barasz, Keynes/Shiller, IBTS, BSCS). Menggambarkannya dengan bentuk kotak merupakan kekeliruan representasi ontologis variabel di mata penguji metodologi.
+    2. **Pembedaan Tegas dari Diagram Alir (*Flowchart*) Prosedur:**
+       - Penggunaan elips secara visual membedakan diagram rerangka konseptual teoretis (hubungan kausalitas hipotesis) dari diagram proses kerja/prosedural (Gambar 3.1 Diagram Alur Pelaksanaan Penelitian yang menggunakan kotak proses).
+  - **Eksekusi Pembaruan Multiformat (Zero Desync):**
+    1. **LaTeX Master (`Proposal_Arthur_PokemonTCG.tex`):** Memperbarui pustaka TikZ `shapes.geometric` pada `\subsection{Rerangka Penelitian}`, mengubah style `box` dan `modbox` dari `rectangle, rounded corners=3pt` menjadi `ellipse, line width=1.1pt`, mengoptimasi dimensi (`5.0cm x 1.65cm` dan `5.2cm x 1.65cm`), serta memetakan titik jangkar panah moderasi langsung pada kurva perimeter elips `m` (`m.243`, `m.270`, `m.303`) agar rapi bebas tumpuk tindih.
+    2. **Aset Gambar Resolusi Tinggi (300 DPI):** Menghasilkan berkas PNG baru via XeLaTeX + PyMuPDF (`01_Naskah_Utama/images/gambar_rerangka_penelitian.png`) dan menyinkronkannya ke seluruh 3 direktori presentasi sempro:
+       - `02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/assets/gambar_rerangka_penelitian.png`
+       - `02_Persiapan_Sidang/assets/gambar_rerangka_penelitian.png`
+       - `02_Persiapan_Sidang/ppt_seminar_proposal/assets/gambar_rerangka_penelitian.png`
+    3. **Naskah Draf Markdown:** Memperbarui diagram teks representatif dari `[ ... ]` menjadi `( ... )` di [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]], [[03_Draft_Per_Bab/BAB_II_TINJAUAN_PUSTAKA.md]], dan [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]].
+    4. **Kompilasi Naskah Word & PDF:**
+       - `Proposal_Arthur_PokemonTCG.pdf`: Ter-compile sempurna via XeLaTeX (47 halaman settled, letak Gambar 2.1 di halaman 21/sheet 26 presisi).
+       - `Proposal_Arthur_PokemonTCG.docx`: Tergenerasi ulang via `execution/build_proposal_word.py` (menyematkan gambar elips baru, 141 hyperlink sitasi aktif, 45 entri TOC ber-hyperlink, 10 caption LOT/LOF valid).
+    5. **Verifikasi Gerbang Paritas:** Lulus pengujian penuh `py execution/run_thesis_graph.py --gate parity` (**7 PASS / 0 FAIL / 0 SKIP**).
+* **Pencatatan Resmi Revisi Lanjutan Seminar Proposal (Sempro) Dosen:**
+  - Mengkodifikasikan 3 butir revisi tambahan dari dosen penguji ke dalam Second Brain (dokumen khusus: [[07_Review_&_Audit/Revisi_Dosen/2026-09-24_Catatan_Revisi_Seminar_Proposal_Sempro.md]]):
+    1. **Rasio Kemutakhiran Pustaka 80/20:** Jurnal tua di atas 10 tahun wajib dipangkas drastis. Target komposisi: minimal 80% jurnal baru (rentang 10 tahun terakhir, diutamakan $\le 5$ tahun ke belakang), maksimal 20% literatur klasik/seminal yang benar-benar tidak dapat digantikan.
+    2. **Elaborasi Narasi Alur Kausalitas $X \rightarrow Y \rightarrow Z$ di Bab 1:** Alur logika hubungan variabel saat ini terkesan melompat dan hanya berbentuk tabel (Tabel 1.1). Dosen penguji meminta **Tabel 1.1 jangan dihapus (sudah baik)**, tetapi ditambahkan jembatan narasi mengalir yang membumi (*storytelling*) agar penguji/pembaca yang awam Pokémon memahami secara psikologis bagaimana sensasi gacha ($X_1$), hasrat menutup binder ($X_2$), dan godaan arbitrase PSA 10 ($X_3$) bermuara ke belanja impulsif di kasir ($Y$), serta di mana peran rem volisional kontrol diri ($Z/M$).
+    3. **Eliminasi Pelabelan Kaku "Grand Theory":** Ditegur penguji bahwa istilah hierarkis kaku *Grand Theory* sudah tidak relevan dan terlalu usang untuk riset skripsi ini; penyebutan dan pelabelan subbab 2.1.1 akan disesuaikan menjadi "Landasan Teoretis" tanpa dikotomi kaku.
+  - Sesuai instruksi pengguna, ketiga butir ini **dicatat dan dibekukan dalam Second Brain** sebagai rencana aksi terstruktur sebelum dieksekusi pada sesi berikutnya.
+* **File yang Diperbarui:**
+  - [[07_Review_&_Audit/Revisi_Dosen/2026-09-24_Catatan_Revisi_Seminar_Proposal_Sempro.md]] *(BARU)*
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]]
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]]
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]]
+  - [[01_Naskah_Utama/images/gambar_rerangka_penelitian.png]]
+  - [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/assets/gambar_rerangka_penelitian.png]]
+  - [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]]
+  - [[03_Draft_Per_Bab/BAB_II_TINJAUAN_PUSTAKA.md]]
+  - [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]]
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+---
+
+## 📅 Sesi 24 September 2026 (Sesi 29): Klarifikasi Tajam & Rekonstruksi Research Gap X3 (Speculative Motive) pada Slide 3 dan Alur Presentasi Sempro
+
+* **Fokus Pekerjaan:**
+  - Menanggapi pertanyaan kritis user: *"yang bagian x3 sulit dipahami dimana gap nya, bisa tolong di bantu?"*
+  - **Akar Masalah Teks Lama:** Kalimat di kartu slide sebelumnya (`"Aryadi & Lingga (2024) menemukan motif investasi kartu signifikan, sedangkan Colline (2024) mendokumentasikan kuatnya bias kognitif investor di Indonesia."`) hanya menyandingkan dua temuan searah/positif tanpa memuat kontras atau apa yang belum diteliti, sehingga pembaca/penguji tidak dapat menangkap di mana kesenjangannya (*research gap*).
+  - **Identifikasi 3 Pilar Celah Penelitian (Research Gap) X3 Berdasarkan Naskah Proposal (`PROPOSAL_SKRIPSI_POKEMON_TCG.md` Tabel 1.1 No. 3, Subbab 2.4.3 & 2.4.6):**
+    1. **Empirical Gap (Celah Objek & Konteks Pembelian):** Aryadi & Lingga (2024) baru meneliti motif investasi pada transaksi **terencana (*planned participation*)** antar kolektor di komunitas hobi. Belum pernah ada penelitian empiris yang menguji apakah ekspektasi keuntungan investasi (disparitas arbitrase PSA 10 bernilai jutaan rupiah) justru memicu **belanja spontan tanpa rencana (*impulsive buying*) seketika di kasir ritel modern** seharga Rp20.000.
+    2. **Theoretical Paradox (Financial Economics vs. Behavioral Finance):** Secara teori keuangan klasik (*Fama, 1970; Barber & Odean, 2008*), motif untung membuat orang berhitung rasional (membeli kartu lepasan yang pasti nilainya di pasar sekunder). Namun pada kemasan acak (*blind-box*), ekspektasi arbitrase justru memicu ilusi kendali (*gambler's fallacy* / *overoptimism bias*) yang membuat konsumen belanja impulsif berulang (*Shiller, 2000; Kahneman & Tversky, 1979*).
+    3. **Moderation Gap (Ketiadaan Uji Kontrol Diri):** Belum ada pengujian empiris peran *Self-Control* sebagai rem volisional peredam ambisi spekulatif kartu koleksi.
+  - **Eksekusi Pembaruan:**
+    - Di `02_Rencana_PPT_Sempro_7_Slide/index.html`: Memperbarui status pill kartu X3 menjadi `Kasir vs. Investasi` dan redaksi teks kartu: *"Aryadi & Lingga (2024) baru meneliti motif investasi pada transaksi terencana; belum ada studi yang menguji apakah ekspektasi spekulasi (arbitrase PSA 10) memicu belanja impulsif di kasir serta ketiadaan uji moderasi kontrol diri."* (termasuk sinkronisasi pada atribut `data-notes`).
+  - **Optimasi Total Slide 4 (Landasan Teori & Operasionalisasi Variabel):**
+    - **Eliminasi Whitespace / Ruang Kosong:** Mengisi ruang kosong vertikal yang menganga dengan konten ilmiah berbobot tinggi tanpa menimbulkan overflow pada rasio 16:9.
+    - **Ekspansi Teori (Atas):**
+      - *Grand Theory:* Menambahkan tokoh kunci (Simon, 1955; Kahneman & Tversky, 1979; Shiller, 2000; Thaler & Shefrin, 1981) dan premis inti penolakan *Homo Economicus*, bias keterbatasan kognitif (*bounded rationality*), *gambler's fallacy*, dan luapan afektif sesaat di etalase kasir.
+      - *3 Supporting Theories Diperkaya:* Penjelasan mendalam untuk S-O-R (Mehrabian & Russell, 1974), Pseudo-Set Framing (Barasz et al., 2017) & efek Zeigarnik, serta Self-Regulation Theory (Baumeister, 2002; Thaler & Shefrin, 1981) model *Planner-Doer*.
+    - **Pemberdayaan 5 Kartu Variabel (Bawah):**
+      - Definisi konseptual akademik yang kaya (3-4 baris).
+      - Menambahkan elemen kotak visual baru `var-canva-context`: Menguraikan manifestasi fenomena ritel kartu Pokémon TCG secara riil (Fenomena Kasir, Sensasi Hobi, Ketegangan Mental, Ekspektasi Cuan, Rem Volisional).
+      - Menambah indikator empiris operasional menjadi 4 butir per variabel.
+      - Menyertakan instrumen skala baku internasional dan jumlah item (IBTS 9 Item, Babin 8 Item, Barasz 6 Item, Keynes & Shiller 6 Item, BSCS 8 Item).
+  - **Rekonstruksi Total Slide 5 (Kerapian Hipotesis & Logika MRA Dua-Tahap):**
+    - **Eliminasi Ruang Kosong Kolom Kanan:** Mengganti 6 baris hipotesis yang renggang dan formula gantung dengan 2 kartu eksekutif berstruktur:
+      1. *Kartu 6 Hipotesis Terarah:* Dikelompokkan rapi dalam row ber-pill badge warna (H1–H3 Langsung, H4–H6 Moderasi).
+      2. *Kartu Prosedur Hierarkis MRA Dua-Tahap (Aiken & West, 1991):* Menjelaskan logika ekonometrika mengapa harus 2 tahap (Tahap 1 Model Baseline untuk mengisolasi $R_1^2$ aditif; Tahap 2 Model Interaksi untuk menguji kenaikan murni $\Delta R^2$ via $F_{\text{change}}$ $p < 0{,}05$ dan koefisien interaksi negatif $\beta < 0$).
+    - **Sinkronisasi Penjelasan Sidang:** Menambahkan cheatsheet jawaban sidang untuk mengantisipasi pertanyaan dosen penguji mengenai alasan metodologis MRA 2-tahap di [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/ALUR_PRESENTASI_7_SLIDE_DETAIL.md]].
+  - **Pembersihan Menyeluruh Tanda LaTeX Mentah ($) & Asterik Markdown pada Seluruh Slide:**
+    - Melakukan audit string literal tanda dolar (`$`), backslash (`\`), caret (`^`), dan asterik (`*`) di [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/index.html]].
+    - Menghilangkan seluruh notasi LaTeX mentah:
+      * Slide 3: `($X_1$)`, `($X_2$)`, `($X_3$)`, `($M$)` dibersihkan menjadi `(<em>X</em>₁)`, `(<em>X</em>₂)`, `(<em>X</em>₃)`, `(<em>M</em>)`.
+      * Slide 5: `$X_1, X_2, X_3$`, `$M^*$`, `($R_1^2$)`, `($X^* \cdot M^*$)`, `($R_2^2$)`, `($R_2^2 - R_1^2$)` dibersihkan menjadi format HTML murni `<em>X</em>₁`, `<em>M</em>*`, `(<em>R</em>₁²)`, `(<em>X</em>* · <em>M</em>*)`, `(<em>R</em>₂² − <em>R</em>₁²)`, serta `<em>F</em><sub>change</sub>`.
+      * Slide 6: Mengganti asterik markdown (`*Google Forms*`, `*Infinite*`, `*Purposive Sampling*`) menjadi tag `<em>`, serta menyempurnakan minus tipografis (`−`) pada formula *mean-centering*.
+    - Hasil verifikasi: Bebas 100% dari tanda LaTeX mentah yang bocor ke tampilan browser.
+  - **Rekonstruksi Total Slide 6 (Executive Visual Chunking & Eliminasi Gap Kosong):**
+    - **Akar Masalah:** Property CSS `justify-content: space-between` pada `.canva-quad-box` menyebabkan celah kosong sebesar ~100px di tengah-tengah setiap kuadran.
+    - **Solusi Visual Chunking yang Mempermudah Presentasi Arthur:**
+      * *Kuadran 1:* Menambahkan 3 chip metode (`Asosiatif Kausal`, `Kros-Seksional`, `Google Forms Daring`) + pita visual mini Skala Likert 5-Poin (`STS` s.d. `SS`).
+      * *Kuadran 2:* Menampilkan 3 kriteria inklusi + grid formula sampel Green (1991) Uji-F ($N \ge 106$) vs Uji-t ($N \ge 111$) + target bar hijau 120–150 responden.
+      * *Kuadran 3:* Checklist kualitas data (Pearson, Cronbach Alpha $\alpha \ge 0{,}70$, asumsi OLS) + banner pertahanan sidang merah penegasan bebas autokorelasi.
+      * *Kuadran 4:* Kotak emas rumus mutlak *Mean-Centering* (Aiken & West, 1991) + 3 langkah pengujian evaluasi MRA (Uji parsial, $\Delta R^2$ via $F_{\text{change}}$, dan *simple slopes*).
+    - **Hasil:** Seluruh kuadran terisi seimbang, padat, tanpa ruang kosong berlebih, dan sangat mudah dijelaskan kepada penguji sempro.
+  - **Sinkronisasi Dokumen:** [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/index.html]] dan [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/ALUR_PRESENTASI_7_SLIDE_DETAIL.md]] tersinkronisasi 100%.
+
+---
+
+## 📅 Sesi 24 September 2026 (Sesi 28): Audit Menyeluruh, Penerbitan PRD & Implementation Plan, serta Eksekusi Redesain Total 7 Slide Sempro Bebas Overflow & Gambar Jernih
+
+* **Fokus Pekerjaan:**
+  - Menindaklanjuti arahan user: audit menyeluruh terhadap masalah tata letak berantakan dan gambar jelek/buram pada `02_Rencana_PPT_Sempro_7_Slide/index.html`, serta pengecekan alur proposal sempro tanpa terkecuali.
+  - **Penerbitan Dokumen Perencanaan (Sebelum Revisi):**
+    1. [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/PRD_PPT_SEMPRO_7_SLIDE.md]]: Merinci temuan audit slide-by-slide, standar desain editorial Canva, kriteria penerimaan zero layout overflow, dan resolusi aset visual.
+    2. [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/IMPLEMENTATION_PLAN_PPT_SEMPRO_7_SLIDE.md]]: Rencana teknis 4 fase (normalisasi aset, CSS anti-overflow, rekonstruksi slide 1–7, uji kualitas).
+  - **Eksekusi Pembaruan Kode ([[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/index.html]]):**
+    * **Slide 1 (Cover):** Mengganti logo UKRIDA ke `Logo_UKRIDA_300x300.png` (transparan RGBA murni), melenyapkan kotak putih pekat; tata letak judul 3-baris bold seimbang dengan kartu profil mahasiswa (Arthur Reezan - 312023002) dan pembimbing (Dr. Fredella Colline).
+    * **Slide 2 (Fenomena Pasar):** Memilih Gambar 1.2 (Pertumbuhan Produksi Kumulatif) sebagai exhibit visual utama yang besar dan tajam di kiri (tinggi 220px), sedangkan data Statista diwakili kartu angka pahlawan besar `> US$ 100 Miliar` tanpa memaksakan gambar Statista yang sempit.
+    * **Slide 3 (Masalah & Gap):** Memperbesar kontainer Gambar 1.3 (Disparitas Harga PSA 10) sehingga grafik batang dan nama kartu terbaca jelas; alur stepper kausalitas dibuat ringkas; 3 kartu gap empiris dan banner novelty Arthur tertata proporsional.
+    * **Slide 4 (Teori & Variabel):** Mengatasi overflow vertikal 5 kolom sempit dengan tipografi ramping, definisi padat 1 baris, 3 poin indikator esensial, dan badge skala baku internasional (IBTS, Babin, Barasz, Keynes, BSCS). Bebas 100% dari teks terpotong ke bawah.
+    * **Slide 5 (Model & Hipotesis):** Mengganti diagram SVG model MRA dengan gambar resmi naskah proposal (`assets/gambar_rerangka_penelitian.png` — diagram TikZ publikasi resmi) yang memiliki panah presisi, notasi H1–H6 rapi tanpa tumpang tindih, dan tipografi akademis; didampingi tabel riset terdahulu pastel bersih + 6 hipotesis bernomor tegas + formula ekonometrika 2-tahap.
+    * **Slide 6 (Metodologi):** 4 kuadran padat informasi dengan teknik *Canva Visual Chunking*, badge formula Green $N \ge 111$ (Target 120–150 + Pilot 30), alert bebas autokorelasi, dan kotak sorotan mutlak **Mean-Centering**.
+    * **Slide 7 (Penutup & Q&A):** 2 kartu kontribusi bernilai tinggi (teoretis & praktis) serta podium penutup formal dengan status Q&A Dibuka.
+    * **Animasi Background Bola Pokémon (Pokéball Spinner):** Mengembalikan elemen animasi Pokéball berputar halus secara kontinu di latar belakang slide (dual watermark spinner: putaran searah jarum jam 36 detik dan berlawanan arah 48 detik) serta siluet Pokéball atmosferik di luar kanvas layar, dengan tingkat transparansi halus (opacity 0,042) sehingga memberikan identitas visual khas Pokémon TCG tanpa mengurangi keterbacaan teks akademik.
+* **Masalah yang Diselesaikan:**
+  - Mengeliminasi total layout overflow pada rasio 16:9.
+  - Memperbaiki kualitas gambar: logo transparan bebas kotak putih dan grafik empiris terbaca tajam.
+  - Menjaga estetika Canva editorial human-crafted yang berwibawa akademik.
+* **File yang Diperbarui:**
+  - [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/PRD_PPT_SEMPRO_7_SLIDE.md]]
+  - [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/IMPLEMENTATION_PLAN_PPT_SEMPRO_7_SLIDE.md]]
+  - [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/index.html]]
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+---
+
+## 📅 Sesi 24 September 2026 (Sesi 27): Sinkronisasi Alur Presentasi Sempro 7 Slide (Integrasi Alur ChatGPT & Ketelitian Ilmiah) serta Redesain PPT HTML ke Estetika Eksekutif Akademis Non-AI
+
+* **Fokus Pekerjaan:**
+  - Mengaktifkan protokol [[.agents/skills/obsidian-second-brain/SKILL.md|obsidian-second-brain]] untuk sinkronisasi pengetahuan dan pencegahan amnesia konteks riset skripsi.
+  - Menelaah draf alur presentasi 7 slide dari ChatGPT yang diajukan user:
+    1. Mengadopsi poin-poin emas: Mnemonic alur cerita 7 kalimat (*The Golden Thread*), visualisasi rantai kausalitas masalah belanja impulsif di Slide 3, serta penegasan bahwa Gambar 1.3 (disparitas PSA 10) adalah ilustrasi fenomena pasar sekunder (bukan data sekunder yang diolah).
+    2. Mengeliminasi celah kelemahan sidang: Menghapus placeholder generik ("Penelitian 1, 2"), melengkapi gelar formal pembimbing ([[Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A]]), menyematkan teori kunci Barasz et al. (2017) *Pseudo-Set Framing* pada $X_2$, serta menegaskan teknik mutlak **Mean-Centering** dan kaidah sampel Green (1991) pada Slide 6 Metodologi.
+  - **Sinkronisasi Dokumen Rujukan:** Memperbarui [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/ALUR_PRESENTASI_7_SLIDE_DETAIL.md]] dengan struktur final 7 slide lengkap dengan estimasi durasi (±8:30), naskah bicara kata-per-kata, dan tameng jawaban sidang.
+  - **Perombakan Total Slide Web HTML ([[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/index.html]]):**
+    - **Transformasi Penuh ke Gaya Canva Editorial (Human-Designed):** Mengeliminasi total gaya dashboard developer / dark cyberpunk berkesan AI. Slide kini mengadopsi estetika presentasi Canva/PowerPoint bertaraf eksekutif:
+      * **Canvas Slide Bersih:** Default tema **Canva Light Academic** (latar putih bersih dengan bayangan realistis halus, kontras tinggi, aksen Deep Navy `#0F2642` dan Warm Gold `#D97706`) yang terlihat seperti deck presentasi buatan tangan mahasiswa berprestasi di Canva.
+      * **Peralihan Tema 1-Klik (Theme Toggle 🌓):** Dilengkapi tombol di presenter bar untuk beralih instan ke mode *Canva Navy Executive* jika ruangan sidang menggunakan proyektor gelap.
+      * **Tipografi Editorial Humanis:** Menggunakan kombinasi sans-serif modern (*Outfit* untuk judul tegas dan *Plus Jakarta Sans* untuk body text), bebas dari kesan terminal hacker monospaced.
+      * **Visual Canva-Style Asli:** Header pill tag (`01 | PENDAHULUAN`), kartu metrik hero angka besar (`> US$ 100 Miliar`, `64,8 Miliar`), bingkai foto berbayang halus untuk Gambar 1.1–1.3, bagan alur kausalitas bertingkat, tabel komparasi riset bergaris selang-seling pastel, dan footer khas template Canva (`Arthur Reezan • S1 Manajemen Keuangan UKRIDA • 01 / 07`).
+      * **Presenter Mode Tersembunyi:** Floating control bar melayang semi-transparan di sudut kanan bawah (tidak mengganggu estetika kanvas slide) dengan tombol navigasi, fullscreen, theme toggle, dan drawer *speaker notes* (`N`).
+* **Masalah yang Diselesaikan:**
+  - Slide presentasi tidak lagi terlihat seperti buatan AI bot atau dashboard programmer, melainkan tampak 100% seperti slide presentasi profesional buatan manusia di Canva.
+* **Keputusan / Insight:**
+  - Desain Canva Light Academic menjadi rujukan visual utama presentasi Sempro Arthur Reezan.
+* **File yang Diperiksa/Diperbarui:**
+  - [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/ALUR_PRESENTASI_7_SLIDE_DETAIL.md]]
+  - [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/index.html]]
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+---
+
+## 📅 Sesi 24 September 2026 (Sesi 26): Preservasi Istilah Kanonikal Pedoman FEB UKRIDA "2.5 Rerangka Penelitian" & Penyelarasan Total Kata Baku KBBI V ("Teoretis", "Memengaruhi") serta Eliminasi Kebocoran Sintaks LaTeX
+
+* **Fokus Pekerjaan:**
+  - Menegakkan arahan user: **mempertahankan kata kanonikal "Rerangka"** pada subbab **"2.5 Rerangka Penelitian"** dan **"Gambar 2.1 Model Rerangka Konseptual Penelitian"**, selaras 100% dengan istilah literal wajib pada *Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023* (hal. 152, 294, 1238).
+  - Melakukan audit menyeluruh dan perbaikan seluruh varian non-baku menjadi standar KBBI V dan EYD V:
+    1. **"teoritis" -> "teoretis":** Diharmonisasikan konsisten di seluruh naskah Markdown, DOCX, LaTeX, dan Panduan Belajar Sidang (Subbab 1.4.1 Manfaat Teoretis, narasi Bab 1, Tabel 1.1, narasi Bab 2, dan catatan metodologis Bab 3).
+    2. **"mempengaruhi" -> "memengaruhi":** Dilakukan peluluhan prefiks *me-* + *pengaruh* (k-p-t-s luluh) pada seluruh berkas naskah dan panduan belajar.
+  - **Eliminasi Kebocoran Tag LaTeX Mentah:** Menghapus tag `[noitemsep,topsep=2pt]` yang sempat bocor menjadi teks paragraf kasat mata di DOCX (P245 & P286) dan Markdown (baris 438 & 559).
+  - **Koreksi Sintaks Markdown:** Memperbaiki `(\emph{Recall Bias*):}` menjadi `(*Recall Bias*):`.
+  - **Resolusi Paritas Mendeley 5-Arah:** Memindahkan anchor `<a id="daftar-pustaka"></a>` sebelum heading `# DAFTAR PUSTAKA` sehingga parser menghitung tepat 54 entri pustaka (Lulus 7/7 uji integritas).
+  - **Kompilasi Ulang:**
+    * Proposal Word (`Proposal_Arthur_PokemonTCG.docx`): Lulus `verify_docx_typography.py` & `verify_word_outline.py` (0 broken links, 100% pure black).
+    * Proposal PDF LaTeX (`Proposal_Arthur_PokemonTCG.pdf`): Kompilasi XeLaTeX 47 halaman sukses tanpa error.
+    * Panduan Belajar Sidang (`PANDUAN_BELAJAR_PROPOSAL.pdf`): 71 halaman (1,54 MB), 100% bersih dari inkonsistensi kata baku.
+* **Masalah yang Diselesaikan:**
+  - Naskah proposal dan panduan belajar bebas dari typo kata non-baku, bebas kebocoran LaTeX, dan 100% patuh Pedoman FEB UKRIDA 2023.
+* **File yang Diperbarui:**
+  - [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]]
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]]
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]]
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]]
+  - [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]]
+  - [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.html]]
+  - [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.pdf]]
+  - [[execution/build_proposal_word.py]]
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+---
+
+## 📅 Sesi 24 September 2026 (Sesi 25): Perbaikan Total Hyperlink Naskah Utama, Eliminasi Catatan Audit Daftar Pustaka, & Refaktorisasi Contoh Panduan Belajar Menjadi 100% Kontekstual Skripsi Pokémon TCG
+
+* **Fokus Pekerjaan:**
+  - Melakukan audit dan perbaikan total hyperlink pada naskah utama proposal skripsi:
+    1. **Naskah Markdown (`PROPOSAL_SKRIPSI_POKEMON_TCG.md`):** Sinkronisasi 44 entri Daftar Isi ke heading target aktual, injeksi tag `<a id="..."></a>` pada 100% judul bab/sub-bab, penambahan anchor navigasi balik `[⬆️ Kembali ke Daftar Isi](#daftar-isi-naskah-proposal)`, pelabelan anchor pada seluruh 54 entri DAFTAR PUSTAKA, dan penautan 101 sitasi *in-text* di tubuh tulisan langsung menuju entri pustaka terkait (0 tautan patah dari 148 internal links).
+    2. **Naskah Microsoft Word (`Proposal_Arthur_PokemonTCG.docx`):** Pembersihan catatan audit internal pada entri pustaka ke-7 (Azizah & Fauzi, 2025), pemulihan bookmark `Ref_azizah2025exploring`, serta verifikasi 153 bookmark dan 183 hyperlink internal dengan hasil 0 tautan yatim/patah (*zero broken links*).
+  - Melenyapkan catatan audit internal yang tidak semestinya (*"belum teregistrasi di Crossref/doi.org per audit 18 Sep 2026; sitasi via URL langsung terverifikasi HTTP 200"*) dari `references.bib`, file `.bib`, dan `.ris` Mendeley.
+  - **Refaktorisasi Menyeluruh Contoh Panduan Belajar Sidang (`PANDUAN_BELAJAR_PROPOSAL.md` & `04_STATISTIK_UNTUK_PEMULA.md`):**
+    - Mengeliminasi 100% analogi generik yang berbeda topik (seperti suhu tubuh pasien, virus/bakteri, lempar koin, pemain sepak bola, timbangan benda, marshmallow, baterai habis, kamera drone, tentara, dll.).
+    - Mengganti seluruh penjelasan konsep statistik dan teori secara langsung menggunakan contoh riil variabel skripsi: **pembelian impulsif kartu Pokémon TCG (Y)**, **kesenangan unboxing/gacha booster pack (X1)**, **hasrat menuntaskan binder koleksi/pseudo-set (X2)**, **motif spekulasi cuan kartu langka SAR/PSA 10 (X3)**, dan **kontrol diri kolektor menahan godaan gesek/transfer (M)**.
+    - Menghilangkan seluruh notasi tanda dollar LaTeX math (`$...$`) menjadi teks humanis ramah baca (`X1`, `Y`, `M`, `α`, `β1`, `N ≥ 111`, `df1 = 3`, `df2 = N - 8`).
+    - Meng-compile ulang [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.pdf]] via Chrome headless (71 halaman, 1,62 MB).
+* **Masalah yang Diselesaikan:**
+  - Mahasiswa tidak lagi dibingungkan oleh analogi medis, olahraga, atau sehari-hari yang tidak relevan saat mempersiapkan sidang. Seluruh contoh kini siap diucapkan langsung saat berhadapan dengan dosen penguji.
+  - Hyperlink Daftar Isi dan sitasi naskah 100% aktif dan akurat lintas platform.
+  - Daftar pustaka dan berkas `.bib` bersih dari sisa catatan teknis internal.
+* **Keputusan / Output Teknis:**
+  - Naskah Terverifikasi: [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]] (148/148 links valid, 0 broken) & [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]] (153 bookmarks, 183 hyperlinks, 0 broken).
+  - Uji Paritas & Kepatuhan: `verify_docx_typography.py` (PASS), `verify_word_outline.py` (PASS).
+  - Dokumen Panduan Belajar Sidang: [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.pdf]] (71 halaman, 1,62 MB, 100% kontekstual Pokémon TCG).
+* **File yang Diperbarui:**
+  - [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]]
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]]
+  - [[01_Naskah_Utama/references.bib]]
+  - [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.bib]]
+  - [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris]]
+  - [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]]
+  - [[02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/04_STATISTIK_UNTUK_PEMULA.md]]
+  - [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.html]]
+  - [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.pdf]]
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
 ---
 
 ## 📅 Sesi 23 September 2026 (Sesi 24): Inisiasi Sesi Kerja via Protokol Obsidian Second Brain, Rekonsiliasi Konteks Naskah Tunggal Proposal, & Sinkronisasi Graphify
@@ -22,7 +225,12 @@
   - Memastikan seluruh analisis dan pencatatan baru mematuhi standar callout `> [!SUMMARY]`, bidirectional linking `[[...]]`, dan arsitektur 3-Layer (*directives* $\rightarrow$ *orchestration* $\rightarrow$ *execution*).
 * **Keputusan / Insight:**
   - Mempertahankan integritas SATU file utama proposal naskah dan disiplin verifikasi gate parity.
+  - Mengkodifikasikan anatomi rumus $F_{\text{change}}$ (Persamaan 3.5), alasan tidak ditemukan secara harfiah di Google (substitusi angka spesifik model skripsi), asal-usul $df_1 = 3$ (penambahan 3 istilah interaksi), dan asal-usul $df_2 = N - 8$ (8 total parameter Model 2) ke dalam bank soal dan panduan belajar sidang.
+  - Menyusun dan menambahkan **Bagian 20: Kamus Bedah Tuntas (Jawaban 25 Masalah Kritis Sidang Bab 1, 2, 3)** ke dalam [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]] dalam bahasa awam yang ringkas, runtut, dan siap diucapkan saat seminar proposal.
 * **File yang Diperbarui:**
+  - [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]] *(TOC, Pertanyaan 35, penjelasan rumus R8 F-change, dan Bagian 20 memuat 25 jawaban kritis)*
+  - [[02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/03_PERTANYAAN_SIDANG_SULIT.md]] *(penambahan butir SULIT 13)*
+  - [[02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/04_STATISTIK_UNTUK_PEMULA.md]] *(glosarium output SPSS: F-change, df1, df2)*
   - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] *(log sesi ini)*
 
 ---
@@ -1725,5 +1933,27 @@
 - **Keputusan / Insight:** PRD universal adalah dokumen framework (bukan log sesi) — hanya contoh instansi yang diselaraskan; tidak ada status sesi yang wajib diduplikasi ke sana.
 - **File yang Diperbarui:** [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
 - **Verifikasi:** `git status` bersih vs `origin/main`; dashboard + log + PRD konsisten.
+
+---
+
+## 📅 Sesi: 24 September 2026 — Hasil Seminar Proposal & Catatan Revisi Dosen Penguji
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Mendokumentasikan masukan, teguran, dan arahan revisi dari dosen penguji pada Seminar Proposal (Sempro) 24 September 2026 untuk naskah skripsi Pokémon TCG Arthur Reezan.
+> - **Masalah yang Diselesaikan:** Merekam 4 butir revisi secara terstruktur ke dalam Second Brain (Rerangka Konseptual Elips, Rasio Jurnal 80/20, Alur Naratif Bab 1 $X \rightarrow Y \rightarrow Z$, dan Penghapusan Istilah "Grand Theory") tanpa mengubah naskah utama secara tergesa-gesa sesuai instruksi mahasiswa.
+> - **Keputusan/Output:** Butir 1 (Model Elips) tuntas dieksekusi & diverifikasi 7/7 paritas; Butir 2–4 dicatat lengkap dalam dokumen dedikasi `07_Review_&_Audit/Revisi_Dosen/2026-09-24_Catatan_Revisi_Seminar_Proposal_Sempro.md` dengan analisis akar masalah dan rencana kerja bertahap.
+
+- **Fokus Pekerjaan:**
+  1. **Butir 1 (Model Rerangka Konseptual Elips - SELESAI):** Mengubah node kotak menjadi elips pada naskah LaTeX (`Proposal_Arthur_PokemonTCG.tex`), regenerasi PNG 300 DPI (`images/gambar_rerangka_penelitian.png`) dan sinkronisasi ke aset presentasi, update diagram teks `( ... )`, kompilasi PDF & DOCX, serta verifikasi kelulusan gerbang paritas `run_thesis_graph.py --gate parity` (7/7 PASS).
+  2. **Butir 2 (Rasio Jurnal 80/20 - TERCATAT):** Memetakan aturan 80% jurnal baru ($\le 10$ tahun, prioritas $\le 5$ tahun) dan 20% literatur klasik/seminal yang wajib dipertahankan (Rook 1987, Babin 1994, Barasz 2017, Tangney 2004, Verplanken 2001, Aiken & West 1991, Cohen 1988, Green 1991, buku metodologi).
+  3. **Butir 3 (Narasi Alur $X \rightarrow Y \rightarrow Z$ di Bab 1 - TERCATAT):** Merancang konsep jembatan naratif awam-friendly (Sensasi Hobi $X_1 \rightarrow$ Obsesi Binder $X_2 \rightarrow$ Godaan Spekulasi $X_3 \rightarrow$ Impulsive Buying $Y$ dengan Rem Volisional Self-Control $Z/M$) tepat sebelum Tabel 1.1 (Tabel 1.1 tetap dipertahankan utuh).
+  4. **Butir 4 (Eliminasi "Grand Theory" - TERCATAT):** Menyiapkan penyesuaian judul subbab §2.1.1 menjadi "Landasan Teoretis" dan pembersihan frasa kaku "Grand Theory / Supporting Theory" pada narasi Bab 2.
+- **File yang Diperbarui:**
+  - Dokumen Baru: [[07_Review_&_Audit/Revisi_Dosen/2026-09-24_Catatan_Revisi_Seminar_Proposal_Sempro.md]]
+  - Dashboard: [[00_DASHBOARD_SECOND_BRAIN.md]]
+  - Log Sesi: [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+  - Naskah & Aset (Khusus Butir 1): [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[01_Naskah_Utama/images/gambar_rerangka_penelitian.png]]
+- **Verifikasi & Status:** Naskah utama untuk Butir 2–4 dibekukan sesuai permintaan pengguna (*"ini tidak usah dibenerin langsung, saya ingin kamu catat saja"*). Paritas naskah 7/7 PASS.
+
 
 

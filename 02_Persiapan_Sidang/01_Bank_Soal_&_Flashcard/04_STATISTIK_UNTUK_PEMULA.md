@@ -9,17 +9,17 @@
 
 ## 1. APA ITU REGRESI?
 
-**Analogi:** Bayangkan kamu ingin tahu apakah "banyaknya nonton konten unboxing" (X) membuat kamu "lebih sering beli booster pack" (Y). Regresi = alat untuk mengukur seberapa kuat hubungan itu.
+**Contoh di Skripsimu:** Mengukur seberapa besar faktor pemicu seperti motivasi kesenangan unboxing (X1), hasrat melengkapi binder (X2), dan motif spekulasi finansial (X3) mempengaruhi keputusan pembelian impulsif kartu Pokémon (Y). Regresi adalah metode statistik untuk menguji arah dan kekuatan hubungan tersebut.
 
 **Persamaan dasar:**
 ```
 Y = a + bX + e
 ```
-- `a` = konstanta (berapa Y saat X = 0)
-- `b` = koefisien regresi (setiap X naik 1, Y berubah sebesar b)
-- `e` = error (faktor lain yang tidak diukur)
+- `a` = konstanta (nilai Y saat X = 0)
+- `b` = koefisien regresi (setiap kenaikan 1 poin X, Y bertambah/berkurang sebesar b)
+- `e` = error / residual (faktor lain di luar model yang mempengaruhi Y)
 
-**Regresi Berganda** = sama, tapi dengan banyak X:
+**Regresi Berganda** = menguji pengaruh beberapa variabel X sekaligus terhadap Y:
 ```
 Y = a + b₁X₁ + b₂X₂ + b₃X₃ + e
 ```
@@ -28,7 +28,7 @@ Y = a + b₁X₁ + b₂X₂ + b₃X₃ + e
 
 ## 2. APA ITU MRA (Moderated Regression Analysis)?
 
-**Analogi:** Kamu sudah tahu bahwa "senang merobek pack" (X1) → "beli impulsif" (Y). Tapi kamu curiga: apakah orang yang "paham keuangan" (M) akan **kurang** terpengaruh? MRA menguji apakah M mengubah kekuatan hubungan X→Y.
+**Contoh di Skripsimu:** Kita menduga bahwa kesenangan unboxing pack (X1) mendorong pembelian impulsif kartu (Y). Namun, kita juga menduga bahwa bagi kolektor yang memiliki kontrol diri (*Self-Control*) tinggi (M), dorongan kesenangan tersebut akan diredam/diperlemah sehingga mereka tidak kalap berbelanja kartu di kasir. MRA adalah teknik regresi khusus untuk membuktikan peran moderasi rem volisional ini.
 
 **Caranya:** Tambahkan variabel perkalian X×M (*interaction term*):
 ```
@@ -153,6 +153,9 @@ Y = a + b₁X₁ + b₂X₂ + b₃X₃ + b₄M + b₅(X₁×M) + b₆(X₂×M) +
 | Sig. (p-value) | Probabilitas hasil terjadi secara kebetulan — < 0,05 = signifikan |
 | R² | Proporsi variasi Y yang dijelaskan model |
 | F | Uji signifikansi model keseluruhan |
+| F-change | Uji apakah penambahan 3 variabel interaksi di Model 2 signifikan menaikkan daya penjelas model (ΔR²) |
+| df1 | Derajat kebebasan pembilang = jumlah variabel baru yang ditambahkan di Model 2 (df1 = 3 variabel interaksi) |
+| df2 | Derajat kebebasan penyebut = N - (k + 1) = N - 8 (karena ada 8 total parameter yang dihitung pada Model 2) |
 | VIF | Variance Inflation Factor — > 10 = multikolinearitas bermasalah |
 | Durbin-Watson | Uji autokorelasi — idealnya mendekati 2 *(PERINGATAN: HANYA untuk data runtun waktu/time series! TIDAK digunakan pada skripsi kuesioner cross-sectional ini)* |
 | Tolerance | 1/VIF — > 0,10 = aman |

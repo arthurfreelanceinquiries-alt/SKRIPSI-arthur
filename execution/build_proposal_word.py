@@ -1389,7 +1389,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
             "mengacu pada rekomendasi ukuran sampel Green (1991) dan Cohen (1988) untuk mencapai kekuatan uji statistik (statistical power) yang memadai pada model regresi "
             "linear berganda. Metode analisis data menggunakan analisis regresi berganda dan Moderated Regression Analysis (MRA) dengan prosedur pemusatan rata-rata "
             "(mean-centering) guna mereduksi potensi multikolinearitas non-esensial antara variabel prediktor dengan produk interaksinya (Aiken dan West, 1991; Ghozali, 2018), yang diolah menggunakan perangkat lunak "
-            "IBM SPSS Statistics. Penelitian ini menawarkan kebaruan teoritis (novelty) dengan mengintegrasikan kerangka psikologi lingkungan Stimulus-Organism-Response (S-O-R), "
+            "IBM SPSS Statistics. Penelitian ini menawarkan kebaruan teoretis (novelty) dengan mengintegrasikan kerangka psikologi lingkungan Stimulus-Organism-Response (S-O-R), "
             "psikologi kolektor (Zeigarnik Effect dan The Completing the Set Effect), teori regulasi diri (Self-Regulation Theory), serta prinsip-prinsip keuangan perilaku "
             "(behavioral finance) pada fenomena komoditas hobi fisik bernilai spekulatif tinggi. Hasil penelitian ini diharapkan memberikan kontribusi empiris bagi konsumen "
             "muda dalam menjaga kontrol diri finansial, serta masukan aplikatif bagi komunitas hobi dan pemangku kebijakan edukasi keuangan generasi muda di Indonesia."
@@ -1473,7 +1473,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         ("  1.2 Perumusan Masalah", "16"),
         ("  1.3 Tujuan Penelitian", "17"),
         ("  1.4 Manfaat Penelitian", "17"),
-        ("      1.4.1 Manfaat Teoritis", "17"),
+        ("      1.4.1 Manfaat Teoretis", "17"),
         ("      1.4.2 Manfaat Praktis", "18"),
         ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "19"),
         ("  2.1 Landasan Teori", "19"),
@@ -1509,7 +1509,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         ("  1.2 Perumusan Masalah", "8"),
         ("  1.3 Tujuan Penelitian", "8"),
         ("  1.4 Manfaat Penelitian", "9"),
-        ("      1.4.1 Manfaat Teoritis", "9"),
+        ("      1.4.1 Manfaat Teoretis", "9"),
         ("      1.4.2 Manfaat Praktis", "9"),
         ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "11"),
         ("  2.1 Landasan Teori", "11"),
@@ -2696,7 +2696,7 @@ def build_tabel_research_gap(doc):
             "7",
             "Moderasi M pada X3 terhadap Y",
             "Tak langsung: Katauke et al. (2023) + Planner-Doer.",
-            "Teoritis Shiller (2000); Aryadi dan Lingga (2024) (bukan uji interaksi).",
+            "Teoretis: Shiller (2000); Aryadi dan Lingga (2026) (bukan uji interaksi).",
             "Herding dan FOMO saat euforia."
         )
     ]

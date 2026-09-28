@@ -1,0 +1,2263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seminar Proposal Skripsi S1 Manajemen Keuangan — Arthur Reezan (7 Slide)</title>
+  
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       THEME & COLOR PALETTE: FinTech Research Vault & Executive Pokémon TCG
+       ========================================================================== */
+    :root {
+      --bg-darkest: #040711;
+      --bg-deep: #080D1A;
+      --bg-surface: #0E1626;
+      --bg-card: rgba(18, 28, 48, 0.85);
+      --bg-card-hover: rgba(26, 39, 68, 0.95);
+      
+      --border-subtle: rgba(71, 85, 105, 0.45);
+      --border-focus: #38BDF8;
+      
+      --text-white: #FFFFFF;
+      --text-main: #F1F5F9;
+      --text-muted: #94A3B8;
+      --text-dim: #64748B;
+      
+      /* Energy & Semantic Accents */
+      --energy-electric: #FBBF24; /* Lightning Yellow */
+      --energy-fire: #F43F5E;     /* Fire Red / Rose */
+      --energy-grass: #10B981;    /* Grass Emerald */
+      --energy-psychic: #A855F7;  /* Psychic Purple */
+      --energy-water: #38BDF8;    /* Water / Electric Cyan */
+      --energy-metal: #CBD5E1;    /* Steel Silver */
+      --energy-gold: #F59E0B;     /* Gold Rare */
+      
+      --card-shadow: 0 10px 28px -4px rgba(0, 0, 0, 0.65), 0 4px 10px rgba(0, 0, 0, 0.45);
+      
+      --font-display: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background-color: var(--bg-darkest);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+    }
+
+    /* Ambient Animated Orbs */
+    .ambient-glow {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(140px);
+      opacity: 0.15;
+    }
+    .orb-1 { width: 620px; height: 620px; background: #0284C7; top: -120px; left: -100px; animation: float1 22s infinite alternate ease-in-out; }
+    .orb-2 { width: 560px; height: 560px; background: #7C3AED; bottom: -100px; right: -80px; animation: float2 26s infinite alternate ease-in-out; }
+    .orb-3 { width: 500px; height: 500px; background: #B45309; top: 38%; left: 35%; animation: float3 20s infinite alternate ease-in-out; }
+
+    @keyframes float1 { 0% { transform: translate(0, 0); } 100% { transform: translate(80px, 60px); } }
+    @keyframes float2 { 0% { transform: translate(0, 0); } 100% { transform: translate(-70px, -80px); } }
+    @keyframes float3 { 0% { transform: translate(0, 0); } 100% { transform: translate(50px, -50px); } }
+
+    /* ==========================================================================
+       PRESENTATION STAGE: Locked 16:9 Aspect Ratio
+       ========================================================================== */
+    .presentation-stage {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+
+    .slide-viewport {
+      width: 100vw;
+      height: 56.25vw; /* 16:9 ratio */
+      max-height: 100vh;
+      max-width: 177.78vh; /* 16:9 ratio */
+      position: relative;
+      box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(255, 255, 255, 0.12);
+      background: radial-gradient(circle at 50% 6%, #10182C 0%, #060914 80%, #03050A 100%);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top Progress & Branding Bar */
+    .topbar {
+      height: 50px;
+      background: rgba(9, 14, 26, 0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(71, 85, 105, 0.45);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 24px;
+      position: relative;
+      z-index: 30;
+      flex-shrink: 0;
+    }
+
+    .topbar-progress {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .topbar-progress-fill {
+      height: 100%;
+      width: 14.28%;
+      background: linear-gradient(90deg, #F59E0B, #EF4444, #38BDF8, #10B981);
+      transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+    }
+
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .ukrida-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .ukrida-badge img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6));
+    }
+    .ukrida-title-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .ukrida-main-text {
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: #F8FAFC;
+      letter-spacing: 0.04em;
+      line-height: 1.1;
+    }
+    .ukrida-sub-text {
+      font-size: 0.68rem;
+      font-weight: 600;
+      color: var(--energy-electric);
+      letter-spacing: 0.02em;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .timer-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(245, 158, 11, 0.45);
+      color: var(--energy-electric);
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 4px 11px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+    .timer-pill:hover {
+      background: rgba(245, 158, 11, 0.15);
+      border-color: var(--energy-electric);
+      transform: translateY(-1px);
+    }
+    .timer-pill.running {
+      border-color: #10B981;
+      color: #34D399;
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.3);
+    }
+
+    .slide-badge {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: #CBD5E1;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 3px 10px;
+      border-radius: 7px;
+    }
+
+    /* ==========================================================================
+       SLIDES CONTAINER & ANIMATIONS
+       ========================================================================== */
+    .slides-wrapper {
+      position: relative;
+      flex: 1;
+      width: 100%;
+      height: calc(100% - 96px);
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      padding: 18px 36px 14px 36px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(12px) scale(0.99);
+      transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0.35s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    .slide.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0) scale(1);
+    }
+
+    /* Slide Header Block */
+    .slide-header-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      position: relative;
+      flex-shrink: 0;
+    }
+    .slide-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--energy-electric);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 2px;
+    }
+    .slide-main-title {
+      font-family: var(--font-display);
+      font-size: 1.48rem;
+      font-weight: 800;
+      color: var(--text-white);
+      line-height: 1.18;
+      letter-spacing: -0.01em;
+    }
+    .slide-main-subtitle {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* Pokémon Mascot Floater in Slide Header */
+    .header-mascot {
+      position: absolute;
+      right: 0;
+      top: -8px;
+      width: 66px;
+      height: 66px;
+      object-fit: contain;
+      filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.65));
+      animation: floatMascot 4s infinite ease-in-out;
+      pointer-events: none;
+    }
+    @keyframes floatMascot {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-6px) rotate(2deg); }
+    }
+
+    /* Common Card Styling */
+    .tcg-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      box-shadow: var(--card-shadow);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.22s ease;
+      backdrop-filter: blur(12px);
+    }
+    .tcg-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(56, 189, 248, 0.5);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px -4px rgba(0, 0, 0, 0.75), 0 0 14px rgba(56, 189, 248, 0.2);
+    }
+    .tcg-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2.5px;
+      background: var(--card-accent, rgba(255, 255, 255, 0.15));
+    }
+
+    /* Energy Badge Tags */
+    .energy-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .chip-electric { background: rgba(245, 158, 11, 0.18); border: 1px solid rgba(245, 158, 11, 0.5); color: #FBBF24; }
+    .chip-fire { background: rgba(244, 63, 94, 0.18); border: 1px solid rgba(244, 63, 94, 0.5); color: #FB7185; }
+    .chip-grass { background: rgba(16, 185, 129, 0.18); border: 1px solid rgba(16, 185, 129, 0.5); color: #34D399; }
+    .chip-psychic { background: rgba(168, 85, 247, 0.18); border: 1px solid rgba(168, 85, 247, 0.5); color: #C084FC; }
+    .chip-water { background: rgba(56, 189, 248, 0.18); border: 1px solid rgba(56, 189, 248, 0.5); color: #38BDF8; }
+    .chip-metal { background: rgba(203, 213, 225, 0.15); border: 1px solid rgba(203, 213, 225, 0.35); color: #E2E8F0; }
+
+    /* ==========================================================================
+       SLIDE 1: COVER
+       ========================================================================== */
+    .slide-1-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+    .cover-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cover-uni-box {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .cover-uni-box img {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 12px rgba(245, 158, 11, 0.35));
+    }
+    .cover-uni-text h3 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: 0.04em;
+    }
+    .cover-uni-text p {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .cover-pill-sempro {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(239, 68, 68, 0.22));
+      border: 1px solid rgba(245, 158, 11, 0.55);
+      color: var(--energy-electric);
+      padding: 6px 18px;
+      border-radius: 999px;
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      box-shadow: 0 0 15px rgba(245, 158, 11, 0.25);
+    }
+    .cover-title-area {
+      margin: 8px 0;
+      max-width: 960px;
+    }
+    .cover-kicker {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--energy-water);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 6px;
+    }
+    .cover-h1 {
+      font-family: var(--font-display);
+      font-size: 1.68rem;
+      line-height: 1.25;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .cover-h1 span.hl-x { color: #38BDF8; }
+    .cover-h1 span.hl-y { color: #F43F5E; }
+    .cover-h1 span.hl-m { color: #A855F7; }
+
+    .cover-subtitle {
+      font-size: 0.92rem;
+      color: #CBD5E1;
+      line-height: 1.45;
+    }
+    .cover-meta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr 1fr;
+      gap: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 12px;
+    }
+    .meta-box {
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid rgba(71, 85, 105, 0.4);
+      border-radius: 9px;
+      padding: 9px 14px;
+    }
+    .meta-box .lbl {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 700;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .meta-box .val {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-top: 2px;
+    }
+    .meta-box .sub {
+      font-size: 0.72rem;
+      color: #94A3B8;
+      margin-top: 1px;
+    }
+    .cover-pikachu {
+      position: absolute;
+      right: -10px;
+      bottom: 25px;
+      width: 175px;
+      height: 175px;
+      object-fit: contain;
+      filter: drop-shadow(0 10px 24px rgba(245, 158, 11, 0.4));
+      animation: pikachuHover 5s infinite ease-in-out;
+      pointer-events: none;
+    }
+    @keyframes pikachuHover {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(-2deg); }
+    }
+
+    /* ==========================================================================
+       SLIDE 2: LATAR BELAKANG & FENOMENA
+       ========================================================================== */
+    .slide-2-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 16px;
+      height: calc(100% - 68px);
+    }
+    .charts-duo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .chart-card {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(71, 85, 105, 0.45);
+      border-radius: 9px;
+      padding: 9px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .chart-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      background: #FFFFFF;
+      border-radius: 6px;
+      padding: 6px;
+    }
+    .chart-caption {
+      font-family: var(--font-display);
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--energy-electric);
+      text-align: center;
+      margin-top: 6px;
+    }
+    .chart-source {
+      font-size: 0.66rem;
+      color: var(--text-dim);
+      text-align: center;
+      margin-top: 2px;
+    }
+    .anomali-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      justify-content: space-between;
+    }
+    .anomali-item {
+      padding: 9px 12px;
+      border-left: 3px solid #38BDF8;
+      background: rgba(15, 23, 42, 0.65);
+      border-radius: 0 8px 8px 0;
+    }
+    .anomali-title {
+      font-family: var(--font-display);
+      font-size: 0.84rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .anomali-desc {
+      font-size: 0.74rem;
+      color: #CBD5E1;
+      line-height: 1.38;
+      margin-top: 3px;
+    }
+    .bottom-punchline {
+      grid-column: 1 / -1;
+      background: rgba(244, 63, 94, 0.12);
+      border: 1px solid rgba(244, 63, 94, 0.35);
+      border-radius: 8px;
+      padding: 7px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2px;
+    }
+    .punchline-text {
+      font-size: 0.78rem;
+      color: #FECDD3;
+      font-weight: 600;
+    }
+    .punchline-badge {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 800;
+      background: #F43F5E;
+      color: #FFFFFF;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    /* ==========================================================================
+       SLIDE 3: RESEARCH GAP & NOVELTY
+       ========================================================================== */
+    .slide-3-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 16px;
+      height: calc(100% - 68px);
+    }
+    .gap-matrix-card {
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .gap-row {
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid rgba(71, 85, 105, 0.35);
+      border-radius: 8px;
+      padding: 8px 11px;
+      margin-bottom: 7px;
+    }
+    .gap-row:last-child { margin-bottom: 0; }
+    .gap-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3px;
+    }
+    .gap-var {
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--energy-water);
+    }
+    .gap-status {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 700;
+      color: #F87171;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .gap-body {
+      font-size: 0.74rem;
+      color: #CBD5E1;
+      line-height: 1.38;
+    }
+    .psa-novelty-col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: space-between;
+    }
+    .psa-mini-box {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(71, 85, 105, 0.45);
+      border-radius: 9px;
+      padding: 9px 12px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .psa-mini-box img {
+      width: 135px;
+      height: 90px;
+      object-fit: contain;
+      background: #FFFFFF;
+      border-radius: 6px;
+      padding: 4px;
+      flex-shrink: 0;
+    }
+    .psa-info h4 {
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--energy-electric);
+    }
+    .psa-info p {
+      font-size: 0.71rem;
+      color: #CBD5E1;
+      margin-top: 3px;
+      line-height: 1.32;
+    }
+    .novelty-card {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 9px;
+      padding: 10px 14px;
+    }
+    .novelty-card h4 {
+      font-family: var(--font-display);
+      font-size: 0.84rem;
+      font-weight: 800;
+      color: #34D399;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+    .novelty-item {
+      font-size: 0.73rem;
+      color: #E2E8F0;
+      margin-bottom: 5px;
+      line-height: 1.32;
+      display: flex;
+      gap: 7px;
+    }
+    .novelty-item:last-child { margin-bottom: 0; }
+    .novelty-num {
+      font-family: var(--font-mono);
+      font-weight: 800;
+      color: var(--energy-grass);
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       SLIDE 4: ENHANCED ULTRA-RICH KAJIAN TEORI & 5 VARIABEL
+       ========================================================================== */
+    .slide-4-container {
+      height: calc(100% - 68px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 9px;
+    }
+    .theory-banner-rich {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(71, 85, 105, 0.45);
+      border-radius: 9px;
+      padding: 9px 16px;
+      display: grid;
+      grid-template-columns: 1.25fr 1.75fr;
+      gap: 16px;
+      align-items: center;
+    }
+    .theory-grand h4 {
+      font-family: var(--font-display);
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--energy-electric);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .theory-grand p {
+      font-size: 0.72rem;
+      color: #CBD5E1;
+      margin-top: 2px;
+      line-height: 1.3;
+    }
+    .theory-grand .rationale-tag {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: #93C5FD;
+      background: rgba(59, 130, 246, 0.15);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      padding: 1px 6px;
+      border-radius: 4px;
+      margin-top: 3px;
+      display: inline-block;
+    }
+
+    .theory-supporting {
+      border-left: 1px solid rgba(71, 85, 105, 0.4);
+      padding-left: 14px;
+    }
+    .theory-supporting h4 {
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--energy-water);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .support-theories-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 3px;
+    }
+    .supp-item {
+      font-size: 0.69rem;
+      color: #E2E8F0;
+      line-height: 1.25;
+      background: rgba(11, 19, 35, 0.6);
+      padding: 4px 6px;
+      border-radius: 5px;
+      border: 1px solid rgba(71, 85, 105, 0.3);
+    }
+    .supp-item strong { color: #38BDF8; }
+
+    /* 5 Enhanced Variable Cards */
+    .variables-row-rich {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      flex: 1;
+    }
+    .var-card-dense {
+      padding: 10px 11px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+    .var-top-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .var-symbol-badge {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .var-role-tag {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      font-weight: 800;
+      padding: 2px 5px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .var-name-rich {
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+    .var-definition-rich {
+      font-size: 0.69rem;
+      color: #CBD5E1;
+      line-height: 1.32;
+    }
+    .var-indicators-box {
+      background: rgba(11, 19, 35, 0.8);
+      border: 1px solid rgba(71, 85, 105, 0.35);
+      border-radius: 6px;
+      padding: 5px 7px;
+      margin-top: 6px;
+    }
+    .ind-title {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      font-weight: 800;
+      color: var(--energy-electric);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .ind-list {
+      font-size: 0.66rem;
+      color: #94A3B8;
+      line-height: 1.25;
+      margin-top: 2px;
+    }
+    .var-scale-box-dense {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 5px;
+      margin-top: 5px;
+    }
+    .var-scale-name-dense {
+      font-size: 0.65rem;
+      color: #38BDF8;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      line-height: 1.2;
+    }
+
+    /* Slide 4 Bottom Defense Armor Strip */
+    .slide-4-armor {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(71, 85, 105, 0.4);
+      border-radius: 7px;
+      padding: 5px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.71rem;
+      color: #CBD5E1;
+    }
+    .armor-tag {
+      font-family: var(--font-mono);
+      font-weight: 800;
+      color: var(--energy-electric);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* ==========================================================================
+       SLIDE 5: ENHANCED RERANGKA KONSEPTUAL & 6 HIPOTESIS
+       ========================================================================== */
+    .slide-5-grid-dense {
+      display: grid;
+      grid-template-columns: 1.15fr 1.35fr;
+      gap: 16px;
+      height: calc(100% - 68px);
+    }
+    .model-left-col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: space-between;
+    }
+    .svg-model-container-dense {
+      flex: 1;
+      background: rgba(11, 19, 35, 0.75);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(71, 85, 105, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .svg-model-dense {
+      width: 100%;
+      height: 100%;
+      max-height: 250px;
+    }
+
+    /* Equations Box */
+    .eq-panel-dense {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(71, 85, 105, 0.4);
+      border-radius: 8px;
+      padding: 9px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .eq-row-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .eq-label-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .eq-title-lbl {
+      font-family: var(--font-display);
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: var(--energy-electric);
+    }
+    .eq-badge-lbl {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+    .eq-formula-str {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: #FFFFFF;
+      background: rgba(11, 19, 35, 0.9);
+      padding: 4px 8px;
+      border-radius: 5px;
+      border: 1px solid rgba(71, 85, 105, 0.4);
+      line-height: 1.25;
+    }
+
+    .hypo-right-col {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      justify-content: space-between;
+    }
+    .hypo-row-dense {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(71, 85, 105, 0.38);
+      border-radius: 7px;
+      padding: 6px 10px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      transition: all 0.2s ease;
+    }
+    .hypo-row-dense:hover {
+      border-color: rgba(56, 189, 248, 0.5);
+      background: rgba(22, 33, 56, 0.9);
+      transform: translateX(2px);
+    }
+    .hypo-tag-dense {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 7px;
+      border-radius: 5px;
+      flex-shrink: 0;
+      text-align: center;
+      min-width: 52px;
+    }
+    .tag-green { background: rgba(16, 185, 129, 0.18); border: 1px solid #10B981; color: #34D399; }
+    .tag-purple { background: rgba(168, 85, 247, 0.18); border: 1px solid #A855F7; color: #C084FC; }
+
+    .hypo-content-dense {
+      flex: 1;
+    }
+    .hypo-statement {
+      font-size: 0.73rem;
+      color: #CBD5E1;
+      line-height: 1.3;
+    }
+    .hypo-statement strong { color: #FFFFFF; }
+    .hypo-tier-tags {
+      display: flex;
+      gap: 6px;
+      margin-top: 2px;
+      font-size: 0.63rem;
+      color: #94A3B8;
+      font-family: var(--font-mono);
+    }
+    .tier-anchor { color: #38BDF8; }
+
+    .defense-master-box {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(168, 85, 247, 0.12));
+      border: 1px dashed rgba(245, 158, 11, 0.5);
+      border-radius: 7px;
+      padding: 7px 11px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      font-size: 0.71rem;
+      color: #FDE68A;
+      line-height: 1.35;
+    }
+    .defense-master-box strong { color: var(--energy-electric); }
+
+    /* ==========================================================================
+       SLIDE 6: ENHANCED 4-QUADRANT METODOLOGI & EKONOMETRIKA MRA
+       ========================================================================== */
+    .slide-6-grid-dense {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 12px;
+      height: calc(100% - 68px);
+    }
+    .quadrant-box-dense {
+      padding: 10px 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .quad-title-dense {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(71, 85, 105, 0.35);
+      padding-bottom: 4px;
+      margin-bottom: 6px;
+    }
+    .quad-tag {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+    .quad-list-dense {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .quad-list-dense li {
+      font-size: 0.72rem;
+      color: #CBD5E1;
+      line-height: 1.34;
+      display: flex;
+      align-items: flex-start;
+      gap: 5px;
+    }
+    .quad-bullet {
+      color: var(--energy-electric);
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .formula-callout {
+      font-family: var(--font-mono);
+      background: rgba(11, 19, 35, 0.85);
+      border: 1px solid rgba(71, 85, 105, 0.45);
+      padding: 3px 6px;
+      border-radius: 4px;
+      color: #F8FAFC;
+      font-size: 0.69rem;
+      font-weight: 600;
+      margin: 1px 0;
+    }
+    .defense-alert-box {
+      background: rgba(244, 63, 94, 0.12);
+      border-left: 2px solid #F43F5E;
+      padding: 3px 6px;
+      border-radius: 0 4px 4px 0;
+      font-size: 0.66rem;
+      color: #FECDD3;
+      margin-top: 2px;
+      line-height: 1.25;
+    }
+
+    /* ==========================================================================
+       SLIDE 7: PENUTUP & Q&A
+       ========================================================================== */
+    .slide-7-container {
+      height: calc(100% - 68px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .contrib-duo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .contrib-card {
+      padding: 14px 18px;
+    }
+    .contrib-badge {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 5px;
+    }
+    .contrib-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.02rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+    .contrib-card p {
+      font-size: 0.76rem;
+      color: #CBD5E1;
+      line-height: 1.42;
+    }
+    .qa-center-stage {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.75) 100%);
+      border: 1px solid rgba(245, 158, 11, 0.5);
+      border-radius: 11px;
+      padding: 16px 24px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.65);
+    }
+    .qa-center-stage h2 {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+    .qa-center-stage p {
+      font-size: 0.84rem;
+      color: var(--energy-water);
+      font-weight: 600;
+      margin-top: 3px;
+    }
+    .qa-pill-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(90deg, #F59E0B, #EF4444);
+      color: #FFFFFF;
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 5px 18px;
+      border-radius: 999px;
+      margin-top: 8px;
+      letter-spacing: 0.04em;
+      box-shadow: 0 4px 15px rgba(245, 158, 11, 0.45);
+    }
+    .celebrate-mascot {
+      position: absolute;
+      right: 25px;
+      bottom: 8px;
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      filter: drop-shadow(0 6px 16px rgba(0,0,0,0.55));
+      animation: floatMascot 3.5s infinite ease-in-out;
+    }
+
+    /* ==========================================================================
+       BOTTOMBAR CONTROLS & NOTES DRAWER
+       ========================================================================== */
+    .bottombar {
+      height: 46px;
+      background: rgba(9, 14, 26, 0.94);
+      border-top: 1px solid rgba(71, 85, 105, 0.45);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 24px;
+      z-index: 30;
+      flex-shrink: 0;
+    }
+    .nav-btn-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-nav {
+      background: rgba(30, 41, 59, 0.85);
+      border: 1px solid rgba(71, 85, 105, 0.5);
+      color: #F8FAFC;
+      font-family: var(--font-display);
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 4px 11px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s ease;
+    }
+    .btn-nav:hover {
+      background: rgba(56, 189, 248, 0.2);
+      border-color: #38BDF8;
+      color: #FFFFFF;
+      transform: translateY(-1px);
+    }
+    .btn-nav:active {
+      transform: scale(0.96);
+    }
+
+    .dots-container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .dot-step {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .dot-step.active {
+      background: var(--energy-electric);
+      box-shadow: 0 0 10px var(--energy-electric);
+      transform: scale(1.3);
+    }
+
+    /* Speaker Notes Drawer */
+    .notes-drawer {
+      position: absolute;
+      bottom: 46px;
+      left: 0;
+      width: 100%;
+      background: rgba(8, 13, 24, 0.96);
+      border-top: 1.5px solid var(--energy-electric);
+      padding: 12px 28px;
+      box-shadow: 0 -12px 30px rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(20px);
+      z-index: 40;
+      display: none;
+      animation: slideDrawer 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    }
+    .notes-drawer.open {
+      display: block;
+    }
+    @keyframes slideDrawer {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+    .notes-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    .notes-title {
+      font-family: var(--font-display);
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: var(--energy-electric);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .notes-hint {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--text-dim);
+    }
+    .notes-content {
+      font-size: 0.82rem;
+      line-height: 1.48;
+      color: #E2E8F0;
+      max-height: 95px;
+      overflow-y: auto;
+    }
+
+    /* Mobile Portrait Helper Banner */
+    .mobile-orient-tip {
+      display: none;
+      position: fixed;
+      top: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(15, 23, 42, 0.95);
+      border: 1.5px solid var(--energy-electric);
+      color: #F8FAFC;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      z-index: 9999;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.85);
+      backdrop-filter: blur(12px);
+      align-items: center;
+      gap: 10px;
+      white-space: nowrap;
+    }
+    .mobile-orient-tip button {
+      background: none;
+      border: none;
+      color: #94A3B8;
+      font-size: 0.9rem;
+      cursor: pointer;
+      padding: 0 4px;
+      line-height: 1;
+    }
+    @media (max-aspect-ratio: 1/1) {
+      .mobile-orient-tip {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Mobile Portrait Orientation Helper -->
+  <div class="mobile-orient-tip" id="mobileOrientTip">
+    <span>📱 🔄</span>
+    <span>Putar HP ke posisi <strong>Mendatar (Landscape)</strong> untuk mode 16:9</span>
+    <button onclick="document.getElementById('mobileOrientTip').style.display='none'">✕</button>
+  </div>
+
+  <!-- Ambient Glow Background -->
+  <div class="ambient-glow">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Main Viewport (16:9 Aspect Ratio) -->
+  <main class="presentation-stage">
+    <div class="slide-viewport">
+      
+      <!-- Topbar with Progress & University Branding -->
+      <header class="topbar">
+        <div class="topbar-progress">
+          <div class="topbar-progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="topbar-left">
+          <div class="ukrida-badge">
+            <img src="./assets/ukrida_pentagram.png" alt="Logo UKRIDA">
+            <div class="ukrida-title-group">
+              <span class="ukrida-main-text">UNIVERSITAS KRISTEN KRIDA WACANA</span>
+              <span class="ukrida-sub-text">Fakultas Ekonomi dan Bisnis • S1 Manajemen Keuangan</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <div class="timer-pill" id="timerPill" title="Klik untuk Mulai/Jeda Timer Sidang (10:00)">
+            <span>⏱️</span> <span id="timerDisplay">10:00</span>
+          </div>
+          <div class="slide-badge">
+            SLIDE <span id="currentSlideDisplay">1</span> / 7
+          </div>
+        </div>
+      </header>
+
+      <!-- Slides Content Container -->
+      <div class="slides-wrapper">
+
+        <!-- ===================================================================
+             SLIDE 1: COVER & IDENTITAS PENELITIAN
+             =================================================================== -->
+        <section class="slide active" id="slide-1" data-notes="Salam pembuka resmi: Selamat pagi/siang Yang terhormat Ibu Dr. Fredella Colline selaku dosen pembimbing, serta Bapak/Ibu dewan penguji yang saya hormati. Perkenalkan, saya Arthur Reezan, NIM 312023002. Hari ini saya memaparkan usulan proposal skripsi saya yang berjudul: Pengaruh Hedonic Motivation, Desire for Completeness, dan Speculative Motive terhadap Impulsive Buying Booster Pack Kartu Pokémon TCG dengan Self-Control sebagai Variabel Moderasi.">
+          <div class="slide-1-content">
+            <div class="cover-top-row">
+              <div class="cover-uni-box">
+                <img src="./assets/Logo_UKRIDA_300x300.png" alt="Pentagram UKRIDA">
+                <div class="cover-uni-text">
+                  <h3>UNIVERSITAS KRISTEN KRIDA WACANA</h3>
+                  <p>Fakultas Ekonomi dan Bisnis • Program Studi S1 Manajemen Keuangan</p>
+                </div>
+              </div>
+              <div class="cover-pill-sempro">
+                ✦ SEMINAR PROPOSAL SKRIPSI 2026
+              </div>
+            </div>
+
+            <div class="cover-title-area">
+              <div class="cover-kicker">
+                Proposal Tugas Akhir (Model B: Kuantitatif Asosiatif • Behavioral Finance)
+              </div>
+              <h1 class="cover-h1">
+                PENGARUH <span class="hl-x">HEDONIC MOTIVATION</span>, <span class="hl-x">DESIRE FOR COMPLETENESS</span>, DAN <span class="hl-x">SPECULATIVE MOTIVE</span> TERHADAP <span class="hl-y">IMPULSIVE BUYING</span> BOOSTER PACK KARTU POKÉMON TCG DENGAN <span class="hl-m">SELF-CONTROL</span> SEBAGAI VARIABEL MODERASI
+              </h1>
+              <p class="cover-subtitle">
+                Kajian Ekonometrika Keuangan Perilaku (<em>Behavioral Finance</em>) pada Pasar Komoditas Alternatif &amp; Kolektibel di Indonesia
+              </p>
+            </div>
+
+            <div class="cover-meta-grid">
+              <div class="meta-box">
+                <div class="lbl">Peneliti / Mahasiswa</div>
+                <div class="val">Arthur Reezan</div>
+                <div class="sub">NIM: 312023002 • Konsentrasi Keuangan</div>
+              </div>
+              <div class="meta-box">
+                <div class="lbl">Dosen Pembimbing</div>
+                <div class="val">Dr. Fredella Colline</div>
+                <div class="sub">S.E., M.M., CFP®, PFM, CHCP-A</div>
+              </div>
+              <div class="meta-box">
+                <div class="lbl">Waktu &amp; Tempat Pelaksanaan</div>
+                <div class="val">September 2026</div>
+                <div class="sub">FEB UKRIDA, Jakarta Barat, Indonesia</div>
+              </div>
+            </div>
+
+            <!-- Floating Mascot -->
+            <img src="./assets/pikachu.png" alt="Pikachu Mascot" class="cover-pikachu">
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SLIDE 2: LATAR BELAKANG — KONTEKS INDUSTRI & FENOMENA
+             =================================================================== -->
+        <section class="slide" id="slide-2" data-notes="Di Slide 2 ini, latar belakang dilandasi tiga pilar fenomena: Pertama, Pokémon TCG bukan sekadar mainan anak, melainkan komoditas finansial raksasa dengan penjualan global tembus 64,8 miliar lembar dan total pendapatan waralaba di atas 100 miliar USD. Kedua, mekanismenya probabilistic blind-box di mana pembeli mengejar kartu langka secret rare, memicu lonjakan dopamin dan near-miss effect. Ketiga, fenomena ini berujung pada impulsive buying tanpa perhitungan anggaran yang berpotensi merugikan keuangan kolektor.">
+          <div class="slide-header-block">
+            <div>
+              <div class="slide-kicker"><span>⚡</span> BAB 1 • Fenomena &amp; Bukti Empiris Pasar</div>
+              <h2 class="slide-main-title">Ledakan Pasar Pokémon TCG &amp; Masalah Pembelian Impulsif</h2>
+              <p class="slide-main-subtitle">Transformasi dari permainan hobi kartu menjadi aset spekulatif likuid berisiko tinggi</p>
+            </div>
+            <img src="./assets/charizard.png" alt="Charizard" class="header-mascot">
+          </div>
+
+          <div class="slide-2-grid">
+            <!-- Left: Real Thesis Charts Duo -->
+            <div class="charts-duo">
+              <div class="chart-card tcg-card" style="--card-accent: #F59E0B;">
+                <img src="./assets/gambar1_1_media_franchise_ranking.png" alt="Gambar 1.1 Statista Media Franchise">
+                <div>
+                  <div class="chart-caption">Gambar 1.1: 10 Waralaba Media Tertinggi Dunia</div>
+                  <div class="chart-source">Sumber: Statista Chart 24277 (2024) • Pokémon #1 (> US$ 100 Miliar)</div>
+                </div>
+              </div>
+
+              <div class="chart-card tcg-card" style="--card-accent: #38BDF8;">
+                <img src="./assets/gambar1_2_pokemon_tcg_production_growth.png" alt="Gambar 1.2 Produksi Pokémon TCG">
+                <div>
+                  <div class="chart-caption">Gambar 1.2: Produksi Kartu Kumulatif Global</div>
+                  <div class="chart-source">Sumber: The Pokémon Company (2024) • 64,8 Miliar lembar (+125%)</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: 3 Market Anomalies -->
+            <div class="anomali-stack">
+              <div class="anomali-item tcg-card" style="--card-accent: #10B981;">
+                <div class="anomali-title">
+                  <span>1. Aksesibilitas Ritel Massal</span>
+                  <span class="energy-chip chip-grass">Rp20rb–30rb</span>
+                </div>
+                <p class="anomali-desc">
+                  Kartu fisik resmi berbahasa Indonesia dipasarkan langsung di etalase kasir minimarket modern (Indomaret, Alfamart) tanpa hambatan impor sejak 2019.
+                </p>
+              </div>
+
+              <div class="anomali-item tcg-card" style="--card-accent: #38BDF8;">
+                <div class="anomali-title">
+                  <span>2. Mekanisme Blind-Pack (Gacha)</span>
+                  <span class="energy-chip chip-water">Dopamin</span>
+                </div>
+                <p class="anomali-desc">
+                  Format kemasan bersegel acak memicu sensasi letupan dopamin dan <em>near-miss effect</em> saat disobek, melumpuhkan pertimbangan kognitif seketika.
+                </p>
+              </div>
+
+              <div class="anomali-item tcg-card" style="--card-accent: #F43F5E;">
+                <div class="anomali-title">
+                  <span>3. Asimetri Nilai Finansial</span>
+                  <span class="energy-chip chip-fire">Arbitrase SAR</span>
+                </div>
+                <p class="anomali-desc">
+                  Peluang memperoleh kartu langka (<em>Special Illustration Rare / SAR</em>) bernilai jutaan rupiah di pasar sekunder memicu spekulasi agresif.
+                </p>
+              </div>
+            </div>
+
+            <!-- Bottom Punchline -->
+            <div class="bottom-punchline">
+              <span class="punchline-text">
+                ⚠️ <strong>Inti Masalah Riset:</strong> Sinergi harga kasir murah, hasrat melengkapi set album, dan ilusi cuan memicu lonjakan <em>Impulsive Buying</em> berulang tanpa anggaran.
+              </span>
+              <span class="punchline-badge">FENOMENA 2026</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SLIDE 3: RESEARCH GAP & NOVELTY
+             =================================================================== -->
+        <section class="slide" id="slide-3" data-notes="Slide 3 membuktikan kebaruan dan justifikasi riset ini. Terdapat tiga research gap empiris: Pada X1 hedonis, Pranggabayu 2022 menemukan efek positif kuat, namun Apidana 2022 menemukan kontrol diri gagal meredam motivasi hedonis. Pada X2 kelengkapan, efek pseudo-set Barasz 2017 belum pernah diuji empiris pada kartu fisik di Indonesia. Pada X3 spekulasi, Aryadi & Lingga 2024 mencatat motif investasi kartu signifikan, sementara Colline 2024 mendokumentasikan kuatnya bias herding dan loss aversion pada investor Indonesia. Kebaruan riset ini mengintegrasikan psikologi kolektor dan motif spekulasi dengan kontrol diri sebagai pemoderasi.">
+          <div class="slide-header-block">
+            <div>
+              <div class="slide-kicker"><span>🔬</span> BAB 1 • Justifikasi Riset, Gap Empiris &amp; Novelty</div>
+              <h2 class="slide-main-title">Kesenjangan Temuan Empiris &amp; Kebaruan Riset</h2>
+              <p class="slide-main-subtitle">Menghubungkan pertentangan bukti terdahulu dengan model integratif keuangan perilaku</p>
+            </div>
+            <img src="./assets/eevee.png" alt="Eevee" class="header-mascot">
+          </div>
+
+          <div class="slide-3-grid">
+            <!-- Left: 3 Empirical Gaps -->
+            <div class="gap-matrix-card tcg-card" style="--card-accent: #38BDF8;">
+              <div>
+                <div style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 800; color: #FFFFFF; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                  <span>📊</span> Matriks 3 Kesenjangan Empiris Utama (Research Gap)
+                </div>
+
+                <div class="gap-row">
+                  <div class="gap-header">
+                    <span class="gap-var">Gap X₁: Hedonic Motivation</span>
+                    <span class="gap-status">Inkonsistensi Moderasi</span>
+                  </div>
+                  <p class="gap-body">
+                    <strong>Pranggabayu &amp; Andjarwati (2022)</strong> mencatat pengaruh positif kuat, namun <strong>Apidana &amp; Kholifah (2022)</strong> membuktikan kontrol diri gagal memoderasi dorongan hedonis (<em>p</em> = 0,597).
+                  </p>
+                </div>
+
+                <div class="gap-row">
+                  <div class="gap-header">
+                    <span class="gap-var">Gap X₂: Desire for Completeness</span>
+                    <span class="gap-status">Kekosongan Konteks Fisik</span>
+                  </div>
+                  <p class="gap-body">
+                    <strong>Barasz et al. (2017)</strong> &amp; <strong>Gao et al. (2014)</strong> menguji <em>pseudo-set framing</em> di lab, namun belum pernah diverifikasi empiris pada kartu fisik bernomor seri master set di Indonesia.
+                  </p>
+                </div>
+
+                <div class="gap-row">
+                  <div class="gap-header">
+                    <span class="gap-var">Gap X₃: Speculative Motive</span>
+                    <span class="gap-status">Bias Pasar Sekunder</span>
+                  </div>
+                  <p class="gap-body">
+                    <strong>Aryadi &amp; Lingga (2024)</strong> menemukan motif investasi kartu bernilai signifikan, sedangkan <strong>Colline (2024)</strong> mendokumentasikan kuatnya bias <em>herding</em> dan <em>loss aversion</em> pada investor Indonesia.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: PSA Disparity & 3 Novelties -->
+            <div class="psa-novelty-col">
+              <div class="psa-mini-box tcg-card" style="--card-accent: #F59E0B;">
+                <img src="./assets/gambar1_3_psa_grading_price_disparity.png" alt="Gambar 1.3 Disparitas Harga PSA">
+                <div class="psa-info">
+                  <h4>Disparitas Nilai Arbitrase (2,0× – 26,0×)</h4>
+                  <p>
+                    Data PriceCharting membuktikan sertifikasi PSA 10 Gem Mint melipatgandakan harga kartu mentah, memicu FOMO spekulatif kolektor kasir.
+                  </p>
+                </div>
+              </div>
+
+              <div class="novelty-card tcg-card" style="--card-accent: #10B981;">
+                <h4><span>✨</span> 3 Kebaruan Penelitian (Novelty)</h4>
+                <div class="novelty-item">
+                  <span class="novelty-num">1.</span>
+                  <div><strong>Integrasi 3 Anteseden Sekaligus:</strong> Memadukan sensasi hedonis (X₁), hasrat kelengkapan (X₂), dan motif spekulasi (X₃) dalam satu model utuh.</div>
+                </div>
+                <div class="novelty-item">
+                  <span class="novelty-num">2.</span>
+                  <div><strong>Self-Control Sebagai Rem Pemoderasi (M):</strong> Menguji apakah kapasitas regulasi diri mampu memperlemah ketiga pemicu impulsivitas.</div>
+                </div>
+                <div class="novelty-item">
+                  <span class="novelty-num">3.</span>
+                  <div><strong>Studi Pionir TCG Berbahasa Indonesia:</strong> Penyelidikan empiris pertama pada ekosistem komunitas kartu fisik resmi di FEB UKRIDA.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SLIDE 4: ENHANCED ULTRA-RICH LANDASAN TEORI & 5 OPERASIONALISASI VARIABEL
+             =================================================================== -->
+        <section class="slide" id="slide-4" data-notes="Slide 4 memaparkan ketelitian teoritis. Grand Theory yang dipakai adalah Keuangan Perilaku (Behavioral Finance) yang dipelopori Simon 1955, Kahneman & Tversky 1979, serta Shiller 2000. Teori pendukungnya meliputi S-O-R Mehrabian & Russell, Psikologi Kolektor Barasz 2017, dan Regulasi Diri Baumeister 2002. Kelima variabel diukur menggunakan instrumen internasional baku: Skala IBTS untuk Y, Hedonic Shopping Value untuk X1, Pseudo-Set framing untuk X2, motif apresiasi spekulasi untuk X3, dan Brief Self-Control Scale untuk M.">
+          <div class="slide-header-block">
+            <div>
+              <div class="slide-kicker"><span>📚</span> BAB 2 • Landasan Teoretis &amp; Operasionalisasi Konstruk</div>
+              <h2 class="slide-main-title">Grand Theory, 3 Supporting Theories, &amp; 5 Variabel Baku</h2>
+              <p class="slide-main-subtitle">Fondasi konseptual Behavioral Finance dan operasionalisasi skala baku internasional 20 butir indikator</p>
+            </div>
+            <img src="./assets/mewtwo.png" alt="Mewtwo" class="header-mascot">
+          </div>
+
+          <div class="slide-4-container">
+            <!-- Top Theory Banner -->
+            <div class="theory-banner-rich tcg-card" style="--card-accent: #F59E0B;">
+              <div class="theory-grand">
+                <h4><span>🏛️</span> Grand Theory: Keuangan Perilaku (Behavioral Finance)</h4>
+                <p>Simon (1955: Bounded Rationality) • Kahneman &amp; Tversky (1979: Prospect Theory) • Shiller (2000: Irrational Exuberance) • Thaler &amp; Shefrin (1981: Planner-Doer)</p>
+                <span class="rationale-tag">🛡️ Justifikasi MK: Kartu Pokémon TCG telah mengalami financialization menjadi aset spekulatif likuid</span>
+              </div>
+              <div class="theory-supporting">
+                <h4>3 Supporting Theories</h4>
+                <div class="support-theories-grid">
+                  <div class="supp-item">
+                    <strong>1. S-O-R Framework (1974):</strong> Stimulus kasir ➔ Organism emosional ➔ Response beli.
+                  </div>
+                  <div class="supp-item">
+                    <strong>2. Pseudo-Set &amp; Zeigarnik (2017):</strong> Ketegangan mental melihat set binder kartu belum lengkap.
+                  </div>
+                  <div class="supp-item">
+                    <strong>3. Self-Regulation (2002):</strong> Kapasitas energi volisional sebagai rem dorongan impulsif.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5 Dense Collector Cards -->
+            <div class="variables-row-rich">
+              <!-- Y: Impulsive Buying -->
+              <div class="var-card-dense tcg-card" style="--card-accent: #F43F5E;">
+                <div>
+                  <div class="var-top-meta">
+                    <span class="var-symbol-badge" style="color: #FB7185;">Y</span>
+                    <span class="var-role-tag energy-chip chip-fire">Dependen</span>
+                  </div>
+                  <div class="var-name-rich">Impulsive Buying</div>
+                  <div class="var-definition-rich">
+                    Keputusan belanja spontan tanpa perencanaan anggaran, didorong gairah emosional seketika di kasir.
+                  </div>
+                </div>
+                <div>
+                  <div class="var-indicators-box">
+                    <div class="ind-title">4 Dimensi &amp; Indikator:</div>
+                    <div class="ind-list">• Spontanitas tanpa rencana<br>• Keterdesakan emosional<br>• Pengabaian konsekuensi<br>• Sensasi gairah belanja</div>
+                  </div>
+                  <div class="var-scale-box-dense">
+                    <div class="var-scale-name-dense">IBTS (Verplanken, 2001)</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- X1: Hedonic Motivation -->
+              <div class="var-card-dense tcg-card" style="--card-accent: #38BDF8;">
+                <div>
+                  <div class="var-top-meta">
+                    <span class="var-symbol-badge" style="color: #38BDF8;">X₁</span>
+                    <span class="var-role-tag energy-chip chip-water">Independen</span>
+                  </div>
+                  <div class="var-name-rich">Hedonic Motivation</div>
+                  <div class="var-definition-rich">
+                    Dorongan berbelanja demi kesenangan sensorik, pelarian stres, dan sensasi euforia unboxing.
+                  </div>
+                </div>
+                <div>
+                  <div class="var-indicators-box">
+                    <div class="ind-title">4 Dimensi &amp; Indikator:</div>
+                    <div class="ind-list">• Sensasi petualangan (adventure)<br>• Pelepas stres (gratification)<br>• Kebanggaan unboxing pack<br>• Kenikmatan estetika visual</div>
+                  </div>
+                  <div class="var-scale-box-dense">
+                    <div class="var-scale-name-dense">Arnold &amp; Reynolds (2003)</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- X2: Desire for Completeness -->
+              <div class="var-card-dense tcg-card" style="--card-accent: #10B981;">
+                <div>
+                  <div class="var-top-meta">
+                    <span class="var-symbol-badge" style="color: #34D399;">X₂</span>
+                    <span class="var-role-tag energy-chip chip-grass">Independen</span>
+                  </div>
+                  <div class="var-name-rich">Desire for Completeness</div>
+                  <div class="var-definition-rich">
+                    Ketegangan mental kognitif untuk mengisi nomor seri binder album koleksi hingga genap (*master set*).
+                  </div>
+                </div>
+                <div>
+                  <div class="var-indicators-box">
+                    <div class="ind-title">4 Dimensi &amp; Indikator:</div>
+                    <div class="ind-list">• Obsesi nomor urut kosong<br>• Ketidaknyamanan set gantung<br>• Tipping point dekat selesai<br>• Prioritas kelengkapan album</div>
+                  </div>
+                  <div class="var-scale-box-dense">
+                    <div class="var-scale-name-dense">Barasz (2017) • Gao (2014)</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- X3: Speculative Motive -->
+              <div class="var-card-dense tcg-card" style="--card-accent: #F59E0B;">
+                <div>
+                  <div class="var-top-meta">
+                    <span class="var-symbol-badge" style="color: #FBBF24;">X₃</span>
+                    <span class="var-role-tag energy-chip chip-electric">Independen</span>
+                  </div>
+                  <div class="var-name-rich">Speculative Motive</div>
+                  <div class="var-definition-rich">
+                    Ekspektasi kenaikan harga kartu langka di pasar sekunder untuk meraup keuntungan arbitrase modal.
+                  </div>
+                </div>
+                <div>
+                  <div class="var-indicators-box">
+                    <div class="ind-title">4 Dimensi &amp; Indikator:</div>
+                    <div class="ind-list">• Ekspektasi apresiasi harga SAR<br>• Potensi arbitrase PSA 10<br>• Likuiditas pasar sekunder<br>• Ilusi keuntungan modal kilat</div>
+                  </div>
+                  <div class="var-scale-box-dense">
+                    <div class="var-scale-name-dense">Keynes (1936) • Shiller (2000)</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- M: Self-Control -->
+              <div class="var-card-dense tcg-card" style="--card-accent: #A855F7;">
+                <div>
+                  <div class="var-top-meta">
+                    <span class="var-symbol-badge" style="color: #C084FC;">M</span>
+                    <span class="var-role-tag energy-chip chip-psychic">Moderasi</span>
+                  </div>
+                  <div class="var-name-rich">Self-Control</div>
+                  <div class="var-definition-rich">
+                    Kapasitas volisional regulasi diri menahan dorongan belanja seketika demi stabilitas finansial.
+                  </div>
+                </div>
+                <div>
+                  <div class="var-indicators-box">
+                    <div class="ind-title">4 Dimensi &amp; Indikator:</div>
+                    <div class="ind-list">• Disiplin alokasi anggaran<br>• Penundaan kepuasan (delayed)<br>• Resistensi godaan kasir<br>• Kontrol pertimbangan rasional</div>
+                  </div>
+                  <div class="var-scale-box-dense">
+                    <div class="var-scale-name-dense">BSCS (Tangney et al., 2004)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Defense Armor Strip -->
+            <div class="slide-4-armor">
+              <span class="armor-tag">🛡️ Tameng Ujian Sidang:</span>
+              <span><strong>Kenapa Y diulas lebih dulu?</strong> Menetapkan sentralitas masalah (impulsivitas belanja) sebelum menelusuri anteseden (pedoman baku FEB UKRIDA).</span>
+              <span><strong>Total Skala:</strong> 20 butir indikator baku ordinal Likert 5 poin (1 = STS s.d. 5 = SS).</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SLIDE 5: ENHANCED RERANGKA KONSEPTUAL & 6 HIPOTESIS
+             =================================================================== -->
+        <section class="slide" id="slide-5" data-notes="Slide 5 menyajikan model konseptual MRA dan perumusan tepat 6 hipotesis. Jalur langsung H1, H2, H3 berarah positif, di mana Hedonic Motivation, Desire for Completeness, dan Speculative Motive mendorong Impulsive Buying. Sedangkan jalur moderasi interaksi H4, H5, H6 berarah negatif (meredam), di mana Self-Control memoderasi dan memperlemah pengaruh masing-masing anteseden terhadap Impulsive Buying. Seluruh variabel prediktor dan pemoderasi ditransformasi menggunakan mean-centering untuk mengeliminasi multikolinearitas esensial.">
+          <div class="slide-header-block">
+            <div>
+              <div class="slide-kicker"><span>🧭</span> BAB 2 • Kerangka Konseptual &amp; Model Hipotesis</div>
+              <h2 class="slide-main-title">Model Moderated Regression Analysis (MRA) &amp; 6 Hipotesis</h2>
+              <p class="slide-main-subtitle">Konstelasi jalur efek langsung (H₁–H₃) dan efek moderasi pelemahan volisional (H₄–H₆)</p>
+            </div>
+            <img src="./assets/rayquaza.png" alt="Rayquaza" class="header-mascot">
+          </div>
+
+          <div class="slide-5-grid-dense">
+            <!-- Left Column: Vector Model + 2-Stage Equations -->
+            <div class="model-left-col">
+              <div class="svg-model-container-dense tcg-card" style="--card-accent: #38BDF8;">
+                <svg class="svg-model-dense" viewBox="0 0 520 330" fill="none">
+                  <defs>
+                    <marker id="arr-g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                      <path d="M 0 1 L 10 5 L 0 9 z" fill="#10B981"/>
+                    </marker>
+                    <marker id="arr-p" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                      <path d="M 0 1 L 10 5 L 0 9 z" fill="#A855F7"/>
+                    </marker>
+                  </defs>
+
+                  <!-- Background Grid -->
+                  <line x1="20" y1="25" x2="500" y2="25" stroke="rgba(255,255,255,0.05)"/>
+                  <line x1="20" y1="165" x2="500" y2="165" stroke="rgba(255,255,255,0.05)"/>
+
+                  <!-- Moderator Box (M*) Top Center -->
+                  <rect x="185" y="16" width="150" height="48" rx="8" fill="#162036" stroke="#A855F7" stroke-width="2"/>
+                  <text x="260" y="36" text-anchor="middle" fill="#C084FC" font-weight="800" font-size="11">VARIABEL MODERASI (M*)</text>
+                  <text x="260" y="52" text-anchor="middle" fill="#FFFFFF" font-weight="700" font-size="11.5">Self-Control</text>
+
+                  <!-- Independent Boxes (X1*, X2*, X3*) Left -->
+                  <rect x="25" y="90" width="145" height="44" rx="8" fill="#162036" stroke="#38BDF8" stroke-width="1.5"/>
+                  <text x="97" y="109" text-anchor="middle" fill="#38BDF8" font-weight="800" font-size="10.5">Hedonic Motivation (X₁*)</text>
+                  <text x="97" y="124" text-anchor="middle" fill="#94A3B8" font-size="9">Motivasi Kesenangan</text>
+
+                  <rect x="25" y="152" width="145" height="44" rx="8" fill="#162036" stroke="#38BDF8" stroke-width="1.5"/>
+                  <text x="97" y="171" text-anchor="middle" fill="#38BDF8" font-weight="800" font-size="10.5">Completeness (X₂*)</text>
+                  <text x="97" y="186" text-anchor="middle" fill="#94A3B8" font-size="9">Hasrat Kelengkapan</text>
+
+                  <rect x="25" y="214" width="145" height="44" rx="8" fill="#162036" stroke="#38BDF8" stroke-width="1.5"/>
+                  <text x="97" y="233" text-anchor="middle" fill="#38BDF8" font-weight="800" font-size="10.5">Speculative Motive (X₃*)</text>
+                  <text x="97" y="248" text-anchor="middle" fill="#94A3B8" font-size="9">Motif Arbitrase Pasar</text>
+
+                  <!-- Dependent Box (Y) Right -->
+                  <rect x="350" y="148" width="145" height="54" rx="8" fill="#162036" stroke="#F43F5E" stroke-width="2"/>
+                  <text x="422" y="171" text-anchor="middle" fill="#FB7185" font-weight="800" font-size="11">VARIABEL DEPENDEN (Y)</text>
+                  <text x="422" y="190" text-anchor="middle" fill="#FFFFFF" font-weight="800" font-size="12.5">Impulsive Buying</text>
+
+                  <!-- Direct Paths (Green) -->
+                  <path d="M 170 112 C 255 120, 280 158, 345 168" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#arr-g)"/>
+                  <text x="230" y="120" fill="#34D399" font-weight="800" font-size="11">H₁ (+)</text>
+
+                  <line x1="170" y1="174" x2="345" y2="174" stroke="#10B981" stroke-width="2" marker-end="url(#arr-g)"/>
+                  <text x="245" y="168" fill="#34D399" font-weight="800" font-size="11">H₂ (+)</text>
+
+                  <path d="M 170 236 C 255 228, 280 192, 345 182" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#arr-g)"/>
+                  <text x="230" y="237" fill="#34D399" font-weight="800" font-size="11">H₃ (+)</text>
+
+                  <!-- Moderation Paths (Purple Dashed) -->
+                  <path d="M 235 64 C 235 95, 225 110, 225 126" stroke="#A855F7" stroke-width="2" stroke-dasharray="4 3" fill="none" marker-end="url(#arr-p)"/>
+                  <text x="180" y="94" fill="#C084FC" font-weight="800" font-size="10.5">H₄ (-)</text>
+
+                  <line x1="260" y1="64" x2="260" y2="167" stroke="#A855F7" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arr-p)"/>
+                  <text x="266" y="96" fill="#C084FC" font-weight="800" font-size="10.5">H₅ (-)</text>
+
+                  <path d="M 285 64 C 285 105, 295 180, 295 202" stroke="#A855F7" stroke-width="2" stroke-dasharray="4 3" fill="none" marker-end="url(#arr-p)"/>
+                  <text x="300" y="96" fill="#C084FC" font-weight="800" font-size="10.5">H₆ (-)</text>
+
+                  <text x="260" y="312" text-anchor="middle" fill="#94A3B8" font-size="9.5">(*) Mean-Centered: Eliminasi multikolinearitas esensial (Aiken &amp; West, 1991)</text>
+                </svg>
+              </div>
+
+              <!-- 2-Stage Econometric Equations -->
+              <div class="eq-panel-dense tcg-card" style="--card-accent: #A855F7;">
+                <div class="eq-row-item">
+                  <div class="eq-label-row">
+                    <span class="eq-title-lbl">Model 1: Baseline Aditif (Efek Utama + Kontrol)</span>
+                    <span class="eq-badge-lbl chip-water">Model 1</span>
+                  </div>
+                  <div class="eq-formula-str">Y = α + β₁X₁* + β₂X₂* + β₃X₃* + β₄M* + e</div>
+                </div>
+                <div class="eq-row-item">
+                  <div class="eq-label-row">
+                    <span class="eq-title-lbl">Model 2: Moderasi Penuh (Hierarchical MRA)</span>
+                    <span class="eq-badge-lbl chip-psychic">Model 2</span>
+                  </div>
+                  <div class="eq-formula-str">Model 1 + β₅(X₁*·M*) + β₆(X₂*·M*) + β₇(X₃*·M*) + e</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: 6 Hypotheses 4-Tier & Defense Box -->
+            <div class="hypo-right-col">
+              <div class="hypo-row-dense">
+                <span class="hypo-tag-dense tag-green">H₁ (+)</span>
+                <div class="hypo-content-dense">
+                  <p class="hypo-statement"><strong>Hedonic Motivation</strong> berpengaruh positif terhadap <strong>Impulsive Buying</strong> booster pack Pokémon TCG.</p>
+                  <div class="hypo-tier-tags">
+                    <span>Teori: S-O-R (1974)</span> • <span class="tier-anchor">Empiris: Pranggabayu (2022)</span> • <span>Objek: Dopamin sensasi unboxing</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hypo-row-dense">
+                <span class="hypo-tag-dense tag-green">H₂ (+)</span>
+                <div class="hypo-content-dense">
+                  <p class="hypo-statement"><strong>Desire for Completeness</strong> berpengaruh positif terhadap <strong>Impulsive Buying</strong> booster pack Pokémon TCG.</p>
+                  <div class="hypo-tier-tags">
+                    <span>Teori: Pseudo-Set &amp; Zeigarnik</span> • <span class="tier-anchor">Empiris: Barasz (2017)</span> • <span>Objek: Slot binder kartu bernomor urut</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hypo-row-dense">
+                <span class="hypo-tag-dense tag-green">H₃ (+)</span>
+                <div class="hypo-content-dense">
+                  <p class="hypo-statement"><strong>Speculative Motive</strong> berpengaruh positif terhadap <strong>Impulsive Buying</strong> booster pack Pokémon TCG.</p>
+                  <div class="hypo-tier-tags">
+                    <span>Teori: Speculative Bubble</span> • <span class="tier-anchor">Empiris: Aryadi (2024), Colline (2024)</span> • <span>Objek: Arbitrase kartu SAR &amp; PSA 10</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hypo-row-dense">
+                <span class="hypo-tag-dense tag-purple">H₄ (-)</span>
+                <div class="hypo-content-dense">
+                  <p class="hypo-statement"><strong>Self-Control</strong> memoderasi (memperlemah) pengaruh <strong>Hedonic Motivation</strong> terhadap <strong>Impulsive Buying</strong>.</p>
+                  <div class="hypo-tier-tags">
+                    <span>Teori: Self-Regulation (2002)</span> • <span class="tier-anchor">Empiris: Vohs &amp; Faber (2007)</span> • <span>Objek: Rem volisional atas euforia kasir</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hypo-row-dense">
+                <span class="hypo-tag-dense tag-purple">H₅ (-)</span>
+                <div class="hypo-content-dense">
+                  <p class="hypo-statement"><strong>Self-Control</strong> memoderasi (memperlemah) pengaruh <strong>Desire for Completeness</strong> terhadap <strong>Impulsive Buying</strong>.</p>
+                  <div class="hypo-tier-tags">
+                    <span>Teori: Planner-Doer (1981)</span> • <span class="tier-anchor">Empiris: Thaler (1985)</span> • <span>Objek: Menahan obsesi melengkapi set gantung</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hypo-row-dense">
+                <span class="hypo-tag-dense tag-purple">H₆ (-)</span>
+                <div class="hypo-content-dense">
+                  <p class="hypo-statement"><strong>Self-Control</strong> memoderasi (memperlemah) pengaruh <strong>Speculative Motive</strong> terhadap <strong>Impulsive Buying</strong>.</p>
+                  <div class="hypo-tier-tags">
+                    <span>Teori: Bounded Rationality (1955)</span> • <span class="tier-anchor">Empiris: Tangney (2004)</span> • <span>Objek: Menyadari probabilitas SAR sangat kecil</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Defense Master Box -->
+              <div class="defense-master-box">
+                <div><span>💡</span> <strong>Kaidah Emas Bimbingan Ci Colline (Kunci Pertahanan Sidang):</strong></div>
+                <div>1. <strong>Kenapa M masuk Model 1?</strong> Sebagai kontrol <em>baseline aditif</em> agar kenaikan determinasi (Δ<em>R</em>²) dan uji <em>F</em><sub>change</sub> pada Model 2 murni mengukur kontribusi bersih interaksi moderasi.</div>
+                <div>2. <strong>Kenapa tidak ada hipotesis direct M ➔ Y?</strong> Karena posisi <em>Self-Control</em> adalah <em>Pure Moderator</em> (pemoderasi murni), bukan prediktor langsung independen.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SLIDE 6: ENHANCED 4-QUADRANT METODOLOGI & EKONOMETRIKA MRA
+             =================================================================== -->
+        <section class="slide" id="slide-6" data-notes="Slide 6 menegaskan kelayakan dan rigor metodologi. Desain riset kuantitatif asosiatif dengan kuesioner skala Likert 5 poin. Populasi kolektor aktif infinite dengan teknik Purposive Sampling target 120 hingga 150 responden valid, ditambah pilot test 30 responden. Kriteria inklusi mencakup usia minimal 17 tahun dan pembelian booster pack fisik minimal satu kali dalam 12 bulan terakhir. Analisis data menggunakan MRA dua tahap dengan mean-centering untuk mengeliminasi bahaya multikolinearitas esensial. Model 1 adalah baseline aditif, Model 2 memasukkan istilah interaksi moderasi. Kontribusi moderasi diuji lewat peningkatan R-squared dan uji F-change pada taraf 5 persen, serta diakhiri analisis simple slopes untuk membuktikan efek pelemahan secara visual.">
+          <div class="slide-header-block">
+            <div>
+              <div class="slide-kicker"><span>📐</span> BAB 3 • Metodologi Penelitian &amp; Ekonometrika MRA</div>
+              <h2 class="slide-main-title">Desain Sampling, Pengujian Kualitas, &amp; Analisis MRA</h2>
+              <p class="slide-main-subtitle">Rigor metodologis pembuktian formula sampel Green (1991), uji asumsi klasik, dan regresi hierarkis</p>
+            </div>
+            <img src="./assets/gengar.png" alt="Gengar" class="header-mascot">
+          </div>
+
+          <div class="slide-6-grid-dense">
+            <!-- Quad 1 -->
+            <div class="quadrant-box-dense tcg-card" style="--card-accent: #38BDF8;">
+              <div class="quad-title-dense">
+                <span>1️⃣ Desain Riset &amp; Pengukuran</span>
+                <span class="quad-tag chip-water">Desain</span>
+              </div>
+              <ul class="quad-list-dense">
+                <li><span class="quad-bullet">▸</span> <strong>Pendekatan:</strong> Kuantitatif Asosiatif Kausal (studi hubungan kausalitas dan efek moderasi <em>cross-sectional</em>).</li>
+                <li><span class="quad-bullet">▸</span> <strong>Instrumen Pengumpulan:</strong> Kuesioner daring terstruktur (*Google Forms*) disebarkan ke komunitas TCG Jabodetabek.</li>
+                <li><span class="quad-bullet">▸</span> <strong>Skala Pengukuran:</strong> Skala Likert 5 Poin (1 = STS, 2 = TS, 3 = N, 4 = S, 5 = SS) mentransformasi persepsi laten menjadi metrik.</li>
+                <li><span class="quad-bullet">▸</span> <strong>Skor Komposit:</strong> Rata-rata butir per konstruk variabel untuk menjamin stabilitas psikometri (kaidah Nunnally &amp; Ghozali, 2018).</li>
+              </ul>
+            </div>
+
+            <!-- Quad 2 -->
+            <div class="quadrant-box-dense tcg-card" style="--card-accent: #10B981;">
+              <div class="quad-title-dense">
+                <span>2️⃣ Populasi &amp; Kaidah Sampel Green (1991)</span>
+                <span class="quad-tag chip-grass">Sampling</span>
+              </div>
+              <ul class="quad-list-dense">
+                <li><span class="quad-bullet">▸</span> <strong>Populasi:</strong> *Infinite* / Tak Terbatas (Komunitas pemain &amp; kolektor aktif kartu Pokémon TCG di Indonesia).</li>
+                <li><span class="quad-bullet">▸</span> <strong>Teknik:</strong> *Non-Probability Purposive Sampling* (3 kriteria inklusi: WNI, Usia ≥ 17 tahun [UU 24/2013 mandiri hukum], beli pack fisik min. 1× 12 bln terakhir).</li>
+                <li><span class="quad-bullet">▸</span> <strong>Formula Green (1991):</strong> Uji-F (<em>N</em> ≥ 50 + 8<em>k</em> = 106) &amp; Uji-t (<em>N</em> ≥ 104 + <em>k</em> = 111). Mengikat yang terbesar: <span class="formula-callout">N ≥ 111 responden</span>.</li>
+                <li><span class="quad-bullet">▸</span> <strong>Target Sampel:</strong> <span class="formula-callout">N = 120 s.d. 150 responden</span> (Power 0,80, α=5%, Hair 5–10× 20 indikator) + <em>Pilot Test</em> <em>n</em> = 30 responden.</li>
+              </ul>
+            </div>
+
+            <!-- Quad 3 -->
+            <div class="quadrant-box-dense tcg-card" style="--card-accent: #F59E0B;">
+              <div class="quad-title-dense">
+                <span>3️⃣ Uji Kualitas Data &amp; Asumsi Klasik</span>
+                <span class="quad-tag chip-electric">Asumsi</span>
+              </div>
+              <ul class="quad-list-dense">
+                <li><span class="quad-bullet">▸</span> <strong>Validitas Butir:</strong> Pearson Product Moment (<em>r</em><sub>hitung</sub> &gt; <em>r</em><sub>tabel</sub>; pilot <em>n</em>=30 ambang 0,361) + <em>corrected item-total</em> ≥ 0,30.</li>
+                <li><span class="quad-bullet">▸</span> <strong>Reliabilitas Konstruk:</strong> Cronbach's Alpha (α ≥ 0,70 standar Sekaran &amp; Ghozali).</li>
+                <li><span class="quad-bullet">▸</span> <strong>Normalitas:</strong> Kolmogorov-Smirnov (Asymp. Sig &gt; 0,05) &amp; Normal P-P Plot residual.</li>
+                <li><span class="quad-bullet">▸</span> <strong>Multikolinearitas:</strong> Tolerance &gt; 0,10 dan VIF &lt; 10 (bebas redundansi prediktor).</li>
+                <li><span class="quad-bullet">▸</span> <strong>Heteroskedastisitas:</strong> Uji Glejser (Sig &gt; 0,05) &amp; Scatterplot residual acak.</li>
+              </ul>
+              <div class="defense-alert-box">
+                🛡️ <strong>Tanpa Uji Autokorelasi:</strong> Uji Durbin-Watson TIDAK DILAKUKAN karena data survei bersifat <em>cross-sectional</em> primer, bukan data runtun waktu (<em>time series</em>).
+              </div>
+            </div>
+
+            <!-- Quad 4 -->
+            <div class="quadrant-box-dense tcg-card" style="--card-accent: #A855F7;">
+              <div class="quad-title-dense">
+                <span>4️⃣ Ekonometrika MRA 2-Tahap &amp; Simple Slopes</span>
+                <span class="quad-tag chip-psychic">MRA</span>
+              </div>
+              <ul class="quad-list-dense">
+                <li><span class="quad-bullet">▸</span> <strong>Mean-Centering:</strong> <em>X<sub>i</sub></em>* = <em>X<sub>i</sub></em> - <em>X̄<sub>i</sub></em>; <em>M</em>* = <em>M</em> - <em>M̄</em> (Aiken &amp; West, 1991) guna melumpuhkan multikolinearitas esensial.</li>
+                <li><span class="quad-bullet">▸</span> <strong>Uji Hipotesis Parsial (Uji-t):</strong> Pengaruh langsung H1–H3 (β &gt; 0, <em>p</em> &lt; 0,05) dan efek moderasi H4–H6 terbukti memperlemah jika β₅, β₆, β₇ &lt; 0 (<em>p</em> &lt; 0,05).</li>
+                <li><span class="quad-bullet">▸</span> <strong>Uji Tambahan Kontribusi:</strong> Evaluasi kenaikan determinasi <span class="formula-callout">ΔR²</span> &amp; uji signifikansi <span class="formula-callout">F_change (p &lt; 0,05)</span>.</li>
+                <li><span class="quad-bullet">▸</span> <strong>Simple Slopes Analysis:</strong> Membuktikan grafis peluruhan kemiringan garis efek <em>X</em> terhadap <em>Y</em> pada 3 level <em>Self-Control</em> (<em>M</em>* = -1 SD, Mean, +1 SD; Dawson, 2014).</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================================================================
+             SLIDE 7: PENUTUP & Q&A
+             =================================================================== -->
+        <section class="slide" id="slide-7" data-notes="Slide 7 adalah penutup. Penelitian ini memberikan dua kontribusi: Teoretis, memperluas literatur Keuangan Perilaku pada aset alternatif bernilai hobi dan memvalidasi peran kontrol diri sebagai rem volisional. Praktis, menjadi pedoman literasi finansial bagi kolektor muda agar bijak mengelola anggaran dan menahan godaan belanja impulsif. Sekian presentasi proposal skripsi saya. Terima kasih sebesar-besarnya kepada Ibu Dr. Fredella Colline selaku dosen pembimbing dan Bapak/Ibu Dewan Penguji. Sesi tanya jawab saya buka.">
+          <div class="slide-header-block">
+            <div>
+              <div class="slide-kicker"><span>🎯</span> BAB 3 • Kontribusi Penelitian &amp; Penutup</div>
+              <h2 class="slide-main-title">Kontribusi Penelitian &amp; Sesi Diskusi Terbuka</h2>
+              <p class="slide-main-subtitle">Relevansi akademis dan praktis bagi kemajuan disiplin manajemen keuangan perilaku</p>
+            </div>
+          </div>
+
+          <div class="slide-7-container">
+            <div class="contrib-duo">
+              <div class="contrib-card tcg-card" style="--card-accent: #38BDF8;">
+                <div class="contrib-badge energy-chip chip-water">📚 Kontribusi Teoretis</div>
+                <h3>Pengayaan Literatur Behavioral Finance</h3>
+                <p>
+                  Memperluas penerapan teori keuangan perilaku pada komoditas hobi fisik bernilai pasar sekunder nyata di Indonesia, serta membuktikan peran <em>Self-Control</em> sebagai rem kognitif volisional peredam bias kelengkapan koleksi dan spekulasi arbitrase.
+                </p>
+              </div>
+
+              <div class="contrib-card tcg-card" style="--card-accent: #10B981;">
+                <div class="contrib-badge energy-chip chip-grass">💼 Kontribusi Praktis</div>
+                <h3>Edukasi Literasi &amp; Proteksi Finansial</h3>
+                <p>
+                  Menjadi pedoman kesadaran finansial bagi komunitas kolektor generasi muda agar terhindar dari jebakan pengeluaran impulsif tanpa anggaran akibat euforia perburuan kartu langka (<em>SAR / PSA 10</em>) di etalase kasir ritel modern.
+                </p>
+              </div>
+            </div>
+
+            <div class="qa-center-stage">
+              <h2>"Sekian Presentasi Usulan Proposal Skripsi"</h2>
+              <p>Terima Kasih atas Bimbingan Ibu Dr. Fredella Colline dan Perhatian Bapak/Ibu Dewan Penguji</p>
+              <div class="qa-pill-action">
+                <span>💬</span> SESI TANYA JAWAB (Q&amp;A) DIBUKA
+              </div>
+
+              <img src="./assets/pikachu.png" alt="Celebration Pikachu" class="celebrate-mascot">
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Speaker Notes Drawer (Toggled by 'N') -->
+      <div class="notes-drawer" id="notesDrawer">
+        <div class="notes-header">
+          <span class="notes-title">🎙️ Catatan Pembicara (Speaker Notes) — Slide <span id="notesSlideDisplay">1</span></span>
+          <span class="notes-hint">Tekan tombol 'N' pada keyboard untuk menutup</span>
+        </div>
+        <div class="notes-content" id="notesContent">
+          Memuat catatan pembicara...
+        </div>
+      </div>
+
+      <!-- Bottombar Navigation -->
+      <footer class="bottombar">
+        <div class="nav-btn-group">
+          <button class="btn-nav" id="prevBtn" title="Slide Sebelumnya (Panah Kiri)">
+            ◀ Prev
+          </button>
+          <button class="btn-nav" id="nextBtn" title="Slide Berikutnya (Panah Kanan / Spasi)">
+            Next ▶
+          </button>
+        </div>
+
+        <div class="dots-container" id="dotsContainer">
+          <div class="dot-step active" data-index="0" title="Slide 1: Cover"></div>
+          <div class="dot-step" data-index="1" title="Slide 2: Latar Belakang"></div>
+          <div class="dot-step" data-index="2" title="Slide 3: Research Gap"></div>
+          <div class="dot-step" data-index="3" title="Slide 4: Kajian Teori"></div>
+          <div class="dot-step" data-index="4" title="Slide 5: Model &amp; Hipotesis"></div>
+          <div class="dot-step" data-index="5" title="Slide 6: Metodologi"></div>
+          <div class="dot-step" data-index="6" title="Slide 7: Penutup &amp; Q&amp;A"></div>
+        </div>
+
+        <div class="nav-btn-group">
+          <button class="btn-nav" id="notesToggleBtn" title="Tampilkan Catatan Pembicara (N)">
+            🎙️ Notes (N)
+          </button>
+          <button class="btn-nav" id="fullscreenBtn" title="Mode Layar Penuh (F)">
+            ⛶ Fullscreen (F)
+          </button>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const slides = document.querySelectorAll('.slide');
+      const dots = document.querySelectorAll('.dot-step');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const currentSlideDisplay = document.getElementById('currentSlideDisplay');
+      const notesSlideDisplay = document.getElementById('notesSlideDisplay');
+      const progressFill = document.getElementById('progressFill');
+      const notesDrawer = document.getElementById('notesDrawer');
+      const notesContent = document.getElementById('notesContent');
+      const notesToggleBtn = document.getElementById('notesToggleBtn');
+      const fullscreenBtn = document.getElementById('fullscreenBtn');
+      const timerPill = document.getElementById('timerPill');
+      const timerDisplay = document.getElementById('timerDisplay');
+
+      let currentSlide = 0;
+      const totalSlides = slides.length;
+
+      function updateSlide(targetIndex) {
+        if (targetIndex < 0) targetIndex = 0;
+        if (targetIndex >= totalSlides) targetIndex = totalSlides - 1;
+        currentSlide = targetIndex;
+
+        slides.forEach((s, idx) => {
+          s.classList.toggle('active', idx === currentSlide);
+        });
+
+        dots.forEach((d, idx) => {
+          d.classList.toggle('active', idx === currentSlide);
+        });
+
+        currentSlideDisplay.textContent = currentSlide + 1;
+        notesSlideDisplay.textContent = currentSlide + 1;
+        progressFill.style.width = `${((currentSlide + 1) / totalSlides) * 100}%`;
+
+        // Update speaker notes
+        const activeSlideEl = slides[currentSlide];
+        notesContent.textContent = activeSlideEl.getAttribute('data-notes') || 'Tidak ada catatan pembicara untuk slide ini.';
+      }
+
+      // Nav handlers
+      prevBtn.addEventListener('click', () => updateSlide(currentSlide - 1));
+      nextBtn.addEventListener('click', () => updateSlide(currentSlide + 1));
+
+      dots.forEach((dot) => {
+        dot.addEventListener('click', () => {
+          const target = parseInt(dot.getAttribute('data-index'));
+          updateSlide(target);
+        });
+      });
+
+      // Notes Drawer Toggle
+      function toggleNotes() {
+        notesDrawer.classList.toggle('open');
+      }
+      notesToggleBtn.addEventListener('click', toggleNotes);
+
+      // Fullscreen Toggle
+      function toggleFullscreen() {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen().catch(err => {
+            console.log(`Fullscreen error: ${err.message}`);
+          });
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          }
+        }
+      }
+      fullscreenBtn.addEventListener('click', toggleFullscreen);
+
+      // Keyboard Shortcuts
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+          e.preventDefault();
+          updateSlide(currentSlide + 1);
+        } else if (e.key === 'ArrowLeft' || e.key === 'PageUp' || e.key === 'Backspace') {
+          e.preventDefault();
+          updateSlide(currentSlide - 1);
+        } else if (e.key.toLowerCase() === 'n') {
+          e.preventDefault();
+          toggleNotes();
+        } else if (e.key.toLowerCase() === 'f') {
+          e.preventDefault();
+          toggleFullscreen();
+        } else if (e.key >= '1' && e.key <= '7') {
+          updateSlide(parseInt(e.key) - 1);
+        }
+      });
+
+      // Mobile Touch Swipe Navigation (Geser Layar HP ke Kiri / Kanan)
+      let touchStartX = 0;
+      let touchStartY = 0;
+      let touchEndX = 0;
+      let touchEndY = 0;
+
+      document.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+      }, { passive: true });
+
+      document.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        touchEndY = e.changedTouches[0].screenY;
+        handleSwipe();
+      }, { passive: true });
+
+      function handleSwipe() {
+        const diffX = touchEndX - touchStartX;
+        const diffY = touchEndY - touchStartY;
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
+          if (diffX < 0) {
+            updateSlide(currentSlide + 1); // Geser ke kiri -> Next
+          } else {
+            updateSlide(currentSlide - 1); // Geser ke kanan -> Prev
+          }
+        }
+      }
+
+      // Seminar Countdown Timer (10:00 default)
+      let timerSeconds = 600;
+      let timerInterval = null;
+      let isTimerRunning = false;
+
+      function renderTimer() {
+        const m = Math.floor(timerSeconds / 60);
+        const s = timerSeconds % 60;
+        timerDisplay.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+        
+        if (timerSeconds <= 60) {
+          timerPill.style.color = '#FB7185';
+          timerPill.style.borderColor = 'rgba(244,63,94,0.6)';
+        } else if (timerSeconds <= 180) {
+          timerPill.style.color = 'var(--energy-electric)';
+          timerPill.style.borderColor = 'rgba(245,158,11,0.6)';
+        }
+      }
+
+      function toggleTimer() {
+        if (isTimerRunning) {
+          clearInterval(timerInterval);
+          isTimerRunning = false;
+          timerPill.classList.remove('running');
+        } else {
+          isTimerRunning = true;
+          timerPill.classList.add('running');
+          timerInterval = setInterval(() => {
+            if (timerSeconds > 0) {
+              timerSeconds--;
+              renderTimer();
+            } else {
+              clearInterval(timerInterval);
+              isTimerRunning = false;
+              timerPill.classList.remove('running');
+              timerDisplay.textContent = '00:00 (HABIS)';
+            }
+          }, 1000);
+        }
+      }
+
+      timerPill.addEventListener('click', toggleTimer);
+
+      // Initial Slide State
+      updateSlide(0);
+    });
+  </script>
+</body>
+</html>

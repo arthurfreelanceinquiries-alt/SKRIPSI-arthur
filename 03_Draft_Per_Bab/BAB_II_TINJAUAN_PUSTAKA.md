@@ -213,18 +213,18 @@
                     PENGARUH LANGSUNG
      ┌─────────────────────────────────────────────────────────┐
      │                                                         │
-     │   [ X1: Hedonic Motivation     ] ──── H1 (+) ────┐      │
+      │   ( X1: Hedonic Motivation     ) ──── H1 (+) ────┐      │
      │                                                   │      │
-     │   [ X2: Desire for Completeness] ──── H2 (+) ────┼──►  [ Y: Impulsive Buying ]
+      │   ( X2: Desire for Completeness) ──── H2 (+) ────┼──►  ( Y: Impulsive Buying )
      │                                                   │      │
-     │   [ X3: Speculative Motive     ] ──── H3 (+) ────┘      │
+      │   ( X3: Speculative Motive     ) ──── H3 (+) ────┘      │
      │                                                         │
      └─────────────────────────────────────────────────────────┘
                                                          ▲
                                                          │
                               H4, H5, H6 (Memperlemah / -)
                                                          │
-                                            [ M: Self-Control ]
+                                             ( M: Self-Control )
                                             (Variabel Moderasi)
 ```
 
@@ -236,6 +236,6 @@
 * $M$: Variabel Moderasi (*Self-Control*)
 * $H_1, H_2, H_3$: Hipotesis pengaruh langsung positif
 * $H_4, H_5, H_6$: Hipotesis moderasi memperlemah (*negative moderation*)
-*(Catatan: Diagram menampilkan rerangka pemikiran konseptual hipotesis; dalam model estimasi regresi MRA empiris, efek utama pemoderasi $M$ diikutsertakan sebagai prediktor dasar dalam model aditif baseline).*
+*(Catatan: Bentuk elips melambangkan konstruk laten teoretis; diagram menampilkan rerangka pemikiran konseptual hipotesis; dalam model estimasi regresi MRA empiris, efek utama pemoderasi $ diikutsertakan sebagai prediktor dasar dalam model aditif baseline).*
 
      Model konseptual di atas menegaskan bahwa perilaku pembelian impulsif (*Impulsive Buying* / $Y$) pada kartu Pokémon TCG dipicu secara langsung oleh tiga faktor determinan, yaitu dorongan mencari kesenangan afektif (*Hedonic Motivation* / $X_1$), desakan psikologis menutup celah koleksi set (*Desire for Completeness* / $X_2$), dan ekspektasi keuntungan finansial pasar sekunder (*Speculative Motive* / $X_3$). Selanjutnya, variabel *Self-Control* ($M$) dihipotesiskan bertindak sebagai variabel pemoderasi yang memperlemah ketiga jalur pengaruh tersebut. Seluruh model pengujian asosiatif ini dianalisis menggunakan metode *Moderated Regression Analysis* (MRA) sebagaimana diuraikan secara operasional dalam Bab III.

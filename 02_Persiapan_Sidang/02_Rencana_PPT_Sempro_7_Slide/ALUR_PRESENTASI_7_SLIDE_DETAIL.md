@@ -3,172 +3,205 @@
 ### *Skripsi: Pengaruh Hedonic Motivation, Desire for Completeness, dan Speculative Motive terhadap Impulsive Buying Booster Pack Kartu Pokémon TCG dengan Self-Control sebagai Variabel Moderasi — Arthur Reezan (312023002)*
 
 > [!SUMMARY] Tujuan & Solusi Dokumen Ini
-> - **Untuk Apa:** Panduan membuat + membawakan presentasi sempro 7 slide sesuai himbauan dosen, untuk presenter berpengetahuan nol.
-> - **Masalah yang Diselesaikan:** Tidak tahu alur cerita, isi tiap slide, kalimat yang diucapkan, durasi, dan transisi antar-slide.
-> - **Keputusan/Output:** Alur Fenomena → Masalah → Gap → Teori → Model → Metode → Penutup; total 7–10 menit; naskah bicara kata-per-kata + jebakan per slide.
+> - **Untuk Apa:** Panduan resmi membuat dan membawakan presentasi Seminar Proposal (Sempro) 7 slide sesuai arahan dosen pembimbing ([[Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A]]), menggabungkan fondasi alur ChatGPT dengan ketelitian ilmiah naskah skripsi.
+> - **Masalah yang Diselesaikan:** Menghilangkan kebingungan alur presentasi; menyelaraskan struktur visual non-AI (eksekutif akademis); menyediakan naskah bicara kata-per-kata berdurasi 7–10 menit dengan tameng antisipasi pertanyaan penguji.
+> - **Keputusan/Output:** Alur Fenomena → Masalah & Gap → Teori & Variabel → Riset Terdahulu & Model MRA → Metodologi & Centering → Kesimpulan & Kontribusi; 6 hipotesis definitif; paritas penuh naskah proposal.
 
 ---
 
-## 🧭 PETA BESAR: SATU KALIMAT PER SLIDE (hafalkan ini dulu!)
+## 🧭 PETA BESAR: ALUR CERITA 7 KALIMAT (Hafalkan Ini Dulu!)
 
-| Slide | Satu kalimat inti |
-|:---:|:---|
-| 1 | "Saya Arthur, ini judul dan pembimbing saya." |
-| 2 | "Industri kartu Pokémon meledak dan sistem blind-pack memicu belanja impulsif." |
-| 3 | "Penelitian lama hasilnya bertentangan — di situlah celah saya." |
-| 4 | "Teori dan variabel saya baku dan terukur." |
-| 5 | "Model dan 6 hipotesis saya begini." |
-| 6 | "Metode saya sahih dan bisa dilaksanakan." |
-| 7 | "Terima kasih — saya siap ditanya." |
+Jangan hafalkan 7 slide sebagai bagian terpisah. Hafalkan **benang merah alur ceritanya (*The Golden Thread*)**:
 
-**Prinsip alur (golden thread presentasi):** setiap slide menjawab pertanyaan yang dimunculkan slide sebelumnya. Slide 2 memunculkan "terus masalahnya apa?" → dijawab Slide 3. Slide 3 memunculkan "landasannya apa?" → dijawab Slide 4. Slide 4 memunculkan "buktinya diuji bagaimana?" → dijawab Slide 5–6.
-
----
-
-## SLIDE 1 — PEMBUKA (±40 detik)
-
-**Tujuan:** terlihat siap, santun, dan jelas. Kesan pertama menentukan 30% penilaian psikologis penguji.
-
-**Isi visual (5 elemen, jangan lebih):**
-1. Label kecil atas: `SEMINAR PROPOSAL SKRIPSI — S1 MANAJEMEN KEUANGAN FEB UKRIDA`.
-2. Judul lengkap (2–3 baris, bold): *Pengaruh Hedonic Motivation, Desire for Completeness, dan Speculative Motive terhadap Impulsive Buying Booster Pack Kartu Pokémon TCG dengan Self-Control sebagai Variabel Moderasi*.
-3. Nama + NIM: **Arthur Reezan — 312023002**.
-4. Dosen pembimbing: **Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A**.
-5. Footer: Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana, Jakarta 2026.
-
-**Naskah bicara (hafalkan, tempo pelan):**
-> "Assalamu'alaikum warahmatullahi wabarakatuh / Selamat pagi. Yang terhormat Ibu Dr. Fredella Colline selaku dosen pembimbing, serta Bapak/Ibu dewan penguji. Perkenalkan, saya Arthur Reezan, NIM 312023002, Program Studi S1 Manajemen Keuangan FEB UKRIDA. Pada kesempatan ini saya akan mempresentasikan proposal skripsi saya yang berjudul: *Pengaruh Hedonic Motivation, Desire for Completeness, dan Speculative Motive terhadap Impulsive Buying Booster Pack Kartu Pokémon TCG dengan Self-Control sebagai Variabel Moderasi*."
-
-**Detail yang diajarkan:**
-- Sebutkan gelar pembimbing LENGKAP — ini bentuk hormat yang dinilai.
-- Jangan baca judul kata-per-kata dari slide (penguji bisa baca sendiri); ucapkan dengan intonasi yakin sambil menatap penguji, bukan layar.
-- Klik ke slide 2 sambil berkata: *"Saya mulai dari fenomena yang melatarbelakangi penelitian ini."*
+| Slide | Posisi Logika | Satu Kalimat Inti yang Harus Diingat |
+|:---:|:---|:---|
+| **Slide 1** | **Identitas** | *"Ini penelitian saya, identitas saya, dan dosen pembimbing saya."* |
+| **Slide 2** | **Konteks** | *"Fenomenanya nyata, pasar Pokémon TCG meledak, dan ada mekanisme blind-pack."* |
+| **Slide 3** | **Masalah & Gap** | *"Kombinasi produk memicu belanja impulsif, pasar sekunder tinggi, dan bukti riset terdahulu masih ada gap."* |
+| **Slide 4** | **Teori & Variabel** | *"Ini teori grand/supporting dan 5 variabel baku yang saya pakai untuk menjelaskan masalah."* |
+| **Slide 5** | **Riset & Model** | *"Penelitian sebelumnya membawa saya pada model MRA terintegrasi dan tepat 6 hipotesis."* |
+| **Slide 6** | **Metodologi** | *"Ini cara saya menguji model tersebut secara empiris dengan MRA mean-centering."* |
+| **Slide 7** | **Penutup** | *"Jadi, inilah kesimpulan rancangan dan kontribusi keseluruhan penelitian saya."* |
 
 ---
 
-## SLIDE 2 — LATAR BELAKANG: KONTEKS & MASALAH (±1,5 menit)
+## ⏱️ REKAP ESTIMASI DURASI PRESENTASI (Total: ±8 Menit 30 Detik)
 
-**Tujuan:** membuat penguji berpikir "oh, ini fenomena nyata dan besar". Gunakan ANGKA — angka adalah bukti.
-
-**Isi visual (3 kartu + 1 garis masalah):**
-1. **Kartu INDUSTRI:** "> 64,8 miliar kartu beredar global (The Pokémon Company, 2024)" + "waralaba media #1 dunia, > US$ 100 miliar (Statista)".
-2. **Kartu MEKANISME:** "Blind-pack Rp20–30 ribu → isi acak → kartu SAR/PSA 10 jutaan rupiah di pasar sekunder."
-3. **Kartu MASALAH:** "Pembelian berulang, spontan, tanpa anggaran = *Impulsive Buying*."
-4. Satu kalimat penegas di bawah: *"Harga murah + hadiah acak + cuan = jebakan impulsif."*
-
-**Naskah bicara:**
-> "Latar belakangnya adalah ledakan industri. Pokémon adalah waralaba media nomor satu dunia dengan pendapatan di atas 100 miliar dolar AS, dan lebih dari 64,8 miliar kartu telah beredar global. Di Indonesia, kartu berbahasa Indonesia masuk minimarket sejak 2019 — booster pack Rp20 ribuan berisi kartu acak. Di pasar sekunder, kartu langka bersertifikat PSA 10 laku jutaan rupiah. Kombinasi harga murah, isi misterius, dan potensi cuan inilah yang memicu pembelian berulang dan spontan tanpa perencanaan anggaran — itulah *impulsive buying* yang saya teliti."
-
-**Detail yang diajarkan:**
-- Tiga angka wajib keluar dari mulutmu: **64,8 miliar**, **US$ 100 miliar**, **Rp20–30 ribu**. Kalau lupa yang lain, tiga ini jangan.
-- Kata "blind-pack" jelaskan 5 detik ("isinya acak, pembeli tidak tahu dapat apa") karena tidak semua penguji paham hobi ini.
-- Transisi: *"Fenomena sebesar ini tentu sudah diteliti orang — tetapi hasilnya belum sepakat. Itu yang saya bahas di slide berikut."*
+```
+[Slide 1: 0:40] ──> [Slide 2: 1:20] ──> [Slide 3: 2:00] ──> [Slide 4: 1:30]
+                                                                   │
+[Slide 7: 0:40] <── [Slide 6: 2:00] <── [Slide 5: 1:40] <─────────┘
+```
 
 ---
 
-## SLIDE 3 — LATAR BELAKANG: GAP & NOVELTY (±1,5 menit — slide tersulit!)
-
-**Tujuan:** membuktikan skripsimu LAYAK diteliti. Rumusnya: "penelitian A bilang X, penelitian B bilang bukan-X → saya datang menengahi."
-
-**Isi visual (2 kolom):**
-- **Kiri — 3 gap (satu baris per gap):**
-  - Gap 1: "Hedonis → impulsif: terbukti (Pranggabayu 2022) vs diragukan pada produk mahal."
-  - Gap 2: "Pseudo-set framing terbukti (Barasz 2017) vs belum pernah diuji pada kartu fisik Indonesia."
-  - Gap 3: "FOMO kolektor (Aryadi 2024) vs investor hati-hati (Colline 2024)."
-- **Kanan — Novelty (3 poin):** "3 anteseden sekaligus + Self-Control sebagai rem + pionir kartu berbahasa Indonesia."
-
-**Naskah bicara:**
-> "Dari literatur saya menemukan tujuh kesenjangan, yang intinya tiga. Pertama, pengaruh hedonis terbukti positif, tetapi diragukan pada produk hobi mahal. Kedua, efek kelengkapan set terbukti di psikologi, tetapi belum pernah diuji pada kartu fisik Indonesia. Ketiga, kolektor FOMO mengejar cuan grading, sementara riset investor justru menemukan kehati-hatian. Kebaruan saya ada tiga: menguji tiga anteseden sekaligus pada satu komoditas, menguji Self-Control sebagai rem pemoderasi, dan menjadi studi pionir kartu berbahasa Indonesia di FEB UKRIDA."
-
-**Detail yang diajarkan:**
-- Jangan bacakan 7 gap satu per satu (penguji bosan + waktumu habis). Kelompokkan jadi 3 seperti di atas; simpan detail 7 gap untuk sesi tanya jawab (§12 panduan belajar).
-- Kata kunci yang harus terdengar: **"bertentangan/inkonsisten"** dan **"belum pernah diuji pada…"** — dua frasa inilah definisi gap.
-- Transisi: *"Untuk menjawab kesenjangan itu saya memakai landasan teori berikut."*
+## 📑 RINCIAN PER SLIDE: KONTEN VISUAL, NASKAH BICARA, & TAMENG SIDANG
 
 ---
 
-## SLIDE 4 — TINJAUAN PUSTAKA: TEORI & VARIABEL (±1,5 menit)
+### 🔹 SLIDE 1 — PEMBUKA & IDENTITAS RISET (Target: 30–40 Detik)
 
-**Tujuan:** menunjukkan kamu tidak ngarang — setiap variabel punya "KTP teori" dan "alat ukur resmi".
-
-**Isi visual (2 blok):**
-- **Blok TEORI (4 kotak kecil):** Grand Theory *Behavioral Finance* + S-O-R + *Completing the Set/Zeigarnik* + *Self-Regulation Theory*.
-- **Blok VARIABEL (5 kartu):** Y (IBTS Verplanken), X1 (Arnold & Reynolds), X2 (Barasz/Gao), X3 (Keynes/Shiller), M (BSCS Tangney).
-
-**Naskah bicara:**
-> "Grand theory saya Behavioral Finance — sesuai konsentrasi Manajemen Keuangan — karena kartu Pokémon kini aset spekulatif, bukan sekadar mainan. Didukung tiga teori: S-O-R untuk alur stimulus-respons, Completing the Set Effect untuk hasrat kelengkapan, dan Self-Regulation Theory untuk kontrol diri. Variabel dependen Y diulas lebih dulu, lalu X1, X2, X3, dan M — masing-masing diukur dengan skala baku internasional yang tercantum di slide."
-
-**Detail yang diajarkan:**
-- Wajib sebutkan kalimat "sesuai konsentrasi Manajemen Keuangan" — ini tameng terhadap pertanyaan "kenapa tidak pakai teori pemasaran?" (lihat Q3 panduan).
-- Jangan menjelaskan isi tiap teori panjang lebar; cukup 1 klausa per teori ("S-O-R untuk alur stimulus-respons"). Detailnya hanya dikeluarkan kalau ditanya.
-- Transisi: *"Dari teori itu saya menurunkan model dan hipotesis berikut."*
-
----
-
-## SLIDE 5 — MODEL & HIPOTESIS (±1,5 menit)
-
-**Tujuan:** satu gambar menjelaskan seluruh skripsi. Penguji memotret slide ini di kepala.
-
-**Isi visual:**
-- **Kiri:** diagram jalur — 3 kotak X1/X2/X3 → panah (+) → kotak Y; kotak M di atas → 3 panah putus-putus (−) ke masing-masing jalur.
-- **Kanan:** daftar H1–H6 (tepat 6!): H1–H3 positif; H4–H6 memperlemah.
-
-**Naskah bicara:**
-> "Modelnya sederhana: tiga anteseden berpengaruh positif ke impulsive buying — H1 hedonis, H2 kelengkapan, H3 spekulasi. Self-Control sebagai moderator memperlemah ketiganya — H4, H5, H6. Perhatikan tidak ada hipotesis efek langsung M ke Y: M masuk Model 1 hanya sebagai kontrol baseline agar ΔR² murni milik blok interaksi."
-
-**Detail yang diajarkan:**
-- Kalimat terakhir itu PENTING — mengantisipasi pertanyaan tersulit ("kok M→Y tidak dihipotesiskan?") sebelum ditanyakan. Membunuh pertanyaan dengan presentasi = nilai plus besar.
-- Saat menjelaskan, tunjuk diagram dengan laser/pointer mengikuti ucapan (X1 → Y untuk H1, dst.).
-- Dilarang menulis 7 hipotesis (kesalahan lama PRD) — hitung jarimu: 3 + 3 = 6.
-- Transisi: *"Model ini akan saya uji dengan metode berikut."*
+* **Tujuan Slide:** Menampilkan judul secara formal, elegan, santun, dan menegaskan ruang lingkup riset S1 Manajemen Keuangan FEB UKRIDA.
+* **Komposisi Visual Slide:**
+  1. Header Institusi: Logo Pentagram Resmi UKRIDA + `UNIVERSITAS KRISTEN KRIDA WACANA • FAKULTAS EKONOMI DAN BISNIS • S1 MANAJEMEN KEUANGAN`.
+  2. Kicker: `SEMINAR PROPOSAL TUGAS AKHIR (MODEL B: DATA PRIMER KUANTITATIF)`.
+  3. Judul Skripsi Lengkap:  
+     **PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI**
+  4. Identitas Peneliti: **Arthur Reezan — NIM: 312023002** (Konsentrasi Manajemen Keuangan).
+  5. Dosen Pembimbing: **Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A**.
+  6. Waktu & Tempat: Jakarta, September 2026.
+* **🗣️ Naskah Narasi Bicara (Hafalkan dengan Tempo Tenang):**
+  > *"Selamat pagi/siang Bapak/Ibu dosen penguji yang saya hormati, serta Ibu Dr. Fredella Colline selaku dosen pembimbing. Perkenalkan, saya Arthur Reezan, NIM 312023002, mahasiswa Program Studi S1 Manajemen konsentrasi Keuangan FEB UKRIDA. Pada kesempatan ini saya akan mempresentasikan proposal penelitian saya yang berjudul: Pengaruh Hedonic Motivation, Desire for Completeness, dan Speculative Motive terhadap Impulsive Buying Booster Pack Kartu Pokémon TCG dengan Self-Control sebagai Variabel Moderasi."*
+* **🛡️ Catatan Penting Presenter:**
+  - Sebutkan gelar pembimbing secara lengkap sebagai bentuk etika kesantunan akademik yang dinilai oleh penguji.
+  - Jangan membaca judul kata-per-kata dari slide; tatap mata dewan penguji.
+  - Kalimat transisi: *"Saya mulai dari fenomena industri dan pasar yang melatarbelakangi penelitian ini."*
 
 ---
 
-## SLIDE 6 — METODE (±1,5 menit, paling padat — bicaralah paling pelan di sini)
+### 🔹 SLIDE 2 — LATAR BELAKANG: KONTEKS & FENOMENA PASAR (Target: 1 Menit 20 Detik)
 
-**Tujuan:** meyakinkan bahwa risetmu BISA dilaksanakan dengan benar.
-
-**Isi visual (4 kuadran):**
-1. **Desain:** Kuantitatif asosiatif · Cross-sectional · Likert 1–5.
-2. **Sampel:** Purposive · WNI ≥17 thn · beli pack 12 bln terakhir · N = 120–150 (+ pilot 30).
-3. **Uji kualitas + asumsi:** Validitas r-hitung > r-tabel · Alpha ≥ 0,70 · KS · Tolerance/VIF · Glejser.
-4. **Analisis:** MRA + mean-centering · Model 1 → Model 2 · uji-t/F · ΔR² + F-change · simple slopes.
-
-**Naskah bicara:**
-> "Desainnya kuantitatif asosiatif, survei cross-sectional skala Likert 5 poin. Populasi kolektor WNI tak terbatas, diambil purposive 120 hingga 150 responden usia minimal 17 tahun yang membeli pack setahun terakhir, plus pilot test 30 orang. Kualitas data dijamin validitas Pearson dan Alpha minimal 0,70; asumsi klasik KS, Tolerance/VIF, dan Glejser. Analisisnya MRA dengan mean-centering dalam dua model, diuji dengan uji-t, uji-F, ΔR², dan simple slopes."
-
-**Detail yang diajarkan:**
-- Empat angka mati: **120–150**, **30**, **0,70**, dan rumus **N ≥ 111**. Ucapkan semuanya.
-- Siapkan satu kalimat cadangan untuk tiap singkatan (KS = normalitas residual; VIF = tidak saling menjiplak; Glejser = error merata) karena penguji sering menodong "VIF itu apa?".
-- Transisi: *"Terakhir, kontribusi penelitian ini."*
-
----
-
-## SLIDE 7 — PENUTUP (±30 detik)
-
-**Tujuan:** selesai dengan elegan dan membuka pintu tanya jawab.
-
-**Isi visual:** 2 kontribusi (teoretis: memperkaya Behavioral Finance pada aset hobi; praktis: edukasi kontrol diri generasi muda) + kalimat "Terima kasih — sesi tanya jawab dibuka" + nama/NIM.
-
-**Naskah bicara:**
-> "Kontribusi teoretis: memperkaya Behavioral Finance pada aset hobi koleksi. Kontribusi praktis: edukasi kontrol diri bagi generasi muda. Sekian presentasi saya — terima kasih atas perhatiannya. Saya kembalikan kepada Ketua Sidang dan siap menjawab pertanyaan Bapak/Ibu."
-
-**Detail yang diajarkan:**
-- Jangan menambahkan materi baru di slide ini. Jangan meminta maaf ("maaf kalau banyak kurangnya") — itu mengundang serangan.
-- Setelah selesai: tutup laptop setengah, tegak, tatap ketua sidang. Siapkan air minum — 20 menit Q&A itu maraton.
+* **Tujuan Slide:** Membuktikan bahwa Pokémon TCG bukan sekadar mainan anak-anak, melainkan fenomena ekonomi bernilai miliaran dolar dengan mekanisme produk yang unik.
+* **Komposisi Visual Slide (Bagan & Data Faktual, Bukan Teks Paragraf):**
+  1. **Visual Gambar 1.1:** Grafik Waralaba Media Terbesar di Dunia (Statista Chart 24277, Pokémon #1 > US$ 100 Miliar).
+  2. **Visual Gambar 1.2:** Pertumbuhan Kumulatif Produksi Kartu TCG Global (The Pokémon Company, 2024: 28,8 Miliar lembar pada 2019 $\rightarrow$ 64,8 Miliar lembar pada 2024, lonjakan +125%).
+  3. **3 Kartu Poin Fenomena:**
+     - *Konteks Indonesia:* Kartu resmi berbahasa Indonesia hadir sejak 2019, masuk jaringan ritel modern massal (Indomaret, Alfamart) tanpa hambatan impor.
+     - *Karakteristik Produk:* Dijual dalam kemasan tertutup acak (*blind pack*) seharga Rp20.000–Rp30.000 dengan peluang mendapatkan kartu langka (*Secret Illustration Rare / SAR*).
+     - *Letupan Dopamin:* Format gacha/lotre memicu sensasi *near-miss* dan kepuasan sensorik seketika saat menyobek kemasan.
+* **🗣️ Naskah Narasi Bicara:**
+  > *"Penelitian ini berpijak pada perkembangan industri collectibles alternatif. Pokémon merupakan waralaba media terbesar di dunia dengan pendapatan melebihi 100 miliar dolar AS, di mana produksi kartu fisiknya meningkat sangat pesat dari 28,8 miliar lembar pada 2019 menjadi 64,8 miliar lembar pada 2024. Di Indonesia, kartu resmi berbahasa Indonesia mulai hadir sejak 2019 dan distribusinya semakin masif hingga ke ritel modern.*  
+  > *Yang menarik adalah karakteristik produknya: booster pack dijual dengan harga terjangkau sekitar 20 ribuan rupiah dalam format blind pack acak, di mana konsumen tidak mengetahui isi kartu sebelum menyobek kemasan demi mengejar kartu langka."*
+* **🛡️ Catatan Penting Presenter:**
+  - Sebutkan 3 angka kunci dengan jelas: **100 miliar dolar**, **64,8 miliar lembar**, dan **Rp20.000-an**.
+  - Kalimat transisi: *"Karakteristik produk ini kemudian melahirkan masalah perilaku keuangan yang menjadi fokus penelitian saya di slide berikut."*
 
 ---
 
-## ⏱️ REKAP DURASI & LATIHAN
+### 🔹 SLIDE 3 — LATAR BELAKANG: MASALAH & RESEARCH GAP (Target: 2 Menit)
 
-| Slide | Durasi | Total kumulatif |
-|:---:|:---:|:---:|
-| 1 | 0:40 | 0:40 |
-| 2 | 1:30 | 2:10 |
-| 3 | 1:30 | 3:40 |
-| 4 | 1:30 | 5:10 |
-| 5 | 1:30 | 6:40 |
-| 6 | 1:30 | 8:10 |
-| 7 | 0:30 | 8:40 |
+* **Tujuan Slide:** Mengurai rantai kausalitas masalah belanja impulsif, menampilkan disparitas harga pasar sekunder (Gambar 1.3), dan membuktikan adanya *research gap*.
+* **Komposisi Visual Slide:**
+  * **Kolom Kiri — Rantai Kausalitas Masalah & Visual Gambar 1.3:**
+    - Alur Diagram Kausalitas:  
+      `Blind Pack (Acak)` $\rightarrow$ `Harga Terjangkau (Rp20rb)` $\rightarrow$ `Peluang Kartu Langka` $\rightarrow$ `Disparitas Pasar Sekunder (Gambar 1.3 PSA 10)` $\rightarrow$ `Ekspektasi Cuan / Nilai` $\rightarrow$ `Dorongan Belanja Impulsif Berulang`.
+    - Tampilan Grafik Gambar 1.3: Perbandingan harga kartu mentah (*raw*) vs *PSA 10 Gem Mint* (PriceCharting, rasio 2× hingga 26×).
+    - *Catatan Kaki:* "Gambar 1.3 berfungsi sebagai ilustrasi fenomena disparitas pasar sekunder, bukan sebagai data uji kausal."
+  * **Kolom Kanan — Matriks 3 Research Gap & Novelty:**
+    - *Gap 1 (Hedonis):* Pranggabayu (2022) menemukan pengaruh positif signifikan, namun Apidana (2022) menemukan kontrol diri gagal memoderasi dorongan belanja hedonis.
+    - *Gap 2 (Kelengkapan):* Teori *pseudo-set framing* (Barasz et al., 2017) terbukti secara eksperimental, namun belum pernah diuji empiris pada kartu fisik bernomor seri koleksi di Indonesia.
+    - *Gap 3 (Spekulasi):* Aryadi & Lingga (2024) baru meneliti motif investasi kartu pada transaksi terencana; belum ada studi yang menguji apakah ekspektasi spekulasi (arbitrase PSA 10) memicu belanja impulsif di kasir serta ketiadaan uji moderasi kontrol diri.
+    - *Novelty Box:* Mengintegrasikan ketiga anteseden secara simultan dengan *Self-Control* sebagai variabel moderasi pemoderasi.
+* **🗣️ Naskah Narasi Bicara:**
+  > *"Permasalahan yang menjadi perhatian bukan sekadar bahwa booster pack dapat dibeli dengan mudah, melainkan kombinasi harga murah, kemasan acak, dan adanya pasar sekunder bernilai tinggi—sebagaimana diilustrasikan pada Gambar 1.3 di mana kartu bersertifikat PSA 10 bernilai jutaan rupiah—menciptakan dorongan belanja berulang secara spontan tanpa perencanaan anggaran, atau impulsive buying.*  
+  > *Dari penelitian terdahulu, terdapat tiga kesenjangan (research gap): pertama, pengaruh motivasi hedonis masih menunjukkan inkonsistensi moderasi kontrol diri; kedua, teori pseudo-set framing kelengkapan belum pernah diuji empiris pada kartu fisik bernomor seri di Indonesia; dan ketiga pada motif spekulasi, penelitian terdahulu seperti Aryadi & Lingga baru meneliti motif investasi pada transaksi terencana di komunitas, belum pernah ada yang menguji apakah ekspektasi untung arbitrase PSA 10 justru memicu belanja impulsif di kasir ritel serta ketiadaan uji kontrol diri. Di sinilah letak kebaruan penelitian saya, yaitu mengintegrasikan ketiga dorongan tersebut dalam satu model dengan Self-Control sebagai variabel moderasi."*
+* **🛡️ Catatan Penting Presenter:**
+  - Tekankan bahwa Gambar 1.3 adalah ilustrasi pasar sekunder, bukan data sekunder yang diolah.
+  - Kalimat transisi: *"Untuk membedah masalah dan mengisi celah riset tersebut, saya menyusun landasan teoretis berikut."*
 
-Latihan 3 putaran malam ini dengan timer HP: putaran 1 boleh baca naskah; putaran 2 hanya intip poin; putaran 3 tanpa teks (rekam suaramu dan dengarkan — kecepatan bicara ideal ±130 kata/menit).
+---
+
+### 🔹 SLIDE 4 — TINJAUAN PUSTAKA: TEORI & VARIABEL (Target: 1 Menit 30 Detik)
+
+* **Tujuan Slide:** Menunjukkan penguasaan landasan teori (Grand & Supporting Theories) serta pembakuan 5 variabel penelitian.
+* **Komposisi Visual Slide:**
+  * **Header Teori:**
+    - **Grand Theory:** *Behavioral Finance* (Simon, 1955; Kahneman & Tversky, 1979; Shiller, 2000; Thaler & Shefrin, 1981) — membuktikan keputusan finansial individu tidak rasional murni (*Homo Economicus*), melainkan dipengaruhi bias keterbatasan kognitif (*bounded rationality*), ilusi kendali (*gambler's fallacy*), dan luapan afektif sesaat di etalase kasir.
+    - **3 Supporting Theories:**
+      1. *S-O-R Framework* (Mehrabian & Russell, 1974) — Stimulus kemasan etalase kasir ($S$) membangkitkan gairah afektif pembeli ($O$) $\rightarrow$ respons belanja impulsif tanpa rencana ($R$).
+      2. *Pseudo-Set Framing* (Barasz et al., 2017; Zeigarnik, 1927) — Pembingkaian seri bernomor memicu efek *Zeigarnik*, ketegangan slot album kosong yang memaksa penuntasan koleksi secara reaktif.
+      3. *Self-Regulation & Planner-Doer* (Baumeister, 2002; Thaler & Shefrin, 1981) — Kapasitas volisional (*planner*) sebagai rem mental untuk menahan godaan belanja sesaat (*doer*) dan menunda gratifikasi demi anggaran.
+  * **5 Kotak Variabel (Definisi Konseptual, Fenomena Kasir TCG, 4 Indikator & Skala Baku):**
+    - **$Y$ — Impulsive Buying:** Pembelian spontan tanpa rencana awal (*unplanned*), dipicu desakan emosi sesaat di kasir (IBTS Verplanken et al., 2001, 9 item).
+    - **$X_1$ — Hedonic Motivation:** Pencarian kenikmatan emosional, sensasi sensorik unboxing pack, dan pelarian stres (Babin et al., 1994, 8 item).
+    - **$X_2$ — Desire for Completeness:** Ketegangan kognitif melengkapi nomor urut kartu hingga genap utuh/master set (Barasz et al., 2017, 6 item).
+    - **$X_3$ — Speculative Motive:** Ekspektasi kenaikan harga, *capital gain*, dan arbitrase sertifikasi PSA 10 di pasar sekunder (Keynes, 1936; Shiller, 2000, 6 item).
+    - **$M$ — Self-Control:** Kapasitas regulasi diri volisional sebagai rem mental penahan godaan belanja demi disiplin anggaran (BSCS Tangney et al., 2004, 8 item).
+* **🗣️ Naskah Narasi Bicara:**
+  > *"Penelitian ini dibangun di atas Behavioral Finance sebagai Grand Theory, yang menegaskan bahwa keputusan finansial individu tidak rasional murni melainkan bias oleh faktor psikologis dan emosional di etalase kasir. Grand theory ini ditopang oleh 3 supporting theories yang terpadu: Teori S-O-R mengenai stimulus visual kemasan kasir, Teori Pseudo-Set Framing dari Barasz et al. mengenai ketegangan kognitif menuntaskan slot kosong album binder, serta Self-Regulation Theory dari Baumeister mengenai kapasitas volisional menahan dorongan belanja.*  
+  > *Berdasarkan landasan teori tersebut, penelitian ini mengoperasionalkan lima variabel dengan instrumen baku internasional: Y Impulsive Buying menggunakan skala IBTS dari Verplanken; tiga variabel independen yaitu X1 Hedonic Motivation (skala Babin et al.), X2 Desire for Completeness (skala Barasz et al.), X3 Speculative Motive (Keynes & Shiller); serta M Self-Control sebagai variabel moderasi menggunakan skala Brief Self-Control Scale dari Tangney et al."*
+* **🛡️ Catatan Penting Presenter:**
+  - Ingat alasan Grand Theory Keuangan Perilaku: karena kartu Pokémon kini telah mengalami *financialization* menjadi aset alternatif spekulatif.
+  - Kalimat transisi: *"Dari kajian teori dan temuan terdahulu, saya merumuskan model penelitian dan enam hipotesis berikut."*
+
+---
+
+### 🔹 SLIDE 5 — RISET TERDAHULU & MODEL PENELITIAN (Target: 1 Menit 40 Detik)
+
+* **Tujuan Slide:** Menghubungkan penelitian empiris terdahulu langsung ke model struktural MRA dan membacakan 6 hipotesis secara presisi.
+* **Komposisi Visual Slide:**
+  * **Bagian Atas — Tabel Ringkas Dasar Empiris:**
+    | Hubungan Model | Rujukan Empiris Kunci | Arah Hipotesis |
+    |---|---|---|
+    | $X_1 \rightarrow Y$ | Pranggabayu & Andjarwati (2022); Gong et al. (2024) | $H_1$ (+) Positif |
+    | $X_2 \rightarrow Y$ | Barasz et al. (2017); Dewi et al. (2026) | $H_2$ (+) Positif |
+    | $X_3 \rightarrow Y$ | Aryadi & Lingga (2024); Colline (2024) | $H_3$ (+) Positif |
+    | Moderasi $M$ | Artadita & Firmialy (2024); Lienardy & Panasea (2026) | $H_4, H_5, H_6$ (-) Memperlemah |
+  * **Bagian Bawah — Diagram Model TikZ & Kolom Kanan Terstruktur:**
+    - **Kolom Kiri:** Gambar 2.1 Model Rerangka Konseptual Penelitian (Diagram resmi naskah proposal).
+    - **Kolom Kanan Atas (6 Hipotesis Terarah):**
+      - $H_1$: Hedonic Motivation berpengaruh positif terhadap Impulsive Buying (+).
+      - $H_2$: Desire for Completeness berpengaruh positif terhadap Impulsive Buying (+).
+      - $H_3$: Speculative Motive berpengaruh positif terhadap Impulsive Buying (+).
+      - $H_4$: Self-Control memoderasi (memperlemah) pengaruh Hedonic Motivation (-).
+      - $H_5$: Self-Control memoderasi (memperlemah) pengaruh Desire for Completeness (-).
+      - $H_6$: Self-Control memoderasi (memperlemah) pengaruh Speculative Motive (-).
+    - **Kolom Kanan Bawah (Prosedur Hierarkis MRA 2-Tahap Aiken & West, 1991):**
+      - *Tahap 1 (Model 1 Baseline):* $Y = \alpha + \beta_1 X_1^* + \beta_2 X_2^* + \beta_3 X_3^* + \beta_4 M^* + e \rightarrow R_1^2$.
+      - *Tahap 2 (Model 2 Interaksi Penuh):* Model 1 $+ \beta_5(X_1^* \cdot M^*) + \beta_6(X_2^* \cdot M^*) + \beta_7(X_3^* \cdot M^*) + e \rightarrow R_2^2$.
+      - *Kriteria Uji Moderasi Murni:* Signifikansi lonjakan $\Delta R^2 = R_2^2 - R_1^2$ diuji via $F_{\text{change}}$ ($p < 0{,}05$), dengan koefisien $\beta_{5,6,7} < 0$ sebagai bukti efek memperlemah (*buffering*).
+* **🗣️ Naskah Narasi Bicara:**
+  > *"Berdasarkan sintesis riset empiris terdahulu, saya merumuskan model penelitian dengan enam hipotesis terarah. H1, H2, dan H3 menguji pengaruh langsung positif dari motivasi hedonis, hasrat kelengkapan koleksi, dan motif spekulasi terhadap pembelian impulsif. Sedangkan H4, H5, dan H6 menguji efek moderasi Self-Control yang dihipotesiskan memperlemah hubungan masing-masing variabel independen tersebut terhadap Impulsive Buying.*  
+  > *Pengujian dilakukan menggunakan Moderated Regression Analysis (MRA) dua-tahap secara hierarkis: Tahap 1 mengestimasi pengaruh aditif efek utama X1, X2, X3 serta memasukkan Self-Control sebagai baseline control aditif untuk mendapatkan R-Square Model 1. Kemudian pada Tahap 2, ketiga istilah perkalian interaksi dimasukkan. Dengan demikian, lonjakan Delta R-Square pada Tahap 2 murni mengisolasi kontribusi efek moderasi tanpa tercampur efek langsung kontrol diri, yang diuji signifikansinya menggunakan F-change."*
+* **🛡️ Catatan Penting Presenter:**
+  - **Pertanyaan Sidang Klasik:** *"Mengapa harus dua tahap, Arthur? Kenapa tidak langsung satu regresi saja?"*  
+    **Jawaban:** *"Jika langsung satu model, kita tidak bisa membuktikan apakah tambahan daya jelas model ($R^2$) berasal dari efek kontrol diri itu sendiri atau murni dari efek interaksinya. Prosedur 2-tahap Aiken & West (1991) menjamin bahwa $\Delta R^2$ murni mengukur kontribusi interaksi moderasi melalui uji $F_{\text{change}}$."*
+  - Kalimat transisi: *"Untuk menguji model dan keenam hipotesis ini secara ilmiah, rancangan metode penelitian disajikan pada slide ke-6."*
+
+---
+
+### 🔹 SLIDE 6 — METODE PENELITIAN & RANCANGAN ANALISIS DATA (Target: 2 Menit)
+
+* **Tujuan Slide:** Membuktikan kelayakan eksekusi teknis pengumpulan data dan ketepatan ekonometrika MRA OLS.
+* **Komposisi Visual Slide (4 Kuadran Eksekutif Ber-Micro Chunks):**
+  1. **Kuadran 1 — Desain Riset & Skala Pengukuran:**
+     - 3 Chip Metode: Kuantitatif Asosiatif Kausal, Survei Kros-Seksional (*Cross-Sectional*), Kuesioner *Google Forms* Daring.
+     - Visual Bar Skala Likert 5-Poin: `[1: STS]` `[2: TS]` `[3: N]` `[4: S]` `[5: SS]`.
+     - Keterangan: Skor komposit dihitung dari rerata butir per konstruk variabel (Ghozali, 2018).
+  2. **Kuadran 2 — Populasi, Kriteria & Kaidah Sampel Green (1991):**
+     - Populasi: Tak terbatas (*infinite*), *Purposive Sampling* (3 filter: WNI, usia $\ge 17$ tahun, pernah beli pack fisik 12 bulan terakhir).
+     - Kotak Rumus Green (1991): Uji-F Simultan ($50 + 8k = 106$) vs Uji-t Parsial ($104 + k = \mathbf{111\text{ Responden}}$).
+     - Target Sampel Eksekutif: **120 s.d. 150 responden** (Power $\ge 0{,}80$, Cohen $f^2=0{,}15$) + *Pilot Test* $N=30$.
+  3. **Kuadran 3 — Uji Kualitas Data & Asumsi Klasik:**
+     - 3 Checklist Uji: Validitas Pearson ($r_{\text{hitung}} > r_{\text{tabel}}$), Reliabilitas Cronbach's Alpha ($\alpha \ge 0{,}70$), Asumsi OLS (Normalitas K-S $> 0{,}05$, Multiko VIF $< 10$, Glejser $> 0{,}05$).
+     - Tameng Sidang: 🛡️ **Bebas Autokorelasi** karena data primer kros-seksional, bukan runtun waktu (*time-series*).
+  4. **Kuadran 4 — Ekonometrika MRA & Solusi Mean-Centering:**
+     - Kotak Emas: **Mean-Centering Mutlak (Aiken & West, 1991)**: $X_i^* = X_i - \bar{X}_i$ dan $M^* = M - \bar{M}$ untuk melumpuhkan multikolinearitas esensial.
+     - 3 Tolok Ukur: Uji-t parsial ($H_1\text{--}H_3 > 0$ & $H_4\text{--}H_6 < 0$), Uji kenaikan $\Delta R^2$ via $F_{\text{change}}$ ($p < 0{,}05$), dan *Simple Slopes Analysis* pada 3 level *Self-Control* ($-1\text{ SD}$, $\text{Mean}$, $+1\text{ SD}$).
+* **🗣️ Naskah Narasi Bicara:**
+  > *"Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain cross-sectional. Responden dipilih menggunakan teknik purposive sampling dengan kriteria WNI usia minimal 17 tahun dan pernah membeli booster pack fisik dalam setahun terakhir. Target sampel yang ditetapkan adalah 120 sampai 150 responden—memenuhi batas minimum 111 responden formula Green—didahului pilot test pada 30 responden untuk menguji kualitas kuesioner.*  
+  > *Untuk analisis data digunakan IBM SPSS dengan Moderated Regression Analysis berbasis OLS. Untuk mencegah multikolinearitas struktural antara variabel tunggal dan perkalian interaksinya, seluruh variabel independen dan moderator ditransformasikan dengan teknik mean-centering. Sebelum uji hipotesis dilakukan uji validitas, reliabilitas, dan uji asumsi klasik. Selanjutnya dilakukan pengujian signifikansi parsial uji t, uji F, perubahan nilai R-Square, serta simple slopes."*
+* **🛡️ Catatan Penting Presenter:**
+  - Sebutkan istilah **Mean-Centering** dengan tegas. Ini adalah jawaban mutlak jika ditanya soal multikolinearitas perkalian moderasi.
+  - Kalimat transisi: *"Sebagai rangkuman akhir, kontribusi dan simpulan rancangan proposal ini disajikan pada slide penutup."*
+
+---
+
+### 🔹 SLIDE 7 — KESIMPULAN RANCANGAN & PENUTUP (Target: 40 Detik)
+
+* **Tujuan Slide:** Menutup presentasi dengan percaya diri, menyampaikan 2 kontribusi nyata, dan membuka sesi tanya jawab.
+* **Komposisi Visual Slide:**
+  * **Inti Rancangan:** Pengujian $X_1, X_2, X_3 \rightarrow Y$ dengan moderasi $M$ pada pasar komoditas alternatif Indonesia.
+  * **2 Kontribusi Riset:**
+    1. **Kontribusi Teoretis:** Memperkaya khazanah literatur *Behavioral Finance* pada aset koleksi hobi fisik bernilai pasar sekunder nyata di Indonesia, serta memvalidasi peran kontrol diri sebagai rem volisional kognitif.
+    2. **Kontribusi Praktis:** Menjadi dasar edukasi literasi keuangan dan pengendalian diri bagi komunitas kolektor generasi muda agar terhindar dari perilaku konsumtif dan belanja impulsif tanpa perencanaan anggaran.
+  * **Banner Formal:** Sesi Tanya Jawab (Q&A) Dibuka | Arthur Reezan (312023002) | FEB UKRIDA 2026.
+* **🗣️ Naskah Narasi Bicara:**
+  > *"Sebagai penutup, penelitian ini dirancang untuk menguji bagaimana motivasi hedonis, hasrat kelengkapan koleksi, dan motif spekulasi memicu pembelian impulsif booster pack Pokémon TCG, serta bagaimana Self-Control berperan sebagai variabel moderasi.*  
+  > *Penelitian ini diharapkan memberikan kontribusi teoretis bagi pengayaan Behavioral Finance pada komoditas hobi, sekaligus kontribusi praktis dalam mengedukasi literasi keuangan generasi muda. Demikian pemaparan proposal penelitian saya. Saya sangat mengharapkan kritik, saran, dan masukan dari Bapak dan Ibu dosen penguji untuk penyempurnaan riset ini. Terima kasih."*
+* **🛡️ Catatan Penting Presenter:**
+  - Ucapkan terima kasih dengan senyum, tatap dewan penguji dan pembimbing, lalu berdiri tegak dan siap membuka buku catatan/proposal fisik.
+
+---
+
+*Dokumen ini merupakan panduan tunggal resmi (Single Source of Truth) untuk pembawaan presentasi Seminar Proposal 7 Slide Arthur Reezan.* 🚀
