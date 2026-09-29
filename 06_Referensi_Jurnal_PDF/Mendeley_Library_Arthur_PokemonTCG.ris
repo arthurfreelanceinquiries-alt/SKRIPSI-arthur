@@ -200,20 +200,22 @@ ID  - baur2018bitcoin
 ER  - 
 
 TY  - JOUR
-TI  - Impulse Buying: Modeling Its Precursors
-AU  - Beatty, Sharon E.
-AU  - Ferrell, M. Elizabeth
-PY  - 1998
-Y1  - 1998
-JO  - Journal of Retailing
-JF  - Journal of Retailing
-VL  - 74
-IS  - 2
-SP  - 169
-EP  - 191
-DO  - 10.1016/S0022-4359(99)80092-X
-UR  - https://doi.org/10.1016/S0022-4359(99)80092-X
-ID  - beatty1998impulse
+TI  - Impulse Buying: A Meta-Analytic Review
+AU  - Iyer, Gopalkrishnan R.
+AU  - Blut, Markus
+AU  - Xiao, Sarah Hong
+AU  - Grewal, Dhruv
+PY  - 2020
+Y1  - 2020
+JO  - Journal of the Academy of Marketing Science
+JF  - Journal of the Academy of Marketing Science
+VL  - 48
+IS  - 3
+SP  - 384
+EP  - 404
+DO  - 10.1007/s11747-019-00670-w
+UR  - https://doi.org/10.1007/s11747-019-00670-w
+ID  - iyer2020impulse
 ER  - 
 
 TY  - BOOK
@@ -473,20 +475,18 @@ ID  - lienardy2026role
 ER  - 
 
 TY  - JOUR
-TI  - Consumption values and relationships: segmenting the market for frequency programs
-AU  - Long, Mary M.
-AU  - Schiffman, Leon G.
-PY  - 2000
-Y1  - 2000
-JO  - Journal of Consumer Marketing
-JF  - Journal of Consumer Marketing
-VL  - 17
-IS  - 3
-SP  - 214
-EP  - 229
-DO  - 10.1108/07363760010329201
-UR  - https://doi.org/10.1108/07363760010329201
-ID  - long2000consuming
+TI  - The Effect of Blind Box Product Uncertainty on Consumers' Purchase Intention: The Mediating Role of Perceived Value and the Moderating Role of Purchase Intention
+AU  - Zhang, Yi
+AU  - Zhang, Tianqi
+PY  - 2022
+Y1  - 2022
+JO  - Frontiers in Psychology
+JF  - Frontiers in Psychology
+VL  - 13
+SP  - 946527
+DO  - 10.3389/fpsyg.2022.946527
+UR  - https://doi.org/10.3389/fpsyg.2022.946527
+ID  - zhang2022uncertainty
 ER  - 
 
 TY  - BOOK
@@ -502,20 +502,21 @@ ID  - mehrabian1974approach
 ER  - 
 
 TY  - JOUR
-TI  - If I Touch It I Have to Have It: Individual and Environmental Influences on Impulse Purchasing
-AU  - Peck, Joann
-AU  - Childers, Terry L.
-PY  - 2006
-Y1  - 2006
-JO  - Journal of Business Research
-JF  - Journal of Business Research
-VL  - 59
-IS  - 6
-SP  - 765
-EP  - 769
-DO  - 10.1016/j.jbusres.2006.01.014
-UR  - https://doi.org/10.1016/j.jbusres.2006.01.014
-ID  - peck2006if
+TI  - Impulse Buying Tendency in Live-Stream Commerce: The Role of Viewing Frequency and Anticipated Emotions Influencing Scarcity-Induced Purchase Decision
+AU  - Qu, Yi
+AU  - Khan, Jashim
+AU  - Su, Yuyang
+AU  - Tong, Jiao
+AU  - Zhao, Shuo
+PY  - 2023
+Y1  - 2023
+JO  - Journal of Retailing and Consumer Services
+JF  - Journal of Retailing and Consumer Services
+VL  - 75
+SP  - 103534
+DO  - 10.1016/j.jretconser.2023.103534
+UR  - https://doi.org/10.1016/j.jretconser.2023.103534
+ID  - qu2023impulse
 ER  - 
 
 TY  - JOUR
@@ -620,20 +621,21 @@ ID  - simon1955behavioral
 ER  - 
 
 TY  - JOUR
-TI  - Agents of change: how young consumers are changing the world of marketing
-AU  - Spero, Ian
-AU  - Stone, Merlin
-PY  - 2004
-Y1  - 2004
-JO  - Qualitative Market Research: An International Journal
-JF  - Qualitative Market Research: An International Journal
-VL  - 7
+TI  - The State of Online Impulse-Buying Research: A Literature Analysis
+AU  - Chan, Tommy K. H.
+AU  - Cheung, Christy M. K.
+AU  - Lee, Zach W. Y.
+PY  - 2017
+Y1  - 2017
+JO  - Information & Management
+JF  - Information & Management
+VL  - 54
 IS  - 2
-SP  - 153
-EP  - 159
-DO  - 10.1108/13522750410530057
-UR  - https://doi.org/10.1108/13522750410530057
-ID  - spero2004approach
+SP  - 204
+EP  - 217
+DO  - 10.1016/j.im.2016.06.001
+UR  - https://doi.org/10.1016/j.im.2016.06.001
+ID  - chan2017state
 ER  - 
 
 TY  - RPRT

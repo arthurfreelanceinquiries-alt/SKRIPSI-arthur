@@ -1499,54 +1499,54 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         ("DAFTAR PUSTAKA", "30")
     ]
 
-    # C-LOT-1: angka = halaman cetak PDF 47 hlm (settled, modular 23 Sep 2026:
+    # C-LOT-1: angka = halaman cetak PDF 48 hlm (settled, modular 23 Sep 2026:
     # 6 lembar formal keluar; frontmatter = Cover i + TOC ii-iii + LOT iv + LOF v).
     toc_items_full = [
         ("DAFTAR TABEL", "iv"),
         ("DAFTAR GAMBAR", "v"),
         ("BAB 1 PENDAHULUAN", "1"),
         ("  1.1 Latar Belakang Penelitian", "1"),
-        ("  1.2 Perumusan Masalah", "8"),
-        ("  1.3 Tujuan Penelitian", "8"),
-        ("  1.4 Manfaat Penelitian", "9"),
-        ("      1.4.1 Manfaat Teoretis", "9"),
-        ("      1.4.2 Manfaat Praktis", "9"),
-        ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "11"),
-        ("  2.1 Landasan Teori", "11"),
-        ("      2.1.1 Grand Theory: Keuangan Perilaku (Behavioral Finance)", "11"),
-        ("      2.1.2 Supporting Theory: Teori Stimulus-Organism-Response (S-O-R)", "11"),
-        ("      2.1.3 Supporting Theory: Psikologi Kolektor dan Collection-Goal Tipping Point Effect", "12"),
-        ("      2.1.4 Supporting Theory: Teori Regulasi Diri (Self-Regulation Theory)", "12"),
-        ("  2.2 Kajian Variabel Penelitian", "12"),
-        ("      2.2.1 Variabel Dependen (Y): Impulsive Buying (Pembelian Impulsif)", "12"),
-        ("      2.2.2 Variabel Independen (X1): Hedonic Motivation (Motivasi Hedonis)", "13"),
-        ("      2.2.3 Variabel Independen (X2): Desire for Completeness (Hasrat Kelengkapan Koleksi)", "13"),
-        ("      2.2.4 Variabel Independen (X3): Speculative Motive (Motif Spekulasi Finansial)", "13"),
-        ("      2.2.5 Variabel Moderasi (M): Self-Control (Kontrol Diri)", "14"),
-        ("  2.3 Penelitian Sebelumnya", "14"),
-        ("  2.4 Pengembangan Hipotesis", "17"),
-        ("      2.4.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying", "17"),
-        ("      2.4.2 Pengaruh Desire for Completeness terhadap Impulsive Buying", "17"),
-        ("      2.4.3 Pengaruh Speculative Motive terhadap Impulsive Buying", "18"),
-        ("      2.4.4 Pengaruh Moderasi Self-Control terhadap Hubungan Hedonic Motivation dan Impulsive Buying", "19"),
-        ("      2.4.5 Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness dan Impulsive Buying", "20"),
-        ("      2.4.6 Pengaruh Moderasi Self-Control terhadap Hubungan Speculative Motive dan Impulsive Buying", "20"),
-        ("  2.5 Rerangka Penelitian", "21"),
-        ("BAB 3 METODE PENELITIAN", "22"),
-        ("  3.1 Jenis dan Sumber Data", "22"),
-        ("      3.1.1 Batasan Penelitian dan Ruang Lingkup Operasional", "22"),
-        ("  3.2 Populasi dan Sampel", "23"),
-        ("      3.2.1 Populasi dan Identifikasi Sumber Komunitas", "23"),
-        ("      3.2.2 Sampel dan Justifikasi Kriteria Inklusi", "24"),
-        ("      3.2.3 Penentuan Ukuran Sampel", "25"),
-        ("      3.2.4 Justifikasi Komparatif Pemilihan Teknik Sampling", "25"),
-        ("  3.3 Model Penelitian", "26"),
-        ("  3.4 Operasionalisasi Variabel", "27"),
-        ("  3.5 Metode Analisis Data", "32"),
-        ("      3.5.1 Justifikasi Komparatif Pemilihan Metode Analisis", "32"),
-        ("  3.6 Diagram Alur Penelitian", "34"),
-        ("  3.7 Jadwal Pelaksanaan Penelitian", "36"),
-        ("DAFTAR PUSTAKA", "38")
+        ("  1.2 Perumusan Masalah", "9"),
+        ("  1.3 Tujuan Penelitian", "9"),
+        ("  1.4 Manfaat Penelitian", "10"),
+        ("      1.4.1 Manfaat Teoretis", "10"),
+        ("      1.4.2 Manfaat Praktis", "10"),
+        ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "12"),
+        ("  2.1 Landasan Teori", "12"),
+        ("      2.1.1 Landasan Teoretis: Pendekatan Keuangan Perilaku (Behavioral Finance)", "12"),
+        ("      2.1.2 Teori Stimulus-Organism-Response (S-O-R)", "12"),
+        ("      2.1.3 Psikologi Kolektor dan Collection-Goal Tipping Point Effect", "13"),
+        ("      2.1.4 Teori Regulasi Diri (Self-Regulation Theory)", "13"),
+        ("  2.2 Kajian Variabel Penelitian", "13"),
+        ("      2.2.1 Variabel Dependen (Y): Impulsive Buying (Pembelian Impulsif)", "13"),
+        ("      2.2.2 Variabel Independen (X1): Hedonic Motivation (Motivasi Hedonis)", "14"),
+        ("      2.2.3 Variabel Independen (X2): Desire for Completeness (Hasrat Kelengkapan Koleksi)", "14"),
+        ("      2.2.4 Variabel Independen (X3): Speculative Motive (Motif Spekulasi Finansial)", "14"),
+        ("      2.2.5 Variabel Moderasi (M): Self-Control (Kontrol Diri)", "15"),
+        ("  2.3 Penelitian Sebelumnya", "15"),
+        ("  2.4 Pengembangan Hipotesis", "18"),
+        ("      2.4.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying", "18"),
+        ("      2.4.2 Pengaruh Desire for Completeness terhadap Impulsive Buying", "18"),
+        ("      2.4.3 Pengaruh Speculative Motive terhadap Impulsive Buying", "19"),
+        ("      2.4.4 Pengaruh Moderasi Self-Control terhadap Hubungan Hedonic Motivation dan Impulsive Buying", "20"),
+        ("      2.4.5 Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness dan Impulsive Buying", "21"),
+        ("      2.4.6 Pengaruh Moderasi Self-Control terhadap Hubungan Speculative Motive dan Impulsive Buying", "21"),
+        ("  2.5 Rerangka Penelitian", "22"),
+        ("BAB 3 METODE PENELITIAN", "23"),
+        ("  3.1 Jenis dan Sumber Data", "23"),
+        ("      3.1.1 Batasan Penelitian dan Ruang Lingkup Operasional", "23"),
+        ("  3.2 Populasi dan Sampel", "24"),
+        ("      3.2.1 Populasi dan Identifikasi Sumber Komunitas", "24"),
+        ("      3.2.2 Sampel dan Justifikasi Kriteria Inklusi", "25"),
+        ("      3.2.3 Penentuan Ukuran Sampel", "26"),
+        ("      3.2.4 Justifikasi Komparatif Pemilihan Teknik Sampling", "26"),
+        ("  3.3 Model Penelitian", "27"),
+        ("  3.4 Operasionalisasi Variabel", "28"),
+        ("  3.5 Metode Analisis Data", "33"),
+        ("      3.5.1 Justifikasi Komparatif Pemilihan Metode Analisis", "33"),
+        ("  3.6 Diagram Alur Penelitian", "35"),
+        ("  3.7 Jadwal Pelaksanaan Penelitian", "37"),
+        ("DAFTAR PUSTAKA", "39")
     ]
 
     toc_items = toc_items_nobab3 if skip_chapter3 else toc_items_full
@@ -1594,11 +1594,11 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "16")
     ]
     lot_items_full = [
-        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian", "6"),
-        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "14"),
-        ("Tabel 3.1", "Skala Pengukuran Likert 5 Poin", "22"),
-        ("Tabel 3.2", "Operasionalisasi Variabel Penelitian", "28"),
-        ("Tabel 3.3", "Jadwal Pelaksanaan Kegiatan Penelitian (Tahun 2026)", "37")
+        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian", "7"),
+        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "15"),
+        ("Tabel 3.1", "Skala Pengukuran Likert 5 Poin", "23"),
+        ("Tabel 3.2", "Operasionalisasi Variabel Penelitian", "29"),
+        ("Tabel 3.3", "Jadwal Pelaksanaan Kegiatan Penelitian (Tahun 2026)", "38")
     ]
     lot_items = lot_items_nobab3 if skip_chapter3 else lot_items_full
     for tab_num, tab_title, tab_page in lot_items:
@@ -1634,8 +1634,8 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         ("Gambar 1.1", "Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa", "1"),
         ("Gambar 1.2", "Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024", "2"),
         ("Gambar 1.3", "Disparitas Harga Pasar Sekunder Kartu Pokémon Mentah (Ungraded) vs. Bersertifikasi PSA 10 Gem Mint Seri Shining Fates", "4"),
-        ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "21"),
-        ("Gambar 3.1", "Diagram Alur Pelaksanaan Penelitian", "35")
+        ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "22"),
+        ("Gambar 3.1", "Diagram Alur Pelaksanaan Penelitian", "36")
     ]
     lof_items = lof_items_nobab3 if skip_chapter3 else lof_items_full
     for fig_num, fig_title, fig_page in lof_items:

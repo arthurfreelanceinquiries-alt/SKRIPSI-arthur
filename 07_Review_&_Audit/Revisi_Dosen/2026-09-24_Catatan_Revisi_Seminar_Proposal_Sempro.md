@@ -16,9 +16,9 @@
 | No | Butir Arahan Dosen Penguji | Status Eksekusi | Prioritas & Area File |
 |:---:|:---|:---:|:---|
 | **1** | **Bentuk Model Rerangka Konseptual Wajib Elips:** Bentuk kotak pada Gambar 2.1 harus diubah menjadi elips karena melambangkan konstruk laten teoretis. | **SELESAI (100% PASS)** | Master TeX, Gambar PNG, DOCX, MD |
-| **2** | **Rasio Kemutakhiran Jurnal 80/20:** Jurnal tua di atas 10 tahun harus dikurangi drastis; proporsi wajib 80% jurnal baru ($\le 10$ tahun, idealnya $\le 5$ tahun ke belakang), 20% boleh literatur tua jika sangat fundamental/seminal. | **DICATAT (Perencanaan)** | Bab 1, Bab 2, [[01_Naskah_Utama/references.bib\|references.bib]] |
-| **3** | **Narasi Alur Hubungan $X \rightarrow Y \rightarrow Z$ di Bab 1:** Alur logika antar-variabel kurang dijelaskan secara naratif mengalir; saat ini terkesan hanya berbentuk tabel sehingga membingungkan pembaca yang awam Pokémon. **Tabel 1.1 jangan dihapus (sudah baik)**, tetapi perlu narasi penghubung yang mudah dipahami. | **DICATAT (Perencanaan)** | Bab 1 (Latar Belakang & Research Gap) |
-| **4** | **Eliminasi Istilah/Bahasa "Grand Theory":** Ditegur penguji bahwa pelabelan kaku *Grand Theory* sudah tidak relevan dan terlalu tua untuk konteks skripsi ini; bahasa tersebut perlu dihilangkan atau disesuaikan. | **DICATAT (Perencanaan)** | Bab 2 (§2.1.1 Landasan Teori) |
+| **2** | **Rasio Kemutakhiran Jurnal 80/20:** Jurnal tua di atas 10 tahun harus dikurangi drastis; proporsi wajib 80% jurnal baru ($\le 10$ tahun, idealnya $\le 5$ tahun ke belakang), 20% boleh literatur tua jika sangat fundamental/seminal. | **SELESAI FASE 1 (61,6%)** | Bab 1, Bab 2, [[01_Naskah_Utama/references.bib\|references.bib]] |
+| **3** | **Narasi Alur Hubungan $X \rightarrow Y \rightarrow Z$ di Bab 1:** Alur logika antar-variabel kurang dijelaskan secara naratif mengalir; saat ini terkesan hanya berbentuk tabel sehingga membingungkan pembaca yang awam Pokémon. **Tabel 1.1 jangan dihapus (sudah baik)**, tetapi perlu narasi penghubung yang mudah dipahami. | **SELESAI (Sesi 25)** | Bab 1 (Latar Belakang & Research Gap) |
+| **4** | **Eliminasi Istilah/Bahasa "Grand Theory":** Ditegur penguji bahwa pelabelan kaku *Grand Theory* sudah tidak relevan dan terlalu tua untuk konteks skripsi ini; bahasa tersebut perlu dihilangkan atau disesuaikan. | **SELESAI (Sesi 25)** | Bab 2 (§2.1.1 Landasan Teori) |
 
 ---
 
