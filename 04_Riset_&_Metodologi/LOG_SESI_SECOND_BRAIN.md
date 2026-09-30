@@ -5,6 +5,50 @@
 > - **Masalah yang Diselesaikan:** Menghilangkan amnesia progres; mendokumentasikan alasan di balik setiap perubahan naskah atau penambahan fitur agar selalu siap dipertanggungjawabkan saat sidang.
 > - **Keputusan/Output:** Diperbarui secara otomatis oleh asisten di setiap akhir sesi kerja.
 
+---
+
+## 📅 Sesi 30 September 2026 (Sesi 38): Overhaul Paritas Tipografi Miring (Italic) Lintas Format, Penyempurnaan Rerangka Penelitian Bus Sentral (Gambar 2.1), Penetapan Inviolable Rule Tipografi Miring, & Penambahan Gate G8
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Overhaul paritas tipografi miring (*italic*) PDF vs DOCX, penyempurnaan visual rerangka penelitian Bus Sentral (Gambar 2.1), penerbitan *Inviolable Rule* tipografi miring lintas format, dan penambahan gerbang otomatis Gate G8.
+> - **Masalah yang Diselesaikan:** Istilah asing (*blind pack*, *waifu*, dll.) tercetak miring di PDF namun tegak di DOCX akibat bug parser Word; diagram rerangka moderasi bertabrakan; belum ada gerbang pengujian paritas italic otomatis.
+> - **Keputusan/Output:** Tokenizer AST `build_proposal_word.py` dioverhaul (paritas italic 100.00% PASS); Rerangka Gambar 2.1 disempurnakan ke arsitektur Bus Sentral (Option 3); Inviolable Rule [[.agents/rules/mandatory_cross_format_typography_and_italic_parity.md]] diterbitkan; Gate G8 (`verify_italic_parity.py`) resmi ditambahkan ke `run_thesis_graph.py` (11/11 PASS mutlak); Keputusan Kanonis [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md|D32]] dicatat.
+
+* **Fokus Pekerjaan:**
+  - **Audit & Penyelidikan Mendalam Isu Tipografi Miring (PDF vs DOCX):**
+    - Mengidentifikasi akar masalah fatal di mana istilah asing (*blind pack*, *booster pack*, *waifu*, *SAR*, *SR*, *UR*) miring di PDF namun tegak di DOCX.
+    - Menemukan penyebab utama: parser bodi naif di `build_proposal_word.py` yang melucuti asteris, pengabaian markdown runs di sel tabel APA 7th, pemotongan paragraf oleh regex *image fallback*, dan pengubahan global *and* menjadi *dan* pada judul berbahasa Inggris.
+  - **Overhaul Total Generator Word (`build_proposal_word.py`):**
+    - Membangun AST tokenizer terproteksi token statistik (`___PROT_%d___`) pada `parse_markdown_runs` untuk memproses `***bold italic***`, `**bold**`, dan `*italic*` secara independen.
+    - Menghubungkan seluruh tabel (Tabel 2.1, 2.2, 3.1, 3.2) ke tokenizer markdown agar seluruh sel berformat miring presisi.
+    - Memperbaiki penanganan URL Daftar Pustaka dan membatasi regex sitasi penulis hanya pada konteks berkurung tahun.
+  - **Penyempurnaan Rerangka Penelitian (Gambar 2.1):**
+    - Merancang ulang diagram rerangka di `Proposal_Arthur_PokemonTCG.tex` menggunakan **Arsitektur Bus Sentral (Option 3)** dengan batang vertikal putus-putus (*dashed trunk*) di $x=5.75$, titik konektor rapi, dan label terpisah (`H4 (-)`, `H5 (-)`, `H6 (-)`).
+    - Merender ulang gambar beresolusi 300 DPI ke `01_Naskah_Utama/images/gambar_rerangka_penelitian.png` dan seluruh folder presentasi.
+  - **Penerbitan Inviolable Rule & Gerbang Kualitas Pemblokir (Gate G8):**
+    - Menerbitkan rule mengikat: [[.agents/rules/mandatory_cross_format_typography_and_italic_parity.md]].
+    - Memperbarui [[.agents/rules/mandatory_thesis_sync_and_quality.md]] dengan klausul Paritas Tipografi Miring Mutlak.
+    - Membuat skrip audit otomatis [[execution/verify_italic_parity.py]] (menguji 249 ekspresi miring LaTeX unik $\rightarrow$ 100.00% PASS terkonfirmasi di DOCX).
+    - Mendaftarkan skrip sebagai **Gerbang G8** resmi pada [[execution/run_thesis_graph.py]] (Orkestrator kini menguji 11 gerbang: 11 PASS / 0 FAIL / 0 SKIP).
+    - Mencatat Keputusan Kanonis **D32** pada [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]].
+* **Catatan Penting untuk Agenda Sesi Berikutnya (Sesi 39):**
+  1. **Perbedaan Ukuran Font Sitasi di Sel Tabel (Tabel 3.1):** Menyelaraskan ukuran font hyperlink sitasi (khususnya `Colline, 2024` di kolom Operasionalisasi Variabel yang melonjak menjadi 12pt) agar seragam berukuran 9pt/9.5pt mengikuti gaya teks tabel.
+  2. **Tinjauan & Restrukturisasi Format Hipotesis:** Meninjau format penulisan bagian Pengembangan Hipotesis (H1–H6) di Bab 2 sesuai kaidah dan preferensi yang dikehendaki pengguna.
+* **File yang Diperbarui:**
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]] (Gambar 2.1 Bus Sentral & perbaikan nested emph)
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]] (regenerasi penuh berparitas miring 100%)
+  - [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]] (sinkronisasi dari master TeX)
+  - [[01_Naskah_Utama/images/gambar_rerangka_penelitian.png]] (render 300 DPI master baru)
+  - [[execution/build_proposal_word.py]] (overhaul AST tokenizer & tabel)
+  - [[execution/verify_italic_parity.py]] (skrip verifikasi baru)
+  - [[execution/run_thesis_graph.py]] (penambahan Gate G8)
+  - [[.agents/rules/mandatory_cross_format_typography_and_italic_parity.md]] (rule mengikat baru)
+  - [[.agents/rules/mandatory_thesis_sync_and_quality.md]] (pembaruan checklist pre-completion)
+  - [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] (perekaman Keputusan D32)
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] (log Sesi 38)
+
+---
+
 ## 📅 Sesi 30 September 2026 (Sesi 37): Audit Integritas Total 54 Berkas Sitasi/Jurnal, Eliminasi Kecemasan File Rusak 2 Lembar, & Penyusunan Ensiklopedia 54 Sitasi Lengkap (Bagian 22) pada Panduan Belajar
 
 * **Fokus Pekerjaan:**

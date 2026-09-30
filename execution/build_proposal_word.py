@@ -342,10 +342,12 @@ def clean_academic_text(text: str) -> str:
     text = re.sub(r'\\citep\{([^}]+)\}', r'(\1)', text)
     text = re.sub(r'\\citet\{([^}]+)\}', r'\1', text)
     text = re.sub(r'\\emph\{([^}]+)\}', r'*\1*', text)
+    text = re.sub(r'\\textit\{([^}]+)\}', r'*\1*', text)
+    text = re.sub(r'\\textbf\{([^}]+)\}', r'**\1**', text)
 
     # Standarisasi sitasi dua penulis bahasa Indonesia (menggunakan 'dan', bukan '&' atau 'and')
-    text = re.sub(r'\b([A-Z][a-z]+)\s+&\s+([A-Z][a-z]+)\b', r'\1 dan \2', text)
-    text = re.sub(r'\b([A-Z][a-z]+)\s+and\s+([A-Z][a-z]+)\b', r'\1 dan \2', text)
+    text = re.sub(r'\b([A-Z][a-z]+)\s+(?:&|and)\s+([A-Z][a-z]+)\s+(\(\d{4}\))', r'\1 dan \2 \3', text)
+    text = re.sub(r'\(([A-Z][a-z]+)\s+(?:&|and)\s+([A-Z][a-z]+),\s*(\d{4}[a-z]?)\)', r'(\1 dan \2, \3)', text)
     text = re.sub(r'\bet al\.?', r'*et al.*', text)
     text = text.replace('**et al.**', '*et al.*').replace('**et al.*', '*et al.*').replace('***et al.***', '*et al.*')
 
@@ -560,12 +562,12 @@ _CENTERED_RE = re.compile(
 
 
 def parse_markdown_runs(paragraph, text, base_size=Pt(12), base_bold=False):
-    """Parse inline bold (***text***, **text**, *text*) into proper Word runs with guaranteed pure black color.
+    """Parse inline bold/italic (***text***, **text**, *text*) into proper Word runs with guaranteed pure black color.
 
     Notasi terpusat (X1*/M*/X₁*/Xᵢ* — bintang = makna statistik mean-centered,
     BUKAN italic markdown) dilindungi via placeholder lalu dipulihkan sebagai
-    run italic. Tanpa ini bintang dimakan mentah oleh pemisah '*' (temuan
-    23 Sep 2026: DOCX kehilangan makna terpusat vs PDF).
+    run italic. Tokenizer membelah teks inline agar setiap kata yang diapit tanda bintang
+    diformat italic/bold secara presisi dan tidak tertelan menjadi teks polos.
     """
     if not text:
         return
@@ -580,40 +582,46 @@ def parse_markdown_runs(paragraph, text, base_size=Pt(12), base_bold=False):
         else:
             uni = 'M*'
         protected.append(uni)
-        return '\x00%d\x00' % (len(protected) - 1)
+        return '___PROT_%d___' % (len(protected) - 1)
 
     text = _CENTERED_RE.sub(_hold, text)
-    # Potong placeholder DULU (mengandung \x00 yang haram bagi lxml):
-    # tiap placeholder jadi run italic sendiri, sisanya ikut logika lama.
-    segments = re.split(r'(\x00\d+\x00)', text)
-    for seg in segments:
-        if not seg:
+
+    def _emit(piece, bold, italic):
+        if not piece:
+            return
+        parts = re.split(r'(___PROT_\d+___)', piece)
+        for part in parts:
+            if not part:
+                continue
+            m_p = re.fullmatch(r'___PROT_(\d+)___', part)
+            if m_p:
+                val = protected[int(m_p.group(1))]
+                run = paragraph.add_run(val)
+                make_run_pure_black(run, "Times New Roman", base_size,
+                                    bold=bold, italic=True)
+            else:
+                run = paragraph.add_run(part)
+                make_run_pure_black(run, "Times New Roman", base_size,
+                                    bold=bold, italic=italic)
+
+    token_pattern = re.compile(r'(\*\*\*.*?\*\*\*|\*\*.*?\*\*|\*[^*\n]+?\*)')
+    tokens = token_pattern.split(text)
+
+    for token in tokens:
+        if not token:
             continue
-        m_hold = re.fullmatch(r'\x00(\d+)\x00', seg)
-        if m_hold:
-            run = paragraph.add_run(protected[int(m_hold.group(1))])
-            make_run_pure_black(run, "Times New Roman", base_size,
-                                bold=True if base_bold else False, italic=True)
-            continue
-        token = seg
         if token.startswith('***') and token.endswith('***') and len(token) >= 6:
-            content = token[3:-3].replace('*', '')
-            run = paragraph.add_run(content)
-            make_run_pure_black(run, "Times New Roman", base_size, bold=True, italic=True)
+            _emit(token[3:-3], bold=True, italic=True)
         elif token.startswith('**') and token.endswith('**') and len(token) >= 4:
             content = token[2:-2]
-            sub_tokens = re.split(r'(\*.*?\*)', content)
+            sub_tokens = re.split(r'(\*[^*\n]+?\*)', content)
             for st in sub_tokens:
                 if not st:
                     continue
                 if st.startswith('*') and st.endswith('*') and len(st) >= 2:
-                    run = paragraph.add_run(st[1:-1].replace('*', ''))
-                    make_run_pure_black(run, "Times New Roman", base_size, bold=True, italic=True)
+                    _emit(st[1:-1], bold=True, italic=True)
                 else:
-                    clean_st = st.replace('*', '')
-                    if clean_st:
-                        run = paragraph.add_run(clean_st)
-                        make_run_pure_black(run, "Times New Roman", base_size, bold=True, italic=False)
+                    _emit(st, bold=True, italic=False)
         elif token.startswith('*') and token.endswith('*') and len(token) >= 2:
             content = token[1:-1]
             sub_tokens = re.split(r'(\*\*.*?\*\*)', content)
@@ -621,18 +629,12 @@ def parse_markdown_runs(paragraph, text, base_size=Pt(12), base_bold=False):
                 if not st:
                     continue
                 if st.startswith('**') and st.endswith('**') and len(st) >= 4:
-                    run = paragraph.add_run(st[2:-2].replace('*', ''))
-                    make_run_pure_black(run, "Times New Roman", base_size, bold=True, italic=True)
+                    _emit(st[2:-2], bold=True, italic=True)
                 else:
-                    clean_st = st.replace('*', '')
-                    if clean_st:
-                        run = paragraph.add_run(clean_st)
-                        make_run_pure_black(run, "Times New Roman", base_size, bold=True if base_bold else False, italic=True)
+                    _emit(st, bold=True if base_bold else False, italic=True)
         else:
-            clean_plain = token.replace('*', '')
-            if clean_plain:
-                run = paragraph.add_run(clean_plain)
-                make_run_pure_black(run, "Times New Roman", base_size, bold=True if base_bold else False, italic=False)
+            _emit(token, bold=True if base_bold else False, italic=False)
+
 
 
 def set_paragraph_outline_level(paragraph, level):
@@ -1941,7 +1943,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                 continue
 
             # Image detection for Gambar 1.1 (Media Franchise Ranking)
-            if ("gambar1_1_media_franchise_ranking" in line_str or "Gambar 1.1" in line_str) and not has_inserted_fig11:
+            if (line_str.startswith('**Gambar 1.1') or line_str.startswith('Gambar 1.1') or 'gambar1_1_media_franchise_ranking' in line_str) and not has_inserted_fig11:
                 has_inserted_fig11 = True
                 if img_fig11.exists():
                     p_img = doc.add_paragraph()
@@ -1976,7 +1978,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                 continue
 
             # Image detection for Gambar 1.2 (Pokemon Card Production Growth)
-            if ("gambar1_2_pokemon_tcg_production_growth" in line_str or "Gambar 1.2" in line_str) and not has_inserted_fig12:
+            if (line_str.startswith('**Gambar 1.2') or line_str.startswith('Gambar 1.2') or 'gambar1_2_pokemon_tcg_production_growth' in line_str) and not has_inserted_fig12:
                 has_inserted_fig12 = True
                 if img_fig12.exists():
                     p_img = doc.add_paragraph()
@@ -2011,7 +2013,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                 continue
 
             # Image detection for Gambar 1.3 (PSA Grading Price Disparity)
-            if ("gambar1_3_psa_grading_price_disparity" in line_str or "Gambar 1.3" in line_str) and not has_inserted_fig13:
+            if (line_str.startswith('**Gambar 1.3') or line_str.startswith('Gambar 1.3') or 'gambar1_3_psa_grading_price_disparity' in line_str) and not has_inserted_fig13:
                 has_inserted_fig13 = True
                 if img_fig13.exists():
                     p_img = doc.add_paragraph()
@@ -2535,28 +2537,9 @@ def build_apa7_table(doc, table_lines):
             p.paragraph_format.line_spacing = 1.15
             p.paragraph_format.first_line_indent = Cm(0)
 
-            # Parse bold / italics
+            # Parse bold / italics with complete markdown tokenizer & pure black enforcement
             clean_cell = clean_academic_text(cell_text)
-            tokens = re.split(r'(\*\*.*?\*\*|\*.*?\*)', clean_cell)
-            for token in tokens:
-                if not token:
-                    continue
-                if token.startswith('**') and token.endswith('**'):
-                    run = p.add_run(token[2:-2].replace('*', ''))
-                    run.font.bold = True
-                elif token.startswith('*') and token.endswith('*'):
-                    run = p.add_run(token[1:-1].replace('*', ''))
-                    run.font.italic = True
-                else:
-                    clean_st = token.replace('*', '')
-                    if clean_st:
-                        run = p.add_run(clean_st)
-                    else:
-                        continue
-                run.font.name = "Times New Roman"
-                run.font.size = Pt(9.5 if is_header else 9.0)
-                if is_header:
-                    run.font.bold = True
+            parse_markdown_runs(p, clean_cell, base_size=Pt(9.5 if is_header else 9.0), base_bold=is_header)
 
     apply_apa7_table_borders(tbl)
     p_sp = doc.add_paragraph()
@@ -2647,65 +2630,64 @@ def build_tabel_research_gap(doc):
     p_cap.paragraph_format.space_after = Pt(4)
     p_cap.paragraph_format.first_line_indent = Cm(0)
     p_cap.paragraph_format.keep_with_next = True
-    r_c = p_cap.add_run("Tabel 1.1: Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian")
-    make_run_pure_black(r_c, "Times New Roman", Pt(11), bold=True)
+    parse_markdown_runs(p_cap, "Tabel 1.1: Matriks Kesenjangan Penelitian Empiris (*Research Gap*) pada 7 Subjek Hubungan Model Penelitian", base_size=Pt(11), base_bold=True)
 
     headers = [
         "No",
         "Subjek Hubungan",
         "Kelompok Temuan Positif / Meredam",
         "Kelompok Temuan Negatif / Lemah",
-        "Inti Kesenjangan Kausal (The Why)"
+        "Inti Kesenjangan Kausal (*The Why*)"
     ]
     data = [
         (
             "1",
-            "X1 terhadap Y (Hedonic Motivation)",
-            "Arnold dan Reynolds (2003); Gültekin dan Özer (2012); Pranggabayu dan Andjarwati (2022); Gong et al. (2024); Tirtayasa et al. (2020); Zheng et al. (2019) (positif signifikan).",
+            "X1 terhadap Y (*Hedonic Motivation*)",
+            "Arnold dan Reynolds (2003); Gültekin dan Özer (2012); Pranggabayu dan Andjarwati (2022); Gong *et al.* (2024); Tirtayasa *et al.* (2020); Zheng *et al.* (2019) (positif signifikan).",
             "Batas Thaler (1985); Thaler dan Shefrin (1981) (tertahan anggaran; bukan temuan tidak signifikan pada kolektibel).",
             "Elastisitas anggaran dan orientasi utiliter vs afektif."
         ),
         (
             "2",
-            "X2 terhadap Y (Desire for Completeness)",
-            "Gao et al. (2014); Barasz et al. (2017); Dewi et al. (2026) (positif signifikan).",
-            "Long dan Schiffman (2000); Spero dan Stone (2004) (kolektor matang pilih single; bukan temuan tidak signifikan).",
+            "X2 terhadap Y (*Desire for Completeness*)",
+            "Gao *et al.* (2014); Barasz *et al.* (2017); Dewi *et al.* (2026) (positif signifikan).",
+            "Long dan Schiffman (2000); Spero dan Stone (2004) (kolektor matang pilih *single*; bukan temuan tidak signifikan).",
             "Kematangan kolektor dan kalkulasi probabilitas."
         ),
         (
             "3",
-            "X3 terhadap Y (Speculative Motive)",
-            "Baur et al. (2018); Aryadi dan Lingga (2024) (analogi partisipasi TCG); Colline (2024) (herding; kualitatif). Shiller (2000) sebagai grand theory.",
+            "X3 terhadap Y (*Speculative Motive*)",
+            "Baur *et al.* (2018); Aryadi dan Lingga (2024) (analogi partisipasi TCG); Colline (2024) (*herding*; kualitatif). Shiller (2000) sebagai grand theory.",
             "Barber dan Odean (2008); Fama (1970) (analogi saham; bukan temuan tidak signifikan pada kolektibel).",
             "Asimetri informasi dan ilusi kendali vs evaluasi risiko."
         ),
         (
             "4",
-            "M terhadap Y (Self-Control)",
-            "Baumeister (2002); Tangney et al. (2004); Vohs dan Faber (2007); Sultan et al. (2012) (negatif signifikan).",
-            "Hirschman (1982); Stern (1962) (cognitive bypass; bukan regresi).",
-            "Ego depletion saat stimulus intens."
+            "M terhadap Y (*Self-Control*)",
+            "Baumeister (2002); Tangney *et al.* (2004); Vohs dan Faber (2007); Sultan *et al.* (2012) (negatif signifikan).",
+            "Hirschman (1982); Stern (1962) (*cognitive bypass*; bukan regresi).",
+            "*Ego depletion* saat stimulus intens."
         ),
         (
             "5",
             "Moderasi M pada X1 terhadap Y",
-            "Lienardy dan Panasea (2026) (MRA H4 diterima); Katauke et al. (2023) (tak langsung).",
-            "Gagal-moderasi Apidana dan Kholifah (2022) (p=0,597) dan Artadita dan Firmialy (2024) (beta=0,092, n.s.) + regulatory failure.",
+            "Lienardy dan Panasea (2026) (MRA H4 diterima); Katauke *et al.* (2023) (tak langsung).",
+            "Gagal-moderasi Apidana dan Kholifah (2022) (p=0,597) dan Artadita dan Firmialy (2024) (beta=0,092, n.s.) + *regulatory failure*.",
             "Ambang intensitas hedonis vs kapasitas volisional."
         ),
         (
             "6",
             "Moderasi M pada X2 terhadap Y",
             "Parsial: Artadita dan Firmialy (2024) (kontrol kognitif; moderasi keseluruhan ditolak); Apidana dan Kholifah (2022) (adjacent).",
-            "Teori Belk (1995); Barasz et al. (2017) + Artadita dan Firmialy (2024) H3 ditolak.",
+            "Teori Belk (1995); Barasz *et al.* (2017) + Artadita dan Firmialy (2024) H3 ditolak.",
             "Keterikatan koleksi: kasual vs fanatik."
         ),
         (
             "7",
             "Moderasi M pada X3 terhadap Y",
-            "Tak langsung: Katauke et al. (2023) + Planner-Doer.",
+            "Tak langsung: Katauke *et al.* (2023) + *Planner-Doer*.",
             "Teoretis: Shiller (2000); Aryadi dan Lingga (2026) (bukan uji interaksi).",
-            "Herding dan FOMO saat euforia."
+            "*Herding* dan FOMO saat euforia."
         )
     ]
 
@@ -2724,8 +2706,8 @@ def build_tabel_research_gap(doc):
         p.paragraph_format.space_before = Pt(0)
         p.paragraph_format.space_after = Pt(0)
         p.paragraph_format.line_spacing = 1.15
-        r = p.add_run(h_text)
-        make_run_pure_black(r, "Times New Roman", Pt(9.5), bold=True)
+        clean_h = clean_academic_text(h_text)
+        parse_markdown_runs(p, clean_h, base_size=Pt(9.5), base_bold=True)
 
     # Data Rows
     for r_idx, row_vals in enumerate(data):
@@ -2749,8 +2731,7 @@ def build_tabel_research_gap(doc):
     p_src.paragraph_format.space_before = Pt(2)
     p_src.paragraph_format.space_after = Pt(12)
     p_src.paragraph_format.first_line_indent = Cm(0)
-    r_s = p_src.add_run("Sumber: Data diolah dari sintesis kajian literatur empiris terdahulu (2026).")
-    make_run_pure_black(r_s, "Times New Roman", Pt(9.0), italic=True)
+    parse_markdown_runs(p_src, "*Sumber: Data diolah dari sintesis kajian literatur empiris terdahulu (2026).*")
 
 
 def _clear_latent_tab_stops(paragraph):
@@ -3345,7 +3326,7 @@ def build_daftar_pustaka(doc, content):
             add_hyperlink(p, url, url, color="0563C1", underline=True)
             suffix = clean_bib[url_match.end():].strip()
             if suffix:
-                p.add_run(" " + suffix)
+                parse_markdown_runs(p, " " + suffix)
         else:
             parse_markdown_runs(p, clean_bib)
         built.append(p)

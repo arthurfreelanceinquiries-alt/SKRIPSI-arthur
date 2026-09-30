@@ -429,7 +429,7 @@ Penarikan sampel memakai teknik sampel bertujuan (*purposive sampling*). Respond
 - *Kapasitas Kognitif:* Memastikan kematangan kognitif responden dalam memahami butir-butir pernyataan kuesioner ilmiah secara objektif dan bertanggung jawab.
 - **Pernah Membeli *Booster Pack* Resmi Pokémon TCG Fisik Minimal 1 Kali dalam 12 Bulan Terakhir (Diutamakan 6 Bulan Terakhir untuk Kesegaran Recall):**
 - *Pengalaman Riil Konsumsi:* Kriteria ini memastikan responden benar-benar pernah mengalami proses pengambilan keputusan belanja di etalase toko dan merasakan sensasi membuka bungkus kartu (*pack opening thrill*).
-- *Bias Ingatan Retrospektif (\emph{Recall Bias*):} Rentang waktu 12 bulan (diutamakan 6 bulan) lazim dipakai dalam riset perilaku konsumen agar memori kognitif dan luapan afektif saat bertransaksi masih tersimpan segar dalam ingatan responden, sehingga data yang dilaporkan lebih dapat diandalkan.
+- **Bias Ingatan Retrospektif (*Recall Bias*):** Rentang waktu 12 bulan (diutamakan 6 bulan) lazim dipakai dalam riset perilaku konsumen agar memori kognitif dan luapan afektif saat bertransaksi masih tersimpan segar dalam ingatan responden, sehingga data yang dilaporkan lebih dapat diandalkan.
 - **Lolos *Screening Question* pada Bagian Awal Kuesioner:**
 - *Mekanisme Penyaringan Otomatis:* Untuk menjamin bahwa setiap responden benar-benar memenuhi seluruh kriteria inklusi di atas, kuesioner dirancang dengan tiga pertanyaan penyaring (*screening questions*) pada bagian pembuka, yaitu: (1) konfirmasi domisili atau aktivitas rutin di wilayah Jakarta Barat; (2) konfirmasi usia minimal 17 tahun; dan (3) konfirmasi pembelian *booster pack* resmi Pokémon TCG minimal satu kali dalam 12 bulan terakhir. Responden yang menjawab “Tidak” pada salah satu dari tiga pertanyaan penyaring tersebut secara otomatis diarahkan ke halaman penutup dengan ucapan terima kasih, dan data mereka tidak diikutsertakan dalam analisis. Mekanisme ini memastikan tidak ada pencampuran sampel yang tidak memenuhi syarat (*zero sample contamination*) tanpa membutuhkan proses penyaringan manual pascakoleksi data.
 - *Efisiensi Administratif:* Penyaringan di awal kuesioner (*front-end screening*) meminimalkan pengisian yang tidak sesuai kriteria dan melindungi integritas dataset akhir dari bias inklusi yang dapat melemahkan validitas kesimpulan penelitian.
@@ -514,26 +514,26 @@ Operasionalisasi variabel penelitian disajikan secara komprehensif pada Tabel 3.
 | | | Kognitif | Y5. Saya sering membeli *pack* lebih banyak dari yang semula saya niatkan. | Likert 1–5 |
 | | | Afektif | Y6. Saya sulit menahan hasrat berbelanja kartu Pokémon saat rilis seri baru. | Likert 1–5 |
 | **Hedonic Motivation ($X_1$)** | Motivasi belanja untuk kesenangan emosional dan sensasi petualangan (Arnold & Reynolds, 2003). | *Adventure* | X1.1. Membuka kemasan *booster pack* memberikan sensasi petualangan dan kejutan mendebarkan. | Likert 1–5 |
-| | | *Adventure* | X1.2. Saya menikmati sensasi penasaran terhadap kartu acak di dalam kemasan bungkus. | Likert 1–5 |
-| | | *Gratification* | X1.3. Membeli kartu Pokémon adalah cara saya memanjakan diri atau melepas penat stres. | Likert 1–5 |
-| | | *Gratification* | X1.4. Menemukan kartu dengan ilustrasi langka (*SAR*) membuat saya sangat bahagia. | Likert 1–5 |
+| | | *Gratification* | X1.2. Membeli kartu Pokémon adalah cara saya menghibur diri dan meredakan stres. | Likert 1–5 |
+| | | *Social* | X1.3. Berbelanja kartu Pokémon mempererat ikatan dan kebersamaan dengan sesama teman sehobi. | Likert 1–5 |
+| | | *Role* | X1.4. Saya menikmati berbelanja kartu Pokémon untuk dihadiahkan atau dimainkan bersama teman dan keluarga sehobi. | Likert 1–5 |
 | | | *Idea* | X1.5. Saya senang mengikuti tren rilis seri kartu Pokémon dan inovasi desain terbarunya. | Likert 1–5 |
-| **Desire for Completeness ($X_2$)** | Dorongan psikologis menuntaskan set koleksi akibat *Zeigarnik Effect* (Belk, 1995; Gao et al., 2014; Barasz et al., 2017). | *Cognitive Tension* | X2.1. Saya merasa tidak nyaman ketika album koleksi kartu Pokémon saya memiliki slot kosong. | Likert 1–5 |
-| | | *Drive for Closure* | X2.2. Saya terdorong untuk terus membeli *booster pack* agar dapat melengkapi seluruh kartu dalam satu seri. | Likert 1–5 |
+| **Desire for Completeness ($X_2$)** | Dorongan psikologis menuntaskan set koleksi akibat *Zeigarnik Effect* (Belk, 1995; Gao et al., 2014; Barasz et al., 2017). | *Cognitive Tension* | X2.1. Saya merasa tidak nyaman ketika album koleksi kartu Pokémon saya memiliki celah (*slot*) kosong. | Likert 1–5 |
+| | | *Drive for Closure* | X2.2. Hasrat melengkapi seluruh seri kartu dalam album *binder* mendorong saya untuk terus menambah koleksi. | Likert 1–5 |
 | | | *Cognitive Tension* | X2.3. Mengetahui ada kartu yang belum saya miliki dalam suatu seri membuat saya ingin segera membelinya. | Likert 1–5 |
 | | | *Wholeness* | X2.4. Melengkapi satu set penuh kartu Pokémon memberikan perasaan pencapaian dan kepuasan batin. | Likert 1–5 |
-| | | *Drive for Closure* | X2.5. Semakin sedikit kartu yang kurang dalam satu seri, semakin kuat desakan saya membeli *pack* baru. | Likert 1–5 |
-| **Speculative Motive ($X_3$)** | Ekspektasi memperoleh keuntungan finansial dari apresiasi harga di pasar sekunder (Shiller, 2000; Baur et al., 2018). | Ekspektasi Cuan | X3.1. Saya membeli *pack* dengan harapan menarik kartu langka bernilai jual tinggi. | Likert 1–5 |
-| | | Likuiditas | X3.2. Likuiditas pasar sekunder yang aktif mendorong saya membeli kartu sebagai aset berharga. | Likert 1–5 |
-| | | *Capital Gain* | X3.3. Saya memantau kenaikan harga pasar kartu langka untuk dijual kembali demi keuntungan. | Likert 1–5 |
-| | | Potensi Nilai | X3.4. Saya memandang modal membeli beberapa *pack* sebanding dengan potensi laba kartu langka. | Likert 1–5 |
-| | | *Grading Value* | X3.5. Saya tertarik dengan sertifikasi keaslian (*grading*) kartu demi menaikkan nilai investasi lelang. | Likert 1–5 |
-| **Self-Control ($M$)** | Kapasitas volisional menolak godaan belanja spontan dan menunda kepuasan sesaat (Tangney et al., 2004; Vohs & Faber, 2007; Sultan et al., 2012). | Tahan Godaan | M1. Saya mampu menolak godaan membeli barang menarik jika di luar perencanaan anggaran saya. | Likert 1–5 |
-| | | Non-Impulsif | M2. Saya terbiasa berpikir tenang dan mempertimbangkan dampak pengeluaran sebelum bertransaksi. | Likert 1–5 |
-| | | Tunda Kepuasan | M3. Saya mampu menahan diri dari kesenangan belanja saat ini demi menjaga tujuan keuangan masa depan. | Likert 1–5 |
-| | | Disiplin Diri | M4. Saya memiliki disiplin diri yang kuat untuk tidak membeli barang secara mendadak di kasir toko. | Likert 1–5 |
-| | | Kontrol Emosi | M5. Saya tidak mudah terhanyut oleh suasana hati atau kegembiraan sesaat dalam membelanjakan uang. | Likert 1–5 |
-| | | Taat Anggaran | M6. Saya secara konsisten mematuhi alokasi batas pengeluaran hobi yang telah saya rencanakan. | Likert 1–5 |
+| | | *Drive for Closure* | X2.5. Semakin sedikit kartu yang kurang dalam satu seri, semakin kuat desakan psikologis saya untuk menuntaskannya. | Likert 1–5 |
+| **Speculative Motive ($X_3$)** | Ekspektasi memperoleh keuntungan finansial dari apresiasi harga di pasar sekunder (Shiller, 2000; Baur et al., 2018; Colline, 2024). | Apresiasi Modal | X3.1. Saya membeli kartu dengan ekspektasi menarik kartu langka bernilai jual tinggi. | Likert 1–5 |
+| | | Likuiditas | X3.2. Saya yakin kartu Pokémon langka memiliki likuiditas tinggi sehingga mudah dan cepat dijual kembali menjadi uang tunai di pasar sekunder. | Likert 1–5 |
+| | | Tren Nilai | X3.3. Saya memandang kartu Pokémon langka sebagai aset alternatif yang nilainya dapat naik di masa depan. | Likert 1–5 |
+| | | Potensi Nilai | X3.4. Saya memandang biaya pembelian kartu sebanding dengan potensi apresiasi keuntungan di pasar sekunder. | Likert 1–5 |
+| | | *Grading Value* | X3.5. Saya tertarik dengan sertifikasi kondisi fisik dan keaslian (*grading*) kartu demi menaikkan nilai jual lelang di pasar sekunder. | Likert 1–5 |
+| **Self-Control ($M$)** | Kemampuan mengendalikan diri untuk menolak godaan belanja spontan dan menunda kepuasan sesaat (Tangney et al., 2004; Vohs & Faber, 2007; Sultan et al., 2012; Apidana & Kholifah, 2022; Lienardy & Panasea, 2026). | Tahan Godaan | M1. Saya mampu menolak godaan berbelanja jika barang tersebut berada di luar rencana anggaran saya. | Likert 1–5 |
+| | | Non-Impulsif | M2. Saya terbiasa berpikir tenang dan mempertimbangkan konsekuensi keuangan sebelum memutuskan bertransaksi. | Likert 1–5 |
+| | | Tunda Kepuasan | M3. Saya mampu menahan diri dari kesenangan belanja saat ini demi menjaga stabilitas keuangan masa depan. | Likert 1–5 |
+| | | Disiplin Diri | M4. Saya memiliki pengendalian diri yang kokoh untuk menahan dorongan membeli barang secara spontan saat melihat barang menarik. | Likert 1–5 |
+| | | Kontrol Emosi | M5. Saya tidak mudah terhanyut oleh emosi sesaat dalam membelanjakan uang pribadi. | Likert 1–5 |
+| | | Taat Anggaran | M6. Saya secara konsisten mematuhi alokasi batas anggaran pengeluaran hobi yang telah saya tetapkan. | Likert 1–5 |
 
 *Sumber: Diadaptasi dari instrumen penelitian terdahulu yang tervalidasi (2026).*
 

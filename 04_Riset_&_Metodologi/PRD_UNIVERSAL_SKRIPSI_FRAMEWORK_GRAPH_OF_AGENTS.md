@@ -208,9 +208,9 @@ Review bukti → ekspos ketidakpastian + alternatif → definisikan acceptance c
 - **Tools:** `build_proposal_word.py` (+pandoc), `build_proposal_nobab3_pdf.py` (xelatex→bibtex→xelatex×2), `sync_markdown_from_tex.py`, `compare_pdf_docx_fidelity.py`.
 - **DONE:** 2 DOCX + 2 PDF ter-build; §A8 PASS.
 
-### A8 — PARITY-ENFORCER (7 gerbang verifikasi — tidak bisa dinego)
+### A8 — PARITY-ENFORCER (8 gerbang verifikasi — tidak bisa dinego)
 
-Jalankan berurutan; 1 FAIL = BUILD BROKEN, dilarang ke pembimbing. (Dipetakan dari [[.agents/rules/mandatory_thesis_sync_and_quality.md]] + `PRD_AUDIT_DAN_PENYELARASAN_PEDOMAN_FEB_UKRIDA_2023` + `PRD_SISTEM_INTEGRITAS_DAN_VERIFIKASI_MENDELEY`.)
+Jalankan berurutan; 1 FAIL = BUILD BROKEN, dilarang ke pembimbing. (Dipetakan dari [[.agents/rules/mandatory_thesis_sync_and_quality.md]] + [[.agents/rules/mandatory_cross_format_typography_and_italic_parity.md]] + `PRD_AUDIT_DAN_PENYELARASAN_PEDOMAN_FEB_UKRIDA_2023` + `PRD_SISTEM_INTEGRITAS_DAN_VERIFIKASI_MENDELEY`.)
 
 | # | Gate | Script | Kriteria PASS |
 |---|---|---|---|
@@ -221,8 +221,9 @@ Jalankan berurutan; 1 FAIL = BUILD BROKEN, dilarang ke pembimbing. (Dipetakan da
 | G5 | Paritas PDF↔DOCX | `verify_pdf_docx_parity.py` | NoBab3 steril (tanpa Bab 3/lembar formal usang); Full lengkap; butir-1 = pembimbing |
 | G6 | Outline | `verify_word_outline.py` | H1/H2/H3 + `outlineLvl` + TNR12 (ref: 12/16/28) |
 | G7 | Buku | `verify_book_sources.py` | 12 buku verified, `NOT_FOUND=0` |
+| G8 | Paritas Tipografi Italic Lintas Format | `verify_italic_parity.py` | 100.00% ekspresi miring LaTeX hadir sebagai miring di DOCX (0 missing italics) |
 
-Tambahan: `verify_format_and_typos.py` (typo `dimoderasi`, `sebesar 125%`, legenda `; garis`), `verify_nobab3_pdf.py` (A4, 13 checkpoint, Times embedded), `verify_word_layout.py`, `verify_pdf_headers.py`.
+Tambahan (Extended): `verify_format_and_typos.py` (X1), `verify_pdf_headers.py` (X3), `verify_word_layout.py` (X4). Total 11 gerbang pada preset extended.
 
 ### A9 — PAPER-AUDIT-CHALLENGER (Tier-3 gated review)
 

@@ -637,50 +637,55 @@ Hubungan struktural antarvariabel disajikan pada Gambar 2.1:
 \resizebox{0.95\textwidth}{!}{%
 \begin{tikzpicture}[
   box/.style = {
-    ellipse, draw=black, line width=1.1pt, fill=gray!6,
-    minimum width=5.0cm, minimum height=1.65cm, align=center,
+    ellipse, draw=black, line width=1.15pt, fill=gray!3,
+    minimum width=5.2cm, minimum height=1.75cm, align=center,
     font=\fontsize{11}{13.5}\selectfont\bfseries
   },
   modbox/.style = {
-    ellipse, draw=black, line width=1.1pt, fill=gray!18,
-    minimum width=5.2cm, minimum height=1.65cm, align=center,
+    ellipse, draw=black, line width=1.15pt, fill=gray!12,
+    minimum width=5.4cm, minimum height=1.75cm, align=center,
     font=\fontsize{11}{13.5}\selectfont\bfseries
   },
-  arrow/.style = {-{Stealth[length=3.5mm, width=2.4mm]}, line width=1.1pt},
-  dasharrow/.style = {-{Stealth[length=3.5mm, width=2.4mm]}, line width=1.1pt, dashed}
+  arrow/.style = {-{Stealth[length=3.8mm, width=2.4mm]}, line width=1.15pt},
+  dasharrow/.style = {-{Stealth[length=3.5mm, width=2.2mm]}, line width=1.1pt, dashed}
 ]
 
-  % Variabel Independen (X) di sebelah kiri (x = 0)
-  \node[box] (x1) at (0, 2.5) {\emph{Hedonic Motivation}\\($X_1$)};
+  % Variabel Independen (X) di kiri
+  \node[box] (x1) at (0, 2.8) {\emph{Hedonic Motivation}\\($X_1$)};
   \node[box] (x2) at (0, 0)   {\emph{Desire for Completeness}\\($X_2$)};
-  \node[box] (x3) at (0, -2.5){\emph{Speculative Motive}\\($X_3$)};
+  \node[box] (x3) at (0, -2.8){\emph{Speculative Motive}\\($X_3$)};
 
-  % Variabel Dependen (Y) di sebelah kanan (x = 10.6)
-  \node[box] (y)  at (10.6, 0) {\emph{Impulsive Buying}\\($Y$)};
+  % Variabel Dependen (Y) di kanan
+  \node[box] (y)  at (11.5, 0) {\emph{Impulsive Buying}\\($Y$)};
 
-  % Variabel Moderasi (M) di atas tengah (x = 5.3, y = 4.2)
-  \node[modbox] (m) at (5.3, 4.2) {\emph{Self-Control}\\($M$)};
+  % Variabel Moderasi (M) di atas tengah
+  \node[modbox] (m) at (5.75, 4.6) {\emph{Self-Control}\\($M$)};
 
   % Garis Pengaruh Langsung (H1, H2, H3)
   \draw[arrow] (x1.east) -- (y.west)
-    node[pos=0.10, above=2pt, sloped, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {H1 (+)};
+    node[pos=0.12, above=3pt, sloped, font=\small\bfseries] {H1 (+)};
   \draw[arrow] (x2.east) -- (y.west)
-    node[pos=0.15, above=2pt, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {H2 (+)};
+    node[pos=0.15, above=3pt, font=\small\bfseries] {H2 (+)};
   \draw[arrow] (x3.east) -- (y.west)
-    node[pos=0.10, below=2pt, sloped, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {H3 (+)};
+    node[pos=0.12, below=3pt, sloped, font=\small\bfseries] {H3 (+)};
 
-  % Titik pertemuan moderasi yang terpisah secara horizontal (Parallel Tracks)
-  \coordinate (mod1) at ($(x1.east)!0.32!(y.west)$);
-  \coordinate (mod2) at ($(x2.east)!0.52!(y.west)$);
-  \coordinate (mod3) at ($(x3.east)!0.74!(y.west)$);
+  % Titik persimpangan sumbu vertikal x = 5.75
+  \coordinate (p1) at (5.75, 1.34);  % Pada garis H1
+  \coordinate (p2) at (5.75, 0.00);  % Pada garis H2
+  \coordinate (p3) at (5.75, -1.34); % Pada garis H3
 
-  % Garis Pengaruh Moderasi (H4, H5, H6) persis dari tepi elips m
-  \draw[dasharrow] (m.243) -- (mod1)
-    node[pos=0.38, left=3pt, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {H4 (-)};
-  \draw[dasharrow] (m.270) -- (mod2)
-    node[pos=0.38, left=3pt, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {H5 (-)};
-  \draw[dasharrow] (m.303) -- (mod3)
-    node[pos=0.38, right=3pt, font=\footnotesize\bfseries, fill=white, inner sep=2pt] {H6 (-)};
+  % Garis Moderasi Sumbu Tunggal dari M ke H1, H2, H3
+  \draw[dasharrow] (m.south) -- (p1)
+    node[pos=0.45, right=4pt, font=\small\bfseries] {H4 (-)};
+  \draw[dasharrow] (p1) -- (p2)
+    node[pos=0.50, right=4pt, font=\small\bfseries] {H5 (-)};
+  \draw[dasharrow] (p2) -- (p3)
+    node[pos=0.50, right=4pt, font=\small\bfseries] {H6 (-)};
+
+  % Titik temu panah moderasi berupa bulatan simpul kecil (connector dots)
+  \filldraw[black] (p1) circle (2.2pt);
+  \filldraw[black] (p2) circle (2.2pt);
+  \filldraw[black] (p3) circle (2.2pt);
 
 \end{tikzpicture}
 }
@@ -768,7 +773,7 @@ Penarikan sampel memakai teknik sampel bertujuan (\emph{purposive sampling}). Re
   \item \textbf{Pernah Membeli \emph{Booster Pack} Resmi Pok\'emon TCG Fisik Minimal 1 Kali dalam 12 Bulan Terakhir (Diutamakan 6 Bulan Terakhir untuk Kesegaran Recall):}
   \begin{itemize}
     \item \emph{Pengalaman Riil Konsumsi:} Kriteria ini memastikan responden benar-benar pernah mengalami proses pengambilan keputusan belanja di etalase toko dan merasakan sensasi membuka bungkus kartu (\emph{pack opening thrill}).
-    \item \emph{Bias Ingatan Retrospektif (\emph{Recall Bias}):} Rentang waktu 12 bulan (diutamakan 6 bulan) lazim dipakai dalam riset perilaku konsumen agar memori kognitif dan luapan afektif saat bertransaksi masih tersimpan segar dalam ingatan responden, sehingga data yang dilaporkan lebih dapat diandalkan.
+    \item \textbf{Bias Ingatan Retrospektif (\emph{Recall Bias}):} Rentang waktu 12 bulan (diutamakan 6 bulan) lazim dipakai dalam riset perilaku konsumen agar memori kognitif dan luapan afektif saat bertransaksi masih tersimpan segar dalam ingatan responden, sehingga data yang dilaporkan lebih dapat diandalkan.
   \end{itemize}
   \item \textbf{Lolos \emph{Screening Question} pada Bagian Awal Kuesioner:}
   \begin{itemize}
