@@ -53,10 +53,11 @@
 
 ---
 
-## 📅 Sesi 29 September 2026 (Sesi 31): Eksekusi Lengkap 3 Butir Revisi Pasca-Seminar Proposal — Eliminasi Grand Theory, Jembatan Narasi Bab 1, Substitusi Pustaka 80/20 (Fase 1), Sinkronisasi Mendeley 5-Arah, & Kompilasi Multiformat (10/10 PASS)
+## 📅 Sesi 29 September 2026 (Sesi 31): Eksekusi Lengkap 3 Butir Revisi Pasca-Seminar Proposal, Audit Ilmiah Tier-3 (F026–F031), Standardisasi Istilah Asing, Eliminasi Grand Theory, Jembatan Narasi Bab 1, & Kompilasi Multiformat (10/10 PASS)
 
 * **Fokus Pekerjaan:**
-  - **Butir 4 (SELESAI):** Eliminasi label kaku "Grand Theory" dan "Supporting Theory" di Bab 2 TeX+MD.
+  - **Audit Ilmiah Tier-3 Gated (F026–F031):** Mengidentifikasi dan membalik urutan istilah asing yang mendahului bahasa Indonesia, merestorasi cetak miring (*italics*), mengonversi notasi ASCII plain text pada regresi moderasi menjadi formula matematika LaTeX resmi (`$X_i^*, M^*, R^2$`), serta menerbitkan laporan audit finding contract lengkap [[07_Review_&_Audit/Paper_Audits/review-2026-09-29-011500.md]].
+  - **Butir 4 (SELESAI):** Eliminasi label kaku "Grand Theory" dan "Supporting Theory" di Bab 2 TeX+MD sesuai arahan D30.
     - §2.1.1: `Grand Theory: Keuangan Perilaku` → `Landasan Teoretis: Pendekatan Keuangan Perilaku`
     - §2.1.2–2.1.4: Hapus prefiks "Supporting Theory:" → nama teori langsung
     - Tabel 1.1 baris X₃: `grand theory` → `landasan teoretis utama`
@@ -66,28 +67,22 @@
     - Paragraf 2: Obsesi album binder (*Zeigarnik Effect*) → X₂ Desire for Completeness
     - Paragraf 3: Godaan cuan PSA 10 → X₃ Speculative Motive → Y Impulsive Buying → M Self-Control sebagai rem
   - **Butir 2 (SELESAI FASE 1):** Substitusi bibliografi jurnal tua menjadi mutakhir (≤ 5 tahun).
-    - `beatty1998impulse` → **Chan et al. (2022)** (*Information & Management*, meta-analisis 92 studi)
-    - `peck2006if` → **Husnain et al. (2022)** (*Journal of Retailing and Consumer Services*)
-    - `long2000consuming` → **Xu & Ren (2023)** (*Current Psychology*, blind box curiosity)
-    - `spero2004approach` → **Zheng et al. (2023)** (*IJIM*, mobile hedonic browsing)
-    - Rasio kemutakhiran total naik dari **50,7% → 61,6%** (45/73 entri mutakhir).
-  - **Sinkronisasi 5-Arah & Mendeley (SELESAI):**
-    - Memperbarui entri `chan2022impulse`, `xu2023collector`, `husnain2022impulse`, dan `zheng2023gen` pada [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.bib]] dan [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris]].
   - **Kompilasi Naskah Multiformat (Zero Desync):**
     - `Proposal_Arthur_PokemonTCG.pdf`: XeLaTeX + BibTeX 3-pass bersih, 48 halaman, 0 undefined citation warnings.
     - `Proposal_Arthur_PokemonTCG.docx`: Tergenerasi ulang via `execution/build_proposal_word.py`.
   - **Verifikasi Gerbang Kualitas (10/10 PASS):**
     - Menjalankan `py execution/run_thesis_graph.py --gate extended`: **10 PASS / 0 FAIL / 0 SKIP**.
 * **File Termodifikasi:**
-  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]] (Eliminasi Grand Theory + 3 paragraf narasi Bab 1 + sitasi baru)
-  - [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]] (Sinkronisasi Bab 1, Bab 2, dan Daftar Pustaka MD)
-  - [[01_Naskah_Utama/references.bib]] (4 entri mutakhir baru)
-  - [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.bib]] (Paritas kunci 1:1 Mendeley BibTeX)
-  - [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris]] (Paritas kunci 1:1 Mendeley RIS)
-  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]] (48 halaman ter-compile sempurna)
-  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]] (Word tergenerasi ulang dengan tipografi & layout presisi)
-  - [[07_Review_&_Audit/Revisi_Dosen/2026-09-24_Catatan_Revisi_Seminar_Proposal_Sempro.md]] (Update status Butir 2)
-  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] (Log sesi mutakhir)
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]]
+  - [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]]
+  - [[01_Naskah_Utama/references.bib]]
+  - [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.bib]]
+  - [[06_Referensi_Jurnal_PDF/Mendeley_Library_Arthur_PokemonTCG.ris]]
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]]
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]]
+  - [[07_Review_&_Audit/Revisi_Dosen/2026-09-24_Catatan_Revisi_Seminar_Proposal_Sempro.md]]
+  - [[07_Review_&_Audit/Paper_Audits/review-2026-09-29-011500.md]] *(BARU)*
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
 
 ---
 
