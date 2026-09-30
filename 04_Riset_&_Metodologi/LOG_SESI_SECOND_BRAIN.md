@@ -21,19 +21,30 @@
     - Menyisakan hanya dokumen hidup (*Living Core*) di root `04_Riset_&_Metodologi/` (11 file esensial) untuk mencegah *context flooding* dan amnesia *lost-in-the-middle* pada AI.
     - Membuat katalog indeks lengkap pada `04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/README.md`.
     - Menanamkan aturan permanen penulisan wajib (*mandatory write rules*) di `.agents/rules/obsidian_second_brain.md` dan `AGENTS.md`.
+  - **Pembersihan Celah & Restrukturisasi Total Workspace:**
+    - Mengeliminasi berkas Word duplikat tak resmi (`Proposal_Arthur_PokemonTCG_FIXED_LIBRE.docx` & `Proposal_Arthur_PokemonTCG_NoFrontmatter.docx`) dari Git untuk menjaga prinsip *Single Source of Truth*.
+    - Merestrukturisasi `03_Draft_Per_Bab/` menjadi **`03_Instrumen_&_Data_Survei/`** (cetak biru instrumen kuesioner Google Forms, tabulasi pilot test $N=30$, data survei $N \ge 111$, dan syntax SPSS MRA) untuk menyambut fase riset lapangan pasca-sempro; draf parsial lama dipindahkan ke arsip.
+    - Memutakhirkan **[[README.md]]** dan **[[MASTER_GUIDE_SKRIPSI.md]]** agar selaras 100% dengan status naskah 48 hlm settled, 54 pustaka Q1/SSCI terverifikasi, serta Pedoman FEB UKRIDA 2023.
+    - Menyelaraskan judul definitif resmi pada **[[06_Referensi_Jurnal_PDF/KATALOG_REFERENSI_JURNAL.md]]**.
+    - Memindahkan berkas turnitin ke `07_Review_&_Audit/Hasil_Cek_Plagiasi_AI/` dan membersihkan `texput.log`.
 * **Masalah yang Diselesaikan:**
   - Menghilangkan disparitas informasi antara status naskah nyata (48 hlm, 10 gerbang) dengan template prompt kickoff lama yang masih mencatat 55 hlm dan 7 gerbang.
   - Menghilangkan risiko terjadinya tabrakan berkas (*merge conflict*) lokal vs remote GitHub di kemudian hari dengan menyediakan protokol closing sesi standar.
   - Mencegah kekacauan visual (*clutter*) pada folder metodologi, menjaga *context window* AI tetap bersih, dan memastikan `SOURCE_OF_TRUTH.md` selalu terbarui di setiap sesi.
+  - Mengeliminasi seluruh file biner tiruan yang melanggar aturan single source of truth.
   - Paritas teks 100% identik antara versi Markdown dan Web App HTML.
 * **File yang Diperbarui:**
+  - [[README.md]]
+  - [[MASTER_GUIDE_SKRIPSI.md]]
   - [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md]]
   - [[PROMPT_KICKOFF.html]]
   - [[.agents/rules/obsidian_second_brain.md]]
   - [[AGENTS.md]]
   - [[00_DASHBOARD_SECOND_BRAIN.md]]
+  - [[03_Instrumen_&_Data_Survei/README.md]]
   - [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]]
   - [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/README.md]]
+  - [[06_Referensi_Jurnal_PDF/KATALOG_REFERENSI_JURNAL.md]]
   - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
 
 ---

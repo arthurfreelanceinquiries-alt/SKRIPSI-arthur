@@ -1,88 +1,62 @@
 # Workspace Skripsi FEB UKRIDA
 
 **Penulis:** Arthur Reezan  
-**Fakultas / Program Studi:** Fakultas Ekonomi dan Bisnis | S1 Manajemen  
-**Status:** 🟢 Topik & Judul Baru Terkunci — Pokémon TCG Impulsive Buying (MRA)
+**Fakultas / Program Studi:** Fakultas Ekonomi dan Bisnis | S1 Manajemen (Konsentrasi Manajemen Keuangan)  
+**Dosen Pembimbing:** Dr. Fredella Colline  
+**Status Naskah:** 🟢 **Proposal 48 Halaman Settled** · 54 Referensi Q1/SSCI Bebas Halusinasi · Extended Quality Gates 10/10 PASS · Fase Pasca-Sempro & Persiapan Riset Lapangan
 
 ---
 
-## 📌 Status Saat Ini
+## 📌 Status Terkini Naskah
 
-| | |
+| Parameter | Status Kanonis Definitif |
 |---|---|
-| **Judul aktif** | **PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN LITERASI KEUANGAN SEBAGAI VARIABEL MODERASI** |
-| **Fase** | **Fase 4 — Naskah Bab I Selesai Disusun (Memenuhi Revisi 1 & 2 DPS)** |
-| **Topik lama** | Diarsipkan di `_archive/KBMI4_GreenFinancing_2021-2025/` |
+| **Judul Skripsi Resmi** | **PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI** |
+| **Naskah Master Tunggal** | `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.*` (PDF 48 hlm settled, DOCX 181 hyperlink sitasi aktif, MD 742 baris) |
+| **Pustaka & Sitasi** | 54 Referensi 100% Terverifikasi (Paritas 5-Arah: TeX, DOCX, MD, RIS Mendeley, BibTeX) |
+| **Standar Kepatuhan** | Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023 (SK Dekan No. 350a/SK/UKKW/FEB/D/VI/2023) |
+| **Kerangka Teoretis Utama** | *Behavioral Finance* (Keuangan Keperilakuan) — Eliminasi pelabelan kaku Grand Theory per ketetapan **D30** |
+| **Model Analisis** | *Moderated Regression Analysis* (MRA) 2-Tahap Hierarkis dengan transformasi *mean-centering* ($X_i^*, M^*$) |
+| **Fase Saat Ini** | **Fase Pasca-Sempro:** Persiapan instrumen kuesioner Google Forms & penelitian lapangan ($N \ge 111$ per Green 1991) |
 
 ---
 
-## 📂 Struktur Folder
+## 📂 Struktur Folder Repositori
 
 ```text
 d:\Perkuliahan\Skripsi\SKRIPSI-arthur\
-├── 📁 01_Naskah_Utama/            # Naskah induk (TeX, DOCX, PDF) & aset gambar terpusat
-│   ├── 📁 images/                 # Seluruh gambar grafik & logo resmi UKRIDA
-│   ├── Proposal_Arthur_PokemonTCG.tex / .docx / .pdf (Naskah Lengkap)
-│   ├── Proposal_Arthur_NoBab3.tex / .pdf (Naskah Varian Tanpa Bab 3 & Approval)
-│   └── references.bib             # Database pustaka APA 7th edition
-├── 📁 02_Persiapan_Sidang/        # Panduan belajar sidang & materi interaktif
-│   ├── 📁 01_Bank_Soal_&_Flashcard/
-│   ├── 📁 presentasi_interaktif/
-│   ├── PANDUAN_BELAJAR_PROPOSAL.md / .pdf / .html
-│   └── PRESENTASI_PANDUAN_BELAJAR.html
-├── 📁 03_Draft_Per_Bab/           # Draf terpisah per bab (Bab 1, 2, 3) format Markdown
-├── 📁 04_Riset_&_Metodologi/      # Matriks riset, PRD, dan SOURCE_OF_TRUTH.md
-├── 📁 05_Pedoman_&_Referensi/     # Buku Pedoman resmi FEB UKRIDA 2022 & 2023
-├── 📁 06_Referensi_Jurnal_PDF/    # File PDF 10 jurnal empiris utama & teori seminal
-│   ├── 📁 01_Empiris_Utama_2021-2025/
-│   ├── 📁 02_Jurnal_Teori_&_Metodologi/
-│   └── KATALOG_REFERENSI_JURNAL.md
-├── 📁 07_Review_&_Audit/          # Hasil review akademik & drop folder revisi dosen
-│   └── 📁 Revisi_Dosen/
-├── 📁 directives/                 # SOP dan spesifikasi otomasi (Layer 2)
-├── 📁 execution/                  # Skrip kompilasi & verifikasi otomatis (Layer 3)
-│   ├── build_proposal_nobab3_pdf.py
-│   ├── build_proposal_word.py
-│   ├── build_study_guide_pdf.py
-│   ├── build_interactive_presentation.py
-│   ├── generate_bab1_figures.py
-│   ├── generate_journal_catalog.py
-│   ├── sync_markdown_from_tex.py
-│   └── verify_*.py
-├── 📁 scratch/                    # Ruang kerja sementara & _legacy_diffs/
-└── 📁 _archive/                   # Arsip permanen topik lama (KBMI 4)
+├── 📁 01_Naskah_Utama/            # Naskah induk tunggal (Proposal_Arthur_PokemonTCG.tex / .docx / .pdf) & lembar formal modular
+├── 📁 02_Persiapan_Sidang/        # Bank soal sidang sulit, flashcard istilah, presentasi interaktif, & PPT sempro
+├── 📁 03_Instrumen_&_Data_Survei/ # Draf kuesioner Google Forms, tabulasi pilot test N=30, data survei, & syntax SPSS
+├── 📁 04_Riset_&_Metodologi/      # Living Core: SOURCE_OF_TRUTH.md, PRD Universal, Log Sesi, Matriks 54 Pustaka
+│   └── 📁 00_Arsip_PRD_Selesai/   # Arsip 25 PRD & rencana implementasi sprint masa lalu (100% selesai)
+├── 📁 05_Pedoman_&_Referensi/     # Buku Pedoman resmi FEB UKRIDA 2023 & arsip acuan
+├── 📁 06_Referensi_Jurnal_PDF/    # File PDF fisik 10 jurnal empiris utama (2021–2026), teori seminal, & buku LibGen
+├── 📁 07_Review_&_Audit/          # Laporan audit ilmiah paper-audit, catatan revisi dosen pembimbing, & cek AI
+├── 📁 directives/                 # Standard Operating Procedures (SOP Layer 1)
+├── 📁 execution/                  # Skrip otomasi deterministik Python (Layer 3) & orchestrator 10 gerbang kualitas
+├── 📁 graphify-out/               # Graf pengetahuan relasi entitas, dependensi skrip, & file skripsi
+└── 📁 .agents/                    # Aturan permanen workspace (rules) dan skills AI
 ```
 
 ---
 
-## 🚀 Memulai Sesi Baru
+## 🚀 Memulai & Mengakhiri Sesi Kerja (Dual-Prompt System)
 
-**Urutan bacaan wajib untuk AI:**
-1. Baca [`MASTER_GUIDE_SKRIPSI.md`](MASTER_GUIDE_SKRIPSI.md) — kristalisasi semua pengetahuan
-2. Baca [`04_Riset_&_Metodologi/REUSABLE_THESIS_PLAYBOOK.md`](04_Riset_&_Metodologi/REUSABLE_THESIS_PLAYBOOK.md)
-3. Baca [`05_Pedoman_&_Referensi/PRD_AI_Dosen_Pembimbing_Skripsi_v2.md`](05_Pedoman_&_Referensi/PRD_AI_Dosen_Pembimbing_Skripsi_v2.md)
-4. Cek `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` (Topik MLBB)
-5. Baca [`04_Riset_&_Metodologi/KONSEP_SKRIPSI_POKEMON_TCG.md`](04_Riset_&_Metodologi/KONSEP_SKRIPSI_POKEMON_TCG.md) (Konsep Alternatif Unggulan: Kartu Pokémon TCG Fisik)
-6. Mulai dari **Fase 1** — konfirmasi keputusan topik bersama mahasiswa
+Workspace ini terintegrasi dengan **Antigravity IDE** dan **Obsidian Second Brain Protocol**:
 
----
-
-## 📦 Arsip Topik Lama
-
-Seluruh pekerjaan topik **"Green Financing, NPL, CAR → ROA KBMI4 2021–2025"** tersimpan di:
-
-```
-_archive/KBMI4_GreenFinancing_2021-2025/
-```
-
-Berisi: Naskah Bab 1–5 (TEX/PDF/MD/DOCX), data panel, metodologi, panduan belajar sidang, proposal, LaTeX source, website interaktif, knowledge graph, dan seluruh log review/audit.
-
-> ⚠️ Jangan buka folder arsip kecuali mahasiswa meminta pemulihan atau perbandingan tertentu.
+1. **Aplikasi Web Interaktif (Rekomendasi 1-Klik Copy):**
+   * Buka **[`PROMPT_KICKOFF.html`](PROMPT_KICKOFF.html)** di peramban web Anda.
+2. **Saat Memulai Sesi Kerja:**
+   * Klik tombol **Salin Prompt (Opsi 1: Mulai Sesi Utama)**, lalu tempel (`Ctrl+V`) ke chat AI. AI akan langsung membaca graf pengetahuan, dashboard, dan parameter riset mutakhir tanpa amnesia konteks.
+3. **Saat Hendak Menyudahi Sesi Kerja:**
+   * Klik tombol **Salin Prompt (Opsi 2: Mengakhiri Sesi & Safe Git Sync)**, lalu tempel (`Ctrl+V`) ke chat AI. AI akan menguji 10 gerbang extended, mencatat log sesi, mendeteksi perubahan remote dengan `git fetch`, dan melakukan push bersih ke GitHub untuk mencegah tabrakan data (*merge conflict*).
+4. **Cadangan Teks Markdown:**
+   * Tersedia pada berkas **[`00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md`](00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md)**.
 
 ---
 
-## 📚 Pedoman Resmi
+## 📚 Otoritas Pedoman Resmi
 
-Selalu verifikasi ke sumber utama:  
-📄 [`05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Tugas Akhir 2023.pdf`](05_Pedoman_&_Referensi/Buku%20Pedoman%20Penyusunan%20Tugas%20Akhir%202023.pdf)  
-📄 [`05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Tugas Akhir 2023.md`](05_Pedoman_&_Referensi/Buku%20Pedoman%20Penyusunan%20Tugas%20Akhir%202023.md)
+Seluruh format, tata letak, margin (4-3-3-3 cm), dan sitasi mengacu mutlak ke:  
+📄 **[`05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Tugas Akhir 2023.pdf`](05_Pedoman_&_Referensi/Buku%20Pedoman%20Penyusunan%20Tugas%20Akhir%202023.pdf)**

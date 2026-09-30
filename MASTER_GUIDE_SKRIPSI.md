@@ -1,10 +1,10 @@
-# MASTER GUIDE SKRIPSI — Panduan Lintas Topik
+# MASTER GUIDE SKRIPSI — Panduan Lintas Topik & Arsitektur Riset
 
-> **Status:** Aktif & Generik — berlaku untuk semua topik skripsi, tidak terikat satu judul  
-> **Terakhir diperbarui:** 3 September 2026  
-> **Dibuat dari:** Kristalisasi pengalaman topik KBMI4 Green Financing 2021–2025  
-> **Otoritas tertinggi:** Buku Pedoman Penyusunan Skripsi FEB UKRIDA 2022  
-> **Lokasi pedoman:** `05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.pdf`
+> **Status:** Aktif & Kanonis — Terintegrasi dengan Antigravity IDE, Obsidian Second Brain, dan Graph of Agents A0–A11  
+> **Terakhir diperbarui:** 30 September 2026 (Sesi 34)  
+> **Otoritas tertinggi:** Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023 (SK Dekan No. 350a/SK/UKKW/FEB/D/VI/2023 per ketetapan D14)  
+> **Lokasi pedoman:** `05_Pedoman_&_Referensi/Buku Pedoman Penyusunan Tugas Akhir 2023.pdf`  
+> **Dokumen Hidup (Living Core):** `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` & `04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md`
 
 ---
 
@@ -14,21 +14,21 @@ Dokumen ini adalah **memori kerja AI** yang harus dibaca setiap sesi baru. Uruta
 
 1. Baca bagian 1 (Hierarki Otoritas)
 2. Baca bagian 2 (Sistem 4 Fase)
-3. Baca `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` (topik MLBB) & `04_Riset_&_Metodologi/KONSEP_SKRIPSI_POKEMON_TCG.md` (topik kartu fisik Pokémon TCG)
+3. Baca `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` (topik aktif Pokémon TCG) & `04_Riset_&_Metodologi/KONSEP_SKRIPSI_POKEMON_TCG.md` (konstruk model MRA)
 4. Baru lanjut pekerjaan
 
 ---
 
 ## 1. HIERARKI OTORITAS
 
-Jika ada konflik antar sumber, ikuti urutan ini (tertinggi ke terendah):
+Jika terjadi disparitas antar sumber dokumen, ikuti urutan hierarki berikut (tertinggi ke terendah):
 
-1. **Buku Pedoman FEB UKRIDA 2022** — otoritas format dan aturan resmi
-2. **Instruksi eksplisit mahasiswa** dan keputusan DPS manusia (yang tidak melanggar integritas akademik)
-3. **SOURCE_OF_TRUTH.md** topik aktif — status kanonis fase dan keputusan terkunci
-4. **Literatur ilmiah, dokumentasi dataset, pedoman metode primer**
-5. **Standar akademik umum** — *wajib diberi label eksplisit* bila bukan aturan UKRIDA
-6. **Skripsi kakak tingkat** — hanya comparator non-otoritatif, bukan sumber aturan atau sitasi
+1. **Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023** (SK Dekan 350a/2023) — otoritas format, margin 4-3-3-3 cm, Times New Roman 12pt, spasi 1.5, dan gaya sitasi resmi.
+2. **Arahan & Notula Resmi Dosen Pembimbing (Ibu Dr. Fredella Colline)** serta Dosen Penguji Sempro yang tercatat di `07_Review_&_Audit/Revisi_Dosen/`.
+3. **SOURCE_OF_TRUTH.md** — parameter kanonis definitif (keputusan terkunci D01–D30+).
+4. **PRD Universal Skripsi Framework (Graph of Agents A0–A11)** — blueprint arsitektur sistem.
+5. **Literatur Ilmiah Q1/SSCI & Buku Teks Metodologi Primer** (54 rujukan terverifikasi zero-hallucination).
+6. **Skripsi Komparator / Alumni** — hanya pembanding sekunder non-otoritatif, bukan rujukan hukum baku.
 
 > **Aturan konflik:** Jika dua sumber bertentangan, jelaskan konflik dan lokasi masing-masing, lalu ikuti sumber berotoritas lebih tinggi. Jangan mengarang ketentuan yang tidak ditemukan.
 

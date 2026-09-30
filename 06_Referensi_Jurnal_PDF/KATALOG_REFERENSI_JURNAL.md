@@ -1,7 +1,7 @@
 # Katalog Referensi Jurnal dan Naskah Ilmiah Skripsi
 
 > Dokumen ini mencatat seluruh file jurnal dan naskah ilmiah yang telah diunduh, diverifikasi integritasnya, dan digunakan sebagai rujukan utama dalam naskah skripsi:  
-> **"Pengaruh Karakteristik Produk Blind-Box, Kelengkapan Koleksi, dan Motif Spekulasi terhadap Pembelian Impulsif Booster Pack Pokémon TCG dengan Kontrol Diri sebagai Variabel Moderasi"**
+> **"PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POKÉMON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI"**
 
 ---
 
