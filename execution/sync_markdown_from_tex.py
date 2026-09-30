@@ -439,11 +439,9 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
     s = re.sub(r'\\vspace\{[^}]+\}', '', s)
     s = re.sub(r'\\hspace\{[^}]+\}', '', s)
 
-    # Clean lists
-    s = re.sub(r'\\begin\{enumerate\}', '', s)
-    s = re.sub(r'\\end\{enumerate\}', '', s)
-    s = re.sub(r'\\begin\{itemize\}', '', s)
-    s = re.sub(r'\\end\{itemize\}', '', s)
+    # Clean lists & optional parameters (e.g., [noitemsep,topsep=2pt])
+    s = re.sub(r'\\begin\{(enumerate|itemize)\}(\[[^\]]*\])?', '', s)
+    s = re.sub(r'\\end\{(enumerate|itemize)\}', '', s)
     s = re.sub(r'\\item\s*', '\n- ', s)
     s = re.sub(r'\n\s*\n\s*-\s*', '\n- ', s)
     # Pedoman/kakak tingkat 23 Sep 2026: Rumusan Masalah (1.2) & Tujuan (1.3)
