@@ -2,8 +2,8 @@
 ### *Dokumen Panduan & Template Prompt Kickoff + Closing Antigravity IDE + Obsidian Second Brain*
 
 > [!SUMMARY] Tujuan & Solusi Catatan Ini
-> - **Untuk Apa:** Menyediakan sistem prompt dua arah: **Prompt Kickoff (Buka Sesi)** untuk memuat konteks anti-lupa dan **Prompt Closing (Tutup Sesi)** untuk penguncian 10 gerbang kualitas, log otomatis, dan sinkronisasi Git anti-konflik.
-> - **Masalah yang Diselesaikan:** Menghilangkan amnesia konteks saat membuka sesi, serta **mencegah tabrakan lokal vs GitHub (merge conflict)** saat mengakhiri sesi. Seluruh perubahan selalu diuji (10/10 PASS), dicatat, di-commit, dan di-push bersih ke GitHub sebelum Anda menutup IDE.
+> - **Untuk Apa:** Menyediakan sistem prompt dua arah: **Prompt Kickoff (Buka Sesi)** dengan **sinkronisasi Git otomatis (Pull)** untuk kelancaran kerja lintas perangkat (*multi-device*) dan memuat konteks anti-lupa, serta **Prompt Closing (Tutup Sesi)** untuk penguncian 11 gerbang kualitas, log otomatis, dan sinkronisasi Git anti-konflik.
+> - **Masalah yang Diselesaikan:** Mencegah ketertinggalan versi saat berganti perangkat (laptop/PC), menghilangkan amnesia konteks saat membuka sesi, serta **mencegah tabrakan lokal vs GitHub (merge conflict)** saat mengakhiri sesi. Seluruh perubahan selalu diuji (11/11 PASS), dicatat, di-commit, dan di-push bersih ke GitHub sebelum Anda menutup IDE.
 > - **Keputusan/Output:** Tersedia dalam bentuk **Aplikasi Web Interaktif** (`PROMPT_KICKOFF.html`) dengan tombol salin animasi dan notifikasi visual, serta teks cadangan markdown di bawahnya.
 
 ---
@@ -18,19 +18,21 @@
 
 ---
 
-## ⚡ 2. PROMPT PEMBUKA SESI (KICKOFF DEFAULT — ANTI-LUPA KONTEKS)
+## ⚡ 2. PROMPT PEMBUKA SESI (KICKOFF DEFAULT — SINKRONISASI MULTI-DEVICE & ANTI-LUPA)
 
 > 💡 **Cara Pakai Saat Mulai Kerja:** Cukup **KLIK 1 KALI tombol "Copy"** berwarna biru di web dashboard (atau salin teks di bawah), lalu langsung tempel (**Ctrl+V**) ke chat Antigravity / AI!
 
 ```text
-Halo! Tolong jalankan skill "obsidian-second-brain" dan mulai sesi kerja skripsi ini dengan protokol anti-lupa konteks:
+Halo! Tolong jalankan skill "obsidian-second-brain" dan mulai sesi kerja skripsi ini dengan protokol sinkronisasi multi-device & anti-lupa konteks:
 
-1. [BACA PENGETAHUAN KODE & GRAF]: Tolong periksa `graphify-out/manifest.json` dan `graphify-out/GRAPH_REPORT.md` agar kamu memahami seluruh relasi file, dependensi script, dan entitas skripsi ini.
-2. [BACA KOKPIT OBSIDIAN]: Tolong baca `00_DASHBOARD_SECOND_BRAIN.md`, `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` (keputusan D01–D32), framework universal `04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md` (+ SOP `directives/universal_thesis_graph_of_agents.md`), dan catatan log terkini `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md` untuk memuat status naskah aktif, parameter variabel penelitian (Y: Impulsive Buying, X1: Hedonic Motivation, X2: Desire for Completeness, X3: Speculative Motive, M: Self-Control sebagai pemoderasi), ruang lingkup populasi konsumen di Jakarta Barat (D31), serta arahan Dosen Pembimbing Ibu Dr. Fredella Colline.
-3. [ATURAN KONSEPTUAL & PENULISAN]: Pastikan kepatuhan mutlak terhadap keputusan D30 (tanpa label kaku Grand Theory di Bab 2; Behavioral Finance sebagai kerangka teoretis utama), penataan istilah asing di belakang bahasa Indonesia dengan huruf miring (contoh: kesimetrisan cetak (\emph{centering})), rumus MRA ber-centering mean ($X_i^*, M^*$), paritas tipografi miring lintas format 100% (D32), dan format callout `> [!SUMMARY]` pada markdown baru.
-4. [AUTO-LOGGING]: Tolong catat progres atau keputusan penting sesi ini ke `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md`.
+1. [SINKRONISASI GIT TERBARU / MULTI-DEVICE SYNC]: Tolong jalankan `git pull origin main` (atau periksa remote GitHub) terlebih dahulu untuk memastikan repositori lokal ini selalu sinkron 100% dengan pembaruan terkini dari perangkat/device lain sebelum sesi kerja dimulai. Jika ada pembaruan baru dari GitHub, laporkan ringkasan berkas yang baru ditarik.
+2. [BACA PENGETAHUAN KODE & GRAF]: Tolong periksa `graphify-out/manifest.json` dan `graphify-out/GRAPH_REPORT.md` agar kamu memahami seluruh relasi file, dependensi script, dan entitas skripsi ini.
+3. [BACA KOKPIT OBSIDIAN]: Tolong baca `00_DASHBOARD_SECOND_BRAIN.md`, `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` (keputusan D01–D32), framework universal `04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md` (+ SOP `directives/universal_thesis_graph_of_agents.md`), dan catatan log terkini `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md` untuk memuat status naskah aktif, parameter variabel penelitian (Y: Impulsive Buying, X1: Hedonic Motivation, X2: Desire for Completeness, X3: Speculative Motive, M: Self-Control sebagai pemoderasi), ruang lingkup populasi konsumen di Jakarta Barat (D31), serta arahan Dosen Pembimbing Ibu Dr. Fredella Colline.
+4. [ATURAN KONSEPTUAL & PENULISAN]: Pastikan kepatuhan mutlak terhadap keputusan D30 (tanpa label kaku Grand Theory di Bab 2; Behavioral Finance sebagai kerangka teoretis utama), penataan istilah asing di belakang bahasa Indonesia dengan huruf miring (contoh: kesimetrisan cetak (\emph{centering})), rumus MRA ber-centering mean ($X_i^*, M^*$), paritas tipografi miring lintas format 100% (D32), dan format callout `> [!SUMMARY]` pada markdown baru.
+5. [AUTO-LOGGING]: Tolong catat progres atau keputusan penting sesi ini ke `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md`.
 
-Setelah kamu membaca file-file di atas, tolong berikan ringkasan 3 poin:
+Setelah kamu membaca file-file di atas, tolong berikan ringkasan 4 poin:
+- Status sinkronisasi Git (apakah branch lokal sudah 100% up-to-date dengan GitHub `origin/main`).
 - Status terkini naskah proposal (SATU file utama `Proposal_Arthur_PokemonTCG.*` — PDF 51 hlm settled, 54 pustaka mutakhir Q1/SSCI terverifikasi, gate terakhir 11/11 PASS mutlak).
 - Konteks penelitian dan fase riset yang aktif di ingatanmu (status pasca-sempro & persiapan penelitian lapangan pada konsumen di Jakarta Barat).
 - Tanyakan apa fokus pekerjaan yang ingin kita selesaikan hari ini!

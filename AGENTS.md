@@ -66,6 +66,7 @@ Errors are learning opportunities. When something breaks:
 
 This workspace is coupled with an Obsidian Second Brain and Graphify knowledge graph:
 1. **Session Start (Pre-Flight):**
+   - Run `git pull origin main` to pull any updates from other devices/collaborators before starting work.
    - Read `graphify-out/manifest.json` or `graphify-out/GRAPH_REPORT.md` to load active entity clusters and file dependencies.
    - Read `00_DASHBOARD_SECOND_BRAIN.md` to load thesis status, research constructs, and active priorities.
 2. **In-Flight Documentation (Purpose-Driven):**

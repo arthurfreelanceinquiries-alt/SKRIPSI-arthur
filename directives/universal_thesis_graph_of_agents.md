@@ -9,10 +9,11 @@
 
 ## 1. Prasyarat (Pre-flight, A11)
 
-1. Baca `graphify-out/manifest.json` atau `graphify-out/GRAPH_REPORT.md`.
-2. Baca [[00_DASHBOARD_SECOND_BRAIN.md]] + Source of Truth aktif.
-3. Nyatakan kesiapan kontekstual (fase + keputusan terkunci D-nn).
-4. Jangan mulai kerja tanpa pre-flight. Sesi tanpa pre-flight dianggap tidak terjadi (C-LOG-1).
+1. Jalankan `git pull origin main` untuk sinkronisasi pembaruan multi-device dari perangkat lain.
+2. Baca `graphify-out/manifest.json` atau `graphify-out/GRAPH_REPORT.md`.
+3. Baca [[00_DASHBOARD_SECOND_BRAIN.md]] + Source of Truth aktif.
+4. Nyatakan kesiapan kontekstual (fase + keputusan terkunci D-nn).
+5. Jangan mulai kerja tanpa pre-flight. Sesi tanpa pre-flight dianggap tidak terjadi (C-LOG-1).
 
 ## 2. Fase Eksekusi (urutan wajib)
 

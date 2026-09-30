@@ -4,12 +4,14 @@ This workspace is integrated with Obsidian as a **Second Brain** for thesis rese
 
 ## 1. Session Start (Pre-Flight Hook)
 Whenever the user starts a session, says "mulai sesi", "jalankan skill second brain", or begins work:
-1. **Inspect Graphify Knowledge:**
+1. **Multi-Device Git Sync (Pre-Flight Pull):**
+   - Run `git pull origin main` to ensure the local repository is 100% synchronized with the latest commits pushed from other devices/laptops before beginning any work.
+2. **Inspect Graphify Knowledge:**
    - Check `graphify-out/` (`manifest.json` / `GRAPH_REPORT.md`) to maintain persistent awareness of codebase dependencies, entity communities, and file relationships.
-2. **Inspect Second Brain Dashboard:**
+3. **Inspect Second Brain Dashboard:**
    - Read `00_DASHBOARD_SECOND_BRAIN.md` to load active research status, research constructs, recent supervisor feedback, and open tasks.
-3. **Session Alignment:**
-   - Acknowledge the current research context and state readiness to execute.
+4. **Session Alignment:**
+   - Acknowledge the current research context, report Git sync status, and state readiness to execute.
 
 ## 2. In-Flight Documentation (Purpose-Driven Notes)
 Whenever creating or editing markdown notes in this vault:
