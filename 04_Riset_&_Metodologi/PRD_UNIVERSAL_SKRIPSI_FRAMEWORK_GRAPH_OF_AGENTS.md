@@ -353,15 +353,31 @@ Berjalan di atas pyramid §1; tiap tahap dimiliki satu agen:
 
 ---
 
-## 8. File Map (jejak ke PRD asal — tiap klaim di atas terlacak)
+## 8. File Map (Jejak ke Arsip PRD Asal — Tiap Klaim Terlacak)
 
-- Pyramid + Canon + Ledger → `empirical_source_verification.md`, `PRD_ELIMINASI_SUMBER_PALSU*`, `VERIFIED_EMPIRICAL_DATA.md`, `PRD_STANDARISASI_URL*`, `PRD_SUBSTITUSI_GAMBAR_1_3*`.
-- Interpretation rules + Fase → `REUSABLE_THESIS_PLAYBOOK.md`, `PRD_AI_Dosen_Pembimbing_Skripsi_v2.md`, `PRD_PENELITIAN.md`, `SOURCE_OF_TRUTH.md`, `MASTER_GUIDE_SKRIPSI.md`.
-- Construct → `review_desire_for_completeness.md`, `analyze_completeness_construct.py`, Tabel 2.1.
-- Method/Stats → `PRD_RESOLUSI_REVIEW_TEKNIS_PRISM_AI.md` (Model 1/2, N, mean-centering, Tabel 3.2).
-- Manuscript → `PRD_HYBRID_PANDOC*`, `PRD_SINKRONISASI*`, `PRD_REVISI_DOCX*`, `PRD_DOCX_HEADING*`, `PANDUAN_STANDARISASI_HEADING*`, `generate_thesis_word_document.md`, `build_*_without_chapter3.md`, `audit_pdf_vs_docx_fidelity.md`, `PRD_AUDIT_PDF_VS_DOCX.md`.
-- Parity → `mandatory_thesis_sync_and_quality.md`, `PRD_SISTEM_INTEGRITAS_MENDELEY*`, `verify_mendeley_integrity.md`, `verify_ukrida_2023_guidelines.md`, `PRD_AUDIT_DAN_PENYELARASAN_PEDOMAN*`.
-- Audit → `PRD_INTEGRASI_SKILL_PAPER_AUDIT.md`, `run_paper_audit.md`.
-- Defense → `generate_interactive_study_presentation.md`, `update_study_guide_and_pdf.md`.
-- Memory → `obsidian_second_brain.md`, `00_DASHBOARD_SECOND_BRAIN.md`, `LOG_SESI_SECOND_BRAIN.md`, `3_layer_architecture.md`.
-- Books → `PRD_VERIFIKASI_SUMBER_BUKU*`, `PRD_DOWNLOAD_BUKU*`, `verify_book_sources_libgen.md`, `mandatory_verifiable_theories_and_books.md`, `no_login_wall_empirical_sources.md`.
+Seluruh PRD tugas masa lalu telah selesai diimplementasikan (**10/10 Extended Gates PASS**) dan diarsipkan rapi di folder `04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/`:
+- **Pyramid + Canon + Ledger:** [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_ELIMINASI_SUMBER_PALSU_DAN_VERIFIKASI_DATA_PRIMER_BAB1.md]], [[04_Riset_&_Metodologi/VERIFIED_EMPIRICAL_DATA.md]], [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_STANDARISASI_URL_SITASI_APA7_DATA_POKEMON.md]], [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_SUBSTITUSI_GAMBAR_1_3_DATA_LEGIT_BAB1.md]].
+- **Interpretation rules + Fase:** [[04_Riset_&_Metodologi/REUSABLE_THESIS_PLAYBOOK.md]], [[05_Pedoman_&_Referensi/PRD_AI_Dosen_Pembimbing_Skripsi_v2.md]], [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_PENELITIAN.md]], [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]], [[MASTER_GUIDE_SKRIPSI.md]].
+- **Construct:** [[directives/review_desire_for_completeness.md]], `analyze_completeness_construct.py`, Tabel 2.1.
+- **Method/Stats:** [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_RESOLUSI_REVIEW_TEKNIS_PRISM_AI.md]] (Model 1/2, N=111 Green, mean-centering, Tabel 3.2).
+- **Manuscript:** [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_HYBRID_PANDOC_SCRIPT_GENERATOR.md]], [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_SINKRONISASI_DOCX_DAN_AUDIT_FILE.md]], [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_REVISI_DOCX_KUALITAS_LATEX.md]], [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_DOCX_HEADING_OUTLINE_TABS.md]], [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PANDUAN_STANDARISASI_HEADING_DAN_DAFTAR_ISI_DOCX.md]], [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_AUDIT_PDF_VS_DOCX.md]], [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/LAPORAN_KOMPARASI_PDF_VS_DOCX.md]].
+- **Parity:** [[.agents/rules/mandatory_thesis_sync_and_quality.md]], [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_SISTEM_INTEGRITAS_DAN_VERIFIKASI_MENDELEY.md]], [[directives/verify_mendeley_integrity.md]], [[directives/verify_ukrida_2023_guidelines.md]], [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_AUDIT_DAN_PENYELARASAN_PEDOMAN_FEB_UKRIDA_2023.md]].
+- **Audit:** [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_INTEGRASI_SKILL_PAPER_AUDIT.md]], [[directives/run_paper_audit.md]].
+- **Memory & Logging:** [[.agents/rules/obsidian_second_brain.md]], [[00_DASHBOARD_SECOND_BRAIN.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]], [[.agents/rules/3_layer_architecture.md]].
+- **Books:** [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_VERIFIKASI_SUMBER_BUKU_LIBGEN_DAN_RULES.md]], [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_DOWNLOAD_BUKU_REFERENSI_LIBGEN.md]], [[directives/verify_book_sources_libgen.md]], [[.agents/rules/mandatory_verifiable_theories_and_books.md]], [[.agents/rules/no_login_wall_empirical_sources.md]].
+
+---
+
+## 9. Prinsip Dokumentasi: Active Core + Sprint Archive (Zero-Clutter Policy)
+
+Untuk mencegah amnesia AI (*lost-in-the-middle*) dan menjaga repositori tetap rapi:
+1. **Living Core (Selalu Aktif & Dibaca):**
+   - [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]] (Arsitektur Universal)
+   - [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] (Ketetapan kanonis D01–D30+)
+   - [[00_DASHBOARD_SECOND_BRAIN.md]] (Kokpit Kontrol)
+   - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] (Log Sesi Harian)
+   - [[04_Riset_&_Metodologi/LITERATURE_MATRIX.md]] (Matriks 54 Sitasi Q1/SSCI)
+2. **Sprint Archive (`04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/`):**
+   - Tempat penyimpanan PRD tugas spesifik yang telah 100% selesai diimplementasikan.
+   - Tidak dibaca saat kickoff rutin untuk menghemat token dan menjaga fokus AI pada kondisi terkini.
+   - Tetap terindeks di [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/README.md]] untuk kebutuhan jejak audit akademis saat sidang.

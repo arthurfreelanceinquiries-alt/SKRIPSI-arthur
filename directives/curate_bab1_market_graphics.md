@@ -4,7 +4,7 @@
 Curate verified empirical market data, generate publication-grade 300 DPI graphics matching the academic standards of FEB UKRIDA 2023 (Model B) and senior student benchmarks, and seamlessly integrate them into XeLaTeX (`Proposal_Arthur_PokemonTCG.tex`), Word DOCX (`build_proposal_word.py`), and Markdown proposals.
 
 ## Inputs
-1. **PRD Specification:** `04_Riset_&_Metodologi/PRD_GRAFIK_EMPIRIS_BAB1.md`
+1. **PRD Specification:** `04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_GRAFIK_EMPIRIS_BAB1.md`
 2. **Primary Data Sources:**
    - The Pokémon Company Corporate Business Data (Cumulative card production 2019–2024: 28.8B -> 64.8B).
    - Statista & TitleMax All-Time Media Franchise Revenue Database (Pokémon #1 with >$105B).

@@ -58,26 +58,16 @@
 * **Flashcard & Kamus Istilah:** [[02_Persiapan_Sidang/01_Bank_Soal_&_Flashcard/02_FLASHCARD_ISTILAH.md]]
 * **Aplikasi Presentasi Interaktif:** [[02_Persiapan_Sidang/presentasi_interaktif/index.html]]
 
-### 📁 C. Riset, Metodologi, & Riwayat Sesi
-* **Source of Truth:** [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] *(Dokumen rujukan mutlak parameter skripsi)*
-* **Ledger Bukti Halaman (D26):** [[04_Riset_&_Metodologi/EVIDENCE_LEDGER_HALAMAN.md]] *(15 klaim → halaman PDF; SOP [[directives/evidence_page_ledger.md]]; uji `verify_evidence_ledger.py`)*
+### 📁 C. Riset, Metodologi, & Riwayat Sesi (Living Core)
+* **Framework Universal (Arsitektur Utama):** [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]] *(SOP Graph of Agents A0–A11)*
+* **Source of Truth (Parameter Kanonis):** [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] *(Ketetapan definitif D01–D30+)*
+* **Matriks 54 Referensi Q1/SSCI:** [[04_Riset_&_Metodologi/LITERATURE_MATRIX.md]] *(Matriks pustaka terverifikasi)*
 * **Catatan Log Sesi Otomatis:** [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] *(Catatan progres dan keputusan tiap sesi)*
-* **Panduan Standarisasi Heading & TOC:** [[04_Riset_&_Metodologi/PANDUAN_STANDARISASI_HEADING_DAN_DAFTAR_ISI_DOCX.md]] *(Kompatibilitas titik-titik Google Docs & Word)*
-* **PRD Resolusi Review Teknis Prism AI:** [[04_Riset_&_Metodologi/PRD_RESOLUSI_REVIEW_TEKNIS_PRISM_AI.md]] *(Resolusi 11 temuan audit metodologi)*
-* **PRD Arsitektur Hybrid Word:** [[04_Riset_&_Metodologi/PRD_HYBRID_PANDOC_SCRIPT_GENERATOR.md]]
-* **PRD Kualitas Tipografi DOCX:** [[04_Riset_&_Metodologi/PRD_REVISI_DOCX_KUALITAS_LATEX.md]]
-* **Grafik & Visual Empiris Bab 1:** [[04_Riset_&_Metodologi/PRD_GRAFIK_EMPIRIS_BAB1.md]]
-* **PRD Integrasi Skill Paper-Audit:** [[04_Riset_&_Metodologi/PRD_INTEGRASI_SKILL_PAPER_AUDIT.md]] *(Kebijakan aktivasi bertingkat Tier-3 Gated Audit)*
+* **Ledger Bukti Halaman (D26):** [[04_Riset_&_Metodologi/EVIDENCE_LEDGER_HALAMAN.md]] *(15 klaim → halaman PDF; SOP [[directives/evidence_page_ledger.md]]; uji `verify_evidence_ledger.py`)*
+* **Ground Truth Data Empiris Terverifikasi:** [[04_Riset_&_Metodologi/VERIFIED_EMPIRICAL_DATA.md]] *(Catatan audit fisik Statista, Pokémon Company, PriceCharting)*
 * **SOP Audit Ilmiah Naskah:** [[directives/run_paper_audit.md]] *(SOP pelaksanaan audit pra-bimbingan & pra-sidang)*
-* **Laporan Audit Ilmiah Formal:** [[07_Review_&_Audit/Paper_Audits/]] *(terbaru: [[07_Review_&_Audit/Paper_Audits/review-2026-09-18-213000.md|audit pasca-humanisasi 18 Sep 2026]] — F001–F019 resolved, F020–F025, 0 temuan terbuka)*
-* **PRD Integritas & Paritas Mendeley:** [[04_Riset_&_Metodologi/PRD_SISTEM_INTEGRITAS_DAN_VERIFIKASI_MENDELEY.md]] *(Sistem pencegahan Silent Drop & Paritas 54 Referensi)*
-* **PRD Eliminasi Sumber Fiktif & Verifikasi Data Primer:** [[04_Riset_&_Metodologi/PRD_ELIMINASI_SUMBER_PALSU_DAN_VERIFIKASI_DATA_PRIMER_BAB1.md]] *(Zero-Hallucination Protocol & Audit Faktual)*
-* **Ground Truth Data Empiris Terverifikasi:** [[04_Riset_&_Metodologi/VERIFIED_EMPIRICAL_DATA.md]] *(Catatan audit fisik Statista, Pokémon Company, PSA)*
-* **Directive Verifikasi Sumber Empiris:** [[directives/empirical_source_verification.md]] *(Aturan mutlak no-synthetic citations)*
-* **PRD Tautan URL Aktif APA 7 Data Pokémon:** [[04_Riset_&_Metodologi/PRD_STANDARISASI_URL_SITASI_APA7_DATA_POKEMON.md]] *(Standarisasi Hyperlink OpenXML Word & Deep Link)*
-* **SOP Validasi Integritas Mendeley:** [[directives/verify_mendeley_integrity.md]] *(Whitelist tag RIS & SOP verifikasi pra-terbang)*
-* **Suite Uji Otomatis Integritas Mendeley:** [[execution/verify_mendeley_integrity.py]] *(Test suite 6-arah bebas dependensi)*
-* **Suite Uji Otomatis URL Empiris:** [[execution/verify_live_urls.py]] *(Pemeriksa link hidup & deteksi direktori fiktif)*
+* **Laporan Audit Ilmiah Formal:** [[07_Review_&_Audit/Paper_Audits/]] *(terbaru: [[07_Review_&_Audit/Paper_Audits/review-2026-09-29-011500.md|audit pasca-sempro 29 Sep 2026]] — F026–F031 resolved, 0 temuan terbuka)*
+* 📦 **Katalog Arsip PRD Sprint (Completed):** [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/README.md|Folder 00_Arsip_PRD_Selesai/]] *(Koleksi 20 PRD & rencana implementasi tugas masa lalu yang telah 100% selesai dan lulus uji 10 gerbang)*
 * **Riwayat Revisi & Audit:** [[07_Review_&_Audit/Revisi_Dosen/2026-09-22_Arahan_Dosen_Struktur_PPT_Sempro_7_Slide.md|Revisi Dosen (22 Sep 2026: Tips & Trik PPT Sempro Ringkas 7 Slide)]] | [[07_Review_&_Audit/Revisi_Dosen/2026-09-16_Revisi_Dosen_Sumber_Pokemon_Mendeley_Daftar_Pustaka.md|Revisi Dosen (16 Sep 2026: Sumber Pokemon, Mendeley, DP A-Z)]] | [[07_Review_&_Audit/Revisi_Dosen/2026-09-14_Review_Teknis_Prism_AI_dan_Matriks_Resolusi.md]] | [[07_Review_&_Audit/Revisi_Dosen/2026-09-09_Revisi_Dosen_dan_Opsi_Moderasi.md]]
 
 
@@ -115,8 +105,8 @@
 ## ⚖️ 5. Pedoman Mutlak Sinkronisasi Naskah & Tipografi LaTeX (Zero Desync)
 
 Setiap perubahan pada naskah, bab, tabel, gambar, atau skrip generator **wajib** mematuhi pedoman baku:
-* 📜 **PRD Sinkronisasi & Audit File:** [[04_Riset_&_Metodologi/PRD_SINKRONISASI_DOCX_DAN_AUDIT_FILE.md]]
-* 📜 **PRD Kualitas Tipografi DOCX:** [[04_Riset_&_Metodologi/PRD_REVISI_DOCX_KUALITAS_LATEX.md]]
+* 📜 **PRD Sinkronisasi & Audit File:** [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_SINKRONISASI_DOCX_DAN_AUDIT_FILE.md]]
+* 📜 **PRD Kualitas Tipografi DOCX:** [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_REVISI_DOCX_KUALITAS_LATEX.md]]
 * 📜 **Aturan Permanen Workspace:** [[.agents/rules/mandatory_thesis_sync_and_quality.md]]
 * 📜 **SOP Generator Word:** [[directives/generate_thesis_word_document.md]]
 

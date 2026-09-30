@@ -14,15 +14,26 @@
   - **Penyatuan ke GitHub (Push):** Mengunggah hasil merge bersih ke remote repository (`f77e289..be16526 main -> main`), memastikan status lokal dan remote 100% in-sync.
   - **Sistem Dual-Prompt (Kickoff & Closing):** Meremajakan seluruh 7 kartu prompt pada [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md]] dan web app [[PROMPT_KICKOFF.html]]:
     1. *Opsi 1 (Kickoff Utama):* Memuat memori riset, 48 hlm settled, 54 pustaka Q1/SSCI, eliminasi Grand Theory (D30), rumus MRA mean-centering.
-    2. *Opsi 2 (Closing & Safe Git Sync):* Protokol penutup sesi anti-tabrakan Git (verifikasi 10 gerbang, log sesi, update graphify, pre-flight `git fetch origin` deteksi tabrakan dini, clean commit & push ke GitHub, serta kartu serah terima sesi).
-    3. *Opsi 3 s.d. 7:* Sesi Bimbingan Dosen Pasca-Sempro, Simulasi Sidang Metodologi, Cek Kesehatan 10 Gerbang Extended, Paper-Audit Tier-3, dan Diagnostik Fatal Error DOCX + Auto-Repair.
+    2. *Opsi 2 (Closing & Safe Git Sync):* Protokol penutup sesi anti-tabrakan Git (verifikasi 10 gerbang, penegakan kewajiban update `SOURCE_OF_TRUTH.md` untuk keputusan D31+, pembaruan `PRD_UNIVERSAL`, log sesi, update graphify, pre-flight `git fetch origin` deteksi tabrakan dini, clean commit & push ke GitHub, serta kartu serah terima sesi).
+    3. *Opsi 3 s.d. 7:* Sesi Bimbingan Dosen Pasca-Sempro (wajib mencatat D31+ ke SoT), Simulasi Sidang Metodologi, Cek Kesehatan 10 Gerbang Extended, Paper-Audit Tier-3, dan Diagnostik Fatal Error DOCX + Auto-Repair.
+  - **Arsitektur Dokumentasi Active Core + Sprint Archive:**
+    - Memindahkan 25 berkas PRD dan rencana implementasi sprint masa lalu yang telah 100% selesai ke dalam folder `04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/`.
+    - Menyisakan hanya dokumen hidup (*Living Core*) di root `04_Riset_&_Metodologi/` (11 file esensial) untuk mencegah *context flooding* dan amnesia *lost-in-the-middle* pada AI.
+    - Membuat katalog indeks lengkap pada `04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/README.md`.
+    - Menanamkan aturan permanen penulisan wajib (*mandatory write rules*) di `.agents/rules/obsidian_second_brain.md` dan `AGENTS.md`.
 * **Masalah yang Diselesaikan:**
   - Menghilangkan disparitas informasi antara status naskah nyata (48 hlm, 10 gerbang) dengan template prompt kickoff lama yang masih mencatat 55 hlm dan 7 gerbang.
   - Menghilangkan risiko terjadinya tabrakan berkas (*merge conflict*) lokal vs remote GitHub di kemudian hari dengan menyediakan protokol closing sesi standar.
+  - Mencegah kekacauan visual (*clutter*) pada folder metodologi, menjaga *context window* AI tetap bersih, dan memastikan `SOURCE_OF_TRUTH.md` selalu terbarui di setiap sesi.
   - Paritas teks 100% identik antara versi Markdown dan Web App HTML.
 * **File yang Diperbarui:**
   - [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md]]
   - [[PROMPT_KICKOFF.html]]
+  - [[.agents/rules/obsidian_second_brain.md]]
+  - [[AGENTS.md]]
+  - [[00_DASHBOARD_SECOND_BRAIN.md]]
+  - [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]]
+  - [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/README.md]]
   - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
 
 ---

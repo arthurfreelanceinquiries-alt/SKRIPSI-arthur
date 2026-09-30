@@ -12,7 +12,7 @@ Transform the raw, uncalibrated thesis proposal document into a pristine, public
    - `01_Naskah_Utama/images/diagram_alur_penelitian.png` (300 DPI crop of Diagram Alur Pelaksanaan Penelitian)
 
 ## Tools & Execution Script (3-Layer Architecture)
-- **Layer 1 (Directive):** `directives/generate_thesis_word_document.md` & `04_Riset_&_Metodologi/PRD_HYBRID_PANDOC_SCRIPT_GENERATOR.md`
+- **Layer 1 (Directive):** `directives/generate_thesis_word_document.md` & `04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_HYBRID_PANDOC_SCRIPT_GENERATOR.md`
 - **Layer 2 (Orchestration):** Agentic coordinator for pipeline sequencing, self-annealing, and parity validation.
 - **Layer 3 (Execution):**
   - **Master Governor:** `execution/build_proposal_word.py` (Layout, styles, sectioning, APA 7th tables, TOC dot leaders, pure black).

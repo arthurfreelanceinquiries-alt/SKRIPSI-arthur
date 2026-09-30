@@ -77,14 +77,17 @@ This workspace is coupled with an Obsidian Second Brain and Graphify knowledge g
      > - **Keputusan/Output:** [Hasil akhir]
      ```
    - Connect concepts with bidirectional links `[[...]]`.
-3. **Auto-Capture & Session Logging:**
-   - Record significant breakthroughs, bimbingan decisions, and structural changes to `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md`.
+3. **Auto-Capture & Living Core Synchronization (Mandatory):**
+   - **Source of Truth Update:** Whenever a new methodological decision, parameter revision, or supervisor directive (from Dr. Fredella Colline / examiners) occurs, immediately record a new canonical entry (`D31`, `D32`, etc.) in `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md`.
+   - **Universal PRD Update:** Keep `04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md` updated with any architectural changes.
+   - **Session Logging:** Record breakthroughs, bimbingan decisions, and structural changes to `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md`.
+   - **Cockpit Refresh:** Update `00_DASHBOARD_SECOND_BRAIN.md`.
 
 ## Mandatory Thesis Parity & Quality Directives (Inviolable)
 
 Whenever modifying the skripsi manuscript or related code, you MUST follow:
-- [[04_Riset_&_Metodologi/PRD_SINKRONISASI_DOCX_DAN_AUDIT_FILE.md]]
-- [[04_Riset_&_Metodologi/PRD_REVISI_DOCX_KUALITAS_LATEX.md]]
+- [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_SINKRONISASI_DOCX_DAN_AUDIT_FILE.md]]
+- [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_REVISI_DOCX_KUALITAS_LATEX.md]]
 - [[directives/generate_thesis_word_document.md]]
 - [[.agents/rules/mandatory_thesis_sync_and_quality.md]]
 

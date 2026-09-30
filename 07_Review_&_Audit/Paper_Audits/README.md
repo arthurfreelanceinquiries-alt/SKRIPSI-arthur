@@ -20,4 +20,4 @@ Laporan audit dihasilkan sesuai kebijakan **Tier-3 Gated Audit** (Pra-Bimbingan,
 ## 📌 Prosedur Pelaksanaan Audit
 Untuk menjalankan audit baru, ikuti Standard Operating Procedure (SOP) pada:
 * 📜 Directive: [[directives/run_paper_audit.md]]
-* 📜 PRD Kebijakan: [[04_Riset_&_Metodologi/PRD_INTEGRASI_SKILL_PAPER_AUDIT.md]]
+* 📜 PRD Kebijakan: [[04_Riset_&_Metodologi/00_Arsip_PRD_Selesai/PRD_INTEGRASI_SKILL_PAPER_AUDIT.md]]
