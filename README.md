@@ -3,7 +3,7 @@
 **Penulis:** Arthur Reezan  
 **Fakultas / Program Studi:** Fakultas Ekonomi dan Bisnis | S1 Manajemen (Konsentrasi Manajemen Keuangan)  
 **Dosen Pembimbing:** Dr. Fredella Colline  
-**Status Naskah:** 🟢 **Proposal 48 Halaman Settled** · 54 Referensi Q1/SSCI Bebas Halusinasi · Extended Quality Gates 10/10 PASS · Fase Pasca-Sempro & Persiapan Riset Lapangan
+**Status Naskah:** 🟢 **Proposal 51 Halaman Settled** · 54 Referensi Q1/SSCI Bebas Halusinasi · Extended Quality Gates 11/11 PASS (Gate G8 Paritas Italic) · Fase Pasca-Sempro & Persiapan Riset Lapangan di Jakarta Barat
 
 ---
 
@@ -11,13 +11,13 @@
 
 | Parameter | Status Kanonis Definitif |
 |---|---|
-| **Judul Skripsi Resmi** | **PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI** |
-| **Naskah Master Tunggal** | `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.*` (PDF 48 hlm settled, DOCX 181 hyperlink sitasi aktif, MD 742 baris) |
+| **Judul Skripsi Resmi** | **PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI (STUDI PADA KONSUMEN DI JAKARTA BARAT)** |
+| **Naskah Master Tunggal** | `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.*` (PDF 51 hlm settled, DOCX 185 hyperlink sitasi aktif, MD 761 baris) |
 | **Pustaka & Sitasi** | 54 Referensi 100% Terverifikasi (Paritas 5-Arah: TeX, DOCX, MD, RIS Mendeley, BibTeX) |
 | **Standar Kepatuhan** | Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023 (SK Dekan No. 350a/SK/UKKW/FEB/D/VI/2023) |
 | **Kerangka Teoretis Utama** | *Behavioral Finance* (Keuangan Keperilakuan) — Eliminasi pelabelan kaku Grand Theory per ketetapan **D30** |
 | **Model Analisis** | *Moderated Regression Analysis* (MRA) 2-Tahap Hierarkis dengan transformasi *mean-centering* ($X_i^*, M^*$) |
-| **Fase Saat Ini** | **Fase Pasca-Sempro:** Persiapan instrumen kuesioner Google Forms & penelitian lapangan ($N \ge 111$ per Green 1991) |
+| **Fase Saat Ini** | **Fase Pasca-Sempro:** Persiapan instrumen kuesioner Google Forms & penelitian lapangan pada konsumen di Jakarta Barat ($N \ge 111$ per Green 1991, target ideal 120–150 per **D07** & **D31**) |
 
 ---
 

@@ -26,13 +26,13 @@
 Halo! Tolong jalankan skill "obsidian-second-brain" dan mulai sesi kerja skripsi ini dengan protokol anti-lupa konteks:
 
 1. [BACA PENGETAHUAN KODE & GRAF]: Tolong periksa `graphify-out/manifest.json` dan `graphify-out/GRAPH_REPORT.md` agar kamu memahami seluruh relasi file, dependensi script, dan entitas skripsi ini.
-2. [BACA KOKPIT OBSIDIAN]: Tolong baca `00_DASHBOARD_SECOND_BRAIN.md`, `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` (keputusan D01–D30), framework universal `04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md` (+ SOP `directives/universal_thesis_graph_of_agents.md`), dan catatan log terkini `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md` untuk memuat status naskah aktif, parameter variabel penelitian (Y: Impulsive Buying, X1: Hedonic Motivation, X2: Desire for Completeness, X3: Speculative Motive, M: Self-Control sebagai pemoderasi), serta arahan Dosen Pembimbing Ibu Dr. Fredella Colline.
-3. [ATURAN KONSEPTUAL & PENULISAN]: Pastikan kepatuhan mutlak terhadap keputusan D30 (tanpa label kaku Grand Theory di Bab 2; Behavioral Finance sebagai kerangka teoretis utama), penataan istilah asing di belakang bahasa Indonesia dengan huruf miring (contoh: kesimetrisan cetak (\emph{centering})), rumus MRA ber-centering mean ($X_i^*, M^*$), dan format callout `> [!SUMMARY]` pada markdown baru.
+2. [BACA KOKPIT OBSIDIAN]: Tolong baca `00_DASHBOARD_SECOND_BRAIN.md`, `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` (keputusan D01–D32), framework universal `04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md` (+ SOP `directives/universal_thesis_graph_of_agents.md`), dan catatan log terkini `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md` untuk memuat status naskah aktif, parameter variabel penelitian (Y: Impulsive Buying, X1: Hedonic Motivation, X2: Desire for Completeness, X3: Speculative Motive, M: Self-Control sebagai pemoderasi), ruang lingkup populasi konsumen di Jakarta Barat (D31), serta arahan Dosen Pembimbing Ibu Dr. Fredella Colline.
+3. [ATURAN KONSEPTUAL & PENULISAN]: Pastikan kepatuhan mutlak terhadap keputusan D30 (tanpa label kaku Grand Theory di Bab 2; Behavioral Finance sebagai kerangka teoretis utama), penataan istilah asing di belakang bahasa Indonesia dengan huruf miring (contoh: kesimetrisan cetak (\emph{centering})), rumus MRA ber-centering mean ($X_i^*, M^*$), paritas tipografi miring lintas format 100% (D32), dan format callout `> [!SUMMARY]` pada markdown baru.
 4. [AUTO-LOGGING]: Tolong catat progres atau keputusan penting sesi ini ke `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md`.
 
 Setelah kamu membaca file-file di atas, tolong berikan ringkasan 3 poin:
-- Status terkini naskah proposal (SATU file utama `Proposal_Arthur_PokemonTCG.*` — PDF 48 hlm settled, 54 pustaka mutakhir Q1/SSCI terverifikasi, gate terakhir 10/10 PASS mutlak).
-- Konteks penelitian dan fase riset yang aktif di ingatanmu (status pasca-sempro & persiapan penelitian lapangan).
+- Status terkini naskah proposal (SATU file utama `Proposal_Arthur_PokemonTCG.*` — PDF 51 hlm settled, 54 pustaka mutakhir Q1/SSCI terverifikasi, gate terakhir 11/11 PASS mutlak).
+- Konteks penelitian dan fase riset yang aktif di ingatanmu (status pasca-sempro & persiapan penelitian lapangan pada konsumen di Jakarta Barat).
 - Tanyakan apa fokus pekerjaan yang ingin kita selesaikan hari ini!
 ```
 
@@ -40,17 +40,17 @@ Setelah kamu membaca file-file di atas, tolong berikan ringkasan 3 poin:
 
 ## 🏁 3. PROMPT PENUTUP SESI (CLOSING & SAFE GIT SYNC — ANTI-TABRAKAN)
 
-> 🛑 **WAJIB DIJALANKAN SEBELUM MENUTUP IDE:** Salin prompt di bawah ini setiap kali Anda selesai bekerja agar AI mengunci naskah, memvalidasi 10 gerbang, mencatat log, dan mengunggahnya bersih ke GitHub. **Mencegah 100% insiden file bertabrakan (*merge conflict*)!**
+> 🛑 **WAJIB DIJALANKAN SEBELUM MENUTUP IDE:** Salin prompt di bawah ini setiap kali Anda selesai bekerja agar AI mengunci naskah, memvalidasi 11 gerbang, mencatat log, dan mengunggahnya bersih ke GitHub. **Mencegah 100% insiden file bertabrakan (*merge conflict*)!**
 
 ```text
 Halo! Saya ingin MENGAKHIRI SESI KERJA SKRIPSI hari ini. Tolong jalankan protokol "Closing Sesi & Safe Git Sync" secara tuntas:
 
 1. [VERIFIKASI INTEGRITAS NASKAH & PARITAS]:
-   - Periksa apakah ada perubahan pada `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex`. Jika ada perubahan, jalankan settled-build C-LOT-3 (xelatex -> bibtex -> 2x xelatex) hingga 48 halaman settled, lalu jalankan `python execution/sync_markdown_from_tex.py` dan rebuild `python execution/build_proposal_word.py`.
-   - Jalankan `python execution/run_thesis_graph.py --gate extended` dan pastikan hasil 10/10 PASS mutlak serta 0 tautan sitasi mati (`python execution/verify_all_citation_links.py`).
+   - Periksa apakah ada perubahan pada `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex`. Jika ada perubahan, jalankan settled-build C-LOT-3 (xelatex -> bibtex -> 2x xelatex) hingga 51 halaman settled, lalu jalankan `python execution/sync_markdown_from_tex.py` dan rebuild `python execution/build_proposal_word.py`.
+   - Jalankan `python execution/run_thesis_graph.py --gate extended` dan pastikan hasil 11/11 PASS mutlak serta 0 tautan sitasi mati (`python execution/verify_all_citation_links.py`).
 
 2. [DOKUMENTASI & SECOND BRAIN]:
-   - Periksa apakah ada keputusan konseptual/metodologis atau arahan baru dari dosen (Dr. Fredella Colline / penguji). Jika ada, rekam sebagai baris keputusan kanonis baru (D31, dst.) di `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` lengkap dengan tanggal dan justifikasi ilmiah.
+   - Periksa apakah ada keputusan konseptual/metodologis atau arahan baru dari dosen (Dr. Fredella Colline / penguji). Jika ada, rekam sebagai baris keputusan kanonis baru (D33, dst.) di `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` lengkap dengan tanggal dan justifikasi ilmiah.
    - Perbarui `04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md` jika terdapat penambahan subsistem atau perubahan arsitektur.
    - Catat seluruh progres, masalah yang diselesaikan, dan keputusan penting sesi ini ke `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md` (awali dengan callout `> [!SUMMARY]`, gunakan `[[wikilinks]]`).
    - Perbarui parameter pada `00_DASHBOARD_SECOND_BRAIN.md` jika ada perubahan status naskah atau referensi.
@@ -112,21 +112,21 @@ Bisa kita mulai dari pertanyaan pertama?
 
 ---
 
-### 🔹 Opsi 5: Sesi Cek & Verifikasi Naskah / Kepatuhan UKRIDA 2023 (10/10 PASS)
-*Audit 7 langkah: integritas file + logo, settled-build PDF 48 hlm, sinkron angka cetak, 10 gerbang extended parity, hygiene format, self-anneal, dan vonis kelayakan:*
+### 🔹 Opsi 5: Sesi Cek & Verifikasi Naskah / Kepatuhan UKRIDA 2023 (11/11 PASS)
+*Audit 7 langkah: integritas file + logo, settled-build PDF 51 hlm, sinkron angka cetak, 11 gerbang extended parity (Gate G8 Paritas Italic), hygiene format, self-anneal, dan vonis kelayakan:*
 
 ```text
 Halo! Jalankan skill "obsidian-second-brain". Tolong lakukan audit kesehatan naskah menyeluruh, kepatuhan FEB UKRIDA 2023, dan verifikasi dokumen multiformat:
 
-[KONTEKS KANONIS — jangan berasumsi lain]: satu-satunya naskah proposal adalah `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.*` (varian NoBab3 dihapus permanen). PDF kanonis = 48 hlm settled (frontmatter romawi i–v: Cover i, TOC ii–iii, LOT iv, LOF v; tubuh arab 1–43: Bab 1=1–10, Bab 2=11–21, Bab 3=22–37, DP=38–43). Enam lembar formal hidup modular di `01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/`.
+[KONTEKS KANONIS — jangan berasumsi lain]: satu-satunya naskah proposal adalah `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.*` (varian NoBab3 dihapus permanen). PDF kanonis = 51 hlm settled (frontmatter romawi i–v: Cover i, TOC ii–iii, LOT iv, LOF v; tubuh arab 1–46: Bab 1=1–10, Bab 2=11–24, Bab 3=25–41, DP=42–46). Enam lembar formal hidup modular di `01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/`.
 
 1. [INTEGRITAS FILE]: Periksa `01_Naskah_Utama/` — pastikan (a) logo pentagram vektor `images/ukrida_pentagram.pdf` dipakai TeX (cover) dan ter-embed di DOCX; (b) tidak ada lockfile basi `~$*.docx`; (c) 6 file modular frontmatter lengkap; (d) tidak ada sisa file `*NoBab3.*`.
-2. [SETTLED-BUILD C-LOT-3]: Kompilasi `xelatex` berulang hingga 2 run beruntun jumlah halaman IDENTIK (48 hlm) + 0 LaTeX rerun-warning. Angka sekali-pass dilarang dipakai. Jika total bergeser dari 48, selidiki dulu sebelum lanjut.
-3. [SINKRON ANGKA CETAK C-LOT-1]: Samakan angka TOC/LOT/LOF statis DOCX dengan `.toc`/`.lot`/`.lof` PDF (kanonis: LOT hlm 6, 14, 22, 28, 37; LOF hlm 1, 2, 4, 21, 35; TOC BAB 1=1, BAB 2=11, BAB 3=22, DP=38). Bila beda, perbarui `execution/build_proposal_word.py` lalu rebuild DOCX.
-4. [ORCHESTRATOR 10 GERBANG EXTENDED]: Jalankan `py execution/run_thesis_graph.py --gate extended` (G1 Mendeley, G2 live-URL, G3 UKRIDA 2023, G4 tipografi pure-black, G5 paritas PDF-vs-Word, G6 outline, G7 buku LibGen, X1 forensik format typo, X3 header PDF massal, X4 layout section Word) + `py execution/verify_all_citation_links.py` (syarat 0 tautan MATI). Seluruh gerbang wajib 10/10 PASS mutlak.
+2. [SETTLED-BUILD C-LOT-3]: Kompilasi `xelatex` berulang hingga 2 run beruntun jumlah halaman IDENTIK (51 hlm) + 0 LaTeX rerun-warning. Angka sekali-pass dilarang dipakai. Jika total bergeser dari 51, selidiki dulu sebelum lanjut.
+3. [SINKRON ANGKA CETAK C-LOT-1]: Samakan angka TOC/LOT/LOF statis DOCX dengan `.toc`/`.lot`/`.lof` PDF (kanonis: LOT hlm 6, 14, 22, 28, 37; LOF hlm 1, 2, 4, 21, 35; TOC BAB 1=1, BAB 2=11, BAB 3=25, DP=42). Bila beda, perbarui `execution/build_proposal_word.py` lalu rebuild DOCX.
+4. [ORCHESTRATOR 11 GERBANG EXTENDED]: Jalankan `py execution/run_thesis_graph.py --gate extended` (G1 Mendeley, G2 live-URL, G3 UKRIDA 2023, G4 tipografi pure-black, G5 paritas PDF-vs-Word, G6 outline, G7 buku LibGen, G8 paritas italic lintas format, X1 forensik format typo, X3 header PDF massal, X4 layout section Word) + `py execution/verify_all_citation_links.py` (syarat 0 tautan MATI). Seluruh gerbang wajib 11/11 PASS mutlak.
 5. [HYGIENE BAHASA & FORMAT]: DOCX wajib 0 sisa backslash LaTeX, 0 singkatan `n.s.`, judul BAB dua baris (shift+enter), rujukan tabel/gambar bernomor eksplisit, dan istilah asing berada di belakang bahasa Indonesia dalam kurung miring (\emph{italics}).
 6. [SELF-ANNEAL]: Jika ada gerbang FAIL, perbaiki secara surgical di skrip/dokumen pemiliknya, ulangi uji dari gerbang yang gagal, dan abadikan pelajarannya ke SOP di `directives/`.
-7. [LAPORAN]: Sajikan tabel 10 gerbang (PASS/FAIL + bukti), status sinkron DOCX, dan vonis akhir LAYAK KE PEMBIMBING atau BUILD BROKEN. Catat sesi ke `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md` (awali `> [!SUMMARY]`, gunakan `[[wikilinks]]`).
+7. [LAPORAN]: Sajikan tabel 11 gerbang (PASS/FAIL + bukti), status sinkron DOCX, dan vonis akhir LAYAK KE PEMBIMBING atau BUILD BROKEN. Catat sesi ke `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md` (awali `> [!SUMMARY]`, gunakan `[[wikilinks]]`).
 ```
 
 ---
