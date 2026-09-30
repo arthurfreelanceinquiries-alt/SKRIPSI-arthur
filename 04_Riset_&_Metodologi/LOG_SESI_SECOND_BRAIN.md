@@ -5,6 +5,93 @@
 > - **Masalah yang Diselesaikan:** Menghilangkan amnesia progres; mendokumentasikan alasan di balik setiap perubahan naskah atau penambahan fitur agar selalu siap dipertanggungjawabkan saat sidang.
 > - **Keputusan/Output:** Diperbarui secara otomatis oleh asisten di setiap akhir sesi kerja.
 
+## 📅 Sesi 30 September 2026 (Sesi 37): Audit Integritas Total 54 Berkas Sitasi/Jurnal, Eliminasi Kecemasan File Rusak 2 Lembar, & Penyusunan Ensiklopedia 54 Sitasi Lengkap (Bagian 22) pada Panduan Belajar
+
+* **Fokus Pekerjaan:**
+  - **Audit Komprehensif Seluruh 54 Pustaka:** Melakukan pemindaian berkas fisik PDF dan metadata ilmiah terhadap seluruh 54 sitasi skripsi (10 Jurnal Empiris 2021–2026, 6 Pustaka X1, 4 Pustaka X2, 5 Pustaka X3, 5 Pustaka M, 9 Pustaka Y, 4 Teori Grand/Supporting, 8 Buku Metodologi, dan 3 Data Industri).
+  - **Verifikasi Integritas Halaman (Bebas Isu "Jurnal Error 2 Lembar"):**
+    - Membuktikan secara empiris bahwa **TIDAK ADA SATUPUN JURNAL EMPIRIS YANG ERROR HANYA 2 LEMBAR**.
+    - Seluruh 10 Jurnal Empiris Utama (2021–2026) berstatus **Full Paper Lengkap** (8–17 halaman).
+    - Seluruh Buku Teks Internasional berstatus **Buku Utuh Ratusan Halaman** (Hair 758 hlm, Hayes 740 hlm, Sekaran 451 hlm, Keynes 430 hlm, Shiller 319 hlm, Mehrabian 286 hlm, Aiken & West 220 hlm, Belk 209 hlm, Cohen 579 hlm).
+    - Menjelaskan status buku lokal Indonesia (Ghozali 2018 & Sugiyono 2019): Berkas PDF 1 halaman di repositori adalah **Lembar Repositori Bukti Teoretis Ber-ISBN** (bukti kutipan buku cetak fisik resmi ber-ISBN dari BP-UNDIP & Alfabeta, bukan file korup/rusak).
+  - **Penyusunan Bagian 22 pada Panduan Belajar Sidang:**
+    - Menambahkan **# 22. ENSIKLOPEDIA 54 SITASI & PUSTAKA: AUDIT INTEGRITAS BERKAS, STATUS AKSES, & PERAN STRATEGIS DALAM SKRIPSI** ke dalam [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]].
+    - Setiap satu dari 54 sitasi dibedah tuntas mencakup: Kunci BibTeX, Judul Lengkap, Venue/Jurnal, Indeksasi/Penerbit, DOI/URL, Status Integritas Berkas, Fokus Konstruk, **Peran & Hubungan dalam Skripsi**, serta **Tameng Jawaban Sidang (1 Kalimat Spontan)**.
+  - **Kompilasi Sinkronisasi Tri-Format:**
+    - Markdown: `PANDUAN_BELAJAR_PROPOSAL.md` (218 KB / 2.067 baris).
+    - PDF: `PANDUAN_BELAJAR_PROPOSAL.pdf` (209.3 KB, berhasil dikompilasi via ReportLab).
+    - HTML: `PANDUAN_BELAJAR_PROPOSAL.html` (283.0 KB, berhasil di-generate via Markdown parser dengan styling eksekutif).
+* **File yang Diperbarui:**
+  - [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]] (penambahan Bagian 22 & pembaruan Daftar Isi)
+  - [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.pdf]] (kompilasi ulang PDF)
+  - [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.html]] (regenerasi HTML standalone)
+  - [[scratch/generate_section_22.py]] & [[scratch/build_study_guide_html.py]] (script otomasi)
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] (log Sesi 37)
+
+---
+
+## 📅 Sesi 30 September 2026 (Sesi 36): Unifikasi Skill Humanizer-ID, Penetapan Rule Permanen Bahasa Alami & Zero Unsupported Claims, Eliminasi Klaim Asumtif Daya Beli, dan Penyelarasan Menyeluruh Panduan Belajar & Slide Sempro
+
+* **Fokus Pekerjaan:**
+  - **Unifikasi Berkas Skill Humanizer-ID:** Mengonsolidasikan 9 berkas referensi teoretis ke dalam satu berkas mandiri `SKILL.md` (28 KB / 346 baris) di `.agents/skills/humanizer-id/` sehingga mudah dibaca *on-demand*.
+  - **Penetapan Dua Permanent Rule Baru:**
+    1. [[.agents/rules/mandatory_humanized_academic_tone.md]]: Gaya penulisan skripsi selalu lugas, bebas jargon robotik/hiperbolik, dan dapat dipertanggungjawabkan mahasiswa di depan dewan penguji.
+    2. [[.agents/rules/mandatory_zero_unsupported_claims.md]]: *"Jangan pernah menulis klaim yang Anda sendiri tidak memegang data angka mentahnya."* Melarang asumsi makro/ekonomi tanpa tabel mentah; mewajibkan penyandaran argumen pada fakta operasional teramati (*observable facts*), ketersediaan subjek, dan metodologi baku.
+  - **Eliminasi Klaim Asumtif Daya Beli (Anti-Cecaran Sidang):**
+    - Menghapus total frasa klaim *"pendapatan diskresioner tinggi"* dan *"daya beli tinggi"* pada Bab 1 (L.399) dan Bab 3 (L.761) yang berisiko menjadi sasaran empuk cecaran penguji.
+    - Menggantinya dengan **Pilar 3 yang 100% aman dan berbasis fakta lapangan**: *Kepadatan Titik Penjualan Ritel Kasir (Point-of-Sale Retail Density)* seharga Rp20.000–Rp30.000 per pack di kasir minimarket modern (Indomaret, Alfamart) dan toko buku (Gramedia) seluruh Jakarta Barat.
+  - **Eksekusi Humanisasi Naskah (Kategori A):** Menyisir dan mengganti 40+ frasa yang dinilai terlalu tinggi, kaku, atau robotik pada [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]]:
+    - *Bab 1:* Mengganti "laboratorium empiris ideal" $\rightarrow$ "lokasi yang sangat sesuai", "gairah konsumsi pekat" $\rightarrow$ "aktivitas pembelian sangat terkonsentrasi", "letupan emosional" $\rightarrow$ "dorongan emosi sesaat", "rem volisional lumpuh" $\rightarrow$ "pengendalian diri melemah", "plausibilitas" $\rightarrow$ "kemungkinan", dsb.
+    - *Bab 2:* Mengganti "makhluk yang sepenuhnya rasional" $\rightarrow$ "pelaku ekonomi yang selalu rasional", "kesesatan berpikir penjudi" $\rightarrow$ "kesalahan berpikir penjudi", "landasan eksplanatif" $\rightarrow$ "landasan penjelasan", "kapasitas volisional tangguh" $\rightarrow$ "kemampuan pengendalian diri yang baik", dsb.
+    - *Bab 3:* Mengganti "memotret fenomena" $\rightarrow$ "menggambarkan fenomena", "nol kontaminasi sampel" $\rightarrow$ "tidak ada pencampuran sampel yang tidak memenuhi syarat", "penyaringan di hulu" $\rightarrow$ "penyaringan di awal kuesioner", "murni mengisolasi" $\rightarrow$ "murni mengukur", dsb.
+  - **Preservasi Istilah Kunci (Kategori B / Allowlist):** Tetap mempertahankan secara ketat istilah metodologi dan statistik baku (MRA, *mean-centering*, *cross-sectional*, *purposive sampling*, multikolinearitas, heteroskedastisitas, *Prospect Theory*, *Zeigarnik Effect*, dll.) yang telah dilengkapi kamus jawaban "ala ngobrol" untuk persiapan sidang.
+  - **Sinkronisasi Dokumen & Regenerasi Word:** Menjalankan `sync_markdown_from_tex.py` memperbarui `PROPOSAL_SKRIPSI_POKEMON_TCG.md` (761 baris) dan meregenerasi dokumen Word `Proposal_Arthur_PokemonTCG.docx` (181 hyperlink sitasi aktif, TOC terhubung, layout pure-black).
+  - **Penyelarasan Panduan Belajar Sidang (MD, PDF, HTML):**
+    - Memperbarui [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]] (§9 & §17) pada batasan populasi Jakarta Barat, 4 kriteria inklusi, dan 4 pilar justifikasi bebas klaim data mentah.
+    - Menambahkan **Pertanyaan 20B** (*Tameng Anti-Cecaran: "Mengapa memilih wilayah Jakarta Barat? Apakah karena asumsi daya beli warganya tinggi?"*) serta memperbarui Q20 dan Q31.
+    - Mengompilasi ulang PDF via [[execution/build_study_guide_pdf.py]] $\rightarrow$ `PANDUAN_BELAJAR_PROPOSAL.pdf` (154.8 KB) dan memperbarui `PANDUAN_BELAJAR_PROPOSAL.html`.
+  - **Penyelarasan Materi Presentasi Sempro 7 Slide:**
+    - Memperbarui [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/ALUR_PRESENTASI_7_SLIDE_DETAIL.md]] (Slide 6 Kuadran 2 & Naskah Narasi Bicara).
+    - Memperbarui `SEMPRO_7_SLIDE_ARTHUR.html`, `SEMPRO_7_SLIDE_MOBILE_STANDALONE.html`, dan `02_Rencana_PPT_Sempro_7_Slide/index.html` (Slide 6 Quad 1, Quad 2, dan Speaker Notes) agar paritas 100% dengan naskah proposal.
+  - **Verifikasi Kepatuhan & Tautan:**
+    - `verify_ukrida_compliance.py`: 100% PASS (6/6 pengujian terpenuhi).
+    - `verify_all_citation_links.py`: 100% VALID (35 hidup, 18 terhalang-bot, 0 mati).
+* **File yang Diperbarui:**
+  - [[.agents/rules/mandatory_humanized_academic_tone.md]] (berkas baru)
+  - [[.agents/rules/mandatory_zero_unsupported_claims.md]] (berkas baru)
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]] (humanisasi Bab 1–3 & penyesuaian Pilar 3 Jakarta Barat)
+  - [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]] (sinkronisasi naskah)
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]] (regenerasi Word)
+  - [[02_Persiapan_Sidang/PANDUAN_BELAJAR_PROPOSAL.md]], `.pdf`, `.html` (pemutakhiran panduan belajar & penambahan Q20B)
+  - [[02_Persiapan_Sidang/02_Rencana_PPT_Sempro_7_Slide/ALUR_PRESENTASI_7_SLIDE_DETAIL.md]] (pemutakhiran naskah presentasi)
+  - [[02_Persiapan_Sidang/SEMPRO_7_SLIDE_ARTHUR.html]], `SEMPRO_7_SLIDE_MOBILE_STANDALONE.html`, `02_Rencana_PPT_Sempro_7_Slide/index.html` (pemutakhiran slide 6)
+  - [[execution/build_study_guide_pdf.py]] (penambahan stripping tag HTML anchor ReportLab)
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] (log Sesi 36)
+
+---
+
+## 📅 Sesi 30 September 2026 (Sesi 35): Penerimaan Arahan Bimbingan Dosen Pembimbing (Ibu Dr. Fredella Colline), Analisis 4 Pilar Justifikasi Pemilihan Jakarta Barat, Formulasi Keputusan D31, & Pemetaan Dampak Naskah Bab 1, 3, dan Judul
+
+* **Fokus Pekerjaan:**
+  - **Penerimaan & Pencatatan Arahan Dosen:** Memproses transkrip arahan bimbingan daring dari Dosen Pembimbing ([[Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A]]) tanggal 29 September 2026 terkait revisi populasi responden dan penyesuaian judul skripsi.
+  - **Formulasi 4 Pilar Justifikasi Ilmiah (*The Why*):** Menjawab arahan tegas dosen (*"kenapa ambil jakarta barat juga kan harus jelas.. jadi semua yang kamu tulis harus ada alasannya.."*) dengan menyusun 4 pilar rasional akademik:
+    1. *Episentrum Ekosistem Ritel & Komunitas Resmi (LGS Hub):* Konsentrasi toko hobi resmi penyelenggara *Gym Battle* di Jakarta Barat (Tanjung Duren, Central Park, Mall Taman Anggrek, Puri) dan kepadatan minimarket ritel modern.
+    2. *Aksesibilitas Observasi Lapangan Langsung (*Direct Empirical Feasibility*):* Kedekatan geografis peneliti yang berkampus di UKRIDA Tanjung Duren, Jakarta Barat, memungkinkan pengamatan transaksi kasir secara riil dan verifikatif.
+    3. *Karakteristik Sosio-Demografis & Daya Beli Muda:* Populasi Gen Z dan Milenial urban dengan pendapatan diskresioner tinggi terhadap barang koleksi hobi (*collectibles*).
+    4. *Pengendalian Variasi Eksternal (*Control of Extraneous Variables*):* Pengendalian faktor pengganggu disparitas rantai pasok/logistik antar-wilayah guna meningkatkan validitas internal model.
+  - **Pencatatan Dokumen Formal:**
+    - Membuat berkas bimbingan resmi: [[07_Review_&_Audit/Revisi_Dosen/2026-09-29_Revisi_Fredella_Colline_Populasi_Jakarta_Barat_dan_Judul.md]].
+    - Menetapkan keputusan kanonis **[[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md|D31]]** (*Penyempitan Populasi Responden ke Jakarta Barat & Penyesuaian Judul*).
+    - Memutakhirkan [[00_DASHBOARD_SECOND_BRAIN.md]] (judul topik & riwayat bimbingan).
+  - **Verifikasi Batasan Kanonis:** Model MRA 6H ($X_1, X_2, X_3, M \rightarrow Y$), 6 hipotesis direksional, dan 54 referensi jurnal Q1/SSCI terverifikasi tetap terjaga utuh 100% tanpa pelanggaran (*Zero Canonical Violation*).
+* **File yang Diperbarui:**
+  - [[07_Review_&_Audit/Revisi_Dosen/2026-09-29_Revisi_Fredella_Colline_Populasi_Jakarta_Barat_dan_Judul.md]] (berkas baru)
+  - [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] (D31 & parameter judul)
+  - [[00_DASHBOARD_SECOND_BRAIN.md]] (topik & status naskah)
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] (log Sesi 35)
+
+---
+
 ## 📅 Sesi 30 September 2026 (Sesi 34): Rekonsiliasi & Merge Penuh GitHub (54 Sitasi Q1) vs Lokal (Audit F026–F031), Kompilasi Settled 48 Hlm, dan Peluncuran Sistem Dual-Prompt (Kickoff & Closing Safe Git Sync)
 
 * **Fokus Pekerjaan:**

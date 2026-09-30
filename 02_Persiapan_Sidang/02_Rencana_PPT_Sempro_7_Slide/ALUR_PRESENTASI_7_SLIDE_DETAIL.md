@@ -169,7 +169,9 @@ Jangan hafalkan 7 slide sebagai bagian terpisah. Hafalkan **benang merah alur ce
      - Visual Bar Skala Likert 5-Poin: `[1: STS]` `[2: TS]` `[3: N]` `[4: S]` `[5: SS]`.
      - Keterangan: Skor komposit dihitung dari rerata butir per konstruk variabel (Ghozali, 2018).
   2. **Kuadran 2 — Populasi, Kriteria & Kaidah Sampel Green (1991):**
-     - Populasi: Tak terbatas (*infinite*), *Purposive Sampling* (3 filter: WNI, usia $\ge 17$ tahun, pernah beli pack fisik 12 bulan terakhir).
+     - Populasi: Tak terbatas (*infinite*), konsumen/kolektor kartu fisik Pokémon TCG resmi di wilayah **Jakarta Barat**.
+     - Teknik Sampling: *Purposive Sampling* (4 filter: WNI domisili/aktivitas di Jakarta Barat, usia $\ge 17$ tahun, beli pack fisik 12 bln terakhir, lolos *screening questions*).
+     - Justifikasi Wilayah (4 Pilar): LGS Hub resmi, akses observasi langsung peneliti di UKRIDA Tanjung Duren, titik kasir ritel minimarket (Rp20.000–Rp30.000), dan kontrol variasi stok/ongkir.
      - Kotak Rumus Green (1991): Uji-F Simultan ($50 + 8k = 106$) vs Uji-t Parsial ($104 + k = \mathbf{111\text{ Responden}}$).
      - Target Sampel Eksekutif: **120 s.d. 150 responden** (Power $\ge 0{,}80$, Cohen $f^2=0{,}15$) + *Pilot Test* $N=30$.
   3. **Kuadran 3 — Uji Kualitas Data & Asumsi Klasik:**
@@ -179,8 +181,9 @@ Jangan hafalkan 7 slide sebagai bagian terpisah. Hafalkan **benang merah alur ce
      - Kotak Emas: **Mean-Centering Mutlak (Aiken & West, 1991)**: $X_i^* = X_i - \bar{X}_i$ dan $M^* = M - \bar{M}$ untuk melumpuhkan multikolinearitas esensial.
      - 3 Tolok Ukur: Uji-t parsial ($H_1\text{--}H_3 > 0$ & $H_4\text{--}H_6 < 0$), Uji kenaikan $\Delta R^2$ via $F_{\text{change}}$ ($p < 0{,}05$), dan *Simple Slopes Analysis* pada 3 level *Self-Control* ($-1\text{ SD}$, $\text{Mean}$, $+1\text{ SD}$).
 * **🗣️ Naskah Narasi Bicara:**
-  > *"Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain cross-sectional. Responden dipilih menggunakan teknik purposive sampling dengan kriteria WNI usia minimal 17 tahun dan pernah membeli booster pack fisik dalam setahun terakhir. Target sampel yang ditetapkan adalah 120 sampai 150 responden—memenuhi batas minimum 111 responden formula Green—didahului pilot test pada 30 responden untuk menguji kualitas kuesioner.*  
-  > *Untuk analisis data digunakan IBM SPSS dengan Moderated Regression Analysis berbasis OLS. Untuk mencegah multikolinearitas struktural antara variabel tunggal dan perkalian interaksinya, seluruh variabel independen dan moderator ditransformasikan dengan teknik mean-centering. Sebelum uji hipotesis dilakukan uji validitas, reliabilitas, dan uji asumsi klasik. Selanjutnya dilakukan pengujian signifikansi parsial uji t, uji F, perubahan nilai R-Square, serta simple slopes."*
+  > *"Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain cross-sectional pada konsumen kartu Pokémon TCG di wilayah Jakarta Barat. Responden dipilih menggunakan teknik purposive sampling dengan empat kriteria inklusi: berdomisili atau beraktivitas di Jakarta Barat, WNI usia minimal 17 tahun, dan pernah membeli booster pack fisik dalam setahun terakhir, yang disaring otomatis melalui screening questions. Pemilihan wilayah Jakarta Barat didasari empat pertimbangan ilmiah: konsentrasi toko hobi resmi LGS, akses observasi langsung peneliti di kawasan UKRIDA Tanjung Duren, kepadatan gerai kasir ritel minimarket, serta pengendalian variasi stok antardaerah.*  
+  > *Target sampel yang ditetapkan adalah 120 sampai 150 responden—memenuhi batas minimum 111 responden formula Green—didahului pilot test pada 30 responden untuk menguji kualitas instrumen.*  
+  > *Untuk analisis data digunakan IBM SPSS dengan Moderated Regression Analysis berbasis OLS. Untuk mencegah multikolinearitas struktural antara variabel tunggal dan perkalian interaksinya, seluruh variabel independen dan moderator ditransformasikan dengan teknik mean-centering. Sebelum uji hipotesis dilakukan uji validitas, reliabilitas, dan uji asumsi klasik. Selanjutnya dilakukan pengujian signifikansi parsial uji t, uji F, perubahan nilai R-Square via F-change, serta simple slopes."*
 * **🛡️ Catatan Penting Presenter:**
   - Sebutkan istilah **Mean-Centering** dengan tegas. Ini adalah jawaban mutlak jika ditanya soal multikolinearitas perkalian moderasi.
   - Kalimat transisi: *"Sebagai rangkuman akhir, kontribusi dan simpulan rancangan proposal ini disajikan pada slide penutup."*

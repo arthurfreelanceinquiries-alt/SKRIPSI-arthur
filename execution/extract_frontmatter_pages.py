@@ -82,7 +82,8 @@ COL_ID_WIDTHS = [Cm(3.8), Cm(0.4), Cm(9.8)]
 JUDUL = (
     "\u201cPENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, "
     "DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK "
-    "KARTU POK\u00c9MON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI\u201d"
+    "KARTU POK\u00c9MON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI "
+    "(STUDI PADA KONSUMEN DI JAKARTA BARAT)\u201d"
 )
 
 
@@ -296,7 +297,7 @@ def build_04_kata_pengantar():
     doc = _new_doc()
     add_frontmatter_heading(doc, "KATA PENGANTAR", page_break=False)
 
-    add_body_paragraph(doc, "Puji dan syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa atas kasih, anugerah, dan penyertaan-Nya yang senantiasa melimpah, sehingga penulis dapat menyelesaikan penyusunan proposal skripsi yang berjudul **\u201cPENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POK\u00c9MON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI\u201d** dengan baik, lancar, dan tepat waktu.")
+    add_body_paragraph(doc, "Puji dan syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa atas kasih, anugerah, dan penyertaan-Nya yang senantiasa melimpah, sehingga penulis dapat menyelesaikan penyusunan proposal skripsi yang berjudul **\u201cPENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POK\u00c9MON TCG DENGAN SELF-CONTROL SEBAGAI VARIABEL MODERASI (STUDI PADA KONSUMEN DI JAKARTA BARAT)\u201d** dengan baik, lancar, dan tepat waktu.")
     add_body_paragraph(doc, "Proposal skripsi ini disusun sebagai salah satu tahapan akademik yang diwajibkan dalam rangka menempuh ujian seminar proposal guna menyelesaikan studi pada Program Studi S1 Manajemen, Konsentrasi Manajemen Keuangan, Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana (UKRIDA), Jakarta.")
     add_body_paragraph(doc, "Dalam proses penyusunan naskah proposal ini, penulis mendapatkan banyak bimbingan, arahan metodologis, dukungan moril, serta fasilitas dari berbagai pihak. Oleh karena itu, dengan penuh rasa hormat dan kerendahan hati, penulis menyampaikan terima kasih dan apresiasi yang setinggi-tingginya kepada:")
 
@@ -307,7 +308,7 @@ def build_04_kata_pengantar():
         "Seluruh Dosen dan Staf Pengajar FEB UKRIDA, yang telah membagikan ilmu pengetahuan, wawasan analisis keuangan, serta etika profesional selama masa perkuliahan penulis.",
         "Kedua Orang Tua dan Keluarga Tercinta, atas doa yang tiada putus, limpahan kasih sayang, ketulusan pengorbanan, serta dorongan moral dan material yang menjadi sumber kekuatan utama bagi penulis.",
         "Rekan-rekan Mahasiswa Manajemen FEB UKRIDA Angkatan 2023 dan sahabat seperjuangan, atas diskusi yang membangun, motivasi, dan kerja sama selama proses perkuliahan.",
-        "Komunitas Kolektor dan Pemain Pok\u00e9mon TCG di Indonesia, yang telah memberikan gambaran nyata mengenai fenomena pasar kartu koleksi di lapangan.",
+        "Komunitas Kolektor dan Pemain Pok\u00e9mon TCG di Jakarta Barat dan Indonesia, yang telah memberikan gambaran nyata mengenai fenomena pasar kartu koleksi di lapangan.",
     ]
     for idx, kpt in enumerate(kp_points):
         p_kp = doc.add_paragraph()
@@ -351,7 +352,7 @@ def build_05_abstrak():
     rj4 = p_j4.add_run(
         "PENGARUH HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, DAN SPECULATIVE MOTIVE "
         "TERHADAP IMPULSIVE BUYING BOOSTER PACK KARTU POK\u00c9MON TCG DENGAN SELF-CONTROL "
-        "SEBAGAI VARIABEL MODERASI\n\n"
+        "SEBAGAI VARIABEL MODERASI (STUDI PADA KONSUMEN DI JAKARTA BARAT)\n\n"
         "Arthur Reezan (312023002)\n"
         "Program Studi S1 Manajemen, Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana\n"
         "Dosen Pembimbing: Dr. Fredella Colline, S.E., M.M., CFP\u00ae, PFM, CHCP-A"
@@ -367,17 +368,18 @@ def build_05_abstrak():
     r_abs = p_abs.add_run(
         "Penelitian ini bertujuan untuk menganalisis dan menguji secara empiris pengaruh hedonic motivation (motivasi hedonis), "
         "desire for completeness (hasrat kelengkapan koleksi), dan speculative motive (motif spekulasi finansial) terhadap impulsive buying "
-        "(pembelian impulsif) booster pack kartu Pok\u00e9mon Trading Card Game (Pok\u00e9mon TCG) fisik resmi berbahasa Indonesia, serta menguji peran kontrol diri "
-        "(self-control) sebagai variabel moderasi dalam memperlemah pengaruh ketiga variabel anteseden tersebut. Penelitian ini menggunakan pendekatan kuantitatif "
-        "asosiatif dengan desain survei cross-sectional. Data primer dikumpulkan melalui penyebaran kuesioner daring berbasis skala Likert 5 poin kepada responden "
-        "yang dipilih melalui teknik purposive sampling. Kriteria inklusi sampel adalah konsumen atau kolektor Warga Negara Indonesia (WNI) berusia minimal 17 tahun "
-        "yang pernah membeli booster pack Pok\u00e9mon TCG fisik resmi dalam rentang waktu 6\u201312 bulan terakhir. Jumlah sampel yang ditargetkan adalah 120 hingga 150 responden, "
+        "(pembelian impulsif) booster pack kartu Pok\u00e9mon Trading Card Game (Pok\u00e9mon TCG) fisik resmi berbahasa Indonesia pada konsumen di Jakarta Barat, "
+        "serta menguji peran kontrol diri (self-control) sebagai variabel moderasi dalam memperlemah pengaruh ketiga variabel anteseden tersebut. "
+        "Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei cross-sectional. Data primer dikumpulkan melalui penyebaran kuesioner daring "
+        "berbasis skala Likert 5 poin kepada responden yang dipilih melalui teknik purposive sampling. Kriteria inklusi sampel adalah konsumen atau kolektor "
+        "Warga Negara Indonesia (WNI) berusia minimal 17 tahun yang berdomisili atau beraktivitas/bertransaksi aktif di wilayah Jakarta Barat serta pernah membeli "
+        "booster pack Pok\u00e9mon TCG fisik resmi dalam rentang waktu 6\u201312 bulan terakhir. Jumlah sampel yang ditargetkan adalah 120 hingga 150 responden, "
         "mengacu pada rekomendasi ukuran sampel Green (1991) dan Cohen (1988) untuk mencapai kekuatan uji statistik (statistical power) yang memadai pada model regresi "
         "linear berganda. Metode analisis data menggunakan analisis regresi berganda dan Moderated Regression Analysis (MRA) dengan prosedur pemusatan rata-rata "
         "(mean-centering) guna mereduksi potensi multikolinearitas non-esensial antara variabel prediktor dengan produk interaksinya (Aiken dan West, 1991; Ghozali, 2018), yang diolah menggunakan perangkat lunak "
         "IBM SPSS Statistics. Penelitian ini menawarkan kebaruan teoritis (novelty) dengan mengintegrasikan kerangka psikologi lingkungan Stimulus-Organism-Response (S-O-R), "
         "psikologi kolektor (Zeigarnik Effect dan The Completing the Set Effect), teori regulasi diri (Self-Regulation Theory), serta prinsip-prinsip keuangan perilaku "
-        "(behavioral finance) pada fenomena komoditas hobi fisik bernilai spekulatif tinggi. Hasil penelitian ini diharapkan memberikan kontribusi empiris bagi konsumen "
+        "(behavioral finance) pada fenomena komoditas hobi fisik bernilai spekulatif tinggi di kawasan metropolitan Jakarta Barat. Hasil penelitian ini diharapkan memberikan kontribusi empiris bagi konsumen "
         "muda dalam menjaga kontrol diri finansial, serta masukan aplikatif bagi komunitas hobi dan pemangku kebijakan edukasi keuangan generasi muda di Indonesia."
     )
     make_run_pure_black(r_abs, "Times New Roman", Pt(12))
@@ -388,7 +390,7 @@ def build_05_abstrak():
     p_kw.paragraph_format.space_before = Pt(6)
     p_kw.paragraph_format.first_line_indent = Cm(0)
     make_run_pure_black(p_kw.add_run("Kata Kunci: "), "Times New Roman", Pt(12), bold=True)
-    r_kw = p_kw.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pok\u00e9mon TCG, Keuangan Perilaku (Behavioral Finance).")
+    r_kw = p_kw.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pok\u00e9mon TCG, Jakarta Barat, Keuangan Perilaku (Behavioral Finance).")
     make_run_pure_black(r_kw, "Times New Roman", Pt(12), italic=True)
 
     out = OUT_DIR / "05_Abstrak_Indonesia.docx"
@@ -411,7 +413,8 @@ def build_06_abstract():
     p_j5.paragraph_format.line_spacing = 1.15
     rj5 = p_j5.add_run(
         "THE EFFECT OF HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, AND SPECULATIVE MOTIVE "
-        "ON IMPULSIVE BUYING OF POK\u00c9MON TCG BOOSTER PACKS WITH SELF-CONTROL AS A MODERATING VARIABLE\n\n"
+        "ON IMPULSIVE BUYING OF POK\u00c9MON TCG BOOSTER PACKS WITH SELF-CONTROL AS A MODERATING VARIABLE "
+        "(A STUDY ON CONSUMERS IN WEST JAKARTA)\n\n"
         "Arthur Reezan (312023002)\n"
         "Undergraduate Program in Management, Faculty of Economics and Business, UKRIDA\n"
         "Thesis Advisor: Dr. Fredella Colline, S.E., M.M., CFP\u00ae, PFM, CHCP-A"
@@ -426,16 +429,16 @@ def build_06_abstract():
     p_abs_en.paragraph_format.first_line_indent = Cm(1.25)
     r_abs_en = p_abs_en.add_run(
         "This research aims to analyze and empirically test the effects of hedonic motivation, desire for completeness, and speculative motive "
-        "on the impulsive buying behavior of official Indonesian-language physical Pok\u00e9mon Trading Card Game (Pok\u00e9mon TCG) booster packs, as well as to evaluate "
+        "on the impulsive buying behavior of official Indonesian-language physical Pok\u00e9mon Trading Card Game (Pok\u00e9mon TCG) booster packs among consumers in West Jakarta, as well as to evaluate "
         "the moderating role of self-control in weakening the relationships between these three antecedent variables and impulsive buying. "
         "This study adopts an associative quantitative approach utilizing a cross-sectional survey design. Primary data are gathered via self-administered online "
         "questionnaires employing a 5-point Likert scale, distributed to respondents selected through purposive sampling. The sample inclusion criteria comprise "
-        "Indonesian citizens aged 17 and above who have purchased official physical booster packs within the past 6 to 12 months. The targeted sample size ranges from "
+        "Indonesian citizens aged 17 and above residing or actively transacting in West Jakarta who have purchased official physical booster packs within the past 6 to 12 months. The targeted sample size ranges from "
         "120 to 150 respondents, consistent with the statistical power criteria established by Green (1991) and Cohen (1988) for multiple regression frameworks. "
         "The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to reduce non-essential "
         "multicollinearity between predictor variables and their interaction products (Aiken dan West, 1991; Ghozali, 2018), executed via IBM SPSS Statistics software. This study provides theoretical novelty by synthesizing the "
         "Stimulus-Organism-Response (S-O-R) paradigm, collector psychology (the Zeigarnik Effect and The Completing the Set Effect), Self-Regulation Theory, and behavioral finance "
-        "principles in the context of tangible alternative assets exhibiting volatile secondary market premiums. The findings are expected to offer practical insights for young "
+        "principles in the context of tangible alternative assets exhibiting volatile secondary market premiums in the West Jakarta urban area. The findings are expected to offer practical insights for young "
         "consumers in exercising financial discipline regarding discretionary collectibles and provide strategic inputs for community organizers and financial educators targeting Generation Z."
     )
     make_run_pure_black(r_abs_en, "Times New Roman", Pt(12), italic=True)
@@ -446,7 +449,7 @@ def build_06_abstract():
     p_kw_en.paragraph_format.space_before = Pt(6)
     p_kw_en.paragraph_format.first_line_indent = Cm(0)
     make_run_pure_black(p_kw_en.add_run("Keywords: "), "Times New Roman", Pt(12), bold=True)
-    r_kw_en = p_kw_en.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pok\u00e9mon TCG, Behavioral Finance.")
+    r_kw_en = p_kw_en.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pok\u00e9mon TCG, West Jakarta, Behavioral Finance.")
     make_run_pure_black(r_kw_en, "Times New Roman", Pt(12), italic=True)
 
     out = OUT_DIR / "06_Abstract_English.docx"

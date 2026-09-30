@@ -12,9 +12,9 @@
 | Parameter | Status / Ketetapan |
 |---|---|
 | **Program Studi / Konsentrasi** | S1 Manajemen / **Manajemen Keuangan** |
-| **Judul Skripsi Resmi** | **PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI** |
-| **Objek Penelitian** | Konsumen / kolektor kartu Pokémon Trading Card Game (TCG) fisik di Indonesia |
-| **Fase Saat Ini** | **Revisi Selesai Sesuai Catatan Dosen 9 Sep 2026: Pembakuan Istilah Ilmiah, Moderasi Self-Control, Ekosistem Pokémon Makro & Grading** |
+| **Judul Skripsi Resmi** | **PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI (STUDI PADA KONSUMEN DI JAKARTA BARAT)** |
+| **Objek Penelitian** | Konsumen / kolektor kartu Pokémon Trading Card Game (TCG) fisik resmi di wilayah Jakarta Barat |
+| **Fase Saat Ini** | **Revisi Pasca-Sempro & Arahan Bimbingan Dosen 29 Sep 2026: Penyempitan Populasi Responden ke Jakarta Barat, Penambahan Keterangan Lokasi pada Judul, & Penguatan Justifikasi 4 Pilar (D31)** |
 
 ---
 
@@ -48,6 +48,11 @@
 | **D24** | Ketetapan 7 Subjek Hubungan Empiris & 14 Studi Berlawanan di Bab 1 | 16 Sep 2026 | Arahan Dosen: Menyelaraskan Latar Belakang Bab 1 dengan 7 koefisien struktural model regresi MRA, di mana masing-masing hubungan didukung minimal 2 temuan kuantitatif berlawanan (Temuan A positif/signifikan vs Temuan B negatif/tidak signifikan) disertai eksplanasi kausal (*The Why*). **Amandemen audit 18 Sep 2026 (F001–F006):** Temuan B boleh berupa argumen batas teoritis yang dinyatakan eksplisit (kolektor matang, *cognitive bypass*, analogi saham, *regulatory failure*) bila tiada uji n.s. sejenis terverifikasi — dilarang mengklaim teori/kualitatif sebagai temuan tidak signifikan; Shiller sebagai *grand theory*; Zheng terkoreksi ke Temuan A Subjek 1. |
 | **D25** | Pembakuan Sitasi In-Text, Tipografi Italic, & Highlighting Mendeley | 16 Sep 2026 | Arahan Dosen: Sitasi in-text wajib hanya menggunakan nama belakang (tanpa gelar akademik), 2 penulis memakai `&` (dalam kurung) atau `dan` (dalam narasi), $\ge 3$ penulis memakai `et al.`; seluruh istilah bahasa asing wajib dicetak miring (*italic*); dan kutipan penting di-*highlight* di Mendeley. |
 | **D26** | Kebijakan Bukti Halaman + PDF Lokal Penuh (3 Tier) | 18 Sep 2026 | Usulan & persetujuan user: (1) **Tier Wajib (pre-sempro):** 10 jurnal empiris inti + seluruh klaim matriks gap/hipotesis WAJIB punya PDF lokal + baris ledger halaman (`EVIDENCE_LEDGER_HALAMAN.md`: klaim → file → hlm. PDF → kutipan kunci); (2) **Tier Pelengkap:** PDF lokal untuk teori/skala tersitasi (kehadiran saja); (3) **Tier Web:** snapshot + tanggal akses untuk 3 data industri (tak bisa PDF). Halaman LEDGER saja (tak masuk in-text → nol desync); edisi/hash PDF dicatat karena paginasi antar-edisi beda. |
+| **D27** | Bentuk Rerangka Konseptual Wajib Elips | 24 Sep 2026 | Arahan Sempro: Mengubah node kotak menjadi elips (konstruk laten teoretis multi-item vs manifes). |
+| **D28** | Rasio Kemutakhiran Pustaka 80/20 | 24 Sep 2026 | Arahan Sempro: Menjaga rasio minimal 80% jurnal mutakhir (2016–2026, prioritas $\le 5$ tahun) dan maksimal 20% literatur klasik/seminal. |
+| **D29** | Narasi Jembatan Alur $X \rightarrow Y \rightarrow Z$ bagi Kalangan Awam di Bab 1 | 24 Sep 2026 | Arahan Sempro: Menyisipkan 2–3 paragraf narasi alur psikologis awam sebelum Tabel 1.1 (Tabel 1.1 dipertahankan penuh). |
+| **D30** | Eliminasi Pelabelan Kaku "Grand Theory" di Bab 2 | 24 Sep 2026 | Arahan Sempro: Mengganti label kaku hierarkis "Grand Theory" dengan frasa mengalir "Landasan Teoretis: Pendekatan Keuangan Perilaku". |
+| **D31** | **Penyempitan Populasi Responden ke Jakarta Barat & Penyesuaian Judul** | 29 Sep 2026 | **Arahan Bimbingan Dosen Pembimbing (Dr. Fredella Colline, 29 Sep 2026):** Menyesuaikan ruang lingkup populasi dari nasional menjadi wilayah **Jakarta Barat** guna memastikan kelayakan observasi empiris langsung (*direct field observation*) di LGS dan gerai ritel modern sekitar kampus UKRIDA Tanjung Duren, mempertegas justifikasi pemilihan wilayah (4 pilar: LGS hub, aksesibilitas fisik, sosio-demografi/daya beli muda, kontrol variasi eksternal), serta menambahkan keterangan lokasi pada judul skripsi (Bab 1, Bab 3, dan Frontmatter). |
 
 ---
 
@@ -158,6 +163,8 @@ Berdasarkan telaah kritis terhadap arahan Dosen Pembimbing (Dr. Fredella Colline
 | **D28** | **Rasio Kemutakhiran Pustaka 80/20 (Maksimal 10 Tahun, Prioritas $\le$ 5 Tahun)** | Arahan Sempro 24 Sep 2026: Membatasi jurnal tua (>10 tahun) dengan proporsi minimal 80% jurnal baru (2016–2026, diutamakan $\le 5$ tahun/2021–2026) dan maksimal 20% literatur klasik/seminal yang benar-benar tidak tergantikan (Rook 1987, Babin 1994, Barasz 2017, Tangney 2004, Verplanken 2001, Aiken & West 1991, Cohen 1988, Green 1991, buku metodologi). Tercatat di Second Brain untuk eksekusi terencana. |
 | **D29** | **Narasi Jembatan Alur $X \rightarrow Y \rightarrow Z$ di Bab 1 bagi Kalangan Awam (Tabel 1.1 Dipertahankan)** | Arahan Sempro 24 Sep 2026: Menyisipkan 2–3 paragraf *storytelling* psikologis konsumen awam (Sensasi Gacha $X_1 \rightarrow$ Obsesi Slot Binder $X_2 \rightarrow$ Godaan Spekulasi Cuan PSA 10 $X_3 \rightarrow$ Impulsive Buying $Y$ di kasir, dimoderasi oleh Rem Volisional Self-Control $Z/M$) sebelum Tabel 1.1. Tabel 1.1 ditegaskan dosen **sudah sangat baik dan tidak boleh dihapus**. Tercatat di Second Brain untuk eksekusi terencana. |
 | **D30** | **Eliminasi Pelabelan Kaku "Grand Theory" di Bab 2** | Arahan Sempro 24 Sep 2026: Menghapus pelabelan formal hierarkis "Grand Theory" pada §2.1.1 yang dinilai penguji sudah usang dan terlalu tua untuk skripsi S1 terapan. Diganti menjadi "Landasan Teoretis: Pendekatan Keuangan Perilaku" dengan narasi mengalir tanpa label hierarkis kaku (*Grand* / *Supporting*). Tercatat di Second Brain untuk eksekusi terencana. |
+| **D31** | **Penyempitan Populasi Responden ke Jakarta Barat & Penyesuaian Judul** | Arahan Bimbingan Dosen Pembimbing (Dr. Fredella Colline, 29 Sep 2026): Menyesuaikan ruang lingkup populasi dari skala nasional menjadi wilayah **Jakarta Barat** guna memastikan kelayakan observasi empiris langsung (*direct field observation*) di LGS dan gerai ritel modern sekitar kampus UKRIDA Tanjung Duren, mempertegas justifikasi pemilihan wilayah (4 pilar: LGS hub, aksesibilitas fisik peneliti, sosio-demografi/daya beli muda, kontrol variasi eksternal), serta menambahkan keterangan lokasi pada judul skripsi (Bab 1, Bab 3, dan Frontmatter). Model MRA 6H dan 54 referensi tetap utuh 100%. |
+
 
 
 

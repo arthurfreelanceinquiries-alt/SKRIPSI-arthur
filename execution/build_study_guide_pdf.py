@@ -90,6 +90,9 @@ def strip_inline_md(text: str) -> str:
     text = re.sub(r'\*(.*?)\*', r'\1', text)
     text = re.sub(r'`(.*?)`', r'\1', text)
     text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+    text = re.sub(r'<a\s+[^>]*>.*?</a>', '', text, flags=re.I)
+    text = re.sub(r'<a\s+[^>]*>', '', text, flags=re.I)
+    text = re.sub(r'</a>', '', text, flags=re.I)
     for i, conv in enumerate(held, 1):
         text = text.replace('\x00%d\x00' % i, conv)
     # Printable checklist (rule M6): ( ) Helvetica-safe (☐/☑ tofu di WinAnsi).
