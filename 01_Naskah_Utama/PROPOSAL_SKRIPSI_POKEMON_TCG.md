@@ -23,22 +23,25 @@
     - [1.4.2 Manfaat Praktis](#142-manfaat-praktis)
 - [BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS](#bab-2-kajian-pustaka-dan-pengembangan-hipotesis)
   - [2.1 Landasan Teori](#21-landasan-teori)
-    - [2.1.1 Grand Theory: Keuangan Perilaku (Behavioral Finance)](#211-grand-theory-keuangan-perilaku-behavioral-finance)
-    - [2.1.2 Teori Pendukung (Supporting Theories)](#212-teori-pendukung-supporting-theories)
-    - [2.1.3 Impulsive Buying (Pembelian Impulsif)](#213-impulsive-buying-pembelian-impulsif)
-    - [2.1.4 Hedonic Motivation (Motivasi Hedonis)](#214-hedonic-motivation-motivasi-hedonis)
-    - [2.1.5 Desire for Completeness (Hasrat Melengkapi Koleksi)](#215-desire-for-completeness-hasrat-melengkapi-koleksi)
-    - [2.1.6 Speculative Motive (Motif Spekulasi Finansial)](#216-speculative-motive-motif-spekulasi-finansial)
-    - [2.1.7 Self-Control (Kontrol Diri)](#217-self-control-kontrol-diri)
-  - [2.2 Penelitian Sebelumnya](#22-penelitian-sebelumnya)
-  - [2.3 Pengembangan Hipotesis](#23-pengembangan-hipotesis)
-    - [2.3.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying](#231-pengaruh-hedonic-motivation-terhadap-impulsive-buying)
-    - [2.3.2 Pengaruh Desire for Completeness terhadap Impulsive Buying](#232-pengaruh-desire-for-completeness-terhadap-impulsive-buying)
-    - [2.3.3 Pengaruh Speculative Motive terhadap Impulsive Buying](#233-pengaruh-speculative-motive-terhadap-impulsive-buying)
-    - [2.3.4 Peran Moderasi Self-Control pada Pengaruh Hedonic Motivation terhadap Impulsive Buying](#234-peran-moderasi-self-control-pada-pengaruh-hedonic-motivation-terhadap-impulsive-buying)
-    - [2.3.5 Peran Moderasi Self-Control pada Pengaruh Desire for Completeness terhadap Impulsive Buying](#235-peran-moderasi-self-control-pada-pengaruh-desire-for-completeness-terhadap-impulsive-buying)
-    - [2.3.6 Peran Moderasi Self-Control pada Pengaruh Speculative Motive terhadap Impulsive Buying](#236-peran-moderasi-self-control-pada-pengaruh-speculative-motive-terhadap-impulsive-buying)
-  - [2.4 Rerangka Penelitian](#24-rerangka-penelitian)
+    - [2.1.1 Landasan Teoretis: Pendekatan Keuangan Perilaku (Behavioral Finance)](#211-landasan-teoretis-pendekatan-keuangan-perilaku-behavioral-finance)
+    - [2.1.2 Pendekatan Stimulus-Organism-Response (S-O-R)](#212-pendekatan-stimulus-organism-response-s-o-r)
+    - [2.1.3 Psikologi Kolektor dan Collection-Goal Tipping Point Effect](#213-psikologi-kolektor-dan-collection-goal-tipping-point-effect)
+    - [2.1.4 Teori Regulasi Diri (Self-Regulation Theory)](#214-teori-regulasi-diri-self-regulation-theory)
+  - [2.2 Kajian Variabel Penelitian](#22-kajian-variabel-penelitian)
+    - [2.2.1 Variabel Dependen (Y): Pembelian Impulsif (Impulsive Buying)](#221-variabel-dependen-y-pembelian-impulsif-impulsive-buying)
+    - [2.2.2 Variabel Independen (X1): Motivasi Hedonis (Hedonic Motivation)](#222-variabel-independen-x1-motivasi-hedonis-hedonic-motivation)
+    - [2.2.3 Variabel Independen (X2): Hasrat Kelengkapan Koleksi (Desire for Completeness)](#223-variabel-independen-x2-hasrat-kelengkapan-koleksi-desire-for-completeness)
+    - [2.2.4 Variabel Independen (X3): Motif Spekulasi Finansial (Speculative Motive)](#224-variabel-independen-x3-motif-spekulasi-finansial-speculative-motive)
+    - [2.2.5 Variabel Moderasi (M): Kontrol Diri (Self-Control)](#225-variabel-moderasi-m-kontrol-diri-self-control)
+  - [2.3 Penelitian Sebelumnya](#23-penelitian-sebelumnya)
+  - [2.4 Pengembangan Hipotesis](#24-pengembangan-hipotesis)
+    - [2.4.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying](#241-pengaruh-hedonic-motivation-terhadap-impulsive-buying)
+    - [2.4.2 Pengaruh Desire for Completeness terhadap Impulsive Buying](#242-pengaruh-desire-for-completeness-terhadap-impulsive-buying)
+    - [2.4.3 Pengaruh Speculative Motive terhadap Impulsive Buying](#243-pengaruh-speculative-motive-terhadap-impulsive-buying)
+    - [2.4.4 Pengaruh Moderasi Self-Control terhadap Hubungan Hedonic Motivation dan Impulsive Buying](#244-pengaruh-moderasi-self-control-terhadap-hubungan-hedonic-motivation-dan-impulsive-buying)
+    - [2.4.5 Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness dan Impulsive Buying](#245-pengaruh-moderasi-self-control-terhadap-hubungan-desire-for-completeness-dan-impulsive-buying)
+    - [2.4.6 Pengaruh Moderasi Self-Control terhadap Hubungan Speculative Motive dan Impulsive Buying](#246-pengaruh-moderasi-self-control-terhadap-hubungan-speculative-motive-dan-impulsive-buying)
+  - [2.5 Rerangka Penelitian](#25-rerangka-penelitian)
 - [BAB 3 METODE PENELITIAN](#bab-3-metode-penelitian)
   - [3.1 Jenis dan Sumber Data](#31-jenis-dan-sumber-data)
   - [3.2 Populasi dan Sampel](#32-populasi-dan-sampel)
@@ -162,7 +165,7 @@ Telaah empiris menunjukkan hubungan anteseden dengan pembelian impulsif tidak be
 |:--:|:--|:--|:--|:--|
 | 1 | X1 terhadap Y (*Hedonic Motivation*) | Arnold dan Reynolds (2003); Gultekin dan Ozer (2012); Pranggabayu dan Andjarwati (2022); Gong *et al.* (2024); Tirtayasa *et al.* (2020); Zheng *et al.* (2019) (positif signifikan). | Batas Thaler (1985); Thaler dan Shefrin (1981) (tertahan anggaran; bukan temuan tidak signifikan pada kolektibel). | Elastisitas anggaran dan orientasi utiliter vs afektif. |
 | 2 | X2 terhadap Y (*Desire for Completeness*) | Gao *et al.* (2014); Barasz *et al.* (2017); Dewi *et al.* (2026) (positif signifikan). | Long dan Schiffman (2000); Spero dan Stone (2004) (kolektor matang pilih single; bukan temuan tidak signifikan). | Kematangan kolektor dan kalkulasi probabilitas. |
-| 3 | X3 terhadap Y (*Speculative Motive*) | Baur *et al.* (2018); Aryadi dan Lingga (2024) (analogi partisipasi TCG); Colline (2024) (herding; kualitatif). Shiller (2000) sebagai grand theory. | Barber dan Odean (2008); Fama (1970) (analogi saham; bukan temuan tidak signifikan pada kolektibel). | Asimetri informasi dan ilusi kendali vs evaluasi risiko. |
+| 3 | X3 terhadap Y (*Speculative Motive*) | Baur *et al.* (2018); Aryadi dan Lingga (2024) (analogi partisipasi TCG); Colline (2024) (herding; kualitatif). Shiller (2000) sebagai kerangka keuangan perilaku. | Barber dan Odean (2008); Fama (1970) (analogi saham; bukan temuan tidak signifikan pada kolektibel). | Asimetri informasi dan ilusi kendali vs evaluasi risiko. |
 | 4 | M terhadap Y (*Self-Control*) | Baumeister (2002); Tangney *et al.* (2004); Vohs dan Faber (2007); Sultan *et al.* (2012) (negatif signifikan). | Hirschman (1982); Stern (1962) (cognitive bypass; bukan regresi). | Ego depletion saat stimulus intens. |
 | 5 | Moderasi M pada X1 terhadap Y | Lienardy dan Panasea (2026) (MRA H4 diterima); Katauke *et al.* (2023) (tak langsung). | Gagal-moderasi Apidana dan Kholifah (2022) (p=0,597) dan Artadita dan Firmialy (2024) (beta=0,092, n.s.). | Ambang intensitas hedonis vs kapasitas volisional. |
 | 6 | Moderasi M pada X2 terhadap Y | Parsial: Artadita dan Firmialy (2024) (kontrol kognitif; moderasi keseluruhan ditolak); Apidana dan Kholifah (2022) (adjacent). | Teori Belk (1995); Barasz *et al.* (2017) + Artadita dan Firmialy (2024) H3 ditolak. | Keterikatan koleksi: kasual vs fanatik. |

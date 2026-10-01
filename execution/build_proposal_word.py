@@ -1487,10 +1487,10 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         ("      1.4.2 Manfaat Praktis", "18"),
         ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "19"),
         ("  2.1 Landasan Teori", "19"),
-        ("      2.1.1 Grand Theory: Keuangan Perilaku (Behavioral Finance)", "19"),
-        ("      2.1.2 Supporting Theory: Teori Stimulus-Organism-Response (S-O-R)", "19"),
-        ("      2.1.3 Supporting Theory: Psikologi Kolektor dan Collection-Goal Tipping Point Effect", "20"),
-        ("      2.1.4 Supporting Theory: Teori Regulasi Diri (Self-Regulation Theory)", "20"),
+        ("      2.1.1 Landasan Teoretis: Pendekatan Keuangan Perilaku (Behavioral Finance)", "19"),
+        ("      2.1.2 Pendekatan Stimulus-Organism-Response (S-O-R)", "19"),
+        ("      2.1.3 Psikologi Kolektor dan Collection-Goal Tipping Point Effect", "20"),
+        ("      2.1.4 Teori Regulasi Diri (Self-Regulation Theory)", "20"),
         ("  2.2 Kajian Variabel Penelitian", "20"),
         ("      2.2.1 Variabel Dependen (Y): Impulsive Buying (Pembelian Impulsif)", "20"),
         ("      2.2.2 Variabel Independen (X1): Hedonic Motivation (Motivasi Hedonis)", "21"),
@@ -2657,7 +2657,7 @@ def build_tabel_research_gap(doc):
         (
             "3",
             "X3 terhadap Y (*Speculative Motive*)",
-            "Baur *et al.* (2018); Aryadi dan Lingga (2024) (analogi partisipasi TCG); Colline (2024) (*herding*; kualitatif). Shiller (2000) sebagai grand theory.",
+            "Baur *et al.* (2018); Aryadi dan Lingga (2024) (analogi partisipasi TCG); Colline (2024) (*herding*; kualitatif). Shiller (2000) sebagai kerangka keuangan perilaku.",
             "Barber dan Odean (2008); Fama (1970) (analogi saham; bukan temuan tidak signifikan pada kolektibel).",
             "Asimetri informasi dan ilusi kendali vs evaluasi risiko."
         ),
@@ -3053,6 +3053,7 @@ def link_citations_to_dp(doc, aux_map, ref_bookmarks):
         """Belah run pada offset global off (dlm koordinat seq)."""
         import copy as _c
         WTloc = qn('w:t')
+        RPRloc = qn('w:rPr')
         XS = '{http://www.w3.org/XML/1998/namespace}space'
         pos = 0
         for (t, r, nd) in seq:
@@ -3066,9 +3067,19 @@ def link_citations_to_dp(doc, aux_map, ref_bookmarks):
                 except ValueError:
                     return False
                 new_run = _c.deepcopy(r)
+                # FIX Sesi 39: pertahankan rPr (sz/warna/font) pada belahan kanan.
+                # Bug lama menghapus semua sibling sebelum 'at' termasuk rPr,
+                # sehingga run sitasi hyperlink di sel tabel kehilangan sz=18
+                # (9pt) dan fallback ke 12pt (mis. Colline, 2024 di Tabel 3.2).
                 for sib in list(new_run)[:at]:
+                    if sib.tag == RPRloc:
+                        continue
                     new_run.remove(sib)
-                first = new_run[0] if len(new_run) else None
+                first = None
+                for child in list(new_run):
+                    if child.tag == WTloc:
+                        first = child
+                        break
                 if first is None or first.tag != WTloc:
                     return False
                 first.text = t[k:]

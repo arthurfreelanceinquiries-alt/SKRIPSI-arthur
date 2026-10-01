@@ -7,6 +7,41 @@
 
 ---
 
+## 📅 Sesi 30 September 2026 (Sesi 40): Mulai Sesi Second Brain — Sync Multi-Device, Muat Graphify & Kokpit D01–D32
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Pembuka sesi kerja dengan protokol sinkronisasi multi-device dan anti-lupa konteks Obsidian Second Brain.
+> - **Masalah yang Diselesaikan:** Memastikan branch lokal 100% sinkron dengan `origin/main` sebelum kerja lintas device, serta memuat ulang graf pengetahuan dan parameter kanonis penelitian.
+> - **Keputusan/Output:** Sesi siap kerja; kepatuhan D30–D32 dikunci; agenda Sesi 39 (font sitasi Tabel 3.1 9pt + restrukturisasi H1–H6) menunggu arahan fokus user.
+
+* **Fokus Pekerjaan:**
+  - **Sinkronisasi Git multi-device:** `git pull origin main` → `Already up to date` pada `a5fdcb5`; branch `main` 100% selaras dengan GitHub, tanpa berkas baru ditarik.
+  - **Baca graf pengetahuan:** `graphify-out/manifest.json` + `graphify-out/GRAPH_REPORT.md` (2.416 nodes, 2.558 edges, 223 communities; build dari commit `44a8a272`).
+  - **Baca kokpit Obsidian:** `00_DASHBOARD_SECOND_BRAIN.md` (51 hlm settled, 54 pustaka, gate 11/11), `SOURCE_OF_TRUTH.md` D01–D32, `PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md` + SOP `directives/universal_thesis_graph_of_agents.md` (F1–F11, A0–A11), dan `LOG_SESI_SECOND_BRAIN.md` (terakhir Sesi 39).
+  - **Kunci aturan konseptual:** D30 (tanpa label kaku Grand Theory; Behavioral Finance sebagai kerangka teoretis utama), istilah asing di belakang Indonesia dengan miring — contoh: kesimetrisan cetak (*centering*) — rumus MRA mean-centering ($X_i^*, M^*$), paritas italic lintas format 100% (D32/G8), callout `> [!SUMMARY]` pada markdown baru.
+* **Keputusan / Insight:**
+  - Variabel aktif: Y *Impulsive Buying*, X1 *Hedonic Motivation*, X2 *Desire for Completeness*, X3 *Speculative Motive*, M *Self-Control* (memperlemah H4–H6); populasi Jakarta Barat (D31); pembimbing Dr. Fredella Colline.
+  - Naskah tunggal `Proposal_Arthur_PokemonTCG.*` (.tex/.pdf/.docx/.md) terkonfirmasi ada di `01_Naskah_Utama/`.
+* **File yang Diperbarui (pre-flight):**
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+### Hasil Kerja Sesi 40 (lanjutan — agenda Sesi 39: font Tabel 3.2 + H1–H6, 30 Sep 2026)
+* **Bug font hyperlink tabel — ROOT CAUSE & FIX (teruji):**
+  - Klarifikasi penomoran: sitasi `Colline, 2024` yang dilaporkan sebagai "Tabel 3.1" sebenarnya berada di **Tabel 3.2 Operasionalisasi Variabel** (baris X3 Definisi Operasional) dan Tabel 1.1 baris X3; Tabel 3.1 adalah Skala Likert tanpa sitasi.
+  - Bukti XML DOCX committed: run `Colline, 2024` / `Shiller, 2000` di dalam `w:hyperlink` **kehilangan `w:rPr`** (`sz` hilang → fallback style 12pt), sementara run non-hyperlink mempertahankan `sz=18` (9pt).
+  - Akar: `link_citations_to_dp._split_seq` di [[execution/build_proposal_word.py]] menghapus semua sibling sebelum titik belah termasuk `w:rPr` (pada run tipikal `[rPr, w:t]`, `at=1` sehingga `rPr` ikut terhapus).
+  - Perbaikan surgical: pertahankan `w:rPr` pada belahan kanan + cari `w:t` pertama setelah `rPr` sebagai awal teks lanjutan.
+  - Verifikasi: unit test tabel 9pt + 3 sitasi multi-segmen → **PASS** (semua run hyperlink `sz=18`/9pt, termasuk `Colline, 2024`); DOCX committed di-restore (rebuild penuh ditunda ke device ber-toolchain LaTeX karena `.aux`/`.bbl` gitignored dan `xelatex`/`bibtex` tak tersedia di device ini — rebuild tanpa aux menghapus seluruh hyperlink sitasi, sudah di-revert).
+* **Audit H1–H6 (tanpa restrukturisasi buta):** format TeX saat ini konsisten (per hipotesis: Landasan Teoretis → Kajian Empiris → Keterkaitan Objek → bold `Hn:`); TeX D30-compliant (`Landasan Teoretis: Pendekatan Keuangan Perilaku`, tanpa label Grand/Supporting). Sisa pelanggaran D30 ditemukan di luar TeX dan diperbaiki: entri TOC statis Word `2.1.1–2.1.4` (label Grand/Supporting → judul mengalir sesuai TeX), sel Tabel 1.1 X3 (`Shiller (2000) sebagai grand theory` → `sebagai kerangka keuangan perilaku`), template `sync_markdown_from_tex.py`, TOC + baris Tabel 1.1 di `PROPOSAL_SKRIPSI_POKEMON_TCG.md` (TOC 2.1–2.5 diselaraskan ke heading aktual). Restrukturisasi isi H1–H6 menunggu preferensi user.
+* **Gerbang wajib (DOCX restored, 51 hlm):** `verify_docx_typography.py` PASS · `verify_pdf_docx_parity.py` PASS · `verify_no_ai_markers.py` PASS · `verify_italic_parity.py` 249/249 100% PASS.
+* **File yang Diperbarui (kerja Sesi 39/40):**
+  - [[execution/build_proposal_word.py]] (fix `_split_seq` rPr + D30 TOC/Tabel 1.1)
+  - [[execution/sync_markdown_from_tex.py]] (template Tabel 1.1 D30)
+  - [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]] (TOC 2.1–2.5 + Tabel 1.1 D30; TeX/DOCX tidak diubah)
+* **Tindak lanjut:** (1) rebuild `Proposal_Arthur_PokemonTCG.docx` di device ber-LaTeX (`xelatex+bibtex+2x xelatex` → `build_proposal_word.py`) lalu ulangi G4/G5/G8; (2) user tentukan preferensi restrukturisasi H1–H6 bila masih diinginkan.
+
+---
+
 ## 📅 Sesi 1 Oktober 2026 (Sesi 39): Sinkronisasi Repositori Lokal dari GitHub Remote & Integrasi Protokol Multi-Device Git Pull pada Prompt Kickoff
 
 > [!SUMMARY] Tujuan & Solusi Catatan Ini
