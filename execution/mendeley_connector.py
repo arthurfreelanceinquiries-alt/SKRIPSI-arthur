@@ -8,11 +8,11 @@ Alur pakai (sekali saja):
   2. Salin `.env.example` menjadi `.env`, isi 3 nilai itu.
   3. py execution/mendeley_connector.py --auth     (buka browser, login, izinkan)
   4. py execution/mendeley_connector.py --status   (cek koneksi + hitung dokumen)
-  5. py execution/mendeley_connector.py --dry-run  (pratinjau 55 payload, tanpa kirim)
+  5. py execution/mendeley_connector.py --dry-run  (pratinjau 54 payload, tanpa kirim)
   6. py execution/mendeley_connector.py --push      (buat dokumen yg belum ada)
 
 Catatan jujur: Mendeley TIDAK punya endpoint "import RIS". Push = membuat
-55 record dokumen satu-per-satu via POST /documents. Judul yang sudah ada
+54 record dokumen satu-per-satu via POST /documents. Judul yang sudah ada
 di library dilewati (cocok string judul). Token disimpan di token.json
 (sudah di-.gitignore; JANGAN pernah commit).
 

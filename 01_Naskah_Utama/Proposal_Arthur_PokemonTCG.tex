@@ -143,7 +143,9 @@
   urlcolor=black,
   bookmarks=true,
   bookmarksnumbered=true,
-  pdfpagemode=UseOutlines
+  pdfpagemode=UseOutlines,
+  plainpages=false,
+  pdfpagelabels=true
 ]{hyperref}
 
 % ---- PENOMORAN OTOMATIS BERDASARKAN BAB ----
@@ -248,6 +250,7 @@
 \thispagestyle{frontmatter}
 \renewcommand{\listtablename}{DAFTAR TABEL}
 \listoftables
+\phantomsection
 \addcontentsline{toc}{section}{DAFTAR TABEL}
 \addtocontents{lot}{\protect\thispagestyle{frontmatter}}
 
@@ -258,6 +261,7 @@
 \thispagestyle{frontmatter}
 \renewcommand{\listfigurename}{DAFTAR GAMBAR}
 \listoffigures
+\phantomsection
 \addcontentsline{toc}{section}{DAFTAR GAMBAR}
 \addtocontents{lof}{\protect\thispagestyle{frontmatter}}
 
@@ -273,6 +277,7 @@
 % ============================================================
 \setcounter{section}{0}
 \section*{BAB 1\\[0.3cm]PENDAHULUAN}
+\phantomsection
 \addcontentsline{toc}{section}{\texorpdfstring{BAB 1\quad PENDAHULUAN}{BAB 1 PENDAHULUAN}}
 \setcounter{section}{1}
 \setcounter{subsection}{0}
@@ -451,6 +456,7 @@ Hasil penelitian ini diharapkan dapat memberikan kontribusi nyata baik secara te
 \newpage
 \setcounter{section}{1}
 \section*{BAB 2\\[0.3cm]KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS}
+\phantomsection
 \addcontentsline{toc}{section}{\texorpdfstring{BAB 2\quad KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS}{BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS}}
 \setcounter{section}{2}
 \setcounter{subsection}{0}
@@ -702,6 +708,7 @@ Hubungan struktural antarvariabel disajikan pada Gambar 2.1:
 \newpage
 \setcounter{section}{2}
 \section*{BAB 3\\[0.3cm]METODE PENELITIAN}
+\phantomsection
 \addcontentsline{toc}{section}{\texorpdfstring{BAB 3\quad METODE PENELITIAN}{BAB 3 METODE PENELITIAN}}
 \setcounter{section}{3}
 \setcounter{subsection}{0}
@@ -1068,6 +1075,7 @@ Jadwal pelaksanaan tahapan kegiatan penelitian direncanakan berlangsung selama 6
 % ============================================================
 \newpage
 \renewcommand{\refname}{DAFTAR PUSTAKA}
+\phantomsection
 \addcontentsline{toc}{section}{DAFTAR PUSTAKA}
 \bibliography{references}
 

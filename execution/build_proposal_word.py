@@ -1509,54 +1509,55 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         ("DAFTAR PUSTAKA", "30")
     ]
 
-    # C-LOT-1: angka = halaman cetak PDF 48 hlm (settled, modular 23 Sep 2026:
-    # 6 lembar formal keluar; frontmatter = Cover i + TOC ii-iii + LOT iv + LOF v).
+    # C-LOT-1: angka = halaman cetak PDF 51 hlm (settled, resync Sesi 44 dari
+    # .toc/.lot/.lof hasil phantomsection-build; frontmatter = Cover i + TOC ii-iii + LOT iv + LOF v).
     toc_items_full = [
         ("DAFTAR TABEL", "iv"),
         ("DAFTAR GAMBAR", "v"),
         ("BAB 1 PENDAHULUAN", "1"),
         ("  1.1 Latar Belakang Penelitian", "1"),
-        ("  1.2 Perumusan Masalah", "9"),
-        ("  1.3 Tujuan Penelitian", "9"),
-        ("  1.4 Manfaat Penelitian", "10"),
-        ("      1.4.1 Manfaat Teoretis", "10"),
-        ("      1.4.2 Manfaat Praktis", "10"),
-        ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "12"),
-        ("  2.1 Landasan Teori", "12"),
-        ("      2.1.1 Landasan Teoretis: Pendekatan Keuangan Perilaku (Behavioral Finance)", "12"),
-        ("      2.1.2 Teori Stimulus-Organism-Response (S-O-R)", "12"),
-        ("      2.1.3 Psikologi Kolektor dan Collection-Goal Tipping Point Effect", "13"),
-        ("      2.1.4 Teori Regulasi Diri (Self-Regulation Theory)", "13"),
-        ("  2.2 Kajian Variabel Penelitian", "13"),
-        ("      2.2.1 Variabel Dependen (Y): Impulsive Buying (Pembelian Impulsif)", "13"),
-        ("      2.2.2 Variabel Independen (X1): Hedonic Motivation (Motivasi Hedonis)", "14"),
-        ("      2.2.3 Variabel Independen (X2): Desire for Completeness (Hasrat Kelengkapan Koleksi)", "14"),
-        ("      2.2.4 Variabel Independen (X3): Speculative Motive (Motif Spekulasi Finansial)", "14"),
-        ("      2.2.5 Variabel Moderasi (M): Self-Control (Kontrol Diri)", "15"),
-        ("  2.3 Penelitian Sebelumnya", "15"),
-        ("  2.4 Pengembangan Hipotesis", "18"),
-        ("      2.4.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying", "18"),
-        ("      2.4.2 Pengaruh Desire for Completeness terhadap Impulsive Buying", "18"),
-        ("      2.4.3 Pengaruh Speculative Motive terhadap Impulsive Buying", "19"),
-        ("      2.4.4 Pengaruh Moderasi Self-Control terhadap Hubungan Hedonic Motivation dan Impulsive Buying", "20"),
-        ("      2.4.5 Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness dan Impulsive Buying", "21"),
-        ("      2.4.6 Pengaruh Moderasi Self-Control terhadap Hubungan Speculative Motive dan Impulsive Buying", "21"),
-        ("  2.5 Rerangka Penelitian", "22"),
-        ("BAB 3 METODE PENELITIAN", "23"),
-        ("  3.1 Jenis dan Sumber Data", "23"),
-        ("      3.1.1 Batasan Penelitian dan Ruang Lingkup Operasional", "23"),
-        ("  3.2 Populasi dan Sampel", "24"),
-        ("      3.2.1 Populasi dan Identifikasi Sumber Komunitas", "24"),
-        ("      3.2.2 Sampel dan Justifikasi Kriteria Inklusi", "25"),
-        ("      3.2.3 Penentuan Ukuran Sampel", "26"),
-        ("      3.2.4 Justifikasi Komparatif Pemilihan Teknik Sampling", "26"),
-        ("  3.3 Model Penelitian", "27"),
-        ("  3.4 Operasionalisasi Variabel", "28"),
-        ("  3.5 Metode Analisis Data", "33"),
-        ("      3.5.1 Justifikasi Komparatif Pemilihan Metode Analisis", "33"),
-        ("  3.6 Diagram Alur Penelitian", "35"),
-        ("  3.7 Jadwal Pelaksanaan Penelitian", "37"),
-        ("DAFTAR PUSTAKA", "39")
+        ("  1.2 Perumusan Masalah", "10"),
+        ("  1.3 Tujuan Penelitian", "10"),
+        ("  1.4 Manfaat Penelitian", "11"),
+        ("      1.4.1 Manfaat Teoretis", "11"),
+        ("      1.4.2 Manfaat Praktis", "12"),
+        ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "13"),
+        ("  2.1 Landasan Teori", "13"),
+        ("      2.1.1 Landasan Teoretis: Pendekatan Keuangan Perilaku (Behavioral Finance)", "13"),
+        ("      2.1.2 Pendekatan Stimulus-Organism-Response (S-O-R)", "13"),
+        ("      2.1.3 Psikologi Kolektor dan Collection-Goal Tipping Point Effect", "14"),
+        ("      2.1.4 Teori Regulasi Diri (Self-Regulation Theory)", "14"),
+        ("  2.2 Kajian Variabel Penelitian", "14"),
+        ("      2.2.1 Variabel Dependen (Y): Pembelian Impulsif (Impulsive Buying)", "14"),
+        ("      2.2.2 Variabel Independen (X₁): Motivasi Hedonis (Hedonic Motivation)", "15"),
+        ("      2.2.3 Variabel Independen (X₂): Hasrat Kelengkapan Koleksi (Desire for Completeness)", "15"),
+        ("      2.2.4 Variabel Independen (X₃): Motif Spekulasi Finansial (Speculative Motive)", "15"),
+        ("      2.2.5 Variabel Moderasi (M): Kontrol Diri (Self-Control)", "16"),
+        ("  2.3 Penelitian Sebelumnya", "16"),
+        ("  2.4 Pengembangan Hipotesis", "19"),
+        ("      2.4.1 Pengaruh Hedonic Motivation terhadap Impulsive Buying", "19"),
+        ("      2.4.2 Pengaruh Desire for Completeness terhadap Impulsive Buying", "19"),
+        ("      2.4.3 Pengaruh Speculative Motive terhadap Impulsive Buying", "20"),
+        ("      2.4.4 Pengaruh Moderasi Self-Control terhadap Hubungan Hedonic Motivation dan Impulsive Buying", "21"),
+        ("      2.4.5 Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness dan Impulsive Buying", "22"),
+        ("      2.4.6 Pengaruh Moderasi Self-Control terhadap Hubungan Speculative Motive dan Impulsive Buying", "22"),
+        ("  2.5 Rerangka Penelitian", "23"),
+        ("BAB 3 METODE PENELITIAN", "24"),
+        ("  3.1 Jenis dan Sumber Data", "24"),
+        ("      3.1.1 Batasan Penelitian dan Ruang Lingkup Operasional", "24"),
+        ("  3.2 Populasi dan Sampel", "25"),
+        ("      3.2.1 Populasi dan Identifikasi Sumber Komunitas", "25"),
+        ("      3.2.2 Sampel dan Justifikasi Kriteria Inklusi", "26"),
+        ("      3.2.3 Prosedur Distribusi Kuesioner: Pendekatan Hibrida Dua Jalur", "28"),
+        ("      3.2.4 Penentuan Ukuran Sampel", "28"),
+        ("      3.2.5 Justifikasi Komparatif Pemilihan Teknik Sampling", "29"),
+        ("  3.3 Model Penelitian", "30"),
+        ("  3.4 Operasionalisasi Variabel", "31"),
+        ("  3.5 Metode Analisis Data", "36"),
+        ("      3.5.1 Justifikasi Komparatif Pemilihan Metode Analisis", "36"),
+        ("  3.6 Diagram Alur Penelitian", "38"),
+        ("  3.7 Jadwal Pelaksanaan Penelitian", "40"),
+        ("DAFTAR PUSTAKA", "42")
     ]
 
     toc_items = toc_items_nobab3 if skip_chapter3 else toc_items_full
@@ -1605,10 +1606,10 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
     ]
     lot_items_full = [
         ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian", "7"),
-        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "15"),
-        ("Tabel 3.1", "Skala Pengukuran Likert 5 Poin", "23"),
-        ("Tabel 3.2", "Operasionalisasi Variabel Penelitian", "29"),
-        ("Tabel 3.3", "Jadwal Pelaksanaan Kegiatan Penelitian (Tahun 2026)", "38")
+        ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "16"),
+        ("Tabel 3.1", "Skala Pengukuran Likert 5 Poin", "24"),
+        ("Tabel 3.2", "Operasionalisasi Variabel Penelitian", "32"),
+        ("Tabel 3.3", "Jadwal Pelaksanaan Kegiatan Penelitian (Tahun 2026)", "41")
     ]
     lot_items = lot_items_nobab3 if skip_chapter3 else lot_items_full
     for tab_num, tab_title, tab_page in lot_items:
@@ -1644,8 +1645,8 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         ("Gambar 1.1", "Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa", "1"),
         ("Gambar 1.2", "Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024", "2"),
         ("Gambar 1.3", "Disparitas Harga Pasar Sekunder Kartu Pokémon Mentah (Ungraded) vs. Bersertifikasi PSA 10 Gem Mint Seri Shining Fates", "4"),
-        ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "22"),
-        ("Gambar 3.1", "Diagram Alur Pelaksanaan Penelitian", "36")
+        ("Gambar 2.1", "Model Rerangka Konseptual Penelitian", "23"),
+        ("Gambar 3.1", "Diagram Alur Pelaksanaan Penelitian", "39")
     ]
     lof_items = lof_items_nobab3 if skip_chapter3 else lof_items_full
     for fig_num, fig_title, fig_page in lof_items:
@@ -2438,6 +2439,37 @@ try {{
             print(f"[*] TOC sanitasi: {_n_san} residu COM dibersihkan (bookmark yatim/webHidden).")
         except Exception as e:
             print(f"[WARN] Sanitasi TOC gagal: {e}")
+        # Sanitasi global bookmark tak-berpasangan (temuan Sesi 46: satu
+        # w:bookmarkEnd id=0 yatim tanpa bookmarkStart — OOXML tidak valid;
+        # Word menoleransi, LibreOffice dapat salah navigasi bookmark).
+        # Hanya menghapus elemen yang id-nya TIDAK punya pasangan; pasangan
+        # utuh (Ref_/TOC_/Cap_/_GoBack berpasangan) tidak disentuh.
+        try:
+            _bstarts = {}
+            _bends = {}
+            for _el in doc_post.element.iter():
+                if _el.tag == qn('w:bookmarkStart'):
+                    _bid = _el.get(qn('w:id'))
+                    if _bid:
+                        _bstarts.setdefault(_bid, []).append(_el)
+                elif _el.tag == qn('w:bookmarkEnd'):
+                    _bid = _el.get(qn('w:id'))
+                    if _bid:
+                        _bends.setdefault(_bid, []).append(_el)
+            _n_bm = 0
+            for _bid, _els in list(_bstarts.items()):
+                if _bid not in _bends:
+                    for _el in _els:
+                        _el.getparent().remove(_el)
+                        _n_bm += 1
+            for _bid, _els in list(_bends.items()):
+                if _bid not in _bstarts:
+                    for _el in _els:
+                        _el.getparent().remove(_el)
+                        _n_bm += 1
+            print(f"[*] Sanitasi bookmark global: {_n_bm} bookmark tak-berpasangan dibersihkan.")
+        except Exception as e:
+            print(f"[WARN] Sanitasi bookmark global gagal: {e}")
         # Pasca-COM: tautkan ulang entri TOC statis hasil Word (Unlink menghapus
         # hyperlink bawaan). Gaya 'toc 1/2/3' cocok case-insensitive; bookmark
         # TOC_* heading dipakai ulang (idempoten); teks dijamin identik.
@@ -2672,7 +2704,7 @@ def build_tabel_research_gap(doc):
             "5",
             "Moderasi M pada X1 terhadap Y",
             "Lienardy dan Panasea (2026) (MRA H4 diterima); Katauke *et al.* (2023) (tak langsung).",
-            "Gagal-moderasi Apidana dan Kholifah (2022) (p=0,597) dan Artadita dan Firmialy (2024) (beta=0,092, n.s.) + *regulatory failure*.",
+            "Gagal-moderasi Apidana dan Kholifah (2022) (p=0,597) dan Artadita dan Firmialy (2024) (β=0,092, tidak signifikan) + *regulatory failure*.",
             "Ambang intensitas hedonis vs kapasitas volisional."
         ),
         (

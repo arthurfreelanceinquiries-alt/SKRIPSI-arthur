@@ -120,11 +120,11 @@ Bisa kita mulai dari pertanyaan pertama?
 ```text
 Halo! Jalankan skill "obsidian-second-brain". Tolong lakukan audit kesehatan naskah menyeluruh, kepatuhan FEB UKRIDA 2023, dan verifikasi dokumen multiformat:
 
-[KONTEKS KANONIS — jangan berasumsi lain]: satu-satunya naskah proposal adalah `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.*` (varian NoBab3 dihapus permanen). PDF kanonis = 51 hlm settled (frontmatter romawi i–v: Cover i, TOC ii–iii, LOT iv, LOF v; tubuh arab 1–46: Bab 1=1–10, Bab 2=11–24, Bab 3=25–41, DP=42–46). Enam lembar formal hidup modular di `01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/`.
+[KONTEKS KANONIS — jangan berasumsi lain]: satu-satunya naskah proposal adalah `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.*` (varian NoBab3 dihapus permanen). PDF kanonis = 51 hlm settled (frontmatter romawi i–v: Cover i, TOC ii–iii, LOT iv, LOF v; tubuh arab 1–46: Bab 1=1–12, Bab 2=13–23, Bab 3=24–41, DP=42–46). Enam lembar formal hidup modular di `01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/`.
 
 1. [INTEGRITAS FILE]: Periksa `01_Naskah_Utama/` — pastikan (a) logo pentagram vektor `images/ukrida_pentagram.pdf` dipakai TeX (cover) dan ter-embed di DOCX; (b) tidak ada lockfile basi `~$*.docx`; (c) 6 file modular frontmatter lengkap; (d) tidak ada sisa file `*NoBab3.*`.
 2. [SETTLED-BUILD C-LOT-3]: Kompilasi `xelatex` berulang hingga 2 run beruntun jumlah halaman IDENTIK (51 hlm) + 0 LaTeX rerun-warning. Angka sekali-pass dilarang dipakai. Jika total bergeser dari 51, selidiki dulu sebelum lanjut.
-3. [SINKRON ANGKA CETAK C-LOT-1]: Samakan angka TOC/LOT/LOF statis DOCX dengan `.toc`/`.lot`/`.lof` PDF (kanonis: LOT hlm 6, 14, 22, 28, 37; LOF hlm 1, 2, 4, 21, 35; TOC BAB 1=1, BAB 2=11, BAB 3=25, DP=42). Bila beda, perbarui `execution/build_proposal_word.py` lalu rebuild DOCX.
+3. [SINKRON ANGKA CETAK C-LOT-1]: Samakan angka TOC/LOT/LOF statis DOCX dengan `.toc`/`.lot`/`.lof` PDF (kanonis: LOT hlm 7, 16, 24, 32, 41; LOF hlm 1, 2, 4, 23, 39; TOC BAB 1=1, BAB 2=13, BAB 3=24, DP=42). Bila beda, perbarui `execution/build_proposal_word.py` lalu rebuild DOCX.
 4. [ORCHESTRATOR 11 GERBANG EXTENDED]: Jalankan `py execution/run_thesis_graph.py --gate extended` (G1 Mendeley, G2 live-URL, G3 UKRIDA 2023, G4 tipografi pure-black, G5 paritas PDF-vs-Word, G6 outline, G7 buku LibGen, G8 paritas italic lintas format, X1 forensik format typo, X3 header PDF massal, X4 layout section Word) + `py execution/verify_all_citation_links.py` (syarat 0 tautan MATI). Seluruh gerbang wajib 11/11 PASS mutlak.
 5. [HYGIENE BAHASA & FORMAT]: DOCX wajib 0 sisa backslash LaTeX, 0 singkatan `n.s.`, judul BAB dua baris (shift+enter), rujukan tabel/gambar bernomor eksplisit, dan istilah asing berada di belakang bahasa Indonesia dalam kurung miring (\emph{italics}).
 6. [SELF-ANNEAL]: Jika ada gerbang FAIL, perbaiki secara surgical di skrip/dokumen pemiliknya, ulangi uji dari gerbang yang gagal, dan abadikan pelajarannya ke SOP di `directives/`.
@@ -168,6 +168,63 @@ Halo! Jalankan skill "obsidian-second-brain". Tolong lakukan audit diagnostik ti
    - Pastikan seluruh 54 entri Daftar Pustaka memiliki bookmark dan 180+ in-text citations terhubung aktif.
 3. [VERIFIKASI ULANG]: Jalankan kembali `python execution/verify_docx_typography.py` dan `python execution/run_thesis_graph.py --gate extended` hingga 10/10 PASS (0 fatal error).
 4. Laporkan ringkasan hasil audit sebelum vs sesudah perbaikan!
+```
+
+---
+
+## 🛰️ 5. BLOK TEMPEL UNIVERSAL & META PROMPT (OPSI 8–10)
+
+> 🧩 **Cara Pakai:** Opsi 8–9 adalah blok siap salin yang ditempelkan di **AKHIR** prompt Opsi 1–7 (atau prompt apapun). Opsi 10 adalah AI prompt engineer untuk memperbagus draf prompt kasar. Versi interaktif dengan tombol salin ada di `PROMPT_KICKOFF.html` (Kategori D & E).
+
+---
+
+### 🛰️ Opsi 8: Blok Orkestrasi Multi-Agen + Auditor (Tempel di Akhir Prompt Apapun)
+*Pola eksekusi Sesi 42 (rebuild DOCX + Mendeley + instrumen paralel): pecah tugas menjadi subagen dengan ruang file disjoint + 1 orkestrator-auditor read-only:*
+
+```text
+[BLOK ORKESTRASI MULTI-AGEN — tempel di akhir prompt apapun]
+
+Eksekusi tugas di atas dengan pola multi-agen berikut:
+
+1. Pecah tugas menjadi 3–4 sub-tugas paralel yang TIDAK tumpang tindih. Satu sub-tugas = satu agen; setiap agen mendapat daftar file yang BOLEH ditulis yang saling lepas (disjoint); file lain hanya boleh dibaca.
+2. Setiap agen pekerja wajib: (a) menyatakan Goal-link + Verified-vs-Proposed sebelum serah terima; (b) mengubah seminimal mungkin secara surgical; (c) DILARANG commit/push tanpa izinku; (d) DILARANG mengarang URL/DOI/sitasi/angka — setiap klaim faktual wajib terverifikasi via eksekusi perintah atau skrip, bukan tebakan.
+3. Setelah semua agen pekerja selesai, turunkan 1 agen ORKESTRATOR-AUDITOR yang bekerja read-only (tanpa menulis file): daftar file modified/untracked, verifikasi ulang hasil tiap agen, cocokkan setiap klaim dengan bukti, lalu nyatakan CLEAN atau PERLU PERBAIKAN beserta daftar perbaikan konkret.
+4. Sajikan laporan akhir gabungan: status tiap sub-tugas, file yang disentuh, hasil verifikasi orkestrator, dan blocker yang butuh keputusanku.
+```
+
+---
+
+### ✅ Opsi 9: Blok Verifikasi Universal (Tempel di Akhir Prompt Apapun)
+*Footer verifikasi 5 butir untuk setiap prompt: bukti eksekusi, anti-karangan, surgical, tanpa commit, asumsi eksplisit:*
+
+```text
+[BLOK VERIFIKASI UNIVERSAL — tempel di akhir prompt apapun]
+
+Sebelum menyatakan tugas selesai, jalankan standar ini:
+
+1. Verifikasi solusimu dengan EKSEKUSI (jalankan kode, skrip, atau perintah dan tunjukkan output aktualnya) — bukan sekadar penjelasan.
+2. DILARANG mengarang URL, DOI, sitasi, angka halaman, atau nama file — pakai hanya yang terbukti ada.
+3. Ubah seminimal mungkin (surgical); pastikan file dan fitur lain tidak ikut rusak (cek status sebelum dan sesudah).
+4. DILARANG commit atau push tanpa persetujuan eksplisitku.
+5. Tulis semua asumsi secara eksplisit sebagai asumsi, plus apa yang perlu keputusanku.
+```
+
+---
+
+### ✨ Opsi 10: Universal Prompt Improver (Perbagus Prompt Apapun)
+*Tempel draf prompt kasar di chat berikutnya — AI menyusun ulang menjadi prompt siap pakai berstruktur peran, konteks, langkah, batasan, dan kriteria selesai:*
+
+```text
+Halo! Bertindaklah sebagai PROMPT ENGINEER. Saya akan menempelkan draf prompt kasar di chat berikutnya — tugasmu memperbagusnya menjadi prompt siap pakai.
+
+Aturan perbaikan:
+1. Pertahankan 100% maksud asliku — jangan menambah atau mengurangi tujuan, hanya memperjelas.
+2. Strukturkan hasil menjadi: (a) PERAN AI; (b) KONTEKS yang harus dibaca AI (daftar file atau data); (c) TUGAS langkah-demi-langkah bernomor; (d) BATASAN eksplisit (apa yang dilarang); (e) FORMAT LAPORAN AKHIR yang diharapkan; (f) KRITERIA SELESAI yang observable (angka atau bukti, bukan kata sifat).
+3. Tambahkan ketahanan standar — perintah verifikasi via eksekusi, larangan mengarang fakta atau URL, dan larangan commit tanpa izin — KECUALI tugasku memang memintanya.
+4. Jika drafku ambigu di bagian krusial, ajukan MAKSIMAL 3 pertanyaan klarifikasi DAHULU sebelum menulis hasil akhir.
+5. Sajikan hasil dalam blok kode siap salin, plus daftar singkat apa yang kamu ubah dan alasannya.
+
+Siap? Saya tempelkan draf promptnya sekarang.
 ```
 
 ---

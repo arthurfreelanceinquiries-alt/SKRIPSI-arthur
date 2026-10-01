@@ -315,6 +315,109 @@
       border-radius: 4px;
     }
 
+    /* CATEGORY NAV */
+    .category-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .category-nav a {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-sub);
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.2s ease;
+    }
+
+    .category-nav a:hover {
+      color: #ffffff;
+      border-color: rgba(59, 130, 246, 0.5);
+      background: rgba(37, 99, 235, 0.15);
+    }
+
+    /* CATEGORY SECTION TITLE */
+    .category-section-title {
+      font-family: var(--font-title);
+      font-size: 17px;
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 4px 0 4px;
+      scroll-margin-top: 16px;
+    }
+
+    .count-badge {
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-sub);
+      padding: 2px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .category-section-desc {
+      font-size: 13px;
+      color: var(--text-sub);
+      padding: 0 4px;
+    }
+
+    .prompt-card.orchestra {
+      border: 1.5px solid rgba(139, 92, 246, 0.5);
+      background: linear-gradient(180deg, rgba(139, 92, 246, 0.09) 0%, rgba(15, 23, 42, 0.95) 100%);
+      box-shadow: 0 12px 36px rgba(139, 92, 246, 0.15);
+    }
+
+    .prompt-card.orchestra:hover {
+      border-color: rgba(139, 92, 246, 0.8);
+    }
+
+    .prompt-card.meta-prompt {
+      border: 1.5px solid rgba(245, 158, 11, 0.5);
+      background: linear-gradient(180deg, rgba(245, 158, 11, 0.08) 0%, rgba(15, 23, 42, 0.95) 100%);
+      box-shadow: 0 12px 36px rgba(245, 158, 11, 0.15);
+    }
+
+    .prompt-card.meta-prompt:hover {
+      border-color: rgba(245, 158, 11, 0.8);
+    }
+
+    .tag-orchestra {
+      background: #8b5cf6;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 6px;
+      width: fit-content;
+      margin-bottom: 2px;
+      letter-spacing: 0.5px;
+    }
+
+    .tag-meta {
+      background: #f59e0b;
+      color: #000000;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 6px;
+      width: fit-content;
+      margin-bottom: 2px;
+      letter-spacing: 0.5px;
+    }
+
     /* TOAST NOTIFICATION */
     .toast {
       position: fixed;
@@ -369,10 +472,22 @@
         <span class="status-pill">👩‍🏫 Pembimbing: <strong>Dr. Fredella Colline</strong></span>
         <span class="status-pill">📄 Status: <strong>Proposal 51 Hlm Settled · 54 Ref Q1/SSCI · Extended Gates 11/11 PASS (Gate G8 Italic)</strong></span>
       </div>
+
+      <nav class="category-nav">
+        <a href="#kategori-sesi">A · Buka &amp; Tutup Sesi</a>
+        <a href="#kategori-akademik">B · Bimbingan &amp; Sidang</a>
+        <a href="#kategori-audit">C · Audit Ilmiah &amp; Teknis</a>
+        <a href="#kategori-blok">D · Blok Tempel Universal</a>
+        <a href="#kategori-meta">E · Meta Prompt</a>
+      </nav>
     </header>
 
     <!-- CARDS GRID -->
     <div class="cards-grid">
+
+      <!-- KATEGORI A: BUKA & TUTUP SESI -->
+      <div class="category-section-title" id="kategori-sesi">A · Buka &amp; Tutup Sesi <span class="count-badge">2 prompt</span></div>
+      <div class="category-section-desc">Siklus kerja dua arah: buka sesi dengan sinkronisasi multi-device, tutup sesi dengan push bersih anti-tabrakan.</div>
 
       <!-- CARD 1: DEFAULT KICKOFF -->
       <div class="prompt-card featured">
@@ -457,6 +572,10 @@ Setelah kamu membaca file-file di atas, tolong berikan ringkasan 4 poin:
         </div>
       </div>
 
+      <!-- KATEGORI B: BIMBINGAN & SIDANG -->
+      <div class="category-section-title" id="kategori-akademik">B · Bimbingan &amp; Sidang <span class="count-badge">2 prompt</span></div>
+      <div class="category-section-desc">Sesi akademik: memasukkan catatan revisi dosen dan latihan simulasi tanya jawab sidang.</div>
+
       <!-- CARD 3: REVISI DOSEN -->
       <div class="prompt-card">
         <div class="card-header">
@@ -512,6 +631,10 @@ Bisa kita mulai dari pertanyaan pertama?</pre>
         </div>
       </div>
 
+      <!-- KATEGORI C: AUDIT ILMIAH & TEKNIS -->
+      <div class="category-section-title" id="kategori-audit">C · Audit Ilmiah &amp; Teknis <span class="count-badge">3 prompt</span></div>
+      <div class="category-section-desc">Audit kesehatan naskah dan kepatuhan UKRIDA, peer-review paper-audit Tier-3, dan diagnostik auto-repair DOCX.</div>
+
       <!-- CARD 5: AUDIT & KEPATUHAN UKRIDA 2023 -->
       <div class="prompt-card">
         <div class="card-header">
@@ -531,11 +654,11 @@ Bisa kita mulai dari pertanyaan pertama?</pre>
         <div class="prompt-box">
           <pre class="prompt-text" id="prompt5">Halo! Jalankan skill "obsidian-second-brain". Tolong lakukan audit kesehatan naskah menyeluruh, kepatuhan FEB UKRIDA 2023, dan verifikasi dokumen multiformat:
 
-[KONTEKS KANONIS — jangan berasumsi lain]: satu-satunya naskah proposal adalah `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.*` (varian NoBab3 dihapus permanen). PDF kanonis = 51 hlm settled (frontmatter romawi i–v: Cover i, TOC ii–iii, LOT iv, LOF v; tubuh arab 1–46: Bab 1=1–10, Bab 2=11–24, Bab 3=25–41, DP=42–46). Enam lembar formal hidup modular di `01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/`.
+[KONTEKS KANONIS — jangan berasumsi lain]: satu-satunya naskah proposal adalah `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.*` (varian NoBab3 dihapus permanen). PDF kanonis = 51 hlm settled (frontmatter romawi i–v: Cover i, TOC ii–iii, LOT iv, LOF v; tubuh arab 1–46: Bab 1=1–12, Bab 2=13–23, Bab 3=24–41, DP=42–46). Enam lembar formal hidup modular di `01_Naskah_Utama/01_Lembar_Persetujuan_Proposal/`.
 
 1. [INTEGRITAS FILE]: Periksa `01_Naskah_Utama/` — pastikan (a) logo pentagram vektor `images/ukrida_pentagram.pdf` dipakai TeX (cover) dan ter-embed di DOCX; (b) tidak ada lockfile basi `~$*.docx`; (c) 6 file modular frontmatter lengkap; (d) tidak ada sisa file `*NoBab3.*`.
 2. [SETTLED-BUILD C-LOT-3]: Kompilasi `xelatex` berulang hingga 2 run beruntun jumlah halaman IDENTIK (51 hlm) + 0 LaTeX rerun-warning. Angka sekali-pass dilarang dipakai. Jika total bergeser dari 51, selidiki dulu sebelum lanjut.
-3. [SINKRON ANGKA CETAK C-LOT-1]: Samakan angka TOC/LOT/LOF statis DOCX dengan `.toc`/`.lot`/`.lof` PDF (kanonis: LOT hlm 6, 14, 22, 28, 37; LOF hlm 1, 2, 4, 21, 35; TOC BAB 1=1, BAB 2=11, BAB 3=25, DP=42). Bila beda, perbarui `execution/build_proposal_word.py` lalu rebuild DOCX.
+3. [SINKRON ANGKA CETAK C-LOT-1]: Samakan angka TOC/LOT/LOF statis DOCX dengan `.toc`/`.lot`/`.lof` PDF (kanonis: LOT hlm 7, 16, 24, 32, 41; LOF hlm 1, 2, 4, 23, 39; TOC BAB 1=1, BAB 2=13, BAB 3=24, DP=42). Bila beda, perbarui `execution/build_proposal_word.py` lalu rebuild DOCX.
 4. [ORCHESTRATOR 11 GERBANG EXTENDED]: Jalankan `py execution/run_thesis_graph.py --gate extended` (G1 Mendeley, G2 live-URL, G3 UKRIDA 2023, G4 tipografi pure-black, G5 paritas PDF-vs-Word, G6 outline, G7 buku LibGen, G8 paritas italic lintas format, X1 forensik format typo, X3 header PDF massal, X4 layout section Word) + `py execution/verify_all_citation_links.py` (syarat 0 tautan MATI). Seluruh gerbang wajib 11/11 PASS mutlak.
 5. [HYGIENE BAHASA &amp; FORMAT]: DOCX wajib 0 sisa backslash LaTeX, 0 singkatan `n.s.`, judul BAB dua baris (shift+enter), rujukan tabel/gambar bernomor eksplisit, dan istilah asing berada di belakang bahasa Indonesia dalam kurung miring (\emph{italics}).
 6. [SELF-ANNEAL]: Jika ada gerbang FAIL, perbaiki secara surgical di skrip/dokumen pemiliknya, ulangi uji dari gerbang yang gagal, dan abadikan pelajarannya ke SOP di `directives/`.
@@ -603,6 +726,104 @@ Apakah kamu siap memulai audit naskah ini?</pre>
    - Pastikan seluruh 54 entri Daftar Pustaka memiliki bookmark dan 180+ in-text citations terhubung aktif.
 3. [VERIFIKASI ULANG]: Jalankan kembali `python execution/verify_docx_typography.py` dan `python execution/run_thesis_graph.py --gate extended` hingga 10/10 PASS (0 fatal error).
 4. Laporkan ringkasan hasil audit sebelum vs sesudah perbaikan!</pre>
+        </div>
+      </div>
+
+      <!-- KATEGORI D: BLOK TEMPEL UNIVERSAL -->
+      <div class="category-section-title" id="kategori-blok">D · Blok Tempel Universal <span class="count-badge">2 blok · tempel di akhir prompt apapun</span></div>
+      <div class="category-section-desc">Blok siap salin yang ditempelkan di AKHIR prompt Opsi 1–7 (atau prompt apapun) untuk menaikkan kualitas eksekusi AI.</div>
+
+      <!-- CARD 8: BLOK MULTI-AGEN + ORKESTRATOR -->
+      <div class="prompt-card orchestra">
+        <div class="card-header">
+          <div class="card-title-group">
+            <span class="tag-orchestra">Blok Tempel · Multi-Agen</span>
+            <div class="card-title">🛰️ Opsi 8: Blok Orkestrasi Multi-Agen + Auditor</div>
+            <div class="card-desc">Pecah tugas menjadi subagen paralel dengan ruang file disjoint + 1 orkestrator-auditor read-only. Pola yang dipakai saat rebuild DOCX + Mendeley + instrumen Sesi 42.</div>
+          </div>
+          <button type="button" class="btn-copy" onclick="copyPrompt('prompt8', this)">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Salin Prompt</span>
+          </button>
+        </div>
+
+        <div class="prompt-box">
+          <pre class="prompt-text" id="prompt8">[BLOK ORKESTRASI MULTI-AGEN — tempel di akhir prompt apapun]
+
+Eksekusi tugas di atas dengan pola multi-agen berikut:
+
+1. Pecah tugas menjadi 3–4 sub-tugas paralel yang TIDAK tumpang tindih. Satu sub-tugas = satu agen; setiap agen mendapat daftar file yang BOLEH ditulis yang saling lepas (disjoint); file lain hanya boleh dibaca.
+2. Setiap agen pekerja wajib: (a) menyatakan Goal-link + Verified-vs-Proposed sebelum serah terima; (b) mengubah seminimal mungkin secara surgical; (c) DILARANG commit/push tanpa izinku; (d) DILARANG mengarang URL/DOI/sitasi/angka — setiap klaim faktual wajib terverifikasi via eksekusi perintah atau skrip, bukan tebakan.
+3. Setelah semua agen pekerja selesai, turunkan 1 agen ORKESTRATOR-AUDITOR yang bekerja read-only (tanpa menulis file): daftar file modified/untracked, verifikasi ulang hasil tiap agen, cocokkan setiap klaim dengan bukti, lalu nyatakan CLEAN atau PERLU PERBAIKAN beserta daftar perbaikan konkret.
+4. Sajikan laporan akhir gabungan: status tiap sub-tugas, file yang disentuh, hasil verifikasi orkestrator, dan blocker yang butuh keputusanku.</pre>
+        </div>
+      </div>
+
+      <!-- CARD 9: BLOK VERIFIKASI UNIVERSAL -->
+      <div class="prompt-card orchestra">
+        <div class="card-header">
+          <div class="card-title-group">
+            <span class="tag-orchestra">Blok Tempel · Verifikasi</span>
+            <div class="card-title">✅ Opsi 9: Blok Verifikasi Universal</div>
+            <div class="card-desc">Footer verifikasi 5 butir untuk setiap prompt: bukti eksekusi, anti-karangan, surgical, tanpa commit, asumsi eksplisit.</div>
+          </div>
+          <button type="button" class="btn-copy" onclick="copyPrompt('prompt9', this)">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2-2v1"></path>
+            </svg>
+            <span>Salin Prompt</span>
+          </button>
+        </div>
+
+        <div class="prompt-box">
+          <pre class="prompt-text" id="prompt9">[BLOK VERIFIKASI UNIVERSAL — tempel di akhir prompt apapun]
+
+Sebelum menyatakan tugas selesai, jalankan standar ini:
+
+1. Verifikasi solusimu dengan EKSEKUSI (jalankan kode, skrip, atau perintah dan tunjukkan output aktualnya) — bukan sekadar penjelasan.
+2. DILARANG mengarang URL, DOI, sitasi, angka halaman, atau nama file — pakai hanya yang terbukti ada.
+3. Ubah seminimal mungkin (surgical); pastikan file dan fitur lain tidak ikut rusak (cek status sebelum dan sesudah).
+4. DILARANG commit atau push tanpa persetujuan eksplisitku.
+5. Tulis semua asumsi secara eksplisit sebagai asumsi, plus apa yang perlu keputusanku.</pre>
+        </div>
+      </div>
+
+      <!-- KATEGORI E: META PROMPT -->
+      <div class="category-section-title" id="kategori-meta">E · Meta Prompt <span class="count-badge">1 prompt</span></div>
+      <div class="category-section-desc">Prompt yang memperbaiki prompt: tempel draf kasarmu di chat berikutnya, terima versi siap pakai.</div>
+
+      <!-- CARD 10: UNIVERSAL PROMPT IMPROVER -->
+      <div class="prompt-card meta-prompt">
+        <div class="card-header">
+          <div class="card-title-group">
+            <span class="tag-meta">Meta · Prompt Improver</span>
+            <div class="card-title">✨ Opsi 10: Universal Prompt Improver</div>
+            <div class="card-desc">Tempel draf prompt kasar di chat berikutnya — AI menyusun ulang menjadi prompt siap pakai berstruktur peran, konteks, langkah, batasan, dan kriteria selesai.</div>
+          </div>
+          <button type="button" class="btn-copy" onclick="copyPrompt('prompt10', this)">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2-2v1"></path>
+            </svg>
+            <span>Salin Prompt</span>
+          </button>
+        </div>
+
+        <div class="prompt-box">
+          <pre class="prompt-text" id="prompt10">Halo! Bertindaklah sebagai PROMPT ENGINEER. Saya akan menempelkan draf prompt kasar di chat berikutnya — tugasmu memperbagusnya menjadi prompt siap pakai.
+
+Aturan perbaikan:
+1. Pertahankan 100% maksud asliku — jangan menambah atau mengurangi tujuan, hanya memperjelas.
+2. Strukturkan hasil menjadi: (a) PERAN AI; (b) KONTEKS yang harus dibaca AI (daftar file atau data); (c) TUGAS langkah-demi-langkah bernomor; (d) BATASAN eksplisit (apa yang dilarang); (e) FORMAT LAPORAN AKHIR yang diharapkan; (f) KRITERIA SELESAI yang observable (angka atau bukti, bukan kata sifat).
+3. Tambahkan ketahanan standar — perintah verifikasi via eksekusi, larangan mengarang fakta atau URL, dan larangan commit tanpa izin — KECUALI tugasku memang memintanya.
+4. Jika drafku ambigu di bagian krusial, ajukan MAKSIMAL 3 pertanyaan klarifikasi DAHULU sebelum menulis hasil akhir.
+5. Sajikan hasil dalam blok kode siap salin, plus daftar singkat apa yang kamu ubah dan alasannya.
+
+Siap? Saya tempelkan draf promptnya sekarang.</pre>
         </div>
       </div>
 

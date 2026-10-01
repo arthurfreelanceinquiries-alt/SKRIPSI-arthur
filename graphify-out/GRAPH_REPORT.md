@@ -1,15 +1,16 @@
-# Graph Report - SKRIPSI-arthur  (2026-09-30)
+# Graph Report - SKRIPSI-arthur-main  (2026-10-01)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 197 files · ~678,586 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2416 nodes · 2558 edges · 223 communities (195 shown, 28 thin omitted)
+- 2498 nodes · 2799 edges · 224 communities (200 shown, 24 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 24 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `44a8a272`
+- Built from commit: `8c4fa188`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -19,7 +20,7 @@
 - Buku Pedoman Penyusunan Tugas Akhir 2023.md
 - Bab ini terdiri dari sub bab berikut ini:
 - skills/humanizer-id/SKILL.md
-- BAB 3
+- DRAF KUESIONER GOOGLE FORMS — Impulsive Buying Booster Pack Pokemon TCG (Jakarta Barat)
 - paper-audit/paper-audit/SKILL.md
 - skills/paper-audit/SKILL.md
 - Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.md
@@ -73,7 +74,7 @@
 - 2. Tujuh Pilar Kepatuhan FEB UKRIDA 2023
 - build_lembar_persetujuan.py
 - 🧠 DASHBOARD SECOND BRAIN — SKRIPSI POKÉMON TCG
-- 02_Rencana_PPT_Sempro_7_Slide/README.md
+- Dashboard Second Brain Pokemon TCG
 - 📌 KELOMPOK: JURNAL EMPIRIS UTAMA
 - PRD: Audit & Penyelarasan Kepatuhan Pedoman Tugas Akhir FEB UKRIDA 2023
 - Product Requirements Document (PRD)
@@ -110,9 +111,9 @@
 - 🃏 FLASHCARD ISTILAH KUNCI — Proposal Skripsi Pokémon TCG
 - 17. PENGUASAAN BAB 3 TOTAL DARI NOL (WAJIB HAFAL) <a id="sec-17"></a>
 - IMPLEMENTATION PLAN — LOT/LOF Hyperlink + Mendeley Linkage (eksekusi 16 Sep 2026)
-- PANDUAN_STANDARISASI_HEADING_DAN_DAFTAR_ISI_DOCX.md
+- 📑 PANDUAN STANDARISASI HEADING & DAFTAR ISI OTOMATIS DOCX
 - 📋 PRODUCT REQUIREMENTS DOCUMENT (PRD)
-- run_paper_audit.md
+- Log Sesi Second Brain
 - PRD Remediasi AI 70% → Ambang Praktik ≤20% (Humanizer-ID × Universal Framework)
 - PRD: Resolusi Review Teknis & Editorial Prism AI (Proposal Skripsi Pokémon TCG)
 - PRD: Penentuan dan Substitusi Gambar 1.3 Bab 1 dengan Data Empiris Terverifikasi 100% Legit
@@ -180,7 +181,7 @@
 - check_images.js
 - Scientific Paper Audit Report September 2026
 - Revisi Sylvia — Pascapangkas Bab 1 (23 September 2026)
-- 📥 Folder Drop Masukan & Revisi Dosen Pembimbing
+- Tempel Chat Dosen Disini
 - Mandatory Rule: Jaminan Akses Terbuka Tanpa Hambatan Login (No-Login-Wall Policy)
 - Rule: Obsidian Second Brain & Session Synchronization Protocol
 - Evaluasi perilaku skill
@@ -195,16 +196,17 @@
 - Impulsive Buying Y
 - PSA Grading Price Disparity Chart Gambar 1.3 - Raw vs PSA 10 Gem Mint
 - Logo UKRIDA
-- 12. BEDAH TABEL 1.1: 7 RESEARCH GAP DALAM 2 MENIT <a id="sec-12"></a>
-- 9. METODOLOGI PENELITIAN & TEKNIK ANALISIS MRA <a id="sec-9"></a>
-- 1. RINGKASAN EKSEKUTIF & PETA KONSEP PENELITIAN <a id="sec-1"></a>
-- 4. KAMUS LENGKAP ISTILAH <a id="sec-4"></a>
-- 📌 KELOMPOK: DATA INDUSTRI
+- 3. Rincian Temuan & Diskrepansi Detail (*Diff Analysis*)
+- Catatan Bimbingan & Analisis Revisi Dosen (16 September 2026)
+- Mandatory Rule: Zero Raw LaTeX Leakage & Native APA 7 Tables in Word (.docx)
+- KODEBOOK DAN TEMPLATE TABULASI — Pilot N=30 & Final N=111–150
+- Bimbingan: 16 September 2026 (Pukul 10:27–10:28 WIB)
+- 1. Core Principles (Zero Regressions)
 - Interactive Presentation App Shell
 - Mandatory Rule: 3-Layer Architecture Execution
 - verify_italic_typography.py
 - verify_pdf_docx_parity.py
-- Dashboard Second Brain Pokemon TCG
+- Directive: Generate Publication-Grade Thesis Proposal in Microsoft Word (.docx)
 - DAFTAR ISI NASKAH PROPOSAL
 - 📋 PROMPT SIAP TEMPEL UNTUK CLAUDE — PLAN PEMBUATAN PPT 7 SLIDE
 - JAKARTA 2021
@@ -217,12 +219,12 @@
 - DAFTAR_PUSTAKA_TENTATIF.md
 - Book Reference PDF Repository README
 - RIS Tag Whitelist Prohibits ELEC
-- 01_Pernyataan_Keaslian_5d41c55e.md
-- 02_Halaman_Persetujuan_e682c1b7.md
-- 03_Halaman_Pengesahan_Penguji_bb0f4265.md
-- 04_Kata_Pengantar_4917e1e4.md
-- 05_Abstrak_Indonesia_58188fde.md
-- 06_Abstract_English_8079db39.md
+- 📌 KELOMPOK: VARIABEL M
+- 📖 EVIDENCE LEDGER HALAMAN — Jejak Klaim → PDF → Halaman (D26 Tier Wajib)
+- 📁 Paket Perencanaan Slide Deck Seminar Proposal (Sempro) 7 Slide
+- README OUTPUT — Cara Pakai Sintaks MRA 2 Tahap (SPSS)
+- Prompt Mulai Sesi Copy Paste
+- 📌 KELOMPOK: GRAND THEORY
 - Graph of Agents A0-A11 Pipeline
 - Self-Control (M)
 - DAFTAR PUSTAKA
@@ -231,33 +233,35 @@
 - 10 Empirical Journals 2021-2025
 - Pseudo-Set Framing Barasz 2017
 - Parity Gate 7 Verifiers
-- Log Sesi Second Brain
+- 📌 KELOMPOK: SUPPORTING THEORY
+- 📑 Direktori Laporan Audit Ilmiah (Paper Audits)
+- JAKARTA 2021
 - No Login Wall Empirical Source Policy
 - Zero Ghost Citations Policy
 
 ## God Nodes (most connected - your core abstractions)
-1. `(322015175)` - 89 edges
+1. `(322015175)` - 152 edges
 2. `Bab ini terdiri dari sub bab berikut ini:` - 60 edges
-3. `build_full_proposal()` - 27 edges
-4. `15. BANK PERTANYAAN TAMBAHAN Q18–Q35 <a id="sec-15"></a>` - 20 edges
-5. `MASTER GUIDE SKRIPSI — Panduan Lintas Topik & Arsitektur Riset` - 18 edges
-6. `10. SIMULASI PERTANYAAN BIMBINGAN / SIDANG & KUNCI JAWABAN <a id="sec-10"></a>` - 18 edges
-7. `Playbook Skripsi S1 Manajemen FEB UKRIDA — Pengetahuan Lintas Topik` - 15 edges
-8. `🎯 PERTANYAAN SIDANG SULIT + JAWABAN MENDALAM` - 15 edges
-9. `**PENGARUH PERENCANAAN PAJAK TERHADAP** **_RETURN_ SAHAM PADA PERUSAHAAN MANUFAKTUR YANG** **_LISTED_ DI BURSA EFEK INDONESIA**` - 15 edges
-10. `add_frontmatter_heading()` - 14 edges
+3. `Log Sesi Second Brain` - 51 edges
+4. `Universal Skripsi Framework Graph of Agents` - 44 edges
+5. `Dashboard Second Brain Pokemon TCG` - 43 edges
+6. `build_full_proposal()` - 27 edges
+7. `**PENGARUH PERENCANAAN PAJAK TERHADAP** **_RETURN_ SAHAM PADA PERUSAHAAN MANUFAKTUR YANG** **_LISTED_ DI BURSA EFEK INDONESIA**` - 25 edges
+8. `15. BANK PERTANYAAN TAMBAHAN Q18–Q35 <a id="sec-15"></a>` - 20 edges
+9. `10. SIMULASI PERTANYAAN BIMBINGAN / SIDANG & KUNCI JAWABAN <a id="sec-10"></a>` - 18 edges
+10. `MASTER GUIDE SKRIPSI — Panduan Lintas Topik & Arsitektur Riset` - 18 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Agent Instructions 3-Layer Architecture` --references--> `Template Source of Truth Universal`  [EXTRACTED]
-  AGENTS.md → 04_Riset_&_Metodologi/TEMPLATE_SOURCE_OF_TRUTH_UNIVERSAL.md
-- `Agent Instructions 3-Layer Architecture` --references--> `Directive Universal Thesis Graph of Agents`  [EXTRACTED]
-  AGENTS.md → directives/universal_thesis_graph_of_agents.md
 - `LibGen Book Verification SOP Directive` --conceptually_related_to--> `Mandatory Verifiable Theories and Books Rule`  [INFERRED]
   directives/verify_book_sources_libgen.md → .agents/rules/mandatory_verifiable_theories_and_books.md
-- `Directive Highlight Mendeley Citations` --conceptually_related_to--> `Mandatory Citation Typography and Gap Rules`  [INFERRED]
-  directives/highlight_mendeley_citations.md → .agents/rules/mandatory_citation_typography_and_gap_rules.md
-- `Scientific Paper Audit Report September 2026` --references--> `Paper Audit Skill for Methods and Claims Review`  [INFERRED]
-  07_Review_&_Audit/Paper_Audits/review-2026-09-16-164500.md → .agents/skills/paper-audit/agents/openai.yaml
+- `Log Sesi Second Brain` --references--> `Book Reference PDF Repository README`  [EXTRACTED]
+  04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md → 06_Referensi_Jurnal_PDF/03_Buku_Referensi_PDF/README.md
+- `Prompt Kickoff Web App` --semantically_similar_to--> `Prompt Mulai Sesi Copy Paste`  [EXTRACTED] [semantically similar]
+  PROMPT_KICKOFF.html → 00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md
+- `Log Sesi Second Brain` --references--> `Tempel Chat Dosen Disini`  [EXTRACTED]
+  04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md → 07_Review_&_Audit/Revisi_Dosen/TEMPEL_CHAT_DOSEN_DISINI.md
+- `Dashboard Second Brain Pokemon TCG` --references--> `Template Source of Truth Universal`  [EXTRACTED]
+  00_DASHBOARD_SECOND_BRAIN.md → 04_Riset_&_Metodologi/TEMPLATE_SOURCE_OF_TRUTH_UNIVERSAL.md
 
 ## Import Cycles
 - None detected.
@@ -265,11 +269,11 @@
 ## Hyperedges (group relationships)
 - **Thesis Integrity and Verifiability Pipeline** — skripsi_arthur_04_riset___metodologi_source_of_truth_zero_ghost_citations, skripsi_arthur_04_riset___metodologi_source_of_truth_no_login_wall_policy, skripsi_arthur_04_riset___metodologi_prd_universal_skripsi_framework_graph_of_agents_zero_desync_parity [INFERRED 0.85]
 
-## Communities (223 total, 28 thin omitted)
+## Communities (224 total, 24 thin omitted)
 
 ### Community 0 - "(322015175)"
-Cohesion: 0.02
-Nodes (84): 1.1. Latar Belakang Penelitian, 1.2. Perumusan Masalah, 1.3. Tujuan Penelitian, 1.4.1. Manfaat Teoritis, 1.4.2. Manfaat Praktis, 1.4. Manfaat Penelitian, 2.1. Teori 1, 2.1. Variabel X1 (+76 more)
+Cohesion: 0.01
+Nodes (152): 1.1. Latar Belakang Penelitian, 1.1. Latar Belakang Penelitian, 1.1. Latar Belakang Penelitian, 1.1. Latar Belakang Penelitian, 1.2. Perumusan Masalah, 1.2. Perumusan Masalah, 1.2. Perumusan Masalah, 1.2. Perumusan Masalah (+144 more)
 
 ### Community 1 - "build_proposal_word.py"
 Cohesion: 0.06
@@ -277,7 +281,7 @@ Nodes (82): add_body_paragraph(), _add_bookmark(), add_daftar_isi_heading(), _ad
 
 ### Community 2 - "Buku Pedoman Penyusunan Tugas Akhir 2023.md"
 Cohesion: 0.03
-Nodes (60): **1.1. Pendahuluan**, **1.2. Persyaratan Penyusunan Tugas Akhir**, **1.3. Prosedur Penyusunan Tugas Akhir**, **1.4. Ketentuan Tambahan**, **1.5. Proposal Tugas Akhir**, **1.6. Jangka Waktu Penyusunan Tugas Akhir**, **1) Bagian awal**, 1) Teori-teori (+52 more)
+Nodes (63): **1.1. Pendahuluan**, **1.2. Persyaratan Penyusunan Tugas Akhir**, **1.3. Prosedur Penyusunan Tugas Akhir**, **1.4. Ketentuan Tambahan**, **1.5. Proposal Tugas Akhir**, **1.6. Jangka Waktu Penyusunan Tugas Akhir**, **1) Bagian awal**, 1) Teori-teori (+55 more)
 
 ### Community 3 - "Bab ini terdiri dari sub bab berikut ini:"
 Cohesion: 0.03
@@ -287,9 +291,9 @@ Nodes (60): 2015. Jakarta: Ikatan Akuntan Indonesia, 2.3. Bagian Akhir, 2. Letak
 Cohesion: 0.04
 Nodes (47): 1. Baca dan petakan, 1. Memo operasional, 2. Diagnosis kontekstual, 2. Istilah teknis campuran, 3. Proposal, bukan hasil selesai, 3. Tulis ulang sesuai ragam, 4. Bahasa Indonesia dan istilah Inggris, 4. Hasil beserta ketidakpastian (+39 more)
 
-### Community 5 - "BAB 3"
-Cohesion: 0.04
-Nodes (46): 1.1 Latar Belakang Penelitian, 1.2 Perumusan Masalah, 1.3 Tujuan Penelitian, 1.4.1 Manfaat Teoretis, 1.4.2 Manfaat Praktis, 1.4 Manfaat Penelitian, 2.1.1 Landasan Teoretis: Pendekatan Keuangan Perilaku (Behavioral Finance), 2.1.2 Pendekatan Stimulus-Organism-Response (S-O-R) (+38 more)
+### Community 5 - "DRAF KUESIONER GOOGLE FORMS — Impulsive Buying Booster Pack Pokemon TCG (Jakarta Barat)"
+Cohesion: 0.15
+Nodes (12): A. Judul & Deskripsi Formulir (teks pembuka Forms), B. Bagian 1 — Screening / Penyaringan Awal (WAJIB, Section 1, logic aktif), C. Bagian 2 — Profil Responden (opsional, non-PII, Section 2), D1. Y — Impulsive Buying (6 butir; sumber skala: IBTS Verplanken & Herabadi 2001 / Rook & Fisher 1995; dimensi Kognitif/Afektif), D2. X1 — Hedonic Motivation (5 butir; sumber skala: Arnold & Reynolds 2003; dimensi Adventure/Gratification/Social/Role/Idea — dimensi Value Shopping sengaja tidak dipakai karena harga eceran pack pasti/seragam), D3. X2 — Desire for Completeness (5 butir; sumber skala: Gao, Huang, & Simonson 2014; Barasz et al. 2017; Belk 1995 — efek Zeigarnik), D4. X3 — Speculative Motive (5 butir; sumber skala: motif spekulasi Shiller/Keynes; Baur et al.; Colline 2024 — konteks apresiasi harga pasar sekunder & grading), D5. M — Self-Control / Kontrol Diri, variabel moderasi (6 butir; sumber skala: BSCS Tangney, Baumeister, & Boone 2004; Thaler & Shefrin; Vohs & Faber) (+4 more)
 
 ### Community 6 - "paper-audit/paper-audit/SKILL.md"
 Cohesion: 0.04
@@ -300,20 +304,20 @@ Cohesion: 0.04
 Nodes (38): 1. Establish the question and applicable standard, 2. Cohort, labels, and independence, 3. Trace preprocessing information flow, 4. Selection, comparisons, and uncertainty, 5. Bound claims and request proportionate repairs, Conditional biomedical and machine-learning audit, Evidence ledger and final audit, Finding record (+30 more)
 
 ### Community 8 - "Buku Pedoman Penyusunan Skripsi FEB Ukrida 2022.md"
-Cohesion: 0.04
-Nodes (44): 1.1. Pendahuluan, 1.2. Persyaratan Penyusunan Skripsi, 1.3. Prosedur Penyusunan Skripsi, 1.4. Proposal Skripsi, 1.5. Jangka Waktu Penyusunan Skripsi, 1) Bagian awal, 2.1. Bagian Awal, 2.2. Bagian Isi (+36 more)
+Cohesion: 0.03
+Nodes (66): 1.1. Pendahuluan, 1.2. Persyaratan Penyusunan Skripsi, 1.3. Prosedur Penyusunan Skripsi, 1.4. Proposal Skripsi, 1.5. Jangka Waktu Penyusunan Skripsi, 1) Bagian awal, 2.1. Bagian Awal, 2.2. Bagian Isi (+58 more)
 
 ### Community 9 - "A. KONSEP DASAR YANG WAJIB PAHAM SEBELUM SIDANG"
 Cohesion: 0.05
 Nodes (41): 21.10 Apa Itu Normalitas dan Kenapa Error Harus Normal?, 21.11 Apa Bedanya Behavioral Finance dengan Behavioral Economics?, 21.12 Apa Bedanya Prospect Theory dengan Expected Utility Theory?, 21.13 Apa Itu Bounded Rationality (Simon, 1955)?, 21.14 Apa Itu Gambler's Fallacy dan Relevansinya?, 21.15 Apa Itu Ego Depletion (Baumeister, 2002)?, 21.16 Apa Itu Delay of Gratification (Penundaan Kepuasan)?, 21.17 "Kenapa tidak pakai variabel intervening/mediasi seperti Emosi Positif?" (+33 more)
 
 ### Community 10 - "B. Alternatif Kelompok yang MEMPERKUAT (+) (Akselerator Perilaku)"
-Cohesion: 0.06
-Nodes (36): 1. ***Fear of Missing Out* (FoMO)** — *Arah: MEMPERKUAT (+)*, 1. Salinan Chat Asli Dosen (Verbatim Input 9 September 2026), 2. Intisari 5 Poin Arahan Dosen & Status Implementasinya, 2. ***Perceived Scarcity* (Persepsi Kelangkaan)** — *Arah: MEMPERKUAT (+)*, 3. Bank Komprehensif Opsi Variabel Moderasi, 3. ***Risk Tolerance* (Toleransi Risiko Finansial)** — *Arah: MEMPERKUAT (+)*, 4. ***Overconfidence Bias* (Bias Terlalu Percaya Diri)** — *Arah: MEMPERKUAT (+)*, 4. Panduan Respon Diplomatis saat Bimbingan Dosen (+28 more)
+Cohesion: 0.12
+Nodes (17): 1. ***Fear of Missing Out* (FoMO)** — *Arah: MEMPERKUAT (+)*, 1. Salinan Chat Asli Dosen (Verbatim Input 9 September 2026), 2. Intisari 5 Poin Arahan Dosen & Status Implementasinya, 2. ***Perceived Scarcity* (Persepsi Kelangkaan)** — *Arah: MEMPERKUAT (+)*, 3. Bank Komprehensif Opsi Variabel Moderasi, 3. ***Risk Tolerance* (Toleransi Risiko Finansial)** — *Arah: MEMPERKUAT (+)*, 4. ***Overconfidence Bias* (Bias Terlalu Percaya Diri)** — *Arah: MEMPERKUAT (+)*, 4. Panduan Respon Diplomatis saat Bimbingan Dosen (+9 more)
 
 ### Community 11 - "Agent Instructions"
-Cohesion: 0.06
-Nodes (31): Template Source of Truth Universal, Agent Instructions, Agent Instructions 3-Layer Architecture, File Organization, Mandatory Thesis Parity & Quality Directives (Inviolable), Obsidian Second Brain & Graphify Integration, Operating Principles, 1. Core Principle: Zero Raw LaTeX Tokens in Word Documents (+23 more)
+Cohesion: 0.25
+Nodes (8): Agent Instructions, File Organization, Mandatory Thesis Parity & Quality Directives (Inviolable), Obsidian Second Brain & Graphify Integration, Operating Principles, Self-annealing loop, Summary, The 3-Layer Architecture
 
 ### Community 12 - "app.js"
 Cohesion: 0.11
@@ -352,7 +356,7 @@ Cohesion: 0.10
 Nodes (20): 15. BANK PERTANYAAN TAMBAHAN Q18–Q35 <a id="sec-15"></a>, ❓ Pertanyaan 18: "Jelaskan Tabel 1.1 matriks research gap-mu!", ❓ Pertanyaan 19: "Mengapa responden dibatasi usia ≥17 tahun?", ❓ Pertanyaan 20: "Populasimu tak terbatas di Jakarta Barat — bagaimana menjamin sampel valid?", ❓ Pertanyaan 20B: "Mengapa memilih wilayah Jakarta Barat? Apakah karena asumsi daya beli warganya tinggi?", ❓ Pertanyaan 21: "Apa itu pilot test n=30?", ❓ Pertanyaan 22: "Jelaskan operasionalisasi salah satu variabelmu!", ❓ Pertanyaan 23: "Mengapa SPSS/MRA, bukan SEM-PLS yang sedang tren?" (+12 more)
 
 ### Community 21 - "Playbook Skripsi S1 Manajemen FEB UKRIDA — Pengetahuan Lintas Topik"
-Cohesion: 0.10
+Cohesion: 0.11
 Nodes (19): 10. Data Sintetis dan Integritas, 11. Peran Agen, 12. Comparator dan Pedoman UKRIDA, 13. Quick Start Topik Baru, 14. Checklist Sebelum Menyebut “Layak”, 1. Urutan Otoritas, 2. Gerbang Empat Fase, 3. Prinsip Source of Truth (+11 more)
 
 ### Community 22 - "mendeley_connector.py"
@@ -368,15 +372,15 @@ Cohesion: 0.11
 Nodes (18): 1. APA ITU REGRESI?, 2. APA ITU MRA (Moderated Regression Analysis)?, 3. LANGKAH-LANGKAH ANALISIS DI SPSS, 4. CARA MEMBACA OUTPUT SPSS, 5. TIPS PENTING, 6. GLOSARIUM SINGKAT OUTPUT SPSS, Langkah 1: Input Data, Langkah 2: Uji Validitas (+10 more)
 
 ### Community 25 - "PANDUAN_BELAJAR_PROPOSAL.md"
-Cohesion: 0.09
-Nodes (21): 0. BRIEFING H-1: FORMAT SEMPRO, MINDSET NOL & CARA PAKAI PANDUAN INI <a id="sec-0"></a>, 11. CHEAT SHEET 1 HALAMAN (HAFALAN KILAT) <a id="sec-11"></a>, 13. ALUR ANALISIS TAHAP 1–5 BAHASA SEHARI-HARI + TABEL AMBANG BATAS <a id="sec-13"></a>, 14. NASKAH BICARA 7 SLIDE + TAKTIK SIDANG <a id="sec-14"></a>, 16. CHECKLIST MALAM INI & PAGI HARI <a id="sec-16"></a>, 1. Grand Theory: Keuangan Perilaku (*Behavioral Finance*), 2. LATAR BELAKANG & EKOSISTEM WARALABA POKÉMON <a id="sec-2"></a>, 2. Supporting Theory 1: Model S-O-R (Stimulus-Organism-Response) (+13 more)
+Cohesion: 0.05
+Nodes (37): 0. BRIEFING H-1: FORMAT SEMPRO, MINDSET NOL & CARA PAKAI PANDUAN INI <a id="sec-0"></a>, 11. CHEAT SHEET 1 HALAMAN (HAFALAN KILAT) <a id="sec-11"></a>, 12. BEDAH TABEL 1.1: 7 RESEARCH GAP DALAM 2 MENIT <a id="sec-12"></a>, 13. ALUR ANALISIS TAHAP 1–5 BAHASA SEHARI-HARI + TABEL AMBANG BATAS <a id="sec-13"></a>, 14. NASKAH BICARA 7 SLIDE + TAKTIK SIDANG <a id="sec-14"></a>, 16. CHECKLIST MALAM INI & PAGI HARI <a id="sec-16"></a>, 1. Grand Theory: Keuangan Perilaku (*Behavioral Finance*), 1. Populasi, Sampel, & Sampling (+29 more)
 
 ### Community 26 - "10. SIMULASI PERTANYAAN BIMBINGAN / SIDANG & KUNCI JAWABAN <a id="sec-10"></a>"
 Cohesion: 0.11
 Nodes (18): 10. SIMULASI PERTANYAAN BIMBINGAN / SIDANG & KUNCI JAWABAN <a id="sec-10"></a>, ❓ Pertanyaan 10: "Berapa target sampel Anda dan apa justifikasinya?", ❓ Pertanyaan 11: "Apa novelty (kebaruan) utama dari penelitian ini?", ❓ Pertanyaan 12: "Bagaimana cara Anda menyebarkan kuesioner agar menjangkau target yang valid?", ❓ Pertanyaan 13: "Apakah ada uji autokorelasi dalam penelitian Anda? Mengapa?", ❓ Pertanyaan 14: "Apa instrumen yang digunakan untuk mengukur Self-Control?", ❓ Pertanyaan 15: "Apa kontribusi praktis penelitian ini bagi mahasiswa atau masyarakat?", ❓ Pertanyaan 16: "Mengapa Rumusan Masalah dan Tujuan Penelitian Anda ada 6 butir? Apakah referensi jurnal dan daftar pustaka perlu ditambah seiring ekspansi ini?" (+10 more)
 
 ### Community 27 - "Product Requirements Document (PRD) — Versi 2.0"
-Cohesion: 0.11
+Cohesion: 0.12
 Nodes (17): 0. Catatan Perubahan dari v1.1, 10. Contoh Interaksi — Mode Pembimbingan, Fase 1, 11. Contoh Interaksi — Mode Audit, 1. Latar Belakang, 2. Hierarki Otoritas (Berlaku di Kedua Mode), 3.1 Fitur Inti Mode Pembimbingan, 3.2 Mode Data dan Integritas, 3. Mode Pembimbingan — Empat Gerbang Fase (+9 more)
 
 ### Community 28 - "fix_libreoffice_toc_links.py"
@@ -384,7 +388,7 @@ Cohesion: 0.17
 Nodes (15): ensure_heading_bookmarks(), find_heading_for_toc(), fix_bookmark_order(), link_static_toc(), _norm_title(), process(), Path, Fix LibreOffice Ctrl+Click untuk Daftar Isi -> DAFTAR PUSTAKA dkk. Akar masalah… (+7 more)
 
 ### Community 29 - "📐 3. Spesifikasi Arsitektur Tata Letak Baru (Per Slide)"
-Cohesion: 0.12
+Cohesion: 0.13
 Nodes (15): 🔍 1. Hasil Audit Menyeluruh (Slide-by-Slide Audit Findings), 🎯 2. Tujuan & Sasaran Produk (Goals & Acceptance Criteria), 📐 3. Spesifikasi Arsitektur Tata Letak Baru (Per Slide), 🛡️ 4. Batasan & Larangan (Guardrails), A. Sasaran Desain Visual (Canva Human-Designed Aesthetic), B. Sasaran Keselarasan Alur Ilmiah (Academic Alignment), 📋 PRODUCT REQUIREMENTS DOCUMENT (PRD) — AUDIT & REDESAIN TOTAL SLIDE SEMPRO 7 SLIDE, 🔹 Slide 1 — Cover (+7 more)
 
 ### Community 30 - "📜 LOG SESI SECOND BRAIN — RIWAYAT RISET & PENGEMBANGAN SKRIPSI"
@@ -400,7 +404,7 @@ Cohesion: 0.13
 Nodes (15): *Level "Jebakan" dari Dosen Penguji — Persiapan Seminar Proposal*, 🎯 PERTANYAAN SIDANG SULIT + JAWABAN MENDALAM, ❓ SULIT 10: "Mengapa Rumusan Masalah dan Tujuan Penelitian Anda ada 6 butir? Apakah referensi jurnal dan daftar pustaka perlu ditambah seiring ekspansi ini?", ❓ SULIT 11: "Referensi teori dan jurnal di proposal Saudara sangat banyak dan mendalam (dari era 1974 hingga 2025). Saudara dapat semua itu dari mana? Bagaimana cara menelusurinya?", ❓ SULIT 12: "Data grafik di Bab 1 (Gambar 1.1, 1.2, dan 1.3) itu angka-angkanya Saudara dapat dari mana? Apakah ada tautan (link) resmi perusahaannya, atau ini hanya estimasi blog/portal berita?", ❓ SULIT 13: "Pada Bab 3, mengapa Anda mencantumkan rumus F-change (Persamaan 3.5) dengan angka 3 dan N − 8? Mengapa tidak memakai uji F biasa, dan dari mana asal angka-angka itu?", ❓ SULIT 1: "Saudara menggunakan Zeigarnik Effect dari tahun 1927 — itu hampir 100 tahun lalu. Apakah teori itu masih relevan? Ada bukti terbaru?", ❓ SULIT 2: "Anda menyebutkan speculative motive dari Keynes (1936). Tapi Keynes bicara tentang preferensi likuiditas di pasar uang, bukan kartu mainan. Bukankah ini peregangan teori yang berlebihan?" (+7 more)
 
 ### Community 33 - "🔹 FASE 3: Rekonstruksi Markup HTML Slide-by-Slide"
-Cohesion: 0.13
+Cohesion: 0.14
 Nodes (14): 1. Slide 1 (Cover Identitas), 📅 1. Tahapan Eksekusi Teknis (Phased Execution Workflow), 2. Slide 2 (Konteks Industri & Fenomena), 3. Slide 3 (Masalah Penelitian & Research Gap), 4. Slide 4 (Tinjauan Pustaka & 5 Variabel Baku), 5. Slide 5 (Riset Terdahulu & Model MRA), 6. Slide 6 (Metodologi Penelitian), 7. Slide 7 (Penutup & Tanya Jawab) (+6 more)
 
 ### Community 34 - "PRD: Eliminasi Sumber Tidak Terverifikasi & Protokol Penjaminan Data Primer Empiris Bab 1"
@@ -408,20 +412,20 @@ Cohesion: 0.13
 Nodes (14): 1. Root Cause Analysis (Mengapa Insiden ICv2 Terjadi?), 2.1 Sumber 1: Statista Chart 24277 (Peringkat Waralaba Media Dunia) — **TERVERIFIKASI 100% NYATA**, 2.2 Sumber 2: The Pokémon Company Corporate Figures (Statistik Produksi Kartu TCG) — **TERVERIFIKASI 100% NYATA**, 2.3 Sumber 3: PSA (Professional Sports Authenticator) Population Report — **TERVERIFIKASI 100% NYATA**, 2.4 Sumber 4: ICv2 & TCGplayer (Gambar 1.3 Donut Chart Pangsa Pasar TCG) — **TIDAK DAPAT DIPERTANGGUNGJAWABKAN**, 2. Audit 100% Data Empiris Bab 1 (Status Verifikasi Faktual), 3. Pilihan Solusi Konkret Sesuai Mandat Pengguna, 4.1 Aturan Baku Verifikasi Data Empiris (Zero-Hallucination Policy) (+6 more)
 
 ### Community 35 - "Laporan Audit Ilmiah — Proposal Pokémon TCG (18 Sep 2026, pasca-humanisasi)"
-Cohesion: 0.13
-Nodes (12): A. Klaim terverifikasi baca-isi (Tier Wajib), B. Flag jujur: isi belum diverifikasi full-text (paywall — metadata Crossref ✓, klaim setingkat-judul), C. Koreksi atribusi dari audit baca-isi (jejak, agar tak terulang), 📖 EVIDENCE LEDGER HALAMAN — Jejak Klaim → PDF → Halaman (D26 Tier Wajib), 1. Peta Klaim-ke-Bukti (ringkas, status kini), 2. Context Anchors — dinyatakan LULUS, bukan temuan, 3. Uji resolusi F001–F019 (17 Sep → 18 Sep), 4. Temuan baru audit ini (F020–F025) (+4 more)
+Cohesion: 0.25
+Nodes (8): 1. Peta Klaim-ke-Bukti (ringkas, status kini), 2. Context Anchors — dinyatakan LULUS, bukan temuan, 3. Uji resolusi F001–F019 (17 Sep → 18 Sep), 4. Temuan baru audit ini (F020–F025), 5. Challenger Pass (anti-false-alarm; dibuang/diturunkan), 6. Pemeriksaan tanda baca `$ * -` (permintaan eksplisit user), 7. Evidence Ledger & Coverage, Laporan Audit Ilmiah — Proposal Pokémon TCG (18 Sep 2026, pasca-humanisasi)
 
 ### Community 36 - "**PENGARUH PERENCANAAN PAJAK TERHADAP** **_RETURN_ SAHAM PADA PERUSAHAAN MANUFAKTUR YANG** **_LISTED_ DI BURSA EFEK INDONESIA**"
-Cohesion: 0.13
-Nodes (15): **1.4. Manfaat Penelitian**, **3.1. Jenis dan Sumber Data**, **ABSTRACT**, **ABSTRAK**, **BAB 1. PENDAHULUAN**, **BAB 2. TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS**, Bab 3 Metode Penelitian, **BAB 4. ANALISIS DAN PEMBAHASAN** (+7 more)
+Cohesion: 0.08
+Nodes (25): **1.4. Manfaat Penelitian**, **3.1. Jenis dan Sumber Data**, **ABSTRACT**, **ABSTRAK**, **BAB 1. PENDAHULUAN**, **BAB 1. PENDAHULUAN**, **BAB 1. PENDAHULUAN**, **BAB 2. TINJAUAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS** (+17 more)
 
 ### Community 37 - "Bagian 1: 10 Jurnal Empiris Utama (Periode 2021–2025)"
 Cohesion: 0.13
 Nodes (15): 10. Yordan Hermawan Apidana, Kholifah (2022), 1. Xiyun Gong, Choy Leong Yee, Shin Yiing Lee, Abu Naser Mohammad Saif, Meilian Liu, Fariah Anonthi (2024), 2. Natsuko Katauke, Masao Nakagawa, Kenichi Tanaka (2023), 3. Davina Anabelle Tan, Api Adyantari (2024), 4. Fredella Colline (2024), 5. Aldrich Aryadi, Margaretha Lingga (2024), 6. Vionna Artadita, Sri Bramantoro Abdinagoro, Ferdi Firmialy (2024), 7. Geoffrey Vigo Lienardy, I Gede Nandya Oktora Panasea (2024) (+7 more)
 
 ### Community 38 - "📌 KELOMPOK: VARIABEL Y"
-Cohesion: 0.14
-Nodes (14): 26. Roy F. Baumeister (2002), 27. June P. Tangney, Roy F. Baumeister, Angie Luzio Boone (2004), 28. Kathleen D. Vohs, Ronald J. Faber (2007), 29. Abdullah J. Sultan, Jeff Joireman, David E. Sprott (2012), 31. Dennis W. Rook (1987), 32. Dennis W. Rook, Robert J. Fisher (1995), 33. Hawkins Stern (1962), 34. Bas Verplanken, Astrid Herabadi (2001) (+6 more)
+Cohesion: 0.20
+Nodes (10): 31. Dennis W. Rook (1987), 32. Dennis W. Rook, Robert J. Fisher (1995), 33. Hawkins Stern (1962), 34. Bas Verplanken, Astrid Herabadi (2001), 35. Clinton Amos, Gary R. Holmes, William C. Keneson (2014), 36. Gopalkrishnan R. Iyer, Markus Blut, Sarah Hong Xiao, Dhruv Grewal (2020), 37. Tommy K. H. Chan, Christy M. K. Cheung, Zach W. Y. Lee (2017), 38. Yi Qu, Jashim Khan, Yuyang Su, Jiao Tong, Shuo Zhao (2023) (+2 more)
 
 ### Community 39 - "PRD Penelitian Skripsi — Pokémon TCG & Impulsive Buying"
 Cohesion: 0.14
@@ -436,19 +440,19 @@ Cohesion: 0.24
 Nodes (14): Multiple Regression: Testing and Interpreting Interactions (1991), Collecting in a Consumer Society (1995), Statistical Power Analysis for the Behavioral Sciences (1988), Aplikasi Analisis Multivariate dengan Program IBM SPSS 25 (2018), Multivariate Data Analysis (2019), Introduction to Mediation, Moderation, and Conditional Process Analysis (2018), The General Theory of Employment, Interest and Money (1936), An Approach to Environmental Psychology (1974) (+6 more)
 
 ### Community 42 - "📑 RINCIAN PER SLIDE: KONTEN VISUAL, NASKAH BICARA, & TAMENG SIDANG"
-Cohesion: 0.15
+Cohesion: 0.17
 Nodes (12): 🎤 ALUR PRESENTASI SEMINAR PROPOSAL — 7 SLIDE DETAIL (PER-SLIDE + NASKAH BICARA), 🧭 PETA BESAR: ALUR CERITA 7 KALIMAT (Hafalkan Ini Dulu!), ⏱️ REKAP ESTIMASI DURASI PRESENTASI (Total: ±8 Menit 30 Detik), 📑 RINCIAN PER SLIDE: KONTEN VISUAL, NASKAH BICARA, & TAMENG SIDANG, *Skripsi: Pengaruh Hedonic Motivation, Desire for Completeness, dan Speculative Motive terhadap Impulsive Buying Booster Pack Kartu Pokémon TCG dengan Self-Control sebagai Variabel Moderasi — Arthur Reezan (312023002)*, 🔹 SLIDE 1 — PEMBUKA & IDENTITAS RISET (Target: 30–40 Detik), 🔹 SLIDE 2 — LATAR BELAKANG: KONTEKS & FENOMENA PASAR (Target: 1 Menit 20 Detik), 🔹 SLIDE 3 — LATAR BELAKANG: MASALAH & RESEARCH GAP (Target: 2 Menit) (+4 more)
 
 ### Community 43 - "📚 BEDAH RINCI 54 SITASI: IDENTITAS, BUKTI BERKAS, & PERAN STRATEGIS DALAM SKRIPSI"
-Cohesion: 0.15
-Nodes (13): 22. ENSIKLOPEDIA 54 SITASI & PUSTAKA: AUDIT INTEGRITAS BERKAS, STATUS AKSES, & PERAN STRATEGIS DALAM SKRIPSI <a id="sec-22"></a>, 25. Eugene F. Fama (1970), 30. Richard H. Thaler, Hersh M. Shefrin (1981), 40. Herbert A. Simon (1955), 41. Daniel Kahneman, Amos Tversky (1979), 42. Richard Thaler (1985), 43. Albert Mehrabian, James A. Russell (1974), 📚 BEDAH RINCI 54 SITASI: IDENTITAS, BUKTI BERKAS, & PERAN STRATEGIS DALAM SKRIPSI (+5 more)
+Cohesion: 0.18
+Nodes (11): 22. ENSIKLOPEDIA 54 SITASI & PUSTAKA: AUDIT INTEGRITAS BERKAS, STATUS AKSES, & PERAN STRATEGIS DALAM SKRIPSI <a id="sec-22"></a>, 25. Eugene F. Fama (1970), 30. Richard H. Thaler, Hersh M. Shefrin (1981), 52. The Pokémon Company (2024), 53. PriceCharting (2024), 54. Statista (2021), 📚 BEDAH RINCI 54 SITASI: IDENTITAS, BUKTI BERKAS, & PERAN STRATEGIS DALAM SKRIPSI, 📌 KELOMPOK: DATA INDUSTRI (+3 more)
 
 ### Community 44 - "Bank Pertanyaan Potensial Sidang Proposal"
 Cohesion: 0.15
 Nodes (12): Bank Pertanyaan Potensial Sidang Proposal, Checklist Persiapan Seminar Proposal, Dokumen Wajib, Jadwal Rencana (Tentatif), Persiapan Presentasi, Persiapan Tanya-Jawab (Anticipatory), Pertanyaan Literatur, Pertanyaan Metodologi (+4 more)
 
 ### Community 45 - "PRD: Humanisasi Naskah Proposal — Menuju Uji Kemiripan AI ≤ 20%"
-Cohesion: 0.15
+Cohesion: 0.17
 Nodes (12): 10. Keputusan yang Sudah Dikunci (18 Sep 2026), 11. Adendum Revisi Dosen — Akuntabilitas Atribusi Klaim Jurnal (18 Sep 2026), 1. Konteks & Ruang Lingkup, 2. Batas Jujur yang Mengikat (dari skill humanizer-id), 3. Baseline Bukti Awal (18 Sep 2026, `audit_text.py scan`, skrip bawaan skill), 4. Kontrak Fidelity (isi yang dibekukan per Bab, diverifikasi via `compare` + baca manual), 5. Diagnosis: Taksonomi H01–H20 yang Diprioritaskan untuk Naskah Ini, 6. Glosarium Istilah (konsisten di seluruh naskah; Inggris dipertahankan bila istilah bidang) (+4 more)
 
 ### Community 46 - "📑 3. Master Blueprint 7 Slide Seminar Proposal Arthur Reezan"
@@ -460,8 +464,8 @@ Cohesion: 0.15
 Nodes (12): 🚀 1. Protokol Awal Sesi (Session Start / Pre-Flight Hook), 📝 2. Protokol Dokumentasi Catatan (In-Flight Rules), 💾 3. Protokol Pencatatan Otomatis (Auto-Capture & Session End), 🛠️ 4. Panduan Eksekusi Teknis (3-Layer Architecture), A. Wajib Callout `> [!SUMMARY]` di Bagian Paling Atas, B. Terapkan Bidirectional Linking (`[[...]]`), C. Tiga Kategori Catatan (The 3 Note Types), Langkah 1: Sinkronisasi Pengetahuan dengan Graphify (+4 more)
 
 ### Community 48 - "📋 PROMPT MASTER MULAI SESI — TINGGAL 1-KLIK COPY"
-Cohesion: 0.17
-Nodes (12): 🌐 1. KICKOFF WEB DASHBOARD (PILIHAN TERBAIK & PALING INTERAKTIF), ⚡ 2. PROMPT UTAMA (TEKS CADANGAN), 🎯 3. PROMPT ALTERNATIF (SESUAI KEBUTUHAN KHUSUS), Prompt Mulai Sesi Copy Paste, *Dokumen Panduan & Template Prompt Kickoff Antigravity IDE + Obsidian Second Brain*, 🧠 MENGAPA PROMPT INI BIKIN KONTEKS TIDAK HILANG?, 🔹 Opsi 2: Sesi Bimbingan Dosen / Memasukkan Catatan Revisi Baru, 🔹 Opsi 3: Sesi Persiapan Sidang / Latihan Tanya Jawab Soal Sulit (+4 more)
+Cohesion: 0.20
+Nodes (10): 🌐 1. KICKOFF WEB DASHBOARD (PILIHAN TERBAIK & PALING INTERAKTIF), ⚡ 2. PROMPT UTAMA (TEKS CADANGAN), 🎯 3. PROMPT ALTERNATIF (SESUAI KEBUTUHAN KHUSUS), *Dokumen Panduan & Template Prompt Kickoff Antigravity IDE + Obsidian Second Brain*, 🧠 MENGAPA PROMPT INI BIKIN KONTEKS TIDAK HILANG?, 🔹 Opsi 2: Sesi Bimbingan Dosen / Memasukkan Catatan Revisi Baru, 🔹 Opsi 3: Sesi Persiapan Sidang / Latihan Tanya Jawab Soal Sulit, 🔹 Opsi 4: Sesi Cek & Verifikasi Naskah / Kepatuhan UKRIDA 2023 (+2 more)
 
 ### Community 49 - "Halaman Persetujuan Proposal Tugas Akhir (Lampiran 2 Pedoman UKRIDA 2023)"
 Cohesion: 0.17
@@ -492,7 +496,7 @@ Cohesion: 0.30
 Nodes (11): diagnostic(), line_candidates(), main(), nonnegative_int(), Any, Path, Scan an input without altering it; max_hits limits output, not detection., Return (page, extracted text) segments and all extraction diagnostics. (+3 more)
 
 ### Community 56 - "2. Tujuh Pilar Kepatuhan FEB UKRIDA 2023"
-Cohesion: 0.17
+Cohesion: 0.18
 Nodes (11): 1. Lingkup & Otoritas Baku, 2. Tujuh Pilar Kepatuhan FEB UKRIDA 2023, 3. Prosedur Eksekusi & Validasi Otomatis (Layer 3), Directive: Verifikasi Kepatuhan Pedoman Tugas Akhir FEB UKRIDA 2023, Pilar 1: Kuota Jurnal Terindeks SINTA / Internasional (Subbab 1.4.c), Pilar 2: Sitasi Dosen FEB UKRIDA (Subbab 1.4.b), Pilar 3: Ketebalan Naskah (Subbab 1.4.a), Pilar 4: Jumlah dan Kemutakhiran Pustaka (Subbab 1.5.b.1 & 3.7) (+3 more)
 
 ### Community 57 - "build_lembar_persetujuan.py"
@@ -503,9 +507,9 @@ Nodes (11): convert_docx_to_pdf(), create_document(), generate_preview(), r""" b
 Cohesion: 0.18
 Nodes (11): 📌 1. Identitas & Parameter Kunci Riset, 🗺️ 2. Map of Content (MOC) Peta Navigasi Vault, 🔬 3. Matriks Teori & Variabel Penelitian, 🌐 4. Integrasi Jaringan Pengetahuan (Graphify), ⚖️ 5. Pedoman Mutlak Sinkronisasi Naskah & Tipografi LaTeX (Zero Desync), 📁 A. Naskah & Dokumen Induk, 📁 B. Persiapan Sidang & Bimbingan, 📁 C. Riset, Metodologi, & Riwayat Sesi (+3 more)
 
-### Community 59 - "02_Rencana_PPT_Sempro_7_Slide/README.md"
-Cohesion: 0.20
-Nodes (6): *Instruksi Pembuatan Slide Deck Seminar Proposal 7 Slide*, 📋 PROMPT SIAP COPY-PASTE UNTUK AI LAIN (ChatGPT / Claude / Gamma / Cursor), 📂 Berkas yang Tersedia, *Fakultas Ekonomi dan Bisnis — Universitas Kristen Krida Wacana (UKRIDA)*, 📁 Paket Perencanaan Slide Deck Seminar Proposal (Sempro) 7 Slide, 🔗 Referensi Pendukung di Second Brain
+### Community 59 - "Dashboard Second Brain Pokemon TCG"
+Cohesion: 0.21
+Nodes (3): *Instruksi Pembuatan Slide Deck Seminar Proposal 7 Slide*, 📋 PROMPT SIAP COPY-PASTE UNTUK AI LAIN (ChatGPT / Claude / Gamma / Cursor), Dashboard Second Brain Pokemon TCG
 
 ### Community 60 - "📌 KELOMPOK: JURNAL EMPIRIS UTAMA"
 Cohesion: 0.18
@@ -528,7 +532,7 @@ Cohesion: 0.18
 Nodes (10): 1. Identitas Topik & Judul Usulan, 2. Riwayat Ide & Alasan Transisi (Dari MLBB ke Pokémon TCG), 3. Struktur Variabel & Operasionalisasi Konsep, 4. Keunggulan Akademik & Novelty (Nilai Kebaruan), 5. Rujukan Teori & Skala Pengukuran yang Direkomendasikan, 6. Checklist untuk Sesi Selanjutnya, 📌 Judul Skripsi Lengkap, Konsep Skripsi: Kartu Pokémon Fisik (TCG) & Impulsive Buying (+2 more)
 
 ### Community 65 - "Panduan 1-Menit: Impor Referensi Skripsi ke Mendeley Reference Manager"
-Cohesion: 0.18
+Cohesion: 0.20
 Nodes (10): *Khusus untuk Arthur Reezan — Memenuhi Arahan Pembimbing (Dr. Fredella Colline)*, Langkah 1: Impor Berkas RIS 54 Referensi (Sekali Klik), Langkah 2: Verifikasi Notifikasi Hijau (Tepat 54 Referensi), Langkah 3: Buat Koleksi Khusus (Opsional tapi Sangat Rapi), Langkah 4: Ambil Bukti Screenshot untuk Dosen, ⚠️ Langkah Pra-Syarat: Bersihkan Library Lama (Cegah Duplikat), Opsi A (Melalui Menu — Sangat Direkomendasikan):, Opsi B (Drag & Drop Langsung): (+2 more)
 
 ### Community 66 - "Laporan Audit Ilmiah — Proposal Pokémon TCG (29 September 2026)"
@@ -540,7 +544,7 @@ Cohesion: 0.18
 Nodes (11): 10. Pemeriksaan akhir, 1. Ringkasan eksekutif, 2. Ruang lingkup dan keterbatasan, 3. Matriks kepatuhan, 4. Daftar temuan terprioritas, 5. Audit konsistensi penelitian, 6. Audit format, 7. Audit metodologi dan analisis (+3 more)
 
 ### Community 68 - "📝 Catatan Bimbingan Dosen: Penyempitan Populasi Responden ke Jakarta Barat & Penyesuaian Judul"
-Cohesion: 0.18
+Cohesion: 0.20
 Nodes (10): 💬 1. Transkrip Arahan Bimbingan (Verbatim), 🔬 2. Analisis Kritis & Fondasi Ilmiah: "Kenapa Jakarta Barat?" (*The Why*), 🗺️ 3. Matriks Pemetaan Bagian Naskah yang Terdampak, 🛡️ 4. Verifikasi Batasan Kanonis (Zero Violation Check), 📌 5. Rekomendasi Format Judul Resmi Baru (Siap Dipilih), 📝 Catatan Bimbingan Dosen: Penyempitan Populasi Responden ke Jakarta Barat & Penyesuaian Judul, 🏛️ Pilar 1: Episentrum Ekosistem Ritel & Komunitas Resmi (*Local Game Store Hub*), 🔍 Pilar 2: Aksesibilitas Observasi Lapangan Langsung (*Direct Empirical Feasibility*) (+2 more)
 
 ### Community 69 - "Google Docs & DOCX Citation Linker Skill"
@@ -572,11 +576,11 @@ Cohesion: 0.20
 Nodes (9): 1. Ringkasan Eksekutif (*Executive Summary*), 2. Perbandingan Kuantitatif Naskah, 3. Rincian Temuan & Diskrepansi Detail (*Diff Analysis*), 4. Kesimpulan dan Tindak Lanjut Rekomendasi, A. Bagian Awal (*Frontmatter*), B. Bab 1 Pendahuluan, C. Bab 2 Kajian Pustaka, D. Bab 3 Metode Penelitian (+1 more)
 
 ### Community 76 - "1. Identifikasi Masalah & Akar Penyebab (Root Cause Analysis)"
-Cohesion: 0.20
+Cohesion: 0.22
 Nodes (9): 1. Identifikasi Masalah & Akar Penyebab (Root Cause Analysis), 2. Rencana Eksekusi & Tahapan Perubahan, A. Masalah 1: Font Berwarna Biru pada Judul (`Heading 1`, `Heading 2`, `Heading 3`), B. Masalah 2: Garis Titik-Titik Hilang pada Daftar Isi, Daftar Tabel, & Daftar Gambar, C. Masalah 3: Nomor Halaman Footer Kosong pada Viewer Tertentu, D. Masalah 4: Kebocoran Sintaks Mentah LaTeX Tabel 1.1 pada Paragraf DOCX, E. Masalah 5: Border Grid Liar dan Asimetri Spasi Tanda Tangan pada Lembar Formal, 📋 PRODUCT REQUIREMENTS DOCUMENT (PRD) (+1 more)
 
 ### Community 77 - "Product Requirements Document (PRD) — Sinkronisasi Penuh DOCX & Audit Paritas File"
-Cohesion: 0.20
+Cohesion: 0.22
 Nodes (9): 1.1 Temuan Desinkronisasi DOCX vs PDF, 1. Latar Belakang & Akar Masalah (Root Cause Analysis), 2. Peta Audit Sinkronisasi Seluruh File Repositori, 3.1 Mode `skip_chapter3=True` (`Proposal_Arthur_NoBab3.docx`), 3.2 Mode `skip_chapter3=False` (`Proposal_Arthur_PokemonTCG.docx`), 3. Spesifikasi Teknis Pemutakhiran DOCX Generator, 4. Kriteria Keberhasilan (*Acceptance Criteria*), *Naskah Proposal Tugas Akhir S1 Manajemen FEB UKRIDA — Pokémon TCG Impulsive Buying* (+1 more)
 
 ### Community 78 - "PRD: Penjaminan Ketersediaan Sumber Teori Buku & Verifikasi Mandatori LibGen"
@@ -592,7 +596,7 @@ Cohesion: 0.20
 Nodes (10): 1. Identitas Topik & Judul Definitif, 2. Keputusan Terkunci (Decisions Log), 3.1 Bank Cadangan Opsi Variabel Moderasi (Plan B Bimbingan), 3. Struktur Konseptual & Model MRA, 4. Matriks Research Gap (Inkonsistensi Hasil Penelitian Terdahulu), 5. Diferensiasi Penelitian (*Novelty*), 6. Ketentuan Wajib Pedoman Tugas Akhir FEB UKRIDA 2023, 7. Catatan Keputusan Revisi Metodologi Terkini (September 2026) (+2 more)
 
 ### Community 81 - "🔬 2. Bedah Analisis & Rencana Aksi Per Butir"
-Cohesion: 0.20
+Cohesion: 0.22
 Nodes (9): 📋 1. Ringkasan Matriks Revisi Dosen Penguji, 🔬 2. Bedah Analisis & Rencana Aksi Per Butir, 🛠️ 3. Roadmap Eksekusi Selanjutnya (Sesuai Permintaan Pengguna), 📌 Butir 1: Model Rerangka Konseptual Berbentuk Elips, 📌 Butir 2: Rasio Kemutakhiran Pustaka 80/20 (Maksimal 10 Tahun, Prioritas $\le 5$ Tahun), 📌 Butir 3: Narasi Alur Hubungan $X \rightarrow Y \rightarrow Z$ di Bab 1 bagi Orang Awam, 📌 Butir 4: Eliminasi Bahasa / Pelabelan Kaku "Grand Theory", 🎓 Catatan Revisi Seminar Proposal (Sempro) — 24 September 2026 (+1 more)
 
 ### Community 82 - "3. Alur Kerja Eksekusi 5 Langkah (The 5-Step Audit Workflow)"
@@ -600,7 +604,7 @@ Cohesion: 0.20
 Nodes (10): 1. Otoritas & Kebijakan Aktivasi (Activation Triggers), 2. Pengecualian & Penyelarasan Lokal (Context Anchors), 3. Alur Kerja Eksekusi 5 Langkah (The 5-Step Audit Workflow), 4. Format Keluaran Temuan (Finding Contract), Directive: Prosedur Audit Ilmiah Proposal & Skripsi dengan `paper-audit`, Langkah 1: Pre-Scan Cepat (Layer 3), Langkah 2: Pemetaan Klaim ke Bukti (*Claims-to-Evidence Mapping*), Langkah 3: Audit Spesialis (Multi-Perspective Check) (+2 more)
 
 ### Community 83 - "🧠 PANDUAN PENGGUNAAN OBSIDIAN SECOND BRAIN SKRIPSI"
-Cohesion: 0.22
+Cohesion: 0.33
 Nodes (6): ⚡ 1. Cara Memulai Sesi dengan Antigravity, ✍️ 2. Cara Kerja Pencatatan Otomatis Selama Sesi, 🧭 3. Pusat Kendali (Map of Content), Apa yang Otomatis Dilakukan Antigravity?, *Integrasi Antigravity IDE + Graphify + Obsidian Vault*, 🧠 PANDUAN PENGGUNAAN OBSIDIAN SECOND BRAIN SKRIPSI
 
 ### Community 84 - "📌 KELOMPOK: METODOLOGI"
@@ -616,7 +620,7 @@ Cohesion: 0.22
 Nodes (8): 1.1 Latar Belakang Masalah, 1.2 Perumusan Masalah, 1.3 Tujuan Penelitian, 1.4.1 Manfaat Teoritis, 1.4.2 Manfaat Praktis, 1.4 Manfaat Penelitian, BAB I, PENDAHULUAN
 
 ### Community 87 - "📑 KATALOG INDEKS DOKUMEN ARSIP"
-Cohesion: 0.22
+Cohesion: 0.25
 Nodes (8): 1. Rumpun Format, Tipografi & Generator Dokumen Word/DOCX, 2. Rumpun Integritas Sitasi, Mendeley, & Sumber Pustaka, 3. Rumpun Data Empiris, Grafik, & Fenomena Bisnis Bab 1, 4. Rumpun Audit Ilmiah, Humanisasi AI, & Resolusi Review Dosen, 📦 ARSIP PRD & RENCANA SPRINT SELESAI (COMPLETED ARTIFACTS), *Dokumen Spesifikasi Teknis Masa Lalu yang Sudah 100% Terimplementasi*, 📑 KATALOG INDEKS DOKUMEN ARSIP, 🔗 Navigasi ke Dokumen Hidup (Living Core):
 
 ### Community 88 - "Daftar pemeriksaan"
@@ -636,8 +640,8 @@ Cohesion: 0.36
 Nodes (8): check_text(), docx_text(), main(), pdf_text(), pptx_text(), r"""verify_no_ai_markers.py — Layer 3: audit NOL penanda AI di file final.…, Kembalikan daftar (marker, konteks). formal=True -> emoji ikut dilarang., _strip_allowed()
 
 ### Community 92 - "📝 BANK SOAL LATIHAN — Proposal Skripsi Pokémon TCG"
-Cohesion: 0.36
-Nodes (7): BAGIAN A: Latar Belakang & Fenomena (10 Soal), BAGIAN B: Teori & Variabel (12 Soal), BAGIAN C: Metodologi (8 Soal), BAGIAN D: Research Gap & Novelty (5 Soal), 📝 BANK SOAL LATIHAN — Proposal Skripsi Pokémon TCG, 🔑 Kunci Jawaban Bagian A, *Persiapan Seminar Proposal — S1 Manajemen Keuangan FEB UKRIDA*
+Cohesion: 0.18
+Nodes (10): BAGIAN A: Latar Belakang & Fenomena (10 Soal), BAGIAN B: Teori & Variabel (12 Soal), BAGIAN C: Metodologi (8 Soal), BAGIAN D: Research Gap & Novelty (5 Soal), 📝 BANK SOAL LATIHAN — Proposal Skripsi Pokémon TCG, 🔑 Kunci Jawaban Bagian A, 🔑 Kunci Jawaban Bagian B, 🔑 Kunci Jawaban Bagian C (+2 more)
 
 ### Community 93 - "🃏 FLASHCARD ISTILAH KUNCI — Proposal Skripsi Pokémon TCG"
 Cohesion: 0.25
@@ -648,20 +652,20 @@ Cohesion: 0.25
 Nodes (8): 17. PENGUASAAN BAB 3 TOTAL DARI NOL (WAJIB HAFAL) <a id="sec-17"></a>, 3.1 Jenis dan Sumber Data (1 kalimat inti), 3.2 Populasi dan Sampel (tiga lapis wajib hafal), 3.3 Model Penelitian (baca persamaan dengan lantang), 3.4 Operasionalisasi (cara menjelaskan Tabel 3.1 + 3.2 dalam 2 menit), 3.5 Metode Analisis (ringkasnya), 3.6 Diagram Alur (8 kotak + 1 belah ketupat), 3.7 Jadwal (10 kegiatan, 6 bulan)
 
 ### Community 95 - "IMPLEMENTATION PLAN — LOT/LOF Hyperlink + Mendeley Linkage (eksekusi 16 Sep 2026)"
-Cohesion: 0.25
+Cohesion: 0.29
 Nodes (7): 1. Masalah 1 — Daftar Tabel/Gambar Word, 2. Masalah 2 — Linkage Mendeley ↔ Daftar Pustaka ↔ Sitasi Paragraf, 3. Masalah 3 — Push Cloud Belum Lengkap, 4. Verifikasi Penutup (bukti, bukan klaim), 5. Rollback (jika regresi di sesi berikut), 6. Sitasi Tubuh Bisa Diklik → Daftar Pustaka (aturan `C-CITE-2` & `C-CITE-3`), IMPLEMENTATION PLAN — LOT/LOF Hyperlink + Mendeley Linkage (eksekusi 16 Sep 2026)
 
-### Community 96 - "PANDUAN_STANDARISASI_HEADING_DAN_DAFTAR_ISI_DOCX.md"
+### Community 96 - "📑 PANDUAN STANDARISASI HEADING & DAFTAR ISI OTOMATIS DOCX"
 Cohesion: 0.25
-Nodes (7): 🔍 1. Latar Belakang & Akar Masalah (Root Cause), 🏗️ 2. Arsitektur Solusi & Hierarki Heading Baku, 🧪 3. Verifikasi Determinasi Kualitas, 📁 4. Tautan Naskah & Sumber Daya Terkait, A. Hierarki Heading FEB UKRIDA 2023, B. Injeksi Komponen Resmi Native Table of Contents (`w:sdt`), C. Proteksi Judul Tabel dan Judul Gambar
+Nodes (8): 🔍 1. Latar Belakang & Akar Masalah (Root Cause), 🏗️ 2. Arsitektur Solusi & Hierarki Heading Baku, 🧪 3. Verifikasi Determinasi Kualitas, 📁 4. Tautan Naskah & Sumber Daya Terkait, A. Hierarki Heading FEB UKRIDA 2023, B. Injeksi Komponen Resmi Native Table of Contents (`w:sdt`), C. Proteksi Judul Tabel dan Judul Gambar, 📑 PANDUAN STANDARISASI HEADING & DAFTAR ISI OTOMATIS DOCX
 
 ### Community 97 - "📋 PRODUCT REQUIREMENTS DOCUMENT (PRD)"
 Cohesion: 0.25
 Nodes (7): 1. Spesifikasi Teknis & Pembagian Peran Hybrid, 2. Model Persamaan yang Dikonversi Secara Hybrid, 3. Acceptance Criteria (Kriteria Keberhasilan), A. Peran Pandoc 3.11 (Math Sub-Engine), Arsitektur Hybrid (Pandoc + Script Python-docx) untuk Generasi Naskah Skripsi DOCX Berstandar Emas (Golden Standard), B. Peran `build_proposal_word.py` (Master Governor & Assembler), 📋 PRODUCT REQUIREMENTS DOCUMENT (PRD)
 
-### Community 98 - "run_paper_audit.md"
-Cohesion: 0.25
-Nodes (3): 📑 Direktori Laporan Audit Ilmiah (Paper Audits), 🗂️ Indeks Laporan Audit, 📌 Prosedur Pelaksanaan Audit
+### Community 98 - "Log Sesi Second Brain"
+Cohesion: 0.14
+Nodes (9): Template Source of Truth Universal, Agent Instructions 3-Layer Architecture, Directive Universal Thesis Graph of Agents, LibGen Book Verification SOP Directive, Book Substitution Protocol for Missing Editions, Proposal Skripsi Pokemon TCG, Log Sesi Second Brain, Universal Skripsi Framework Graph of Agents (+1 more)
 
 ### Community 99 - "PRD Remediasi AI 70% → Ambang Praktik ≤20% (Humanizer-ID × Universal Framework)"
 Cohesion: 0.25
@@ -700,7 +704,7 @@ Cohesion: 0.25
 Nodes (7): 1. Tujuan, 2. Jaminan Non-Destructive Invariance (File Utama Tetap Utuh), 3. Standar Tipografi & Format FEB UKRIDA 2023, 4. Spesifikasi Pemotongan Bab 3, 5. Prosedur Eksekusi (Layer 3), 6. Kriteria Keberhasilan & Validasi, Directive: Build PDF Proposal Tanpa Bab 3 (XeLaTeX Native)
 
 ### Community 108 - "Directive: Verifikasi Integritas, Validasi Tag, dan Paritas 1:1 Mendeley Reference Manager"
-Cohesion: 0.25
+Cohesion: 0.29
 Nodes (7): 1. Aturan Paritas Mutlak 1:1 (*The Zero-Discrepancy Rule*), 2. Tabel Whitelist Resmi Tag RIS Mendeley Reference Manager, 3. Spesifikasi Metadata Minimal per Entri RIS, 4. Standar Encoding & Karakter Khusus, 5. Prosedur Eksekusi & Pengujian Mahasiswa, Directive: Verifikasi Integritas, Validasi Tag, dan Paritas 1:1 Mendeley Reference Manager, ⛔ Tag yang Diharamkan Secara Mutlak (*Strictly Prohibited*)
 
 ### Community 109 - "build_study_guide_pdf.py"
@@ -740,11 +744,11 @@ Cohesion: 0.29
 Nodes (7): 8. LOGIKA KAUSALITAS & 4-TIER PEMBUKTIAN HIPOTESIS <a id="sec-8"></a>, H1: *Hedonic Motivation* → *Impulsive Buying* (+), H2: *Desire for Completeness* → *Impulsive Buying* (+), H3: *Speculative Motive* → *Impulsive Buying* (+), H4: Peran Moderasi *Self-Control* pada Hubungan *Hedonic Motivation* dan *Impulsive Buying* (-), H5: Peran Moderasi *Self-Control* pada Hubungan *Desire for Completeness* dan *Impulsive Buying* (-), H6: Peran Moderasi *Self-Control* pada Hubungan *Speculative Motive* dan *Impulsive Buying* (-)
 
 ### Community 118 - "IMPLEMENTATION PLAN — Audit Sitasi Walled (eksekusi 17 Sep 2026)"
-Cohesion: 0.29
+Cohesion: 0.33
 Nodes (6): 1. Prasyarat, 2. Langkah eksekusi, 3. Acceptance criteria (observable), 4. Hasil eksekusi 17 Sep 2026, 5. Rollback / bila DEAD muncul, IMPLEMENTATION PLAN — Audit Sitasi Walled (eksekusi 17 Sep 2026)
 
 ### Community 119 - "PRD — Audit Walled vs Dead Seluruh Sitasi (17 Sep 2026)"
-Cohesion: 0.29
+Cohesion: 0.33
 Nodes (6): 1. Scope (tanpa kecuali), 2. Metodologi (C-LINK-1), 3. Hasil (17 Sep 2026, exit 0), 4. Keputusan, 5. Addendum pasca-audit (temuan entri campuran `barasz2017pseudo`), PRD — Audit Walled vs Dead Seluruh Sitasi (17 Sep 2026)
 
 ### Community 120 - "Matriks Literatur Skripsi — Pokémon TCG Impulsive Buying"
@@ -756,8 +760,8 @@ Cohesion: 0.29
 Nodes (3): Format Laporan Hasil Review, Gaya penulisan laporan, Prinsip keluaran
 
 ### Community 122 - "Mandatory Verifiable Theories and Books Rule"
-Cohesion: 0.29
-Nodes (7): Eleven Book LibGen Verification Catalog, Book Reference Digital Repository Catalog Doc, Mandatory Verifiable Theories and Books Rule, Blind Ghost Citation Ban and LibGen Download Mandate, Zero-Unverified-Theory and Open-Access Policy, LibGen Book Verification SOP Directive, Book Substitution Protocol for Missing Editions
+Cohesion: 0.40
+Nodes (5): Eleven Book LibGen Verification Catalog, Book Reference Digital Repository Catalog Doc, Mandatory Verifiable Theories and Books Rule, Blind Ghost Citation Ban and LibGen Download Mandate, Zero-Unverified-Theory and Open-Access Policy
 
 ### Community 123 - "📜 Mandatory Rule: Penegakan Tautan Sitasi Lintas Platform (Word DOCX & Google Docs)"
 Cohesion: 0.29
@@ -776,7 +780,7 @@ Cohesion: 0.29
 Nodes (6): Aturan Penamaan File, Directive: SOP Download dan Katalogisasi Referensi Jurnal Skripsi, Edge Cases & Solusi, Prosedur Eksekusi (Layer 3), Struktur Penyimpanan, Tujuan
 
 ### Community 128 - "Directive: Perbaikan Sitasi-Klik di Google Docs Web"
-Cohesion: 0.29
+Cohesion: 0.33
 Nodes (6): 1. Akar Masalah (terverifikasi), 2. Perbaikan Lapis-1 (DOCX, sudah diterapkan), 3. Perbaikan Lapis-2 (Google Docs, wajib setelah Convert), 4. Batasan Jujur, 5. Verifikasi Selesai, Directive: Perbaikan Sitasi-Klik di Google Docs Web
 
 ### Community 129 - "verify_docx_typography.py"
@@ -896,7 +900,7 @@ Cohesion: 0.53
 Nodes (5): main(), r""" verify_live_urls.py Layer 3 Automated Test: Verifies live empirical data…, test_live_reachability(), test_no_banned_keys(), test_verified_urls_syntax_and_canonical()
 
 ### Community 158 - "Workspace Skripsi FEB UKRIDA"
-Cohesion: 0.33
+Cohesion: 0.40
 Nodes (5): 🚀 Memulai & Mengakhiri Sesi Kerja (Dual-Prompt System), 📚 Otoritas Pedoman Resmi, 📌 Status Terkini Naskah, 📂 Struktur Folder Repositori, Workspace Skripsi FEB UKRIDA
 
 ### Community 159 - "Pokemon TCG Production Growth Chart 2019-2024"
@@ -927,9 +931,9 @@ Nodes (5): Scientific Paper Audit Report September 2026, MRA F-change and Mean C
 Cohesion: 0.40
 Nodes (4): 1. Transkrip Temuan (verbatim, diringkas per halaman), 2. Akar Masalah (hasil audit Second Brain), 3. Tindakan (terlaksana sesi ini), Revisi Sylvia — Pascapangkas Bab 1 (23 September 2026)
 
-### Community 166 - "📥 Folder Drop Masukan & Revisi Dosen Pembimbing"
-Cohesion: 0.40
-Nodes (4): 🤖 Cara Kerja Asisten AI dengan Folder Ini, 📥 Folder Drop Masukan & Revisi Dosen Pembimbing, 📁 Jenis Berkas yang Bisa Ditaruh di Sini, 💡 Rekomendasi Penamaan Berkas (Opsional)
+### Community 166 - "Tempel Chat Dosen Disini"
+Cohesion: 0.20
+Nodes (7): Revisi Malam Research Gap Bab1 dan Format Sitasi, 🤖 Cara Kerja Asisten AI dengan Folder Ini, 📥 Folder Drop Masukan & Revisi Dosen Pembimbing, 📁 Jenis Berkas yang Bisa Ditaruh di Sini, 💡 Rekomendasi Penamaan Berkas (Opsional), Tempel Chat Dosen Disini, Dr Fredella Colline Supervisor
 
 ### Community 167 - "Mandatory Rule: Jaminan Akses Terbuka Tanpa Hambatan Login (No-Login-Wall Policy)"
 Cohesion: 0.40
@@ -987,25 +991,29 @@ Nodes (4): PSA Grading Price Disparity Chart Gambar 1.3 - Raw vs PSA 10 Gem Mint
 Cohesion: 0.67
 Nodes (4): Christian Cross Symbol, Logo UKRIDA, Open Book Knowledge Symbol, Universitas Kristen Krida Wacana
 
-### Community 182 - "12. BEDAH TABEL 1.1: 7 RESEARCH GAP DALAM 2 MENIT <a id="sec-12"></a>"
-Cohesion: 0.50
-Nodes (4): 12. BEDAH TABEL 1.1: 7 RESEARCH GAP DALAM 2 MENIT <a id="sec-12"></a>, Empat gap moderasi (mengapa Self-Control diuji sebagai rem), Kalimat penutup 2 menit (hafalkan!), Tiga gap substansi (mengapa X1, X2, X3 dipilih)
+### Community 181 - "3. Rincian Temuan & Diskrepansi Detail (*Diff Analysis*)"
+Cohesion: 0.22
+Nodes (9): 1. Ringkasan Eksekutif (*Executive Summary*), 2. Perbandingan Kuantitatif Naskah, 3. Rincian Temuan & Diskrepansi Detail (*Diff Analysis*), 4. Kesimpulan dan Tindak Lanjut Rekomendasi, A. Bagian Awal (*Frontmatter*), B. Bab 1 Pendahuluan, C. Bab 2 Kajian Pustaka, D. Bab 3 Metode Penelitian (+1 more)
 
-### Community 183 - "9. METODOLOGI PENELITIAN & TEKNIK ANALISIS MRA <a id="sec-9"></a>"
-Cohesion: 0.50
-Nodes (4): 1. Populasi, Sampel, & Sampling, 2. Prosedur *Mean-Centering* pada MRA (Krusial untuk Uji Asumsi), 3. Mengapa Menggunakan MRA di SPSS daripada SEM-PLS?, 9. METODOLOGI PENELITIAN & TEKNIK ANALISIS MRA <a id="sec-9"></a>
+### Community 182 - "Catatan Bimbingan & Analisis Revisi Dosen (16 September 2026)"
+Cohesion: 0.22
+Nodes (9): 1. Salinan Chat Asli Dosen (Verbatim Input 16 September 2026), 2. Dekonstruksi & Analisis Kritis Butir Arahan Dosen, 3. Matriks Pemetaan Dampak Per Bab, 4. Rencana Aksi Eksekusi (Action Plan), Catatan Bimbingan & Analisis Revisi Dosen (16 September 2026), *Dr. Fredella Colline, S.E., M.M., CFP®, PFM, CHCP-A — S1 Manajemen Keuangan FEB UKRIDA*, 📌 Poin 1: Data untuk Pokémon Belum Ada Sumbernya, 📌 Poin 2: Referensi Penelitian Belum Masuk Mendeley (+1 more)
 
-### Community 184 - "1. RINGKASAN EKSEKUTIF & PETA KONSEP PENELITIAN <a id="sec-1"></a>"
-Cohesion: 0.50
-Nodes (4): 1. RINGKASAN EKSEKUTIF & PETA KONSEP PENELITIAN <a id="sec-1"></a>, Diagram Rerangka Konseptual Penelitian:, Mengapa Penelitian Ini Dibuat?, Persamaan Model MRA (Moderated Regression Analysis):
+### Community 183 - "Mandatory Rule: Zero Raw LaTeX Leakage & Native APA 7 Tables in Word (.docx)"
+Cohesion: 0.25
+Nodes (7): 1. Core Principle: Zero Raw LaTeX Tokens in Word Documents, 2. Table Construction Standard: Native APA 7th Edition, 3. Formal Academic Frontmatter Standards, 4. Mandatory Pre-Flight Verification Gate, A. Prohibited Syntax in DOCX Body & Tables, B. Standard Replacement Mapping, Mandatory Rule: Zero Raw LaTeX Leakage & Native APA 7 Tables in Word (.docx)
 
-### Community 185 - "4. KAMUS LENGKAP ISTILAH <a id="sec-4"></a>"
-Cohesion: 0.50
-Nodes (4): 4. KAMUS LENGKAP ISTILAH <a id="sec-4"></a>, A. Istilah Pokémon TCG & Ekosistem Kartu, B. Industri Sertifikasi Grading Profesional, C. Istilah Psikologi & Keuangan Perilaku
+### Community 184 - "KODEBOOK DAN TEMPLATE TABULASI — Pilot N=30 & Final N=111–150"
+Cohesion: 0.29
+Nodes (6): 1. Aturan pengodean skor Likert, 2. Filter inklusi (4 kriteria → flag INCLUDE), 3. Kamus kolom (urutan baku — jangan diubah), 4. Template header CSV — PILOT (N=30 lengkap, INCLUDE=1 semua), 5. Template header CSV — FINAL (N=111–150 bersih, di luar pilot), KODEBOOK DAN TEMPLATE TABULASI — Pilot N=30 & Final N=111–150
 
-### Community 186 - "📌 KELOMPOK: DATA INDUSTRI"
-Cohesion: 0.50
-Nodes (4): 52. The Pokémon Company (2024), 53. PriceCharting (2024), 54. Statista (2021), 📌 KELOMPOK: DATA INDUSTRI
+### Community 185 - "Bimbingan: 16 September 2026 (Pukul 10:27–10:28 WIB)"
+Cohesion: 0.38
+Nodes (7): Bimbingan: 16 September 2026 (Pukul 10:27–10:28 WIB), Bimbingan: 9 September 2026 (Pukul 20:30 WIB), 💬 Catatan / Salinan Chat Bimbingan Dosen, Format Pengisian (Salin blok di bawah setiap kali ada bimbingan baru):, Isi Chat / Catatan Dosen:, Poin Utama & Tindakan:, Riwayat Bimbingan Terkini:
+
+### Community 186 - "1. Core Principles (Zero Regressions)"
+Cohesion: 0.29
+Nodes (7): 1. Core Principles (Zero Regressions), 2. Mandatory Pre-Completion Audit, A. Single Source of Truth & Zero Desync, B. Pure Black Color (#000000) & Zero Theme Colors, C. Universal Table of Contents (TOC), LOT, & LOF Compatibility, D. Strict Dual-Mode Separation, Mandatory Rule: Thesis Synchronization, Parity, & LaTeX-Grade Quality
 
 ### Community 187 - "Interactive Presentation App Shell"
 Cohesion: 0.50
@@ -1023,17 +1031,41 @@ Nodes (3): check_latex_italics(), is_inside_command(), main()
 Cohesion: 0.67
 Nodes (3): audit_full(), _modular_texts(), r""" verify_pdf_docx_parity.py Layer 3 Verification Script Verifies structural,…
 
-### Community 191 - "Dashboard Second Brain Pokemon TCG"
-Cohesion: 0.50
-Nodes (4): Dashboard Second Brain Pokemon TCG, Proposal Skripsi Pokemon TCG, Universal Skripsi Framework Graph of Agents, Source of Truth Pokemon TCG
+### Community 191 - "Directive: Generate Publication-Grade Thesis Proposal in Microsoft Word (.docx)"
+Cohesion: 0.33
+Nodes (6): Directive: Generate Publication-Grade Thesis Proposal in Microsoft Word (.docx), Goal, Inputs, Outputs, Standards & Formatting Rules (Pedoman FEB UKRIDA 2023), Tools & Execution Script (3-Layer Architecture)
 
 ### Community 192 - "DAFTAR ISI NASKAH PROPOSAL"
 Cohesion: 0.67
 Nodes (3): DAFTAR ISI NASKAH PROPOSAL, HALAMAN SAMPUL / JUDUL PROPOSAL, PROPOSAL SKRIPSI LENGKAP — UNIVERSITAS KRISTEN KRIDA WACANA
 
-### Community 194 - "JAKARTA 2021"
+### Community 205 - "📌 KELOMPOK: VARIABEL M"
+Cohesion: 0.40
+Nodes (5): 26. Roy F. Baumeister (2002), 27. June P. Tangney, Roy F. Baumeister, Angie Luzio Boone (2004), 28. Kathleen D. Vohs, Ronald J. Faber (2007), 29. Abdullah J. Sultan, Jeff Joireman, David E. Sprott (2012), 📌 KELOMPOK: VARIABEL M
+
+### Community 206 - "📖 EVIDENCE LEDGER HALAMAN — Jejak Klaim → PDF → Halaman (D26 Tier Wajib)"
+Cohesion: 0.40
+Nodes (4): A. Klaim terverifikasi baca-isi (Tier Wajib), B. Flag jujur: isi belum diverifikasi full-text (paywall — metadata Crossref ✓, klaim setingkat-judul), C. Koreksi atribusi dari audit baca-isi (jejak, agar tak terulang), 📖 EVIDENCE LEDGER HALAMAN — Jejak Klaim → PDF → Halaman (D26 Tier Wajib)
+
+### Community 207 - "📁 Paket Perencanaan Slide Deck Seminar Proposal (Sempro) 7 Slide"
+Cohesion: 0.50
+Nodes (4): 📂 Berkas yang Tersedia, *Fakultas Ekonomi dan Bisnis — Universitas Kristen Krida Wacana (UKRIDA)*, 📁 Paket Perencanaan Slide Deck Seminar Proposal (Sempro) 7 Slide, 🔗 Referensi Pendukung di Second Brain
+
+### Community 208 - "README OUTPUT — Cara Pakai Sintaks MRA 2 Tahap (SPSS)"
+Cohesion: 0.50
+Nodes (3): 1. Cara pakai sintaks (7 langkah), 2. Checklist output yang WAJIB dilaporkan (Bab 4), README OUTPUT — Cara Pakai Sintaks MRA 2 Tahap (SPSS)
+
+### Community 210 - "📌 KELOMPOK: GRAND THEORY"
 Cohesion: 0.67
-Nodes (3): JAKARTA 2021, PERNYATAAN KEASLIAN KARYA TUGAS AKHIR, PERSETUJUAN PROPOSAL SKRIPSI
+Nodes (3): 40. Herbert A. Simon (1955), 41. Daniel Kahneman, Amos Tversky (1979), 📌 KELOMPOK: GRAND THEORY
+
+### Community 219 - "📌 KELOMPOK: SUPPORTING THEORY"
+Cohesion: 0.67
+Nodes (3): 42. Richard Thaler (1985), 43. Albert Mehrabian, James A. Russell (1974), 📌 KELOMPOK: SUPPORTING THEORY
+
+### Community 220 - "📑 Direktori Laporan Audit Ilmiah (Paper Audits)"
+Cohesion: 0.67
+Nodes (3): 📑 Direktori Laporan Audit Ilmiah (Paper Audits), 🗂️ Indeks Laporan Audit, 📌 Prosedur Pelaksanaan Audit
 
 ## Ambiguous Edges - Review These
 - `Dr Fredella Colline Supervisor` → `Revisi Malam Research Gap Bab1 dan Format Sitasi`  [AMBIGUOUS]
@@ -1042,9 +1074,9 @@ Nodes (3): JAKARTA 2021, PERNYATAAN KEASLIAN KARYA TUGAS AKHIR, PERSETUJUAN PROP
   01_Naskah_Utama/images/gambar1_1_media_franchise_ranking.png · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **1531 isolated node(s):** `1.1. Latar Belakang Penelitian`, `1.2. Perumusan Masalah`, `1.3. Tujuan Penelitian`, `1.4.1. Manfaat Teoritis`, `1.4.2. Manfaat Praktis` (+1526 more)
+- **1620 isolated node(s):** `fs`, `path`, `slidesDir`, `assetsDir`, `fs` (+1615 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **28 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **24 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -1053,13 +1085,13 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: references) - confidence is low._
 - **What is the exact relationship between `External data source citation not visible` and `Media Franchise Ranking Horizontal Bar Chart`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `21. HAL-HAL YANG KAMU BELUM TAHU TAPI PASTI DITANYA (SUPLEMEN KRITIS) <a id="sec-21"></a>` connect `A. KONSEP DASAR YANG WAJIB PAHAM SEBELUM SIDANG` to `PANDUAN_BELAJAR_PROPOSAL.md`?**
-  _High betweenness centrality (0.009) - this node is a cross-community bridge._
-- **Why does `19. ANATOMI BAB 1 & 2: KENAPA BEGITU & ALASANNYA <a id="sec-19"></a>` connect `B. BAB 2 — Keputusan Teori` to `PANDUAN_BELAJAR_PROPOSAL.md`?**
-  _High betweenness centrality (0.006) - this node is a cross-community bridge._
-- **Why does `15. BANK PERTANYAAN TAMBAHAN Q18–Q35 <a id="sec-15"></a>` connect `15. BANK PERTANYAAN TAMBAHAN Q18–Q35 <a id="sec-15"></a>` to `PANDUAN_BELAJAR_PROPOSAL.md`?**
-  _High betweenness centrality (0.006) - this node is a cross-community bridge._
-- **What connects `1.1. Latar Belakang Penelitian`, `1.2. Perumusan Masalah`, `1.3. Tujuan Penelitian` to the rest of the system?**
-  _1531 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `Log Sesi Second Brain` connect `Log Sesi Second Brain` to `📋 PROMPT SIAP TEMPEL UNTUK CLAUDE — PLAN PEMBUATAN PPT 7 SLIDE`, `Buku Pedoman Penyusunan Tugas Akhir 2023.md`, `Scientific Paper Audit Report September 2026`, `Revisi Sylvia — Pascapangkas Bab 1 (23 September 2026)`, `Tempel Chat Dosen Disini`, `📊 INSTRUMEN PENELITIAN & DATA SURVEI LAPANGAN`, `Book Reference PDF Repository README`, `📑 Catatan Review Teknis Prism AI & Matriks Resolusi`, `Prompt Mulai Sesi Copy Paste`, `3. LANGKAH-LANGKAH ANALISIS DI SPSS`, `PANDUAN_BELAJAR_PROPOSAL.md`, `Mandatory Verifiable Theories and Books Rule`, `Dashboard Second Brain Pokemon TCG`, `Matriks Literatur Skripsi — Pokémon TCG Impulsive Buying`?**
+  _High betweenness centrality (0.106) - this node is a cross-community bridge._
+- **Why does `Universal Skripsi Framework Graph of Agents` connect `Log Sesi Second Brain` to `Product Requirements Document (PRD): Audit Komparasi Dokumen PDF vs DOCX`, `PRD: Akuisisi & Pengunduhan Berkas Digital PDF Buku Referensi dari Library Genesis (LibGen)`, `Berkas Verifikasi Data Empiris Bab 1 (Ground Truth Log)`, `Directive: Curate, Generate, and Integrate Empirical Market Graphics for Bab 1`, `Directive: Protokol Verifikasi Data Primer Empiris & Zero-Hallucination`, `PRD: Eliminasi Sumber Tidak Terverifikasi & Protokol Penjaminan Data Primer Empiris Bab 1`, `PRD Penelitian Skripsi — Pokémon TCG & Impulsive Buying`, `PRD: Sistem Penjaminan Integritas, Validasi Tag, dan Paritas 1:1 Mendeley Reference Manager`, `Directive: SOP Review Konstruk dan Terminologi Ilmiah "Desire for Completeness"`, `PRD: Standarisasi Tautan URL Aktif & Sitasi APA 7th Edition untuk Data Industri Pokémon`, `Dashboard Second Brain Pokemon TCG`, `PRD: Audit & Penyelarasan Kepatuhan Pedoman Tugas Akhir FEB UKRIDA 2023`, `Product Requirements Document (PRD)`, `3. Rincian Temuan & Diskrepansi Detail (*Diff Analysis*)`, `PRD: Penjaminan Ketersediaan Sumber Teori Buku & Verifikasi Mandatori LibGen`, `📋 PRODUCT REQUIREMENTS DOCUMENT (PRD)`, `PRD: Penentuan dan Substitusi Gambar 1.3 Bab 1 dengan Data Empiris Terverifikasi 100% Legit`, `Matriks Literatur Skripsi — Pokémon TCG Impulsive Buying`, `📜 Mandatory Rule: Penegakan Tautan Sitasi Lintas Platform (Word DOCX & Google Docs)`?**
+  _High betweenness centrality (0.057) - this node is a cross-community bridge._
+- **Why does `Dashboard Second Brain Pokemon TCG` connect `Dashboard Second Brain Pokemon TCG` to `📋 PROMPT SIAP TEMPEL UNTUK CLAUDE — PLAN PEMBUATAN PPT 7 SLIDE`, `Log Sesi Second Brain`, `Revisi Sylvia — Pascapangkas Bab 1 (23 September 2026)`, `Tempel Chat Dosen Disini`, `Berkas Verifikasi Data Empiris Bab 1 (Ground Truth Log)`, `Directive: Ledger Bukti Halaman & PDF Lokal (D26 — 3 Tier)`, `📖 EVIDENCE LEDGER HALAMAN — Jejak Klaim → PDF → Halaman (D26 Tier Wajib)`, `📑 Catatan Review Teknis Prism AI & Matriks Resolusi`, `Mandatory Rule: Humanized & Natural Academic Tone (Skripsi S1)`, `Prompt Mulai Sesi Copy Paste`, `Matriks Literatur Skripsi — Pokémon TCG Impulsive Buying`, `PANDUAN_BELAJAR_PROPOSAL.md`, `🃏 FLASHCARD ISTILAH KUNCI — Proposal Skripsi Pokémon TCG`?**
+  _High betweenness centrality (0.050) - this node is a cross-community bridge._
+- **What connects `fs`, `path`, `slidesDir` to the rest of the system?**
+  _1620 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `(322015175)` be split into smaller, more focused modules?**
-  _Cohesion score 0.023809523809523808 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.013157894736842105 - nodes in this community are weakly interconnected._

@@ -2277,5 +2277,155 @@
   - Naskah & Aset (Khusus Butir 1): [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[01_Naskah_Utama/images/gambar_rerangka_penelitian.png]]
 - **Verifikasi & Status:** Naskah utama untuk Butir 2–4 dibekukan sesuai permintaan pengguna (*"ini tidak usah dibenerin langsung, saya ingin kamu catat saja"*). Paritas naskah 7/7 PASS.
 
+---
+
+## 📅 Sesi: 01 Oktober 2026 — Pre-Flight Second Brain & Reload Konteks Anti-Lupa
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Mengaktifkan ulang skill [[.agents/skills/obsidian-second-brain/SKILL.md|obsidian-second-brain]] awal sesi 01 Okt 2026 dan memuat ulang seluruh konteks anti-lupa.
+> - **Masalah yang Diselesaikan:** Mencegah amnesia lintas-sesi; menyelaraskan status naskah tunggal, variabel Y-X1-X2-X3-Z/M, dan arahan [[07_Review_&_Audit/Revisi_Dosen/|Dr. Fredella Colline]] sebelum kerja harian.
+> - **Keputusan/Output:** Pre-flight PASS (Graphify + Dashboard + SoT + Framework Universal + SOP); menunggu fokus kerja hari ini dari user.
+
+- **Fokus Pekerjaan:** Baca `graphify-out/manifest.json` + `graphify-out/GRAPH_REPORT.md` (1880 nodes / 2004 edges / 174 communities, God Node Impulsive Buying Y + build_proposal_word.py); baca [[00_DASHBOARD_SECOND_BRAIN.md]] + [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] + [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]] + [[directives/universal_thesis_graph_of_agents.md]] (arsitektur 3-Layer directives -> orchestration -> execution, 11 agen A0-A11, gate parity 7/7).
+- **Keputusan / Insight:** Naskah tunggal `Proposal_Arthur_PokemonTCG.*` tetap golden truth; varian NoBab3 dihapus 23 Sep 2026; PDF settled 48 hlm pasca-Sempro 29 Sep 2026 (catatan user menyebut 55 hlm — perlu verifikasi build settled vs lampiran); paritas 5-arah 54 ref + extended gate 10/10 PASS terakhir.
+- **File yang Diperbarui:** [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** Pre-flight lengkap, belum eksekusi perubahan naskah (zero-desync terjaga).
+
+---
+
+## 📅 Sesi 41 — 01 Oktober 2026: Pre-Flight Multi-Device Sync + Reload Kokpit D01–D32
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Pembuka sesi kerja 01 Okt 2026 dengan protokol sinkronisasi multi-device & anti-lupa konteks.
+> - **Masalah yang Diselesaikan:** Memastikan `main` lokal 100% sinkron dengan `origin/main` sebelum kerja lintas-device, serta memuat ulang graf + kokpit kanonis.
+> - **Keputusan/Output:** Pre-flight PASS; naskah tunggal 51 hlm settled + 54 pustaka + gate 11/11 dikunci; D30–D32 dipatuhi; menunggu fokus kerja hari ini dari user.
+
+- **Fokus Pekerjaan:**
+  - **Git multi-device:** `git pull origin main` → `Already up to date` pada `8c4fa18` (`fix(docx): perbaiki preservasi rPr ukuran font sitasi tabel dan selaraskan heading D30`); remote `https://github.com/arthurfreelanceinquiries-alt/SKRIPSI-arthur.git`, branch `main`; tanpa berkas baru ditarik. Terdeteksi 1 modifikasi lokal belum commit: `04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md` (+14 baris pre-flight lama).
+  - **Skill:** registry tool tidak menyediakan `obsidian-second-brain` (hanya `customize-opencode`, `graphify`); fallback ke berkas lokal [[.agents/skills/obsidian-second-brain/SKILL.md]] — protokol pre-flight/in-flight/auto-capture tetap dijalankan manual.
+  - **Graf:** `graphify-out/manifest.json` + `graphify-out/GRAPH_REPORT.md` (30 Sep 2026: 2416 nodes, 2558 edges, 223 communities; build dari commit `44a8a272`; God Nodes: `(322015175)`, `build_full_proposal()`, panduan belajar; zero import cycle).
+  - **Kokpit:** [[00_DASHBOARD_SECOND_BRAIN.md]] + [[04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md]] D01–D32 + [[04_Riset_&_Metodologi/PRD_UNIVERSAL_SKRIPSI_FRAMEWORK_GRAPH_OF_AGENTS.md]] + [[directives/universal_thesis_graph_of_agents.md]] (F1–F11, A0–A11, gate parity) + LOG hingga Sesi 40.
+  - **Aturan dikunci:** D30 (tanpa label kaku Grand Theory; Behavioral Finance sebagai kerangka teoretis utama), istilah asing di belakang Indonesia miring (contoh: kesimetrisan cetak (*centering*)), rumus MRA mean-centering ($X_i^*, M^*$), paritas italic 100% D32/G8, callout `> [!SUMMARY]` pada markdown baru.
+- **Keputusan / Insight:**
+  - Variabel: Y *Impulsive Buying*, X1 *Hedonic Motivation*, X2 *Desire for Completeness*, X3 *Speculative Motive*, M *Self-Control* (memperlemah H4–H6); populasi Jakarta Barat (D31); pembimbing Dr. Fredella Colline.
+  - Naskah tunggal `Proposal_Arthur_PokemonTCG.*` di `01_Naskah_Utama/` (.tex/.pdf/.docx/.md); PDF 51 hlm settled; 54 pustaka; gate extended 11/11 PASS; NoBab3 dihapus 23 Sep 2026.
+- **File yang Diperbarui:** [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Verifikasi:** Belum eksekusi perubahan naskah (zero-desync terjaga); rebuild DOCX tetap menunggu device ber-LaTeX (Sesi 40).
+
+---
+
+## 📅 Sesi 42 — 01 Oktober 2026: Eksekusi Tugas 1+3+4 via 3 Subagen Paralel + Audit Orkestrator
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Mengerjakan Tugas 1 (rebuild DOCX), Tugas 3 (Mendeley cloud), Tugas 4 (instrumen lapangan) via 3 subagen paralel + 1 orkestrator audit.
+> - **Masalah yang Diselesaikan:** Rebuild DOCX fix font tertunda sejak Sesi 40; status cloud Mendeley tak pasti; folder lapangan masih kosong — semua diselesaikan tanpa tabrakan file.
+> - **Keputusan/Output:** Putusan orkestrator CLEAN (8/8 parity, 54 konsisten, 27 butir selaras Tabel 3.2); tersisa aksi user: auth Mendeley, lampu hijau sebar, commit+push.
+
+- **Fokus Pekerjaan:**
+  - **Tugas 1 (Agen A):** settled-build `xelatex+bibtex+2x xelatex` → 51 hlm 2 run beruntun; `py execution/build_proposal_word.py` → DOCX baru (54 DP bookmark, 185 sitasi link, TOC 46 entri); verifikasi G4/G5/G8 + `verify_no_ai_markers.py` PASS; cek font 9pt Tabel 3.2 PASS (`Colline, 2024` sz=18).
+  - **Tugas 3 (Agen B, read-only):** `verify_mendeley_integrity.py` 7/7 N=54; ghost Tan/Prasetio 0 hit lokal; `azizah2025exploring` ada di bib/ris/bbl/aux; `--status` → 401 TOKEN_EXPIRED (perlu `--auth` user); PANDUAN impor GUI akurat.
+  - **Tugas 4 (Agen C, file baru saja):** 4 file di `03_Instrumen_&_Data_Survei/` — DRAF kuesioner 27 butir (Y6/X1-5/X2-5/X3-5/M6 verbatim Tabel 3.2) + KODEBOOK + SINTAKS_MRA_2TAHAP.sps + README_OUTPUT; `.gitkeep` utuh; 0 URL/DOI karangan.
+  - **Orkestrator (Agen O, read-only):** re-run parity 8/8 + no-ai-markers PASS; konfirmasi modified (DOCX/PDF/LOG) + 4 untracked tepat; tabrakan antar-agen NIHIL; koreksi redaksional: klaim "tanpa perubahan file" Agen A ditolak redaksional (rebuild memang mengubah DOCX/PDF — ekspektasi).
+- **Keputusan / Insight:**
+  - Kesalahpahaman Sesi 40 terkoreksi: toolchain LaTeX ADA di device ini (MiKTeX xelatex/bibtex 25.12) — rebuild berhasil lokal; catatan "menunggu device ber-LaTeX" tidak berlaku lagi.
+  - `references.bib` 72 `@` vs set kanonis 54: 18 kunci tak-disitasi, `.bbl` tepat 54 — bukan desync.
+  - Perbaikan kosmetik diterapkan: docstring `mendeley_connector.py:11,15` 55→54.
+- **File yang Diperbarui/Dibuat:**
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]] + [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]] (rebuild)
+  - [[execution/mendeley_connector.py]] (docstring 55→54)
+  - 4 file baru `03_Instrumen_&_Data_Survei/` (lihat fokus di atas)
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] (Sesi 42)
+- **Tindak lanjut (aksi user):** (1) `py execution/mendeley_connector.py --auth` → `--prune` → `--push` → `--sync-links`; (2) tentukan titik sebar LGS/Discord + mode respons Forms; (3) commit+push 4 modified + 4 untracked.
+
+---
+
+## 📅 Sesi 43 — 01 Oktober 2026: Upgrade PROMPT_KICKOFF.html (5 Kategori A–E + Opsi 8–10)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menambah kategori navigasi dan 3 prompt baru (blok orkestrator multi-agen, blok verifikasi universal, universal prompt improver) ke web kickoff + versi markdown.
+> - **Masalah yang Diselesaikan:** 7 prompt lama tanpa pengelompokan; pola multi-agen Sesi 42 dan standar verifikasi belum diabadikan sebagai blok tempel-ulang; belum ada meta-prompt untuk memperbagus prompt apapun.
+> - **Keputusan/Output:** 10 prompt dalam 5 kategori (A sesi, B akademik, C audit, D blok tempel, E meta); paritas MD–HTML terjaga; validasi parser 10/10 PASS.
+
+- **Fokus Pekerjaan:**
+  - **Website [[PROMPT_KICKOFF.html]]:** nav kategori anchor (A–E) + judul seksi + badge jumlah; kartu Opsi 8 (blok orkestrasi multi-agen + auditor, ungu), Opsi 9 (blok verifikasi universal 5 butir, ungu), Opsi 10 (universal prompt improver, emas); kartu lama Opsi 1–7 tidak diubah isinya.
+  - **Paritas markdown:** [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md]] §5 baru berisi Opsi 8–10 identik teks dengan HTML (entitas HTML ter-decode saat disalin sehingga hasil copy sama).
+  - **Validasi:** parser HTML — 10/10 id prompt ada, 10/10 tombol salin valid, 5/5 anchor nav tepat sasaran; sisa `&` mentah hanya di komentar HTML (tak dirender).
+- **File yang Diperbarui:** [[PROMPT_KICKOFF.html]], [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Catatan:** angka usang di MD §MENGAPA (48 hlm, 10 gerbang — seharusnya 51 hlm, 11 gerbang) dan Opsi 7 (10/10) belum diselaraskan — di luar mandat sesi ini, ditandai sebagai tindak lanjut.
+
+---
+
+## 📅 Sesi 44 — 01 Oktober 2026: Repair Link Daftar Isi PDF+DOCX via Multi-Agen (A/B/C + Orkestrator O)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Memperbaiki keluhan link Daftar Isi salah sasaran ("dipencet apa keluar apa") di PDF dan DOCX dengan pola multi-agen.
+> - **Masalah yang Diselesaikan:** 6 jangkar top-level PDF menunjuk anchor basi (Doc-Start/Item/caption); angka statis TOC/LOT/LOF builder basi + 1 entri hilang (3.2.3) + mismatch teks (2.1.2/2.2.x).
+> - **Keputusan/Output:** 6/6 link PDF CORRECT terverifikasi eksekusi; DOCX 0 yatim + sampel resolve benar; parity 8/8 + no-AI-markers PASS; kanonis angka di Opsi 5 (HTML+MD) diselaraskan.
+
+- **Diagnosis (3 agen paralel, read-only):**
+  - **Agen A (PDF):** `\section*`+`\addcontentsline` tanpa `\phantomsection` → LOT/LOF/BAB1 jatuh ke `Doc-Start` (cover), BAB2 ke `Item.26`, BAB3 ke `figure.caption.4`, DP ke `table.caption.7`; subbab benar; `page.*` unik (bukan tabrakan romawi/arab).
+  - **Agen B (DOCX XML):** 56/56 anchor resolve benar, 0 duplikat bookmark, 0 yatim — DOCX tidak salah sasaran; temuan kosmetik: DAFTAR TABEL pakai legacy `_Toc241745667`, 45 `_Toc` nganggur.
+  - **Agen C (kode):** `toc_items_full` 45 vs `.toc` 46 (hilang `3.2.3 Prosedur Distribusi Kuesioner`, 3.2.x bergeser); angka basi (BAB2 12→13, BAB3 23→24, DP 39→42, dst.); mismatch teks 2.1.2/2.2.x/SPASI-BAB menyebabkan SKIP (mati) bukan nyasar; matching via dict teks (hipotesis zip gugur).
+  - **Orkestrator O:** verifikasi independen (phantomsection=0, `.toc` destinasi basi, hitung 45 vs 46, sampel XML BAB2) — semua klaim inti TERKONFIRMASI; klaim "2 Ref tak terpakai" DITOLAK (terpakai di tex:375); putusan PERLU PERBAIKAN + rencana W1–W8.
+- **Repair (eksekusi tunggal pasca-audit):**
+  - **W1–W2:** `Proposal_Arthur_PokemonTCG.tex:139-147` tambah `plainpages=false,pdfpagelabels=true`; 6× `\phantomsection` sebelum `\addcontentsline` (:251,:261,:276,:454,:705,:1071).
+  - **W3:** settled-build `xelatex+bibtex+2x xelatex` → 51 hlm, 0 rerun-warning; `.toc` kini `section*.1/.2/.3/.7/.9/.13`.
+  - **W4–W5:** `build_proposal_word.py` resync 46 entri TOC + 5 LOT + 5 LOF ke angka settled; selaraskan teks 2.1.2/2.2.1–2.2.5/3.2.3–3.2.5; tambah 3.2.3 yang hilang.
+  - **W6 (ditunda sadar):** alias `TOC_DAFTAR_TABEL` tidak ditambahkan — link existing terbukti CORRECT, perubahan logika bookmark berisiko regresi; dicatat sebagai hardening masa depan bersama V2 spasi-BAB dan P1 collision-check.
+  - **W7:** rebuild DOCX (46 entri TOC terhubung pasca-COM, 185 sitasi, 54 DP) + `sync_markdown_from_tex.py` (MD 767 baris).
+  - **W8:** parity 8/8 PASS + `verify_no_ai_markers.py` PASS; cek klik PDF 6/6 CORRECT (TABEL→iv, GAMBAR→v, BAB1→1, BAB2→13, BAB3→24, DP→42); spot DOCX (BAB2/3, 2.2.2, 3.2.3, DP) resolve benar, 0 yatim; kanonis Opsi 5 HTML+MD diselaraskan (Bab 1=1–12, Bab 2=13–23, Bab 3=24–41; LOT 7,16,24,32,41; LOF 1,2,4,23,39).
+- **File yang Diperbarui:** [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]], `.pdf`, `.docx`, `PROPOSAL_SKRIPSI_POKEMON_TCG.md`, [[execution/build_proposal_word.py]], [[PROMPT_KICKOFF.html]], [[00_PROMPT_MULAI_SESI_TINGGAL_COPY_PASTE.md]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Catatan viewer:** di Word, hyperlink membutuhkan Ctrl+klik; bila diklik tunggal terlihat "mati" itu perilaku Word, bukan link rusak.
+
+---
+
+## 📅 Sesi 45 — 01 Oktober 2026: Audit Opsi 7 + Opsi 5 + PDF via Multi-Agen, Repair Desync `n.s.` → Vonis LAYAK
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Audit diagnostik DOCX (Opsi 7) + audit kesehatan multiformat (Opsi 5) + PDF via 3 agen paralel + orkestrator.
+> - **Masalah yang Diselesaikan:** 1 desync lolos verifier — sel Tabel 1.1 DOCX/MD berisi `n.s.` sementara TeX `tidak signifikan`.
+> - **Keputusan/Output:** Repair di 2 template + rebuild + sync MD; extended 11/11 PASS; `n.s.` 0 di semua media; vonis LAYAK KE PEMBIMBING.
+
+- **Audit SEBELUM repair (3 agen read-only):**
+  - **Agen A (DOCX):** typography PASS; 0 LaTeX leaks; Tabel 1.1 native 8×5; DP 54 + sitasi 185; heading 0 warna; BAB br=1. FATAL: `n.s.` 1 hit body (para#129).
+  - **Agen B (modular):** 6 file lengkap, borderless PASS, simetri diff 0, logo ada+dipakai+ter-embed, lockfile/NoBab3 0. Advisori: placeholder NIDN, 03 2-baris vs 3-baris, 9 file legacy.
+  - **Agen C (PDF):** 51 hlm + label PASS; 0 rerun TOC; 6/6 jangkar `section*.N` + klik BAB2/DP; sitasi 35/18/0; Grand Theory 0. Advisori: 13× Token-math, font subs, glue.
+  - **Orkestrator:** extended gate 11/11 PASS disalin verbatim; verifikasi independen — TeX `n.s.` 0 hit (bersih), MD:169 1 hit, DOCX Table0 r5c3 1 hit → desync TeX≠DOCX/MD; vonis sementara BUILD BROKEN + rencana repair (fix template, JANGAN edit DOCX langsung).
+- **Repair SESUDAH audit (eksekusi tunggal):**
+  - `execution/build_proposal_word.py:2676` + `execution/sync_markdown_from_tex.py:239`: `(beta=0,092, n.s.)` → `(β=0,092, tidak signifikan)` selaras TeX:386.
+  - Sync MD (767 baris) + rebuild DOCX (46 TOC, 185 sitasi, 54 DP) + verifikasi: typography PASS, extended **11/11 PASS**, `n.s.` 0 di MD dan DOCX-XML, spot TOC resolve benar, 0 yatim.
+- **Vonis AKHIR: LAYAK KE PEMBIMBING** (dengan advisori NIDN/legacy/Token-math ditunda hingga pra-sidang).
+- **File yang Diperbarui:** 2 template di atas, [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], `PROPOSAL_SKRIPSI_POKEMON_TCG.md`, [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+---
+
+## 📅 Sesi 46 — 01 Oktober 2026: Forensik Link LOT/LOF di LibreOffice + Buang Bookmark Yatim id=0
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menjawab keluhan link Daftar Tabel/Gambar di LibreOffice tidak mendarat langsung ("malah kebawah semua isi").
+> - **Masalah yang Diselesaikan:** Ditemukan satu `w:bookmarkEnd id=0` yatim tanpa pasangan (OOXML tidak valid; Word toleran, LibreOffice sensitif) — dibersihkan via sanitasi global baru di builder.
+> - **Keputusan/Output:** Bookmark 155/155 berpasangan, 0 yatim, 0 duplikat id, LOT/LOF 10/10 terhubung, parity 8/8 PASS; user diminta uji ulang file BARU di LibreOffice.
+
+- **Forensik (via eksekusi):**
+  - Posisi `Cap_*`: 10/10 tepat di paragraf caption (span 0, di dalam paragraf yang benar); entry LOT/LOF 10/10 ber-anchor valid; `w:id` unik; pasangan start/end 155/156 → 1 end yatim `id=0` (tanpa start) terdeteksi lintas-part.
+  - `fix_libreoffice_toc_links.py` hanya menangani TOC (syarat bookmark sesudah `pPr` sudah dipenuhi `Cap_*`); LibreOffice tidak terinstal di device ini sehingga perilaku klik tidak dapat direproduksi lokal.
+- **Repair:** blok sanitasi bookmark global di `execution/build_proposal_word.py` (hapus elemen tak-berpasangan saja; pasangan utuh tak disentuh) → rebuild DOCX ("1 bookmark tak-berpasangan dibersihkan").
+- **Verifikasi:** starts=ends=155, 0 yatim, 0 duplikat; LOT/LOF anchor utuh; parity 8/8 PASS.
+- **File yang Diperbarui:** [[execution/build_proposal_word.py]], [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]], [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+- **Tindak lanjut:** user uji ulang di LibreOffice dengan file BARU (1.462.xxx bytes pasca-Sesi 46); bila masih salah, siapkan file probe 3 varian bookmark untuk isolasi perilaku LO.
+
+---
+
+## 📅 Sesi 47 — 01 Oktober 2026: Closing Sesi & Safe Git Sync (Opsi 2)
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menutup sesi kerja 01 Okt 2026 (Sesi 41–46) dengan verifikasi 11/11, dokumentasi, graphify refresh, dan push bersih.
+> - **Masalah yang Diselesaikan:** Memastikan naskah settled dari TeX terkini, Second Brain sinkron, dan remote 100% up-to-date tanpa konflik.
+> - **Keputusan/Output:** Extended 11/11 PASS + sitasi 0 MATI; tidak ada D33 (tanpa arahan dosen baru); graphify 2498 nodes; commit + push ke `origin/main`.
+
+- **Verifikasi integritas:** TeX berubah vs HEAD (`+9/-1`: hyperref + 6 phantomsection) → settled-build 2× `xelatex` 51+51 hlm 0 rerun-warning; sync MD (767 baris) + rebuild DOCX idempoten (46 TOC, 185 sitasi, 54 DP, sanitasi bookmark 1); `run_thesis_graph.py --gate extended` **11/11 PASS**; `verify_all_citation_links.py` 35/18/**0 MATI**.
+- **Dokumentasi:** D33 TIDAK diterbitkan (tidak ada keputusan konseptual/metodologis atau arahan dosen baru hari ini — murni repair teknis); PRD Universal tidak diubah (tanpa perubahan arsitektur); [[00_DASHBOARD_SECOND_BRAIN.md]] agenda Sesi 42–46 dimutakhirkan; graphify incremental → 2498 nodes / 2799 edges / 224 communities.
+- **File yang Diperbarui:** naskah `.tex/.pdf/.docx/.md`, 3 skrip `execution/`, web kickoff + MD prompt, dashboard, graphify-out, [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] + 4 file baru `03_Instrumen_&_Data_Survei/`.
+
 
 
