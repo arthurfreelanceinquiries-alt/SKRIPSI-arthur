@@ -125,10 +125,13 @@
 % Awalan Tabel dan Gambar di daftar
 \renewcommand{\cfttabpresnum}{Tabel }
 \renewcommand{\cfttabaftersnum}{.}
-\setlength{\cfttabnumwidth}{2.3cm}
+\setlength{\cfttabnumwidth}{1.8cm}
 \renewcommand{\cftfigpresnum}{Gambar }
 \renewcommand{\cftfigaftersnum}{.}
-\setlength{\cftfignumwidth}{2.5cm}
+\setlength{\cftfignumwidth}{2.0cm}
+\setlength{\cftbeforesecskip}{4pt}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\setlength{\cftaftertoctitleskip}{12pt}
 
 % ---- BIBLIOGRAPHY (APA Style via natbib + apalike) ----
 \usepackage{natbib}
@@ -212,28 +215,254 @@
 
 \addtocounter{page}{1}
 
-% (Modular 23 Sep 2026: Pernyataan Keaslian hidup mandiri di
-%  01_Lembar_Persetujuan_Proposal/01_Pernyataan_Keaslian.docx)
+% ------------------------------------------------------------
+%  2. HALAMAN PERNYATAAN KEASLIAN (hal. ii)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\phantomsection
+\addcontentsline{toc}{section}{PERNYATAAN KEASLIAN KARYA TUGAS AKHIR}
+\begin{center}
+  {\large\bfseries PERNYATAAN KEASLIAN KARYA TUGAS AKHIR}
+\end{center}
 
-% (Modular 23 Sep 2026: Persetujuan hidup mandiri di
-%  01_Lembar_Persetujuan_Proposal/02_Halaman_Persetujuan.docx)
+\vspace{0.3cm}
+\noindent Saya mahasiswa \ukrida:
 
-% (Modular 23 Sep 2026: Pengesahan hidup mandiri di
-%  01_Lembar_Persetujuan_Proposal/03_Halaman_Pengesahan_Penguji.docx)
+\vspace{0.15cm}
+\noindent
+\begin{tabular}{@{}lll@{}}
+  Nama Mahasiswa & : & \namamahasiswa \\
+  NIM            & : & \nim \\
+  Program Studi  & : & \prodi \\
+  Konsentrasi    & : & \konsentrasi \\
+\end{tabular}
 
-% (Modular 23 Sep 2026: Kata Pengantar hidup mandiri di
-%  01_Lembar_Persetujuan_Proposal/04_Kata_Pengantar.docx)
+\vspace{0.3cm}
+\noindent
+Dengan ini menyatakan dengan sesungguhnya bahwa Proposal Skripsi yang berjudul:
 
-% (Modular 23 Sep 2026: ABSTRAK hidup mandiri di
-%  01_Lembar_Persetujuan_Proposal/05_Abstrak_Indonesia.docx —
-%  isi: tujuan, metode cross-sectional Likert 5 poin N=120-150, novelty S-O-R +
-%  kolektor + regulasi diri + behavioral finance, kata kunci 8 frasa)
+\vspace{0.15cm}
+\begin{center}
+  \bfseries``\judulskripsi''
+\end{center}
 
-% (Modular 23 Sep 2026: ABSTRACT hidup mandiri di
-%  01_Lembar_Persetujuan_Proposal/06_Abstract_English.docx)
+\vspace{0.15cm}
+\noindent adalah:
+
+\begin{enumerate}[topsep=2pt,itemsep=2pt,partopsep=0pt,parsep=0pt]
+  \item Benar-benar hasil karya saya sendiri, bukan merupakan jiplakan, plagiarisme, fabrikasi, atau tiruan dari karya tulis ilmiah orang lain yang pernah diajukan untuk memperoleh gelar akademik di perguruan tinggi manapun.
+  \item Seluruh kutipan, data, dan rujukan ilmiah yang digunakan dalam naskah ini telah dicantumkan sumbernya secara jelas dan lengkap sesuai dengan kaidah penulisan ilmiah yang berlaku di \ukrida.
+  \item Apabila di kemudian hari terbukti bahwa pernyataan ini tidak benar atau ditemukan indikasi plagiarisme, saya bersedia menerima sanksi akademik yang berlaku sesuai dengan peraturan perundang-undangan dan ketentuan di lingkungan Universitas Kristen Krida Wacana.
+\end{enumerate}
+
+\vspace{0.5cm}
+\noindent
+\hfill
+\begin{minipage}[t]{6.5cm}
+  \centering
+  Jakarta, \underline{\hspace{3.5cm}} 2026\\[0.25cm]
+  Yang menyatakan,\\[0.35cm]
+  \framebox(70,45){\begin{minipage}{2.2cm}\centering\scriptsize\itshape Meterai\\Rp10.000\end{minipage}}\\[0.45cm]
+  \textbf{(\namamahasiswa)}\\
+  NIM: \nim
+\end{minipage}
 
 % ------------------------------------------------------------
-%  2. DAFTAR ISI
+%  3. HALAMAN PERSETUJUAN PROPOSAL SKRIPSI (hal. iii)
+%  (Format Sesuai Lampiran 2 Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\phantomsection
+\addcontentsline{toc}{section}{PERSETUJUAN PROPOSAL SKRIPSI}
+\begin{center}
+  {\large\bfseries PERSETUJUAN PROPOSAL SKRIPSI}
+\end{center}
+
+\vspace{0.6cm}
+\noindent
+\begin{tabular}{lll}
+  Nama          & : & \namamahasiswa \\
+  N.I.M.        & : & \nim \\
+  Program Studi & : & \prodi \\
+  Konsentrasi   & : & \konsentrasi \\
+\end{tabular}
+
+\vspace{0.5cm}
+\noindent \textbf{Judul yang Diajukan:}
+
+\vspace{0.2cm}
+\begin{flushleft}
+  \bfseries\judulskripsi
+\end{flushleft}
+
+\vspace{0.4cm}
+\noindent Telah disetujui untuk diajukan dalam Seminar Proposal Skripsi Program Studi S1 Manajemen Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana.
+
+\vspace{0.6cm}
+\noindent Jakarta, \underline{\hspace{3cm}} 2026
+
+\vspace{0.5cm}
+\noindent Menyetujui,
+
+\vspace{0.3cm}
+\noindent
+\begin{tabular}{p{6.5cm} p{6.5cm}}
+  Dosen Pembimbing & Dosen Pendamping \\[2.0cm]
+  \textbf{(\dosbim)} & (\underline{\hspace{4cm}}) \\
+  NIDN: \nidn & \\
+\end{tabular}
+
+\vspace{0.6cm}
+\noindent Mengetahui,
+
+\vspace{0.3cm}
+\noindent
+\begin{tabular}{l}
+  \textbf{(\ketprodi)} \\
+  Ketua Program Studi S1 Manajemen
+\end{tabular}
+
+% ------------------------------------------------------------
+%  4. HALAMAN PENGESAHAN TIM PENGUJI (hal. iv)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\phantomsection
+\addcontentsline{toc}{section}{PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL}
+\begin{center}
+  {\large\bfseries PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL SKRIPSI}\\[0.5cm]
+  {\normalsize Proposal Skripsi dengan Judul:}\\[0.3cm]
+  {\bfseries\judulskripsi}\\[0.5cm]
+  {\normalsize Diajukan Oleh:}\\[0.2cm]
+  {\large\bfseries \namamahasiswa}\\[0.1cm]
+  {\large\bfseries (\nim)}
+\end{center}
+
+\vspace{0.4cm}
+\noindent
+Telah dipertahankan di hadapan Tim Penguji Seminar Proposal Skripsi Program Studi S1 Manajemen Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana pada:
+
+\vspace{0.4cm}
+\noindent \textbf{Hari / Tanggal Seminar:} \underline{\hspace{4cm}}, \underline{\hspace{3cm}} 2026
+
+\vspace{0.4cm}
+\noindent \textbf{Tim Penguji Seminar Proposal:}
+
+\vspace{0.4cm}
+\noindent
+\begin{tabular}{@{}p{0.5cm} >{\raggedright\arraybackslash}p{3.2cm} p{0.2cm} >{\raggedright\arraybackslash}p{5.0cm} p{2.8cm}@{}}
+  1. & Ketua Penguji    & : & \underline{\hspace{4.4cm}} & ( \underline{\hspace{2.3cm}} ) \\[1.3cm]
+  2. & Anggota Penguji  & : & \underline{\hspace{4.4cm}} & ( \underline{\hspace{2.3cm}} ) \\[1.3cm]
+  3. & Dosen Pembimbing & : & \dosbim                    & ( \underline{\hspace{2.3cm}} ) \\
+\end{tabular}
+
+% ------------------------------------------------------------
+%  5. KATA PENGANTAR (hal. v)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\phantomsection
+\addcontentsline{toc}{section}{KATA PENGANTAR}
+\begin{singlespace}
+\begin{center}
+  {\large\bfseries KATA PENGANTAR}
+\end{center}
+
+\vspace{0.15cm}
+Puji dan syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa atas limpahan kasih, rahmat, dan karunia-Nya, sehingga proposal skripsi berjudul \textbf{``\judulskripsi''} ini dapat diselesaikan dengan baik untuk menempuh ujian seminar proposal Program Studi S1 Manajemen, Konsentrasi Manajemen Keuangan, Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana (UKRIDA).
+
+Dalam proses penyusunan naskah ini, penulis menerima bimbingan, arahan akademis, dan dorongan moral yang sangat berharga. Rasa hormat dan terima kasih mendalam penulis sampaikan kepada:
+
+\begin{enumerate}[topsep=1pt,itemsep=1pt,partopsep=0pt,parsep=0pt]
+  \item \textbf{\dosbim}, selaku Dosen Pembimbing Skripsi, atas ketelitian, kesabaran, bimbingan kritis, dan dedikasi luar biasa dalam menyempurnakan naskah proposal ini.
+  \item \textbf{\ketprodi}, selaku Ketua Program Studi S1 Manajemen FEB UKRIDA, atas arahan administratif dan bimbingan akademik yang senantiasa memudahkan studi penulis.
+  \item \textbf{Bapak dan Ibu Dosen Penguji Seminar Proposal}, atas kesediaan menguji serta masukan kritis yang konstruktif demi kesempurnaan naskah penelitian ini.
+  \item \textbf{Seluruh Dosen dan Staf Pengajar FEB UKRIDA}, atas ilmu pengetahuan analisis keuangan dan integritas etika profesional yang telah dibagikan selama masa perkuliahan.
+  \item \textbf{Kedua Orang Tua dan Keluarga Tercinta}, atas doa tiada henti, kasih sayang, dan pengorbanan tulus yang menjadi sumber kekuatan utama bagi penulis.
+  \item \textbf{Rekan-rekan Mahasiswa Manajemen FEB UKRIDA Angkatan 2023}, atas diskusi ilmiah, motivasi, dan persahabatan erat selama masa studi.
+  \item \textbf{Komunitas Kolektor dan Pemain Pok\'emon TCG di Jakarta Barat dan Indonesia}, atas wawasan dan dinamika empiris pasar kartu hobi di lapangan.
+\end{enumerate}
+
+Penulis menyadari bahwa naskah proposal ini masih memiliki keterbatasan. Segala kritik dan saran membangun sangat diharapkan demi kesempurnaan penelitian ke depan.
+
+\vspace{0.25cm}
+\noindent
+\hfill
+\begin{minipage}[t]{5.5cm}
+  Jakarta, \underline{\hspace{3.2cm}} 2026\\[0.15cm]
+  \textbf{Penulis},\\[1.2cm]
+  \textbf{\namamahasiswa}\\
+  NIM: \nim
+\end{minipage}
+\end{singlespace}
+
+% ------------------------------------------------------------
+%  6. ABSTRAK (hal. vi)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\phantomsection
+\addcontentsline{toc}{section}{ABSTRAK}
+\begin{singlespace}
+\begin{center}
+  {\large\bfseries ABSTRAK}\\[0.2cm]
+  {\bfseries\judulskripsi}\\[0.2cm]
+  {\bfseries\namamahasiswa\ (\nim)}\\[0.05cm]
+  {\footnotesize \prodi, \feb, \ukrida}\\[0.05cm]
+  {\footnotesize Dosen Pembimbing: \dosbim}
+\end{center}
+
+\vspace{0.15cm}
+Penelitian ini bertujuan untuk menganalisis dan menguji secara empiris pengaruh \emph{hedonic motivation} (motivasi hedonis), \emph{desire for completeness} (hasrat kelengkapan koleksi), dan \emph{speculative motive} (motif spekulasi finansial) terhadap \emph{impulsive buying} (pembelian impulsif) \emph{booster pack} kartu Pok\'emon \emph{Trading Card Game} (Pok\'emon TCG) fisik resmi berbahasa Indonesia pada konsumen di Jakarta Barat, serta menguji peran kontrol diri (\emph{self-control}) sebagai variabel moderasi dalam memperlemah pengaruh ketiga variabel anteseden tersebut.
+
+Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei \emph{cross-sectional}. Data primer dikumpulkan melalui kuesioner daring skala Likert 5 poin kepada responden yang dipilih melalui teknik \emph{purposive sampling}. Kriteria inklusi sampel adalah konsumen atau kolektor WNI berusia minimal 17 tahun yang berdomisili atau beraktivitas/bertransaksi aktif di wilayah Jakarta Barat serta pernah membeli \emph{booster pack} Pok\'emon TCG fisik resmi dalam 6--12 bulan terakhir. Target sampel bersih (\emph{usable sample}) adalah 120 hingga 150 responden, mengacu pada kaidah \citet{green1991subjects} dan \citet{cohen1988statistical} untuk mencapai kekuatan uji statistik (\emph{power}) 0,80. Metode analisis menggunakan regresi linear berganda dan \emph{Moderated Regression Analysis} (MRA) dengan prosedur pemusatan nilai rata-rata (\emph{mean-centering}) guna mereduksi multikolinearitas non-esensial \citep{aiken1991multiple, hayes2018introduction}, diolah via IBM SPSS Statistics.
+
+Penelitian ini menawarkan kebaruan teoretis (\emph{novelty}) dengan mengintegrasikan kerangka psikologi lingkungan \emph{Stimulus-Organism-Response} (S-O-R), psikologi kolektor (\emph{Zeigarnik Effect} dan \emph{The Completing the Set Effect}), teori regulasi diri (\emph{Self-Regulation Theory}), serta prinsip keuangan perilaku (\emph{behavioral finance}) pada fenomena komoditas hobi bernilai spekulatif tinggi di Jakarta Barat. Hasil penelitian diharapkan memberi kontribusi empiris bagi kontrol diri finansial konsumen muda dan masukan aplikatif bagi komunitas hobi serta literasi keuangan.
+
+\vspace{0.2cm}
+\noindent\textbf{Kata Kunci:} \emph{Impulsive Buying}, \emph{Hedonic Motivation}, \emph{Desire for Completeness}, \emph{Speculative Motive}, \emph{Self-Control}, \emph{Moderated Regression Analysis}, Pok\'emon TCG, Jakarta Barat, Keuangan Perilaku (\emph{Behavioral Finance}).
+\end{singlespace}
+
+% ------------------------------------------------------------
+%  7. ABSTRACT (hal. vii)
+%  (Format Sesuai Lampiran 9 Buku Pedoman FEB UKRIDA)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\phantomsection
+\addcontentsline{toc}{section}{ABSTRACT}
+\begin{singlespace}
+\begin{center}
+  {\large\bfseries ABSTRACT}\\[0.15cm]
+  {\bfseries THE EFFECT OF HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, AND SPECULATIVE MOTIVE ON IMPULSIVE BUYING OF POK\'EMON TCG BOOSTER PACKS WITH SELF-CONTROL AS A MODERATING VARIABLE (A STUDY ON CONSUMERS IN WEST JAKARTA)}\\[0.15cm]
+  {\bfseries\namamahasiswa\ (\nim)}\\[0.05cm]
+  {\footnotesize Undergraduate Program in Management, Faculty of Economics and Business, UKRIDA}\\[0.05cm]
+  {\footnotesize Thesis Advisor: \dosbim}
+\end{center}
+
+\vspace{0.1cm}
+\emph{This research aims to empirically examine the effects of hedonic motivation, desire for completeness, and speculative motive on the impulsive buying of official Indonesian physical Pok\'emon Trading Card Game (Pok\'emon TCG) booster packs among consumers in West Jakarta, and evaluates the moderating role of self-control in mitigating these antecedent effects.}
+
+\emph{Employing an associative quantitative design, primary data are collected via 5-point Likert online questionnaires through purposive sampling. Inclusion criteria require Indonesian citizens aged 17 and above residing or transacting in West Jakarta who purchased official booster packs within the past 6--12 months. The targeted usable sample is 120--150 respondents, following \citet{green1991subjects} and \citet{cohen1988statistical} for 0.80 statistical power. The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to alleviate non-essential multicollinearity \citep{aiken1991multiple, hayes2018introduction}, processed using IBM SPSS Statistics.}
+
+\emph{This study provides theoretical novelty by integrating Stimulus-Organism-Response (S-O-R), collector psychology (the Zeigarnik Effect and The Completing the Set Effect), Self-Regulation Theory, and behavioral finance on speculative hobby collectibles in West Jakarta. Findings offer empirical guidance for young consumers' financial discipline and actionable inputs for community leaders and financial literacy educators.}
+
+\vspace{0.15cm}
+\noindent\textbf{\emph{Keywords:}} \emph{Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pok\'emon TCG, West Jakarta, Behavioral Finance.}
+
+\vspace{0.25cm}
+\noindent
+\begin{tabular}{@{}p{6.6cm} p{6.6cm}@{}}
+  Mahasiswa & Dosen Pembimbing \\[0.9cm]
+  \textbf{(\namamahasiswa)} & \textbf{(\dosbim)} \\
+  NIM: \nim & NIDN: \nidn
+\end{tabular}
+\end{singlespace}
+
+% ------------------------------------------------------------
+%  8. DAFTAR ISI (hal. viii)
 % ------------------------------------------------------------
 \newpage
 \thispagestyle{frontmatter}
@@ -242,7 +471,7 @@
 \addtocontents{toc}{\protect\thispagestyle{frontmatter}}
 
 % ------------------------------------------------------------
-%  3. DAFTAR TABEL
+%  9. DAFTAR TABEL
 % ------------------------------------------------------------
 \newpage
 \thispagestyle{frontmatter}
@@ -252,7 +481,7 @@
 \addtocontents{lot}{\protect\thispagestyle{frontmatter}}
 
 % ------------------------------------------------------------
-%  4. DAFTAR GAMBAR
+%  10. DAFTAR GAMBAR
 % ------------------------------------------------------------
 \newpage
 \thispagestyle{frontmatter}
