@@ -2427,5 +2427,51 @@
 - **Dokumentasi:** D33 TIDAK diterbitkan (tidak ada keputusan konseptual/metodologis atau arahan dosen baru hari ini — murni repair teknis); PRD Universal tidak diubah (tanpa perubahan arsitektur); [[00_DASHBOARD_SECOND_BRAIN.md]] agenda Sesi 42–46 dimutakhirkan; graphify incremental → 2498 nodes / 2799 edges / 224 communities.
 - **File yang Diperbarui:** naskah `.tex/.pdf/.docx/.md`, 3 skrip `execution/`, web kickoff + MD prompt, dashboard, graphify-out, [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]] + 4 file baru `03_Instrumen_&_Data_Survei/`.
 
+---
+
+## 📅 Sesi 48 — 05 Oktober 2026: Integrasi 6 Lembar Frontmatter Formal ke TOC & Konversi Bab Romawi (`BAB I` s.d. `BAB III`) Lintas Format
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Menindaklanjuti permintaan integrasi 6 lembar frontmatter formal ke Daftar Isi proposal dan transformasi penomoran bab Arab (`BAB 1–3`) ke angka Romawi (`BAB I–III`).
+> - **Masalah yang Diselesaikan:** 6 lembar frontmatter resmi (Pernyataan Keaslian ii, Persetujuan iii, Pengesahan iv, Kata Pengantar v, Abstrak vi, Abstract vii) belum terdaftar di TOC; penomoran bab masih format Arab (`BAB 1`, `BAB 2`, `BAB 3`) yang perlu disesuaikan dengan konvensi skripsi FEB UKRIDA (`BAB I`, `BAB II`, `BAB III`).
+> - **Keputusan/Output:** TeX, DOCX, dan MD tersinkronisasi 100%; PDF terkompilasi 57 halaman settled; seluruh 11 gerbang mutu (`run_thesis_graph.py --gate extended`) 11/11 PASS mutlak (G8 Paritas Italic 100.00% / 257 ekspresi).
+
+- **Pekerjaan yang Dilakukan:**
+  1. **LaTeX Master (`Proposal_Arthur_PokemonTCG.tex`):**
+     - Menyematkan `\phantomsection` dan `\addcontentsline{toc}{section}{...}` untuk seluruh 6 lembar frontmatter formal (hal. ii–vii) dengan penomoran romawi kecil.
+     - Memperbarui tocloft spacing (`cfttabnumwidth 1.8cm`, `cftfignumwidth 2.0cm`, `cftbeforesecskip 4pt`, `cftsecleader dotfill`, `cftaftertoctitleskip 12pt`).
+     - Mengubah judul bab utama dan `\addcontentsline` menjadi Romawi: `BAB I PENDAHULUAN`, `BAB II KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS`, `BAB III METODE PENELITIAN`.
+     - Mengubah seluruh rujukan silang bab di teks narasi (`Bab II dan Bab III`, `Bab IV dan Bab V`, dll.).
+     - Kompilasi siklus penuh (`xelatex` → `bibtex` → 2× `xelatex`): **57 halaman settled, 0 rerun warning**.
+  2. **Sinkronisasi Markdown (`execution/sync_markdown_from_tex.py`):**
+     - Memperbarui pola regex penangkap bab untuk mendukung angka Arab dan Romawi (`BAB\s+(?:1|I)`, `BAB\s+(?:2|II)`, `BAB\s+(?:3|III)`).
+     - Meregenerasi `01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md` (767 baris) dengan heading Romawi.
+  3. **Word Generator (`execution/build_proposal_word.py`):**
+     - Memperbarui `toc_items_full` dengan entri 6 lembar frontmatter resmi (hal. ii–vii), LOT (x), LOF (xi), serta Bab I (hal. 1), Bab II (hal. 13), Bab III (hal. 24), dan DP (hal. 42) yang presisi sesuai PDF 57 hlm settled.
+     - Memperbarui regex pemecah markdown `re.split` dan pengecekan `skip_chapter3` agar mendukung angka Romawi.
+     - Mengubah CLI argument default ke `--without-frontmatter` sehingga pembangunan Word secara baku menyertakan 6 lembar frontmatter resmi.
+     - Memperbarui teks Abstrak dan Abstract agar memuat run miring untuk semua istilah asing (termasuk `usable sample` dan `Keywords:`).
+  4. **Skrip Verifikasi Kualitas:**
+     - `verify_word_outline.py`: mendukung tuple alias `("BAB 1", "BAB I")`, `("BAB 2", "BAB II")`, `("BAB 3", "BAB III")`.
+     - `verify_docx_typography.py`: normalisasi whitespace pada deteksi heading Bab 1/I.
+     - `verify_pdf_docx_parity.py`: mendukung deteksi `BAB 3` maupun `BAB III`.
+     - `verify_italic_typography.py`: mendukung deteksi awal `BAB 1/I`.
+- **Hasil Verifikasi:**
+  - `run_thesis_graph.py --gate extended`: **11 PASS / 0 FAIL / 0 SKIP** (G1 Mendeley, G2 Live URL, G3 UKRIDA 2023, G4 Tipografi DOCX, G5 Paritas PDF-Word, G6 Outline Word, G7 Sumber LibGen, G8 Paritas Italic 100.00%, X1 Forensik Format, X3 Header PDF, X4 Layout Word).
+- **File yang Diperbarui:**
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex]]
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.pdf]]
+  - [[01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx]]
+  - [[01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md]]
+  - [[execution/build_proposal_word.py]]
+  - [[execution/sync_markdown_from_tex.py]]
+  - [[execution/verify_word_outline.py]]
+  - [[execution/verify_docx_typography.py]]
+  - [[execution/verify_pdf_docx_parity.py]]
+  - [[execution/verify_italic_typography.py]]
+  - [[00_DASHBOARD_SECOND_BRAIN.md]]
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+
+
 
 

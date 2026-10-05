@@ -71,9 +71,9 @@ def audit_full():
     assert len(kp_docx) > 0 or len(kp_mod) > 0, "Kata Pengantar point 1 must be Dr. Fredella Colline"
     
     # 3. Bab 3 check (Must be present)
-    bab3_docx = any("BAB 3" in t for t in docx_text)
-    print(f"  * BAB 3 in DOCX: {bab3_docx}")
-    assert bab3_docx, "DOCX Full Proposal MUST contain BAB 3!"
+    bab3_docx = any("BAB 3" in t or "BAB III" in t for t in docx_text)
+    print(f"  * BAB 3 / BAB III in DOCX: {bab3_docx}")
+    assert bab3_docx, "DOCX Full Proposal MUST contain BAB 3 / BAB III!"
     
     # 4. Batasan Masalah in Bab 3
     has_311 = any("3.1.1" in t and "Batasan Penelitian" in t for t in docx_text)

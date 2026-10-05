@@ -47,8 +47,8 @@ def check_latex_italics(tex_path):
     print(f"\n[*] Mengaudit Tipografi Italic pada LaTeX: {tex_path.name}...")
     text = tex_path.read_text(encoding="utf-8")
     
-    # Cari awal Bab 1 dan akhir Bab 3
-    m_start = re.search(r'\\section\*?\{BAB\s+1', text, re.IGNORECASE)
+    # Cari awal Bab 1/I dan akhir Bab 3/III
+    m_start = re.search(r'\\section\*?\{BAB\s+(?:1|I)', text, re.IGNORECASE)
     start_pos = m_start.start() if m_start else 0
     m_end = re.search(r'\\bibliography\{', text[start_pos:], re.IGNORECASE)
     end_pos = start_pos + m_end.start() if m_end else len(text)

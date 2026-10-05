@@ -76,14 +76,14 @@ def main():
     md_lines.append("## DAFTAR ISI NASKAH PROPOSAL")
     md_lines.append("")
     md_lines.append("- [HALAMAN SAMPUL / JUDUL PROPOSAL](#halaman-sampul--judul-proposal)")
-    md_lines.append("- [BAB 1 PENDAHULUAN](#bab-1-pendahuluan)")
+    md_lines.append("- [BAB I PENDAHULUAN](#bab-i-pendahuluan)")
     md_lines.append("  - [1.1 Latar Belakang Penelitian](#11-latar-belakang-penelitian)")
     md_lines.append("  - [1.2 Perumusan Masalah](#12-perumusan-masalah)")
     md_lines.append("  - [1.3 Tujuan Penelitian](#13-tujuan-penelitian)")
     md_lines.append("  - [1.4 Manfaat Penelitian](#14-manfaat-penelitian)")
     md_lines.append("    - [1.4.1 Manfaat Teoritis](#141-manfaat-teoritis)")
     md_lines.append("    - [1.4.2 Manfaat Praktis](#142-manfaat-praktis)")
-    md_lines.append("- [BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS](#bab-2-kajian-pustaka-dan-pengembangan-hipotesis)")
+    md_lines.append("- [BAB II KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS](#bab-ii-kajian-pustaka-dan-pengembangan-hipotesis)")
     md_lines.append("  - [2.1 Landasan Teori](#21-landasan-teori)")
     md_lines.append("    - [2.1.1 Grand Theory: Keuangan Perilaku (Behavioral Finance)](#211-grand-theory-keuangan-perilaku-behavioral-finance)")
     md_lines.append("    - [2.1.2 Teori Pendukung (Supporting Theories)](#212-teori-pendukung-supporting-theories)")
@@ -101,7 +101,7 @@ def main():
     md_lines.append("    - [2.3.5 Peran Moderasi Self-Control pada Pengaruh Desire for Completeness terhadap Impulsive Buying](#235-peran-moderasi-self-control-pada-pengaruh-desire-for-completeness-terhadap-impulsive-buying)")
     md_lines.append("    - [2.3.6 Peran Moderasi Self-Control pada Pengaruh Speculative Motive terhadap Impulsive Buying](#236-peran-moderasi-self-control-pada-pengaruh-speculative-motive-terhadap-impulsive-buying)")
     md_lines.append("  - [2.4 Rerangka Penelitian](#24-rerangka-penelitian)")
-    md_lines.append("- [BAB 3 METODE PENELITIAN](#bab-3-metode-penelitian)")
+    md_lines.append("- [BAB III METODE PENELITIAN](#bab-iii-metode-penelitian)")
     md_lines.append("  - [3.1 Jenis dan Sumber Data](#31-jenis-dan-sumber-data)")
     md_lines.append("  - [3.2 Populasi dan Sampel](#32-populasi-dan-sampel)")
     md_lines.append("    - [3.2.1 Populasi](#321-populasi)")
@@ -148,33 +148,33 @@ def main():
     # SUDAH dihapus dari TeX master — tidak lagi disinkron ke MD.
 
     # Extract Chapters from TeX
-    # BAB 1
-    bab1_match = re.search(r'\\section\*\{BAB 1.*?PENDAHULUAN\}(.*?)(?=\\section\*\{BAB 2|\Z)', tex, re.DOTALL)
+    # BAB I
+    bab1_match = re.search(r'\\section\*\{BAB\s+(?:1|I).*?PENDAHULUAN\}(.*?)(?=\\section\*\{BAB\s+(?:2|II)|\Z)', tex, re.DOTALL)
     if bab1_match:
         bab1_text = bab1_match.group(1)
-        md_lines.append("# BAB 1 PENDAHULUAN")
+        md_lines.append("# BAB I PENDAHULUAN")
         md_lines.append("")
         md_lines.append(convert_tex_section(bab1_text, 1, cite_dict))
         md_lines.append("")
         md_lines.append("---")
         md_lines.append("")
 
-    # BAB 2
-    bab2_match = re.search(r'\\section\*\{BAB 2.*?\}(.*?)(?=\\section\*\{BAB 3|\Z)', tex, re.DOTALL)
+    # BAB II
+    bab2_match = re.search(r'\\section\*\{BAB\s+(?:2|II).*?\}(.*?)(?=\\section\*\{BAB\s+(?:3|III)|\Z)', tex, re.DOTALL)
     if bab2_match:
         bab2_text = bab2_match.group(1)
-        md_lines.append("# BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS")
+        md_lines.append("# BAB II KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS")
         md_lines.append("")
         md_lines.append(convert_tex_section(bab2_text, 2, cite_dict))
         md_lines.append("")
         md_lines.append("---")
         md_lines.append("")
 
-    # BAB 3
-    bab3_match = re.search(r'\\section\*\{BAB 3.*?METODE PENELITIAN\}(.*?)(?=\\renewcommand\{\\refname\}|\\bibliography|\Z)', tex, re.DOTALL)
+    # BAB III
+    bab3_match = re.search(r'\\section\*\{BAB\s+(?:3|III).*?METODE PENELITIAN\}(.*?)(?=\\renewcommand\{\\refname\}|\\bibliography|\Z)', tex, re.DOTALL)
     if bab3_match:
         bab3_text = bab3_match.group(1)
-        md_lines.append("# BAB 3 METODE PENELITIAN")
+        md_lines.append("# BAB III METODE PENELITIAN")
         md_lines.append("")
         md_lines.append(convert_tex_section(bab3_text, 3, cite_dict))
         md_lines.append("")

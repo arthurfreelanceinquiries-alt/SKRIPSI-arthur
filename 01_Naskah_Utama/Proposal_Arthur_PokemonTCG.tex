@@ -125,10 +125,13 @@
 % Awalan Tabel dan Gambar di daftar
 \renewcommand{\cfttabpresnum}{Tabel }
 \renewcommand{\cfttabaftersnum}{.}
-\setlength{\cfttabnumwidth}{2.3cm}
+\setlength{\cfttabnumwidth}{1.8cm}
 \renewcommand{\cftfigpresnum}{Gambar }
 \renewcommand{\cftfigaftersnum}{.}
-\setlength{\cftfignumwidth}{2.5cm}
+\setlength{\cftfignumwidth}{2.0cm}
+\setlength{\cftbeforesecskip}{4pt}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\setlength{\cftaftertoctitleskip}{12pt}
 
 % ---- BIBLIOGRAPHY (APA Style via natbib + apalike) ----
 \usepackage{natbib}
@@ -214,25 +217,251 @@
 
 \addtocounter{page}{1}
 
-% (Modular 23 Sep 2026: Pernyataan Keaslian hidup mandiri di
-%  01_Lembar_Persetujuan_Proposal/01_Pernyataan_Keaslian.docx)
+% ------------------------------------------------------------
+%  2. HALAMAN PERNYATAAN KEASLIAN (hal. ii)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\phantomsection
+\addcontentsline{toc}{section}{PERNYATAAN KEASLIAN KARYA TUGAS AKHIR}
+\begin{center}
+  {\large\bfseries PERNYATAAN KEASLIAN KARYA TUGAS AKHIR}
+\end{center}
 
-% (Modular 23 Sep 2026: Persetujuan hidup mandiri di
-%  01_Lembar_Persetujuan_Proposal/02_Halaman_Persetujuan.docx)
+\vspace{0.3cm}
+\noindent Saya mahasiswa \ukrida:
 
-% (Modular 23 Sep 2026: Pengesahan hidup mandiri di
-%  01_Lembar_Persetujuan_Proposal/03_Halaman_Pengesahan_Penguji.docx)
+\vspace{0.15cm}
+\noindent
+\begin{tabular}{@{}lll@{}}
+  Nama Mahasiswa & : & \namamahasiswa \\
+  NIM            & : & \nim \\
+  Program Studi  & : & \prodi \\
+  Konsentrasi    & : & \konsentrasi \\
+\end{tabular}
 
-% (Modular 23 Sep 2026: Kata Pengantar hidup mandiri di
-%  01_Lembar_Persetujuan_Proposal/04_Kata_Pengantar.docx)
+\vspace{0.3cm}
+\noindent
+Dengan ini menyatakan dengan sesungguhnya bahwa Proposal Skripsi yang berjudul:
 
-% (Modular 23 Sep 2026: ABSTRAK hidup mandiri di
-%  01_Lembar_Persetujuan_Proposal/05_Abstrak_Indonesia.docx —
-%  isi: tujuan, metode cross-sectional Likert 5 poin N=120-150, novelty S-O-R +
-%  kolektor + regulasi diri + behavioral finance, kata kunci 8 frasa)
+\vspace{0.15cm}
+\begin{center}
+  \bfseries``\judulskripsi''
+\end{center}
 
-% (Modular 23 Sep 2026: ABSTRACT hidup mandiri di
-%  01_Lembar_Persetujuan_Proposal/06_Abstract_English.docx)
+\vspace{0.15cm}
+\noindent adalah:
+
+\begin{enumerate}[topsep=2pt,itemsep=2pt,partopsep=0pt,parsep=0pt]
+  \item Benar-benar hasil karya saya sendiri, bukan merupakan jiplakan, plagiarisme, fabrikasi, atau tiruan dari karya tulis ilmiah orang lain yang pernah diajukan untuk memperoleh gelar akademik di perguruan tinggi manapun.
+  \item Seluruh kutipan, data, dan rujukan ilmiah yang digunakan dalam naskah ini telah dicantumkan sumbernya secara jelas dan lengkap sesuai dengan kaidah penulisan ilmiah yang berlaku di \ukrida.
+  \item Apabila di kemudian hari terbukti bahwa pernyataan ini tidak benar atau ditemukan indikasi plagiarisme, saya bersedia menerima sanksi akademik yang berlaku sesuai dengan peraturan perundang-undangan dan ketentuan di lingkungan Universitas Kristen Krida Wacana.
+\end{enumerate}
+
+\vspace{0.5cm}
+\noindent
+\hfill
+\begin{minipage}[t]{6.5cm}
+  \centering
+  Jakarta, \underline{\hspace{3.5cm}} 2026\\[0.25cm]
+  Yang menyatakan,\\[0.35cm]
+  \framebox(70,45){\begin{minipage}{2.2cm}\centering\scriptsize\itshape Meterai\\Rp10.000\end{minipage}}\\[0.45cm]
+  \textbf{(\namamahasiswa)}\\
+  NIM: \nim
+\end{minipage}
+
+% ------------------------------------------------------------
+%  3. HALAMAN PERSETUJUAN PROPOSAL SKRIPSI (hal. iii)
+%  (Format Sesuai Lampiran 2 Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\phantomsection
+\addcontentsline{toc}{section}{PERSETUJUAN PROPOSAL SKRIPSI}
+\begin{center}
+  {\large\bfseries PERSETUJUAN PROPOSAL SKRIPSI}
+\end{center}
+
+\vspace{0.6cm}
+\noindent
+\begin{tabular}{lll}
+  Nama          & : & \namamahasiswa \\
+  N.I.M.        & : & \nim \\
+  Program Studi & : & \prodi \\
+  Konsentrasi   & : & \konsentrasi \\
+\end{tabular}
+
+\vspace{0.5cm}
+\noindent \textbf{Judul yang Diajukan:}
+
+\vspace{0.2cm}
+\begin{flushleft}
+  \bfseries\judulskripsi
+\end{flushleft}
+
+\vspace{0.4cm}
+\noindent Telah disetujui untuk diajukan dalam Seminar Proposal Skripsi Program Studi S1 Manajemen Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana.
+
+\vspace{0.6cm}
+\noindent Jakarta, \underline{\hspace{3cm}} 2026
+
+\vspace{0.5cm}
+\noindent Menyetujui,
+
+\vspace{0.3cm}
+\noindent
+\begin{tabular}{p{6.5cm} p{6.5cm}}
+  Dosen Pembimbing & Dosen Pendamping \\[2.0cm]
+  \textbf{(\dosbim)} & (\underline{\hspace{4cm}}) \\
+  NIDN: \nidn & \\
+\end{tabular}
+
+\vspace{0.6cm}
+\noindent Mengetahui,
+
+\vspace{0.3cm}
+\noindent
+\begin{tabular}{l}
+  \textbf{(\ketprodi)} \\
+  Ketua Program Studi S1 Manajemen
+\end{tabular}
+
+% ------------------------------------------------------------
+%  4. HALAMAN PENGESAHAN TIM PENGUJI (hal. iv)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\phantomsection
+\addcontentsline{toc}{section}{PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL}
+\begin{center}
+  {\large\bfseries PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL SKRIPSI}\\[0.5cm]
+  {\normalsize Proposal Skripsi dengan Judul:}\\[0.3cm]
+  {\bfseries\judulskripsi}\\[0.5cm]
+  {\normalsize Diajukan Oleh:}\\[0.2cm]
+  {\large\bfseries \namamahasiswa}\\[0.1cm]
+  {\large\bfseries (\nim)}
+\end{center}
+
+\vspace{0.4cm}
+\noindent
+Telah dipertahankan di hadapan Tim Penguji Seminar Proposal Skripsi Program Studi S1 Manajemen Fakultas Ekonomi dan Bisnis Universitas Kristen Krida Wacana pada:
+
+\vspace{0.4cm}
+\noindent \textbf{Hari / Tanggal Seminar:} \underline{\hspace{4cm}}, \underline{\hspace{3cm}} 2026
+
+\vspace{0.4cm}
+\noindent \textbf{Tim Penguji Seminar Proposal:}
+
+\vspace{0.4cm}
+\noindent
+\begin{tabular}{@{}p{0.5cm} >{\raggedright\arraybackslash}p{3.2cm} p{0.2cm} >{\raggedright\arraybackslash}p{5.0cm} p{2.8cm}@{}}
+  1. & Ketua Penguji    & : & \underline{\hspace{4.4cm}} & ( \underline{\hspace{2.3cm}} ) \\[1.3cm]
+  2. & Anggota Penguji  & : & \underline{\hspace{4.4cm}} & ( \underline{\hspace{2.3cm}} ) \\[1.3cm]
+  3. & Dosen Pembimbing & : & \dosbim                    & ( \underline{\hspace{2.3cm}} ) \\
+\end{tabular}
+
+% ------------------------------------------------------------
+%  5. KATA PENGANTAR (hal. v)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\phantomsection
+\addcontentsline{toc}{section}{KATA PENGANTAR}
+\begin{singlespace}
+\begin{center}
+  {\large\bfseries KATA PENGANTAR}
+\end{center}
+
+\vspace{0.15cm}
+Puji dan syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa atas limpahan kasih, rahmat, dan karunia-Nya, sehingga proposal skripsi berjudul \textbf{``\judulskripsi''} ini dapat diselesaikan dengan baik untuk menempuh ujian seminar proposal Program Studi S1 Manajemen, Konsentrasi Manajemen Keuangan, Fakultas Ekonomi dan Bisnis, Universitas Kristen Krida Wacana (UKRIDA).
+
+Dalam proses penyusunan naskah ini, penulis menerima bimbingan, arahan akademis, dan dorongan moral yang sangat berharga. Rasa hormat dan terima kasih mendalam penulis sampaikan kepada:
+
+\begin{enumerate}[topsep=1pt,itemsep=1pt,partopsep=0pt,parsep=0pt]
+  \item \textbf{\dosbim}, selaku Dosen Pembimbing Skripsi, atas ketelitian, kesabaran, bimbingan kritis, dan dedikasi luar biasa dalam menyempurnakan naskah proposal ini.
+  \item \textbf{\ketprodi}, selaku Ketua Program Studi S1 Manajemen FEB UKRIDA, atas arahan administratif dan bimbingan akademik yang senantiasa memudahkan studi penulis.
+  \item \textbf{Bapak dan Ibu Dosen Penguji Seminar Proposal}, atas kesediaan menguji serta masukan kritis yang konstruktif demi kesempurnaan naskah penelitian ini.
+  \item \textbf{Seluruh Dosen dan Staf Pengajar FEB UKRIDA}, atas ilmu pengetahuan analisis keuangan dan integritas etika profesional yang telah dibagikan selama masa perkuliahan.
+  \item \textbf{Kedua Orang Tua dan Keluarga Tercinta}, atas doa tiada henti, kasih sayang, dan pengorbanan tulus yang menjadi sumber kekuatan utama bagi penulis.
+  \item \textbf{Rekan-rekan Mahasiswa Manajemen FEB UKRIDA Angkatan 2023}, atas diskusi ilmiah, motivasi, dan persahabatan erat selama masa studi.
+  \item \textbf{Komunitas Kolektor dan Pemain Pok\'emon TCG di Jakarta Barat dan Indonesia}, atas wawasan dan dinamika empiris pasar kartu hobi di lapangan.
+\end{enumerate}
+
+Penulis menyadari bahwa naskah proposal ini masih memiliki keterbatasan. Segala kritik dan saran membangun sangat diharapkan demi kesempurnaan penelitian ke depan.
+
+\vspace{0.25cm}
+\noindent
+\hfill
+\begin{minipage}[t]{5.5cm}
+  Jakarta, \underline{\hspace{3.2cm}} 2026\\[0.15cm]
+  \textbf{Penulis},\\[1.2cm]
+  \textbf{\namamahasiswa}\\
+  NIM: \nim
+\end{minipage}
+\end{singlespace}
+
+% ------------------------------------------------------------
+%  6. ABSTRAK (hal. vi)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\phantomsection
+\addcontentsline{toc}{section}{ABSTRAK}
+\begin{singlespace}
+\begin{center}
+  {\large\bfseries ABSTRAK}\\[0.2cm]
+  {\bfseries\judulskripsi}\\[0.2cm]
+  {\bfseries\namamahasiswa\ (\nim)}\\[0.05cm]
+  {\footnotesize \prodi, \feb, \ukrida}\\[0.05cm]
+  {\footnotesize Dosen Pembimbing: \dosbim}
+\end{center}
+
+\vspace{0.15cm}
+Penelitian ini bertujuan untuk menganalisis dan menguji secara empiris pengaruh \emph{hedonic motivation} (motivasi hedonis), \emph{desire for completeness} (hasrat kelengkapan koleksi), dan \emph{speculative motive} (motif spekulasi finansial) terhadap \emph{impulsive buying} (pembelian impulsif) \emph{booster pack} kartu Pok\'emon \emph{Trading Card Game} (Pok\'emon TCG) fisik resmi berbahasa Indonesia pada konsumen di Jakarta Barat, serta menguji peran kontrol diri (\emph{self-control}) sebagai variabel moderasi dalam memperlemah pengaruh ketiga variabel anteseden tersebut.
+
+Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei \emph{cross-sectional}. Data primer dikumpulkan melalui kuesioner daring skala Likert 5 poin kepada responden yang dipilih melalui teknik \emph{purposive sampling}. Kriteria inklusi sampel adalah konsumen atau kolektor WNI berusia minimal 17 tahun yang berdomisili atau beraktivitas/bertransaksi aktif di wilayah Jakarta Barat serta pernah membeli \emph{booster pack} Pok\'emon TCG fisik resmi dalam 6--12 bulan terakhir. Target sampel bersih (\emph{usable sample}) adalah 120 hingga 150 responden, mengacu pada kaidah \citet{green1991subjects} dan \citet{cohen1988statistical} untuk mencapai kekuatan uji statistik (\emph{power}) 0,80. Metode analisis menggunakan regresi linear berganda dan \emph{Moderated Regression Analysis} (MRA) dengan prosedur pemusatan nilai rata-rata (\emph{mean-centering}) guna mereduksi multikolinearitas non-esensial \citep{aiken1991multiple, hayes2018introduction}, diolah via IBM SPSS Statistics.
+
+Penelitian ini menawarkan kebaruan teoretis (\emph{novelty}) dengan mengintegrasikan kerangka psikologi lingkungan \emph{Stimulus-Organism-Response} (S-O-R), psikologi kolektor (\emph{Zeigarnik Effect} dan \emph{The Completing the Set Effect}), teori regulasi diri (\emph{Self-Regulation Theory}), serta prinsip keuangan perilaku (\emph{behavioral finance}) pada fenomena komoditas hobi bernilai spekulatif tinggi di Jakarta Barat. Hasil penelitian diharapkan memberi kontribusi empiris bagi kontrol diri finansial konsumen muda dan masukan aplikatif bagi komunitas hobi serta literasi keuangan.
+
+\vspace{0.2cm}
+\noindent\textbf{Kata Kunci:} \emph{Impulsive Buying}, \emph{Hedonic Motivation}, \emph{Desire for Completeness}, \emph{Speculative Motive}, \emph{Self-Control}, \emph{Moderated Regression Analysis}, Pok\'emon TCG, Jakarta Barat, Keuangan Perilaku (\emph{Behavioral Finance}).
+\end{singlespace}
+
+% ------------------------------------------------------------
+%  7. ABSTRACT (hal. vii)
+%  (Format Sesuai Lampiran 9 Buku Pedoman FEB UKRIDA)
+% ------------------------------------------------------------
+\newpage
+\thispagestyle{frontmatter}
+\phantomsection
+\addcontentsline{toc}{section}{ABSTRACT}
+\begin{singlespace}
+\begin{center}
+  {\large\bfseries ABSTRACT}\\[0.15cm]
+  {\bfseries THE EFFECT OF HEDONIC MOTIVATION, DESIRE FOR COMPLETENESS, AND SPECULATIVE MOTIVE ON IMPULSIVE BUYING OF POK\'EMON TCG BOOSTER PACKS WITH SELF-CONTROL AS A MODERATING VARIABLE (A STUDY ON CONSUMERS IN WEST JAKARTA)}\\[0.15cm]
+  {\bfseries\namamahasiswa\ (\nim)}\\[0.05cm]
+  {\footnotesize Undergraduate Program in Management, Faculty of Economics and Business, UKRIDA}\\[0.05cm]
+  {\footnotesize Thesis Advisor: \dosbim}
+\end{center}
+
+\vspace{0.1cm}
+\emph{This research aims to empirically examine the effects of hedonic motivation, desire for completeness, and speculative motive on the impulsive buying of official Indonesian physical Pok\'emon Trading Card Game (Pok\'emon TCG) booster packs among consumers in West Jakarta, and evaluates the moderating role of self-control in mitigating these antecedent effects.}
+
+\emph{Employing an associative quantitative design, primary data are collected via 5-point Likert online questionnaires through purposive sampling. Inclusion criteria require Indonesian citizens aged 17 and above residing or transacting in West Jakarta who purchased official booster packs within the past 6--12 months. The targeted usable sample is 120--150 respondents, following \citet{green1991subjects} and \citet{cohen1988statistical} for 0.80 statistical power. The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to alleviate non-essential multicollinearity \citep{aiken1991multiple, hayes2018introduction}, processed using IBM SPSS Statistics.}
+
+\emph{This study provides theoretical novelty by integrating Stimulus-Organism-Response (S-O-R), collector psychology (the Zeigarnik Effect and The Completing the Set Effect), Self-Regulation Theory, and behavioral finance on speculative hobby collectibles in West Jakarta. Findings offer empirical guidance for young consumers' financial discipline and actionable inputs for community leaders and financial literacy educators.}
+
+\vspace{0.15cm}
+\noindent\textbf{\emph{Keywords:}} \emph{Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pok\'emon TCG, West Jakarta, Behavioral Finance.}
+
+\vspace{0.25cm}
+\noindent
+\begin{tabular}{@{}p{6.6cm} p{6.6cm}@{}}
+  Mahasiswa & Dosen Pembimbing \\[0.9cm]
+  \textbf{(\namamahasiswa)} & \textbf{(\dosbim)} \\
+  NIM: \nim & NIDN: \nidn
+\end{tabular}
+\end{singlespace}
 
 % ------------------------------------------------------------
 %  2. DAFTAR ISI
@@ -273,12 +502,12 @@
 \pagestyle{fancy}
 
 % ============================================================
-%  BAB 1: PENDAHULUAN
+%  BAB I: PENDAHULUAN
 % ============================================================
 \setcounter{section}{0}
-\section*{BAB 1\\[0.3cm]PENDAHULUAN}
+\section*{BAB I\\[0.3cm]PENDAHULUAN}
 \phantomsection
-\addcontentsline{toc}{section}{\texorpdfstring{BAB 1\quad PENDAHULUAN}{BAB 1 PENDAHULUAN}}
+\addcontentsline{toc}{section}{\texorpdfstring{BAB I\quad PENDAHULUAN}{BAB I PENDAHULUAN}}
 \setcounter{section}{1}
 \setcounter{subsection}{0}
 \setcounter{table}{0}
@@ -347,7 +576,7 @@ Melihat fenomena tersebut, penelitian ini membedah faktor penentu pembelian impu
 
 Literatur menunjukkan pembelian impulsif dipengaruhi faktor pendorong yang beragam \citep{stern1962significance, rook1987buying, iyer2020impulse, amos2014meta}: (1) afektif, seperti motivasi belanja hedonis \citealp{babin1994work, arnold2003hedonic, gueltekin2012influence}; (2) kognitif kolektor, seperti efek ketidaktuntasan himpunan \citep{zeigarnik1927behalten, gao2014completing, barasz2017pseudo, belk1995collecting}; (3) finansial, seperti ekspektasi \emph{capital gain} dan bias optimisme pasar \citep{shiller2000irrational, baur2018bitcoin, colline2024biases}; serta (4) situasional, seperti display kasir dan kelangkaan stok \citep{qu2023impulse, amos2014meta}.
 
-Dari pemetaan tersebut, penelitian ini memfokuskan tiga variabel yang paling mewakili karakteristik kartu Pok\'emon TCG: $X_1$ (afektif: sensasi hiburan merobek kemasan), $X_2$ (kolektor: perasaan tidak nyaman saat melihat slot kosong di album koleksi (\emph{binder})), dan $X_3$ (pasar: harapan keuntungan dari penjualan di pasar sekunder dan \emph{grading}). Perumusan instrumen dan pengujiannya diuraikan pada Bab 2 dan Bab 3.
+Dari pemetaan tersebut, penelitian ini memfokuskan tiga variabel yang paling mewakili karakteristik kartu Pok\'emon TCG: $X_1$ (afektif: sensasi hiburan merobek kemasan), $X_2$ (kolektor: perasaan tidak nyaman saat melihat slot kosong di album koleksi (\emph{binder})), dan $X_3$ (pasar: harapan keuntungan dari penjualan di pasar sekunder dan \emph{grading}). Perumusan instrumen dan pengujiannya diuraikan pada Bab II dan Bab III.
 
 Untuk memahami bagaimana ketiga dorongan tersebut bekerja secara konkret dalam pengalaman sehari-hari konsumen kartu Pok\'emon TCG, bayangkan skenario berikut. Seorang mahasiswa memasuki gerai minimarket tanpa rencana membeli kartu. Namun, saat berdiri di depan kasir, pandangannya tertuju pada display kemasan \emph{booster pack} berwarna mencolok seharga Rp20.000. Baginya, membeli satu bungkus bukan sekadar membeli lima lembar kertas bergambar, melainkan membeli sensasi kejutan (\emph{unboxing thrill}): luapan dopamin saat merobek kemasan foil acak dan berharap menemukan kartu langka di dalamnya. Dorongan mencari kesenangan emosional inilah yang dalam penelitian ini disebut \textbf{\emph{Hedonic Motivation}} ($X_1$).
 
@@ -355,7 +584,7 @@ Sensasi tersebut tidak berhenti pada satu bungkus. Setiap kartu memiliki nomor u
 
 Di sisi lain, konsumen juga mengetahui bahwa kartu bergambar langka (\emph{Secret Rare}) yang berkondisi sempurna dan disertifikasi \emph{PSA 10 Gem Mint} harganya melonjak drastis di pasar sekunder---dari modal Rp20.000 per bungkus, kartu bisa terjual jutaan rupiah per lembar (lih.\ disparitas harga pada Gambar 1.3). Fenomena ini menciptakan ilusi optimisme bahwa setiap kemasan menyimpan potensi ``harta karun'' finansial, memicu apa yang disebut \textbf{\emph{Speculative Motive}} ($X_3$). Ketika ketiga dorongan ini hadir bersamaan---kesenangan merobek kemasan, obsesi melengkapi koleksi, dan godaan keuntungan spekulatif---pertimbangan rasional melemah, dan terjadilah keputusan belanja seketika tanpa perencanaan yang disebut \textbf{pembelian impulsif} (\emph{Impulsive Buying} / $Y$). Di sinilah \textbf{\emph{Self-Control}} ($M$) memainkan peran penting sebagai pengendali diri: konsumen dengan kontrol diri yang baik mampu mengabaikan godaan visual kemasan dan menahan dorongan belanja spontan, sedangkan mereka yang lemah kontrol dirinya akan mudah membeli berulang kali tanpa kendali.
 
-Telaah empiris menunjukkan hubungan anteseden dengan pembelian impulsif tidak berlangsung seragam: temuan antarstudi saling bertolak belakang pada tujuh subjek hubungan dalam model ini, yakni tiga pengaruh langsung ($X_1$, $X_2$, $X_3$ terhadap $Y$), satu pengaruh langsung $M$ terhadap $Y$, dan tiga peran moderasi $M$. Perbedaan ini dapat dijelaskan secara teoretis: anggaran ketat meredam dorongan hedonis, kolektor matang berbelanja terencana di pasar sekunder, kesadaran risiko menahan spekulasi, dan kapasitas kontrol diri menipis ketika stimulus memuncak. Perbandingan temuan tersebut dirangkum pada Tabel 1.1; pembahasan tiap variabel beserta hipotesisnya diuraikan pada Bab 2.
+Telaah empiris menunjukkan hubungan anteseden dengan pembelian impulsif tidak berlangsung seragam: temuan antarstudi saling bertolak belakang pada tujuh subjek hubungan dalam model ini, yakni tiga pengaruh langsung ($X_1$, $X_2$, $X_3$ terhadap $Y$), satu pengaruh langsung $M$ terhadap $Y$, dan tiga peran moderasi $M$. Perbedaan ini dapat dijelaskan secara teoretis: anggaran ketat meredam dorongan hedonis, kolektor matang berbelanja terencana di pasar sekunder, kesadaran risiko menahan spekulasi, dan kapasitas kontrol diri menipis ketika stimulus memuncak. Perbandingan temuan tersebut dirangkum pada Tabel 1.1; pembahasan tiap variabel beserta hipotesisnya diuraikan pada Bab II.
 
 \begingroup
 \footnotesize
@@ -451,13 +680,13 @@ Hasil penelitian ini diharapkan dapat memberikan kontribusi nyata baik secara te
 \end{enumerate}
 
 % ============================================================
-%  BAB 2: KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS
+%  BAB II: KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS
 % ============================================================
 \newpage
 \setcounter{section}{1}
-\section*{BAB 2\\[0.3cm]KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS}
+\section*{BAB II\\[0.3cm]KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS}
 \phantomsection
-\addcontentsline{toc}{section}{\texorpdfstring{BAB 2\quad KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS}{BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS}}
+\addcontentsline{toc}{section}{\texorpdfstring{BAB II\quad KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS}{BAB II KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS}}
 \setcounter{section}{2}
 \setcounter{subsection}{0}
 \setcounter{table}{0}
@@ -703,13 +932,13 @@ Hubungan struktural antarvariabel disajikan pada Gambar 2.1:
 \end{figure}
 
 % ============================================================
-%  BAB 3: METODE PENELITIAN
+%  BAB III: METODE PENELITIAN
 % ============================================================
 \newpage
 \setcounter{section}{2}
-\section*{BAB 3\\[0.3cm]METODE PENELITIAN}
+\section*{BAB III\\[0.3cm]METODE PENELITIAN}
 \phantomsection
-\addcontentsline{toc}{section}{\texorpdfstring{BAB 3\quad METODE PENELITIAN}{BAB 3 METODE PENELITIAN}}
+\addcontentsline{toc}{section}{\texorpdfstring{BAB III\quad METODE PENELITIAN}{BAB III METODE PENELITIAN}}
 \setcounter{section}{3}
 \setcounter{subsection}{0}
 \setcounter{table}{0}
@@ -1055,13 +1284,13 @@ Jadwal pelaksanaan tahapan kegiatan penelitian direncanakan berlangsung selama 6
 \midrule
 1 & Identifikasi fenomena pasar dan perumusan topik & $\bullet$ & & & & & \\
 2 & Studi kepustakaan dan telaah literatur jurnal & $\bullet$ & $\bullet$ & & & & \\
-3 & Penyusunan naskah proposal penelitian (Bab 1--3) & & $\bullet$ & $\bullet$ & & & \\
+3 & Penyusunan naskah proposal penelitian (Bab I--III) & & $\bullet$ & $\bullet$ & & & \\
 4 & Bimbingan intensif dan revisi proposal skripsi & & $\bullet$ & $\bullet$ & & & \\
 5 & Pelaksanaan Seminar Proposal Skripsi & & & $\bullet$ & & & \\
 6 & Uji coba instrumen kuesioner (\emph{pilot test} $n=30$) & & & & $\bullet$ & & \\
 7 & Pengumpulan data lapangan survei utama ($n=120$--$150$) & & & & $\bullet$ & $\bullet$ & \\
 8 & Tabulasi data dan pengolahan statistik via SPSS & & & & & $\bullet$ & \\
-9 & Penyusunan laporan Bab 4 (Analisis) dan Bab 5 (Penutup) & & & & & $\bullet$ & $\bullet$ \\
+9 & Penyusunan laporan Bab IV (Analisis) dan Bab V (Penutup) & & & & & $\bullet$ & $\bullet$ \\
 10 & Ujian Sidang Skripsi dan Komprehensif & & & & & & $\bullet$ \\
 \bottomrule
 \end{tabularx}

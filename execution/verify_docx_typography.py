@@ -88,7 +88,7 @@ def audit_docx(docx_path: Path) -> bool:
         elif "ABSTRACT" in p_text and p_text.isupper():
             in_abstract_section = True
             in_abstrak_section = False
-        elif p_text.startswith("DAFTAR ISI") or p_text.startswith("BAB 1"):
+        elif p_text.startswith("DAFTAR ISI") or p_text.startswith("BAB 1") or p_text.startswith("BAB I"):
             in_abstrak_section = False
             in_abstract_section = False
 
@@ -172,8 +172,8 @@ def audit_docx(docx_path: Path) -> bool:
             in_toc = True
             continue
         if in_toc:
-            # The actual body Chapter 1 heading has no tab '\t' and is BAB 1 PENDAHULUAN
-            if txt == "BAB 1 PENDAHULUAN" and "\t" not in p.text:
+            # The actual body Chapter 1 heading has no tab '\t' and is BAB 1 / BAB I PENDAHULUAN
+            if re.sub(r'\s+', ' ', txt) in ("BAB 1 PENDAHULUAN", "BAB I PENDAHULUAN") and "\t" not in p.text:
                 in_toc = False
                 break
             if "\t" in p.text:

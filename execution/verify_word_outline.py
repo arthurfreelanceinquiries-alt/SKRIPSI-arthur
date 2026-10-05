@@ -123,12 +123,12 @@ def verify_document_outline(docx_path):
             missing_frontmatter.append(ef)
             
     is_nobab3 = "nobab3" in str(docx_path).lower()
-    expected_babs = ["BAB 1", "BAB 2", "DAFTAR PUSTAKA"] if is_nobab3 else ["BAB 1", "BAB 2", "BAB 3", "DAFTAR PUSTAKA"]
+    expected_babs = [("BAB 1", "BAB I"), ("BAB 2", "BAB II"), ("DAFTAR PUSTAKA",)] if is_nobab3 else [("BAB 1", "BAB I"), ("BAB 2", "BAB II"), ("BAB 3", "BAB III"), ("DAFTAR PUSTAKA",)]
     missing_babs = []
-    for eb in expected_babs:
-        found = any(eb in h['full_text'].upper() for h in headings_found)
+    for eb_group in expected_babs:
+        found = any(any(alias in h['full_text'].upper() for alias in eb_group) for h in headings_found)
         if not found:
-            missing_babs.append(eb)
+            missing_babs.append("/".join(eb_group))
 
             
     # Check compliance

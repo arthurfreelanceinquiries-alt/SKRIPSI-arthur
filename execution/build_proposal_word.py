@@ -663,9 +663,9 @@ def add_heading_1(doc, title, page_break=True):
     set_paragraph_outline_level(p, 0)
 
     clean_title = clean_academic_text(title.upper())
-    m_bab = re.match(r'^(BAB\s+\d+)\s+(.*)$', clean_title)
+    m_bab = re.match(r'^(BAB\s+(?:\d+|[IVXLCDM]+))\s+(.*)$', clean_title)
     if m_bab:
-        # Judul Bab dua baris via jeda baris lunak (shift+enter): "BAB 1" + <w:br/> + "PENDAHULUAN"
+        # Judul Bab dua baris via jeda baris lunak (shift+enter): "BAB I" + <w:br/> + "PENDAHULUAN"
         r1 = p.add_run(m_bab.group(1))
         make_run_pure_black(r1, "Times New Roman", Pt(12), bold=True)
         r1.add_break(WD_BREAK.LINE)
@@ -1374,31 +1374,18 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         rj4.font.size = Pt(12)
         rj4.font.bold = True
 
-        p_abs = doc.add_paragraph()
-        p_abs.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-        p_abs.paragraph_format.line_spacing = 1.0
-        p_abs.paragraph_format.space_before = Pt(6)
-        p_abs.paragraph_format.space_after = Pt(6)
-        p_abs.paragraph_format.first_line_indent = Cm(1.25)
-        r_abs = p_abs.add_run(
-            "Penelitian ini bertujuan untuk menganalisis dan menguji secara empiris pengaruh hedonic motivation (motivasi hedonis), "
-            "desire for completeness (hasrat kelengkapan koleksi), dan speculative motive (motif spekulasi finansial) terhadap impulsive buying "
-            "(pembelian impulsif) booster pack kartu Pokémon Trading Card Game (Pokémon TCG) fisik resmi berbahasa Indonesia pada konsumen di Jakarta Barat, "
-            "serta menguji peran kontrol diri (self-control) sebagai variabel moderasi dalam memperlemah pengaruh ketiga variabel anteseden tersebut. "
-            "Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei cross-sectional. Data primer dikumpulkan melalui penyebaran kuesioner daring "
-            "berbasis skala Likert 5 poin kepada responden yang dipilih melalui teknik purposive sampling. Kriteria inklusi sampel adalah konsumen atau kolektor "
-            "Warga Negara Indonesia (WNI) berusia minimal 17 tahun yang berdomisili atau beraktivitas/bertransaksi aktif di wilayah Jakarta Barat serta pernah membeli "
-            "booster pack Pokémon TCG fisik resmi dalam rentang waktu 6–12 bulan terakhir. Jumlah sampel yang ditargetkan adalah 120 hingga 150 responden, "
-            "mengacu pada rekomendasi ukuran sampel Green (1991) dan Cohen (1988) untuk mencapai kekuatan uji statistik (statistical power) yang memadai pada model regresi "
-            "linear berganda. Metode analisis data menggunakan analisis regresi berganda dan Moderated Regression Analysis (MRA) dengan prosedur pemusatan rata-rata "
-            "(mean-centering) guna mereduksi potensi multikolinearitas non-esensial antara variabel prediktor dengan produk interaksinya (Aiken dan West, 1991; Ghozali, 2018), yang diolah menggunakan perangkat lunak "
-            "IBM SPSS Statistics. Penelitian ini menawarkan kebaruan teoretis (novelty) dengan mengintegrasikan kerangka psikologi lingkungan Stimulus-Organism-Response (S-O-R), "
-            "psikologi kolektor (Zeigarnik Effect dan The Completing the Set Effect), teori regulasi diri (Self-Regulation Theory), serta prinsip-prinsip keuangan perilaku "
-            "(behavioral finance) pada fenomena komoditas hobi fisik bernilai spekulatif tinggi di kawasan metropolitan Jakarta Barat. Hasil penelitian ini diharapkan memberikan kontribusi empiris bagi konsumen "
-            "muda dalam menjaga kontrol diri finansial, serta masukan aplikatif bagi komunitas hobi dan pemangku kebijakan edukasi keuangan generasi muda di Indonesia."
-        )
-        r_abs.font.name = "Times New Roman"
-        r_abs.font.size = Pt(12)
+        for p_abs_text in [
+            "Penelitian ini bertujuan untuk menganalisis dan menguji secara empiris pengaruh *hedonic motivation* (motivasi hedonis), *desire for completeness* (hasrat kelengkapan koleksi), dan *speculative motive* (motif spekulasi finansial) terhadap *impulsive buying* (pembelian impulsif) *booster pack* kartu Pokémon *Trading Card Game* (Pokémon TCG) fisik resmi berbahasa Indonesia pada konsumen di Jakarta Barat, serta menguji peran kontrol diri (*self-control*) sebagai variabel moderasi dalam memperlemah pengaruh ketiga variabel anteseden tersebut.",
+            "Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei *cross-sectional*. Data primer dikumpulkan melalui kuesioner daring skala Likert 5 poin kepada responden yang dipilih melalui teknik *purposive sampling*. Kriteria inklusi sampel adalah konsumen atau kolektor WNI berusia minimal 17 tahun yang berdomisili atau beraktivitas/bertransaksi aktif di wilayah Jakarta Barat serta pernah membeli *booster pack* Pokémon TCG fisik resmi dalam 6–12 bulan terakhir. Target sampel bersih (*usable sample*) adalah 120 hingga 150 responden, mengacu pada kaidah Green (1991) dan Cohen (1988) untuk mencapai kekuatan uji statistik (*power*) 0,80. Metode analisis menggunakan regresi linear berganda dan *Moderated Regression Analysis* (MRA) dengan prosedur pemusatan nilai rata-rata (*mean-centering*) guna mereduksi multikolinearitas non-esensial (Aiken dan West, 1991; Hayes, 2018), diolah via IBM SPSS Statistics.",
+            "Penelitian ini menawarkan kebaruan teoretis (*novelty*) dengan mengintegrasikan kerangka psikologi lingkungan *Stimulus-Organism-Response* (S-O-R), psikologi kolektor (*Zeigarnik Effect* dan *The Completing the Set Effect*), teori regulasi diri (*Self-Regulation Theory*), serta prinsip keuangan perilaku (*behavioral finance*) pada fenomena komoditas hobi bernilai spekulatif tinggi di Jakarta Barat. Hasil penelitian diharapkan memberi kontribusi empiris bagi kontrol diri finansial konsumen muda dan masukan aplikatif bagi komunitas hobi serta literasi keuangan."
+        ]:
+            p_abs = doc.add_paragraph()
+            p_abs.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+            p_abs.paragraph_format.line_spacing = 1.0
+            p_abs.paragraph_format.space_before = Pt(6)
+            p_abs.paragraph_format.space_after = Pt(6)
+            p_abs.paragraph_format.first_line_indent = Cm(1.25)
+            parse_markdown_runs(p_abs, p_abs_text, base_size=Pt(12))
 
         p_kw = doc.add_paragraph()
         p_kw.alignment = WD_ALIGN_PARAGRAPH.LEFT
@@ -1409,10 +1396,11 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         r_kw_pre.font.name = "Times New Roman"
         r_kw_pre.font.size = Pt(12)
         r_kw_pre.font.bold = True
-        r_kw_body = p_kw.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, Jakarta Barat, Keuangan Perilaku (Behavioral Finance).")
-        r_kw_body.font.name = "Times New Roman"
-        r_kw_body.font.size = Pt(12)
-        r_kw_body.font.italic = True
+        parse_markdown_runs(
+            p_kw,
+            "*Impulsive Buying*, *Hedonic Motivation*, *Desire for Completeness*, *Speculative Motive*, *Self-Control*, *Moderated Regression Analysis*, Pokémon TCG, Jakarta Barat, Keuangan Perilaku (*Behavioral Finance*).",
+            base_size=Pt(12)
+        )
 
         # 6. Abstract English
         add_frontmatter_heading(doc, "ABSTRACT", page_break=True)
@@ -1434,29 +1422,21 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         rj5.font.size = Pt(12)
         rj5.font.bold = True
 
-        p_abs_en = doc.add_paragraph()
-        p_abs_en.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-        p_abs_en.paragraph_format.line_spacing = 1.0
-        p_abs_en.paragraph_format.space_before = Pt(6)
-        p_abs_en.paragraph_format.space_after = Pt(6)
-        p_abs_en.paragraph_format.first_line_indent = Cm(1.25)
-        r_abs_en = p_abs_en.add_run(
-            "This research aims to analyze and empirically test the effects of hedonic motivation, desire for completeness, and speculative motive "
-            "on the impulsive buying behavior of official Indonesian-language physical Pokémon Trading Card Game (Pokémon TCG) booster packs among consumers in West Jakarta, as well as to evaluate "
-            "the moderating role of self-control in weakening the relationships between these three antecedent variables and impulsive buying. "
-            "This study adopts an associative quantitative approach utilizing a cross-sectional survey design. Primary data are gathered via self-administered online "
-            "questionnaires employing a 5-point Likert scale, distributed to respondents selected through purposive sampling. The sample inclusion criteria comprise "
-            "Indonesian citizens aged 17 and above residing or actively transacting in West Jakarta who have purchased official physical booster packs within the past 6 to 12 months. The targeted sample size ranges from "
-            "120 to 150 respondents, consistent with the statistical power criteria established by Green (1991) and Cohen (1988) for multiple regression frameworks. "
-            "The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to reduce non-essential "
-            "multicollinearity between predictor variables and their interaction products (Aiken dan West, 1991; Ghozali, 2018), executed via IBM SPSS Statistics software. This study provides theoretical novelty by synthesizing the "
-            "Stimulus-Organism-Response (S-O-R) paradigm, collector psychology (the Zeigarnik Effect and The Completing the Set Effect), Self-Regulation Theory, and behavioral finance "
-            "principles in the context of tangible alternative assets exhibiting volatile secondary market premiums in the West Jakarta urban area. The findings are expected to offer practical insights for young "
-            "consumers in exercising financial discipline regarding discretionary collectibles and provide strategic inputs for community organizers and financial educators targeting Generation Z."
-        )
-        r_abs_en.font.name = "Times New Roman"
-        r_abs_en.font.size = Pt(12)
-        r_abs_en.font.italic = True
+        for p_abs_en_text in [
+            "This research aims to empirically examine the effects of hedonic motivation, desire for completeness, and speculative motive on the impulsive buying of official Indonesian physical Pokémon Trading Card Game (Pokémon TCG) booster packs among consumers in West Jakarta, and evaluates the moderating role of self-control in mitigating these antecedent effects.",
+            "Employing an associative quantitative design, primary data are collected via 5-point Likert online questionnaires through purposive sampling. Inclusion criteria require Indonesian citizens aged 17 and above residing or transacting in West Jakarta who purchased official booster packs within the past 6–12 months. The targeted usable sample is 120–150 respondents, following Green (1991) and Cohen (1988) for 0.80 statistical power. The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to alleviate non-essential multicollinearity (Aiken dan West, 1991; Hayes, 2018), processed using IBM SPSS Statistics.",
+            "This study provides theoretical novelty by integrating Stimulus-Organism-Response (S-O-R), collector psychology (the Zeigarnik Effect and The Completing the Set Effect), Self-Regulation Theory, and behavioral finance on speculative hobby collectibles in West Jakarta. Findings offer empirical guidance for young consumers' financial discipline and actionable inputs for community leaders and financial literacy educators."
+        ]:
+            p_abs_en = doc.add_paragraph()
+            p_abs_en.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+            p_abs_en.paragraph_format.line_spacing = 1.0
+            p_abs_en.paragraph_format.space_before = Pt(6)
+            p_abs_en.paragraph_format.space_after = Pt(6)
+            p_abs_en.paragraph_format.first_line_indent = Cm(1.25)
+            r_abs_en = p_abs_en.add_run(p_abs_en_text)
+            r_abs_en.font.name = "Times New Roman"
+            r_abs_en.font.size = Pt(12)
+            r_abs_en.font.italic = True
 
         p_kw_en = doc.add_paragraph()
         p_kw_en.alignment = WD_ALIGN_PARAGRAPH.LEFT
@@ -1467,6 +1447,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         r_kw_en_pre.font.name = "Times New Roman"
         r_kw_en_pre.font.size = Pt(12)
         r_kw_en_pre.font.bold = True
+        r_kw_en_pre.font.italic = True
         r_kw_en_body = p_kw_en.add_run("Impulsive Buying, Hedonic Motivation, Desire for Completeness, Speculative Motive, Self-Control, Moderated Regression Analysis, Pokémon TCG, West Jakarta, Behavioral Finance.")
         r_kw_en_body.font.name = "Times New Roman"
         r_kw_en_body.font.size = Pt(12)
@@ -1478,14 +1459,14 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
     toc_items_nobab3 = [
         ("DAFTAR TABEL", "ix"),
         ("DAFTAR GAMBAR", "x"),
-        ("BAB 1 PENDAHULUAN", "1"),
+        ("BAB I PENDAHULUAN", "1"),
         ("  1.1 Latar Belakang Penelitian", "1"),
         ("  1.2 Perumusan Masalah", "16"),
         ("  1.3 Tujuan Penelitian", "17"),
         ("  1.4 Manfaat Penelitian", "17"),
         ("      1.4.1 Manfaat Teoretis", "17"),
         ("      1.4.2 Manfaat Praktis", "18"),
-        ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "19"),
+        ("BAB II KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "19"),
         ("  2.1 Landasan Teori", "19"),
         ("      2.1.1 Landasan Teoretis: Pendekatan Keuangan Perilaku (Behavioral Finance)", "19"),
         ("      2.1.2 Pendekatan Stimulus-Organism-Response (S-O-R)", "19"),
@@ -1509,19 +1490,26 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         ("DAFTAR PUSTAKA", "30")
     ]
 
-    # C-LOT-1: angka = halaman cetak PDF 51 hlm (settled, resync Sesi 44 dari
-    # .toc/.lot/.lof hasil phantomsection-build; frontmatter = Cover i + TOC ii-iii + LOT iv + LOF v).
+    # C-LOT-1: angka = halaman cetak PDF 57 hlm settled (XeLaTeX .toc hasil phantomsection-build;
+    # frontmatter: Cover i + Pernyataan ii + Persetujuan iii + Pengesahan iv + Kata Pengantar v +
+    # Abstrak vi + Abstract vii + LOT x + LOF xi; Bab I-III arab 1-40 + DP 42).
     toc_items_full = [
-        ("DAFTAR TABEL", "iv"),
-        ("DAFTAR GAMBAR", "v"),
-        ("BAB 1 PENDAHULUAN", "1"),
+        ("PERNYATAAN KEASLIAN KARYA TUGAS AKHIR", "ii"),
+        ("PERSETUJUAN PROPOSAL SKRIPSI", "iii"),
+        ("PENGESAHAN TIM PENGUJI SEMINAR PROPOSAL", "iv"),
+        ("KATA PENGANTAR", "v"),
+        ("ABSTRAK", "vi"),
+        ("ABSTRACT", "vii"),
+        ("DAFTAR TABEL", "x"),
+        ("DAFTAR GAMBAR", "xi"),
+        ("BAB I PENDAHULUAN", "1"),
         ("  1.1 Latar Belakang Penelitian", "1"),
         ("  1.2 Perumusan Masalah", "10"),
         ("  1.3 Tujuan Penelitian", "10"),
         ("  1.4 Manfaat Penelitian", "11"),
         ("      1.4.1 Manfaat Teoretis", "11"),
         ("      1.4.2 Manfaat Praktis", "12"),
-        ("BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "13"),
+        ("BAB II KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS", "13"),
         ("  2.1 Landasan Teori", "13"),
         ("      2.1.1 Landasan Teoretis: Pendekatan Keuangan Perilaku (Behavioral Finance)", "13"),
         ("      2.1.2 Pendekatan Stimulus-Organism-Response (S-O-R)", "13"),
@@ -1542,7 +1530,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         ("      2.4.5 Pengaruh Moderasi Self-Control terhadap Hubungan Desire for Completeness dan Impulsive Buying", "22"),
         ("      2.4.6 Pengaruh Moderasi Self-Control terhadap Hubungan Speculative Motive dan Impulsive Buying", "22"),
         ("  2.5 Rerangka Penelitian", "23"),
-        ("BAB 3 METODE PENELITIAN", "24"),
+        ("BAB III METODE PENELITIAN", "24"),
         ("  3.1 Jenis dan Sumber Data", "24"),
         ("      3.1.1 Batasan Penelitian dan Ruang Lingkup Operasional", "24"),
         ("  3.2 Populasi dan Sampel", "25"),
@@ -1689,8 +1677,8 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
     with open(md_file, "r", encoding="utf-8") as f:
         md_text = f.read()
 
-    # Split markdown into BAB 1, BAB 2, BAB 3, and DAFTAR PUSTAKA
-    parts = re.split(r'\n#+\s+(BAB\s+\d+.*?|DAFTAR PUSTAKA.*?)\n', md_text)
+    # Split markdown into BAB I/1, BAB II/2, BAB III/3, and DAFTAR PUSTAKA
+    parts = re.split(r'\n#+\s+(BAB\s+(?:\d+|[IVXLCDM]+).*?|DAFTAR PUSTAKA.*?)\n', md_text)
     
     has_inserted_fig11 = False
     has_inserted_fig12 = False
@@ -1705,7 +1693,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         sec_content = parts[idx+1] if idx+1 < len(parts) else ""
 
         # Skip Bab 3 entirely when requested
-        if skip_chapter3 and sec_header.startswith("BAB") and "3" in sec_header.split()[1:2]:
+        if skip_chapter3 and sec_header.startswith("BAB") and any(x in ("3", "III") for x in sec_header.split()[1:2]):
             print(f"    -> SKIPPING (no-chapter3 mode): {sec_header}")
             continue
 
@@ -3385,14 +3373,14 @@ if __name__ == "__main__":
         help="Skip Bab 3 (Metode Penelitian) — output: Proposal_Arthur_NoBab3.docx"
     )
     parser.add_argument(
-        "--with-frontmatter",
+        "--without-frontmatter",
         action="store_true",
         help=(
-            "Sertakan 6 halaman formal frontmatter (Pernyataan, Persetujuan, "
-            "Pengesahan, Kata Pengantar, Abstrak, Abstract) ke file utama. "
-            "Default: TANPA frontmatter (modular di 01_Lembar_Persetujuan_Proposal/)."
+            "Lewati 6 halaman formal frontmatter (Pernyataan, Persetujuan, "
+            "Pengesahan, Kata Pengantar, Abstrak, Abstract). "
+            "Default: DENGAN frontmatter (terintegrasi penuh sesuai naskah master)."
         )
     )
     args = parser.parse_args()
     build_full_proposal(skip_chapter3=args.no_chapter3,
-                        skip_frontmatter=(not args.with_frontmatter))
+                        skip_frontmatter=args.without_frontmatter)

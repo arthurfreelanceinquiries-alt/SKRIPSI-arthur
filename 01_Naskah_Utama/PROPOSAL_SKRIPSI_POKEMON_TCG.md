@@ -14,14 +14,14 @@
 ## DAFTAR ISI NASKAH PROPOSAL
 
 - [HALAMAN SAMPUL / JUDUL PROPOSAL](#halaman-sampul--judul-proposal)
-- [BAB 1 PENDAHULUAN](#bab-1-pendahuluan)
+- [BAB I PENDAHULUAN](#bab-i-pendahuluan)
   - [1.1 Latar Belakang Penelitian](#11-latar-belakang-penelitian)
   - [1.2 Perumusan Masalah](#12-perumusan-masalah)
   - [1.3 Tujuan Penelitian](#13-tujuan-penelitian)
   - [1.4 Manfaat Penelitian](#14-manfaat-penelitian)
     - [1.4.1 Manfaat Teoritis](#141-manfaat-teoritis)
     - [1.4.2 Manfaat Praktis](#142-manfaat-praktis)
-- [BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS](#bab-2-kajian-pustaka-dan-pengembangan-hipotesis)
+- [BAB II KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS](#bab-ii-kajian-pustaka-dan-pengembangan-hipotesis)
   - [2.1 Landasan Teori](#21-landasan-teori)
     - [2.1.1 Grand Theory: Keuangan Perilaku (Behavioral Finance)](#211-grand-theory-keuangan-perilaku-behavioral-finance)
     - [2.1.2 Teori Pendukung (Supporting Theories)](#212-teori-pendukung-supporting-theories)
@@ -39,7 +39,7 @@
     - [2.3.5 Peran Moderasi Self-Control pada Pengaruh Desire for Completeness terhadap Impulsive Buying](#235-peran-moderasi-self-control-pada-pengaruh-desire-for-completeness-terhadap-impulsive-buying)
     - [2.3.6 Peran Moderasi Self-Control pada Pengaruh Speculative Motive terhadap Impulsive Buying](#236-peran-moderasi-self-control-pada-pengaruh-speculative-motive-terhadap-impulsive-buying)
   - [2.4 Rerangka Penelitian](#24-rerangka-penelitian)
-- [BAB 3 METODE PENELITIAN](#bab-3-metode-penelitian)
+- [BAB III METODE PENELITIAN](#bab-iii-metode-penelitian)
   - [3.1 Jenis dan Sumber Data](#31-jenis-dan-sumber-data)
   - [3.2 Populasi dan Sampel](#32-populasi-dan-sampel)
     - [3.2.1 Populasi](#321-populasi)
@@ -81,7 +81,7 @@ Diajukan Oleh:
 
 ---
 
-# BAB 1 PENDAHULUAN
+# BAB I PENDAHULUAN
 
 \phantomsection
 
@@ -148,7 +148,7 @@ Melihat fenomena tersebut, penelitian ini membedah faktor penentu pembelian impu
 
 Literatur menunjukkan pembelian impulsif dipengaruhi faktor pendorong yang beragam (Stern, 1962; Rook, 1987; Iyer et al., 2020; Amos et al., 2014): (1) afektif, seperti motivasi belanja hedonis Babin et al., 1994; Arnold and Reynolds, 2003; Gültekin and Özer, 2012; (2) kognitif kolektor, seperti efek ketidaktuntasan himpunan (Zeigarnik, 1927; Gao et al., 2014; Barasz et al., 2017; Belk, 1995); (3) finansial, seperti ekspektasi *capital gain* dan bias optimisme pasar (Shiller, 2000; Baur et al., 2018; Colline, 2024); serta (4) situasional, seperti display kasir dan kelangkaan stok (Qu et al., 2023; Amos et al., 2014).
 
-Dari pemetaan tersebut, penelitian ini memfokuskan tiga variabel yang paling mewakili karakteristik kartu Pokémon TCG: $X_1$ (afektif: sensasi hiburan merobek kemasan), $X_2$ (kolektor: perasaan tidak nyaman saat melihat slot kosong di album koleksi (*binder*)), dan $X_3$ (pasar: harapan keuntungan dari penjualan di pasar sekunder dan *grading*). Perumusan instrumen dan pengujiannya diuraikan pada Bab 2 dan Bab 3.
+Dari pemetaan tersebut, penelitian ini memfokuskan tiga variabel yang paling mewakili karakteristik kartu Pokémon TCG: $X_1$ (afektif: sensasi hiburan merobek kemasan), $X_2$ (kolektor: perasaan tidak nyaman saat melihat slot kosong di album koleksi (*binder*)), dan $X_3$ (pasar: harapan keuntungan dari penjualan di pasar sekunder dan *grading*). Perumusan instrumen dan pengujiannya diuraikan pada Bab II dan Bab III.
 
 Untuk memahami bagaimana ketiga dorongan tersebut bekerja secara konkret dalam pengalaman sehari-hari konsumen kartu Pokémon TCG, bayangkan skenario berikut. Seorang mahasiswa memasuki gerai minimarket tanpa rencana membeli kartu. Namun, saat berdiri di depan kasir, pandangannya tertuju pada display kemasan *booster pack* berwarna mencolok seharga Rp20.000. Baginya, membeli satu bungkus bukan sekadar membeli lima lembar kertas bergambar, melainkan membeli sensasi kejutan (*unboxing thrill*): luapan dopamin saat merobek kemasan foil acak dan berharap menemukan kartu langka di dalamnya. Dorongan mencari kesenangan emosional inilah yang dalam penelitian ini disebut ***Hedonic Motivation*** ($X_1$).
 
@@ -156,7 +156,7 @@ Sensasi tersebut tidak berhenti pada satu bungkus. Setiap kartu memiliki nomor u
 
 Di sisi lain, konsumen juga mengetahui bahwa kartu bergambar langka (*Secret Rare*) yang berkondisi sempurna dan disertifikasi *PSA 10 Gem Mint* harganya melonjak drastis di pasar sekunder–-dari modal Rp20.000 per bungkus, kartu bisa terjual jutaan rupiah per lembar (lih.\ disparitas harga pada Gambar 1.3). Fenomena ini menciptakan ilusi optimisme bahwa setiap kemasan menyimpan potensi “harta karun” finansial, memicu apa yang disebut ***Speculative Motive*** ($X_3$). Ketika ketiga dorongan ini hadir bersamaan–-kesenangan merobek kemasan, obsesi melengkapi koleksi, dan godaan keuntungan spekulatif–-pertimbangan rasional melemah, dan terjadilah keputusan belanja seketika tanpa perencanaan yang disebut **pembelian impulsif** (*Impulsive Buying* / $Y$). Di sinilah ***Self-Control*** ($M$) memainkan peran penting sebagai pengendali diri: konsumen dengan kontrol diri yang baik mampu mengabaikan godaan visual kemasan dan menahan dorongan belanja spontan, sedangkan mereka yang lemah kontrol dirinya akan mudah membeli berulang kali tanpa kendali.
 
-Telaah empiris menunjukkan hubungan anteseden dengan pembelian impulsif tidak berlangsung seragam: temuan antarstudi saling bertolak belakang pada tujuh subjek hubungan dalam model ini, yakni tiga pengaruh langsung ($X_1$, $X_2$, $X_3$ terhadap $Y$), satu pengaruh langsung $M$ terhadap $Y$, dan tiga peran moderasi $M$. Perbedaan ini dapat dijelaskan secara teoretis: anggaran ketat meredam dorongan hedonis, kolektor matang berbelanja terencana di pasar sekunder, kesadaran risiko menahan spekulasi, dan kapasitas kontrol diri menipis ketika stimulus memuncak. Perbandingan temuan tersebut dirangkum pada Tabel 1.1; pembahasan tiap variabel beserta hipotesisnya diuraikan pada Bab 2.
+Telaah empiris menunjukkan hubungan anteseden dengan pembelian impulsif tidak berlangsung seragam: temuan antarstudi saling bertolak belakang pada tujuh subjek hubungan dalam model ini, yakni tiga pengaruh langsung ($X_1$, $X_2$, $X_3$ terhadap $Y$), satu pengaruh langsung $M$ terhadap $Y$, dan tiga peran moderasi $M$. Perbedaan ini dapat dijelaskan secara teoretis: anggaran ketat meredam dorongan hedonis, kolektor matang berbelanja terencana di pasar sekunder, kesadaran risiko menahan spekulasi, dan kapasitas kontrol diri menipis ketika stimulus memuncak. Perbandingan temuan tersebut dirangkum pada Tabel 1.1; pembahasan tiap variabel beserta hipotesisnya diuraikan pada Bab II.
 
 **Tabel 1.1: Matriks Kesenjangan Penelitian Empiris (*Research Gap*) pada 7 Subjek Hubungan Model Penelitian**
 
@@ -219,7 +219,7 @@ Hasil penelitian ini diharapkan dapat memberikan kontribusi nyata baik secara te
 
 ---
 
-# BAB 2 KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS
+# BAB II KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS
 
 \phantomsection
 
@@ -383,7 +383,7 @@ Hubungan struktural antarvariabel disajikan pada Gambar 2.1:
 
 ---
 
-# BAB 3 METODE PENELITIAN
+# BAB III METODE PENELITIAN
 
 \phantomsection
 
@@ -639,13 +639,13 @@ Jadwal pelaksanaan tahapan kegiatan penelitian direncanakan berlangsung selama 6
 \midrule
 1 & Identifikasi fenomena pasar dan perumusan topik & $\bullet$ & & & & & \\
 2 & Studi kepustakaan dan telaah literatur jurnal & $\bullet$ & $\bullet$ & & & & \\
-3 & Penyusunan naskah proposal penelitian (Bab 1–3) & & $\bullet$ & $\bullet$ & & & \\
+3 & Penyusunan naskah proposal penelitian (Bab I–III) & & $\bullet$ & $\bullet$ & & & \\
 4 & Bimbingan intensif dan revisi proposal skripsi & & $\bullet$ & $\bullet$ & & & \\
 5 & Pelaksanaan Seminar Proposal Skripsi & & & $\bullet$ & & & \\
 6 & Uji coba instrumen kuesioner (*pilot test* $n=30$) & & & & $\bullet$ & & \\
 7 & Pengumpulan data lapangan survei utama ($n=120$–$150$) & & & & $\bullet$ & $\bullet$ & \\
 8 & Tabulasi data dan pengolahan statistik via SPSS & & & & & $\bullet$ & \\
-9 & Penyusunan laporan Bab 4 (Analisis) dan Bab 5 (Penutup) & & & & & $\bullet$ & $\bullet$ \\
+9 & Penyusunan laporan Bab IV (Analisis) dan Bab V (Penutup) & & & & & $\bullet$ & $\bullet$ \\
 10 & Ujian Sidang Skripsi dan Komprehensif & & & & & & $\bullet$ \\
 \bottomrule
 \end{tabularx}
