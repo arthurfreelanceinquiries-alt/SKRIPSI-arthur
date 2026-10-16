@@ -199,25 +199,6 @@ UR  - https://doi.org/10.1016/j.frl.2017.10.012
 ID  - baur2018bitcoin
 ER  - 
 
-TY  - JOUR
-TI  - Impulse Buying: A Meta-Analytic Review
-AU  - Iyer, Gopalkrishnan R.
-AU  - Blut, Markus
-AU  - Xiao, Sarah Hong
-AU  - Grewal, Dhruv
-PY  - 2020
-Y1  - 2020
-JO  - Journal of the Academy of Marketing Science
-JF  - Journal of the Academy of Marketing Science
-VL  - 48
-IS  - 3
-SP  - 384
-EP  - 404
-DO  - 10.1007/s11747-019-00670-w
-UR  - https://doi.org/10.1007/s11747-019-00670-w
-ID  - iyer2020impulse
-ER  - 
-
 TY  - BOOK
 TI  - Collecting in a Consumer Society
 AU  - Belk, Russell W.
@@ -227,6 +208,25 @@ PB  - Routledge
 CY  - London
 UR  - https://openlibrary.org/works/OL3515364W
 ID  - belk1995collecting
+ER  - 
+
+TY  - JOUR
+TI  - The State of Online Impulse-Buying Research: A Literature Analysis
+AU  - Chan, Tommy K. H.
+AU  - Cheung, Christy M. K.
+AU  - Lee, Zach W. Y.
+PY  - 2017
+Y1  - 2017
+JO  - Information & Management
+JF  - Information & Management
+VL  - 54
+IS  - 2
+SP  - 204
+EP  - 217
+DO  - 10.1016/j.im.2016.06.001
+UR  - https://doi.org/10.1016/j.im.2016.06.001
+N1  - Analisis literatur komprehensif impulse buying online kerangka SOR; pengganti spero2004approach
+ID  - chan2017state
 ER  - 
 
 TY  - BOOK
@@ -414,6 +414,26 @@ ID  - hirschman1982hedonic
 ER  - 
 
 TY  - JOUR
+TI  - Impulse Buying: A Meta-Analytic Review
+AU  - Iyer, Gopalkrishnan R.
+AU  - Blut, Markus
+AU  - Xiao, Sarah Hong
+AU  - Grewal, Dhruv
+PY  - 2020
+Y1  - 2020
+JO  - Journal of the Academy of Marketing Science
+JF  - Journal of the Academy of Marketing Science
+VL  - 48
+IS  - 3
+SP  - 384
+EP  - 404
+DO  - 10.1007/s11747-019-00670-w
+UR  - https://doi.org/10.1007/s11747-019-00670-w
+N1  - Meta-analisis 231 sampel, 75.000+ konsumen dari 186 artikel; pengganti chen1998financial
+ID  - iyer2020impulse
+ER  - 
+
+TY  - JOUR
 TI  - Prospect Theory: An Analysis of Decision under Risk
 AU  - Kahneman, Daniel
 AU  - Tversky, Amos
@@ -474,21 +494,6 @@ UR  - https://doi.org/10.61292/birev.258
 ID  - lienardy2026role
 ER  - 
 
-TY  - JOUR
-TI  - The Effect of Blind Box Product Uncertainty on Consumers' Purchase Intention: The Mediating Role of Perceived Value and the Moderating Role of Purchase Intention
-AU  - Zhang, Yi
-AU  - Zhang, Tianqi
-PY  - 2022
-Y1  - 2022
-JO  - Frontiers in Psychology
-JF  - Frontiers in Psychology
-VL  - 13
-SP  - 946527
-DO  - 10.3389/fpsyg.2022.946527
-UR  - https://doi.org/10.3389/fpsyg.2022.946527
-ID  - zhang2022uncertainty
-ER  - 
-
 TY  - BOOK
 TI  - An Approach to Environmental Psychology
 AU  - Mehrabian, Albert
@@ -499,24 +504,6 @@ PB  - MIT Press
 CY  - Cambridge, MA
 UR  - https://openlibrary.org/works/OL13333149W
 ID  - mehrabian1974approach
-ER  - 
-
-TY  - JOUR
-TI  - Impulse Buying Tendency in Live-Stream Commerce: The Role of Viewing Frequency and Anticipated Emotions Influencing Scarcity-Induced Purchase Decision
-AU  - Qu, Yi
-AU  - Khan, Jashim
-AU  - Su, Yuyang
-AU  - Tong, Jiao
-AU  - Zhao, Shuo
-PY  - 2023
-Y1  - 2023
-JO  - Journal of Retailing and Consumer Services
-JF  - Journal of Retailing and Consumer Services
-VL  - 75
-SP  - 103534
-DO  - 10.1016/j.jretconser.2023.103534
-UR  - https://doi.org/10.1016/j.jretconser.2023.103534
-ID  - qu2023impulse
 ER  - 
 
 TY  - JOUR
@@ -546,6 +533,25 @@ CY  - New York
 UR  - https://www.pricecharting.com/console/pokemon-shining-fates
 N1  - PriceCharting Historical Collectibles Database, New York | Tersedia di: \urlhttps://www.pricecharting.com/console/pokemon-shining-fates (Diakses 18 September 2026)
 ID  - pricecharting2024
+ER  - 
+
+TY  - JOUR
+TI  - Impulse Buying Tendency in Live-Stream Commerce: The Role of Viewing Frequency and Anticipated Emotions Influencing Scarcity-Induced Purchase Decision
+AU  - Qu, Yi
+AU  - Khan, Jashim
+AU  - Su, Yuyang
+AU  - Tong, Jiao
+AU  - Zhao, Shuo
+PY  - 2023
+Y1  - 2023
+JO  - Journal of Retailing and Consumer Services
+JF  - Journal of Retailing and Consumer Services
+VL  - 75
+SP  - 103534
+DO  - 10.1016/j.jretconser.2023.103534
+UR  - https://doi.org/10.1016/j.jretconser.2023.103534
+N1  - Faktor situasional kelangkaan dan stimulus emosional terhadap impulse buying; pengganti peck2006if
+ID  - qu2023impulse
 ER  - 
 
 TY  - JOUR
@@ -600,7 +606,7 @@ PY  - 2000
 Y1  - 2000
 PB  - Princeton University Press
 CY  - Princeton, NJ
-UR  - https://openlibrary.org/works/OL3638785W
+UR  - https://doi.org/10.1515/9781400865512
 ID  - shiller2000irrational
 ER  - 
 
@@ -620,24 +626,6 @@ UR  - https://doi.org/10.2307/1884852
 ID  - simon1955behavioral
 ER  - 
 
-TY  - JOUR
-TI  - The State of Online Impulse-Buying Research: A Literature Analysis
-AU  - Chan, Tommy K. H.
-AU  - Cheung, Christy M. K.
-AU  - Lee, Zach W. Y.
-PY  - 2017
-Y1  - 2017
-JO  - Information & Management
-JF  - Information & Management
-VL  - 54
-IS  - 2
-SP  - 204
-EP  - 217
-DO  - 10.1016/j.im.2016.06.001
-UR  - https://doi.org/10.1016/j.im.2016.06.001
-ID  - chan2017state
-ER  - 
-
 TY  - RPRT
 TI  - Top 10 Highest-Grossing Media Franchises Worldwide of All Time
 AU  - Statista
@@ -646,7 +634,7 @@ Y1  - 2021
 PB  - Statista Inc.
 CY  - New York
 UR  - https://www.statista.com/chart/24277/media-franchises-with-most-sales/
-N1  - Statista Chart 24277, Consumer Market Insights & Research, New York: Statista Inc.\ (terbit Februari 2021) | Tersedia di: \urlhttps://www.statista.com/chart/24277/media-franchises-with-most-sales/ (Diakses 15 Januari 2025)
+N1  - Statista Chart 24277, Consumer Market Insights & Research, New York: Statista Inc.\ (terbit Februari 2021) | Tersedia di: \urlhttps://www.statista.com/chart/24277/media-franchises-with-most-sales/ (Diakses 18 September 2026)
 ID  - statista2024pokemon
 ER  - 
 
@@ -821,6 +809,22 @@ SP  - 1
 EP  - 85
 UR  - https://doi.org/10.1007/978-3-658-12666-7_16
 ID  - zeigarnik1927behalten
+ER  - 
+
+TY  - JOUR
+TI  - The Effect of Blind Box Product Uncertainty on Consumers' Purchase Intention: The Mediating Role of Perceived Value and the Moderating Role of Purchase Intention
+AU  - Zhang, Yi
+AU  - Zhang, Tianqi
+PY  - 2022
+Y1  - 2022
+JO  - Frontiers in Psychology
+JF  - Frontiers in Psychology
+VL  - 13
+SP  - 946527
+DO  - 10.3389/fpsyg.2022.946527
+UR  - https://doi.org/10.3389/fpsyg.2022.946527
+N1  - Ketidakpastian produk blind-box dan evaluasi nilai konsumen; pengganti long2000consuming
+ID  - zhang2022uncertainty
 ER  - 
 
 TY  - JOUR

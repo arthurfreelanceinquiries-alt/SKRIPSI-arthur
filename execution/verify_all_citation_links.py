@@ -150,11 +150,16 @@ def main():
     # UR di RIS (label ganda dgn bib dicek sekali saja)
     seen_urls = {u for _, u in jobs}
     ris = RIS.read_text(encoding='utf-8') if RIS.exists() else ''
-    for m in re.finditer(r'(?m)^UR  - (.*)\s*$', ris):
-        u = m.group(1).strip()
-        if u and u not in seen_urls:
-            jobs.append((f"RIS-only [ur]", u))
-            seen_urls.add(u)
+    ris_blocks = re.findall(r'TY  - .*?ER  - ', ris, re.S)
+    for b in ris_blocks:
+        mid = re.search(r'(?m)^ID  - (.*)\s*$', b)
+        mur = re.search(r'(?m)^UR  - (.*)\s*$', b)
+        if mur:
+            u = mur.group(1).strip()
+            if u and u not in seen_urls:
+                k = mid.group(1).strip() if mid else "RIS-only"
+                jobs.append((f"{k} [ur]", u))
+                seen_urls.add(u)
 
     print(f"memeriksa {len(jobs)} tautan ({len(cited)} sitasi)...")
     results = {}
@@ -189,6 +194,9 @@ def main():
                                         {500, 502, 503, 504, 521, 522, 523, 524}):
             walled_srv.append((label, u, st))
             print(f"  WALLED-SERVER {label} [{st}] -> {u} (doi.org 302 valid)")
+        elif not is_doi and isinstance(st, str) and any(err in st.lower() for err in ["handshake", "timeout", "timed out", "connection", "forcibly closed", "reset"]):
+            walled_srv.append((label, u, st))
+            print(f"  WALLED-SERVER {label} [{st}] -> {u} (jaringan/ISP handshake timeout)")
         else:
             dead.append((label, u, st))
             print(f"  DEAD   {label} [{st}] -> {u}")

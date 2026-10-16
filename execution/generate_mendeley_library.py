@@ -47,7 +47,7 @@ RESOLVED_URLS = {
     "zeigarnik1927behalten": "https://doi.org/10.1007/978-3-658-12666-7_16",  # cetak ulang karya yg sama
     "mehrabian1974approach": "https://openlibrary.org/works/OL13333149W",
     "belk1995collecting": "https://openlibrary.org/works/OL3515364W",
-    "shiller2000irrational": "https://openlibrary.org/works/OL3638785W",
+    "shiller2000irrational": "https://doi.org/10.1515/9781400865512",
     "hayes2018introduction": "https://openlibrary.org/works/OL25343070W",
     "hair2019multivariate": "https://openlibrary.org/works/OL16979906W",
     "ghozali2018aplikasi": "https://openlibrary.org/works/OL28215322W",

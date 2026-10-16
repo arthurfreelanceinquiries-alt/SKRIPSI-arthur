@@ -138,7 +138,7 @@ PY  - 2000
 Y1  - 2000
 PB  - Princeton University Press
 CY  - Princeton, NJ
-UR  - https://openlibrary.org/works/OL3638785W
+UR  - https://doi.org/10.1515/9781400865512
 ID  - shiller2000irrational
 ER  - 
 
@@ -160,20 +160,23 @@ ID  - kahneman1979prospect
 ER  - 
 
 TY  - JOUR
-TI  - An Analysis of Personal Financial Literacy among College Students
-AU  - Chen, Haiyang
-AU  - Volpe, Ronald P.
-PY  - 1998
-Y1  - 1998
-JO  - Financial Services Review
-JF  - Financial Services Review
-VL  - 7
-IS  - 2
-SP  - 107
-EP  - 128
-DO  - 10.1016/S1057-0810(99)80006-7
-UR  - https://doi.org/10.1016/S1057-0810(99)80006-7
-ID  - chen1998financial
+TI  - Impulse Buying: A Meta-Analytic Review
+AU  - Iyer, Gopalkrishnan R.
+AU  - Blut, Markus
+AU  - Xiao, Sarah Hong
+AU  - Grewal, Dhruv
+PY  - 2020
+Y1  - 2020
+JO  - Journal of the Academy of Marketing Science
+JF  - Journal of the Academy of Marketing Science
+VL  - 48
+IS  - 3
+SP  - 384
+EP  - 404
+DO  - 10.1007/s11747-019-00670-w
+UR  - https://doi.org/10.1007/s11747-019-00670-w
+N1  - Meta-analisis 231 sampel, 75.000+ konsumen dari 186 artikel; pengganti chen1998financial
+ID  - iyer2020impulse
 ER  - 
 
 TY  - JOUR
@@ -210,39 +213,34 @@ ID  - stern1962significance
 ER  - 
 
 TY  - JOUR
-TI  - Financial Literacy, Financial Education, and Downstream Financial Behaviors
-AU  - Fernandes, Daniel
-AU  - Lynch, Jr., John G.
-AU  - Netemeyer, Richard G.
-PY  - 2014
-Y1  - 2014
-JO  - Management Science
-JF  - Management Science
-VL  - 60
-IS  - 8
-SP  - 1861
-EP  - 1883
-DO  - 10.1287/mnsc.2013.1849
-UR  - https://doi.org/10.1287/mnsc.2013.1849
-N1  - [FONDASIONAL] Meta-analisis 168 studi — knowledge-to-behavior gap
-ID  - fernandes2014financial
+TI  - Financial Education Affects Financial Knowledge and Downstream Behaviors
+AU  - Kaiser, Tim
+AU  - Lusardi, Annamaria
+AU  - Menkhoff, Lukas
+AU  - Urban, Carly
+PY  - 2022
+Y1  - 2022
+JO  - Journal of Financial Economics
+JF  - Journal of Financial Economics
+VL  - 145
+IS  - 2
+SP  - 255
+EP  - 272
+DO  - 10.1016/j.jfineco.2021.09.022
+UR  - https://doi.org/10.1016/j.jfineco.2021.09.022
+N1  - Meta-analisis 76 RCT — pengganti fernandes2014financial
+ID  - kaiser2022financial
 ER  - 
 
-TY  - JOUR
-TI  - The Economic Importance of Financial Literacy: Theory and Evidence
-AU  - Lusardi, Annamaria
-AU  - Mitchell, Olivia S.
-PY  - 2014
-Y1  - 2014
-JO  - Journal of Economic Literature
-JF  - Journal of Economic Literature
-VL  - 52
-IS  - 1
-SP  - 5
-EP  - 44
-DO  - 10.1257/jel.52.1.5
-UR  - https://doi.org/10.1257/jel.52.1.5
-ID  - lusardi2014economic
+TY  - RPRT
+TI  - Survei Nasional Literasi dan Inklusi Keuangan (SNLIK) Tahun 2024
+AU  - Otoritas Jasa Keuangan
+PY  - 2024
+Y1  - 2024
+CY  - Jakarta
+UR  - https://www.ojk.go.id
+N1  - Indeks literasi keuangan nasional 65,43 persen; pengganti lusardi2014economic
+ID  - ojk2024snlik
 ER  - 
 
 TY  - RPRT
@@ -459,19 +457,19 @@ ID  - cohen1988statistical
 ER  - 
 
 TY  - JOUR
-TI  - The Role of Set Completion in Consumer Purchasing
-AU  - Gao, Leilei
-AU  - Wheeler, S. Christian
-AU  - Shiv, Baba
-PY  - 2014
-Y1  - 2014
-JO  - Journal of Consumer Psychology
-JF  - Journal of Consumer Psychology
-VL  - 24
-IS  - 1
-SP  - 120
-EP  - 130
-ID  - gao2014set
+TI  - The Effect of Blind Box Product Uncertainty on Consumers' Purchase Intention: The Mediating Role of Perceived Value and the Moderating Role of Purchase Intention
+AU  - Zhang, Yi
+AU  - Zhang, Tianqi
+PY  - 2022
+Y1  - 2022
+JO  - Frontiers in Psychology
+JF  - Frontiers in Psychology
+VL  - 13
+SP  - 946527
+DO  - 10.3389/fpsyg.2022.946527
+UR  - https://doi.org/10.3389/fpsyg.2022.946527
+N1  - [Arsip] SOR model blind-box; pengganti gao2014set
+ID  - zhang2022archive
 ER  - 
 
 TY  - JOUR
@@ -760,37 +758,22 @@ ID  - amos2014meta
 ER  - 
 
 TY  - JOUR
-TI  - Impulse Buying: Modeling Its Precursors
-AU  - Beatty, Sharon E.
-AU  - Ferrell, M. Elizabeth
-PY  - 1998
-Y1  - 1998
-JO  - Journal of Retailing
-JF  - Journal of Retailing
-VL  - 74
-IS  - 2
-SP  - 169
-EP  - 191
-DO  - 10.1016/S0022-4359(99)80092-X
-UR  - https://doi.org/10.1016/S0022-4359(99)80092-X
-ID  - beatty1998impulse
-ER  - 
-
-TY  - JOUR
-TI  - If I Touch It I Have to Have It: Individual and Environmental Influences on Impulse Purchasing
-AU  - Peck, Joann
-AU  - Childers, Terry L.
-PY  - 2006
-Y1  - 2006
-JO  - Journal of Business Research
-JF  - Journal of Business Research
-VL  - 59
-IS  - 6
-SP  - 765
-EP  - 769
-DO  - 10.1016/j.jbusres.2006.01.014
-UR  - https://doi.org/10.1016/j.jbusres.2006.01.014
-ID  - peck2006if
+TI  - Impulse Buying Tendency in Live-Stream Commerce: The Role of Viewing Frequency and Anticipated Emotions Influencing Scarcity-Induced Purchase Decision
+AU  - Qu, Yi
+AU  - Khan, Jashim
+AU  - Su, Yuyang
+AU  - Tong, Jiao
+AU  - Zhao, Shuo
+PY  - 2023
+Y1  - 2023
+JO  - Journal of Retailing and Consumer Services
+JF  - Journal of Retailing and Consumer Services
+VL  - 75
+SP  - 103534
+DO  - 10.1016/j.jretconser.2023.103534
+UR  - https://doi.org/10.1016/j.jretconser.2023.103534
+N1  - Faktor situasional kelangkaan dan stimulus emosional terhadap impulse buying; pengganti peck2006if
+ID  - qu2023impulse
 ER  - 
 
 TY  - BOOK
@@ -893,37 +876,38 @@ ID  - zheng2019impact
 ER  - 
 
 TY  - JOUR
-TI  - Consumption values and relationships: segmenting the market for frequency programs
-AU  - Long, Mary M.
-AU  - Schiffman, Leon G.
-PY  - 2000
-Y1  - 2000
-JO  - Journal of Consumer Marketing
-JF  - Journal of Consumer Marketing
-VL  - 17
-IS  - 3
-SP  - 214
-EP  - 229
-DO  - 10.1108/07363760010329201
-UR  - https://doi.org/10.1108/07363760010329201
-ID  - long2000consuming
+TI  - The Effect of Blind Box Product Uncertainty on Consumers' Purchase Intention: The Mediating Role of Perceived Value and the Moderating Role of Purchase Intention
+AU  - Zhang, Yi
+AU  - Zhang, Tianqi
+PY  - 2022
+Y1  - 2022
+JO  - Frontiers in Psychology
+JF  - Frontiers in Psychology
+VL  - 13
+SP  - 946527
+DO  - 10.3389/fpsyg.2022.946527
+UR  - https://doi.org/10.3389/fpsyg.2022.946527
+N1  - Ketidakpastian produk blind-box dan evaluasi nilai konsumen; pengganti long2000consuming
+ID  - zhang2022uncertainty
 ER  - 
 
 TY  - JOUR
-TI  - Agents of change: how young consumers are changing the world of marketing
-AU  - Spero, Ian
-AU  - Stone, Merlin
-PY  - 2004
-Y1  - 2004
-JO  - Qualitative Market Research: An International Journal
-JF  - Qualitative Market Research: An International Journal
-VL  - 7
+TI  - The State of Online Impulse-Buying Research: A Literature Analysis
+AU  - Chan, Tommy K. H.
+AU  - Cheung, Christy M. K.
+AU  - Lee, Zach W. Y.
+PY  - 2017
+Y1  - 2017
+JO  - Information & Management
+JF  - Information & Management
+VL  - 54
 IS  - 2
-SP  - 153
-EP  - 159
-DO  - 10.1108/13522750410530057
-UR  - https://doi.org/10.1108/13522750410530057
-ID  - spero2004approach
+SP  - 204
+EP  - 217
+DO  - 10.1016/j.im.2016.06.001
+UR  - https://doi.org/10.1016/j.im.2016.06.001
+N1  - Analisis literatur komprehensif impulse buying online kerangka SOR; pengganti spero2004approach
+ID  - chan2017state
 ER  - 
 
 TY  - JOUR
@@ -1106,7 +1090,7 @@ Y1  - 2021
 PB  - Statista Inc.
 CY  - New York
 UR  - https://www.statista.com/chart/24277/media-franchises-with-most-sales/
-N1  - Statista Chart 24277, Consumer Market Insights & Research, New York: Statista Inc.\ (terbit Februari 2021) | Tersedia di: \urlhttps://www.statista.com/chart/24277/media-franchises-with-most-sales/ (Diakses 15 Januari 2025)
+N1  - Statista Chart 24277, Consumer Market Insights & Research, New York: Statista Inc.\ (terbit Februari 2021) | Tersedia di: \urlhttps://www.statista.com/chart/24277/media-franchises-with-most-sales/ (Diakses 18 September 2026)
 ID  - statista2024pokemon
 ER  - 
 
