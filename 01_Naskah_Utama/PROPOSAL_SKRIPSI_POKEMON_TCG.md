@@ -146,7 +146,7 @@ Melihat fenomena tersebut, penelitian ini membedah faktor penentu pembelian impu
 - **Tiga dorongan sekaligus:** Riset terdahulu umumnya menguji satu dimensi. Penelitian ini mengintegrasikan motivasi hedonis (*Hedonic Motivation* / $X_1$), hasrat melengkapi himpunan (*Desire for Completeness* / $X_2$), dan motif spekulasi finansial (*Speculative Motive* / $X_3$) dalam satu model.
 - **Moderasi kontrol diri:** Berbeda dari studi yang menempatkan variabel psikologis sebagai prediktor langsung atau mediator, penelitian ini memposisikan ***Self-Control*** sebagai **pemoderasi** yang diprediksi memperlemah pengaruh ketiga dorongan tersebut terhadap desakan belanja impulsif.
 
-Literatur menunjukkan pembelian impulsif dipengaruhi faktor pendorong yang beragam (Rook, 1987; Beikverdi et al., 2024; Iyer et al., 2020; Anoop and Rahman, 2025): (1) afektif, seperti motivasi belanja hedonis Babin et al., 1994; Arnold and Reynolds, 2003; Mariyana et al., 2023; (2) kognitif kolektor, seperti efek ketidaktuntasan himpunan (Zeigarnik, 1927; Gao et al., 2014; Barasz et al., 2017; Belk, 1995); (3) finansial, seperti ekspektasi *capital gain* dan bias optimisme pasar (Shiller, 2000; Baur et al., 2018; Colline, 2024); serta (4) situasional, seperti display kasir dan kelangkaan stok (Qu et al., 2023; Anoop and Rahman, 2025).
+Literatur menunjukkan pembelian impulsif dipengaruhi faktor pendorong yang beragam (Rook, 1987; Lubis et al., 2022; Iyer et al., 2020; Nyrhinen et al., 2024): (1) afektif, seperti motivasi belanja hedonis Babin et al., 1994; Arnold and Reynolds, 2003; Mariyana et al., 2023; (2) kognitif kolektor, seperti efek ketidaktuntasan himpunan (Zeigarnik, 1927; Gao et al., 2014; Barasz et al., 2017; Belk, 1995); (3) finansial, seperti ekspektasi *capital gain* dan bias optimisme pasar (Shiller, 2000; Baur et al., 2018; Colline, 2024); serta (4) situasional, seperti display kasir dan kelangkaan stok (Qu et al., 2023; Nyrhinen et al., 2024).
 
 Dari pemetaan tersebut, penelitian ini memfokuskan tiga variabel yang paling mewakili karakteristik kartu Pokémon TCG: $X_1$ (afektif: sensasi hiburan merobek kemasan), $X_2$ (kolektor: perasaan tidak nyaman saat melihat slot kosong di album koleksi (*binder*)), dan $X_3$ (pasar: harapan keuntungan dari penjualan di pasar sekunder dan *grading*). Perumusan instrumen dan pengujiannya diuraikan pada Bab II dan Bab III.
 
@@ -165,14 +165,14 @@ Telaah empiris menunjukkan hubungan anteseden dengan pembelian impulsif tidak be
 | 1 | X1 terhadap Y (*Hedonic Motivation*) | Arnold dan Reynolds (2003); Mariyana *et al.* (2023); Pranggabayu dan Andjarwati (2022); Gong *et al.* (2024); Tirtayasa *et al.* (2020); Zheng *et al.* (2019) (positif signifikan). | Batas Skwara (2023); Baumeister *et al.* (2024) (tertahan anggaran; bukan temuan tidak signifikan pada kolektibel). | Elastisitas anggaran dan orientasi utiliter vs afektif. |
 | 2 | X2 terhadap Y (*Desire for Completeness*) | Gao *et al.* (2014); Barasz *et al.* (2017); Dewi *et al.* (2026) (positif signifikan). | Long dan Schiffman (2000); Spero dan Stone (2004) (kolektor matang pilih single; bukan temuan tidak signifikan). | Kematangan kolektor dan kalkulasi probabilitas. |
 | 3 | X3 terhadap Y (*Speculative Motive*) | Baur *et al.* (2018); Aryadi dan Lingga (2024) (analogi partisipasi TCG); Colline (2024) (herding; kualitatif). Shiller (2000) sebagai kerangka keuangan perilaku. | Alfina *et al.* (2023); Aquino dan Gershenson (2024) (analogi pasar koleksi; bukan temuan tidak signifikan pada kolektibel). | Asimetri informasi dan ilusi kendali vs evaluasi risiko. |
-| 4 | M terhadap Y (*Self-Control*) | Baumeister (2002); Tangney *et al.* (2004); Rafael dan Lopes (2023); Prihatiningrum dan Said (2021) (negatif signifikan). | Widyastuti dan Hariasih (2024); Beikverdi *et al.* (2024) (cognitive bypass; bukan regresi). | Ego depletion saat stimulus intens. |
+| 4 | M terhadap Y (*Self-Control*) | Baumeister (2002); Tangney *et al.* (2004); Rafael dan Lopes (2023); Prihatiningrum dan Said (2021); Jain *et al.* (2023) (negatif signifikan). | Widyastuti dan Hariasih (2024); Lubis *et al.* (2022) (cognitive bypass; bukan regresi). | Ego depletion saat stimulus intens. |
 | 5 | Moderasi M pada X1 terhadap Y | Lienardy dan Panasea (2026) (MRA H4 diterima); Katauke *et al.* (2023) (tak langsung). | Gagal-moderasi Apidana dan Kholifah (2022) (p=0,597) dan Artadita dan Firmialy (2024) (β=0,092, tidak signifikan). | Ambang intensitas hedonis vs kapasitas volisional. |
 | 6 | Moderasi M pada X2 terhadap Y | Parsial: Artadita dan Firmialy (2024) (kontrol kognitif; moderasi keseluruhan ditolak); Apidana dan Kholifah (2022) (adjacent). | Teori Belk (1995); Barasz *et al.* (2017) + Artadita dan Firmialy (2024) H3 ditolak. | Keterikatan koleksi: kasual vs fanatik. |
 | 7 | Moderasi M pada X3 terhadap Y | Tak langsung: Katauke *et al.* (2023) + Planner-Doer. | Teoritis Shiller (2000); Aryadi dan Lingga (2024) (bukan uji interaksi). | Herding dan FOMO saat euforia. |
 
 *Sumber: Data diolah dari sintesis kajian literatur empiris terdahulu (2026).*
 
-Ketidakseragaman temuan tersebut menunjukkan perlunya variabel pemoderasi yang menguji batas kontrol psikologis konsumen. Dalam kerangka *Self-Regulation Theory* (Baumeister, 2002; Rafael and Lopes, 2023) dan model regulasi diri (Baumeister et al., 2024), ***Self-Control*** diposisikan sebagai pengendali diri, yaitu kemampuan menunda kepuasan (Tangney et al., 2004; Prihatiningrum and Said, 2021) yang diprediksi **memperlemah** ketiga dorongan tersebut (Lienardy and Panasea, 2026).
+Ketidakseragaman temuan tersebut menunjukkan perlunya variabel pemoderasi yang menguji batas kontrol psikologis konsumen. Dalam kerangka *Self-Regulation Theory* (Baumeister, 2002; Rafael and Lopes, 2023) dan model regulasi diri (Baumeister et al., 2024), ***Self-Control*** diposisikan sebagai pengendali diri, yaitu kemampuan menunda kepuasan (Tangney et al., 2004; Prihatiningrum and Said, 2021; Jain et al., 2023) yang diprediksi **memperlemah** ketiga dorongan tersebut (Lienardy and Panasea, 2026).
 
 Untuk memfokuskan analisis penelitian dan memastikan kelayakan observasi lapangan, penelitian ini membatasi pengujian pada konsumen kartu Pokémon TCG di wilayah Jakarta Barat. Pemilihan wilayah Jakarta Barat didasarkan pada empat pertimbangan ilmiah dan metodologis yang kuat:
 - **Pusat Komunitas dan Ritel Resmi (*LGS Hub*):** Jakarta Barat merupakan salah satu pusat konsentrasi ekosistem Pokémon TCG fisik terbesar di wilayah Jabodetabek, dengan keberadaan toko hobi resmi (*Official Gym / Local Game Stores* / LGS) mitra resmi AKG Games yang rutin menyelenggarakan turnamen mingguan (*Gym Battle*) serta jaringan gerai ritel modern yang sangat padat.
@@ -246,13 +246,13 @@ Mengoleksi adalah bentuk konsumsi aktif dan penuh gairah yang didorong oleh kebu
 
 ### 2.1.4 Teori Regulasi Diri (*Self-Regulation Theory*)
 
-Teori regulasi diri (Baumeister, 2002) menjelaskan bagaimana individu mengendalikan dorongan alami demi tujuan jangka panjang. Rafael and Lopes (2023) membuktikan bahwa penipisan kontrol diri (*ego depletion*) secara langsung menyebabkan kegagalan menahan impuls belanja. Sebaliknya, individu dengan kontrol diri yang kuat (*high trait self-control*) memiliki kemampuan pengendalian diri yang baik untuk menolak godaan belanja sesaat dan menunda kepuasan (*delay of gratification*) (Tangney et al., 2004).
+Teori regulasi diri (Baumeister, 2002) menjelaskan bagaimana individu mengendalikan dorongan alami demi tujuan jangka panjang. Rafael and Lopes (2023) menegaskan bahwa penipisan kontrol diri (*ego depletion*) dalam kerangka regulasi diri secara langsung memicu kegagalan menahan dorongan belanja. Sebaliknya, individu dengan kontrol diri yang kuat (*high trait self-control*) memiliki kemampuan pengendalian diri yang baik untuk menolak godaan belanja sesaat dan menunda kepuasan (*delay of gratification*) (Tangney et al., 2004).
 
 ## 2.2 Kajian Variabel Penelitian
 
 ### 2.2.1 Variabel Dependen ($Y$): Pembelian Impulsif (*Impulsive Buying*)
 
-Pembelian impulsif didefinisikan sebagai dorongan belanja yang mendadak, kuat, dan terus-menerus untuk segera membeli tanpa pertimbangan sadar sebelumnya mengenai konsekuensi pengeluaran (Rook, 1987; Beikverdi et al., 2024; Zhao et al., 2025). Verplanken and Herabadi (2001) mengidentifikasi dua dimensi utama: (1) dimensi kognitif (ketiadaan perencanaan dan pengabaian anggaran); dan (2) dimensi afektif (luapan kegembiraan dan dorongan emosional tak tertahankan). Anoop and Rahman (2025) menegaskan bahwa pembelian impulsif dipicu oleh konvergensi stimulus afektif, faktor kognitif internal, dan situasi pasar.
+Pembelian impulsif didefinisikan sebagai dorongan belanja yang mendadak, kuat, dan terus-menerus untuk segera membeli tanpa pertimbangan sadar sebelumnya mengenai konsekuensi pengeluaran (Rook, 1987; Lubis et al., 2022; Nyrhinen et al., 2024). Verplanken and Herabadi (2001) mengidentifikasi dua dimensi utama: (1) dimensi kognitif (ketiadaan perencanaan dan pengabaian anggaran); dan (2) dimensi afektif (luapan kegembiraan dan dorongan emosional tak tertahankan). Nyrhinen et al. (2024) membuktikan bahwa dorongan pembelian impulsif dipicu oleh konvergensi stimulus digital afektif, kerentanan kognitif internal konsumen, dan lemahnya kendali diri.
 
 ### 2.2.2 Variabel Independen ($X_1$): Motivasi Hedonis (*Hedonic Motivation*)
 
@@ -270,7 +270,7 @@ Kehadiran lembaga sertifikasi *grading* independen internasional (**PSA, BGS, CG
 
 ### 2.2.5 Variabel Moderasi ($M$): Kontrol Diri (*Self-Control*)
 
-Kontrol diri merupakan kemampuan pengendalian diri seseorang untuk menolak godaan belanja, menunda kepuasan sesaat (*delay of gratification*), dan mendisiplinkan pengeluaran agar selaras dengan rencana keuangan jangka panjang (Tangney et al., 2004; Baumeister, 2002; Rafael and Lopes, 2023). Dalam kerangka regulasi diri (Baumeister et al., 2024), kontrol diri bertindak sebagai mekanisme pengendalian diri. Konsumen dengan kontrol diri tinggi mampu menahan desakan emosional dan spekulatif, sehingga pengaruh variabel independen terhadap *Impulsive Buying* diperlemah secara signifikan (Prihatiningrum and Said, 2021).
+Kontrol diri merupakan kemampuan pengendalian diri seseorang untuk menolak godaan belanja, menunda kepuasan sesaat (*delay of gratification*), dan mendisiplinkan pengeluaran agar selaras dengan rencana keuangan jangka panjang (Tangney et al., 2004; Baumeister, 2002; Rafael and Lopes, 2023). Dalam kerangka regulasi diri (Baumeister et al., 2024), kontrol diri bertindak sebagai mekanisme pengendalian diri. Konsumen dengan kontrol diri tinggi mampu menahan desakan emosional dan spekulatif, sehingga pengaruh variabel independen terhadap *Impulsive Buying* diperlemah secara signifikan (Prihatiningrum and Said, 2021; Jain et al., 2023).
 
 ## 2.3 Penelitian Sebelumnya
 
@@ -658,57 +658,58 @@ Jadwal pelaksanaan tahapan kegiatan penelitian direncanakan berlangsung selama 6
 
 # DAFTAR PUSTAKA
 
+
 1. Aiken, L. S. and West, S. G. (1991). *Multiple Regression: Testing and Interpreting Interactions*. Sage Publications, Newbury Park, CA.
 2. Alfina, Hartini, S., and Mardhiyah, D. (2023). FOMO related consumer behaviour in marketing context: A systematic literature review. *Cogent Business & Management*, 10(3):2250033.
-3. Anoop, T. S. and Rahman, Z. (2025). Online impulse buying: A systematic review of 25 years of research using meta regression. *Journal of Consumer Behaviour*, 24(1):363–391.
-4. Apidana, Y. H. and Kholifah (2022). Peran self control dalam memoderasi pengaruh hedonic motives dan shopping lifestyle terhadap impulse buying. *Journal of Digital Business and Management*, 1(1):26–40.
-5. Aquino, M. J. and Gershenson, S. (2024). Expecting the expected? Documenting nostalgia effects on baseball card prices. *Journal of Sports Economics*, 25(6):683–706.
-6. Arnold, M. J. and Reynolds, K. E. (2003). Hedonic shopping motivations. *Journal of Retailing*, 79(2):77–95.
-7. Artadita, S. and Firmialy, S. D. (2024). How does self-control moderate shopping enjoyment and impulse buying among generation z online gamers? *Binus Business Review*, 15(2):179–189.
-8. Aryadi, A. and Lingga, M. (2026). Personal traits and motivation impact on collectibles as an alternative investment: A case study of trading card game community in greater jakarta. In *Proceedings of the 5th International Conference on Global Innovation and Trends in Economy (INCOGITE 2024)*, volume 302 of *Advances in Economics, Business and Management Research*, pages 1–12. Atlantis Press.
-9. Azizah, N. L. and Fauzi, M. (2025). Exploring the drivers of impulsive buying in e-commerce: the role of hedonic motivation, shopping lifestyle, and positive emotions. *Jurnal Inovasi Ekonomi*, 10(2):79–94.
-10. Babin, B. J., Darden, W. R., and Griffin, M. (1994). Work and/or fun: Measuring hedonic and utilitarian shopping value. *Journal of Consumer Research*, 20(4):644–656.
-11. Barasz, K., John, L. K., Keenan, E. A., and Norton, M. I. (2017). Pseudo-set framing. *Journal of Experimental Psychology: General*, 146(10):1460–1477.
-12. Baumeister, R. F. (2002). Yielding to temptation: Self-control failure, impulsive purchasing, and consumer behavior. *Journal of Consumer Research*, 28(4):670–676.
-13. Baumeister, R. F., André, N., Southwick, D. A., and Tice, D. M. (2024). Self-control and limited willpower: Current status of ego depletion theory and research. *Current Opinion in Psychology*, 60:101882.
-14. Baur, D. G., Dimpfl, T., and Kuck, K. (2018). Bitcoin, gold and the US dollar – a replication and extension. *Finance Research Letters*, 25:103–110.
-15. Beikverdi, L., Sipilä, J., and Tarkiainen, A. (2024). Post-purchase effects of impulse buying: A review and research agenda. *Journal of Consumer Behaviour*, 23(3):1512–1527.
-16. Belk, R. W. (1995). *Collecting in a Consumer Society*. Routledge, London.
-17. Chan, T. K. H., Cheung, C. M. K., and Lee, Z. W. Y. (2017). The state of online impulse-buying research: A literature analysis. *Information & Management*, 54(2):204–217. Analisis literatur komprehensif impulse buying online kerangka SOR; pengganti spero2004approach.
-18. Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences*. Lawrence Erlbaum Associates, Hillsdale, NJ, 2 edition.
-19. Colline, F. (2024). Biases in indonesian stock investor behavior. *Accounting and Finance Studies*, 4(2):88–98.
-20. Dewi, M. M. L. S., Budoyo, V. D., and Mustikasari, F. (2026). Understanding impulse buying behavior: The case of blind box purchases in indonesia. *Jurnal Locus: Penelitian dan Pengabdian*, 5(2):1082–1089.
-21. Gao, L., Huang, Y., and Simonson, I. (2014). The influence of initial possession level on consumers' adoption of a collection goal: A tipping point effect. *Journal of Marketing*, 78:143–156.
-22. Ghozali, I. (2018). *Aplikasi Analisis Multivariate dengan Program IBM SPSS 25*. Badan Penerbit Universitas Diponegoro, Semarang, 9 edition.
-23. Giarlotta, A. and Petralia, A. (2024). Simon's bounded rationality. *Decisions in Economics and Finance*, 47(1):327–346.
-24. Gong, X., Yee, C. L., Lee, S. Y., Saif, A. N. M., Liu, M., and Anonthi, F. (2024). Unveiling the enigma of blind box impulse buying curiosity: The moderating role of price consciousness. *Heliyon*, 10(24):e40564.
-25. Green, S. B. (1991). How many subjects does it take to do a regression analysis? *Multivariate Behavioral Research*, 26(3):499–510.
-26. Gächter, S., Johnson, E. J., and Herrmann, A. (2022). Individual-level loss aversion in riskless and risky choices. *Theory and Decision*, 92(3–4):599–624.
-27. Hair, J. F., Black, W. C., Babin, B. J., and Anderson, R. E. (2019). *Multivariate Data Analysis*. Cengage Learning, Boston, MA, 8th edition.
-28. Hayes, A. F. (2018). *Introduction to Mediation, Moderation, and Conditional Process Analysis: A Regression-Based Approach*. The Guilford Press, New York, 2nd edition.
-29. Huo, C., Wang, X., Sadiq, M. W., and Pang, M. (2023). Exploring factors affecting consumer's impulse buying behavior in live-streaming shopping: An interactive research based upon SOR model. *SAGE Open*, 13(2):1–15.
-30. Iyer, G. R., Blut, M., Xiao, S. H., and Grewal, D. (2020). Impulse buying: A meta-analytic review. *Journal of the Academy of Marketing Science*, 48(3):384–404. Meta-analisis 231 sampel, 75.000+ konsumen dari 186 artikel; pengganti chen1998financial.
-31. Katauke, T., Fukuda, S., Khan, M. S. R., and Kadoya, Y. (2023). Financial literacy and impulsivity: Evidence from Japan. *Sustainability*, 15(9):7267.
-32. Keynes, J. M. (1936). *The General Theory of Employment, Interest and Money*. Macmillan, London.
-33. Lienardy, G. V. and Panasea, I. G. N. O. (2026). The role of self-control in moderating the influence of shopping lifestyle and hedonistic behavior on impulsive buying. *Business and Investment Review*, 4(3).
+3. Apidana, Y. H. and Kholifah (2022). Peran self control dalam memoderasi pengaruh hedonic motives dan shopping lifestyle terhadap impulse buying. *Journal of Digital Business and Management*, 1(1):26–40.
+4. Aquino, M. J. and Gershenson, S. (2024). Expecting the expected? Documenting nostalgia effects on baseball card prices. *Journal of Sports Economics*, 25(6):683–706.
+5. Arnold, M. J. and Reynolds, K. E. (2003). Hedonic shopping motivations. *Journal of Retailing*, 79(2):77–95.
+6. Artadita, S. and Firmialy, S. D. (2024). How does self-control moderate shopping enjoyment and impulse buying among generation z online gamers? *Binus Business Review*, 15(2):179–189.
+7. Aryadi, A. and Lingga, M. (2026). Personal traits and motivation impact on collectibles as an alternative investment: A case study of trading card game community in greater jakarta. In *Proceedings of the 5th International Conference on Global Innovation and Trends in Economy (INCOGITE 2024)*, volume 302 of *Advances in Economics, Business and Management Research*, pages 1–12. Atlantis Press.
+8. Azizah, N. L. and Fauzi, M. (2025). Exploring the drivers of impulsive buying in e-commerce: the role of hedonic motivation, shopping lifestyle, and positive emotions. *Jurnal Inovasi Ekonomi*, 10(2):79–94.
+9. Babin, B. J., Darden, W. R., and Griffin, M. (1994). Work and/or fun: Measuring hedonic and utilitarian shopping value. *Journal of Consumer Research*, 20(4):644–656.
+10. Barasz, K., John, L. K., Keenan, E. A., and Norton, M. I. (2017). Pseudo-set framing. *Journal of Experimental Psychology: General*, 146(10):1460–1477.
+11. Baumeister, R. F. (2002). Yielding to temptation: Self-control failure, impulsive purchasing, and consumer behavior. *Journal of Consumer Research*, 28(4):670–676.
+12. Baumeister, R. F., André, N., Southwick, D. A., and Tice, D. M. (2024). Self-control and limited willpower: Current status of ego depletion theory and research. *Current Opinion in Psychology*, 60:101882.
+13. Baur, D. G., Dimpfl, T., and Kuck, K. (2018). Bitcoin, gold and the US dollar – a replication and extension. *Finance Research Letters*, 25:103–110.
+14. Belk, R. W. (1995). *Collecting in a Consumer Society*. Routledge, London.
+15. Chan, T. K. H., Cheung, C. M. K., and Lee, Z. W. Y. (2017). The state of online impulse-buying research: A literature analysis. *Information & Management*, 54(2):204–217. Analisis literatur komprehensif impulse buying online kerangka SOR; pengganti spero2004approach.
+16. Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences*. Lawrence Erlbaum Associates, Hillsdale, NJ, 2 edition.
+17. Colline, F. (2024). Biases in indonesian stock investor behavior. *Accounting and Finance Studies*, 4(2):88–98.
+18. Dewi, M. M. L. S., Budoyo, V. D., and Mustikasari, F. (2026). Understanding impulse buying behavior: The case of blind box purchases in indonesia. *Jurnal Locus: Penelitian dan Pengabdian*, 5(2):1082–1089.
+19. Gao, L., Huang, Y., and Simonson, I. (2014). The influence of initial possession level on consumers' adoption of a collection goal: A tipping point effect. *Journal of Marketing*, 78:143–156.
+20. Ghozali, I. (2018). *Aplikasi Analisis Multivariate dengan Program IBM SPSS 25*. Badan Penerbit Universitas Diponegoro, Semarang, 9 edition.
+21. Giarlotta, A. and Petralia, A. (2024). Simon's bounded rationality. *Decisions in Economics and Finance*, 47(1):327–346.
+22. Gong, X., Yee, C. L., Lee, S. Y., Saif, A. N. M., Liu, M., and Anonthi, F. (2024). Unveiling the enigma of blind box impulse buying curiosity: The moderating role of price consciousness. *Heliyon*, 10(24):e40564.
+23. Green, S. B. (1991). How many subjects does it take to do a regression analysis? *Multivariate Behavioral Research*, 26(3):499–510.
+24. Gächter, S., Johnson, E. J., and Herrmann, A. (2022). Individual-level loss aversion in riskless and risky choices. *Theory and Decision*, 92(3–4):599–624.
+25. Hair, J. F., Black, W. C., Babin, B. J., and Anderson, R. E. (2019). *Multivariate Data Analysis*. Cengage Learning, Boston, MA, 8th edition.
+26. Hayes, A. F. (2018). *Introduction to Mediation, Moderation, and Conditional Process Analysis: A Regression-Based Approach*. The Guilford Press, New York, 2nd edition.
+27. Huo, C., Wang, X., Sadiq, M. W., and Pang, M. (2023). Exploring factors affecting consumer's impulse buying behavior in live-streaming shopping: An interactive research based upon SOR model. *SAGE Open*, 13(2):1–15.
+28. Iyer, G. R., Blut, M., Xiao, S. H., and Grewal, D. (2020). Impulse buying: A meta-analytic review. *Journal of the Academy of Marketing Science*, 48(3):384–404. Meta-analisis 231 sampel, 75.000+ konsumen dari 186 artikel; pengganti chen1998financial.
+29. Jain, A., Srivastava, S., and Shukla, A. (2023). Self-control and compulsive buying behavior: The mediating role of ill-being perception. *Cogent Business & Management*, 10(3):2286673.
+30. Katauke, T., Fukuda, S., Khan, M. S. R., and Kadoya, Y. (2023). Financial literacy and impulsivity: Evidence from Japan. *Sustainability*, 15(9):7267.
+31. Keynes, J. M. (1936). *The General Theory of Employment, Interest and Money*. Macmillan, London.
+32. Lienardy, G. V. and Panasea, I. G. N. O. (2026). The role of self-control in moderating the influence of shopping lifestyle and hedonistic behavior on impulsive buying. *Business and Investment Review*, 4(3).
+33. Lubis, A. N., Lumbanraja, P., and Hasibuan, B. K. (2022). Evaluation on e-marketing exposure practice to minimize the customers' online shopping purchase regret. *Cogent Business & Management*, 9(1):2016039.
 34. Mariyana, Djawoto, and Suhermin (2023). The influence of hedonic shopping motivation and shopping lifestyle on impulse buying through positive emotion in e-commerce. *Jurnal Manajemen dan Bisnis (MABIS)*, 22(2):25–39.
-35. Pranggabayu, B. and Andjarwati, A. L. (2022). Pengaruh hedonic shopping motivation dan store atmosphere terhadap impulsive buying. *Sibatik Journal*, 1(6):951–966.
-36. PriceCharting (2024). Pok\'emon shining fates card price guide: Historical market values for ungraded and psa 10 graded cards. PriceCharting Historical Collectibles Database, New York. Tersedia di: \urlhttps://www.pricecharting.com/console/pokemon-shining-fates (Diakses 18 September 2026).
-37. Prihatiningrum, Y. and Said, L. R. (2021). The effect of imprudence, self-indulgence, and lack of self-control on male shoppers' impulse buying behavior: A case in Indonesia. *Advances in Economics, Business and Management Research*, 193:76–82.
-38. Qu, Y., Khan, J., Su, Y., Tong, J., and Zhao, S. (2023). Impulse buying tendency in live-stream commerce: The role of viewing frequency and anticipated emotions influencing scarcity-induced purchase decision. *Journal of Retailing and Consumer Services*, 75:103534. Faktor situasional kelangkaan dan stimulus emosional terhadap impulse buying; pengganti peck2006if.
-39. Rafael, D. N. and Lopes, E. L. (2023). Ego depletion in consumer behavior: A review, synthesis, and research agenda. *Journal of Consumer Behaviour*, 22(3):755–781.
-40. Rook, D. W. (1987). The buying impulse. *Journal of Consumer Research*, 14(2):189–199.
-41. Sekaran, U. and Bougie, R. (2016). *Research Methods for Business: A Skill-Building Approach*. John Wiley & Sons, Chichester, West Sussex, 7th edition.
-42. Shiller, R. J. (2000). *Irrational Exuberance*. Princeton University Press, Princeton, NJ.
-43. Skwara, F. (2023). Effects of mental accounting on purchase decision processes: A systematic review and research agenda. *Journal of Consumer Behaviour*, 22(5):1265–1281.
-44. Statista (2021). Top 10 highest-grossing media franchises worldwide of all time. Statista Chart 24277, Consumer Market Insights & Research, New York: Statista Inc.\ (terbit Februari 2021). Tersedia di: \urlhttps://www.statista.com/chart/24277/media-franchises-with-most-sales/ (Diakses 18 September 2026).
-45. Sugiyono (2019). *Metode Penelitian Kuantitatif, Kualitatif, dan R&D*. Alfabeta, Bandung.
-46. Tangney, J. P., Baumeister, R. F., and Boone, A. L. (2004). High self-control predicts good adjustment, less pathology, better grades, and interpersonal success. *Journal of Personality*, 72(2):271–324.
-47. The Pok\'emon Company (2024). Corporate business data and trading card game historical production statistics. Laporan Resmi Korporat, Tokyo: The Pok\'emon Company. Tersedia di: \urlhttps://corporate.pokemon.co.jp/en/aboutus/figures/ (Diakses 15 Januari 2025).
-48. Tirtayasa, S., Nevianda, M., and Syahrial, H. (2020). The effect of hedonic shopping motivation, shopping lifestyle and fashion involvement with impulse buying. *International Journal of Business Economics*, 2(1):18–28.
-49. Verplanken, B. and Herabadi, A. (2001). Individual differences in impulse buying tendency: Feeling and no thinking. *European Journal of Personality*, 15(S1):S71–S83.
-50. Widyastuti, N. A. and Hariasih, M. (2024). The power of hedonic motivation and discounts through releasing impulse buying in Indonesia. *Indonesian Journal of Law and Economics Review*, 19(2):1104.
-51. Zeigarnik, B. (1927). Ueber das Behalten von erledigten und unerledigten Handlungen. *Psychologische Forschung*, 9:1–85.
-52. Zhang, Y. and Zhang, T. (2022). The effect of blind box product uncertainty on consumers' purchase intention: The mediating role of perceived value and the moderating role of purchase intention. *Frontiers in Psychology*, 13:946527. Ketidakpastian produk blind-box dan evaluasi nilai konsumen; pengganti long2000consuming.
-53. Zhao, G., Liu, X., Tan, H., and Yang, S. (2025). The effect of self-control on impulsive consumption with the moderators of family socioeconomic status and peer feedback. *Asian Journal of Social Psychology*, 28(1):e12663.
+35. Nyrhinen, J., Sirola, A., Koskelainen, T., Munnukka, J., and Wilska, T.-A. (2024). Online antecedents for young consumers' impulse buying behavior. *Computers in Human Behavior*, 153:108129.
+36. Pranggabayu, B. and Andjarwati, A. L. (2022). Pengaruh hedonic shopping motivation dan store atmosphere terhadap impulsive buying. *Sibatik Journal*, 1(6):951–966.
+37. PriceCharting (2024). Pok\'emon shining fates card price guide: Historical market values for ungraded and psa 10 graded cards. PriceCharting Historical Collectibles Database, New York. Tersedia di: \urlhttps://www.pricecharting.com/console/pokemon-shining-fates (Diakses 18 September 2026).
+38. Prihatiningrum, Y. and Said, L. R. (2021). The effect of imprudence, self-indulgence, and lack of self-control on male shoppers' impulse buying behavior: A case in Indonesia. *Advances in Economics, Business and Management Research*, 193:76–82.
+39. Qu, Y., Khan, J., Su, Y., Tong, J., and Zhao, S. (2023). Impulse buying tendency in live-stream commerce: The role of viewing frequency and anticipated emotions influencing scarcity-induced purchase decision. *Journal of Retailing and Consumer Services*, 75:103534. Faktor situasional kelangkaan dan stimulus emosional terhadap impulse buying; pengganti peck2006if.
+40. Rafael, D. N. and Lopes, E. L. (2023). A estrutura intelectual da depleção do ego: Tópicos emergentes, tendências e oportunidades de pesquisas futuras. *ReMark -- Revista Brasileira de Marketing*, 22(2):734–782.
+41. Rook, D. W. (1987). The buying impulse. *Journal of Consumer Research*, 14(2):189–199.
+42. Sekaran, U. and Bougie, R. (2016). *Research Methods for Business: A Skill-Building Approach*. John Wiley & Sons, Chichester, West Sussex, 7th edition.
+43. Shiller, R. J. (2000). *Irrational Exuberance*. Princeton University Press, Princeton, NJ.
+44. Skwara, F. (2023). Effects of mental accounting on purchase decision processes: A systematic review and research agenda. *Journal of Consumer Behaviour*, 22(5):1265–1281.
+45. Statista (2021). Top 10 highest-grossing media franchises worldwide of all time. Statista Chart 24277, Consumer Market Insights & Research, New York: Statista Inc.\ (terbit Februari 2021). Tersedia di: \urlhttps://www.statista.com/chart/24277/media-franchises-with-most-sales/ (Diakses 18 September 2026).
+46. Sugiyono (2019). *Metode Penelitian Kuantitatif, Kualitatif, dan R&D*. Alfabeta, Bandung.
+47. Tangney, J. P., Baumeister, R. F., and Boone, A. L. (2004). High self-control predicts good adjustment, less pathology, better grades, and interpersonal success. *Journal of Personality*, 72(2):271–324.
+48. The Pok\'emon Company (2024). Corporate business data and trading card game historical production statistics. Laporan Resmi Korporat, Tokyo: The Pok\'emon Company. Tersedia di: \urlhttps://corporate.pokemon.co.jp/en/aboutus/figures/ (Diakses 15 Januari 2025).
+49. Tirtayasa, S., Nevianda, M., and Syahrial, H. (2020). The effect of hedonic shopping motivation, shopping lifestyle and fashion involvement with impulse buying. *International Journal of Business Economics*, 2(1):18–28.
+50. Verplanken, B. and Herabadi, A. (2001). Individual differences in impulse buying tendency: Feeling and no thinking. *European Journal of Personality*, 15(S1):S71–S83.
+51. Widyastuti, N. A. and Hariasih, M. (2024). The power of hedonic motivation and discounts through releasing impulse buying in Indonesia. *Indonesian Journal of Law and Economics Review*, 19(2):1104.
+52. Zeigarnik, B. (1927). Ueber das Behalten von erledigten und unerledigten Handlungen. *Psychologische Forschung*, 9:1–85.
+53. Zhang, Y. and Zhang, T. (2022). The effect of blind box product uncertainty on consumers' purchase intention: The mediating role of perceived value and the moderating role of purchase intention. *Frontiers in Psychology*, 13:946527. Ketidakpastian produk blind-box dan evaluasi nilai konsumen; pengganti long2000consuming.
 54. Zheng, X., Men, J., Yang, F., and Gong, X. (2019). Understanding impulse buying in mobile commerce: An investigation into hedonic and utilitarian browsing. *International Journal of Information Management*, 48:151–160.

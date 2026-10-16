@@ -28,23 +28,6 @@ ID  - alfina2023fomo
 ER  - 
 
 TY  - JOUR
-TI  - Online Impulse Buying: A Systematic Review of 25 Years of Research Using Meta Regression
-AU  - Anoop, T. S.
-AU  - Rahman, Zillur
-PY  - 2025
-Y1  - 2025
-JO  - Journal of Consumer Behaviour
-JF  - Journal of Consumer Behaviour
-VL  - 24
-IS  - 1
-SP  - 363
-EP  - 391
-DO  - 10.1002/cb.2418
-UR  - https://doi.org/10.1002/cb.2418
-ID  - anoop2025online
-ER  - 
-
-TY  - JOUR
 TI  - Peran Self Control dalam Memoderasi Pengaruh Hedonic Motives dan Shopping Lifestyle terhadap Impulse Buying
 AU  - Apidana, Yordan Hermawan
 AU  - Kholifah
@@ -230,24 +213,6 @@ EP  - 110
 DO  - 10.1016/j.frl.2017.10.012
 UR  - https://doi.org/10.1016/j.frl.2017.10.012
 ID  - baur2018bitcoin
-ER  - 
-
-TY  - JOUR
-TI  - Post-Purchase Effects of Impulse Buying: A Review and Research Agenda
-AU  - Beikverdi, Leila
-AU  - Sipil\"a, Jenni
-AU  - Tarkiainen, Anssi
-PY  - 2024
-Y1  - 2024
-JO  - Journal of Consumer Behaviour
-JF  - Journal of Consumer Behaviour
-VL  - 23
-IS  - 3
-SP  - 1512
-EP  - 1527
-DO  - 10.1002/cb.2287
-UR  - https://doi.org/10.1002/cb.2287
-ID  - beikverdi2024post
 ER  - 
 
 TY  - BOOK
@@ -489,6 +454,23 @@ ID  - iyer2020impulse
 ER  - 
 
 TY  - JOUR
+TI  - Self-Control and Compulsive Buying Behavior: The Mediating Role of Ill-Being Perception
+AU  - Jain, Ankita
+AU  - Srivastava, Sandeep
+AU  - Shukla, Abhishek
+PY  - 2023
+Y1  - 2023
+JO  - Cogent Business & Management
+JF  - Cogent Business & Management
+VL  - 10
+IS  - 3
+SP  - 2286673
+DO  - 10.1080/23311975.2023.2286673
+UR  - https://doi.org/10.1080/23311975.2023.2286673
+ID  - jain2023selfcontrol
+ER  - 
+
+TY  - JOUR
 TI  - Financial Literacy and Impulsivity: Evidence from Japan
 AU  - Katauke, Takuya
 AU  - Fukuda, Sayaka
@@ -533,6 +515,23 @@ ID  - lienardy2026role
 ER  - 
 
 TY  - JOUR
+TI  - Evaluation on E-Marketing Exposure Practice to Minimize the Customers' Online Shopping Purchase Regret
+AU  - Lubis, Arlina Nurbaity
+AU  - Lumbanraja, Prihatin
+AU  - Hasibuan, Beby Kendida
+PY  - 2022
+Y1  - 2022
+JO  - Cogent Business & Management
+JF  - Cogent Business & Management
+VL  - 9
+IS  - 1
+SP  - 2016039
+DO  - 10.1080/23311975.2021.2016039
+UR  - https://doi.org/10.1080/23311975.2021.2016039
+ID  - lubis2022evaluation
+ER  - 
+
+TY  - JOUR
 TI  - The Influence of Hedonic Shopping Motivation and Shopping Lifestyle on Impulse Buying Through Positive Emotion in E-Commerce
 AU  - Mariyana, Mariyana
 AU  - Djawoto, Djawoto
@@ -548,6 +547,24 @@ EP  - 39
 DO  - 10.24123/jmb.v22i2.691
 UR  - https://doi.org/10.24123/jmb.v22i2.691
 ID  - mariyana2023influence
+ER  - 
+
+TY  - JOUR
+TI  - Online Antecedents for Young Consumers' Impulse Buying Behavior
+AU  - Nyrhinen, Jussi
+AU  - Sirola, Anu
+AU  - Koskelainen, Tiina
+AU  - Munnukka, Juha
+AU  - Wilska, Terhi-Anna
+PY  - 2024
+Y1  - 2024
+JO  - Computers in Human Behavior
+JF  - Computers in Human Behavior
+VL  - 153
+SP  - 108129
+DO  - 10.1016/j.chb.2023.108129
+UR  - https://doi.org/10.1016/j.chb.2023.108129
+ID  - nyrhinen2024online
 ER  - 
 
 TY  - JOUR
@@ -615,20 +632,20 @@ ID  - qu2023impulse
 ER  - 
 
 TY  - JOUR
-TI  - Ego Depletion in Consumer Behavior: A Review, Synthesis, and Research Agenda
-AU  - Rafael, Danielle Nicole
+TI  - A Estrutura Intelectual da Depleç\~ao do Ego: T\'opicos Emergentes, Tend\^encias e Oportunidades de Pesquisas Futuras
+AU  - Rafael, Diego Nogueira
 AU  - Lopes, Evandro Luiz
 PY  - 2023
 Y1  - 2023
-JO  - Journal of Consumer Behaviour
-JF  - Journal of Consumer Behaviour
+JO  - ReMark – Revista Brasileira de Marketing
+JF  - ReMark – Revista Brasileira de Marketing
 VL  - 22
-IS  - 3
-SP  - 755
-EP  - 781
-DO  - 10.1002/cb.2148
-UR  - https://doi.org/10.1002/cb.2148
-ID  - rafael2023ego
+IS  - 2
+SP  - 734
+EP  - 782
+DO  - 10.5585/remark.v22i2.21818
+UR  - https://doi.org/10.5585/remark.v22i2.21818
+ID  - rafael2023intellectual
 ER  - 
 
 TY  - JOUR
@@ -775,8 +792,8 @@ ER  -
 
 TY  - JOUR
 TI  - The Power of Hedonic Motivation and Discounts Through Releasing Impulse Buying in Indonesia
-AU  - Widyastuti, Nur Aini
-AU  - Hariasih, Mirna
+AU  - Widyastuti, Nur Azmi
+AU  - Hariasih, Misti
 PY  - 2024
 Y1  - 2024
 JO  - Indonesian Journal of Law and Economics Review
@@ -817,24 +834,6 @@ DO  - 10.3389/fpsyg.2022.946527
 UR  - https://doi.org/10.3389/fpsyg.2022.946527
 N1  - Ketidakpastian produk blind-box dan evaluasi nilai konsumen; pengganti long2000consuming
 ID  - zhang2022uncertainty
-ER  - 
-
-TY  - JOUR
-TI  - The Effect of Self-Control on Impulsive Consumption with the Moderators of Family Socioeconomic Status and Peer Feedback
-AU  - Zhao, Guangke
-AU  - Liu, Xiaoyu
-AU  - Tan, Haohan
-AU  - Yang, Shenglan
-PY  - 2025
-Y1  - 2025
-JO  - Asian Journal of Social Psychology
-JF  - Asian Journal of Social Psychology
-VL  - 28
-IS  - 1
-SP  - e12663
-DO  - 10.1111/ajsp.12663
-UR  - https://doi.org/10.1111/ajsp.12663
-ID  - zhao2025effect
 ER  - 
 
 TY  - JOUR
