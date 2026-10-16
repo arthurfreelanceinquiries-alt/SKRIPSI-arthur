@@ -11,21 +11,37 @@ ID  - aiken1991multiple
 ER  - 
 
 TY  - JOUR
-TI  - A Meta-Analysis of Consumer Impulse Buying
-AU  - Amos, Clinton
-AU  - Holmes, Gary R.
-AU  - Keneson, William C.
-PY  - 2014
-Y1  - 2014
-JO  - Journal of Retailing and Consumer Services
-JF  - Journal of Retailing and Consumer Services
-VL  - 21
-IS  - 2
-SP  - 86
-EP  - 97
-DO  - 10.1016/j.jretconser.2013.11.004
-UR  - https://doi.org/10.1016/j.jretconser.2013.11.004
-ID  - amos2014meta
+TI  - FOMO Related Consumer Behaviour in Marketing Context: A Systematic Literature Review
+AU  - Alfina, Alfina
+AU  - Hartini, Sri
+AU  - Mardhiyah, Dien
+PY  - 2023
+Y1  - 2023
+JO  - Cogent Business & Management
+JF  - Cogent Business & Management
+VL  - 10
+IS  - 3
+SP  - 2250033
+DO  - 10.1080/23311975.2023.2250033
+UR  - https://doi.org/10.1080/23311975.2023.2250033
+ID  - alfina2023fomo
+ER  - 
+
+TY  - JOUR
+TI  - Online Impulse Buying: A Systematic Review of 25 Years of Research Using Meta Regression
+AU  - Anoop, T. S.
+AU  - Rahman, Zillur
+PY  - 2025
+Y1  - 2025
+JO  - Journal of Consumer Behaviour
+JF  - Journal of Consumer Behaviour
+VL  - 24
+IS  - 1
+SP  - 363
+EP  - 391
+DO  - 10.1002/cb.2418
+UR  - https://doi.org/10.1002/cb.2418
+ID  - anoop2025online
 ER  - 
 
 TY  - JOUR
@@ -43,6 +59,23 @@ EP  - 40
 DO  - 10.32639/jdbm.v1i1.38
 UR  - https://doi.org/10.32639/jdbm.v1i1.38
 ID  - apidana2022peran
+ER  - 
+
+TY  - JOUR
+TI  - Expecting the Expected? Documenting Nostalgia Effects on Baseball Card Prices
+AU  - Aquino, Michael J.
+AU  - Gershenson, Seth
+PY  - 2024
+Y1  - 2024
+JO  - Journal of Sports Economics
+JF  - Journal of Sports Economics
+VL  - 25
+IS  - 6
+SP  - 683
+EP  - 706
+DO  - 10.1177/15270025241245638
+UR  - https://doi.org/10.1177/15270025241245638
+ID  - aquino2024expecting
 ER  - 
 
 TY  - JOUR
@@ -150,23 +183,6 @@ ID  - barasz2017pseudo
 ER  - 
 
 TY  - JOUR
-TI  - All That Glitters: The Effect of Attention and News on the Buying Behavior of Individual and Institutional Investors
-AU  - Barber, Brad M.
-AU  - Odean, Terrance
-PY  - 2008
-Y1  - 2008
-JO  - The Review of Financial Studies
-JF  - The Review of Financial Studies
-VL  - 21
-IS  - 2
-SP  - 785
-EP  - 818
-DO  - 10.1093/rfs/hhm079
-UR  - https://doi.org/10.1093/rfs/hhm079
-ID  - barber2008all
-ER  - 
-
-TY  - JOUR
 TI  - Yielding to Temptation: Self-Control Failure, Impulsive Purchasing, and Consumer Behavior
 AU  - Baumeister, Roy F.
 PY  - 2002
@@ -180,6 +196,23 @@ EP  - 676
 DO  - 10.1086/338209
 UR  - https://doi.org/10.1086/338209
 ID  - baumeister2002yield
+ER  - 
+
+TY  - JOUR
+TI  - Self-Control and Limited Willpower: Current Status of Ego Depletion Theory and Research
+AU  - Baumeister, Roy F.
+AU  - André, Nicolas
+AU  - Southwick, Daniel A.
+AU  - Tice, Dianne M.
+PY  - 2024
+Y1  - 2024
+JO  - Current Opinion in Psychology
+JF  - Current Opinion in Psychology
+VL  - 60
+SP  - 101882
+DO  - 10.1016/j.copsyc.2024.101882
+UR  - https://doi.org/10.1016/j.copsyc.2024.101882
+ID  - baumeister2024selfcontrol
 ER  - 
 
 TY  - JOUR
@@ -197,6 +230,24 @@ EP  - 110
 DO  - 10.1016/j.frl.2017.10.012
 UR  - https://doi.org/10.1016/j.frl.2017.10.012
 ID  - baur2018bitcoin
+ER  - 
+
+TY  - JOUR
+TI  - Post-Purchase Effects of Impulse Buying: A Review and Research Agenda
+AU  - Beikverdi, Leila
+AU  - Sipil\"a, Jenni
+AU  - Tarkiainen, Anssi
+PY  - 2024
+Y1  - 2024
+JO  - Journal of Consumer Behaviour
+JF  - Journal of Consumer Behaviour
+VL  - 23
+IS  - 3
+SP  - 1512
+EP  - 1527
+DO  - 10.1002/cb.2287
+UR  - https://doi.org/10.1002/cb.2287
+ID  - beikverdi2024post
 ER  - 
 
 TY  - BOOK
@@ -275,19 +326,21 @@ ID  - dewi2026understanding
 ER  - 
 
 TY  - JOUR
-TI  - Efficient Capital Markets: A Review of Theory and Empirical Work
-AU  - Fama, Eugene F.
-PY  - 1970
-Y1  - 1970
-JO  - The Journal of Finance
-JF  - The Journal of Finance
-VL  - 25
-IS  - 2
-SP  - 383
-EP  - 417
-DO  - 10.2307/2325486
-UR  - https://doi.org/10.2307/2325486
-ID  - fama1970efficient
+TI  - Individual-Level Loss Aversion in Riskless and Risky Choices
+AU  - G\"achter, Simon
+AU  - Johnson, Eric J.
+AU  - Herrmann, Andreas
+PY  - 2022
+Y1  - 2022
+JO  - Theory and Decision
+JF  - Theory and Decision
+VL  - 92
+IS  - 3–4
+SP  - 599
+EP  - 624
+DO  - 10.1007/s11238-021-09839-8
+UR  - https://doi.org/10.1007/s11238-021-09839-8
+ID  - gachter2022individual
 ER  - 
 
 TY  - JOUR
@@ -316,6 +369,23 @@ PB  - Badan Penerbit Universitas Diponegoro
 CY  - Semarang
 UR  - https://openlibrary.org/works/OL28215322W
 ID  - ghozali2018aplikasi
+ER  - 
+
+TY  - JOUR
+TI  - Simon's Bounded Rationality
+AU  - Giarlotta, Alfio
+AU  - Petralia, Andrea
+PY  - 2024
+Y1  - 2024
+JO  - Decisions in Economics and Finance
+JF  - Decisions in Economics and Finance
+VL  - 47
+IS  - 1
+SP  - 327
+EP  - 346
+DO  - 10.1007/s10203-024-00436-2
+UR  - https://doi.org/10.1007/s10203-024-00436-2
+ID  - giarlotta2024simon
 ER  - 
 
 TY  - JOUR
@@ -354,23 +424,6 @@ UR  - https://doi.org/10.1207/s15327906mbr2603_7
 ID  - green1991subjects
 ER  - 
 
-TY  - JOUR
-TI  - The Influence of Hedonic Motives and Browsing on Impulse Buying
-AU  - Gültekin, Beyza
-AU  - Özer, Leyla
-PY  - 2012
-Y1  - 2012
-JO  - Journal of Economics and Behavioral Studies
-JF  - Journal of Economics and Behavioral Studies
-VL  - 4
-IS  - 3
-SP  - 180
-EP  - 189
-DO  - 10.22610/jebs.v4i3.315
-UR  - https://doi.org/10.22610/jebs.v4i3.315
-ID  - gueltekin2012influence
-ER  - 
-
 TY  - BOOK
 TI  - Multivariate Data Analysis
 AU  - Hair, Joseph F.
@@ -397,20 +450,22 @@ ID  - hayes2018introduction
 ER  - 
 
 TY  - JOUR
-TI  - Hedonic Consumption: Emerging Concepts, Methods and Propositions
-AU  - Hirschman, Elizabeth C.
-AU  - Holbrook, Morris B.
-PY  - 1982
-Y1  - 1982
-JO  - Journal of Marketing
-JF  - Journal of Marketing
-VL  - 46
-IS  - 3
-SP  - 92
-EP  - 101
-DO  - 10.1177/002224298204600314
-UR  - https://doi.org/10.1177/002224298204600314
-ID  - hirschman1982hedonic
+TI  - Exploring Factors Affecting Consumer's Impulse Buying Behavior in Live-Streaming Shopping: An Interactive Research Based upon SOR Model
+AU  - Huo, Chunhui
+AU  - Wang, Xiaoyi
+AU  - Sadiq, Muhammad Waqas
+AU  - Pang, Meng
+PY  - 2023
+Y1  - 2023
+JO  - SAGE Open
+JF  - SAGE Open
+VL  - 13
+IS  - 2
+SP  - 1
+EP  - 15
+DO  - 10.1177/21582440231172678
+UR  - https://doi.org/10.1177/21582440231172678
+ID  - huo2023exploring
 ER  - 
 
 TY  - JOUR
@@ -431,23 +486,6 @@ DO  - 10.1007/s11747-019-00670-w
 UR  - https://doi.org/10.1007/s11747-019-00670-w
 N1  - Meta-analisis 231 sampel, 75.000+ konsumen dari 186 artikel; pengganti chen1998financial
 ID  - iyer2020impulse
-ER  - 
-
-TY  - JOUR
-TI  - Prospect Theory: An Analysis of Decision under Risk
-AU  - Kahneman, Daniel
-AU  - Tversky, Amos
-PY  - 1979
-Y1  - 1979
-JO  - Econometrica
-JF  - Econometrica
-VL  - 47
-IS  - 2
-SP  - 263
-EP  - 292
-DO  - 10.2307/1914185
-UR  - https://doi.org/10.2307/1914185
-ID  - kahneman1979prospect
 ER  - 
 
 TY  - JOUR
@@ -494,16 +532,22 @@ UR  - https://doi.org/10.61292/birev.258
 ID  - lienardy2026role
 ER  - 
 
-TY  - BOOK
-TI  - An Approach to Environmental Psychology
-AU  - Mehrabian, Albert
-AU  - Russell, James A.
-PY  - 1974
-Y1  - 1974
-PB  - MIT Press
-CY  - Cambridge, MA
-UR  - https://openlibrary.org/works/OL13333149W
-ID  - mehrabian1974approach
+TY  - JOUR
+TI  - The Influence of Hedonic Shopping Motivation and Shopping Lifestyle on Impulse Buying Through Positive Emotion in E-Commerce
+AU  - Mariyana, Mariyana
+AU  - Djawoto, Djawoto
+AU  - Suhermin, Suhermin
+PY  - 2023
+Y1  - 2023
+JO  - Jurnal Manajemen dan Bisnis (MABIS)
+JF  - Jurnal Manajemen dan Bisnis (MABIS)
+VL  - 22
+IS  - 2
+SP  - 25
+EP  - 39
+DO  - 10.24123/jmb.v22i2.691
+UR  - https://doi.org/10.24123/jmb.v22i2.691
+ID  - mariyana2023influence
 ER  - 
 
 TY  - JOUR
@@ -536,6 +580,22 @@ ID  - pricecharting2024
 ER  - 
 
 TY  - JOUR
+TI  - The Effect of Imprudence, Self-Indulgence, and Lack of Self-Control on Male Shoppers' Impulse Buying Behavior: A Case in Indonesia
+AU  - Prihatiningrum, Yulianti
+AU  - Said, Laila Refiana
+PY  - 2021
+Y1  - 2021
+JO  - Advances in Economics, Business and Management Research
+JF  - Advances in Economics, Business and Management Research
+VL  - 193
+SP  - 76
+EP  - 82
+DO  - 10.2991/aebmr.k.211117.015
+UR  - https://doi.org/10.2991/aebmr.k.211117.015
+ID  - prihatiningrum2021effect
+ER  - 
+
+TY  - JOUR
 TI  - Impulse Buying Tendency in Live-Stream Commerce: The Role of Viewing Frequency and Anticipated Emotions Influencing Scarcity-Induced Purchase Decision
 AU  - Qu, Yi
 AU  - Khan, Jashim
@@ -555,6 +615,23 @@ ID  - qu2023impulse
 ER  - 
 
 TY  - JOUR
+TI  - Ego Depletion in Consumer Behavior: A Review, Synthesis, and Research Agenda
+AU  - Rafael, Danielle Nicole
+AU  - Lopes, Evandro Luiz
+PY  - 2023
+Y1  - 2023
+JO  - Journal of Consumer Behaviour
+JF  - Journal of Consumer Behaviour
+VL  - 22
+IS  - 3
+SP  - 755
+EP  - 781
+DO  - 10.1002/cb.2148
+UR  - https://doi.org/10.1002/cb.2148
+ID  - rafael2023ego
+ER  - 
+
+TY  - JOUR
 TI  - The Buying Impulse
 AU  - Rook, Dennis W.
 PY  - 1987
@@ -568,23 +645,6 @@ EP  - 199
 DO  - 10.1086/209105
 UR  - https://doi.org/10.1086/209105
 ID  - rook1987buying
-ER  - 
-
-TY  - JOUR
-TI  - Normative Influences on Impulsive Buying Behavior
-AU  - Rook, Dennis W.
-AU  - Fisher, Robert J.
-PY  - 1995
-Y1  - 1995
-JO  - Journal of Consumer Research
-JF  - Journal of Consumer Research
-VL  - 22
-IS  - 3
-SP  - 305
-EP  - 313
-DO  - 10.1086/209452
-UR  - https://doi.org/10.1086/209452
-ID  - rook1995normative
 ER  - 
 
 TY  - BOOK
@@ -611,19 +671,19 @@ ID  - shiller2000irrational
 ER  - 
 
 TY  - JOUR
-TI  - A Behavioral Model of Rational Choice
-AU  - Simon, Herbert A.
-PY  - 1955
-Y1  - 1955
-JO  - The Quarterly Journal of Economics
-JF  - The Quarterly Journal of Economics
-VL  - 69
-IS  - 1
-SP  - 99
-EP  - 118
-DO  - 10.2307/1884852
-UR  - https://doi.org/10.2307/1884852
-ID  - simon1955behavioral
+TI  - Effects of Mental Accounting on Purchase Decision Processes: A Systematic Review and Research Agenda
+AU  - Skwara, Florian
+PY  - 2023
+Y1  - 2023
+JO  - Journal of Consumer Behaviour
+JF  - Journal of Consumer Behaviour
+VL  - 22
+IS  - 5
+SP  - 1265
+EP  - 1281
+DO  - 10.1002/cb.2193
+UR  - https://doi.org/10.1002/cb.2193
+ID  - skwara2023effects
 ER  - 
 
 TY  - RPRT
@@ -638,22 +698,6 @@ N1  - Statista Chart 24277, Consumer Market Insights & Research, New York: Stati
 ID  - statista2024pokemon
 ER  - 
 
-TY  - JOUR
-TI  - The Significance of Impulse Buying Today
-AU  - Stern, Hawkins
-PY  - 1962
-Y1  - 1962
-JO  - Journal of Marketing
-JF  - Journal of Marketing
-VL  - 26
-IS  - 2
-SP  - 59
-EP  - 62
-DO  - 10.1177/002224296202600212
-UR  - https://doi.org/10.1177/002224296202600212
-ID  - stern1962significance
-ER  - 
-
 TY  - BOOK
 TI  - Metode Penelitian Kuantitatif, Kualitatif, dan R&D
 AU  - Sugiyono
@@ -662,24 +706,6 @@ Y1  - 2019
 PB  - Alfabeta
 CY  - Bandung
 ID  - sugiyono2019metode
-ER  - 
-
-TY  - JOUR
-TI  - Building consumer self-control: The effect of self-control exercises on impulse buying urges
-AU  - Sultan, Abdullah J.
-AU  - Joireman, Jeff
-AU  - Sprott, David E.
-PY  - 2012
-Y1  - 2012
-JO  - Marketing Letters
-JF  - Marketing Letters
-VL  - 23
-IS  - 1
-SP  - 61
-EP  - 72
-DO  - 10.1007/s11002-011-9135-4
-UR  - https://doi.org/10.1007/s11002-011-9135-4
-ID  - sultan2012building
 ER  - 
 
 TY  - JOUR
@@ -698,39 +724,6 @@ EP  - 324
 DO  - 10.1111/j.0022-3506.2004.00263.x
 UR  - https://doi.org/10.1111/j.0022-3506.2004.00263.x
 ID  - tangney2004high
-ER  - 
-
-TY  - JOUR
-TI  - Mental Accounting and Consumer Choice
-AU  - Thaler, Richard
-PY  - 1985
-Y1  - 1985
-JO  - Marketing Science
-JF  - Marketing Science
-VL  - 4
-IS  - 3
-SP  - 199
-EP  - 214
-DO  - 10.1287/mksc.4.3.199
-UR  - https://doi.org/10.1287/mksc.4.3.199
-ID  - thaler1985mental
-ER  - 
-
-TY  - JOUR
-TI  - An Economic Theory of Self-Control
-AU  - Thaler, Richard H.
-AU  - Shefrin, Hersh M.
-PY  - 1981
-Y1  - 1981
-JO  - Journal of Political Economy
-JF  - Journal of Political Economy
-VL  - 89
-IS  - 2
-SP  - 392
-EP  - 406
-DO  - 10.1086/260971
-UR  - https://doi.org/10.1086/260971
-ID  - thaler1981economic
 ER  - 
 
 TY  - RPRT
@@ -781,20 +774,19 @@ ID  - verplanken2001individual
 ER  - 
 
 TY  - JOUR
-TI  - Spent Resources: Self-Regulatory Resource Depletion and Impulsive Buying
-AU  - Vohs, Kathleen D.
-AU  - Faber, Ronald J.
-PY  - 2007
-Y1  - 2007
-JO  - Journal of Consumer Research
-JF  - Journal of Consumer Research
-VL  - 33
-IS  - 4
-SP  - 537
-EP  - 547
-DO  - 10.1086/510228
-UR  - https://doi.org/10.1086/510228
-ID  - vohs2007spent
+TI  - The Power of Hedonic Motivation and Discounts Through Releasing Impulse Buying in Indonesia
+AU  - Widyastuti, Nur Aini
+AU  - Hariasih, Mirna
+PY  - 2024
+Y1  - 2024
+JO  - Indonesian Journal of Law and Economics Review
+JF  - Indonesian Journal of Law and Economics Review
+VL  - 19
+IS  - 2
+SP  - 1104
+DO  - 10.21070/ijler.v19i2.1104
+UR  - https://doi.org/10.21070/ijler.v19i2.1104
+ID  - widyastuti2024power
 ER  - 
 
 TY  - JOUR
@@ -825,6 +817,24 @@ DO  - 10.3389/fpsyg.2022.946527
 UR  - https://doi.org/10.3389/fpsyg.2022.946527
 N1  - Ketidakpastian produk blind-box dan evaluasi nilai konsumen; pengganti long2000consuming
 ID  - zhang2022uncertainty
+ER  - 
+
+TY  - JOUR
+TI  - The Effect of Self-Control on Impulsive Consumption with the Moderators of Family Socioeconomic Status and Peer Feedback
+AU  - Zhao, Guangke
+AU  - Liu, Xiaoyu
+AU  - Tan, Haohan
+AU  - Yang, Shenglan
+PY  - 2025
+Y1  - 2025
+JO  - Asian Journal of Social Psychology
+JF  - Asian Journal of Social Psychology
+VL  - 28
+IS  - 1
+SP  - e12663
+DO  - 10.1111/ajsp.12663
+UR  - https://doi.org/10.1111/ajsp.12663
+ID  - zhao2025effect
 ER  - 
 
 TY  - JOUR

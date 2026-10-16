@@ -256,10 +256,10 @@ def run_tests():
         print("  -> [FAIL] Huruf 'é' pada 'Pokémon' tidak ditemukan atau rusak!")
         utf8_clean = False
 
-    if b'G\xc3\xbcltekin' in ris_raw:
-        print("  -> Huruf 'ü' pada nama 'Gültekin' ter-encode rapi dalam UTF-8.")
+    if b'Andr\xc3\xa9' in ris_raw:
+        print("  -> Huruf 'é' pada nama 'André' ter-encode rapi dalam UTF-8.")
     else:
-        print("  -> [FAIL] Huruf 'ü' pada 'Gültekin' tidak ditemukan!")
+        print("  -> [FAIL] Huruf 'é' pada 'André' tidak ditemukan!")
         utf8_clean = False
 
     if b'\xef\xbf\xbd' in ris_raw:
