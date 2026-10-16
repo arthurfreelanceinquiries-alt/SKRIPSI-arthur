@@ -7,6 +7,33 @@
 
 ---
 
+## 📅 Sesi 16 Oktober 2026 (Sesi 41): Resolusi Pustaka 80/20, Verifikasi Fisik 14 PDF Full-Text 100% Lulus, dan Distribusi Rules & Skills ke Seluruh Sub-Agent
+
+> [!SUMMARY] Tujuan & Solusi Catatan Ini
+> - **Untuk Apa:** Melakukan overhaul menyeluruh rasio kepustakaan 80/20 (pustaka mutakhir $\ge 2016$, prioritas 2021-2026), mengamankan 14 berkas fisik PDF utuh (>5 halaman, valid `%PDF`) di `06_Referensi_Jurnal_PDF/`, menerbitkan Berita Acara Audit Fisik Final 14/14 LULUS MUTLAK dari `@auditor-skripsi`, dan mendistribusikan 11 rules, 18 directives SOP, serta 6 specialized skills ke seluruh profil sub-agen (`SOUL.md` & `skills/thesis/`).
+> - **Masalah yang Diselesaikan:** Menghilangkan temuan referensi terpotong/landing page; menggantikan 4 naskah paywall tertutup Wiley dengan alternatif Gold Open Access bereputasi tinggi; menjaga paritas 6-arah (TeX, Word, MD, BibTeX, RIS, PDF 58 halaman); serta membekali agen spesialis agar tidak melakukan halusinasi atau regresi format saat bekerja.
+> - **Keputusan/Output:**
+>   - 14/14 referensi mutakhir terverifikasi fisik full-text utuh di `06_Referensi_Jurnal_PDF/`.
+>   - 4 literatur pengganti Gold OA resmi: Lubis et al. (2022, Cogent), Nyrhinen et al. (2024, CHB Q1), Rafael & Lopes (2023, ReMark), Jain et al. (2023, Cogent).
+>   - Berita Acara Audit Fisik Final diterbitkan resmi di `07_Review_&_Audit/Paper_Audits/BERITA_ACARA_AUDIT_FISIK_FINAL_14_PDF_2026-10-16.md` (100% Lulus Mutlak).
+>   - Naskah PDF `Proposal_Arthur_PokemonTCG.pdf` dikompilasi ulang XeLaTeX (58 halaman, 1,09 MB, 54 pustaka sinkron).
+>   - Extended Quality Gates `execution/run_thesis_graph.py --gate extended` lulus 11/11 (100% HIJAU).
+>   - Seluruh 6 sub-agen Hermes (`auditor-skripsi`, `literatur`, `metodologi`, `penulis`, `statistik`, `skripsi-orchestrator`) telah diperbarui `SOUL.md`-nya dan dipasangi paket *thesis skills* lengkap.
+
+* **Fokus Pekerjaan:**
+  - **Audit Fisik Mandiri & Eliminasi Dokumen Rusak:** Mendeteksi berkas bot-blocker Cloudflare/landing page OJS, mengamankan 14 PDF utuh asli via scraper/open access repository, menghapus berkas rusak, dan mengunci 14 seminal klasik tak tergantikan.
+  - **Substitusi Gold Open Access & Rekonsiliasi Paritas 6-Arah:** Memperbarui `references.bib`, `Proposal_Arthur_PokemonTCG.tex`, `PROPOSAL_SKRIPSI_POKEMON_TCG.md`, meregenerasi `Proposal_Arthur_PokemonTCG.docx` (54 bookmark, 161 hyperlink), mengompilasi ulang `Proposal_Arthur_PokemonTCG.pdf` (58 halaman), dan menyinkronkan Mendeley RIS/BibTeX.
+  - **Distribusi Rules & Specialized Skills ke Multi-Agent Hermes:**
+    - Menyalin paket skill `paper-audit`, `humanizer-id`, `gdocs-citation-linker`, `obsidian-second-brain`, `task-breakdown`, `auto-compact` ke direktori profil sistem ke-6 agen di `D:/AI/hermes/profiles/<agent>/skills/thesis/`.
+    - Memutakhirkan `SOUL.md` masing-masing agen dengan konteks kerja skripsi, nama pembimbing, parameter kanonis `SOURCE_OF_TRUTH.md`, serta batasan negatif ketat (*zero AI markers*, *zero raw LaTeX in DOCX*, *pure black #000000*, *zero unsupported claims*).
+    - Menerbitkan dokumen PRD dan matriks pembagian tugas di [[04_Riset_&_Metodologi/PRD_DISTRIBUSI_RULES_DAN_SKILLS_MULTI_AGENT_SKRIPSI.md]].
+* **File yang Diperbarui:**
+  - [[04_Riset_&_Metodologi/PRD_DISTRIBUSI_RULES_DAN_SKILLS_MULTI_AGENT_SKRIPSI.md]]
+  - [[04_Riset_&_Metodologi/LOG_SESI_SECOND_BRAIN.md]]
+  - `D:/AI/hermes/profiles/*/SOUL.md` & `skills/thesis/`
+
+---
+
 ## 📅 Sesi 30 September 2026 (Sesi 40): Mulai Sesi Second Brain — Sync Multi-Device, Muat Graphify & Kokpit D01–D32
 
 > [!SUMMARY] Tujuan & Solusi Catatan Ini
