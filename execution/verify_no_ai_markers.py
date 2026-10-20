@@ -39,6 +39,7 @@ FORBIDDEN = [
     ("M6-checkbox", r"- \[[ x]\]"),
     ("M7-stray-backslash", r"\\(?![nrt])"),
     ("M9-placeholder", r"\{\{.+?\}\}|\[Insert|Lovrem ipsum|Lorem ipsum|\bTODO\b"),
+    ("M10-parenthetical-dash", r"[A-Za-z0-9]—[A-Za-z0-9]|[A-Za-z0-9]–-[A-Za-z0-9]|[A-Za-z]---[A-Za-z]"),
 ]
 
 # Allowlist §3: (nama, pola) — kecualikan SEBELUM menilai temuan.

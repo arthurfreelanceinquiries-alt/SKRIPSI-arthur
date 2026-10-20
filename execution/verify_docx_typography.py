@@ -102,9 +102,14 @@ def audit_docx(docx_path: Path) -> bool:
                     )
 
         # Check for paragraph-level raw LaTeX environment leaks
-        for raw_env in [r"\begin{", r"\end{", r"\toprule", r"\midrule", r"\bottomrule", r"\begingroup", r"\endgroup", r"\multicolumn"]:
+        for raw_env in [r"\begin{", r"\end{", r"\toprule", r"\midrule", r"\bottomrule", r"\begingroup", r"\endgroup", r"\multicolumn", r"\phantomsection", r"\noindent", r"\addcontentsline"]:
             if raw_env in p_text:
-                issues.append(f"FATAL: Raw LaTeX environment '{raw_env}' in paragraph text at P{p_idx}: {repr(p_text[:60])}")
+                issues.append(f"FATAL: Raw LaTeX environment/command '{raw_env}' in paragraph text at P{p_idx}: {repr(p_text[:60])}")
+
+        # Check for any backslash command leaks in paragraph text
+        m_leak = re.search(r'\\[a-zA-Z]{2,}', p_text)
+        if m_leak:
+            issues.append(f"FATAL: Raw LaTeX command '{m_leak.group(0)}' in paragraph text at P{p_idx}: {repr(p_text[:80])}")
 
         # Check for stray asterisks and tokens in runs
         raw_latex_tokens = [
@@ -112,7 +117,7 @@ def audit_docx(docx_path: Path) -> bool:
             r"\begin{", r"\end{", r"\toprule", r"\midrule", r"\bottomrule",
             r"\begingroup", r"\endgroup", r"\multicolumn", r"\small", r"\footnotesize",
             r"\addlinespace", r"\rightarrow", r"\label{", r"\caption{", r"\endhead",
-            r"\endfoot", r"\endlastfoot"
+            r"\endfoot", r"\endlastfoot", r"\phantomsection", r"\noindent", r"\addcontentsline"
         ]
         for r_idx, r in enumerate(p.runs):
             # Check for literal asterisks (notasi terpusat X1*/M*/X₁* = LEGIT
@@ -139,6 +144,9 @@ def audit_docx(docx_path: Path) -> bool:
         for r_idx, row in enumerate(tbl.rows):
             for c_idx, cell in enumerate(row.cells):
                 for p in cell.paragraphs:
+                    m_cell_leak = re.search(r'\\[a-zA-Z]{2,}', p.text)
+                    if m_cell_leak:
+                        issues.append(f"FATAL: Raw LaTeX command '{m_cell_leak.group(0)}' in Table {t_idx} Row {r_idx} Col {c_idx}: {repr(p.text[:80])}")
                     for r in p.runs:
                         _t = re.sub(r'[XM][\u2081\u2082\u2083\u1d62\d]?\*', '', r.text)
                         if "*" in _t:

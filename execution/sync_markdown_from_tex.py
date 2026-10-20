@@ -5,6 +5,29 @@ Ensures publication-grade Markdown formatting matching FEB UKRIDA 2023 standards
 import os
 import re
 
+def clean_latex_accents(text):
+    if not text:
+        return text
+    text = re.sub(r'\\c\{c\}|\\c\s*c|\\c\{C\}|\\c\s*C', 'ç', text)
+    text = re.sub(r'\\~\{a\}|\\~\s*a', 'ã', text)
+    text = re.sub(r'\\~\{o\}|\\~\s*o', 'õ', text)
+    text = re.sub(r"\\'\{a\}|\\'\s*a", 'á', text)
+    text = re.sub(r"\\'\{e\}|\\'\s*e", 'é', text)
+    text = re.sub(r"\\'\{i\}|\\'\s*i", 'í', text)
+    text = re.sub(r"\\'\{o\}|\\'\s*o", 'ó', text)
+    text = re.sub(r"\\'\{u\}|\\'\s*u", 'ú', text)
+    text = re.sub(r'\\\^\{a\}|\\\^\s*a', 'â', text)
+    text = re.sub(r'\\\^\{e\}|\\\^\s*e', 'ê', text)
+    text = re.sub(r'\\\^\{o\}|\\\^\s*o', 'ô', text)
+    text = re.sub(r'\\\"\{u\}|\\\"\s*u', 'ü', text)
+    text = re.sub(r'\\\"\{O\}|\\\"\s*O', 'Ö', text)
+    text = re.sub(r'\\\"\{o\}|\\\"\s*o', 'ö', text)
+    text = re.sub(r'\\\"\{a\}|\\\"\s*a', 'ä', text)
+    text = text.replace(r'{\"a}', 'ä').replace(r'\"a', 'ä')
+    text = re.sub(r'\\`\{a\}|\\`\s*a', 'à', text)
+    text = re.sub(r'\\`\{e\}|\\`\s*e', 'è', text)
+    return text
+
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     repo_root = os.path.dirname(script_dir)
@@ -25,7 +48,8 @@ def main():
             matches = re.findall(r'\\bibcite\{([^}]+)\}\{\{\d+\}\{(\d{4})\}\{(.*?)\}\}', aux_content)
             for key, year, author in matches:
                 author = author.strip('{}')
-                author = author.replace('~', ' ').replace(r'{\"u}', 'ü').replace(r'{\"O}', 'Ö')
+                author = clean_latex_accents(author)
+                author = author.replace('~', ' ')
                 author = author.replace('et~al.', 'et al.')
                 cite_dict[key] = (author, year)
     # Self-anneal 18 Sep 2026 (R3 humanisasi): aux basi (mis. sebelum xelatex+bibtex)
@@ -53,8 +77,9 @@ def main():
                 clean_entry = re.sub(r'\\textit\{([^}]+)\}', r'*\1*', clean_entry)
                 clean_entry = clean_entry.replace('~', ' ')
                 clean_entry = clean_entry.replace(r'\%', '%').replace(r'\_', '_').replace(r'\&', '&')
+                clean_entry = clean_entry.replace('---', '—')
                 clean_entry = clean_entry.replace('--', '–')
-                clean_entry = clean_entry.replace(r'{\"u}', 'ü').replace(r'{\"O}', 'Ö')
+                clean_entry = clean_latex_accents(clean_entry)
                 clean_entry = clean_entry.replace('{', '').replace('}', '')
                 clean_entry = re.sub(r'\s+', ' ', clean_entry).strip()
                 bbl_entries.append(clean_entry)
@@ -85,7 +110,7 @@ def main():
     md_lines.append("    - [1.4.2 Manfaat Praktis](#142-manfaat-praktis)")
     md_lines.append("- [BAB II KAJIAN PUSTAKA DAN PENGEMBANGAN HIPOTESIS](#bab-ii-kajian-pustaka-dan-pengembangan-hipotesis)")
     md_lines.append("  - [2.1 Landasan Teori](#21-landasan-teori)")
-    md_lines.append("    - [2.1.1 Grand Theory: Keuangan Perilaku (Behavioral Finance)](#211-grand-theory-keuangan-perilaku-behavioral-finance)")
+    md_lines.append("    - [2.1.1 Landasan Teoretis: Pendekatan Keuangan Perilaku (Behavioral Finance)](#211-landasan-teoretis-pendekatan-keuangan-perilaku-behavioral-finance)")
     md_lines.append("    - [2.1.2 Teori Pendukung (Supporting Theories)](#212-teori-pendukung-supporting-theories)")
     md_lines.append("    - [2.1.3 Impulsive Buying (Pembelian Impulsif)](#213-impulsive-buying-pembelian-impulsif)")
     md_lines.append("    - [2.1.4 Hedonic Motivation (Motivasi Hedonis)](#214-hedonic-motivation-motivasi-hedonis)")
@@ -218,30 +243,16 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
     s = s.replace(r"Pokemon", "Pokémon")
 
     # Clean LaTeX macros & counters
+    s = re.sub(r'\\phantomsection\s*', '', s)
+    s = re.sub(r'\\noindent\s*', '', s)
+    s = re.sub(r'\\vspace\*?\{[^}]*\}', '', s)
+    s = re.sub(r'\\hspace\*?\{[^}]*\}', '', s)
     s = re.sub(r'\\addcontentsline\{toc\}.*?\n', '', s)
     s = re.sub(r'\\addcontentsline\{[^}]+\}\{[^}]+\}\{[^}]+\}', '', s)
     s = re.sub(r'\\setcounter\{[^}]+\}\{[^}]+\}', '', s)
     s = re.sub(r'\\texorpdfstring\{([^}]+)\}\{[^}]+\}', r'\1', s)
     s = s.replace(r'\judulskripsi', 'PENGARUH *HEDONIC MOTIVATION*, *DESIRE FOR COMPLETENESS*, DAN *SPECULATIVE MOTIVE* TERHADAP *IMPULSIVE BUYING* BOOSTER PACK KARTU POKÉMON TCG DENGAN *SELF-CONTROL* SEBAGAI VARIABEL MODERASI')
     s = s.replace("``", "“").replace("''", "”")
-
-    # Convert Table 1.1 (Matriks Research Gap)
-    if r"\caption{Matriks Kesenjangan Penelitian Empiris" in s:
-        tab11_pattern = re.compile(r'\\begingroup.*?\\caption\{Matriks Kesenjangan Penelitian Empiris.*?\}.*?\\endgroup', re.DOTALL)
-        tab11_md = """**Tabel 1.1: Matriks Kesenjangan Penelitian Empiris (*Research Gap*) pada 7 Subjek Hubungan Model Penelitian**
-
-| No | Subjek Hubungan | Kelompok Temuan Positif / Meredam | Kelompok Temuan Negatif / Lemah | Inti Kesenjangan Kausal (*The Why*) |
-|:---:|:---|:---|:---|:---|
-| 1 | X1 terhadap Y (*Hedonic Motivation*) | Arnold dan Reynolds (2003); Gultekin dan Ozer (2012); Pranggabayu dan Andjarwati (2022); Gong *et al.* (2024); Tirtayasa *et al.* (2020); Zheng *et al.* (2019) (positif signifikan). | Batas Thaler (1985); Thaler dan Shefrin (1981) (tertahan anggaran; bukan temuan tidak signifikan pada kolektibel). | Elastisitas anggaran dan orientasi utiliter vs afektif. |
-| 2 | X2 terhadap Y (*Desire for Completeness*) | Gao *et al.* (2014); Barasz *et al.* (2017); Dewi *et al.* (2026) (positif signifikan). | Long dan Schiffman (2000); Spero dan Stone (2004) (kolektor matang pilih single; bukan temuan tidak signifikan). | Kematangan kolektor dan kalkulasi probabilitas. |
-| 3 | X3 terhadap Y (*Speculative Motive*) | Baur *et al.* (2018); Aryadi dan Lingga (2024) (analogi partisipasi TCG); Colline (2024) (herding; kualitatif). Shiller (2000) sebagai kerangka keuangan perilaku. | Barber dan Odean (2008); Fama (1970) (analogi saham; bukan temuan tidak signifikan pada kolektibel). | Asimetri informasi dan ilusi kendali vs evaluasi risiko. |
-| 4 | M terhadap Y (*Self-Control*) | Baumeister (2002); Tangney *et al.* (2004); Vohs dan Faber (2007); Sultan *et al.* (2012) (negatif signifikan). | Hirschman (1982); Stern (1962) (cognitive bypass; bukan regresi). | Ego depletion saat stimulus intens. |
-| 5 | Moderasi M pada X1 terhadap Y | Lienardy dan Panasea (2026) (MRA H4 diterima); Katauke *et al.* (2023) (tak langsung). | Gagal-moderasi Apidana dan Kholifah (2022) (p=0,597) dan Artadita dan Firmialy (2024) (β=0,092, tidak signifikan). | Ambang intensitas hedonis vs kapasitas volisional. |
-| 6 | Moderasi M pada X2 terhadap Y | Parsial: Artadita dan Firmialy (2024) (kontrol kognitif; moderasi keseluruhan ditolak); Apidana dan Kholifah (2022) (adjacent). | Teori Belk (1995); Barasz *et al.* (2017) + Artadita dan Firmialy (2024) H3 ditolak. | Keterikatan koleksi: kasual vs fanatik. |
-| 7 | Moderasi M pada X3 terhadap Y | Tak langsung: Katauke *et al.* (2023) + Planner-Doer. | Teoritis Shiller (2000); Aryadi dan Lingga (2024) (bukan uji interaksi). | Herding dan FOMO saat euforia. |
-
-*Sumber: Data diolah dari sintesis kajian literatur empiris terdahulu (2026).*"""
-        s = tab11_pattern.sub(lambda m: tab11_md, s)
 
     # Convert Table 2.1
     if r"\caption{Ringkasan Penelitian Sebelumnya}" in s:
@@ -280,10 +291,10 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
     └─────────────────────────────────────────────────────────────┘
                                                        ▲
                                                        │
-                           H4, H5, H6 (Memperlemah / -)
+                            H4, H5, H6 (Memperlemah / -)
                                                        │
-                                           [ M: Self-Control ]
-                                           (Variabel Moderasi)
+                                            [ M: Self-Control ]
+                                            (Variabel Moderasi)
 ```
 **Gambar 2.1 Model Rerangka Konseptual Penelitian**
 
@@ -311,37 +322,37 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
         tab32_pattern = re.compile(r'\\begingroup.*?\\caption\{Operasionalisasi Variabel Penelitian\}.*?\\endgroup', re.DOTALL)
         tab32_md = """**Tabel 3.2 Operasionalisasi Variabel Penelitian**
 
-| Variabel | Definisi Operasional | Dimensi | Indikator Pernyataan | Skala |
+| Variabel | Definisi Operasional | Dimensi | Indikator Teoretis | Skala |
 |:---|:---|:---|:---|:---:|
-| **Impulsive Buying ($Y$)** | Kecenderungan membeli *booster pack* Pokémon TCG tanpa rencana awal dan didorong emosi sesaat (Rook, 1987; Verplanken & Herabadi, 2001). | Kognitif | Y1. Saya sering membeli *booster pack* kartu Pokémon tanpa rencana anggaran sebelumnya. | Likert 1–5 |
-| | | Kognitif | Y2. Saya tidak mempertimbangkan dampak finansial saat membeli kartu Pokémon di toko. | Likert 1–5 |
-| | | Afektif | Y3. Saya merasa terdorong secara spontan untuk membeli *pack* saat melihatnya di etalase toko. | Likert 1–5 |
-| | | Afektif | Y4. Saya merasakan kegembiraan sesaat ketika memutuskan membeli kartu secara mendadak. | Likert 1–5 |
-| | | Kognitif | Y5. Saya sering membeli *pack* lebih banyak dari yang semula saya niatkan. | Likert 1–5 |
-| | | Afektif | Y6. Saya sulit menahan hasrat berbelanja kartu Pokémon saat rilis seri baru. | Likert 1–5 |
-| **Hedonic Motivation ($X_1$)** | Motivasi belanja untuk kesenangan emosional dan sensasi petualangan (Arnold & Reynolds, 2003). | *Adventure* | X1.1. Membuka kemasan *booster pack* memberikan sensasi petualangan dan kejutan mendebarkan. | Likert 1–5 |
-| | | *Gratification* | X1.2. Membeli kartu Pokémon adalah cara saya menghibur diri dan meredakan stres. | Likert 1–5 |
-| | | *Social* | X1.3. Berbelanja kartu Pokémon mempererat ikatan dan kebersamaan dengan sesama teman sehobi. | Likert 1–5 |
-| | | *Role* | X1.4. Saya menikmati berbelanja kartu Pokémon untuk dihadiahkan atau dimainkan bersama teman dan keluarga sehobi. | Likert 1–5 |
-| | | *Idea* | X1.5. Saya senang mengikuti tren rilis seri kartu Pokémon dan inovasi desain terbarunya. | Likert 1–5 |
-| **Desire for Completeness ($X_2$)** | Dorongan psikologis menuntaskan set koleksi akibat *Zeigarnik Effect* (Belk, 1995; Gao et al., 2014; Barasz et al., 2017). | *Cognitive Tension* | X2.1. Saya merasa tidak nyaman ketika album koleksi kartu Pokémon saya memiliki celah (*slot*) kosong. | Likert 1–5 |
-| | | *Drive for Closure* | X2.2. Hasrat melengkapi seluruh seri kartu dalam album *binder* mendorong saya untuk terus menambah koleksi. | Likert 1–5 |
-| | | *Cognitive Tension* | X2.3. Mengetahui ada kartu yang belum saya miliki dalam suatu seri membuat saya ingin segera membelinya. | Likert 1–5 |
-| | | *Wholeness* | X2.4. Melengkapi satu set penuh kartu Pokémon memberikan perasaan pencapaian dan kepuasan batin. | Likert 1–5 |
-| | | *Drive for Closure* | X2.5. Semakin sedikit kartu yang kurang dalam satu seri, semakin kuat desakan psikologis saya untuk menuntaskannya. | Likert 1–5 |
-| **Speculative Motive ($X_3$)** | Ekspektasi memperoleh keuntungan finansial dari apresiasi harga di pasar sekunder (Shiller, 2000; Baur et al., 2018; Colline, 2024). | Apresiasi Modal | X3.1. Saya membeli kartu dengan ekspektasi menarik kartu langka bernilai jual tinggi. | Likert 1–5 |
-| | | Likuiditas | X3.2. Saya yakin kartu Pokémon langka memiliki likuiditas tinggi sehingga mudah dan cepat dijual kembali menjadi uang tunai di pasar sekunder. | Likert 1–5 |
-| | | Tren Nilai | X3.3. Saya memandang kartu Pokémon langka sebagai aset alternatif yang nilainya dapat naik di masa depan. | Likert 1–5 |
-| | | Potensi Nilai | X3.4. Saya memandang biaya pembelian kartu sebanding dengan potensi apresiasi keuntungan di pasar sekunder. | Likert 1–5 |
-| | | *Grading Value* | X3.5. Saya tertarik dengan sertifikasi kondisi fisik dan keaslian (*grading*) kartu demi menaikkan nilai jual lelang di pasar sekunder. | Likert 1–5 |
-| **Self-Control ($M$)** | Kemampuan mengendalikan diri untuk menolak godaan belanja spontan dan menunda kepuasan sesaat (Tangney et al., 2004; Vohs & Faber, 2007; Sultan et al., 2012; Apidana & Kholifah, 2022; Lienardy & Panasea, 2026). | Tahan Godaan | M1. Saya mampu menolak godaan berbelanja jika barang tersebut berada di luar rencana anggaran saya. | Likert 1–5 |
-| | | Non-Impulsif | M2. Saya terbiasa berpikir tenang dan mempertimbangkan konsekuensi keuangan sebelum memutuskan bertransaksi. | Likert 1–5 |
-| | | Tunda Kepuasan | M3. Saya mampu menahan diri dari kesenangan belanja saat ini demi menjaga stabilitas keuangan masa depan. | Likert 1–5 |
-| | | Disiplin Diri | M4. Saya memiliki pengendalian diri yang kokoh untuk menahan dorongan membeli barang secara spontan saat melihat barang menarik. | Likert 1–5 |
-| | | Kontrol Emosi | M5. Saya tidak mudah terhanyut oleh emosi sesaat dalam membelanjakan uang pribadi. | Likert 1–5 |
-| | | Taat Anggaran | M6. Saya secara konsisten mematuhi alokasi batas anggaran pengeluaran hobi yang telah saya tetapkan. | Likert 1–5 |
+| **Impulsive Buying ($Y$)** | Kecenderungan konsumen melakukan pembelian secara spontan, mendadak, dan tanpa perencanaan awal yang didorong emosi sesaat (Rook, 1987; Verplanken & Herabadi, 2001). | Dimensi Kognitif | 1. Ketiadaan perencanaan belanja sebelumnya. | Interval |
+| | | Dimensi Kognitif | 2. Pengabaian pertimbangan konsekuensi finansial. | Interval |
+| | | Dimensi Kognitif | 3. Pembelian dalam jumlah melebihi niat awal. | Interval |
+| | | Dimensi Afektif | 4. Dorongan belanja spontan saat melihat produk di etalase toko. | Interval |
+| | | Dimensi Afektif | 5. Perasaan gembira dan antusias saat memutuskan membeli seketika. | Interval |
+| | | Dimensi Afektif | 6. Kesulitan menahan hasrat berbelanja saat rilis produk baru. | Interval |
+| **Hedonic Motivation ($X_1$)** | Dorongan berbelanja yang dipandu oleh pencarian kesenangan emosional, hiburan, dan sensasi petualangan (Arnold & Reynolds, 2003; Babin et al., 1994). | *First-Order* (Indikator Langsung) | 1. Sensasi petualangan dan kejutan mendebarkan saat membuka kemasan (*adventure shopping*). | Interval |
+| | | *First-Order* (Indikator Langsung) | 2. Pelepasan stres dan hiburan diri (*gratification shopping*). | Interval |
+| | | *First-Order* (Indikator Langsung) | 3. Interaksi dan kebersamaan dengan rekan sehobi (*social shopping*). | Interval |
+| | | *First-Order* (Indikator Langsung) | 4. Kesenangan berbelanja untuk dihadiahkan atau dinikmati bersama (*role shopping*). | Interval |
+| | | *First-Order* (Indikator Langsung) | 5. Antusiasme mengikuti tren rilis dan pembaruan desain produk (*idea shopping*). | Interval |
+| **Desire for Completeness ($X_2$)** | Dorongan psikologis menuntaskan seluruh susunan rangkaian koleksi akibat ketegangan kognitif ketidaklengkapan (Belk, 1995; Gao et al., 2014; Barasz et al., 2017). | *Cognitive Tension* | 1. Perasaan tidak nyaman melihat adanya celah kosong pada rangkaian koleksi. | Interval |
+| | | *Cognitive Tension* | 2. Ketidaktenangan pikiran saat mengetahui ada unit yang belum dimiliki dalam himpunan. | Interval |
+| | | *Drive for Closure* | 3. Dorongan kuat untuk terus menambah unit demi melengkapi rangkaian koleksi. | Interval |
+| | | *Drive for Closure* | 4. Kepuasan batin saat berhasil menuntaskan satu set lengkap. | Interval |
+| | | *Drive for Closure* | 5. Peningkatan desakan berbelanja saat jumlah unit yang tersisa semakin sedikit. | Interval |
+| **Speculative Motive ($X_3$)** | Ekspektasi memperoleh keuntungan finansial di masa depan melalui apresiasi kenaikan harga aset di pasar sekunder (Shiller, 2000; Baur et al., 2018; Colline, 2024). | Apresiasi Modal (*Capital Gain*) | 1. Ekspektasi memperoleh unit langka bernilai jual tinggi di masa depan. | Interval |
+| | | Apresiasi Modal (*Capital Gain*) | 2. Penilaian kelayakan biaya pembelian dibanding potensi keuntungan di masa depan. | Interval |
+| | | Apresiasi Modal (*Capital Gain*) | 3. Pandangan terhadap produk sebagai aset alternatif yang nilainya dapat terapresiasi. | Interval |
+| | | Likuiditas & Sertifikasi Pasar | 4. Persepsi tingginya likuiditas dan kemudahan penjualan kembali di pasar sekunder. | Interval |
+| | | Likuiditas & Sertifikasi Pasar | 5. Ketertarikan pada sertifikasi kondisi fisik resmi demi melipatgandakan nilai jual lelang. | Interval |
+| **Self-Control ($M$)** | Kapasitas pengendalian diri individu untuk menolak godaan belanja impulsif, menunda kepuasan sesaat, dan menaati batas rencana anggaran (Tangney et al., 2004; Vohs & Faber, 2007; Sultan et al., 2012; Apidana & Kholifah, 2022; Lienardy & Setiawan, 2026). | Pengendalian Impuls & Disiplin Diri | 1. Kemampuan menolak godaan berbelanja di luar rencana anggaran belanja. | Interval |
+| | | Pengendalian Impuls & Disiplin Diri | 2. Kebiasaan mempertimbangkan konsekuensi keuangan sebelum bertransaksi. | Interval |
+| | | Pengendalian Impuls & Disiplin Diri | 3. Disiplin diri untuk menahan dorongan belanja spontan saat melihat barang menarik. | Interval |
+| | | Penundaan Kepuasan & Regulasi Emosi | 4. Kemampuan menunda kesenangan belanja saat ini demi tujuan jangka panjang. | Interval |
+| | | Penundaan Kepuasan & Regulasi Emosi | 5. Ketahanan emosional agar tidak mudah terhanyut oleh suasana belanja sesaat. | Interval |
+| | | Penundaan Kepuasan & Regulasi Emosi | 6. Konsistensi dalam mematuhi batasan anggaran pengeluaran yang telah ditetapkan. | Interval |
 
-*Sumber: Diadaptasi dari instrumen penelitian terdahulu yang tervalidasi (2026).*"""
+*Catatan Metodologis: Seluruh variabel diukur menggunakan instrumen kuesioner skala Likert 5 poin (1 = Sangat Tidak Setuju hingga 5 = Sangat Setuju) yang diperlakukan sebagai skala Interval dalam pemodelan regresi linear parametrik (MRA) sesuai kaidah Sekaran dan Bougie (2016) serta Ghozali (2018). Butir operasional instrumen survei lapangan yang diadaptasi secara spesifik ke dalam konteks kartu Pokémon TCG disajikan pada Lampiran Kuesioner Penelitian.*"""
         s = tab32_pattern.sub(tab32_md, s)
 
     # Hierarchical section and subsection numbering via split
@@ -422,8 +433,9 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
     s = s.replace(r'\_', '_')
     s = s.replace(r'\&', '&')
     s = s.replace('___PCT___', '%').replace('___AMP___', '&').replace('___US___', '_')
-    s = s.replace(r'--', '–')
     s = s.replace(r'---', '—')
+    s = s.replace(r'--', '–')
+    s = clean_latex_accents(s)
     # Restore table markdown separator dashes if affected
     cleaned_lines = []
     for l in s.splitlines():
@@ -460,11 +472,10 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
     s = re.sub(r'Persamaan~\\ref\{eq:f_change\}', 'Persamaan (3.5)', s)
     s = re.sub(r'Gambar~\\ref\{fig:alur_penelitian\}', 'Gambar 3.1', s)
     s = re.sub(r'Tabel~\\ref\{tab:jadwal_penelitian\}', 'Tabel 3.3', s)
-    s = re.sub(r'Gambar~\\ref\{fig:media_franchise_ranking\}', 'Gambar 1.1', s)
-    s = re.sub(r'Gambar~\\ref\{fig:pokemon_card_growth\}', 'Gambar 1.2', s)
-    s = re.sub(r'Gambar~\\ref\{fig:pricecharting_disparity\}', 'Gambar 1.3', s)
-    s = re.sub(r'Tabel~\\ref\{tab:research_gap\}', 'Tabel 1.1', s)
-    s = re.sub(r'~\\ref\{[^}]+\}', '', s)
+    s = re.sub(r'Gambar~\\ref{fig:media_franchise_ranking}', 'Gambar 1.1', s)
+    s = re.sub(r'Gambar~\\ref{fig:pokemon_card_growth}', 'Gambar 1.2', s)
+    s = re.sub(r'Gambar~\\ref{fig:pricecharting_disparity}', 'Gambar 1.3', s)
+    s = re.sub(r'~\\ref{[^}]+}', '', s)
 
     # Clean extra blank lines
     s = re.sub(r'\n{3,}', '\n\n', s)

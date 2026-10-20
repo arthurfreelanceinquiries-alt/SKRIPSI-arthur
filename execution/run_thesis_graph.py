@@ -35,6 +35,7 @@ GATES = [
     ("G6", "Outline heading Word", "verify_word_outline.py", "A8"),
     ("G7", "Sumber buku LibGen", "verify_book_sources.py", "A8"),
     ("G8", "Paritas tipografi italic PDF<->DOCX", "verify_italic_parity.py", "A8"),
+    ("G9", "Anti-regresi revisi dosen & frasa terlarang", "verify_anti_regression.py", "A8"),
 ]
 
 EXTENDED = [

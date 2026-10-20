@@ -317,14 +317,33 @@ def clean_academic_text(text: str) -> str:
         return text
 
     # 0. Normalisasi aksen LaTeX ke Unicode (mencegah bocoran mentah)
-    text = text.replace(r"{\'e}", 'é').replace(r"\'e", 'é')
-    text = text.replace(r'{\"u}', 'ü').replace(r'\"u', 'ü')
-    text = text.replace(r'{\"o}', 'ö').replace(r'\"o', 'ö')
-    text = text.replace(r'{\`e}', 'è').replace(r'\`e', 'è')
+    text = re.sub(r'\\c\{c\}|\\c\s*c|\\c\{C\}|\\c\s*C', 'ç', text)
+    text = re.sub(r'\\~\{a\}|\\~\s*a', 'ã', text)
+    text = re.sub(r'\\~\{o\}|\\~\s*o', 'õ', text)
+    text = re.sub(r"\\'\{a\}|\\'\s*a", 'á', text)
+    text = re.sub(r"\\'\{e\}|\\'\s*e", 'é', text)
+    text = re.sub(r"\\'\{i\}|\\'\s*i", 'í', text)
+    text = re.sub(r"\\'\{o\}|\\'\s*o", 'ó', text)
+    text = re.sub(r"\\'\{u\}|\\'\s*u", 'ú', text)
+    text = re.sub(r'\\\^\{a\}|\\\^\s*a', 'â', text)
+    text = re.sub(r'\\\^\{e\}|\\\^\s*e', 'ê', text)
+    text = re.sub(r'\\\^\{o\}|\\\^\s*o', 'ô', text)
+    text = re.sub(r'\\\"\{u\}|\\\"\s*u', 'ü', text)
+    text = re.sub(r'\\\"\{O\}|\\\"\s*O', 'Ö', text)
+    text = re.sub(r'\\\"\{o\}|\\\"\s*o', 'ö', text)
+    text = re.sub(r'\\`\{a\}|\\`\s*a', 'à', text)
+    text = re.sub(r'\\`\{e\}|\\`\s*e', 'è', text)
 
-    # 0a. Hardening anti-bocoran sintaks (temuan revisi Sylvia 23 Sep 2026):
-    # \% di ujung paragraf, sisa backslash, \url, dan \ref yatim.
+    # 0a. Hardening anti-bocoran sintaks (temuan revisi Sylvia 23 Sep 2026 & 03 Okt 2026):
+    # \% di ujung paragraf, sisa backslash, \url, \ref, dan \phantomsection yatim.
     text = text.replace(r'\%', '%')
+    text = re.sub(r'\\phantomsection\s*', '', text)
+    text = re.sub(r'\\noindent\s*', '', text)
+    text = re.sub(r'\\centering\s*', '', text)
+    text = re.sub(r'\\raggedright\s*', '', text)
+    text = re.sub(r'\\clearpage\s*', '', text)
+    text = re.sub(r'\\newpage\s*', '', text)
+    text = re.sub(r'\\label\{[^}]*\}', '', text)
     text = re.sub(r'\\url\s*\{?([^}\s]+)\}?', r'\1', text)
     text = re.sub(r'~?\\ref\{[^}]+\}', '', text)
     text = re.sub(r'\\+\s*$', '', text)
@@ -1589,11 +1608,9 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
     add_frontmatter_heading(doc, "DAFTAR TABEL", page_break=True)
 
     lot_items_nobab3 = [
-        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian", "7"),
         ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "16")
     ]
     lot_items_full = [
-        ("Tabel 1.1", "Matriks Kesenjangan Penelitian Empiris (Research Gap) pada 7 Subjek Hubungan Model Penelitian", "7"),
         ("Tabel 2.1", "Ringkasan Penelitian Sebelumnya", "16"),
         ("Tabel 3.1", "Skala Pengukuran Likert 5 Poin", "24"),
         ("Tabel 3.2", "Operasionalisasi Variabel Penelitian", "32"),
@@ -1901,23 +1918,21 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         r_s.font.italic = True
                 continue
 
-            # LaTeX Table block handling for Tabel 1.1 (Matriks Research Gap / longtable)
+            # LaTeX Table block handling for Tabel 1.1 (deprecated & omitted)
             if r'\begin{longtable}' in line_str or (line_str.startswith(r'\begingroup') and line_idx + 4 < len(lines) and any(r'\begin{longtable}' in lines[j] for j in range(line_idx, min(line_idx+5, len(lines))))):
-                # Consume lines until \endgroup or end of longtable block
                 while line_idx < len(lines):
                     curr = lines[line_idx].strip()
                     line_idx += 1
                     if r'\endgroup' in curr:
                         break
                     if r'\end{longtable}' in curr:
-                        # Check if flushleft source follows
                         if line_idx < len(lines) and (r'\begin{flushleft}' in lines[line_idx] or r'\footnotesize' in lines[line_idx]):
                             while line_idx < len(lines) and r'\endgroup' not in lines[line_idx]:
                                 line_idx += 1
                             if line_idx < len(lines):
                                 line_idx += 1
                         break
-                build_tabel_research_gap(doc)
+                # Omitted: Tabel 1.1 is deprecated
                 continue
 
             # LaTeX Table block handling for Tabel 3.3 (Jadwal Kegiatan)
@@ -2211,8 +2226,9 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                 r'\begingroup', r'\endgroup', r'\small', r'\footnotesize',
                 r'\toprule', r'\midrule', r'\bottomrule', r'\endhead', r'\endfoot', r'\endlastfoot',
                 r'\begin{flushleft}', r'\end{flushleft}', r'\begin{longtable}', r'\end{longtable}',
-                r'\multicolumn', r'\addlinespace'
-            ]) or r'\begin{longtable}' in line_str or r'\end{longtable}' in line_str:
+                r'\multicolumn', r'\addlinespace', r'\phantomsection', r'\noindent', r'\label',
+                r'\centering', r'\raggedright', r'\clearpage', r'\newpage', r'\addcontentsline'
+            ]) or r'\begin{longtable}' in line_str or r'\end{longtable}' in line_str or line_str.strip() == r'\phantomsection':
                 line_idx += 1
                 continue
 
@@ -2662,58 +2678,58 @@ def build_tabel_research_gap(doc):
     data = [
         (
             "1",
-            "X1 terhadap Y (*Hedonic Motivation*)",
+            "Motivasi Hedonis terhadap Pembelian Impulsif",
             "Arnold dan Reynolds (2003); Gültekin dan Özer (2012); Pranggabayu dan Andjarwati (2022); Gong *et al.* (2024); Tirtayasa *et al.* (2020); Zheng *et al.* (2019) (positif signifikan).",
             "Batas Thaler (1985); Thaler dan Shefrin (1981) (tertahan anggaran; bukan temuan tidak signifikan pada kolektibel).",
             "Elastisitas anggaran dan orientasi utiliter vs afektif."
         ),
         (
             "2",
-            "X2 terhadap Y (*Desire for Completeness*)",
+            "Hasrat Kelengkapan terhadap Pembelian Impulsif",
             "Gao *et al.* (2014); Barasz *et al.* (2017); Dewi *et al.* (2026) (positif signifikan).",
-            "Long dan Schiffman (2000); Spero dan Stone (2004) (kolektor matang pilih *single*; bukan temuan tidak signifikan).",
+            "Zhang *et al.* (2022); Chan *et al.* (2017) (evaluasi nilai dan orientasi tujuan; bukan temuan tidak signifikan).",
             "Kematangan kolektor dan kalkulasi probabilitas."
         ),
         (
             "3",
-            "X3 terhadap Y (*Speculative Motive*)",
-            "Baur *et al.* (2018); Aryadi dan Lingga (2024) (analogi partisipasi TCG); Colline (2024) (*herding*; kualitatif). Shiller (2000) sebagai kerangka keuangan perilaku.",
+            "Motif Spekulasi terhadap Pembelian Impulsif",
+            "Baur *et al.* (2018); Aryadi dan Lingga (2024) (analogi partisipasi TCG); Colline (2024) (*herding*; kualitatif); Shiller (2000) sebagai landasan teoretis utama.",
             "Barber dan Odean (2008); Fama (1970) (analogi saham; bukan temuan tidak signifikan pada kolektibel).",
             "Asimetri informasi dan ilusi kendali vs evaluasi risiko."
         ),
         (
             "4",
-            "M terhadap Y (*Self-Control*)",
+            "Kontrol Diri terhadap Pembelian Impulsif",
             "Baumeister (2002); Tangney *et al.* (2004); Vohs dan Faber (2007); Sultan *et al.* (2012) (negatif signifikan).",
             "Hirschman (1982); Stern (1962) (*cognitive bypass*; bukan regresi).",
             "*Ego depletion* saat stimulus intens."
         ),
         (
             "5",
-            "Moderasi M pada X1 terhadap Y",
-            "Lienardy dan Panasea (2026) (MRA H4 diterima); Katauke *et al.* (2023) (tak langsung).",
+            "Moderasi Kontrol Diri pada Motivasi Hedonis",
+            "Lienardy dan Setiawan (2026) (MRA H4 diterima); Katauke *et al.* (2023) (tak langsung).",
             "Gagal-moderasi Apidana dan Kholifah (2022) (p=0,597) dan Artadita dan Firmialy (2024) (β=0,092, tidak signifikan) + *regulatory failure*.",
-            "Ambang intensitas hedonis vs kapasitas volisional."
+            "Ambang intensitas hedonis vs kapasitas pengendalian diri."
         ),
         (
             "6",
-            "Moderasi M pada X2 terhadap Y",
+            "Moderasi Kontrol Diri pada Hasrat Kelengkapan",
             "Parsial: Artadita dan Firmialy (2024) (kontrol kognitif; moderasi keseluruhan ditolak); Apidana dan Kholifah (2022) (adjacent).",
             "Teori Belk (1995); Barasz *et al.* (2017) + Artadita dan Firmialy (2024) H3 ditolak.",
             "Keterikatan koleksi: kasual vs fanatik."
         ),
         (
             "7",
-            "Moderasi M pada X3 terhadap Y",
+            "Moderasi Kontrol Diri pada Motif Spekulasi",
             "Tak langsung: Katauke *et al.* (2023) + *Planner-Doer*.",
-            "Teoretis: Shiller (2000); Aryadi dan Lingga (2026) (bukan uji interaksi).",
+            "Teoretis: Shiller (2000); Aryadi dan Lingga (2024) (bukan uji interaksi).",
             "*Herding* dan FOMO saat euforia."
         )
     ]
 
     tbl = doc.add_table(rows=1+len(data), cols=5)
     tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
-    col_widths = [Cm(0.8), Cm(2.8), Cm(3.7), Cm(3.7), Cm(3.0)]
+    col_widths = [Cm(0.8), Cm(3.0), Cm(3.5), Cm(3.7), Cm(3.0)]
     set_col_widths_fixed(tbl, col_widths)
 
     # Header
