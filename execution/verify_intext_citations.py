@@ -3,7 +3,7 @@ from pathlib import Path
 
 def extract_body(text):
     start_pos = 0
-    m_start = re.search(r'(\\section\*?\{BAB\s+1|\n#\s+BAB\s+1\s+PENDAHULUAN|\n#\s+BAB\s+I\s+PENDAHULUAN)', text, re.IGNORECASE)
+    m_start = re.search(r'(\\section\*?\{BAB\s+[1I]|\n#\s+BAB\s+1\s+PENDAHULUAN|\n#\s+BAB\s+I\s+PENDAHULUAN)', text, re.IGNORECASE)
     if m_start:
         start_pos = m_start.start()
     
