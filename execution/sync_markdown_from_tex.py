@@ -318,42 +318,56 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
         s = tab31_pattern.sub(tab31_md, s)
 
     # Convert Table 3.2
+    # Revisi 03 Nov 2026: Tabel 3.2 di TeX master kini 4 kolom (Variabel, Definisi
+    # Operasional, Indikator Teoretis, Skala) — kolom "Dimensi" dihapus. Sitasi
+    # Definisi Operasional & Sumber Indikator memakai perintah \citep/\citet agar
+    # diresolusi dari .aux (Mendeley APA 7), bukan string hardcoded yang bisa desync.
     if r"\caption{Operasionalisasi Variabel Penelitian}" in s:
-        tab32_pattern = re.compile(r'\\begingroup.*?\\caption\{Operasionalisasi Variabel Penelitian\}.*?\\endgroup', re.DOTALL)
+        # Tempered dot: \begingroup harus milik tabel ini, bukan \begingroup sebelumnya.
+        tab32_pattern = re.compile(
+            r'\\begingroup(?:(?!\\endgroup).)*?\\caption\{Operasionalisasi Variabel Penelitian\}.*?\\endgroup',
+            re.DOTALL)
         tab32_md = """**Tabel 3.2 Operasionalisasi Variabel Penelitian**
 
-| Variabel | Definisi Operasional | Dimensi | Indikator Teoretis | Skala |
-|:---|:---|:---|:---|:---:|
-| **Impulsive Buying ($Y$)** | Kecenderungan konsumen melakukan pembelian secara spontan, mendadak, dan tanpa perencanaan awal yang didorong emosi sesaat (Rook, 1987; Verplanken & Herabadi, 2001). | Dimensi Kognitif | 1. Ketiadaan perencanaan belanja sebelumnya. | Interval |
-| | | Dimensi Kognitif | 2. Pengabaian pertimbangan konsekuensi finansial. | Interval |
-| | | Dimensi Kognitif | 3. Pembelian dalam jumlah melebihi niat awal. | Interval |
-| | | Dimensi Afektif | 4. Dorongan belanja spontan saat melihat produk di etalase toko. | Interval |
-| | | Dimensi Afektif | 5. Perasaan gembira dan antusias saat memutuskan membeli seketika. | Interval |
-| | | Dimensi Afektif | 6. Kesulitan menahan hasrat berbelanja saat rilis produk baru. | Interval |
-| **Hedonic Motivation ($X_1$)** | Dorongan berbelanja yang dipandu oleh pencarian kesenangan emosional, hiburan, dan sensasi petualangan (Arnold & Reynolds, 2003; Babin et al., 1994). | *First-Order* (Indikator Langsung) | 1. Sensasi petualangan dan kejutan mendebarkan saat membuka kemasan (*adventure shopping*). | Interval |
-| | | *First-Order* (Indikator Langsung) | 2. Pelepasan stres dan hiburan diri (*gratification shopping*). | Interval |
-| | | *First-Order* (Indikator Langsung) | 3. Interaksi dan kebersamaan dengan rekan sehobi (*social shopping*). | Interval |
-| | | *First-Order* (Indikator Langsung) | 4. Kesenangan berbelanja untuk dihadiahkan atau dinikmati bersama (*role shopping*). | Interval |
-| | | *First-Order* (Indikator Langsung) | 5. Antusiasme mengikuti tren rilis dan pembaruan desain produk (*idea shopping*). | Interval |
-| **Desire for Completeness ($X_2$)** | Dorongan psikologis menuntaskan seluruh susunan rangkaian koleksi akibat ketegangan kognitif ketidaklengkapan (Belk, 1995; Gao et al., 2014; Barasz et al., 2017). | *Cognitive Tension* | 1. Perasaan tidak nyaman melihat adanya celah kosong pada rangkaian koleksi. | Interval |
-| | | *Cognitive Tension* | 2. Ketidaktenangan pikiran saat mengetahui ada unit yang belum dimiliki dalam himpunan. | Interval |
-| | | *Drive for Closure* | 3. Dorongan kuat untuk terus menambah unit demi melengkapi rangkaian koleksi. | Interval |
-| | | *Drive for Closure* | 4. Kepuasan batin saat berhasil menuntaskan satu set lengkap. | Interval |
-| | | *Drive for Closure* | 5. Peningkatan desakan berbelanja saat jumlah unit yang tersisa semakin sedikit. | Interval |
-| **Speculative Motive ($X_3$)** | Ekspektasi memperoleh keuntungan finansial di masa depan melalui apresiasi kenaikan harga aset di pasar sekunder (Shiller, 2000; Baur et al., 2018; Colline, 2024). | Apresiasi Modal (*Capital Gain*) | 1. Ekspektasi memperoleh unit langka bernilai jual tinggi di masa depan. | Interval |
-| | | Apresiasi Modal (*Capital Gain*) | 2. Penilaian kelayakan biaya pembelian dibanding potensi keuntungan di masa depan. | Interval |
-| | | Apresiasi Modal (*Capital Gain*) | 3. Pandangan terhadap produk sebagai aset alternatif yang nilainya dapat terapresiasi. | Interval |
-| | | Likuiditas & Sertifikasi Pasar | 4. Persepsi tingginya likuiditas dan kemudahan penjualan kembali di pasar sekunder. | Interval |
-| | | Likuiditas & Sertifikasi Pasar | 5. Ketertarikan pada sertifikasi kondisi fisik resmi demi melipatgandakan nilai jual lelang. | Interval |
-| **Self-Control ($M$)** | Kapasitas pengendalian diri individu untuk menolak godaan belanja impulsif, menunda kepuasan sesaat, dan menaati batas rencana anggaran (Tangney et al., 2004; Vohs & Faber, 2007; Sultan et al., 2012; Apidana & Kholifah, 2022; Lienardy & Setiawan, 2026). | Pengendalian Impuls & Disiplin Diri | 1. Kemampuan menolak godaan berbelanja di luar rencana anggaran belanja. | Interval |
-| | | Pengendalian Impuls & Disiplin Diri | 2. Kebiasaan mempertimbangkan konsekuensi keuangan sebelum bertransaksi. | Interval |
-| | | Pengendalian Impuls & Disiplin Diri | 3. Disiplin diri untuk menahan dorongan belanja spontan saat melihat barang menarik. | Interval |
-| | | Penundaan Kepuasan & Regulasi Emosi | 4. Kemampuan menunda kesenangan belanja saat ini demi tujuan jangka panjang. | Interval |
-| | | Penundaan Kepuasan & Regulasi Emosi | 5. Ketahanan emosional agar tidak mudah terhanyut oleh suasana belanja sesaat. | Interval |
-| | | Penundaan Kepuasan & Regulasi Emosi | 6. Konsistensi dalam mematuhi batasan anggaran pengeluaran yang telah ditetapkan. | Interval |
+| Variabel | Definisi Operasional | Indikator Teoretis | Skala |
+|:---|:---|:---|:---:|
+| **Impulsive Buying ($Y$)** | Kecenderungan konsumen melakukan pembelian secara spontan, mendadak, dan tanpa perencanaan awal yang didorong emosi sesaat \\citep{rook1987buying, verplanken2001individual}. | 1. Ketiadaan perencanaan belanja sebelumnya. | Interval |
+| | | 2. Pengabaian pertimbangan konsekuensi finansial. | Interval |
+| | | 3. Pembelian dalam jumlah melebihi niat awal. | Interval |
+| | | 4. Dorongan belanja spontan saat melihat produk di etalase toko. | Interval |
+| | | 5. Perasaan gembira dan antusias saat memutuskan membeli seketika. | Interval |
+| | | 6. Kesulitan menahan hasrat berbelanja saat rilis produk baru. | Interval |
+| | | *Sumber Indikator: \\citet{verplanken2001individual} dan \\citet{rook1987buying}.* | |
+| **Hedonic Motivation ($X_1$)** | Dorongan berbelanja yang dipandu oleh pencarian kesenangan emosional, hiburan, dan sensasi petualangan \\citep{arnold2003hedonic, babin1994work}. | 1. Rasa senang dan penasaran saat membuka kemasan (*adventure shopping*). | Interval |
+| | | 2. Pelepasan stres dan hiburan diri (*gratification shopping*). | Interval |
+| | | 3. Interaksi dan kebersamaan dengan rekan sehobi (*social shopping*). | Interval |
+| | | 4. Kesenangan berbelanja untuk dihadiahkan atau dinikmati bersama (*role shopping*). | Interval |
+| | | 5. Antusiasme mengikuti tren rilis dan pembaruan desain produk (*idea shopping*). | Interval |
+| | | *Sumber Indikator: \\citet{arnold2003hedonic}.* | |
+| **Desire for Completeness ($X_2$)** | Dorongan psikologis menuntaskan seluruh susunan rangkaian koleksi akibat ketegangan kognitif ketidaklengkapan \\citep{belk1995collecting, gao2014completing, barasz2017pseudo}. | 1. Perasaan tidak nyaman melihat adanya celah kosong pada rangkaian koleksi. | Interval |
+| | | 2. Ketidaktenangan pikiran saat mengetahui ada unit yang belum dimiliki dalam himpunan. | Interval |
+| | | 3. Dorongan kuat untuk terus menambah unit demi melengkapi rangkaian koleksi. | Interval |
+| | | 4. Kepuasan batin saat berhasil menuntaskan satu set lengkap. | Interval |
+| | | 5. Peningkatan desakan berbelanja saat jumlah unit yang tersisa semakin sedikit. | Interval |
+| | | *Sumber Indikator: \\citet{barasz2017pseudo} dan \\citet{gao2014completing}.* | |
+| **Speculative Motive ($X_3$)** | Ekspektasi memperoleh keuntungan finansial di masa depan melalui apresiasi kenaikan harga aset di pasar sekunder \\citep{shiller2000irrational, baur2018bitcoin, colline2024biases}. | 1. Ekspektasi memperoleh unit langka bernilai jual tinggi di masa depan. | Interval |
+| | | 2. Penilaian kelayakan biaya pembelian dibanding potensi keuntungan di masa depan. | Interval |
+| | | 3. Pandangan terhadap produk sebagai aset alternatif yang nilainya dapat terapresiasi. | Interval |
+| | | 4. Persepsi tingginya likuiditas dan kemudahan penjualan kembali di pasar sekunder. | Interval |
+| | | 5. Ketertarikan pada kartu bersertifikasi resmi untuk meningkatkan harga jual kembali. | Interval |
+| | | *Sumber Indikator: \\citet{colline2024biases} dan \\citet{aryadi2024personal}.* | |
+| **Self-Control ($M$)** | Kapasitas pengendalian diri individu untuk menolak godaan belanja impulsif, menunda kepuasan sesaat, dan menaati batas rencana anggaran \\citep{tangney2004high, rafael2023intellectual, prihatiningrum2021effect, apidana2022peran, lienardy2026role}. | 1. Kemampuan menolak godaan berbelanja di luar rencana anggaran belanja. | Interval |
+| | | 2. Kebiasaan mempertimbangkan konsekuensi keuangan sebelum bertransaksi. | Interval |
+| | | 3. Disiplin diri untuk menahan dorongan belanja spontan saat melihat barang menarik. | Interval |
+| | | 4. Kemampuan menunda kesenangan belanja saat ini demi tujuan jangka panjang. | Interval |
+| | | 5. Kemampuan menahan diri agar tidak mudah terpengaruh oleh suasana di toko. | Interval |
+| | | 6. Konsistensi dalam mematuhi batasan anggaran pengeluaran yang telah ditetapkan. | Interval |
+| | | *Sumber Indikator: Brief Self-Control Scale oleh \\citet{tangney2004high}.* | |
 
 *Catatan Metodologis: Seluruh variabel diukur menggunakan instrumen kuesioner skala Likert 5 poin (1 = Sangat Tidak Setuju hingga 5 = Sangat Setuju) yang diperlakukan sebagai skala Interval dalam pemodelan regresi linear parametrik (MRA) sesuai kaidah Sekaran dan Bougie (2016) serta Ghozali (2018). Butir operasional instrumen survei lapangan yang diadaptasi secara spesifik ke dalam konteks kartu Pokémon TCG disajikan pada Lampiran Kuesioner Penelitian.*"""
-        s = tab32_pattern.sub(tab32_md, s)
+        # Lambda replacement wajib: template memuat \citep/\citet, dan re.sub
+        # menafsirkan escape pada string replacement (bad escape \c).
+        s = tab32_pattern.sub(lambda m: tab32_md, s)
 
     # Hierarchical section and subsection numbering via split
     parts = re.split(r'\\subsection\{(.+)\}', s)
@@ -436,11 +450,13 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
     s = s.replace(r'---', '—')
     s = s.replace(r'--', '–')
     s = clean_latex_accents(s)
-    # Restore table markdown separator dashes if affected
+    # Restore table markdown separator dashes if affected.
+    # Self-anneal 03 Nov 2026: '---' -> '—' (em dash) juga merusak baris separator
+    # tabel; tanpa normalisasi ini em dash bocor jadi baris palsu di DOCX.
     cleaned_lines = []
     for l in s.splitlines():
-        if l.strip().startswith('|') and ('--' in l or '–' in l) and not any(c.isalnum() for c in l):
-            l = l.replace('–', '-')
+        if l.strip().startswith('|') and any(d in l for d in ('--', '–', '—')) and not any(c.isalnum() for c in l):
+            l = l.replace('–', '---').replace('—', '---')
         cleaned_lines.append(l)
     s = '\n'.join(cleaned_lines)
     s = s.replace(r'\noindent', '')

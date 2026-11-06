@@ -120,9 +120,9 @@ def audit_docx(docx_path: Path) -> bool:
             r"\endfoot", r"\endlastfoot", r"\phantomsection", r"\noindent", r"\addcontentsline"
         ]
         for r_idx, r in enumerate(p.runs):
-            # Check for literal asterisks (notasi terpusat X1*/M*/X₁* = LEGIT
+            # Check for literal asterisks (notasi terpusat X1*/M*/X₁*/X₁^* = LEGIT
             # statistik mean-centered, rule mandatory_no_ai_markers §3)
-            _t = re.sub(r'[XM][\u2081\u2082\u2083\u1d62\d]?\*', '', r.text)
+            _t = re.sub(r'[XM][\u2081\u2082\u2083\u1d62\d]?\^?\*', '', r.text)
             if "*" in _t:
                 # We allow standalone bullet points if any, but in text runs, stray asterisks represent unparsed markdown
                 issues.append(f"Stray asterisk '*' in run text at P{p_idx} R{r_idx}: {repr(r.text)}")
@@ -148,7 +148,7 @@ def audit_docx(docx_path: Path) -> bool:
                     if m_cell_leak:
                         issues.append(f"FATAL: Raw LaTeX command '{m_cell_leak.group(0)}' in Table {t_idx} Row {r_idx} Col {c_idx}: {repr(p.text[:80])}")
                     for r in p.runs:
-                        _t = re.sub(r'[XM][\u2081\u2082\u2083\u1d62\d]?\*', '', r.text)
+                        _t = re.sub(r'[XM][\u2081\u2082\u2083\u1d62\d]?\^?\*', '', r.text)
                         if "*" in _t:
                             issues.append(f"Stray asterisk '*' in Table {t_idx} Row {r_idx} Col {c_idx}: {repr(r.text)}")
                         if "$" in r.text:

@@ -301,9 +301,26 @@ def add_equation_paragraph(doc, formula_latex, align=WD_ALIGN_PARAGRAPH.CENTER):
             p._p.append(elem)
             return p
 
-    # Fallback clean text
-    clean_math = formula_latex.replace(r'\alpha', 'α').replace(r'\beta', 'β').replace(r'\cdot', ' · ')
-    clean_math = re.sub(r'[_^{}]', '', clean_math)
+    # Fallback clean text — full LaTeX to Unicode conversion
+    clean_math = formula_latex
+    clean_math = clean_math.replace(r'\alpha', 'α').replace(r'\beta', 'β')
+    clean_math = clean_math.replace(r'\ge', '≥').replace(r'\geq', '≥')
+    clean_math = clean_math.replace(r'\le', '≤').replace(r'\leq', '≤')
+    clean_math = clean_math.replace(r'\cdot', ' · ').replace(r'\times', ' × ')
+    clean_math = clean_math.replace(r'\Delta', 'Δ').replace(r'\epsilon', 'ε')
+    clean_math = clean_math.replace(r'\partial', '∂').replace(r'\approx', '≈')
+    clean_math = clean_math.replace(r'\rightarrow', '→')
+    clean_math = re.sub(r"\\text\{([^}]+)\}", r"\1", clean_math)
+    clean_math = re.sub(r"\\mathrm\{([^}]+)\}", r"\1", clean_math)
+    sub_map = str.maketrans('0123456789', '₀₁₂₃₄₅₆₇₈₉')
+    sup_map = str.maketrans('0123456789', '⁰¹²³⁴⁵⁶⁷⁸⁹')
+    clean_math = re.sub(r'_\{([0-9]+)\}', lambda m: m.group(1).translate(sub_map), clean_math)
+    clean_math = re.sub(r'\^\{([0-9]+)\}', lambda m: m.group(1).translate(sup_map), clean_math)
+    clean_math = re.sub(r'_([0-9])', lambda m: m.group(1).translate(sub_map), clean_math)
+    clean_math = re.sub(r'\^([0-9])', lambda m: m.group(1).translate(sup_map), clean_math)
+    clean_math = re.sub(r'[{}]', '', clean_math)
+    clean_math = re.sub(r'\\+', '', clean_math)
+    clean_math = clean_math.strip()
     run = p.add_run(clean_math)
     run.font.name = "Cambria Math"
     run.font.size = Pt(11)
@@ -1394,8 +1411,8 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         rj4.font.bold = True
 
         for p_abs_text in [
-            "Penelitian ini bertujuan untuk menganalisis dan menguji secara empiris pengaruh *hedonic motivation* (motivasi hedonis), *desire for completeness* (hasrat kelengkapan koleksi), dan *speculative motive* (motif spekulasi finansial) terhadap *impulsive buying* (pembelian impulsif) *booster pack* kartu Pokémon *Trading Card Game* (Pokémon TCG) fisik resmi berbahasa Indonesia pada konsumen di Jakarta Barat, serta menguji peran kontrol diri (*self-control*) sebagai variabel moderasi dalam memperlemah pengaruh ketiga variabel anteseden tersebut.",
-            "Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei *cross-sectional*. Data primer dikumpulkan melalui kuesioner daring skala Likert 5 poin kepada responden yang dipilih melalui teknik *purposive sampling*. Kriteria inklusi sampel adalah konsumen atau kolektor WNI berusia minimal 17 tahun yang berdomisili atau beraktivitas/bertransaksi aktif di wilayah Jakarta Barat serta pernah membeli *booster pack* Pokémon TCG fisik resmi dalam 6–12 bulan terakhir. Target sampel bersih (*usable sample*) adalah 120 hingga 150 responden, mengacu pada kaidah Green (1991) dan Cohen (1988) untuk mencapai kekuatan uji statistik (*power*) 0,80. Metode analisis menggunakan regresi linear berganda dan *Moderated Regression Analysis* (MRA) dengan prosedur pemusatan nilai rata-rata (*mean-centering*) guna mereduksi multikolinearitas non-esensial (Aiken dan West, 1991; Hayes, 2018), diolah via IBM SPSS Statistics.",
+            "Penelitian ini bertujuan untuk menganalisis dan menguji secara empiris pengaruh *hedonic motivation* (motivasi hedonis), *desire for completeness* (hasrat kelengkapan koleksi), dan *speculative motive* (motif spekulasi finansial) terhadap *impulsive buying* (pembelian impulsif) *booster pack* kartu Pokémon *Trading Card Game* (Pokémon TCG) fisik resmi berbahasa Indonesia pada konsumen di Jakarta Barat, serta menguji peran kontrol diri (*self-control*) sebagai variabel moderasi dalam memoderasi pengaruh ketiga variabel anteseden tersebut.",
+            "Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei *cross-sectional*. Data primer dikumpulkan melalui kuesioner daring skala Likert 5 poin kepada responden yang dipilih melalui teknik *purposive sampling*. Kriteria inklusi sampel adalah konsumen atau kolektor WNI berusia minimal 17 tahun yang berdomisili atau beraktivitas/bertransaksi aktif di wilayah Jakarta Barat serta pernah membeli *booster pack* Pokémon TCG fisik resmi dalam 6–12 bulan terakhir. Target ukuran sampel bersih (*usable sample*) adalah minimal 111 responden, ditentukan berdasarkan formula Green (1991) (*N* ≥ 104 + *k*) untuk regresi berganda dengan tujuh prediktor guna mencapai kekuatan uji statistik (*power*) 0,80. Metode analisis menggunakan regresi linear berganda dan *Moderated Regression Analysis* (MRA) dengan prosedur pemusatan nilai rata-rata (*mean-centering*) guna mereduksi multikolinearitas non-esensial (Aiken dan West, 1991; Hayes, 2018), diolah via IBM SPSS Statistics.",
             "Penelitian ini menawarkan kebaruan teoretis (*novelty*) dengan mengintegrasikan kerangka psikologi lingkungan *Stimulus-Organism-Response* (S-O-R), psikologi kolektor (*Zeigarnik Effect* dan *The Completing the Set Effect*), teori regulasi diri (*Self-Regulation Theory*), serta prinsip keuangan perilaku (*behavioral finance*) pada fenomena komoditas hobi bernilai spekulatif tinggi di Jakarta Barat. Hasil penelitian diharapkan memberi kontribusi empiris bagi kontrol diri finansial konsumen muda dan masukan aplikatif bagi komunitas hobi serta literasi keuangan."
         ]:
             p_abs = doc.add_paragraph()
@@ -1442,8 +1459,8 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
         rj5.font.bold = True
 
         for p_abs_en_text in [
-            "This research aims to empirically examine the effects of hedonic motivation, desire for completeness, and speculative motive on the impulsive buying of official Indonesian physical Pokémon Trading Card Game (Pokémon TCG) booster packs among consumers in West Jakarta, and evaluates the moderating role of self-control in mitigating these antecedent effects.",
-            "Employing an associative quantitative design, primary data are collected via 5-point Likert online questionnaires through purposive sampling. Inclusion criteria require Indonesian citizens aged 17 and above residing or transacting in West Jakarta who purchased official booster packs within the past 6–12 months. The targeted usable sample is 120–150 respondents, following Green (1991) and Cohen (1988) for 0.80 statistical power. The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to alleviate non-essential multicollinearity (Aiken dan West, 1991; Hayes, 2018), processed using IBM SPSS Statistics.",
+            "This research aims to empirically examine the effects of hedonic motivation, desire for completeness, and speculative motive on the impulsive buying of official Indonesian physical Pokémon Trading Card Game (Pokémon TCG) booster packs among consumers in West Jakarta, and evaluates the moderating role of self-control in moderating these antecedent effects.",
+            "Employing an associative quantitative design, primary data are collected via 5-point Likert online questionnaires through purposive sampling. Inclusion criteria require Indonesian citizens aged 17 and above residing or transacting in West Jakarta who purchased official booster packs within the past 6–12 months. The targeted usable sample is a minimum of 111 respondents, determined based on Green's (1991) formula (N ≥ 104 + k) for multiple regression with seven predictors to achieve 0.80 statistical power. The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to alleviate non-essential multicollinearity (Aiken dan West, 1991; Hayes, 2018), processed using IBM SPSS Statistics.",
             "This study provides theoretical novelty by integrating Stimulus-Organism-Response (S-O-R), collector psychology (the Zeigarnik Effect and The Completing the Set Effect), Self-Regulation Theory, and behavioral finance on speculative hobby collectibles in West Jakarta. Findings offer empirical guidance for young consumers' financial discipline and actionable inputs for community leaders and financial literacy educators."
         ]:
             p_abs_en = doc.add_paragraph()
@@ -1791,13 +1808,15 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_img.paragraph_format.space_before = Pt(12)
                         p_img.paragraph_format.space_after = Pt(4)
                         p_img.paragraph_format.first_line_indent = Cm(0)
-                        p_img.add_run().add_picture(str(img_fig11), width=Cm(13.5))
+                        p_img.paragraph_format.keep_with_next = True
+                        p_img.add_run().add_picture(str(img_fig11), width=Cm(12.5))
 
                         p_cap = doc.add_paragraph()
                         p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
                         p_cap.paragraph_format.space_before = Pt(2)
                         p_cap.paragraph_format.space_after = Pt(2)
                         p_cap.paragraph_format.first_line_indent = Cm(0)
+                        p_cap.paragraph_format.keep_with_next = True
                         p_cap.add_run("Gambar 1.1. Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa").font.bold = True
 
                         p_src = doc.add_paragraph()
@@ -1818,13 +1837,15 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_img.paragraph_format.space_before = Pt(12)
                         p_img.paragraph_format.space_after = Pt(4)
                         p_img.paragraph_format.first_line_indent = Cm(0)
-                        p_img.add_run().add_picture(str(img_fig12), width=Cm(13.5))
+                        p_img.paragraph_format.keep_with_next = True
+                        p_img.add_run().add_picture(str(img_fig12), width=Cm(12.5))
 
                         p_cap = doc.add_paragraph()
                         p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
                         p_cap.paragraph_format.space_before = Pt(2)
                         p_cap.paragraph_format.space_after = Pt(2)
                         p_cap.paragraph_format.first_line_indent = Cm(0)
+                        p_cap.paragraph_format.keep_with_next = True
                         p_cap.add_run("Gambar 1.2. Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024").font.bold = True
 
                         p_src = doc.add_paragraph()
@@ -1845,13 +1866,15 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_img.paragraph_format.space_before = Pt(12)
                         p_img.paragraph_format.space_after = Pt(4)
                         p_img.paragraph_format.first_line_indent = Cm(0)
-                        p_img.add_run().add_picture(str(img_fig13), width=Cm(13.5))
+                        p_img.paragraph_format.keep_with_next = True
+                        p_img.add_run().add_picture(str(img_fig13), width=Cm(12.5))
 
                         p_cap = doc.add_paragraph()
                         p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
                         p_cap.paragraph_format.space_before = Pt(2)
                         p_cap.paragraph_format.space_after = Pt(2)
                         p_cap.paragraph_format.first_line_indent = Cm(0)
+                        p_cap.paragraph_format.keep_with_next = True
                         p_cap.add_run("Gambar 1.3. Disparitas Harga Pasar Sekunder Kartu Pokémon Mentah (Ungraded) vs. Bersertifikasi PSA 10 Gem Mint Seri Shining Fates").font.bold = True
 
                         p_src = doc.add_paragraph()
@@ -1872,13 +1895,15 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_img.paragraph_format.space_before = Pt(12)
                         p_img.paragraph_format.space_after = Pt(4)
                         p_img.paragraph_format.first_line_indent = Cm(0)
-                        p_img.add_run().add_picture(str(img_rerangka), width=Cm(14.0))
+                        p_img.paragraph_format.keep_with_next = True
+                        p_img.add_run().add_picture(str(img_rerangka), width=Cm(13.0))
 
                         p_cap = doc.add_paragraph()
                         p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
                         p_cap.paragraph_format.space_before = Pt(2)
                         p_cap.paragraph_format.space_after = Pt(2)
                         p_cap.paragraph_format.first_line_indent = Cm(0)
+                        p_cap.paragraph_format.keep_with_next = True
                         p_cap.add_run("Gambar 2.1. Model Rerangka Konseptual Penelitian").font.bold = True
 
                         p_src = doc.add_paragraph()
@@ -1886,7 +1911,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_src.paragraph_format.space_before = Pt(0)
                         p_src.paragraph_format.space_after = Pt(12)
                         p_src.paragraph_format.first_line_indent = Cm(0)
-                        r_s = p_src.add_run("Keterangan: Garis lurus menunjukkan pengaruh langsung (H1, H2, H3); Garis putus-putus menunjukkan efek moderasi kontrol diri yang memperlemah (H4, H5, H6).")
+                        r_s = p_src.add_run("Keterangan: Garis lurus menunjukkan pengaruh langsung (H1, H2, H3); Garis putus-putus menunjukkan efek moderasi kontrol diri (H4, H5, H6).")
                         r_s.font.size = Pt(10)
                         r_s.font.italic = True
 
@@ -1899,13 +1924,15 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_img.paragraph_format.space_before = Pt(12)
                         p_img.paragraph_format.space_after = Pt(4)
                         p_img.paragraph_format.first_line_indent = Cm(0)
-                        p_img.add_run().add_picture(str(img_alur), width=Cm(13.0))
+                        p_img.paragraph_format.keep_with_next = True
+                        p_img.add_run().add_picture(str(img_alur), width=Cm(11.5))
 
                         p_cap = doc.add_paragraph()
                         p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
                         p_cap.paragraph_format.space_before = Pt(2)
                         p_cap.paragraph_format.space_after = Pt(2)
                         p_cap.paragraph_format.first_line_indent = Cm(0)
+                        p_cap.paragraph_format.keep_with_next = True
                         p_cap.add_run("Gambar 3.1. Diagram Alur Pelaksanaan Penelitian").font.bold = True
 
                         p_src = doc.add_paragraph()
@@ -1955,13 +1982,15 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                     p_img.paragraph_format.space_before = Pt(12)
                     p_img.paragraph_format.space_after = Pt(4)
                     p_img.paragraph_format.first_line_indent = Cm(0)
-                    p_img.add_run().add_picture(str(img_fig11), width=Cm(13.5))
+                    p_img.paragraph_format.keep_with_next = True
+                    p_img.add_run().add_picture(str(img_fig11), width=Cm(12.5))
 
                     p_cap = doc.add_paragraph()
                     p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
                     p_cap.paragraph_format.space_before = Pt(2)
                     p_cap.paragraph_format.space_after = Pt(2)
                     p_cap.paragraph_format.first_line_indent = Cm(0)
+                    p_cap.paragraph_format.keep_with_next = True
                     p_cap.add_run("Gambar 1.1. Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa").font.bold = True
 
                     p_src = doc.add_paragraph()
@@ -1990,13 +2019,15 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                     p_img.paragraph_format.space_before = Pt(12)
                     p_img.paragraph_format.space_after = Pt(4)
                     p_img.paragraph_format.first_line_indent = Cm(0)
-                    p_img.add_run().add_picture(str(img_fig12), width=Cm(13.5))
+                    p_img.paragraph_format.keep_with_next = True
+                    p_img.add_run().add_picture(str(img_fig12), width=Cm(12.5))
 
                     p_cap = doc.add_paragraph()
                     p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
                     p_cap.paragraph_format.space_before = Pt(2)
                     p_cap.paragraph_format.space_after = Pt(2)
                     p_cap.paragraph_format.first_line_indent = Cm(0)
+                    p_cap.paragraph_format.keep_with_next = True
                     p_cap.add_run("Gambar 1.2. Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024").font.bold = True
 
                     p_src = doc.add_paragraph()
@@ -2025,13 +2056,15 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                     p_img.paragraph_format.space_before = Pt(12)
                     p_img.paragraph_format.space_after = Pt(4)
                     p_img.paragraph_format.first_line_indent = Cm(0)
-                    p_img.add_run().add_picture(str(img_fig13), width=Cm(13.5))
+                    p_img.paragraph_format.keep_with_next = True
+                    p_img.add_run().add_picture(str(img_fig13), width=Cm(12.5))
 
                     p_cap = doc.add_paragraph()
                     p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
                     p_cap.paragraph_format.space_before = Pt(2)
                     p_cap.paragraph_format.space_after = Pt(2)
                     p_cap.paragraph_format.first_line_indent = Cm(0)
+                    p_cap.paragraph_format.keep_with_next = True
                     p_cap.add_run("Gambar 1.3. Disparitas Harga Rata-rata Pasar Sekunder Kartu Pokémon Mentah (Raw) vs. Bersertifikasi PSA 10 Gem Mint").font.bold = True
 
                     p_src = doc.add_paragraph()
@@ -2060,13 +2093,15 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                     p_img.paragraph_format.space_before = Pt(12)
                     p_img.paragraph_format.space_after = Pt(4)
                     p_img.paragraph_format.first_line_indent = Cm(0)
-                    p_img.add_run().add_picture(str(img_rerangka), width=Cm(14.0))
+                    p_img.paragraph_format.keep_with_next = True
+                    p_img.add_run().add_picture(str(img_rerangka), width=Cm(13.0))
 
                     p_cap = doc.add_paragraph()
                     p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
                     p_cap.paragraph_format.space_before = Pt(2)
                     p_cap.paragraph_format.space_after = Pt(2)
                     p_cap.paragraph_format.first_line_indent = Cm(0)
+                    p_cap.paragraph_format.keep_with_next = True
                     p_cap.add_run("Gambar 2.1. Model Rerangka Konseptual Penelitian").font.bold = True
 
                     p_src = doc.add_paragraph()
@@ -2074,7 +2109,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                     p_src.paragraph_format.space_before = Pt(0)
                     p_src.paragraph_format.space_after = Pt(12)
                     p_src.paragraph_format.first_line_indent = Cm(0)
-                    r_s = p_src.add_run("Keterangan: Garis lurus menunjukkan pengaruh langsung (H1, H2, H3); Garis putus-putus menunjukkan efek moderasi kontrol diri yang memperlemah (H4, H5, H6).")
+                    r_s = p_src.add_run("Keterangan: Garis lurus menunjukkan pengaruh langsung (H1, H2, H3); Garis putus-putus menunjukkan efek moderasi kontrol diri (H4, H5, H6).")
                     r_s.font.size = Pt(10)
                     r_s.font.italic = True
 
@@ -2554,20 +2589,34 @@ def build_apa7_table(doc, table_lines):
     tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
 
     total_width_cm = 14.0 # Text width between 4cm left and 3cm right on 21cm page
-    col_w_cm = total_width_cm / num_cols
+    if num_cols == 4:
+        col_widths = [Cm(2.5), Cm(4.0), Cm(6.0), Cm(1.5)]
+    elif num_cols == 3:
+        col_widths = [Cm(2.0), Cm(9.5), Cm(2.5)]
+    elif num_cols == 5:
+        col_widths = [Cm(1.0), Cm(3.2), Cm(3.3), Cm(3.2), Cm(3.3)]
+    else:
+        col_w_cm = total_width_cm / num_cols
+        col_widths = [Cm(col_w_cm)] * num_cols
+
+    set_col_widths_fixed(tbl, col_widths)
 
     for r_idx, row in enumerate(data_rows):
         tbl_row = tbl.rows[r_idx]
         is_header = (r_idx == 0)
         for c_idx, cell_text in enumerate(row[:num_cols]):
             cell = tbl_row.cells[c_idx]
-            cell.width = Cm(col_w_cm)
             set_cell_margins(cell, top=80, bottom=80, left=100, right=100)
             if is_header:
                 set_cell_shading(cell, "F2F2F2")
 
             p = cell.paragraphs[0]
-            p.alignment = WD_ALIGN_PARAGRAPH.CENTER if (is_header or c_idx in [0, num_cols-1]) else WD_ALIGN_PARAGRAPH.LEFT
+            if is_header:
+                p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            elif num_cols == 4:
+                p.alignment = WD_ALIGN_PARAGRAPH.CENTER if c_idx == 3 else WD_ALIGN_PARAGRAPH.LEFT
+            else:
+                p.alignment = WD_ALIGN_PARAGRAPH.CENTER if c_idx in [0, num_cols-1] else WD_ALIGN_PARAGRAPH.LEFT
             p.paragraph_format.space_before = Pt(0)
             p.paragraph_format.space_after = Pt(0)
             p.paragraph_format.line_spacing = 1.15
@@ -2600,7 +2649,7 @@ def build_tabel_jadwal(doc):
         ("4", "Bimbingan intensif dan revisi proposal skripsi", "", "•", "•", "", "", ""),
         ("5", "Pelaksanaan Seminar Proposal Skripsi", "", "", "•", "", "", ""),
         ("6", "Uji coba instrumen kuesioner (pilot test n=30)", "", "", "", "•", "", ""),
-        ("7", "Pengumpulan data lapangan survei utama (n=120–150)", "", "", "", "•", "•", ""),
+        ("7", "Pengumpulan data lapangan survei utama (minimal 111 responden)", "", "", "", "•", "•", ""),
         ("8", "Tabulasi data dan pengolahan statistik via SPSS", "", "", "", "", "•", ""),
         ("9", "Penyusunan laporan Bab 4 (Analisis) dan Bab 5 (Penutup)", "", "", "", "", "•", "•"),
         ("10", "Ujian Sidang Skripsi dan Komprehensif", "", "", "", "", "", "•")
