@@ -2502,3 +2502,35 @@
 
 
 
+
+---
+
+## Sesi 2026-11-03 — Implementasi Revisi Pasca-Sempro Dr. Fredella Colline
+
+**Commit:** `7330abc` | **Status Akhir:** ✅ 12/12 PASS
+
+### Revisi yang Diimplementasikan
+| Kode | Keputusan | Status |
+|------|-----------|--------|
+| D40 | H4–H6 netral: "memperlemah" → "memoderasi" (seluruh dokumen) | ✅ |
+| D41 | Sampel: "minimal 111 responden" (Green 1991), hapus rentang 120-150 | ✅ |
+| D42 | Tabel 3.2: 4 kolom tanpa Dimensi (First-Order konstruk) | ✅ |
+| D43 | Uji F-change → "Uji Kelayakan Model (Uji F)" (Pedoman UKRIDA 2023) | ✅ |
+| D44 | keep_with_next=True semua gambar+caption (1.1–3.1) | ✅ |
+| — | Hapus sitasi sultan2012selfcontrol (tidak ada di .bib) | ✅ |
+
+### Perbaikan Teknis Build
+- Fallback equation renderer: LaTeX `\ge`, `\text{}` → Unicode bersih
+- Parser DP DOCX: 54 entri terdeteksi (sebelumnya 0)
+- Verifier tipografi: notasi mean-centered `X₁^*` diizinkan sebagai notasi sah
+- Markdown PROPOSAL_SKRIPSI_POKEMON_TCG.md: DP 54 entri dipulihkan dari git HEAD
+
+### File Dimodifikasi
+- `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.tex` (master TeX)
+- `01_Naskah_Utama/PROPOSAL_SKRIPSI_POKEMON_TCG.md` (sinkronisasi)
+- `01_Naskah_Utama/Proposal_Arthur_PokemonTCG.docx` (output Word)
+- `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` (D40–D44)
+- `07_Review_&_Audit/Revisi_Dosen/2026-10-27_Revisi_Fredella_Colline_Bimbingan_Pasca_Sempro.md` (risalah)
+- `execution/build_proposal_word.py`
+- `execution/sync_markdown_from_tex.py`
+- `execution/verify_docx_typography.py`

@@ -214,7 +214,23 @@ def main():
             md_lines.append(f"{i}. {entry}")
             md_lines.append("")
     else:
-        md_lines.append("*Lihat file `references.bib` untuk data bibliografi lengkap.*")
+        # bbl tidak mengandung teks entri — preserve DP yang sudah ada di file
+        existing_dp = ""
+        if os.path.exists(md_path):
+            with open(md_path, 'r', encoding='utf-8') as f:
+                existing_md = f.read()
+            dp_marker = "\n# DAFTAR PUSTAKA\n"
+            if dp_marker in existing_md:
+                existing_dp = existing_md[existing_md.find(dp_marker) + len(dp_marker):]
+        if existing_dp.strip():
+            # Gunakan DP lama yang masih valid
+            output_text = "\n".join(md_lines) + "\n" + existing_dp
+            with open(md_path, 'w', encoding='utf-8') as f:
+                f.write(output_text)
+            print(f"Successfully generated {md_path} ({len(output_text.splitlines())} lines) [DP preserved from existing file]")
+            return
+        else:
+            md_lines.append("*Lihat file `references.bib` untuk data bibliografi lengkap.*")
 
     output_text = "\n".join(md_lines)
     with open(md_path, 'w', encoding='utf-8') as f:

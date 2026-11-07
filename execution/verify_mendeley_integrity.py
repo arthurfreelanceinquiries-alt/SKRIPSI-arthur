@@ -81,12 +81,16 @@ def get_docx_dp_entries(docx_path: Path):
 
     in_dp = False
     dp_entries = []
-    for p in paragraphs:
-        txt = p.strip()
-        if txt == "DAFTAR PUSTAKA":
-            in_dp = True
-            continue
-        if in_dp and txt:
+    # Ambil DAFTAR PUSTAKA terakhir (bukan TOC yang pertama)
+    last_dp_idx = None
+    for i, p in enumerate(paragraphs):
+        if p.strip() == "DAFTAR PUSTAKA":
+            last_dp_idx = i
+    if last_dp_idx is not None:
+        for p in paragraphs[last_dp_idx + 1:]:
+            txt = p.strip()
+            if not txt:
+                continue
             if txt.startswith("BAB ") or txt.startswith("LAMPIRAN"):
                 break
             dp_entries.append(txt)

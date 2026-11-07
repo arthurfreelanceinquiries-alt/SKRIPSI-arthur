@@ -130,25 +130,22 @@ def check_docx_bibliography_format(docx_path: Path):
         return False
 
     paragraphs, _ = parse_docx_xml(docx_path)
-    in_dp = False
     dp_entries = []
     numbered_errors = []
 
-    for p in paragraphs:
-        txt = p['text']
-        if txt == "DAFTAR PUSTAKA":
-            in_dp = True
-            continue
-
-        if in_dp:
+    # Ambil DAFTAR PUSTAKA terakhir (bukan TOC yang pertama)
+    last_dp_idx = None
+    for i, p in enumerate(paragraphs):
+        if p['text'] == "DAFTAR PUSTAKA":
+            last_dp_idx = i
+    if last_dp_idx is not None:
+        for p in paragraphs[last_dp_idx + 1:]:
+            txt = p['text']
             if not txt:
                 continue
             if txt.startswith("BAB ") or txt.startswith("LAMPIRAN"):
                 break
-
             dp_entries.append(txt)
-
-            # Cek apakah ada nomor urut di awal (e.g. "1. ", "12. ")
             m_num = re.match(r'^\d+[\.\)]\s+', txt)
             if m_num:
                 numbered_errors.append((txt[:40], m_num.group(0)))
