@@ -520,9 +520,7 @@ Operasionalisasi variabel penelitian disajikan secara rinci pada Tabel 3.2. Tabe
 | | | 4. Kemampuan menunda kesenangan belanja saat ini demi tujuan jangka panjang. | Interval |
 | | | 5. Kemampuan menahan diri agar tidak mudah terpengaruh oleh suasana di toko. | Interval |
 | | | 6. Konsistensi dalam mematuhi batasan anggaran pengeluaran yang telah ditetapkan. | Interval |
-| | | *Sumber Indikator: Brief Self-Control Scale oleh Tangney et al. (2004).* | |
-
-*Catatan Metodologis: Seluruh variabel diukur menggunakan instrumen kuesioner skala Likert 5 poin (1 = Sangat Tidak Setuju hingga 5 = Sangat Setuju) yang diperlakukan sebagai skala Interval dalam pemodelan regresi linear parametrik (MRA) sesuai kaidah Sekaran dan Bougie (2016) serta Ghozali (2018). Butir operasional instrumen survei lapangan yang diadaptasi secara spesifik ke dalam konteks kartu Pokémon TCG disajikan pada Lampiran Kuesioner Penelitian.*
+| | | *Sumber Indikator: Tangney et al. (2004).* | |
 
 ## 3.5 Metode Analisis Data
 
@@ -638,6 +636,7 @@ Jadwal pelaksanaan tahapan kegiatan penelitian direncanakan berlangsung selama 6
 ---
 
 # DAFTAR PUSTAKA
+
 
 1. Aiken, L. S. and West, S. G. (1991). *Multiple Regression: Testing and Interpreting Interactions*. Sage Publications, Newbury Park, CA.
 

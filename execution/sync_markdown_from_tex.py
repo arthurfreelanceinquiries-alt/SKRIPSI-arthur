@@ -209,10 +209,12 @@ def main():
     # DAFTAR PUSTAKA
     md_lines.append("# DAFTAR PUSTAKA")
     md_lines.append("")
-    if bbl_entries:
+    has_valid_bbl = any(e.strip() for e in bbl_entries)
+    if has_valid_bbl:
         for i, entry in enumerate(bbl_entries, 1):
-            md_lines.append(f"{i}. {entry}")
-            md_lines.append("")
+            if entry.strip():
+                md_lines.append(f"{i}. {entry}")
+                md_lines.append("")
     else:
         # bbl tidak mengandung teks entri — preserve DP yang sudah ada di file
         existing_dp = ""
@@ -378,9 +380,7 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
 | | | 4. Kemampuan menunda kesenangan belanja saat ini demi tujuan jangka panjang. | Interval |
 | | | 5. Kemampuan menahan diri agar tidak mudah terpengaruh oleh suasana di toko. | Interval |
 | | | 6. Konsistensi dalam mematuhi batasan anggaran pengeluaran yang telah ditetapkan. | Interval |
-| | | *Sumber Indikator: Brief Self-Control Scale oleh \\citet{tangney2004high}.* | |
-
-*Catatan Metodologis: Seluruh variabel diukur menggunakan instrumen kuesioner skala Likert 5 poin (1 = Sangat Tidak Setuju hingga 5 = Sangat Setuju) yang diperlakukan sebagai skala Interval dalam pemodelan regresi linear parametrik (MRA) sesuai kaidah Sekaran dan Bougie (2016) serta Ghozali (2018). Butir operasional instrumen survei lapangan yang diadaptasi secara spesifik ke dalam konteks kartu Pokémon TCG disajikan pada Lampiran Kuesioner Penelitian.*"""
+| | | *Sumber Indikator: \\citet{tangney2004high}.* | |"""
         # Lambda replacement wajib: template memuat \citep/\citet, dan re.sub
         # menafsirkan escape pada string replacement (bad escape \c).
         s = tab32_pattern.sub(lambda m: tab32_md, s)
