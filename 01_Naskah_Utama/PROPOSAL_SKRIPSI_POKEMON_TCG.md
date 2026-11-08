@@ -276,11 +276,11 @@ Berikut disajikan ringkasan sepuluh studi empiris 2021–2026 yang menopang peru
 |:---:|:---|:---|:---|:---|
 | 1 | Pranggabayu dan Andjarwati (2022) | Pengaruh *Hedonic Shopping Motivation* dan *Store Atmosphere* terhadap *Impulsive Buying* | X1: *Hedonic shopping motivation*, X2: *Store atmosphere*; Y: *Impulsive buying*; Regresi linear berganda (200 responden) | Motivasi belanja hedonis terbukti mendorong *impulsive buying*; kesenangan berbelanja menurunkan deliberasi rasional konsumen. |
 | 2 | Apidana dan Kholifah (2022) | Peran *Self-Control* dalam Memoderasi Pengaruh *Hedonic Motives* dan *Shopping Lifestyle* terhadap *Impulse Buying* | X1: *Hedonic motives*, X2: *Shopping lifestyle*; Y: *Impulse buying*; Mod: *Self-control*; MRA | Motif hedonis positif signifikan; kontrol diri memoderasi *shopping lifestyle* (H4 diterima, $\beta<0$) tetapi GAGAL memoderasi *hedonic motives* (H3 ditolak, p=0,597). |
-| 3 | Lienardy dan Setiawan (2026) | *The Role of Self-Control in Moderating the Influence of Shopping Lifestyle and Hedonistic Behavior on Impulsive Buying* | X1: *Shopping lifestyle*, X2: *Hedonistic behavior*; Y: *Impulsive buying*; Mod: *Self-control*; MRA (160 responden) | Perilaku hedonis menunjukkan hubungan positif yang signifikan dengan pembelian impulsif; kontrol diri terbukti memoderasi dan memperlemah pengaruh perilaku hedonis terhadap *impulsive buying*. |
+| 3 | Lienardy dan Panasea (2026) | *The Role of Self-Control in Moderating the Influence of Shopping Lifestyle and Hedonistic Behavior on Impulsive Buying* | X1: *Shopping lifestyle*, X2: *Hedonistic behavior*; Y: *Impulsive buying*; Mod: *Self-control*; MRA (160 responden) | Perilaku hedonis menunjukkan hubungan positif yang signifikan dengan pembelian impulsif; kontrol diri terbukti memoderasi dan memperlemah pengaruh perilaku hedonis terhadap *impulsive buying*. |
 | 4 | Gong et al. (2024) | *Unveiling the Enigma of Blind Box Impulse Buying Curiosity: The Moderating Role of Price Consciousness* | X: Karakteristik kemasan *blind box*; Med: Rasa ingin tahu; Y: *Impulse buying*; Kerangka S-O-R; PLS-SEM (306 responden) | Mekanisme kejutan kemasan tertutup (*blind box/booster pack*) memicu rasa ingin tahu afektif yang secara langsung mendorong pembelian impulsif; kesadaran harga memoderasi hubungan tersebut. |
 | 5 | Azizah dan Fauzi (2025) | Pengaruh *Hedonic Motivation*, *Shopping Lifestyle*, dan *Positive Emotions* terhadap *Impulse Buying* | X1: *Hedonic motivation*, X2: *Shopping lifestyle*; Med: *Positive emotions*; Y: *Impulse buying*; PLS-SEM, survei e-commerce fashion Indonesia (n=140 purposive) | Motivasi hedonis tercatat berpengaruh positif dan signifikan terhadap pembelian impulsif; emosi positif memediasi parsial dan menjadi jalur terkuat. Bukti domestik terkini untuk H1. |
 | 6 | Dewi et al. (2026) | *Understanding Impulse Buying Behavior: The Case of Blind Box Purchases in Indonesia* | X1: *Perceived scarcity*, X2: *Perceived uncertainty*; Med: FOMO; Y: *Impulse buying*; PLS-SEM (211 Gen Z Indonesia) | Persepsi kelangkaan item dan ketidakpastian memicu FOMO dan hasrat memiliki set koleksi utuh, yang secara langsung dan signifikan memicu *impulse buying* pada Generasi Z di Indonesia. |
-| 7 | Aryadi dan Lingga (2024) | *Personal Traits and Motivation Impact on Collectibles as an Alternative Investment: A Case Study of Trading Card Game Community in Greater Jakarta* | X: Motivasi kolektor & ciri kepribadian; Y: Keputusan investasi TCG; Regresi logistik biner (158 anggota komunitas TCG) | Membuktikan bahwa motivasi kolektor dan motif spekulasi finansial secara positif mendorong partisipasi dalam transaksi kartu TCG (Pokémon, dkk.) sebagai aset alternatif investasi di Jabodetabek. |
+| 7 | Aryadi dan Lingga (2026) | *Personal Traits and Motivation Impact on Collectibles as an Alternative Investment: A Case Study of Trading Card Game Community in Greater Jakarta* | X: Motivasi kolektor & ciri kepribadian; Y: Keputusan investasi TCG; Regresi logistik biner (158 anggota komunitas TCG) | Membuktikan bahwa motivasi kolektor dan motif spekulasi finansial secara positif mendorong partisipasi dalam transaksi kartu TCG (Pokémon, dkk.) sebagai aset alternatif investasi di Jabodetabek. |
 | 8 | Colline (2024) | *Biases in Indonesian Stock Investor Behavior* | X: Bias perilaku (*herding*, *loss aversion*); Y: Keputusan investasi; Kualitatif wawancara mendalam (n=5 investor Indonesia) | Mendokumentasikan kuatnya *herding* (ikut-ikutan), *loss aversion*, dan *disposition effect* pada investor Indonesia, dipakai sebagai analogi bias pasar aset. |
 | 9 | Artadita dan Firmialy (2024) | *How Does Self-Control Moderate Shopping Enjoyment and Impulse Buying Among Generation Z Online Gamers?* | X: Kenikmatan belanja (*shopping enjoyment*); Y: *Impulse buying*; Mod: *Self-control*; PLS-SEM + regresi dimensional (220 Gen Z Gamers; bukan MRA) | Kenikmatan belanja berpengaruh positif kuat ($\beta=0,581$); efek moderasi kontrol diri DITOLAK ($\beta=0,092$) kecuali dimensi kontrol kognitif yang signifikan pada taraf 10% (p<0,10). |
 | 10 | Katauke et al. (2023) | *Financial Literacy and Impulsivity: Evidence from Japan* | X: Literasi finansial; Y: *Impulsivity (hyperbolic discounting)*; Probit + *instrumental variables* | Literasi finansial berhubungan negatif dengan diskonto hiperbolik (proksi impulsivitas); bukti regulasi-rasional dari Jepang. |
@@ -489,19 +489,19 @@ Operasionalisasi variabel penelitian disajikan secara rinci pada Tabel 3.2. Tabe
 
 | Variabel | Definisi Operasional | Indikator Teoretis | Skala |
 |:---|:---|:---|:---:|
-| **Impulsive Buying ($Y$)** | Kecenderungan konsumen melakukan pembelian secara spontan, mendadak, dan tanpa perencanaan awal yang didorong emosi sesaat (Rook, 1987; Verplanken and Herabadi, 2001). | 1. Ketiadaan perencanaan belanja sebelumnya. | Interval |
+| **Impulsive Buying ($Y$)** | Kecenderungan konsumen melakukan pembelian secara spontan, mendadak, dan tanpa perencanaan awal yang didorong emosi sesaat (Rook, 1987; Verplanken dan Herabadi, 2001). | 1. Ketiadaan perencanaan belanja sebelumnya. | Interval |
 | | | 2. Pengabaian pertimbangan konsekuensi finansial. | Interval |
 | | | 3. Pembelian dalam jumlah melebihi niat awal. | Interval |
 | | | 4. Dorongan belanja spontan saat melihat produk di etalase toko. | Interval |
 | | | 5. Perasaan gembira dan antusias saat memutuskan membeli seketika. | Interval |
 | | | 6. Kesulitan menahan hasrat berbelanja saat rilis produk baru. | Interval |
-| | | *Sumber Indikator: Verplanken and Herabadi (2001) dan Rook (1987).* | |
-| **Hedonic Motivation ($X_1$)** | Dorongan berbelanja yang dipandu oleh pencarian kesenangan emosional, hiburan, dan sensasi petualangan (Arnold and Reynolds, 2003; Babin et al., 1994). | 1. Rasa senang dan penasaran saat membuka kemasan (*adventure shopping*). | Interval |
+| | | *Sumber Indikator: Verplanken dan Herabadi (2001) dan Rook (1987).* | |
+| **Hedonic Motivation ($X_1$)** | Dorongan berbelanja yang dipandu oleh pencarian kesenangan emosional, hiburan, dan sensasi petualangan (Arnold dan Reynolds, 2003; Babin et al., 1994). | 1. Rasa senang dan penasaran saat membuka kemasan (*adventure shopping*). | Interval |
 | | | 2. Pelepasan stres dan hiburan diri (*gratification shopping*). | Interval |
 | | | 3. Interaksi dan kebersamaan dengan rekan sehobi (*social shopping*). | Interval |
 | | | 4. Kesenangan berbelanja untuk dihadiahkan atau dinikmati bersama (*role shopping*). | Interval |
 | | | 5. Antusiasme mengikuti tren rilis dan pembaruan desain produk (*idea shopping*). | Interval |
-| | | *Sumber Indikator: Arnold and Reynolds (2003).* | |
+| | | *Sumber Indikator: Arnold dan Reynolds (2003).* | |
 | **Desire for Completeness ($X_2$)** | Dorongan psikologis menuntaskan seluruh susunan rangkaian koleksi akibat ketegangan kognitif ketidaklengkapan (Belk, 1995; Gao et al., 2014; Barasz et al., 2017). | 1. Perasaan tidak nyaman melihat adanya celah kosong pada rangkaian koleksi. | Interval |
 | | | 2. Ketidaktenangan pikiran saat mengetahui ada unit yang belum dimiliki dalam himpunan. | Interval |
 | | | 3. Dorongan kuat untuk terus menambah unit demi melengkapi rangkaian koleksi. | Interval |
@@ -513,7 +513,7 @@ Operasionalisasi variabel penelitian disajikan secara rinci pada Tabel 3.2. Tabe
 | | | 3. Pandangan terhadap produk sebagai aset alternatif yang nilainya dapat terapresiasi. | Interval |
 | | | 4. Persepsi tingginya likuiditas dan kemudahan penjualan kembali di pasar sekunder. | Interval |
 | | | 5. Ketertarikan pada kartu bersertifikasi resmi untuk meningkatkan harga jual kembali. | Interval |
-| | | *Sumber Indikator: Colline (2024) dan Aryadi and Lingga (2026).* | |
+| | | *Sumber Indikator: Colline (2024) dan Aryadi dan Lingga (2026).* | |
 | **Self-Control ($M$)** | Kapasitas pengendalian diri individu untuk menolak godaan belanja impulsif, menunda kepuasan sesaat, dan menaati batas rencana anggaran (Tangney et al., 2004; Rafael and Lopes, 2023; Prihatiningrum and Said, 2021; Apidana and Kholifah, 2022; Lienardy and Panasea, 2026). | 1. Kemampuan menolak godaan berbelanja di luar rencana anggaran belanja. | Interval |
 | | | 2. Kebiasaan mempertimbangkan konsekuensi keuangan sebelum bertransaksi. | Interval |
 | | | 3. Disiplin diri untuk menahan dorongan belanja spontan saat melihat barang menarik. | Interval |

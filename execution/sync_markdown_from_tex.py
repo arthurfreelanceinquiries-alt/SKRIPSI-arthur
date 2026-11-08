@@ -414,12 +414,15 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
     s = re.sub(r'\\paragraph\{([^}]+)\}', r'\n**\1**\n', s)
 
     # Convert citations using bibcite mapping
+    def _clean_author(auth):
+        return auth.replace(' and ', ' dan ')
+
     def resolve_citep(match):
         keys = [k.strip() for k in match.group(1).split(',')]
         res = []
         for k in keys:
             if k in cite_dict:
-                res.append(f"{cite_dict[k][0]}, {cite_dict[k][1]}")
+                res.append(f"{_clean_author(cite_dict[k][0])}, {cite_dict[k][1]}")
             else:
                 res.append(k)
         return f"({'; '.join(res)})"
@@ -429,7 +432,7 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
         res = []
         for k in keys:
             if k in cite_dict:
-                res.append(f"{cite_dict[k][0]} ({cite_dict[k][1]})")
+                res.append(f"{_clean_author(cite_dict[k][0])} ({cite_dict[k][1]})")
             else:
                 res.append(k)
         return "; ".join(res)
@@ -439,7 +442,7 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
         res = []
         for k in keys:
             if k in cite_dict:
-                res.append(f"{cite_dict[k][0]}, {cite_dict[k][1]}")
+                res.append(f"{_clean_author(cite_dict[k][0])}, {cite_dict[k][1]}")
             else:
                 res.append(k)
         return '; '.join(res)
