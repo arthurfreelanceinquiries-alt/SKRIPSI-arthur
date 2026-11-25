@@ -1,17 +1,17 @@
 # Rule: Obsidian Second Brain & Session Synchronization Protocol
 
-This workspace is integrated with Obsidian as a **Second Brain** for thesis research (skripsi). The assistant MUST adhere to the following protocol on every session and during work execution:
+This workspace is integrated with Obsidian as a **Second Brain** for thesis research (skripsi). `AGENTS.md` remains the canonical session and safety contract. Use this rule only when the active task needs Obsidian, Graphify, research history, or when Arthur explicitly requests Second Brain work.
 
-## 1. Session Start (Pre-Flight Hook)
-Whenever the user starts a session, says "mulai sesi", "jalankan skill second brain", or begins work:
-1. **Multi-Device Git Sync (Pre-Flight Pull):**
-   - Run `git pull origin main` to ensure the local repository is 100% synchronized with the latest commits pushed from other devices/laptops before beginning any work.
-2. **Inspect Graphify Knowledge:**
-   - Check `graphify-out/` (`manifest.json` / `GRAPH_REPORT.md`) to maintain persistent awareness of codebase dependencies, entity communities, and file relationships.
-3. **Inspect Second Brain Dashboard:**
-   - Read `00_DASHBOARD_SECOND_BRAIN.md` to load active research status, research constructs, recent supervisor feedback, and open tasks.
+## 1. Task-Relevant Pre-Flight
+When this rule is relevant:
+1. **Inspect Git State Without Mutation:**
+   - Inspect the current branch, `git status --short`, and recent commits. Never auto-run `git pull`, reset, clean, checkout, commit, or push; synchronize only with Arthur's explicit authorization after preserving dirty work.
+2. **Inspect Graphify Knowledge When Needed:**
+   - Check `graphify-out/` (`manifest.json` / `GRAPH_REPORT.md`) only for tasks involving codebase relationships, research entities, or file dependencies.
+3. **Inspect Second Brain Dashboard When Needed:**
+   - Read relevant sections of `00_DASHBOARD_SECOND_BRAIN.md` for research status, constructs, supervisor feedback, or open research tasks. Prefer `docs/agent/PROJECT_STATE.md` and current source files when stale dashboard text conflicts.
 4. **Session Alignment:**
-   - Acknowledge the current research context, report Git sync status, and state readiness to execute.
+   - Proceed under the active task in `.agent/CURRENT_TASK.md`; do not emit a readiness-only turn when work can continue safely.
 
 ## 2. In-Flight Documentation (Purpose-Driven Notes)
 Whenever creating or editing markdown notes in this vault:

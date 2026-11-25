@@ -2534,3 +2534,58 @@
 - `execution/build_proposal_word.py`
 - `execution/sync_markdown_from_tex.py`
 - `execution/verify_docx_typography.py`
+
+---
+
+## Sesi 2026-11-20 — Penyelarasan Kuesioner Survei atas Validasi Dosen Pembimbing (Dr. Fredella Colline)
+
+**Konteks:** Menindaklanjuti arahan WhatsApp Dr. Fredella Colline (17 Nov 2026) mengenai validasi instrumen kuesioner Google Forms sebelum disebar ke responden.
+
+### Masukan Dosen & Resolusi Metodologis
+1. **Pemetaan Sitasi Colline (2024) pada *Speculative Motive* ($X_3$):**
+   - Menjelaskan bahwa artikel *Colline (2024)* dijadikan rujukan teoretis *Behavioral Finance* terkait bias ekspektasi *return* (*capital gain*) dan ilusi keuntungan instan pada investor Indonesia. Dioperasionalkan secara khusus pada butir X3_4 (evaluasi biaya modal vs potensi keuntungan pasar sekunder) dan X3_1 (ekspektasi menarik kartu langka bernilai tinggi).
+2. **Kanal Pembelian Utama (P5):**
+   - Menambahkan opsi eksplisit `Marketplace daring / E-commerce (Tokopedia, Shopee, Blibli, TikTok Shop, dll.)` di urutan paling awal untuk mengakomodasi pola belanja riil pembeli/kolektor booster pack.
+3. **Pertanyaan Saringan Wilayah Jakarta Barat (S3):**
+   - Mengurai kebingungan calon responden komuter lintas wilayah (contoh: rumah di Tangerang, kuliah/kerja di UKRIDA Jakbar, bermain kartu di Jakpus) dengan mengubah formula S3 menjadi inklusif: responden cukup memenuhi *minimal salah satu* keterkaitan (domisili/tinggal, kuliah/bekerja di Jakbar, atau pernah berbelanja/bermain di toko/mall/LGS wilayah Jakbar).
+
+### File Dimodifikasi
+- `03_Instrumen_&_Data_Survei/01_Kuesioner_Google_Forms/DRAF_KUESIONER_GOOGLE_FORMS.md`
+- `04_Riset_&_Metodologi/SOURCE_OF_TRUTH.md` (Penambahan D45)
+- `07_Review_&_Audit/Revisi_Dosen/2026-11-17_Revisi_Fredella_Colline_Validasi_Kuesioner_dan_Kanal_Belanja.md` (Risalah bimbingan)
+- `00_DASHBOARD_SECOND_BRAIN.md`
+
+---
+
+## 📅 Sesi 24 November 2026 (Sesi 50): Eksekusi Patch D45 pada Form Live & Rekonsiliasi Kodebook
+
+> Catatan: entri ini ditulis di akhir file; urutan kronologis bagian atas belum disusun ulang.
+
+**Konteks:** Form Google Forms live masih tertinggal dari keputusan D45 (validasi kuesioner Dr. Fredella Colline, 17 Nov 2026). Dilakukan verifikasi baca-saja lebih dulu, lalu patch melalui Google Forms API dari akun pemilik.
+
+### Temuan verifikasi (sebelum patch)
+- Form publik `1W23UT6NnR1xchMGuQK_cIVctXGI3xPfPAUwsUJ7Z0Ws` dapat dibaca (HTTP 200): 49 item, 13 section, 37 pertanyaan, 27 butir Likert.
+- S3 ternyata **sudah** memakai redaksi "MINIMAL SALAH SATU" dan P5 **sudah** menempatkan marketplace di urutan pertama. Snapshot pertama sempat terbaca dari cache lama; verifikasi ulang dengan cache-busting dan `forms.get` mengonfirmasi keduanya sudah benar.
+- Yang benar-benar belum ada: **P3a** (bentuk keterkaitan wilayah).
+- Konfigurasi: `emailCollectionType=DO_NOT_COLLECT`, `isAcceptingResponses=true`, spreadsheets respons berisi **hanya baris header** (nol respons).
+
+### Tindakan
+- Patch P3a diterapkan lewat Forms API (`batchUpdate` → `createItem` pada indeks setelah P3). revisionId `0000002b` → `0000002c`; item 49 → 50; satu `itemId` baru `105e79fe`; tidak ada item hilang; routing, settings, dan status publikasi tidak berubah.
+- Verifikasi ulang via `forms.get` dan tampilan publik: urutan P3 → P3a → P4 benar; P3a opsional dengan 5 opsi.
+- **Koreksi penting:** Google Sheets menambahkan pertanyaan baru di **ujung kanan** lembar. Spreadsheet respons memiliki **39 kolom** (Timestamp + 38 jawaban) dan P3a berada di kolom **terakhir**, bukan di samping P3. Klaim lama "menambah P3a menggeser nomor kolom" tidak tepat untuk kasus ini.
+
+### Koreksi yang dicabut
+- Klaim bahwa "X3 di form live masih parafrase dan belum selaras Tabel 3.2" **tidak terbukti**. Verifikasi menunjukkan X3_1–X3_5 searah dan seurutan dengan indikator Tabel 3.2 (`X3_2` = biaya vs potensi keuntungan; `X3_4` = likuiditas). Rujukan Colline (2024) yang benar adalah **X3_2**, bukan X3_4. Draf balasan WA diperbaiki; naskah X3 tidak disentuh.
+
+### File dimodifikasi
+- `03_Instrumen_&_Data_Survei/02_Data_Mentah_Survei_Excel/KODEBOOK_DAN_TEMPLATE_TABULASI.md` — ditulis ulang: pemisahan versi (legacy / LIVE-20261124 / target), 40 kolom dataset analisis termasuk `C0_Consent` dan `P3a_Keterkaitan`, P4 kode `5=0 kali` terpisah dari `0=tidak menjawab`, P3 kode 8 = Tambora, prosedur ekspor dan pemetaan kolom. Dua blok CSV tervalidasi program (40 kolom, 27 Likert, nilai 1–5).
+- `docs/agent/PROJECT_STATE.md` — status instrumen terverifikasi, revisionId, keterbukaan gate privasi/peserta.
+- `docs/agent/OPEN_TASKS.md` — patch D45 dan pemetaan kolom ditandai selesai.
+- `07_Review_&_Audit/Revisi_Dosen/2026-11-24_Draf_Balasan_WA_Fredella_Revisi_D45.md` — koreksi X3_2, label opsi S3 disamakan dengan form, catatan koreksi.
+- `03_Instrumen_&_Data_Survei/01_Kuesioner_Google_Forms/PATCH_D45_S3_P5_P3a.gs` — ditandai SUPERSEDED; `perbaikiD45()` diberi guard `throw` agar tidak dijalankan ulang.
+
+### Belum selesai
+- Rekonsiliasi narasi naskah "tiga screening" dengan empat screening + consent di formulir.
+- Aturan privasi, kontak publik, akses data mentah, retensi, dan ketentuan institusi untuk peserta usia 17.
+- Pilot N=30 dan rekrutmen: **masih diblokir** sampai butir di atas selesai.
+- Draf balasan WhatsApp belum dikirim; menunggu Arthur.

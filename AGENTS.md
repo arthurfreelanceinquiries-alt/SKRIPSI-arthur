@@ -1,6 +1,55 @@
 # Agent Instructions
 
-> This file is mirrored across CLAUDE.md, AGENTS.md, and GEMINI.md so the same instructions load in any AI environment.
+> `AGENTS.md` is the canonical cross-harness contract. `CLAUDE.md`, `GEMINI.md`, and Copilot instructions are thin adapters that point here.
+
+## Cross-Harness Session Bootstrap (Canonical)
+
+When Arthur says **"lanjut"**, **"continue"**, or **"kerjakan task aktif"**, do not ask him to find or paste an old prompt.
+
+Before editing:
+
+1. Read `.agent/CURRENT_TASK.md`.
+2. Read `docs/agent/PROJECT_STATE.md`, `docs/agent/DECISIONS.md`, and `docs/agent/OPEN_TASKS.md`.
+3. Inspect the current branch, `git status --short`, and recent commits.
+4. Read only the directives, ADRs, sources, and code relevant to the active task.
+5. Preserve all pre-existing and unrelated dirty changes.
+
+For **"lanjut"**:
+
+- If `.agent/CURRENT_TASK.md` has an objective and status `ready`, `in_progress`, or `paused`, run `./task resume` and continue it.
+- If it is absent, empty, or marked `done`, run `./task next` to select the first `[READY]` item in `docs/agent/OPEN_TASKS.md`.
+- Never select `[BLOCKED]` work or infer a task from stale chats.
+- If no `[READY]` item exists, stop and ask Arthur only for the missing decision, approval, GitHub Issue number, or concise objective.
+
+Use `./task start <issue-number>` to override the queue with a GitHub Issue, or `./task start --title "..."` for a local task. `CURRENT_TASK.md` is local and gitignored; GitHub Issue/PR history and `OPEN_TASKS.md` are the shared task records.
+
+### Execution boundaries
+
+- Make the minimum viable change; do not refactor unrelated files.
+- Use the active harness's native tools. Do not spawn another coding harness unless Arthur asks.
+- Do not auto-run `git pull`, reset, clean, checkout, commit, push, deploy, publish, or migrate production data.
+- Ask before adding dependencies, changing schemas, touching production, changing credentials/permissions, publishing, external messaging, or destructive actions.
+- Run applicable real tests before claiming completion. Never fabricate outputs, approvals, citations, or source contents.
+
+### The revision loop (canonical for this repo)
+
+Thesis work is not feature shipping — there is no build artifact and no test suite that can prove a claim is *correct*. The gate is methodological and human. So the loop here is shorter and ends at a person:
+
+**plan → smallest edit → verify against the source of truth → record evidence → advisor decision**
+
+- **Plan first, on paper.** For anything that touches a live instrument, a distributable form, or the thesis master, produce the plan before editing a single file. Arthur reads it before work starts.
+- **One change at a time.** A revision that touches several sections at once cannot be attributed when it fails. This is exactly how the D45 form patch became ambiguous: S3, P5, and P3a were bundled into one change.
+- **Every substantive claim needs a traceable source.** Cite the file and line, or the page and edition. An unattributed paraphrase is not a citation, and a plausible-looking reference the reviewer cannot find costs more than an admitted gap.
+- **The instrument may not be distributed until it is verified live.** A patch that exists on disk is not a patch that is in the form. Instructor approval and instrument changes are human-only gates.
+
+### Claim discipline
+
+Four statuses, never conflated: **written** ≠ **tested locally** ≠ **applied** ≠ **verified in the target system**. Claiming a higher status than the evidence supports is a violation, not an oversight. Report what was *not* verified alongside what passed, and never describe a draft as approved.
+
+### Completion handoff
+
+Report changed files, exact checks run, results, remaining blockers, and approvals needed. If the objective and checks are complete, run `./task done`; this changes its queue entry from `[READY]` to `[DONE]`. If work remains or a gate blocks progress, run `./task pause` and report the exact blocker. Update `docs/agent/PROJECT_STATE.md` only when project-level state changes; record durable architectural decisions in `docs/agent/DECISIONS.md` or an ADR.
+
 
 You operate within a 3-layer architecture that separates concerns to maximize reliability. LLMs are probabilistic, whereas most business logic is deterministic and requires consistency. This system fixes that mismatch.
 
@@ -66,7 +115,7 @@ Errors are learning opportunities. When something breaks:
 
 This workspace is coupled with an Obsidian Second Brain and Graphify knowledge graph:
 1. **Session Start (Pre-Flight):**
-   - Run `git pull origin main` to pull any updates from other devices/collaborators before starting work.
+   - Inspect branch, `git status --short`, and recent commits. Never auto-pull, reset, clean, or overwrite unrelated work; fetch/pull only when Arthur authorizes it for the active task.
    - Read `graphify-out/manifest.json` or `graphify-out/GRAPH_REPORT.md` to load active entity clusters and file dependencies.
    - Read `00_DASHBOARD_SECOND_BRAIN.md` to load thesis status, research constructs, and active priorities.
 2. **In-Flight Documentation (Purpose-Driven):**

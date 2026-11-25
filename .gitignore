@@ -32,3 +32,6 @@ token.json
 .obsidian/cache/
 .obsidian/indexeddb/
 .trash/
+
+# Local cross-harness active task
+.agent/CURRENT_TASK.md
