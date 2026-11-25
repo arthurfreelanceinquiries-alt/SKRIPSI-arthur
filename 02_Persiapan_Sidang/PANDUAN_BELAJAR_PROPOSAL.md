@@ -49,7 +49,7 @@
 
 ### Mindset dari nol (5 prinsip)
 1. **Kamu tidak perlu menghafal semuanya** — kamu perlu memahami *alur logika*: Fenomena → Gap → Teori → Hipotesis → Metode. Semua jawaban lahir dari alur ini.
-2. **Proposal ≠ skripsi jadi.** Kalau ditanya "mana datanya?", jawab: "Penelitian ini tahap proposal; pengumpulan data (pilot n=30, utama n=120–150) dilaksanakan pasca-sempro sesuai jadwal Bab 3."
+2. **Proposal ≠ skripsi jadi.** Kalau ditanya "mana datanya?", jawab: "Penelitian ini tahap proposal; pengumpulan data (pilot n=30, utama minimal 111) dilaksanakan pasca-sempro sesuai jadwal Bab 3."
 3. **Setiap angka yang kamu sebut harus ada sumbernya.** Jangan mengarang angka baru. Angka aman ada di Cheat Sheet (§11) dan Evidence Ledger (§7.2).
 4. **Kalau tidak tahu, katakan tidak tahu dengan elegan** (lihat Q29). Penguji lebih menghukum jawaban ngarang daripada jawaban jujur.
 5. **Sapa dengan benar:** "Ibu Dr. Fredella Colline" (pembimbing), "Bapak/Ibu Penguji" untuk dewan penguji. Jangan memanggil "Bu Fredella" saja.
@@ -359,7 +359,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
   2. *Akses Observasi Lapangan Langsung:* Kedekatan geografis peneliti yang berkampus di UKRIDA Tanjung Duren, Jakarta Barat (*direct field observation*, Sekaran & Bougie, 2016).
   3. *Kepadatan Titik Penjualan Ritel Kasir:* *Booster pack* resmi harga terjangkau (Rp20.000–Rp30.000) terdistribusi masif di etalase kasir minimarket (Indomaret, Alfamart) dan Gramedia seluruh kecamatan Jakarta Barat, menjadi titik pemicu transaksi spontan yang nyata.
   4. *Pengendalian Variasi Eksternal:* Membatasi satu wilayah perkotaan seragam mengendalikan faktor pengganggu eksternal (disparitas stok fisik, ongkos kirim, dan fluktuasi pasar sekunder antarkota) guna memaksimalkan validitas internal model.
-- **Ukuran Sampel:** Formula Green (1991): Uji-F ($N \ge 50 + 8k = 106$) dan Uji-t ($N \ge 104 + k = 111$). Mengikat batas terbesar: $N \ge 111$. Target ditetapkan **120 hingga 150 responden** guna menjamin *statistical power* $\ge 0{,}80$ pada $\alpha = 0{,}05$ (*medium effect size* $f^2 = 0{,}15$ - Cohen, 1988) + *pilot test* terpisah $n = 30$ responden.
+- **Ukuran Sampel:** Formula Green (1991): Uji-F ($N \ge 50 + 8k = 106$) dan Uji-t ($N \ge 104 + k = 111$). Mengikat batas terbesar: $N \ge 111$. Ukuran dikunci pada **minimal 111 responden** (tanpa rentang target) guna menjamin *statistical power* $\ge 0{,}80$ pada $\alpha = 0{,}05$ (*medium effect size* $f^2 = 0{,}15$ - Cohen, 1988) + *pilot test* terpisah $n = 30$ responden.
 
 ### 2. Prosedur *Mean-Centering* pada MRA (Krusial untuk Uji Asumsi)
 - Pada model MRA, pembentukan istilah perkalian (Xi · M) secara matematis dapat memicu multikolinearitas struktural yang tinggi dengan variabel induknya.
@@ -428,13 +428,13 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### ❓ Pertanyaan 9: "Mengapa Anda menggunakan teknik Purposive Sampling?"
 > **💡 Jawaban:**  
-> "Karena penelitian ini membutuhkan responden dengan pengalaman spesifik yang relevan dengan konstruk yang diuji. Jika dilakukan *random sampling* pada populasi umum, sebagian besar responden mungkin tidak pernah membeli kartu Pokémon atau tidak memahami mekanisme *pack*. Kriteria inklusi kami mensyaratkan responden WNI berusia ≥ 17 tahun yang pernah membeli *booster pack* resmi fisik dalam 6–12 bulan terakhir."
+> "Karena penelitian ini membutuhkan responden dengan pengalaman spesifik yang relevan dengan konstruk yang diuji. Jika dilakukan *random sampling* pada populasi umum, sebagian besar responden mungkin tidak pernah membeli kartu Pokémon atau tidak memahami mekanisme *pack*. Kriteria inklusi kami mensyaratkan responden WNI berusia ≥ 17 tahun yang pernah membeli *booster pack* resmi fisik dalam 12 bulan terakhir."
 
 ---
 
 ### ❓ Pertanyaan 10: "Berapa target sampel Anda dan apa justifikasinya?"
 > **💡 Jawaban:**  
-> "Target sampel adalah 120 hingga 150 responden. Angka ini melampaui kedua batas minimum formula Green (1991): N ≥ 50 + 8(7) = 106 untuk model keseluruhan, dan N ≥ 104 + 7 = 111 untuk prediktor individual — yang mengikat adalah 111. Target ini juga memenuhi kriteria Cohen (1988) untuk memperoleh *statistical power* sebesar 0,80 pada taraf signifikansi α = 0,05 dengan *medium effect size* (f² = 0,15)."
+> "Ukuran sampel ditetapkan minimal 111 responden. Angka ini adalah batas terbesar dari dua batas minimum formula Green (1991): N ≥ 50 + 8(7) = 106 untuk model keseluruhan, dan N ≥ 104 + 7 = 111 untuk prediktor individual — yang mengikat adalah 111. Penelitian ini tidak memakai rentang target. Angka ini juga memenuhi kriteria Cohen (1988) untuk memperoleh *statistical power* sebesar 0,80 pada taraf signifikansi α = 0,05 dengan *medium effect size* (f² = 0,15)."
 
 ---
 
@@ -529,8 +529,8 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 5. METODE & FORMULA SAMPEL:
    • Pendekatan : Kuantitatif Asosiatif | Survei Cross-Sectional | Skala Likert 1-5
-   • Sampling   : Purposive Sampling | Kriteria: WNI >=17 thn, beli pack 6-12 bln
-   • Ukuran N   : Formula Green (1991): N >= 50 + 8(7) = 106 | Target: 120-150 responden
+   • Sampling   : Purposive Sampling | Kriteria: WNI >=17 thn, beli pack 12 bln
+   • Ukuran N   : Formula Green (1991): N >= 50 + 8(7) = 106 | Dikunci: minimal 111 responden
    • Analisis   : SPSS | Regresi Berganda (Efek Utama) + MRA dengan Mean-Centering
 ================================================================================
 ```
@@ -598,7 +598,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 **Slide 5 — Model & hipotesis (1,5 menit).** "Modelnya: tiga panah positif X1, X2, X3 ke Y, dimoderasi Self-Control yang memperlemah. Enam hipotesis: H1–H3 pengaruh langsung positif; H4–H6 moderasi pelemah. Persamaan MRA Model 2 memuat tiga interaction term yang di-mean-centering."
 
-**Slide 6 — Metode (1,5 menit).** "Desain kuantitatif asosiatif, survei cross-sectional skala Likert 5 poin. Populasi kolektor WNI, purposive sampling 120–150 responden usia ≥17 tahun yang membeli pack setahun terakhir. Uji kualitas: validitas Pearson dan Alpha ≥ 0,70; asumsi klasik KS, VIF, Glejser; analisis MRA dua model plus simple slopes."
+**Slide 6 — Metode (1,5 menit).** "Desain kuantitatif asosiatif, survei cross-sectional skala Likert 5 poin. Populasi kolektor WNI, purposive sampling minimal 111 responden usia ≥17 tahun yang membeli pack setahun terakhir. Uji kualitas: validitas Pearson dan Alpha ≥ 0,70; asumsi klasik KS, VIF, Glejser; analisis MRA dua model plus simple slopes."
 
 **Slide 7 — Penutup (30 detik).** "Kontribusi teoretis: memperkaya Behavioral Finance pada aset hobi. Kontribusi praktis: edukasi kontrol diri bagi generasi muda. Sekian presentasi saya; terima kasih. Saya kembalikan kepada Ketua Sidang, dan saya siap menjawab pertanyaan Bapak/Ibu."
 
@@ -618,11 +618,11 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### ❓ Pertanyaan 19: "Mengapa responden dibatasi usia ≥17 tahun?"
 > **💡 Jawaban:**  
-> "Tiga alasan, Bapak/Ibu. Pertama, **kedewasaan administratif**: UU No. 24 Tahun 2013 — usia 17 adalah usia perekaman KTP, penanda subjek hukum yang cakap. Kedua, **diskresi keuangan mandiri**: usia akhir SMA/kuliah umumnya sudah memegang uang jajan dan bertransaksi sendiri, sehingga perilaku impulsifnya autentik. Ketiga, **kualitas ingatan**: responden dewasa muda lebih akurat mengingat pembelian 6–12 bulan terakhir (*recall bias* rendah)."
+> "Tiga alasan, Bapak/Ibu. Pertama, **kedewasaan administratif**: UU No. 24 Tahun 2013 — usia 17 adalah usia perekaman KTP, penanda subjek hukum yang cakap. Kedua, **diskresi keuangan mandiri**: usia akhir SMA/kuliah umumnya sudah memegang uang jajan dan bertransaksi sendiri, sehingga perilaku impulsifnya autentik. Ketiga, **kualitas ingatan**: responden dewasa muda lebih akurat mengingat pembelian 12 bulan terakhir (*recall bias* rendah)."
 
 ### ❓ Pertanyaan 20: "Populasimu tak terbatas di Jakarta Barat — bagaimana menjamin sampel valid?"
 > **💡 Jawaban:**  
-> "Benar, populasinya *infinite* (seluruh konsumen/kolektor kartu fisik Pokémon TCG resmi di wilayah Jakarta Barat), sehingga *probability sampling* mustahil karena tidak ada kerangka sampel menyeluruh. Validitas sampel dijamin melalui teknik *purposive sampling* dengan empat saringan inklusi ketat: (1) berdomisili atau beraktivitas/bertransaksi di Jakarta Barat, (2) WNI, (3) usia ≥ 17 tahun, dan (4) pernah membeli booster pack fisik minimal 1× dalam 12 bulan terakhir. Keempatnya disaring otomatis via *screening questions* di awal Google Forms (*zero sample contamination*). Kecukupan jumlah dijamin formula Green (1991): N ≥ 104 + 7 = 111 responden, dan saya menargetkan 120–150 responden bersih."
+> "Benar, populasinya *infinite* (seluruh konsumen/kolektor kartu fisik Pokémon TCG resmi di wilayah Jakarta Barat), sehingga *probability sampling* mustahil karena tidak ada kerangka sampel menyeluruh. Validitas sampel dijamin melalui teknik *purposive sampling* dengan empat saringan inklusi ketat: (1) berdomisili atau beraktivitas/bertransaksi di Jakarta Barat, (2) WNI, (3) usia ≥ 17 tahun, dan (4) pernah membeli booster pack fisik minimal 1× dalam 12 bulan terakhir. Keempatnya disaring otomatis via *screening questions* di awal Google Forms (*zero sample contamination*). Kecukupan jumlah dijamin formula Green (1991): N ≥ 104 + 7 = 111 responden, dan saya menargetkan minimal 111 responden bersih."
 
 ### ❓ Pertanyaan 20B: "Mengapa memilih wilayah Jakarta Barat? Apakah karena asumsi daya beli warganya tinggi?"
 > **💡 Jawaban (TAMENG ANTI-CECARAN SIDANG — Bebas Klaim Angka Mentah!):**  
@@ -634,7 +634,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### ❓ Pertanyaan 21: "Apa itu pilot test n=30?"
 > **💡 Jawaban:**  
-> "Uji coba kuesioner pada 30 kolektor sebelum survei utama. Tujuannya memastikan tiap butir valid (r hitung > r tabel ≈ 0,361) dan tiap variabel reliabel (Alpha ≥ 0,70). Butir yang gagal diperbaiki atau dibuang — jadi data utama 120–150 tidak rusak oleh instrumen cacat."
+> "Uji coba kuesioner pada 30 kolektor sebelum survei utama. Tujuannya memastikan tiap butir valid (r hitung > r tabel ≈ 0,361) dan tiap variabel reliabel (Alpha ≥ 0,70). Butir yang gagal diperbaiki atau dibuang — jadi data utama minimal 111 tidak rusak oleh instrumen cacat."
 
 ### ❓ Pertanyaan 22: "Jelaskan operasionalisasi salah satu variabelmu!"
 > **💡 Jawaban (contoh X2):**  
@@ -642,7 +642,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### ❓ Pertanyaan 23: "Mengapa SPSS/MRA, bukan SEM-PLS yang sedang tren?"
 > **💡 Jawaban:**  
-> "Tiga alasan. Pertama, model saya parsimoni — 3 anteseden, 1 moderator, tanpa mediasi laten bertingkat — sehingga MRA-OLS yang dirancang khusus untuk interaksi justru paling tepat (Aiken & West, 1991; Hayes, 2018). Kedua, SEM-CB butuh N > 200 dan normal multivariat ketat; SEM-PLS untuk eksplorasi prediktif — sampel saya 120–150 ideal untuk OLS tanpa over-parameterisasi (Hair, 2019). Ketiga, MRA adalah standar baku pedoman skripsi FEB UKRIDA."
+> "Tiga alasan. Pertama, model saya parsimoni — 3 anteseden, 1 moderator, tanpa mediasi laten bertingkat — sehingga MRA-OLS yang dirancang khusus untuk interaksi justru paling tepat (Aiken & West, 1991; Hayes, 2018). Kedua, SEM-CB butuh N > 200 dan normal multivariat ketat; SEM-PLS untuk eksplorasi prediktif — sampel saya minimal 111 ideal untuk OLS tanpa over-parameterisasi (Hair, 2019). Ketiga, MRA adalah standar baku pedoman skripsi FEB UKRIDA."
 
 ### ❓ Pertanyaan 24: "Apa itu mean-centering dan simple slopes?"
 > **💡 Jawaban:**  
@@ -661,7 +661,7 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ### ❓ Pertanyaan 28: "Setelah sempro lolos, apa langkahmu?"
 > **💡 Jawaban:**  
-> "Sesuai jadwal Bab 3: revisi pasca-sempro, finalisasi kuesioner, pilot test n=30, survei utama n=120–150 via komunitas dan Local Game Store, olah SPSS Tahap 1–5, lalu sidang skripsi. Target sesuai Tabel 3.3."
+> "Sesuai jadwal Bab 3: revisi pasca-sempro, finalisasi kuesioner, pilot test n=30, survei utama minimal 111 via komunitas dan Local Game Store, olah SPSS Tahap 1–5, lalu sidang skripsi. Target sesuai Tabel 3.3."
 
 ### ❓ Pertanyaan 29: "Bagaimana jika kamu tidak tahu jawabannya?"
 > **💡 Jawaban (taktik, bukan hafalan):** "Mohon izin, Bapak/Ibu — untuk detail tersebut saya perlu mengonfirmasi kembali pada naskah/data agar tidak menyampaikan informasi yang keliru. Yang dapat saya sampaikan saat ini adalah [kaitkan ke hal terdekat yang kamu kuasai]. Apakah saya boleh melanjutkannya setelah sidang melalui lembar revisi?" — Jujur + jangkar + tindak lanjut.
@@ -682,15 +682,15 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 > **💡 Jawaban:**  
 > "Karena β4 adalah kontrol baseline aditif, Bapak/Ibu, bukan hipotesis. Prosedur MRA baku (Aiken & West) mewajibkan pemoderasi masuk di Model 1 agar ΔR² di Model 2 murni mengisolasi kontribusi blok interaksi — itulah yang diuji F-change. Hipotesis tetap 6 (H1–H3 langsung, H4–H6 moderasi). Penjelasan ini tertulis ganda di naskah: catatan kaki Gambar 2.1 dan paragraf β4 di Bab 3 — dan baris 4 Tabel 1.1 berfungsi sebagai justifikasi teoretis memasukkan M, bukan hipotesis tambahan."
 
-### ❓ Pertanyaan 34: "Sampelmu 106, 111, atau 120–150? Yang benar mana?"
+### ❓ Pertanyaan 34: "Kenapa sampelnya 111? Apakah itu tidak terlalu kecil?"
 > **💡 Jawaban:**  
-> "Ketiganya benar pada tempatnya, Bapak/Ibu. Formula Green memberi dua batas: N ≥ 106 untuk model keseluruhan dan N ≥ 104 + 7 = 111 untuk prediktor individual — yang mengikat adalah 111. Target 120–150 adalah sampel bersih di atas batas itu, sekaligus memenuhi power 0,80 Cohen untuk effect sedang. Di luar itu ada pilot test n = 30 untuk uji coba instrumen."
+> "Formula Green (1991) memberi dua batas: N ≥ 50 + 8k = 106 untuk model keseluruhan dan N ≥ 104 + k = 111 untuk prediktor individual. Yang mengikat adalah batas terbesar, yaitu **111 responden**. Penelitian ini **tidak** memakai rentang target — angkanya dikunci di minimal 111 agar tidak menimbulkan kesan target yang berubah-ubah. Angka 111 juga memenuhi kriteria Cohen (1988) untuk *statistical power* ≥ 0,80 pada *medium effect size*. Di luar itu ada pilot test n = 30 yang terpisah dan tidak dihitung sebagai sampel analisis."
 
 ### ❓ Pertanyaan 35: "Jelaskan rumus F-change (Persamaan 3.5), dan dari mana dapat df1 = 3 serta df2 = N − 8?"
 > **💡 Jawaban (kartu bekal hafalan rumus Bab 3 — kuasai ini!):**  
 > "Persamaan (3.5) adalah rumus **F-Change Statistic / Incremental F-Test** dalam regresi hierarkis MRA (Aiken & West, 1991; Ghozali, 2018). Rumus ini menguji apakah penambahan 3 variabel interaksi moderasi di Model 2 secara simultan mampu meningkatkan daya penjelas model (ΔR²) secara signifikan dibanding Model 1 baseline aditif.  
 > * **Asal df1 = 3:** Jumlah variabel prediktor baru yang ditambahkan dari Model 1 ke Model 2 (7 - 4 = 3), yaitu tiga istilah interaksi moderasi (X1* · M*, X2* · M*, X3* · M*).  
-> * **Asal df2 = N - 8:** Formula baku derajat kebebasan residual df2 = N - (k + 1) atau N - k - 1. Pada Model 2 ada 8 total parameter yang diestimasi SPSS (1 konstanta α (Alpha) + 7 koefisien β1 s.d. β7). Jika sampel N = 120, maka df2 = 120 - 8 = 112.  
+> * **Asal df2 = N - 8:** Formula baku derajat kebebasan residual df2 = N - (k + 1) atau N - k - 1. Pada Model 2 ada 8 total parameter yang diestimasi SPSS (1 konstanta α (Alpha) + 7 koefisien β1 s.d. β7). Jika sampel minimal N = 111, maka df2 = 111 - 8 = 103.  
 > * **Catatan di SPSS:** Rumus ini langsung tampil otomatis pada tabel output SPSS *Model Summary* di kolom *F Change*, *df1*, *df2*, dan *Sig. F Change*."
 
 ---
@@ -725,7 +725,7 @@ Penelitian kuantitatif asosiatif = menguji hubungan antar-variabel dengan angka;
    - *Kepadatan Titik Penjualan Kasir:* *Booster pack* resmi harga terjangkau (Rp20.000–Rp30.000) tersebar padat di depan kasir ritel modern seluruh kecamatan Jakarta Barat, memicu pembelian spontan nyata.
    - *Pengendalian Variasi Eksternal:* Membatasi satu wilayah perkotaan homogen mengendalikan disparitas ketersediaan stok fisik dan biaya kirim antardaerah (*high internal validity*).
 3. **Purposive + 4 kriteria inklusi:** (a) WNI berdomisili atau beraktivitas/bertransaksi di Jakarta Barat; (b) usia ≥17 tahun — KTP (UU No. 24/2013) + informed consent + diskresi keuangan mandiri; (c) beli booster pack fisik ≥1× dalam 12 bulan terakhir (diutamakan 6 bulan) — pengalaman riil + ingatan segar; (d) lolos screening questions. **Kalimat kunci generalisasi:** temuan bersifat analitis pada segmen konsumen kartu di Jakarta Barat, BUKAN generalisasi probabilistik seluruh Indonesia.
-4. **Angka sampel (tiga lapis):** Green overall N ≥ 50 + 8(7) = 106; Green individual N ≥ 104 + 7 = 111 (mengikat); target bersih 120–150 (power 0,80 Cohen, efek sedang); pilot test n = 30 terpisah. **Jebakan:** "kenapa tidak 200 seperti SEM?" → model parsimoni, OLS ideal di 120–150, SEM butuh N > 200 + normal multivariat ketat (Hair, 2019).
+4. **Angka sampel (tiga lapis):** Green overall N ≥ 50 + 8(7) = 106; Green individual N ≥ 104 + 7 = 111 (mengikat); batas mengikat 111 (power 0,80 Cohen, efek sedang); pilot test n = 30 terpisah. **Jebakan:** "kenapa tidak 200 seperti SEM?" → model parsimoni, OLS ideal pada ukuran ini, SEM butuh N > 200 + normal multivariat ketat (Hair, 2019).
 
 ### 3.3 Model Penelitian (baca persamaan dengan lantang)
 - **Model 1 (baseline aditif):** Y = α + β1X1* + β2X2* + β3X3* + β4M* + e. Bintang (*) = sudah di-mean-centering. β4 ikut sebagai kontrol — BUKAN hipotesis (lihat Q33).
@@ -740,7 +740,7 @@ Penelitian kuantitatif asosiatif = menguji hubungan antar-variabel dengan angka;
 Lima Tahap + ambang batas sudah di §13 — hafalkan dari sana. Tiga pesan kunci: (a) uji-t dua sisi yang konservatif untuk hipotesis satu arah (p < 0,05 + arah sesuai); (b) ΔR² dari R² biasa, bukan Adjusted; (c) simple slopes pada −1 SD / 0 / +1 SD — garis mendatar pada M tinggi = melemah terbukti.
 
 ### 3.6 Diagram Alur (8 kotak + 1 belah ketupat)
-Hafalkan urutannya: 1 Fenomena → 2 Teori → 3 Model+H1–H6 → 4 Instrumen → 5 Pilot n=30 → ◆ Keputusan (valid? Ya: r-hitung > r-tabel & Alpha ≥ 0,70 → lanjut; Tidak: revisi butir, kembali ke 4) → 6 Survei 120–150 → 7 SPSS → 8 Kesimpulan. Tiap tahap punya pasangan input-output tertulis di bawah gambar — kuasai karena penguji suka bertanya "output tahap 4 apa?" (jawab: kuesioner operasional Tabel 3.1–3.2).
+Hafalkan urutannya: 1 Fenomena → 2 Teori → 3 Model+H1–H6 → 4 Instrumen → 5 Pilot n=30 → ◆ Keputusan (valid? Ya: r-hitung > r-tabel & Alpha ≥ 0,70 → lanjut; Tidak: revisi butir, kembali ke 4) → 6 Survei minimal 111 → 7 SPSS → 8 Kesimpulan. Tiap tahap punya pasangan input-output tertulis di bawah gambar — kuasai karena penguji suka bertanya "output tahap 4 apa?" (jawab: kuesioner operasional Tabel 3.1–3.2).
 
 ### 3.7 Jadwal (10 kegiatan, 6 bulan)
 B1–B2: fenomena + literatur; B2–B3: proposal + bimbingan; B3: SEMPRO (besok!); B4: pilot + survei dimulai; B5: survei + olah SPSS; B6: Bab 4–5 + sidang. **Jebakan:** "realistis?" → Ya: pilot dan survei daring via komunitas yang sudah terpetakan di §3.2, tanpa perizinan lapangan berat.
@@ -754,7 +754,7 @@ B1–B2: fenomena + literatur; B2–B3: proposal + bimbingan; B3: SEMPRO (besok!
 ### R1. Green (1991): N ≥ 50 + 8k dan N ≥ 104 + k
 - **ASAL:** Samuel B. Green (1991), *"How Many Subjects Does It Take To Do A Regression Analysis"*. Ia menjalankan simulasi komputer ribuan kali: membuat data palsu dengan N berbeda, lalu menghitung pada N berapa uji cukup kuat (power 0,80, efek sedang, α 5%). Angka 50, 8, dan 104 adalah konstanta hasil simulasi — bukan tebakan. (File primer tidak ada di laptop; dikutip via Ghozali/Hair yang merujuknya — sah.)
 - **MAKNA AWAM:** Aturan 1 (106) = menilai BINDER — apakah 7 prediktor bersama-sama menjelaskan Y (uji-F). Aturan 2 (111) = menilai SATU CHARIZARD — apakah tiap koefisien signifikan sendiri (uji-t). Menilai satu kartu butuh bukti lebih banyak daripada menilai binder.
-- **KENAPA DIPAKAI:** Menjawab "berapa responden cukup?" secara ilmiah, bukan asal (mis. "100 biar bulat"). Diambil yang terbesar (111) sebagai batas mengikat; target 120–150 di atasnya.
+- **KENAPA DIPAKAI:** Menjawab "berapa responden cukup?" secara ilmiah, bukan asal (mis. "100 biar bulat"). Diambil yang terbesar (111) sebagai batas mengikat; target minimal 111 di atasnya.
 - **1 KALIMAT:** "Dua aturan Green untuk dua pertanyaan — model keseluruhan (106, uji-F) dan tiap prediktor (111, uji-t); saya pakai yang terbesar."
 
 ### R2. Skala Likert 5 poin (1 STS – 5 SS)
@@ -772,7 +772,7 @@ B1–B2: fenomena + literatur; B2–B3: proposal + bimbingan; B3: SEMPRO (besok!
 ### R4. Validitas: r-hitung > r-tabel (+ corrected item-total ≥ 0,30)
 - **ASAL:** Korelasi Pearson product-moment; r-tabel dari tabel-r (df = n−2, α 5%). Pilot n = 30 → r-tabel ≈ 0,361.
 - **MAKNA AWAM:** Setiap butir "diinterogasi": apakah ia bergerak searah dengan total skor variabelnya? Butir yang jawabannya acak (r kecil) = saksi palsu → dibuang. Criterion 0,30 = pengaman kedua.
-- **KENAPA DIPAKAI:** Mencegah kuesioner cacat merusak seluruh analisis. Pilot n = 30 justru menyaring LEBIH GALAK (ambang 0,361) daripada data utama (0,179 pada N = 120).
+- **KENAPA DIPAKAI:** Mencegah kuesioner cacat merusak seluruh analisis. Pilot n = 30 justru menyaring LEBIH GALAK (ambang 0,361) daripada data utama (0,187 pada N = 111).
 - **1 KALIMAT:** "Validitas memastikan tiap butir benar-benar mengukur variabelnya, dengan saringan pilot yang justru lebih ketat."
 
 ### R5. Reliabilitas: Cronbach's Alpha ≥ 0,70
@@ -799,7 +799,7 @@ B1–B2: fenomena + literatur; B2–B3: proposal + bimbingan; B3: SEMPRO (besok!
   dengan df1 = 3 dan df2 = N - 8.
 - **MENGAPA TIDAK ADA DI GOOGLE PERSIS SEPERTI INI:** Rumus di buku teks dunia selalu memakai notasi simbolik umum `F = [ΔR² / 3] / [(1 - R²) / (N - 8)]`. Rumus di naskah skripsi Arthur sudah disubstitusikan dengan angka riil model penelitian Arthur: angka **3** dan angka **8**.
 - **BEDAH ANGKA df1 = 3:** Derajat kebebasan pembilang = jumlah prediktor baru yang ditambahkan di Model 2 (7 - 4 = 3 variabel interaksi: X1* · M*, X2* · M*, X3* · M*).
-- **BEDAH ANGKA df2 = N - 8:** Derajat kebebasan residual = N - (k + 1), di mana k = 7 prediktor pada Model 2 ditambah 1 konstanta intersep (α (Alpha)), menghasilkan total 8 parameter yang diestimasi. Jika N = 120, maka df2 = 120 - 8 = 112.
+- **BEDAH ANGKA df2 = N - 8:** Derajat kebebasan residual = N - (k + 1), di mana k = 7 prediktor pada Model 2 ditambah 1 konstanta intersep (α (Alpha)), menghasilkan total 8 parameter yang diestimasi. Jika N = 111, maka df2 = 111 - 8 = 103.
 - **MAKNA AWAM:** ΔR² mengukur berapa persen peningkatan daya jelas variasi belanja impulsif kartu (Y) setelah 3 variabel interaksi moderasi dimasukkan ke Model 2. Nilai F-change membuktikan apakah peningkatan persentase tersebut signifikan secara statistik (Sig. F Change < 0,05) ataukah hanya kebetulan sampel. Di SPSS, angka ini terbaca langsung pada tabel *Model Summary* kolom *R Square Change*, *F Change*, *df1 = 3*, dan *df2 = N - 8*.
 - **KENAPA DIPAKAI:** Inilah bukti kuantitatif utama bahwa moderasi *Self-Control* secara simultan benar-benar menambah daya jelas model.
 - **1 KALIMAT:** "F-change menguji signifikansi kenaikan R² akibat 3 interaksi baru (df1=3) terhadap sisa derajat bebas galat (df2=N-8)."
@@ -1066,7 +1066,7 @@ B1–B2: fenomena + literatur; B2–B3: proposal + bimbingan; B3: SEMPRO (besok!
 
 ### 17. Batasan responden, riwayat cuma beli sekali setahun apakah valid?
 * **Bahasa Sederhana:** **SANGAT VALID.**
-* **Penjelasan:** Kriteria inklusi mensyaratkan: *WNI ≥ 17 tahun yang pernah membeli booster pack resmi minimal 1 kali dalam 6–12 bulan terakhir*.
+* **Penjelasan:** Kriteria inklusi mensyaratkan: *WNI ≥ 17 tahun yang pernah membeli booster pack resmi minimal 1 kali dalam 12 bulan terakhir*.
   1. *Kenapa minimal 1 kali?* Karena membeli 1 bungkus saja sudah cukup membuat seseorang mengalami sensasi merobek bungkus acak (*pack opening experience*) dan merasakan godaan impulsif.
   2. *Kenapa dibatasi dalam 12 bulan terakhir (diutamakan 6 bulan)?* Untuk mencegah **Recall Bias** (distorsi lupa ingatan). Pembelian dalam kurun waktu tersebut memorinya masih segar sehingga jawaban kuesionernya akurat dan dapat dipercaya.
 * **Jawaban 1 Kalimat ke Dosen:** *"Kriteria pembelian minimal 1 kali dalam 12 bulan terakhir valid karena menjamin responden memiliki pengalaman riil merobek kemasan acak sekaligus meminimalkan distorsi ingatan (recall bias)."*
@@ -1074,12 +1074,12 @@ B1–B2: fenomena + literatur; B2–B3: proposal + bimbingan; B3: SEMPRO (besok!
 ### 18. Penentuan ukuran sampel maksudnya apa?, itu pakai rumus apa, kenapa pakai rumus itu?
 * **Bahasa Sederhana:** Penentuan ukuran sampel adalah **menghitung berapa jumlah minimal lembar kuesioner yang harus terkumpul** agar hasil hitungan SPSS sah dan tidak ditolak secara statistik.
 * **Penjelasan:** Menggunakan rumus **Samuel B. Green (1991)** untuk analisis regresi:
-  - Aturan 1 (Uji Simultan / Uji-F Model Keseluruhan): N ≥ 50 + 8k  
+  - Aturan 1 (Uji Kelayakan Model (Uji F) — model keseluruhan): N ≥ 50 + 8k  
     Untuk k = 7 prediktor → N ≥ 50 + 8(7) = **106**.
   - Aturan 2 (Uji Parsial / Uji-t Koefisien Individual): N ≥ 104 + k  
     Untuk k = 7 prediktor → N ≥ 104 + 7 = **111**.
-  - Kita mengambil batas yang paling ketat yaitu **minimal 111 responden**. Target Arthur ditetapkan **120–150 responden** agar berada di atas batas minimal sekaligus memenuhi kaidah *Statistical Power* 0,80 Cohen (1988) untuk mendeteksi *medium effect size*.
-* **Jawaban 1 Kalimat ke Dosen:** *"Ukuran sampel ditentukan berdasarkan formula Green (1991) dengan batas minimum 111 responden untuk menguji 7 prediktor secara parsial, dan saya menargetkan 120–150 responden agar memenuhi statistical power 0,80 Cohen."*
+  - Kita mengambil batas yang paling ketat yaitu **minimal 111 responden**. Target Arthur ditetapkan **minimal 111 responden** agar berada di atas batas minimal sekaligus memenuhi kaidah *Statistical Power* 0,80 Cohen (1988) untuk mendeteksi *medium effect size*.
+* **Jawaban 1 Kalimat ke Dosen:** *"Ukuran sampel ditentukan berdasarkan formula Green (1991) dengan batas minimum 111 responden untuk menguji 7 prediktor secara parsial, dan saya menargetkan minimal 111 responden agar memenuhi statistical power 0,80 Cohen."*
 
 ### 19. Model penelitian itu apa? Maksudnya simbol apa? Kenapa ada bintang-bintang? Beta itu buat apa?
 * **Bahasa Sederhana:** Model penelitian adalah **persamaan matematika yang menggambarkan hubungan variabel skripsi Arthur**.
@@ -1111,9 +1111,9 @@ B1–B2: fenomena + literatur; B2–B3: proposal + bimbingan; B3: SEMPRO (besok!
   - **MRA berbasis OLS (*Ordinary Least Squares*):** Regresi berganda standar kuadrat terkecil yang ditambahkan variabel perkalian interaksi (X × M).
   - **Kenapa pakai MRA OLS? (Jawaban simpel ke dosen):**
     1. *Model kita parsimoni (sederhana & terarah):* Ada 3 independen, 1 moderator, tanpa variabel mediasi laten bertingkat.
-    2. *Ukuran sampel ideal:* Sampel kita 120–150 responden sangat pas dan kokoh dianalisis dengan OLS tanpa risiko *over-parameterization* (Hair et al., 2019).
+    2. *Ukuran sampel ideal:* Sampel kita minimal 111 responden sangat pas dan kokoh dianalisis dengan OLS tanpa risiko *over-parameterization* (Hair et al., 2019).
     3. *Standar FEB UKRIDA:* MRA berbasis OLS adalah metode resmi standar baku Pedoman Skripsi FEB UKRIDA.
-* **Jawaban 1 Kalimat ke Dosen:** *"MRA berbasis OLS dipilih karena model penelitian ini bersifat parsimoni tanpa jalur mediasi laten, ukuran sampel 120–150 sangat ideal dan stabil untuk estimasi OLS, serta memenuhi standar baku pedoman tugas akhir FEB UKRIDA."*
+* **Jawaban 1 Kalimat ke Dosen:** *"MRA berbasis OLS dipilih karena model penelitian ini bersifat parsimoni tanpa jalur mediasi laten, ukuran sampel minimal 111 sangat ideal dan stabil untuk estimasi OLS, serta memenuhi standar baku pedoman tugas akhir FEB UKRIDA."*
 
 ### 23. Prosedur pemusatan nilai rata-rata (mean-centering) maksudnya apa?
 * **Bahasa Sederhana:** *Mean-Centering* artinya: **Nilai jawaban kuesioner setiap responden dikurangi dengan nilai rata-rata seluruh responden** (X* = X - X̄).
@@ -1147,7 +1147,7 @@ B1–B2: fenomena + literatur; B2–B3: proposal + bimbingan; B3: SEMPRO (besok!
     - *Belah Ketupat (Diamond):* Menggambarkan **Titik Evaluasi / Pengambilan Keputusan (*Decision Node*)**. Simbol oval umumnya hanya untuk tanda "Mulai/Selesai", sedangkan diagram proposal UKRIDA berfokus pada tahapan eksekusi ilmiah.
   - **Maksud tulisan "Ya (hitung > tabel : alpha)":**  
     Itu adalah gerbang seleksi hasil **Pilot Test (n = 30)**:
-    - **PILIH JALUR "YA":** Jika uji coba pada 30 responden menghasilkan seluruh butir valid (r hitung > r tabel) DAN seluruh variabel reliabel (*Cronbach's Alpha* ≥ 0,70), maka penelitian **DIIZINKAN LANJUT** menyebarkan kuesioner survei utama (N = 120–150).
+    - **PILIH JALUR "YA":** Jika uji coba pada 30 responden menghasilkan seluruh butir valid (r hitung > r tabel) DAN seluruh variabel reliabel (*Cronbach's Alpha* ≥ 0,70), maka penelitian **DIIZINKAN LANJUT** menyebarkan kuesioner survei utama (N ≥ 111).
     - **JALUR "TIDAK":** Jika ada butir yang gagal/rusak, alur berputar kembali ke Tahap 4 untuk memperbaiki atau mengganti butir pernyataan kuesioner sebelum data utama diambil.
 * **Jawaban 1 Kalimat ke Dosen:** *"Diagram alur menggambarkan 8 tahapan metodologi dengan belah ketupat sebagai decision gate pilot test n=30, di mana jalur 'Ya' hanya ditempuh bila syarat r-hitung > r-tabel dan Cronbach's Alpha ≥ 0,70 terpenuhi sebelum survei utama disebarkan."*
 
@@ -1191,7 +1191,7 @@ B1–B2: fenomena + literatur; B2–B3: proposal + bimbingan; B3: SEMPRO (besok!
 ### 21.5 Apa Bedanya Uji-t dan Uji-F?
 * **Uji-t (Uji Parsial)** = Menguji pengaruh satu per satu variabel independen secara mandiri terhadap pembelian impulsif kartu.
   - **Contoh di skripsimu:** "Apakah motif spekulasi finansial (X3) secara mandiri terbukti signifikan mendorong pembelian impulsif kartu Pokémon?" (Dilihat dari t-hitung dan p-value pada baris X3 di tabel *Coefficients* SPSS). Begitu juga diuji terpisah untuk X1, X2, dan masing-masing istilah interaksi moderasi.
-* **Uji-F (Uji Simultan / Kelayakan Model)** = Menguji apakah seluruh variabel penjelas di dalam model secara bersama-sama/serentak berpengaruh signifikan terhadap pembelian impulsif kartu.
+* **Uji Kelayakan Model (Uji F)** = Menguji apakah seluruh variabel penjelas di dalam model secara bersama-sama/serentak berpengaruh signifikan terhadap pembelian impulsif kartu.
   - **Contoh di skripsimu:** "Apakah faktor kesenangan (X1), hasrat kelengkapan binder (X2), motif spekulasi (X3), dan kontrol diri (M) secara serentak bersama-sama mampu menjelaskan variasi pembelian impulsif kartu Pokémon?" (Dilihat dari nilai F-hitung dan Sig. pada tabel *ANOVA* SPSS; jika Sig. < 0,05, model dinyatakan fit dan layak digunakan).
 * **F-change (Incremental F-Test)** = Uji-F khusus untuk membandingkan Model 1 (tanpa moderasi) dengan Model 2 (dengan 3 interaksi moderasi). Membuktikan secara matematis apakah penambahan efek moderasi Self-Control benar-benar memberikan kontribusi nyata yang signifikan dalam menjelaskan perilaku belanja kartu Pokémon.
 
@@ -1293,11 +1293,11 @@ B1–B2: fenomena + literatur; B2–B3: proposal + bimbingan; B3: SEMPRO (besok!
 
 | Sering Tertukar | Arti Sebenarnya | Bedanya |
 |:---|:---|:---|
-| Populasi vs Sampel | Populasi = seluruh subjek; Sampel = sebagian yang diambil | Populasimu infinite (semua kolektor WNI), sampelmu 120–150 |
+| Populasi vs Sampel | Populasi = seluruh subjek; Sampel = sebagian yang diambil | Populasimu infinite (semua kolektor WNI), sampelmu minimal 111 |
 | Validitas vs Reliabilitas | Validitas = ketepatan alat ukur mengukur variabel; Reliabilitas = konsistensi alat ukur | Contoh kuesioner skripsimu: Butir pernyataan *"Saya merasa gembira dan antusias saat merobek bungkus kartu Pokémon"* adalah VALID untuk mengukur Hedonic Motivation (X1). Kalau pertanyaannya diganti *"Saya suka menonton film anime Pokémon"*, butir itu TIDAK VALID karena mengukur kesukaan tontonan hiburan, bukan motif belanja kartu. Sedangkan reliabilitas menjamin bila responden yang sama ditanya hal serupa dengan redaksi berbeda, skor jawabannya tetap konsisten tinggi. |
 | Korelasi vs Regresi | Korelasi = ukuran kekuatan hubungan (−1 s/d +1); Regresi = memprediksi Y dari X | Korelasi simetris (X↔Y); Regresi asimetris (X→Y) |
 | Cross-sectional vs Longitudinal | Cross-sectional = data 1 titik waktu; Longitudinal = data beberapa titik waktu | Kamu pakai cross-sectional (satu kali survei) |
-| Pilot test vs Survei utama | Pilot = uji coba instrumen (n=30); Survei utama = pengumpulan data riil (n=120–150) | Data pilot TIDAK dipakai di analisis utama |
+| Pilot test vs Survei utama | Pilot = uji coba instrumen (n=30); Survei utama = pengumpulan data riil (n=minimal 111) | Data pilot TIDAK dipakai di analisis utama |
 | R² vs r (Pearson) | R² = koefisien determinasi model (0–1); r = koefisien korelasi variabel (−1 s/d +1) | R² = r dikuadratkan (untuk regresi sederhana) |
 | α (Alpha signifikansi) vs α (konstanta regresi) vs α (Cronbach's Alpha) | Tiga hal berbeda! | α signifikansi = 0,05 (ambang batas p); α regresi = intersep persamaan; Cronbach's α = ukuran reliabilitas |
 
@@ -1363,7 +1363,7 @@ VARIABEL (Y = impulsif, X1 = hedonis, X2 = kelengkapan, X3 = spekulasi, M = kont
     ↓
 HIPOTESIS (H1–H3: pemicu positif, H4–H6: rem negatif)
     ↓
-METODE (Kuesioner Likert → 120–150 responden → SPSS → MRA dua model)
+METODE (Kuesioner Likert → minimal 111 responden → SPSS → MRA dua model)
     ↓
 ANALISIS (Pilot → Validitas/Reliabilitas → Asumsi Klasik → MRA → F-change → Simple Slopes)
     ↓
@@ -1391,7 +1391,7 @@ KESIMPULAN (H diterima/ditolak → implikasi teoretis + praktis)
 | 3 | Grand theory? | Behavioral Finance |
 | 4 | Metode analisis? | MRA berbasis OLS dengan mean-centering |
 | 5 | Minimum sampel? | 111 (Green, 1991) |
-| 6 | Target sampel? | 120–150 responden |
+| 6 | Target sampel? | minimal 111 responden |
 | 7 | Pilot test berapa? | n = 30 |
 | 8 | Alpha reliabilitas? | ≥ 0,70 |
 | 9 | Kenapa tanpa autokorelasi? | Data cross-sectional, bukan time series |
@@ -1960,8 +1960,8 @@ KESIMPULAN (H diterima/ditolak → implikasi teoretis + praktis)
 - **Tautan DOI / URL:** -
 - **Status Integritas Berkas:** 🛡️ **BUKU LENGKAP UTUH (579 halaman, 15.6 MB, PDF Lengkap Lawrence Erlbaum)**
 - **Fokus Konstruk:** Metodologi • Statistical Power & Effect Size
-- **Peran & Hubungan dalam Skripsi:** Dasar ilmiah penetapan target sampel 120–150 responden. Menetapkan standar statistical power minimal 0,80 pada tingkat signifikansi alpha 0,05 untuk mendeteksi medium effect size ($f^2 = 0,15$).
-- **🗣️ Tameng Jawaban Sidang (1 Kalimat Spontan):** "Cohen (1988) adalah rujukan penjaminan statistical power minimal 0,80, memastikan sampel 120-150 responden cukup kokoh menolak hipotesis nol jika efeknya memang ada."
+- **Peran & Hubungan dalam Skripsi:** Dasar ilmiah penetapan target sampel minimal 111 responden. Menetapkan standar statistical power minimal 0,80 pada tingkat signifikansi alpha 0,05 untuk mendeteksi medium effect size ($f^2 = 0,15$).
+- **🗣️ Tameng Jawaban Sidang (1 Kalimat Spontan):** "Cohen (1988) adalah rujukan penjaminan statistical power minimal 0,80, memastikan sampel minimal 111 responden cukup kokoh menolak hipotesis nol jika efeknya memang ada."
 
 #### 46. Samuel B. Green (1991)
 - **Kunci Sitasi / BibTeX:** `green1991subjects`
@@ -1972,7 +1972,7 @@ KESIMPULAN (H diterima/ditolak → implikasi teoretis + praktis)
 - **Status Integritas Berkas:** 🛡️ **JURNAL METODOLOGI SEMINAL (12 halaman, Metadata Terverifikasi CrossRef/Mendeley)**
 - **Fokus Konstruk:** Metodologi • Formula Baku Ukuran Sampel Regresi Berganda
 - **Peran & Hubungan dalam Skripsi:** Pencetus formula baku penentuan ukuran sampel minimal regresi linear berganda: $N \ge 50 + 8k$ untuk uji-F model simultan (dengan $k=7 \rightarrow N \ge 106$) dan $N \ge 104 + k$ untuk uji-t prediktor individual (dengan $k=7 \rightarrow N \ge 111$). Mengikat angka mutlak minimal 111 responden di Bab 3.
-- **🗣️ Tameng Jawaban Sidang (1 Kalimat Spontan):** "Formula Green (1991) memberi dua batas: N >= 106 untuk uji simultan dan N >= 111 untuk prediktor individual, di mana target 120-150 responden saya melampaui kedua batas ini."
+- **🗣️ Tameng Jawaban Sidang (1 Kalimat Spontan):** "Formula Green (1991) memberi dua batas: N >= 106 untuk model keseluruhan dan N >= 111 untuk prediktor individual, di mana target minimal 111 responden saya melampaui kedua batas ini."
 
 #### 47. Joseph F. Hair Jr., William C. Black, Barry J. Babin, Rolph E. Anderson (2019)
 - **Kunci Sitasi / BibTeX:** `hair2019multivariate`

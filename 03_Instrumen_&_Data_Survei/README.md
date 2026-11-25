@@ -38,7 +38,7 @@ Pengukuran menggunakan **Skala Likert 5-Poin** (1 = Sangat Tidak Setuju s.d. 5 =
 
 1. **Penyusunan Kuesioner (Tahap 1):**
    * Finalisasi kalimat butir instrumen bahasa Indonesia yang komunikatif bagi komunitas TCG.
-   * Penyisipan pertanyaan saringan (*screening questions*): WNI, usia $\ge 17$ tahun, pernah membeli booster pack fisik minimal 1x dalam 6–12 bulan terakhir.
+   * Penyisipan pertanyaan saringan (*screening questions*): WNI, usia $\ge 17$ tahun, pernah membeli booster pack fisik minimal 1x dalam 12 bulan terakhir.
 2. **Uji Coba Pilot Test ($N=30$) (Tahap 2):**
    * Sebar kuesioner awal ke 30 responden kolektor di LGS (*Local Game Store*) / Discord.
    * Uji Validitas: Korelasi Bivariate Pearson ($r_{hitung} > r_{tabel} = 0,361$).

@@ -17,7 +17,7 @@
 | **Standar Kepatuhan** | Buku Pedoman Penyusunan Tugas Akhir FEB UKRIDA 2023 (SK Dekan No. 350a/SK/UKKW/FEB/D/VI/2023) |
 | **Kerangka Teoretis Utama** | *Behavioral Finance* (Keuangan Keperilakuan) — Eliminasi pelabelan kaku Grand Theory per ketetapan **D30** |
 | **Model Analisis** | *Moderated Regression Analysis* (MRA) 2-Tahap Hierarkis dengan transformasi *mean-centering* ($X_i^*, M^*$) |
-| **Fase Saat Ini** | **Fase Pasca-Sempro:** Persiapan instrumen kuesioner Google Forms & penelitian lapangan pada konsumen di Jakarta Barat ($N \ge 111$ per Green 1991, target ideal 120–150 per **D07** & **D31**) |
+| **Fase Saat Ini** | **Fase Pasca-Sempro:** Persiapan instrumen kuesioner Google Forms & penelitian lapangan pada konsumen di Jakarta Barat ($N \ge 111$ per Green 1991, target ideal minimal 111 per **D07** & **D31**) |
 
 ---
 

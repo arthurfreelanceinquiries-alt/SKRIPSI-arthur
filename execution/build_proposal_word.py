@@ -493,10 +493,8 @@ def clean_academic_text(text: str) -> str:
     text = text.replace(r'$n = 30$', '*n* = 30')
     text = text.replace(r'$n=30$', '*n* = 30')
     text = text.replace(r'$n=120$', '*n* = 120')
-    text = text.replace(r'$n=120--150$', '*n* = 120–150')
-    text = text.replace(r'$n=120-150$', '*n* = 120–150')
-    text = text.replace(r'$n = 120--150$', '*n* = 120–150')
-    text = text.replace(r'$n = 120-150$', '*n* = 120–150')
+    text = text.replace(r'$n=111$', '*n* = 111')
+    text = text.replace(r'$n = 111$', '*n* = 111')
 
     # Comprehensive LaTeX Greek and math command replacement
     text = text.replace(r'$\rightarrow$', '→').replace(r'\rightarrow', '→')

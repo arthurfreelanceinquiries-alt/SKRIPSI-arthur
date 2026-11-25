@@ -96,7 +96,7 @@ SLIDE 6: METODE PENELITIAN & ANALISIS DATA
 - Subjudul: Pendekatan Kuantitatif Asosiatif & Ketepatan Metode MRA
 - 4 Kartu Kuadran:
   * Kuadran 1 (Desain & Pengukuran): Kuantitatif Asosiatif Kausal, Kuesioner daring Google Forms, Skala Likert 5 Poin (1-5).
-  * Kuadran 2 (Populasi & Sampel): Kolektor WNI (populasi infinite), Purposive Sampling target N = 120–150 (+ pilot test n = 30). Kriteria: WNI domisili Indonesia, Usia >= 17 tahun, beli booster pack fisik min. 1x dalam 12 bulan terakhir (diutamakan 6 bulan).
+  * Kuadran 2 (Populasi & Sampel): Kolektor WNI (populasi infinite), Purposive Sampling target N ≥ 111 (+ pilot test n = 30). Kriteria: WNI domisili Indonesia, Usia >= 17 tahun, beli booster pack fisik min. 1x dalam 12 bulan terakhir (diutamakan 6 bulan).
   * Kuadran 3 (Uji Instrumen & Asumsi): Validitas Pearson Product Moment, Reliabilitas Cronbach's Alpha (>= 0.70), Uji Asumsi Klasik (Normalitas KS, Multikolinearitas VIF < 10, Heteroskedastisitas Glejser).
   * Kuadran 4 (Alat Analisis Data): Moderated Regression Analysis (MRA) dengan teknik Mean-Centering (mencegah multikolinearitas struktural), Uji t, Uji F, Koefisien Determinasi R2 & Delta R2.
 - Speaker Notes: Terangkan kriteria purposive sampling, sampel N>=150, validitas reliabilitas, serta rasionalisasi penggunaan mean-centering pada MRA (~1,5 menit).

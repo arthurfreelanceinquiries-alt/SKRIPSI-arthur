@@ -20,7 +20,7 @@
 | **Teknik Analisis Data** | *Moderated Regression Analysis* (MRA) / Regresi Berganda dengan SPSS |
 | **Jenis & Sumber Data** | Data Primer (Kuesioner online Google Forms) |
 | **Target Populasi** | Pembeli / kolektor kartu Pokémon Trading Card Game (TCG) fisik di Indonesia |
-| **Kriteria Inklusi Sampel** | WNI, usia minimal 17 tahun, pernah membeli *booster pack* kartu Pokémon fisik minimal 1 kali dalam 6–12 bulan terakhir |
+| **Kriteria Inklusi Sampel** | WNI, usia minimal 17 tahun, pernah membeli *booster pack* kartu Pokémon fisik minimal 1 kali dalam 12 bulan terakhir |
 | **Target Jumlah Sampel** | Minimal 100–150 responden (mengikuti kaidah Hair et al. / G*Power) |
 
 ---

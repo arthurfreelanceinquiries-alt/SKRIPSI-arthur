@@ -177,7 +177,7 @@ Review bukti → ekspos ketidakpastian + alternatif → definisikan acceptance c
 
 - **Goal:** desain layak S1, etis, ter-frozen sebelum olah data.
 - **PRD/directives:** `PRD_PENELITIAN` (metode) + `PRD_RESOLUSI_REVIEW_TEKNIS_PRISM_AI` (Model 1/2, mean-centering, UU 24/2013, N).
-- **Outputs:** Bab 3 (§3.1–3.5): batasan, desain cross-sectional Google Forms, populasi/purposive (WNI ≥17th, beli ≥1x/6–12 bln), N≥111 ideal 120–150 (Green `50+8k=106`, `104+k=111`, Cohen power .80), instrumen Tabel 3.1/3.2, model MRA, Gambar 3.1 alur, uji validitas (Pearson, Cronbach α≥0.60).
+- **Outputs:** Bab 3 (§3.1–3.5): batasan, desain cross-sectional Google Forms, populasi/purposive (WNI ≥17th, beli ≥1x/12 bln terakhir), N dikunci minimal 111 (Green `50+8k=106`, `104+k=111`, Cohen power .80), instrumen Tabel 3.1/3.2, model MRA, Gambar 3.1 alur, uji validitas (Pearson, Cronbach α≥0.60).
 - **Frozen model (wajib verbatim, ganti simbol sesuai topikmu):**
   - Model 1 Baseline Aditif: `Y = α + β1X1* + β2X2* + β3X3* + β4M* + e`
   - Model 2 Penuh: `Y = α + β1X1* + β2X2* + β3X3* + β4M* + β5(X1*·M*) + β6(X2*·M*) + β7(X3*·M*) + e` (`*` = mean-centered; ΔR² murni interaksi; F-change df(3,N-8))

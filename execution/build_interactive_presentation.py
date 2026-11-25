@@ -99,9 +99,9 @@ SLIDES_DATA = [
         "id": 10,
         "tag": "METODOLOGI PENELITIAN",
         "title": "Desain Penelitian, Sampling, & Mean-Centering",
-        "subtitle": "Kuantitatif Asosiatif, Purposive Sampling (N=120-150), & Regresi OLS SPSS",
+        "subtitle": "Kuantitatif Asosiatif, Purposive Sampling (N ≥ 111), & Regresi OLS SPSS",
         "content_type": "metodologi_mra",
-        "speaker_notes": "Pertahankan formula Green (1991): N >= 50 + 8k = 106; target 120-150 responden (Cohen power 0.80). Jelaskan prosedur mean-centering untuk eliminasi multikolinearitas struktural, dan alasan tidak perlunya uji autokorelasi."
+        "speaker_notes": "Pertahankan formula Green (1991): N >= 50 + 8k = 106; target minimal 111 responden (Cohen power 0.80). Jelaskan prosedur mean-centering untuk eliminasi multikolinearitas struktural, dan alasan tidak perlunya uji autokorelasi."
     },
     {
         "id": 11,
@@ -142,8 +142,8 @@ FLASHCARDS_DATA = [
     {"id": 18, "cat": "tcg", "color": "yellow", "title": "Grading Arbitrage", "term": "Arbitrase Grading (Grading Arbitrage)", "author": "Mekanisme Keuangan Pasar", "desc": "Strategi membeli kartu mentah seharga ratusan ribu rupiah, mengirimnya untuk di-grading, dan menjualnya kembali di harga jutaan rupiah jika meraih PSA 10.", "hint": "Pemicu utama Speculative Motive di komunitas TCG"},
     {"id": 19, "cat": "stat", "color": "red", "title": "Teknik Analisis", "term": "Moderated Regression Analysis (MRA)", "author": "Aiken & West (1991); Ghozali (2018)", "desc": "Aplikasi khusus regresi linier berganda yang menyertakan istilah perkalian/interaksi (X·M) untuk menguji apakah moderator memperkuat atau memperlemah hubungan.", "hint": "Metode Statistik Utama Penelitian"},
     {"id": 20, "cat": "stat", "color": "red", "title": "Uji Asumsi Multikol", "term": "Prosedur Mean-Centering", "author": "Aiken & West (1991); Cohen et al. (2003)", "desc": "Mengurangi nilai variabel dengan nilai rata-ratanya (X* = X - X̄) sebelum dikalikan untuk mengeliminasi multikolinearitas struktural tanpa mengubah signifikansi.", "hint": "Solusi ilmiah jika VIF interaksi melonjak tinggi"},
-    {"id": 21, "cat": "stat", "color": "red", "title": "Teknik Sampling", "term": "Purposive Sampling", "author": "Sekaran & Bougie (2016); Sugiyono (2019)", "desc": "Teknik penentuan sampel non-acak dengan pertimbangan kriteria inklusi tertentu agar responden memiliki pemahaman dan pengalaman relevan terhadap objek.", "hint": "Kriteria: WNI >=17 thn, pernah beli pack resmi 6-12 bln"},
-    {"id": 22, "cat": "stat", "color": "red", "title": "Formula Sampel", "term": "Kaidah Green (1991) & Cohen (1988)", "author": "Green (1991); Cohen (1988)", "desc": "Formula N >= 50 + 8k (k=7 -> N >= 106). Target penelitian: 120-150 responden untuk menjamin statistical power >= 0.80 pada medium effect size f2=0.15.", "hint": "Justifikasi jumlah kecukupan sampel S1"},
+    {"id": 21, "cat": "stat", "color": "red", "title": "Teknik Sampling", "term": "Purposive Sampling", "author": "Sekaran & Bougie (2016); Sugiyono (2019)", "desc": "Teknik penentuan sampel non-acak dengan pertimbangan kriteria inklusi tertentu agar responden memiliki pemahaman dan pengalaman relevan terhadap objek.", "hint": "Kriteria: WNI >=17 thn, pernah beli pack resmi 12 bln terakhir"},
+    {"id": 22, "cat": "stat", "color": "red", "title": "Formula Sampel", "term": "Kaidah Green (1991) & Cohen (1988)", "author": "Green (1991); Cohen (1988)", "desc": "Formula N >= 50 + 8k (k=7 -> N >= 106). Target penelitian: minimal 111 responden untuk menjamin statistical power >= 0.80 pada medium effect size f2=0.15.", "hint": "Justifikasi jumlah kecukupan sampel S1"},
     {"id": 23, "cat": "stat", "color": "red", "title": "Uji Asumsi Klasik", "term": "Alasan Tiadanya Uji Autokorelasi", "author": "Ghozali (2018); Gujarati (2009)", "desc": "Uji autokorelasi (Durbin-Watson) hanya berlaku untuk data deret waktu (time-series). Pada data survei cross-sectional, antar-responden independen sehingga uji ini tidak relevan.", "hint": "Jawaban tangkas atas pertanyaan jebakan penguji"},
     {"id": 24, "cat": "stat", "color": "red", "title": "Uji Kelayakan Model", "term": "Uji F (Simultan) & Koefisien Determinasi R²", "author": "Ghozali (2018)", "desc": "Uji F menilai apakah seluruh variabel independen secara simultan berpengaruh signifikan terhadap Y. R² (atau R² Change pada MRA) mengukur persentase varians Y yang dijelaskan.", "hint": "Uji ketepatan model regresi"},
     {"id": 25, "cat": "stat", "color": "red", "title": "Uji Hipotesis Parsial", "term": "Uji t (Parsial)", "author": "Ghozali (2018)", "desc": "Menguji signifikansi pengaruh masing-masing variabel independen dan interaksi secara individual terhadap Y (diterima jika p-value < 0,05 dan t-hitung > t-tabel).", "hint": "Pengujian H1 sampai H6 secara parsial"},
@@ -237,8 +237,8 @@ DEFENSE_QUESTIONS = [
         "type": "metodologi",
         "badge": "Metodologi Sampel",
         "question": "Berapa target sampel Anda dan apa justifikasi akademisnya?",
-        "keywords": ["Formula Green (1991)", "N >= 50 + 8k", "Minimal 106 responden", "Target 120-150 responden", "Cohen (1988) power 0.80 medium effect size"],
-        "answer": "Target sampel ditetapkan sebanyak 120 hingga 150 responden. Angka ini didasarkan pada formula Green (1991) untuk regresi berganda dengan k=7 prediktor: N >= 50 + 8(7) = 106 responden. Target 120-150 responden juga memenuhi kaidah Cohen (1988) untuk mencapai statistical power sebesar 0,80 pada alpha = 0,05 dengan medium effect size (f2 = 0,15), serta mengantisipasi potensi kuesioner yang tidak lengkap atau tidak lolos screening."
+        "keywords": ["Formula Green (1991)", "N >= 50 + 8k", "Minimal 106 responden", "Target minimal 111 responden", "Cohen (1988) power 0.80 medium effect size"],
+        "answer": "Target sampel ditetapkan sebanyak minimal 111 responden. Angka ini didasarkan pada formula Green (1991) untuk regresi berganda dengan k=7 prediktor: N >= 50 + 8(7) = 106 responden. Target minimal 111 responden juga memenuhi kaidah Cohen (1988) untuk mencapai statistical power sebesar 0,80 pada alpha = 0,05 dengan medium effect size (f2 = 0,15), serta mengantisipasi potensi kuesioner yang tidak lengkap atau tidak lolos screening."
     },
     {
         "id": 12,
@@ -365,7 +365,7 @@ QUIZ_QUESTIONS = [
             "D. N >= 500 responden"
         ],
         "ans": 1,
-        "exp": "Formula Green (1991) menyatakan N >= 50 + 8k. Untuk k = 7 prediktor (3X, 1M, dan 3 istilah interaksi X*M), ukuran sampel minimum adalah 50 + 8(7) = 106 responden. Target penelitian ditetapkan 120-150 responden."
+        "exp": "Formula Green (1991) menyatakan N >= 50 + 8k. Untuk k = 7 prediktor (3X, 1M, dan 3 istilah interaksi X*M), ukuran sampel minimum adalah 50 + 8(7) = 106 responden. Target penelitian ditetapkan minimal 111 responden."
     },
     {
         "id": 8,
@@ -2066,10 +2066,10 @@ function getSlideBodyHTML(slide) {
             </div>
             <div class="feature-body">
               <strong>Purposive Sampling</strong><br>
-              Kriteria: WNI, usia ≥ 17 thn, pernah beli booster pack resmi minimal 1x dalam 6–12 bulan terakhir.<br><br>
+              Kriteria: WNI, usia ≥ 17 thn, pernah beli booster pack resmi minimal 1x dalam 12 bulan terakhir.<br><br>
               <strong>Formula Green (1991):</strong><br>
               N ≥ 50 + 8(7) = 106.<br>
-              <strong>Target:</strong> 120–150 responden (Cohen power 0.80).
+              <strong>Target:</strong> minimal 111 responden (Cohen power 0.80).
             </div>
           </div>
           <div class="feature-card emerald">
@@ -2136,7 +2136,7 @@ function getSlideBodyHTML(slide) {
             <strong>1. Model:</strong> 3X (Hedonic, Completeness, Speculative) -> Y (Impulsive) dimoderasi M (Self-Control memperlemah -)<br>
             <strong>2. Grand Theory:</strong> Behavioral Finance (Herbert Simon, Kahneman-Tversky, Shiller, Thaler-Shefrin Planner-Doer)<br>
             <strong>3. Rujukan Kunci:</strong> Gao et al. (2014 JMR), Zeigarnik (1927), Keynes (1936), Tangney et al. (2004), Colline (2024)<br>
-            <strong>4. Metode:</strong> Kuantitatif Asosiatif | Purposive Sampling (N=120-150) | MRA Mean-Centering OLS SPSS<br>
+            <strong>4. Metode:</strong> Kuantitatif Asosiatif | Purposive Sampling (N ≥ 111) | MRA Mean-Centering OLS SPSS<br>
             <strong>5. Aturan Asumsi:</strong> Uji Autokorelasi TIDAK relevan untuk data primer survei cross-sectional (Ghozali, 2018)
           </div>
           <div style="text-align:center; margin-top: 1.25rem; color: var(--accent-gold-light); font-weight:700;">

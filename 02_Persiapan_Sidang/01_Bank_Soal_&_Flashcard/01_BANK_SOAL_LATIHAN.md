@@ -110,8 +110,8 @@
 ### 🔑 Kunci Jawaban Bagian C
 | Soal | Jawaban Ringkas |
 |:---|:---|
-| C1 | Purposive sampling. Kriteria: (1) WNI usia ≥17 tahun, (2) pernah beli booster pack Pokémon TCG fisik resmi minimal 1x dalam 6-12 bulan terakhir, (3) berdomisili di Indonesia |
-| C2 | 120-150 responden. Dasar: Green (1991) N ≥ 50 + 8k; k=7 → minimal 106 |
+| C1 | Purposive sampling. Kriteria: (1) WNI usia ≥17 tahun, (2) pernah beli booster pack Pokémon TCG fisik resmi minimal 1x dalam 12 bulan terakhir, (3) berdomisili di Indonesia |
+| C2 | minimal 111 responden. Dasar: Green (1991) N ≥ 50 + 8k; k=7 → minimal 106 |
 | C3 | MRA (Moderated Regression Analysis) — regresi yang menguji efek moderasi melalui variabel perkalian (interaction term) |
 | C4 | Y = α + β₁X₁ + β₂X₂ + β₃X₃ + β₄M + β₅(X₁·M) + β₆(X₂·M) + β₇(X₃·M) + e |
 | C5 | Variabel perkalian X×M. Contoh: X₁·M = Hedonic Motivation × Self-Control. Jika β₅ negatif signifikan → FL memperlemah pengaruh HM terhadap IB |

@@ -36,7 +36,7 @@ Transform the raw, uncalibrated thesis proposal document into a pristine, public
      - `$Y$`, `$M$`, `$Z$` dikonversi menjadi *Y*, *M*, *Z*.
      - `$R^2$`, `$\Delta R^2$` dikonversi menjadi *R*², Δ*R*².
      - `$p < 0,05$`, `$\alpha = 0,05$` dikonversi menjadi *p* < 0,05, α = 0,05.
-     - `$n = 30$`, `$n = 120-150$` dikonversi menjadi *n* = 30, *n* = 120–150.
+     - `$n = 30$`, `$n = 111$` dikonversi menjadi *n* = 30, *n* = 111.
    - **No Raw LaTeX Citation Leakage:** Perintah seperti `\citealp{...}`, `\citep{...}`, `\citet{...}`, `\ref{...}` wajib diterjemahkan menjadi teks sitasi nama dan tahun APA 7th (*Babin et al., 1994*).
 
 4. **Frontmatter & Abstract Rules:**

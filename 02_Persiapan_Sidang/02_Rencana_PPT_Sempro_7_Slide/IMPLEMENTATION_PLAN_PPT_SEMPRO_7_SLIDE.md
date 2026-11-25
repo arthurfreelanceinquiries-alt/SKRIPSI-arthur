@@ -74,7 +74,7 @@
 
 #### 6. Slide 6 (Metodologi Penelitian)
 - **Komposisi:** 4 Kuadran Eksekutif Bersih (Grid 2×2).
-- **Isi:** 1. Desain Riset, 2. Populasi & Sampel Green $N \ge 111$ (Target 120–150 + Pilot 30), 3. Kualitas Data & Asumsi Klasik (tanpa autokorelasi), 4. Analisis Data MRA OLS dengan **penegasan mutlak Mean-Centering**.
+- **Isi:** 1. Desain Riset, 2. Populasi & Sampel Green $N \ge 111$ (Target minimal 111 + Pilot 30), 3. Kualitas Data & Asumsi Klasik (tanpa autokorelasi), 4. Analisis Data MRA OLS dengan **penegasan mutlak Mean-Centering**.
 
 #### 7. Slide 7 (Penutup & Tanya Jawab)
 - **Komposisi:** 2 Kartu Kontribusi (Atas) + Podium Penutup & Status Q&A (Bawah).

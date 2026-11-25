@@ -83,7 +83,7 @@ BOOKS = [
         "filename": "1988_Cohen_Statistical_Power_Analysis.pdf",
         "primary_md5": "aaa90371cd9c588dc5530cfeb909f3f2",
         "fallback_md5s": ["b7fff15c0e9f3f1e2c7e9c3fc57e6fa2", "2c1a4172ad6d9e10dcaff95b319c411a"],
-        "scope": "Metodologi: Penentuan Ukuran Sampel Statistical Power (N=120-150)",
+        "scope": "Metodologi: Penentuan Ukuran Sampel Statistical Power (N=111)",
         "publisher": "Lawrence Erlbaum Associates",
         "is_local": False
     },

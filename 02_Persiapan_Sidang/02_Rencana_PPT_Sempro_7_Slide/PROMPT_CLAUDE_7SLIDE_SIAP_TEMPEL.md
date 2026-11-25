@@ -1,6 +1,6 @@
 # 📋 PROMPT SIAP TEMPEL UNTUK CLAUDE — PLAN PEMBUATAN PPT 7 SLIDE
 
-> Salin seluruh isi blok `text` di bawah dan tempel ke Claude. Dokumen ini sudah dikoreksi terhadap naskah (6 hipotesis, sampel 120–150, tanpa klaim paylater).
+> Salin seluruh isi blok `text` di bawah dan tempel ke Claude. Dokumen ini sudah dikoreksi terhadap naskah (6 hipotesis, sampel minimal 111, tanpa klaim paylater).
 
 ```text
 Halo Claude! Anda adalah Senior Presentation Designer + Academic Coach untuk sidang skripsi S1 Manajemen Keuangan FEB UKRIDA. Buatkan saya deck Seminar Proposal TEPAT 7 SLIDE, format 16:9, tema FinTech Dark Mode (bg #0B0F19, kartu #1E293B border #334155, teks #F8FAFC, aksen cyan #06B6D4 / emerald #10B981 / amber #F59E0B). NO wall of text (maks 3 baris per kartu), istilah asing selalu italic, dan WAJIB speaker notes ±1-1,5 menit per slide.
@@ -11,7 +11,7 @@ DATA KUNCI (dilarang diubah):
 
 ATURAN ANTI-HALUSINASI (pelanggaran = deck ditolak):
 1. TEPAT 6 HIPOTESIS (H1-H3 positif; H4-H6 moderasi melemah). DILARANG membuat H7. DILARANG menggambar panah langsung M -> Y sebagai hipotesis.
-2. Sampel: kolektor WNI populasi infinite, purposive, target N = 120-150 (+ pilot n = 30). DILARANG menulis "Jabodetabek saja" atau "N >= 150".
+2. Sampel: kolektor WNI populasi infinite, purposive, target N ≥ 111 (+ pilot n = 30). DILARANG menulis "Jabodetabek saja" atau "N >= 150".
 3. DILARANG mengklaim dana darurat/paylater — tidak ada di naskah. Gunakan "berpotensi mengorbankan alokasi keuangan pribadi".
 4. Hanya sitasi yang ada di naskah: Behavioral Finance (Simon 1955; Kahneman & Tversky 1979; Shiller 2000; Thaler & Shefrin 1981), S-O-R (Mehrabian & Russell 1974), Gao (2014), Barasz et al. (2017), Tangney et al. (2004), Baumeister (2002), IBTS Verplanken & Herabadi (2001), Arnold & Reynolds (2003), Keynes (1936). DILARANG menambah sumber (mis. Shefrin 2000).
 5. Ambang yang boleh tampil: Alpha >= 0,70; r-hitung > r-tabel; Tolerance > 0,10 & VIF < 10; KS & Glejser p > 0,05; uji-t/F p < 0,05.

@@ -72,7 +72,7 @@
 | 31 | Harga booster pack resmi | Rp20.000–Rp30.000 |
 | 32 | Harga SAR di pasar sekunder | Rp500.000–Rp3.000.000+ |
 | 33 | Disparitas harga | 20–100x lipat |
-| 34 | Target sampel | 120–150 responden |
+| 34 | Target sampel | minimal 111 responden |
 | 35 | Formula sampel minimum | N ≥ 50 + 8(7) = 106 (Green, 1991) |
 | 36 | Jumlah hipotesis | 6 (H1–H6) |
 | 37 | Jumlah variabel dalam persamaan MRA | 7 prediktor + 1 konstanta |

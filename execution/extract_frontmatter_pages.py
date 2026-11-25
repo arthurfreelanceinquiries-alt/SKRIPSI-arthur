@@ -373,7 +373,7 @@ def build_05_abstrak():
         "Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei cross-sectional. Data primer dikumpulkan melalui penyebaran kuesioner daring "
         "berbasis skala Likert 5 poin kepada responden yang dipilih melalui teknik purposive sampling. Kriteria inklusi sampel adalah konsumen atau kolektor "
         "Warga Negara Indonesia (WNI) berusia minimal 17 tahun yang berdomisili atau beraktivitas/bertransaksi aktif di wilayah Jakarta Barat serta pernah membeli "
-        "booster pack Pok\u00e9mon TCG fisik resmi dalam rentang waktu 6\u201312 bulan terakhir. Jumlah sampel yang ditargetkan adalah 120 hingga 150 responden, "
+        "booster pack Pok\u00e9mon TCG fisik resmi dalam rentang waktu 12 bulan terakhir. Jumlah sampel yang ditargetkan adalah minimal 111 responden, "
         "mengacu pada rekomendasi ukuran sampel Green (1991) dan Cohen (1988) untuk mencapai kekuatan uji statistik (statistical power) yang memadai pada model regresi "
         "linear berganda. Metode analisis data menggunakan analisis regresi berganda dan Moderated Regression Analysis (MRA) dengan prosedur pemusatan rata-rata "
         "(mean-centering) guna mereduksi potensi multikolinearitas non-esensial antara variabel prediktor dengan produk interaksinya (Aiken dan West, 1991; Ghozali, 2018), yang diolah menggunakan perangkat lunak "

@@ -46,7 +46,7 @@ Y = a + b₁X₁ + b₂X₂ + b₃X₃ + b₄M + b₅(X₁×M) + b₆(X₂×M) +
 ### Langkah 1: Input Data
 1. Buka SPSS → Variable View
 2. Buat kolom: `Y`, `X1`, `X2`, `X3`, `M` (isi = total skor Likert per variabel)
-3. Data View → Input skor dari 120-150 responden
+3. Data View → Input skor dari minimal 111 responden
 
 ### Langkah 2: Uji Validitas
 1. Analyze → Correlate → Bivariate

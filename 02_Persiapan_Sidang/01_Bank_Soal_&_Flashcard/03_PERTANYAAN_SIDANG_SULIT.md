@@ -59,7 +59,7 @@
 > **💡 Jawaban:**
 > "Benar, Bapak/Ibu, ini adalah keterbatasan yang kami sadari dan akui secara transparan. Penyebaran kuesioner melalui komunitas online memang menciptakan **selection bias** terhadap segmen pembeli yang lebih aktif dan engaged. Namun ada dua justifikasi:
 >
-> Pertama, **populasi target penelitian ini memang pembeli aktif** — bukan seluruh masyarakat Indonesia. Kriteria inklusi menetapkan 'pernah membeli booster pack minimal 1x dalam 6-12 bulan terakhir', sehingga komunitas online justru merupakan kanal yang paling efisien untuk menjangkau populasi yang tepat.
+> Pertama, **populasi target penelitian ini memang pembeli aktif** — bukan seluruh masyarakat Indonesia. Kriteria inklusi menetapkan 'pernah membeli booster pack minimal 1x dalam 12 bulan terakhir', sehingga komunitas online justru merupakan kanal yang paling efisien untuk menjangkau populasi yang tepat.
 >
 > Kedua, **diversifikasi kanal distribusi** akan diterapkan — kuesioner tidak hanya disebarkan di satu komunitas, melainkan di multiple platform (Facebook Group, Discord, Reddit, dan LGS offline) untuk mengurangi homogenitas responden.
 >
@@ -94,7 +94,7 @@
 > **💡 Jawaban:**
 > "Pertanyaan yang sangat valid, Bapak/Ibu. Secara ideal, variabel kontrol seperti pendapatan bulanan, usia, dan frekuensi bermain akan memperkuat model. Namun ada dua pertimbangan:
 >
-> Pertama, **parsimoni model untuk tingkat S1** — dengan 7 prediktor (3X + 1M + 3 interaksi) dan target sampel 120-150, menambahkan variabel kontrol akan meningkatkan kebutuhan sampel dan kompleksitas interpretasi yang mungkin di luar kapasitas analisis tingkat S1.
+> Pertama, **parsimoni model untuk tingkat S1** — dengan 7 prediktor (3X + 1M + 3 interaksi) dan target sampel minimal 111, menambahkan variabel kontrol akan meningkatkan kebutuhan sampel dan kompleksitas interpretasi yang mungkin di luar kapasitas analisis tingkat S1.
 >
 > Kedua, **karakteristik demografis** seperti usia, pendapatan, dan tingkat pendidikan akan tetap **dikumpulkan dan dilaporkan secara deskriptif** di BAB IV, serta **dianalisis secara tabulasi silang** untuk memberikan konteks. Jika ada temuan menarik (misalnya kelompok pendapatan rendah lebih impulsif), ini akan dibahas sebagai **temuan tambahan** dan **rekomendasi penelitian lanjutan** di BAB V.
 >
@@ -167,7 +167,7 @@
 >
 > 2. **Dari mana asal angka 3 ($df_1 = 3$):** Pembilang $df_1$ adalah jumlah variabel prediktor baru yang ditambahkan saat melangkah dari Model 1 ke Model 2. Model 1 memiliki 4 prediktor ($X_1, X_2, X_3, M$), sedangkan Model 2 memiliki 7 prediktor. Selisih penambahannya tepat **3 variabel interaksi moderasi**: $X_1^* \cdot M^*$, $X_2^* \cdot M^*$, dan $X_3^* \cdot M^*$.
 >
-> 3. **Dari mana asal angka 8 ($df_2 = N - 8$):** Penyebut $df_2$ adalah derajat kebebasan residual regresi dengan rumus baku $N - (k + 1)$ atau $N - k - 1$. Pada Model 2 ada 7 prediktor ($k = 7$) ditambah 1 konstanta intersep ($\alpha$), sehingga total ada **8 parameter** yang dihitung SPSS. Sisa derajat kebebasannya menjadi $N - (7 + 1) = \mathbf{N - 8}$. Misal sampel saya $N = 120$, maka $df_2 = 112$.
+> 3. **Dari mana asal angka 8 ($df_2 = N - 8$):** Penyebut $df_2$ adalah derajat kebebasan residual regresi dengan rumus baku $N - (k + 1)$ atau $N - k - 1$. Pada Model 2 ada 7 prediktor ($k = 7$) ditambah 1 konstanta intersep ($\alpha$), sehingga total ada **8 parameter** yang dihitung SPSS. Sisa derajat kebebasannya menjadi $N - (7 + 1) = \mathbf{N - 8}$. Misal sampel saya $N = 111$, maka $df_2 = 103$.
 >
 > 4. **Kaitan dengan SPSS:** Nilai ini persis mencerminkan baris uji pada tabel output SPSS *Model Summary* di kolom *R Square Change*, *F Change*, *df1*, *df2*, dan *Sig. F Change*."
 

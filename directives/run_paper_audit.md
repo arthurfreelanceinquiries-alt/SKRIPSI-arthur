@@ -73,7 +73,7 @@ Periksa keselarasan antara:
 - Teori Utama (*Behavioral Finance*, S-O-R, *Zeigarnik Effect*, *Self-Regulation*) $\rightarrow$ Definisi Operasional $\rightarrow$ Butir Tabel 3.2.
 
 ### Langkah 3: Audit Spesialis (Multi-Perspective Check)
-- **Perspektif 1 (Metodologi & Sampling):** Kriteria inklusi, penentuan ukuran sampel Cohen/Green (120–150 responden), komparasi *purposive sampling*, dan prosedur kuesioner.
+- **Perspektif 1 (Metodologi & Sampling):** Kriteria inklusi, penentuan ukuran sampel Cohen/Green (minimal 111 responden), komparasi *purposive sampling*, dan prosedur kuesioner.
 - **Perspektif 2 (Ekonometrika & Notasi Matematika):** Persamaan MRA Model 1 & 2, notasi *mean-centering*, rumus uji F, dan pengujian asumsi klasik.
 - **Perspektif 3 (Literatur & Sitasi):** 10 jurnal empiris utama (2021–2025), konsistensi gap, format APA 7th tanpa nomor urut, serta kepatuhan 7 pilar UKRIDA 2023.
 

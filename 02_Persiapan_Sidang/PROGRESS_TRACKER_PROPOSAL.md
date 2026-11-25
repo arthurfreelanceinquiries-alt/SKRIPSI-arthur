@@ -59,7 +59,7 @@
 
 ### Pertanyaan Metodologi
 4. Mengapa menggunakan MRA, bukan SEM-PLS? Apa kelebihan dan keterbatasannya?
-5. Bagaimana menentukan ukuran sampel 120–150? Apakah formula Green cukup?
+5. Bagaimana menentukan ukuran sampel minimal 111? Apakah formula Green cukup?
 6. Apa risiko multikolinearitas pada variabel interaksi MRA? Bagaimana mengatasinya?
 7. Mengapa purposive sampling? Apa implikasi terhadap generalisasi?
 

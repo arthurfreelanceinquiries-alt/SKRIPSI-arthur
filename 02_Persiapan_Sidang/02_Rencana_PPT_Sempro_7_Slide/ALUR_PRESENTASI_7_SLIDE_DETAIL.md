@@ -172,8 +172,8 @@ Jangan hafalkan 7 slide sebagai bagian terpisah. Hafalkan **benang merah alur ce
      - Populasi: Tak terbatas (*infinite*), konsumen/kolektor kartu fisik Pokémon TCG resmi di wilayah **Jakarta Barat**.
      - Teknik Sampling: *Purposive Sampling* (4 filter: WNI domisili/aktivitas di Jakarta Barat, usia $\ge 17$ tahun, beli pack fisik 12 bln terakhir, lolos *screening questions*).
      - Justifikasi Wilayah (4 Pilar): LGS Hub resmi, akses observasi langsung peneliti di UKRIDA Tanjung Duren, titik kasir ritel minimarket (Rp20.000–Rp30.000), dan kontrol variasi stok/ongkir.
-     - Kotak Rumus Green (1991): Uji-F Simultan ($50 + 8k = 106$) vs Uji-t Parsial ($104 + k = \mathbf{111\text{ Responden}}$).
-     - Target Sampel Eksekutif: **120 s.d. 150 responden** (Power $\ge 0{,}80$, Cohen $f^2=0{,}15$) + *Pilot Test* $N=30$.
+     - Kotak Rumus Green (1991): Uji Kelayakan Model (Uji F) ($50 + 8k = 106$) vs Uji-t Parsial ($104 + k = \mathbf{111\text{ Responden}}$).
+     - Target Sampel Eksekutif: **minimal 111 responden** (Power $\ge 0{,}80$, Cohen $f^2=0{,}15$) + *Pilot Test* $N=30$.
   3. **Kuadran 3 — Uji Kualitas Data & Asumsi Klasik:**
      - 3 Checklist Uji: Validitas Pearson ($r_{\text{hitung}} > r_{\text{tabel}}$), Reliabilitas Cronbach's Alpha ($\alpha \ge 0{,}70$), Asumsi OLS (Normalitas K-S $> 0{,}05$, Multiko VIF $< 10$, Glejser $> 0{,}05$).
      - Tameng Sidang: 🛡️ **Bebas Autokorelasi** karena data primer kros-seksional, bukan runtun waktu (*time-series*).

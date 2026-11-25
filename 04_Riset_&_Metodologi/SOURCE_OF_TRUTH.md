@@ -27,7 +27,7 @@
 | **D03** | Eliminasi FOMO diganti *Desire for Completeness* & *Speculative Motive* | 8 Sep 2026 | FOMO terlalu generik; hasrat melengkapi binder dan motif spekulasi adalah pemicu riil di dunia TCG. (Nama awal: Need for Completion; final: Desire for Completeness per D09) |
 | **D04** | Struktur Model: 3 X, 1 Y, 1 M (Moderasi) | 8 Sep 2026 | Memenuhi standar bobot S1 FEB UKRIDA; menjawab arahan dosen tentang pembeda variabel dan model penelitian. |
 | **D05** | Software Analisis: SPSS (MRA / Process Macro Hayes) | 8 Sep 2026 | Sesuai kapabilitas mahasiswa dan standar regresi moderasi S1. |
-| **D06** | Populasi Operasional: Komunitas Pembeli/Kolektor Pokémon TCG Indonesia | 8 Sep 2026 | WNI usia minimal 17 tahun yang pernah membeli *booster pack* resmi Pokémon TCG fisik minimal 1x dalam 6–12 bulan terakhir. |
+| **D06** | Populasi Operasional: Komunitas Pembeli/Kolektor Pokémon TCG Indonesia | 8 Sep 2026 (kriteria pembelian diperbarui 27 Okt 2026 via D41) | WNI usia minimal 17 tahun yang pernah membeli *booster pack* resmi Pokémon TCG fisik minimal 1x dalam **12 bulan terakhir**. |
 | **D07** | Target Sampel: Minimal 111, Target Ideal 120–150 Responden | 8 Sep 2026 | Memenuhi kaidah Green (1991): $N \ge 50 + 8k$ (untuk $k=7$, minimal 106; $N \ge 104+k = 111$); Cohen (1988) power 0.80 medium effect. |
 | **D08** | Desain: Kuantitatif Asosiatif (Cross-Sectional Survei Primer) | 8 Sep 2026 | Pengumpulan data melalui kuesioner online Google Forms di komunitas TCG (Facebook, Discord, LGS). |
 | **D09** | Pembakuan Istilah $X_2$ menjadi ***Desire for Completeness*** | 9 Sep 2026 | Arahan Dosen: cari istilah ilmiah baku (Gao, Huang, & Simonson, 2014, *JM*; Barasz et al., 2017, *JEP: General*; Belk, 1995; Zeigarnik, 1927). |
