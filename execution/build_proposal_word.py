@@ -1412,7 +1412,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
 
         for p_abs_text in [
             "Penelitian ini bertujuan untuk menganalisis dan menguji secara empiris pengaruh *hedonic motivation* (motivasi hedonis), *desire for completeness* (hasrat kelengkapan koleksi), dan *speculative motive* (motif spekulasi finansial) terhadap *impulsive buying* (pembelian impulsif) *booster pack* kartu Pokémon *Trading Card Game* (Pokémon TCG) fisik resmi berbahasa Indonesia pada konsumen di Jakarta Barat, serta menguji peran kontrol diri (*self-control*) sebagai variabel moderasi dalam memoderasi pengaruh ketiga variabel anteseden tersebut.",
-            "Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei *cross-sectional*. Data primer dikumpulkan melalui kuesioner daring skala Likert 5 poin kepada responden yang dipilih melalui teknik *purposive sampling*. Kriteria inklusi sampel adalah konsumen atau kolektor WNI berusia minimal 17 tahun yang berdomisili atau beraktivitas/bertransaksi aktif di wilayah Jakarta Barat serta pernah membeli *booster pack* Pokémon TCG fisik resmi dalam 6–12 bulan terakhir. Target ukuran sampel bersih (*usable sample*) adalah minimal 111 responden, ditentukan berdasarkan formula Green (1991) (*N* ≥ 104 + *k*) untuk regresi berganda dengan tujuh prediktor guna mencapai kekuatan uji statistik (*power*) 0,80. Metode analisis menggunakan regresi linear berganda dan *Moderated Regression Analysis* (MRA) dengan prosedur pemusatan nilai rata-rata (*mean-centering*) guna mereduksi multikolinearitas non-esensial (Aiken dan West, 1991; Hayes, 2018), diolah via IBM SPSS Statistics.",
+            "Penelitian ini menggunakan pendekatan kuantitatif asosiatif dengan desain survei *cross-sectional*. Data primer dikumpulkan melalui kuesioner daring skala Likert 5 poin kepada responden yang dipilih melalui teknik *purposive sampling*. Kriteria inklusi sampel adalah konsumen atau kolektor WNI berusia minimal 17 tahun yang berdomisili atau beraktivitas/bertransaksi aktif di wilayah Jakarta Barat serta pernah membeli *booster pack* Pokémon TCG fisik resmi dalam 12 bulan terakhir. Target ukuran sampel bersih (*usable sample*) adalah minimal 111 responden, ditentukan berdasarkan formula Green (1991) (*N* ≥ 104 + *k*) untuk regresi berganda dengan tujuh prediktor guna mencapai kekuatan uji statistik (*power*) 0,80. Metode analisis menggunakan regresi linear berganda dan *Moderated Regression Analysis* (MRA) dengan prosedur pemusatan nilai rata-rata (*mean-centering*) guna mereduksi multikolinearitas non-esensial (Aiken dan West, 1991; Hayes, 2018), diolah via IBM SPSS Statistics.",
             "Penelitian ini menawarkan kebaruan teoretis (*novelty*) dengan mengintegrasikan kerangka psikologi lingkungan *Stimulus-Organism-Response* (S-O-R), psikologi kolektor (*Zeigarnik Effect* dan *The Completing the Set Effect*), teori regulasi diri (*Self-Regulation Theory*), serta prinsip keuangan perilaku (*behavioral finance*) pada fenomena komoditas hobi bernilai spekulatif tinggi di Jakarta Barat. Hasil penelitian diharapkan memberi kontribusi empiris bagi kontrol diri finansial konsumen muda dan masukan aplikatif bagi komunitas hobi serta literasi keuangan."
         ]:
             p_abs = doc.add_paragraph()
@@ -1460,7 +1460,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
 
         for p_abs_en_text in [
             "This research aims to empirically examine the effects of hedonic motivation, desire for completeness, and speculative motive on the impulsive buying of official Indonesian physical Pokémon Trading Card Game (Pokémon TCG) booster packs among consumers in West Jakarta, and evaluates the moderating role of self-control in moderating these antecedent effects.",
-            "Employing an associative quantitative design, primary data are collected via 5-point Likert online questionnaires through purposive sampling. Inclusion criteria require Indonesian citizens aged 17 and above residing or transacting in West Jakarta who purchased official booster packs within the past 6–12 months. The targeted usable sample is a minimum of 111 respondents, determined based on Green's (1991) formula (N ≥ 104 + k) for multiple regression with seven predictors to achieve 0.80 statistical power. The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to alleviate non-essential multicollinearity (Aiken dan West, 1991; Hayes, 2018), processed using IBM SPSS Statistics.",
+            "Employing an associative quantitative design, primary data are collected via 5-point Likert online questionnaires through purposive sampling. Inclusion criteria require Indonesian citizens aged 17 and above residing or transacting in West Jakarta who purchased official booster packs within the past 12 months. The targeted usable sample is a minimum of 111 respondents, determined based on Green's (1991) formula (N ≥ 104 + k) for multiple regression with seven predictors to achieve 0.80 statistical power. The empirical model is estimated using multiple linear regression and Moderated Regression Analysis (MRA) with mean-centering procedures to alleviate non-essential multicollinearity (Aiken dan West, 1991; Hayes, 2018), processed using IBM SPSS Statistics.",
             "This study provides theoretical novelty by integrating Stimulus-Organism-Response (S-O-R), collector psychology (the Zeigarnik Effect and The Completing the Set Effect), Self-Regulation Theory, and behavioral finance on speculative hobby collectibles in West Jakarta. Findings offer empirical guidance for young consumers' financial discipline and actionable inputs for community leaders and financial literacy educators."
         ]:
             p_abs_en = doc.add_paragraph()
@@ -1809,6 +1809,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_img.paragraph_format.space_after = Pt(4)
                         p_img.paragraph_format.first_line_indent = Cm(0)
                         p_img.paragraph_format.keep_with_next = True
+                        p_img.paragraph_format.keep_together = True
                         p_img.add_run().add_picture(str(img_fig11), width=Cm(12.5))
 
                         p_cap = doc.add_paragraph()
@@ -1817,6 +1818,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_cap.paragraph_format.space_after = Pt(2)
                         p_cap.paragraph_format.first_line_indent = Cm(0)
                         p_cap.paragraph_format.keep_with_next = True
+                        p_cap.paragraph_format.keep_together = True
                         p_cap.add_run("Gambar 1.1. Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa").font.bold = True
 
                         p_src = doc.add_paragraph()
@@ -1838,6 +1840,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_img.paragraph_format.space_after = Pt(4)
                         p_img.paragraph_format.first_line_indent = Cm(0)
                         p_img.paragraph_format.keep_with_next = True
+                        p_img.paragraph_format.keep_together = True
                         p_img.add_run().add_picture(str(img_fig12), width=Cm(12.5))
 
                         p_cap = doc.add_paragraph()
@@ -1846,6 +1849,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_cap.paragraph_format.space_after = Pt(2)
                         p_cap.paragraph_format.first_line_indent = Cm(0)
                         p_cap.paragraph_format.keep_with_next = True
+                        p_cap.paragraph_format.keep_together = True
                         p_cap.add_run("Gambar 1.2. Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024").font.bold = True
 
                         p_src = doc.add_paragraph()
@@ -1867,6 +1871,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_img.paragraph_format.space_after = Pt(4)
                         p_img.paragraph_format.first_line_indent = Cm(0)
                         p_img.paragraph_format.keep_with_next = True
+                        p_img.paragraph_format.keep_together = True
                         p_img.add_run().add_picture(str(img_fig13), width=Cm(12.5))
 
                         p_cap = doc.add_paragraph()
@@ -1875,6 +1880,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_cap.paragraph_format.space_after = Pt(2)
                         p_cap.paragraph_format.first_line_indent = Cm(0)
                         p_cap.paragraph_format.keep_with_next = True
+                        p_cap.paragraph_format.keep_together = True
                         p_cap.add_run("Gambar 1.3. Disparitas Harga Pasar Sekunder Kartu Pokémon Mentah (Ungraded) vs. Bersertifikasi PSA 10 Gem Mint Seri Shining Fates").font.bold = True
 
                         p_src = doc.add_paragraph()
@@ -1896,6 +1902,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_img.paragraph_format.space_after = Pt(4)
                         p_img.paragraph_format.first_line_indent = Cm(0)
                         p_img.paragraph_format.keep_with_next = True
+                        p_img.paragraph_format.keep_together = True
                         p_img.add_run().add_picture(str(img_rerangka), width=Cm(13.0))
 
                         p_cap = doc.add_paragraph()
@@ -1904,6 +1911,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_cap.paragraph_format.space_after = Pt(2)
                         p_cap.paragraph_format.first_line_indent = Cm(0)
                         p_cap.paragraph_format.keep_with_next = True
+                        p_cap.paragraph_format.keep_together = True
                         p_cap.add_run("Gambar 2.1. Model Rerangka Konseptual Penelitian").font.bold = True
 
                         p_src = doc.add_paragraph()
@@ -1925,6 +1933,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_img.paragraph_format.space_after = Pt(4)
                         p_img.paragraph_format.first_line_indent = Cm(0)
                         p_img.paragraph_format.keep_with_next = True
+                        p_img.paragraph_format.keep_together = True
                         p_img.add_run().add_picture(str(img_alur), width=Cm(11.5))
 
                         p_cap = doc.add_paragraph()
@@ -1933,6 +1942,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                         p_cap.paragraph_format.space_after = Pt(2)
                         p_cap.paragraph_format.first_line_indent = Cm(0)
                         p_cap.paragraph_format.keep_with_next = True
+                        p_cap.paragraph_format.keep_together = True
                         p_cap.add_run("Gambar 3.1. Diagram Alur Pelaksanaan Penelitian").font.bold = True
 
                         p_src = doc.add_paragraph()
@@ -1983,6 +1993,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                     p_img.paragraph_format.space_after = Pt(4)
                     p_img.paragraph_format.first_line_indent = Cm(0)
                     p_img.paragraph_format.keep_with_next = True
+                    p_img.paragraph_format.keep_together = True
                     p_img.add_run().add_picture(str(img_fig11), width=Cm(12.5))
 
                     p_cap = doc.add_paragraph()
@@ -1991,6 +2002,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                     p_cap.paragraph_format.space_after = Pt(2)
                     p_cap.paragraph_format.first_line_indent = Cm(0)
                     p_cap.paragraph_format.keep_with_next = True
+                    p_cap.paragraph_format.keep_together = True
                     p_cap.add_run("Gambar 1.1. Peringkat 10 Waralaba Media Berpendapatan Tertinggi di Dunia Sepanjang Masa").font.bold = True
 
                     p_src = doc.add_paragraph()
@@ -2020,6 +2032,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                     p_img.paragraph_format.space_after = Pt(4)
                     p_img.paragraph_format.first_line_indent = Cm(0)
                     p_img.paragraph_format.keep_with_next = True
+                    p_img.paragraph_format.keep_together = True
                     p_img.add_run().add_picture(str(img_fig12), width=Cm(12.5))
 
                     p_cap = doc.add_paragraph()
@@ -2028,6 +2041,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                     p_cap.paragraph_format.space_after = Pt(2)
                     p_cap.paragraph_format.first_line_indent = Cm(0)
                     p_cap.paragraph_format.keep_with_next = True
+                    p_cap.paragraph_format.keep_together = True
                     p_cap.add_run("Gambar 1.2. Pertumbuhan Kumulatif Produksi Kartu Pokémon TCG Global Tahun 2019–2024").font.bold = True
 
                     p_src = doc.add_paragraph()
@@ -2057,6 +2071,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                     p_img.paragraph_format.space_after = Pt(4)
                     p_img.paragraph_format.first_line_indent = Cm(0)
                     p_img.paragraph_format.keep_with_next = True
+                    p_img.paragraph_format.keep_together = True
                     p_img.add_run().add_picture(str(img_fig13), width=Cm(12.5))
 
                     p_cap = doc.add_paragraph()
@@ -2065,6 +2080,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                     p_cap.paragraph_format.space_after = Pt(2)
                     p_cap.paragraph_format.first_line_indent = Cm(0)
                     p_cap.paragraph_format.keep_with_next = True
+                    p_cap.paragraph_format.keep_together = True
                     p_cap.add_run("Gambar 1.3. Disparitas Harga Rata-rata Pasar Sekunder Kartu Pokémon Mentah (Raw) vs. Bersertifikasi PSA 10 Gem Mint").font.bold = True
 
                     p_src = doc.add_paragraph()
@@ -2094,6 +2110,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                     p_img.paragraph_format.space_after = Pt(4)
                     p_img.paragraph_format.first_line_indent = Cm(0)
                     p_img.paragraph_format.keep_with_next = True
+                    p_img.paragraph_format.keep_together = True
                     p_img.add_run().add_picture(str(img_rerangka), width=Cm(13.0))
 
                     p_cap = doc.add_paragraph()
@@ -2102,6 +2119,7 @@ def build_full_proposal(skip_chapter3: bool = False, skip_frontmatter: bool = Fa
                     p_cap.paragraph_format.space_after = Pt(2)
                     p_cap.paragraph_format.first_line_indent = Cm(0)
                     p_cap.paragraph_format.keep_with_next = True
+                    p_cap.paragraph_format.keep_together = True
                     p_cap.add_run("Gambar 2.1. Model Rerangka Konseptual Penelitian").font.bold = True
 
                     p_src = doc.add_paragraph()
@@ -2715,6 +2733,7 @@ def build_tabel_research_gap(doc):
     p_cap.paragraph_format.space_after = Pt(4)
     p_cap.paragraph_format.first_line_indent = Cm(0)
     p_cap.paragraph_format.keep_with_next = True
+    p_cap.paragraph_format.keep_together = True
     parse_markdown_runs(p_cap, "Tabel 1.1: Matriks Kesenjangan Penelitian Empiris (*Research Gap*) pada 7 Subjek Hubungan Model Penelitian", base_size=Pt(11), base_bold=True)
 
     headers = [

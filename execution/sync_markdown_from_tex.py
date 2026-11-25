@@ -224,8 +224,10 @@ def main():
             dp_marker = "\n# DAFTAR PUSTAKA\n"
             if dp_marker in existing_md:
                 existing_dp = existing_md[existing_md.find(dp_marker) + len(dp_marker):]
+                # Normalisasi: buang newline pembuka agar regenerasi bersifat idempoten
+                existing_dp = existing_dp.lstrip("\n")
         if existing_dp.strip():
-            # Gunakan DP lama yang masih valid
+            # Gunakan DP lama yang masih valid (tanpa menambah newline kumulatif)
             output_text = "\n".join(md_lines) + "\n" + existing_dp
             with open(md_path, 'w', encoding='utf-8') as f:
                 f.write(output_text)
@@ -281,11 +283,11 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
 |:---:|:---|:---|:---|:---|
 | 1 | Pranggabayu dan Andjarwati (2022) | Pengaruh *Hedonic Shopping Motivation* dan *Store Atmosphere* terhadap *Impulsive Buying* | X1: *Hedonic shopping motivation*, X2: *Store atmosphere*; Y: *Impulsive buying*; Regresi linear berganda (200 responden) | Motivasi belanja hedonis terbukti mendorong *impulsive buying*; kesenangan berbelanja menurunkan deliberasi rasional konsumen. |
 | 2 | Apidana dan Kholifah (2022) | Peran *Self-Control* dalam Memoderasi Pengaruh *Hedonic Motives* dan *Shopping Lifestyle* terhadap *Impulse Buying* | X1: *Hedonic motives*, X2: *Shopping lifestyle*; Y: *Impulse buying*; Mod: *Self-control*; MRA | Motif hedonis positif signifikan; kontrol diri memoderasi *shopping lifestyle* (H4 diterima, $\\beta<0$) tetapi GAGAL memoderasi *hedonic motives* (H3 ditolak, p=0,597). |
-| 3 | Lienardy dan Setiawan (2026) | *The Role of Self-Control in Moderating the Influence of Shopping Lifestyle and Hedonistic Behavior on Impulsive Buying* | X1: *Shopping lifestyle*, X2: *Hedonistic behavior*; Y: *Impulsive buying*; Mod: *Self-control*; MRA (160 responden) | Perilaku hedonis menunjukkan hubungan positif yang signifikan dengan pembelian impulsif; kontrol diri terbukti memoderasi dan memperlemah pengaruh perilaku hedonis terhadap *impulsive buying*. |
+| 3 | Lienardy dan Panasea (2026) | *The Role of Self-Control in Moderating the Influence of Shopping Lifestyle and Hedonistic Behavior on Impulsive Buying* | X1: *Shopping lifestyle*, X2: *Hedonistic behavior*; Y: *Impulsive buying*; Mod: *Self-control*; MRA (160 responden) | Perilaku hedonis menunjukkan hubungan positif yang signifikan dengan pembelian impulsif; kontrol diri terbukti memoderasi dan memperlemah pengaruh perilaku hedonis terhadap *impulsive buying*. |
 | 4 | Gong et al. (2024) | *Unveiling the Enigma of Blind Box Impulse Buying Curiosity: The Moderating Role of Price Consciousness* | X: Karakteristik kemasan *blind box*; Med: Rasa ingin tahu; Y: *Impulse buying*; Kerangka S-O-R; PLS-SEM (306 responden) | Mekanisme kejutan kemasan tertutup (*blind box/booster pack*) memicu rasa ingin tahu afektif yang secara langsung mendorong pembelian impulsif; kesadaran harga memoderasi hubungan tersebut. |
 | 5 | Azizah dan Fauzi (2025) | Pengaruh *Hedonic Motivation*, *Shopping Lifestyle*, dan *Positive Emotions* terhadap *Impulse Buying* | X1: *Hedonic motivation*, X2: *Shopping lifestyle*; Med: *Positive emotions*; Y: *Impulse buying*; PLS-SEM, survei e-commerce fashion Indonesia (n=140 purposive) | Motivasi hedonis tercatat berpengaruh positif dan signifikan terhadap pembelian impulsif; emosi positif memediasi parsial dan menjadi jalur terkuat. Bukti domestik terkini untuk H1. |
 | 6 | Dewi et al. (2026) | *Understanding Impulse Buying Behavior: The Case of Blind Box Purchases in Indonesia* | X1: *Perceived scarcity*, X2: *Perceived uncertainty*; Med: FOMO; Y: *Impulse buying*; PLS-SEM (211 Gen Z Indonesia) | Persepsi kelangkaan item dan ketidakpastian memicu FOMO dan hasrat memiliki set koleksi utuh, yang secara langsung dan signifikan memicu *impulse buying* pada Generasi Z di Indonesia. |
-| 7 | Aryadi dan Lingga (2024) | *Personal Traits and Motivation Impact on Collectibles as an Alternative Investment: A Case Study of Trading Card Game Community in Greater Jakarta* | X: Motivasi kolektor & ciri kepribadian; Y: Keputusan investasi TCG; Regresi logistik biner (158 anggota komunitas TCG) | Membuktikan bahwa motivasi kolektor dan motif spekulasi finansial secara positif mendorong partisipasi dalam transaksi kartu TCG (Pokémon, dkk.) sebagai aset alternatif investasi di Jabodetabek. |
+| 7 | Aryadi dan Lingga (2026) | *Personal Traits and Motivation Impact on Collectibles as an Alternative Investment: A Case Study of Trading Card Game Community in Greater Jakarta* | X: Motivasi kolektor & ciri kepribadian; Y: Keputusan investasi TCG; Regresi logistik biner (158 anggota komunitas TCG) | Membuktikan bahwa motivasi kolektor dan motif spekulasi finansial secara positif mendorong partisipasi dalam transaksi kartu TCG (Pokémon, dkk.) sebagai aset alternatif investasi di Jabodetabek. |
 | 8 | Colline (2024) | *Biases in Indonesian Stock Investor Behavior* | X: Bias perilaku (*herding*, *loss aversion*); Y: Keputusan investasi; Kualitatif wawancara mendalam (n=5 investor Indonesia) | Mendokumentasikan kuatnya *herding* (ikut-ikutan), *loss aversion*, dan *disposition effect* pada investor Indonesia, dipakai sebagai analogi bias pasar aset. |
 | 9 | Artadita dan Firmialy (2024) | *How Does Self-Control Moderate Shopping Enjoyment and Impulse Buying Among Generation Z Online Gamers?* | X: Kenikmatan belanja (*shopping enjoyment*); Y: *Impulse buying*; Mod: *Self-control*; PLS-SEM + regresi dimensional (220 Gen Z Gamers; bukan MRA) | Kenikmatan belanja berpengaruh positif kuat ($\\beta=0,581$); efek moderasi kontrol diri DITOLAK ($\\beta=0,092$) kecuali dimensi kontrol kognitif yang signifikan pada taraf 10% (p<0,10). |
 | 10 | Katauke et al. (2023) | *Financial Literacy and Impulsivity: Evidence from Japan* | X: Literasi finansial; Y: *Impulsivity (hyperbolic discounting)*; Probit + *instrumental variables* | Literasi finansial berhubungan negatif dengan diskonto hiperbolik (proksi impulsivitas); bukti regulasi-rasional dari Jepang. |
@@ -316,7 +318,7 @@ def convert_tex_section(tex_str, chapter_num, cite_dict=None):
 ```
 **Gambar 2.1 Model Rerangka Konseptual Penelitian**
 
-*Keterangan: Garis lurus menunjukkan pengaruh langsung (H1, H2, H3); Garis putus-putus menunjukkan efek moderasi kontrol diri yang memperlemah (H4, H5, H6).*"""
+*Keterangan: Garis lurus menunjukkan pengaruh langsung (H1, H2, H3); Garis putus-putus menunjukkan efek moderasi kontrol diri (H4, H5, H6).*"""
         s = fig21_pattern.sub(fig21_md, s)
 
     # Convert Table 3.1
