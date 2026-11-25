@@ -31,7 +31,7 @@
 12. [Bedah Tabel 1.1: 7 Research Gap dalam 2 Menit](#sec-12)
 13. [Alur Analisis Tahap 1–5 Bahasa Sehari-hari + Tabel Ambang Batas](#sec-13)
 14. [Naskah Bicara 7 Slide + Taktik Sidang](#sec-14)
-15. [Bank Pertanyaan Tambahan Q18–Q35](#sec-15)
+15. [Bank Pertanyaan Tambahan Q18–Q38 (termasuk Masukan Pembimbing)](#sec-15)
 16. [Checklist Malam Ini & Pagi Hari](#sec-16)
 17. [Penguasaan Bab 3 Total dari Nol (Wajib Hafal)](#sec-17)
 18. [Anatomi Rumus Bab 3: Kenapa Ada & Kenapa Dipakai](#sec-18)
@@ -350,9 +350,9 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 - **Populasi:** Seluruh konsumen/kolektor kartu fisik Pokémon TCG resmi berbahasa Indonesia di wilayah **Jakarta Barat** (populasi tak terbatas / *infinite population* karena distribusi ritel modern sangat luas tanpa kerangka sampel tetap).
 - **Teknik Sampling:** *Purposive Sampling* (Non-Probability).
 - **Kriteria Inklusi (4 Saringan):**
-  1. WNI yang berdomisili atau beraktivitas/bertransaksi aktif di wilayah Jakarta Barat.
+  1. WNI yang memiliki **minimal salah satu** keterkaitan dengan Jakarta Barat — berdomisili/kost, berkuliah/bekerja, **atau** rutin berbelanja/bermain kartu di wilayah tersebut. Ketiga lokasi boleh berbeda (mis. rumah di Tangerang, kerja di UKRIDA Jakbar, bermain di Jakarta Pusat) dan tetap lolos selama salah satunya di Jakarta Barat.
   2. Berusia minimal 17 tahun (aspek kedewasaan administratif KTP UU No. 24/2013, diskresi keuangan mandiri, dan kapasitas kognitif).
-  3. Memiliki riwayat pembelian *booster pack* fisik resmi minimal 1 kali dalam 12 bulan terakhir (diutamakan 6 bulan terakhir untuk menekan *recall bias*).
+  3. Memiliki riwayat pembelian *booster pack* fisik resmi minimal 1 kali dalam 12 bulan terakhir (rentang 12 bulan dipakai agar tetap menekan *recall bias* tanpa mempersempit calon responden).
   4. Lolos pertanyaan penyaring (*screening questions*) otomatis pada pembuka kuesioner (*zero sample contamination*).
 - **Justifikasi Ilmiah Pemilihan Wilayah Jakarta Barat (4 Pilar Bebas Klaim Spekulatif):**
   1. *LGS Hub Resmi:* Konsentrasi ekosistem toko hobi resmi mitra AKG Games (Tanjung Duren, Central Park, Mall Taman Anggrek, Puri Indah) dengan turnamen rutin mingguan (*Gym Battle*).
@@ -695,6 +695,20 @@ Setiap perumusan hipotesis wajib disusun dalam format **4-Tier**:
 
 ---
 
+### ❓ Pertanyaan 36: "Di indikator Speculative Motive yang mana sumbernya namaku (Colline, 2024)?"
+> **💡 Jawaban:**
+> "Paper Ibu, *Biases in Indonesian Stock Investor Behavior* (Colline, 2024, DOI: 10.47153/afs42.9372024), bukan dipakai di satu indikator tunggal, melainkan menjadi sumber bersama **seluruh lima indikator X3** di Tabel 3.2 — sitasinya `(Colline, 2024; Aryadi, 2024)`. Kontribusi spesifik paper Ibu: temuan *herding*, *loss aversion*, dan ekspektasi imbal hasil instan pada investor Indonesia, dipakai sebagai analogi bias pasar pada aset koleksi. Konkret di kuesioner, itu menjadi butir **X3_1 sampai X3_5** (Q37–Q41 di Google Form): (1) ekspektasi kartu langka bernilai jual tinggi, (2) penilaian biaya vs potensi untung, (3) kartu sebagai aset alternatif yang terapresiasi, (4) persepsi likuiditas jual-kembali, (5) ketertarikan pada kartu grading PSA. Paper Ibu juga dipakai di narasi pengembangan H3 (Bab II) dan kontribusi teoretis (Bab I)."
+
+### ❓ Pertanyaan 37: "Di pertanyaan penyaring P5, kalau responden biasa beli di marketplace (Tokopedia/Shopee), ada pilihannya?"
+> **💡 Jawaban:**
+> "Ada — dan justru ditaruh di **urutan paling atas**. Opsi pertama P5: *'Marketplace daring / E-commerce (Tokopedia, Shopee, TikTok Shop, Blibli, dll.)'*. Alasannya: mayoritas pembelian booster pack generasi sekarang justru terjadi daring, jadi kanal ini ditaruh pertama agar responden online tidak merasa tidak terwakili. Total ada 5 opsi kanal: marketplace daring, LGS resmi (Tanjung Duren/Central Park/Taman Anggrek/Puri Indah), minimarket/toko buku (Indomaret/Alfamart/Gramedia/Toys Kingdom), transaksi langsung/COD komunitas, dan Lainnya."
+
+### ❓ Pertanyaan 38: "S3 itu domisili, aktivitas, dan transaksi harus semua di Jakarta Barat?"
+> **💡 Jawaban:**
+> "Tidak — cukup **minimal SATU**. Pertanyaannya dirancang 'ATAU': tinggal/kost di Jakbar, ATAU kuliah/bekerja di Jakbar (contoh: kampus UKRIDA/Untar), ATAU rutin belanja/bermain kartu di toko/LGS/mall Jakbar. Skenario Ibu pembimbing persis tercakup: rumah di Tangerang, kerja di UKRIDA (Jakbar), main di Jakarta Pusat → **tetap lolos** karena kerjanya di Jakbar. Catatan penjelas ini tertulis eksplisit di halaman S3 form: *'Cukup SATU keterkaitan terpenuhi. Lokasi tinggal, kuliah/kerja, dan tempat bermain boleh berbeda wilayah — selama salah satunya di Jakarta Barat, Anda lolos.'* Logika 'salah satu' ini menjaga cakupan sampel tetap luas tanpa mengorbankan relevansi geografis."
+
+---
+
 # 16. CHECKLIST MALAM INI & PAGI HARI <a id="sec-16"></a>
 
 **Malam ini (urutan wajib):**
@@ -724,7 +738,7 @@ Penelitian kuantitatif asosiatif = menguji hubungan antar-variabel dengan angka;
    - *Akses Observasi Langsung:* Kedekatan fisik peneliti yang berkampus di UKRIDA Tanjung Duren (*direct field observation*, Sekaran & Bougie, 2016).
    - *Kepadatan Titik Penjualan Kasir:* *Booster pack* resmi harga terjangkau (Rp20.000–Rp30.000) tersebar padat di depan kasir ritel modern seluruh kecamatan Jakarta Barat, memicu pembelian spontan nyata.
    - *Pengendalian Variasi Eksternal:* Membatasi satu wilayah perkotaan homogen mengendalikan disparitas ketersediaan stok fisik dan biaya kirim antardaerah (*high internal validity*).
-3. **Purposive + 4 kriteria inklusi:** (a) WNI berdomisili atau beraktivitas/bertransaksi di Jakarta Barat; (b) usia ≥17 tahun — KTP (UU No. 24/2013) + informed consent + diskresi keuangan mandiri; (c) beli booster pack fisik ≥1× dalam 12 bulan terakhir (diutamakan 6 bulan) — pengalaman riil + ingatan segar; (d) lolos screening questions. **Kalimat kunci generalisasi:** temuan bersifat analitis pada segmen konsumen kartu di Jakarta Barat, BUKAN generalisasi probabilistik seluruh Indonesia.
+3. **Purposive + 4 kriteria inklusi:** (a) WNI berdomisili atau beraktivitas/bertransaksi di Jakarta Barat; (b) usia ≥17 tahun — KTP (UU No. 24/2013) + informed consent + diskresi keuangan mandiri; (c) beli booster pack fisik ≥1× dalam 12 bulan terakhir — pengalaman riil + ingatan segar; (d) lolos screening questions. **Kalimat kunci generalisasi:** temuan bersifat analitis pada segmen konsumen kartu di Jakarta Barat, BUKAN generalisasi probabilistik seluruh Indonesia.
 4. **Angka sampel (tiga lapis):** Green overall N ≥ 50 + 8(7) = 106; Green individual N ≥ 104 + 7 = 111 (mengikat); batas mengikat 111 (power 0,80 Cohen, efek sedang); pilot test n = 30 terpisah. **Jebakan:** "kenapa tidak 200 seperti SEM?" → model parsimoni, OLS ideal pada ukuran ini, SEM butuh N > 200 + normal multivariat ketat (Hair, 2019).
 
 ### 3.3 Model Penelitian (baca persamaan dengan lantang)
@@ -1068,7 +1082,7 @@ B1–B2: fenomena + literatur; B2–B3: proposal + bimbingan; B3: SEMPRO (besok!
 * **Bahasa Sederhana:** **SANGAT VALID.**
 * **Penjelasan:** Kriteria inklusi mensyaratkan: *WNI ≥ 17 tahun yang pernah membeli booster pack resmi minimal 1 kali dalam 12 bulan terakhir*.
   1. *Kenapa minimal 1 kali?* Karena membeli 1 bungkus saja sudah cukup membuat seseorang mengalami sensasi merobek bungkus acak (*pack opening experience*) dan merasakan godaan impulsif.
-  2. *Kenapa dibatasi dalam 12 bulan terakhir (diutamakan 6 bulan)?* Untuk mencegah **Recall Bias** (distorsi lupa ingatan). Pembelian dalam kurun waktu tersebut memorinya masih segar sehingga jawaban kuesionernya akurat dan dapat dipercaya.
+  2. *Kenapa dibatasi dalam 12 bulan terakhir?* Untuk mencegah **Recall Bias** (distorsi lupa ingatan). Pembelian dalam kurun waktu tersebut memorinya masih segar sehingga jawaban kuesionernya akurat dan dapat dipercaya.
 * **Jawaban 1 Kalimat ke Dosen:** *"Kriteria pembelian minimal 1 kali dalam 12 bulan terakhir valid karena menjamin responden memiliki pengalaman riil merobek kemasan acak sekaligus meminimalkan distorsi ingatan (recall bias)."*
 
 ### 18. Penentuan ukuran sampel maksudnya apa?, itu pakai rumus apa, kenapa pakai rumus itu?
